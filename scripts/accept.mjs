@@ -20,7 +20,7 @@
 import { spawnSync } from "node:child_process";
 import { createHash } from "node:crypto";
 import { createRequire } from "node:module";
-import { existsSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -251,6 +251,28 @@ try {
         : wrong.map(([title, expected]) =>
             `${JSON.stringify(title)} expected ${JSON.stringify(expected)}, got ${JSON.stringify(titleStop(title))}`
           ).join(" / "));
+  }
+
+  // The shared citation string must stay plain text; U+00A0 belongs only to
+  // the print template. Scan the committed bytes, before any generator runs:
+  // this tests what is in the commit, not what the generator can produce.
+  // A normalising comparison treats U+00A0 and U+0020 as one column, which is
+  // how this mistake survives a human review, so this reads the bytes.
+  {
+    const noBreak = Buffer.from([0xc2, 0xa0]);
+    const artifacts = ["packages/web/deck-data.js", "rules/ux-rules.md", "skills/ux-laws/SKILL.md"];
+    const hits = [];
+    for (const file of artifacts) {
+      const bytes = readFileSync(join(worktree, file));
+      const at = bytes.indexOf(noBreak);
+      if (at !== -1) hits.push(`${file} at byte ${at}`);
+    }
+    record("generated: no no-break spaces", hits.length === 0 ? "pass" : "fail",
+      hits.length === 0
+        ? `${artifacts.length} committed artifacts contain no U+00A0`
+        : `U+00A0 found in ${hits.join(", ")} - the no-break lives only in the print template; ` +
+          "a normalising comparison treats U+00A0 and U+0020 as one column, " +
+          "which is how this mistake survives a human review");
   }
 
   // --- 3. generators are deterministic and match what is committed ---------
