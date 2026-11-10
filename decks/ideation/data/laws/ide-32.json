@@ -1,0 +1,33 @@
+{
+  "id": "IDE-32",
+  "sourceTacticNo": 32,
+  "name": "TRIZ Physical Contradiction Resolution (Separation Principles)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "State the physical contradiction: \"Component X must have Property P to satisfy Requirement 1, and Property NOT-P to satisfy Requirement 2.\" Map how X can be P in Time 1 and NOT-P in Time 2, or P in Space A and NOT-P in Space B.",
+  "sprintSize": 8.5,
+  "schematic": "Separation at position 16 of 16",
+  "mechanism": "Dialectical decomposition. Resolves mutual exclusivity by separating conflicting parameters across time, space, condition, or system scale.",
+  "questions": [
+    "How can this component be totally open and completely secure at different points in time?",
+    "Where can this parameter be rigid at the macro-scale while remaining flexible at the micro-scale?",
+    "Under what conditional state can Property P convert into Property NOT-P dynamically?"
+  ],
+  "example": "Read Concurrency vs. Write Isolation in High-Throughput Databases. Physical Contradiction: \"The database record must be mutable to allow immediate write operations, but immutable to allow non-blocking concurrent reads.\" Separation in Time and Condition via Multi-Version Concurrency Control (MVCC): records are never updated in place. When a write occurs, a new immutable version is appended with a timestamp. Readers inspect point-in-time snapshots without acquiring locks, eliminating read/write blocking.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 16
+    }
+  }
+}

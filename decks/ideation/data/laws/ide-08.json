@@ -1,0 +1,33 @@
+{
+  "id": "IDE-08",
+  "sourceTacticNo": 8,
+  "name": "Lateral Thinking Provocations: Escape Principle (Po)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Identify an indispensable system component. Declare: \"Po: [Component] does not exist.\" Conceive two functional configurations that achieve the system's objective without that component.",
+  "sprintSize": 9,
+  "schematic": "Reflection at position 8 of 16",
+  "mechanism": "Negates an axiomatic system property (\"Po: Component X does not exist\"), forcing working memory to construct alternative functional pathways.",
+  "questions": [
+    "Po: The web platform maintains no centralized database; where does authoritative state live?",
+    "Po: The client hardware transmits zero data packets to the backend; how does coordination occur?",
+    "Po: The software contains zero conditional branch statements; how is logic evaluated?"
+  ],
+  "example": "Collaborative Workspace Synchronization. \"Po: The distributed application contains no central database server.\" Breakthrough: The architecture migrates from client-server relational storage to Conflict-free Replicated Data Types (CRDTs) over WebRTC mesh connections, enabling local mutation and deterministic peer-to-peer merge operations without a centralized persistence cluster.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1970,
+    "title": "Lateral Thinking: Creativity Step by Step",
+    "publication": "Harper & Row",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 235931) and Google Books: Harper & Row, New York, 1970."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 8
+    }
+  }
+}

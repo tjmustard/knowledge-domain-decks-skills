@@ -1,0 +1,92 @@
+{
+  "id": "ideation",
+  "slug": "ideation",
+  "name": "Ideation Architecture",
+  "description": "Fifty ideation tactics in four phases, each a five-minute sprint you can run, the cognitive mechanism it works by and the failure it breaks, three seed questions that aim it, and a worked technical example.",
+  "categories": [
+    "Systematic Lateral Thinking & Perceptual Restructuring",
+    "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+    "Constraints & Oblique Sparks",
+    "Combinatorial & Associative Prompts"
+  ],
+  "accents": {
+    "Systematic Lateral Thinking & Perceptual Restructuring": "#B45309",
+    "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)": "#7E22CE",
+    "Constraints & Oblique Sparks": "#B91C1C",
+    "Combinatorial & Associative Prompts": "#0F766E"
+  },
+  "itemStyle": "checklist",
+  "fields": {
+    "group": "phase",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "sprint",
+    "headlineSize": "sprintSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Five-minute sprint",
+    "context": "Schematic",
+    "group": {
+      "Systematic Lateral Thinking & Perceptual Restructuring": "Lateral Thinking",
+      "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)": "TRIZ & Morphology",
+      "Constraints & Oblique Sparks": "Constraints & Sparks",
+      "Combinatorial & Associative Prompts": "Combinatorial Prompts"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "mechanism",
+      "label": "Cognitive mechanism",
+      "style": "prose"
+    },
+    {
+      "field": "questions",
+      "label": "Seed questions",
+      "style": "list"
+    },
+    {
+      "field": "example",
+      "label": "Worked example",
+      "style": "example",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/ideation-rules.md",
+    "skill": "skills/ideation",
+    "pdf": "packages/prepress/dist/ideation.pdf"
+  },
+  "rules": {
+    "title": "Ideation Architecture Rules",
+    "intro": "The tactics come from public practice in deliberate idea generation: lateral-thinking provocations, TRIZ and morphological analysis, constraints and oblique sparks, and combinatorial prompts. Each card states the five-minute sprint it asks you to run, the cognitive mechanism that makes it work and the failure it breaks, three seed questions that aim it at your problem, and the work that originated it where one is named.\nThe sprint prints on the card exactly as the source writes it, because it is the only field a reader can execute: a deck of ideation labels without instructions is a poster, not a deck. The three seed questions print in full; the worked example, which illustrates rather than instructs, follows here with its domain, because this file is the reference."
+  },
+  "skill": {
+    "name": "ideation",
+    "description": "Run a deliberate ideation move from a card: {cards} tactics in four phases, each with a five-minute sprint, the cognitive mechanism it breaks, three seed questions and a worked example. Use when a team needs new options now.",
+    "title": "Ideation Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per phase.\n\nChoosing starts from what kind of block you are in. If the team is stuck inside one way of seeing the problem, read Lateral Thinking. If you have a contradiction or a parameter space to search, read TRIZ and Morphology. If the solution space is too wide or too comfortable, read Constraints and Sparks. If you need to force two distant things together, read Combinatorial Prompts. Then take the one card whose sprint you can actually run in the next five minutes.\n\nWhen two cards fit, prefer the one whose sprint names a concrete action you can finish before the next meeting. A provocation without an instruction is a quote.\n\nRoutes out of this deck. Pre-Mortem (IDE-38) also appears as a facilitation workshop and a retrospective review: those own the session and the after-action, this card owns the ideation move. The SCAMPER operators (IDE-10 to IDE-16) appear as one facilitation block; that deck runs the block, this one gives each operator its own five minutes. TRIZ (IDE-18 to IDE-32) appears as a destructive-innovation block in facilitation and retrospectives; here each principle is its own card. Worst Possible Idea (IDE-37) is the same move facilitation runs as a session, here as a five-minute reframe. No card repeats another deck's instructions; the routing is what each deck owns.",
+    "commonRules": [
+      "Run the sprint before you judge the idea. The instruction produces the options; evaluating first is what the mechanism exists to suspend.",
+      "Use the seed questions on your own problem, not on the card's example. The example shows what an answer looks like, not what to answer.",
+      "One sprint, one problem. Restating the problem mid-sprint returns you to the frame the tactic was chosen to break.",
+      "Compression is the card's limit, not the source's. The full mechanism, all three questions and the worked example are in this file and in the resources.",
+      "A named origin is the source's, not the card's. Where the record cites a work, the citation is the work the tactic came from; where it does not, the card says so."
+    ],
+    "footer": "Tactics are credited to the works that originated them where a checked public record names one. The card text states the source's own sprint, mechanism and seed questions."
+  },
+  "web": {
+    "global": "IDEATION_DECK",
+    "accentsGlobal": "IDEATION_DECK_ACCENTS",
+    "title": "Ideation Architecture — Knowledge Domain Decks",
+    "heading": "Ideation Architecture",
+    "lede": "{cards} ideation tactics: the five-minute sprint, the mechanism it breaks, three seed questions and a worked example.",
+    "source": "Generated from <code>decks/ideation/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the mechanism"
+  }
+}

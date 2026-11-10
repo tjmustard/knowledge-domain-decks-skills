@@ -79,26 +79,10 @@
       }
     },
     "example": {
-      "description": "The domain and the worked technical example. It is illustrative rather than executable, so it lives unbounded in the artifacts and is never compressed into something that no longer illustrates the tactic.",
-      "type": "object",
-      "additionalProperties": false,
-      "required": [
-        "domain",
-        "text"
-      ],
-      "properties": {
-        "domain": {
-          "type": "string",
-          "minLength": 5,
-          "maxLength": 90
-        },
-        "text": {
-          "description": "Measured 239-493 characters; the bound is the source's range with headroom, not a summary.",
-          "type": "string",
-          "minLength": 200,
-          "maxLength": 600
-        }
-      }
+      "description": "The worked technical example, led by its domain (\"Domain. Text\"). It is illustrative rather than executable, so it lives unbounded in the artifacts and is never compressed into something that no longer illustrates the tactic. Measured 258-560 characters including the domain; the bound is the source's range with headroom.",
+      "type": "string",
+      "minLength": 220,
+      "maxLength": 700
     },
     "origin": {
       "type": "object",
