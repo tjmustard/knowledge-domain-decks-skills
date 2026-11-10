@@ -110,6 +110,7 @@ test("every record matches the committed inventory", async () => {
 
   const deck = await loadDeck("retrospectives");
   const cards = await loadCards(deck);
+  assert.equal(cards.length, 45, "all five categories are committed");
   const rows = new Map(inventory.rituals.map((row) => [row.id, row]));
 
   for (const card of cards) {

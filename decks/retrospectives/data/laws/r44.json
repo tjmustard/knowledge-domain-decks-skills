@@ -1,0 +1,40 @@
+{
+  "id": "R44",
+  "name": "Appreciation Matrix & Kudos",
+  "category": "Psychological Safety",
+  "trigger": "Teams recovering from sustained deadlines, high-stress delivery cycles, or transactional working relationships.",
+  "canvas": "Grid Layout: Core Peer Categories (Heroics, Glue-Work, Empathy, Mentorship)",
+  "timebox": "30–45 min",
+  "canvasLine": "Grid Layout: Core Peer Categories (Heroics, Glue-Work, Empathy, Mentorship) · 30–45 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): explain the four appreciation categories."
+    },
+    {
+      "text": "Gather data (10m): write at least two specific kudos to peers."
+    },
+    {
+      "text": "Generate insights (10m): read the notes aloud; name the repeated behaviours."
+    },
+    {
+      "text": "Decide (5m): copy the appreciations into the public channel."
+    },
+    {
+      "text": "Close (5m): commit to one recognition habit for the next sprint."
+    }
+  ],
+  "action": "Appreciations are copied into the organization's public channel, giving the work company-wide visibility.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "matrix",
+      "columns": 4,
+      "rows": 3
+    }
+  }
+}

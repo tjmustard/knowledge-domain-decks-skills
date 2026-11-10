@@ -1,0 +1,40 @@
+{
+  "id": "R38",
+  "name": "Working Agreement Audit",
+  "category": "Psychological Safety",
+  "trigger": "Broken team norms, recurring PR review bottlenecks, off-hours messaging, or boundary violations.",
+  "canvas": "3 Columns: Existing Agreement, Reality Check, Ratified Rules",
+  "timebox": "60–90 min",
+  "canvasLine": "3 Columns: Existing Agreement, Reality Check, Ratified Rules · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): list the agreements the team actually made."
+    },
+    {
+      "text": "Gather data (20m): mark where each agreement is followed or ignored."
+    },
+    {
+      "text": "Generate insights (25m): separate silent drift from rules that no longer work."
+    },
+    {
+      "text": "Decide (15m): drop, re-commit, or automate each agreement."
+    },
+    {
+      "text": "Close (10m): commit the revised agreements to the repository."
+    }
+  ],
+  "action": "Revised agreements land in /docs/working-agreements.md with automated enforcement where chosen.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "columns",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "R37",
+  "name": "Team Health Radar",
+  "category": "Psychological Safety",
+  "trigger": "Teams needing a holistic, multi-dimensional health assessment beyond velocity and bug counts.",
+  "canvas": "6 Dimensions: Code Health, Delivery, Fun, Safety, Autonomy, Speed",
+  "timebox": "60 min",
+  "canvasLine": "6 Dimensions: Code Health, Delivery, Fun, Safety, Autonomy, Speed · 60 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): explain the six dimensions and the 1-to-5 scale."
+    },
+    {
+      "text": "Gather data (15m): anonymous poll on all six dimensions."
+    },
+    {
+      "text": "Generate insights (15m): plot the median; name the lowest and most split."
+    },
+    {
+      "text": "Decide (10m): pick the lowest dimension for a month-long initiative."
+    },
+    {
+      "text": "Close (10m): set the re-poll date and the owner."
+    }
+  ],
+  "action": "The lowest-scoring dimension becomes a focused improvement initiative for the upcoming month, with an owner and a re-poll date.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "rings",
+      "columns": 6,
+      "rows": 3
+    }
+  }
+}

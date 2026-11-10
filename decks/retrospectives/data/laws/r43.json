@@ -1,0 +1,45 @@
+{
+  "id": "R43",
+  "name": "1-2-4-All Systemic Sync",
+  "category": "Psychological Safety",
+  "trigger": "Retrospectives dominated by senior engineers, architects, or managers, where junior and introverted team members remain silent.",
+  "canvas": "4 Sequential Workspaces: 1-min Solo, 2-min Pair, 4-min Quad, Plenary",
+  "timebox": "30–45 min",
+  "canvasLine": "4 Sequential Workspaces: 1-min Solo, 2-min Pair, 4-min Quad, Plenary · 30–45 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): pose the question; explain the four stages."
+    },
+    {
+      "text": "Gather data (10m): 1 minute solo, 2 minutes in pairs, 4 minutes in fours."
+    },
+    {
+      "text": "Generate insights (10m): harvest patterns; each group names its strongest idea."
+    },
+    {
+      "text": "Decide (10m): submit each group's insight to the Who-What-When converter."
+    },
+    {
+      "text": "Close (5m): read commitments; set the next review."
+    }
+  ],
+  "action": "Each group of four submits its highest-leverage insight as a dated commitment with a named owner.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2013,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "timeline",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}

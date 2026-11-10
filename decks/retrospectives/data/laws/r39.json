@@ -1,0 +1,40 @@
+{
+  "id": "R39",
+  "name": "Toxic Waste Dump",
+  "category": "Psychological Safety",
+  "trigger": "Severe post-crunch burnout, organizational trauma, executive conflict, or high interpersonal frustration.",
+  "canvas": "3 Sequestered Zones: Containment Trench, Decontamination, Clean Ground",
+  "timebox": "60–90 min",
+  "canvasLine": "3 Sequestered Zones: Containment Trench, Decontamination, Clean Ground · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): Prime Directive; containment rules; no personal attacks."
+    },
+    {
+      "text": "Gather data (20m): total silence; post frustrations into the Containment Trench."
+    },
+    {
+      "text": "Generate insights (25m): read notes without defence; sort reality from friction."
+    },
+    {
+      "text": "Decide (15m): pick exactly one systemic issue to neutralize."
+    },
+    {
+      "text": "Close (10m): shred the trench notes; confirm mutual support."
+    }
+  ],
+  "action": "Extracted friction becomes a protective barrier ticket: no-meeting Wednesdays for four weeks, with an owner.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

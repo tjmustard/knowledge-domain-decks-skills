@@ -1,0 +1,40 @@
+{
+  "id": "R36",
+  "name": "Retro on Retros",
+  "category": "Psychological Safety",
+  "trigger": "Retrospective meetings have become stale, mechanical, or cynical; participants report low return on investment and action items are ignored.",
+  "canvas": "4 Quadrants: Format, Psychological Safety, Action Velocity, Value",
+  "timebox": "60 min",
+  "canvasLine": "4 Quadrants: Format, Psychological Safety, Action Velocity, Value · 60 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; name past ceremony failures."
+    },
+    {
+      "text": "Gather data (15m): anonymously rate safety and action velocity, 1 to 5."
+    },
+    {
+      "text": "Generate insights (20m): find why retros stall; name the common antipatterns."
+    },
+    {
+      "text": "Decide (15m): redesign the cadence; rotation, frequency, WIP limits."
+    },
+    {
+      "text": "Close (5m): re-commit to collective continuous improvement."
+    }
+  ],
+  "action": "Actions reform the improvement process itself: rotate the facilitator and cap process tickets with a WIP limit.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "quadrants",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}
