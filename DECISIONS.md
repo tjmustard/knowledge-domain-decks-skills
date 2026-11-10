@@ -400,3 +400,17 @@ whose U-shaped curve is correct.
 
 The diagram is the observable, not the abandoned mechanism: it plots quality
 across a session and does not draw a battery, a gauge, or a bar emptying.
+
+## 23. The `split-bar` threshold moved under two published cards
+
+The slice changed `split-bar`, which draws `DEC-03` and `DEC-05` as well as the
+new `TME-03`. Row labels moved from centred above each track to its left edge,
+and the threshold is now drawn per bar — a tick above the first bar and one
+vertical dashed segment through each bar — instead of a single rule spanning
+the whole drawing. The single rule at 400 ms struck through the segment labels
+that sit below each track and through the row label above the first, which
+TME-03 made obvious. `DEC-03` and `DEC-05` were re-rendered and inspected after
+the change: the party fills and the 85 capacity line still land on the tracks
+their labels name. This is a correction to a shared shape, not a revert, and it
+is recorded so a reader comparing the published cards against the current
+output finds the reason beside the other shape notes.
