@@ -2116,3 +2116,71 @@ which no script can make.
 The web index lists six decks on this branch. That is correct here and is not
 shippable until this branch is merged; no merge is requested without the
 person's word.
+
+## 61. The team deck adds three engine surfaces without moving a shipped page
+
+The team deck needed a figure it could draw four ways from the same data, a back
+face whose first block is a named script rather than a list, and a taxonomy too
+long to print beside an id at full length. Each arrived as the smallest
+extension that left every earlier deck's bytes alone.
+
+`team-figure` is one shape with four families - `continuum`, `quadrant`, `arc`
+and `radar` - reading `divisions` and `mark`. The source ships four drawn
+assets and assigns none of them to its forty-four cards, so the family is a
+decision made here and recorded in `decks/team/data/layout-map.json`, not a
+lookup. An unknown family draws a marked frame and keeps every declared
+parameter, so a bad record is visible rather than blank. The four drawings were
+rendered and inspected: the arc reads as Tuckman's stages, the radar as five
+axes with its baseline, the gauge as three segments with the pointer at the
+mark, the quadrant as crossed axes with one cell marked.
+
+The `labelled` block style prints a record's own `{ label, text }` pair - the
+name of the move in the accent colour, then the words. It renders on the card
+back, the web viewer, the rules file and the skill resource; before the last of
+those learned it, the resource printed `[object Object]`, and
+`scripts/test/team.test.mjs` now fails on that string or on a `{ text:` leak.
+
+Three deck-level knobs - `figureWidth` (default 1.8in), `nameSize` (default
+14pt) and `labels.group`, a map from category to a short kicker - close the
+recto's two collisions. The taxonomy runs up to 44 characters and the longest
+name to 59; at the defaults the card pushed its body past the safe inset and
+the kicker ran into the id. The team deck declares 1.4in, 12pt and four short
+kickers; every knob defaults to the shipped value, and the six earlier decks
+rebuild byte-identical (`40164666…`, `435f2a9f…`, `a6f177de…`, `035429f5…`,
+`5ca91630…`, `2bfc9fb5…`).
+
+The card shape is one decision per card. The front is the friction diagnostic
+and the schematic; the back is the manager script verbatim under its own label,
+two day-14 checks, and the citation. The script is the deliverable and is never
+compressed; the checks are compressed to one line and must stay answerable yes
+or no - a test enforces the auxiliary opening, the question mark and the
+absence of an either/or. The foundation and the checks as the source writes
+them are `"card": false`: the rules and skill carry the source in full.
+
+The extraction corrected three cells. T11, T22 and T33 had each swallowed the
+next dimension's introduction into their last audit item, because the extractor
+let a `##` section stay open one row too long; the records commit the question
+only, and the inventory note names all three. With the leak removed the audit
+range is 135-239 characters, not 135-528, and the per-card source total is
+925-1,289, not 925-1,360.
+
+Attribution keeps the source's own account of itself. Forty-four origins name a
+public work; eight cite two works in `origin.works` (T01, T07, T08, T17, T27,
+T37, T38, T43). T17's Project Aristotle is the internal Google study with no
+published report, so the record prints the note saying so beside Duhigg's 2016
+New York Times Magazine account, which is a reader's way in and a checkable
+work. A note attached to a named work is still not printed by the shared
+citation helpers - the note-only entry is the form that survives all four
+surfaces - which is the one shape this deck deliberately keeps.
+
+Budget is measured at the end, not assumed: `npm run check:fit` reports 44 team
+cards, both faces, zero OVER and zero TIGHT; the worst recto is T04 and T38 at
+row 461, the worst verso T01 at 447, against a safe row of 468.75. The deck's
+PDF is 88 pages and 479,152 bytes at sha256
+`482e7fc20698f6fb98a4d2c0312c9337170b72b1fbff5aa96d9658ec20799d47`,
+byte-identical on rebuild; all six earlier decks rebuild to their baselines.
+`scripts/test/team.test.mjs` adds six tests, for a suite of 98.
+
+The web index lists seven decks on this branch, which is correct here and not
+shippable until the branch is merged. No merge or push is requested without the
+person's word.

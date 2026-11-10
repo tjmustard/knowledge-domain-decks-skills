@@ -1,0 +1,37 @@
+{
+  "id": "T42",
+  "sourceCardNo": "Card 42",
+  "name": "Eisenhower Matrix for Technical Debt Prioritization",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "The engineering team spends its sprints responding to immediate firefighting, alerts, and Slack messages; foundational refactoring and system improvements are neglected for quarters at a time.",
+  "schematic": "Urgency-and-importance quadrant",
+  "script": {
+    "label": "Quadrant II Reclamation",
+    "text": "\"Our sprints have been consumed by urgent operational firefighting (Quadrant I and III) at the expense of core system resilience (Quadrant II). We will reserve 20% of every sprint's capacity exclusively for non-urgent, high-importance engineering work: addressing structural technical debt, automating test suites, and refining deployment pipelines.\""
+  },
+  "audit": [
+    "Was twenty percent of sprint capacity spent on stabilization?",
+    "Did urgent production alerts fall after the refactoring?"
+  ],
+  "auditFull": [
+    "Was 20% of engineering sprint capacity committed and delivered on system stabilization tickets?",
+    "Did the rate of urgent production alerts decrease as a result of preventative refactoring?"
+  ],
+  "foundation": "Originating from Dwight D. Eisenhower and popularized by Stephen Covey, this matrix partitions work by Urgency and Importance. In engineering, unaddressed Quadrant II tasks (Important but Not Urgent, such as architecture updates and test tooling) are constantly postponed by Quadrant III distractions (Urgent but Not Important meetings and triage requests).",
+  "origin": {
+    "authors": [
+      "Stephen R. Covey"
+    ],
+    "year": 1989,
+    "title": "The 7 Habits of Highly Effective People",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

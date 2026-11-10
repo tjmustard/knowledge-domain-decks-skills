@@ -381,7 +381,7 @@ Every card is a script a manager can run: the friction symptom that says this is
 - Did every squad member contribute at least once during sprint planning and retrospective discussions?
 - Has the variance in speaking time across squad members declined toward an even distribution?
 
-**Source.** Google's Project Aristotle (2012-2015); the study is internal and no primary report was published.
+**Source.** Google People Analytics, Project Aristotle (2012-2015); the study is internal and no primary report was published. Charles Duhigg (2016). *What Google Learned From Its Quest to Build the Perfect Team*. The New York Times Magazine.
 
 ### T18 — Clark’s Four Stages of Psychological Safety
 
@@ -736,3 +736,247 @@ Every card is a script a manager can run: the friction symptom that says this is
 - Has post-meeting hallway complaints dropped to zero?
 
 **Source.** Patrick Lencioni (2002). *The Five Dysfunctions of a Team: A Leadership Fable*. Jossey-Bass.
+
+## Operational Rhythms, Delegation & Cognitive Architecture
+
+### T34 — Delegation Poker & Seven Levels of Authority
+
+**Friction diagnostic.** An engineer escalates routine decisions to the manager out of caution; or conversely, an engineer deploys a breaking architectural change without team awareness or sign-off.
+
+**Schematic.** Seven-level authority continuum
+
+**Manager script.** Delegation Clarity
+
+"We have ambiguous authority boundaries regarding production database migrations. We will use the Seven Levels of Authority. For minor index updates, the authority level is Level 7: Delegate—execute without checking. For schema modifications, it is Level 4: Agree—we must come to a shared consensus. For core data migrations, it is Level 3: Consult—I will make the final decision after your input."
+
+**Day-14 checks.**
+- Did the manager stay out of decisions at level five or above?
+- Did engineers decide autonomously inside their agreed bounds?
+
+**Foundation.** Jurgen Appelo’s (Management 3.0, 2011) Delegation Poker operationalizes delegation as a continuum rather than a binary switch across seven levels: Tell, Sell, Consult, Agree, Advise, Inquire, and Delegate. This clarifies control and autonomy boundaries, reducing micromanagement and abandonment.
+
+**Checks as written.**
+- Did the manager refrain from intervening in decisions categorized at Level 5 or higher?
+- Did engineers make autonomous architectural decisions within designated bounds without manager escalation?
+
+**Source.** Jurgen Appelo (2011). *Management 3.0: Leading Agile Developers, Developing Agile Leaders*. Addison-Wesley.
+
+### T35 — Whitmore’s GROW Coaching Model
+
+**Friction diagnostic.** Engineers enter 1-on-1s expecting the manager to solve their technical or team challenges; the manager becomes a bottleneck for tactical execution.
+
+**Schematic.** GROW arc
+
+**Manager script.** Coaching Facilitation
+
+"Let us walk through this blocker using the GROW framework. What is the specific operational outcome you want to see here? (Goal). What have you tried so far, and where is the technical barrier? (Current Reality). If access or legacy code constraints were removed, what solutions exist? (Options). What concrete step will you take by Friday? (Will)."
+
+**Day-14 checks.**
+- Did the engineer carry out their own chosen solution unaided?
+- Have that engineer's escalation requests fallen in later one-to-ones?
+
+**Foundation.** Sir John Whitmore’s (1992) GROW model (Goal, Current Reality, Options, Will/Way Forward) is grounded in self-directed learning theory. It shifts management interactions from prescriptive direction to coaching inquiry, building self-efficacy (Bandura, 1977) and critical problem-solving skills.
+
+**Checks as written.**
+- Did the engineer implement their self-selected solution without managerial intervention?
+- Have tactical escalation requests from this engineer dropped in subsequent 1-on-1s?
+
+**Source.** John Whitmore (1992). *Coaching for Performance*. Nicholas Brealey.
+
+### T36 — Graham’s Maker vs. Manager Schedules
+
+**Friction diagnostic.** Engineers report low coding velocity despite high hours; commit graphs show activity only late at night; team members complain of fragmented attention caused by mid-morning or mid-afternoon syncs.
+
+**Schematic.** Maker-to-manager continuum
+
+**Manager script.** Maker Schedule Protection
+
+"Our engineering calendar shows fractured Maker schedules. Effective immediately, we are establishing uninterrupted focus blocks. Tuesdays and Thursdays will be zero-meeting days. All sync standups, 1-on-1s, and planning sessions are restricted to Monday and Wednesday mornings. Deep work time will be protected."
+
+**Day-14 checks.**
+- Did developers get uninterrupted focus blocks past four hours?
+- Did commits move from late-night bursts to midday focus?
+
+**Foundation.** Paul Graham’s 2009 thesis delineates the fundamental conflict between two operating modes: the Manager Schedule (divided into discrete 30-minute blocks) and the Maker Schedule (requiring uninterrupted four-hour blocks to maintain deep flow and hold mental models in working memory).
+
+**Checks as written.**
+- Did the average uninterrupted focus block for developers increase past four continuous hours?
+- Did GitHub commit activity transition from late-night bursts to consistent midday focus hours?
+
+**Source.** Paul Graham (2009). *Maker's Schedule, Manager's Schedule*. paulgraham.com.
+
+### T37 — Cognitive Load Theory in Software Teams
+
+**Friction diagnostic.** Developers spend hours configuring local environments, dealing with flaky test suites, or chasing down complex deployment scripts; delivery of straightforward features takes weeks.
+
+**Schematic.** Cognitive-load radar
+
+**Manager script.** Extraneous Load Reduction
+
+"The time required to run our integration suite locally has become an extraneous cognitive burden. We are pausing new feature development for 72 hours. We will containerize the local dev setup and stabilize flaky integration tests to return our cognitive focus to building core product features."
+
+**Day-14 checks.**
+- Did local test suite runtimes fall by more than half?
+- Did cycle time from pull request to staging improve?
+
+**Foundation.** John Sweller’s (1988) Cognitive Load Theory, as adapted to software engineering by Skelton and Pais, identifies three loads: Intrinsic (inherent complexity of the domain), Extraneous (friction of the development environment, tooling, or deployment), and Germane (mental effort dedicated to business logic). Extraneous load must be minimized to maximize Germane problem-solving.
+
+**Checks as written.**
+- Did local test suite runtimes drop by more than 50%?
+- Did engineering cycle time from pull request creation to staging deployment improve?
+
+**Source.** John Sweller (1988). *Cognitive Load During Problem Solving: Effects on Learning*. Cognitive Science. Matthew Skelton & Manuel Pais (2019). *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. IT Revolution Press.
+
+### T38 — Asynchronous Working Agreements & GitLab Remote Fluency
+
+**Friction diagnostic.** Decisions are made in undocumented ad-hoc video calls, leaving distributed or remote members misaligned; engineers are constantly interrupted by "@here" or "@channel" mentions on Slack.
+
+**Schematic.** Synchronous-to-asynchronous continuum
+
+**Manager script.** Async-First Mandate
+
+"We are spending excessive time in status syncs that could be handled asynchronously. Moving forward, synchronous meetings require a shared document with context and options linked twenty-four hours in advance. If a meeting lacks a documented agenda, it is automatically cancelled. Real-time meetings are reserved strictly for high-context debate and social connection."
+
+**Day-14 checks.**
+- Did scheduled synchronous meeting time fall across the squad?
+- Are decisions in versioned ADRs rather than Slack threads?
+
+**Foundation.** Grounded in media richness theory (Daft & Lengel, 1986) and distributed software collaboration models pioneered by GitLab and Basecamp, this practice prioritizes written, asynchronous-first communication over ephemeral synchronous meetings. This democratizes participation across time zones and creates an auditable record of engineering decisions.
+
+**Checks as written.**
+- Did total scheduled synchronous meeting time decrease across the engineering squad?
+- Are critical decisions documented in version-controlled architectural decision records (ADRs) rather than Slack threads?
+
+**Source.** Richard L. Daft & Robert H. Lengel (1986). *Organizational Information Requirements, Media Richness and Structural Design*. Management Science. GitLab (2024). *The GitLab Handbook*. GitLab Inc.
+
+### T39 — Loehr & Schwartz’s Energy Management Audit
+
+**Friction diagnostic.** Engineers submitting low-quality pull requests with careless bugs late on Friday nights; team members showing chronic irritability in retrospectives; declining participation in sprint events.
+
+**Schematic.** Four-domain energy radar
+
+**Manager script.** Energy Depletion Check-In
+
+"The team has operated under sustained deployment pressure for three straight iterations. Extended hours do not yield increased software quality; they produce fragile code and cognitive burnout. We are running an operational energy audit. Each person will identify one non-essential operational obligation to drop this sprint. High-severity on-call pages will trigger immediate compensatory time off."
+
+**Day-14 checks.**
+- Were after-hours pull requests and on-call alerts reduced?
+- Did engineers take compensatory rest after severe incidents?
+
+**Foundation.** Jim Loehr and Tony Schwartz’s (2003) The Power of Full Engagement establishes that high performance requires managing energy rather than time across four dimensions: Physical, Emotional, Mental, and Spiritual. Sustainable pacing prevents catastrophic cognitive burnout and systemic attrition.
+
+**Checks as written.**
+- Were after-hours PR submissions and on-call alerts reduced?
+- Did engineers log compensatory rest hours following high-severity incidents?
+
+**Source.** Jim Loehr & Tony Schwartz (2003). *The Power of Full Engagement*. The Free Press.
+
+### T40 — Cynefin Framework for Operational Decision Making
+
+**Friction diagnostic.** Leaders demand detailed, six-month predictive roadmaps for emergent, exploratory research projects (treating Complex as Complicated); teams run open-ended brainstorms in the middle of a critical outage (treating Chaotic as Complex).
+
+**Schematic.** Four-domain decision quadrant
+
+**Manager script.** Context-Domain Alignment
+
+"We are debating this research spike using the wrong operational mindset. This is not a Complicated domain where an expert can predict the ideal architecture in advance; it is a Complex domain. We cannot plan our way through it upfront. We will launch three lightweight spikes this week, probe system responses, and let the architecture emerge from live telemetry."
+
+**Day-14 checks.**
+- Did the team run quick spikes before choosing the architecture?
+- Were outages handled decisively without consensus meetings?
+
+**Foundation.** Dave Snowden’s (1999) Cynefin framework divides operational contexts into five domains: Clear (best practice), Complicated (expert analysis), Complex (probe-sense-respond), Chaotic (act-sense-respond), and Confused/Disorder. Pathologies emerge when applying "best practices" to Complex software engineering environments.
+
+**Checks as written.**
+- Did the engineering team complete quick exploratory spikes before committing to a final architecture?
+- Were incident response procedures executed quickly and decisively during outages without prolonged consensus meetings?
+
+**Source.** David J. Snowden & Mary E. Boone (2007). *A Leader's Framework for Decision Making*. Harvard Business Review.
+
+### T41 — Hersey-Blanchard Situational Leadership Theory (SLII)
+
+**Friction diagnostic.** A senior engineer feels micromanaged when given step-by-step task instructions (Directing applied to D4); a new junior engineer feels abandoned and overwhelmed when told to "just figure out" a complex codebase (Delegating applied to D1).
+
+**Schematic.** Four-style leadership continuum
+
+**Manager script.** Situational Style Calibration
+
+"You are tackling our distributed event pipeline, which is a new domain for you (D1/D2). I will not leave you to navigate this alone, nor will I take over the keyboard. For the first two sprints, we will use a Directing-Coaching cadence: we will pair daily on architecture reviews and outline explicit task parameters until you feel confident in the codebase."
+
+**Day-14 checks.**
+- Has the junior engineer shipped clean pull requests unaided?
+- Has the senior kept technical ownership without micromanagement?
+
+**Foundation.** Paul Hersey and Ken Blanchard’s (1969, 1985) model matches leadership behaviors (Directing, Coaching, Supporting, Delegating) to employee developmental maturity across Competence and Commitment (D1: Enthusiastic Beginner, D2: Disillusioned Learner, D3: Reluctant Contributor, D4: Peak Performer).
+
+**Checks as written.**
+- Has the junior engineer independently submitted pull requests with clean design patterns?
+- Has the senior engineer retained autonomous technical ownership without micromanagement escalations?
+
+**Source.** Paul Hersey & Kenneth H. Blanchard (1969). *Life Cycle Theory of Leadership*. Training and Development Journal.
+
+### T42 — Eisenhower Matrix for Technical Debt Prioritization
+
+**Friction diagnostic.** The engineering team spends its sprints responding to immediate firefighting, alerts, and Slack messages; foundational refactoring and system improvements are neglected for quarters at a time.
+
+**Schematic.** Urgency-and-importance quadrant
+
+**Manager script.** Quadrant II Reclamation
+
+"Our sprints have been consumed by urgent operational firefighting (Quadrant I and III) at the expense of core system resilience (Quadrant II). We will reserve 20% of every sprint's capacity exclusively for non-urgent, high-importance engineering work: addressing structural technical debt, automating test suites, and refining deployment pipelines."
+
+**Day-14 checks.**
+- Was twenty percent of sprint capacity spent on stabilization?
+- Did urgent production alerts fall after the refactoring?
+
+**Foundation.** Originating from Dwight D. Eisenhower and popularized by Stephen Covey, this matrix partitions work by Urgency and Importance. In engineering, unaddressed Quadrant II tasks (Important but Not Urgent, such as architecture updates and test tooling) are constantly postponed by Quadrant III distractions (Urgent but Not Important meetings and triage requests).
+
+**Checks as written.**
+- Was 20% of engineering sprint capacity committed and delivered on system stabilization tickets?
+- Did the rate of urgent production alerts decrease as a result of preventative refactoring?
+
+**Source.** Stephen R. Covey (1989). *The 7 Habits of Highly Effective People*. The Free Press.
+
+### T43 — Grove & Doerr’s OKR Cascading Framework
+
+**Friction diagnostic.** Engineers deliver dozens of tickets without understanding their business impact; teams celebrate hitting output milestones while core product metrics remain stagnant.
+
+**Schematic.** Three-level cascade arc
+
+**Manager script.** Outcome Over Output Alignment
+
+"Our sprint delivery shows high output, but our business impact is flat. Completing eight Jira tickets is an output; reducing checkout latency by 150 milliseconds is an outcome. We are defining our team OKRs around quantitative outcomes. If a deliverable does not move our key result metric, it will not enter the sprint backlog."
+
+**Day-14 checks.**
+- Can each contributor name the metric their pull request moves?
+- Did the squad prune backlog items that map to no OKR?
+
+**Foundation.** Conceptualized by Andy Grove at Intel (High Output Management, 1983) and expanded by John Doerr (Measure What Matters, 2018), Objectives and Key Results (OKRs) link ambitious strategic goals with measurable, outcome-based markers. The psychological mechanism relies on public goal commitment and decoupling goals from performance compensation to encourage aggressive risk-taking.
+
+**Checks as written.**
+- Can each squad contributor clearly articulate the key performance metric their current pull request moves?
+- Did the squad prune backlog items that did not map directly to primary team OKRs?
+
+**Source.** Andrew S. Grove (1983). *High Output Management*. Random House. John Doerr (2018). *Measure What Matters*. Portfolio/Penguin.
+
+### T44 — Spotify Cadence & Decoupled Deployments
+
+**Friction diagnostic.** Teams are blocked waiting for other squads to test or approve code; multiple squads attempt massive, simultaneous end-of-quarter deployments that fail in production.
+
+**Schematic.** Cadence continuum
+
+**Manager script.** Cadence Decoupling
+
+"Our release cycle is stalled because four teams are synchronizing deployments on the same date. We are separating release cadence from code deployments. Squads will use feature flags and well-defined API boundaries to deploy to production independently. We will sync asynchronously across chapters on shared interface contracts."
+
+**Day-14 checks.**
+- Did the squad deploy to production without a release train?
+- Are dependencies handled with feature flags and versioned APIs?
+
+**Foundation.** Developed by Henrik Kniberg and Anders Ivarsson (2012), the Spotify operational rhythm decouples system release cycles from feature alignment through an integrated sync cadence (Tribes, Chapters, Guilds). By aligning on strategic priorities while decoupling deployment cadence, squads move fast without cross-team dependencies.
+
+**Checks as written.**
+- Did the squad deploy code changes to production independently without scheduling a cross-team release train?
+- Are cross-team dependencies managed cleanly via feature flags and versioned API schemas?
+
+**Source.** Henrik Kniberg & Anders Ivarsson (2012). *Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds*. Crisp.

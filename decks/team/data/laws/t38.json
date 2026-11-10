@@ -1,0 +1,50 @@
+{
+  "id": "T38",
+  "sourceCardNo": "Card 38",
+  "name": "Asynchronous Working Agreements & GitLab Remote Fluency",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Decisions are made in undocumented ad-hoc video calls, leaving distributed or remote members misaligned; engineers are constantly interrupted by \"@here\" or \"@channel\" mentions on Slack.",
+  "schematic": "Synchronous-to-asynchronous continuum",
+  "script": {
+    "label": "Async-First Mandate",
+    "text": "\"We are spending excessive time in status syncs that could be handled asynchronously. Moving forward, synchronous meetings require a shared document with context and options linked twenty-four hours in advance. If a meeting lacks a documented agenda, it is automatically cancelled. Real-time meetings are reserved strictly for high-context debate and social connection.\""
+  },
+  "audit": [
+    "Did scheduled synchronous meeting time fall across the squad?",
+    "Are decisions in versioned ADRs rather than Slack threads?"
+  ],
+  "auditFull": [
+    "Did total scheduled synchronous meeting time decrease across the engineering squad?",
+    "Are critical decisions documented in version-controlled architectural decision records (ADRs) rather than Slack threads?"
+  ],
+  "foundation": "Grounded in media richness theory (Daft & Lengel, 1986) and distributed software collaboration models pioneered by GitLab and Basecamp, this practice prioritizes written, asynchronous-first communication over ephemeral synchronous meetings. This democratizes participation across time zones and creates an auditable record of engineering decisions.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Richard L. Daft",
+          "Robert H. Lengel"
+        ],
+        "year": 1986,
+        "title": "Organizational Information Requirements, Media Richness and Structural Design",
+        "publication": "Management Science"
+      },
+      {
+        "authors": [
+          "GitLab"
+        ],
+        "year": 2024,
+        "title": "The GitLab Handbook",
+        "publication": "GitLab Inc."
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "T34",
+  "sourceCardNo": "Card 34",
+  "name": "Delegation Poker & Seven Levels of Authority",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "An engineer escalates routine decisions to the manager out of caution; or conversely, an engineer deploys a breaking architectural change without team awareness or sign-off.",
+  "schematic": "Seven-level authority continuum",
+  "script": {
+    "label": "Delegation Clarity",
+    "text": "\"We have ambiguous authority boundaries regarding production database migrations. We will use the Seven Levels of Authority. For minor index updates, the authority level is Level 7: Delegate—execute without checking. For schema modifications, it is Level 4: Agree—we must come to a shared consensus. For core data migrations, it is Level 3: Consult—I will make the final decision after your input.\""
+  },
+  "audit": [
+    "Did the manager stay out of decisions at level five or above?",
+    "Did engineers decide autonomously inside their agreed bounds?"
+  ],
+  "auditFull": [
+    "Did the manager refrain from intervening in decisions categorized at Level 5 or higher?",
+    "Did engineers make autonomous architectural decisions within designated bounds without manager escalation?"
+  ],
+  "foundation": "Jurgen Appelo’s (Management 3.0, 2011) Delegation Poker operationalizes delegation as a continuum rather than a binary switch across seven levels: Tell, Sell, Consult, Agree, Advise, Inquire, and Delegate. This clarifies control and autonomy boundaries, reducing micromanagement and abandonment.",
+  "origin": {
+    "authors": [
+      "Jurgen Appelo"
+    ],
+    "year": 2011,
+    "title": "Management 3.0: Leading Agile Developers, Developing Agile Leaders",
+    "publication": "Addison-Wesley"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 7,
+      "mark": 4
+    }
+  }
+}

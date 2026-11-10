@@ -1,0 +1,38 @@
+{
+  "id": "T39",
+  "sourceCardNo": "Card 39",
+  "name": "Loehr & Schwartz’s Energy Management Audit",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Engineers submitting low-quality pull requests with careless bugs late on Friday nights; team members showing chronic irritability in retrospectives; declining participation in sprint events.",
+  "schematic": "Four-domain energy radar",
+  "script": {
+    "label": "Energy Depletion Check-In",
+    "text": "\"The team has operated under sustained deployment pressure for three straight iterations. Extended hours do not yield increased software quality; they produce fragile code and cognitive burnout. We are running an operational energy audit. Each person will identify one non-essential operational obligation to drop this sprint. High-severity on-call pages will trigger immediate compensatory time off.\""
+  },
+  "audit": [
+    "Were after-hours pull requests and on-call alerts reduced?",
+    "Did engineers take compensatory rest after severe incidents?"
+  ],
+  "auditFull": [
+    "Were after-hours PR submissions and on-call alerts reduced?",
+    "Did engineers log compensatory rest hours following high-severity incidents?"
+  ],
+  "foundation": "Jim Loehr and Tony Schwartz’s (2003) The Power of Full Engagement establishes that high performance requires managing energy rather than time across four dimensions: Physical, Emotional, Mental, and Spiritual. Sustainable pacing prevents catastrophic cognitive burnout and systemic attrition.",
+  "origin": {
+    "authors": [
+      "Jim Loehr",
+      "Tony Schwartz"
+    ],
+    "year": 2003,
+    "title": "The Power of Full Engagement",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

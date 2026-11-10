@@ -1,0 +1,37 @@
+{
+  "id": "T36",
+  "sourceCardNo": "Card 36",
+  "name": "Graham’s Maker vs. Manager Schedules",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Engineers report low coding velocity despite high hours; commit graphs show activity only late at night; team members complain of fragmented attention caused by mid-morning or mid-afternoon syncs.",
+  "schematic": "Maker-to-manager continuum",
+  "script": {
+    "label": "Maker Schedule Protection",
+    "text": "\"Our engineering calendar shows fractured Maker schedules. Effective immediately, we are establishing uninterrupted focus blocks. Tuesdays and Thursdays will be zero-meeting days. All sync standups, 1-on-1s, and planning sessions are restricted to Monday and Wednesday mornings. Deep work time will be protected.\""
+  },
+  "audit": [
+    "Did developers get uninterrupted focus blocks past four hours?",
+    "Did commits move from late-night bursts to midday focus?"
+  ],
+  "auditFull": [
+    "Did the average uninterrupted focus block for developers increase past four continuous hours?",
+    "Did GitHub commit activity transition from late-night bursts to consistent midday focus hours?"
+  ],
+  "foundation": "Paul Graham’s 2009 thesis delineates the fundamental conflict between two operating modes: the Manager Schedule (divided into discrete 30-minute blocks) and the Maker Schedule (requiring uninterrupted four-hour blocks to maintain deep flow and hold mental models in working memory).",
+  "origin": {
+    "authors": [
+      "Paul Graham"
+    ],
+    "year": 2009,
+    "title": "Maker's Schedule, Manager's Schedule",
+    "publication": "paulgraham.com"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 2,
+      "mark": 1
+    }
+  }
+}

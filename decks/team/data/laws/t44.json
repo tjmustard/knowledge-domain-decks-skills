@@ -1,0 +1,38 @@
+{
+  "id": "T44",
+  "sourceCardNo": "Card 44",
+  "name": "Spotify Cadence & Decoupled Deployments",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Teams are blocked waiting for other squads to test or approve code; multiple squads attempt massive, simultaneous end-of-quarter deployments that fail in production.",
+  "schematic": "Cadence continuum",
+  "script": {
+    "label": "Cadence Decoupling",
+    "text": "\"Our release cycle is stalled because four teams are synchronizing deployments on the same date. We are separating release cadence from code deployments. Squads will use feature flags and well-defined API boundaries to deploy to production independently. We will sync asynchronously across chapters on shared interface contracts.\""
+  },
+  "audit": [
+    "Did the squad deploy to production without a release train?",
+    "Are dependencies handled with feature flags and versioned APIs?"
+  ],
+  "auditFull": [
+    "Did the squad deploy code changes to production independently without scheduling a cross-team release train?",
+    "Are cross-team dependencies managed cleanly via feature flags and versioned API schemas?"
+  ],
+  "foundation": "Developed by Henrik Kniberg and Anders Ivarsson (2012), the Spotify operational rhythm decouples system release cycles from feature alignment through an integrated sync cadence (Tribes, Chapters, Guilds). By aligning on strategic priorities while decoupling deployment cadence, squads move fast without cross-team dependencies.",
+  "origin": {
+    "authors": [
+      "Henrik Kniberg",
+      "Anders Ivarsson"
+    ],
+    "year": 2012,
+    "title": "Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds",
+    "publication": "Crisp"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

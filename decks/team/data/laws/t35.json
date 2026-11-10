@@ -1,0 +1,37 @@
+{
+  "id": "T35",
+  "sourceCardNo": "Card 35",
+  "name": "Whitmore’s GROW Coaching Model",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Engineers enter 1-on-1s expecting the manager to solve their technical or team challenges; the manager becomes a bottleneck for tactical execution.",
+  "schematic": "GROW arc",
+  "script": {
+    "label": "Coaching Facilitation",
+    "text": "\"Let us walk through this blocker using the GROW framework. What is the specific operational outcome you want to see here? (Goal). What have you tried so far, and where is the technical barrier? (Current Reality). If access or legacy code constraints were removed, what solutions exist? (Options). What concrete step will you take by Friday? (Will).\""
+  },
+  "audit": [
+    "Did the engineer carry out their own chosen solution unaided?",
+    "Have that engineer's escalation requests fallen in later one-to-ones?"
+  ],
+  "auditFull": [
+    "Did the engineer implement their self-selected solution without managerial intervention?",
+    "Have tactical escalation requests from this engineer dropped in subsequent 1-on-1s?"
+  ],
+  "foundation": "Sir John Whitmore’s (1992) GROW model (Goal, Current Reality, Options, Will/Way Forward) is grounded in self-directed learning theory. It shifts management interactions from prescriptive direction to coaching inquiry, building self-efficacy (Bandura, 1977) and critical problem-solving skills.",
+  "origin": {
+    "authors": [
+      "John Whitmore"
+    ],
+    "year": 1992,
+    "title": "Coaching for Performance",
+    "publication": "Nicholas Brealey"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

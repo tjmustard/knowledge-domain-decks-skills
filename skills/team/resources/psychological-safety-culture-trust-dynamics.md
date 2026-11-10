@@ -8,7 +8,8 @@
 
 - **Friction diagnostic:** Zero production errors or failures recorded over extended periods; silence in retrospectives; juniors hesitating to question senior architectural assumptions; sudden discovery of systemic defects near release deadlines.
 - **Schematic:** Five-axis safety radar
-- **Manager script:** [object Object]
+- **Manager script:** Vulnerability Normalization
+  "Looking through our retro notes, we have not logged a single system failure or mistake in three sprints. In distributed software engineering, silence is not indicative of perfection; it is a leading indicator of risk aversion. As engineering lead, I made an architectural miscalculation on the caching layer last week that elevated latency. I am opening the floor: what system failures or uncertainties are currently remaining unaddressed?"
 - **Day-14 checks:**
   - Do all members answer no to 'a mistake here is held against you'?
   - Did a junior engineer challenge a senior's pull request in public?
@@ -22,7 +23,8 @@
 
 - **Friction diagnostic:** "Messengers are shot" when incidents occur; cross-functional silos refuse to share deployment data; failures result in bureaucratic procedure expansions rather than system automation.
 - **Schematic:** Culture continuum
-- **Manager script:** [object Object]
+- **Manager script:** Generative Inquiry Protocol
+  "The incident review for the recent outage showed that information was withheld due to fear of blame. In this engineering unit, failure is treated as systemic diagnostic data, not personal error. We will trace the socio-technical conditions that allowed this configuration error to deploy without human gatekeeping."
 - **Day-14 checks:**
   - Do incident notices go public within fifteen minutes, unfiltered?
   - Do fixes come from linters and CI gates, not manual sign-off?
@@ -36,7 +38,8 @@
 
 - **Friction diagnostic:** Team members maintain an illusion of effortless competence; defensive pushback occurs when code quality concerns are flagged; isolationism during complex debugging sessions.
 - **Schematic:** Trust-signal continuum
-- **Manager script:** [object Object]
+- **Manager script:** Vulnerability Signal Initiation
+  "I reviewed the performance profile of our core event broker. I do not have a working model for why this latency spike is happening under load. I need technical help. Who can pair with me to audit this trace and find where my mental model broke down?"
 - **Day-14 checks:**
   - Did someone say 'I don't understand this component' and find a pair?
   - Have reviews become learning dialogues, not defensive negotiation?
@@ -50,7 +53,8 @@
 
 - **Friction diagnostic:** High individual technical brilliance accompanied by peer distrust; suspicion regarding team members playing political games for promotions; withholding help to secure personal velocity metrics.
 - **Schematic:** Trust-equation radar
-- **Manager script:** [object Object]
+- **Manager script:** Self-Orientation Calibration
+  "Our code reviews and technical roadmap planning show high Credibility and Reliability, but trust is being degraded by perceived high Self-Orientation. When engineers prioritize their individual performance metrics over team support, collaborative throughput suffers. We will recalibrate sprint evaluations to prioritize cross-functional enablement."
 - **Day-14 checks:**
   - Did people unblock peers' reviews before their own secondary work?
   - Did roadmaps carry shared maintenance without executive friction?
@@ -64,7 +68,8 @@
 
 - **Friction diagnostic:** The company claims to value "engineering quality" (espoused value), but rewards engineers who cut tests to meet aggressive dates (underlying assumption); team handbooks celebrate work-life balance while managers ping engineers late at night.
 - **Schematic:** Three-level culture continuum
-- **Manager script:** [object Object]
+- **Manager script:** Cultural Incongruence Audit
+  "Our stated value is 'test-driven stability,' but our operational reality is that engineers who skip unit testing to hit dates are praised, while those fixing technical debt are questioned. We are addressing this discrepancy. We will freeze new feature development for this sprint to address structural technical debt."
 - **Day-14 checks:**
   - Does sprint planning fund bug and debt work without pushback?
   - Are after-hours messages stopped or flagged non-urgent?
@@ -78,7 +83,8 @@
 
 - **Friction diagnostic:** Two senior engineers dominate 80% of standup and retrospective discussions; quieter developers do not participate; commitments made during sprint planning routinely drop without notice.
 - **Schematic:** Five-norm safety radar
-- **Manager script:** [object Object]
+- **Manager script:** Conversational Equalization
+  "Our retrospective interaction metrics show unbalanced participation. Moving forward, we will implement structured turn-taking for architectural RFC reviews. Each participant will have two minutes of uninterrupted time to contribute before open floor debate begins. We will start with those who have contributed the least during the current session."
 - **Day-14 checks:**
   - Did everyone speak at least once in planning and retrospective?
   - Is speaking time spreading more evenly across the squad?
@@ -86,13 +92,14 @@
 - **Checks as written:**
   - Did every squad member contribute at least once during sprint planning and retrospective discussions?
   - Has the variance in speaking time across squad members declined toward an even distribution?
-- **Source:** Google's Project Aristotle (2012-2015); the study is internal and no primary report was published.
+- **Source:** Google People Analytics, Project Aristotle (2012-2015); the study is internal and no primary report was published. Charles Duhigg (2016), *What Google Learned From Its Quest to Build the Perfect Team*.
 
 ## T18 — Clark’s Four Stages of Psychological Safety
 
 - **Friction diagnostic:** The team tolerates questions (Learner Safety) and executes tasks (Contributor Safety), but immediately shuts down challenges to legacy code patterns or senior leadership roadmaps (lack of Challenger Safety).
 - **Schematic:** Four-stage safety continuum
-- **Manager script:** [object Object]
+- **Manager script:** Challenger Safety Facilitation
+  "The squad has proven its execution capability, but we have stopped innovating our internal architectural primitives. I am challenging this team to challenge the current design. In this meeting, each developer will identify one practice in our deployment pipeline that should be dismantled. The most disruptive, valid critique will be prioritized."
 - **Day-14 checks:**
   - Did the team argue an RFC that challenges legacy patterns?
   - Did juniors disagree with leadership without friction?
@@ -106,7 +113,8 @@
 
 - **Friction diagnostic:** Developers trust a colleague's technical competence (Ability), but suspect they will claim exclusive credit for a joint project (low Benevolence), or catch them fabricating testing coverage numbers (low Integrity).
 - **Schematic:** Integrative-trust radar
-- **Manager script:** [object Object]
+- **Manager script:** Integrity & Benevolence Alignment
+  "We have high technical competence in our squad, but our cross-functional alignment is fragile. For our code-sharing initiative to work, we need full transparency. We will conduct pair-programming rotations across the service layer to eliminate silos and verify that code ownership remains shared."
 - **Day-14 checks:**
   - Did reviews explain their criticism rather than dismiss it?
   - Are wins and merges credited to both pairing partners?
@@ -120,7 +128,8 @@
 
 - **Friction diagnostic:** Developers complain of heavy documentation procedures in a fast-paced environment (Hierarchy clash with Adhocracy) or lack of delivery focus in an operational scaling sprint (Clan clash with Market).
 - **Schematic:** Competing-values quadrant
-- **Manager script:** [object Object]
+- **Manager script:** Archetype Realignment
+  "Our delivery friction is caused by a misalignment of our operational modes. We are treating a critical uptime reliability phase (Hierarchy) with an exploratory prototype mentality (Adhocracy). For the next month, operational rigor, logging standards, and monitoring compliance take precedence over novel prototyping."
 - **Day-14 checks:**
   - Are runbooks, alerts and incident guides kept current?
   - Was exploratory work held back during stabilization?
@@ -134,7 +143,8 @@
 
 - **Friction diagnostic:** Developers react with hostility to sudden code reassignments (Autonomy threat), unexpected changes in team leadership (Certainty/Status threat), or uneven on-call shifts (Fairness threat).
 - **Schematic:** SCARF radar
-- **Manager script:** [object Object]
+- **Manager script:** SCARF Threat Mitigation
+  "The upcoming architectural refactor introduces operational uncertainty. I want to emphasize our boundaries: every engineer retains complete Autonomy over implementation designs within their service. On-call rotations will be audited to ensure complete Fairness. Let's discuss where anyone feels their autonomy or technical continuity is constrained."
 - **Day-14 checks:**
   - Did defensive replies to architecture feedback fall?
   - Is the on-call rota seen as fair by juniors and seniors?
@@ -148,7 +158,8 @@
 
 - **Friction diagnostic:** Sudden disengagement from an exceptional engineer; reluctance to participate in voluntary mentoring; abrupt shift from high commitment to "quiet quitting" or strict compliance with minimal requirements.
 - **Schematic:** Psychological-contract continuum
-- **Manager script:** [object Object]
+- **Manager script:** Contract Repair 1-on-1
+  "I have observed a shift in your energy over the past three sprints. Typically, this points to an unaddressed breach in our operating expectations—perhaps around career progression, technical ownership, or workload balancing. I want to uncover where our operational reality has diverged from your expectations."
 - **Day-14 checks:**
   - Has the engineer re-joined roadmap and design discussions?
   - Is there a written development plan restoring the balance?

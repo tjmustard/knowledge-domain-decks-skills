@@ -719,7 +719,23 @@ window.TEAM_DECK = {
       ],
       "foundation": "Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.",
       "origin": {
-        "note": "Google's Project Aristotle (2012-2015); the study is internal and no primary report was published.",
+        "works": [
+          {
+            "note": "Google People Analytics, Project Aristotle (2012-2015); the study is internal and no primary report was published.",
+            "authorsLabel": "",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Charles Duhigg"
+            ],
+            "year": 2016,
+            "title": "What Google Learned From Its Quest to Build the Perfect Team",
+            "publication": "The New York Times Magazine",
+            "authorsLabel": "Charles Duhigg",
+            "titleStop": "."
+          }
+        ],
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -1393,6 +1409,500 @@ window.TEAM_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T34",
+      "sourceCardNo": "Card 34",
+      "name": "Delegation Poker & Seven Levels of Authority",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "An engineer escalates routine decisions to the manager out of caution; or conversely, an engineer deploys a breaking architectural change without team awareness or sign-off.",
+      "schematic": "Seven-level authority continuum",
+      "script": {
+        "label": "Delegation Clarity",
+        "text": "\"We have ambiguous authority boundaries regarding production database migrations. We will use the Seven Levels of Authority. For minor index updates, the authority level is Level 7: Delegate—execute without checking. For schema modifications, it is Level 4: Agree—we must come to a shared consensus. For core data migrations, it is Level 3: Consult—I will make the final decision after your input.\""
+      },
+      "audit": [
+        "Did the manager stay out of decisions at level five or above?",
+        "Did engineers decide autonomously inside their agreed bounds?"
+      ],
+      "auditFull": [
+        "Did the manager refrain from intervening in decisions categorized at Level 5 or higher?",
+        "Did engineers make autonomous architectural decisions within designated bounds without manager escalation?"
+      ],
+      "foundation": "Jurgen Appelo’s (Management 3.0, 2011) Delegation Poker operationalizes delegation as a continuum rather than a binary switch across seven levels: Tell, Sell, Consult, Agree, Advise, Inquire, and Delegate. This clarifies control and autonomy boundaries, reducing micromanagement and abandonment.",
+      "origin": {
+        "authors": [
+          "Jurgen Appelo"
+        ],
+        "year": 2011,
+        "title": "Management 3.0: Leading Agile Developers, Developing Agile Leaders",
+        "publication": "Addison-Wesley",
+        "authorsLabel": "Jurgen Appelo",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 7,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.3\" y1=\"198.2\" x2=\"66.7\" y2=\"187.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"122.7\" y1=\"155.1\" x2=\"107.7\" y2=\"136.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"172.4\" y1=\"131.1\" x2=\"167.1\" y2=\"107.7\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227.6\" y1=\"131.1\" x2=\"232.9\" y2=\"107.7\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"277.3\" y1=\"155.1\" x2=\"292.3\" y2=\"136.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311.7\" y1=\"198.2\" x2=\"333.3\" y2=\"187.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T35",
+      "sourceCardNo": "Card 35",
+      "name": "Whitmore’s GROW Coaching Model",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Engineers enter 1-on-1s expecting the manager to solve their technical or team challenges; the manager becomes a bottleneck for tactical execution.",
+      "schematic": "GROW arc",
+      "script": {
+        "label": "Coaching Facilitation",
+        "text": "\"Let us walk through this blocker using the GROW framework. What is the specific operational outcome you want to see here? (Goal). What have you tried so far, and where is the technical barrier? (Current Reality). If access or legacy code constraints were removed, what solutions exist? (Options). What concrete step will you take by Friday? (Will).\""
+      },
+      "audit": [
+        "Did the engineer carry out their own chosen solution unaided?",
+        "Have that engineer's escalation requests fallen in later one-to-ones?"
+      ],
+      "auditFull": [
+        "Did the engineer implement their self-selected solution without managerial intervention?",
+        "Have tactical escalation requests from this engineer dropped in subsequent 1-on-1s?"
+      ],
+      "foundation": "Sir John Whitmore’s (1992) GROW model (Goal, Current Reality, Options, Will/Way Forward) is grounded in self-directed learning theory. It shifts management interactions from prescriptive direction to coaching inquiry, building self-efficacy (Bandura, 1977) and critical problem-solving skills.",
+      "origin": {
+        "authors": [
+          "John Whitmore"
+        ],
+        "year": 1992,
+        "title": "Coaching for Performance",
+        "publication": "Nicholas Brealey",
+        "authorsLabel": "John Whitmore",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"322\" x2=\"126\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"322\" x2=\"274\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"322\" x2=\"163\" y2=\"268.981182\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"268.981182\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T36",
+      "sourceCardNo": "Card 36",
+      "name": "Graham’s Maker vs. Manager Schedules",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Engineers report low coding velocity despite high hours; commit graphs show activity only late at night; team members complain of fragmented attention caused by mid-morning or mid-afternoon syncs.",
+      "schematic": "Maker-to-manager continuum",
+      "script": {
+        "label": "Maker Schedule Protection",
+        "text": "\"Our engineering calendar shows fractured Maker schedules. Effective immediately, we are establishing uninterrupted focus blocks. Tuesdays and Thursdays will be zero-meeting days. All sync standups, 1-on-1s, and planning sessions are restricted to Monday and Wednesday mornings. Deep work time will be protected.\""
+      },
+      "audit": [
+        "Did developers get uninterrupted focus blocks past four hours?",
+        "Did commits move from late-night bursts to midday focus?"
+      ],
+      "auditFull": [
+        "Did the average uninterrupted focus block for developers increase past four continuous hours?",
+        "Did GitHub commit activity transition from late-night bursts to consistent midday focus hours?"
+      ],
+      "foundation": "Paul Graham’s 2009 thesis delineates the fundamental conflict between two operating modes: the Manager Schedule (divided into discrete 30-minute blocks) and the Maker Schedule (requiring uninterrupted four-hour blocks to maintain deep flow and hold mental models in working memory).",
+      "origin": {
+        "authors": [
+          "Paul Graham"
+        ],
+        "year": 2009,
+        "title": "Maker's Schedule, Manager's Schedule",
+        "publication": "paulgraham.com",
+        "authorsLabel": "Paul Graham",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 2,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"128\" x2=\"200\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"116.6\" y2=\"168.6\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T37",
+      "sourceCardNo": "Card 37",
+      "name": "Cognitive Load Theory in Software Teams",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Developers spend hours configuring local environments, dealing with flaky test suites, or chasing down complex deployment scripts; delivery of straightforward features takes weeks.",
+      "schematic": "Cognitive-load radar",
+      "script": {
+        "label": "Extraneous Load Reduction",
+        "text": "\"The time required to run our integration suite locally has become an extraneous cognitive burden. We are pausing new feature development for 72 hours. We will containerize the local dev setup and stabilize flaky integration tests to return our cognitive focus to building core product features.\""
+      },
+      "audit": [
+        "Did local test suite runtimes fall by more than half?",
+        "Did cycle time from pull request to staging improve?"
+      ],
+      "auditFull": [
+        "Did local test suite runtimes drop by more than 50%?",
+        "Did engineering cycle time from pull request creation to staging deployment improve?"
+      ],
+      "foundation": "John Sweller’s (1988) Cognitive Load Theory, as adapted to software engineering by Skelton and Pais, identifies three loads: Intrinsic (inherent complexity of the domain), Extraneous (friction of the development environment, tooling, or deployment), and Germane (mental effort dedicated to business logic). Extraneous load must be minimized to maximize Germane problem-solving.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "John Sweller"
+            ],
+            "year": 1988,
+            "title": "Cognitive Load During Problem Solving: Effects on Learning",
+            "publication": "Cognitive Science",
+            "authorsLabel": "John Sweller",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Matthew Skelton",
+              "Manuel Pais"
+            ],
+            "year": 2019,
+            "title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+            "publication": "IT Revolution Press",
+            "authorsLabel": "Matthew Skelton & Manuel Pais",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 242.7 222.7 L 157.3 222.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 328.2 272 L 71.8 272 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 279.5 243.9 L 120.5 243.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T38",
+      "sourceCardNo": "Card 38",
+      "name": "Asynchronous Working Agreements & GitLab Remote Fluency",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Decisions are made in undocumented ad-hoc video calls, leaving distributed or remote members misaligned; engineers are constantly interrupted by \"@here\" or \"@channel\" mentions on Slack.",
+      "schematic": "Synchronous-to-asynchronous continuum",
+      "script": {
+        "label": "Async-First Mandate",
+        "text": "\"We are spending excessive time in status syncs that could be handled asynchronously. Moving forward, synchronous meetings require a shared document with context and options linked twenty-four hours in advance. If a meeting lacks a documented agenda, it is automatically cancelled. Real-time meetings are reserved strictly for high-context debate and social connection.\""
+      },
+      "audit": [
+        "Did scheduled synchronous meeting time fall across the squad?",
+        "Are decisions in versioned ADRs rather than Slack threads?"
+      ],
+      "auditFull": [
+        "Did total scheduled synchronous meeting time decrease across the engineering squad?",
+        "Are critical decisions documented in version-controlled architectural decision records (ADRs) rather than Slack threads?"
+      ],
+      "foundation": "Grounded in media richness theory (Daft & Lengel, 1986) and distributed software collaboration models pioneered by GitLab and Basecamp, this practice prioritizes written, asynchronous-first communication over ephemeral synchronous meetings. This democratizes participation across time zones and creates an auditable record of engineering decisions.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Richard L. Daft",
+              "Robert H. Lengel"
+            ],
+            "year": 1986,
+            "title": "Organizational Information Requirements, Media Richness and Structural Design",
+            "publication": "Management Science",
+            "authorsLabel": "Richard L. Daft & Robert H. Lengel",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "GitLab"
+            ],
+            "year": 2024,
+            "title": "The GitLab Handbook",
+            "publication": "GitLab Inc.",
+            "authorsLabel": "GitLab",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.3\" y1=\"164.3\" x2=\"95.3\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"128\" x2=\"200\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.7\" y1=\"164.3\" x2=\"304.7\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"154.8\" y2=\"143\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T39",
+      "sourceCardNo": "Card 39",
+      "name": "Loehr & Schwartz’s Energy Management Audit",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Engineers submitting low-quality pull requests with careless bugs late on Friday nights; team members showing chronic irritability in retrospectives; declining participation in sprint events.",
+      "schematic": "Four-domain energy radar",
+      "script": {
+        "label": "Energy Depletion Check-In",
+        "text": "\"The team has operated under sustained deployment pressure for three straight iterations. Extended hours do not yield increased software quality; they produce fragile code and cognitive burnout. We are running an operational energy audit. Each person will identify one non-essential operational obligation to drop this sprint. High-severity on-call pages will trigger immediate compensatory time off.\""
+      },
+      "audit": [
+        "Were after-hours pull requests and on-call alerts reduced?",
+        "Did engineers take compensatory rest after severe incidents?"
+      ],
+      "auditFull": [
+        "Were after-hours PR submissions and on-call alerts reduced?",
+        "Did engineers log compensatory rest hours following high-severity incidents?"
+      ],
+      "foundation": "Jim Loehr and Tony Schwartz’s (2003) The Power of Full Engagement establishes that high performance requires managing energy rather than time across four dimensions: Physical, Emotional, Mental, and Spiritual. Sustainable pacing prevents catastrophic cognitive burnout and systemic attrition.",
+      "origin": {
+        "authors": [
+          "Jim Loehr",
+          "Tony Schwartz"
+        ],
+        "year": 2003,
+        "title": "The Power of Full Engagement",
+        "publication": "The Free Press",
+        "authorsLabel": "Jim Loehr & Tony Schwartz",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 249.3 198 L 200 247.3 L 150.7 198 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 298.7 198 L 200 296.7 L 101.3 198 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 348 198 L 200 346 L 52 198 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"348\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"348\" cy=\"198\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"346\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"346\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"52\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"52\" cy=\"198\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 291.8 198 L 200 289.8 L 108.2 198 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 124 L 274 198 L 200 272 L 126 198 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T40",
+      "sourceCardNo": "Card 40",
+      "name": "Cynefin Framework for Operational Decision Making",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Leaders demand detailed, six-month predictive roadmaps for emergent, exploratory research projects (treating Complex as Complicated); teams run open-ended brainstorms in the middle of a critical outage (treating Chaotic as Complex).",
+      "schematic": "Four-domain decision quadrant",
+      "script": {
+        "label": "Context-Domain Alignment",
+        "text": "\"We are debating this research spike using the wrong operational mindset. This is not a Complicated domain where an expert can predict the ideal architecture in advance; it is a Complex domain. We cannot plan our way through it upfront. We will launch three lightweight spikes this week, probe system responses, and let the architecture emerge from live telemetry.\""
+      },
+      "audit": [
+        "Did the team run quick spikes before choosing the architecture?",
+        "Were outages handled decisively without consensus meetings?"
+      ],
+      "auditFull": [
+        "Did the engineering team complete quick exploratory spikes before committing to a final architecture?",
+        "Were incident response procedures executed quickly and decisively during outages without prolonged consensus meetings?"
+      ],
+      "foundation": "Dave Snowden’s (1999) Cynefin framework divides operational contexts into five domains: Clear (best practice), Complicated (expert analysis), Complex (probe-sense-respond), Chaotic (act-sense-respond), and Confused/Disorder. Pathologies emerge when applying \"best practices\" to Complex software engineering environments.",
+      "origin": {
+        "authors": [
+          "David J. Snowden",
+          "Mary E. Boone"
+        ],
+        "year": 2007,
+        "title": "A Leader's Framework for Decision Making",
+        "publication": "Harvard Business Review",
+        "authorsLabel": "David J. Snowden & Mary E. Boone",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T41",
+      "sourceCardNo": "Card 41",
+      "name": "Hersey-Blanchard Situational Leadership Theory (SLII)",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "A senior engineer feels micromanaged when given step-by-step task instructions (Directing applied to D4); a new junior engineer feels abandoned and overwhelmed when told to \"just figure out\" a complex codebase (Delegating applied to D1).",
+      "schematic": "Four-style leadership continuum",
+      "script": {
+        "label": "Situational Style Calibration",
+        "text": "\"You are tackling our distributed event pipeline, which is a new domain for you (D1/D2). I will not leave you to navigate this alone, nor will I take over the keyboard. For the first two sprints, we will use a Directing-Coaching cadence: we will pair daily on architecture reviews and outline explicit task parameters until you feel confident in the codebase.\""
+      },
+      "audit": [
+        "Has the junior engineer shipped clean pull requests unaided?",
+        "Has the senior kept technical ownership without micromanagement?"
+      ],
+      "auditFull": [
+        "Has the junior engineer independently submitted pull requests with clean design patterns?",
+        "Has the senior engineer retained autonomous technical ownership without micromanagement escalations?"
+      ],
+      "foundation": "Paul Hersey and Ken Blanchard’s (1969, 1985) model matches leadership behaviors (Directing, Coaching, Supporting, Delegating) to employee developmental maturity across Competence and Commitment (D1: Enthusiastic Beginner, D2: Disillusioned Learner, D3: Reluctant Contributor, D4: Peak Performer).",
+      "origin": {
+        "authors": [
+          "Paul Hersey",
+          "Kenneth H. Blanchard"
+        ],
+        "year": 1969,
+        "title": "Life Cycle Theory of Leadership",
+        "publication": "Training and Development Journal",
+        "authorsLabel": "Paul Hersey & Kenneth H. Blanchard",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.3\" y1=\"164.3\" x2=\"95.3\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"128\" x2=\"200\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.7\" y1=\"164.3\" x2=\"304.7\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"154.8\" y2=\"143\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T42",
+      "sourceCardNo": "Card 42",
+      "name": "Eisenhower Matrix for Technical Debt Prioritization",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "The engineering team spends its sprints responding to immediate firefighting, alerts, and Slack messages; foundational refactoring and system improvements are neglected for quarters at a time.",
+      "schematic": "Urgency-and-importance quadrant",
+      "script": {
+        "label": "Quadrant II Reclamation",
+        "text": "\"Our sprints have been consumed by urgent operational firefighting (Quadrant I and III) at the expense of core system resilience (Quadrant II). We will reserve 20% of every sprint's capacity exclusively for non-urgent, high-importance engineering work: addressing structural technical debt, automating test suites, and refining deployment pipelines.\""
+      },
+      "audit": [
+        "Was twenty percent of sprint capacity spent on stabilization?",
+        "Did urgent production alerts fall after the refactoring?"
+      ],
+      "auditFull": [
+        "Was 20% of engineering sprint capacity committed and delivered on system stabilization tickets?",
+        "Did the rate of urgent production alerts decrease as a result of preventative refactoring?"
+      ],
+      "foundation": "Originating from Dwight D. Eisenhower and popularized by Stephen Covey, this matrix partitions work by Urgency and Importance. In engineering, unaddressed Quadrant II tasks (Important but Not Urgent, such as architecture updates and test tooling) are constantly postponed by Quadrant III distractions (Urgent but Not Important meetings and triage requests).",
+      "origin": {
+        "authors": [
+          "Stephen R. Covey"
+        ],
+        "year": 1989,
+        "title": "The 7 Habits of Highly Effective People",
+        "publication": "The Free Press",
+        "authorsLabel": "Stephen R. Covey",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T43",
+      "sourceCardNo": "Card 43",
+      "name": "Grove & Doerr’s OKR Cascading Framework",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Engineers deliver dozens of tickets without understanding their business impact; teams celebrate hitting output milestones while core product metrics remain stagnant.",
+      "schematic": "Three-level cascade arc",
+      "script": {
+        "label": "Outcome Over Output Alignment",
+        "text": "\"Our sprint delivery shows high output, but our business impact is flat. Completing eight Jira tickets is an output; reducing checkout latency by 150 milliseconds is an outcome. We are defining our team OKRs around quantitative outcomes. If a deliverable does not move our key result metric, it will not enter the sprint backlog.\""
+      },
+      "audit": [
+        "Can each contributor name the metric their pull request moves?",
+        "Did the squad prune backlog items that map to no OKR?"
+      ],
+      "auditFull": [
+        "Can each squad contributor clearly articulate the key performance metric their current pull request moves?",
+        "Did the squad prune backlog items that did not map directly to primary team OKRs?"
+      ],
+      "foundation": "Conceptualized by Andy Grove at Intel (High Output Management, 1983) and expanded by John Doerr (Measure What Matters, 2018), Objectives and Key Results (OKRs) link ambitious strategic goals with measurable, outcome-based markers. The psychological mechanism relies on public goal commitment and decoupling goals from performance compensation to encourage aggressive risk-taking.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Andrew S. Grove"
+            ],
+            "year": 1983,
+            "title": "High Output Management",
+            "publication": "Random House",
+            "authorsLabel": "Andrew S. Grove",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "John Doerr"
+            ],
+            "year": 2018,
+            "title": "Measure What Matters",
+            "publication": "Portfolio/Penguin",
+            "authorsLabel": "John Doerr",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.666667\" y1=\"322\" x2=\"150.666667\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.333333\" y1=\"322\" x2=\"249.333333\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.666667\" y1=\"322\" x2=\"298.666667\" y2=\"133.94306\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"298.666667\" cy=\"133.94306\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T44",
+      "sourceCardNo": "Card 44",
+      "name": "Spotify Cadence & Decoupled Deployments",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "diagnostic": "Teams are blocked waiting for other squads to test or approve code; multiple squads attempt massive, simultaneous end-of-quarter deployments that fail in production.",
+      "schematic": "Cadence continuum",
+      "script": {
+        "label": "Cadence Decoupling",
+        "text": "\"Our release cycle is stalled because four teams are synchronizing deployments on the same date. We are separating release cadence from code deployments. Squads will use feature flags and well-defined API boundaries to deploy to production independently. We will sync asynchronously across chapters on shared interface contracts.\""
+      },
+      "audit": [
+        "Did the squad deploy to production without a release train?",
+        "Are dependencies handled with feature flags and versioned APIs?"
+      ],
+      "auditFull": [
+        "Did the squad deploy code changes to production independently without scheduling a cross-team release train?",
+        "Are cross-team dependencies managed cleanly via feature flags and versioned API schemas?"
+      ],
+      "foundation": "Developed by Henrik Kniberg and Anders Ivarsson (2012), the Spotify operational rhythm decouples system release cycles from feature alignment through an integrated sync cadence (Tribes, Chapters, Guilds). By aligning on strategic priorities while decoupling deployment cadence, squads move fast without cross-team dependencies.",
+      "origin": {
+        "authors": [
+          "Henrik Kniberg",
+          "Anders Ivarsson"
+        ],
+        "year": 2012,
+        "title": "Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds",
+        "publication": "Crisp",
+        "authorsLabel": "Henrik Kniberg & Anders Ivarsson",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"302.2\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

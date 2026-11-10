@@ -1,0 +1,49 @@
+{
+  "id": "T43",
+  "sourceCardNo": "Card 43",
+  "name": "Grove & Doerr’s OKR Cascading Framework",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Engineers deliver dozens of tickets without understanding their business impact; teams celebrate hitting output milestones while core product metrics remain stagnant.",
+  "schematic": "Three-level cascade arc",
+  "script": {
+    "label": "Outcome Over Output Alignment",
+    "text": "\"Our sprint delivery shows high output, but our business impact is flat. Completing eight Jira tickets is an output; reducing checkout latency by 150 milliseconds is an outcome. We are defining our team OKRs around quantitative outcomes. If a deliverable does not move our key result metric, it will not enter the sprint backlog.\""
+  },
+  "audit": [
+    "Can each contributor name the metric their pull request moves?",
+    "Did the squad prune backlog items that map to no OKR?"
+  ],
+  "auditFull": [
+    "Can each squad contributor clearly articulate the key performance metric their current pull request moves?",
+    "Did the squad prune backlog items that did not map directly to primary team OKRs?"
+  ],
+  "foundation": "Conceptualized by Andy Grove at Intel (High Output Management, 1983) and expanded by John Doerr (Measure What Matters, 2018), Objectives and Key Results (OKRs) link ambitious strategic goals with measurable, outcome-based markers. The psychological mechanism relies on public goal commitment and decoupling goals from performance compensation to encourage aggressive risk-taking.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Andrew S. Grove"
+        ],
+        "year": 1983,
+        "title": "High Output Management",
+        "publication": "Random House"
+      },
+      {
+        "authors": [
+          "John Doerr"
+        ],
+        "year": 2018,
+        "title": "Measure What Matters",
+        "publication": "Portfolio/Penguin"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

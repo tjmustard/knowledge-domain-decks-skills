@@ -8,7 +8,8 @@
 
 - **Friction diagnostic:** Emergence of passive-aggressive interactions in code reviews, backchannel factionalism regarding technical stack choices, hesitation in public architecture discussions, and defensive justifications for pull request rejections.
 - **Schematic:** Five-stage developmental arc
-- **Manager script:** [object Object]
+- **Manager script:** Forming-to-Storming Facilitation
+  "The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified."
 - **Day-14 checks:**
   - Do reviews apply the agreed linter and charter rather than ideology?
   - Are architecture disputes settled in open RFCs within forty-eight hours?
@@ -22,7 +23,8 @@
 
 - **Friction diagnostic:** Diffuse team boundaries where individuals belong to multiple conflicting squads, shifting sprint targets resulting in cynicism, and inadequate CI/CD tooling or access privileges preventing work execution.
 - **Schematic:** Five-conditions radar
-- **Manager script:** [object Object]
+- **Manager script:** Structural Boundary Delineation
+  "Current sprint throughput indicates an ambiguous distribution of team capacity. We will delineate our boundary conditions. The team requires explicit definition: who is dedicated exclusively to this deliverable, what non-negotiable metric dictates success for this release, and what external dependencies lack operational support from engineering management?"
 - **Day-14 checks:**
   - Does every contributor name one squad that owns their capacity?
   - Did the sprint goal stay unchanged across the fourteen-day interval?
@@ -36,7 +38,8 @@
 
 - **Friction diagnostic:** Chronic tardiness to daily standups, uneven distribution of code review workloads, ambiguous escalation pathways during production outages, and mismatched expectations surrounding work hours.
 - **Schematic:** Agreement-formality continuum
-- **Manager script:** [object Object]
+- **Manager script:** Charter Realignment
+  "Our current operational friction stems from implicit, unverified expectations around availability and code reviews. We are establishing an explicit social contract in our team repository. The charter will document core working hours, review turnaround expectations, and escalation paths. If an operational practice is not committed to the Markdown charter, it cannot be enforced."
 - **Day-14 checks:**
   - Do review turnarounds meet the turnaround the charter states?
   - Do retrospectives cite charter commitments when they assess delays?
@@ -50,7 +53,8 @@
 
 - **Friction diagnostic:** Architectural paralysis where pull requests languish indefinitely awaiting sign-off; multi-party ownership where "everyone owns, hence nobody owns" critical service components; executive overrides late in deployment phases.
 - **Schematic:** Decision-rights quadrant
-- **Manager script:** [object Object]
+- **Manager script:** DACI Escalation
+  "This architectural initiative has halted due to diffuse decision rights. We are adopting a DACI framework for this deliverable. Contributor A is designated the Driver; Principal Engineer B is the sole Approver; domain specialists C and D are Contributors; the remaining squad members are Informed. The Driver coordinates input, and the Approver will deliver a binding technical decision by Thursday at 15:00 UTC."
 - **Day-14 checks:**
   - Did one named Approver sign off, without a second committee review?
   - Did uninformed stakeholders stay out of the release-blocking path?
@@ -64,7 +68,8 @@
 
 - **Friction diagnostic:** Engineering initiatives stall during final verification because the team lacks execution-oriented focus, or innovative architecture proposals are immediately dismissed due to an excess of risk-averse Monitor-Evaluators.
 - **Schematic:** Nine-role radar
-- **Manager script:** [object Object]
+- **Manager script:** Role Composition Calibration
+  "An evaluation of our recent delivery cycles reveals a gap between architectural ideation and deliverable hardening. The team possesses exceptional 'Plant' and 'Monitor-Evaluator' capabilities, yet lacks consistent 'Completer-Finisher' behaviors. For the upcoming cycle, Contributor X will drive the edge-case validation and deployment checklist."
 - **Day-14 checks:**
   - Have missed regression bugs at deploy verification fallen?
   - Do post-mortems show work spread across planning, design and execution?
@@ -78,7 +83,8 @@
 
 - **Friction diagnostic:** The squad calls itself a team but functions as individual silos with isolated backlogs; collective output is lower than individual contributions; cynicism emerges concerning shared meetings.
 - **Schematic:** Team-performance arc
-- **Manager script:** [object Object]
+- **Manager script:** Pseudo-Team Intervention
+  "We currently operate as a pseudo-team: individual developers deliver isolated tickets, yet we absorb the meeting overhead of a collective unit without reaping collaborative output. We must choose: either decouple our tasks into discrete individual streams or define a single shared operational deliverable for which we are mutually accountable."
 - **Day-14 checks:**
   - Is the sprint goal one shared deliverable, not unrelated tickets?
   - Do pairing sessions form on their own to clear pipeline blocks?
@@ -92,7 +98,8 @@
 
 - **Friction diagnostic:** Standup meetings exceed twenty minutes; Slack channels become unmanageably noisy; engineers report feeling detached from end-to-end user impact; pull request review requests are routinely ignored due to notification overload.
 - **Schematic:** Team-size continuum
-- **Manager script:** [object Object]
+- **Manager script:** Decoupling & Boundary Definition
+  "The current team has surpassed nine contributors, resulting in communication overhead and slowed delivery. In accordance with Team Topologies, we will split this unit into two Stream-Aligned Teams with an internal Platform API boundary. Each unit will maintain autonomous ownership of their deployable service boundary."
 - **Day-14 checks:**
   - Did standups fall below ten minutes on average?
   - Did cross-team talk move to API contracts and async requests?
@@ -106,7 +113,8 @@
 
 - **Friction diagnostic:** Engineers refuse to pick up unassigned bugs or documentation tickets; individual metrics (such as committed lines of code or ticket closure counts) are prioritized over system delivery; sprint goals fail despite high individual velocity.
 - **Schematic:** Cohesion-profile radar
-- **Manager script:** [object Object]
+- **Manager script:** Interdependence Restructuring
+  "Our current operational dynamic incentivizes individual velocity over squad delivery, which compromises sprint completion. Effective immediately, our evaluation criteria hinge exclusively on shared service health: ticket throughput is irrelevant if the collective staging build remains red. Contributor velocity metrics are deprecated in favor of squad cycle time."
 - **Day-14 checks:**
   - Did people pair on blocked high-priority tickets outside their domain?
   - Was unowned triage and documentation picked up without a manager?
@@ -120,7 +128,8 @@
 
 - **Friction diagnostic:** Prolonged lack of urgency during the initial 40% of a project timeline, followed by an abrupt panic approaching the midpoint; initial assumptions about system complexity prove false.
 - **Schematic:** Punctuated-equilibrium arc
-- **Manager script:** [object Object]
+- **Manager script:** Midpoint Reset
+  "We have reached the calendar midpoint of this quarterly release. Gersick's punctuated equilibrium research demonstrates that now is the empirical inflection point: our early architectural assumptions must be adapted based on what we have observed so far. We will review our scope today, prune non-essential secondary features, and solidify our final delivery baseline."
 - **Day-14 checks:**
   - Did the team prune non-viable requirements after the midpoint?
   - Did execution velocity rise after the midpoint alignment session?
@@ -134,7 +143,8 @@
 
 - **Friction diagnostic:** The engineering team delivers a technically sophisticated system that product managers or operations teams reject; the squad reports feeling blindsided by corporate strategic shifts or downstream system migrations.
 - **Schematic:** Boundary-spanning radar
-- **Manager script:** [object Object]
+- **Manager script:** External Engagement Mandate
+  "Our internal execution is robust, but we are isolated from dependent domain changes. We are establishing formal boundary-spanning roles: Contributor A will operate as the Ambassador to the Infrastructure group; Contributor B will handle Task Coordination with the Product Strategy team. We will review external dependencies weekly in our architecture forum."
 - **Day-14 checks:**
   - Were downstream API breaking changes flagged five days before freeze?
   - Did upstream alignment prevent mid-sprint requirement changes?
@@ -148,7 +158,8 @@
 
 - **Friction diagnostic:** Team members engage in excessive politeness while privately dissenting; passive non-compliance occurs during feature planning; informal power struggles derail retrospective agendas.
 - **Schematic:** Ladder-of-group-development arc
-- **Manager script:** [object Object]
+- **Manager script:** Power Distribution Facilitation
+  "Our retrospective observations show that the team remains constrained by polite deference, which masks genuine operational disagreements. We need to formalize technical ownership. We will explicitly clarify the distribution of technical authority across frontend, backend, and data storage systems to resolve latent conflicts."
 - **Day-14 checks:**
   - Do engineers debate design trade-offs in RFCs without a manager?
   - Has polite disengagement become direct public technical debate?

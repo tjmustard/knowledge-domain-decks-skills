@@ -199,6 +199,12 @@ function resourceMarkdown(category, shape, items) {
       for (const block of shape.blocks) {
         const value = card[block.field];
         if (value === undefined || value === null || value === "") continue;
+        // A labelled block is the record's own { label, text } pair: the name
+        // of the move, then the words of it.
+        if (!Array.isArray(value) && typeof value === "object" && value.label && value.text) {
+          out.push(`- **${block.label}:** ${value.label}`, `  ${value.text}`);
+          continue;
+        }
         if (Array.isArray(value)) {
           if (value.length === 0) continue;
           if (block.style === "list") {

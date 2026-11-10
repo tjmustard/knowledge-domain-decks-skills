@@ -1,0 +1,38 @@
+{
+  "id": "T40",
+  "sourceCardNo": "Card 40",
+  "name": "Cynefin Framework for Operational Decision Making",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Leaders demand detailed, six-month predictive roadmaps for emergent, exploratory research projects (treating Complex as Complicated); teams run open-ended brainstorms in the middle of a critical outage (treating Chaotic as Complex).",
+  "schematic": "Four-domain decision quadrant",
+  "script": {
+    "label": "Context-Domain Alignment",
+    "text": "\"We are debating this research spike using the wrong operational mindset. This is not a Complicated domain where an expert can predict the ideal architecture in advance; it is a Complex domain. We cannot plan our way through it upfront. We will launch three lightweight spikes this week, probe system responses, and let the architecture emerge from live telemetry.\""
+  },
+  "audit": [
+    "Did the team run quick spikes before choosing the architecture?",
+    "Were outages handled decisively without consensus meetings?"
+  ],
+  "auditFull": [
+    "Did the engineering team complete quick exploratory spikes before committing to a final architecture?",
+    "Were incident response procedures executed quickly and decisively during outages without prolonged consensus meetings?"
+  ],
+  "foundation": "Dave Snowden’s (1999) Cynefin framework divides operational contexts into five domains: Clear (best practice), Complicated (expert analysis), Complex (probe-sense-respond), Chaotic (act-sense-respond), and Confused/Disorder. Pathologies emerge when applying \"best practices\" to Complex software engineering environments.",
+  "origin": {
+    "authors": [
+      "David J. Snowden",
+      "Mary E. Boone"
+    ],
+    "year": 2007,
+    "title": "A Leader's Framework for Decision Making",
+    "publication": "Harvard Business Review"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-6%20%C2%B7%20253%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-7%20%C2%B7%20297%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -23,6 +23,7 @@
 - [🗣️ Facilitation Architecture](#️-facilitation-architecture)
 - [🔁 Retrospective Architecture](#-retrospective-architecture)
 - [🎯 Strategy Architecture](#-strategy-architecture)
+- [👥 Team Architecture](#-team-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -39,14 +40,16 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Six decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Seven decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
 **Facilitation Architecture** covers forty-eight exercises for running a session.
 **Retrospective Architecture** covers forty-five rituals for a team looking at
 its own work. **Strategy Architecture** covers forty-two frameworks for a
-leadership team deciding where to compete and why a lead survives. Each card is distilled into the smallest usable form: a claim, a
+leadership team deciding where to compete and why a lead survives. **Team
+Architecture** covers forty-four team and leadership frameworks, each carried as
+the script a manager says when the team is stuck. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -93,6 +96,7 @@ deck's copy, names, or trade dress is used.
 | **Facilitation Architecture** | 48 | 5 stages | `packages/prepress/dist/facilitation.pdf` | `packages/web/decks/facilitation/` | `rules/facilitation-rules.md` | `skills/facilitation/` |
 | **Retrospective Architecture** | 45 | 5 categories | `packages/prepress/dist/retrospectives.pdf` | `packages/web/decks/retrospectives/` | `rules/retrospectives-rules.md` | `skills/retrospectives/` |
 | **Strategy Architecture** | 42 | 4 dimensions | `packages/prepress/dist/strategy.pdf` | `packages/web/decks/strategy/` | `rules/strategy-rules.md` | `skills/strategy/` |
+| **Team Architecture** | 44 | 4 dimensions | `packages/prepress/dist/team.pdf` | `packages/web/decks/team/` | `rules/team-rules.md` | `skills/team/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -344,6 +348,59 @@ and [`skills/strategy/`](./skills/strategy/). The deck's records are in
 
 ---
 
+## 👥 Team Architecture
+
+**Team Architecture** is a forty-four-card deck of team and leadership
+frameworks. Each card is a sentence a manager can actually say: the friction
+symptom that says this is the card the room needs, the schematic the idea is
+drawn on, and on the back the manager script - printed verbatim, with its own
+label - then two checks to run fourteen days later and a citation.
+
+The forty-four divide into four dimensions of eleven:
+
+| Dimension | Cards | What it is for |
+|---|---|---|
+| Team Formation & Structural Architecture | T01 to T11 | Who is on the team, who decides, and what shape it has |
+| Psychological Safety, Culture & Trust Dynamics | T12 to T22 | Whether people can say the true thing in the room |
+| Feedback, Candor & Conflict Resolution | T23 to T33 | How the truth is said and how disagreement lands |
+| Operational Rhythms, Delegation & Cognitive Architecture | T34 to T44 | How the team's time, focus and decisions are protected |
+
+The script is the deliverable, so it is the one part that is never compressed;
+the two day-14 checks are compressed to one line each and stay answerable yes or
+no, because a check is a commitment and a summary is not. The source's own text
+runs 925 to 1,289 characters per card against a back face that holds roughly
+500. The foundation paragraph and the checks as the source writes them are
+declared `"card": false`: they print in the rules file and the skill resources,
+not on the card, and the deck's test asserts those artifacts carry every
+record's script, foundation and unabridged checks.
+
+The source ships four drawn assets - a culture continuum, a Radical Candor
+quadrant, a Tuckman developmental arc and a five-axis safety radar - and
+assigns none of them to a card. The committed layout map at
+[`decks/team/data/layout-map.json`](./decks/team/data/layout-map.json) assigns
+each of the forty-four a family, its counts and the line the card prints, and
+the test asserts the printed schematic is the map's label and ends with the noun
+of the drawing under it. One `team-figure` shape draws the four families from
+`divisions` and `mark`, and an unknown family falls back to a marked frame
+rather than an empty page.
+
+Attribution names the originating work: Tuckman, Hackman, Edmondson, Westrum,
+Scott, Mayer, Maister, Lencioni, Thomas and Kilmann, Grove, Doerr, Whitmore and
+Hersey-Blanchard among them. Eight cards cite two works - T01, T07, T08, T17,
+T27, T37, T38 and T43. T17's second work is Charles Duhigg's 2016 *New York
+Times Magazine* account, paired with Google People Analytics' Project Aristotle
+(2012-2015, an internal study with no published report), so a reader has a way
+in without a primary report being claimed. Card text, diagnostics and checks are
+written for this deck.
+
+Its 88-page print PDF is 479,152 bytes (`482e7fc2…`), byte-identical on rebuild.
+Its ruleset and skill are [`rules/team-rules.md`](./rules/team-rules.md) and
+[`skills/team/`](./skills/team/), whose index carries five routes to cards that
+also live in other decks. The deck's records are in `decks/team/data/laws/` and
+its schema in `decks/team/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -383,9 +440,10 @@ build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes (sha256
 `40164666…`), the narrative deck as 96 pages and 758,240 bytes (`435f2a9f…`),
 the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
-retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), and the strategy
-deck as 84 pages and 888,138 bytes (`2bfc9fb5…`); two consecutive builds of one
-commit are byte-identical for all six. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
+deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), and the team deck as 88 pages
+and 479,152 bytes (`482e7fc2…`); two consecutive builds of one
+commit are byte-identical for all seven. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all

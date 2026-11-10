@@ -19,7 +19,19 @@
   ],
   "foundation": "Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.",
   "origin": {
-    "note": "Google's Project Aristotle (2012-2015); the study is internal and no primary report was published."
+    "works": [
+      {
+        "note": "Google People Analytics, Project Aristotle (2012-2015); the study is internal and no primary report was published."
+      },
+      {
+        "authors": [
+          "Charles Duhigg"
+        ],
+        "year": 2016,
+        "title": "What Google Learned From Its Quest to Build the Perfect Team",
+        "publication": "The New York Times Magazine"
+      }
+    ]
   },
   "figure": {
     "svgShape": "team-figure",

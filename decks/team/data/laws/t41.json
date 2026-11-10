@@ -1,0 +1,38 @@
+{
+  "id": "T41",
+  "sourceCardNo": "Card 41",
+  "name": "Hersey-Blanchard Situational Leadership Theory (SLII)",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "A senior engineer feels micromanaged when given step-by-step task instructions (Directing applied to D4); a new junior engineer feels abandoned and overwhelmed when told to \"just figure out\" a complex codebase (Delegating applied to D1).",
+  "schematic": "Four-style leadership continuum",
+  "script": {
+    "label": "Situational Style Calibration",
+    "text": "\"You are tackling our distributed event pipeline, which is a new domain for you (D1/D2). I will not leave you to navigate this alone, nor will I take over the keyboard. For the first two sprints, we will use a Directing-Coaching cadence: we will pair daily on architecture reviews and outline explicit task parameters until you feel confident in the codebase.\""
+  },
+  "audit": [
+    "Has the junior engineer shipped clean pull requests unaided?",
+    "Has the senior kept technical ownership without micromanagement?"
+  ],
+  "auditFull": [
+    "Has the junior engineer independently submitted pull requests with clean design patterns?",
+    "Has the senior engineer retained autonomous technical ownership without micromanagement escalations?"
+  ],
+  "foundation": "Paul Hersey and Ken Blanchard’s (1969, 1985) model matches leadership behaviors (Directing, Coaching, Supporting, Delegating) to employee developmental maturity across Competence and Commitment (D1: Enthusiastic Beginner, D2: Disillusioned Learner, D3: Reluctant Contributor, D4: Peak Performer).",
+  "origin": {
+    "authors": [
+      "Paul Hersey",
+      "Kenneth H. Blanchard"
+    ],
+    "year": 1969,
+    "title": "Life Cycle Theory of Leadership",
+    "publication": "Training and Development Journal"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

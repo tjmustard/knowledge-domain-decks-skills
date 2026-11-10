@@ -1,0 +1,50 @@
+{
+  "id": "T37",
+  "sourceCardNo": "Card 37",
+  "name": "Cognitive Load Theory in Software Teams",
+  "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+  "diagnostic": "Developers spend hours configuring local environments, dealing with flaky test suites, or chasing down complex deployment scripts; delivery of straightforward features takes weeks.",
+  "schematic": "Cognitive-load radar",
+  "script": {
+    "label": "Extraneous Load Reduction",
+    "text": "\"The time required to run our integration suite locally has become an extraneous cognitive burden. We are pausing new feature development for 72 hours. We will containerize the local dev setup and stabilize flaky integration tests to return our cognitive focus to building core product features.\""
+  },
+  "audit": [
+    "Did local test suite runtimes fall by more than half?",
+    "Did cycle time from pull request to staging improve?"
+  ],
+  "auditFull": [
+    "Did local test suite runtimes drop by more than 50%?",
+    "Did engineering cycle time from pull request creation to staging deployment improve?"
+  ],
+  "foundation": "John Sweller’s (1988) Cognitive Load Theory, as adapted to software engineering by Skelton and Pais, identifies three loads: Intrinsic (inherent complexity of the domain), Extraneous (friction of the development environment, tooling, or deployment), and Germane (mental effort dedicated to business logic). Extraneous load must be minimized to maximize Germane problem-solving.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "John Sweller"
+        ],
+        "year": 1988,
+        "title": "Cognitive Load During Problem Solving: Effects on Learning",
+        "publication": "Cognitive Science"
+      },
+      {
+        "authors": [
+          "Matthew Skelton",
+          "Manuel Pais"
+        ],
+        "year": 2019,
+        "title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+        "publication": "IT Revolution Press"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}
