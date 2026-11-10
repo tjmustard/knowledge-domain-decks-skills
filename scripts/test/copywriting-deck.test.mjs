@@ -16,7 +16,9 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile, readdir } from "node:fs/promises";
+import { spawnSync } from "node:child_process";
+import { cp, mkdtemp, readFile, readdir, rm } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { renderFormula } from "../../decks/copywriting/data/latex.mjs";
 
@@ -116,6 +118,37 @@ test("the printed deck is the inventory, record for record", async () => {
       { family: row.family, divisions: row.divisions, mark: row.mark },
       `${record.id} figure disagrees with the map`
     );
+  }
+});
+
+test("the committed cards are exactly what the builder writes from the inventory", async () => {
+  // The guard the deck was returned for: the print test compares the printed
+  // page to the law record, so a law that disagrees with the inventory would
+  // still pass unless something reruns the builder. Swapping two of CPY-04's
+  // template lines in the committed record must fail here.
+  const dir = await mkdtemp(join(tmpdir(), "copy-rebuild-"));
+  try {
+    const deckDir = join(dir, "copywriting");
+    await cp(join(ROOT, "decks", "copywriting"), deckDir, { recursive: true });
+    await rm(join(deckDir, "data", "laws"), { recursive: true, force: true });
+    const built = spawnSync(process.execPath, [join(deckDir, "data", "build-cards.mjs")], {
+      encoding: "utf8",
+      timeout: 120_000
+    });
+    assert.equal(built.status, 0, `${built.stdout || ""}\n${built.stderr || ""}`.trim());
+
+    const fresh = (await readdir(join(deckDir, "data", "laws"))).sort();
+    const committed = (await readdir(LAWS)).sort();
+    assert.deepEqual(fresh, committed, "the builder writes exactly the committed card files");
+    for (const name of committed) {
+      assert.equal(
+        await readFile(join(deckDir, "data", "laws", name), "utf8"),
+        await readFile(join(LAWS, name), "utf8"),
+        `${name} is not what the builder writes from the inventory`
+      );
+    }
+  } finally {
+    await rm(dir, { recursive: true, force: true });
   }
 });
 
