@@ -18,16 +18,28 @@ import {
   listDeckSlugs,
   loadCards,
   loadDeck,
+  loadDecks,
   deckShape
 } from "../packages/core/deck.mjs";
 
-// One deck per run: the smoke test drives a real browser session and one page.
-// With several decks and no --deck, re-run this script once per deck so each
-// page is checked in its own process rather than sharing a session and a port.
-const { only } = deckArgs();
-const slugs = await listDeckSlugs();
-if (!only && slugs.length > 1) {
+// --deck-index checks the repository's entry page, which lists every deck and
+// links to each viewer. It is not a deck, so it gets its own mode rather than a
+// fake slug. The deck pages keep their own run each.
+const indexMode = process.argv.includes("--deck-index");
+const { only, dir } = deckArgs();
+const slugs = await listDeckSlugs(dir);
+
+// With neither a deck nor index mode selected, run every page in its own
+// process: the smoke test drives a real browser session and one page, and a
+// shared session would make one failure look like the next page's.
+if (!indexMode && !only) {
   let ok = true;
+  const index = spawnSync(
+    process.execPath,
+    ["scripts/check-web.mjs", "--deck-index"],
+    { cwd: ROOT, stdio: "inherit" }
+  );
+  if (index.status !== 0) ok = false;
   for (const slug of slugs) {
     const child = spawnSync(
       process.execPath,
@@ -36,13 +48,13 @@ if (!only && slugs.length > 1) {
     );
     if (child.status !== 0) ok = false;
   }
-  // A summary covering every deck, so the last deck's line is not read as the
+  // A summary covering every page, so the last deck's line is not read as the
   // result of the whole run.
-  if (ok) console.log(`OK: ${slugs.length} decks at 390 px, every page without horizontal overflow.`);
+  if (ok) console.log(`OK: index and ${slugs.length} decks at 390 px, every page without horizontal overflow.`);
   process.exit(ok ? 0 : 1);
 }
-const deckSlug = only ? only[0] : slugs[0];
-const deck = await loadDeck(deckSlug);
+
+const deck = indexMode ? null : await loadDeck(only ? only[0] : slugs[0], dir);
 
 const CANDIDATES = [
   process.env.CHROME_PATH,
@@ -62,26 +74,50 @@ if (!browser) {
   process.exit(2);
 }
 
-const cards = await loadCards(deck);
-// The group key and the word on the verso both come from the deck, so this
-// test never has to know which deck it is pointed at.
-const shape = deckShape(deck);
-const categoryCounts = cards.reduce((counts, card) => {
-  const group = shape.group(card);
-  counts[group] = (counts[group] || 0) + 1;
-  return counts;
-}, {});
-// Use the largest category that still narrows the deck, so the filter has
-// something to narrow from; neither the name nor the expected count is a
-// constant that would drift as the deck grows.
-const largest = Object.keys(categoryCounts)
-  .filter((category) => categoryCounts[category] < cards.length)
-  .sort((a, b) => categoryCounts[b] - categoryCounts[a]);
-const filterCategory = largest[0] || shape.group(cards[0]);
-const expectedInCategory = categoryCounts[filterCategory];
-const versoLabel = shape.labelCardItems.toUpperCase();
+// What the index page must list: every deck in the repository, by slug, name
+// and card count. Read from the same records the generators read, so the check
+// cannot agree with a wrong page by sharing its mistake.
+const expectedIndex = indexMode
+  ? await Promise.all(
+      (await loadDecks({ dir })).map(async (deck) => ({
+        slug: deck.slug,
+        name: deck.name,
+        count: (await loadCards(deck)).length
+      }))
+    )
+  : null;
 
-const url = `file://${join(ROOT, "packages", "web", "decks", deckSlug, "index.html")}`;
+let cards = [];
+let shape = null;
+let filterCategory = null;
+let expectedInCategory = 0;
+let versoLabel = "";
+
+if (!indexMode) {
+  cards = await loadCards(deck);
+  // The group key and the word on the verso both come from the deck, so this
+  // test never has to know which deck it is pointed at.
+  shape = deckShape(deck);
+  const categoryCounts = cards.reduce((counts, card) => {
+    const group = shape.group(card);
+    counts[group] = (counts[group] || 0) + 1;
+    return counts;
+  }, {});
+  // Use the largest category that still narrows the deck, so the filter has
+  // something to narrow from; neither the name nor the expected count is a
+  // constant that would drift as the deck grows.
+  const largest = Object.keys(categoryCounts)
+    .filter((category) => categoryCounts[category] < cards.length)
+    .sort((a, b) => categoryCounts[b] - categoryCounts[a]);
+  filterCategory = largest[0] || shape.group(cards[0]);
+  expectedInCategory = categoryCounts[filterCategory];
+  versoLabel = shape.labelCardItems.toUpperCase();
+}
+
+const deckSlug = indexMode ? null : only ? only[0] : slugs[0];
+const url = indexMode
+  ? `file://${join(ROOT, "packages", "web", "index.html")}`
+  : `file://${join(ROOT, "packages", "web", "decks", deckSlug, "index.html")}`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // A cold start under load can take longer than a fixed 9 s budget, and a check
@@ -209,59 +245,104 @@ try {
   await loaded;
   await sleep(500);
 
-  const layout = await evaluate(`(() => {
-    const cards = [...document.querySelectorAll('.card')];
-    return {
-      clientWidth: document.documentElement.clientWidth,
-      scrollWidth: document.documentElement.scrollWidth,
-      cards: cards.length,
-      cardWidth: cards.length ? Math.round(cards[0].getBoundingClientRect().width) : 0
-    };
-  })()`);
-
-  const flip = await evaluate(`(() => {
-    const card = document.querySelector('.card');
-    card.click();
-    return {
-      flipped: card.classList.contains('is-flipped'),
-      pressed: card.getAttribute('aria-pressed'),
-      versoVisible: card.querySelector('.back').getAttribute('aria-hidden') === 'false',
-      versoHasChecklist: card.querySelector('.back').innerText.includes(${JSON.stringify(versoLabel)})
-    };
-  })()`);
-
-  const filter = await evaluate(`(() => {
-    const buttons = [...document.querySelectorAll('.filter')];
-    const button = buttons.find((b) => b.dataset.filter === ${JSON.stringify(filterCategory)});
-    button.click();
-    return {
-      visible: [...document.querySelectorAll('.card')].filter((c) => !c.hidden).length,
-      pressed: buttons.filter((b) => b.getAttribute('aria-pressed') === 'true').length
-    };
-  })()`);
-
   const failures = [];
-  if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
-  if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
-  if (layout.cards !== cards.length) failures.push(`${layout.cards} cards rendered, expected ${cards.length}`);
-  if (!flip.flipped || flip.pressed !== "true") failures.push("flip did not toggle aria-pressed");
-  if (!flip.versoVisible || !flip.versoHasChecklist) failures.push("verso fields not exposed after flip");
-  if (filter.visible !== expectedInCategory || filter.pressed !== 1) {
-    failures.push(
-      `${filterCategory} filter showed ${filter.visible} cards, expected ${expectedInCategory}`
-    );
-  }
 
-  if (failures.length > 0) {
-    console.error("FAIL web smoke at 390 px:");
-    failures.forEach((failure) => console.error(`  - ${failure}`));
-    process.exitCode = 1;
+  if (indexMode) {
+    const layout = await evaluate(`(() => {
+      const links = [...document.querySelectorAll('.deck-link')];
+      return {
+        clientWidth: document.documentElement.clientWidth,
+        scrollWidth: document.documentElement.scrollWidth,
+        links: links.map((a) => ({
+          href: a.getAttribute('href'),
+          name: (a.querySelector('.deck-name') || {}).textContent || '',
+          meta: (a.querySelector('.deck-meta') || {}).textContent || ''
+        }))
+      };
+    })()`);
+
+    if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
+    if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
+    if (layout.links.length !== expectedIndex.length) {
+      failures.push(`${layout.links.length} decks listed, expected ${expectedIndex.length}`);
+    }
+    expectedIndex.forEach((entry, index) => {
+      const link = layout.links[index];
+      if (!link) return;
+      const name = link.name.trim();
+      if (link.href !== `decks/${entry.slug}/index.html`) {
+        failures.push(`${entry.slug} links to ${link.href}`);
+      }
+      if (name !== entry.name) failures.push(`deck ${index + 1} is "${name}", expected "${entry.name}"`);
+      if (!link.meta.includes(`${entry.count} cards`)) {
+        failures.push(`${name} does not show its ${entry.count} cards`);
+      }
+    });
+
+    if (failures.length > 0) {
+      console.error("FAIL web smoke of the index at 390 px:");
+      failures.forEach((failure) => console.error(`  - ${failure}`));
+      process.exitCode = 1;
+    } else {
+      console.log(
+        `OK: index: 390 px viewport, no horizontal overflow, ` +
+          `${layout.links.length} decks linked with title and card count.`
+      );
+    }
   } else {
-    console.log(
-      `OK: ${deckSlug}: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
-      `(${layout.cardWidth} px wide), flip exposes verso, ` +
-      `${filterCategory} filter shows ${expectedInCategory}.`
-    );
+    const layout = await evaluate(`(() => {
+      const cards = [...document.querySelectorAll('.card')];
+      return {
+        clientWidth: document.documentElement.clientWidth,
+        scrollWidth: document.documentElement.scrollWidth,
+        cards: cards.length,
+        cardWidth: cards.length ? Math.round(cards[0].getBoundingClientRect().width) : 0
+      };
+    })()`);
+
+    const flip = await evaluate(`(() => {
+      const card = document.querySelector('.card');
+      card.click();
+      return {
+        flipped: card.classList.contains('is-flipped'),
+        pressed: card.getAttribute('aria-pressed'),
+        versoVisible: card.querySelector('.back').getAttribute('aria-hidden') === 'false',
+        versoHasChecklist: card.querySelector('.back').innerText.includes(${JSON.stringify(versoLabel)})
+      };
+    })()`);
+
+    const filter = await evaluate(`(() => {
+      const buttons = [...document.querySelectorAll('.filter')];
+      const button = buttons.find((b) => b.dataset.filter === ${JSON.stringify(filterCategory)});
+      button.click();
+      return {
+        visible: [...document.querySelectorAll('.card')].filter((c) => !c.hidden).length,
+        pressed: buttons.filter((b) => b.getAttribute('aria-pressed') === 'true').length
+      };
+    })()`);
+
+    if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
+    if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
+    if (layout.cards !== cards.length) failures.push(`${layout.cards} cards rendered, expected ${cards.length}`);
+    if (!flip.flipped || flip.pressed !== "true") failures.push("flip did not toggle aria-pressed");
+    if (!flip.versoVisible || !flip.versoHasChecklist) failures.push("verso fields not exposed after flip");
+    if (filter.visible !== expectedInCategory || filter.pressed !== 1) {
+      failures.push(
+        `${filterCategory} filter showed ${filter.visible} cards, expected ${expectedInCategory}`
+      );
+    }
+
+    if (failures.length > 0) {
+      console.error("FAIL web smoke at 390 px:");
+      failures.forEach((failure) => console.error(`  - ${failure}`));
+      process.exitCode = 1;
+    } else {
+      console.log(
+        `OK: ${deckSlug}: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
+          `(${layout.cardWidth} px wide), flip exposes verso, ` +
+          `${filterCategory} filter shows ${expectedInCategory}.`
+      );
+    }
   }
 } finally {
   if (ws) ws.close();

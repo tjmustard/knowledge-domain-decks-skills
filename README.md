@@ -2,11 +2,11 @@
     <img src="./media/icons/web/icon-192.webp" width="128" height="128" alt="Knowledge Domain Decks icon" style="border-radius: 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
     <h1>Knowledge Domain Decks</h1>
     <p><strong>One dataset. Print, phone, and agent output.</strong></p>
-    <p><em>An open-source reference card deck for UX and behavioral design, where every card is a validated record and every artifact is generated from it.</em></p>
+    <p><em>An open-source platform for reference card decks, where every card is a validated record and every artifact is generated from it.</em></p>
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-54%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/decks-2%20%C2%B7%20102%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -16,7 +16,9 @@
 ## 📖 Table of Contents
 
 - [🤔 What is this?](#-what-is-this)
-- [🃏 The First Deck](#-the-first-deck)
+- [🃏 The Decks](#-the-decks)
+- [🧭 UX & Behavioral Design](#-ux--behavioral-design)
+- [📖 Narrative Architecture](#-narrative-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -29,24 +31,30 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: fifty-four principles, each distilled
-into the smallest usable form — an axiom, a trigger, a checklist, an
-anti-pattern, a generated diagram, and one exact academic source.
+A deck is a set of validated card records; the pipeline turns those records into
+a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
+hand-edited output anywhere.
+
+Two decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+interface and cognitive design. **Narrative Architecture** covers forty-eight
+story-structure patterns for turning a change into something an audience can
+follow. Each card is distilled into the smallest usable form: a claim, a trigger,
+a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
-all three come from the same validated records:
+all of them come from the same validated records:
 
 ```mermaid
 flowchart LR
-    Schema["Card schema<br/>data/law-schema.json"] --> Check{"npm run validate"}
+    Schema["Deck schema<br/>decks/&lt;slug&gt;/data/law-schema.json"] --> Check{"npm run validate"}
     Check --> Data["Validated records<br/>decks/&lt;slug&gt;/data/laws/*.json"]
     Data --> Print["Typst prepress<br/>3.00 x 5.00 in PDF"]
-    Data --> Web["Static web viewer<br/>packages/web"]
-    Data --> Rules["Agent ruleset<br/>rules/ + skills/ux-laws"]
+    Data --> Web["Static web viewer<br/>packages/web/decks/&lt;slug&gt;"]
+    Data --> Rules["Agent ruleset<br/>rules/ + skills/&lt;slug&gt;"]
 ```
 
 Every output is generated. Nothing is hand-edited downstream: fix a typo in a
-card record, rerun the generators, and the PDF, the viewer bundle, and the rules
+card record, rerun the generators, and that deck's PDF, viewer bundle, and rules
 all move together.
 
 The ruleset, the skill, the viewer bundle, and the PDF all regenerate
@@ -61,17 +69,30 @@ stamp their own. The date is fixed rather than taken from the commit because an
 exported tree has no git history, and a tarball build has to produce the same
 bytes as a checkout build.
 
-The deck is deliberately clean-room. The wording is written for this project,
-the diagrams are drawn parametrically from each card's `graphicMetaphor` data,
-and no other deck's copy, names, or trade dress is used.
+The decks are deliberately clean-room. The wording is written for this project,
+the diagrams are drawn parametrically from each card's figure data, and no other
+deck's copy, names, or trade dress is used.
 
 ---
 
-## 🃏 The First Deck
+## 🃏 The Decks
+
+| Deck | Cards | Families | Print | Web | Rules | Skill |
+|---|---|---|---|---|---|---|
+| **UX & Behavioral Design** | 54 | 5 categories | `packages/prepress/dist/ux-laws.pdf` | `packages/web/decks/ux-laws/` | `rules/ux-rules.md` | `skills/ux-laws/` |
+| **Narrative Architecture** | 48 | 4 families | `packages/prepress/dist/narrative.pdf` | `packages/web/decks/narrative/` | `rules/narrative-rules.md` | `skills/narrative/` |
+
+Both decks share one engine: `decks/<slug>/deck.json` declares the record shape,
+the card families, the accents, the prose, and where each artifact goes. Nothing
+under `packages/` names a deck.
+
+---
+
+## 🧭 UX & Behavioral Design
 
 **UX & Behavioral Design** is a fifty-four-card deck: every category is complete,
-and eleven of the fifty-four are decision-making. It proves the whole pipeline end
-to end and is useful as it stands.
+and eleven of the fifty-four are decision-making. It is the deck that proved the
+whole pipeline end to end, and it is useful as it stands.
 
 Every one of the **54 principles** in the project's research list now has a
 card. That list is longer than the 52-item taxonomy in the project's
@@ -138,9 +159,11 @@ and venue:
 | MPA-10 | **Goal-Gradient Effect** | Memory, Perception & Attention | Kivetz, Urminsky & Zheng (2006), *The Goal-Gradient Hypothesis Resurrected* |
 | MPA-11 | **Status Quo Bias** | Memory, Perception & Attention | Samuelson & Zeckhauser (1988), *Status Quo Bias in Decision Making* |
 
-That table follows the taxonomy's category order. The PDF and the viewer print
-cards in ID order - `DEC`, `GES`, `HMM`, `MPA`, `TME` - so the two sequences are
-different and neither is a mistake.
+That table follows the taxonomy's category order. For this deck, the PDF and the
+viewer print cards in ID order - `DEC`, `GES`, `HMM`, `MPA`, `TME` - so the two
+sequences are different and neither is a mistake. A deck can declare
+`"printOrder": "family"` in its `deck.json` when the reading order should follow
+its categories instead; Narrative Architecture does.
 
 The categories are part of the schema, so every later card lands in one of
 them and the filters, accents, and rules sections follow automatically:
@@ -155,16 +178,54 @@ them and the filters, accents, and rules sections follow automatically:
 
 ---
 
+## 📖 Narrative Architecture
+
+**Narrative Architecture** is a forty-eight-card deck of story-structure patterns.
+Where the UX deck audits an interface, this one shapes a message: it takes a
+change, a proposal, an incident, or a launch and gives it an order an audience can
+follow, believe, and act on. Every card names one structure and the beats that
+make it work, where it fails, and its source; seven add a writing prompt that
+applies the structure to the piece in front of you.
+
+The forty-eight cards divide evenly into four families, twelve each:
+
+| Family | Cards | What it shapes |
+|---|---|---|
+| Arc & Plot | ARC-01 to ARC-12 | The spine of a long-form change: how a story opens, turns, and lands |
+| Persuasion & Pitch | PRS-01 to PRS-12 | The case for doing something: evidence, objection, stakes, and the ask |
+| Corporate & Technical | COR-01 to COR-12 | Briefs, reviews, incident reports, and technical arguments that must survive scrutiny |
+| Rhetorical Micro-tactic | MIC-01 to MIC-12 | The single move inside a sentence or a slide that makes the rest of it work |
+
+Two cards carry a renamed title so the deck's own naming stays clean-room:
+PRS-07 is **The Story Spine** and PRS-09 is **The Insight-Led Challenge**. Both
+keep their original source and citation. Nine cards predate the common era and
+print their years as `BCE` rather than as negative numbers; the affected records
+are listed in [`DECISIONS.md`](./DECISIONS.md) §40.
+
+The deck declares `"printOrder": "family"`, so its PDF and viewer run family by
+family rather than in ID order. The verso side prints numbered beats under the
+heading **Structure**, and seven cards carry a prompt: the invitation to write
+the card's structure against your own draft.
+
+Its ruleset and skill are [`rules/narrative-rules.md`](./rules/narrative-rules.md)
+and [`skills/narrative/`](./skills/narrative/). The deck's records are in
+`decks/narrative/data/laws/` and its schema in
+`decks/narrative/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
 
 Open [`packages/web/index.html`](./packages/web/index.html) in any modern
-browser. Double-clicking the file works: a generated classic script carries the
-card data, so nothing needs a server, a bundler, or a network connection.
+browser. It lists every deck and links to that deck's viewer. Double-clicking the
+file works: generated classic scripts carry the card data, so nothing needs a
+server, a bundler, or a network connection.
 
-- Tap or click a card, or press **Enter** / **Space**, to flip between the
-  principle and its operational checklist.
+For a specific deck, open `packages/web/decks/<slug>/index.html` directly.
+
+- Tap or click a card, or press **Enter** / **Space**, to flip it.
 - Filter by category with the pills above the deck.
 - The layout is built for a 390 px phone viewport and has no horizontal scroll.
 
@@ -179,17 +240,20 @@ verso, at Tarot proportions: a 3.00 x 5.00 in page holding a 2.75 x 4.75 in trim
 plus 0.125 in bleed, with corner trim marks.
 
 ```bash
-npm run build:pdf
+npm run build:pdf              # every deck
+npm run build:pdf -- --deck narrative
 ```
 
-The output is `packages/prepress/dist/ux-laws.pdf`. This step requires
+The output is one PDF per deck: `packages/prepress/dist/ux-laws.pdf` and
+`packages/prepress/dist/narrative.pdf`. This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer.
 
-**What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 108-page file of 1,072,772 bytes (1,047 KiB), and two
-consecutive builds of one commit are byte-identical. `npm run check:pdf`
-measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
+**What has been checked in the built PDFs.** With Typst 0.15.1, `npm run
+build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes, and the narrative
+deck as 96 pages and 758,238 bytes; two consecutive builds of one commit are
+byte-identical. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+page of both decks. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 fifty-four versos and absent from the rectos. The labels drawn inside the
@@ -202,11 +266,14 @@ frame; the tightest card clears it by 7.32 pt. The topmost ink on every recto st
 the top safe edge, a constant of the template rather than a card's line running
 long, and about 8 pt of paper remains before the trim. Every diagram is drawn as form XObjects with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
-empty placeholder.
+empty placeholder. The narrative deck was checked the same way where its record
+shape differs: seven prompt versos, numbered beats, and the seven new figure
+shapes were inspected on their own pages.
 
 ### Agents: load the ruleset
 
-The same deck reaches an agent's working context two ways:
+Each deck reaches an agent's working context two ways. For UX & Behavioral
+Design:
 
 - [`skills/ux-laws/SKILL.md`](./skills/ux-laws/SKILL.md) — the skill, and an
   index. It carries the frontmatter, the rules that hold everywhere, and a
@@ -218,30 +285,39 @@ The same deck reaches an agent's working context two ways:
 - [`rules/ux-rules.md`](./rules/ux-rules.md) — every card in one plain ruleset,
   for pasting into a review prompt or project instructions.
 
-All are generated from the deck's `data/laws/*.json` by `npm run build:rules`. Edit the
-records, not the generated files. The split is deliberate: the index is about
-6 KB and the largest resource file about 10 KB, where the single skill file was
-28 KB loaded whole before the agent read any code. [`DECISIONS.md`](./DECISIONS.md)
-§35 records what the split costs.
+Narrative Architecture follows the same split, at
+[`skills/narrative/`](./skills/narrative/) and
+[`rules/narrative-rules.md`](./rules/narrative-rules.md), with one resource file
+per family instead of per category.
+
+All are generated from each deck's `data/laws/*.json` by `npm run build:rules`.
+Edit the records, not the generated files. The split is deliberate: the index is
+about 6 KB and the largest resource file about 10 KB, where the single skill file
+was 28 KB loaded whole before the agent read any code.
+[`DECISIONS.md`](./DECISIONS.md) §35 records what the split costs.
 
 ---
 
 ## 🧩 Card Anatomy
 
-Every card is one JSON object with nine fields. The schema rejects unknown
-fields, so a record cannot quietly grow a second source of truth:
+Every card is one JSON object. The fields below are the UX deck's; a deck declares
+its own names for the mapped ones in `deck.json`, so Narrative Architecture files
+the same content under `family`, `steps`, `origin`, `figure`, and an optional
+`prompt`. The schema rejects unknown fields, so a record cannot quietly grow a
+second source of truth:
 
 | Field | What it holds |
 |---|---|
 | `id` | Category prefix and two-digit sequence, e.g. `DEC-01` |
-| `name` | The principle's common name, 50 characters or fewer |
-| `category` | One of the five fixed categories |
+| `name` | The card's common name, 50 characters or fewer |
+| `category` / `family` | One of the deck's fixed groups |
 | `axiom` | The core claim, at most 15 words |
 | `trigger` | The observable symptom that means "check this card" |
-| `checklist` | Three or four actions, each with a `text` and a `kind`: `code` when reading code can check or act on it, `research` when it needs an experiment or a recorded run |
+| `checklist` / `steps` | Three or four actions (up to eight beats in a deck that declares steps), each with a `text` and, for a UX checklist, a `kind`: `code` when reading code can check or act on it, `research` when it needs an experiment or a recorded run |
 | `antiPattern` | A `violation` and its `remediation`, as one pair |
-| `graphicMetaphor` | An `svgShape` plus the parameters that draw it |
-| `academicOrigin` | One primary source: authors, year, title, venue, optional DOI |
+| `graphicMetaphor` / `figure` | An `svgShape` plus the parameters that draw it |
+| `academicOrigin` / `origin` | One primary source: authors, year, title, venue, optional DOI |
+| `prompt` | Optional: a writing prompt printed on the back of the card |
 
 The validator enforces the limits the schema alone cannot: the axiom must be
 both 110 characters or fewer and 15 words or fewer, because a character cap
@@ -304,8 +380,9 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
 ### Adding a deck
 
 1. `mkdir -p decks/<slug>/data/laws` and write `decks/<slug>/deck.json` — the
-   fields are the ones `decks/ux-laws/deck.json` shows, and a deck with no
-   accents simply falls back to a neutral colour on every card.
+   fields are the ones `decks/ux-laws/deck.json` or `decks/narrative/deck.json`
+   shows, and a deck with no accents simply falls back to a neutral colour on
+   every card.
 2. Put a JSON Schema at `decks/<slug>/data/law-schema.json` and one record per
    card in `data/laws/`. The enum on the schema's group field is overridden by
    the deck's own category list at validation time, so the two cannot disagree.
@@ -315,7 +392,7 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    in the generated markdown, and `itemStyle` chooses ticking boxes or numbered
    beats. `printOrder` chooses the order the deck is read in: `"id"` (the
    default) or `"family"`, which follows the category list above. A deck that
-   declares none of these gets the first deck's shape and order.
+   declares none of these gets the default shape and order.
 3. Build and check:
 
    ```bash
@@ -333,7 +410,6 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
 
 Every command takes `--deck <slug>`; with no flag it runs over every deck in
 `decks/`, in sorted order. `npm run accept` gates whatever is committed.
-```
 
 ---
 
@@ -357,7 +433,7 @@ npm run validate
 
 # 3. Regenerate the derived artifacts
 npm run build:web       # packages/web/decks/<slug>/{deck-data.js,accents.js,index.html}
-npm run build:rules     # rules/ux-rules.md, skills/ux-laws/SKILL.md and resources/
+npm run build:rules     # rules/<slug>-rules.md, skills/<slug>/SKILL.md and resources/
 
 # 4. Print layer (requires Typst)
 npm run build:pdf       # packages/prepress/dist/<slug>.pdf
@@ -390,10 +466,11 @@ npm run test:triage     # offline tests for the adjudication join
 ```
 
 `npm test` is the whole of it: it is what CI runs, and there is no CI-only
-script or configuration. It covers the deck's own facts (54 records, deck
-order, the two citation strings), the validator as a program — including the
+script or configuration. It covers each deck's own facts (record counts and
+order for 54 UX records and 48 narrative records, the citation strings, BCE
+years, `printOrder`), the validator as a program — including the
 duplicate-ID rule the gate does not reach — the generators' byte stability and
-which artifacts each year reaches, the geometry of the two shapes whose
+which artifacts each year reaches, the geometry of the shapes whose
 drawing has been wrong before, every pipeline step in one order, and finally
 `npm run accept` against HEAD in a worktree of its own.
 
@@ -424,6 +501,14 @@ the same deck with different page boxes and "some typst" is not the dependency
 this repository means. It then pins `CHROME_PATH` to the runner's Chrome, which
 turns `check:web`'s "no browser, skip" exit code into a failed install instead of
 a silent skip, and runs `npm ci` and `npm test`.
+
+A second job is a matrix over `decks/*/deck.json`: one job per deck, named after
+its slug, that validates that deck, generates its web bundle, rules, skill and
+PDF, then checks its viewer at 390 px and its PDF page boxes. The list comes
+from the repository, so a new deck gets its own named job without editing the
+workflow, and a failure points at the deck rather than at "the tests". The
+repository-wide job above is unchanged; the matrix adds isolation per deck, not
+a second copy of the suite.
 
 What stays manual, on any machine:
 
@@ -463,13 +548,13 @@ same thing.
 | `npm run validate` | Every record satisfies the schema, axiom length and word limits hold, IDs are unique |
 | `npm run build:web` | Each deck's viewer bundle regenerates from its own `data/laws/` |
 | `npm run build:rules` | The ruleset and skill regenerate from the same records |
-| `npm run check:web` | At 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from the deck's `data/laws/`, not hardcoded |
-| `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
+| `npm run check:web` | For every deck, at 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from each deck's `data/laws/`, not hardcoded |
+| `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count, for every deck |
 | `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
-| `npm test` | All of the above, plus what they cannot see: the deck's record counts and order, the validator's duplicate-ID rule, generator byte stability outside a worktree, the geometry of the two shapes that have drawn wrong before, and the pipeline in one order before the gate runs on HEAD |
+| `npm test` | All of the above, plus what they cannot see: each deck's record counts and order, the validator's duplicate-ID rule, generator byte stability outside a worktree, the geometry of the shapes that have drawn wrong before, and the pipeline in one order before the gate runs on HEAD |
 
 Last full run: **2026-11-10**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
-`npm test` exits 0 with 62 tests and 0 skipped, and the gate it ends with reports
+`npm test` exits 0 with 68 tests and 0 skipped, and the gate it ends with reports
 13 passed, 0 failed, 1 not run. `npm run check:all` exits 0 and the PDF builds.
 
 Two honest limits. `npm run check:pdf` proves page geometry only. Whether the
@@ -502,5 +587,5 @@ Card data and the JSON Schema are dedicated to the public domain under
 
 The research notes under `SupportingInformation/` are read-only inputs whose
 provenance and licensing are separate from this repository. They are excluded
-from git; the knowledge they carry reaches the deck through the CC0 dataset and
+from git; the knowledge they carry reaches the decks through the CC0 dataset and
 the citations printed on each card.

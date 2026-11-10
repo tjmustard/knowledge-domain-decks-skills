@@ -233,6 +233,61 @@ h1 {
   color: var(--muted);
 }
 
+/* The repository index: one entry per deck, readable at 390 px. */
+.deck-list {
+  list-style: none;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: 16px;
+}
+
+.deck-entry { margin: 0; }
+
+.deck-link {
+  display: grid;
+  gap: 4px;
+  height: 100%;
+  padding: 20px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.deck-link:hover { border-color: var(--ink); }
+
+.deck-link:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+.deck-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.deck-meta {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.deck-description {
+  font-size: 0.85rem;
+  color: var(--body);
+}
+
+.deck-go {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
 .site-footer {
   max-width: 1080px;
   margin: 28px auto 0;

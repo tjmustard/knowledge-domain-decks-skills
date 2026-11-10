@@ -214,7 +214,7 @@ test("a deck with its own record shape renders through its own field names", asy
     assert.equal((bundle.match(/"prompt":/g) || []).length, 1);
 
     if (spawnSync("typst", ["--version"], { encoding: "utf8" }).status === 0) {
-      const printed = runNode("packages/prepress/build.mjs", args);
+      const printed = runNode("packages/prepress/build.mjs", [...args, "--build-dir", join(dir, "prepress-build")]);
       assert.equal(printed.status, 0, printed.output);
       // Two cards are four pages, recto then verso, at the deck's trim size.
       // The printed leg reads the same field names, so a template that still

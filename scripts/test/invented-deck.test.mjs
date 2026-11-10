@@ -153,7 +153,7 @@ test("a deck the repository has never seen builds through the same pipeline", as
       t.diagnostic("Typst is absent, so the print half of this deck was not built");
       return;
     }
-    const printed = runNode("packages/prepress/build.mjs", args);
+    const printed = runNode("packages/prepress/build.mjs", [...args, "--build-dir", join(dir, "prepress-build")]);
     assert.equal(printed.status, 0, printed.output);
     assert.ok(existsSync(join(dir, "out", "invented.pdf")), "no PDF was written");
 

@@ -10,7 +10,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
+import { DECKS_DIR, ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../packages/core/svg.js");
@@ -22,7 +22,8 @@ export function webDir(deck) {
 const escapeHtml = (text) =>
   String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-const decks = await loadDecks(deckArgs());
+const args = deckArgs();
+const decks = await loadDecks(args);
 const template = await readFile(join(ROOT, "packages", "web", "index.template.html"), "utf8");
 
 for (const deck of decks) {
@@ -78,4 +79,45 @@ for (const deck of decks) {
   await writeFile(join(dir, "index.html"), page);
 
   console.log(`wrote packages/web/decks/${deck.slug}/ (deck-data.js, accents.js, index.html; ${bundled.length} cards)`);
+}
+
+/*
+ * The repository's web entry point: one page listing every deck, so a reader
+ * opening packages/web/index.html sees the platform rather than one deck's
+ * viewer.
+ *
+ * Written only when the repository's own decks/ is being built in full. A test
+ * that passes --decks-dir is building a deck somewhere else and must not
+ * rewrite the real index (or, worse, list a scratch deck in it); a --deck run
+ * leaves the index to the full build, so one deck's job cannot fail another's.
+ */
+if (args.dir === DECKS_DIR && !args.only) {
+  const all = await loadDecks({ dir: args.dir });
+  const rows = [];
+  for (const deck of all) {
+    const cards = await loadCards(deck);
+    const groupWord = deckShape(deck).fields.group === "family" ? "families" : "categories";
+    rows.push(
+      `      <li class="deck-entry">\n` +
+        `        <a class="deck-link" href="decks/${escapeHtml(deck.slug)}/index.html">\n` +
+        `          <span class="deck-name">${escapeHtml(deck.name)}</span>\n` +
+        `          <span class="deck-meta">${cards.length} cards · ${(deck.categories || []).length} ${groupWord}</span>\n` +
+        `          <span class="deck-description">${escapeHtml(deck.description || "")}</span>\n` +
+        `          <span class="deck-go">Open deck →</span>\n` +
+        `        </a>\n` +
+        `      </li>`
+    );
+  }
+  const page = (await readFile(join(ROOT, "packages", "web", "deck-index.template.html"), "utf8"))
+    .replaceAll("{{title}}", "Knowledge Domain Decks")
+    .replaceAll("{{heading}}", "Knowledge Domain Decks")
+    .replaceAll(
+      "{{lede}}",
+      `${all.length} reference card decks. Every card is a validated record; ` +
+        `each deck builds a print PDF, this phone viewer, and an agent ruleset from the same data.`
+    )
+    .replaceAll("{{decks}}", rows.join("\n"))
+    .replaceAll("{{source}}", "Generated from <code>decks/*/deck.json</code>. Code MIT · data CC0-1.0.");
+  await writeFile(join(ROOT, "packages", "web", "index.html"), page);
+  console.log(`wrote packages/web/index.html (${all.length} decks)`);
 }

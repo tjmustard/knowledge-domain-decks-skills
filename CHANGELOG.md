@@ -7,10 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- **The repository now holds more than one deck (`decks/`)**: Each deck owns its records, schema, families, accents, prose and output paths under `decks/<slug>/`, and the engine under `packages/` reads them from `deck.json` instead of naming a deck. The web root gains a generated `packages/web/index.html` that lists every deck with its card count and links to its viewer, and every command accepts `--deck <slug>` while still running over every deck by default. The UX deck moved to `decks/ux-laws/` with its printed pages, viewer bundle, ruleset and skill unchanged, byte for byte.
+- **Narrative Architecture, a second deck (`decks/narrative/`)**: Forty-eight story-structure cards in four families of twelve - Arc & Plot, Persuasion & Pitch, Corporate & Technical, and Rhetorical Micro-tactic. It declares its own schema and field names (`family`, `steps`, `origin`, `figure`), prints numbered beats instead of checkboxes, and reads family by family (`printOrder: "family"`). Seven cards carry a writing prompt on the back; nine carry a year before the common era and print it as BCE rather than as a negative number. Two titles are renamed so the deck's naming stays its own: PRS-07 *The Story Spine* and PRS-09 *The Insight-Led Challenge*, both with their original source. Seven new figure shapes draw its diagrams. Its print PDF, phone viewer, agent ruleset and skill are generated from the same records as every other artifact.
+
 ### Changed
 - **The schema's year field no longer has a floor (`data/law-schema.json`)**: `academicOrigin.year` accepts any integer up to 2100, and the description records that a negative year means BCE while printing one is not implemented. The floor of 1800 dated from the first commit, was never documented, and encoded the range of the current corpus rather than a property of a source - it had already put Ockham's c. 1320 out of reach for HMM-07. `DECISIONS.md` §38 records both bounds as typo catchers and the deferred BCE format.
 
 ### Fixed
+- **A test build no longer leaves its invented deck in the shared print build directory (`packages/prepress/build.mjs`)**: `build.mjs` now takes an explicit `--build-dir`, defaulting to `packages/prepress/build` as before, and the tests that build a deck invented in a scratch directory use it. Previously `npm test` finished with the fixture's `cards.json` in the shared directory, so a direct `typst compile` - or any later build that reused it - printed the fixture instead of the committed deck. A test now asserts that the shared directory still holds a committed deck and that an isolated build leaves its bytes untouched.
 - **HMM-06 drew three output boxes under a caption saying "EMIT ONE"**: Postel's Law now draws one output block, centred on the funnel's throat, and the record no longer declares `variants`, a parameter the shape clamps to its three glyph templates and which therefore could not change the drawing. The gate's SVG check failed on that parameter; the wrong drawing was in the deck from the first commit.
 
 ### Added

@@ -78,3 +78,80 @@ jobs:
 
       - name: Tests and gate
         run: npm test
+
+  # One job per deck, named after its slug. The job above proves the repository
+  # as a whole; this one proves that each deck stands alone: its own records
+  # validate, its own artifacts generate, its own viewer works at 390 px and its
+  # own PDF has the right page boxes. When the repository gains a deck, this
+  # matrix reads it from decks/ rather than needing an edit here, and a failure
+  # names the deck in the job list.
+  decks:
+    name: list decks
+    runs-on: ubuntu-latest
+    outputs:
+      slugs: ${{ steps.list.outputs.slugs }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: list
+        run: |
+          set -euo pipefail
+          slugs=$(for f in decks/*/deck.json; do basename "$(dirname "$f")"; done \
+            | sort | jq -R -s -c 'split("\n") | map(select(length > 0))')
+          echo "slugs=$slugs" >> "$GITHUB_OUTPUT"
+          echo "$slugs"
+
+  deck:
+    name: deck ${{ matrix.slug }}
+    needs: decks
+    if: needs.decks.outputs.slugs != '[]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        slug: ${{ fromJSON(needs.decks.outputs.slugs) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install Typst 0.15.1
+        run: |
+          set -euo pipefail
+          url=https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-unknown-linux-musl.tar.xz
+          curl -fsSL "$url" -o /tmp/typst.tar.xz
+          tar -xf /tmp/typst.tar.xz -C /tmp
+          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version | grep -q '^typst 0\.15\.1' || { echo "expected Typst 0.15.1, got: $(typst --version)"; exit 1; }
+
+      - name: Pin Chrome for check:web
+        run: |
+          set -euo pipefail
+          for candidate in google-chrome google-chrome-stable chromium; do
+            if path=$(command -v "$candidate"); then
+              echo "CHROME_PATH=$path" >> "$GITHUB_ENV"
+              echo "CHROME_PATH=$path"
+              exit 0
+            fi
+          done
+          echo "No Chrome or Chromium found on this runner" >&2
+          exit 1
+
+      - run: npm ci
+
+      - name: Validate
+        run: npm run validate -- --deck ${{ matrix.slug }}
+
+      - name: Generate web bundle, rules and PDF
+        run: |
+          npm run build:web -- --deck ${{ matrix.slug }}
+          npm run build:rules -- --deck ${{ matrix.slug }}
+          npm run build:pdf -- --deck ${{ matrix.slug }}
+
+      - name: Check the viewer at 390 px
+        run: npm run check:web -- --deck ${{ matrix.slug }}
+
+      - name: Check the PDF page boxes
+        run: npm run check:pdf -- --deck ${{ matrix.slug }}

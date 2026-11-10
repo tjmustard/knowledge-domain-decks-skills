@@ -11,17 +11,45 @@
  * The template is deck-neutral: the category colours and the card records are
  * handed to it as files, so nothing in packages/prepress names a deck.
  */
-import { mkdir, writeFile } from "node:fs/promises";
+import { cp, mkdir, mkdtemp, rm, symlink, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
+import { tmpdir } from "node:os";
 import { ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../core/svg.js");
 
 const here = join(ROOT, "packages", "prepress");
-const buildDir = join(here, "build");
+const defaultBuildDir = join(here, "build");
+
+/*
+ * The generated intermediate files (cards.json, accents.typ, fields.typ, one
+ * SVG per card) go into a build directory. It is packages/prepress/build by
+ * default, which is what every command a reader runs uses. --build-dir moves
+ * it, so a test that builds a deck invented in a scratch directory can keep its
+ * fixture out - otherwise a later `typst compile` against the shared directory
+ * would print the fixture instead of the committed deck.
+ */
+let buildDir = defaultBuildDir;
+{
+  const argv = process.argv.slice(2);
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--build-dir") {
+      const value = argv[i + 1];
+      if (value === undefined || value.startsWith("--")) {
+        console.error("--build-dir needs a directory path.");
+        process.exit(2);
+      }
+      buildDir = resolveFromRoot(value);
+      i += 1;
+    } else if (arg.startsWith("--build-dir=")) {
+      buildDir = resolveFromRoot(arg.slice("--build-dir=".length));
+    }
+  }
+}
 const svgDir = join(buildDir, "svg");
 const distDir = join(here, "dist");
 
@@ -113,15 +141,26 @@ for (const deck of decks) {
   // the file itself and will not create its directory, so the deck's own
   // directory is made here rather than left to chance.
   await mkdir(dirname(pdf), { recursive: true });
+  // The template reads ../build/... relative to its own file. A custom build
+  // directory is reached through a temporary root holding a copy of src/ and a
+  // link named build/, so the template's paths and the shipped PDF's bytes stay
+  // exactly what they are.
+  let compileRoot = here;
+  if (buildDir !== defaultBuildDir) {
+    compileRoot = await mkdtemp(join(tmpdir(), "kdd-prepress-"));
+    await cp(join(here, "src"), join(compileRoot, "src"), { recursive: true });
+    await symlink(buildDir, join(compileRoot, "build"), "dir");
+  }
   const result = spawnSync(
     "typst",
     ["compile", "--root", ".", "src/card.typ", pdf],
     {
-      cwd: here,
+      cwd: compileRoot,
       encoding: "utf8",
       env: { ...process.env, SOURCE_DATE_EPOCH: String(epoch) }
     }
   );
+  if (compileRoot !== here) await rm(compileRoot, { recursive: true, force: true });
   if (result.status !== 0) {
     console.error(result.stdout || "");
     console.error(result.stderr || "");
