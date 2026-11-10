@@ -26,6 +26,9 @@
   "frontSize": 9,
   "schematic": "aversion at position 4 of 12",
   "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]",
+  "templateLines": [
+    "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]"
+  ],
   "example": {
     "bland": "Terms and conditions apply. Free trial.",
     "optimized": "14-day free sandbox • No credit card required • Deploy with 1 line of bash."

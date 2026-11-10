@@ -22,6 +22,9 @@
   "frontSize": 9,
   "schematic": "agency at position 2 of 12",
   "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]",
+  "templateLines": [
+    "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]"
+  ],
   "example": {
     "bland": "Submit.",
     "optimized": "Build My Production Cluster."

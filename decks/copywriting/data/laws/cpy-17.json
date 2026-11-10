@@ -26,6 +26,9 @@
   "frontSize": 9,
   "schematic": "proof at position 5 of 12",
   "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]",
+  "templateLines": [
+    "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]"
+  ],
   "example": {
     "bland": "Many companies use our database management software.",
     "optimized": "How 4,120 DevOps architects maintain 99.999% uptime across Kubernetes without on-call pages."

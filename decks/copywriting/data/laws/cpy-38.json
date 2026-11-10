@@ -12,6 +12,9 @@
   "frontSize": 9,
   "schematic": "ease at position 2 of 12",
   "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.",
+  "templateLines": [
+    "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density."
+  ],
   "example": {
     "bland": "Organizations must leverage comprehensive enterprise orchestration capabilities in order to facilitate synergistic cross-functional departmental communication.",
     "optimized": "Teams must use clear automated tools to talk directly across departments and ship faster."

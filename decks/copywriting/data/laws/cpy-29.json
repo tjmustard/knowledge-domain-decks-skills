@@ -26,6 +26,9 @@
   "frontSize": 9,
   "schematic": "agency at position 5 of 12",
   "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].",
+  "templateLines": [
+    "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume]."
+  ],
   "example": {
     "bland": "Error 403: Invalid Submission You entered an incompatible JSON payload format. Correct your mistakes and resubmit the form.",
     "optimized": "JSON Schema Validation Halted The payload was missing the required \"environment_id\" string on line 42. Insert the project identifier to resume compilation. [View Documentation Reference] or [Auto-Fix Schema Formatting]"

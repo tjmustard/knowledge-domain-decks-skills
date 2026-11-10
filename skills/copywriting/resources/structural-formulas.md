@@ -10,13 +10,19 @@
 - **Schematic:** sequence at position 1 of 12
 - **Cognitive mechanism:** Orienting Reflex & Narrative Transportation
 - **Where it deploys:** Landing Pages, Sales Letters, VSLs
-- **Template:** [Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]
+- **Template:**
+  [Attention: Provocative metric, shocking industry truth, or bold contrarian assertion]
+  [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences]
+  [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers]
+  [Proof Point 1: Quantitative baseline vs. result]
+  [Proof Point 2: Specific operational friction eradicated]
+  [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]
 - **Blueprint:** The AIDA framework allocates structural weight across four sequential phases designed to progress a prospect from passive observation to active transactional commitment. The Attention component commands roughly 15% of the total word count, utilizing unexpected assertions or jarring telemetry to break reader habituation. The Interest component consumes 30% of the budget, contextualizing why the status quo has fractured and building mechanistic curiosity. The Desire phase occupies the largest allocation at 40%, grounding technical capabilities into concrete business outcomes and social validation. The final Action phase represents 15% of the copy, providing an unambiguous, low-friction command specifying the immediate next step. 
 The psychological power of AIDA rests upon the orienting reflex and narrative transportation. The human central nervous system filters out routine stimuli through sensory gating, responding only when an external input deviates from expected patterns. Once the orienting reflex interrupts passive skimming, the interest and desire segments trigger narrative transportation, enabling the reader to mentally simulate the operational relief of adopting the proposed mechanism before committing to the final action.
 - **Before and after:**
   - **Before:** Our enterprise database provides robust performance monitoring tools. You can track latency and query metrics across multi-region clusters with ease. Improve database efficiency and eliminate slow queries with our automated system. Sign up today for a demo.
   - **After:** Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes.
-- **Source:** The source names no originator.
+- **Source:** E. St. Elmo Lewis (1908), *Financial Advertising*.
 
 ## CPY-02 — PAS
 
@@ -24,7 +30,10 @@ The psychological power of AIDA rests upon the orienting reflex and narrative tr
 - **Schematic:** aversion at position 2 of 12
 - **Cognitive mechanism:** Loss Aversion & Negative Reinforcement
 - **Where it deploys:** Pain-Focused Landing Pages, Cold Email
-- **Template:** [Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]
+- **Template:**
+  [Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology]
+  [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days]
+  [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]
 - **Blueprint:** The PAS framework distributes copy to surface and agitate operational bottlenecks. The Problem component accounts for 25% of the total word budget, defining an immediate, recognizable operational friction in the customer's native vernacular. The Agitate phase is the structural anchor, demanding 45% of the copy to expose the compounding, systemic consequences of leaving the problem unresolved. The Solve phase concludes the unit at 30% of the word count, presenting the product as the single logical mechanism capable of defusing the agitated friction. 
 PAS is driven by prospect theory and loss aversion. Behavioral economics demonstrates that the disutility of an unaddressed loss is perceived as roughly twice as motivating as the utility of an equivalent gain. Agitation elevates cognitive dissonance and emotional arousal, preventing the prospect from rationalizing delay and priming them to embrace the presented solution.
 - **Before and after:**
@@ -38,7 +47,10 @@ PAS is driven by prospect theory and loss aversion. Behavioral economics demonst
 - **Schematic:** contrast at position 3 of 12
 - **Cognitive mechanism:** Contrast Principle & Counterfactual Simulation
 - **Where it deploys:** Case Studies, Email Pitches, Hero Sections
-- **Template:** [The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]
+- **Template:**
+  [The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points]
+  [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard]
+  [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]
 - **Blueprint:** The BAB framework balances its structure into three balanced sections: 35% dedicated to Before, 35% to After, and 30% to the Bridge. The Before section grounds the narrative in the reader's current reality, marked by manual toil and inefficiencies. The After section constructs an alternative reality where those operational burdens have been eradicated. The Bridge introduces the specific technology, methodology, or tool that connects the painful baseline to the frictionless outcome. 
 The cognitive foundation of BAB relies on perceptual contrast and counterfactual simulation. By establishing an explicit contrast between the baseline and the transformed state, the copy exploits the brain's anchoring tendencies. Counterfactual thinking creates cognitive dissonance between the user's current situation and their potential future, transforming the product into an indispensable conduit for progress.
 - **Before and after:**
@@ -52,7 +64,12 @@ The cognitive foundation of BAB relies on perceptual contrast and counterfactual
 - **Schematic:** sequence at position 4 of 12
 - **Cognitive mechanism:** Framing Effect & Progressive Commitment
 - **Where it deploys:** Educational Email Sequences, Webinars
-- **Template:** Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]
+- **Template:**
+  Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge]
+  [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints]
+  [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle]
+  [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts]
+  [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]
 - **Blueprint:** The QUEST framework organizes long-form educational copy through five distinct communicative blocks. Qualify opens the copy with 15% of the total budget, identifying who the material is for while filtering out inappropriate prospects. Understand takes 20%, establishing empathy through granular articulation of the reader's operational bottlenecks. Educate forms the intellectual core with 30%, teaching an analytical model or exposing a structural industry misconception. Stimulate occupies 20%, detailing the quantitative leverage achieved when the educational principle is applied. Transition completes the final 15%, guiding the reader from conceptual agreement to commercial engagement. 
 QUEST leverages framing theory and commitment consistency. By educating prospects and delivering objective insights before asking for capital, the author activates the reciprocity norm. The systematic qualification sequence also triggers in-group status validation: readers who match the qualification criteria feel compelled to maintain consistency with that high-value professional identity.
 - **Before and after:**
@@ -66,7 +83,11 @@ QUEST leverages framing theory and commitment consistency. By educating prospect
 - **Schematic:** anchor at position 5 of 12
 - **Cognitive mechanism:** Mental Accounting & Vividness Effect
 - **Where it deploys:** High-Ticket Offers, Direct Mail
-- **Template:** [Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]
+- **Template:**
+  [Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure]
+  [Promise: Declare an absolute, measurable performance standard guaranteed by the product]
+  [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data]
+  [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]
 - **Blueprint:** The 4 Ps framework distributes its word count across four components: Picture (30%), Promise (20%), Prove (35%), and Push (15%). The Picture phase creates an immersive mental scenario of operational freedom. The Promise section states an explicit, falsifiable business or performance claim. The Prove component provides rigorous empirical substantiation via benchmarks, customer data, and system telemetry. The Push section concludes the copy with an immediate, incentive-backed call to action. 
 The behavioral efficacy of the 4 Ps relies on the vividness effect and mental accounting. Concrete, sensory imagery is encoded and recalled more efficiently than abstract technical assertions, lowering cognitive processing resistance. Once vividness establishes initial emotional salience, empirical proof satisfies analytical scrutiny, allowing the prospect to justify the purchase decision rationally.
 - **Before and after:**
@@ -80,7 +101,10 @@ The behavioral efficacy of the 4 Ps relies on the vividness effect and mental ac
 - **Schematic:** sequence at position 6 of 12
 - **Cognitive mechanism:** Means-End Chain Theory
 - **Where it deploys:** Product Feature Cards, Pricing Tiers
-- **Template:** Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]
+- **Template:**
+  Feature: [Technical architecture, physical dimension, or concrete operational mechanism]
+  Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security]
+  Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]
 - **Blueprint:** The FAB unit divides its micro-budget into Feature (25%), Advantage (35%), and Benefit (40%). The Feature identifies an objective structural or technological attribute of the product. The Advantage explains the mechanical utility of that feature compared to legacy alternatives. The Benefit translates that mechanical utility into meaningful financial, temporal, or strategic improvements for the human operator. 
 FAB is grounded in means-end chain theory. Decision-makers do not purchase functional features; they purchase the emotional and practical values that those features facilitate. By explicitly bridging technical architecture to tangible business outcomes, the FAB sequence guides the prospect's cognitive appraisal from functional comprehension to personal valuation.
 - **Before and after:**
@@ -94,7 +118,8 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 7 of 12
 - **Cognitive mechanism:** Diagnostic Cognitive Processing
 - **Where it deploys:** Non-Profit Appeals, High-Consideration B2B
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-08 — PASTOR
@@ -103,8 +128,9 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** identity at position 8 of 12
 - **Cognitive mechanism:** Social Identity & Empathic Alignment
 - **Where it deploys:** Comprehensive Sales Pages, Long-Form VSLs
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
-- **Source:** The source names no originator.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Source:** Ray Edwards (2016), *How to Write Copy That Sells*.
 
 ## CPY-09 — Star-Story-Solution
 
@@ -112,8 +138,9 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 9 of 12
 - **Cognitive mechanism:** Narrative Transportation & In-Group Favoritism
 - **Where it deploys:** Editorial Ads, Founder Story Pages
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
-- **Source:** The source names no originator.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Source:** Russell Brunson (2022), *DotCom Secrets*.
 
 ## CPY-10 — String of Pearls
 
@@ -121,7 +148,8 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** proof at position 10 of 12
 - **Cognitive mechanism:** Anchoring-and-Adjustment & Proof Cascades
 - **Where it deploys:** Social Proof Walls, Long Sales Pitches
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-11 — Danny Iny’s 6+1
@@ -130,8 +158,9 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 11 of 12
 - **Cognitive mechanism:** Cognitive Dissonance & Action Priming
 - **Where it deploys:** High-Friction SaaS Conversions
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
-- **Source:** The source names no originator.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Source:** Danny Iny (2011), *Introducing The Fabulous 6 + 1 Model For Effective Copywriting (Better Than AIDA!)*
 
 ## CPY-12 — AIDCA / IDCA
 
@@ -139,5 +168,6 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** proof at position 12 of 12
 - **Cognitive mechanism:** Risk-Mitigating Credibility Verification
 - **Where it deploys:** Enterprise Landing Pages, Quote Flows
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

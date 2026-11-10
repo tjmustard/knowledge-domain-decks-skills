@@ -34,13 +34,27 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 1 of 12",
       "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]",
+      "templateLines": [
+        "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion]",
+        "[Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences]",
+        "[Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers]",
+        "[Proof Point 1: Quantitative baseline vs. result]",
+        "[Proof Point 2: Specific operational friction eradicated]",
+        "[Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]"
+      ],
       "example": {
         "bland": "Our enterprise database provides robust performance monitoring tools. You can track latency and query metrics across multi-region clusters with ease. Improve database efficiency and eliminate slow queries with our automated system. Sign up today for a demo.",
         "optimized": "Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes."
       },
       "origin": {
-        "note": "The source names no originator.",
-        "authorsLabel": "",
+        "authors": [
+          "E. St. Elmo Lewis"
+        ],
+        "year": 1908,
+        "title": "Financial Advertising",
+        "publication": "Levey Bros. & Company",
+        "note": "Checked 2026-11-10: the 1908 book states attention, interest and conviction; the four-step AIDA and the 1898 date are later textbook attribution.",
+        "authorsLabel": "E. St. Elmo Lewis",
         "titleStop": "."
       },
       "figure": {
@@ -81,6 +95,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "aversion at position 2 of 12",
       "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]",
+      "templateLines": [
+        "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology]",
+        "[Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days]",
+        "[Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]"
+      ],
       "example": {
         "bland": "Managing cloud infrastructure costs is difficult for growing engineering teams. Cloud bills often exceed forecasts, leading to budget problems and friction with the finance department. Our FinOps platform helps you monitor spending and save money on your cloud provider.",
         "optimized": "AWS infrastructure bills arrived 22% over forecast again this month. Finance is demanding line-item justification for Kubernetes cluster scaling, while engineering managers waste 14 hours every sprint reverse-engineering unallocated compute spikes instead of shipping core roadmap features. Continuing to absorb this drag means cutting headcount or deferring product launches. Our FinOps engine reconciles real-time container utilization directly with cloud billing APIs, automatically terminating orphaned compute nodes."
@@ -128,6 +147,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "contrast at position 3 of 12",
       "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]",
+      "templateLines": [
+        "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points]",
+        "[The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard]",
+        "[The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]"
+      ],
       "example": {
         "bland": "Writing documentation manually takes a lot of time. Our automated generator turns your internal source code into clean documentation sites quickly and easily, saving your developers time and keeping content up to date.",
         "optimized": "Your senior systems architects spend Fridays manually writing API reference markdown while pull requests pile up unreviewed. Imagine continuous deployment where every merged commit automatically builds, verifies, and publishes interactive API documentation without an engineer typing a single explanatory sentence. Our schema-driven static documentation compiler synchronizes your OpenAPI specifications directly into high-speed search portals on every git push."
@@ -183,6 +207,13 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 4 of 12",
       "template": "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]",
+      "templateLines": [
+        "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge]",
+        "[Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints]",
+        "[Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle]",
+        "[Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts]",
+        "[Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]"
+      ],
       "example": {
         "bland": "Are you a software founder trying to improve retention? Retention is hard, but by using customer feedback loops, you can improve retention. We teach you how to build product feedback loops that retain users. Enroll in our course today.",
         "optimized": "This architectural masterclass is exclusively for post-Series A technical founders whose 90-day Net Revenue Retention is sliding below 105%. We understand the exhaustion of shipping customer-requested features every sprint, only to watch churn hold flat while engineering complexity compounds. The root cause is the \"Feature Trajectory Fallacy\": building custom requests for departing accounts instead of reinforcing the behavioral habit loops of top-decile retained cohorts. When engineering transitions from backlog reactivity to algorithmic telemetry loops, activation spikes by 34% within single reporting periods. Review the complete curriculum and reserve an onboarding cohort slot."
@@ -239,6 +270,12 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "anchor at position 5 of 12",
       "template": "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]",
+      "templateLines": [
+        "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure]",
+        "[Promise: Declare an absolute, measurable performance standard guaranteed by the product]",
+        "[Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data]",
+        "[Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]"
+      ],
       "example": {
         "bland": "Picture a workplace where you never have to deal with broken builds. We promise our CI/CD runner is faster and more reliable than the alternatives. It has been tested by top engineering organizations. Sign up now before the current pricing tier ends.",
         "optimized": "Picture your deployment dashboard running entirely in solid green: fifty microservices testing, compiling, and pushing to staging without a single hanging worker or flaky container restart. We guarantee that your enterprise CI test suites will complete in under 180 seconds—or you do not pay. Benchmarked against 1.2 million pipeline hours across 450 engineering organizations, our bare-metal kernel orchestration reduced failed pipeline retries by 94.2%. Onboard your engineering team this week before current compute allocations close for the quarter."
@@ -286,6 +323,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 6 of 12",
       "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]",
+      "templateLines": [
+        "Feature: [Technical architecture, physical dimension, or concrete operational mechanism]",
+        "Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security]",
+        "Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]"
+      ],
       "example": {
         "bland": "Feature: Rust-based backend architecture. Advantage: It is faster and uses less memory. Benefit: Saves server costs for your company.",
         "optimized": "Built on an asynchronous, memory-safe Rust execution kernel (Feature), preventing garbage collection pauses and processing 120,000 concurrent network transactions per second on a single thread (Advantage). This eliminates infrastructure overprovisioning, reducing monthly cloud runtime expenses by up to 60% while insulating engineering teams from Sev-1 latency outages (Benefit)."
@@ -319,6 +361,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 7 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -349,10 +394,19 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "identity at position 8 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
-        "note": "The source names no originator.",
-        "authorsLabel": "",
+        "authors": [
+          "Ray Edwards"
+        ],
+        "year": 2016,
+        "title": "How to Write Copy That Sells",
+        "publication": "Morgan James Publishing",
+        "note": "Checked 2026-11-10 against the publisher's release list and the library catalogue: Morgan James, New York, 2016.",
+        "authorsLabel": "Ray Edwards",
         "titleStop": "."
       },
       "figure": {
@@ -379,10 +433,19 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 9 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
-        "note": "The source names no originator.",
-        "authorsLabel": "",
+        "authors": [
+          "Russell Brunson"
+        ],
+        "year": 2022,
+        "title": "DotCom Secrets",
+        "publication": "Hay House",
+        "note": "Checked 2026-11-10: the Hay House edition prints the Star Story Solution script at p. 279 and credits Vince James with the formula.",
+        "authorsLabel": "Russell Brunson",
         "titleStop": "."
       },
       "figure": {
@@ -409,6 +472,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "proof at position 10 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -439,11 +505,20 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 11 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
-        "note": "The source names no originator.",
-        "authorsLabel": "",
-        "titleStop": "."
+        "authors": [
+          "Danny Iny"
+        ],
+        "year": 2011,
+        "title": "Introducing The Fabulous 6 + 1 Model For Effective Copywriting (Better Than AIDA!)",
+        "publication": "Smashing Magazine",
+        "note": "Checked 2026-11-10: the magazine's own page carries the article and its date, 11 October 2011.",
+        "authorsLabel": "Danny Iny",
+        "titleStop": ""
       },
       "figure": {
         "svgShape": "copywriting-figure",
@@ -469,6 +544,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "proof at position 12 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -509,6 +587,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "gap at position 1 of 12",
       "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]",
+      "templateLines": [
+        "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]"
+      ],
       "example": {
         "bland": "How to write automated unit tests for your code.",
         "optimized": "How to reach 100% test coverage across legacy codebases without writing manual assertions."
@@ -552,6 +633,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "gap at position 2 of 12",
       "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]",
+      "templateLines": [
+        "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]"
+      ],
       "example": {
         "bland": "A security breach happened at a major bank yesterday.",
         "optimized": "When their root certificates expired at 2:00 AM, the engineering team made one fatal command line mistake."
@@ -595,6 +679,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "gap at position 3 of 12",
       "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]",
+      "templateLines": [
+        "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]"
+      ],
       "example": {
         "bland": "Why you should stop micro-optimizing your database.",
         "optimized": "Why adding database read-replicas is quietly tripling your p99 latency during traffic spikes."
@@ -642,6 +729,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "aversion at position 4 of 12",
       "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]",
+      "templateLines": [
+        "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]"
+      ],
       "example": {
         "bland": "We make your website load faster or your money back.",
         "optimized": "Cut your mobile checkout page render speed below 750ms in 14 days, or you pay nothing."
@@ -689,6 +779,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "proof at position 5 of 12",
       "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]",
+      "templateLines": [
+        "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]"
+      ],
       "example": {
         "bland": "Many companies use our database management software.",
         "optimized": "How 4,120 DevOps architects maintain 99.999% uptime across Kubernetes without on-call pages."
@@ -722,6 +815,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "identity at position 6 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -752,6 +848,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "contrast at position 7 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -782,6 +881,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "aversion at position 8 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -812,6 +914,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "gap at position 9 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -842,6 +947,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "proof at position 10 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -872,6 +980,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "contrast at position 11 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -916,6 +1027,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 12 of 12",
       "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]",
+      "templateLines": [
+        "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]"
+      ],
       "example": {
         "bland": "Fast and secure compliance platform for modern teams.",
         "optimized": "Enterprise SOC 2 automation that passes security audits in 14 days without slowing engineering sprint velocity."
@@ -963,6 +1077,10 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 1 of 12",
       "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].",
+      "templateLines": [
+        "The [Category] Built Exclusively for [Target Persona]",
+        "[Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism]."
+      ],
       "example": {
         "bland": "All-in-one Project Management We help engineering teams collaborate better and track tasks efficiently with our modern workflow dashboard.",
         "optimized": "The Linear Git Integration for Autonomous Systems Engineers Stop reconciling GitHub issues against Jira tickets manually. Automatically transition sprint status, resolve bugs, and sync PR reviews straight from terminal commits."
@@ -1006,6 +1124,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "agency at position 2 of 12",
       "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]",
+      "templateLines": [
+        "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]"
+      ],
       "example": {
         "bland": "Submit.",
         "optimized": "Build My Production Cluster."
@@ -1053,6 +1174,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "sequence at position 3 of 12",
       "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]",
+      "templateLines": [
+        "No [Domain Objects] Configured Yet",
+        "Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes.",
+        "[ + Create My First [Domain Object] ]"
+      ],
       "example": {
         "bland": "No API Keys Created Yet You have not generated any secret keys. Click the button below if you want to make an API key for your account.",
         "optimized": "Zero Live Production Keys Configured Generate your first read-only authentication token to begin querying telemetry endpoints over encrypted TLS. Integrates in 60 seconds via our curl quickstart. [Generate Production Key →]"
@@ -1100,6 +1226,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "aversion at position 4 of 12",
       "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]",
+      "templateLines": [
+        "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]"
+      ],
       "example": {
         "bland": "Terms and conditions apply. Free trial.",
         "optimized": "14-day free sandbox • No credit card required • Deploy with 1 line of bash."
@@ -1147,6 +1276,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "agency at position 5 of 12",
       "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].",
+      "templateLines": [
+        "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume]."
+      ],
       "example": {
         "bland": "Error 403: Invalid Submission You entered an incompatible JSON payload format. Correct your mistakes and resubmit the form.",
         "optimized": "JSON Schema Validation Halted The payload was missing the required \"environment_id\" string on line 42. Insert the project identifier to resume compilation. [View Documentation Reference] or [Auto-Fix Schema Formatting]"
@@ -1180,6 +1312,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 6 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1210,6 +1345,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "anchor at position 7 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1240,6 +1378,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 8 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1270,6 +1411,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "anchor at position 9 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1300,6 +1444,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "loop at position 10 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1330,6 +1477,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "anchor at position 11 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1360,6 +1510,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 12 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1390,6 +1543,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 1 of 12",
       "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]",
+      "templateLines": [
+        "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]"
+      ],
       "example": {
         "bland": "Scalable data infrastructure is built by our engineers, and cloud configurations are monitored continuously by the automation platform to prevent downtime.",
         "optimized": "Our engineers build scalable data infrastructure. The automation platform monitors your cloud configurations 24/7 to prevent downtime."
@@ -1423,6 +1579,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 2 of 12",
       "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.",
+      "templateLines": [
+        "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density."
+      ],
       "example": {
         "bland": "Organizations must leverage comprehensive enterprise orchestration capabilities in order to facilitate synergistic cross-functional departmental communication.",
         "optimized": "Teams must use clear automated tools to talk directly across departments and ship faster."
@@ -1456,6 +1615,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "loop at position 3 of 12",
       "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication].",
+      "templateLines": [
+        "[Dense Structural Argument / High-Level Observation].",
+        "[Bucket Brigade Connector:]",
+        "[Direct, Surprising, or Visceral Downstream Implication]."
+      ],
       "example": {
         "bland": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt because your developers end up spending more time patching dependencies than shipping user features. This costs organizations hundreds of thousands of dollars annually.",
         "optimized": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt. Here is why: Your developers end up spending more time patching dependencies than shipping revenue-generating features. It gets worse. This misallocation quietly burns over $300,000 in unrecoverable payroll every single quarter."
@@ -1489,6 +1653,11 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "cadence at position 4 of 12",
       "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]",
+      "templateLines": [
+        "[Imperative Verb A] [Target Object A]",
+        "[Imperative Verb B] [Target Object B]",
+        "[Imperative Verb C] [Target Object C]"
+      ],
       "example": {
         "bland": "Our application helps with streamlining your everyday engineering tasks, provides security for code repositories, and increases team happiness.",
         "optimized": "Automate your deployment pipelines. Secure your core repositories. Accelerate your engineering delivery."
@@ -1522,13 +1691,22 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "cadence at position 5 of 12",
       "template": "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words].",
+      "templateLines": [
+        "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words]."
+      ],
       "example": {
         "bland": "Modern continuous deployment pipelines require resilient cloud servers to ensure maximum stability. Our platform continuously checks your system configuration across clusters to prevent unexpected service outages. You can install our software using a simple script to protect your environment.",
         "optimized": "This software is fast. Dead fast. When production traffic spikes unexpectedly on a Friday afternoon, your cluster automatically absorbs the load without dropping a single websocket connection. Nothing crashes. Your on-call engineers sleep peacefully through the night."
       },
       "origin": {
-        "note": "The source names no originator.",
-        "authorsLabel": "",
+        "authors": [
+          "Gary Provost"
+        ],
+        "year": 1985,
+        "title": "100 Ways to Improve Your Writing",
+        "publication": "Signet",
+        "note": "Checked 2026-11-10: the rhythm passage is at pp. 60-61 of the 1985 Signet edition, as cited by university writing centres.",
+        "authorsLabel": "Gary Provost",
         "titleStop": "."
       },
       "figure": {
@@ -1555,6 +1733,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "cadence at position 6 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1585,6 +1766,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 7 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1615,6 +1799,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "proof at position 8 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1645,6 +1832,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "ease at position 9 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1675,6 +1865,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "identity at position 10 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1705,6 +1898,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "cadence at position 11 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1735,6 +1931,9 @@ window.COPYWRITING_DECK = {
       "frontSize": 9,
       "schematic": "identity at position 12 of 12",
       "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+      "templateLines": [
+        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+      ],
       "example": null,
       "origin": {
         "note": "The source names no originator.",

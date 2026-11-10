@@ -26,6 +26,11 @@
   "frontSize": 9,
   "schematic": "sequence at position 6 of 12",
   "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]",
+  "templateLines": [
+    "Feature: [Technical architecture, physical dimension, or concrete operational mechanism]",
+    "Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security]",
+    "Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]"
+  ],
   "example": {
     "bland": "Feature: Rust-based backend architecture. Advantage: It is faster and uses less memory. Benefit: Saves server costs for your company.",
     "optimized": "Built on an asynchronous, memory-safe Rust execution kernel (Feature), preventing garbage collection pauses and processing 120,000 concurrent network transactions per second on a single thread (Advantage). This eliminates infrastructure overprovisioning, reducing monthly cloud runtime expenses by up to 60% while insulating engineering teams from Sev-1 latency outages (Benefit)."

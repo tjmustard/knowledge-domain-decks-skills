@@ -22,6 +22,9 @@
   "frontSize": 9,
   "schematic": "gap at position 3 of 12",
   "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]",
+  "templateLines": [
+    "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]"
+  ],
   "example": {
     "bland": "Why you should stop micro-optimizing your database.",
     "optimized": "Why adding database read-replicas is quietly tripling your p99 latency during traffic spikes."

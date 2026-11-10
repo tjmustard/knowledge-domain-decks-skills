@@ -22,6 +22,9 @@
   "frontSize": 9,
   "schematic": "gap at position 1 of 12",
   "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]",
+  "templateLines": [
+    "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]"
+  ],
   "example": {
     "bland": "How to write automated unit tests for your code.",
     "optimized": "How to reach 100% test coverage across legacy codebases without writing manual assertions."

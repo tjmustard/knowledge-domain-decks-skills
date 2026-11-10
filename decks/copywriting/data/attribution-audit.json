@@ -1,0 +1,89 @@
+{
+  "checked": "2026-11-10",
+  "note": "The source's taxonomy names an originator for one formula (Danny Iny's 6+1) and a person in another's name (Provost Rhythm Variation); every other row is anonymous. Each candidate the dispatcher listed was checked against a public record rather than assumed. A formula is cited only where a work can be named with its year and publication; where no documented inventor exists, the card says the source names no originator rather than lending it a famous name. The check note on each cited card records what was read and where.",
+  "candidates": [
+    {
+      "formulaId": "ST-01",
+      "formula": "AIDA",
+      "verdict": "cited",
+      "origin": "E. St. Elmo Lewis, Financial Advertising (Levey Bros. & Company, Indianapolis, 1908)",
+      "checked": "The bibliography gives the book's year and publisher; the article's own table gives the book's sequence as attract attention, awaken the interest, create conviction - three parts, without desire.",
+      "where": "https://en.wikipedia.org/wiki/E._St._Elmo_Lewis",
+      "caution": "The 1898 four-step story is textbook folklore: Iwamoto (Journal of Marketing History Research, 2024) finds no printed 1898 slogan and dates the four-step form to American salesmanship writing around 1903-1911."
+    },
+    {
+      "formulaId": "ST-02",
+      "formula": "PAS",
+      "verdict": "no originator",
+      "checked": "The framework surveys found no documented inventor or first printed appearance. Dan Kennedy is the most frequently credited popularizer (The Ultimate Sales Letter, 1990) and Eugene Schwartz the usual conceptual root; neither claim carries a citation to a coining.",
+      "where": "https://wepushers.com/frameworks/pas-aida-copywriting/"
+    },
+    {
+      "formulaId": "ST-03",
+      "formula": "BAB",
+      "verdict": "no originator",
+      "checked": "No verified individual creator. The earliest widely cited written definition is Kevan Lee's copywriting-formula roundup for Buffer, republished by Entrepreneur in November 2014; claims naming Bob Bly or Dan Kennedy are undocumented popular attributions.",
+      "where": "https://blaksheepcreative.com/digital-marketing/content-marketing/copywriting/before-after-bridge/"
+    },
+    {
+      "formulaId": "ST-04",
+      "formula": "QUEST",
+      "verdict": "cited",
+      "origin": "Michel Fortin, The Death of the Salesletter (2006)",
+      "checked": "Fortin's own page dates QUEST to his late-1990s teaching at Algonquin College and names the 2006 essay where he set it out as a multi-step approach.",
+      "where": "https://michelfortin.com/quest-formula/"
+    },
+    {
+      "formulaId": "ST-05",
+      "formula": "4 Ps",
+      "verdict": "no originator",
+      "checked": "No source attributes the copywriting Four Ps (Picture, Promise, Prove, Push) to a named originator; the lineage is treated as folk direct-response craft, and the P order varies between sources (Promise/Picture/Proof/Push elsewhere).",
+      "where": "https://www.one.com/en-us/academy/best-copywriting-formulas/"
+    },
+    {
+      "formulaId": "ST-06",
+      "formula": "FAB",
+      "verdict": "no originator",
+      "checked": "No author found. The structure is traced to consultative sales training of the 1960s-70s, with Xerox's Professional Selling Skills programme named as the popularizer rather than a coiner; Neil Rackham is a later refiner of the benefit concept, not its author.",
+      "where": "https://adlibrary.com/posts/fab-framework-copywriting-guide"
+    },
+    {
+      "formulaId": "ST-08",
+      "formula": "PASTOR",
+      "verdict": "cited",
+      "origin": "Ray Edwards, How to Write Copy That Sells (Morgan James Publishing, New York, 2016)",
+      "checked": "The publisher's own release list, the Wake County catalogue record and Open Library agree on Morgan James and 16 February 2016. The widely repeated 2006 date was not corroborated and is not used.",
+      "where": "https://www.morgan-james-publishing.com/hot-new-releases-for-february-16th-2016/"
+    },
+    {
+      "formulaId": "ST-09",
+      "formula": "Star-Story-Solution",
+      "verdict": "cited",
+      "origin": "Russell Brunson, DotCom Secrets (Hay House, 2022)",
+      "checked": "The Hay House edition prints the Star Story Solution Script at page 279. Brunson's own account credits Vince James with the formula; James has no printed work naming it, so the card cites the book that carries it and the record says who originated it.",
+      "where": "https://books.google.com/books/about/Dotcom_Secrets.html?id=yQhlEAAAQBAJ"
+    },
+    {
+      "formulaId": "ST-11",
+      "formula": "Danny Iny's 6+1",
+      "verdict": "cited",
+      "origin": "Danny Iny, Introducing The Fabulous 6 + 1 Model For Effective Copywriting (Better Than AIDA!), Smashing Magazine, 11 October 2011",
+      "checked": "The magazine's own page carries the article and its date. The source's taxonomy already names Iny in the formula's name.",
+      "where": "https://www.smashingmagazine.com/2011/10/introducing-6-1-model-for-effective-copywriting/"
+    },
+    {
+      "formulaId": "CR-05",
+      "formula": "Provost Rhythm Variation",
+      "verdict": "cited",
+      "origin": "Gary Provost, 100 Ways to Improve Your Writing (Signet, 1985), pp. 60-61",
+      "checked": "The sentence-length passage is cited at pp. 60-61 of the 1985 Signet/Mentor edition by university writing centres (Lumen Learning, University College Dublin); the source's taxonomy already names Provost.",
+      "where": "https://courses.lumenlearning.com/suny-jeffersoncc-styleguide/chapter/introduction-to-sentence-structure/"
+    }
+  ],
+  "counts": {
+    "cited": 6,
+    "noOriginator": 42,
+    "total": 48,
+    "note": "Six formulas name a work: ST-01, ST-04, ST-08, ST-09, ST-11 and CR-05. The other forty-two cards print 'The source names no originator.'"
+  }
+}

@@ -138,7 +138,15 @@
         "optimized": "Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes."
       },
       "exampleOptimizedLen": 468,
-      "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]"
+      "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]",
+      "templateLines": [
+        "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion]",
+        "[Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences]",
+        "[Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers]",
+        "[Proof Point 1: Quantitative baseline vs. result]",
+        "[Proof Point 2: Specific operational friction eradicated]",
+        "[Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]"
+      ]
     },
     {
       "id": "CPY-02",
@@ -155,7 +163,12 @@
         "optimized": "AWS infrastructure bills arrived 22% over forecast again this month. Finance is demanding line-item justification for Kubernetes cluster scaling, while engineering managers waste 14 hours every sprint reverse-engineering unallocated compute spikes instead of shipping core roadmap features. Continuing to absorb this drag means cutting headcount or deferring product launches. Our FinOps engine reconciles real-time container utilization directly with cloud billing APIs, automatically terminating orphaned compute nodes."
       },
       "exampleOptimizedLen": 521,
-      "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]"
+      "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]",
+      "templateLines": [
+        "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology]",
+        "[Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days]",
+        "[Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]"
+      ]
     },
     {
       "id": "CPY-03",
@@ -172,7 +185,12 @@
         "optimized": "Your senior systems architects spend Fridays manually writing API reference markdown while pull requests pile up unreviewed. Imagine continuous deployment where every merged commit automatically builds, verifies, and publishes interactive API documentation without an engineer typing a single explanatory sentence. Our schema-driven static documentation compiler synchronizes your OpenAPI specifications directly into high-speed search portals on every git push."
       },
       "exampleOptimizedLen": 462,
-      "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]"
+      "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]",
+      "templateLines": [
+        "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points]",
+        "[The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard]",
+        "[The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]"
+      ]
     },
     {
       "id": "CPY-04",
@@ -189,7 +207,14 @@
         "optimized": "This architectural masterclass is exclusively for post-Series A technical founders whose 90-day Net Revenue Retention is sliding below 105%. We understand the exhaustion of shipping customer-requested features every sprint, only to watch churn hold flat while engineering complexity compounds. The root cause is the \"Feature Trajectory Fallacy\": building custom requests for departing accounts instead of reinforcing the behavioral habit loops of top-decile retained cohorts. When engineering transitions from backlog reactivity to algorithmic telemetry loops, activation spikes by 34% within single reporting periods. Review the complete curriculum and reserve an onboarding cohort slot."
       },
       "exampleOptimizedLen": 688,
-      "template": "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]"
+      "template": "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]",
+      "templateLines": [
+        "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge]",
+        "[Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints]",
+        "[Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle]",
+        "[Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts]",
+        "[Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]"
+      ]
     },
     {
       "id": "CPY-05",
@@ -206,7 +231,13 @@
         "optimized": "Picture your deployment dashboard running entirely in solid green: fifty microservices testing, compiling, and pushing to staging without a single hanging worker or flaky container restart. We guarantee that your enterprise CI test suites will complete in under 180 seconds—or you do not pay. Benchmarked against 1.2 million pipeline hours across 450 engineering organizations, our bare-metal kernel orchestration reduced failed pipeline retries by 94.2%. Onboard your engineering team this week before current compute allocations close for the quarter."
       },
       "exampleOptimizedLen": 553,
-      "template": "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]"
+      "template": "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]",
+      "templateLines": [
+        "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure]",
+        "[Promise: Declare an absolute, measurable performance standard guaranteed by the product]",
+        "[Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data]",
+        "[Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]"
+      ]
     },
     {
       "id": "CPY-06",
@@ -223,7 +254,12 @@
         "optimized": "Built on an asynchronous, memory-safe Rust execution kernel (Feature), preventing garbage collection pauses and processing 120,000 concurrent network transactions per second on a single thread (Advantage). This eliminates infrastructure overprovisioning, reducing monthly cloud runtime expenses by up to 60% while insulating engineering teams from Sev-1 latency outages (Benefit)."
       },
       "exampleOptimizedLen": 380,
-      "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]"
+      "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]",
+      "templateLines": [
+        "Feature: [Technical architecture, physical dimension, or concrete operational mechanism]",
+        "Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security]",
+        "Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]"
+      ]
     },
     {
       "id": "CPY-07",
@@ -324,7 +360,10 @@
         "optimized": "How to reach 100% test coverage across legacy codebases without writing manual assertions."
       },
       "exampleOptimizedLen": 90,
-      "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]"
+      "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]",
+      "templateLines": [
+        "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]"
+      ]
     },
     {
       "id": "CPY-14",
@@ -341,7 +380,10 @@
         "optimized": "When their root certificates expired at 2:00 AM, the engineering team made one fatal command line mistake."
       },
       "exampleOptimizedLen": 106,
-      "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]"
+      "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]",
+      "templateLines": [
+        "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]"
+      ]
     },
     {
       "id": "CPY-15",
@@ -358,7 +400,10 @@
         "optimized": "Why adding database read-replicas is quietly tripling your p99 latency during traffic spikes."
       },
       "exampleOptimizedLen": 93,
-      "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]"
+      "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]",
+      "templateLines": [
+        "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]"
+      ]
     },
     {
       "id": "CPY-16",
@@ -375,7 +420,10 @@
         "optimized": "Cut your mobile checkout page render speed below 750ms in 14 days, or you pay nothing."
       },
       "exampleOptimizedLen": 86,
-      "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]"
+      "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]",
+      "templateLines": [
+        "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]"
+      ]
     },
     {
       "id": "CPY-17",
@@ -392,7 +440,10 @@
         "optimized": "How 4,120 DevOps architects maintain 99.999% uptime across Kubernetes without on-call pages."
       },
       "exampleOptimizedLen": 92,
-      "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]"
+      "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]",
+      "templateLines": [
+        "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]"
+      ]
     },
     {
       "id": "CPY-18",
@@ -493,7 +544,10 @@
         "optimized": "Enterprise SOC 2 automation that passes security audits in 14 days without slowing engineering sprint velocity."
       },
       "exampleOptimizedLen": 111,
-      "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]"
+      "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]",
+      "templateLines": [
+        "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]"
+      ]
     },
     {
       "id": "CPY-25",
@@ -510,7 +564,11 @@
         "optimized": "The Linear Git Integration for Autonomous Systems Engineers Stop reconciling GitHub issues against Jira tickets manually. Automatically transition sprint status, resolve bugs, and sync PR reviews straight from terminal commits."
       },
       "exampleOptimizedLen": 227,
-      "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism]."
+      "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].",
+      "templateLines": [
+        "The [Category] Built Exclusively for [Target Persona]",
+        "[Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism]."
+      ]
     },
     {
       "id": "CPY-26",
@@ -527,7 +585,10 @@
         "optimized": "Build My Production Cluster."
       },
       "exampleOptimizedLen": 28,
-      "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]"
+      "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]",
+      "templateLines": [
+        "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]"
+      ]
     },
     {
       "id": "CPY-27",
@@ -544,7 +605,12 @@
         "optimized": "Zero Live Production Keys Configured Generate your first read-only authentication token to begin querying telemetry endpoints over encrypted TLS. Integrates in 60 seconds via our curl quickstart. [Generate Production Key →]"
       },
       "exampleOptimizedLen": 223,
-      "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]"
+      "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]",
+      "templateLines": [
+        "No [Domain Objects] Configured Yet",
+        "Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes.",
+        "[ + Create My First [Domain Object] ]"
+      ]
     },
     {
       "id": "CPY-28",
@@ -561,7 +627,10 @@
         "optimized": "14-day free sandbox • No credit card required • Deploy with 1 line of bash."
       },
       "exampleOptimizedLen": 75,
-      "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]"
+      "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]",
+      "templateLines": [
+        "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]"
+      ]
     },
     {
       "id": "CPY-29",
@@ -578,7 +647,10 @@
         "optimized": "JSON Schema Validation Halted The payload was missing the required \"environment_id\" string on line 42. Insert the project identifier to resume compilation. [View Documentation Reference] or [Auto-Fix Schema Formatting]"
       },
       "exampleOptimizedLen": 218,
-      "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume]."
+      "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].",
+      "templateLines": [
+        "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume]."
+      ]
     },
     {
       "id": "CPY-30",
@@ -693,7 +765,10 @@
         "optimized": "Our engineers build scalable data infrastructure. The automation platform monitors your cloud configurations 24/7 to prevent downtime."
       },
       "exampleOptimizedLen": 134,
-      "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]"
+      "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]",
+      "templateLines": [
+        "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]"
+      ]
     },
     {
       "id": "CPY-38",
@@ -710,7 +785,10 @@
         "optimized": "Teams must use clear automated tools to talk directly across departments and ship faster."
       },
       "exampleOptimizedLen": 89,
-      "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density."
+      "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.",
+      "templateLines": [
+        "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density."
+      ]
     },
     {
       "id": "CPY-39",
@@ -727,7 +805,12 @@
         "optimized": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt. Here is why: Your developers end up spending more time patching dependencies than shipping revenue-generating features. It gets worse. This misallocation quietly burns over $300,000 in unrecoverable payroll every single quarter."
       },
       "exampleOptimizedLen": 325,
-      "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication]."
+      "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication].",
+      "templateLines": [
+        "[Dense Structural Argument / High-Level Observation].",
+        "[Bucket Brigade Connector:]",
+        "[Direct, Surprising, or Visceral Downstream Implication]."
+      ]
     },
     {
       "id": "CPY-40",
@@ -744,7 +827,12 @@
         "optimized": "Automate your deployment pipelines. Secure your core repositories. Accelerate your engineering delivery."
       },
       "exampleOptimizedLen": 104,
-      "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]"
+      "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]",
+      "templateLines": [
+        "[Imperative Verb A] [Target Object A]",
+        "[Imperative Verb B] [Target Object B]",
+        "[Imperative Verb C] [Target Object C]"
+      ]
     },
     {
       "id": "CPY-41",
@@ -761,7 +849,10 @@
         "optimized": "This software is fast. Dead fast. When production traffic spikes unexpectedly on a Friday afternoon, your cluster automatically absorbs the load without dropping a single websocket connection. Nothing crashes. Your on-call engineers sleep peacefully through the night."
       },
       "exampleOptimizedLen": 268,
-      "template": "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words]."
+      "template": "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words].",
+      "templateLines": [
+        "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words]."
+      ]
     },
     {
       "id": "CPY-42",
@@ -875,8 +966,9 @@
     "Cleaning rules, declared rather than implied: markdown escapes are unescaped (\\[ \\] \\< \\> \\+ \\_ \\* \\# \\$ \\. \\- \\! \\\\); extraction markers of the form [span_N](start_span)[span_N](end_span) are removed after unescaping; a template written inside an HTML comment is unwrapped to its text; a template emitted with a leading # is stripped to its text. Every one of those is listed in sourceDefects.",
     "The LaTeX Gunning Fog formula in CR-02's prose is kept as source text; the deck needs a declared rendering table before it prints (see the mission SPEC).",
     "A card that says 'the source gives no template' is the honest record of a taxonomy-only formula, not a defect to hide.",
-    "The ratio line is measured, not assumed: 17 of the 22 blueprints state component percentages in their prose (the ids are recorded under ratios); the other five blueprints and all 26 taxonomy-only records print their scope line on the front.",
-    "Medians in lengths are the upper middle value for an even sample (the value at index n/2 of the sorted list), with no interpolation; deck nine recorded the lower middle, and each inventory states its own convention rather than inheriting one."
+    "Each blueprint template is also recorded as templateLines, the source's own lines, because ten of the twenty-two are lists of parts (ST-01 has six, ST-04 five, UX-03 three): the joined string is the record, the lines are how the card prints it. template === templateLines.join(\" \") for every blueprint.",
+    "Medians in lengths are the upper middle value for an even sample (the value at index n/2 of the sorted list), with no interpolation; deck nine recorded the lower middle, and each inventory states its own convention rather than inheriting one.",
+    "The ratio summary is measured from the records: seventeen blueprint prose states component percentages, and those are the cards whose front prints a ratio line."
   ],
   "ratios": {
     "cards": 17,
@@ -899,6 +991,7 @@
       "UX-04",
       "UX-05"
     ],
-    "measure": "blueprint prose states component percentages; the five blueprints that state none (CR-01 to CR-05) and the 26 taxonomy-only records print their scope line instead"
+    "measure": "blueprint prose states component percentages; the five blueprints that state none (CR-01 to CR-05) and the 26 taxonomy-only records print their scope line instead",
+    "note": "Measured from the records, not assumed: a card prints a ratio line only where its own prose states percentages."
   }
 }

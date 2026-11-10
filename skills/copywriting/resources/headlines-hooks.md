@@ -10,7 +10,8 @@
 - **Schematic:** gap at position 1 of 12
 - **Cognitive mechanism:** Curiosity Gap & Self-Efficacy Expectation
 - **Where it deploys:** Blog Posts, Lead Magnet Landing Pages
-- **Template:** How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]
+- **Template:**
+  How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]
 - **Blueprint:** The How-To with a Twist formula pairs a highly desired operational milestone with the elimination of a painful friction point traditionally required to achieve it. The component ratio allocates 50% of the headline to the objective outcome and 50% to the removal of the expected trade-off. 
 Its cognitive mechanism relies on curiosity gap induction and risk compensation. Standard how-to headlines frequently trigger fatigue because the reader assumes the path to achievement requires significant effort and sacrifice. By eliminating the expected negative trade-off, the hook introduces an information gap regarding how such an outcome is possible without the standard cost.
 - **Before and after:**
@@ -24,7 +25,8 @@ Its cognitive mechanism relies on curiosity gap induction and risk compensation.
 - **Schematic:** gap at position 2 of 12
 - **Cognitive mechanism:** Zeigarnik Effect (Unclosed Cognitive Tension)
 - **Where it deploys:** Social Media Openers, Video Ads
-- **Template:** When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]
+- **Template:**
+  When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]
 - **Blueprint:** The Cliffhanger hook deliberately withholds the outcome or concluding mechanism of an escalating narrative. The word count stays concise, between 7 and 14 words, split evenly between narrative momentum (50%) and the withheld conclusion (50%). 
 This hook is driven by the Zeigarnik effect, which observes that uncompleted tasks or unresolved narrative sequences produce persistent cognitive tension within working memory. The reader's cognitive equilibrium is temporarily destabilized, compelling them to consume the subsequent body copy to resolve the narrative tension.
 - **Before and after:**
@@ -38,7 +40,8 @@ This hook is driven by the Zeigarnik effect, which observes that uncompleted tas
 - **Schematic:** gap at position 3 of 12
 - **Cognitive mechanism:** Schema Incongruity Resolution
 - **Where it deploys:** Thought Leadership, Ad Creative
-- **Template:** Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]
+- **Template:**
+  Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]
 - **Blueprint:** The Paradox hook exposes a contradiction within established industry workflows. The formula dedicates 40% of its space to naming a widely accepted best practice and 60% to revealing how that practice causes the exact failure it was implemented to prevent. 
 Its effectiveness is rooted in schema incongruity resolution. When sensory or intellectual inputs directly conflict with existing cognitive mental models, the brain registers an error signal, elevating alertness to reconcile the contradiction.
 - **Before and after:**
@@ -52,7 +55,8 @@ Its effectiveness is rooted in schema incongruity resolution. When sensory or in
 - **Schematic:** aversion at position 4 of 12
 - **Cognitive mechanism:** Ambiguity Aversion & Specificity Heuristic
 - **Where it deploys:** Paid Search Landing Pages, Performance Tools
-- **Template:** [Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]
+- **Template:**
+  [Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]
 - **Blueprint:** This formula combines precise performance integers, bounded time horizons, and complete risk reversals. The structural ratio divides into 40% for the exact performance metric, 25% for the timeframe, and 35% for the risk reversal. 
 This pattern activates ambiguity aversion and the specificity heuristic. Humans subconsciously interpret rounded figures as approximations or promotional exaggerations. In contrast, irregular integers signal precise telemetry and verifiable data, reassuring risk-averse evaluators.
 - **Before and after:**
@@ -66,7 +70,8 @@ This pattern activates ambiguity aversion and the specificity heuristic. Humans 
 - **Schematic:** proof at position 5 of 12
 - **Cognitive mechanism:** Bandwagon Effect & Authority Bias
 - **Where it deploys:** Homepage Banners, Hero Headlines
-- **Template:** How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]
+- **Template:**
+  How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]
 - **Blueprint:** The Social Proof Anchor leads with verified cohort adoption figures. The formula allocates 30% to the verified peer quantity, 30% to precise persona identifiers, and 40% to the business transformation achieved. 
 The cognitive foundation is the bandwagon effect and authority bias. In high-stakes enterprise environments, decision-makers face professional risk when choosing unrecognized solutions. Displaying verified adoption metrics from industry peers provides psychological safety and social validation.
 - **Before and after:**
@@ -80,7 +85,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** identity at position 6 of 12
 - **Cognitive mechanism:** Self-Referencing Effect & Cognitive Dissonance
 - **Where it deploys:** Paid Search Ads, Retargeting Landers
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-19 — If-Then Conditional
@@ -89,7 +95,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** contrast at position 7 of 12
 - **Cognitive mechanism:** Asymmetric Upside Framing & Prospect Theory
 - **Where it deploys:** Cold Prospecting, Contextual Ads
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-20 — Mistake / Warning Hook
@@ -98,7 +105,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** aversion at position 8 of 12
 - **Cognitive mechanism:** Extreme Loss Aversion & Negativity Bias
 - **Where it deploys:** Organic Content Hooks, Editorial Leads
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-21 — Little-Known Secret Mechanism
@@ -107,7 +115,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** gap at position 9 of 12
 - **Cognitive mechanism:** Information Asymmetry & Privilege Heuristic
 - **Where it deploys:** Direct Mail, Information Products
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-22 — Reason-Why Anchor
@@ -116,7 +125,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** proof at position 10 of 12
 - **Cognitive mechanism:** Placebo Effect of Justification ("Because" Trigger)
 - **Where it deploys:** Technical Products, Developer Tools
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-23 — Contrarian Category Rejection
@@ -125,7 +135,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** contrast at position 11 of 12
 - **Cognitive mechanism:** Cognitive Disruption & Reactance Theory
 - **Where it deploys:** Category Creation Startups, Manifestos
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-24 — Outcome-Without-Sacrifice
@@ -134,7 +145,8 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** ease at position 12 of 12
 - **Cognitive mechanism:** Friction Elimination & Trade-off Resistance
 - **Where it deploys:** B2B SaaS Heroes, App Value Propositions
-- **Template:** The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]
+- **Template:**
+  The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]
 - **Blueprint:** This framework links an ambitious operational achievement to the absolute preservation of a resource typically sacrificed during execution. Structurally, 30% defines the category, 35% articulates the outcome, and 35% eliminates the expected compromise. 
 The cognitive driver is trade-off resistance. High-consideration buyers frequently stall when forced to balance conflicting priorities, such as development velocity versus security compliance. Promising the primary outcome while guaranteeing zero compromise on secondary priorities removes this decision friction.
 - **Before and after:**

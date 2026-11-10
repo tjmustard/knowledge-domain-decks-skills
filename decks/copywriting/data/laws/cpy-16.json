@@ -26,6 +26,9 @@
   "frontSize": 9,
   "schematic": "aversion at position 4 of 12",
   "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]",
+  "templateLines": [
+    "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]"
+  ],
   "example": {
     "bland": "We make your website load faster or your money back.",
     "optimized": "Cut your mobile checkout page render speed below 750ms in 14 days, or you pay nothing."

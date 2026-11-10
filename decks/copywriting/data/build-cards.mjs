@@ -31,12 +31,51 @@ const NO_ORIGIN = { note: "The source names no originator." };
 // public record names carries that work and the date the check was made; every
 // other card says plainly that the source names none.
 const ORIGINS = {
+  "ST-01": {
+    authors: ["E. St. Elmo Lewis"],
+    year: 1908,
+    title: "Financial Advertising",
+    publication: "Levey Bros. & Company",
+    note:
+      "Checked 2026-11-10: the 1908 book states attention, interest and conviction; the four-step AIDA and the 1898 date are later textbook attribution."
+  },
   "ST-04": {
     authors: ["Michel Fortin"],
     year: 2006,
     title: "The Death of the Salesletter",
     note:
       "Checked 2026-11-10 on Fortin's own page: he dates QUEST to his late-1990s teaching at Algonquin College and names the 2006 essay where it was set out."
+  },
+  "ST-08": {
+    authors: ["Ray Edwards"],
+    year: 2016,
+    title: "How to Write Copy That Sells",
+    publication: "Morgan James Publishing",
+    note:
+      "Checked 2026-11-10 against the publisher's release list and the library catalogue: Morgan James, New York, 2016."
+  },
+  "ST-09": {
+    authors: ["Russell Brunson"],
+    year: 2022,
+    title: "DotCom Secrets",
+    publication: "Hay House",
+    note:
+      "Checked 2026-11-10: the Hay House edition prints the Star Story Solution script at p. 279 and credits Vince James with the formula."
+  },
+  "ST-11": {
+    authors: ["Danny Iny"],
+    year: 2011,
+    title: "Introducing The Fabulous 6 + 1 Model For Effective Copywriting (Better Than AIDA!)",
+    publication: "Smashing Magazine",
+    note: "Checked 2026-11-10: the magazine's own page carries the article and its date, 11 October 2011."
+  },
+  "CR-05": {
+    authors: ["Gary Provost"],
+    year: 1985,
+    title: "100 Ways to Improve Your Writing",
+    publication: "Signet",
+    note:
+      "Checked 2026-11-10: the rhythm passage is at pp. 60-61 of the 1985 Signet edition, as cited by university writing centres."
   }
 };
 
@@ -57,6 +96,12 @@ const main = async () => {
     if (record.blueprint && typeof template !== "string") {
       throw new Error(`${record.formulaId} is a blueprint with no template`);
     }
+    // The back prints one line per source line. The joined string stays on the
+    // record so the artifacts and the schema keep one canonical template.
+    const templateLines = record.blueprint ? record.templateLines : [NO_TEMPLATE];
+    if (templateLines.join(" ") !== template) {
+      throw new Error(`${record.formulaId}'s templateLines do not join to its template`);
+    }
 
     const card = {
       id: record.id,
@@ -73,6 +118,7 @@ const main = async () => {
       frontSize: row.frontSize,
       schematic: row.label,
       template,
+      templateLines,
       example: record.blueprint ? record.example : null,
       origin: ORIGINS[record.formulaId] || NO_ORIGIN,
       figure: {

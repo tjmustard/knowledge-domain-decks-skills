@@ -12,6 +12,11 @@
   "frontSize": 9,
   "schematic": "cadence at position 4 of 12",
   "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]",
+  "templateLines": [
+    "[Imperative Verb A] [Target Object A]",
+    "[Imperative Verb B] [Target Object B]",
+    "[Imperative Verb C] [Target Object C]"
+  ],
   "example": {
     "bland": "Our application helps with streamlining your everyday engineering tasks, provides security for code repositories, and increases team happiness.",
     "optimized": "Automate your deployment pipelines. Secure your core repositories. Accelerate your engineering delivery."

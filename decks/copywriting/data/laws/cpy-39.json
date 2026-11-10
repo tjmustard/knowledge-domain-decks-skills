@@ -12,6 +12,11 @@
   "frontSize": 9,
   "schematic": "loop at position 3 of 12",
   "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication].",
+  "templateLines": [
+    "[Dense Structural Argument / High-Level Observation].",
+    "[Bucket Brigade Connector:]",
+    "[Direct, Surprising, or Visceral Downstream Implication]."
+  ],
   "example": {
     "bland": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt because your developers end up spending more time patching dependencies than shipping user features. This costs organizations hundreds of thousands of dollars annually.",
     "optimized": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt. Here is why: Your developers end up spending more time patching dependencies than shipping revenue-generating features. It gets worse. This misallocation quietly burns over $300,000 in unrecoverable payroll every single quarter."

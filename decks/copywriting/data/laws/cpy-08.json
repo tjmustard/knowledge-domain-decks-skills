@@ -12,9 +12,18 @@
   "frontSize": 9,
   "schematic": "identity at position 8 of 12",
   "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "templateLines": [
+    "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+  ],
   "example": null,
   "origin": {
-    "note": "The source names no originator."
+    "authors": [
+      "Ray Edwards"
+    ],
+    "year": 2016,
+    "title": "How to Write Copy That Sells",
+    "publication": "Morgan James Publishing",
+    "note": "Checked 2026-11-10 against the publisher's release list and the library catalogue: Morgan James, New York, 2016."
   },
   "figure": {
     "svgShape": "copywriting-figure",

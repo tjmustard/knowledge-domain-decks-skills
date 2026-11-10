@@ -26,6 +26,11 @@
   "frontSize": 9,
   "schematic": "aversion at position 2 of 12",
   "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]",
+  "templateLines": [
+    "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology]",
+    "[Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days]",
+    "[Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]"
+  ],
   "example": {
     "bland": "Managing cloud infrastructure costs is difficult for growing engineering teams. Cloud bills often exceed forecasts, leading to budget problems and friction with the finance department. Our FinOps platform helps you monitor spending and save money on your cloud provider.",
     "optimized": "AWS infrastructure bills arrived 22% over forecast again this month. Finance is demanding line-item justification for Kubernetes cluster scaling, while engineering managers waste 14 hours every sprint reverse-engineering unallocated compute spikes instead of shipping core roadmap features. Continuing to absorb this drag means cutting headcount or deferring product launches. Our FinOps engine reconciles real-time container utilization directly with cloud billing APIs, automatically terminating orphaned compute nodes."

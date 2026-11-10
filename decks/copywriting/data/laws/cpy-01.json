@@ -30,12 +30,26 @@
   "frontSize": 9,
   "schematic": "sequence at position 1 of 12",
   "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]",
+  "templateLines": [
+    "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion]",
+    "[Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences]",
+    "[Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers]",
+    "[Proof Point 1: Quantitative baseline vs. result]",
+    "[Proof Point 2: Specific operational friction eradicated]",
+    "[Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]"
+  ],
   "example": {
     "bland": "Our enterprise database provides robust performance monitoring tools. You can track latency and query metrics across multi-region clusters with ease. Improve database efficiency and eliminate slow queries with our automated system. Sign up today for a demo.",
     "optimized": "Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes."
   },
   "origin": {
-    "note": "The source names no originator."
+    "authors": [
+      "E. St. Elmo Lewis"
+    ],
+    "year": 1908,
+    "title": "Financial Advertising",
+    "publication": "Levey Bros. & Company",
+    "note": "Checked 2026-11-10: the 1908 book states attention, interest and conviction; the four-step AIDA and the 1898 date are later textbook attribution."
   },
   "figure": {
     "svgShape": "copywriting-figure",

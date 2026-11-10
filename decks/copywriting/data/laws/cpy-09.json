@@ -12,9 +12,18 @@
   "frontSize": 9,
   "schematic": "sequence at position 9 of 12",
   "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "templateLines": [
+    "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
+  ],
   "example": null,
   "origin": {
-    "note": "The source names no originator."
+    "authors": [
+      "Russell Brunson"
+    ],
+    "year": 2022,
+    "title": "DotCom Secrets",
+    "publication": "Hay House",
+    "note": "Checked 2026-11-10: the Hay House edition prints the Star Story Solution script at p. 279 and credits Vince James with the formula."
   },
   "figure": {
     "svgShape": "copywriting-figure",

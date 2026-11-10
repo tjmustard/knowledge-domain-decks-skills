@@ -26,6 +26,9 @@
   "frontSize": 9,
   "schematic": "ease at position 12 of 12",
   "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]",
+  "templateLines": [
+    "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]"
+  ],
   "example": {
     "bland": "Fast and secure compliance platform for modern teams.",
     "optimized": "Enterprise SOC 2 automation that passes security audits in 14 days without slowing engineering sprint velocity."

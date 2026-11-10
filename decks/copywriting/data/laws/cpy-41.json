@@ -12,12 +12,21 @@
   "frontSize": 9,
   "schematic": "cadence at position 5 of 12",
   "template": "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words].",
+  "templateLines": [
+    "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words]."
+  ],
   "example": {
     "bland": "Modern continuous deployment pipelines require resilient cloud servers to ensure maximum stability. Our platform continuously checks your system configuration across clusters to prevent unexpected service outages. You can install our software using a simple script to protect your environment.",
     "optimized": "This software is fast. Dead fast. When production traffic spikes unexpectedly on a Friday afternoon, your cluster automatically absorbs the load without dropping a single websocket connection. Nothing crashes. Your on-call engineers sleep peacefully through the night."
   },
   "origin": {
-    "note": "The source names no originator."
+    "authors": [
+      "Gary Provost"
+    ],
+    "year": 1985,
+    "title": "100 Ways to Improve Your Writing",
+    "publication": "Signet",
+    "note": "Checked 2026-11-10: the rhythm passage is at pp. 60-61 of the 1985 Signet edition, as cited by university writing centres."
   },
   "figure": {
     "svgShape": "copywriting-figure",

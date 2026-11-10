@@ -10,7 +10,9 @@
 - **Schematic:** ease at position 1 of 12
 - **Cognitive mechanism:** Cognitive Ease & Mental Model Alignment
 - **Where it deploys:** Hero Fold, Positioning Headers
-- **Template:** The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].
+- **Template:**
+  The [Category] Built Exclusively for [Target Persona]
+  [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].
 - **Blueprint:** The Value Proposition Matrix serves as the cognitive anchor for landing page hero sections and product headers. It breaks down into three key elements: a target identifier defining the specific user segment (20%), a clear statement of the operational friction endured (35%), and an explanation of the differentiated mechanism providing relief (45%). 
 This matrix operates via cognitive ease and self-categorization theory. Online users scan digital interfaces within milliseconds; explicitly stating the target audience and operational mechanism allows evaluators to immediately recognize relevance and proceed through the conversion funnel.
 - **Before and after:**
@@ -24,7 +26,8 @@ This matrix operates via cognitive ease and self-categorization theory. Online u
 - **Schematic:** agency at position 2 of 12
 - **Cognitive mechanism:** Instrumental Conditioning & Agency Affirmation
 - **Where it deploys:** Interactive Conversion Components
-- **Template:** [Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]
+- **Template:**
+  [Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]
 - **Blueprint:** The Action + Benefit CTA restricts its footprint to a concise 2 to 6 words. Structurally, 40% of the token space contains a first-person active imperative verb, while 60% states the immediate asset or state acquired. 
 Its psychological driver is instrumental conditioning and agency affirmation. Generic commands like "Submit" or "Click Here" focus user attention on cognitive effort and submission. In contrast, linking the action directly to an immediate benefit transforms the button click into an empowering act of acquisition.
 - **Before and after:**
@@ -38,7 +41,10 @@ Its psychological driver is instrumental conditioning and agency affirmation. Ge
 - **Schematic:** sequence at position 3 of 12
 - **Cognitive mechanism:** Goal-Gradient Effect & Activation Energy Relief
 - **Where it deploys:** Dashboards, First-Time User Experience
-- **Template:** No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]
+- **Template:**
+  No [Domain Objects] Configured Yet
+  Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes.
+  [ + Create My First [Domain Object] ]
 - **Blueprint:** Blank-state interfaces distribute their word budget across three primary tasks: confirming zero-state status (25%), introducing the operational leverage unlocked upon setup (35%), and providing a single call-to-action to begin onboarding (40%). 
 This pattern leverages the goal-gradient effect and minimizes activation energy. Encountering an unpopulated application screen often induces choice paralysis and user confusion. Structuring the blank state as a clear launching pad with a guided onboarding step accelerates time-to-value and drives early product adoption.
 - **Before and after:**
@@ -52,7 +58,8 @@ This pattern leverages the goal-gradient effect and minimizes activation energy.
 - **Schematic:** aversion at position 4 of 12
 - **Cognitive mechanism:** Ambiguity Aversion & Perceived Risk Defusal
 - **Where it deploys:** Form Terminus, Checkout Under-buttons
-- **Template:** [No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]
+- **Template:**
+  [No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]
 - **Blueprint:** Positioned directly adjacent to conversion inputs, this micro-unit uses a brief 4 to 12 words to neutralize last-minute hesitation. It covers three key reassurances: confirming trial freedom (33%), removing credit card requirements (33%), and stating setup brevity (34%). 
 This unit addresses ambiguity aversion and pre-conversion micro-anxiety. Users at the point of action often worry about hidden financial commitments or complex onboarding workflows. Placing clear reassurances adjacent to conversion triggers defuses perceived risk and preserves momentum.
 - **Before and after:**
@@ -66,7 +73,8 @@ This unit addresses ambiguity aversion and pre-conversion micro-anxiety. Users a
 - **Schematic:** agency at position 5 of 12
 - **Cognitive mechanism:** Attribution Bias & Locus of Control Maintenance
 - **Where it deploys:** System Exception Handlers, Alerts
-- **Template:** [System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].
+- **Template:**
+  [System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].
 - **Blueprint:** Blameless error messages divide their content into three balanced components: an objective status description (30%), a technical cause statement (30%), and an immediate remediation pathway (40%). 
 This approach is grounded in attribution theory and locus-of-control preservation. Accusatory error messages trigger frustration and defense mechanisms, often causing users to abandon the application. Framing errors as neutral system conditions paired with direct remediation links maintains user composure and workflow efficiency.
 - **Before and after:**
@@ -80,7 +88,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 6 of 12
 - **Cognitive mechanism:** Progressive Disclosure & Cognitive Load Reduction
 - **Where it deploys:** Feature Discovery, Complex UX Workflows
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-31 — Feature Gate / Upgrade Modal
@@ -89,7 +98,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 7 of 12
 - **Cognitive mechanism:** Endowed Progress Effect & Sunk Cost Salience
 - **Where it deploys:** Freemium Upgrade Prompts, Soft Paywalls
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-32 — Input Field Inline Safeguard
@@ -98,7 +108,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 8 of 12
 - **Cognitive mechanism:** Privacy Preservation & Defensive Posturing Defusal
 - **Where it deploys:** Sensitive Form Fields (Billing, Security)
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-33 — Plan Recommendation Badge
@@ -107,7 +118,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 9 of 12
 - **Cognitive mechanism:** Default Bias & Compromise Effect
 - **Where it deploys:** SaaS Pricing Tables, Subscription Tiers
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-34 — Optimistic Inline Status Snack
@@ -116,7 +128,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** loop at position 10 of 12
 - **Cognitive mechanism:** Feedback Loop Closure & Temporal Discounting
 - **Where it deploys:** Async Process Completion, Save States
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-35 — Exit-Intent Preservation Defusal
@@ -125,7 +138,8 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 11 of 12
 - **Cognitive mechanism:** Endowment Effect & Work Sunk-Cost Capitalization
 - **Where it deploys:** Abandoned Form Recovery, Session Retention
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-36 — Subscription Pause/Downgrade
@@ -134,5 +148,6 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 12 of 12
 - **Cognitive mechanism:** Friction Asymmetry & Reactance Mitigation
 - **Where it deploys:** Cancellation Checkout Flows
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

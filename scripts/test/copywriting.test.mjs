@@ -14,7 +14,9 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { spawnSync } from "node:child_process";
+import { cp, mkdtemp, readFile, rm, symlink, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { LATEX_TABLE, latexResidue, renderFormula } from "../../decks/copywriting/data/latex.mjs";
 
@@ -215,6 +217,96 @@ test("the declared table renders the formula and the guard fails on residue", ()
   const declared = LATEX_TABLE.map((rule) => rule.from);
   for (const token of ["\\left[", "\\right]", "\\left(", "\\right)", "\\="]) {
     assert.ok(declared.includes(token), `${token} is not declared`);
+  }
+});
+
+// Build the copy deck into a scratch tree and count the template lines that
+// actually printed: the card template emits one metadata record per printed
+// line, naming the card it belongs to. A deck whose template block prints the
+// joined string emits none, which is the falsification below.
+const printedTemplateLines = async (dir, style) => {
+  const decksDir = join(dir, `decks-${style}`);
+  const deckDir = join(decksDir, "copywriting");
+  await cp(join(ROOT, "decks", "copywriting"), deckDir, { recursive: true });
+  const deck = JSON.parse(await readFile(join(deckDir, "deck.json"), "utf8"));
+  deck.outputs.pdf = join(dir, `out-${style}`, "copywriting.pdf");
+  for (const block of deck.blocks) {
+    if (block.field === "templateLines" || block.field === "template") {
+      block.field = style === "lines" ? "templateLines" : "template";
+      block.style = style;
+    }
+  }
+  await writeFile(join(deckDir, "deck.json"), JSON.stringify(deck, null, 2) + "\n");
+
+  const build = join(dir, `build-${style}`);
+  const built = spawnSync(
+    process.execPath,
+    ["packages/prepress/build.mjs", "--decks-dir", decksDir, "--deck", "copywriting", "--build-dir", build],
+    { cwd: ROOT, encoding: "utf8", timeout: 300_000 }
+  );
+  assert.equal(built.status, 0, `${built.stdout || ""}\n${built.stderr || ""}`.trim());
+
+  const compileRoot = join(dir, `compile-${style}`);
+  await cp(join(ROOT, "packages", "prepress", "src"), join(compileRoot, "src"), { recursive: true });
+  await symlink(build, join(compileRoot, "build"), "dir");
+  const queried = spawnSync(
+    "typst",
+    ["query", "--root", ".", "--format", "json", "src/card.typ", "<block-line>"],
+    { cwd: compileRoot, encoding: "utf8", timeout: 300_000 }
+  );
+  assert.equal(queried.status, 0, `${queried.stdout || ""}\n${queried.stderr || ""}`.trim());
+  const lines = {};
+  for (const item of JSON.parse(queried.stdout)) {
+    (lines[item.value.card] ||= []).push(item.value.line);
+  }
+  return lines;
+};
+
+test("a card prints its template as exactly its templateLines, one per line", async (t) => {
+  const typst = spawnSync("typst", ["--version"], { encoding: "utf8" });
+  if (typst.error || typst.status !== 0) {
+    t.diagnostic("Typst is absent, so the printed template lines were not counted");
+    return;
+  }
+  const dir = await mkdtemp(join(tmpdir(), "copy-template-lines-"));
+  try {
+    const inventory = await loadInventory();
+    const cards = new Map();
+    for (const record of inventory.records) {
+      const card = JSON.parse(
+        await readFile(join(ROOT, "decks", "copywriting", "data", "laws", `${record.id.toLowerCase()}.json`), "utf8")
+      );
+      cards.set(record.id, card);
+    }
+
+    const printed = await printedTemplateLines(dir, "lines");
+    assert.equal(Object.keys(printed).length, TOTAL, "every card printed a template");
+    for (const record of inventory.records) {
+      assert.deepEqual(
+        printed[record.id],
+        cards.get(record.id).templateLines,
+        `${record.id} printed a different set of lines than its record`
+      );
+    }
+    // The cards whose source is a list of parts print one line per part.
+    assert.equal(printed["CPY-01"].length, 6, "AIDA prints its six parts");
+    assert.equal(printed["CPY-04"].length, 5, "QUEST prints its five stages");
+    assert.equal(printed["CPY-27"].length, 3, "the blank-state guidance prints its three lines");
+
+    // The falsification: the same deck with the block printing the joined
+    // string emits no template lines at all, so the rule above cannot pass a
+    // flattened template.
+    const flattened = await printedTemplateLines(dir, "prose");
+    assert.equal(flattened["CPY-04"], undefined, "the joined run printed template lines");
+    for (const record of inventory.records) {
+      assert.notDeepEqual(
+        flattened[record.id],
+        cards.get(record.id).templateLines,
+        `${record.id} would pass the line rule with its template flattened`
+      );
+    }
+  } finally {
+    await rm(dir, { recursive: true, force: true });
   }
 });
 

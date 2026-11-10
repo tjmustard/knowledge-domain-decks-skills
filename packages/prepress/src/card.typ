@@ -182,6 +182,15 @@
             #text(size: 7pt)[#card.at(b.field).join("  ")]
           ] else if b.style == "prose" [
             #text(size: 7pt)[#card.at(b.field)]
+          ] else if b.style == "lines" [
+            // A template keeps the source's line structure: one printed line
+            // per entry. The metadata names the card and the line so a test
+            // can count what actually printed, not what the JSON intended.
+            #for (i, entry) in card.at(b.field).enumerate() [
+              #if i > 0 { linebreak() }
+              #metadata((card: card.id, line: entry)) <block-line>
+              #text(size: 7pt)[#entry]
+            ]
           ] else if b.style == "list" [
             #for entry in card.at(b.field) [
               #grid(

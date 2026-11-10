@@ -26,6 +26,10 @@
   "frontSize": 9,
   "schematic": "ease at position 1 of 12",
   "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].",
+  "templateLines": [
+    "The [Category] Built Exclusively for [Target Persona]",
+    "[Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism]."
+  ],
   "example": {
     "bland": "All-in-one Project Management We help engineering teams collaborate better and track tasks efficiently with our modern workflow dashboard.",
     "optimized": "The Linear Git Integration for Autonomous Systems Engineers Stop reconciling GitHub issues against Jira tickets manually. Automatically transition sprint status, resolve bugs, and sync PR reviews straight from terminal commits."

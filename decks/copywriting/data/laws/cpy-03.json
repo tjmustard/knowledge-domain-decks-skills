@@ -26,6 +26,11 @@
   "frontSize": 9,
   "schematic": "contrast at position 3 of 12",
   "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]",
+  "templateLines": [
+    "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points]",
+    "[The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard]",
+    "[The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]"
+  ],
   "example": {
     "bland": "Writing documentation manually takes a lot of time. Our automated generator turns your internal source code into clean documentation sites quickly and easily, saving your developers time and keeping content up to date.",
     "optimized": "Your senior systems architects spend Fridays manually writing API reference markdown while pull requests pile up unreviewed. Imagine continuous deployment where every merged commit automatically builds, verifies, and publishes interactive API documentation without an engineer typing a single explanatory sentence. Our schema-driven static documentation compiler synchronizes your OpenAPI specifications directly into high-speed search portals on every git push."

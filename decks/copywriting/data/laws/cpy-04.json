@@ -34,6 +34,13 @@
   "frontSize": 9,
   "schematic": "sequence at position 4 of 12",
   "template": "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]",
+  "templateLines": [
+    "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge]",
+    "[Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints]",
+    "[Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle]",
+    "[Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts]",
+    "[Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]"
+  ],
   "example": {
     "bland": "Are you a software founder trying to improve retention? Retention is hard, but by using customer feedback loops, you can improve retention. We teach you how to build product feedback loops that retain users. Enroll in our course today.",
     "optimized": "This architectural masterclass is exclusively for post-Series A technical founders whose 90-day Net Revenue Retention is sliding below 105%. We understand the exhaustion of shipping customer-requested features every sprint, only to watch churn hold flat while engineering complexity compounds. The root cause is the \"Feature Trajectory Fallacy\": building custom requests for departing accounts instead of reinforcing the behavioral habit loops of top-decile retained cohorts. When engineering transitions from backlog reactivity to algorithmic telemetry loops, activation spikes by 34% within single reporting periods. Review the complete curriculum and reserve an onboarding cohort slot."

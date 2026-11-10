@@ -26,6 +26,11 @@
   "frontSize": 9,
   "schematic": "sequence at position 3 of 12",
   "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]",
+  "templateLines": [
+    "No [Domain Objects] Configured Yet",
+    "Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes.",
+    "[ + Create My First [Domain Object] ]"
+  ],
   "example": {
     "bland": "No API Keys Created Yet You have not generated any secret keys. Click the button below if you want to make an API key for your account.",
     "optimized": "Zero Live Production Keys Configured Generate your first read-only authentication token to begin querying telemetry endpoints over encrypted TLS. Integrates in 60 seconds via our curl quickstart. [Generate Production Key →]"

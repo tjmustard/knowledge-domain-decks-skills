@@ -47,6 +47,11 @@ function blockLines(block, value) {
         ...value.map((entry) => `- ${entry}`)
       ];
     }
+    // A template keeps the source's line structure here too: one paragraph
+    // per line, so the parts do not read as one run.
+    if (block.style === "lines") {
+      return [`**${block.label}.**`, "", ...value.flatMap((entry, index) => (index === 0 ? [entry] : ["", entry]))];
+    }
     const join = block.style === "quotes" ? " " : " · ";
     return [`**${block.label}.** ${value.join(join)}`];
   }
@@ -229,6 +234,9 @@ function resourceMarkdown(category, shape, items) {
           if (block.style === "list") {
             out.push(`- **${block.label}:**`);
             for (const entry of value) out.push(`  - ${entry}`);
+          } else if (block.style === "lines") {
+            out.push(`- **${block.label}:**`);
+            for (const entry of value) out.push(`  ${entry}`);
           } else {
             out.push(`- **${block.label}:** ${value.join(block.style === "quotes" ? " " : " · ")}`);
           }

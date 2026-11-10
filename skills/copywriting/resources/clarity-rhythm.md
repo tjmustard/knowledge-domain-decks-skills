@@ -10,7 +10,8 @@
 - **Schematic:** ease at position 1 of 12
 - **Cognitive mechanism:** Cognitive Processing Fluency & Agency Clarity
 - **Where it deploys:** Document-Wide Stylistic Heuristic
-- **Template:** Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]
+- **Template:**
+  Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]
 - **Blueprint:** Active Transmutation systematically converts passive constructions into active voice: [Agent/Subject] + [Transitive Verb] + [Direct Object]. It eliminates passive auxiliary verbs and trailing prepositions, ensuring that sentences clearly identify who is taking action. 
 Neurolinguistic research reveals that the human brain processes subject-verb-object structures with lower metabolic cognitive load than inverted passive arrangements. Passive sentences obscure agency, causing minor interpretive delays that dilute persuasive impact. Active constructions establish clear agency, improving reading comprehension and driving user momentum.
 - **Before and after:**
@@ -24,7 +25,8 @@ Neurolinguistic research reveals that the human brain processes subject-verb-obj
 - **Schematic:** ease at position 2 of 12
 - **Cognitive mechanism:** Cognitive Strain Elimination & Fluency Heuristic
 - **Where it deploys:** Technical Marketing, Sales Enablement
-- **Template:** Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.
+- **Template:**
+  Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.
 - **Blueprint:** This heuristic regulates vocabulary complexity to maintain a Gunning Fog index below 8.0. It identifies words of three or more syllables and replaces them with direct Germanic alternatives. The standard mathematical formulation for Gunning Fog balances sentence length with complex word frequency: 
 Fog = 0.4 [ (total words ÷ total sentences) + 100 (complex words ÷ total words) ] 
 where complex words exclude proper nouns, hyphenated compounds, and standard jargon. 
@@ -40,7 +42,10 @@ The behavioral driver is cognitive fluency. Readers subconsciously associate pro
 - **Schematic:** loop at position 3 of 12
 - **Cognitive mechanism:** Narrative Inertia & Information Foraging Continuation
 - **Where it deploys:** Long-Form Technical and Marketing Copy
-- **Template:** [Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication].
+- **Template:**
+  [Dense Structural Argument / High-Level Observation].
+  [Bucket Brigade Connector:]
+  [Direct, Surprising, or Visceral Downstream Implication].
 - **Blueprint:** Bucket Brigades are brief transition phrases—often terminating in a colon—that break up dense arguments. Standard expressions include "Here is why:", "Look at it this way:", "The takeaway:", and "It gets worse:". They typically occupy 1 to 4 words. 
 This device leverages information foraging theory and micro-commitments. Digital audiences read in quick, F-shaped scanning sweeps. Short, isolated bridge lines interrupt these rapid skimming patterns, pulling the reader's eye downward into the substantive explanation that follows.
 - **Before and after:**
@@ -54,7 +59,10 @@ This device leverages information foraging theory and micro-commitments. Digital
 - **Schematic:** cadence at position 4 of 12
 - **Cognitive mechanism:** Miller's Law (Chunking) & Aesthetic Fluency
 - **Where it deploys:** Structural Bullet Points, Value Pillars
-- **Template:** [Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]
+- **Template:**
+  [Imperative Verb A] [Target Object A]
+  [Imperative Verb B] [Target Object B]
+  [Imperative Verb C] [Target Object C]
 - **Blueprint:** Tricolon Harmonic Grouping structures core arguments into three parallel grammatical units sharing equivalent meter and syntactic cadence. The standard pattern follows: [Imperative Verb + Target Object], [Imperative Verb + Target Object], and [Imperative Verb + Target Object]. 
 This pattern is rooted in Miller's Law and cognitive chunking heuristics. Human working memory processes small chunks of information with peak efficiency. Three items form the smallest sequence necessary to create a recognizable rhythmic pattern, balancing rhetorical completeness with minimal cognitive load.
 - **Before and after:**
@@ -68,13 +76,14 @@ This pattern is rooted in Miller's Law and cognitive chunking heuristics. Human 
 - **Schematic:** cadence at position 5 of 12
 - **Cognitive mechanism:** Auditory Cortex Entrainment & Monotony Dissolution
 - **Where it deploys:** Core Narrative Body Copy, Manifestos
-- **Template:** [Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words].
+- **Template:**
+  [Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words].
 - **Blueprint:** Provost Rhythm Variation deliberately modulates sentence lengths to create internal musicality, avoiding uniform cadences. It alternates between punchy fragments, medium declarations, and flowing compound sentences, moving between 3-word and 25-word sentences. 
 This technique relies on auditory cortex entrainment and habituation disruption. Readers subconsciously vocalize text during silent reading. Uniform sentence lengths produce a monotonous cadence that dulls reader attention, while varied lengths re-engage cognitive processing and sustain focus.
 - **Before and after:**
   - **Before:** Modern continuous deployment pipelines require resilient cloud servers to ensure maximum stability. Our platform continuously checks your system configuration across clusters to prevent unexpected service outages. You can install our software using a simple script to protect your environment.
   - **After:** This software is fast. Dead fast. When production traffic spikes unexpectedly on a Friday afternoon, your cluster automatically absorbs the load without dropping a single websocket connection. Nothing crashes. Your on-call engineers sleep peacefully through the night.
-- **Source:** The source names no originator.
+- **Source:** Gary Provost (1985), *100 Ways to Improve Your Writing*.
 
 ## CPY-42 — Inverted Pyramid Front-Loading
 
@@ -82,7 +91,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** cadence at position 6 of 12
 - **Cognitive mechanism:** Attentional Decay Compensation & Scanning Laws
 - **Where it deploys:** Feature Descriptions, Technical Releases
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-43 — De-Nominalization
@@ -91,7 +101,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** ease at position 7 of 12
 - **Cognitive mechanism:** Conceptual Concreteness & Perceptual Grounding
 - **Where it deploys:** Enterprise B2B SaaS Descriptions
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-44 — Falsifiable Swap Rule
@@ -100,7 +111,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** proof at position 8 of 12
 - **Cognitive mechanism:** Signaling Theory & Costly Signaling Verification
 - **Where it deploys:** Value Propositions, Positioning Copy
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-45 — Affirmative Negation Removal
@@ -109,7 +121,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** ease at position 9 of 12
 - **Cognitive mechanism:** Negation Processing Penalty Elimination
 - **Where it deploys:** UX Copy, Conversion Guidance
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-46 — Colloquial Contraction Injection
@@ -118,7 +131,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** identity at position 10 of 12
 - **Cognitive mechanism:** Social Proximity Theory & In-Group Tone Matching
 - **Where it deploys:** Marketing Emails, B2B SaaS Interfaces
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-47 — Punctuation Cadence Gating
@@ -127,7 +141,8 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** cadence at position 11 of 12
 - **Cognitive mechanism:** Working Memory Buffer Optimization
 - **Where it deploys:** Short-Form Paid Ads, Hero Headlines
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-48 — Pronoun Ratio Balancing
@@ -136,5 +151,6 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** identity at position 12 of 12
 - **Cognitive mechanism:** Empathic Perspective Taking & Self-Interest Bias
 - **Where it deploys:** Customer-Facing Pages, Documentation
-- **Template:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template:**
+  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

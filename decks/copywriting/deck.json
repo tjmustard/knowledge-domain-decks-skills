@@ -52,9 +52,9 @@
       "style": "prose"
     },
     {
-      "field": "template",
+      "field": "templateLines",
       "label": "Template",
-      "style": "prose"
+      "style": "lines"
     },
     {
       "field": "blueprintProse",

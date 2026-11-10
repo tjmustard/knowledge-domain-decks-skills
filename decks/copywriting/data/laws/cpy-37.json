@@ -12,6 +12,9 @@
   "frontSize": 9,
   "schematic": "ease at position 1 of 12",
   "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]",
+  "templateLines": [
+    "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]"
+  ],
   "example": {
     "bland": "Scalable data infrastructure is built by our engineers, and cloud configurations are monitored continuously by the automation platform to prevent downtime.",
     "optimized": "Our engineers build scalable data infrastructure. The automation platform monitors your cloud configurations 24/7 to prevent downtime."

@@ -30,6 +30,12 @@
   "frontSize": 9,
   "schematic": "anchor at position 5 of 12",
   "template": "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]",
+  "templateLines": [
+    "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure]",
+    "[Promise: Declare an absolute, measurable performance standard guaranteed by the product]",
+    "[Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data]",
+    "[Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]"
+  ],
   "example": {
     "bland": "Picture a workplace where you never have to deal with broken builds. We promise our CI/CD runner is faster and more reliable than the alternatives. It has been tested by top engineering organizations. Sign up now before the current pricing tier ends.",
     "optimized": "Picture your deployment dashboard running entirely in solid green: fifty microservices testing, compiling, and pushing to staging without a single hanging worker or flaky container restart. We guarantee that your enterprise CI test suites will complete in under 180 seconds—or you do not pay. Benchmarked against 1.2 million pipeline hours across 450 engineering organizations, our bare-metal kernel orchestration reduced failed pipeline retries by 94.2%. Onboard your engineering team this week before current compute allocations close for the quarter."

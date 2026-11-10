@@ -98,6 +98,11 @@
         body = "<p>" + esc(Array.isArray(value) ? value.join("  ") : value) + "</p>";
       } else if (block.style === "prose") {
         body = "<p>" + esc(value) + "</p>";
+      } else if (block.style === "lines") {
+        // A template prints one source line per line, as on the card.
+        body = value.map(function (entry) {
+          return "<p>" + esc(entry) + "</p>";
+        }).join("");
       } else if (block.style === "list") {
         body = "<ul>" + value.map(function (entry) {
           return "<li>" + esc(entry) + "</li>";

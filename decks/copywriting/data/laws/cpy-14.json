@@ -22,6 +22,9 @@
   "frontSize": 9,
   "schematic": "gap at position 2 of 12",
   "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]",
+  "templateLines": [
+    "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]"
+  ],
   "example": {
     "bland": "A security breach happened at a major bank yesterday.",
     "optimized": "When their root certificates expired at 2:00 AM, the engineering team made one fatal command line mistake."
