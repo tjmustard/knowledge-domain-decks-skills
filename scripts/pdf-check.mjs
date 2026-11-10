@@ -4,7 +4,10 @@
  *
  * Asserts, for each deck:
  *   - every page's MediaBox is 3.00 x 5.00 in (216 x 360 pt);
- *   - the page count is 2 x cards (recto + verso).
+ *   - the page count is 2 x cards (recto + verso);
+ *   - a deck whose figures carry labels embeds the vendored diagram face
+ *     (JetBrains Mono) and no face the SVG stack would fall back to, so a build
+ *     that silently lost `--font-path` fails here instead of shipping.
  *
  * PDF object streams may be compressed, so the scan falls back to inflating
  * each stream before giving up. This is a structural check only: a green run
@@ -18,10 +21,14 @@
  *   node scripts/pdf-check.mjs --deck ux-laws
  *   node scripts/pdf-check.mjs path.pdf --deck ux-laws [--expect-pages N]
  */
+import { createRequire } from "node:module";
 import { readFile } from "node:fs/promises";
 import { inflateSync } from "node:zlib";
 import { join } from "node:path";
-import { deckArgs, loadCards, loadDecks, resolveFromRoot } from "../packages/core/deck.mjs";
+import { deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot } from "../packages/core/deck.mjs";
+
+const require = createRequire(import.meta.url);
+const { renderSvg } = require("../packages/core/svg.js");
 
 const { only, dir: decksDir } = deckArgs();
 // Arguments are parsed rather than searched: a value left behind by
@@ -52,13 +59,19 @@ function collect(text) {
     boxes.push(match.slice(1).map(Number));
   }
   const pages = (text.match(/\/Type\s*\/Page(?![s])/g) || []).length;
-  return { boxes, pages };
+  // Font names, not the whole dictionary: the subset prefix is part of the name
+  // (ABCDEF+JetBrainsMono-SemiBold) and is the proof the face was embedded
+  // rather than referenced.
+  const fonts = [...text.matchAll(/\/BaseFont\s*\/([^\s/<>\[\]()]+)/g)].map((m) => m[1]);
+  return { boxes, pages, fonts };
 }
 
 function scan(bytes) {
   const raw = bytes.toString("latin1");
-  let found = collect(raw);
-  if (found.boxes.length > 0) return found;
+  const found = collect(raw);
+  // Font dictionaries are often inside compressed object streams even when
+  // MediaBoxes are raw, so both halves are needed before giving up.
+  if (found.boxes.length > 0 && found.fonts.length > 0) return found;
 
   // Inflate every stream and rescan, for PDFs with compressed object streams.
   const inflated = [];
@@ -78,7 +91,14 @@ function scan(bytes) {
     }
     cursor = end + "endstream".length;
   }
-  return collect(raw + "\n" + inflated.join("\n"));
+  // Merged rather than concatenated: a page object visible in both the raw
+  // bytes and an inflated stream would otherwise be counted twice.
+  const more = collect(inflated.join("\n"));
+  return {
+    boxes: found.boxes.length ? found.boxes : more.boxes,
+    pages: found.pages || more.pages,
+    fonts: [...new Set([...found.fonts, ...more.fonts])]
+  };
 }
 
 const expectedW = 216;
@@ -97,7 +117,7 @@ async function checkDeck(deck, pdfPath, expectedPages) {
     throw error;
   }
 
-  const { boxes, pages } = scan(bytes);
+  const { boxes, pages, fonts } = scan(bytes);
   if (boxes.length === 0) {
     console.error(
       `No MediaBox found in ${pdfPath}. The PDF may be encrypted or use a ` +
@@ -134,11 +154,44 @@ async function checkDeck(deck, pdfPath, expectedPages) {
     );
   }
 
+  // The diagram face is only embedded where a figure prints a label, so the
+  // requirement is conditional: a deck with no diagram text has nothing to fail
+  // here, and saying so is better than a green line that proves nothing.
+  const cards = await loadCards(deck);
+  const diagramText = cards.some(
+    (card) => renderSvg(deckShape(deck).figure(card)).includes("<text")
+  );
+  if (diagramText) {
+    const pinned = fonts.filter((name) => /JetBrainsMono/.test(name));
+    // The faces the SVG's own stack would resolve to if the vendored directory
+    // were not passed to Typst. Any of them means the build lost the font path.
+    const fallbacks = fonts.filter((name) =>
+      /(SFMono|Menlo|Monaco|Courier|Helvetica|Arial)/i.test(name)
+    );
+    if (pinned.length === 0) {
+      failed = true;
+      console.error(
+        `${deck.slug}: no JetBrainsMono face in ${pdfPath}, so the diagram labels were ` +
+          `not set in the vendored font${fonts.length ? ` (embedded: ${fonts.join(", ")})` : ""}.`
+      );
+    }
+    if (fallbacks.length > 0) {
+      failed = true;
+      console.error(
+        `${deck.slug}: the PDF embeds a fallback diagram face (${fallbacks.join(", ")}); ` +
+          "the build must pass --font-path packages/prepress/fonts."
+      );
+    }
+  }
+
   if (failed) return false;
   const first = boxes[0];
   console.log(
     `OK: ${deck.slug}: ${pages} pages, MediaBox ${(first[2] - first[0]).toFixed(2)} x ` +
-      `${(first[3] - first[1]).toFixed(2)} pt (3.00 x 5.00 in) on every page.`
+      `${(first[3] - first[1]).toFixed(2)} pt (3.00 x 5.00 in) on every page` +
+      (diagramText
+        ? `; diagram labels embedded in ${[...new Set(fonts.filter((n) => /JetBrainsMono/.test(n)))].join(", ")}.`
+        : "; no diagram labels to embed.")
   );
   return true;
 }

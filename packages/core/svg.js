@@ -18,11 +18,21 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
 
-  // Monospace stack, and load-bearing beyond appearance: diagram labels are
-  // bounded by character count (about 45 fits the safe box on the decline-curve
-  // labels, measured at 1.79 pt per character). If this becomes proportional,
-  // character count stops being width and that bound must be deleted, not retuned.
-  var FONT = "ui-monospace, SFMono-Regular, Menlo, monospace";
+  // One vendored face first, not a stack that resolves differently per machine:
+  // packages/prepress/fonts/JetBrainsMono is passed to Typst with --font-path,
+  // so the print build embeds it and a redistributed PDF carries no Apple font.
+  // The fallbacks after it are for web viewers that do not load the face; the
+  // print pipeline does not use them, and the gate checks the PDF's embedded
+  // face so a silent fallback cannot pass.
+  //
+  // Monospace is load-bearing beyond appearance: diagram labels are bounded by
+  // character count, because the advance is fixed (600/1000 em, 5.4 units at
+  // size 9, 1.75 pt on the 1.8 in figure). The decline-curve end label is
+  // centred at x=340, so 22 characters (118.8 units) is what reaches the box
+  // edge and 23 overruns it - measured by lengthening the label and rebuilding.
+  // If this becomes proportional, character count stops being width and that
+  // bound must be deleted, not retuned.
+  var FONT = "JetBrains Mono, ui-monospace, SFMono-Regular, Menlo, monospace";
   var STROKE = 'vector-effect="non-scaling-stroke"';
 
   function esc(value) {

@@ -621,10 +621,14 @@ drawing does not change.
 
 The five names are in the schema's `svgShape` enum, and the deck now has fifteen
 shapes across twenty-four cards. QA measured the label margins on the six new
-cards at card size; the tightest are SHORT REACH at 0.25 pt, NARROW TARGET at
-0.50 pt and THUMB ZONE at 0.79 pt. The 45-character safe-box bound was measured
-on `decline-curve` and has not been re-measured on these geometries, so
-lengthening any label on the five new shapes needs a fresh measurement first.
+cards at card size in the face the build then resolved from the system; the
+tightest are SHORT REACH at 0.25 pt, NARROW TARGET at 0.50 pt and THUMB ZONE at
+0.79 pt. The pin in §65 replaced that face with the vendored one. Re-measured
+against the 400-unit box, every label on the six cards still lies inside it,
+with the smallest margin TME-09's 9.5 pt, but those three mark clearances were
+not re-taken. The character bound now lives in §30: it is measured on
+`decline-curve` and has not been re-measured on these geometries, so lengthening
+any label on the five new shapes needs a fresh measurement first.
 
 ## 28. A rename moves two pages, and a byte delta cannot see it
 
@@ -679,10 +683,10 @@ Three decisions in that change:
   directory with no `.git` produced the same 579,849 bytes, so the reason for
   choosing a fixed date over the commit time is measured rather than argued.
 
-What this does not prove: identical bytes across Typst versions, or across
-machines while the diagram labels resolve a monospace stack against the host's
-fonts. The claim is per version and per font environment until that font is
-pinned, which is queued as its own change.
+What this does not prove: identical bytes across Typst versions. The font half
+of the caveat is closed as of §65: the diagram face is vendored and passed with
+`--font-path`, so the labels no longer resolve against the host's fonts, and a
+build with `--ignore-system-fonts` produced the same bytes as the ordinary one.
 
 One case is disclosed rather than bounded: a safe integer far out of range
 (9007199254740991) passes this check and Typst rejects it with "creation
@@ -766,25 +770,29 @@ nodes and edges). Two are reused: `paired-panels` compares recall across two
 conditions for Zeigarnik, and `split-bar` partitions one budget of attention for
 Confirmation Bias.
 
-Every label on the new arrangements was measured at card size by laying the
-generated SVG in a headless Chrome page and reading each `<text>` element's
-`getBBox` in the 400-unit viewBox, in the Menlo face the print build embeds.
-Every bounding box lies inside that box. Distances are reported in points at the
-card's own scale, 0.324 pt per unit. The tightest are EVEN SPLIT at 2.05 pt (6.3
-units) from the reference line and CONFIRMING and DISCONFIRMING at 2.86 pt (8.8
-units) from their bars; DISTINCT sits 3.80 pt from the odd mark and END 2.49 pt
-below its dot. The longest captions are not in a shape's field but the MPA-06
-and MPA-08 captions, both 46 characters and 249 units wide, which clear the
-400-unit box by 75 units either side but are longer than the 45-character,
-248-unit figure measured on `decline-curve`. That figure is the widest a field
-label can be before it collides with its marks; a centred caption is bounded by
-the box instead, and a taller caption would be a line-height question rather
-than a width one. The deck's longest caption, outside this measured set, is
-TME-10's at 47 characters and about 254 units by the same measure, which still
-clears the box by about 73 units either side. Re-running
-this harness moves EVEN SPLIT by about 0.13 pt, so the second decimal is
-resolution here for the same reason it is on page 25's overrun. The pending font
-pin will re-derive all of these, so none is a permanent bound.
+Every diagram label in all ten decks was measured at card size by laying the
+generated SVG in a headless Chrome page that loads `packages/prepress/fonts`
+through `@font-face`, and reading each `<text>` element's `getBBox` in the
+400-unit viewBox. The 437 cards carry 505 labels, every bounding box lies inside
+its box, and the smallest clearance anywhere is DEC-11's "EARLY: CONSIDERED" at
+14.09 units (4.57 pt) from the left edge. Distances are reported in points at the card's own
+scale, 0.324 pt per unit, which is the figure's 1.8 in. The tightest gaps to the
+marks are EVEN SPLIT at 1.73 pt (5.33 units) below the reference line,
+CONFIRMING and DISCONFIRMING at 2.59 pt (8.0 units) from their bars, DISTINCT at
+3.46 pt (10.67 units) below the odd mark, and END at 2.16 pt (6.67 units) below
+its dot. The longest labels are captions rather than fields: TME-10's is 47
+characters and 253.8 units wide, clearing the box by 73.1 units either side, and
+MPA-06's and MPA-08's are each 46 characters and 248.4 units, clearing it by
+75.8. A character bound applies where a label
+is anchored near an edge, and the sharpest case is `decline-curve`'s end label,
+centred at x=340: 22 characters (118.8 units) leave 0.59 units to the edge and
+23 overrun it by 2.10, measured by lengthening that label and rebuilding rather
+than by arithmetic. Re-running this harness moves EVEN SPLIT by about 0.13 pt,
+so the second decimal is resolution here for the same reason it is on page 25's
+overrun. These numbers describe the vendored face (§65), so they replace the
+Menlo figures this section first printed; a Menlo run of the same harness
+differs by up to 1.33 units at size 9, because the two faces report different
+ascent and descent to Chrome.
 
 **The six cards land in one block, and every card after them moves by twelve
 pages.** Cards print in ID order, so MPA-02 to MPA-07 fall between MPA-01 and
@@ -2416,3 +2424,52 @@ forty-eight-card SVG bundle hashes to `b404676b...` in `cards.json` order; all
 record, holds each card's front line, size, label and figure to the layout
 map, requires the rules and each surface resource to carry the whole record,
 and holds every attribution to the audit.
+
+## 65. The diagram face is vendored, and the gate reads it out of the PDF
+
+The print build embeds whatever the SVG's font stack resolves to, so a diagram
+label was set in the host's monospace. On this machine that was Menlo, which
+meant a redistributed PDF carried an Apple font, and a machine without it
+produced different bytes and different label metrics. §29 named that as the one
+thing its reproducibility claim could not cover. The face is now pinned.
+
+- **What is vendored.** JetBrains Mono v2.304 under the SIL Open Font License
+  1.1: Regular, SemiBold and Bold in `packages/prepress/fonts/`, with `OFL.txt`
+  copied verbatim and `NOTICE.md` recording the upstream release and a sha256
+  per file. The licence ships beside the font because the OFL requires it to
+  travel with the files, and it is copied rather than summarised for the same
+  reason.
+- **How the build finds it.** `packages/prepress/build.mjs` and
+  `scripts/check-fit.mjs` pass `--font-path packages/prepress/fonts` and
+  `--ignore-system-fonts` to Typst, so no font installed on the machine can
+  reach a page: the body text comes from Typst's bundled fonts and the diagram
+  face from the repository. The SVG's `font-family` lists JetBrains Mono first
+  and keeps the web stack after it, because the SVGs are also rendered in
+  browsers that do not have the file; the print path does not use the fallbacks,
+  and the gate would fail if it did.
+- **The gate reads the result, not the intention.** `scripts/pdf-check.mjs`
+  scans each PDF's `/BaseFont` names, inflating object streams first, and for a
+  deck whose figures carry `<text>` requires a JetBrainsMono subset and rejects
+  Menlo, SFMono, Monaco, Courier, Helvetica or Arial. It runs inside
+  `npm run accept` as "print: page boxes". Falsified by compiling the same
+  source without `--font-path`: the PDF embeds `PRLSGH+Menlo-Bold` and the
+  check exits 1 with both messages. With the flag it reports
+  `KZEWCR+JetBrainsMono-SemiBold` for the same deck.
+- **What did not change.** Six of the ten decks print no diagram labels, and
+  their PDFs are byte-identical to the pre-pin build: copy `be66d059...`,
+  facilitation `035429f5...`, ideation `aced7d61...`, retrospectives
+  `5ca91630...`, strategy `2bfc9fb5...`, team `482e7fc2...`. Only archetypes,
+  innovation, narrative and ux-laws moved. That is the check that the vendored
+  directory changed the diagram face and nothing else.
+- **Reproducibility.** Two consecutive full builds are byte-identical. Adding
+  `--ignore-system-fonts` to the build changed no byte: all ten PDFs hash
+  exactly as they did without it, ux-laws among them at `9162117d...`. That is
+  what lets §29 close its font caveat.
+- **Metrics.** The advance is 600/1000 em, 5.4 units at size 9. Label bounds and
+  the character bound are re-derived in §30; §27's three mark clearances are the
+  one set not re-taken.
+
+What this does not cover: a browser rendering the SVGs without the face still
+falls back to its own monospace, so the web viewer's labels can differ in
+metrics from the printed ones. The PDF is the artifact with the font inside it.
+The reproducibility claim is also still per Typst version (§29).

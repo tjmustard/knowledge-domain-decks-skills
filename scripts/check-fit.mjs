@@ -163,8 +163,9 @@ for (const deck of decks) {
     try {
       execFileSync(
         "typst",
-        ["compile", "--root", "packages/prepress", "packages/prepress/src/card.typ",
-          join(dir, "page-{p}.png"), "--format", "png", "--ppi", String(PPI)],
+        ["compile", "--root", "packages/prepress", "--ignore-system-fonts",
+          "--font-path", join(ROOT, "packages/prepress/fonts"),
+          "packages/prepress/src/card.typ", join(dir, "page-{p}.png"), "--format", "png", "--ppi", String(PPI)],
         { cwd: ROOT, stdio: "pipe" }
       );
     } catch (error) {

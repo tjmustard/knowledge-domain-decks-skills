@@ -78,8 +78,8 @@ all move together.
 
 The ruleset, the skill, the viewer bundle, and the PDF all regenerate
 byte-identically, so the same records produce the same bytes on the same Typst
-version and font environment; [`DECISIONS.md`](./DECISIONS.md) §29 records what
-that leaves open. The recorded digest is sha256, and a comparison re-runs
+version, with the diagram face vendored in the repository
+([`DECISIONS.md`](./DECISIONS.md) §65); §29 records what that leaves open. The recorded digest is sha256, and a comparison re-runs
 sha256 - never md5, which differs for the same file and reads as an environment
 divergence that does not exist. A cross-machine check hashes the deck's SVG
 bundle in `cards.json` order, because `packages/prepress/build/svg/` is never
@@ -665,21 +665,29 @@ npm run build:pdf -- --deck narrative
 
 The output is one PDF per deck under `packages/prepress/dist/`. This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
-with an install message rather than substituting another renderer.
+with an install message rather than substituting another renderer. The diagram
+face is vendored in `packages/prepress/fonts/` - JetBrains Mono v2.304 with its
+SIL Open Font License - and passed to Typst with `--font-path`, so a printed PDF
+carries an open-licensed font instead of resolving one from the machine that
+built it.
 
 **What has been checked in the built PDFs.** With Typst 0.15.1 (9dfd3a08) and
-the 379-font environment measured here, `npm run
-build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes (sha256
-`40164666…`), the narrative deck as 96 pages and 758,240 bytes (`435f2a9f…`),
-the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
+the vendored diagram face passed with `--font-path`, `npm run
+build:pdf` emits the UX deck as 108 pages and 1,060,104 bytes (sha256
+`9162117d…`), the narrative deck as 96 pages and 755,113 bytes (`2f004169…`),
+the archetype deck as 32 pages and 293,004 bytes (`af2ea16f…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
 retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
 deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), the team deck as 88 pages
 and 479,152 bytes (`482e7fc2…`), the innovation deck as 84 pages and
-386,570 bytes (`c1b37678…`), the ideation deck as 100 pages and 746,190 bytes
-(`aced7d61…`), and the copy deck as 96 pages and 430,955 bytes (`be66d059…`);
-two consecutive builds of one commit are byte-identical for all ten. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
-page of every deck. On the rendered UX pages, trim
+387,156 bytes (`be878abb…`), the ideation deck as 100 pages and 746,190 bytes
+(`aced7d61…`), and the copy deck as 96 pages and 430,955 bytes (`be66d059…`).
+The six decks whose figures print no labels are byte-identical to the build
+before the font was pinned, which is what shows the change reached the diagram
+face and nothing else; two consecutive builds of one commit are byte-identical
+for all ten. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+page of every deck and found the vendored face embedded wherever a diagram
+prints a label, with no Menlo or SF Mono in any of them. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 fifty-four versos and absent from the rectos. The labels drawn inside the

@@ -195,7 +195,14 @@ for (const deck of decks) {
   }
   const result = spawnSync(
     "typst",
-    ["compile", "--root", ".", "src/card.typ", pdf],
+    // --ignore-system-fonts: the face is vendored and Typst's own fonts are
+    // bundled, so nothing on the machine can reach the page. Without it a host
+    // font could still satisfy a family the template names, and the bytes would
+    // stop describing the commit.
+    [
+      "compile", "--root", ".", "--ignore-system-fonts",
+      "--font-path", join(here, "fonts"), "src/card.typ", pdf
+    ],
     {
       cwd: compileRoot,
       encoding: "utf8",
@@ -216,6 +223,6 @@ for (const deck of decks) {
   );
   console.log(
     `SOURCE_DATE_EPOCH ${epoch} from ${epochSource}; ` +
-      `rebuilds are byte-identical on this Typst version and font environment.`
+      `rebuilds are byte-identical on this Typst version, with every font read from the repository.`
   );
 }
