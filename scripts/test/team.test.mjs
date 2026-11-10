@@ -113,6 +113,38 @@ test("a dimension is committed whole or not at all", async () => {
   }
 });
 
+test("the inventory's measured summary matches the records it holds", async () => {
+  // The summary block is the one claim in the inventory a reader will quote
+  // without recounting, so it is under test like every other measured claim.
+  // It was stale once: the audit max still read 528, the value of a leaked
+  // audit cell, after the records had been re-cut to 239.
+  const inventory = JSON.parse(await readFile(INVENTORY, "utf8"));
+  const records = inventory.records;
+  const measure = {
+    foundation: (row) => row.foundation.length,
+    diagnostic: (row) => row.diagnostic.length,
+    script: (row) => row.scripts[0].text.length,
+    audit: (row) => row.audit.reduce((sum, item) => sum + item.length, 0)
+  };
+  const stats = (pick) => {
+    const values = records.map(pick).sort((a, b) => a - b);
+    return {
+      min: values[0],
+      // The lower median: the 22nd of 44 sorted values, no interpolation.
+      median: values[Math.floor((values.length - 1) / 2)],
+      max: values[values.length - 1]
+    };
+  };
+  assert.deepEqual(
+    Object.keys(inventory.fieldLengths).sort(),
+    Object.keys(measure).sort(),
+    "the summary measures exactly the four extracted fields"
+  );
+  for (const [field, pick] of Object.entries(measure)) {
+    assert.deepEqual(inventory.fieldLengths[field], stats(pick), `${field} summary is stale`);
+  }
+});
+
 test("the compressed checks stay questions a manager can answer yes or no", async () => {
   // The check is the card's commitment; a summary is not. Each compressed
   // check opens with an auxiliary verb, ends in a question mark, and offers no
