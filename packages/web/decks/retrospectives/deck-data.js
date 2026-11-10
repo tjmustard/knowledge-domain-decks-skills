@@ -1207,6 +1207,360 @@ window.RETROSPECTIVES_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66\" y1=\"40\" x2=\"66\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"66\" x2=\"360\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"139.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"139.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"286.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"286.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R28",
+      "name": "Gary Klein’s Pre-Mortem",
+      "category": "Forward-Looking",
+      "trigger": "Project kick-offs, major architectural migrations, or high-stakes feature releases.",
+      "canvas": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System",
+      "timebox": "60–90 min",
+      "canvasLine": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System · 60–90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; fast-forward twelve months."
+        },
+        {
+          "text": "Gather data (15m): silently write how the migration failed catastrophically."
+        },
+        {
+          "text": "Generate insights (20m): group failure modes by theme; dot-vote two vectors."
+        },
+        {
+          "text": "Decide (15m): design safeguards against those vectors."
+        },
+        {
+          "text": "Close (5m): re-anchor; affirm collective ownership."
+        }
+      ],
+      "action": "Failure generators become mandatory architectural spikes: a load test at 2x peak traffic, owner and date.",
+      "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Gary Klein"
+        ],
+        "year": 2007,
+        "title": "Performing a Project Premortem",
+        "publication": "Harvard Business Review",
+        "authorsLabel": "Gary Klein",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "zones",
+          "columns": 3,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"112.666667\" x2=\"154.666667\" y2=\"138.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.333333\" y1=\"112.666667\" x2=\"261.333333\" y2=\"138.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.666667\" y1=\"219.333333\" x2=\"138.666667\" y2=\"245.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.333333\" y1=\"219.333333\" x2=\"245.333333\" y2=\"245.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"326\" x2=\"154.666667\" y2=\"352\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.333333\" y1=\"326\" x2=\"261.333333\" y2=\"352\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R29",
+      "name": "The Futurespective",
+      "category": "Forward-Looking",
+      "trigger": "Team formation, greenfield project kick-offs, or quarterly goal setting where the team must chart a path toward a defined future milestone.",
+      "canvas": "3 Chronological Zones: Today, The Odyssey, The Promised Land",
+      "timebox": "90 min",
+      "canvasLine": "3 Chronological Zones: Today, The Odyssey, The Promised Land · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): state the Promised Land as a dated milestone."
+        },
+        {
+          "text": "Gather data (15m): list today's capabilities and technical debt."
+        },
+        {
+          "text": "Generate insights (30m): look back from success; place the Odyssey milestones."
+        },
+        {
+          "text": "Decide (25m): convert each milestone into an epic with a prerequisite."
+        },
+        {
+          "text": "Close (10m): name the first river to cross and its owner."
+        }
+      ],
+      "action": "Each Odyssey milestone becomes an epic-level deliverable with its infrastructure prerequisite named in the same ticket.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "timeline",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"146.666667\" x2=\"348\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"348\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 338 146.7 L 360 146.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R30",
+      "name": "Hopes & Fears",
+      "category": "Forward-Looking",
+      "trigger": "High-uncertainty environments, corporate acquisitions, sudden tech stack shifts, or major reorganizations.",
+      "canvas": "2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks)",
+      "timebox": "45–60 min",
+      "canvasLine": "2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks) · 45–60 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): explain anonymity; fears are risk data, not disloyalty."
+        },
+        {
+          "text": "Gather data (15m): write Hopes and Fears in two separate columns."
+        },
+        {
+          "text": "Generate insights (15m): review each Fear; label systemic risk or rumor."
+        },
+        {
+          "text": "Decide (10m): pair each systemic Fear with a mitigation experiment."
+        },
+        {
+          "text": "Close (5m): convert the Hopes into sprint objectives with owners."
+        }
+      ],
+      "action": "Every systemic Fear gets a paired mitigation experiment; every Hope becomes a measurable objective.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "columns",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"48\" y=\"111\" width=\"144\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"48\" y=\"271\" width=\"144\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"208\" y=\"111\" width=\"144\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"208\" y=\"271\" width=\"144\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"370\" x2=\"360\" y2=\"370\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R31",
+      "name": "Letter from the Future",
+      "category": "Forward-Looking",
+      "trigger": "Teams struggling to align on product vision, architectural consistency, or long-term operational health.",
+      "canvas": "2 Narrative Channels: Triumph Letter vs. Regret Letter",
+      "timebox": "60 min",
+      "canvasLine": "2 Narrative Channels: Triumph Letter vs. Regret Letter · 60 min",
+      "steps": [
+        {
+          "text": "Set the stage (5m): read the Prime Directive; explain the two letters."
+        },
+        {
+          "text": "Gather data (15m): split into squads; draft triumph and regret letters."
+        },
+        {
+          "text": "Generate insights (20m): regroup; mark the decision inflection points."
+        },
+        {
+          "text": "Decide (15m): turn each inflection point into a governance check."
+        },
+        {
+          "text": "Close (5m): name the non-negotiable the team adopts first."
+        }
+      ],
+      "action": "An inflection point becomes an explicit governance check or technical non-negotiable, with an owner.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "zones",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-dasharray=\"7 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"166\" x2=\"208\" y2=\"192\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"326\" x2=\"192\" y2=\"352\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"3 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R32",
+      "name": "Backcasting from Utopia",
+      "category": "Forward-Looking",
+      "trigger": "Formulating multi-year engineering roadmaps, complex cloud migrations, or legacy system deprecation plans.",
+      "canvas": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint",
+      "timebox": "90 min",
+      "canvasLine": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): describe the Year 3 utopian architecture."
+        },
+        {
+          "text": "Gather data (20m): list today's constraints and legacy anchors."
+        },
+        {
+          "text": "Generate insights (30m): work backward; name each year's prerequisites."
+        },
+        {
+          "text": "Decide (20m): decompose the next sprint's immediate enablers."
+        },
+        {
+          "text": "Close (10m): assign the first prerequisite and its deadline."
+        }
+      ],
+      "action": "Immediate prerequisites become sprint backlog epics with a named owner and a date.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "timeline",
+          "columns": 4,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"146.666667\" x2=\"348\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"152.666667\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"247.333333\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"348\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"152.666667\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"247.333333\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 338 146.7 L 360 146.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R33",
+      "name": "Black Swan Stress-Test",
+      "category": "Forward-Looking",
+      "trigger": "Quarterly business continuity reviews, security posture hardening, or mission-critical launch readiness assessments.",
+      "canvas": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach",
+      "timebox": "60–75 min",
+      "canvasLine": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach · 60–75 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): name the three shocks; survival is the goal."
+        },
+        {
+          "text": "Gather data (15m): map single points of failure."
+        },
+        {
+          "text": "Generate insights (20m): design a 10-minute survival protocol per shock."
+        },
+        {
+          "text": "Decide (10m): turn each single point into a cross-training pairing."
+        },
+        {
+          "text": "Close (5m): name the failover test to run first."
+        }
+      ],
+      "action": "Each single point of failure converts into a cross-training pairing, a secrets-rotation job, or a multi-region failover test.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Nassim Nicholas Taleb"
+        ],
+        "year": 2007,
+        "title": "The Black Swan: The Impact of the Highly Improbable",
+        "publication": "Random House",
+        "authorsLabel": "Nassim Nicholas Taleb",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "columns",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"48\" y=\"111\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"48\" y=\"271\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"154.666667\" y=\"111\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"154.666667\" y=\"271\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"261.333333\" y=\"111\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"261.333333\" y=\"271\" width=\"90.66666666666667\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"370\" x2=\"360\" y2=\"370\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R34",
+      "name": "Front-Page Headline",
+      "category": "Forward-Looking",
+      "trigger": "Inception phase of new products or major open-source modules; aligning cross-functional teams around end-user value.",
+      "canvas": "Newspaper Grid: Headline, Sub-bullet, Metric Callout, Quote",
+      "timebox": "60 min",
+      "canvasLine": "Newspaper Grid: Headline, Sub-bullet, Metric Callout, Quote · 60 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): show the blank front page and its four zones."
+        },
+        {
+          "text": "Gather data (15m): pairs draft a headline and a breakthrough metric."
+        },
+        {
+          "text": "Generate insights (20m): compare headlines; find the shared definition."
+        },
+        {
+          "text": "Decide (10m): choose the winning metric as the release Key Result."
+        },
+        {
+          "text": "Close (5m): publish the front page where the team can see it."
+        }
+      ],
+      "action": "The winning headline’s metric becomes the release’s formal Key Result, with a baseline.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "quadrants",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"93.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146.666667\" cy=\"93.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"146.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146.666667\" cy=\"146.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"253.333333\" cy=\"93.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"93.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"253.333333\" cy=\"146.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"146.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"253.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146.666667\" cy=\"253.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"306.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146.666667\" cy=\"306.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"253.333333\" cy=\"253.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"253.333333\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"253.333333\" cy=\"306.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"306.666667\" r=\"3.2\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R35",
+      "name": "Dynamic Risk Radar",
+      "category": "Forward-Looking",
+      "trigger": "High-velocity projects with complex external vendor, compliance, or infrastructure dependencies.",
+      "canvas": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals",
+      "timebox": "45–60 min",
+      "canvasLine": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals · 45–60 min",
+      "steps": [
+        {
+          "text": "Set the stage (5m): draw four quadrants and three rings."
+        },
+        {
+          "text": "Gather data (15m): place every known risk on the radar."
+        },
+        {
+          "text": "Generate insights (15m): mark which risks are moving inward."
+        },
+        {
+          "text": "Decide (10m): assign mitigation spikes to the inner ring."
+        },
+        {
+          "text": "Close (5m): name the weak signal the team will watch next."
+        }
+      ],
+      "action": "Every inner-ring risk gets a mitigation spike scheduled in the next sprint, with an owner and a review date.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "rings",
+          "columns": 4,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"64\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.36000000000000004\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.44000000000000006\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"136\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.52\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"336\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"64\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

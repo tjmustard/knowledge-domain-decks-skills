@@ -1,0 +1,45 @@
+{
+  "id": "R28",
+  "name": "Gary Klein’s Pre-Mortem",
+  "category": "Forward-Looking",
+  "trigger": "Project kick-offs, major architectural migrations, or high-stakes feature releases.",
+  "canvas": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System",
+  "timebox": "60–90 min",
+  "canvasLine": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; fast-forward twelve months."
+    },
+    {
+      "text": "Gather data (15m): silently write how the migration failed catastrophically."
+    },
+    {
+      "text": "Generate insights (20m): group failure modes by theme; dot-vote two vectors."
+    },
+    {
+      "text": "Decide (15m): design safeguards against those vectors."
+    },
+    {
+      "text": "Close (5m): re-anchor; affirm collective ownership."
+    }
+  ],
+  "action": "Failure generators become mandatory architectural spikes: a load test at 2x peak traffic, owner and date.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Gary Klein"
+    ],
+    "year": 2007,
+    "title": "Performing a Project Premortem",
+    "publication": "Harvard Business Review"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

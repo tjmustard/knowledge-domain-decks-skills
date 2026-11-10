@@ -1,0 +1,40 @@
+{
+  "id": "R35",
+  "name": "Dynamic Risk Radar",
+  "category": "Forward-Looking",
+  "trigger": "High-velocity projects with complex external vendor, compliance, or infrastructure dependencies.",
+  "canvas": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals",
+  "timebox": "45–60 min",
+  "canvasLine": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals · 45–60 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): draw four quadrants and three rings."
+    },
+    {
+      "text": "Gather data (15m): place every known risk on the radar."
+    },
+    {
+      "text": "Generate insights (15m): mark which risks are moving inward."
+    },
+    {
+      "text": "Decide (10m): assign mitigation spikes to the inner ring."
+    },
+    {
+      "text": "Close (5m): name the weak signal the team will watch next."
+    }
+  ],
+  "action": "Every inner-ring risk gets a mitigation spike scheduled in the next sprint, with an owner and a review date.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "rings",
+      "columns": 4,
+      "rows": 3
+    }
+  }
+}

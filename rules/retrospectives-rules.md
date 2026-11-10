@@ -481,3 +481,145 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** An Internal/Unexpected defect becomes a targeted test-coverage ticket that would have failed before the defect shipped.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+## Forward-Looking
+
+### R28 — Gary Klein’s Pre-Mortem
+
+**Canvas and timebox.** 3 Zones: Disaster Hall of Fame, Failure Generators, Immune System · 60–90 min
+
+**When to run it.** Project kick-offs, major architectural migrations, or high-stakes feature releases.
+
+**The five phases.**
+1. Set the stage (10m): recite the Prime Directive; fast-forward twelve months.
+2. Gather data (15m): silently write how the migration failed catastrophically.
+3. Generate insights (20m): group failure modes by theme; dot-vote two vectors.
+4. Decide (15m): design safeguards against those vectors.
+5. Close (5m): re-anchor; affirm collective ownership.
+
+**The move.** Failure generators become mandatory architectural spikes: a load test at 2x peak traffic, owner and date.
+
+**Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+**Source.** Gary Klein (2007). *Performing a Project Premortem*. Harvard Business Review.
+
+### R29 — The Futurespective
+
+**Canvas and timebox.** 3 Chronological Zones: Today, The Odyssey, The Promised Land · 90 min
+
+**When to run it.** Team formation, greenfield project kick-offs, or quarterly goal setting where the team must chart a path toward a defined future milestone.
+
+**The five phases.**
+1. Set the stage (10m): state the Promised Land as a dated milestone.
+2. Gather data (15m): list today's capabilities and technical debt.
+3. Generate insights (30m): look back from success; place the Odyssey milestones.
+4. Decide (25m): convert each milestone into an epic with a prerequisite.
+5. Close (10m): name the first river to cross and its owner.
+
+**The move.** Each Odyssey milestone becomes an epic-level deliverable with its infrastructure prerequisite named in the same ticket.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R30 — Hopes & Fears
+
+**Canvas and timebox.** 2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks) · 45–60 min
+
+**When to run it.** High-uncertainty environments, corporate acquisitions, sudden tech stack shifts, or major reorganizations.
+
+**The five phases.**
+1. Set the stage (10m): explain anonymity; fears are risk data, not disloyalty.
+2. Gather data (15m): write Hopes and Fears in two separate columns.
+3. Generate insights (15m): review each Fear; label systemic risk or rumor.
+4. Decide (10m): pair each systemic Fear with a mitigation experiment.
+5. Close (5m): convert the Hopes into sprint objectives with owners.
+
+**The move.** Every systemic Fear gets a paired mitigation experiment; every Hope becomes a measurable objective.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R31 — Letter from the Future
+
+**Canvas and timebox.** 2 Narrative Channels: Triumph Letter vs. Regret Letter · 60 min
+
+**When to run it.** Teams struggling to align on product vision, architectural consistency, or long-term operational health.
+
+**The five phases.**
+1. Set the stage (5m): read the Prime Directive; explain the two letters.
+2. Gather data (15m): split into squads; draft triumph and regret letters.
+3. Generate insights (20m): regroup; mark the decision inflection points.
+4. Decide (15m): turn each inflection point into a governance check.
+5. Close (5m): name the non-negotiable the team adopts first.
+
+**The move.** An inflection point becomes an explicit governance check or technical non-negotiable, with an owner.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R32 — Backcasting from Utopia
+
+**Canvas and timebox.** Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint · 90 min
+
+**When to run it.** Formulating multi-year engineering roadmaps, complex cloud migrations, or legacy system deprecation plans.
+
+**The five phases.**
+1. Set the stage (10m): describe the Year 3 utopian architecture.
+2. Gather data (20m): list today's constraints and legacy anchors.
+3. Generate insights (30m): work backward; name each year's prerequisites.
+4. Decide (20m): decompose the next sprint's immediate enablers.
+5. Close (10m): assign the first prerequisite and its deadline.
+
+**The move.** Immediate prerequisites become sprint backlog epics with a named owner and a date.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R33 — Black Swan Stress-Test
+
+**Canvas and timebox.** 3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach · 60–75 min
+
+**When to run it.** Quarterly business continuity reviews, security posture hardening, or mission-critical launch readiness assessments.
+
+**The five phases.**
+1. Set the stage (10m): name the three shocks; survival is the goal.
+2. Gather data (15m): map single points of failure.
+3. Generate insights (20m): design a 10-minute survival protocol per shock.
+4. Decide (10m): turn each single point into a cross-training pairing.
+5. Close (5m): name the failover test to run first.
+
+**The move.** Each single point of failure converts into a cross-training pairing, a secrets-rotation job, or a multi-region failover test.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** Nassim Nicholas Taleb (2007). *The Black Swan: The Impact of the Highly Improbable*. Random House.
+
+### R34 — Front-Page Headline
+
+**Canvas and timebox.** Newspaper Grid: Headline, Sub-bullet, Metric Callout, Quote · 60 min
+
+**When to run it.** Inception phase of new products or major open-source modules; aligning cross-functional teams around end-user value.
+
+**The five phases.**
+1. Set the stage (10m): show the blank front page and its four zones.
+2. Gather data (15m): pairs draft a headline and a breakthrough metric.
+3. Generate insights (20m): compare headlines; find the shared definition.
+4. Decide (10m): choose the winning metric as the release Key Result.
+5. Close (5m): publish the front page where the team can see it.
+
+**The move.** The winning headline’s metric becomes the release’s formal Key Result, with a baseline.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R35 — Dynamic Risk Radar
+
+**Canvas and timebox.** 3 Concentric Rings: High Priority, Emerging Risks, Weak Signals · 45–60 min
+
+**When to run it.** High-velocity projects with complex external vendor, compliance, or infrastructure dependencies.
+
+**The five phases.**
+1. Set the stage (5m): draw four quadrants and three rings.
+2. Gather data (15m): place every known risk on the radar.
+3. Generate insights (15m): mark which risks are moving inward.
+4. Decide (10m): assign mitigation spikes to the inner ring.
+5. Close (5m): name the weak signal the team will watch next.
+
+**The move.** Every inner-ring risk gets a mitigation spike scheduled in the next sprint, with an owner and a review date.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.

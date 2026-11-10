@@ -1,0 +1,40 @@
+{
+  "id": "R29",
+  "name": "The Futurespective",
+  "category": "Forward-Looking",
+  "trigger": "Team formation, greenfield project kick-offs, or quarterly goal setting where the team must chart a path toward a defined future milestone.",
+  "canvas": "3 Chronological Zones: Today, The Odyssey, The Promised Land",
+  "timebox": "90 min",
+  "canvasLine": "3 Chronological Zones: Today, The Odyssey, The Promised Land · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): state the Promised Land as a dated milestone."
+    },
+    {
+      "text": "Gather data (15m): list today's capabilities and technical debt."
+    },
+    {
+      "text": "Generate insights (30m): look back from success; place the Odyssey milestones."
+    },
+    {
+      "text": "Decide (25m): convert each milestone into an epic with a prerequisite."
+    },
+    {
+      "text": "Close (10m): name the first river to cross and its owner."
+    }
+  ],
+  "action": "Each Odyssey milestone becomes an epic-level deliverable with its infrastructure prerequisite named in the same ticket.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "timeline",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

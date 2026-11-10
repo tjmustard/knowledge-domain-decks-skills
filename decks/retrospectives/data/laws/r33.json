@@ -1,0 +1,45 @@
+{
+  "id": "R33",
+  "name": "Black Swan Stress-Test",
+  "category": "Forward-Looking",
+  "trigger": "Quarterly business continuity reviews, security posture hardening, or mission-critical launch readiness assessments.",
+  "canvas": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach",
+  "timebox": "60–75 min",
+  "canvasLine": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach · 60–75 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): name the three shocks; survival is the goal."
+    },
+    {
+      "text": "Gather data (15m): map single points of failure."
+    },
+    {
+      "text": "Generate insights (20m): design a 10-minute survival protocol per shock."
+    },
+    {
+      "text": "Decide (10m): turn each single point into a cross-training pairing."
+    },
+    {
+      "text": "Close (5m): name the failover test to run first."
+    }
+  ],
+  "action": "Each single point of failure converts into a cross-training pairing, a secrets-rotation job, or a multi-region failover test.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Nassim Nicholas Taleb"
+    ],
+    "year": 2007,
+    "title": "The Black Swan: The Impact of the Highly Improbable",
+    "publication": "Random House"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "columns",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

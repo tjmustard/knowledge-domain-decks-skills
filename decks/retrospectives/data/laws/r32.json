@@ -1,0 +1,40 @@
+{
+  "id": "R32",
+  "name": "Backcasting from Utopia",
+  "category": "Forward-Looking",
+  "trigger": "Formulating multi-year engineering roadmaps, complex cloud migrations, or legacy system deprecation plans.",
+  "canvas": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint",
+  "timebox": "90 min",
+  "canvasLine": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): describe the Year 3 utopian architecture."
+    },
+    {
+      "text": "Gather data (20m): list today's constraints and legacy anchors."
+    },
+    {
+      "text": "Generate insights (30m): work backward; name each year's prerequisites."
+    },
+    {
+      "text": "Decide (20m): decompose the next sprint's immediate enablers."
+    },
+    {
+      "text": "Close (10m): assign the first prerequisite and its deadline."
+    }
+  ],
+  "action": "Immediate prerequisites become sprint backlog epics with a named owner and a date.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "timeline",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}
