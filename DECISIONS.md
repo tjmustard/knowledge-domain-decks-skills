@@ -129,3 +129,25 @@ person's call, so they are not committed. The knowledge they carry enters the
 repository through the derived CC0 dataset in `data/laws/` and the citations on
 each card. Revisit with the person before publishing anything that depends on
 those specs.
+
+## 11. The printed diagram is deliberately monochrome
+
+The parametric diagrams are drawn with `currentColor`, so the web viewer tints
+them with the category accent. Typst does not resolve `currentColor` from the
+surrounding text fill, so the same SVG prints dark. Rather than ship an
+accidental difference, print keeps the diagram monochrome on purpose: at the
+1.8 in diagram size it is thin linework, and thin coloured strokes are the
+first thing to muddy on a photocopier or a tired office laser. A black diagram
+prints and copies correctly, while the card's accent band, rule, category line,
+red violation, and green fix keep their colour, so the category still reads at
+a glance.
+
+The alternative was to substitute the category hex when writing
+`packages/prepress/build/svg/*.svg`. That would add a third accent table - one
+already exists in `card.typ` and another in `app.js` - for a diagram that reads
+better in black at this size. The web keeps the accent, so the two artifacts
+differ deliberately rather than by omission.
+
+What would change this: a colour press run, which the source specification's
+CMYK/FOGRA39 workflow anticipates. At that point the diagrams take the category
+hue, drawn from one accent source rather than three.

@@ -118,9 +118,14 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer.
 
-**The print layer is not yet verified on this machine.** Typst is not installed
-here, so no PDF has been produced or committed, and the template has not been
-visually proofed. Treat the print format as specified, not as proven.
+**What has been checked in the built PDF.** With Typst 0.15.1, `npm run
+build:pdf` emits a 12-page file of about 169 KiB. `npm run check:pdf` measured a
+216 x 360 pt MediaBox on every page. On the rendered pages, trim ticks sit in
+the bleed band at the trim corners; every font is 6.5 pt or larger, with the
+Source line read back at 6.5 pt on all six versos and absent from the rectos;
+the worst text overrun past the safe box is 0.97 pt on page 7, with 8.03 pt of
+paper still before the trim; and every image is a form XObject, so the diagram
+is real vector geometry.
 
 ### Agents: load the ruleset
 
@@ -239,12 +244,12 @@ npm run check           # validate + regenerate, without the browser step
 | `npm run check:web` | At 390 px: no horizontal overflow, six cards render, flip exposes the verso, a filter narrows to one |
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
 
-Last full run: **2026-11-09**, macOS, Node 22.23.4, Chrome 157 — `npm run
-check:all` exits 0.
+Last full run: **2026-11-09**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
+`npm run check:all` exits 0 and the PDF builds.
 
-Two honest limits. `npm run check:pdf` only proves page geometry; it does not
-prove typography, text fit, or image resolution. And on this machine the print
-layer has not been exercised at all, because Typst is absent.
+One honest limit: `npm run check:pdf` proves page geometry only. Whether the
+marks land on paper and whether the type reads comfortably at print size are
+judgements from looking at rendered pages, not something the check asserts.
 
 ---
 

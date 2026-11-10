@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- **Print template (`packages/prepress/src/card.typ`)**: `card.category.upper()` used a string method that Typst 0.15.1 does not provide; the call is now `upper(card.category)`, the template's only method-style string call. The PDF now builds: 12 pages, every MediaBox 216 x 360 pt.
+- **Source line (`packages/prepress/src/card.typ`)**: Raised from 5.5 pt to 6.5 pt, so the citation sits at body size instead of being the only type below it. It reads back at 6.5 pt on all six versos and stays inside the safe inset.
+
 ### Changed
 - **Header icon (`media/icons/`, `media/icon.png`)**: The header icon is now a transparent WebP set at 1024, 512, 256, 192, and 128 px under `media/icons/`, replacing `media/icon.png`, which is removed, so any existing reference to the old path now 404s. The sizes were produced once with sharp used as a throwaway tool; it is not a dependency, and no generator is committed.
 
