@@ -1,0 +1,48 @@
+{
+  "name": "deck-skill",
+  "endpoint": "http://127.0.0.1:11434",
+  "authorFamily": "deepseek",
+  "prompt": "../prompts/audit.md",
+  "target": {
+    "kind": "an agent-facing instruction file (a \"skill\") for the Claude Code harness",
+    "job": "An agent loads this file and is expected to review or write user-interface code against the principles it lists. It is generated from JSON records and is not edited by hand."
+  },
+  "judges": [
+    {
+      "model": "glm-5.3-flash:cloud",
+      "family": "zhipu",
+      "numCtx": 16384,
+      "numPredict": 30000,
+      "schema": "ignored",
+      "note": "Ignores format and writes prose before its JSON; the runner extracts the last parseable object."
+    },
+    {
+      "model": "kimi-k3.1-pro:cloud",
+      "family": "moonshot",
+      "numCtx": 32768,
+      "numPredict": 16000,
+      "schema": "enforced",
+      "note": "Honours the schema and often drops required fields anyway; it listed all 30 cards while reporting 24."
+    },
+    {
+      "model": "gemma4:e2b",
+      "family": "google",
+      "numCtx": 16384,
+      "numPredict": 6000,
+      "schema": "enforced",
+      "note": "Local and lenient; its findings are often tautologies, but it converges on structural gaps."
+    }
+  ],
+  "excluded": [
+    {
+      "model": "qwen3.5:4b",
+      "family": "alibaba",
+      "reason": "4096-token context cannot hold a 25 KB artifact; it returns a verdict on whatever survived truncation."
+    },
+    {
+      "model": "deepseek-v4.1-flash:cloud",
+      "family": "deepseek",
+      "reason": "Every seat in this rig authors with this model, so it cannot judge the work."
+    }
+  ]
+}

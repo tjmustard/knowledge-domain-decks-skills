@@ -14,7 +14,9 @@
     "check:all": "npm run validate && npm run build:rules && npm run build:web && npm run check:web",
     "accept": "node scripts/accept.mjs",
     "build": "npm run build:web && npm run build:rules && npm run build:pdf",
-    "check": "npm run validate && npm run build:rules && npm run build:web"
+    "check": "npm run validate && npm run build:rules && npm run build:web",
+    "judge": "node packages/judges/run.mjs",
+    "test:judges": "node --test packages/judges/test/*.test.mjs"
   },
   "devDependencies": {
     "ajv": "^8.20.0"

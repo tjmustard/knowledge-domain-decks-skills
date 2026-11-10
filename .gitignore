@@ -5,3 +5,4 @@ packages/prepress/dist/
 .worktrees/
 # Read-only research input for this slice: provenance/licence is the person's call.
 /SupportingInformation/
+.judges/

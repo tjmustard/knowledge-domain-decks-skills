@@ -232,7 +232,8 @@ and duplicate IDs fail the run.
 │   │   ├── styles.css
 │   │   ├── app.js
 │   │   └── deck-data.js         # Generated card bundle
-│   └── rules/                   # Ruleset generator
+│   ├── rules/                   # Ruleset generator
+│   └── judges/                  # Cross-model audit panel (needs a model endpoint)
 ├── rules/ux-rules.md            # Generated agent ruleset
 ├── skills/ux-laws/SKILL.md      # Generated agent skill
 ├── scripts/
@@ -286,7 +287,17 @@ npm run check           # validate + regenerate, without the browser step
 # 6. Verify a specific commit, in a worktree nobody else is using
 npm run accept          # HEAD
 npm run accept -- <ref> # any commit-ish
+
+# 7. Audit an artifact with a panel of models (optional; needs a local endpoint)
+npm run judge -- --panel packages/judges/panels/deck-skill.json \
+                  --artifact skills/ux-laws/SKILL.md
+npm run test:judges     # offline tests for the panel runner
 ```
+
+The judge panel is a development tool, not a build step. It writes to
+`.judges/`, which is not committed, and it never decides anything on its own:
+a finding is a claim until someone checks it at the source. See
+[`packages/judges/README.md`](./packages/judges/README.md).
 
 ### What the checks prove
 
