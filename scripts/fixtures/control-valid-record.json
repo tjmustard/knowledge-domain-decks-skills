@@ -1,0 +1,30 @@
+{
+  "id": "FIX-93",
+  "name": "Fixture Card",
+  "category": "Heuristic & Mental Models",
+  "axiom": "A placeholder axiom used only by the acceptance fixtures.",
+  "trigger": "Never rendered or published; exists so the validator can be shown rejecting known-bad records.",
+  "checklist": [
+    "First fixture checklist item.",
+    "Second fixture checklist item.",
+    "Third fixture checklist item."
+  ],
+  "antiPattern": {
+    "violation": "A fixture violation string, deliberately not real deck copy.",
+    "remediation": "A fixture remediation string, deliberately not real deck copy."
+  },
+  "graphicMetaphor": {
+    "svgShape": "network",
+    "parametricParams": {
+      "nodes": 6
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Fixture Author"
+    ],
+    "year": 2000,
+    "title": "A Fixture Publication",
+    "publication": "Fixture Journal, 1(1), 1-2"
+  }
+}
