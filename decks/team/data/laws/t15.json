@@ -1,0 +1,39 @@
+{
+  "id": "T15",
+  "sourceCardNo": "Card 15",
+  "name": "Maister, Green & Galford’s Trust Equation",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "High individual technical brilliance accompanied by peer distrust; suspicion regarding team members playing political games for promotions; withholding help to secure personal velocity metrics.",
+  "schematic": "Trust-equation radar",
+  "script": {
+    "label": "Self-Orientation Calibration",
+    "text": "\"Our code reviews and technical roadmap planning show high Credibility and Reliability, but trust is being degraded by perceived high Self-Orientation. When engineers prioritize their individual performance metrics over team support, collaborative throughput suffers. We will recalibrate sprint evaluations to prioritize cross-functional enablement.\""
+  },
+  "audit": [
+    "Did people unblock peers' reviews before their own secondary work?",
+    "Did roadmaps carry shared maintenance without executive friction?"
+  ],
+  "auditFull": [
+    "Are team members actively unblocking peers' pull requests before advancing their own secondary tasks?",
+    "Did individual project roadmaps incorporate shared maintenance tasks without executive friction?"
+  ],
+  "foundation": "David Maister, Charles Green, and Robert Galford (2000) defined interpersonal trust through a formal quotient: T = \\frac{C + R + I}{S} Where C represents Credibility (words and competence), R represents Reliability (actions and dependability), I represents Intimacy (interpersonal security and emotional safety), and S represents Self-Orientation (perceived self-interest). As Self-Orientation increases, aggregate Trust declines regardless of technical competence.",
+  "origin": {
+    "authors": [
+      "David H. Maister",
+      "Charles H. Green",
+      "Robert M. Galford"
+    ],
+    "year": 2000,
+    "title": "The Trusted Advisor",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

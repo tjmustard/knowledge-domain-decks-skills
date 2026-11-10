@@ -1,0 +1,32 @@
+{
+  "id": "T17",
+  "sourceCardNo": "Card 17",
+  "name": "Google’s Project Aristotle Normative Architecture",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Two senior engineers dominate 80% of standup and retrospective discussions; quieter developers do not participate; commitments made during sprint planning routinely drop without notice.",
+  "schematic": "Five-norm safety radar",
+  "script": {
+    "label": "Conversational Equalization",
+    "text": "\"Our retrospective interaction metrics show unbalanced participation. Moving forward, we will implement structured turn-taking for architectural RFC reviews. Each participant will have two minutes of uninterrupted time to contribute before open floor debate begins. We will start with those who have contributed the least during the current session.\""
+  },
+  "audit": [
+    "Did everyone speak at least once in planning and retrospective?",
+    "Is speaking time spreading more evenly across the squad?"
+  ],
+  "auditFull": [
+    "Did every squad member contribute at least once during sprint planning and retrospective discussions?",
+    "Has the variance in speaking time across squad members declined toward an even distribution?"
+  ],
+  "foundation": "Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.",
+  "origin": {
+    "note": "Google's Project Aristotle (2012-2015); the study is internal and no primary report was published."
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

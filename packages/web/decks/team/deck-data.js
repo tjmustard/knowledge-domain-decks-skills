@@ -495,6 +495,446 @@ window.TEAM_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"322\" x2=\"111.2\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"322\" x2=\"170.4\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"322\" x2=\"229.6\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"322\" x2=\"288.8\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"61.9\" y2=\"216.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"61.9\" y1=\"216.2\" x2=\"71.7\" y2=\"221.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"71.7\" y1=\"221.9\" x2=\"81.6\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"81.6\" y1=\"230\" x2=\"91.5\" y2=\"240.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.5\" y1=\"240.7\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"111.2\" y2=\"266.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"266.5\" x2=\"121.1\" y2=\"278.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.1\" y1=\"278.2\" x2=\"130.9\" y2=\"286.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130.9\" y1=\"286.1\" x2=\"140.8\" y2=\"288.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.8\" y1=\"288.2\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"160.5\" y2=\"272.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160.5\" y1=\"272.6\" x2=\"170.4\" y2=\"256.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"256.4\" x2=\"180.3\" y2=\"236.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.3\" y1=\"236.9\" x2=\"190.1\" y2=\"215.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.1\" y1=\"215.6\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"209.9\" y2=\"173.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.9\" y1=\"173.1\" x2=\"219.7\" y2=\"153.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.7\" y1=\"153.5\" x2=\"229.6\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"136\" x2=\"239.5\" y2=\"121.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"239.5\" y1=\"121.5\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"259.2\" y2=\"105.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"259.2\" y1=\"105.4\" x2=\"269.1\" y2=\"105.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"269.1\" y1=\"105.3\" x2=\"278.9\" y2=\"110.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"278.9\" y1=\"110.6\" x2=\"288.8\" y2=\"120.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"120.5\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"308.5\" y2=\"149.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.5\" y1=\"149.3\" x2=\"318.4\" y2=\"165.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"318.4\" y1=\"165.1\" x2=\"328.3\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"328.3\" y1=\"180\" x2=\"338.1\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"338.1\" y1=\"193\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.8\" y1=\"322\" x2=\"140.8\" y2=\"288.19307\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"140.8\" cy=\"288.19307\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T12",
+      "sourceCardNo": "Card 12",
+      "name": "Edmondson’s Psychological Safety Diagnostic",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Zero production errors or failures recorded over extended periods; silence in retrospectives; juniors hesitating to question senior architectural assumptions; sudden discovery of systemic defects near release deadlines.",
+      "schematic": "Five-axis safety radar",
+      "script": {
+        "label": "Vulnerability Normalization",
+        "text": "\"Looking through our retro notes, we have not logged a single system failure or mistake in three sprints. In distributed software engineering, silence is not indicative of perfection; it is a leading indicator of risk aversion. As engineering lead, I made an architectural miscalculation on the caching layer last week that elevated latency. I am opening the floor: what system failures or uncertainties are currently remaining unaddressed?\""
+      },
+      "audit": [
+        "Do all members answer no to 'a mistake here is held against you'?",
+        "Did a junior engineer challenge a senior's pull request in public?"
+      ],
+      "auditFull": [
+        "Evaluate against Edmondson’s survey: \"If you make a mistake on this team, is it held against you?\" (Target: 100% negative response rate).",
+        "Did junior developers submit RFC questions or dispute a pull request from a senior staff engineer?"
+      ],
+      "foundation": "Amy Edmondson’s seminal 1999 study (Administrative Science Quarterly) introduced psychological safety as a team-level climate characterized by interpersonal trust and mutual respect, demonstrating that higher psychological safety correlates with increased error reporting, learning behavior, and unit performance.",
+      "origin": {
+        "authors": [
+          "Amy C. Edmondson"
+        ],
+        "year": 1999,
+        "title": "Psychological Safety and Learning Behavior in Work Teams",
+        "publication": "Administrative Science Quarterly",
+        "authorsLabel": "Amy C. Edmondson",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 246.9 182.8 L 229 237.9 L 171 237.9 L 153.1 182.8 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 293.8 167.5 L 258 277.8 L 142 277.8 L 106.2 167.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 340.8 152.3 L 287 317.7 L 113 317.7 L 59.2 152.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"340.8\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340.8\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"287\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"287\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"113\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"113\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"59.2\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"59.2\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 287.3 169.6 L 253.9 272.2 L 146.1 272.2 L 112.7 169.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 109.2 L 284.5 170.6 L 252.2 269.8 L 147.8 269.8 L 115.5 170.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T13",
+      "sourceCardNo": "Card 13",
+      "name": "Westrum Organizational Culture Typology",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "\"Messengers are shot\" when incidents occur; cross-functional silos refuse to share deployment data; failures result in bureaucratic procedure expansions rather than system automation.",
+      "schematic": "Culture continuum",
+      "script": {
+        "label": "Generative Inquiry Protocol",
+        "text": "\"The incident review for the recent outage showed that information was withheld due to fear of blame. In this engineering unit, failure is treated as systemic diagnostic data, not personal error. We will trace the socio-technical conditions that allowed this configuration error to deploy without human gatekeeping.\""
+      },
+      "audit": [
+        "Do incident notices go public within fifteen minutes, unfiltered?",
+        "Do fixes come from linters and CI gates, not manual sign-off?"
+      ],
+      "auditFull": [
+        "Are incident anomaly notifications posted publicly in under fifteen minutes without managerial filtering?",
+        "Has the response to service disruptions focused on automated linters and CI gating rather than manual sign-offs?"
+      ],
+      "foundation": "Ron Westrum’s (2004) sociological framework categorizes information flow into Pathological (power-oriented), Bureaucratic (rule-oriented), and Generative (performance-oriented) environments. Westrum’s model, validated at scale in Google’s DevOps Research and Assessment (DORA) research, demonstrates that Generative cultures correlate with elite software delivery velocity and organizational reliability.",
+      "origin": {
+        "authors": [
+          "Ron Westrum"
+        ],
+        "year": 2004,
+        "title": "A Typology of Organisational Cultures",
+        "publication": "Quality and Safety in Health Care",
+        "authorsLabel": "Ron Westrum",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T14",
+      "sourceCardNo": "Card 14",
+      "name": "Coyle’s Vulnerability Loop & Belonging Cues",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Team members maintain an illusion of effortless competence; defensive pushback occurs when code quality concerns are flagged; isolationism during complex debugging sessions.",
+      "schematic": "Trust-signal continuum",
+      "script": {
+        "label": "Vulnerability Signal Initiation",
+        "text": "\"I reviewed the performance profile of our core event broker. I do not have a working model for why this latency spike is happening under load. I need technical help. Who can pair with me to audit this trace and find where my mental model broke down?\""
+      },
+      "audit": [
+        "Did someone say 'I don't understand this component' and find a pair?",
+        "Have reviews become learning dialogues, not defensive negotiation?"
+      ],
+      "auditFull": [
+        "Did developers initiate spontaneous pairing sessions by openly stating, \"I do not understand this component\"?",
+        "Have PR reviews evolved into collaborative learning dialogues rather than defensive negotiations?"
+      ],
+      "foundation": "Daniel Coyle’s research in The Culture Code (2018), building on Jeff Polzer’s behavioral interaction studies at Harvard, identifies the \"Vulnerability Loop\": an exchange where Person A sends a signal of vulnerability, Person B detects it and responds with their own vulnerability, establishing normative trust and mutual psychological security.",
+      "origin": {
+        "authors": [
+          "Daniel Coyle"
+        ],
+        "year": 2018,
+        "title": "The Culture Code: The Secrets of Highly Successful Groups",
+        "publication": "Bantam Books",
+        "authorsLabel": "Daniel Coyle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T15",
+      "sourceCardNo": "Card 15",
+      "name": "Maister, Green & Galford’s Trust Equation",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "High individual technical brilliance accompanied by peer distrust; suspicion regarding team members playing political games for promotions; withholding help to secure personal velocity metrics.",
+      "schematic": "Trust-equation radar",
+      "script": {
+        "label": "Self-Orientation Calibration",
+        "text": "\"Our code reviews and technical roadmap planning show high Credibility and Reliability, but trust is being degraded by perceived high Self-Orientation. When engineers prioritize their individual performance metrics over team support, collaborative throughput suffers. We will recalibrate sprint evaluations to prioritize cross-functional enablement.\""
+      },
+      "audit": [
+        "Did people unblock peers' reviews before their own secondary work?",
+        "Did roadmaps carry shared maintenance without executive friction?"
+      ],
+      "auditFull": [
+        "Are team members actively unblocking peers' pull requests before advancing their own secondary tasks?",
+        "Did individual project roadmaps incorporate shared maintenance tasks without executive friction?"
+      ],
+      "foundation": "David Maister, Charles Green, and Robert Galford (2000) defined interpersonal trust through a formal quotient: T = \\frac{C + R + I}{S} Where C represents Credibility (words and competence), R represents Reliability (actions and dependability), I represents Intimacy (interpersonal security and emotional safety), and S represents Self-Orientation (perceived self-interest). As Self-Orientation increases, aggregate Trust declines regardless of technical competence.",
+      "origin": {
+        "authors": [
+          "David H. Maister",
+          "Charles H. Green",
+          "Robert M. Galford"
+        ],
+        "year": 2000,
+        "title": "The Trusted Advisor",
+        "publication": "The Free Press",
+        "authorsLabel": "David H. Maister, Charles H. Green & Robert M. Galford",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 242.7 222.7 L 157.3 222.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 328.2 272 L 71.8 272 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 279.5 243.9 L 120.5 243.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T16",
+      "sourceCardNo": "Card 16",
+      "name": "Schein’s Three Levels of Organizational Culture",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "The company claims to value \"engineering quality\" (espoused value), but rewards engineers who cut tests to meet aggressive dates (underlying assumption); team handbooks celebrate work-life balance while managers ping engineers late at night.",
+      "schematic": "Three-level culture continuum",
+      "script": {
+        "label": "Cultural Incongruence Audit",
+        "text": "\"Our stated value is 'test-driven stability,' but our operational reality is that engineers who skip unit testing to hit dates are praised, while those fixing technical debt are questioned. We are addressing this discrepancy. We will freeze new feature development for this sprint to address structural technical debt.\""
+      },
+      "audit": [
+        "Does sprint planning fund bug and debt work without pushback?",
+        "Are after-hours messages stopped or flagged non-urgent?"
+      ],
+      "auditFull": [
+        "Does sprint planning formally prioritize bug fixes and debt tickets without team-level pushback?",
+        "Are managerial communications during out-of-office hours discontinued or explicitly flagged as non-urgent?"
+      ],
+      "foundation": "Edgar Schein’s (1985) organizational culture model differentiates between: (1) Artifacts (visible structures, processes, languages); (2) Espoused Values (strategies, goals, philosophies); and (3) Basic Underlying Assumptions (unconscious, taken-for-granted beliefs). Cultural dysfunction emerges when espoused values conflict directly with underlying assumptions.",
+      "origin": {
+        "authors": [
+          "Edgar H. Schein"
+        ],
+        "year": 1985,
+        "title": "Organizational Culture and Leadership",
+        "publication": "Jossey-Bass",
+        "authorsLabel": "Edgar H. Schein",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T17",
+      "sourceCardNo": "Card 17",
+      "name": "Google’s Project Aristotle Normative Architecture",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Two senior engineers dominate 80% of standup and retrospective discussions; quieter developers do not participate; commitments made during sprint planning routinely drop without notice.",
+      "schematic": "Five-norm safety radar",
+      "script": {
+        "label": "Conversational Equalization",
+        "text": "\"Our retrospective interaction metrics show unbalanced participation. Moving forward, we will implement structured turn-taking for architectural RFC reviews. Each participant will have two minutes of uninterrupted time to contribute before open floor debate begins. We will start with those who have contributed the least during the current session.\""
+      },
+      "audit": [
+        "Did everyone speak at least once in planning and retrospective?",
+        "Is speaking time spreading more evenly across the squad?"
+      ],
+      "auditFull": [
+        "Did every squad member contribute at least once during sprint planning and retrospective discussions?",
+        "Has the variance in speaking time across squad members declined toward an even distribution?"
+      ],
+      "foundation": "Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.",
+      "origin": {
+        "note": "Google's Project Aristotle (2012-2015); the study is internal and no primary report was published.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 246.9 182.8 L 229 237.9 L 171 237.9 L 153.1 182.8 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 293.8 167.5 L 258 277.8 L 142 277.8 L 106.2 167.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 340.8 152.3 L 287 317.7 L 113 317.7 L 59.2 152.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"340.8\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340.8\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"287\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"287\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"113\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"113\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"59.2\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"59.2\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 287.3 169.6 L 253.9 272.2 L 146.1 272.2 L 112.7 169.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 109.2 L 284.5 170.6 L 252.2 269.8 L 147.8 269.8 L 115.5 170.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T18",
+      "sourceCardNo": "Card 18",
+      "name": "Clark’s Four Stages of Psychological Safety",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "The team tolerates questions (Learner Safety) and executes tasks (Contributor Safety), but immediately shuts down challenges to legacy code patterns or senior leadership roadmaps (lack of Challenger Safety).",
+      "schematic": "Four-stage safety continuum",
+      "script": {
+        "label": "Challenger Safety Facilitation",
+        "text": "\"The squad has proven its execution capability, but we have stopped innovating our internal architectural primitives. I am challenging this team to challenge the current design. In this meeting, each developer will identify one practice in our deployment pipeline that should be dismantled. The most disruptive, valid critique will be prioritized.\""
+      },
+      "audit": [
+        "Did the team argue an RFC that challenges legacy patterns?",
+        "Did juniors disagree with leadership without friction?"
+      ],
+      "auditFull": [
+        "Has the team submitted and debated an RFC that directly challenges legacy code patterns?",
+        "Did junior developers voice disagreement with leadership decisions without experiencing organizational friction?"
+      ],
+      "foundation": "Timothy R. Clark (2020) demonstrated that psychological safety progresses through four distinct stages: (1) Inclusion Safety (human connection and belonging); (2) Learner Safety (freedom to ask questions and experiment); (3) Contributor Safety (freedom to make meaningful contributions); and (4) Challenger Safety (freedom to challenge the status quo without fear of retaliation).",
+      "origin": {
+        "authors": [
+          "Timothy R. Clark"
+        ],
+        "year": 2020,
+        "title": "The 4 Stages of Psychological Safety: Defining the Path to Inclusion and Innovation",
+        "publication": "Berrett-Koehler",
+        "authorsLabel": "Timothy R. Clark",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 4,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.3\" y1=\"164.3\" x2=\"95.3\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"128\" x2=\"200\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.7\" y1=\"164.3\" x2=\"304.7\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"245.2\" y2=\"143\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T19",
+      "sourceCardNo": "Card 19",
+      "name": "Mayer, Davis & Schoorman’s Integrative Model of Trust",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Developers trust a colleague's technical competence (Ability), but suspect they will claim exclusive credit for a joint project (low Benevolence), or catch them fabricating testing coverage numbers (low Integrity).",
+      "schematic": "Integrative-trust radar",
+      "script": {
+        "label": "Integrity & Benevolence Alignment",
+        "text": "\"We have high technical competence in our squad, but our cross-functional alignment is fragile. For our code-sharing initiative to work, we need full transparency. We will conduct pair-programming rotations across the service layer to eliminate silos and verify that code ownership remains shared.\""
+      },
+      "audit": [
+        "Did reviews explain their criticism rather than dismiss it?",
+        "Are wins and merges credited to both pairing partners?"
+      ],
+      "auditFull": [
+        "Did peer reviews include constructive explanations rather than curt or dismissive comments?",
+        "Are project wins and PR merges attributed accurately across pair-programming partners?"
+      ],
+      "foundation": "Mayer, Davis, and Schoorman (1995, Academy of Management Review) framed organizational trust through three distinct components of trustworthiness: Ability (technical competencies and domain expertise), Benevolence (the belief that the trustee wants to do good to the trustor), and Integrity (adherence to an acceptable set of principles).",
+      "origin": {
+        "authors": [
+          "Roger C. Mayer",
+          "James H. Davis",
+          "F. David Schoorman"
+        ],
+        "year": 1995,
+        "title": "An Integrative Model of Organizational Trust",
+        "publication": "Academy of Management Review",
+        "authorsLabel": "Roger C. Mayer, James H. Davis & F. David Schoorman",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 242.7 222.7 L 157.3 222.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 328.2 272 L 71.8 272 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 279.5 243.9 L 120.5 243.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T20",
+      "sourceCardNo": "Card 20",
+      "name": "Cameron & Quinn’s Competing Values Framework",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Developers complain of heavy documentation procedures in a fast-paced environment (Hierarchy clash with Adhocracy) or lack of delivery focus in an operational scaling sprint (Clan clash with Market).",
+      "schematic": "Competing-values quadrant",
+      "script": {
+        "label": "Archetype Realignment",
+        "text": "\"Our delivery friction is caused by a misalignment of our operational modes. We are treating a critical uptime reliability phase (Hierarchy) with an exploratory prototype mentality (Adhocracy). For the next month, operational rigor, logging standards, and monitoring compliance take precedence over novel prototyping.\""
+      },
+      "audit": [
+        "Are runbooks, alerts and incident guides kept current?",
+        "Was exploratory work held back during stabilization?"
+      ],
+      "auditFull": [
+        "Are incident response guidelines, monitoring alerts, and runbooks updated systematically?",
+        "Has exploratory feature development noise been suppressed during system stabilization periods?"
+      ],
+      "foundation": "Kim Cameron and Robert Quinn (1999) categorized organizational culture across two axes—Flexibility vs. Stability, and Internal Focus vs. External Focus—yielding four culture archetypes: Clan (collaborative), Adhocracy (creative), Market (competitive), and Hierarchy (controlled). Friction erupts when engineering processes clash with the prevailing archetype.",
+      "origin": {
+        "authors": [
+          "Kim S. Cameron",
+          "Robert E. Quinn"
+        ],
+        "year": 1999,
+        "title": "Diagnosing and Changing Organizational Culture",
+        "publication": "Addison-Wesley",
+        "authorsLabel": "Kim S. Cameron & Robert E. Quinn",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T21",
+      "sourceCardNo": "Card 21",
+      "name": "The SCARF Model (David Rock)",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Developers react with hostility to sudden code reassignments (Autonomy threat), unexpected changes in team leadership (Certainty/Status threat), or uneven on-call shifts (Fairness threat).",
+      "schematic": "SCARF radar",
+      "script": {
+        "label": "SCARF Threat Mitigation",
+        "text": "\"The upcoming architectural refactor introduces operational uncertainty. I want to emphasize our boundaries: every engineer retains complete Autonomy over implementation designs within their service. On-call rotations will be audited to ensure complete Fairness. Let's discuss where anyone feels their autonomy or technical continuity is constrained.\""
+      },
+      "audit": [
+        "Did defensive replies to architecture feedback fall?",
+        "Is the on-call rota seen as fair by juniors and seniors?"
+      ],
+      "auditFull": [
+        "Did defensive reactions to architectural feedback decrease in ticket comments?",
+        "Is the on-call schedule perceived as equitable across both junior and senior staff?"
+      ],
+      "foundation": "David Rock’s (2008) neuroleadership framework operationalizes evolutionary threat/reward responses across five social domains: Status, Certainty, Autonomy, Relatedness, and Fairness. Social threats in these domains activate the brain's physical pain pathways, suppressing analytical cognition and prefrontal cortex function.",
+      "origin": {
+        "authors": [
+          "David Rock"
+        ],
+        "year": 2008,
+        "title": "SCARF: A Brain-Based Model for Collaborating with and Influencing Others",
+        "publication": "NeuroLeadership Journal",
+        "authorsLabel": "David Rock",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 246.9 182.8 L 229 237.9 L 171 237.9 L 153.1 182.8 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 293.8 167.5 L 258 277.8 L 142 277.8 L 106.2 167.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 340.8 152.3 L 287 317.7 L 113 317.7 L 59.2 152.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"340.8\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340.8\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"287\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"287\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"113\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"113\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"59.2\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"59.2\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 287.3 169.6 L 253.9 272.2 L 146.1 272.2 L 112.7 169.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 109.2 L 284.5 170.6 L 252.2 269.8 L 147.8 269.8 L 115.5 170.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T22",
+      "sourceCardNo": "Card 22",
+      "name": "Psychological Contract Theory (Denise Rousseau)",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "diagnostic": "Sudden disengagement from an exceptional engineer; reluctance to participate in voluntary mentoring; abrupt shift from high commitment to \"quiet quitting\" or strict compliance with minimal requirements.",
+      "schematic": "Psychological-contract continuum",
+      "script": {
+        "label": "Contract Repair 1-on-1",
+        "text": "\"I have observed a shift in your energy over the past three sprints. Typically, this points to an unaddressed breach in our operating expectations—perhaps around career progression, technical ownership, or workload balancing. I want to uncover where our operational reality has diverged from your expectations.\""
+      },
+      "audit": [
+        "Has the engineer re-joined roadmap and design discussions?",
+        "Is there a written development plan restoring the balance?"
+      ],
+      "auditFull": [
+        "Has the individual engineer re-engaged in collaborative discussions and forward-looking roadmap planning?",
+        "Was a concrete, written professional development plan formalized to restore parity in the psychological contract?"
+      ],
+      "foundation": "Denise Rousseau’s (1989, 1995) psychological contract theory delineates the unwritten, subjective expectations held by an employee regarding reciprocal obligations between themselves and their organization. Violations (perceived breaches of these implicit promises) lead to employee cynicism, turnover, and catastrophic drops in discretionary effort.",
+      "origin": {
+        "authors": [
+          "Denise M. Rousseau"
+        ],
+        "year": 1995,
+        "title": "Psychological Contracts in Organizations: Understanding Written and Unwritten Agreements",
+        "publication": "Sage Publications",
+        "authorsLabel": "Denise M. Rousseau",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

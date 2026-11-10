@@ -1,0 +1,37 @@
+{
+  "id": "T16",
+  "sourceCardNo": "Card 16",
+  "name": "Schein’s Three Levels of Organizational Culture",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "The company claims to value \"engineering quality\" (espoused value), but rewards engineers who cut tests to meet aggressive dates (underlying assumption); team handbooks celebrate work-life balance while managers ping engineers late at night.",
+  "schematic": "Three-level culture continuum",
+  "script": {
+    "label": "Cultural Incongruence Audit",
+    "text": "\"Our stated value is 'test-driven stability,' but our operational reality is that engineers who skip unit testing to hit dates are praised, while those fixing technical debt are questioned. We are addressing this discrepancy. We will freeze new feature development for this sprint to address structural technical debt.\""
+  },
+  "audit": [
+    "Does sprint planning fund bug and debt work without pushback?",
+    "Are after-hours messages stopped or flagged non-urgent?"
+  ],
+  "auditFull": [
+    "Does sprint planning formally prioritize bug fixes and debt tickets without team-level pushback?",
+    "Are managerial communications during out-of-office hours discontinued or explicitly flagged as non-urgent?"
+  ],
+  "foundation": "Edgar Schein’s (1985) organizational culture model differentiates between: (1) Artifacts (visible structures, processes, languages); (2) Espoused Values (strategies, goals, philosophies); and (3) Basic Underlying Assumptions (unconscious, taken-for-granted beliefs). Cultural dysfunction emerges when espoused values conflict directly with underlying assumptions.",
+  "origin": {
+    "authors": [
+      "Edgar H. Schein"
+    ],
+    "year": 1985,
+    "title": "Organizational Culture and Leadership",
+    "publication": "Jossey-Bass"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "T22",
+  "sourceCardNo": "Card 22",
+  "name": "Psychological Contract Theory (Denise Rousseau)",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Sudden disengagement from an exceptional engineer; reluctance to participate in voluntary mentoring; abrupt shift from high commitment to \"quiet quitting\" or strict compliance with minimal requirements.",
+  "schematic": "Psychological-contract continuum",
+  "script": {
+    "label": "Contract Repair 1-on-1",
+    "text": "\"I have observed a shift in your energy over the past three sprints. Typically, this points to an unaddressed breach in our operating expectations—perhaps around career progression, technical ownership, or workload balancing. I want to uncover where our operational reality has diverged from your expectations.\""
+  },
+  "audit": [
+    "Has the engineer re-joined roadmap and design discussions?",
+    "Is there a written development plan restoring the balance?"
+  ],
+  "auditFull": [
+    "Has the individual engineer re-engaged in collaborative discussions and forward-looking roadmap planning?",
+    "Was a concrete, written professional development plan formalized to restore parity in the psychological contract?"
+  ],
+  "foundation": "Denise Rousseau’s (1989, 1995) psychological contract theory delineates the unwritten, subjective expectations held by an employee regarding reciprocal obligations between themselves and their organization. Violations (perceived breaches of these implicit promises) lead to employee cynicism, turnover, and catastrophic drops in discretionary effort.",
+  "origin": {
+    "authors": [
+      "Denise M. Rousseau"
+    ],
+    "year": 1995,
+    "title": "Psychological Contracts in Organizations: Understanding Written and Unwritten Agreements",
+    "publication": "Sage Publications"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

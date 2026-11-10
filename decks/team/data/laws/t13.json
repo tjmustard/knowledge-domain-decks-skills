@@ -1,0 +1,37 @@
+{
+  "id": "T13",
+  "sourceCardNo": "Card 13",
+  "name": "Westrum Organizational Culture Typology",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "\"Messengers are shot\" when incidents occur; cross-functional silos refuse to share deployment data; failures result in bureaucratic procedure expansions rather than system automation.",
+  "schematic": "Culture continuum",
+  "script": {
+    "label": "Generative Inquiry Protocol",
+    "text": "\"The incident review for the recent outage showed that information was withheld due to fear of blame. In this engineering unit, failure is treated as systemic diagnostic data, not personal error. We will trace the socio-technical conditions that allowed this configuration error to deploy without human gatekeeping.\""
+  },
+  "audit": [
+    "Do incident notices go public within fifteen minutes, unfiltered?",
+    "Do fixes come from linters and CI gates, not manual sign-off?"
+  ],
+  "auditFull": [
+    "Are incident anomaly notifications posted publicly in under fifteen minutes without managerial filtering?",
+    "Has the response to service disruptions focused on automated linters and CI gating rather than manual sign-offs?"
+  ],
+  "foundation": "Ron Westrum’s (2004) sociological framework categorizes information flow into Pathological (power-oriented), Bureaucratic (rule-oriented), and Generative (performance-oriented) environments. Westrum’s model, validated at scale in Google’s DevOps Research and Assessment (DORA) research, demonstrates that Generative cultures correlate with elite software delivery velocity and organizational reliability.",
+  "origin": {
+    "authors": [
+      "Ron Westrum"
+    ],
+    "year": 2004,
+    "title": "A Typology of Organisational Cultures",
+    "publication": "Quality and Safety in Health Care"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

@@ -248,3 +248,247 @@ Every card is a script a manager can run: the friction symptom that says this is
 - Has polite disengagement been replaced by direct, constructive technical debate in public channels?
 
 **Source.** George O. Charrier (1972). *Cog's Ladder: A Model of Group Growth*. SAM Advanced Management Journal.
+
+## Psychological Safety, Culture & Trust Dynamics
+
+### T12 — Edmondson’s Psychological Safety Diagnostic
+
+**Friction diagnostic.** Zero production errors or failures recorded over extended periods; silence in retrospectives; juniors hesitating to question senior architectural assumptions; sudden discovery of systemic defects near release deadlines.
+
+**Schematic.** Five-axis safety radar
+
+**Manager script.** Vulnerability Normalization
+
+"Looking through our retro notes, we have not logged a single system failure or mistake in three sprints. In distributed software engineering, silence is not indicative of perfection; it is a leading indicator of risk aversion. As engineering lead, I made an architectural miscalculation on the caching layer last week that elevated latency. I am opening the floor: what system failures or uncertainties are currently remaining unaddressed?"
+
+**Day-14 checks.**
+- Do all members answer no to 'a mistake here is held against you'?
+- Did a junior engineer challenge a senior's pull request in public?
+
+**Foundation.** Amy Edmondson’s seminal 1999 study (Administrative Science Quarterly) introduced psychological safety as a team-level climate characterized by interpersonal trust and mutual respect, demonstrating that higher psychological safety correlates with increased error reporting, learning behavior, and unit performance.
+
+**Checks as written.**
+- Evaluate against Edmondson’s survey: "If you make a mistake on this team, is it held against you?" (Target: 100% negative response rate).
+- Did junior developers submit RFC questions or dispute a pull request from a senior staff engineer?
+
+**Source.** Amy C. Edmondson (1999). *Psychological Safety and Learning Behavior in Work Teams*. Administrative Science Quarterly.
+
+### T13 — Westrum Organizational Culture Typology
+
+**Friction diagnostic.** "Messengers are shot" when incidents occur; cross-functional silos refuse to share deployment data; failures result in bureaucratic procedure expansions rather than system automation.
+
+**Schematic.** Culture continuum
+
+**Manager script.** Generative Inquiry Protocol
+
+"The incident review for the recent outage showed that information was withheld due to fear of blame. In this engineering unit, failure is treated as systemic diagnostic data, not personal error. We will trace the socio-technical conditions that allowed this configuration error to deploy without human gatekeeping."
+
+**Day-14 checks.**
+- Do incident notices go public within fifteen minutes, unfiltered?
+- Do fixes come from linters and CI gates, not manual sign-off?
+
+**Foundation.** Ron Westrum’s (2004) sociological framework categorizes information flow into Pathological (power-oriented), Bureaucratic (rule-oriented), and Generative (performance-oriented) environments. Westrum’s model, validated at scale in Google’s DevOps Research and Assessment (DORA) research, demonstrates that Generative cultures correlate with elite software delivery velocity and organizational reliability.
+
+**Checks as written.**
+- Are incident anomaly notifications posted publicly in under fifteen minutes without managerial filtering?
+- Has the response to service disruptions focused on automated linters and CI gating rather than manual sign-offs?
+
+**Source.** Ron Westrum (2004). *A Typology of Organisational Cultures*. Quality and Safety in Health Care.
+
+### T14 — Coyle’s Vulnerability Loop & Belonging Cues
+
+**Friction diagnostic.** Team members maintain an illusion of effortless competence; defensive pushback occurs when code quality concerns are flagged; isolationism during complex debugging sessions.
+
+**Schematic.** Trust-signal continuum
+
+**Manager script.** Vulnerability Signal Initiation
+
+"I reviewed the performance profile of our core event broker. I do not have a working model for why this latency spike is happening under load. I need technical help. Who can pair with me to audit this trace and find where my mental model broke down?"
+
+**Day-14 checks.**
+- Did someone say 'I don't understand this component' and find a pair?
+- Have reviews become learning dialogues, not defensive negotiation?
+
+**Foundation.** Daniel Coyle’s research in The Culture Code (2018), building on Jeff Polzer’s behavioral interaction studies at Harvard, identifies the "Vulnerability Loop": an exchange where Person A sends a signal of vulnerability, Person B detects it and responds with their own vulnerability, establishing normative trust and mutual psychological security.
+
+**Checks as written.**
+- Did developers initiate spontaneous pairing sessions by openly stating, "I do not understand this component"?
+- Have PR reviews evolved into collaborative learning dialogues rather than defensive negotiations?
+
+**Source.** Daniel Coyle (2018). *The Culture Code: The Secrets of Highly Successful Groups*. Bantam Books.
+
+### T15 — Maister, Green & Galford’s Trust Equation
+
+**Friction diagnostic.** High individual technical brilliance accompanied by peer distrust; suspicion regarding team members playing political games for promotions; withholding help to secure personal velocity metrics.
+
+**Schematic.** Trust-equation radar
+
+**Manager script.** Self-Orientation Calibration
+
+"Our code reviews and technical roadmap planning show high Credibility and Reliability, but trust is being degraded by perceived high Self-Orientation. When engineers prioritize their individual performance metrics over team support, collaborative throughput suffers. We will recalibrate sprint evaluations to prioritize cross-functional enablement."
+
+**Day-14 checks.**
+- Did people unblock peers' reviews before their own secondary work?
+- Did roadmaps carry shared maintenance without executive friction?
+
+**Foundation.** David Maister, Charles Green, and Robert Galford (2000) defined interpersonal trust through a formal quotient: T = \frac{C + R + I}{S} Where C represents Credibility (words and competence), R represents Reliability (actions and dependability), I represents Intimacy (interpersonal security and emotional safety), and S represents Self-Orientation (perceived self-interest). As Self-Orientation increases, aggregate Trust declines regardless of technical competence.
+
+**Checks as written.**
+- Are team members actively unblocking peers' pull requests before advancing their own secondary tasks?
+- Did individual project roadmaps incorporate shared maintenance tasks without executive friction?
+
+**Source.** David H. Maister, Charles H. Green & Robert M. Galford (2000). *The Trusted Advisor*. The Free Press.
+
+### T16 — Schein’s Three Levels of Organizational Culture
+
+**Friction diagnostic.** The company claims to value "engineering quality" (espoused value), but rewards engineers who cut tests to meet aggressive dates (underlying assumption); team handbooks celebrate work-life balance while managers ping engineers late at night.
+
+**Schematic.** Three-level culture continuum
+
+**Manager script.** Cultural Incongruence Audit
+
+"Our stated value is 'test-driven stability,' but our operational reality is that engineers who skip unit testing to hit dates are praised, while those fixing technical debt are questioned. We are addressing this discrepancy. We will freeze new feature development for this sprint to address structural technical debt."
+
+**Day-14 checks.**
+- Does sprint planning fund bug and debt work without pushback?
+- Are after-hours messages stopped or flagged non-urgent?
+
+**Foundation.** Edgar Schein’s (1985) organizational culture model differentiates between: (1) Artifacts (visible structures, processes, languages); (2) Espoused Values (strategies, goals, philosophies); and (3) Basic Underlying Assumptions (unconscious, taken-for-granted beliefs). Cultural dysfunction emerges when espoused values conflict directly with underlying assumptions.
+
+**Checks as written.**
+- Does sprint planning formally prioritize bug fixes and debt tickets without team-level pushback?
+- Are managerial communications during out-of-office hours discontinued or explicitly flagged as non-urgent?
+
+**Source.** Edgar H. Schein (1985). *Organizational Culture and Leadership*. Jossey-Bass.
+
+### T17 — Google’s Project Aristotle Normative Architecture
+
+**Friction diagnostic.** Two senior engineers dominate 80% of standup and retrospective discussions; quieter developers do not participate; commitments made during sprint planning routinely drop without notice.
+
+**Schematic.** Five-norm safety radar
+
+**Manager script.** Conversational Equalization
+
+"Our retrospective interaction metrics show unbalanced participation. Moving forward, we will implement structured turn-taking for architectural RFC reviews. Each participant will have two minutes of uninterrupted time to contribute before open floor debate begins. We will start with those who have contributed the least during the current session."
+
+**Day-14 checks.**
+- Did everyone speak at least once in planning and retrospective?
+- Is speaking time spreading more evenly across the squad?
+
+**Foundation.** Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.
+
+**Checks as written.**
+- Did every squad member contribute at least once during sprint planning and retrospective discussions?
+- Has the variance in speaking time across squad members declined toward an even distribution?
+
+**Source.** Google's Project Aristotle (2012-2015); the study is internal and no primary report was published.
+
+### T18 — Clark’s Four Stages of Psychological Safety
+
+**Friction diagnostic.** The team tolerates questions (Learner Safety) and executes tasks (Contributor Safety), but immediately shuts down challenges to legacy code patterns or senior leadership roadmaps (lack of Challenger Safety).
+
+**Schematic.** Four-stage safety continuum
+
+**Manager script.** Challenger Safety Facilitation
+
+"The squad has proven its execution capability, but we have stopped innovating our internal architectural primitives. I am challenging this team to challenge the current design. In this meeting, each developer will identify one practice in our deployment pipeline that should be dismantled. The most disruptive, valid critique will be prioritized."
+
+**Day-14 checks.**
+- Did the team argue an RFC that challenges legacy patterns?
+- Did juniors disagree with leadership without friction?
+
+**Foundation.** Timothy R. Clark (2020) demonstrated that psychological safety progresses through four distinct stages: (1) Inclusion Safety (human connection and belonging); (2) Learner Safety (freedom to ask questions and experiment); (3) Contributor Safety (freedom to make meaningful contributions); and (4) Challenger Safety (freedom to challenge the status quo without fear of retaliation).
+
+**Checks as written.**
+- Has the team submitted and debated an RFC that directly challenges legacy code patterns?
+- Did junior developers voice disagreement with leadership decisions without experiencing organizational friction?
+
+**Source.** Timothy R. Clark (2020). *The 4 Stages of Psychological Safety: Defining the Path to Inclusion and Innovation*. Berrett-Koehler.
+
+### T19 — Mayer, Davis & Schoorman’s Integrative Model of Trust
+
+**Friction diagnostic.** Developers trust a colleague's technical competence (Ability), but suspect they will claim exclusive credit for a joint project (low Benevolence), or catch them fabricating testing coverage numbers (low Integrity).
+
+**Schematic.** Integrative-trust radar
+
+**Manager script.** Integrity & Benevolence Alignment
+
+"We have high technical competence in our squad, but our cross-functional alignment is fragile. For our code-sharing initiative to work, we need full transparency. We will conduct pair-programming rotations across the service layer to eliminate silos and verify that code ownership remains shared."
+
+**Day-14 checks.**
+- Did reviews explain their criticism rather than dismiss it?
+- Are wins and merges credited to both pairing partners?
+
+**Foundation.** Mayer, Davis, and Schoorman (1995, Academy of Management Review) framed organizational trust through three distinct components of trustworthiness: Ability (technical competencies and domain expertise), Benevolence (the belief that the trustee wants to do good to the trustor), and Integrity (adherence to an acceptable set of principles).
+
+**Checks as written.**
+- Did peer reviews include constructive explanations rather than curt or dismissive comments?
+- Are project wins and PR merges attributed accurately across pair-programming partners?
+
+**Source.** Roger C. Mayer, James H. Davis & F. David Schoorman (1995). *An Integrative Model of Organizational Trust*. Academy of Management Review.
+
+### T20 — Cameron & Quinn’s Competing Values Framework
+
+**Friction diagnostic.** Developers complain of heavy documentation procedures in a fast-paced environment (Hierarchy clash with Adhocracy) or lack of delivery focus in an operational scaling sprint (Clan clash with Market).
+
+**Schematic.** Competing-values quadrant
+
+**Manager script.** Archetype Realignment
+
+"Our delivery friction is caused by a misalignment of our operational modes. We are treating a critical uptime reliability phase (Hierarchy) with an exploratory prototype mentality (Adhocracy). For the next month, operational rigor, logging standards, and monitoring compliance take precedence over novel prototyping."
+
+**Day-14 checks.**
+- Are runbooks, alerts and incident guides kept current?
+- Was exploratory work held back during stabilization?
+
+**Foundation.** Kim Cameron and Robert Quinn (1999) categorized organizational culture across two axes—Flexibility vs. Stability, and Internal Focus vs. External Focus—yielding four culture archetypes: Clan (collaborative), Adhocracy (creative), Market (competitive), and Hierarchy (controlled). Friction erupts when engineering processes clash with the prevailing archetype.
+
+**Checks as written.**
+- Are incident response guidelines, monitoring alerts, and runbooks updated systematically?
+- Has exploratory feature development noise been suppressed during system stabilization periods?
+
+**Source.** Kim S. Cameron & Robert E. Quinn (1999). *Diagnosing and Changing Organizational Culture*. Addison-Wesley.
+
+### T21 — The SCARF Model (David Rock)
+
+**Friction diagnostic.** Developers react with hostility to sudden code reassignments (Autonomy threat), unexpected changes in team leadership (Certainty/Status threat), or uneven on-call shifts (Fairness threat).
+
+**Schematic.** SCARF radar
+
+**Manager script.** SCARF Threat Mitigation
+
+"The upcoming architectural refactor introduces operational uncertainty. I want to emphasize our boundaries: every engineer retains complete Autonomy over implementation designs within their service. On-call rotations will be audited to ensure complete Fairness. Let's discuss where anyone feels their autonomy or technical continuity is constrained."
+
+**Day-14 checks.**
+- Did defensive replies to architecture feedback fall?
+- Is the on-call rota seen as fair by juniors and seniors?
+
+**Foundation.** David Rock’s (2008) neuroleadership framework operationalizes evolutionary threat/reward responses across five social domains: Status, Certainty, Autonomy, Relatedness, and Fairness. Social threats in these domains activate the brain's physical pain pathways, suppressing analytical cognition and prefrontal cortex function.
+
+**Checks as written.**
+- Did defensive reactions to architectural feedback decrease in ticket comments?
+- Is the on-call schedule perceived as equitable across both junior and senior staff?
+
+**Source.** David Rock (2008). *SCARF: A Brain-Based Model for Collaborating with and Influencing Others*. NeuroLeadership Journal.
+
+### T22 — Psychological Contract Theory (Denise Rousseau)
+
+**Friction diagnostic.** Sudden disengagement from an exceptional engineer; reluctance to participate in voluntary mentoring; abrupt shift from high commitment to "quiet quitting" or strict compliance with minimal requirements.
+
+**Schematic.** Psychological-contract continuum
+
+**Manager script.** Contract Repair 1-on-1
+
+"I have observed a shift in your energy over the past three sprints. Typically, this points to an unaddressed breach in our operating expectations—perhaps around career progression, technical ownership, or workload balancing. I want to uncover where our operational reality has diverged from your expectations."
+
+**Day-14 checks.**
+- Has the engineer re-joined roadmap and design discussions?
+- Is there a written development plan restoring the balance?
+
+**Foundation.** Denise Rousseau’s (1989, 1995) psychological contract theory delineates the unwritten, subjective expectations held by an employee regarding reciprocal obligations between themselves and their organization. Violations (perceived breaches of these implicit promises) lead to employee cynicism, turnover, and catastrophic drops in discretionary effort.
+
+**Checks as written.**
+- Has the individual engineer re-engaged in collaborative discussions and forward-looking roadmap planning?
+- Was a concrete, written professional development plan formalized to restore parity in the psychological contract?
+
+**Source.** Denise M. Rousseau (1995). *Psychological Contracts in Organizations: Understanding Written and Unwritten Agreements*. Sage Publications.

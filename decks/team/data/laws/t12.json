@@ -1,0 +1,37 @@
+{
+  "id": "T12",
+  "sourceCardNo": "Card 12",
+  "name": "Edmondson’s Psychological Safety Diagnostic",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Zero production errors or failures recorded over extended periods; silence in retrospectives; juniors hesitating to question senior architectural assumptions; sudden discovery of systemic defects near release deadlines.",
+  "schematic": "Five-axis safety radar",
+  "script": {
+    "label": "Vulnerability Normalization",
+    "text": "\"Looking through our retro notes, we have not logged a single system failure or mistake in three sprints. In distributed software engineering, silence is not indicative of perfection; it is a leading indicator of risk aversion. As engineering lead, I made an architectural miscalculation on the caching layer last week that elevated latency. I am opening the floor: what system failures or uncertainties are currently remaining unaddressed?\""
+  },
+  "audit": [
+    "Do all members answer no to 'a mistake here is held against you'?",
+    "Did a junior engineer challenge a senior's pull request in public?"
+  ],
+  "auditFull": [
+    "Evaluate against Edmondson’s survey: \"If you make a mistake on this team, is it held against you?\" (Target: 100% negative response rate).",
+    "Did junior developers submit RFC questions or dispute a pull request from a senior staff engineer?"
+  ],
+  "foundation": "Amy Edmondson’s seminal 1999 study (Administrative Science Quarterly) introduced psychological safety as a team-level climate characterized by interpersonal trust and mutual respect, demonstrating that higher psychological safety correlates with increased error reporting, learning behavior, and unit performance.",
+  "origin": {
+    "authors": [
+      "Amy C. Edmondson"
+    ],
+    "year": 1999,
+    "title": "Psychological Safety and Learning Behavior in Work Teams",
+    "publication": "Administrative Science Quarterly"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

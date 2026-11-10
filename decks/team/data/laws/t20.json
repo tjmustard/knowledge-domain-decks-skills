@@ -1,0 +1,38 @@
+{
+  "id": "T20",
+  "sourceCardNo": "Card 20",
+  "name": "Cameron & Quinn’s Competing Values Framework",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Developers complain of heavy documentation procedures in a fast-paced environment (Hierarchy clash with Adhocracy) or lack of delivery focus in an operational scaling sprint (Clan clash with Market).",
+  "schematic": "Competing-values quadrant",
+  "script": {
+    "label": "Archetype Realignment",
+    "text": "\"Our delivery friction is caused by a misalignment of our operational modes. We are treating a critical uptime reliability phase (Hierarchy) with an exploratory prototype mentality (Adhocracy). For the next month, operational rigor, logging standards, and monitoring compliance take precedence over novel prototyping.\""
+  },
+  "audit": [
+    "Are runbooks, alerts and incident guides kept current?",
+    "Was exploratory work held back during stabilization?"
+  ],
+  "auditFull": [
+    "Are incident response guidelines, monitoring alerts, and runbooks updated systematically?",
+    "Has exploratory feature development noise been suppressed during system stabilization periods?"
+  ],
+  "foundation": "Kim Cameron and Robert Quinn (1999) categorized organizational culture across two axes—Flexibility vs. Stability, and Internal Focus vs. External Focus—yielding four culture archetypes: Clan (collaborative), Adhocracy (creative), Market (competitive), and Hierarchy (controlled). Friction erupts when engineering processes clash with the prevailing archetype.",
+  "origin": {
+    "authors": [
+      "Kim S. Cameron",
+      "Robert E. Quinn"
+    ],
+    "year": 1999,
+    "title": "Diagnosing and Changing Organizational Culture",
+    "publication": "Addison-Wesley"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

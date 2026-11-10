@@ -1,0 +1,37 @@
+{
+  "id": "T14",
+  "sourceCardNo": "Card 14",
+  "name": "Coyle’s Vulnerability Loop & Belonging Cues",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Team members maintain an illusion of effortless competence; defensive pushback occurs when code quality concerns are flagged; isolationism during complex debugging sessions.",
+  "schematic": "Trust-signal continuum",
+  "script": {
+    "label": "Vulnerability Signal Initiation",
+    "text": "\"I reviewed the performance profile of our core event broker. I do not have a working model for why this latency spike is happening under load. I need technical help. Who can pair with me to audit this trace and find where my mental model broke down?\""
+  },
+  "audit": [
+    "Did someone say 'I don't understand this component' and find a pair?",
+    "Have reviews become learning dialogues, not defensive negotiation?"
+  ],
+  "auditFull": [
+    "Did developers initiate spontaneous pairing sessions by openly stating, \"I do not understand this component\"?",
+    "Have PR reviews evolved into collaborative learning dialogues rather than defensive negotiations?"
+  ],
+  "foundation": "Daniel Coyle’s research in The Culture Code (2018), building on Jeff Polzer’s behavioral interaction studies at Harvard, identifies the \"Vulnerability Loop\": an exchange where Person A sends a signal of vulnerability, Person B detects it and responds with their own vulnerability, establishing normative trust and mutual psychological security.",
+  "origin": {
+    "authors": [
+      "Daniel Coyle"
+    ],
+    "year": 2018,
+    "title": "The Culture Code: The Secrets of Highly Successful Groups",
+    "publication": "Bantam Books"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

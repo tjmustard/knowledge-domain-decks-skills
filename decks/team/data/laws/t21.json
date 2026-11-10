@@ -1,0 +1,37 @@
+{
+  "id": "T21",
+  "sourceCardNo": "Card 21",
+  "name": "The SCARF Model (David Rock)",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Developers react with hostility to sudden code reassignments (Autonomy threat), unexpected changes in team leadership (Certainty/Status threat), or uneven on-call shifts (Fairness threat).",
+  "schematic": "SCARF radar",
+  "script": {
+    "label": "SCARF Threat Mitigation",
+    "text": "\"The upcoming architectural refactor introduces operational uncertainty. I want to emphasize our boundaries: every engineer retains complete Autonomy over implementation designs within their service. On-call rotations will be audited to ensure complete Fairness. Let's discuss where anyone feels their autonomy or technical continuity is constrained.\""
+  },
+  "audit": [
+    "Did defensive replies to architecture feedback fall?",
+    "Is the on-call rota seen as fair by juniors and seniors?"
+  ],
+  "auditFull": [
+    "Did defensive reactions to architectural feedback decrease in ticket comments?",
+    "Is the on-call schedule perceived as equitable across both junior and senior staff?"
+  ],
+  "foundation": "David Rock’s (2008) neuroleadership framework operationalizes evolutionary threat/reward responses across five social domains: Status, Certainty, Autonomy, Relatedness, and Fairness. Social threats in these domains activate the brain's physical pain pathways, suppressing analytical cognition and prefrontal cortex function.",
+  "origin": {
+    "authors": [
+      "David Rock"
+    ],
+    "year": 2008,
+    "title": "SCARF: A Brain-Based Model for Collaborating with and Influencing Others",
+    "publication": "NeuroLeadership Journal"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

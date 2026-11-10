@@ -1,0 +1,39 @@
+{
+  "id": "T19",
+  "sourceCardNo": "Card 19",
+  "name": "Mayer, Davis & Schoorman’s Integrative Model of Trust",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "Developers trust a colleague's technical competence (Ability), but suspect they will claim exclusive credit for a joint project (low Benevolence), or catch them fabricating testing coverage numbers (low Integrity).",
+  "schematic": "Integrative-trust radar",
+  "script": {
+    "label": "Integrity & Benevolence Alignment",
+    "text": "\"We have high technical competence in our squad, but our cross-functional alignment is fragile. For our code-sharing initiative to work, we need full transparency. We will conduct pair-programming rotations across the service layer to eliminate silos and verify that code ownership remains shared.\""
+  },
+  "audit": [
+    "Did reviews explain their criticism rather than dismiss it?",
+    "Are wins and merges credited to both pairing partners?"
+  ],
+  "auditFull": [
+    "Did peer reviews include constructive explanations rather than curt or dismissive comments?",
+    "Are project wins and PR merges attributed accurately across pair-programming partners?"
+  ],
+  "foundation": "Mayer, Davis, and Schoorman (1995, Academy of Management Review) framed organizational trust through three distinct components of trustworthiness: Ability (technical competencies and domain expertise), Benevolence (the belief that the trustee wants to do good to the trustor), and Integrity (adherence to an acceptable set of principles).",
+  "origin": {
+    "authors": [
+      "Roger C. Mayer",
+      "James H. Davis",
+      "F. David Schoorman"
+    ],
+    "year": 1995,
+    "title": "An Integrative Model of Organizational Trust",
+    "publication": "Academy of Management Review"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

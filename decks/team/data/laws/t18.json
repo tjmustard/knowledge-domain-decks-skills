@@ -1,0 +1,37 @@
+{
+  "id": "T18",
+  "sourceCardNo": "Card 18",
+  "name": "Clark’s Four Stages of Psychological Safety",
+  "category": "Psychological Safety, Culture & Trust Dynamics",
+  "diagnostic": "The team tolerates questions (Learner Safety) and executes tasks (Contributor Safety), but immediately shuts down challenges to legacy code patterns or senior leadership roadmaps (lack of Challenger Safety).",
+  "schematic": "Four-stage safety continuum",
+  "script": {
+    "label": "Challenger Safety Facilitation",
+    "text": "\"The squad has proven its execution capability, but we have stopped innovating our internal architectural primitives. I am challenging this team to challenge the current design. In this meeting, each developer will identify one practice in our deployment pipeline that should be dismantled. The most disruptive, valid critique will be prioritized.\""
+  },
+  "audit": [
+    "Did the team argue an RFC that challenges legacy patterns?",
+    "Did juniors disagree with leadership without friction?"
+  ],
+  "auditFull": [
+    "Has the team submitted and debated an RFC that directly challenges legacy code patterns?",
+    "Did junior developers voice disagreement with leadership decisions without experiencing organizational friction?"
+  ],
+  "foundation": "Timothy R. Clark (2020) demonstrated that psychological safety progresses through four distinct stages: (1) Inclusion Safety (human connection and belonging); (2) Learner Safety (freedom to ask questions and experiment); (3) Contributor Safety (freedom to make meaningful contributions); and (4) Challenger Safety (freedom to challenge the status quo without fear of retaliation).",
+  "origin": {
+    "authors": [
+      "Timothy R. Clark"
+    ],
+    "year": 2020,
+    "title": "The 4 Stages of Psychological Safety: Defining the Path to Inclusion and Innovation",
+    "publication": "Berrett-Koehler"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 3
+    }
+  }
+}
