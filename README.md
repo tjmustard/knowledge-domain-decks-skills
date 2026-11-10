@@ -258,10 +258,11 @@ Last full run: **2026-11-09**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
 
 Two honest limits. `npm run check:pdf` proves page geometry only. Whether the
 marks land on paper and whether the type reads comfortably at print size are
-judgements from looking at rendered pages, not something the check asserts. And
-`npm run accept` reports NOT RUN for anything it could not execute here - no
-browser, no Typst - so a layer it could not check stays unproven rather than
-passing, and it exits 3 when nothing at all could be verified.
+judgements from looking at rendered pages, not something the check asserts.
+And `npm run accept` reports NOT RUN for anything it could not execute - a
+browser or Typst it could not find, or a check no tool can make, such as whether
+the marks land on paper - so a layer it could not check stays unproven rather
+than passing, and it exits 3 when nothing at all could be verified.
 
 ---
 
