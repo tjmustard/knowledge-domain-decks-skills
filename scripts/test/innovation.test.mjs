@@ -137,23 +137,25 @@ test("every figure follows the committed layout map and names what it draws", as
     assert.ok(row.mark <= row.divisions, `${cardId} mark is outside the drawing`);
     assert.ok(row.hypothesisSize >= 6.5 && row.hypothesisSize <= 9, `${cardId} hypothesis size`);
 
-    // The label names the drawing: it carries the marked number and ends in
-    // the family's own noun, so a card cannot print a schematic its figure
-    // does not show. A curve's mark is a time bucket, so the label carries
-    // the day that bucket stands for rather than the bucket's index.
-    const curveDays = [7, 14, 30, 60];
-    if (row.family === "curve") {
-      assert.ok(
-        row.label.includes(`day ${curveDays[row.mark - 1]}`),
-        `${cardId} label does not name its horizon: "${row.label}"`
-      );
+    // The label names the drawing: it carries the marked number in the
+    // drawing's own units and, except for the ladder, ends in the family's
+    // noun. The ladder's label leads with what the rungs measure instead,
+    // because twenty fronts should be legible without the method strip.
+    if (row.family === "ladder") {
+      const word = record.method.confidence.split(" (")[0].trim();
+      assert.ok(row.label.startsWith(`${word} confidence`), `${cardId} label omits its datum`);
+      assert.ok(row.label.includes(`rung ${row.mark} of ${row.divisions}`), `${cardId} label omits its rung`);
+    } else if (row.family === "curve") {
+      assert.ok(row.label.includes(`Week ${row.mark}`), `${cardId} label omits its horizon`);
     } else {
-      assert.ok(row.label.includes(String(row.mark)), `${cardId} label omits its mark: "${row.label}"`);
+      assert.ok(row.label.includes(`stage ${row.mark}`) || row.label.includes(`step ${row.mark}`), `${cardId} label omits its mark`);
     }
-    assert.ok(
-      row.label.endsWith(families[row.family].noun),
-      `${cardId} label does not end in "${families[row.family].noun}": "${row.label}"`
-    );
+    if (row.family !== "ladder") {
+      assert.ok(
+        row.label.endsWith(families[row.family].noun),
+        `${cardId} label does not end in "${families[row.family].noun}": "${row.label}"`
+      );
+    }
 
     // The basis is a stated datum, quoted from the record it claims.
     const basis = row.basis;

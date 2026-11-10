@@ -2,22 +2,22 @@
   "note": "One row per tactic. family is the drawing, divisions and mark are the parameters it reads, label is the line the card prints under it, and basis names the stated datum that chose the family with the exact words from the record. hypothesisSize is the point size of the front hypothesis; it starts at 9pt and is set per card by the budget probe.",
   "families": {
     "ladder": {
-      "drawing": "five rungs, the tactic's confidence band filled and marked",
+      "drawing": "five confidence bands as rungs, the tactic's band marked",
       "reads": "confidence rank",
-      "noun": "evidence ladder"
+      "noun": "ladder"
     },
     "funnel": {
-      "drawing": "the tactic's own conversion stages, narrowing, with the reading stage shaded",
-      "reads": "the evidence structure stated in the plan",
+      "drawing": "an enumerated sequence of gates, narrowing, with the reading gate shaded",
+      "reads": "the ordered sequence the record states",
       "noun": "funnel"
     },
     "curve": {
-      "drawing": "a falling curve over four periods, with the decision horizon marked",
-      "reads": "time-to-result",
-      "noun": "time curve"
+      "drawing": "a falling curve over the record's stated weeks, with the horizon marked",
+      "reads": "the stated observation horizon",
+      "noun": "decay curve"
     },
     "strip": {
-      "drawing": "the plan's three stages in a row, the step that carries the commitment shaded",
+      "drawing": "the plan's three stages in a row, labelled P/E/C, the marked step shaded",
       "reads": "the plan's stages",
       "noun": "strip"
     }
@@ -26,8 +26,8 @@
     "I01": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -38,8 +38,8 @@
     "I02": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -50,8 +50,8 @@
     "I03": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 3,
-      "label": "Rung 3 of 5 on the evidence ladder",
+      "mark": 4,
+      "label": "Moderate-High confidence: rung 4 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -62,8 +62,8 @@
     "I04": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -74,8 +74,8 @@
     "I05": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -86,8 +86,8 @@
     "I06": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -98,8 +98,8 @@
     "I07": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 1,
-      "label": "Rung 1 of 5 on the evidence ladder",
+      "mark": 2,
+      "label": "Low-Moderate confidence: rung 2 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -110,8 +110,8 @@
     "I08": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -122,8 +122,8 @@
     "I09": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -134,8 +134,8 @@
     "I10": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -147,7 +147,7 @@
       "family": "ladder",
       "divisions": 5,
       "mark": 1,
-      "label": "Rung 1 of 5 on the evidence ladder",
+      "label": "Low confidence: rung 1 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -158,8 +158,8 @@
     "I12": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -170,8 +170,8 @@
     "I13": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -182,8 +182,8 @@
     "I14": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 3,
-      "label": "Rung 3 of 5 on the evidence ladder",
+      "mark": 4,
+      "label": "Moderate-High confidence: rung 4 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -194,8 +194,8 @@
     "I15": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -206,8 +206,8 @@
     "I16": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -218,8 +218,8 @@
     "I17": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -230,8 +230,8 @@
     "I18": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 4,
-      "label": "Rung 4 of 5 on the evidence ladder",
+      "mark": 5,
+      "label": "High confidence: rung 5 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -242,8 +242,8 @@
     "I19": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 2,
-      "label": "Rung 2 of 5 on the evidence ladder",
+      "mark": 3,
+      "label": "Moderate confidence: rung 3 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -254,8 +254,8 @@
     "I20": {
       "family": "ladder",
       "divisions": 5,
-      "mark": 3,
-      "label": "Rung 3 of 5 on the evidence ladder",
+      "mark": 4,
+      "label": "Moderate-High confidence: rung 4 of 5",
       "hypothesisSize": 9,
       "basis": {
         "datum": "confidence rank",
@@ -273,42 +273,6 @@
         "datum": "evidence structure",
         "field": "plan.dataCollection",
         "quote": "Track exposures, click-through rates, and opt-in conversions on the explanation modal."
-      }
-    },
-    "I22": {
-      "family": "funnel",
-      "divisions": 3,
-      "mark": 3,
-      "label": "Read at stage 3 of the 3-stage funnel",
-      "hypothesisSize": 9,
-      "basis": {
-        "datum": "evidence structure",
-        "field": "plan.dataCollection",
-        "quote": "Track total unique visitors, bounce rate, dwell time, and conversion percentage on the primary CTA."
-      }
-    },
-    "I25": {
-      "family": "funnel",
-      "divisions": 4,
-      "mark": 4,
-      "label": "Read at stage 4 of the 4-stage funnel",
-      "hypothesisSize": 9,
-      "basis": {
-        "datum": "evidence structure",
-        "field": "plan.dataCollection",
-        "quote": "Track video retention drop-off rates, aggregate view counts, landing page conversion percentages, and community discussion tone."
-      }
-    },
-    "I27": {
-      "family": "funnel",
-      "divisions": 4,
-      "mark": 4,
-      "label": "Read at stage 4 of the 4-stage funnel",
-      "hypothesisSize": 9,
-      "basis": {
-        "datum": "evidence structure",
-        "field": "plan.dataCollection",
-        "quote": "Track success paths, misclick heatmaps, total task completion durations, and systemic drop-off steps."
       }
     },
     "I31": {
@@ -335,40 +299,28 @@
         "quote": "Acquisition (unique landing visitor), Activation (core value moment reached), Retention (return usage within 7 days), Revenue (payment executed), and Referral (invite dispatched)."
       }
     },
-    "I39": {
-      "family": "funnel",
-      "divisions": 4,
-      "mark": 4,
-      "label": "Read at stage 4 of the 4-stage funnel",
-      "hypothesisSize": 9,
-      "basis": {
-        "datum": "evidence structure",
-        "field": "plan.dataCollection",
-        "quote": "Plot the drop-off gradient across each micro-step to identify points of user friction."
-      }
-    },
     "I33": {
       "family": "curve",
-      "divisions": 4,
-      "mark": 4,
-      "label": "Decision by day 60 on the time curve",
+      "divisions": 8,
+      "mark": 8,
+      "label": "Week 8 retention on the decay curve",
       "hypothesisSize": 9,
       "basis": {
-        "datum": "time-to-result",
-        "field": "method.timeToResult",
-        "quote": "30–60 days"
+        "datum": "hypothesis horizon",
+        "field": "hypothesis",
+        "quote": "by Week 8"
       }
     },
-    "I41": {
-      "family": "curve",
-      "divisions": 4,
+    "I22": {
+      "family": "strip",
+      "divisions": 3,
       "mark": 3,
-      "label": "Decision by day 30 on the time curve",
+      "label": "Read at step 3 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
-        "datum": "time-to-result",
-        "field": "method.timeToResult",
-        "quote": "14–30 days"
+        "datum": "plan stages",
+        "field": "plan.dataCollection",
+        "quote": "Track total unique visitors, bounce rate, dwell time, and conversion percentage on the primary CTA."
       }
     },
     "I23": {
@@ -387,12 +339,24 @@
       "family": "strip",
       "divisions": 3,
       "mark": 2,
-      "label": "Service at step 2 of the 3-step strip",
+      "label": "Delivery at step 2 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
         "field": "plan.execution",
         "quote": "Deliver the experience in real time using human operators"
+      }
+    },
+    "I25": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Read at step 3 of the 3-step strip",
+      "hypothesisSize": 9,
+      "basis": {
+        "datum": "plan stages",
+        "field": "plan.dataCollection",
+        "quote": "Track video retention drop-off rates, aggregate view counts, landing page conversion percentages, and community discussion tone."
       }
     },
     "I26": {
@@ -407,16 +371,28 @@
         "quote": "the facilitator acts as the computer"
       }
     },
+    "I27": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Read at step 3 of the 3-step strip",
+      "hypothesisSize": 9,
+      "basis": {
+        "datum": "plan stages",
+        "field": "plan.dataCollection",
+        "quote": "Track success paths, misclick heatmaps, total task completion durations, and systemic drop-off steps."
+      }
+    },
     "I28": {
       "family": "strip",
       "divisions": 3,
       "mark": 2,
-      "label": "Campaign at step 2 of the 3-step strip",
+      "label": "Pledge at step 2 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
-        "field": "plan.execution",
-        "quote": "Launch the campaign publicly"
+        "field": "plan.dataCollection",
+        "quote": "average pledge amounts"
       }
     },
     "I29": {
@@ -427,8 +403,8 @@
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
-        "field": "plan.execution",
-        "quote": "Present the LOI to the economic buyer"
+        "field": "plan.dataCollection",
+        "quote": "final signature rates"
       }
     },
     "I30": {
@@ -447,7 +423,7 @@
       "family": "strip",
       "divisions": 3,
       "mark": 3,
-      "label": "Survey at step 3 of the 3-step strip",
+      "label": "Read at step 3 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
@@ -459,7 +435,7 @@
       "family": "strip",
       "divisions": 3,
       "mark": 3,
-      "label": "Score at step 3 of the 3-step strip",
+      "label": "Read at step 3 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
@@ -471,7 +447,7 @@
       "family": "strip",
       "divisions": 3,
       "mark": 2,
-      "label": "Experiment at step 2 of the 3-step strip",
+      "label": "Split at step 2 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
@@ -483,7 +459,7 @@
       "family": "strip",
       "divisions": 3,
       "mark": 3,
-      "label": "Decision at step 3 of the 3-step strip",
+      "label": "Read at step 3 of the 3-step strip",
       "hypothesisSize": 9,
       "basis": {
         "datum": "plan stages",
@@ -503,6 +479,18 @@
         "quote": "Design an experiment whose asset preparation, user exposure, and data analysis can complete inside one business week."
       }
     },
+    "I39": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Read at step 3 of the 3-step strip",
+      "hypothesisSize": 9,
+      "basis": {
+        "datum": "plan stages",
+        "field": "plan.dataCollection",
+        "quote": "Plot the drop-off gradient across each micro-step to identify points of user friction."
+      }
+    },
     "I40": {
       "family": "strip",
       "divisions": 3,
@@ -513,6 +501,18 @@
         "datum": "plan stages",
         "field": "plan.execution",
         "quote": "Deploy the system inside the enterprise environment"
+      }
+    },
+    "I41": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Read at step 3 of the 3-step strip",
+      "hypothesisSize": 9,
+      "basis": {
+        "datum": "plan stages",
+        "field": "plan.dataCollection",
+        "quote": "Calculate the viral loop variables over time"
       }
     },
     "I42": {

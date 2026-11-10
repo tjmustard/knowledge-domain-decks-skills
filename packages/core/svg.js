@@ -2933,7 +2933,19 @@
             fillOpacity: on ? 0.14 : undefined
           })
         );
-        if (on) out.push(circle(bx + boxW / 2, boxTop + boxH / 2, 7, { width: 1.6, opacity: 0.9 }));
+        if (on) out.push(circle(bx + boxW / 2, boxTop + boxH / 2 - 10, 7, { width: 1.6, opacity: 0.9 }));
+        // The three stages of the plan, named inside their own boxes, so the
+        // marked step points at something the reader can see rather than at
+        // an empty square.
+        if (div === 3) {
+          out.push(
+            label(bx + boxW / 2, boxTop + boxH - 14, ["PREP", "EXEC", "COLLECT"][bi], {
+              size: 20,
+              weight: 700,
+              opacity: 0.6
+            })
+          );
+        }
         if (bi < div - 1) {
           out.push(line(bx + boxW, boxTop + boxH / 2, bx + boxW + gap, boxTop + boxH / 2, 1.6, 0.5));
         }
