@@ -28,8 +28,8 @@
         {
           "label": "SYSTEM ABSORBS 70",
           "segments": [
-            { "label": "USER", "weight": 30, "filled": true },
-            { "label": "SYSTEM", "weight": 70, "filled": false }
+            { "label": "USER", "weight": 30, "filled": false },
+            { "label": "SYSTEM", "weight": 70, "filled": true }
           ]
         }
       ],

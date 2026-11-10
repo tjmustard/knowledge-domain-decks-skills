@@ -12,7 +12,7 @@ import { spawn } from "node:child_process";
 import { existsSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { ROOT } from "./lib/deck.mjs";
+import { ROOT, loadCards } from "./lib/deck.mjs";
 
 const CANDIDATES = [
   process.env.CHROME_PATH,
@@ -31,6 +31,20 @@ if (!browser) {
   );
   process.exit(2);
 }
+
+const cards = await loadCards();
+const categoryCounts = cards.reduce((counts, card) => {
+  counts[card.category] = (counts[card.category] || 0) + 1;
+  return counts;
+}, {});
+// Use the largest category that still narrows the deck, so the filter has
+// something to narrow from; neither the name nor the expected count is a
+// constant that would drift as the deck grows.
+const largest = Object.keys(categoryCounts)
+  .filter((category) => categoryCounts[category] < cards.length)
+  .sort((a, b) => categoryCounts[b] - categoryCounts[a]);
+const filterCategory = largest[0] || cards[0].category;
+const expectedInCategory = categoryCounts[filterCategory];
 
 const url = `file://${join(ROOT, "packages", "web", "index.html")}`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -183,7 +197,7 @@ try {
 
   const filter = await evaluate(`(() => {
     const buttons = [...document.querySelectorAll('.filter')];
-    const button = buttons.find((b) => b.dataset.filter === 'Gestalt & Visual Perception');
+    const button = buttons.find((b) => b.dataset.filter === ${JSON.stringify(filterCategory)});
     button.click();
     return {
       visible: [...document.querySelectorAll('.card')].filter((c) => !c.hidden).length,
@@ -194,10 +208,14 @@ try {
   const failures = [];
   if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
   if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
-  if (layout.cards !== 12) failures.push(`${layout.cards} cards rendered, expected 12`);
+  if (layout.cards !== cards.length) failures.push(`${layout.cards} cards rendered, expected ${cards.length}`);
   if (!flip.flipped || flip.pressed !== "true") failures.push("flip did not toggle aria-pressed");
   if (!flip.versoVisible || !flip.versoHasChecklist) failures.push("verso fields not exposed after flip");
-  if (filter.visible !== 1 || filter.pressed !== 1) failures.push("category filter did not reduce to one card");
+  if (filter.visible !== expectedInCategory || filter.pressed !== 1) {
+    failures.push(
+      `${filterCategory} filter showed ${filter.visible} cards, expected ${expectedInCategory}`
+    );
+  }
 
   if (failures.length > 0) {
     console.error("FAIL web smoke at 390 px:");
@@ -206,7 +224,8 @@ try {
   } else {
     console.log(
       `OK: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
-      `(${layout.cardWidth} px wide), flip exposes verso, filter narrows to 1.`
+      `(${layout.cardWidth} px wide), flip exposes verso, ` +
+      `${filterCategory} filter shows ${expectedInCategory}.`
     );
   }
 } finally {

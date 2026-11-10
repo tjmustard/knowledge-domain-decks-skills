@@ -240,6 +240,13 @@ actual ones at one fixed cell size; Framing gets two identical panel bodies, so
 only the caption changes. In each case the geometry carries the claim rather
 than the caption alone.
 
+Fill means the outcome the caption names, not decoration. In `split-bar` the
+solid segment is the party the row label describes, and in `paired-panels` a
+solid cell is one the panel caption counts. That is why the Framing panels are
+complements of one ten-cell set, nine solid under "9 IN 10 SURVIVE" and one
+under "1 IN 10 DIE", and why the second Tesler row fills the system's share.
+Flipping either back to match its sibling would make the caption lie.
+
 Both shapes read every parameter they declare, and neither needs generator
 support beyond `renderSvg`: the rules and skill do not read `graphicMetaphor`,
 and the web bundle and print build both call the same function. `network`

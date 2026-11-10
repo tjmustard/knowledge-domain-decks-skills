@@ -17,7 +17,7 @@
     "svgShape": "paired-panels",
     "parametricParams": {
       "left": { "caption": "9 IN 10 SURVIVE", "cells": 10, "columns": 5, "filled": 9 },
-      "right": { "caption": "1 IN 10 DIE", "cells": 10, "columns": 5, "filled": 9 },
+      "right": { "caption": "1 IN 10 DIE", "cells": 10, "columns": 5, "filled": 1 },
       "caption": "SAME TEN CASES, TWO DESCRIPTIONS"
     }
   },
