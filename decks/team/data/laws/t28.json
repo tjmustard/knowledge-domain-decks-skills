@@ -1,0 +1,40 @@
+{
+  "id": "T28",
+  "sourceCardNo": "Card 28",
+  "name": "Crucial Conversations Framework",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Sudden explosive arguments in meetings; silent disengagement followed by resignations; escalation of minor technical disagreements to executive leaders.",
+  "schematic": "Conversation-safety continuum",
+  "script": {
+    "label": "Contrasting & Mutual Purpose",
+    "text": "\"I want to discuss the missed platform migration deadline. To be clear, my intent is not to question your technical ability or micromanage your work. My intent is to make sure we understand the architectural blockers so we can protect your time and hit our external commit dates. Can we review the work together?\""
+  },
+  "audit": [
+    "Has the member surfaced schedule or technical risk unprompted?",
+    "Have direct conversations replaced escalations to the manager?"
+  ],
+  "auditFull": [
+    "Has the team member actively proactively surfaced schedule or technical risks without prompting?",
+    "Have direct interpersonal resolutions replaced managerial escalations?"
+  ],
+  "foundation": "Developed by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler (2002), this model provides protocols for conversations where stakes are high, opinions vary, and emotions run strong. Psychological safety is preserved by clarifying \"Mutual Purpose\" and \"Mutual Respect,\" while actively contrasting (\"I don't mean X; I do mean Y\").",
+  "origin": {
+    "authors": [
+      "Kerry Patterson",
+      "Joseph Grenny",
+      "Ron McMillan",
+      "Al Switzler"
+    ],
+    "year": 2002,
+    "title": "Crucial Conversations: Tools for Talking When Stakes Are High",
+    "publication": "McGraw-Hill"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

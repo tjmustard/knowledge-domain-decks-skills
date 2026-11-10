@@ -1,0 +1,37 @@
+{
+  "id": "T23",
+  "sourceCardNo": "Card 23",
+  "name": "Scott’s Radical Candor Matrix",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Substandard, defect-ridden code is approved in pull requests without constructive commentary to avoid tension (Ruinous Empathy); or reviewers leave caustic, sarcastic remarks on junior contributions (Obnoxious Aggression).",
+  "schematic": "Care-and-challenge quadrant",
+  "script": {
+    "label": "Ruinous Empathy Corrective",
+    "text": "\"In our team's PR reviews, I am observing Ruinous Empathy. We are approving pull requests with noticeable architectural and functional defects to keep interactions smooth. This is not kindness; it sets up production incidents and damages careers. Our standard is Radical Candor: we care personally about our peers' growth, which requires challenging their code directly.\""
+  },
+  "audit": [
+    "Do code reviews give detailed structural critique, framed constructively?",
+    "Have defects slipping past review into staging fallen?"
+  ],
+  "auditFull": [
+    "Do code reviews display detailed, rigorous structural critiques framed constructively?",
+    "Have defect rates slipping past PR reviews into staging dropped?"
+  ],
+  "foundation": "Developed by Kim Scott (2017), Radical Candor combines two orthogonal axes: Caring Personally and Challenging Directly. This produces four quadrants: Radical Candor, Ruinous Empathy (avoiding feedback to protect feelings), Obnoxious Aggression (unfiltered attacks without care), and Manipulative Insincerity (passive-aggressive political maneuvering).",
+  "origin": {
+    "authors": [
+      "Kim Scott"
+    ],
+    "year": 2017,
+    "title": "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity",
+    "publication": "St. Martin's Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

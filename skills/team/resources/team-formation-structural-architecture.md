@@ -10,7 +10,7 @@
 - **Schematic:** Five-stage developmental arc
 - **Manager script:** [object Object]
 - **Day-14 checks:**
-  - Do reviews argue ideology, or apply the agreed linter and charter?
+  - Do reviews apply the agreed linter and charter rather than ideology?
   - Are architecture disputes settled in open RFCs within forty-eight hours?
 - **Foundation:** Bruce Tuckman’s 1965 meta-analysis of small group dynamics, expanded with Mary Ann Jensen in 1977, establishes that groups traverse five sequential developmental phases: Forming, Storming, Norming, Performing, and Adjourning. Empirical evaluations demonstrate that teams failing to address interpersonal and structural friction during the Storming phase regress, exhibiting chronic factionalism and suppressed velocity.
 - **Checks as written:**

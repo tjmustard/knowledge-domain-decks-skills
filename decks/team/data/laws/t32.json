@@ -1,0 +1,38 @@
+{
+  "id": "T32",
+  "sourceCardNo": "Card 32",
+  "name": "Stone & Heen’s Feedback Triggers",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "An engineer rejects accurate technical critique because it was delivered by a colleague they dislike (Relationship Trigger), or enters a defensive spiral over a minor PR suggestion (Identity Trigger).",
+  "schematic": "Feedback-trigger radar",
+  "script": {
+    "label": "Trigger Deconstruction",
+    "text": "\"When reviewing the feedback from the sprint retrospective, I noticed immediate pushback. Let us separate the message from the messenger. If we ignore who wrote this PR comment, is the technical critique regarding concurrency handling accurate? Let's analyze the technical merits of the code itself.\""
+  },
+  "audit": [
+    "Did the recipient merge the suggested technical changes?",
+    "Are reviews about technical logic rather than reviewer seniority?"
+  ],
+  "auditFull": [
+    "Did the recipient integrate the suggested technical changes into their PR branch?",
+    "Are code reviews centered on technical logic rather than reviewer seniority?"
+  ],
+  "foundation": "Douglas Stone and Sheila Heen’s (2014) Thanks for the Feedback identifies three psychological triggers that block feedback processing: Truth Triggers (feeling the feedback is wrong, unhelpful, or unfair), Relationship Triggers (friction with the person giving feedback), and Identity Triggers (feedback challenging one's core self-worth).",
+  "origin": {
+    "authors": [
+      "Douglas Stone",
+      "Sheila Heen"
+    ],
+    "year": 2014,
+    "title": "Thanks for the Feedback: The Science and Art of Receiving Feedback Well",
+    "publication": "Viking"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

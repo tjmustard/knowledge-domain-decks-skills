@@ -31,7 +31,7 @@
       "max": 528
     }
   },
-  "note": "Every one of the 44 sections carries exactly four fields, all parsed mechanically: Organizational Psychology Foundation (239-481 chars), Team Friction Diagnostic (125-241), Step-by-Step Manager Script (219-443, one labelled script per card), Follow-up Audit Protocol Day 14 (135-528, two questions per card). The document's own telemetry table refers to 'Card NN'; every reference checked (4, 7, 12, 13, 18, 25, 27, 36, 39, 44) matches the card's position in document order, so T01-T44 is both the deck order and the source's own numbering. The document claims forty-four models in four taxonomies and the extraction confirms 11/11/11/11. Foundation text is recorded verbatim, including its empirical claims; the deck cites the work, it does not endorse the statistic. Committed here as the deck's authority (DECISIONS 46): no test or generator reads the source folder. Every record is compared to this file field by field; where a record is compressed for the card, the source text stays here and the rules file and skill carry it unabridged. Extraction correction: two audit checks (T11, T22) had trailing prose from the following section appended by the extractor; each is recorded as its question only. The records' quoted scripts and foundations are untouched.",
+  "note": "Every one of the 44 sections carries exactly four fields, all parsed mechanically: Organizational Psychology Foundation (239-481 chars), Team Friction Diagnostic (125-241), Step-by-Step Manager Script (219-443, one labelled script per card), Follow-up Audit Protocol Day 14 (135-528, two questions per card). The document's own telemetry table refers to 'Card NN'; every reference checked (4, 7, 12, 13, 18, 25, 27, 36, 39, 44) matches the card's position in document order, so T01-T44 is both the deck order and the source's own numbering. The document claims forty-four models in four taxonomies and the extraction confirms 11/11/11/11. Foundation text is recorded verbatim, including its empirical claims; the deck cites the work, it does not endorse the statistic. Committed here as the deck's authority (DECISIONS 46): no test or generator reads the source folder. Every record is compared to this file field by field; where a record is compressed for the card, the source text stays here and the rules file and skill carry it unabridged. Extraction correction: three audit checks (T11, T22, T33) had trailing prose from the following section appended by the extractor; each is recorded as its question only. The records' quoted scripts and foundations are untouched.",
   "cardReferences": {
     "4": [
       "RACI/DACI"
@@ -656,7 +656,7 @@
       ],
       "audit": [
         "Did architectural RFCs accumulate substantive, dissenting technical critiques prior to approval?",
-        "Has post-meeting hallway complaints dropped to zero? Engineering productivity is constrained by cognitive load limits and attention fragmentation. Operational rhythms and delegation protocols establish predictable coordination patterns, protecting deep focus and ensuring autonomous team execution."
+        "Has post-meeting hallway complaints dropped to zero?"
       ]
     },
     {

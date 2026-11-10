@@ -1,0 +1,38 @@
+{
+  "id": "T25",
+  "sourceCardNo": "Card 25",
+  "name": "Thomas-Kilmann Conflict Mode Instrument (TKI)",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Over-reliance on Avoiding leads to unaddressed architecture issues; perpetual Competing turns every technical selection into an ideological war; habitual Accommodating produces brittle compromises.",
+  "schematic": "Conflict-mode quadrant",
+  "script": {
+    "label": "Conflict Mode Intervention",
+    "text": "\"Our technical debates around the data migration have stalled in an Avoidance loop. We are moving toward a Collaborating mode. We will list the architectural constraints of each option side-by-side, map them to our business SLAs, and build an integrated solution that addresses both scaling and deployment requirements.\""
+  },
+  "audit": [
+    "Do technical conflicts become joint design workshops?",
+    "Has the unaddressed Jira dispute backlog shrunk?"
+  ],
+  "auditFull": [
+    "Are technical conflicts driving collaborative design workshops instead of being avoided or unilaterally decided?",
+    "Has the volume of unaddressed Jira backlog disputes declined?"
+  ],
+  "foundation": "Kenneth Thomas and Ralph Kilmann (1974) identified five conflict-handling modes along two dimensions: Assertiveness (satisfying own concerns) and Cooperativeness (satisfying others' concerns): Competing, Collaborating, Compromising, Avoiding, and Accommodating.",
+  "origin": {
+    "authors": [
+      "Kenneth W. Thomas",
+      "Ralph H. Kilmann"
+    ],
+    "year": 1974,
+    "title": "Thomas-Kilmann Conflict Mode Instrument",
+    "publication": "Xicom"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

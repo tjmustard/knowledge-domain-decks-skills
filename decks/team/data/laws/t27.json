@@ -1,0 +1,49 @@
+{
+  "id": "T27",
+  "sourceCardNo": "Card 27",
+  "name": "Blameless Post-Mortems & Just Culture",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Fear of deploying on Fridays; engineers withholding logs or timelines after an outage; production incident reviews focused on \"who introduced the bug\" rather than why the system allowed bad code through.",
+  "schematic": "Incident-review arc",
+  "script": {
+    "label": "Blameless Framing",
+    "text": "\"We are convening the post-mortem for incident INC-4029. We operate from the fundamental premise: every engineer acted rationally based on the information and tools they had at the time. We will not discuss who ran the command or pushed the bad commit. We will determine why our automation and canary checks failed to catch this defect before customer impact.\""
+  },
+  "audit": [
+    "Did the post-mortem produce automation or tests rather than manual checks?",
+    "Was it published within forty-eight hours with no names attached?"
+  ],
+  "auditFull": [
+    "Did the post-mortem document result in automated linters, guardrails, or integration tests rather than manual verification mandates?",
+    "Was the post-mortem completed and published within 48 hours without human attribution?"
+  ],
+  "foundation": "Rooted in safety science, Sidney Dekker’s Just Culture, and popularized in high-reliability organizations by John Allspaw (Etsy) and Google SRE, this model asserts that human error is the symptom of a deeper systemic failure, not the root cause. Punishing individuals suppresses anomaly reporting; analyzing systemic vulnerabilities strengthens operational resilience.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Sidney Dekker"
+        ],
+        "year": 2012,
+        "title": "Just Culture: Balancing Safety and Accountability",
+        "publication": "Ashgate"
+      },
+      {
+        "authors": [
+          "John Allspaw"
+        ],
+        "year": 2012,
+        "title": "Blameless PostMortems and a Just Culture",
+        "publication": "Etsy Code as Craft"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

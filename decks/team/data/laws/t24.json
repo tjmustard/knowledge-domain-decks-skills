@@ -1,0 +1,32 @@
+{
+  "id": "T24",
+  "sourceCardNo": "Card 24",
+  "name": "Situation-Behavior-Impact (SBI) Feedback Framework",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Managers provide vague, subjective feedback (e.g., \"You have a negative attitude in planning\" or \"You are not a team player\"), producing defensiveness, denial, and interpersonal hostility.",
+  "schematic": "Three-part feedback arc",
+  "script": {
+    "label": "SBI Feedback Delivery",
+    "text": "\"I want to share feedback regarding this morning's architectural sync. In that meeting (Situation), when Contributor X presented their caching proposal, you interrupted them three times and stated their solution was completely broken without providing data (Behavior). As a consequence, the proposal was abandoned, X disengaged, and the team lost forty minutes of constructive technical design (Impact).\""
+  },
+  "audit": [
+    "Did the recipient change the targeted behavior in cross-team syncs?",
+    "Do retrospectives use SBI, not personal attribution?"
+  ],
+  "auditFull": [
+    "Did the recipient change the targeted behavior during cross-functional sync meetings?",
+    "Does team feedback in retrospectives adopt the SBI structure rather than personal attributions?"
+  ],
+  "foundation": "Developed by the Center for Creative Leadership (CCL), the SBI model eliminates defensive cognitive reactions by separating subjective interpretations from verifiable facts. Feedback is constrained strictly to the objective Situation, the observable Behavior, and the measurable Impact.",
+  "origin": {
+    "note": "Developed by the Center for Creative Leadership; the source cites no originating publication."
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "T31",
+  "sourceCardNo": "Card 31",
+  "name": "Fisher & Ury’s Principled Negotiation",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Deadlocked discussions between Product Management and Engineering regarding scope vs. speed; engineers refusing to compromise on non-critical architectural preferences.",
+  "schematic": "Negotiation-elements radar",
+  "script": {
+    "label": "Interests vs. Positions Realignment",
+    "text": "\"We are locked in positional bargaining: Product demands a release by the 15th, and Engineering demands an additional month for testing. Let us decouple people from the problem. Product's underlying interest is meeting a client commitment; Engineering's underlying interest is preventing data loss in production. What delivery options fulfill both interests simultaneously?\""
+  },
+  "audit": [
+    "Was the negotiated feature slice shipped on schedule with its agreed coverage?",
+    "Did Product and Engineering agree an objective release-gating metric?"
+  ],
+  "auditFull": [
+    "Was a negotiated feature slice deployed on schedule with agreed-upon test coverage?",
+    "Did Product and Engineering establish an objective metric for release gating?"
+  ],
+  "foundation": "Roger Fisher and William Ury’s Harvard Negotiation Project framework (Getting to Yes, 1981) focuses on four pillars: Separate the people from the problem; Focus on interests, not positions; Invent options for mutual gain; Insist on using objective criteria.",
+  "origin": {
+    "authors": [
+      "Roger Fisher",
+      "William Ury"
+    ],
+    "year": 1981,
+    "title": "Getting to Yes: Negotiating Agreement Without Giving In",
+    "publication": "Houghton Mifflin"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

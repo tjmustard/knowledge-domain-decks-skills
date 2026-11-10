@@ -14,7 +14,7 @@ window.TEAM_DECK = {
         "text": "\"The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified.\""
       },
       "audit": [
-        "Do reviews argue ideology, or apply the agreed linter and charter?",
+        "Do reviews apply the agreed linter and charter rather than ideology?",
         "Are architecture disputes settled in open RFCs within forty-eight hours?"
       ],
       "auditFull": [
@@ -924,6 +924,464 @@ window.TEAM_DECK = {
         "title": "Psychological Contracts in Organizations: Understanding Written and Unwritten Agreements",
         "publication": "Sage Publications",
         "authorsLabel": "Denise M. Rousseau",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T23",
+      "sourceCardNo": "Card 23",
+      "name": "Scott’s Radical Candor Matrix",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Substandard, defect-ridden code is approved in pull requests without constructive commentary to avoid tension (Ruinous Empathy); or reviewers leave caustic, sarcastic remarks on junior contributions (Obnoxious Aggression).",
+      "schematic": "Care-and-challenge quadrant",
+      "script": {
+        "label": "Ruinous Empathy Corrective",
+        "text": "\"In our team's PR reviews, I am observing Ruinous Empathy. We are approving pull requests with noticeable architectural and functional defects to keep interactions smooth. This is not kindness; it sets up production incidents and damages careers. Our standard is Radical Candor: we care personally about our peers' growth, which requires challenging their code directly.\""
+      },
+      "audit": [
+        "Do code reviews give detailed structural critique, framed constructively?",
+        "Have defects slipping past review into staging fallen?"
+      ],
+      "auditFull": [
+        "Do code reviews display detailed, rigorous structural critiques framed constructively?",
+        "Have defect rates slipping past PR reviews into staging dropped?"
+      ],
+      "foundation": "Developed by Kim Scott (2017), Radical Candor combines two orthogonal axes: Caring Personally and Challenging Directly. This produces four quadrants: Radical Candor, Ruinous Empathy (avoiding feedback to protect feelings), Obnoxious Aggression (unfiltered attacks without care), and Manipulative Insincerity (passive-aggressive political maneuvering).",
+      "origin": {
+        "authors": [
+          "Kim Scott"
+        ],
+        "year": 2017,
+        "title": "Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity",
+        "publication": "St. Martin's Press",
+        "authorsLabel": "Kim Scott",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T24",
+      "sourceCardNo": "Card 24",
+      "name": "Situation-Behavior-Impact (SBI) Feedback Framework",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Managers provide vague, subjective feedback (e.g., \"You have a negative attitude in planning\" or \"You are not a team player\"), producing defensiveness, denial, and interpersonal hostility.",
+      "schematic": "Three-part feedback arc",
+      "script": {
+        "label": "SBI Feedback Delivery",
+        "text": "\"I want to share feedback regarding this morning's architectural sync. In that meeting (Situation), when Contributor X presented their caching proposal, you interrupted them three times and stated their solution was completely broken without providing data (Behavior). As a consequence, the proposal was abandoned, X disengaged, and the team lost forty minutes of constructive technical design (Impact).\""
+      },
+      "audit": [
+        "Did the recipient change the targeted behavior in cross-team syncs?",
+        "Do retrospectives use SBI, not personal attribution?"
+      ],
+      "auditFull": [
+        "Did the recipient change the targeted behavior during cross-functional sync meetings?",
+        "Does team feedback in retrospectives adopt the SBI structure rather than personal attributions?"
+      ],
+      "foundation": "Developed by the Center for Creative Leadership (CCL), the SBI model eliminates defensive cognitive reactions by separating subjective interpretations from verifiable facts. Feedback is constrained strictly to the objective Situation, the observable Behavior, and the measurable Impact.",
+      "origin": {
+        "note": "Developed by the Center for Creative Leadership; the source cites no originating publication.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.666667\" y1=\"322\" x2=\"150.666667\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.333333\" y1=\"322\" x2=\"249.333333\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"194.059334\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"194.059334\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T25",
+      "sourceCardNo": "Card 25",
+      "name": "Thomas-Kilmann Conflict Mode Instrument (TKI)",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Over-reliance on Avoiding leads to unaddressed architecture issues; perpetual Competing turns every technical selection into an ideological war; habitual Accommodating produces brittle compromises.",
+      "schematic": "Conflict-mode quadrant",
+      "script": {
+        "label": "Conflict Mode Intervention",
+        "text": "\"Our technical debates around the data migration have stalled in an Avoidance loop. We are moving toward a Collaborating mode. We will list the architectural constraints of each option side-by-side, map them to our business SLAs, and build an integrated solution that addresses both scaling and deployment requirements.\""
+      },
+      "audit": [
+        "Do technical conflicts become joint design workshops?",
+        "Has the unaddressed Jira dispute backlog shrunk?"
+      ],
+      "auditFull": [
+        "Are technical conflicts driving collaborative design workshops instead of being avoided or unilaterally decided?",
+        "Has the volume of unaddressed Jira backlog disputes declined?"
+      ],
+      "foundation": "Kenneth Thomas and Ralph Kilmann (1974) identified five conflict-handling modes along two dimensions: Assertiveness (satisfying own concerns) and Cooperativeness (satisfying others' concerns): Competing, Collaborating, Compromising, Avoiding, and Accommodating.",
+      "origin": {
+        "authors": [
+          "Kenneth W. Thomas",
+          "Ralph H. Kilmann"
+        ],
+        "year": 1974,
+        "title": "Thomas-Kilmann Conflict Mode Instrument",
+        "publication": "Xicom",
+        "authorsLabel": "Kenneth W. Thomas & Ralph H. Kilmann",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T26",
+      "sourceCardNo": "Card 26",
+      "name": "Rosenberg’s Nonviolent Communication (NVC)",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Sarcastic exchanges on Slack channels; hostile comments on code commits; finger-pointing during on-call incident escalations.",
+      "schematic": "Four-part request arc",
+      "script": {
+        "label": "NVC Facilitation",
+        "text": "\"When our staging build remains broken for three consecutive hours (Observation), the rest of the squad is blocked from testing and verifying their work (Impact). The team requires continuous integration reliability to maintain deployment velocity (Need). Can we agree that anyone whose commit breaks the main pipeline will prioritize reverting it within ten minutes? (Request).\""
+      },
+      "audit": [
+        "Has time-to-revert for a broken main build dropped below fifteen minutes?",
+        "Have accusatory channel messages become operational requests?"
+      ],
+      "auditFull": [
+        "Has time-to-revert for broken main builds dropped below fifteen minutes?",
+        "Have accusatory messages in engineering channels been replaced by operational, request-oriented communication?"
+      ],
+      "foundation": "Marshall Rosenberg’s (2003) Nonviolent Communication framework separates Observation, Feeling, Need, and Request. In engineering environments, it replaces subjective judgment with empirical observations and actionable, negotiable requests.",
+      "origin": {
+        "authors": [
+          "Marshall B. Rosenberg"
+        ],
+        "year": 2003,
+        "title": "Nonviolent Communication: A Language of Life",
+        "publication": "PuddleDancer Press",
+        "authorsLabel": "Marshall B. Rosenberg",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"322\" x2=\"126\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"322\" x2=\"274\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"322\" x2=\"163\" y2=\"268.981182\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"268.981182\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T27",
+      "sourceCardNo": "Card 27",
+      "name": "Blameless Post-Mortems & Just Culture",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Fear of deploying on Fridays; engineers withholding logs or timelines after an outage; production incident reviews focused on \"who introduced the bug\" rather than why the system allowed bad code through.",
+      "schematic": "Incident-review arc",
+      "script": {
+        "label": "Blameless Framing",
+        "text": "\"We are convening the post-mortem for incident INC-4029. We operate from the fundamental premise: every engineer acted rationally based on the information and tools they had at the time. We will not discuss who ran the command or pushed the bad commit. We will determine why our automation and canary checks failed to catch this defect before customer impact.\""
+      },
+      "audit": [
+        "Did the post-mortem produce automation or tests rather than manual checks?",
+        "Was it published within forty-eight hours with no names attached?"
+      ],
+      "auditFull": [
+        "Did the post-mortem document result in automated linters, guardrails, or integration tests rather than manual verification mandates?",
+        "Was the post-mortem completed and published within 48 hours without human attribution?"
+      ],
+      "foundation": "Rooted in safety science, Sidney Dekker’s Just Culture, and popularized in high-reliability organizations by John Allspaw (Etsy) and Google SRE, this model asserts that human error is the symptom of a deeper systemic failure, not the root cause. Punishing individuals suppresses anomaly reporting; analyzing systemic vulnerabilities strengthens operational resilience.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Sidney Dekker"
+            ],
+            "year": 2012,
+            "title": "Just Culture: Balancing Safety and Accountability",
+            "publication": "Ashgate",
+            "authorsLabel": "Sidney Dekker",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "John Allspaw"
+            ],
+            "year": 2012,
+            "title": "Blameless PostMortems and a Just Culture",
+            "publication": "Etsy Code as Craft",
+            "authorsLabel": "John Allspaw",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"322\" x2=\"126\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"322\" x2=\"274\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"322\" x2=\"163\" y2=\"268.981182\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"268.981182\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T28",
+      "sourceCardNo": "Card 28",
+      "name": "Crucial Conversations Framework",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Sudden explosive arguments in meetings; silent disengagement followed by resignations; escalation of minor technical disagreements to executive leaders.",
+      "schematic": "Conversation-safety continuum",
+      "script": {
+        "label": "Contrasting & Mutual Purpose",
+        "text": "\"I want to discuss the missed platform migration deadline. To be clear, my intent is not to question your technical ability or micromanage your work. My intent is to make sure we understand the architectural blockers so we can protect your time and hit our external commit dates. Can we review the work together?\""
+      },
+      "audit": [
+        "Has the member surfaced schedule or technical risk unprompted?",
+        "Have direct conversations replaced escalations to the manager?"
+      ],
+      "auditFull": [
+        "Has the team member actively proactively surfaced schedule or technical risks without prompting?",
+        "Have direct interpersonal resolutions replaced managerial escalations?"
+      ],
+      "foundation": "Developed by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler (2002), this model provides protocols for conversations where stakes are high, opinions vary, and emotions run strong. Psychological safety is preserved by clarifying \"Mutual Purpose\" and \"Mutual Respect,\" while actively contrasting (\"I don't mean X; I do mean Y\").",
+      "origin": {
+        "authors": [
+          "Kerry Patterson",
+          "Joseph Grenny",
+          "Ron McMillan",
+          "Al Switzler"
+        ],
+        "year": 2002,
+        "title": "Crucial Conversations: Tools for Talking When Stakes Are High",
+        "publication": "McGraw-Hill",
+        "authorsLabel": "Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T29",
+      "sourceCardNo": "Card 29",
+      "name": "The Johari Window for Interpersonal Transparency",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Developers repeatedly making the same communication or technical mistakes without realizing it (Blind Spot); engineers suffering from imposter syndrome or burnout in silence (Hidden Area).",
+      "schematic": "Johari quadrant",
+      "script": {
+        "label": "Blind Spot Feedback Solicitation",
+        "text": "\"To accelerate my effectiveness as an engineering manager, I need to expand my open window. What is one operational habit I exhibit in sprint planning that slows you down or introduces noise, which I might be blind to?\""
+      },
+      "audit": [
+        "Did reports ask for feedback in their one-to-ones?",
+        "Has the manager changed at least one process on team feedback?"
+      ],
+      "auditFull": [
+        "Did direct reports initiate requests for constructive feedback in 1-on-1s?",
+        "Has the manager implemented at least one direct procedural change based on team feedback?"
+      ],
+      "foundation": "Created by Joseph Luft and Harrington Ingham (1955), the Johari Window maps cognitive awareness across four quadrants: Open/Arena (known to self and others), Blind Spot (unknown to self, known to others), Facade/Hidden (known to self, unknown to others), and Unknown. High-performing teams intentionally expand the Open Area through solicitation of feedback and disclosure.",
+      "origin": {
+        "authors": [
+          "Joseph Luft",
+          "Harrington Ingham"
+        ],
+        "year": 1955,
+        "title": "The Johari Window, a Graphic Model of Interpersonal Awareness",
+        "publication": "Proceedings of the Western Training Laboratory in Group Development",
+        "authorsLabel": "Joseph Luft & Harrington Ingham",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T30",
+      "sourceCardNo": "Card 30",
+      "name": "Argyris’s Ladder of Inference & Double-Loop Learning",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Engineers making hasty, negative assumptions about why another squad's API failed; doubling down on broken sprint plans rather than questioning underlying architecture assumptions.",
+      "schematic": "Ladder-of-inference arc",
+      "script": {
+        "label": "Ladder Disassembly Inquiry",
+        "text": "\"We have made a rapid assumption that Team B deliberately broke our endpoint to accelerate their own sprint. Let us climb down the ladder of inference. What is the raw, observable data in the git commit log? What assumptions did we attach to that data? Let us speak with their tech lead before acting on that belief.\""
+      },
+      "audit": [
+        "Did debugging meetings use telemetry rather than intent?",
+        "Did retrospectives review core assumptions, not symptoms?"
+      ],
+      "auditFull": [
+        "Did cross-team debugging meetings evaluate API issues using telemetry metrics rather than personal intentions?",
+        "Did sprint retrospectives review core organizational assumptions rather than immediate symptoms?"
+      ],
+      "foundation": "Chris Argyris (1970, 1990) outlined how humans jump from observable data to selected data, added meanings, assumptions, conclusions, and beliefs, culminating in reflexive actions. Argyris’s \"Double-Loop Learning\" challenges the underlying norms and objectives rather than merely adjusting immediate actions.",
+      "origin": {
+        "authors": [
+          "Chris Argyris"
+        ],
+        "year": 1990,
+        "title": "Overcoming Organizational Defenses: Facilitating Organizational Learning",
+        "publication": "Allyn and Bacon",
+        "authorsLabel": "Chris Argyris",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"322\" x2=\"126\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"322\" x2=\"274\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"322\" x2=\"163\" y2=\"268.981182\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"268.981182\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T31",
+      "sourceCardNo": "Card 31",
+      "name": "Fisher & Ury’s Principled Negotiation",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Deadlocked discussions between Product Management and Engineering regarding scope vs. speed; engineers refusing to compromise on non-critical architectural preferences.",
+      "schematic": "Negotiation-elements radar",
+      "script": {
+        "label": "Interests vs. Positions Realignment",
+        "text": "\"We are locked in positional bargaining: Product demands a release by the 15th, and Engineering demands an additional month for testing. Let us decouple people from the problem. Product's underlying interest is meeting a client commitment; Engineering's underlying interest is preventing data loss in production. What delivery options fulfill both interests simultaneously?\""
+      },
+      "audit": [
+        "Was the negotiated feature slice shipped on schedule with its agreed coverage?",
+        "Did Product and Engineering agree an objective release-gating metric?"
+      ],
+      "auditFull": [
+        "Was a negotiated feature slice deployed on schedule with agreed-upon test coverage?",
+        "Did Product and Engineering establish an objective metric for release gating?"
+      ],
+      "foundation": "Roger Fisher and William Ury’s Harvard Negotiation Project framework (Getting to Yes, 1981) focuses on four pillars: Separate the people from the problem; Focus on interests, not positions; Invent options for mutual gain; Insist on using objective criteria.",
+      "origin": {
+        "authors": [
+          "Roger Fisher",
+          "William Ury"
+        ],
+        "year": 1981,
+        "title": "Getting to Yes: Negotiating Agreement Without Giving In",
+        "publication": "Houghton Mifflin",
+        "authorsLabel": "Roger Fisher & William Ury",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 246.9 182.8 L 229 237.9 L 171 237.9 L 153.1 182.8 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 293.8 167.5 L 258 277.8 L 142 277.8 L 106.2 167.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 340.8 152.3 L 287 317.7 L 113 317.7 L 59.2 152.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"340.8\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340.8\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"287\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"287\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"113\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"113\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"59.2\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"59.2\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 287.3 169.6 L 253.9 272.2 L 146.1 272.2 L 112.7 169.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 109.2 L 284.5 170.6 L 252.2 269.8 L 147.8 269.8 L 115.5 170.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T32",
+      "sourceCardNo": "Card 32",
+      "name": "Stone & Heen’s Feedback Triggers",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "An engineer rejects accurate technical critique because it was delivered by a colleague they dislike (Relationship Trigger), or enters a defensive spiral over a minor PR suggestion (Identity Trigger).",
+      "schematic": "Feedback-trigger radar",
+      "script": {
+        "label": "Trigger Deconstruction",
+        "text": "\"When reviewing the feedback from the sprint retrospective, I noticed immediate pushback. Let us separate the message from the messenger. If we ignore who wrote this PR comment, is the technical critique regarding concurrency handling accurate? Let's analyze the technical merits of the code itself.\""
+      },
+      "audit": [
+        "Did the recipient merge the suggested technical changes?",
+        "Are reviews about technical logic rather than reviewer seniority?"
+      ],
+      "auditFull": [
+        "Did the recipient integrate the suggested technical changes into their PR branch?",
+        "Are code reviews centered on technical logic rather than reviewer seniority?"
+      ],
+      "foundation": "Douglas Stone and Sheila Heen’s (2014) Thanks for the Feedback identifies three psychological triggers that block feedback processing: Truth Triggers (feeling the feedback is wrong, unhelpful, or unfair), Relationship Triggers (friction with the person giving feedback), and Identity Triggers (feedback challenging one's core self-worth).",
+      "origin": {
+        "authors": [
+          "Douglas Stone",
+          "Sheila Heen"
+        ],
+        "year": 2014,
+        "title": "Thanks for the Feedback: The Science and Art of Receiving Feedback Well",
+        "publication": "Viking",
+        "authorsLabel": "Douglas Stone & Sheila Heen",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 242.7 222.7 L 157.3 222.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 328.2 272 L 71.8 272 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 279.5 243.9 L 120.5 243.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T33",
+      "sourceCardNo": "Card 33",
+      "name": "Lencioni’s Conflict Continuum",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "diagnostic": "Meetings are calm and quiet, yet real disagreements are voiced afterward in backchannels; decisions made in team meetings are ignored or resisted passively.",
+      "schematic": "Conflict continuum",
+      "script": {
+        "label": "Artificial Harmony Disruption",
+        "text": "\"This architectural direction affects every engineer on this squad, yet no one has raised a counter-argument. That tells me we are stuck in artificial harmony. I will not accept universal agreement on a complex distributed systems migration. What is the primary weakness in this proposal that we are actively avoiding?\""
+      },
+      "audit": [
+        "Did RFCs collect substantive dissent before approval?",
+        "Have hallway complaints after meetings fallen to zero?"
+      ],
+      "auditFull": [
+        "Did architectural RFCs accumulate substantive, dissenting technical critiques prior to approval?",
+        "Has post-meeting hallway complaints dropped to zero?"
+      ],
+      "foundation": "Patrick Lencioni’s (2002) model in The Five Dysfunctions of a Team frames conflict along a spectrum between Artificial Harmony (fear of conflict) and Mean-Spirited Personal Attacks. High-performing teams intentionally operate at the ideal sweet spot: passionate, unfiltered ideological debate focused entirely on concepts and ideas.",
+      "origin": {
+        "authors": [
+          "Patrick Lencioni"
+        ],
+        "year": 2002,
+        "title": "The Five Dysfunctions of a Team: A Leadership Fable",
+        "publication": "Jossey-Bass",
+        "authorsLabel": "Patrick Lencioni",
         "titleStop": "."
       },
       "figure": {

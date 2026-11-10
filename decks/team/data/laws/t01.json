@@ -10,7 +10,7 @@
     "text": "\"The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified.\""
   },
   "audit": [
-    "Do reviews argue ideology, or apply the agreed linter and charter?",
+    "Do reviews apply the agreed linter and charter rather than ideology?",
     "Are architecture disputes settled in open RFCs within forty-eight hours?"
   ],
   "auditFull": [

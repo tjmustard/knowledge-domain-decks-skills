@@ -1,0 +1,37 @@
+{
+  "id": "T30",
+  "sourceCardNo": "Card 30",
+  "name": "Argyris’s Ladder of Inference & Double-Loop Learning",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Engineers making hasty, negative assumptions about why another squad's API failed; doubling down on broken sprint plans rather than questioning underlying architecture assumptions.",
+  "schematic": "Ladder-of-inference arc",
+  "script": {
+    "label": "Ladder Disassembly Inquiry",
+    "text": "\"We have made a rapid assumption that Team B deliberately broke our endpoint to accelerate their own sprint. Let us climb down the ladder of inference. What is the raw, observable data in the git commit log? What assumptions did we attach to that data? Let us speak with their tech lead before acting on that belief.\""
+  },
+  "audit": [
+    "Did debugging meetings use telemetry rather than intent?",
+    "Did retrospectives review core assumptions, not symptoms?"
+  ],
+  "auditFull": [
+    "Did cross-team debugging meetings evaluate API issues using telemetry metrics rather than personal intentions?",
+    "Did sprint retrospectives review core organizational assumptions rather than immediate symptoms?"
+  ],
+  "foundation": "Chris Argyris (1970, 1990) outlined how humans jump from observable data to selected data, added meanings, assumptions, conclusions, and beliefs, culminating in reflexive actions. Argyris’s \"Double-Loop Learning\" challenges the underlying norms and objectives rather than merely adjusting immediate actions.",
+  "origin": {
+    "authors": [
+      "Chris Argyris"
+    ],
+    "year": 1990,
+    "title": "Overcoming Organizational Defenses: Facilitating Organizational Learning",
+    "publication": "Allyn and Bacon"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

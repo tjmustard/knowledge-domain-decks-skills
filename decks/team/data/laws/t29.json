@@ -1,0 +1,38 @@
+{
+  "id": "T29",
+  "sourceCardNo": "Card 29",
+  "name": "The Johari Window for Interpersonal Transparency",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Developers repeatedly making the same communication or technical mistakes without realizing it (Blind Spot); engineers suffering from imposter syndrome or burnout in silence (Hidden Area).",
+  "schematic": "Johari quadrant",
+  "script": {
+    "label": "Blind Spot Feedback Solicitation",
+    "text": "\"To accelerate my effectiveness as an engineering manager, I need to expand my open window. What is one operational habit I exhibit in sprint planning that slows you down or introduces noise, which I might be blind to?\""
+  },
+  "audit": [
+    "Did reports ask for feedback in their one-to-ones?",
+    "Has the manager changed at least one process on team feedback?"
+  ],
+  "auditFull": [
+    "Did direct reports initiate requests for constructive feedback in 1-on-1s?",
+    "Has the manager implemented at least one direct procedural change based on team feedback?"
+  ],
+  "foundation": "Created by Joseph Luft and Harrington Ingham (1955), the Johari Window maps cognitive awareness across four quadrants: Open/Arena (known to self and others), Blind Spot (unknown to self, known to others), Facade/Hidden (known to self, unknown to others), and Unknown. High-performing teams intentionally expand the Open Area through solicitation of feedback and disclosure.",
+  "origin": {
+    "authors": [
+      "Joseph Luft",
+      "Harrington Ingham"
+    ],
+    "year": 1955,
+    "title": "The Johari Window, a Graphic Model of Interpersonal Awareness",
+    "publication": "Proceedings of the Western Training Laboratory in Group Development"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "T33",
+  "sourceCardNo": "Card 33",
+  "name": "Lencioni’s Conflict Continuum",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Meetings are calm and quiet, yet real disagreements are voiced afterward in backchannels; decisions made in team meetings are ignored or resisted passively.",
+  "schematic": "Conflict continuum",
+  "script": {
+    "label": "Artificial Harmony Disruption",
+    "text": "\"This architectural direction affects every engineer on this squad, yet no one has raised a counter-argument. That tells me we are stuck in artificial harmony. I will not accept universal agreement on a complex distributed systems migration. What is the primary weakness in this proposal that we are actively avoiding?\""
+  },
+  "audit": [
+    "Did RFCs collect substantive dissent before approval?",
+    "Have hallway complaints after meetings fallen to zero?"
+  ],
+  "auditFull": [
+    "Did architectural RFCs accumulate substantive, dissenting technical critiques prior to approval?",
+    "Has post-meeting hallway complaints dropped to zero?"
+  ],
+  "foundation": "Patrick Lencioni’s (2002) model in The Five Dysfunctions of a Team frames conflict along a spectrum between Artificial Harmony (fear of conflict) and Mean-Spirited Personal Attacks. High-performing teams intentionally operate at the ideal sweet spot: passionate, unfiltered ideological debate focused entirely on concepts and ideas.",
+  "origin": {
+    "authors": [
+      "Patrick Lencioni"
+    ],
+    "year": 2002,
+    "title": "The Five Dysfunctions of a Team: A Leadership Fable",
+    "publication": "Jossey-Bass"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

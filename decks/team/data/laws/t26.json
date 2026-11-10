@@ -1,0 +1,37 @@
+{
+  "id": "T26",
+  "sourceCardNo": "Card 26",
+  "name": "Rosenberg’s Nonviolent Communication (NVC)",
+  "category": "Feedback, Candor & Conflict Resolution",
+  "diagnostic": "Sarcastic exchanges on Slack channels; hostile comments on code commits; finger-pointing during on-call incident escalations.",
+  "schematic": "Four-part request arc",
+  "script": {
+    "label": "NVC Facilitation",
+    "text": "\"When our staging build remains broken for three consecutive hours (Observation), the rest of the squad is blocked from testing and verifying their work (Impact). The team requires continuous integration reliability to maintain deployment velocity (Need). Can we agree that anyone whose commit breaks the main pipeline will prioritize reverting it within ten minutes? (Request).\""
+  },
+  "audit": [
+    "Has time-to-revert for a broken main build dropped below fifteen minutes?",
+    "Have accusatory channel messages become operational requests?"
+  ],
+  "auditFull": [
+    "Has time-to-revert for broken main builds dropped below fifteen minutes?",
+    "Have accusatory messages in engineering channels been replaced by operational, request-oriented communication?"
+  ],
+  "foundation": "Marshall Rosenberg’s (2003) Nonviolent Communication framework separates Observation, Feeling, Need, and Request. In engineering environments, it replaces subjective judgment with empirical observations and actionable, negotiable requests.",
+  "origin": {
+    "authors": [
+      "Marshall B. Rosenberg"
+    ],
+    "year": 2003,
+    "title": "Nonviolent Communication: A Language of Life",
+    "publication": "PuddleDancer Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

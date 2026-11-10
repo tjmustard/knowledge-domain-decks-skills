@@ -18,7 +18,7 @@ Every card is a script a manager can run: the friction symptom that says this is
 "The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified."
 
 **Day-14 checks.**
-- Do reviews argue ideology, or apply the agreed linter and charter?
+- Do reviews apply the agreed linter and charter rather than ideology?
 - Are architecture disputes settled in open RFCs within forty-eight hours?
 
 **Foundation.** Bruce Tuckman’s 1965 meta-analysis of small group dynamics, expanded with Mary Ann Jensen in 1977, establishes that groups traverse five sequential developmental phases: Forming, Storming, Norming, Performing, and Adjourning. Empirical evaluations demonstrate that teams failing to address interpersonal and structural friction during the Storming phase regress, exhibiting chronic factionalism and suppressed velocity.
@@ -492,3 +492,247 @@ Every card is a script a manager can run: the friction symptom that says this is
 - Was a concrete, written professional development plan formalized to restore parity in the psychological contract?
 
 **Source.** Denise M. Rousseau (1995). *Psychological Contracts in Organizations: Understanding Written and Unwritten Agreements*. Sage Publications.
+
+## Feedback, Candor & Conflict Resolution
+
+### T23 — Scott’s Radical Candor Matrix
+
+**Friction diagnostic.** Substandard, defect-ridden code is approved in pull requests without constructive commentary to avoid tension (Ruinous Empathy); or reviewers leave caustic, sarcastic remarks on junior contributions (Obnoxious Aggression).
+
+**Schematic.** Care-and-challenge quadrant
+
+**Manager script.** Ruinous Empathy Corrective
+
+"In our team's PR reviews, I am observing Ruinous Empathy. We are approving pull requests with noticeable architectural and functional defects to keep interactions smooth. This is not kindness; it sets up production incidents and damages careers. Our standard is Radical Candor: we care personally about our peers' growth, which requires challenging their code directly."
+
+**Day-14 checks.**
+- Do code reviews give detailed structural critique, framed constructively?
+- Have defects slipping past review into staging fallen?
+
+**Foundation.** Developed by Kim Scott (2017), Radical Candor combines two orthogonal axes: Caring Personally and Challenging Directly. This produces four quadrants: Radical Candor, Ruinous Empathy (avoiding feedback to protect feelings), Obnoxious Aggression (unfiltered attacks without care), and Manipulative Insincerity (passive-aggressive political maneuvering).
+
+**Checks as written.**
+- Do code reviews display detailed, rigorous structural critiques framed constructively?
+- Have defect rates slipping past PR reviews into staging dropped?
+
+**Source.** Kim Scott (2017). *Radical Candor: Be a Kick-Ass Boss Without Losing Your Humanity*. St. Martin's Press.
+
+### T24 — Situation-Behavior-Impact (SBI) Feedback Framework
+
+**Friction diagnostic.** Managers provide vague, subjective feedback (e.g., "You have a negative attitude in planning" or "You are not a team player"), producing defensiveness, denial, and interpersonal hostility.
+
+**Schematic.** Three-part feedback arc
+
+**Manager script.** SBI Feedback Delivery
+
+"I want to share feedback regarding this morning's architectural sync. In that meeting (Situation), when Contributor X presented their caching proposal, you interrupted them three times and stated their solution was completely broken without providing data (Behavior). As a consequence, the proposal was abandoned, X disengaged, and the team lost forty minutes of constructive technical design (Impact)."
+
+**Day-14 checks.**
+- Did the recipient change the targeted behavior in cross-team syncs?
+- Do retrospectives use SBI, not personal attribution?
+
+**Foundation.** Developed by the Center for Creative Leadership (CCL), the SBI model eliminates defensive cognitive reactions by separating subjective interpretations from verifiable facts. Feedback is constrained strictly to the objective Situation, the observable Behavior, and the measurable Impact.
+
+**Checks as written.**
+- Did the recipient change the targeted behavior during cross-functional sync meetings?
+- Does team feedback in retrospectives adopt the SBI structure rather than personal attributions?
+
+**Source.** Developed by the Center for Creative Leadership; the source cites no originating publication.
+
+### T25 — Thomas-Kilmann Conflict Mode Instrument (TKI)
+
+**Friction diagnostic.** Over-reliance on Avoiding leads to unaddressed architecture issues; perpetual Competing turns every technical selection into an ideological war; habitual Accommodating produces brittle compromises.
+
+**Schematic.** Conflict-mode quadrant
+
+**Manager script.** Conflict Mode Intervention
+
+"Our technical debates around the data migration have stalled in an Avoidance loop. We are moving toward a Collaborating mode. We will list the architectural constraints of each option side-by-side, map them to our business SLAs, and build an integrated solution that addresses both scaling and deployment requirements."
+
+**Day-14 checks.**
+- Do technical conflicts become joint design workshops?
+- Has the unaddressed Jira dispute backlog shrunk?
+
+**Foundation.** Kenneth Thomas and Ralph Kilmann (1974) identified five conflict-handling modes along two dimensions: Assertiveness (satisfying own concerns) and Cooperativeness (satisfying others' concerns): Competing, Collaborating, Compromising, Avoiding, and Accommodating.
+
+**Checks as written.**
+- Are technical conflicts driving collaborative design workshops instead of being avoided or unilaterally decided?
+- Has the volume of unaddressed Jira backlog disputes declined?
+
+**Source.** Kenneth W. Thomas & Ralph H. Kilmann (1974). *Thomas-Kilmann Conflict Mode Instrument*. Xicom.
+
+### T26 — Rosenberg’s Nonviolent Communication (NVC)
+
+**Friction diagnostic.** Sarcastic exchanges on Slack channels; hostile comments on code commits; finger-pointing during on-call incident escalations.
+
+**Schematic.** Four-part request arc
+
+**Manager script.** NVC Facilitation
+
+"When our staging build remains broken for three consecutive hours (Observation), the rest of the squad is blocked from testing and verifying their work (Impact). The team requires continuous integration reliability to maintain deployment velocity (Need). Can we agree that anyone whose commit breaks the main pipeline will prioritize reverting it within ten minutes? (Request)."
+
+**Day-14 checks.**
+- Has time-to-revert for a broken main build dropped below fifteen minutes?
+- Have accusatory channel messages become operational requests?
+
+**Foundation.** Marshall Rosenberg’s (2003) Nonviolent Communication framework separates Observation, Feeling, Need, and Request. In engineering environments, it replaces subjective judgment with empirical observations and actionable, negotiable requests.
+
+**Checks as written.**
+- Has time-to-revert for broken main builds dropped below fifteen minutes?
+- Have accusatory messages in engineering channels been replaced by operational, request-oriented communication?
+
+**Source.** Marshall B. Rosenberg (2003). *Nonviolent Communication: A Language of Life*. PuddleDancer Press.
+
+### T27 — Blameless Post-Mortems & Just Culture
+
+**Friction diagnostic.** Fear of deploying on Fridays; engineers withholding logs or timelines after an outage; production incident reviews focused on "who introduced the bug" rather than why the system allowed bad code through.
+
+**Schematic.** Incident-review arc
+
+**Manager script.** Blameless Framing
+
+"We are convening the post-mortem for incident INC-4029. We operate from the fundamental premise: every engineer acted rationally based on the information and tools they had at the time. We will not discuss who ran the command or pushed the bad commit. We will determine why our automation and canary checks failed to catch this defect before customer impact."
+
+**Day-14 checks.**
+- Did the post-mortem produce automation or tests rather than manual checks?
+- Was it published within forty-eight hours with no names attached?
+
+**Foundation.** Rooted in safety science, Sidney Dekker’s Just Culture, and popularized in high-reliability organizations by John Allspaw (Etsy) and Google SRE, this model asserts that human error is the symptom of a deeper systemic failure, not the root cause. Punishing individuals suppresses anomaly reporting; analyzing systemic vulnerabilities strengthens operational resilience.
+
+**Checks as written.**
+- Did the post-mortem document result in automated linters, guardrails, or integration tests rather than manual verification mandates?
+- Was the post-mortem completed and published within 48 hours without human attribution?
+
+**Source.** Sidney Dekker (2012). *Just Culture: Balancing Safety and Accountability*. Ashgate. John Allspaw (2012). *Blameless PostMortems and a Just Culture*. Etsy Code as Craft.
+
+### T28 — Crucial Conversations Framework
+
+**Friction diagnostic.** Sudden explosive arguments in meetings; silent disengagement followed by resignations; escalation of minor technical disagreements to executive leaders.
+
+**Schematic.** Conversation-safety continuum
+
+**Manager script.** Contrasting & Mutual Purpose
+
+"I want to discuss the missed platform migration deadline. To be clear, my intent is not to question your technical ability or micromanage your work. My intent is to make sure we understand the architectural blockers so we can protect your time and hit our external commit dates. Can we review the work together?"
+
+**Day-14 checks.**
+- Has the member surfaced schedule or technical risk unprompted?
+- Have direct conversations replaced escalations to the manager?
+
+**Foundation.** Developed by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler (2002), this model provides protocols for conversations where stakes are high, opinions vary, and emotions run strong. Psychological safety is preserved by clarifying "Mutual Purpose" and "Mutual Respect," while actively contrasting ("I don't mean X; I do mean Y").
+
+**Checks as written.**
+- Has the team member actively proactively surfaced schedule or technical risks without prompting?
+- Have direct interpersonal resolutions replaced managerial escalations?
+
+**Source.** Kerry Patterson, Joseph Grenny, Ron McMillan & Al Switzler (2002). *Crucial Conversations: Tools for Talking When Stakes Are High*. McGraw-Hill.
+
+### T29 — The Johari Window for Interpersonal Transparency
+
+**Friction diagnostic.** Developers repeatedly making the same communication or technical mistakes without realizing it (Blind Spot); engineers suffering from imposter syndrome or burnout in silence (Hidden Area).
+
+**Schematic.** Johari quadrant
+
+**Manager script.** Blind Spot Feedback Solicitation
+
+"To accelerate my effectiveness as an engineering manager, I need to expand my open window. What is one operational habit I exhibit in sprint planning that slows you down or introduces noise, which I might be blind to?"
+
+**Day-14 checks.**
+- Did reports ask for feedback in their one-to-ones?
+- Has the manager changed at least one process on team feedback?
+
+**Foundation.** Created by Joseph Luft and Harrington Ingham (1955), the Johari Window maps cognitive awareness across four quadrants: Open/Arena (known to self and others), Blind Spot (unknown to self, known to others), Facade/Hidden (known to self, unknown to others), and Unknown. High-performing teams intentionally expand the Open Area through solicitation of feedback and disclosure.
+
+**Checks as written.**
+- Did direct reports initiate requests for constructive feedback in 1-on-1s?
+- Has the manager implemented at least one direct procedural change based on team feedback?
+
+**Source.** Joseph Luft & Harrington Ingham (1955). *The Johari Window, a Graphic Model of Interpersonal Awareness*. Proceedings of the Western Training Laboratory in Group Development.
+
+### T30 — Argyris’s Ladder of Inference & Double-Loop Learning
+
+**Friction diagnostic.** Engineers making hasty, negative assumptions about why another squad's API failed; doubling down on broken sprint plans rather than questioning underlying architecture assumptions.
+
+**Schematic.** Ladder-of-inference arc
+
+**Manager script.** Ladder Disassembly Inquiry
+
+"We have made a rapid assumption that Team B deliberately broke our endpoint to accelerate their own sprint. Let us climb down the ladder of inference. What is the raw, observable data in the git commit log? What assumptions did we attach to that data? Let us speak with their tech lead before acting on that belief."
+
+**Day-14 checks.**
+- Did debugging meetings use telemetry rather than intent?
+- Did retrospectives review core assumptions, not symptoms?
+
+**Foundation.** Chris Argyris (1970, 1990) outlined how humans jump from observable data to selected data, added meanings, assumptions, conclusions, and beliefs, culminating in reflexive actions. Argyris’s "Double-Loop Learning" challenges the underlying norms and objectives rather than merely adjusting immediate actions.
+
+**Checks as written.**
+- Did cross-team debugging meetings evaluate API issues using telemetry metrics rather than personal intentions?
+- Did sprint retrospectives review core organizational assumptions rather than immediate symptoms?
+
+**Source.** Chris Argyris (1990). *Overcoming Organizational Defenses: Facilitating Organizational Learning*. Allyn and Bacon.
+
+### T31 — Fisher & Ury’s Principled Negotiation
+
+**Friction diagnostic.** Deadlocked discussions between Product Management and Engineering regarding scope vs. speed; engineers refusing to compromise on non-critical architectural preferences.
+
+**Schematic.** Negotiation-elements radar
+
+**Manager script.** Interests vs. Positions Realignment
+
+"We are locked in positional bargaining: Product demands a release by the 15th, and Engineering demands an additional month for testing. Let us decouple people from the problem. Product's underlying interest is meeting a client commitment; Engineering's underlying interest is preventing data loss in production. What delivery options fulfill both interests simultaneously?"
+
+**Day-14 checks.**
+- Was the negotiated feature slice shipped on schedule with its agreed coverage?
+- Did Product and Engineering agree an objective release-gating metric?
+
+**Foundation.** Roger Fisher and William Ury’s Harvard Negotiation Project framework (Getting to Yes, 1981) focuses on four pillars: Separate the people from the problem; Focus on interests, not positions; Invent options for mutual gain; Insist on using objective criteria.
+
+**Checks as written.**
+- Was a negotiated feature slice deployed on schedule with agreed-upon test coverage?
+- Did Product and Engineering establish an objective metric for release gating?
+
+**Source.** Roger Fisher & William Ury (1981). *Getting to Yes: Negotiating Agreement Without Giving In*. Houghton Mifflin.
+
+### T32 — Stone & Heen’s Feedback Triggers
+
+**Friction diagnostic.** An engineer rejects accurate technical critique because it was delivered by a colleague they dislike (Relationship Trigger), or enters a defensive spiral over a minor PR suggestion (Identity Trigger).
+
+**Schematic.** Feedback-trigger radar
+
+**Manager script.** Trigger Deconstruction
+
+"When reviewing the feedback from the sprint retrospective, I noticed immediate pushback. Let us separate the message from the messenger. If we ignore who wrote this PR comment, is the technical critique regarding concurrency handling accurate? Let's analyze the technical merits of the code itself."
+
+**Day-14 checks.**
+- Did the recipient merge the suggested technical changes?
+- Are reviews about technical logic rather than reviewer seniority?
+
+**Foundation.** Douglas Stone and Sheila Heen’s (2014) Thanks for the Feedback identifies three psychological triggers that block feedback processing: Truth Triggers (feeling the feedback is wrong, unhelpful, or unfair), Relationship Triggers (friction with the person giving feedback), and Identity Triggers (feedback challenging one's core self-worth).
+
+**Checks as written.**
+- Did the recipient integrate the suggested technical changes into their PR branch?
+- Are code reviews centered on technical logic rather than reviewer seniority?
+
+**Source.** Douglas Stone & Sheila Heen (2014). *Thanks for the Feedback: The Science and Art of Receiving Feedback Well*. Viking.
+
+### T33 — Lencioni’s Conflict Continuum
+
+**Friction diagnostic.** Meetings are calm and quiet, yet real disagreements are voiced afterward in backchannels; decisions made in team meetings are ignored or resisted passively.
+
+**Schematic.** Conflict continuum
+
+**Manager script.** Artificial Harmony Disruption
+
+"This architectural direction affects every engineer on this squad, yet no one has raised a counter-argument. That tells me we are stuck in artificial harmony. I will not accept universal agreement on a complex distributed systems migration. What is the primary weakness in this proposal that we are actively avoiding?"
+
+**Day-14 checks.**
+- Did RFCs collect substantive dissent before approval?
+- Have hallway complaints after meetings fallen to zero?
+
+**Foundation.** Patrick Lencioni’s (2002) model in The Five Dysfunctions of a Team frames conflict along a spectrum between Artificial Harmony (fear of conflict) and Mean-Spirited Personal Attacks. High-performing teams intentionally operate at the ideal sweet spot: passionate, unfiltered ideological debate focused entirely on concepts and ideas.
+
+**Checks as written.**
+- Did architectural RFCs accumulate substantive, dissenting technical critiques prior to approval?
+- Has post-meeting hallway complaints dropped to zero?
+
+**Source.** Patrick Lencioni (2002). *The Five Dysfunctions of a Team: A Leadership Fable*. Jossey-Bass.
