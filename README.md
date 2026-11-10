@@ -47,8 +47,12 @@ flowchart LR
 
 Every output is generated. Nothing is hand-edited downstream: fix a typo in a
 card record, rerun the generators, and the PDF, the viewer bundle, and the rules
-all move together. Regeneration is deterministic, so the same records always
-produce the same bytes.
+all move together.
+
+The ruleset, the skill, and the viewer bundle regenerate byte-identically, so
+the same records always produce the same bytes. The PDF does not: Typst stamps
+the build time into the file, so two builds of one commit differ by a few bytes
+in the document information dictionary while printing the same pages.
 
 The deck is deliberately clean-room. The wording is written for this project,
 the diagrams are drawn parametrically from each card's `graphicMetaphor` data,
