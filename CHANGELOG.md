@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **Header icon (`media/icons/`, `media/icon.png`)**: The header icon is now a transparent WebP set at 1024, 512, 256, 192, and 128 px under `media/icons/`, replacing `media/icon.png`, which is removed, so any existing reference to the old path now 404s. The sizes were produced once with sharp used as a throwaway tool; it is not a dependency, and no generator is committed.
+
 ## [0.1.0] - 2026-11-09
 
 ### Added
