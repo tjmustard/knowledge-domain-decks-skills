@@ -92,83 +92,14 @@ under `packages/` names a deck.
 
 ## 🧭 UX & Behavioral Design
 
-**UX & Behavioral Design** is a fifty-four-card deck: every category is complete,
-and eleven of the fifty-four are decision-making. It is the deck that proved the
-whole pipeline end to end, and it is useful as it stands.
+**UX & Behavioral Design** is a fifty-four-card deck of interface principles.
+Each card pairs one principle with the research that names it, a checklist, an
+anti-pattern and its remediation, and one primary citation. Where the other two
+decks shape a message or hold a voice, this one audits an interface, and it is
+the deck that proved the pipeline end to end.
 
-Every one of the **54 principles** in the project's research list now has a
-card. That list is longer than the 52-item taxonomy in the project's
-architecture notes: where the two differ, the longer list wins, and each
-difference is recorded in [`DECISIONS.md`](./DECISIONS.md).
-
-Each card cites one primary paper, with that paper's own authors, year, title,
-and venue:
-
-| ID | Card | Category | Primary source |
-|---|---|---|---|
-| HMM-01 | **Jakob's Law** | Heuristic & Mental Models | Nielsen (2000), *Designing Web Usability* |
-| HMM-02 | **Mental Model Theory** | Heuristic & Mental Models | Craik (1943), *The Nature of Explanation* |
-| HMM-03 | **Conceptual Integrity** | Heuristic & Mental Models | Brooks (1975), *The Mythical Man-Month* |
-| HMM-04 | **Aesthetic-Usability Effect** | Heuristic & Mental Models | Kurosu & Kashimura (1995), *Apparent usability vs. inherent usability* |
-| HMM-05 | **Principle of Least Astonishment (POLA)** | Heuristic & Mental Models | Cowlishaw (1984), *The design of the REXX language* |
-| HMM-06 | **Postel's Law (Robustness Principle)** | Heuristic & Mental Models | Postel (1980), *DoD standard Transmission Control Protocol* (RFC 761) |
-| HMM-07 | **Occam's Razor (Principle of Parsimony)** | Heuristic & Mental Models | Maeda (2006), *The Laws of Simplicity* |
-| HMM-08 | **Conway's Law** | Heuristic & Mental Models | Conway (1968), *How Do Committees Invent?* |
-| HMM-09 | **Gulf of Execution and Gulf of Evaluation** | Heuristic & Mental Models | Norman (1986), *Cognitive Engineering* |
-| HMM-10 | **Affordance Theory** | Heuristic & Mental Models | Gibson (1977), *The Theory of Affordances* |
-| HMM-11 | **Feedback Principle (Cybernetic Loop)** | Heuristic & Mental Models | Wiener (1948), *Cybernetics: Or Control and Communication in the Animal and the Machine* |
-| GES-01 | **Law of Proximity** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
-| GES-02 | **Law of Similarity** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
-| GES-03 | **Law of Common Region** | Gestalt & Visual Perception | Palmer (1992), *Common region: A new principle of perceptual grouping* |
-| GES-04 | **Law of Prägnanz (Law of Simplicity / Good Figure)** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
-| GES-05 | **Law of Closure** | Gestalt & Visual Perception | Koffka (1935), *Principles of Gestalt Psychology* |
-| GES-06 | **Law of Figure/Ground** | Gestalt & Visual Perception | Rubin (1915), *Synsoplevede Figurer* |
-| GES-07 | **Law of Continuity (Good Continuation)** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
-| GES-08 | **Law of Uniform Connectedness** | Gestalt & Visual Perception | Palmer & Rock (1994), *Rethinking perceptual organization: The role of uniform connectedness* |
-| GES-09 | **Law of Common Fate** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
-| GES-10 | **Law of Focal Point** | Gestalt & Visual Perception | Palmer (1999), *Vision Science: Photons to Phenomenology* |
-| GES-11 | **Law of Past Experience** | Gestalt & Visual Perception | Koffka (1935), *Principles of Gestalt Psychology* |
-| DEC-01 | **Hick's Law** | Decision-Making & Cognitive Load | Hick (1952), *On the Rate of Gain of Information* |
-| DEC-02 | **Miller's Law** | Decision-Making & Cognitive Load | Miller (1956), *The Magical Number Seven, Plus or Minus Two* |
-| DEC-03 | **Tesler's Law** | Decision-Making & Cognitive Load | Saffer (2007), *Designing for Interaction*, first edition |
-| DEC-04 | **Choice Overload** | Decision-Making & Cognitive Load | Iyengar & Lepper (2000), *When Choice Is Demotivating* |
-| DEC-05 | **Cognitive Load Theory** | Decision-Making & Cognitive Load | Sweller (1988), *Cognitive Load During Problem Solving* |
-| DEC-06 | **Working Memory Capacity Model** | Decision-Making & Cognitive Load | Cowan (2001), *The Magical Number 4 in Short-Term Memory* |
-| DEC-07 | **Cognitive Friction** | Decision-Making & Cognitive Load | Cooper (1999), *The Inmates Are Running the Asylum* |
-| DEC-08 | **Framing Effect** | Decision-Making & Cognitive Load | Tversky & Kahneman (1981), *The Framing of Decisions and the Psychology of Choice* |
-| DEC-09 | **Simon's Bounded Rationality and Satisficing** | Decision-Making & Cognitive Load | Simon (1956), *Rational Choice and the Structure of the Environment* |
-| DEC-10 | **Cognitive Absorption** | Decision-Making & Cognitive Load | Agarwal & Karahanna (2000), *Time Flies When You're Having Fun* |
-| DEC-11 | **Decision Fatigue** | Decision-Making & Cognitive Load | Baumeister et al. (1998), *Ego Depletion: Is the Active Self a Limited Resource?* |
-| TME-01 | **Fitts's Law** | Time, Motion & Ergonomics | Fitts (1954), *The Information Capacity of the Human Motor System* |
-| TME-02 | **Accot-Zhai Steering Law** | Time, Motion & Ergonomics | Accot & Zhai (1997), *Beyond Fitts' Law: Models for Trajectory-Based HCI Tasks* |
-| TME-03 | **Doherty Threshold** | Time, Motion & Ergonomics | Doherty & Thadhani (1982), *The Economic Value of Rapid Response Time* |
-| TME-04 | **Perceived Performance Heuristics** | Time, Motion & Ergonomics | Seow (2008), *Designing and Engineering Time* |
-| TME-05 | **Power Law of Practice** | Time, Motion & Ergonomics | Newell & Rosenbloom (1981), *Mechanisms of Skill Acquisition and the Law of Practice* |
-| TME-06 | **Keystroke-Level Model** | Time, Motion & Ergonomics | Card, Moran & Newell (1980), *The Keystroke-Level Model for User Performance Time with Interactive Systems* |
-| TME-07 | **Weber-Fechner JND Law** | Time, Motion & Ergonomics | Weber (1834), *De Pulsu, Resorptione, Auditu et Tactu* |
-| TME-08 | **Gilbreth Motion Economy** | Time, Motion & Ergonomics | Gilbreth (1911), *Motion Study* |
-| TME-09 | **Crossman's Velocity Law (Welford's Variant)** | Time, Motion & Ergonomics | Welford (1968), *Fundamentals of Skill* |
-| TME-10 | **Visual Saccadic Latency Law** | Time, Motion & Ergonomics | Dodge (1900), *Visual Perception During Eye Movement* |
-| MPA-01 | **Serial Position Effect** | Memory, Perception & Attention | Murdock (1962), *The Serial Position Effect of Free Recall* |
-| MPA-02 | **Von Restorff Effect (Isolation Effect)** | Memory, Perception & Attention | von Restorff (1933), *Über die Wirkung von Bereichsbildungen im Spurenfeld* |
-| MPA-03 | **Zeigarnik Effect** | Memory, Perception & Attention | Zeigarnik (1927), *Über das Behalten von erledigten und unerledigten Handlungen* |
-| MPA-04 | **Peak-End Rule** | Memory, Perception & Attention | Kahneman et al. (1993), *When More Pain Is Preferred to Less* |
-| MPA-05 | **Anchoring Bias** | Memory, Perception & Attention | Tversky & Kahneman (1974), *Judgment under Uncertainty: Heuristics and Biases* |
-| MPA-06 | **Selective Attention and Attentional Bottleneck** | Memory, Perception & Attention | Broadbent (1958), *Perception and Communication* |
-| MPA-07 | **Confirmation Bias** | Memory, Perception & Attention | Nickerson (1998), *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises* |
-| MPA-08 | **Sunk Cost Fallacy** | Memory, Perception & Attention | Arkes & Blumer (1985), *The Psychology of Sunk Cost* |
-| MPA-09 | **Loss Aversion** | Memory, Perception & Attention | Kahneman & Tversky (1979), *Prospect Theory: An Analysis of Decision under Risk* |
-| MPA-10 | **Goal-Gradient Effect** | Memory, Perception & Attention | Kivetz, Urminsky & Zheng (2006), *The Goal-Gradient Hypothesis Resurrected* |
-| MPA-11 | **Status Quo Bias** | Memory, Perception & Attention | Samuelson & Zeckhauser (1988), *Status Quo Bias in Decision Making* |
-
-That table follows the taxonomy's category order. For this deck, the PDF and the
-viewer print cards in ID order - `DEC`, `GES`, `HMM`, `MPA`, `TME` - so the two
-sequences are different and neither is a mistake. A deck can declare
-`"printOrder": "family"` in its `deck.json` when the reading order should follow
-its categories instead; Narrative Architecture does.
-
-The categories are part of the schema, so every later card lands in one of
-them and the filters, accents, and rules sections follow automatically:
+The fifty-four cards divide into five categories, eleven each except ten in
+Time, Motion & Ergonomics:
 
 | Category | Cards | What it audits |
 |---|---|---|
@@ -177,6 +108,23 @@ them and the filters, accents, and rules sections follow automatically:
 | Decision-Making & Cognitive Load | DEC-01 to DEC-11 | Option count, comparison effort, working memory, decision quality over time |
 | Time, Motion & Ergonomics | TME-01 to TME-10 | Target size, distance, motor effort, practice, operator time, perceptual ratio, motion economy, and saccade timing |
 | Memory, Perception & Attention | MPA-01 to MPA-11 | Position, distinctiveness, unfinished tasks, remembered peaks, anchor values, selective attention, confirmation, sunk costs, loss asymmetry, goal proximity, and defaults |
+
+The deck prints in ID order - `DEC`, `GES`, `HMM`, `MPA`, `TME` - because it
+sets no `printOrder`; a deck whose reading order should follow its categories
+declares `"printOrder": "family"`, as the other two do. The categories are part
+of the schema, so every later card lands in one of them and the filters, accents
+and rules sections follow automatically.
+
+Every one of the fifty-four principles in the project's research list has a
+card. Where that list is longer than the 52-item taxonomy in the architecture
+notes, the longer list wins, and each difference is recorded in
+[`DECISIONS.md`](./DECISIONS.md). Each card cites one primary paper with that
+paper's own authors, year, title and venue.
+
+Its ruleset and skill are [`rules/ux-rules.md`](./rules/ux-rules.md) and
+[`skills/ux-laws/`](./skills/ux-laws/). The deck's records are in
+`decks/ux-laws/data/laws/` and its schema in
+`decks/ux-laws/data/law-schema.json`.
 
 ---
 
@@ -189,7 +137,7 @@ follow, believe, and act on. Every card names one structure and the beats that
 make it work, where it fails, and its source; seven add a writing prompt that
 applies the structure to the piece in front of you.
 
-The forty-eight cards divide evenly into four families, twelve each:
+The forty-eight cards divide into four families, twelve each:
 
 | Family | Cards | What it shapes |
 |---|---|---|
@@ -224,7 +172,8 @@ what it dreads, how it speaks, what it must never say, and what it becomes when
 the dread wins. It is for writing in a consistent voice, and for noticing when a
 draft has drifted into a different one.
 
-The sixteen cards sit in five families:
+The sixteen cards divide into five families, three each in the first four and
+four in the last:
 
 | Family | Cards | What it casts |
 |---|---|---|
@@ -234,10 +183,10 @@ The sixteen cards sit in five families:
 | Independence & Fulfillment | ARCH-10 to ARCH-12 | What the reader wants for themselves: hope, understanding, freedom |
 | Narrative Functions | ARCH-13 to ARCH-16 | Turns inside a story rather than a standing voice |
 
-The source files its last four cards inside its fourth quadrant; the deck splits
-them out as Narrative Functions so a gate, a call, an ambiguity and a companion
-read as story moves rather than as personas. [`DECISIONS.md`](./DECISIONS.md) §43
-records that split.
+The source presents its last four cards as Campbellian narrative dynamics rather
+than as a fifth quadrant; the deck names that family Narrative Functions so a
+gate, a call, an ambiguity and a companion read as story moves rather than as
+personas. [`DECISIONS.md`](./DECISIONS.md) §43 records that naming.
 
 Each card's verso prints its voice words, its lexicon, what it never says, its
 shadow, and its anchors; the on-voice example is `"card": false`, so it lives in
