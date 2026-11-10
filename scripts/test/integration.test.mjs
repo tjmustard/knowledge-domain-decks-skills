@@ -44,6 +44,13 @@ const hasTypst = !typst.error && typst.status === 0;
 // failed and the run is green on less than it claims. Skips become failures.
 const inCI = Boolean(process.env.CI);
 
+// A developer run may legitimately skip a check it cannot make. A push may not:
+// pre-push sets this flag, so "the gate verified nothing" (exit 3) becomes a
+// failure instead of a skip. It is deliberately not CI - CI means the workflow
+// was supposed to provide the toolchain, while this means the push must have
+// proved something, and only this one assertion reads it.
+const strict = process.env.OPENRIG_PUSH_STRICT === "1";
+
 const absent = (t, why, detail) => {
   if (inCI) assert.fail(`${why} in CI, where the workflow is supposed to provide it: ${detail}`);
   t.skip(`${why} on this machine: ${detail}`);
@@ -94,12 +101,28 @@ test("the gate verifies HEAD in a worktree of its own", async (t) => {
   // The gate needs a clean tree: it regenerates inside the worktree and fails
   // if regeneration leaves changes. Running it after the pipeline above is
   // therefore also a check that every generator is deterministic.
-  const result = run("npm", ["run", "--silent", "accept", "--", "HEAD"]);
+  // The ref is HEAD in every normal run. OPENRIG_GATE_REF exists so the strict
+  // path can be exercised in both directions from this tree, without checking
+  // out a commit that has no test file - the old initial commit, for example,
+  // makes the gate verify nothing and exit 3. It is not wired into CI or the
+  // hook; the default is the point.
+  const ref = process.env.OPENRIG_GATE_REF || "HEAD";
+  const result = run("npm", ["run", "--silent", "accept", "--", ref]);
   if (result.status === 3) {
+    if (strict) assert.fail(`the gate verified nothing on a push: exit 3:\n${result.output}`);
     absent(t, "the gate verified nothing", `exit 3:\n${result.output}`);
     return;
   }
   assert.equal(result.status, 0, `the gate failed:\n${result.output}`);
+  // A run can now name a ref other than the one it executes in. The gate prints
+  // the commit it resolved, so pin that: otherwise a pass about A would be
+  // indistinguishable from a pass about B.
+  const resolved = run("git", ["rev-parse", "--verify", `${ref}^{commit}`]);
+  assert.equal(resolved.status, 0, `cannot resolve ${ref}:\n${resolved.output}`);
+  assert.ok(
+    result.output.includes(resolved.output.trim()),
+    `the gate did not report commit ${resolved.output.trim()} for ${ref}`
+  );
   // A pass with no NOT RUN is not expected - print: contents is manual by
   // design - so the assertion records how much was actually proven.
   assert.match(result.output, /\d+ passed, 0 failed, \d+ not run/);

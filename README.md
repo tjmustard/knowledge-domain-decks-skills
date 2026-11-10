@@ -522,10 +522,12 @@ What stays manual, on any machine:
 
 `.githooks/` holds two hooks. `pre-commit` runs `test:unit` — under a second, no
 browser and no Typst, cheap enough that nobody is tempted to skip it on a normal
-day. `pre-push` runs `npm test`, the whole suite including the acceptance gate,
+day. `pre-push` runs the whole suite including the acceptance gate,
 because a pre-commit hook cannot see a rebase or an amend: it runs before those
 exist, so a commit that was green when written can still reach a push red.
-pre-push runs on the commits actually leaving the machine.
+pre-push runs on the commits actually leaving the machine. It also fails when
+the gate verified nothing: a skip is right for a developer run and wrong for a
+push, while a missing toolchain on the machine stays a skip.
 
 Git does not clone hooks, so each clone opts in once:
 

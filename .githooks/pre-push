@@ -11,6 +11,12 @@
 # (no Typst, no Chrome) and says so; it never skips in CI. So this hook blocks
 # on everything checkable here, and CI remains the backstop for the rest.
 #
+# One skip is wrong for a push: the gate exiting 3 because it verified nothing.
+# A developer run may skip that; a push may not, or the one thing the gate
+# exists to decide goes out unchecked. OPENRIG_PUSH_STRICT says exactly that,
+# and is deliberately not CI - CI means the workflow was supposed to provide
+# the toolchain, which is a different question.
+#
 # Deliberate bypass: git push --no-verify
 set -e
 
@@ -19,4 +25,4 @@ if ! command -v npm >/dev/null 2>&1; then
   exit 1
 fi
 
-npm test
+OPENRIG_PUSH_STRICT=1 npm test
