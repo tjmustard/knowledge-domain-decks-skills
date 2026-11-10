@@ -15,6 +15,7 @@
 - **When it goes wrong:** Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.
 - **The fix:** At that row, name one driver, call the other a contributor, and replace any soft date with a real one.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** A matrix format widely used in project management; no single documented originator.
 
 ## WS-42 — Next Steps Commitment Canvas
 
@@ -28,6 +29,7 @@
 - **When it goes wrong:** Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.
 - **The fix:** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** A workshop charter format in wide use; no single documented originator.
 
 ## WS-43 — Lean Canvas Experiment Matrix
 
@@ -81,6 +83,7 @@
 - **When it goes wrong:** Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.
 - **The fix:** Put one accountable name in every row, and remove anyone marked both who does not do the work.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A responsibility charting convention used across project management; no single documented originator.
 
 ## WS-47 — Assumption Test Card
 
@@ -93,6 +96,7 @@
 - **When it goes wrong:** A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.
 - **The fix:** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A common lean experimentation practice; no single documented originator.
 
 ## WS-48 — Definition of Done Workshop
 
@@ -105,3 +109,4 @@
 - **When it goes wrong:** Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.
 - **The fix:** Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A shared team standard from Scrum practice; no single documented originator.

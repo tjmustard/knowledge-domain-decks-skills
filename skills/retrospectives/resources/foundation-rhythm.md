@@ -16,6 +16,7 @@
   - Close (5m): owners and dates confirmed; rate the session 1–5.
 - **The move:** Every Stop item names the constraint that replaces it: two required approvals, one owner, a date.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.
 
 ## R02 — Mad, Sad, Glad
 
@@ -29,6 +30,7 @@
   - Close (5m): appreciations from the Glad column, each naming a person.
 - **The move:** 'Mad about flaky staging' becomes isolate staging databases and script a nightly refresh; one owner, one date.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.
 
 ## R03 — 4Ls (Loved, Learned, Loathed, Longed For)
 
@@ -42,6 +44,7 @@
   - Close (5m): name what the Learned notes give back.
 - **The move:** Loathed manual tagging plus Longed For automated releases becomes one release action.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.
 
 ## R04 — KALM (Keep, Add, Less, More)
 
@@ -55,6 +58,7 @@
   - Close (5m): confirm the new agreements in one sentence each.
 - **The move:** Less time in standup becomes a hard ten-minute timer with status moved to the channel: owner and start date.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.
 
 ## R05 — Glad, Sad, Mad + Afraid
 
@@ -68,6 +72,7 @@
   - Close (5m): close on shared agency, naming what the team still controls.
 - **The move:** Afraid notes become information-seeking tickets: a question, an owner, and a deadline for leadership's answer.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.
 
 ## R06 — DAKI (Drop, Add, Keep, Improve)
 
@@ -81,6 +86,7 @@
   - Close (5m): record what was dropped, so it is not quietly reintroduced.
 - **The move:** The Dropped practice gets a deprecation date and a replacement; its freed capacity funds the chosen Add.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R07 — The Three Little Pigs
 
@@ -94,6 +100,7 @@
   - Close (5m): name the Brick the next incident would rely on.
 - **The move:** A Straw component becomes a P0 refactoring spike with a test-coverage gate before it carries production traffic.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R08 — Rose, Thorn, Bud
 
@@ -107,6 +114,7 @@
   - Close (5m): name one Thorn the next sprint will remove.
 - **The move:** The chosen Bud becomes a timeboxed discovery ticket; the Thorn it would remove is written on the ticket so the two stay linked.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R09 — Plus / Delta (+ / Δ)
 
@@ -120,3 +128,4 @@
   - Close (2m): read the chosen Delta back; name its owner.
 - **The move:** Exactly one Delta enters the next sprint as a backlog item with an owner and a review date; the Plus notes are read aloud, not ticketed.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** The source names no originator.

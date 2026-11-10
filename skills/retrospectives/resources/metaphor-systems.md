@@ -30,6 +30,7 @@
   - Close (5m): name the Engine gain the next sprint should protect.
 - **The move:** A Pit Stop card becomes infrastructure maintenance: a ticket, an owner, and a date before the next release.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R12 — Hot Air Balloon
 
@@ -43,6 +44,7 @@
   - Close (5m): state the altitude the team expects next sprint.
 - **The move:** A Sandbag becomes a formal deprecation: the task or tool is retired with a date and a replacement.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R13 — Mountain Trek
 
@@ -56,6 +58,7 @@
   - Close (10m): name the Gear the next leg depends on.
 - **The move:** A Crevasse becomes a risk-mitigation spike on the active backlog; crossing it without the named Gear is not allowed.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R14 — The Hero’s Journey
 
@@ -83,6 +86,7 @@
   - Close (10m): name the first asteroid the next sprint routes around.
 - **The move:** A Gravity item becomes a waiver request to leadership: the rule, its cost, and the experiment.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R16 — Island Castaway
 
@@ -96,6 +100,7 @@
   - Close (5m): confirm the SOS Flare and who fires it.
 - **The move:** An SOS Flare becomes an executive escalation ticket, sent within two hours of the session, with a named owner.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R17 — The Submarine
 
@@ -109,6 +114,7 @@
   - Close (10m): name what the Periscope shows the next sprint will demand.
 - **The move:** A Hull Breach enters the next sprint as P0 technical-debt remediation, with a fix and a test that would have caught it.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R18 — The Living Tree
 
@@ -122,3 +128,4 @@
   - Close (15m): name the Fruit the team would protect through the next cut.
 - **The move:** A Rotten Branch becomes a decommissioning ticket: the dead route, flag, or process is removed.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.

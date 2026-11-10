@@ -25,6 +25,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** Widely used in design practice; no single documented originator.
+
 ### WS-02 — How Might We (HMW)
 
 **Deliverable.** Standardized opportunity statements ready for divergence
@@ -41,6 +43,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Widely used in design thinking practice; no single documented originator.
 
 ### WS-03 — 5 Whys Root Cause Analysis
 
@@ -59,6 +63,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** Developed by Sakichi Toyoda and used at Toyota; no single canonical publication.
+
 ### WS-04 — Sailboat Retrospective
 
 **Deliverable.** Categorized operational anchors, wind, goals, and hidden rocks
@@ -75,6 +81,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** A common agile retrospective metaphor; no single documented originator.
 
 ### WS-05 — Pre-Mortem Analysis
 
@@ -113,6 +121,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A common workshop and agile team warm-up; no single documented originator.
+
 ### WS-07 — User Journey Mapping
 
 **Deliverable.** End-to-end temporal visualization of user touchpoints and pain points
@@ -129,6 +139,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** A standard service design and UX method; no single documented originator.
 
 ### WS-08 — Empathy Mapping
 
@@ -147,6 +159,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** Widely used in design practice; no single documented originator.
+
 ### WS-09 — Problem Tree Analysis
 
 **Deliverable.** Hierarchical root-cause, core challenge, and downstream effect tree
@@ -164,6 +178,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** Used in development and policy analysis; no single documented originator.
+
 ### WS-10 — Lightning Decision Jam (Framing)
 
 **Deliverable.** Rapid identification and re-framing of key operational blockers
@@ -180,6 +196,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Developed by AJ&Smart as a rapid workshop format; no single canonical publication.
 
 ## Divergent Ideation
 
@@ -222,6 +240,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** A reversal technique long used in creativity training; no origin given in the source.
+
 ### WS-13 — Round Robin Brainstorming
 
 **Deliverable.** Sequentially built, peer-iterated solution concepts
@@ -241,6 +261,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** A long-standing group technique for chained iteration; no origin given in the source.
+
 ### WS-14 — Mash-up / Cross-Pollination
 
 **Deliverable.** Unconventional combinations of disparate technologies or business models
@@ -259,6 +281,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what behavior it changes, then make that the concept.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Cross-pollination is a common creativity heuristic; no origin given in the source.
 
 ### WS-15 — Solution Sketching (4-Step)
 
@@ -298,6 +322,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A structured brainwriting format; no origin given in the source.
+
 ### WS-17 — SCAMPER Ideation
 
 **Deliverable.** Systematic transformation of existing concepts using seven vectors
@@ -314,6 +340,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Pick one prompt and force it: state exactly what changes.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** A seven-prompt creativity checklist used in ideation workshops; no origin given in the source.
 
 ### WS-18 — Worst Possible Idea
 
@@ -332,6 +360,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A warm-up used in ideation workshops; no origin given in the source.
+
 ### WS-19 — Analogous Inspiration
 
 **Deliverable.** Structural transfer of mechanisms from unrelated industrial domains
@@ -349,6 +379,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A standard design-research technique; no origin given in the source.
+
 ### WS-20 — Speed Boat Ideation
 
 **Deliverable.** Visual discovery of operational drag factors and mechanical engines
@@ -365,6 +397,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask for the two anchors that cost the most progress this month, and assign each one an owner.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** A visual retrospective format; no origin given in the source.
 
 ## Convergent Decision
 
@@ -386,6 +420,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Widely used in product prioritization; no single documented originator.
 
 ### WS-22 — MoSCoW Prioritization
 
@@ -427,6 +463,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** Widely used in facilitation practice; no single documented originator.
+
 ### WS-24 — $100 Allocation Test
 
 **Deliverable.** Capital-constrained prioritization surfacing true value trade-offs
@@ -445,6 +483,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Widely used in participatory budgeting; no single documented originator.
 
 ### WS-25 — 2x2 Trade-off Grids
 
@@ -465,6 +505,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** Widely used in strategy and design practice; no single documented originator.
+
 ### WS-26 — Fist to Five Consensus
 
 **Deliverable.** Rapid non-binary consensus calibration and identification of dissent
@@ -484,6 +526,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** Widely used in consent-based decision practice; no single documented originator.
+
 ### WS-27 — Now-How-Wow Matrix
 
 **Deliverable.** Idea classification across feasibility (Now), breakthrough (How), and original (Wow)
@@ -500,6 +544,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Widely used in innovation workshops; no single documented originator.
 
 ### WS-28 — Decider Super-Vote
 
@@ -537,6 +583,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** Widely used in product trade-off workshops; no single documented originator.
+
 ### WS-30 — Nu/Steer/Zweck Framework
 
 **Deliverable.** Strategic validation against organizational mandate and execution utility
@@ -553,6 +601,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Ask what would change if the purpose were different; if nothing would, the purpose is decoration.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Used in Dutch design-led strategy practice; no single documented originator.
 
 ## Liberating Structures
 
@@ -613,6 +663,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** TRIZ originates with Genrich Altshuller; this creative-destruction version is the Liberating Structures adaptation.
 
 ### WS-34 — Troika Consulting
 
@@ -768,6 +820,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
+**Source.** A matrix format widely used in project management; no single documented originator.
+
 ### WS-42 — Next Steps Commitment Canvas
 
 **Deliverable.** Explicit contractual agreement covering resources, cadence, and sign-offs
@@ -785,6 +839,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** A workshop charter format in wide use; no single documented originator.
 
 ### WS-43 — Lean Canvas Experiment Matrix
 
@@ -862,6 +918,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A responsibility charting convention used across project management; no single documented originator.
+
 ### WS-47 — Assumption Test Card
 
 **Deliverable.** Scientific decomposition of hypotheses into verification tests and success thresholds
@@ -879,6 +937,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
+**Source.** A common lean experimentation practice; no single documented originator.
+
 ### WS-48 — Definition of Done Workshop
 
 **Deliverable.** Technical consensus alignment on quality gates for release readiness
@@ -895,3 +955,5 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** A shared team standard from Scrum practice; no single documented originator.

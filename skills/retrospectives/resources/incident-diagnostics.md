@@ -58,6 +58,7 @@
   - Close (10m): name the runbook on-call should not need to bypass.
 - **The move:** The chosen divergence becomes a corrected procedure or an automated step; the workaround is deleted.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R23 — FMEA Diagnostic
 
@@ -71,6 +72,7 @@
   - Close (15m): name the highest-RPN mode and its owner.
 - **The move:** A mode with RPN above 120 generates a mandatory pre-launch ticket with an owner.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R24 — Fault Tree Analysis
 
@@ -84,6 +86,7 @@
   - Close (10m): name the leaf the tree could not rule out.
 - **The move:** A single-point OR gate becomes an AND architecture with an independent fallback, tested before the next release.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R25 — HFACS Retrospective
 
@@ -111,6 +114,7 @@
   - Close (10m): name the lane the team cannot change alone.
 - **The move:** An upstream dependency gets a service-level objective and a contract test; the workaround retires when both pass.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R27 — Incident Matrix (4-Box)
 
@@ -124,3 +128,4 @@
   - Close (5m): name the quadrant that keeps recurring.
 - **The move:** An Internal/Unexpected defect becomes a targeted test-coverage ticket that would have failed before the defect shipped.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.

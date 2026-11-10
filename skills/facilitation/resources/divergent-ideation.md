@@ -31,6 +31,7 @@
 - **When it goes wrong:** Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.
 - **The fix:** Sabotage is over: one green mechanism per red cluster.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** A reversal technique long used in creativity training; no origin given in the source.
 
 ## WS-13 — Round Robin Brainstorming
 
@@ -45,6 +46,7 @@
 - **When it goes wrong:** Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.
 - **The fix:** Say: treat the seed as given, then answer yes-and.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** A long-standing group technique for chained iteration; no origin given in the source.
 
 ## WS-14 — Mash-up / Cross-Pollination
 
@@ -59,6 +61,7 @@
 - **When it goes wrong:** Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.
 - **The fix:** Ask what behavior it changes, then make that the concept.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Cross-pollination is a common creativity heuristic; no origin given in the source.
 
 ## WS-15 — Solution Sketching (4-Step)
 
@@ -86,6 +89,7 @@
 - **When it goes wrong:** Half-working looks like columns of restatements: people copy the idea above and change one word.
 - **The fix:** Before each pass, require a different part of the question or a new mechanism, not a rewording.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A structured brainwriting format; no origin given in the source.
 
 ## WS-17 — SCAMPER Ideation
 
@@ -98,6 +102,7 @@
 - **When it goes wrong:** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.
 - **The fix:** Pick one prompt and force it: state exactly what changes.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A seven-prompt creativity checklist used in ideation workshops; no origin given in the source.
 
 ## WS-18 — Worst Possible Idea
 
@@ -110,6 +115,7 @@
 - **When it goes wrong:** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.
 - **The fix:** Name the need each joke insults, then write the flip.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A warm-up used in ideation workshops; no origin given in the source.
 
 ## WS-19 — Analogous Inspiration
 
@@ -122,6 +128,7 @@
 - **When it goes wrong:** Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.
 - **The fix:** Ask what it does structurally, then how we would copy it.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A standard design-research technique; no origin given in the source.
 
 ## WS-20 — Speed Boat Ideation
 
@@ -134,3 +141,4 @@
 - **When it goes wrong:** Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.
 - **The fix:** Ask for the two anchors that cost the most progress this month, and assign each one an owner.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A visual retrospective format; no origin given in the source.

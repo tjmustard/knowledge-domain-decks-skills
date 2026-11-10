@@ -17,7 +17,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
-import { loadCards, loadDeck } from "../../packages/core/deck.mjs";
+import { loadCards, loadDeck, sourceLine, sourceShort } from "../../packages/core/deck.mjs";
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const INVENTORY = join(ROOT, "decks", "retrospectives", "data", "source-inventory.json");
@@ -61,6 +61,46 @@ test("a source-silent origin says the same sentence on every card", async () => 
     );
   }
   assert.ok(silent.length > 0, "at least one card names no originator");
+});
+
+test("rules and skill carry every source line, including the note", async () => {
+  const deck = await loadDeck("retrospectives");
+  const cards = await loadCards(deck);
+  const rules = await readFile(join(ROOT, "rules", "retrospectives-rules.md"), "utf8");
+  const categorySlug = (category) =>
+    category.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const resources = {};
+  for (const category of new Set(cards.map((card) => card.category))) {
+    resources[category] = await readFile(
+      join(ROOT, "skills", "retrospectives", "resources", `${categorySlug(category)}.md`),
+      "utf8"
+    );
+  }
+  const section = (text, heading, marker) => {
+    const start = text.indexOf(heading);
+    assert.ok(start >= 0, `missing heading ${heading}`);
+    const next = text.indexOf(`\n${marker} `, start + heading.length);
+    return text.slice(start, next < 0 ? text.length : next);
+  };
+  for (const card of cards) {
+    const ruleSection = section(rules, `### ${card.id} — ${card.name}`, "###");
+    const skillSection = section(resources[card.category], `## ${card.id} — ${card.name}`, "##");
+    const { origin } = card;
+    if (origin.note && !origin.authors && !origin.title && !origin.publication) {
+      assert.ok(ruleSection.includes(origin.note), `${card.id} note is missing from the rules`);
+      assert.ok(
+        skillSection.includes(origin.note),
+        `${card.id} note is missing from the ${card.category} skill resource`
+      );
+    } else {
+      // A works card prints every citation, in declaration order.
+      assert.ok(ruleSection.includes(sourceLine(origin)), `${card.id} citation is missing from the rules`);
+      assert.ok(
+        skillSection.includes(sourceShort(origin)),
+        `${card.id} citation is missing from the ${card.category} skill resource`
+      );
+    }
+  }
 });
 
 test("every record matches the committed inventory", async () => {

@@ -24,6 +24,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
 
+**Source.** The source names no originator.
+
 ### R02 — Mad, Sad, Glad
 
 **Canvas and timebox.** 3 Columns: Mad, Sad, Glad · 60 min
@@ -40,6 +42,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** 'Mad about flaky staging' becomes isolate staging databases and script a nightly refresh; one owner, one date.
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+**Source.** The source names no originator.
 
 ### R03 — 4Ls (Loved, Learned, Loathed, Longed For)
 
@@ -58,6 +62,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
 
+**Source.** The source names no originator.
+
 ### R04 — KALM (Keep, Add, Less, More)
 
 **Canvas and timebox.** 4 Quadrants: Keep, Add, Less, More · 60 min
@@ -74,6 +80,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Less time in standup becomes a hard ten-minute timer with status moved to the channel: owner and start date.
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+**Source.** The source names no originator.
 
 ### R05 — Glad, Sad, Mad + Afraid
 
@@ -92,6 +100,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
 
+**Source.** The source names no originator.
+
 ### R06 — DAKI (Drop, Add, Keep, Improve)
 
 **Canvas and timebox.** 4 Quadrants: Drop, Add, Keep, Improve · 60 min
@@ -108,6 +118,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** The Dropped practice gets a deprecation date and a replacement; its freed capacity funds the chosen Add.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R07 — The Three Little Pigs
 
@@ -126,6 +138,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R08 — Rose, Thorn, Bud
 
 **Canvas and timebox.** 3 Columns: Rose, Thorn, Bud · 45–60 min
@@ -143,6 +157,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R09 — Plus / Delta (+ / Δ)
 
 **Canvas and timebox.** 2 Columns: Plus (+), Delta (Δ) · 30–45 min
@@ -159,6 +175,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Exactly one Delta enters the next sprint as a backlog item with an owner and a review date; the Plus notes are read aloud, not ticketed.
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+**Source.** The source names no originator.
 
 ## Metaphor & Systems
 
@@ -198,6 +216,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R12 — Hot Air Balloon
 
 **Canvas and timebox.** 4 Zones: Hot Air, Sandbags, Storm Clouds, Skies · 60 min
@@ -215,6 +235,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R13 — Mountain Trek
 
 **Canvas and timebox.** 4 Zones: Summit, Basecamp, Crevasses, Gear · 90 min
@@ -231,6 +253,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** A Crevasse becomes a risk-mitigation spike on the active backlog; crossing it without the named Gear is not allowed.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R14 — The Hero’s Journey
 
@@ -268,6 +292,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R16 — Island Castaway
 
 **Canvas and timebox.** 4 Zones: Shelter, Fresh Spring, Predators, SOS Flare · 60 min
@@ -284,6 +310,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** An SOS Flare becomes an executive escalation ticket, sent within two hours of the session, with a named owner.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R17 — The Submarine
 
@@ -302,6 +330,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R18 — The Living Tree
 
 **Canvas and timebox.** 5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit · 90 min
@@ -318,6 +348,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** A Rotten Branch becomes a decommissioning ticket: the dead route, flag, or process is removed.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ## Incident Diagnostics
 
@@ -395,6 +427,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R23 — FMEA Diagnostic
 
 **Canvas and timebox.** Matrix: Failure Mode, Severity, Occurrence, Detection, RPN · 90–120 min
@@ -412,6 +446,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R24 — Fault Tree Analysis
 
 **Canvas and timebox.** Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults · 90 min
@@ -428,6 +464,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** A single-point OR gate becomes an AND architecture with an independent fallback, tested before the next release.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R25 — HFACS Retrospective
 
@@ -465,6 +503,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R27 — Incident Matrix (4-Box)
 
 **Canvas and timebox.** 2x2 Matrix: Internal/External vs. Expected/Unexpected · 45 min
@@ -481,6 +521,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** An Internal/Unexpected defect becomes a targeted test-coverage ticket that would have failed before the defect shipped.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ## Forward-Looking
 
@@ -520,6 +562,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R30 — Hopes & Fears
 
 **Canvas and timebox.** 2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks) · 45–60 min
@@ -536,6 +580,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Every systemic Fear gets a paired mitigation experiment; every Hope becomes a measurable objective.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R31 — Letter from the Future
 
@@ -554,6 +600,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R32 — Backcasting from Utopia
 
 **Canvas and timebox.** Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint · 90 min
@@ -570,6 +618,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Immediate prerequisites become sprint backlog epics with a named owner and a date.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.
 
 ### R33 — Black Swan Stress-Test
 
@@ -607,6 +657,8 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
 
+**Source.** The source names no originator.
+
 ### R35 — Dynamic Risk Radar
 
 **Canvas and timebox.** 3 Concentric Rings: High Priority, Emerging Risks, Weak Signals · 45–60 min
@@ -623,3 +675,5 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Every inner-ring risk gets a mitigation spike scheduled in the next sprint, with an owner and a review date.
 
 **Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** The source names no originator.

@@ -16,6 +16,7 @@
 - **When it goes wrong:** Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.
 - **The fix:** Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in design practice; no single documented originator.
 
 ## WS-02 — How Might We (HMW)
 
@@ -28,6 +29,7 @@
 - **When it goes wrong:** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
 - **The fix:** Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in design thinking practice; no single documented originator.
 
 ## WS-03 — 5 Whys Root Cause Analysis
 
@@ -40,6 +42,7 @@
 - **When it goes wrong:** The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.
 - **The fix:** Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Developed by Sakichi Toyoda and used at Toyota; no single canonical publication.
 
 ## WS-04 — Sailboat Retrospective
 
@@ -52,6 +55,7 @@
 - **When it goes wrong:** Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.
 - **The fix:** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** A common agile retrospective metaphor; no single documented originator.
 
 ## WS-05 — Pre-Mortem Analysis
 
@@ -78,6 +82,7 @@
 - **When it goes wrong:** Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.
 - **The fix:** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A common workshop and agile team warm-up; no single documented originator.
 
 ## WS-07 — User Journey Mapping
 
@@ -90,6 +95,7 @@
 - **When it goes wrong:** The map lists internal process steps in company language, documenting the organization, not the user.
 - **The fix:** Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** A standard service design and UX method; no single documented originator.
 
 ## WS-08 — Empathy Mapping
 
@@ -102,6 +108,7 @@
 - **When it goes wrong:** The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.
 - **The fix:** Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Widely used in design practice; no single documented originator.
 
 ## WS-09 — Problem Tree Analysis
 
@@ -114,6 +121,7 @@
 - **When it goes wrong:** The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.
 - **The fix:** Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Used in development and policy analysis; no single documented originator.
 
 ## WS-10 — Lightning Decision Jam (Framing)
 
@@ -126,3 +134,4 @@
 - **When it goes wrong:** The room votes on blockers but never reframes them, so the session ends with the same complaints.
 - **The fix:** Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Developed by AJ&Smart as a rapid workshop format; no single canonical publication.

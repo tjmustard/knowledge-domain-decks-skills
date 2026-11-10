@@ -44,6 +44,7 @@
 - **When it goes wrong:** The audit protects feelings, so the room lists habits that describe someone else's organization.
 - **The fix:** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** TRIZ originates with Genrich Altshuller; this creative-destruction version is the Liberating Structures adaptation.
 
 ## WS-34 — Troika Consulting
 

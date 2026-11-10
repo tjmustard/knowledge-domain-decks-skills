@@ -16,7 +16,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { createRequire } from "node:module";
-import { loadCards, loadDeck, orderCards } from "../../packages/core/deck.mjs";
+import { loadCards, loadDeck, orderCards, sourceLine, sourceShort } from "../../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../../packages/core/svg.js");
@@ -93,6 +93,58 @@ test("no two cards draw the same picture", async () => {
  * nothing else. Facilitation is the first deck with both, so this pins the
  * steps into both artifacts. The print and the viewer always had them.
  */
+/*
+ * A source-silent card's note is its whole attribution. The print page and the
+ * viewer always printed it; the rules and skill resources used to drop it,
+ * leaving those artifacts with no source line at all. The test scopes each
+ * assertion to the card's own section, because the same sentence is shared by
+ * thirty-one cards and a file-wide includes() would pass over a missing one.
+ */
+test("a note-only origin reaches the rules and the skill resource", async () => {
+  const deck = await loadDeck("facilitation");
+  const cards = await loadCards(deck);
+  const rules = await readFile(join(ROOT, "rules", "facilitation-rules.md"), "utf8");
+  const stageSlug = (stage) =>
+    stage.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const resources = {};
+  for (const stage of deck.categories) {
+    resources[stage] = await readFile(
+      join(ROOT, "skills", "facilitation", "resources", `${stageSlug(stage)}.md`),
+      "utf8"
+    );
+  }
+  const section = (text, heading, marker) => {
+    const start = text.indexOf(heading);
+    assert.ok(start >= 0, `missing heading ${heading}`);
+    const next = text.indexOf(`\n${marker} `, start + heading.length);
+    return text.slice(start, next < 0 ? text.length : next);
+  };
+  const silent = cards.filter(
+    (card) =>
+      card.origin.note && !card.origin.authors && !card.origin.title && !card.origin.publication
+  );
+  assert.ok(silent.length > 0, "the deck has source-silent cards to test");
+  for (const card of silent) {
+    const ruleSection = section(rules, `### ${card.id} — ${card.name}`, "###");
+    const skillSection = section(resources[card.stage], `## ${card.id} — ${card.name}`, "##");
+    assert.ok(ruleSection.includes(card.origin.note), `${card.id} note is missing from the rules`);
+    assert.ok(
+      skillSection.includes(card.origin.note),
+      `${card.id} note is missing from the ${card.stage} skill resource`
+    );
+  }
+  // A cited card still prints its citation in both artifacts.
+  for (const card of cards.filter((item) => item.origin.authors)) {
+    const ruleSection = section(rules, `### ${card.id} — ${card.name}`, "###");
+    const skillSection = section(resources[card.stage], `## ${card.id} — ${card.name}`, "##");
+    assert.ok(ruleSection.includes(sourceLine(card.origin)), `${card.id} citation is missing from the rules`);
+    assert.ok(
+      skillSection.includes(sourceShort(card.origin)),
+      `${card.id} citation is missing from the ${card.stage} skill resource`
+    );
+  }
+});
+
 test("the generated rules and skill carry every card's steps", async () => {
   const deck = await loadDeck("facilitation");
   const cards = await loadCards(deck);

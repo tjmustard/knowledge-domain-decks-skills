@@ -161,8 +161,10 @@ test("an origin with works cites each work once, in declaration order", () => {
 test("an origin with no work or author renders its note, not an empty citation", () => {
   const noteOnly = { note: "The source names no originator." };
   assert.equal(citationText(noteOnly), noteOnly.note);
-  // The rules surfaces omit the line rather than print an empty source.
-  assert.equal(sourceLine(noteOnly), "");
+  // The rules and skill surfaces carry the note too: for a source-silent card
+  // it is the whole attribution, not a line to omit.
+  assert.equal(sourceLine(noteOnly), noteOnly.note);
+  assert.equal(sourceShort(noteOnly), noteOnly.note);
 });
 
 test("withCitation prepares every work, not only the first", () => {

@@ -30,6 +30,7 @@
   - Close (10m): name the first river to cross and its owner.
 - **The move:** Each Odyssey milestone becomes an epic-level deliverable with its infrastructure prerequisite named in the same ticket.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R30 — Hopes & Fears
 
@@ -43,6 +44,7 @@
   - Close (5m): convert the Hopes into sprint objectives with owners.
 - **The move:** Every systemic Fear gets a paired mitigation experiment; every Hope becomes a measurable objective.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R31 — Letter from the Future
 
@@ -56,6 +58,7 @@
   - Close (5m): name the non-negotiable the team adopts first.
 - **The move:** An inflection point becomes an explicit governance check or technical non-negotiable, with an owner.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R32 — Backcasting from Utopia
 
@@ -69,6 +72,7 @@
   - Close (10m): assign the first prerequisite and its deadline.
 - **The move:** Immediate prerequisites become sprint backlog epics with a named owner and a date.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R33 — Black Swan Stress-Test
 
@@ -96,6 +100,7 @@
   - Close (5m): publish the front page where the team can see it.
 - **The move:** The winning headline’s metric becomes the release’s formal Key Result, with a baseline.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.
 
 ## R35 — Dynamic Risk Radar
 
@@ -109,3 +114,4 @@
   - Close (5m): name the weak signal the team will watch next.
 - **The move:** Every inner-ring risk gets a mitigation spike scheduled in the next sprint, with an owner and a review date.
 - **Provenance:** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+- **Source:** The source names no originator.

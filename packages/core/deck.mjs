@@ -308,9 +308,14 @@ export function formatYear(year) {
 export function sourceShort(origin = {}) {
   // An origin with an ordered list of works cites each of them, in order.
   // Each short form already ends with the work's own stop, so one space
-  // separates them.
+  // separates them. A source-silent origin has no work to cite: the note is
+  // the whole attribution, and dropping it here would leave the rules and the
+  // skill resources with no source line at all.
   if (Array.isArray(origin.works) && origin.works.length > 0) {
     return origin.works.map((work) => sourceShort(work)).join(" ");
+  }
+  if (!origin.authors && !origin.title && !origin.publication && origin.note) {
+    return origin.note;
   }
   const names = authorsLabel(origin);
   const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;
@@ -324,9 +329,14 @@ export function sourceShort(origin = {}) {
 
 export function sourceLine(origin = {}) {
   // One citation sentence per work, in declaration order. Each already ends
-  // with its own stop, so the join is a single space.
+  // with its own stop, so the join is a single space. A source-silent origin
+  // prints its note: the note is the attribution, and an empty line would
+  // omit it from the two artifacts an agent reads.
   if (Array.isArray(origin.works) && origin.works.length > 0) {
     return origin.works.map((work) => sourceLine(work)).join(" ");
+  }
+  if (!origin.authors && !origin.title && !origin.publication && origin.note) {
+    return origin.note;
   }
   const names = authorsLabel(origin);
   const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;

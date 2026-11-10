@@ -17,6 +17,7 @@
 - **When it goes wrong:** Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.
 - **The fix:** Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in product prioritization; no single documented originator.
 
 ## WS-22 — MoSCoW Prioritization
 
@@ -46,6 +47,7 @@
 - **When it goes wrong:** Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.
 - **The fix:** Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in facilitation practice; no single documented originator.
 
 ## WS-24 — $100 Allocation Test
 
@@ -60,6 +62,7 @@
 - **When it goes wrong:** Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.
 - **The fix:** Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in participatory budgeting; no single documented originator.
 
 ## WS-25 — 2x2 Trade-off Grids
 
@@ -74,6 +77,7 @@
 - **When it goes wrong:** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.
 - **The fix:** Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in strategy and design practice; no single documented originator.
 
 ## WS-26 — Fist to Five Consensus
 
@@ -88,6 +92,7 @@
 - **When it goes wrong:** The room chases unanimity, spending the session lifting threes to fives while a real blocker goes unheard.
 - **The fix:** Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
+- **Source:** Widely used in consent-based decision practice; no single documented originator.
 
 ## WS-27 — Now-How-Wow Matrix
 
@@ -100,6 +105,7 @@
 - **When it goes wrong:** Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.
 - **The fix:** Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Widely used in innovation workshops; no single documented originator.
 
 ## WS-28 — Decider Super-Vote
 
@@ -125,6 +131,7 @@
 - **When it goes wrong:** Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.
 - **The fix:** Ask which end each candidate must give up. If none can name a sacrifice, it was not compared.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Widely used in product trade-off workshops; no single documented originator.
 
 ## WS-30 — Nu/Steer/Zweck Framework
 
@@ -137,3 +144,4 @@
 - **When it goes wrong:** Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.
 - **The fix:** Ask what would change if the purpose were different; if nothing would, the purpose is decoration.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
+- **Source:** Used in Dutch design-led strategy practice; no single documented originator.

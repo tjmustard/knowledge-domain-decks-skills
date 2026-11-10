@@ -1888,3 +1888,32 @@ the guard is known to be able to fail. The attribute list is the one hole: a
 shape that writes geometry into a new attribute name is outside the rule until
 that name is added to `wrap()` and to the test, and putting it in the test is
 where that decision becomes visible rather than silent.
+
+## 55. A source-silent note prints in the rules and skill, not only on the card
+
+Decision 48 made the note-only origin the whole source line on the printed card
+and in the web bundle. The rules generator never implemented that rule:
+`sourceLine()` and `sourceShort()` built a citation from authors, year, title and
+publication and returned `""` when none were present, so the two artifacts an
+agent reads omitted the attribution exactly where it was the whole attribution.
+At `7d8da87`, `grep -c 'names no originator' rules/retrospectives-rules.md` was
+0, the skill resources did not carry it either, and R22's rules section ended at
+"Provenance" with no source line. Facilitation had the same shape on 31 of its 48
+cards, which is the deck-four §53 failure again: the artifact is silent where the
+card speaks, and nothing renders a heading that would make the silence visible.
+
+The fix is a fallback in both helpers: an origin with no authors, title or
+publication and a `note` returns the note. A cited origin takes the same path it
+always did. Regenerating every deck changed only `rules/facilitation-rules.md`,
+its five skill resource files, and the retrospective rules and resource files;
+the UX, narrative and archetype artifacts were byte-identical. All five PDFs
+are byte-identical to a fresh build of the parent commit `e70d967`
+(`40164666`, `435f2a9f`, `a6f177de`, `035429f5`, `a0c5b9d4`), and no committed
+web bundle changed.
+
+The tests are scoped to the card's own section, not the file, because a
+note-only sentence is shared by many cards and a file-wide `includes()` would
+pass with the line missing from one of them. `scripts/test/facilitation.test.mjs`
+and `scripts/test/retrospectives.test.mjs` now assert that every note-only card's
+note appears in its rules section and its category's skill resource, and that a
+cited card - including the two-work R20 - still prints its citations in both.
