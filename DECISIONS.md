@@ -1917,3 +1917,46 @@ pass with the line missing from one of them. `scripts/test/facilitation.test.mjs
 and `scripts/test/retrospectives.test.mjs` now assert that every note-only card's
 note appears in its rules section and its category's skill resource, and that a
 cited card - including the two-work R20 - still prints its citations in both.
+
+## 56. The retrospective deck prints the section's scenario, not the table's phrase
+
+The forty-five rituals come from five sections with a summary table. The table
+names a situation in a few words ("Project kick-offs, high-risk migrations,
+architectural overhauls."); the section says it in a sentence ("Project
+kick-offs, major architectural migrations, or high-stakes feature releases.").
+The card's "When to run it" needs the sentence, so the committed extraction
+carries both: `scenarioTag` is the table phrase and `scenarioTrigger` is the
+section sentence, and every record's `trigger` is `scenarioTrigger`. The test compares
+the record to that file, never to the read-only research folder, and asserts the
+inventory is complete because a category is committed whole or not at all.
+
+Eleven cards follow a written timed sequence in the source - R01 to R05, R09,
+R10, R19, R28, R36 and R39 - and say so in the provenance enum. The other
+thirty-four carry five-phase sequences written for this deck; every card states
+which it is. For the timed cards, every number in a phase line occurs in the
+source section. All forty-five five-phase sequences sum inside their own
+timebox; the test parses both en dash and hyphen ranges and fails on an
+unparsable clock.
+
+An origin names the work where one is documented. Where a method has two
+parents the record lists both in an ordered `works` array: R20 cites Ishikawa's
+*Guide to Quality Control* and Ohno's *Toyota Production System*, and R42 cites
+Altshuller's *Creativity as an Exact Science* and the Liberating Structures
+adaptation. An origin with no documented originator says "The source names no
+originator." on every card that needs it, and the test enforces the one
+sentence. The overlap between R42 and the facilitation deck's WS-33 is resolved
+in the deck-five skill's routing text: R42 is the retro that names what the team
+will stop doing; WS-33 is the workshop that generates bad ideas about a process.
+The facilitation record and its artifacts are not edited, so the shipped PDF and
+web bundle stay byte-identical.
+
+The `retro-canvas` figure shape draws the nine canvas topologies the deck uses,
+one `kind` at a time. Seven shapes print at least one element per declared
+`columns`/`rows`; `quadrants` is a fixed 2x2 board and uses those two values for
+note density inside each quadrant. An unknown kind draws a distinct fallback
+that also reads both counts, so every parametric value moves the drawing and the
+gate's liveness probes stay meaningful. Every face was measured with
+`npm run check:fit`; the longest citations (R20's two works, R41/R43's
+Liberating Structures line) and several two-line steps were trimmed to bring
+each verso inside the safe edge. The four earlier decks' PDFs, web bundles,
+rules and skills are byte-identical.

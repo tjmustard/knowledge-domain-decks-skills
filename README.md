@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-4%20%C2%B7%20166%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-5%20%C2%B7%20211%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -21,6 +21,7 @@
 - [📖 Narrative Architecture](#-narrative-architecture)
 - [🎭 Archetypal Architecture](#-archetypal-architecture)
 - [🗣️ Facilitation Architecture](#️-facilitation-architecture)
+- [🔁 Retrospective Architecture](#-retrospective-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -37,11 +38,14 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Two decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Five decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
-follow. Each card is distilled into the smallest usable form: a claim, a trigger,
-a procedure, an anti-pattern, a generated diagram, and one exact source.
+follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
+**Facilitation Architecture** covers forty-eight exercises for running a session.
+**Retrospective Architecture** covers forty-five rituals for a team looking at
+its own work. Each card is distilled into the smallest usable form: a claim, a
+trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
 all of them come from the same validated records:
@@ -85,6 +89,7 @@ deck's copy, names, or trade dress is used.
 | **Narrative Architecture** | 48 | 4 families | `packages/prepress/dist/narrative.pdf` | `packages/web/decks/narrative/` | `rules/narrative-rules.md` | `skills/narrative/` |
 | **Archetypal Architecture** | 16 | 5 families | `packages/prepress/dist/archetypes.pdf` | `packages/web/decks/archetypes/` | `rules/archetypes-rules.md` | `skills/archetypes/` |
 | **Facilitation Architecture** | 48 | 5 stages | `packages/prepress/dist/facilitation.pdf` | `packages/web/decks/facilitation/` | `rules/facilitation-rules.md` | `skills/facilitation/` |
+| **Retrospective Architecture** | 45 | 5 categories | `packages/prepress/dist/retrospectives.pdf` | `packages/web/decks/retrospectives/` | `rules/retrospectives-rules.md` | `skills/retrospectives/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -209,8 +214,8 @@ Its ruleset and skill are
 exercises. Each card answers the four questions a facilitator has in the room -
 how many people, how long, how hard, and what the group leaves with - then the
 steps to run it, the failure that usually arrives, and the sentence that
-rescues it. Where the other three decks describe a structure, a message or a
-voice, this one hands you a session.
+rescues it. Where the other four decks describe a structure, a message, a voice
+or a room, this one hands you a session.
 
 The forty-eight cards divide into five lifecycle stages, ten each except eight
 in Action Planning:
@@ -235,6 +240,50 @@ Its ruleset and skill are
 [`skills/facilitation/`](./skills/facilitation/). The deck's records are in
 `decks/facilitation/data/laws/` and its schema in
 `decks/facilitation/data/law-schema.json`.
+
+---
+
+## 🔁 Retrospective Architecture
+
+**Retrospective Architecture** is a forty-five-card deck of retrospective
+rituals. Each card names the situation that calls for it, the canvas to draw
+and the clock to keep, the five-phase facilitation sequence, and the move that
+turns the strongest finding into a bounded experiment. Where the facilitation
+deck runs a session about a problem, this one runs a session about the team's
+own work.
+
+The forty-five cards divide into five categories:
+
+| Category | Cards | What it is for |
+|---|---|---|
+| Foundation & Rhythm | R01 to R09 | The five-phase arc for a routine retro |
+| Metaphor & Systems | R10 to R18 | A shared picture for systemic friction |
+| Incident Diagnostics | R19 to R27 | Chronology and layered cause after a failure |
+| Forward-Looking | R28 to R35 | Prospective hindsight before the work starts |
+| Psychological Safety | R36 to R45 | Relational repair, disengagement and boundaries |
+
+The deck declares `"printOrder": "family"`, so its PDF and viewer read category
+by category. Eleven cards follow a written, timed sequence in the source; the
+other thirty-four carry five-phase sequences written for this deck from the
+method's public definition, and every card says in words which it is. The
+number, name, category, scenario, canvas and timebox of every card come from an
+extraction committed at
+[`decks/retrospectives/data/source-inventory.json`](./decks/retrospectives/data/source-inventory.json);
+the test compares each record to that file field by field and asserts all
+forty-five are present.
+
+Attribution names the public work where one is documented and says "The source
+names no originator." where none is. Two cards carry more than one parent: R20
+cites both Ishikawa's fishbone and Ohno's 5 Whys, and R42 cites both
+Altshuller's TRIZ and the Liberating Structures adaptation. The overlap between
+R42 and the facilitation deck's WS-33 is deliberate and narrow, and the skill
+says which to reach for.
+
+Its ruleset and skill are
+[`rules/retrospectives-rules.md`](./rules/retrospectives-rules.md) and
+[`skills/retrospectives/`](./skills/retrospectives/). The deck's records are in
+`decks/retrospectives/data/laws/` and its schema in
+`decks/retrospectives/data/law-schema.json`.
 
 ---
 
@@ -268,16 +317,17 @@ npm run build:pdf              # every deck
 npm run build:pdf -- --deck narrative
 ```
 
-The output is one PDF per deck: `packages/prepress/dist/ux-laws.pdf` and
-`packages/prepress/dist/narrative.pdf`. This step requires
+The output is one PDF per deck under `packages/prepress/dist/`. This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDFs.** With Typst 0.15.1, `npm run
-build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes, the narrative
-deck as 96 pages and 758,238 bytes, and the archetype deck as 32 pages and
-293,925 bytes; two consecutive builds of one commit are byte-identical for all
-three. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes (sha256
+`40164666…`), the narrative deck as 96 pages and 758,240 bytes (`435f2a9f…`),
+the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
+facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
+retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`); two consecutive
+builds of one commit are byte-identical for all five. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
