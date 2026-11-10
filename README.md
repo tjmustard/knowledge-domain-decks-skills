@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-24%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/deck-30%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,7 +29,7 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: twenty-four principles, each distilled
+The first deck covers UX and behavioral design: thirty principles, each distilled
 into the smallest usable form — an axiom, a trigger, a checklist, an
 anti-pattern, a generated diagram, and one exact academic source.
 
@@ -52,8 +52,8 @@ all move together.
 The ruleset, the skill, the viewer bundle, and the PDF all regenerate
 byte-identically, so the same records produce the same bytes on the same Typst
 version and font environment; [`DECISIONS.md`](./DECISIONS.md) §29 records what
-that leaves open. The print
-build pins `SOURCE_DATE_EPOCH`, the reproducible-builds convention, to
+that leaves open. The print build pins `SOURCE_DATE_EPOCH`, the
+reproducible-builds convention, to
 2026-11-09T00:00:00Z: Typst reads it for `/ModDate` and derives the trailer `/ID`
 from it, so two builds of one commit are identical rather than differing by the
 stamp. An inherited `SOURCE_DATE_EPOCH` overrides the pin, so a distributor can
@@ -69,8 +69,8 @@ and no other deck's copy, names, or trade dress is used.
 
 ## 🃏 The First Deck
 
-**UX & Behavioral Design** is a twenty-four-card deck in progress: every category
-has at least one card, and eleven of the twenty-four are decision-making. It proves the
+**UX & Behavioral Design** is a thirty-card deck in progress: every category
+has at least one card, and eleven of the thirty are decision-making. It proves the
 whole pipeline end to end and is genuinely usable while the rest is written.
 
 The deck is being built one card per principle, across all **54 principles** in
@@ -107,6 +107,12 @@ and venue:
 | TME-09 | **Crossman's Velocity Law (Welford's Variant)** | Time, Motion & Ergonomics | Welford (1968), *Fundamentals of Skill* |
 | TME-10 | **Visual Saccadic Latency Law** | Time, Motion & Ergonomics | Dodge (1900), *Visual Perception During Eye Movement* |
 | MPA-01 | **Serial Position Effect** | Memory, Perception & Attention | Murdock (1962), *The Serial Position Effect of Free Recall* |
+| MPA-02 | **Von Restorff Effect (Isolation Effect)** | Memory, Perception & Attention | von Restorff (1933), *Über die Wirkung von Bereichsbildungen im Spurenfeld* |
+| MPA-03 | **Zeigarnik Effect** | Memory, Perception & Attention | Zeigarnik (1927), *Über das Behalten von erledigten und unerledigten Handlungen* |
+| MPA-04 | **Peak-End Rule** | Memory, Perception & Attention | Kahneman et al. (1993), *When More Pain Is Preferred to Less* |
+| MPA-05 | **Anchoring Bias** | Memory, Perception & Attention | Tversky & Kahneman (1974), *Judgment under Uncertainty: Heuristics and Biases* |
+| MPA-06 | **Selective Attention and Attentional Bottleneck** | Memory, Perception & Attention | Broadbent (1958), *Perception and Communication* |
+| MPA-07 | **Confirmation Bias** | Memory, Perception & Attention | Nickerson (1998), *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises* |
 
 The categories are part of the schema, so every later card lands in one of
 them and the filters, accents, and rules sections follow automatically:
@@ -117,7 +123,7 @@ them and the filters, accents, and rules sections follow automatically:
 | Gestalt & Visual Perception | GES-01 | Grouping, spacing, and perceived structure |
 | Decision-Making & Cognitive Load | DEC-01 to DEC-11 | Option count, comparison effort, working memory, decision quality over time |
 | Time, Motion & Ergonomics | TME-01 to TME-10 | Target size, distance, motor effort, practice, operator time, perceptual ratio, motion economy, and saccade timing |
-| Memory, Perception & Attention | MPA-01 | Position, sequence, and what survives recall |
+| Memory, Perception & Attention | MPA-01 to MPA-07 | Position, distinctiveness, unfinished tasks, remembered peaks, anchor values, selective attention, and confirmation |
 
 ---
 
@@ -153,12 +159,12 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 48-page file of 579,849 bytes (566 KiB), and two consecutive
+build:pdf` emits a 60-page file of 688,974 bytes (673 KiB), and two consecutive
 builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every text
 font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
-twenty-four versos and absent from the rectos. The worst text overrun past the
+thirty versos and absent from the rectos. The worst text overrun past the
 safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
 from the paper edge — is 0.97 pt on page 25, caused by glyph side-bearings rather
 than by text running long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured

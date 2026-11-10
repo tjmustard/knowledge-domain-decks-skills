@@ -683,3 +683,76 @@ What this does not prove: identical bytes across Typst versions, or across
 machines while the diagram labels resolve a monospace stack against the host's
 fonts. The claim is per version and per font environment until that font is
 pinned, which is queued as its own change.
+
+One case is disclosed rather than bounded: a safe integer far out of range
+(9007199254740991) passes this check and Typst rejects it with "creation
+timestamp is out of range", exit 1. That failure is accurate and non-zero, and
+a bound here would be a second definition of what Typst accepts, which would
+drift on the next version bump.
+
+
+## 30. Six cards for memory and attention, and what each source can carry
+
+The research list's memory section runs 44-54. This slice writes six of its
+eleven cards: laws 44, 46, 47, 48, 49 and 50. Law 45 is the Serial Position
+Effect, already published as MPA-01. Von Restorff, Peak-End, Anchoring and
+Broadbent were confirmed against Crossref (title, authors, volume, pages, DOI)
+before the records were written; two need more than a record:
+
+- **Zeigarnik has no DOI of its own, and the card prints none.** Crossref holds
+  no record of the 1927 original. The only item under her name for this work is
+  the 1938 Ellis translation (10.1037/11496-025), which is not the original and is
+  not cited; the year, journal, title and volume were read from that translation's
+  title page, not from the paper. A Crossref record at Psychologische Forschung 9,
+  pp. 1-85 (10.1007/BF02409755) looks like the original by volume and pages, but
+  its title is the series' - "Untersuchungen zur Handlungs- und
+  Affektpsychologie" - and its author is Kurt Lewin. It is a container-level entry
+  for Lewin's series as published in that volume: it names the editor of the
+  series, not the contributor. Attaching it to her paper would mean deciding
+  whose article occupies those pages, which is the guessing this deck avoids. It
+  also explains why the pages appear to match: 1-85 are the series' opening
+  pages, which her paper occupies.
+- **Confirmation Bias corrects the Repository.** The Repository pairs a broad
+  axiom - operators prefer confirming information and dismiss disconfirming
+  signals - with Wason's 2-4-6 task, which demonstrates one failure of hypothesis
+  testing but does not state the broad claim. This card keeps the broad axiom and
+  cites Nickerson (1998), the review that states it; Wason remains named here as
+  the origin of the paradigm and the reason he is not the printed source. The
+  operator accepted a review in `academicOrigin` as the cost of printing the
+  broad claim rather than the narrow demonstration.
+
+**An ID is a stable key, not a position.** MPA-02 is law 44 while MPA-01 is law
+45, and DEC-11 is law 31 while DEC-09 is law 32, because Decision Fatigue was
+restored after being dropped. One rule, two instances: an id is never renumbered
+to follow the source order.
+
+Four shapes are new because none of the fifteen existing ones draws the claim:
+`odd-one-out` sets one mark apart in a field of uniform neighbours
+(`proximity-grid` varies spacing, not the item); `peak-end-curve` marks the peak
+and the ending and draws no average (`decay-curve` is a U-shaped serial-position
+curve and would be read as the same claim); `anchor-line` puts an initial mark and
+later estimates on one value axis (`target-vector` draws distance and width);
+`filter-gate` passes one of several channels through a barrier (`network` draws
+nodes and edges). Two are reused: `paired-panels` compares recall across two
+conditions for Zeigarnik, and `split-bar` partitions one budget of attention for
+Confirmation Bias.
+
+Every label on the new arrangements was measured at card size against the
+generated SVG, in the Menlo face the print build embeds, and every bounding box
+lies inside the 400 x 400 box. The tightest clearances are EVEN SPLIT at 1.92 pt
+from the reference line, END at 2.49 pt from its dot, and DISTINCT at 3.78 pt from
+the odd mark. The longest is 41 characters at 221.9 units, inside the
+45-character, 248-unit bound measured on `decline-curve`. The pending font pin
+will re-derive all of these, so none is a permanent bound.
+
+## 31. Prefer the instrument that fails loudly
+
+A check must fail on the condition it cannot see, not return a plausible answer.
+Four instruments this session failed silently: a grep pattern that could not
+match the shape it searched for; a request to "check" a work that was not
+retrievable, where the check was recall; a 16-byte PDF delta read as a change
+against 100 bytes of timestamp noise; and a raw.githubusercontent branch URL
+serving a cached file while the commit URL already carried the new one. None of
+them threw. When a check can be wrong without saying so, make it assert something
+it can only satisfy by looking, and report what it could not establish instead of
+reporting nothing found.
