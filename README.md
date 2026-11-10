@@ -233,7 +233,8 @@ and duplicate IDs fail the run.
 │   │   ├── app.js
 │   │   └── deck-data.js         # Generated card bundle
 │   ├── rules/                   # Ruleset generator
-│   └── judges/                  # Cross-model audit panel (needs a model endpoint)
+│   ├── judges/                  # Cross-model audit panel (needs a model endpoint)
+│   └── triage/                  # Adjudication: turns claims into checked verdicts
 ├── rules/ux-rules.md            # Generated agent ruleset
 ├── skills/ux-laws/SKILL.md      # Generated agent skill
 ├── scripts/
@@ -292,12 +293,21 @@ npm run accept -- <ref> # any commit-ish
 npm run judge -- --panel packages/judges/panels/deck-skill.json \
                   --artifact skills/ux-laws/SKILL.md
 npm run test:judges     # offline tests for the panel runner
+
+# 8. Record what you found when you checked the findings
+npm run triage -- --report .judges/<run>/report.json --template > audit/adjudication.json
+npm run triage -- --report .judges/<run>/report.json \
+                  --adjudications audit/adjudication.json
+npm run test:triage     # offline tests for the adjudication join
 ```
 
-The judge panel is a development tool, not a build step. It writes to
-`.judges/`, which is not committed, and it never decides anything on its own:
-a finding is a claim until someone checks it at the source. See
-[`packages/judges/README.md`](./packages/judges/README.md).
+The judge panel and triage are development tools, not build steps. The panel
+writes to `.judges/`, which is not committed, and it never decides anything on
+its own: a finding is a claim until someone checks it at the source. An
+adjudication is the checked record, keyed to the artifact's hash; `triage`
+prints what has no verdict yet and refuses to apply an adjudication written
+against different bytes. See [`packages/judges/README.md`](./packages/judges/README.md)
+and [`packages/triage/README.md`](./packages/triage/README.md).
 
 ### What the checks prove
 

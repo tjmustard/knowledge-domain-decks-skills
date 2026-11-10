@@ -16,7 +16,9 @@
     "build": "npm run build:web && npm run build:rules && npm run build:pdf",
     "check": "npm run validate && npm run build:rules && npm run build:web",
     "judge": "node packages/judges/run.mjs",
-    "test:judges": "node --test packages/judges/test/*.test.mjs"
+    "test:judges": "node --test packages/judges/test/*.test.mjs",
+    "triage": "node packages/triage/run.mjs",
+    "test:triage": "node --test packages/triage/test/*.test.mjs"
   },
   "devDependencies": {
     "ajv": "^8.20.0"

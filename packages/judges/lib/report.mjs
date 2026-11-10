@@ -41,7 +41,7 @@ export function convergence(judges) {
   const seen = new Map();
   for (const judge of judges) {
     for (const finding of judge.findings || []) {
-      const key = normalise(finding.quote);
+      const key = quoteKey(finding.quote);
       if (!key) continue;
       if (!seen.has(key)) seen.set(key, { quote: finding.quote, judges: new Set(), severities: new Set() });
       const entry = seen.get(key);
@@ -59,7 +59,10 @@ export function convergence(judges) {
     .sort((a, b) => b.judges.length - a.judges.length);
 }
 
-function normalise(quote) {
+// The one definition of "the same claim". Convergence and adjudication both
+// use it: if two matchers disagreed, a quote could converge in the report and
+// still fail to find its adjudication, and every later run would re-raise it.
+export function quoteKey(quote) {
   return String(quote || "")
     .replace(/\s+/g, " ")
     .trim()
