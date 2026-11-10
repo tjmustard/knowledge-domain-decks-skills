@@ -1,0 +1,50 @@
+{
+  "id": "S01",
+  "name": "Porter's Five Forces",
+  "category": "Market & Competition",
+  "diagnosis": "Is the organization's structural profitability being systematically eroded by an unaddressed concentration of economic power among external market actors?",
+  "schematic": "Centered 5-Vector Cross",
+  "canvas": "Centered cross-matrix positioning Rivalry among Existing Competitors at the nucleus, bounded orthogonally by Threat of New Entrants, Threat of Substitute Products or Services, Bargaining Power of Buyers, and Bargaining Power of Suppliers.",
+  "stressTest": [
+    {
+      "text": "Does the team mistake execution speed for insulation from supplier hold-up?"
+    },
+    {
+      "text": "Are switching costs real, or is retention bought with unsustainable discounts?"
+    },
+    {
+      "text": "Could a hyperscaler ship this feature set as a commodity in two quarters?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the leadership team confuse internal execution velocity with structural insulation from platform or supplier hold-up?",
+    "Are customer switching costs genuinely defensible, or is account retention sustained entirely through unsustainable discounting?",
+    "Could an upstream hyperscaler or infrastructure platform duplicate the entire functional feature set as an unbundled commodity utility within two quarters?"
+  ],
+  "checklist": [
+    "Audit gross margins across every vendor and infrastructure dependency.",
+    "Calculate retention and switching costs for the top enterprise quintile.",
+    "Add abstraction layers and portable APIs to end single-provider lock-in."
+  ],
+  "checklistFull": [
+    "Audit gross margins across all external vendor and infrastructure dependencies to isolate platform hold-up vulnerabilities.",
+    "Calculate net revenue retention and contractual switching costs across the upper quintile of enterprise accounts.",
+    "Implement abstraction layers and API portability standards to mitigate single-provider supplier lock-in."
+  ],
+  "origin": {
+    "authors": [
+      "Michael E. Porter"
+    ],
+    "year": 1980,
+    "title": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

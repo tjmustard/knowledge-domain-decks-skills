@@ -1,0 +1,265 @@
+{
+  "note": "The source's own card schema names six layout types but does not assign one per framework. This map is the authored judgement that fills that gap: each row's kind follows the schematic tag the taxonomy table gives it, and columns/rows count the stages, links, nodes, branches or notes the canvas shows. The deck test compares every record's figure to this file, so the mapping is reviewable in one place and cannot drift from the cards.",
+  "kinds": {
+    "2x2": "two crossed axes and four quadrants: positioning, trade-offs, portfolios",
+    "stage_progression": "ordered stages over time, in one or more parallel tracks",
+    "value_chain": "boxes in upstream-to-downstream sequence",
+    "feedback_loop": "a closed causal or relational loop of nodes",
+    "tree": "a root that branches into levels of parts",
+    "matrix_3x3": "a nine-block grid; columns/rows count the note marks a block carries"
+  },
+  "map": {
+    "S01": {
+      "schematic": "Centered 5-Vector Cross",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S02": {
+      "schematic": "2x2 ERRC & Strategy Canvas",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S03": {
+      "schematic": "6-Column Macro Impact Board",
+      "kind": "matrix_3x3",
+      "columns": 2,
+      "rows": 1
+    },
+    "S04": {
+      "schematic": "2x2 Market-Product Matrix",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S05": {
+      "schematic": "2x2 Advantage vs Scope Matrix",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S06": {
+      "schematic": "Diamond Relational Network",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S07": {
+      "schematic": "2x2 Multi-attribute Scatter",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S08": {
+      "schematic": "3x3 Attractiveness-Strength Matrix",
+      "kind": "matrix_3x3",
+      "columns": 1,
+      "rows": 1
+    },
+    "S09": {
+      "schematic": "2x2 Cash-Growth Matrix",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S10": {
+      "schematic": "4-Force Dynamic Progress Model",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S11": {
+      "schematic": "4-Arena Dynamic Iteration Loop",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S12": {
+      "schematic": "2-Axis Topographical Value Chain",
+      "kind": "value_chain",
+      "columns": 4,
+      "rows": 1
+    },
+    "S13": {
+      "schematic": "Performance vs Time Trajectory",
+      "kind": "stage_progression",
+      "columns": 3,
+      "rows": 2
+    },
+    "S14": {
+      "schematic": "3 Overlapping S-Curves",
+      "kind": "stage_progression",
+      "columns": 3,
+      "rows": 3
+    },
+    "S15": {
+      "schematic": "Segmented Bell Curve with Chasm",
+      "kind": "stage_progression",
+      "columns": 6,
+      "rows": 1
+    },
+    "S16": {
+      "schematic": "Sigmoidal Spend vs Benchmarks",
+      "kind": "stage_progression",
+      "columns": 4,
+      "rows": 1
+    },
+    "S17": {
+      "schematic": "Vertical Value Chain Architecture",
+      "kind": "value_chain",
+      "columns": 4,
+      "rows": 1
+    },
+    "S18": {
+      "schematic": "Non-linear Compounding Feedback",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S19": {
+      "schematic": "5-Phase Expectation Wave",
+      "kind": "stage_progression",
+      "columns": 5,
+      "rows": 1
+    },
+    "S20": {
+      "schematic": "Bipartite Org-to-Code Alignment",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 2
+    },
+    "S21": {
+      "schematic": "5-Domain Sensemaking Topology",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S22": {
+      "schematic": "Closed Causal Loop Diagrams (CLD)",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 2
+    },
+    "S23": {
+      "schematic": "Cost-Volume Amortization Curve",
+      "kind": "stage_progression",
+      "columns": 4,
+      "rows": 1
+    },
+    "S24": {
+      "schematic": "2-Sided Relational Network Grid",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S25": {
+      "schematic": "Game-Theoretic Payoff Matrix",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S26": {
+      "schematic": "Balance Sheet Friction Matrix",
+      "kind": "matrix_3x3",
+      "columns": 2,
+      "rows": 1
+    },
+    "S27": {
+      "schematic": "Value-Price Surplus Wedge",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S28": {
+      "schematic": "Asset Enclosure Diagram",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 2
+    },
+    "S29": {
+      "schematic": "Tacit Operational Flow Network",
+      "kind": "value_chain",
+      "columns": 4,
+      "rows": 1
+    },
+    "S30": {
+      "schematic": "Compounding Clockwise Loop",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S31": {
+      "schematic": "Two-Tier Commercial Separation",
+      "kind": "tree",
+      "columns": 2,
+      "rows": 2
+    },
+    "S32": {
+      "schematic": "2x2 Appropriability Matrix",
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    },
+    "S33": {
+      "schematic": "3-Tier Supplier-Platform-User",
+      "kind": "value_chain",
+      "columns": 3,
+      "rows": 1
+    },
+    "S34": {
+      "schematic": "Tripartite Foundation Block",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 2
+    },
+    "S35": {
+      "schematic": "5-Stage Strategy Cascade",
+      "kind": "stage_progression",
+      "columns": 5,
+      "rows": 1
+    },
+    "S36": {
+      "schematic": "Hierarchical Discovery Tree",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 3
+    },
+    "S37": {
+      "schematic": "Hierarchical Math Metric Tree",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 3
+    },
+    "S38": {
+      "schematic": "9-Block Structural Blueprint",
+      "kind": "matrix_3x3",
+      "columns": 2,
+      "rows": 2
+    },
+    "S39": {
+      "schematic": "9-Block Risk-Hypothesis Grid",
+      "kind": "matrix_3x3",
+      "columns": 2,
+      "rows": 2
+    },
+    "S40": {
+      "schematic": "4-Stage Behavioral Retention Loop",
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    },
+    "S41": {
+      "schematic": "2-Tier Objective-Result Network",
+      "kind": "tree",
+      "columns": 3,
+      "rows": 2
+    },
+    "S42": {
+      "schematic": "2-Track Transformation Canvas",
+      "kind": "stage_progression",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

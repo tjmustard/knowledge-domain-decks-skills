@@ -2272,6 +2272,155 @@
     return out.join("");
   };
 
+  /* A strategy canvas, drawn as the layout family the card names. `kind` is one
+     of the source's six layout types; `columns` and `rows` count the stages,
+     links, nodes, branches or note marks inside it. Every kind reads both
+     counts - a shape that ignored one would offer a knob it never turns - and
+     an unknown kind falls back to a marked frame unlike every real kind, so
+     the gate's string probe still moves the drawing. */
+  shapes["strategy-canvas"] = function (p) {
+    var kind = p.kind || "2x2";
+    var cols = Math.max(1, Math.round(p.columns || 2));
+    var rows = Math.max(1, Math.round(p.rows || 2));
+    var left = 40;
+    var top = 40;
+    var w = 320;
+    var h = 320;
+    var right = left + w;
+    var bottom = top + h;
+    var out = [];
+
+    function frame() {
+      out.push(rect(left, top, w, h, { rx: 6, width: 1.6, opacity: 0.5 }));
+    }
+
+    function arrow(x1, y1, x2, y2) {
+      out.push(line(x1, y1, x2, y2, 1.6, 0.55));
+      var a = Math.atan2(y2 - y1, x2 - x1);
+      var head = 7;
+      out.push(line(x2, y2, x2 - head * Math.cos(a - 0.5), y2 - head * Math.sin(a - 0.5), 1.4, 0.7));
+      out.push(line(x2, y2, x2 - head * Math.cos(a + 0.5), y2 - head * Math.sin(a + 0.5), 1.4, 0.7));
+    }
+
+    if (kind === "2x2") {
+      frame();
+      out.push(line(200, top, 200, bottom, 1.4, 0.4, "5 5"));
+      out.push(line(left, 200, right, 200, 1.4, 0.4, "5 5"));
+      for (var c2 = 0; c2 < cols; c2++) {
+        var tx = left + (w * (c2 + 0.5)) / cols;
+        out.push(line(tx, top, tx, top + 8, 1.4, 0.5));
+        out.push(line(tx, bottom - 8, tx, bottom, 1.4, 0.5));
+      }
+      for (var r2 = 0; r2 < rows; r2++) {
+        var ty = top + (h * (r2 + 0.5)) / rows;
+        out.push(line(left, ty, left + 8, ty, 1.4, 0.5));
+        out.push(line(right - 8, ty, right, ty, 1.4, 0.5));
+      }
+      [[120, 120], [280, 120], [120, 280], [280, 280]].forEach(function (q) {
+        out.push(circle(q[0], q[1], 5, { hollow: true, width: 1.4, opacity: 0.6 }));
+      });
+    } else if (kind === "stage_progression") {
+      var laneH = h / rows;
+      for (var sr = 0; sr < rows; sr++) {
+        var baseY = top + laneH * (sr + 1) - 10;
+        var stepW = (w - 30) / cols;
+        var prev = null;
+        for (var sc = 0; sc < cols; sc++) {
+          var sh = 18 + (sc * 34) / Math.max(1, cols);
+          var sx = left + 15 + sc * stepW;
+          out.push(rect(sx, baseY - sh, stepW - 12, sh, { rx: 3, width: 1.6, opacity: 0.4 + sc * 0.08 }));
+          if (prev) arrow(prev[0], prev[1], sx, baseY - sh / 2);
+          prev = [sx + stepW - 12, baseY - sh / 2];
+        }
+        out.push(line(left + 10, baseY, right - 10, baseY, 1.2, 0.35));
+      }
+      frame();
+    } else if (kind === "value_chain") {
+      var chainH = h / rows;
+      for (var vr = 0; vr < rows; vr++) {
+        var cy = top + chainH * (vr + 0.5);
+        var boxW = (w - 40) / cols;
+        var last = null;
+        for (var vc = 0; vc < cols; vc++) {
+          var vx = left + 20 + vc * boxW;
+          out.push(rect(vx, cy - 16, boxW - 12, 32, { rx: 3, width: 1.7, opacity: 0.45 }));
+          if (last) arrow(last, cy, vx, cy);
+          last = vx + boxW - 12;
+        }
+      }
+      frame();
+    } else if (kind === "feedback_loop") {
+      var maxR = 128;
+      for (var fr = 0; fr < rows; fr++) {
+        var rad = maxR - fr * 14;
+        out.push(circle(200, 200, rad, { hollow: true, width: fr === 0 ? 2 : 1.2, opacity: fr === 0 ? 0.6 : 0.35 }));
+        for (var fc = 0; fc < cols; fc++) {
+          var angle = (Math.PI * 2 * fc) / cols - Math.PI / 2;
+          out.push(circle(200 + Math.cos(angle) * rad, 200 + Math.sin(angle) * rad, fr === 0 ? 5 : 3, { width: 1.3, opacity: 0.75 }));
+        }
+      }
+      var a1 = -Math.PI / 2;
+      var a2 = -Math.PI / 2 + (Math.PI * 2 * 0.72);
+      out.push(
+        '<path d="M ' + coord(200 + Math.cos(a1) * maxR) + " " + coord(200 + Math.sin(a1) * maxR) +
+        " A " + maxR + " " + maxR + " 0 1 1 " + coord(200 + Math.cos(a2) * maxR) + " " + coord(200 + Math.sin(a2) * maxR) +
+        '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ' + STROKE + "/>"
+      );
+    } else if (kind === "tree") {
+      var rootX = 200;
+      var rootY = bottom - 10;
+      var crownY = top + 40;
+      out.push(line(rootX, rootY, rootX, crownY + 30, 2.2, 0.8));
+      for (var tc = 0; tc < cols; tc++) {
+        var bx = cols === 1 ? rootX : left + 30 + ((w - 60) * tc) / (cols - 1);
+        out.push(line(rootX, crownY + 30, bx, crownY, 1.5, 0.5));
+        for (var tr = 0; tr < rows; tr++) {
+          var ly = crownY + ((rootY - 60 - crownY) * tr) / Math.max(1, rows);
+          out.push(circle(bx, Math.min(ly, rootY - 30), 4, { width: 1.2, opacity: 0.7 }));
+        }
+      }
+      out.push(circle(rootX, rootY, 6, { width: 1.5, fill: "currentColor", opacity: 0.85 }));
+    } else if (kind === "matrix_3x3") {
+      frame();
+      var cw3 = w / 3;
+      var ch3 = h / 3;
+      for (var m = 1; m < 3; m++) {
+        out.push(line(left + cw3 * m, top, left + cw3 * m, bottom, 1.2, 0.35));
+        out.push(line(left, top + ch3 * m, right, top + ch3 * m, 1.2, 0.35));
+      }
+      for (var mr = 0; mr < 3; mr++) {
+        for (var mc = 0; mc < 3; mc++) {
+          for (var dr = 0; dr < rows; dr++) {
+            for (var dc = 0; dc < cols; dc++) {
+              out.push(circle(
+                left + cw3 * (mc + 0.5) + (dc - (cols - 1) / 2) * 9,
+                top + ch3 * (mr + 0.5) + (dr - (rows - 1) / 2) * 9,
+                2.4,
+                { width: 1, opacity: 0.6 }
+              ));
+            }
+          }
+        }
+      }
+    } else {
+      // An unknown layout still reads both counts, so a misspelled kind cannot
+      // declare a knob this shape ignores.
+      frame();
+      out.push(line(left + 26, top + 26, right - 26, bottom - 26, 1.6, 0.4, "7 6"));
+      out.push(line(left + 26, bottom - 26, right - 26, top + 26, 1.6, 0.4, "7 6"));
+      out.push(circle(200, 200, 18, { hollow: true, width: 1.6, opacity: 0.45 }));
+      for (var uc = 0; uc < cols; uc++) {
+        var ux = left + (w * (uc + 0.5)) / cols;
+        out.push(line(ux, top, ux, top + 10, 1.4, 0.4));
+      }
+      for (var ur = 0; ur < rows; ur++) {
+        var uy = top + (h * (ur + 0.5)) / rows;
+        out.push(line(left, uy, left + 10, uy, 1.4, 0.4));
+      }
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

@@ -115,8 +115,11 @@ if (!indexMode) {
   expectedInCategory = categoryCounts[filterCategory];
   // What the flip must expose. A deck that prints declared blocks on the verso
   // has no checklist heading, so the first block the first card actually carries
-  // is the label to look for; the CSS uppercases it either way.
+  // is the label to look for; the CSS uppercases it either way. A block the deck
+  // keeps off the card face ("card": false) is printed by the rules file, not by
+  // the viewer, so looking for its label would fail a deck that is correct.
   const carried = shape.blocks.find((block) => {
+    if (block.card === false) return false;
     const value = cards[0][block.field];
     if (value === undefined || value === null || value === "") return false;
     return !(Array.isArray(value) && value.length === 0);

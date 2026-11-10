@@ -1,0 +1,980 @@
+{
+ "source": "/Users/graypouponmustard/PROJECTS/Knowledge-Domain-Decks-Skill/SupportingInformation/06 - Strategy Tactics/Open Source Strategy Framework Deck.md",
+ "sourceSha256": "261af8f9b0e341628ed8d255393bf1084816be1bb04aa0dc01d7f00db6b45f4b",
+ "extractedBy": "operator-agent@kernel, 2026-11-10",
+ "note": "Mechanically lifted from the document's Comparative Taxonomy Matrix (42 rows) and each framework's own ### section (Academic Attribution, Strategic Diagnosis Question, Canvas Schematic, The Stress Test, Execution Checklist). One source defect is recorded rather than silently repaired: the Business Model Canvas table row carries an extra leading cell and omits its final 'Primary Defensibility / Execution Output' column, so that field is empty here.",
+ "categories": [
+  "Market & Competition",
+  "Tech & Dynamics",
+  "Defensibility",
+  "Execution & Coherence"
+ ],
+ "rituals": [
+  {
+   "id": "S01",
+   "name": "Porter's Five Forces",
+   "sectionTitle": "Michael Porter’s Five Forces",
+   "category": "Market & Competition",
+   "creatorYear": "Michael Porter (1979/1980)",
+   "tableSchematic": "Centered 5-Vector Cross",
+   "inflection": "Profit margin compression from external leverage",
+   "output": "Structural industry positioning and defensibility",
+   "attribution": "Michael E. Porter; Competitive Strategy: Techniques for Analyzing Industries and Competitors (The Free Press, 1980); introduced in \"How Competitive Forces Shape Strategy,\" Harvard Business Review, 1979.",
+   "diagnosis": "Is the organization's structural profitability being systematically eroded by an unaddressed concentration of economic power among external market actors?",
+   "canvas": "Centered cross-matrix positioning Rivalry among Existing Competitors at the nucleus, bounded orthogonally by Threat of New Entrants, Threat of Substitute Products or Services, Bargaining Power of Buyers, and Bargaining Power of Suppliers.",
+   "stressTest": [
+    "Does the leadership team confuse internal execution velocity with structural insulation from platform or supplier hold-up?",
+    "Are customer switching costs genuinely defensible, or is account retention sustained entirely through unsustainable discounting?",
+    "Could an upstream hyperscaler or infrastructure platform duplicate the entire functional feature set as an unbundled commodity utility within two quarters?"
+   ],
+   "checklist": [
+    "Audit gross margins across all external vendor and infrastructure dependencies to isolate platform hold-up vulnerabilities.",
+    "Calculate net revenue retention and contractual switching costs across the upper quintile of enterprise accounts.",
+    "Implement abstraction layers and API portability standards to mitigate single-provider supplier lock-in."
+   ]
+  },
+  {
+   "id": "S02",
+   "name": "Blue Ocean & ERRC",
+   "sectionTitle": "Blue Ocean Strategy and the ERRC Grid",
+   "category": "Market & Competition",
+   "creatorYear": "W. C. Kim & R. Mauborgne (2005)",
+   "tableSchematic": "2x2 ERRC & Strategy Canvas",
+   "inflection": "Zero-sum feature copying and price competition",
+   "output": "Cost/differentiation divergence",
+   "attribution": "W. Chan Kim and Renée Mauborgne; Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant (Harvard Business Review Press, 2005).",
+   "diagnosis": "Has competition devolved into a margin-compressing zero-sum contest governed by benchmark copying and feature-parity bidding wars?",
+   "canvas": "2x2 Eliminate-Reduce-Raise-Create (ERRC) functional grid integrated with an industry Strategy Canvas that plots competing factors along the horizontal axis against buyer offering levels from 1 to 5 along the vertical axis.",
+   "stressTest": [
+    "Do the proposed Eliminate and Reduce vectors remove core structural costs, or does the plan preserve legacy cost centers under the guise of operational safety?",
+    "Is the newly Created value proposition recognized as mission-critical by verified non-customers, or does it merely represent an internal technical curiosity?",
+    "Does the resulting strategic value curve diverge fundamentally from industry incumbents, or does it parallel the competitive baseline with superficial variations?"
+   ],
+   "checklist": [
+    "Interview 15 non-customers who systematically abandoned or bypassed the category to isolate structural friction points.",
+    "Enforce an operational constraint requiring the count of eliminated and reduced capabilities to equal or exceed the count of raised and created capabilities.",
+    "Deploy a minimum viable commercial variant that strips away all bottom-quartile industry legacy features."
+   ]
+  },
+  {
+   "id": "S03",
+   "name": "PESTEL Analysis",
+   "sectionTitle": "PESTEL Macro-Environmental Analysis",
+   "category": "Market & Competition",
+   "creatorYear": "F. Aguilar (1967) / Fahey & Narayanan (1986)",
+   "tableSchematic": "6-Column Macro Impact Board",
+   "inflection": "Macro-environmental or regulatory regime shifts",
+   "output": "Risk mitigation and compliance strategy",
+   "attribution": "Francis J. Aguilar; Scanning the Business Environment (Macmillan, 1967); formalized as PESTEL by Liam Fahey and V. K. Narayanan in Macroenvironmental Analysis for Strategic Management (West Publishing, 1986).",
+   "diagnosis": "Are external legislative, macroeconomic, or sociotechnical regime shifts threatening the core operating assumptions of the enterprise?",
+   "canvas": "Six-column macro-environmental impact matrix evaluating forces across Political, Economic, Socio-cultural, Technological, Environmental, and Legal dimensions, categorized by velocity of onset and operational severity.",
+   "stressTest": [
+    "Does leadership treat regulatory and compliance interventions as administrative overhead rather than structural market-shaping catalysts?",
+    "Has the company stress-tested its unit economics against sustained capital cost inflation and margin compression?",
+    "Are demographic or behavioral shifts eroding the long-term utility of the core product despite stable historical retention metrics?"
+   ],
+   "checklist": [
+    "Execute a comprehensive regulatory audit mapping operational workflows against pending data sovereignty, security, and algorithmic governance mandates.",
+    "Stress-test customer lifetime value and acquisition models against a 20% reduction in enterprise procurement budgets.",
+    "Establish operational redundancies for all critical single-geography supply and infrastructure dependencies."
+   ]
+  },
+  {
+   "id": "S04",
+   "name": "Ansoff Growth Matrix",
+   "sectionTitle": "Ansoff Growth Matrix",
+   "category": "Market & Competition",
+   "creatorYear": "H. Igor Ansoff (1957)",
+   "tableSchematic": "2x2 Market-Product Matrix",
+   "inflection": "Growth saturation within core market segments",
+   "output": "Product and market expansion vectors",
+   "attribution": "H. Igor Ansoff; \"Strategies for Diversification,\" Harvard Business Review, 1957; expanded in Corporate Strategy (McGraw-Hill, 1965).",
+   "diagnosis": "Has core market penetration reached saturation, requiring capital redeployment into product extensions, new markets, or non-core diversification?",
+   "canvas": "2x2 matrix plotting Products (Existing versus New) along the horizontal axis against Markets (Existing versus New) along the vertical axis, generating four distinct quadrants: Market Penetration, Product Development, Market Development, and Diversification.",
+   "stressTest": [
+    "Does pursuing adjacent product development cannibalize R&D resources before category leadership is established in the core offering?",
+    "Is geographic or vertical market expansion supported by localized distribution advantages, or does it replicate existing domestic churn overseas?",
+    "Does diversification exploit a proprietary, reusable capability, or does it force the firm to compete as an under-resourced entrant in an unfamiliar market?"
+   ],
+   "checklist": [
+    "Compute total addressable market penetration ratios across core customer segments to determine the timeline to growth stagnation.",
+    "Deploy an experimental squad to validate willingness-to-pay for adjacent product extensions within the existing enterprise customer base.",
+    "Establish hard ninety-day performance off-ramps for exploratory diversification investments."
+   ]
+  },
+  {
+   "id": "S05",
+   "name": "Porter's Generic Strategies",
+   "sectionTitle": "Porter’s Generic Strategies",
+   "category": "Market & Competition",
+   "creatorYear": "Michael Porter (1980)",
+   "tableSchematic": "2x2 Advantage vs Scope Matrix",
+   "inflection": "Profit margin degradation from lack of strategic focus",
+   "output": "Cost leadership or focused differentiation",
+   "attribution": "Michael E. Porter; Competitive Strategy: Techniques for Analyzing Industries and Competitors (The Free Press, 1980).",
+   "diagnosis": "Is the enterprise trapped in the middle, lacking either an insurmountable structural cost advantage or defensible premium pricing power?",
+   "canvas": "2x2 matrix intersecting Strategic Advantage (Low Cost versus Differentiation) with Strategic Scope (Broad Industry-Wide versus Focused Segment), yielding Cost Leadership, Differentiation, Cost Focus, and Focused Differentiation.",
+   "stressTest": [
+    "Can the enterprise prove an architectural or economies-of-scale cost advantage that rivals cannot duplicate using commoditized public cloud infrastructure?",
+    "Is product differentiation strong enough to sustain a 30% price premium during formal procurement tenders without degrading conversion rates?",
+    "Does a focus strategy target a structurally defendable niche, or does it isolate the business within an unprofitable customer segment?"
+   ],
+   "checklist": [
+    "Benchmark direct cost-of-goods-sold per seat or transaction against the lowest-cost market peer.",
+    "Conduct double-blind customer willingness-to-pay evaluations to measure brand pricing elasticity.",
+    "Deprecate features that compromise architectural efficiency without generating verifiable pricing power."
+   ]
+  },
+  {
+   "id": "S06",
+   "name": "Value Net & Coopetition",
+   "sectionTitle": "Brandenburger and Nalebuff’s Value Net and Coopetition",
+   "category": "Market & Competition",
+   "creatorYear": "A. Brandenburger & B. Nalebuff (1996)",
+   "tableSchematic": "Diamond Relational Network",
+   "inflection": "Inability to capture value generated by complementors",
+   "output": "Ecosystem alliances and shared standards",
+   "attribution": "Adam M. Brandenburger and Barry J. Nalebuff; Co-Opetition: A Revolutionary Mindset That Combines Competition and Cooperation (Currency/Doubleday, 1996).",
+   "diagnosis": "Can aggregate market value be expanded by collaborating with direct competitors and complementary ecosystem participants?",
+   "canvas": "Diamond network positioning the Company at the center, flanked horizontally by Competitors and Complementors, and vertically by Customers and Suppliers.",
+   "stressTest": [
+    "Has the company identified the external products whose adoption exponentially increases the utility of its own platform?",
+    "Does the organization treat direct rivals exclusively as adversaries, missing opportunities to establish joint architectural standards?",
+    "Is an ecosystem partner capturing high-margin customer relationships while delegating low-margin operational execution back to the company?"
+   ],
+   "checklist": [
+    "Map the five primary complementary technologies that accelerate product adoption and establish bidirectional technical integrations.",
+    "Form an open standard or consortium with category competitors to disintermediate monopolistic infrastructure gatekeepers.",
+    "Structure revenue-sharing agreements that tie platform margins to the growth of critical complementors."
+   ]
+  },
+  {
+   "id": "S07",
+   "name": "Strategic Group Mapping",
+   "sectionTitle": "Strategic Group Mapping",
+   "category": "Market & Competition",
+   "creatorYear": "M. Hunt (1972) / M. Porter (1980)",
+   "tableSchematic": "2x2 Multi-attribute Scatter",
+   "inflection": "Competitors crossing traditional category boundaries",
+   "output": "Identification of mobility barriers",
+   "attribution": "Michael S. Hunt; Competition in the Major Home Appliance Industry 1960–1970 (Doctoral dissertation, Harvard University, 1972); operationalized by Michael E. Porter in Competitive Strategy (1980).",
+   "diagnosis": "Which distinct clusters of market rivals share identical strategic approaches, and what mobility barriers prevent cross-group encroachment?",
+   "canvas": "2x2 scatter matrix plotting industry participants along two uncorrelated strategic dimensions (e.g., Geographic Footprint versus Product Breadth, or Price/Tier versus Customization Level), using proportional bubble sizes to represent market share.",
+   "stressTest": [
+    "Are the selected mapping axes genuinely uncorrelated, or do they simply restate identical underlying financial variables?",
+    "What concrete economic or technical mobility barriers insulate the organization's strategic group from well-funded lower-tier entrants?",
+    "Does empty territory on the map indicate an untapped market opportunity or a graveyard of proven unviability?"
+   ],
+   "checklist": [
+    "Plot top twelve industry competitors across two orthogonal strategic dimensions validated by customer evaluation criteria.",
+    "Quantify the exact capital requirements and intellectual property barriers required to enter the organization's strategic group.",
+    "Interview customer accounts that recently defected to alternative strategic groups to identify shifting purchase criteria."
+   ]
+  },
+  {
+   "id": "S08",
+   "name": "GE-McKinsey Nine-Box",
+   "sectionTitle": "GE-McKinsey Nine-Box Matrix",
+   "category": "Market & Competition",
+   "creatorYear": "McKinsey & Co. / GE (1971)",
+   "tableSchematic": "3x3 Attractiveness-Strength Matrix",
+   "inflection": "Misallocated capital across multi-product portfolios",
+   "output": "Portfolio resource reallocation and divestment",
+   "attribution": "McKinsey & Company and General Electric; developed for General Electric's corporate portfolio management (1971).",
+   "diagnosis": "How should capital and engineering bandwidth be distributed across a diversified portfolio of business units with divergent prospects?",
+   "canvas": "3x3 portfolio grid plotting Industry Attractiveness (High, Medium, Low) on the vertical axis against Business Unit Competitive Strength (High, Medium, Low) on the horizontal axis, establishing three strategic zones: Invest/Grow, Selectivity/Hold, and Harvest/Divest.",
+   "stressTest": [
+    "Are industry attractiveness metrics evaluated on multi-year compound growth, or are they skewed by short-term macroeconomic windfalls?",
+    "Does the executive team continue allocating premium engineering talent to defend declining units that should be managed for cash flow?",
+    "Does a high competitive strength rating reflect proprietary assets or temporary first-mover advantages?"
+   ],
+   "checklist": [
+    "Score every active commercial product unit against weighted composite indices of market attractiveness and competitive capability.",
+    "Reallocate 20% of product development capacity away from low-strength/low-attractiveness lines toward designated growth segments.",
+    "Formalize orderly end-of-life or divestment plans for products positioned within the harvest/divest quadrant."
+   ]
+  },
+  {
+   "id": "S09",
+   "name": "BCG Growth-Share Matrix",
+   "sectionTitle": "BCG Growth-Share Matrix",
+   "category": "Market & Competition",
+   "creatorYear": "Bruce Henderson (1970)",
+   "tableSchematic": "2x2 Cash-Growth Matrix",
+   "inflection": "Mature cash cows failing to fund future growth bets",
+   "output": "Capital reallocation and cash sweeps",
+   "attribution": "Bruce D. Henderson; The Growth Share Matrix (Boston Consulting Group Perspectives, 1970).",
+   "diagnosis": "Are market-leading cash flows being systematically recycled into emerging growth bets before core product lines mature?",
+   "canvas": "2x2 matrix defined by Market Growth Rate along the vertical axis against Relative Market Share (logarithmic scale) along the horizontal axis, segmenting business lines into Cash Cows, Stars, Question Marks, and Dogs.",
+   "stressTest": [
+    "Is the organization treating mature Cash Cows as growth vehicles, over-investing capital where marginal gains are structurally constrained?",
+    "Are speculative Question Marks subjected to strict operational gates, or do they consume capital without securing market share?",
+    "Does leadership maintain the operational resolve to sunset or spin out persistent Dogs rather than sustaining underperforming lines?"
+   ],
+   "checklist": [
+    "Compute relative market share ratios against category leaders across all commercial product lines.",
+    "Implement programmatic cash sweeps from mature product lines into funded Star growth initiatives.",
+    "Establish ninety-day market share milestones for all Question Marks to determine whether to scale or terminate investment."
+   ]
+  },
+  {
+   "id": "S10",
+   "name": "Demand-Side / JTBD",
+   "sectionTitle": "Demand-Side Sales and Jobs to Be Done Framing",
+   "category": "Market & Competition",
+   "creatorYear": "C. Christensen & B. Moesta (2016)",
+   "tableSchematic": "4-Force Dynamic Progress Model",
+   "inflection": "Churn caused by misunderstanding the user struggle",
+   "output": "Contextual workflow optimization",
+   "attribution": "Clayton M. Christensen, Bob Moesta, and Michael B. Horn; Competing Against Luck: The Story of Innovation and Customer Choice (HarperBusiness, 2016); building upon earlier foundations by Anthony Ulwick (2002) and Theodore Levitt (1960).",
+   "diagnosis": "Does the organization fundamentally misunderstand why customers hire its product, resulting in bloated roadmaps that fail to solve user struggles?",
+   "canvas": "Dynamic customer progress framework mapping the Four Forces of Customer Progress: the Push of the Current Situation and the Pull of the New Solution (driving progress) counterbalanced by the Anxiety of the Unknown and the Inertia of Habit (resisting change).",
+   "stressTest": [
+    "Can the product team articulate the exact functional, social, and emotional struggle that triggers a customer to seek an alternative solution?",
+    "Are features prioritized around customer demographic profiles rather than the operational context in which the job arises?",
+    "Does the offering address the specific moment when the incumbent tool is abandoned, or does it add extraneous features that fail to disrupt existing habits?"
+   ],
+   "checklist": [
+    "Conduct ten switch-interview protocols with recent customer conversions to isolate the structural catalyst that initiated the purchase journey.",
+    "Restructure backlog epics into standardized Job Statements defining the context, the struggling moment, and the desired outcome.",
+    "Implement product telemetry to measure whether feature updates reduce the time required to complete the core functional job."
+   ]
+  },
+  {
+   "id": "S11",
+   "name": "Hypercompetition",
+   "sectionTitle": "D’Aveni’s Hypercompetition and the Red Queen Effect",
+   "category": "Market & Competition",
+   "creatorYear": "Richard D’Aveni (1994)",
+   "tableSchematic": "4-Arena Dynamic Iteration Loop",
+   "inflection": "Rapid technical parity eroding static advantages",
+   "output": "Sequential temporary disruption velocity",
+   "attribution": "Richard A. D'Aveni; Hypercompetition: Managing the Dynamics of Strategic Maneuvering (The Free Press, 1994); biological adaptation integration via Leigh Van Valen’s Red Queen Hypothesis (1973).",
+   "diagnosis": "Has competitive disruption accelerated to a velocity where static competitive moats are unsustainable, requiring continuous self-disruption?",
+   "canvas": "Dynamic cycle tracing competitive maneuvers across four escalating arenas: Cost and Quality, Timing and Know-How, Strongholds/Creation, and Deep Pockets.",
+   "stressTest": [
+    "Is the firm relying on static intellectual property or historical brand moats in a market where technical parity is achieved rapidly?",
+    "Does management delay self-disruptive product launches to protect existing high-margin revenue streams?",
+    "Is the organizational operating tempo fast enough to sustain sequential competitive advantages without inducing engineering burnout?"
+   ],
+   "checklist": [
+    "Measure the mean time required for competitors to duplicate and launch parity versions of core feature releases.",
+    "Deploy an autonomous internal skunkworks squad tasked with designing a direct competitor to the company's primary commercial offering.",
+    "Align team performance metrics with the delivery velocity of new revenue initiatives rather than the defense of legacy market share."
+   ]
+  },
+  {
+   "id": "S12",
+   "name": "Wardley Mapping",
+   "sectionTitle": "Simon Wardley’s Wardley Mapping",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Simon Wardley (2005/2016)",
+   "tableSchematic": "2-Axis Topographical Value Chain",
+   "inflection": "Custom engineering of commoditized components",
+   "output": "Sourcing strategy and build vs buy decisions",
+   "attribution": "Simon Wardley; Wardley Maps (Open Access under CC BY-SA 4.0, 2016); originated via blog entries and conference proceedings from 2005 onward.",
+   "diagnosis": "Is the engineering organization building custom solutions for architectural components that have already evolved into industrialized commodity utilities?",
+   "canvas": "Topographical value landscape plotting Value Chain Visibility along the vertical axis (from direct user need down to underlying infrastructure) against Evolution along the horizontal axis across four phases: Genesis, Custom-Built, Product/Rental, and Commodity/Utility.",
+   "stressTest": [
+    "Are internal engineering teams building and maintaining bespoke infrastructure where standardized open-source or utility APIs exist?",
+    "Does the executive team anticipate the capital and cultural inertia that will resist shifting internal architectures to external utilities?",
+    "Does the enterprise recognize which commodity components can serve as the standardized foundation to enable novel Genesis-stage capabilities?"
+   ],
+   "checklist": [
+    "Map the primary product architecture into an OnlineWardleyMaps DSL or Mermaid script tracing dependencies to base infrastructure.",
+    "Identify components in the Custom-Built quadrant and schedule their replacement with external managed services or open-source libraries.",
+    "Evaluate the 32 climatic patterns to forecast upstream component commoditization over a 24-month horizon."
+   ]
+  },
+  {
+   "id": "S13",
+   "name": "Disruptive Innovation",
+   "sectionTitle": "Clayton Christensen’s Disruptive Innovation",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Clayton Christensen (1997)",
+   "tableSchematic": "Performance vs Time Trajectory",
+   "inflection": "Over-serving mainstream users with premium features",
+   "output": "Autonomous low-end disruptive units",
+   "attribution": "Clayton M. Christensen; The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail (Harvard Business School Press, 1997); introduced with Joseph L. Bower in \"Disruptive Technologies: Catching the Wave,\" Harvard Business Review, 1995.",
+   "diagnosis": "Are market incumbents over-serving mainstream enterprise accounts with high-margin products, leaving low-end and non-consumer segments open to low-cost alternatives?",
+   "canvas": "Dual Cartesian trajectory plotting Product Performance along the vertical axis against Time along the horizontal axis, displaying customer demand trajectories (Mainstream vs. Low-End) intersected by Sustaining Technology paths and steep Disruptive Technology paths.",
+   "stressTest": [
+    "Does the leadership team dismiss emerging low-end competitors due to their initial feature deficits, low margins, and unappealing customer quality?",
+    "Does the product roadmap focus on enterprise capabilities that exceed the functional requirements of mainstream users?",
+    "Can the company’s operating cost structure sustain profitability if unit prices fall to match incoming low-cost alternatives?"
+   ],
+   "checklist": [
+    "Analyze feature utilization metrics to identify over-engineering within the core product.",
+    "Establish an autonomous business unit with an isolated cost structure to pursue non-consumers or lower-tier accounts.",
+    "Build a simplified product variant that prioritizes ease of deployment and lower costs over comprehensive feature parity."
+   ]
+  },
+  {
+   "id": "S14",
+   "name": "Three Horizons of Growth",
+   "sectionTitle": "Baghai, Coley, and White’s Three Horizons of Growth",
+   "category": "Tech & Dynamics",
+   "creatorYear": "M. Baghai, S. Coley, D. White (1999)",
+   "tableSchematic": "3 Overlapping S-Curves",
+   "inflection": "Under-investing in long-term growth to meet short-term goals",
+   "output": "Portfolio runway protection",
+   "attribution": "Mehrdad Baghai, Stephen Coley, and David White; The Alchemy of Growth: Kickstarting and Sustaining Growth in Your Company (McKinsey & Company / Perseus Publishing, 1999).",
+   "diagnosis": "Is the company compromising its long-term survival by allocating all capital to immediate quarterly operations while neglecting future growth options?",
+   "canvas": "Three overlapping S-curves plotting Value and Profitability against Time across Horizon 1 (Defend and extend core business), Horizon 2 (Scale emerging high-growth businesses), and Horizon 3 (Seed viable future options).",
+   "stressTest": [
+    "Does Horizon 1 governance stifle Horizon 2 and Horizon 3 exploration by enforcing short-term profit requirements on early-stage concepts?",
+    "Are Horizon 3 exploratory efforts disconnected research projects that lack a viable commercial pathway?",
+    "Do operational leaders reallocate Horizon 2 and 3 resources to cover short-term revenue deficits in the core business?"
+   ],
+   "checklist": [
+    "Audit all active development projects, categorizing budget and engineering allocations across Horizon 1 (70%), Horizon 2 (20%), and Horizon 3 (10%).",
+    "Establish distinct governance cadences: sprint delivery velocity for H1, customer cohort expansion for H2, and hypothesis validation for H3.",
+    "Ring-fence exploratory capital to protect it from re-absorption during mid-year budget reallocations."
+   ]
+  },
+  {
+   "id": "S15",
+   "name": "Crossing the Chasm",
+   "sectionTitle": "Geoffrey Moore’s Crossing the Chasm",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Geoffrey Moore (1991)",
+   "tableSchematic": "Segmented Bell Curve with Chasm",
+   "inflection": "Growth stall between early adopters and mainstream buyers",
+   "output": "Whole Product beachhead focus",
+   "attribution": "Geoffrey A. Moore; Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers (HarperBusiness, 1991).",
+   "diagnosis": "Has adoption stalled after early success with visionary technology enthusiasts because the product fails to satisfy pragmatic enterprise buyers?",
+   "canvas": "Technology Adoption Life Cycle bell curve divided into Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%), bisected by a chasm between Early Adopters and the Early Majority.",
+   "stressTest": [
+    "Does the marketing team rely on early adopter case studies to convince pragmatic buyers who only accept references from conservative peers?",
+    "Has the company built the complete \"Whole Product\" ecosystem—including integrations, compliance certifications, and training—required by mainstream buyers?",
+    "Is the enterprise spreading sales resources across multiple segments instead of securing dominant market share within a single beachhead vertical?"
+   ],
+   "checklist": [
+    "Identify and focus resources on a specific beachhead market segment where the product addresses a critical business problem.",
+    "Complete the Whole Product offering by integrating third-party software and enterprise security tooling.",
+    "Reposition marketing narratives from technical innovation to risk mitigation, operational reliability, and industry compliance."
+   ]
+  },
+  {
+   "id": "S16",
+   "name": "S-Curve Life Cycle",
+   "sectionTitle": "Foster’s S-Curve Technology Life Cycle",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Richard Foster (1986)",
+   "tableSchematic": "Sigmoidal Spend vs Benchmarks",
+   "inflection": "R&D investment yielding diminishing performance returns",
+   "output": "Transition to next-generation architectures",
+   "attribution": "Richard N. Foster; Innovation: The Attacker's Advantage (Summit Books / McKinsey & Company, 1986).",
+   "diagnosis": "Have internal R&D investments reached a point of diminishing returns along the current technological architecture?",
+   "canvas": "Sigmoidal curve plotting Performance along the vertical axis against Cumulative Engineering Effort/R&D Spend along the horizontal axis, displaying early validation, rapid scaling, performance plateaus, and the emergence of an intersecting next-generation S-curve.",
+   "stressTest": [
+    "Does an incremental capital investment in engineering yield negligible improvements in core product performance metrics?",
+    "Is leadership misattributing architectural limits to team inefficiency rather than systemic technical constraints?",
+    "Is the company ignoring a nascent technological paradigm that displays lower initial performance but possesses a substantially higher theoretical ceiling?"
+   ],
+   "checklist": [
+    "Calculate the historical ratio of performance improvements relative to engineering spend over the preceding eight quarters.",
+    "Survey open-source and academic developments that bypass the physical or architectural limits of the current technology stack.",
+    "Fund an isolated engineering squad to build a prototype using the emerging technology paradigm."
+   ]
+  },
+  {
+   "id": "S17",
+   "name": "Attractive Profits Law",
+   "sectionTitle": "Christensen’s Law of Conservation of Attractive Profits",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Clayton Christensen (2003)",
+   "tableSchematic": "Vertical Value Chain Architecture",
+   "inflection": "Subsystem modularization eroding historical margins",
+   "output": "Integration into adjacent proprietary bottlenecks",
+   "attribution": "Clayton M. Christensen; The Innovator's Solution: Creating and Sustaining Successful Growth (Harvard Business School Press, 2003).",
+   "diagnosis": "When an integrated product subsystem becomes modularized and commoditized, where do attractive economic profits migrate within the value chain?",
+   "canvas": "Vertical Value Chain Architecture demonstrating that when a previously proprietary subsystem becomes modular and commoditized, an adjacent proprietary, interdependent subsystem captures the primary industry profits.",
+   "stressTest": [
+    "Is the firm attempting to protect profit margins in a software layer that is rapidly being commoditized by open-source alternatives?",
+    "Does the organization control the proprietary, interdependent bottleneck that downstream users must utilize to access commoditized components?",
+    "Are product teams building proprietary wrappers around modular components without owning the underlying integration points?"
+   ],
+   "checklist": [
+    "Diagram the full software and delivery stack, classifying every layer as either modular or interdependent.",
+    "Halt internal proprietary development on modular layers and transition to standard open-source components to reduce delivery costs.",
+    "Focus capital on controlling the adjacent interdependent bottleneck where economic value is concentrating."
+   ]
+  },
+  {
+   "id": "S18",
+   "name": "Increasing Returns",
+   "sectionTitle": "Arthur’s Law of Increasing Returns and Path Dependence",
+   "category": "Tech & Dynamics",
+   "creatorYear": "W. Brian Arthur (1989/1994)",
+   "tableSchematic": "Non-linear Compounding Feedback",
+   "inflection": "Competing in a winner-take-all network market",
+   "output": "Adoption subsidization and ecosystem lock-in",
+   "attribution": "W. Brian Arthur; Increasing Returns and Path Dependence in the Economy (University of Michigan Press, 1994); introduced in \"Competing Technologies, Increasing Returns, and Lock-In by Historical Events,\" Economic Journal, 1989.",
+   "diagnosis": "Can small, early market-share advantages be amplified through self-reinforcing mechanisms to establish standard lock-in before competing alternatives mature?",
+   "canvas": "Compounding feedback model linking Early Market Share to Higher Expected Utility, Greater R&D Scale, Lower Per-Unit Transaction Costs, Ecosystem Coordination Lock-in, and Category Dominance.",
+   "stressTest": [
+    "Is the company applying diminishing-returns economic logic to a market segment governed by increasing-returns network dynamics?",
+    "Has the product team identified the early architectural choices that could lock the system into an inflexible technical pathway?",
+    "Does the enterprise leverage market scale to secure asymmetric distribution partnerships that broaden the gap against rivals?"
+   ],
+   "checklist": [
+    "Subsidize initial user acquisition to surpass critical-mass adoption thresholds ahead of competitors.",
+    "Deliver third-party developer integrations to ensure migration away from the platform carries high financial and operational switching costs.",
+    "Monitor customer churn among long-standing accounts to detect early indicators of platform decay."
+   ]
+  },
+  {
+   "id": "S19",
+   "name": "Gartner Hype Cycle",
+   "sectionTitle": "The Gartner Hype Cycle and Amara’s Law",
+   "category": "Tech & Dynamics",
+   "creatorYear": "R. Amara / J. Fenn (1995)",
+   "tableSchematic": "5-Phase Expectation Wave",
+   "inflection": "Misallocating capital at peak hype or during market troughs",
+   "output": "Metric-driven adoption over speculative investments",
+   "attribution": "Roy Amara (formulation of Amara's Law, 1960s/1970s); formalized as the Hype Cycle by Jackie Fenn at Gartner Group (1995).",
+   "diagnosis": "Is the leadership team deploying capital at the peak of inflated expectations, or divesting during the trough of disillusionment right before practical enterprise utility scales?",
+   "canvas": "Non-linear trajectory plotting Visibility and Expectations along the vertical axis against Time along the horizontal axis through five phases: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity.",
+   "stressTest": [
+    "Is current product development based on validated customer workflows or on speculative market enthusiasm driven by vendor marketing?",
+    "Has the company retained sufficient capital reserves to operate through the industry consolidation phase?",
+    "Has the team established concrete operational milestones to verify when the technology transitions from early hype into practical enterprise utility?"
+   ],
+   "checklist": [
+    "Audit technology investments against Amara’s Law: balance short-term over-investment with long-term capital allocation for structural changes.",
+    "Shift product metrics from speculative vanity indicators to customer cost-per-transaction and operational ROI.",
+    "Acquire distressed intellectual property or recruit specialized engineering talent during the trough of disillusionment."
+   ]
+  },
+  {
+   "id": "S20",
+   "name": "Conway’s Law / IMC",
+   "sectionTitle": "Conway’s Law and the Inverse Conway Maneuver",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Melvin Conway (1967) / ThoughtWorks",
+   "tableSchematic": "Bipartite Org-to-Code Alignment",
+   "inflection": "Team communication silos producing monolithic bloat",
+   "output": "Inverse Conway team-to-API restructuring",
+   "attribution": "Melvin E. Conway; \"How Do Committees Invent?\" Datamation, 1968; operationalized as the Inverse Conway Maneuver by Ruth Malan, James Lewis, and ThoughtWorks (circa 2010).",
+   "diagnosis": "Are rigid internal communication structures forcing the production of fragmented, monolithic software architectures that slow delivery velocity?",
+   "canvas": "Bipartite mapping model showing Organizational Communication Topologies (team reporting lines, organizational boundaries) directly mirrored in Software System Topologies (service boundaries, API interfaces).",
+   "stressTest": [
+    "Does the software architecture reflect historical corporate hierarchy rather than the natural flow of user value?",
+    "Are independent engineering squads delayed by cross-team synchronization bottlenecks caused by shared databases and monolithic codebases?",
+    "Is executive leadership prepared to restructure teams and reporting lines to force software services to decouple into modular architectures?"
+   ],
+   "checklist": [
+    "Restructure engineering squads to map directly to bounded product domains and strategic business capabilities.",
+    "Implement contract-driven API boundaries between teams to eliminate synchronous coordination meetings and cross-team dependencies.",
+    "Audit pull requests to verify that squads operate autonomously without modifying external codebases."
+   ]
+  },
+  {
+   "id": "S21",
+   "name": "Cynefin Framework",
+   "sectionTitle": "Snowden’s Cynefin Framework for Strategic Sensemaking",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Dave Snowden (1999/2007)",
+   "tableSchematic": "5-Domain Sensemaking Topology",
+   "inflection": "Applying rigid plans to complex, unpredictable environments",
+   "output": "Safe-to-fail experiments vs automated procedures",
+   "attribution": "Dave Snowden; \"Liberating Knowledge,\" Knowledge Management, 1999; expanded with Mary E. Boone in \"A Leader's Framework for Decision Making,\" Harvard Business Review, 2007.",
+   "diagnosis": "Is executive leadership misapplying linear, predictive planning models to complex or chaotic operational problems?",
+   "canvas": "Five-domain sensemaking topology mapping Clear (Sense-Categorize-Respond), Complicated (Sense-Analyze-Respond), Complex (Probe-Sense-Respond), Chaotic (Act-Sense-Respond), and Confused/Disorder at the center.",
+   "stressTest": [
+    "Is management attempting to use exhaustive analysis to create certainty in a Complex domain that requires empirical probing and experimentation?",
+    "Are standard operating procedures being applied to complex challenges, introducing rigid bureaucratic processes into emergent execution environments?",
+    "When an operational crisis occurs, does leadership deliberate instead of taking immediate stabilizing actions to exit the Chaotic domain?"
+   ],
+   "checklist": [
+    "Categorize all active strategic initiatives into Clear, Complicated, Complex, and Chaotic domains during executive planning.",
+    "Design safe-to-fail experiments with predefined termination criteria for every initiative identified as Complex.",
+    "Establish standard operating procedures and deterministic automation for all capabilities located within the Clear domain."
+   ]
+  },
+  {
+   "id": "S22",
+   "name": "Systems Archetypes",
+   "sectionTitle": "Systems Archetypes: Limits to Growth and Shifting the Burden",
+   "category": "Tech & Dynamics",
+   "creatorYear": "Peter Senge / Jay Forrester (1990)",
+   "tableSchematic": "Closed Causal Loop Diagrams (CLD)",
+   "inflection": "Growth encountering constraints; reliance on temporary fixes",
+   "output": "Identification and resolution of root constraints",
+   "attribution": "Jay W. Forrester; Industrial Dynamics (MIT Press, 1961); formalized as Systems Archetypes by Peter Senge in The Fifth Discipline: The Art & Practice of The Learning Organization (Doubleday, 1990).",
+   "diagnosis": "Is rapid early growth encountering an unseen internal constraint, or are quick fixes eroding the underlying operational capabilities of the business?",
+   "canvas": "Closed-loop causal loop diagram (CLD) showing a Reinforcing Growth Loop (R) counteracted by a Balancing Constraint Loop (B), alongside a Shifting the Burden archetype where a symptomatic solution undermines the fundamental solution.",
+   "stressTest": [
+    "Does the leadership team respond to slowing user acquisition by investing more in paid acquisition rather than resolving core product bottlenecks?",
+    "Is the company relying on temporary operational workarounds that weaken core technical and operational capabilities over time?",
+    "Has the team identified the secondary balancing loops that will constrain capacity when transaction volume triples?"
+   ],
+   "checklist": [
+    "Diagram the causal feedback loops linking reinforcing growth drivers to emerging capacity and support constraints.",
+    "Reallocate capital from short-term customer acquisition incentives directly into resolving the primary operational bottleneck.",
+    "Establish automated alerts for early indicators of system stress, such as customer support escalation rates and database query latencies."
+   ]
+  },
+  {
+   "id": "S23",
+   "name": "Scale Economies",
+   "sectionTitle": "Helmer’s 7 Powers: Scale Economies",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Cost-Volume Amortization Curve",
+   "inflection": "Higher per-unit costs than category volume leaders",
+   "output": "Fixed-cost dilution and pricing barriers",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016).",
+   "diagnosis": "Does the organization’s scale create a decreasing per-unit cost curve that smaller competitors cannot match without incurring unsustainable losses?",
+   "canvas": "2x2 Power Matrix plotting Operational Benefit (Lower Cost or Higher Price) against Barrier to Arbitrage (Why competitors cannot duplicate), where Scale Economies generate cost advantages through fixed-cost amortization over high volume.",
+   "stressTest": [
+    "Are reported unit cost reductions driven by fixed-cost amortization over high volume, or do they represent temporary vendor discounts?",
+    "Does the organization suffer from internal diseconomies of scale, such as communication overhead, that offset unit-cost advantages?",
+    "Can a new entrant bypass the company's scale advantage by leveraging commoditized cloud infrastructure or managed services?"
+   ],
+   "checklist": [
+    "Separate fixed from variable costs to calculate the marginal cost of serving each incremental customer account.",
+    "Return a portion of scale efficiencies to customers through lower prices to increase competitive barriers against new entrants.",
+    "Automate routine operational workflows to prevent headcount from scaling linearly with transaction volume."
+   ]
+  },
+  {
+   "id": "S24",
+   "name": "Network Effects",
+   "sectionTitle": "Helmer’s 7 Powers: Network Effects",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "2-Sided Relational Network Grid",
+   "inflection": "Users leaving despite parity features due to community scale",
+   "output": "Collaborative loops and platform data defensibility",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016); economic foundations in Jeffrey Rohlfs (1974) and Michael Katz and Carl Shapiro (1985).",
+   "diagnosis": "Does each additional user of the platform systematically increase the product's value for all other active participants?",
+   "canvas": "Two-Sided Network Diagram tracking direct utility scaling on one side alongside cross-side indirect utility loops (Consumers to Developers and Producers), bounded by multi-homing barriers.",
+   "stressTest": [
+    "Are users genuinely attracted by the presence of other participants, or is active engagement driven by subsidized marketing incentives?",
+    "Can users easily multi-home, using competing platforms simultaneously with minimal friction or switching cost?",
+    "Does the platform suffer from negative network effects, such as spam or degraded content quality, as user volume grows?"
+   ],
+   "checklist": [
+    "Track multi-homing rates among both supply-side and demand-side participants to measure platform retention strength.",
+    "Build collaborative features into the core product that require peer engagement to unlock primary utility.",
+    "Implement automated moderation and trust systems to prevent platform congestion and maintain network quality at scale."
+   ]
+  },
+  {
+   "id": "S25",
+   "name": "Counter-Positioning",
+   "sectionTitle": "Helmer’s 7 Powers: Counter-Positioning",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Game-Theoretic Payoff Matrix",
+   "inflection": "Incumbents constrained by internal margin destruction",
+   "output": "Exploitation of incumbent business model vulnerabilities",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016).",
+   "diagnosis": "Does the challenger’s business model cause such severe collateral damage to an incumbent’s existing revenue and asset base that the incumbent is economically paralyzed?",
+   "canvas": "Payoff matrix mapping Challenger Strategy against Incumbent Response, demonstrating that copying the challenger's approach destroys the incumbent's legacy profits.",
+   "stressTest": [
+    "Does the challenger mistake an incumbent's delayed response for ignorance, rather than recognizing it as a rational effort to protect legacy cash flows?",
+    "Will the challenger maintain its economic advantage if the incumbent eventually decides to absorb the losses and duplicate the model?",
+    "Is the counter-positioned model profitable on a standalone basis, or does it require continuous venture capital subsidies to survive?"
+   ],
+   "checklist": [
+    "Detail the specific revenue streams and operating margins that an incumbent would cannibalize if it copied the product.",
+    "Price the product to exploit the incumbent’s highest-margin vulnerabilities while preserving positive unit economics.",
+    "Avoid competing within the incumbent’s primary operational domains, focusing instead on areas where the incumbent is constrained."
+   ]
+  },
+  {
+   "id": "S26",
+   "name": "Switching Costs",
+   "sectionTitle": "Helmer’s 7 Powers: Switching Costs",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Balance Sheet Friction Matrix",
+   "inflection": "High churn in increasingly commoditized markets",
+   "output": "Deep workflow and system-of-record integration",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016); grounded in switching-cost economics by Paul Klemperer (1987).",
+   "diagnosis": "Does abandoning the product impose such significant operational, financial, or data-loss risks that customer migration to a rival is practically unfeasible?",
+   "canvas": "Economic Balance Sheet weighing Alternative Product Benefits against Total Switching Costs (including data extraction, workflow disruption, employee retraining, integration rebuilding, and operational downtime).",
+   "stressTest": [
+    "Are switching costs driven by deep workflow and data integration, or are they dependent on restrictive contractual terms?",
+    "If the platform raised renewal pricing by 30%, what percentage of enterprise customers would actively begin migration to a competitor?",
+    "Has the product introduced export capabilities that make it easier for customers to transition to competing platforms?"
+   ],
+   "checklist": [
+    "Integrate the product into enterprise infrastructure to become the authoritative system of record for critical operational data.",
+    "Expand integration points into adjacent business workflows to increase the operational complexity of migration.",
+    "Provide historical analytics and automated workflow triggers that compound in utility the longer the customer uses the platform."
+   ]
+  },
+  {
+   "id": "S27",
+   "name": "Branding Power",
+   "sectionTitle": "Helmer’s 7 Powers: Branding",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Value-Price Surplus Wedge",
+   "inflection": "Inability to command price premiums despite high quality",
+   "output": "Affective trust and counterparty risk mitigation",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016); economic foundations in George Akerlof (1970) and David Aaker (1991).",
+   "diagnosis": "Does the organization command a durable pricing premium or conversion advantage driven by affective trust, identity signaling, or counterparty risk reduction?",
+   "canvas": "Value-Price Wedge diagram displaying the Brand Surplus: the price differential customers are willing to pay for a branded offering compared to an objectively identical alternative.",
+   "stressTest": [
+    "Does the brand reduce perceived risk in high-stakes enterprise decisions, or does it merely enjoy high awareness without pricing power?",
+    "Could the enterprise decrease marketing spend without causing an immediate decline in inbound sales pipeline?",
+    "Is the brand promise supported by reliable product delivery, or is a gap developing between marketing narrative and user experience?"
+   ],
+   "checklist": [
+    "Conduct double-blind pricing experiments to quantify the precise price premium attributable strictly to brand reputation.",
+    "Establish company-wide communication standards and incident-response protocols across all customer touchpoints.",
+    "Publish technical white papers, research reports, and compliance certifications to reinforce enterprise security and trust."
+   ]
+  },
+  {
+   "id": "S28",
+   "name": "Cornered Resource",
+   "sectionTitle": "Helmer’s 7 Powers: Cornered Resource",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Asset Enclosure Diagram",
+   "inflection": "Competitors replicating proprietary technology",
+   "output": "Exclusive legal, data, or talent agreements",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016); resource-based view (RBV) foundations in Birger Wernerfelt (1984) and Jay Barney (1991).",
+   "diagnosis": "Does the organization maintain exclusive access to a scarce, non-replicable asset—such as patents, regulatory licenses, unique talent, or proprietary data—that generates enduring economic rents?",
+   "canvas": "Asset Enclosure Diagram illustrating legal, contractual, or physical ownership over a critical input, preventing rivals from replicating the production function.",
+   "stressTest": [
+    "Does the resource remain under institutional control, or could key personnel depart and recreate the asset elsewhere?",
+    "Are the company's patents, regulatory licenses, or exclusive data agreements legally enforceable under sustained challenge?",
+    "Will architectural or technological shifts make the cornered asset obsolete before its capital cost is recouped?"
+   ],
+   "checklist": [
+    "Secure long-term IP assignment agreements, exclusive data rights, and patent protections around foundational innovations.",
+    "Build proprietary data pipelines that automatically ingest, clean, and structure non-public domain data.",
+    "Implement long-term equity retention structures to secure key contributors who possess critical domain expertise."
+   ]
+  },
+  {
+   "id": "S29",
+   "name": "Process Power",
+   "sectionTitle": "Helmer’s 7 Powers: Process Power",
+   "category": "Defensibility",
+   "creatorYear": "Hamilton Helmer (2016)",
+   "tableSchematic": "Tacit Operational Flow Network",
+   "inflection": "Inability to match rival's operational speed and quality",
+   "output": "Embedded, non-codified operational routines",
+   "attribution": "W. Hamilton Helmer; 7 Powers: The Foundations of Business Strategy (Deep Search Press, 2016); grounded in Toyota Production System principles (Taiichi Ohno) and Richard Rumelt (1995).",
+   "diagnosis": "Has the company embedded complex operational routines that produce superior cost and quality outcomes that competitors cannot duplicate through external observation?",
+   "canvas": "Tacit Knowledge Flow diagram mapping cross-functional feedback loops, continuous optimization routines, and operational procedures that cannot be reduced to simple instruction manuals.",
+   "stressTest": [
+    "Could a well-capitalized competitor match operational performance simply by hiring away several key engineering or operational leaders?",
+    "Are process advantages embedded in company culture, or are they standard procedures that can be replicated via public teardowns?",
+    "Does relentless process optimization make the organization rigid, preventing it from adapting to major technology shifts?"
+   ],
+   "checklist": [
+    "Transition operational knowledge from static manuals into active, continuous operational routines.",
+    "Track error rates, cycle times, and operational latencies to identify workflows operating significantly ahead of industry benchmarks.",
+    "Establish continuous post-mortem and Kaizen feedback loops to incorporate operational learnings into internal tools."
+   ]
+  },
+  {
+   "id": "S30",
+   "name": "Flywheel Effect",
+   "sectionTitle": "Jim Collins’ Flywheel Effect",
+   "category": "Defensibility",
+   "creatorYear": "Jim Collins (2001)",
+   "tableSchematic": "Compounding Clockwise Loop",
+   "inflection": "Fragmented initiatives lacking strategic momentum",
+   "output": "Aligned, self-reinforcing operational engines",
+   "attribution": "Jim Collins; Good to Great: Why Some Companies Make the Leap... and Others Don't (HarperBusiness, 2001); expanded in Turning the Flywheel (2019).",
+   "diagnosis": "Are business initiatives organized as disconnected tactical projects, or do they feed into a self-reinforcing, compounding momentum engine?",
+   "canvas": "Closed-loop clockwise kinetic flywheel mapping four to six operational steps, where executing Step A naturally drives Step B, fueling Step C, accelerating Step D, and reinvesting momentum back into Step A.",
+   "stressTest": [
+    "Can leadership explain how every funded project on the roadmap directly increases the rotational momentum of the flywheel?",
+    "Is there a break in the flywheel loop where customer value fails to generate resources for reinvestment?",
+    "Does the flywheel model overlook external drag forces—such as customer churn or platform taxes—that bleed energy from the system?"
+   ],
+   "checklist": [
+    "Create a five-step flywheel diagram showing explicit causal connections between each operational phase.",
+    "Reallocate capital away from engineering initiatives that do not directly feed energy into the core flywheel.",
+    "Add telemetry to track performance metrics at the handover points between adjacent flywheel steps."
+   ]
+  },
+  {
+   "id": "S31",
+   "name": "Open-Source Archetypes",
+   "sectionTitle": "Open-Source Commercial Archetypes",
+   "category": "Defensibility",
+   "creatorYear": "D. Riehle (2009) / P. Levine (2014)",
+   "tableSchematic": "Two-Tier Commercial Separation",
+   "inflection": "High CAC in developer tools; cloud vendor replication",
+   "output": "Permissive core with commercial hosted/enterprise tiers",
+   "attribution": "Dirk Riehle; \"The Commercial Open Source Business Model\" (Value Creation in E-Business, 2009); Peter Levine; Open Source: From Community to Commercialization (Andreessen Horowitz, 2014).",
+   "diagnosis": "How can an organization distribute software with zero marginal cost via open source while establishing a sustainable, defensible value-capture model?",
+   "canvas": "Two-tier model with an open, permissively licensed core (MIT/Apache 2.0) driving widespread developer distribution, separated by a monetization boundary from a managed cloud SaaS platform and commercial enterprise extensions (SSO, RBAC, Auditing, Multi-tenancy).",
+   "stressTest": [
+    "Does the open-source release cannibalize commercial revenue by including enterprise-grade administrative features in the free edition?",
+    "Can a major cloud provider host the open-source software and provide a managed service at lower cost than the creator?",
+    "Does the open-source community actively contribute to distribution and product development, or does it function primarily as an operational drain on engineering?"
+   ],
+   "checklist": [
+    "Establish a licensing boundary that keeps developer libraries permissive while placing enterprise security and compliance features in commercial tiers.",
+    "Deploy a managed cloud hosted offering that monetizes deployment speed and infrastructure management.",
+    "Monitor developer adoption metrics—including package downloads, repository forks, and community contributions—alongside enterprise sales pipelines."
+   ]
+  },
+  {
+   "id": "S32",
+   "name": "Teece's PFI Model",
+   "sectionTitle": "Teece’s Profiting from Technological Innovation (PFI)",
+   "category": "Defensibility",
+   "creatorYear": "David J. Teece (1986)",
+   "tableSchematic": "2x2 Appropriability Matrix",
+   "inflection": "Value captured by partners rather than the innovator",
+   "output": "Ownership of critical complementary assets",
+   "attribution": "David J. Teece; \"Profiting from Technological Innovation: Implications for Integration, Collaboration, Licensing and Public Policy,\" Research Policy, 1986; expanded in Dynamic Capabilities and Strategic Management (Oxford University Press, 2009).",
+   "diagnosis": "In an environment with weak intellectual property protection, will the innovating company capture the economic value of its breakthrough, or will profits flow to owners of critical complementary assets?",
+   "canvas": "2x2 Matrix plotting Appropriability Regime (Tight versus Weak) against Complementary Assets (Freely Available versus Specialized/Bottleneck), determining whether value is captured by Inventors, Imitators, or Complementary Asset Owners.",
+   "stressTest": [
+    "Does the firm rely primarily on patent protection in an industry where competitors can readily design around intellectual property?",
+    "Does an established incumbent control the critical distribution channels, customer relationships, or regulatory approvals needed to commercialize the innovation at scale?",
+    "Has the business secured ownership of critical complementary assets before revealing its technical breakthrough to the market?"
+   ],
+   "checklist": [
+    "Assess whether the industry’s legal and technical environment provides tight or weak protection for intellectual property.",
+    "Identify the specialized complementary assets—such as enterprise sales networks or cloud infrastructure—required for scaled commercialization.",
+    "Secure strategic partnerships or acquire proprietary control over key complementary assets before launching the offering."
+   ]
+  },
+  {
+   "id": "S33",
+   "name": "Aggregation Theory",
+   "sectionTitle": "Ben Thompson’s Aggregation Theory",
+   "category": "Defensibility",
+   "creatorYear": "Ben Thompson (2015)",
+   "tableSchematic": "3-Tier Supplier-Platform-User",
+   "inflection": "Middlemen extracting rent from distribution channels",
+   "output": "Direct customer relationships and zero marginal cost delivery",
+   "attribution": "Ben Thompson; \"Aggregation Theory,\" Stratechery, 2015.",
+   "diagnosis": "Can the company leverage zero marginal costs and direct user relationships to commoditize suppliers and aggregate market demand?",
+   "canvas": "Three-tier ecosystem hierarchy showing Distributed Commoditized Suppliers at the base, integrated through an API platform layer, serving an expanding base of End Consumers at zero marginal cost.",
+   "stressTest": [
+    "Does the platform maintain direct ownership of the customer relationship and billing, or is it mediated by a third-party marketplace or aggregator?",
+    "Does the business achieve zero marginal cost for delivery, onboarding, and transactions, enabling seamless scaling?",
+    "Are upstream suppliers commoditized and forced to accept platform standards due to the platform's control over consumer demand?"
+   ],
+   "checklist": [
+    "Optimize digital onboarding workflows to reduce marginal customer acquisition and provisioning costs to near zero.",
+    "Standardize supplier integrations into uniform API data schemas to lower supplier switching power.",
+    "Use concentrated consumer demand to negotiate favorable supply terms and exclusive catalog integrations."
+   ]
+  },
+  {
+   "id": "S34",
+   "name": "Strategy Kernel",
+   "sectionTitle": "Richard Rumelt’s Strategy Kernel",
+   "category": "Execution & Coherence",
+   "creatorYear": "Richard Rumelt (2011)",
+   "tableSchematic": "Tripartite Foundation Block",
+   "inflection": "Vague aspirations masquerading as strategic plans",
+   "output": "Integrated Diagnosis, Guiding Policy, and Coherent Actions",
+   "attribution": "Richard P. Rumelt; Good Strategy/Bad Strategy: The Difference and Why It Matters (Crown Business, 2011).",
+   "diagnosis": "Is executive leadership confusing performance targets and wishful thinking with a focused strategy that tackles the company's core challenges?",
+   "canvas": "Tripartite foundation architecture: Diagnosis (simplifying reality by identifying the critical challenge) connecting to Guiding Policy (an overall approach designed to address the diagnosed challenge) leading to Coherent Actions (coordinated steps that reinforce one another).",
+   "stressTest": [
+    "Does the strategic plan simply restate financial goals (such as achieving $50M ARR) instead of addressing an underlying operational or market challenge?",
+    "Does the guiding policy make difficult trade-offs regarding what the organization will deliberately decline to do?",
+    "Are execution initiatives coordinated so that completing one initiative directly increases the leverage and impact of the next?"
+   ],
+   "checklist": [
+    "Write a one-page Diagnosis detailing the single most critical structural constraint currently facing the enterprise.",
+    "Draft a Guiding Policy that addresses this constraint by concentrating organizational resources on a focused, asymmetric objective.",
+    "Audit the product backlog, removing any projects that do not directly support the coherent action plan."
+   ]
+  },
+  {
+   "id": "S35",
+   "name": "Playing to Win",
+   "sectionTitle": "Roger Martin’s Playing to Win Strategy Cascade",
+   "category": "Execution & Coherence",
+   "creatorYear": "R. Martin & A.G. Lafley (2013)",
+   "tableSchematic": "5-Stage Strategy Cascade",
+   "inflection": "Daily execution disconnected from competitive advantage",
+   "output": "Integrated Where-to-Play and How-to-Win choices",
+   "attribution": "A.G. Lafley and Roger L. Martin; Playing to Win: How Strategy Really Works (Harvard Business Review Press, 2013).",
+   "diagnosis": "Are the company's choices of where to compete matched by a differentiated capability system capable of winning in those selected arenas?",
+   "canvas": "Five-stage nested vertical cascade: Winning Aspiration connecting to Where to Play, leading to How to Win, supported by Core Capabilities, and reinforced by Management Systems.",
+   "stressTest": [
+    "Is the Where to Play choice defined too broadly instead of specifying exact target customer profiles, market segments, and channels?",
+    "Does the How to Win choice represent a genuine competitive advantage, or is it merely a list of industry-standard best practices?",
+    "Do the company's existing internal capabilities and operational review rhythms directly support the chosen Where to Play and How to Win choices?"
+   ],
+   "checklist": [
+    "Execute a reverse-engineering strategy session: identify what must be true about market conditions, buyer behavior, and competitors for the strategy to succeed.",
+    "Clearly document the customer segments, product types, and geographic regions the organization will deliberately choose not to serve.",
+    "Align team performance reviews, OKRs, and capital allocations directly with the required core capabilities."
+   ]
+  },
+  {
+   "id": "S36",
+   "name": "Opportunity Solution Trees",
+   "sectionTitle": "Teresa Torres’ Opportunity Solution Trees",
+   "category": "Execution & Coherence",
+   "creatorYear": "Teresa Torres (2016/2021)",
+   "tableSchematic": "Hierarchical Discovery Tree",
+   "inflection": "Shipping features without validating customer needs",
+   "output": "Continuous discovery and assumption-testing sprints",
+   "attribution": "Teresa Torres; \"An Introduction to Opportunity Solution Trees,\" Product Talk, 2016; expanded in Continuous Discovery Habits (Product Talk LLC, 2021).",
+   "diagnosis": "Is the engineering team shipping unvalidated solutions without mapping the underlying customer opportunity space?",
+   "canvas": "Hierarchical tree diagram branching from an Outcome Metric at the root into customer Opportunities (unmet needs, pains, desires), which branch into multiple competing Solutions, terminating in focused Assumption Tests.",
+   "stressTest": [
+    "Did the squad jump directly from an executive business goal to building a specific feature without exploring multiple customer opportunities?",
+    "Are multiple competing solution ideas being evaluated concurrently for each identified opportunity, or is the team committed to a single option?",
+    "Are teams running discrete assumption tests (covering desirability, usability, feasibility, and viability) before deploying production code?"
+   ],
+   "checklist": [
+    "Establish a continuous interview schedule with at least two target customers every week to discover recurring opportunities.",
+    "Reorganize the backlog so that every user story connects to a specific opportunity node and business outcome.",
+    "Create assumption-testing matrices to test the riskiest assumptions before scheduling development sprints."
+   ]
+  },
+  {
+   "id": "S37",
+   "name": "North Star Metric Trees",
+   "sectionTitle": "North Star Metric and Input Metric Trees",
+   "category": "Execution & Coherence",
+   "creatorYear": "S. Ellis (2017) / Amplitude (2019)",
+   "tableSchematic": "Hierarchical Math Metric Tree",
+   "inflection": "Product squads optimizing conflicting vanity metrics",
+   "output": "Decomposed leading-indicator tree alignment",
+   "attribution": "Sean Ellis; Hacking Growth (Crown Business, 2017); formalized into Input Metric Trees by Amplitude and John Cutler (2019/2021).",
+   "diagnosis": "Are individual squads optimizing disconnected vanity metrics that fail to drive long-term business value?",
+   "canvas": "Mathematical tree linking an overarching North Star Metric (representing the intersection of customer value delivery and sustainable business exchange) to four input dimensions: Breadth, Depth, Frequency, and Efficiency.",
+   "stressTest": [
+    "Does the selected North Star metric measure authentic value delivery to the customer, or is it a vanity metric vulnerable to manipulation?",
+    "Can individual product squads trace how changes in their specific team metrics directly influence the overarching North Star metric?",
+    "Does the metric structure maintain balance by tracking leading usage indicators alongside lagging financial retention metrics?"
+   ],
+   "checklist": [
+    "Run an executive alignment session to define a single North Star Metric that captures actual customer value exchange.",
+    "Deconstruct the North Star metric into four operational inputs: Breadth, Depth, Frequency, and Efficiency.",
+    "Assign direct operational ownership of each input metric to a specific product squad."
+   ]
+  },
+  {
+   "id": "S38",
+   "name": "Business Model Canvas",
+   "sectionTitle": "Osterwalder’s Business Model Canvas",
+   "category": "Execution & Coherence",
+   "creatorYear": "Alexander Osterwalder (2004/2010)",
+   "tableSchematic": "9-Block Structural Blueprint",
+   "inflection": "Disconnected business operations and cost structures",
+   "output": "",
+   "attribution": "Alexander Osterwalder; The Business Model Ontology: A Proposition in a Design Science Approach (PhD Dissertation, Université de Lausanne, 2004); published with Yves Pigneur in Business Model Generation (John Wiley & Sons, 2010).",
+   "diagnosis": "Does the organization maintain a coherent, balanced blueprint of how it creates, delivers, and captures economic value?",
+   "canvas": "Nine-block architectural layout mapping Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure.",
+   "stressTest": [
+    "Are Value Propositions matched directly to distinct Customer Segments, or does the canvas list generic capabilities for an undefined market?",
+    "Does the Cost Structure support the operational demands of the Key Activities and Resources, or do unit economics degrade as the business scales?",
+    "Does the canvas specify how value will be captured, or does it depend on vague assumptions about future monetization?"
+   ],
+   "checklist": [
+    "Document the business model in a declarative BMML (YAML) or JSON schema to track revisions over time.",
+    "Run validation scripts to confirm that every customer segment connects to a specific value proposition, distribution channel, and revenue stream.",
+    "Identify the three riskiest assumptions across the canvas and schedule validation sprints to test them."
+   ]
+  },
+  {
+   "id": "S39",
+   "name": "Lean Canvas",
+   "sectionTitle": "Ash Maurya’s Lean Canvas",
+   "category": "Execution & Coherence",
+   "creatorYear": "Ash Maurya (2012)",
+   "tableSchematic": "9-Block Risk-Hypothesis Grid",
+   "inflection": "High uncertainty and unvalidated startup assumptions",
+   "output": "Testing cycles for high-risk assumptions",
+   "attribution": "Ash Maurya; Running Lean: Iterate from Plan A to a Plan That Works (O'Reilly Media, 2012); adapted from Osterwalder's Business Model Canvas (2010).",
+   "diagnosis": "In an early-stage venture facing high uncertainty, what are the primary unvalidated assumptions that threaten company viability?",
+   "canvas": "Nine-block early-stage canvas substituting operational boxes with startup-focused elements: Problem (top three), Customer Segments (Early Adopters), Unique Value Proposition, Solution (top three features), Channels, Revenue Streams, Cost Structure, Key Metrics, and Unfair Advantage.",
+   "stressTest": [
+    "Does the Unfair Advantage describe a genuine competitive barrier—such as network effects or proprietary data—or merely internal execution effort?",
+    "Are the top three problems supported by observed customer workarounds, or are they hypothetical issues that customers will not pay to resolve?",
+    "Has the team identified a specific profile of early adopters willing to use an incomplete initial release?"
+   ],
+   "checklist": [
+    "Complete the Lean Canvas within a single 20-minute exercise, explicitly noting existing customer alternatives for each identified problem.",
+    "Conduct discovery interviews to verify that target customers consider the primary problem an urgent priority.",
+    "Execute a schema validation check to flag any missing entries or generic descriptions in the Unfair Advantage block."
+   ]
+  },
+  {
+   "id": "S40",
+   "name": "PLG & Hook Loop",
+   "sectionTitle": "Product-Led Growth (PLG) Moat and Hook Model",
+   "category": "Execution & Coherence",
+   "creatorYear": "N. Eyal (2014) / W. Bush (2019)",
+   "tableSchematic": "4-Stage Behavioral Retention Loop",
+   "inflection": "High CAC choking traditional sales channels",
+   "output": "Self-serve, habit-forming product onboarding",
+   "attribution": "Nir Eyal; Hooked: How to Build Habit-Forming Products (Portfolio/Penguin, 2014); Wes Bush; Product-Led Growth: How to Build a Product That Sells Itself (ProductLed Press, 2019).",
+   "diagnosis": "Are high sales and marketing acquisition costs choking distribution, requiring the product experience itself to drive customer acquisition, conversion, and retention?",
+   "canvas": "Four-stage recurring loop linking an internal or external Trigger to an Action (completed in anticipation of reward), a Variable Reward (satisfying user interest), and an Investment (loading the next trigger).",
+   "stressTest": [
+    "Does the product require a conversation with a sales representative before delivering its core value proposition?",
+    "Can users reach the core \"aha\" moment quickly, or does onboarding friction delay time-to-value beyond the user's patience threshold?",
+    "Does the user make a cumulative investment—such as saving data, customizing settings, or inviting colleagues—that increases switching costs over time?"
+   ],
+   "checklist": [
+    "Measure time-to-value from initial account creation to the primary realization of value, eliminating half of the onboarding steps.",
+    "Implement collaboration loops that encourage users to invite colleagues directly into their workspace.",
+    "Set up automated product-qualified lead (PQL) alerts based on active feature usage rather than marketing form submissions."
+   ]
+  },
+  {
+   "id": "S41",
+   "name": "OKR Alignment Cascades",
+   "sectionTitle": "Andy Grove’s OKRs and Alignment Cascades",
+   "category": "Execution & Coherence",
+   "creatorYear": "A. Grove (1983) / J. Doerr (2018)",
+   "tableSchematic": "2-Tier Objective-Result Network",
+   "inflection": "Departmental silos lacking strategic focus and speed",
+   "output": "Measurable, time-bound outcome accountability",
+   "attribution": "Andrew S. Grove; High Output Management (Random House, 1983); popularized by John Doerr in Measure What Matters (Portfolio/Penguin, 2018).",
+   "diagnosis": "Are company departments misaligned and pursuing divergent goals that fail to translate executive strategy into measurable outcomes?",
+   "canvas": "Two-tier goal architecture linking directional, qualitative Objectives with three to five quantitative, time-bound Key Results that demonstrate objective attainment.",
+   "stressTest": [
+    "Are Key Results written as completed tasks and activity checklists rather than measurable changes in business performance?",
+    "Are OKRs tied directly to individual compensation, encouraging teams to set conservative, easily achievable targets?",
+    "Does executive leadership set more than three core Objectives per quarter, diluting overall organizational focus?"
+   ],
+   "checklist": [
+    "Audit every proposed Key Result to ensure it includes a baseline metric, a target value, and an automated tracking pipeline.",
+    "Review OKR dependencies across interdependent teams to confirm cross-functional priorities are acknowledged and aligned.",
+    "Establish a weekly fifteen-minute check-in rhythm to review progress, track confidence scores, and remove operational blockers."
+   ]
+  },
+  {
+   "id": "S42",
+   "name": "Agile Dual Transformation",
+   "sectionTitle": "Open Agile Architecture and Dual Transformation",
+   "category": "Execution & Coherence",
+   "creatorYear": "The Open Group (2020)",
+   "tableSchematic": "2-Track Transformation Canvas",
+   "inflection": "Modernizing legacy while exploring greenfield opportunities",
+   "output": "Version-controlled Strategy-as-Code backlogs",
+   "attribution": "The Open Group; Open Agile Architecture™ Standard (O-AA, 2020); Clark Gilbert, Matthew Eyring, and Mark Johnson; \"Dual Transformation,\" Harvard Business Review, 2012.",
+   "diagnosis": "How can an enterprise modernize mission-critical legacy architectures while simultaneously developing greenfield, disruptive product capabilities?",
+   "canvas": "Dual transformation architecture displaying Transformation A (Defending and modernizing the core business) alongside Transformation B (Developing the greenfield growth engine), connected by a shared Capability Linkage layer.",
+   "stressTest": [
+    "Is the business executing legacy modernization and greenfield exploration sequentially rather than as concurrent, parallel initiatives?",
+    "Does the core business treat the greenfield venture as an internal competitor, limiting access to shared data and enterprise assets?",
+    "Are legacy modernization teams measuring success through technical completion rather than improved delivery speed and business agility?"
+   ],
+   "checklist": [
+    "Establish two parallel delivery tracks: Track A focused on decoupling legacy architectures, and Track B on developing greenfield capabilities.",
+    "Apply the Strangler Fig pattern to intercept legacy system calls via API gateways, gradually deprecating monolithic services.",
+    "Define strategic goals as version-controlled YAML specifications checked directly into code repositories."
+   ]
+  }
+ ]
+}

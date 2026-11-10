@@ -1,0 +1,51 @@
+{
+  "id": "S02",
+  "name": "Blue Ocean & ERRC",
+  "category": "Market & Competition",
+  "diagnosis": "Has competition devolved into a margin-compressing zero-sum contest governed by benchmark copying and feature-parity bidding wars?",
+  "schematic": "2x2 ERRC & Strategy Canvas",
+  "canvas": "2x2 Eliminate-Reduce-Raise-Create (ERRC) functional grid integrated with an industry Strategy Canvas that plots competing factors along the horizontal axis against buyer offering levels from 1 to 5 along the vertical axis.",
+  "stressTest": [
+    {
+      "text": "Do Eliminate and Reduce cut real costs, or protect legacy in safety's name?"
+    },
+    {
+      "text": "Do non-customers call the new value mission-critical, or merely interesting?"
+    },
+    {
+      "text": "Does the curve diverge from incumbents, or parallel it with cosmetic changes?"
+    }
+  ],
+  "stressTestFull": [
+    "Do the proposed Eliminate and Reduce vectors remove core structural costs, or does the plan preserve legacy cost centers under the guise of operational safety?",
+    "Is the newly Created value proposition recognized as mission-critical by verified non-customers, or does it merely represent an internal technical curiosity?",
+    "Does the resulting strategic value curve diverge fundamentally from industry incumbents, or does it parallel the competitive baseline with superficial variations?"
+  ],
+  "checklist": [
+    "Interview 15 non-customers who abandoned or bypassed the category.",
+    "Require eliminations and reductions to equal or exceed raises and creates.",
+    "Ship a minimal variant stripped of bottom-quartile legacy features."
+  ],
+  "checklistFull": [
+    "Interview 15 non-customers who systematically abandoned or bypassed the category to isolate structural friction points.",
+    "Enforce an operational constraint requiring the count of eliminated and reduced capabilities to equal or exceed the count of raised and created capabilities.",
+    "Deploy a minimum viable commercial variant that strips away all bottom-quartile industry legacy features."
+  ],
+  "origin": {
+    "authors": [
+      "W. Chan Kim",
+      "Renée Mauborgne"
+    ],
+    "year": 2005,
+    "title": "Blue Ocean Strategy: How to Create Uncontested Market Space and Make the Competition Irrelevant",
+    "publication": "Harvard Business Review Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

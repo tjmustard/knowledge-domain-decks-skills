@@ -1,0 +1,63 @@
+{
+  "id": "S03",
+  "name": "PESTEL Analysis",
+  "category": "Market & Competition",
+  "diagnosis": "Are external legislative, macroeconomic, or sociotechnical regime shifts threatening the core operating assumptions of the enterprise?",
+  "schematic": "6-Column Macro Impact Board",
+  "canvas": "Six-column macro-environmental impact matrix evaluating forces across Political, Economic, Socio-cultural, Technological, Environmental, and Legal dimensions, categorized by velocity of onset and operational severity.",
+  "stressTest": [
+    {
+      "text": "Does leadership treat regulation as overhead, not a market force?"
+    },
+    {
+      "text": "Has the company stress-tested unit economics against rising capital costs?"
+    },
+    {
+      "text": "Are demographic shifts eroding the product despite stable retention?"
+    }
+  ],
+  "stressTestFull": [
+    "Does leadership treat regulatory and compliance interventions as administrative overhead rather than structural market-shaping catalysts?",
+    "Has the company stress-tested its unit economics against sustained capital cost inflation and margin compression?",
+    "Are demographic or behavioral shifts eroding the long-term utility of the core product despite stable historical retention metrics?"
+  ],
+  "checklist": [
+    "Audit workflows against pending data-sovereignty and governance rules.",
+    "Stress-test lifetime value against a 20% procurement budget cut.",
+    "Build redundancy for single-geography supply and infrastructure dependencies."
+  ],
+  "checklistFull": [
+    "Execute a comprehensive regulatory audit mapping operational workflows against pending data sovereignty, security, and algorithmic governance mandates.",
+    "Stress-test customer lifetime value and acquisition models against a 20% reduction in enterprise procurement budgets.",
+    "Establish operational redundancies for all critical single-geography supply and infrastructure dependencies."
+  ],
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Francis J. Aguilar"
+        ],
+        "year": 1967,
+        "title": "Scanning the Business Environment",
+        "publication": "Macmillan"
+      },
+      {
+        "authors": [
+          "Liam Fahey",
+          "V. K. Narayanan"
+        ],
+        "year": 1986,
+        "title": "Macroenvironmental Analysis for Strategic Management",
+        "publication": "West Publishing"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "matrix_3x3",
+      "columns": 2,
+      "rows": 1
+    }
+  }
+}

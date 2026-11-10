@@ -126,6 +126,10 @@ function lowestInk(png) {
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 
 const args = deckArgs();
+// A probe needs the measured row of every face, not only the ones that fail.
+// The flag is opt-in because the shipped output is a pass/fail line a gate
+// reads, and a table of 200 rows would bury it.
+const showRows = process.argv.includes("--rows");
 const decks = await loadDecks(args);
 const failures = [];
 const warnings = [];
@@ -176,6 +180,7 @@ for (const deck of decks) {
       for (const [face, page] of [["recto", 2 * index + 1], ["verso", 2 * index + 2]]) {
         const file = join(dir, `page-${page}.png`);
         const lowest = lowestInk(decodePng(readFileSync(file)));
+        if (showRows) console.log(`row ${deck.slug} ${card.id} ${face} ${lowest}`);
         if (lowest > TRIM) {
           const pt = ((lowest - SAFE) / PPI) * 72;
           failures.push(

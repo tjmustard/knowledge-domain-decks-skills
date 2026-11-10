@@ -1960,3 +1960,68 @@ gate's liveness probes stay meaningful. Every face was measured with
 Liberating Structures line) and several two-line steps were trimmed to bring
 each verso inside the safe edge. The four earlier decks' PDFs, web bundles,
 rules and skills are byte-identical.
+
+## 57. The strategy deck draws six source layouts from one declarative shape
+
+The source's own card schema names six `layout_type` values - `2x2`,
+`stage_progression`, `value_chain`, `feedback_loop`, `tree`, `matrix_3x3` - and
+assigns none of them to a framework. The deck therefore carries that assignment
+as committed data: `decks/strategy/data/layout-map.json` maps all forty-two ids
+to a kind and a pair of counts, and is the authority the deck test compares each
+record's `figure` against. No shipped shape draws those six layouts: the
+existing shapes are semantic illustrations with fixed captions (`hierarchy`
+prints Hick's-law labels, `feedback-loop` prints SYSTEM), so reusing one would
+put another card's words under this card's figure.
+
+One new shape, `strategy-canvas`, draws a `kind` with `columns` and `rows`.
+Every kind reads both counts; an unknown kind draws a distinct marked fallback
+that also reads both counts, so the gate's string probe (append `X`) changes the
+drawing and every numeric probe (`×2+3`, `+1`, `-1`) does too. The shape is
+declarative and emits through the same `line`/`rect`/`circle`/`coord` helpers as
+the rest of the registry, so the six-decimal wrapper covers it.
+
+The five shipped decks are byte-identical after the addition: a fresh build of
+this branch produced the same five PDFs as `7fc8328` (`40164666`, `435f2a9f`,
+`a6f177de`, `035429f5`, `5ca91630`), and regenerating web, rules and skills
+changed no committed artifact outside the new deck. The addition of a shape name
+cannot move a deck that does not name it.
+
+Two small engine fixes came with the deck. `check-fit.mjs` gained an opt-in
+`--rows` flag because a budget probe needs every measured face, not only the
+failures. `check-web.mjs` now looks for the first block the card face actually
+carries: a deck that keeps a block in the rules file only (`"card": false`) was
+being failed for not printing that block on the verso.
+
+## 58. The strategy card's budget is proven before the deck is authored
+
+The source's fields measure 900-1,060 characters per card against a 468-584
+character back (DECISIONS 52). The card therefore carries: front - the
+diagnosis question verbatim and the table's schematic tag; back - three pressure
+questions, three actions, and the citation. The uncompressed canvas, questions
+and actions go to `canvas`, `stressTestFull` and `checklistFull`, which the rules
+file and the skill resources print unabridged.
+
+Three real cards were authored first and measured with `npm run check:fit
+--deck strategy --rows` (100 ppi, safe row 468.75, trim row 487.5):
+
+| card | recto | verso |
+|---|---|---|
+| S01 Porter's Five Forces | 450 | 404 |
+| S02 Blue Ocean & ERRC | 450 | 416 |
+| S03 PESTEL Analysis | 433 | 428 |
+
+Zero OVER, zero TIGHT. The compression rule that follows from the measurement:
+each of the six back items stays within 96 characters (two lines at 7 pt) and
+the worst face of a dimension must stay under 468.75; a card that would run past
+that line is trimmed item by item, never by truncating the source, which the
+artifacts keep whole. The S03 card shows the real cost of a two-parent work: its
+two citations print as two source lines, and the card still fits with 40 pt to
+spare.
+
+The probe also found a data-shape error rather than an engine one. A declared
+`list` block prints its entries as strings; the first draft stored the actions as
+`{text}` objects, so the card printed `· ( text: "...")` and the rules file would
+have printed `[object Object]`. The schema now types `checklist` as an array of
+strings - the ordered `items` field keeps `{text}` because that is where the
+template reads `item.text` - and the test for the deck will assert that no
+artifact contains an object literal.
