@@ -773,12 +773,15 @@ Every bounding box lies inside that box. Distances are reported in points at the
 card's own scale, 0.324 pt per unit. The tightest are EVEN SPLIT at 2.05 pt (6.3
 units) from the reference line and CONFIRMING and DISCONFIRMING at 2.86 pt (8.8
 units) from their bars; DISTINCT sits 3.80 pt from the odd mark and END 2.49 pt
-below its dot. The longest label is not in a shape's field but the MPA-06
-caption, 46 characters and 249 units wide, which clears the 400-unit box by 75
-units either side but is longer than the 45-character, 248-unit figure measured
-on `decline-curve`. That figure is the widest a field label can be before it
-collides with its marks; a centred caption is bounded by the box instead, and a
-taller caption would be a line-height question rather than a width one. Re-running
+below its dot. The longest captions are not in a shape's field but the MPA-06
+and MPA-08 captions, both 46 characters and 249 units wide, which clear the
+400-unit box by 75 units either side but are longer than the 45-character,
+248-unit figure measured on `decline-curve`. That figure is the widest a field
+label can be before it collides with its marks; a centred caption is bounded by
+the box instead, and a taller caption would be a line-height question rather
+than a width one. The deck's longest caption, outside this measured set, is
+TME-10's at 47 characters and about 254 units by the same measure, which still
+clears the box by about 73 units either side. Re-running
 this harness moves EVEN SPLIT by about 0.13 pt, so the second decimal is
 resolution here for the same reason it is on page 25's overrun. The pending font
 pin will re-derive all of these, so none is a permanent bound.
