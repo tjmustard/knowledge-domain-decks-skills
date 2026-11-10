@@ -387,6 +387,29 @@ What stays manual, on any machine:
 | `npm run judge`, `npm run triage` | These need a model endpoint and a human adjudicating each finding. They are development tools, not build steps. |
 | Publishing the PDF and the site | A green run is evidence about a commit, not permission to publish it. |
 
+### Hooks: the same checks, before the commit leaves the machine
+
+`.githooks/` holds two hooks. `pre-commit` runs `test:unit` — under a second, no
+browser and no Typst, cheap enough that nobody is tempted to skip it on a normal
+day. `pre-push` runs `npm test`, the whole suite including the acceptance gate,
+because a pre-commit hook cannot see a rebase or an amend: it runs before those
+exist, so a commit that was green when written can still reach a push red.
+pre-push runs on the commits actually leaving the machine.
+
+Git does not clone hooks, so each clone opts in once:
+
+```
+npm run hooks:install    # git config core.hooksPath .githooks
+```
+
+The bypass is deliberate and visible: `git commit --no-verify`, `git push
+--no-verify`. A local hook protects this machine; it cannot protect a clone that
+never ran the installer, a push from another machine, or a ref update made by a
+web editor. CI is the backstop for all three, and it reports rather than blocks
+— the workflow runs after the push. Hooks and CI check the same commands; there
+is no hook-only path, so a hook that passes and a workflow that passes mean the
+same thing.
+
 ### What the checks prove
 
 | Command | Proves |

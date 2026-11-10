@@ -1,0 +1,22 @@
+#!/bin/sh
+# Block a push when the full suite fails.
+#
+# This is the hook that matters. A pre-commit hook cannot see a rebase or an
+# amend - it runs before those exist - so a commit that was green when it was
+# written can reach a push red. pre-push runs on the commits actually leaving
+# the machine, which is the last place a local check can catch that.
+#
+# npm test runs the unit suites, the whole pipeline, the browser smoke test,
+# and the acceptance gate against HEAD. It skips what the machine cannot do
+# (no Typst, no Chrome) and says so; it never skips in CI. So this hook blocks
+# on everything checkable here, and CI remains the backstop for the rest.
+#
+# Deliberate bypass: git push --no-verify
+set -e
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "pre-push: npm not found; refusing to push without the checks." >&2
+  exit 1
+fi
+
+npm test

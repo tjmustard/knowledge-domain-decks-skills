@@ -1,0 +1,32 @@
+#!/bin/sh
+# Block a commit when the cheap checks fail.
+#
+# Unit tests only: no browser, no Typst, no PDF build. A commit should be cheap
+# enough that nobody is tempted to skip the hook on a normal day. The full
+# suite, including the pipeline and the acceptance gate, runs in pre-push.
+#
+# The unit suite also runs the generators, and one of them writes the committed
+# artifacts in place. On a green tree that rewrites identical bytes and changes
+# nothing; if it changes anything, the artifacts in the commit are stale. Say so
+# and block rather than let the rewrite travel silently.
+#
+# Deliberate bypass: git commit --no-verify
+set -e
+
+if ! command -v npm >/dev/null 2>&1; then
+  echo "pre-commit: npm not found; refusing to commit without the checks." >&2
+  exit 1
+fi
+
+before=$(git status --porcelain)
+npm run --silent test:unit
+after=$(git status --porcelain)
+
+if [ "$before" != "$after" ]; then
+  echo "" >&2
+  echo "pre-commit: the unit suite changed tracked files - the generators wrote new output." >&2
+  echo "Stage the regenerated files and commit again:" >&2
+  echo "" >&2
+  git status --short >&2
+  exit 1
+fi

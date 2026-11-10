@@ -2,7 +2,7 @@
   "name": "knowledge-domain-decks-skills",
   "version": "0.1.0",
   "private": true,
-  "description": "Knowledge Domain Decks \u2014 printable and digital reference card decks built from a single validated dataset.",
+  "description": "Knowledge Domain Decks — printable and digital reference card decks built from a single validated dataset.",
   "license": "MIT",
   "scripts": {
     "validate": "node scripts/validate.mjs",
@@ -21,7 +21,8 @@
     "judge": "node packages/judges/run.mjs",
     "test:judges": "node --test packages/judges/test/*.test.mjs",
     "triage": "node packages/triage/run.mjs",
-    "test:triage": "node --test packages/triage/test/*.test.mjs"
+    "test:triage": "node --test packages/triage/test/*.test.mjs",
+    "hooks:install": "git config core.hooksPath .githooks && echo \"git hooks installed (core.hooksPath=.githooks): pre-commit runs test:unit, pre-push runs npm test\""
   },
   "devDependencies": {
     "ajv": "^8.20.0"
