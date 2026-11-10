@@ -130,6 +130,78 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** John Maeda (2006). *The Laws of Simplicity*. MIT Press.
 
+### HMM-08 — Conway's Law
+
+**Axiom.** A system's structure ends up copying the communication structure of the teams that built it.
+
+**Apply when.** Two teams own half a flow each, and the product asks users to cross a seam no user would draw.
+
+**Checklist.**
+- [ ] Organise menus by the user's jobs, not by the departments that own the backend services.
+- [ ] Share one set of design tokens across services so separately built screens look related.
+- [ ] Merge settings the back end splits across services behind one account screen.
+- [ ] Before a reorganisation ships, map its team boundaries onto the screens users must cross. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A telecom portal sends customers to three subdomains with different themes to manage phone, broadband, and billing.
+
+**Fix.** One identity and one design shell put all three offerings in a single services dashboard.
+
+**Source.** Melvin E. Conway (1968). *How Do Committees Invent?* Datamation, 14(4), 28-31.
+
+### HMM-09 — Gulf of Execution and Gulf of Evaluation
+
+**Axiom.** Keep intent, action, and visible result close enough that people never have to guess.
+
+**Apply when.** A button gives no sign it worked, so people click again and create duplicate orders.
+
+**Checklist.**
+- [ ] Mark clickable elements with a signifier users can see before they hover or click.
+- [ ] Change the control and show a status line as soon as an action is accepted.
+- [ ] State in the error message what happened, which object it concerned, and the next step.
+- [ ] Ask users to describe what the system did after each action; treat a wrong answer as a gulf. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Clicking Process leaves the cursor unchanged and shows nothing, so the operator clicks three times and files three orders.
+
+**Fix.** The button disables itself, shows a spinner, and relabels to Processing until the result appears.
+
+**Source.** Donald A. Norman (1986). *Cognitive Engineering*. User Centered System Design, 31-62.
+
+### HMM-10 — Affordance Theory
+
+**Axiom.** An object's properties suggest what can be done with it, before any label says so.
+
+**Apply when.** A control that works looks exactly like the text around it, so nobody tries it.
+
+**Checklist.**
+- [ ] Give every control a fill, border, or weight the surrounding text does not have.
+- [ ] Keep links underlined or coloured at rest; hover styling alone is not a signifier.
+- [ ] Draw a grip on anything draggable, and make the whole surface respond to the drag.
+- [ ] Watch first-time users try to click; every dead click marks an affordance that was not visible. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Call-to-action buttons are set as plain text with no border, fill, or underline, identical to body copy.
+
+**Fix.** Controls sit in filled rounded containers that contrast with the surface and lift on hover.
+
+**Source.** James J. Gibson (1977). *The Theory of Affordances*. Perceiving, Acting, and Knowing (Shaw & Bransford, eds.).
+
+### HMM-11 — Feedback Principle (Cybernetic Loop)
+
+**Axiom.** People can steer only what reports back what their last action did.
+
+**Apply when.** A long upload shows nothing until it finishes, so people reload and start it again.
+
+**Checklist.**
+- [ ] Show a state change on every control as soon as it is pressed, not when the request returns.
+- [ ] Keep a progress indicator for any operation that outlasts a second or two.
+- [ ] Report the outcome of a save where the user is looking, not only in a toast that fades.
+- [ ] Measure how long the interface takes to acknowledge an action, and treat silence as a defect. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A file drop zone looks the same while a file is dragged over it, so the user cannot tell whether a drop will be accepted.
+
+**Fix.** The zone outlines itself, tints its surface, and shows Drop files to upload while a file is over it.
+
+**Source.** Norbert Wiener (1948). *Cybernetics: Or Control and Communication in the Animal and the Machine*. MIT Press.
+
 ## Gestalt & Visual Perception
 
 ### GES-01 — Law of Proximity
@@ -148,6 +220,42 @@ public-domain principle, when to check for it, and the concrete fix.
 **Fix.** Use 4px from label to input and 24px from the input container to the next field label.
 
 **Source.** Max Wertheimer (1923). *Untersuchungen zur Lehre von der Gestalt II*. Psychologische Forschung, 4, 301-350.
+
+### GES-02 — Law of Similarity
+
+**Axiom.** Elements that share colour, shape, or size are read as one kind of thing.
+
+**Apply when.** Two different kinds of control share a style, or one kind is drawn three different ways.
+
+**Checklist.**
+- [ ] Give every primary action the same fill, radius, and weight; a variant is a different thing.
+- [ ] Draw metadata badges and filter pills in different shapes, not just different colours.
+- [ ] Reserve one accent colour for items that must stand apart from everything else.
+- [ ] Squint at a screen: if unlike things merge into blobs, the shared style is the defect.
+
+**Anti-pattern.** Submit buttons appear as blue pills, green rectangles, and outlines on different screens.
+
+**Fix.** All primary actions use one token: same background, text colour, radius, and weight.
+
+**Source.** Max Wertheimer (1923). *Untersuchungen zur Lehre von der Gestalt II*. Psychologische Forschung, 4, 301-350.
+
+### GES-03 — Law of Common Region
+
+**Axiom.** A boundary drawn around things makes them one group, even when they are far apart.
+
+**Apply when.** A dashboard has no borders, so metrics read as one undifferentiated field.
+
+**Checklist.**
+- [ ] Put related fields inside one card surface with a single border or fill.
+- [ ] Keep at least 16px of padding inside a region so its contents read as contained.
+- [ ] Do not wrap every row in its own border; use a boundary only where grouping matters.
+- [ ] Test whether removing the boundary changes the grouping users report; if not, remove it. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Thirty metrics sit on a bare canvas with only whitespace between them, so no one can tell which belong together.
+
+**Fix.** Metrics sit in bordered cards with a faint background, each card holding one functional domain.
+
+**Source.** Stephen E. Palmer (1992). *Common region: A new principle of perceptual grouping*. Cognitive Psychology, 24(3), 436-447.
 
 ## Decision-Making & Cognitive Load
 

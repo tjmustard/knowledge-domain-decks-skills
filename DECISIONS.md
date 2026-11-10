@@ -981,7 +981,8 @@ The deck's Heuristic & Mental Models category shipped with one card, Jakob's Law
 This slice writes laws 2-11 of the research list as HMM-02 to HMM-11, in three
 commits of six, six and eight cards, and completes Gestalt & Visual Perception
 at GES-02 to GES-11. The ID rule is the list's own: HMM-0n is law n, GES-0n is
-law n+11. This entry records the first commit: HMM-02 to HMM-07.
+law n+11. This entry records the first two commits: HMM-02 to HMM-07, then
+HMM-08 to HMM-11 with GES-02 and GES-03.
 
 ### What each card cites, and where the Repository is wrong
 
@@ -1026,6 +1027,62 @@ argues the origin is rational, is not about interface design, and is not the
 card's subject. No Crossref record was found for Maeda's book; the 2007
 *Artifact* hit under the same search is a one-page review.
 
+**HMM-08 Conway's Law** cites Conway (1968), "How Do Committees Invent?",
+*Datamation* 14(4), 28-31. No Crossref record was found. The Repository's
+quantitative model, a hypergraph isomorphism between navigation transitions
+and a team communication matrix, is not printed: it is a formalisation the
+article does not make, and the card asserts the observable - the product's
+seams follow the teams' seams.
+
+**HMM-09 Gulf of Execution and Gulf of Evaluation** cites Norman (1986),
+"Cognitive Engineering", in *User Centered System Design*, 31-62, DOI
+`10.1201/9780367807320-3`. The Repository asks for status feedback "within
+100 ms". That number is not printed: it belongs to the response-time
+literature, not to this chapter, and a card that asserts it would be quoting
+the Repository's arithmetic as its source's claim. Norman's subject here is the
+distance from intent to action and from system state to what a person
+perceives, which is what the axiom states.
+
+**HMM-10 Affordance Theory** cites Gibson (1977), "The Theory of Affordances",
+in *Perceiving, Acting, and Knowing* (Shaw & Bransford, eds.). No Crossref
+record was found for the chapter; the 2014 Routledge reprint under
+`10.4324/9781315816852-11` is a different edition and is not cited. The
+Repository adapts Gibson through Norman (1988); the card cites Gibson because
+the axiom is his - an object's properties afford actions to an actor. The
+checklist uses the word signifier, which is Norman's later term for a
+perceivable cue; the drawing shows both a raised and a recessed surface so the
+card does not claim that one material treatment is the only affordance.
+
+**HMM-11 Feedback Principle (Cybernetic Loop)** cites Wiener (1948),
+*Cybernetics: Or Control and Communication in the Animal and the Machine*, MIT
+Press. No Crossref record was found. The Repository's "100 ms" acceptability
+threshold is not printed. Miller (1968), DOI `10.1145/1476589.1476628`, is where
+the response-time figure comes from; it is not cited, because the card's claim
+is the loop, not a latency, and one paper cannot be the origin of two laws in
+this deck. The card asks the reader to measure acknowledgement time rather than
+assert a number the template cannot test.
+
+**GES-02 Law of Similarity** cites Wertheimer (1923), DOI
+`10.1007/BF00410640`, *Psychologische Forschung* 4, 301-350, which is the
+Repository's own attribution and Crossref's record. It is the second card on
+this paper and the deck's nearest neighbour to GES-01: the axiom is form rather
+than position, the trigger is inconsistent styling rather than uniform spacing,
+and no checklist item is shared, so the two cards are not two names for one
+observation.
+
+**GES-03 Law of Common Region** cites Palmer (1992), "Common region: A new
+principle of perceptual grouping", DOI `10.1016/0010-0285(92)90014-S`,
+*Cognitive Psychology* 24(3), 436-447. Palmer is the paper that named the
+principle; the card's claim is his.
+
+**One paper, five named principles.** Wertheimer (1923) is the source of five
+cards in this category: Proximity (GES-01), Similarity (GES-02), Continuity
+(GES-07), Common Fate (GES-09, where the Repository also names Metzger 1934)
+and Pragnanz (GES-04, whose primary attribution is this paper). Five Source
+lines naming one paper is the paper's scope, not a shortcut: it named these
+principles, and each card isolates one of them in its axiom, trigger and
+checklist.
+
 ### The vertical fit of a recto, measured
 
 The recto holds four text elements: the title, the axiom, the figure and the
@@ -1035,51 +1092,76 @@ then has no room. The check is therefore a measurement of the built page, not
 a formula: every card is rendered and its lowest ink read before it is
 committed.
 
-Measured on the forty rectos of this slice. `T` is title lines at 14 pt, `A`
-axiom lines at 9 pt, `B` trigger lines at 7 pt *below* the "WHEN TO APPLY"
-label - the label itself, the card id and the running head are not counted.
-Bottom ink is the lowest non-white pixel in points from the paper edge, read
-at 864 ppi with a luminance threshold of 245, excluding the 0.2 in accent band
-and the trim outline. Every recto is within the 22.5 pt safe edge by that
-measure; the top ink of every recto stands at 337.58, 0.08 pt above the 337.5
-safe top, a constant of the template present on the 4e4109a baseline.
+Measured on the forty-six rectos of the deck as this commit leaves it. `T` is
+title lines at 14 pt, `A` axiom lines at 9 pt, `B` trigger lines at 7 pt
+*below* the "WHEN TO APPLY" label - the label itself, the card id and the
+running head are not counted. Bottom ink is the lowest point of the text's
+glyph outlines in points from the paper edge, inside the page frame (x 20 to
+196 pt, y 15 to 345 pt); the frame rule at 8.83 pt and the vertical rules at
+x 9 and 207 are excluded, so this is ink inside the frame, not ink on the
+page. The column is read from Typst's SVG export, which emits every glyph as
+an outline path: exact geometry that needs neither dpi nor a luminance
+threshold. Every recto is within the 22.5 pt safe edge; the topmost outline on
+every recto stands at 337.58 to 337.59, 0.08 to 0.09 pt above the 337.5 safe
+top, a constant of the template present on the 4e4109a baseline.
 
-    T  A  B  cards  last baseline  bottom ink (pt)  clearance from 22.5
-    2  2  2   10    31.5           29.75 ×6, 29.83 ×4  +7.25 to +7.33
-    1  3  2    9    38.0           36.25 ×7, 36.33, 37.83  +13.75 to +15.33
-    1  2  3    3    40.5           38.75, 38.83, 40.33  +16.25 to +17.83
-    1  2  2   18    49.6           47.92 ×9, 48.00, 49.50 ×8  +25.42 to +27.00
+    T  A  B  cards  last baseline  lowest vector outline, pt from the paper edge
+    2  2  2   12    31.5           29.822 ×7, 29.850 ×3, 29.864 ×2
+    1  3  2   10    38.0           36.297 ×7, 36.339, 37.879 ×2
+    1  2  3    3    40.5           38.796, 38.824, 40.392
+    1  2  2   21    49.6           47.952 ×5, 47.980 ×4, 47.994 ×3,
+                                   49.534 ×3, 49.535 ×3, 49.548 ×3
 
-The tightest cards are the ten at `T=2, A=2, B=2`, ranked by ink: DEC-06,
-DEC-09, HMM-05, HMM-06, MPA-02, TME-09 at 29.75 (+7.25); HMM-07, MPA-06,
-TME-04, TME-10 at 29.83 (+7.33). HMM-07 sat at 22.33 (-0.17) before its
-trigger was cut from three lines to two; that cut is the reason it now reads
-29.83.
+Clearance from the 22.5 pt safe edge: +7.32 to +7.36, +13.80 to +15.38,
++16.30 to +17.89 and +25.45 to +27.05.
+
+The twelve cards at `T=2, A=2, B=2` are the tight band. Seven share the lowest
+outline, 29.822 pt (+7.32): DEC-06, DEC-09, HMM-05, HMM-06, HMM-11, MPA-02 and
+TME-09. Three read 29.850 (+7.35) - HMM-07, HMM-09 and TME-04 - and two 29.864
+(+7.36), MPA-06 and TME-10, because their last rendered line ends in a deeper
+descender. HMM-07 sat at 22.33 (-0.17) before its trigger was cut from three
+lines to two; that cut is the reason it now reads 29.850.
 
 The four groups are separated by exactly the three line pitches, so the
 measurement yields the model the operator derived independently from PyMuPDF
-bounding boxes. It predicts ink, not a baseline:
+text boxes. It predicts the last line's glyph box, not rendered ink:
 
-    bottom ink = 38.74 − 18.13(T − 1) − 11.66(A − 2) − 9.16(B − 3)
+    bottom box = 38.74 − 18.13(T − 1) − 11.66(A − 2) − 9.16(B − 3)
 
-Its reference is HMM-01, `T1 A2 B3`, which is in the deck and measures 38.83
-ink (40.5 baseline). The relation reproduces the lowest ink of every group to
-0.06 pt; every other card in a group measures 0.08 to 1.60 pt higher, because a
-descending glyph in the last trigger line puts ink below the baseline and a
-card without one does not. Predicting a baseline instead of ink shifts every
-value by about 1.73 pt, and the two models are both right about different
-quantities - which is why a condition has to name its unit and its edge.
+Rendered ink sits at or above the box by the descender depth of the last
+glyph, 0.02 to 1.7 pt; TME-05's box is 36.24 and its ink 37.83. The raster
+agrees with the box to 0.02 pt at threshold 245 and a little above it at
+threshold 200. Its reference is HMM-01, `T1 A2 B3`, which is in the deck and
+measures 38.83 ink at 864 ppi and 38.90 at 200 ppi (40.5 baseline), against the
+model's 38.74: a residual of 0.09 to 0.16 on the reference itself. Every
+prediction inherits that residual, so it is printed rather than assumed away.
+The relation reproduces the lowest ink of every group to 0.06 pt; every other
+card in a group measures 0.08 to 1.7 pt higher, which is the descender range,
+not noise to be minimised. Predicting a baseline instead of a box or ink
+shifts every value by about 1.73 pt, and the two models are both right about
+different quantities - which is why a condition has to name its unit and its
+edge.
 
-The relation is over-parameterised: a title line and two trigger lines enter
-through the same `18T + 9.16B`, so `18(T − 1) + 9.16(B − 3)` cannot separate
-them and two different rows of the table give one number. It also cannot
-describe the card it exists to catch: HMM-07's old counts give 20.61 where it
-measured 22.33, the 1.6 pt descender again. The values 18.13, 11.66 and 9.16
-are line spacing, not design constants. An earlier statement of this relation
-rounded them to 18, 11.66 and 9 and counted `B` as all 7 pt lines on the page,
-which put the reference two lines out and evaluated the overflowing HMM-07 to
-38.75. That rule passed a card two instruments placed past the edge. The
-correction is not a coefficient: it is that the page is measured.
+The two inputs are nearly proportional: one title line costs 18.13 and two
+trigger lines 18.32, 0.19 pt apart. That near-coincidence is why a miscount of
+`T` or `B` was easy to hide, but the coefficients are separately identified:
+three of the four `T` and `B` combinations remain in the deck, and the fourth,
+`T2 B3`, was measured before the fix on the overflowing HMM-07 (box 20.61, ink
+22.33) and was removed by the trigger cut that made the card fit. Each group
+was exact to 0.01, so the relation is not over-parameterised. On the card it
+exists to catch, HMM-07's old counts give box 20.61 and the instruments
+measured ink 22.33 - a 1.72 pt descender gap, the largest in the deck but the
+same quantity. The values 18.13, 11.66 and 9.16 are line spacing, not design
+constants. An
+earlier statement of this relation rounded them to 18, 11.66 and 9 and counted
+`B` as all 7 pt lines on the page, which put the reference two lines out and
+evaluated the overflowing HMM-07 to 38.75. That rule passed a card two
+instruments placed 0.17 to 0.20 pt below the bottom safe edge. A budget form
+written `<= 0` would still pass it: the deck's only card at a zero budget is
+the one that failed. The correction is not a coefficient: it is that the page
+is measured. An intermediate reading held that the model's reference case did
+not occur in the deck; that was an artefact of the same mis-counted `B`, not a
+property of the model, and the reference HMM-01 does occur.
 
 So the rule this deck keeps is the measurement: a card fits when its rendered
 bottom ink is at or above 22.5 pt, read per card before its commit. The four
@@ -1136,6 +1218,40 @@ identical endpoints. The detours are not a count of anything; the caption says
 "parts", and the drawing does not claim that the shortest route is the best
 design.
 
+`org-mirror` (HMM-08): two chains of linked boxes, one for the teams and one for
+the product's screens, with dashed lines joining each box to its counterpart.
+`network` draws one set of nodes and `hierarchy` one tree; neither draws two
+structures and asserts that one is the shape of the other. The dashed joins are
+a claim about correspondence, not a measured connection.
+
+`intent-gap` (HMM-09): an intent, a system box, and two arrows each broken by
+the gap they cross. `promise-line` draws a path that diverges from its promise;
+nothing else draws a path that fails to complete. The gap is the subject, so
+each arrow stops short of its target. No magnitude is encoded.
+
+`signifier-pair` (HMM-10): one surface raised with a shadow line beneath it and
+one recessed with a line inside its top edge. `paired-panels` compares the
+contents of two panels; this compares two treatments of one control's surface,
+which is the affordance claim. Neither surface is a picture of a click.
+
+`feedback-loop` (HMM-11): an input arrow into a system and a return path that
+carries the result back to the actor. `goal-gradient`, `decline-curve` and the
+other curves run in one direction; no existing shape closes a loop back to its
+origin, which is what feedback is.
+
+`similarity-columns` (GES-02): four columns, evenly spaced, with circles in the
+first and last and squares in the middle two. `proximity-grid` varies distance
+and holds form constant; this varies form and holds distance constant, so the
+two are complements and neither demonstrates the other's factor. The spacing
+was made uniform for that reason: at 70 and 100 pt the columns grouped by
+proximity into a different answer than the shapes did, and a drawing whose two
+cues disagree demonstrates neither.
+
+`common-region` (GES-03): three identical, equidistant circles and a boundary
+around two of them. No other shape draws a boundary, so in this deck enclosure
+has no other meaning to confuse it with. The boundary encloses exactly two of
+three; the count is legibility, not a measured claim.
+
 The two keys that were bare identifiers - `hierarchy` and `network` - are quoted
 like the other shapes, so a script that enumerates shapes from the source finds
-all twenty-nine. No behaviour changes.
+all thirty-five. No behaviour changes.

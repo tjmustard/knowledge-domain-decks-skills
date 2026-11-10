@@ -674,6 +674,101 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"100\" y=\"35\" width=\"200\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"55\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160\" cy=\"55\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"55\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240\" cy=\"55\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"100\" y=\"205\" width=\"200\" height=\"80\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"225\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160\" cy=\"225\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"225\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240\" cy=\"225\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"265\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160\" cy=\"265\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"265\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240\" cy=\"265\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"95\" x2=\"200\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"250\" y=\"150\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">gap = 110</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SPACING CREATES THE GROUPS</text></svg>"
     },
     {
+      "id": "GES-02",
+      "name": "Law of Similarity",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "Elements that share colour, shape, or size are read as one kind of thing.",
+      "trigger": "Two different kinds of control share a style, or one kind is drawn three different ways.",
+      "checklist": [
+        {
+          "text": "Give every primary action the same fill, radius, and weight; a variant is a different thing.",
+          "kind": "code"
+        },
+        {
+          "text": "Draw metadata badges and filter pills in different shapes, not just different colours.",
+          "kind": "code"
+        },
+        {
+          "text": "Reserve one accent colour for items that must stand apart from everything else.",
+          "kind": "code"
+        },
+        {
+          "text": "Squint at a screen: if unlike things merge into blobs, the shared style is the defect.",
+          "kind": "code"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Submit buttons appear as blue pills, green rectangles, and outlines on different screens.",
+        "remediation": "All primary actions use one token: same background, text colour, radius, and weight."
+      },
+      "graphicMetaphor": {
+        "svgShape": "similarity-columns",
+        "parametricParams": {
+          "rows": 4,
+          "caption": "ALIKE BY FORM, NOT BY PLACE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Max Wertheimer"
+        ],
+        "year": 1923,
+        "title": "Untersuchungen zur Lehre von der Gestalt II",
+        "publication": "Psychologische Forschung, 4, 301-350",
+        "doi": "10.1007/BF00410640",
+        "authorsLabel": "Max Wertheimer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"80\" cy=\"90\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"80\" cy=\"150\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"80\" cy=\"210\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"80\" cy=\"270\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"148\" y=\"78\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"148\" y=\"138\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"148\" y=\"198\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"148\" y=\"258\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"228\" y=\"78\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"228\" y=\"138\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"228\" y=\"198\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><rect x=\"228\" y=\"258\" width=\"24\" height=\"24\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"90\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"150\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"210\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"270\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ALIKE BY FORM, NOT BY PLACE</text></svg>"
+    },
+    {
+      "id": "GES-03",
+      "name": "Law of Common Region",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "A boundary drawn around things makes them one group, even when they are far apart.",
+      "trigger": "A dashboard has no borders, so metrics read as one undifferentiated field.",
+      "checklist": [
+        {
+          "text": "Put related fields inside one card surface with a single border or fill.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep at least 16px of padding inside a region so its contents read as contained.",
+          "kind": "code"
+        },
+        {
+          "text": "Do not wrap every row in its own border; use a boundary only where grouping matters.",
+          "kind": "code"
+        },
+        {
+          "text": "Test whether removing the boundary changes the grouping users report; if not, remove it.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Thirty metrics sit on a bare canvas with only whitespace between them, so no one can tell which belong together.",
+        "remediation": "Metrics sit in bordered cards with a faint background, each card holding one functional domain."
+      },
+      "graphicMetaphor": {
+        "svgShape": "common-region",
+        "parametricParams": {
+          "caption": "ONE LINE DRAWS THE GROUP"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Stephen E. Palmer"
+        ],
+        "year": 1992,
+        "title": "Common region: A new principle of perceptual grouping",
+        "publication": "Cognitive Psychology, 24(3), 436-447",
+        "doi": "10.1016/0010-0285(92)90014-S",
+        "authorsLabel": "Stephen E. Palmer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"48\" y=\"150\" width=\"184\" height=\"100\" rx=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" fill-opacity=\"0.07\" stroke-opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"100\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"300\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE LINE DRAWS THE GROUP</text></svg>"
+    },
+    {
       "id": "HMM-01",
       "name": "Jakob's Law",
       "category": "Heuristic & Mental Models",
@@ -993,6 +1088,192 @@ window.UX_DECK = {
         "titleStop": "."
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 60 300 L 95 175 L 145 210 L 195 120 L 245 155 L 295 105 L 340 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" stroke-dasharray=\"6 5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"300\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"100\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"328\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">START</text><text x=\"340\" y=\"76\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ARRIVE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FEWEST PARTS THAT STILL ARRIVE</text></svg>"
+    },
+    {
+      "id": "HMM-08",
+      "name": "Conway's Law",
+      "category": "Heuristic & Mental Models",
+      "axiom": "A system's structure ends up copying the communication structure of the teams that built it.",
+      "trigger": "Two teams own half a flow each, and the product asks users to cross a seam no user would draw.",
+      "checklist": [
+        {
+          "text": "Organise menus by the user's jobs, not by the departments that own the backend services.",
+          "kind": "code"
+        },
+        {
+          "text": "Share one set of design tokens across services so separately built screens look related.",
+          "kind": "code"
+        },
+        {
+          "text": "Merge settings the back end splits across services behind one account screen.",
+          "kind": "code"
+        },
+        {
+          "text": "Before a reorganisation ships, map its team boundaries onto the screens users must cross.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A telecom portal sends customers to three subdomains with different themes to manage phone, broadband, and billing.",
+        "remediation": "One identity and one design shell put all three offerings in a single services dashboard."
+      },
+      "graphicMetaphor": {
+        "svgShape": "org-mirror",
+        "parametricParams": {
+          "teams": 3,
+          "caption": "THE ORGANISATION IS STILL VISIBLE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Melvin E. Conway"
+        ],
+        "year": 1968,
+        "title": "How Do Committees Invent?",
+        "publication": "Datamation, 14(4), 28-31",
+        "authorsLabel": "Melvin E. Conway",
+        "titleStop": ""
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"200\" y=\"52\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">HOW THE TEAMS TALK</text><text x=\"200\" y=\"232\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">HOW THE SCREENS LINK</text><rect x=\"40\" y=\"70\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"250\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70\" y1=\"111\" x2=\"70\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"90\" x2=\"170\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"270\" x2=\"170\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"170\" y=\"70\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"170\" y=\"250\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"111\" x2=\"200\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"90\" x2=\"300\" y2=\"90\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"270\" x2=\"300\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"300\" y=\"70\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"300\" y=\"250\" width=\"60\" height=\"40\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"111\" x2=\"330\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE ORGANISATION IS STILL VISIBLE</text></svg>"
+    },
+    {
+      "id": "HMM-09",
+      "name": "Gulf of Execution and Gulf of Evaluation",
+      "category": "Heuristic & Mental Models",
+      "axiom": "Keep intent, action, and visible result close enough that people never have to guess.",
+      "trigger": "A button gives no sign it worked, so people click again and create duplicate orders.",
+      "checklist": [
+        {
+          "text": "Mark clickable elements with a signifier users can see before they hover or click.",
+          "kind": "code"
+        },
+        {
+          "text": "Change the control and show a status line as soon as an action is accepted.",
+          "kind": "code"
+        },
+        {
+          "text": "State in the error message what happened, which object it concerned, and the next step.",
+          "kind": "code"
+        },
+        {
+          "text": "Ask users to describe what the system did after each action; treat a wrong answer as a gulf.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Clicking Process leaves the cursor unchanged and shows nothing, so the operator clicks three times and files three orders.",
+        "remediation": "The button disables itself, shows a spinner, and relabels to Processing until the result appears."
+      },
+      "graphicMetaphor": {
+        "svgShape": "intent-gap",
+        "parametricParams": {
+          "caption": "TWO GAPS: TO ACT, AND TO SEE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Donald A. Norman"
+        ],
+        "year": 1986,
+        "title": "Cognitive Engineering",
+        "publication": "User Centered System Design, 31-62",
+        "doi": "10.1201/9780367807320-3",
+        "authorsLabel": "Donald A. Norman",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"60\" cy=\"175\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"147\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INTENT</text><rect x=\"262\" y=\"150\" width=\"100\" height=\"100\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"312\" y=\"205\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SYSTEM</text><line x1=\"71\" y1=\"175\" x2=\"158\" y2=\"175\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"178\" y1=\"175\" x2=\"252\" y2=\"175\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 252 168 L 260 175 L 252 182 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"168\" y=\"148\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXECUTION</text><line x1=\"254\" y1=\"265\" x2=\"178\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"158\" y1=\"265\" x2=\"60\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"265\" x2=\"60\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 53 194 L 60 186 L 67 194 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"168\" y=\"292\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EVALUATION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TWO GAPS: TO ACT, AND TO SEE</text></svg>"
+    },
+    {
+      "id": "HMM-10",
+      "name": "Affordance Theory",
+      "category": "Heuristic & Mental Models",
+      "axiom": "An object's properties suggest what can be done with it, before any label says so.",
+      "trigger": "A control that works looks exactly like the text around it, so nobody tries it.",
+      "checklist": [
+        {
+          "text": "Give every control a fill, border, or weight the surrounding text does not have.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep links underlined or coloured at rest; hover styling alone is not a signifier.",
+          "kind": "code"
+        },
+        {
+          "text": "Draw a grip on anything draggable, and make the whole surface respond to the drag.",
+          "kind": "code"
+        },
+        {
+          "text": "Watch first-time users try to click; every dead click marks an affordance that was not visible.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Call-to-action buttons are set as plain text with no border, fill, or underline, identical to body copy.",
+        "remediation": "Controls sit in filled rounded containers that contrast with the surface and lift on hover."
+      },
+      "graphicMetaphor": {
+        "svgShape": "signifier-pair",
+        "parametricParams": {
+          "caption": "EITHER SURFACE CAN SAY PRESS ME"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "James J. Gibson"
+        ],
+        "year": 1977,
+        "title": "The Theory of Affordances",
+        "publication": "Perceiving, Acting, and Knowing (Shaw & Bransford, eds.)",
+        "authorsLabel": "James J. Gibson",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"50\" y=\"140\" width=\"120\" height=\"60\" rx=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" fill-opacity=\"0.14\" stroke-opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"208\" x2=\"160\" y2=\"208\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"128\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">RAISED</text><rect x=\"230\" y=\"140\" width=\"120\" height=\"60\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"148\" x2=\"338\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"128\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">RECESSED</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EITHER SURFACE CAN SAY PRESS ME</text></svg>"
+    },
+    {
+      "id": "HMM-11",
+      "name": "Feedback Principle (Cybernetic Loop)",
+      "category": "Heuristic & Mental Models",
+      "axiom": "People can steer only what reports back what their last action did.",
+      "trigger": "A long upload shows nothing until it finishes, so people reload and start it again.",
+      "checklist": [
+        {
+          "text": "Show a state change on every control as soon as it is pressed, not when the request returns.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep a progress indicator for any operation that outlasts a second or two.",
+          "kind": "code"
+        },
+        {
+          "text": "Report the outcome of a save where the user is looking, not only in a toast that fades.",
+          "kind": "code"
+        },
+        {
+          "text": "Measure how long the interface takes to acknowledge an action, and treat silence as a defect.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A file drop zone looks the same while a file is dragged over it, so the user cannot tell whether a drop will be accepted.",
+        "remediation": "The zone outlines itself, tints its surface, and shows Drop files to upload while a file is over it."
+      },
+      "graphicMetaphor": {
+        "svgShape": "feedback-loop",
+        "parametricParams": {
+          "caption": "AN ACTION THAT COMES BACK"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Norbert Wiener"
+        ],
+        "year": 1948,
+        "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
+        "publication": "MIT Press",
+        "authorsLabel": "Norbert Wiener",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"230\" y=\"160\" width=\"110\" height=\"70\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"285\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SYSTEM</text><line x1=\"60\" y1=\"195\" x2=\"222\" y2=\"195\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"52\" cy=\"195\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300\" y1=\"231\" x2=\"300\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300\" y1=\"300\" x2=\"60\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"212\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 52 220 L 60 204 L 68 220 Z\" fill=\"currentColor\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">AN ACTION THAT COMES BACK</text></svg>"
     },
     {
       "id": "MPA-01",

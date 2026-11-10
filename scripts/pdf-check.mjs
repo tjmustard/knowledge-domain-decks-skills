@@ -8,7 +8,10 @@
  *
  * PDF object streams may be compressed, so the scan falls back to inflating
  * each stream before giving up. This is a structural check only: a green run
- * does not prove marks are drawn, text is legible, or the SVG embedded.
+ * does not prove marks are drawn, text is legible, or the SVG embedded. It
+ * reads no text geometry either: neither the last line's glyph box nor its
+ * rendered ink is measured here, so page fit cannot fail this check. The
+ * vertical fit is a separate hand measurement, recorded in DECISIONS §37.
  *
  * Usage:
  *   node scripts/pdf-check.mjs [path.pdf] [--expect-pages N]

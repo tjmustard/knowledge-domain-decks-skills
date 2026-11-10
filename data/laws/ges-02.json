@@ -1,0 +1,45 @@
+{
+  "id": "GES-02",
+  "name": "Law of Similarity",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Elements that share colour, shape, or size are read as one kind of thing.",
+  "trigger": "Two different kinds of control share a style, or one kind is drawn three different ways.",
+  "checklist": [
+    {
+      "text": "Give every primary action the same fill, radius, and weight; a variant is a different thing.",
+      "kind": "code"
+    },
+    {
+      "text": "Draw metadata badges and filter pills in different shapes, not just different colours.",
+      "kind": "code"
+    },
+    {
+      "text": "Reserve one accent colour for items that must stand apart from everything else.",
+      "kind": "code"
+    },
+    {
+      "text": "Squint at a screen: if unlike things merge into blobs, the shared style is the defect.",
+      "kind": "code"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Submit buttons appear as blue pills, green rectangles, and outlines on different screens.",
+    "remediation": "All primary actions use one token: same background, text colour, radius, and weight."
+  },
+  "graphicMetaphor": {
+    "svgShape": "similarity-columns",
+    "parametricParams": {
+      "rows": 4,
+      "caption": "ALIKE BY FORM, NOT BY PLACE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Max Wertheimer"
+    ],
+    "year": 1923,
+    "title": "Untersuchungen zur Lehre von der Gestalt II",
+    "publication": "Psychologische Forschung, 4, 301-350",
+    "doi": "10.1007/BF00410640"
+  }
+}

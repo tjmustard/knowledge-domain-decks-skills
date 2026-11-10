@@ -1,0 +1,43 @@
+{
+  "id": "HMM-11",
+  "name": "Feedback Principle (Cybernetic Loop)",
+  "category": "Heuristic & Mental Models",
+  "axiom": "People can steer only what reports back what their last action did.",
+  "trigger": "A long upload shows nothing until it finishes, so people reload and start it again.",
+  "checklist": [
+    {
+      "text": "Show a state change on every control as soon as it is pressed, not when the request returns.",
+      "kind": "code"
+    },
+    {
+      "text": "Keep a progress indicator for any operation that outlasts a second or two.",
+      "kind": "code"
+    },
+    {
+      "text": "Report the outcome of a save where the user is looking, not only in a toast that fades.",
+      "kind": "code"
+    },
+    {
+      "text": "Measure how long the interface takes to acknowledge an action, and treat silence as a defect.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A file drop zone looks the same while a file is dragged over it, so the user cannot tell whether a drop will be accepted.",
+    "remediation": "The zone outlines itself, tints its surface, and shows Drop files to upload while a file is over it."
+  },
+  "graphicMetaphor": {
+    "svgShape": "feedback-loop",
+    "parametricParams": {
+      "caption": "AN ACTION THAT COMES BACK"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Norbert Wiener"
+    ],
+    "year": 1948,
+    "title": "Cybernetics: Or Control and Communication in the Animal and the Machine",
+    "publication": "MIT Press"
+  }
+}

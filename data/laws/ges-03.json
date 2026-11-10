@@ -1,0 +1,44 @@
+{
+  "id": "GES-03",
+  "name": "Law of Common Region",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "A boundary drawn around things makes them one group, even when they are far apart.",
+  "trigger": "A dashboard has no borders, so metrics read as one undifferentiated field.",
+  "checklist": [
+    {
+      "text": "Put related fields inside one card surface with a single border or fill.",
+      "kind": "code"
+    },
+    {
+      "text": "Keep at least 16px of padding inside a region so its contents read as contained.",
+      "kind": "code"
+    },
+    {
+      "text": "Do not wrap every row in its own border; use a boundary only where grouping matters.",
+      "kind": "code"
+    },
+    {
+      "text": "Test whether removing the boundary changes the grouping users report; if not, remove it.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Thirty metrics sit on a bare canvas with only whitespace between them, so no one can tell which belong together.",
+    "remediation": "Metrics sit in bordered cards with a faint background, each card holding one functional domain."
+  },
+  "graphicMetaphor": {
+    "svgShape": "common-region",
+    "parametricParams": {
+      "caption": "ONE LINE DRAWS THE GROUP"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Stephen E. Palmer"
+    ],
+    "year": 1992,
+    "title": "Common region: A new principle of perceptual grouping",
+    "publication": "Cognitive Psychology, 24(3), 436-447",
+    "doi": "10.1016/0010-0285(92)90014-S"
+  }
+}

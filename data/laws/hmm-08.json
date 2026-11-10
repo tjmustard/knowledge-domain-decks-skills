@@ -1,0 +1,44 @@
+{
+  "id": "HMM-08",
+  "name": "Conway's Law",
+  "category": "Heuristic & Mental Models",
+  "axiom": "A system's structure ends up copying the communication structure of the teams that built it.",
+  "trigger": "Two teams own half a flow each, and the product asks users to cross a seam no user would draw.",
+  "checklist": [
+    {
+      "text": "Organise menus by the user's jobs, not by the departments that own the backend services.",
+      "kind": "code"
+    },
+    {
+      "text": "Share one set of design tokens across services so separately built screens look related.",
+      "kind": "code"
+    },
+    {
+      "text": "Merge settings the back end splits across services behind one account screen.",
+      "kind": "code"
+    },
+    {
+      "text": "Before a reorganisation ships, map its team boundaries onto the screens users must cross.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A telecom portal sends customers to three subdomains with different themes to manage phone, broadband, and billing.",
+    "remediation": "One identity and one design shell put all three offerings in a single services dashboard."
+  },
+  "graphicMetaphor": {
+    "svgShape": "org-mirror",
+    "parametricParams": {
+      "teams": 3,
+      "caption": "THE ORGANISATION IS STILL VISIBLE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Melvin E. Conway"
+    ],
+    "year": 1968,
+    "title": "How Do Committees Invent?",
+    "publication": "Datamation, 14(4), 28-31"
+  }
+}

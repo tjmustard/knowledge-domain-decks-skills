@@ -1,0 +1,43 @@
+{
+  "id": "HMM-10",
+  "name": "Affordance Theory",
+  "category": "Heuristic & Mental Models",
+  "axiom": "An object's properties suggest what can be done with it, before any label says so.",
+  "trigger": "A control that works looks exactly like the text around it, so nobody tries it.",
+  "checklist": [
+    {
+      "text": "Give every control a fill, border, or weight the surrounding text does not have.",
+      "kind": "code"
+    },
+    {
+      "text": "Keep links underlined or coloured at rest; hover styling alone is not a signifier.",
+      "kind": "code"
+    },
+    {
+      "text": "Draw a grip on anything draggable, and make the whole surface respond to the drag.",
+      "kind": "code"
+    },
+    {
+      "text": "Watch first-time users try to click; every dead click marks an affordance that was not visible.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Call-to-action buttons are set as plain text with no border, fill, or underline, identical to body copy.",
+    "remediation": "Controls sit in filled rounded containers that contrast with the surface and lift on hover."
+  },
+  "graphicMetaphor": {
+    "svgShape": "signifier-pair",
+    "parametricParams": {
+      "caption": "EITHER SURFACE CAN SAY PRESS ME"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "James J. Gibson"
+    ],
+    "year": 1977,
+    "title": "The Theory of Affordances",
+    "publication": "Perceiving, Acting, and Knowing (Shaw & Bransford, eds.)"
+  }
+}

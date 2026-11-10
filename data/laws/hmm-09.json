@@ -1,0 +1,44 @@
+{
+  "id": "HMM-09",
+  "name": "Gulf of Execution and Gulf of Evaluation",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Keep intent, action, and visible result close enough that people never have to guess.",
+  "trigger": "A button gives no sign it worked, so people click again and create duplicate orders.",
+  "checklist": [
+    {
+      "text": "Mark clickable elements with a signifier users can see before they hover or click.",
+      "kind": "code"
+    },
+    {
+      "text": "Change the control and show a status line as soon as an action is accepted.",
+      "kind": "code"
+    },
+    {
+      "text": "State in the error message what happened, which object it concerned, and the next step.",
+      "kind": "code"
+    },
+    {
+      "text": "Ask users to describe what the system did after each action; treat a wrong answer as a gulf.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Clicking Process leaves the cursor unchanged and shows nothing, so the operator clicks three times and files three orders.",
+    "remediation": "The button disables itself, shows a spinner, and relabels to Processing until the result appears."
+  },
+  "graphicMetaphor": {
+    "svgShape": "intent-gap",
+    "parametricParams": {
+      "caption": "TWO GAPS: TO ACT, AND TO SEE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Donald A. Norman"
+    ],
+    "year": 1986,
+    "title": "Cognitive Engineering",
+    "publication": "User Centered System Design, 31-62",
+    "doi": "10.1201/9780367807320-3"
+  }
+}

@@ -958,6 +958,136 @@
       out.push(label(340, 76, "ARRIVE", { size: 9 }));
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+    /* Conway: the same chain of links in the team structure and in the
+       product's screens. The correspondence lines are dashed because they
+       are a claim about shape, not a measured connection. */
+    "org-mirror": function (p) {
+      var teams = p.teams || 3;
+      var caption = p.caption || "";
+      var out = [];
+      var xs = [];
+      for (var i = 0; i < teams; i++) {
+        xs.push(70 + i * 130);
+      }
+      out.push(label(200, 52, "HOW THE TEAMS TALK", { size: 9 }));
+      out.push(label(200, 232, "HOW THE SCREENS LINK", { size: 9 }));
+      for (var j = 0; j < teams; j++) {
+        out.push(rect(xs[j] - 30, 70, 60, 40, { rx: 4, opacity: 0.7, width: 1.5 }));
+        out.push(rect(xs[j] - 30, 250, 60, 40, { rx: 4, opacity: 0.7, width: 1.5 }));
+        out.push(line(xs[j], 111, xs[j], 249, 1.5, 0.3, "5 5"));
+        if (j < teams - 1) {
+          out.push(line(xs[j] + 30, 90, xs[j + 1] - 30, 90, 3, 0.85));
+          out.push(line(xs[j] + 30, 270, xs[j + 1] - 30, 270, 3, 0.85));
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* The two gulfs: an intent that has to cross into an action, and a state
+       that has to cross back into something the person can see. Each arrow
+       has a gap in it because the gap is the subject. */
+    "intent-gap": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(circle(60, 175, 11, { opacity: 0.85 }));
+      out.push(label(60, 147, "INTENT", { size: 9 }));
+      out.push(rect(262, 150, 100, 100, { rx: 4, opacity: 0.7, width: 1.5 }));
+      out.push(label(312, 205, "SYSTEM", { size: 9 }));
+      out.push(line(71, 175, 158, 175, 3, 0.85));
+      out.push(line(178, 175, 252, 175, 3, 0.85));
+      out.push(
+        '<path d="M 252 168 L 260 175 L 252 182 Z" fill="currentColor" opacity="0.85" ' +
+        STROKE + "/>"
+      );
+      out.push(label(168, 148, "EXECUTION", { size: 9 }));
+      out.push(line(254, 265, 178, 265, 3, 0.85));
+      out.push(line(158, 265, 60, 265, 3, 0.85));
+      out.push(line(60, 265, 60, 195, 3, 0.85));
+      out.push(
+        '<path d="M 53 194 L 60 186 L 67 194 Z" fill="currentColor" opacity="0.85" ' +
+        STROKE + "/>"
+      );
+      out.push(label(168, 292, "EVALUATION", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Affordance: one control drawn as a raised surface, one as a recessed
+       slot. Both read as operable; neither is a picture of a click. */
+    "signifier-pair": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(50, 140, 120, 60, {
+        rx: 8, fill: "currentColor", fillOpacity: 0.14, width: 2, strokeOpacity: 0.8
+      }));
+      out.push(line(60, 208, 160, 208, 3, 0.25));
+      out.push(label(110, 128, "RAISED", { size: 9 }));
+      out.push(rect(230, 140, 120, 60, { rx: 8, opacity: 0.6, width: 2 }));
+      out.push(line(242, 148, 338, 148, 2, 0.35));
+      out.push(label(290, 128, "RECESSED", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Feedback: an input that reaches the system and a return path that
+       closes the loop back to the person who acted. */
+    "feedback-loop": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(230, 160, 110, 70, { rx: 4, opacity: 0.7, width: 1.5 }));
+      out.push(label(285, 200, "SYSTEM", { size: 9 }));
+      out.push(line(60, 195, 222, 195, 3, 0.85));
+      out.push(circle(52, 195, 9, { opacity: 0.85 }));
+      out.push(line(300, 231, 300, 300, 2, 0.6));
+      out.push(line(300, 300, 60, 300, 2, 0.6));
+      out.push(line(60, 300, 60, 212, 2, 0.6));
+      out.push(
+        '<path d="M 52 220 L 60 204 L 68 220 Z" fill="currentColor" opacity="0.6" ' +
+        STROKE + "/>"
+      );
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Similarity: the same property repeated down a column, with two unlike
+       columns between the alike ones. Grouping follows form, not adjacency.
+       The columns are evenly spaced so that proximity offers no grouping at
+       all: shape is the only varying cue in the drawing. */
+    "similarity-columns": function (p) {
+      var rows = p.rows || 4;
+      var caption = p.caption || "";
+      var out = [];
+      var xs = [80, 160, 240, 320];
+      var isSquare = [false, true, true, false];
+      for (var c = 0; c < xs.length; c++) {
+        for (var r = 0; r < rows; r++) {
+          var y = 90 + r * 60;
+          if (isSquare[c]) {
+            out.push(rect(xs[c] - 12, y - 12, 24, 24, { rx: 1, opacity: 0.75, width: 2 }));
+          } else {
+            out.push(circle(xs[c], y, 12, { opacity: 0.75 }));
+          }
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Common region: three equidistant marks, and a boundary around two of
+       them. The boundary is the only grouping cue in the drawing. */
+    "common-region": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(48, 150, 184, 100, {
+        rx: 8, fill: "currentColor", fillOpacity: 0.07, width: 2, strokeOpacity: 0.8
+      }));
+      out.push(circle(100, 200, 12, { opacity: 0.85 }));
+      out.push(circle(200, 200, 12, { opacity: 0.85 }));
+      out.push(circle(300, 200, 12, { opacity: 0.85 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 
