@@ -156,7 +156,7 @@ try {
     // Allowlist, not a denylist: only these mean "this machine cannot install",
     // which is NOT RUN. Anything else is the commit's own fault. A denylist of
     // known-bad phrasings silently misses each new npm failure mode.
-    const machineFault = /ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|EHOSTUNREACH|ECONNRESET|E403|403 Forbidden|self.signed certificate|CERT_/i.test(installed.stderr);
+    const machineFault = /ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|EHOSTUNREACH|ECONNRESET|E403|403 Forbidden|SELF_SIGNED_CERT|CERT_HAS_EXPIRED|UNABLE_TO_VERIFY|ERR_TLS|self.signed certificate/i.test(installed.stderr);
     record("dependencies", machineFault ? "not run" : "fail",
       machineFault
         ? `could not reach the registry from here, so nothing was verified: ${message}`
