@@ -1,0 +1,31 @@
+{
+  "id": "MPA-01",
+  "name": "Serial Position Effect",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Humans recall items positioned at the beginning and end of sequences most reliably.",
+  "trigger": "Critical navigation or actions sit mid-list and are overlooked while first and last items dominate attention.",
+  "checklist": [
+    "Put critical destinations at the far left or top and far right or bottom of navigation.",
+    "Place core value propositions in the first rows and conversion actions in the last.",
+    "Pin frequent dropdown options to the top and summary categories to the bottom."
+  ],
+  "antiPattern": {
+    "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
+    "remediation": "Place Dashboard first and Settings last, matching where scanning memory is strongest."
+  },
+  "graphicMetaphor": {
+    "svgShape": "decay-curve",
+    "parametricParams": {
+      "primacyX": 80,
+      "recencyX": 320,
+      "peakY": 120,
+      "troughY": 240
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Bennet B. Murdock Jr."],
+    "year": 1962,
+    "title": "The Serial Position Effect of Free Recall",
+    "publication": "Journal of Experimental Psychology, 64(5), 482-488"
+  }
+}

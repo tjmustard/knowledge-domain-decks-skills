@@ -1,0 +1,31 @@
+{
+  "id": "GES-01",
+  "name": "Law of Proximity",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Objects positioned close to one another are perceived as a unified conceptual group.",
+  "trigger": "Form labels look attached to the wrong input, or unrelated actions read as one group because spacing is uniform.",
+  "checklist": [
+    "Place labels closer to their own input than to the preceding field (4px vs 24px).",
+    "Keep spacing inside a card tighter (8-12px) than spacing between cards (24-32px).",
+    "Group a primary action with its explanatory copy inside one layout cluster."
+  ],
+  "antiPattern": {
+    "violation": "A form uses equal 16px margins everywhere, so each input visually attaches to the label below it.",
+    "remediation": "Use 4px from label to input and 24px from the input container to the next field label."
+  },
+  "graphicMetaphor": {
+    "svgShape": "proximity-grid",
+    "parametricParams": {
+      "columns": 4,
+      "rows": 2,
+      "intraGap": 40,
+      "interGap": 110
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Max Wertheimer"],
+    "year": 1923,
+    "title": "Untersuchungen zur Lehre von der Gestalt II",
+    "publication": "Psychologische Forschung, 4, 301-350"
+  }
+}

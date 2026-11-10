@@ -1,0 +1,30 @@
+{
+  "id": "HMM-01",
+  "name": "Jakob's Law",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Users spend most time on other interfaces, expecting yours to function identically.",
+  "trigger": "Users hesitate, hunt for navigation, or misuse controls because the layout diverges from conventions they know from other products.",
+  "checklist": [
+    "Anchor the logo top-left, global navigation top or left, and account controls top-right.",
+    "Keep checkout steps in the expected billing, shipping, and payment order.",
+    "Preserve standard keyboard shortcuts and browser history behavior; never hijack them."
+  ],
+  "antiPattern": {
+    "violation": "A web app rebinds the browser back button to internal tab switching and buries global search in the footer.",
+    "remediation": "Use declarative HTML5 History entries; keep search in a persistent header input with Cmd/Ctrl+K."
+  },
+  "graphicMetaphor": {
+    "svgShape": "convention-grid",
+    "parametricParams": {
+      "columns": 4,
+      "rows": 3,
+      "chaoticOffset": 18
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Jakob Nielsen"],
+    "year": 2000,
+    "title": "Designing Web Usability: The Practice of Simplicity",
+    "publication": "New Riders Publishing"
+  }
+}

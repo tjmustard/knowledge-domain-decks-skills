@@ -1,0 +1,29 @@
+{
+  "id": "TME-01",
+  "name": "Fitts's Law",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Target acquisition time is a function of distance and target bounding width.",
+  "trigger": "Users miss small controls or take long pointer trips for frequent actions, especially on touch screens.",
+  "checklist": [
+    "Make touch targets at least 44 x 44 px, or 24 x 24 px with adequate spacing.",
+    "Pin frequent primary controls to screen edges or corners on desktop.",
+    "Place contextual actions next to the initiating click point."
+  ],
+  "antiPattern": {
+    "violation": "Mobile checkout puts a 12 x 12 px Confirm Order text link in the extreme top-right corner.",
+    "remediation": "Use a full-width sticky footer button at least 48 px tall within thumb reach."
+  },
+  "graphicMetaphor": {
+    "svgShape": "target-vector",
+    "parametricParams": {
+      "hard": { "distance": 270, "width": 20 },
+      "easy": { "distance": 100, "width": 180 }
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Paul M. Fitts"],
+    "year": 1954,
+    "title": "The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement",
+    "publication": "Journal of Experimental Psychology, 47(6), 381-391"
+  }
+}

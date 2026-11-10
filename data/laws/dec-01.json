@@ -1,0 +1,29 @@
+{
+  "id": "DEC-01",
+  "name": "Hick's Law",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Decision time increases logarithmically with the number and informational complexity of available choices.",
+  "trigger": "Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.",
+  "checklist": [
+    "Cap flat options in top-level navigation at five to seven items.",
+    "Group large select menus into categories or a filterable combobox.",
+    "Pre-highlight a recommended default to skip part of the decision tree."
+  ],
+  "antiPattern": {
+    "violation": "An enterprise settings page offers a flat, unordered dropdown of 85 country options.",
+    "remediation": "Replace it with an autocomplete combobox: locale auto-detect, keyboard filtering, common options first."
+  },
+  "graphicMetaphor": {
+    "svgShape": "hierarchy",
+    "parametricParams": {
+      "branches": 16,
+      "optimalBranches": 2
+    }
+  },
+  "academicOrigin": {
+    "authors": ["William Edmund Hick"],
+    "year": 1952,
+    "title": "On the Rate of Gain of Information",
+    "publication": "Quarterly Journal of Experimental Psychology, 4(1), 11-26"
+  }
+}

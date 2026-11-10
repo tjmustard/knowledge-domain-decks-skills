@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/tjmustard/knowledge-domain-decks-skills/main/data/law-schema.json",
+  "title": "UXLawCard",
+  "description": "One reference card in the UX & Behavioral Design deck. Derived from the canonical eight-field card anatomy in the source specification, with the undeclared remediatedPattern requirement removed (see DECISIONS.md).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "category",
+    "axiom",
+    "trigger",
+    "checklist",
+    "antiPattern",
+    "graphicMetaphor",
+    "academicOrigin"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}-[0-9]{2}$",
+      "description": "Category prefix and two-digit sequence, e.g. DEC-01."
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "Heuristic & Mental Models",
+        "Gestalt & Visual Perception",
+        "Decision-Making & Cognitive Load",
+        "Time, Motion & Ergonomics",
+        "Memory, Perception & Attention"
+      ]
+    },
+    "axiom": {
+      "type": "string",
+      "maxLength": 110,
+      "description": "Core axiom statement restricted to 15 words or fewer. The validator enforces both limits."
+    },
+    "trigger": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "checklist": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "maxLength": 120
+      }
+    },
+    "antiPattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["violation", "remediation"],
+      "properties": {
+        "violation": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "remediation": {
+          "type": "string",
+          "maxLength": 250
+        }
+      }
+    },
+    "graphicMetaphor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["svgShape", "parametricParams"],
+      "properties": {
+        "svgShape": {
+          "type": "string",
+          "enum": [
+            "network",
+            "hierarchy",
+            "proximity-grid",
+            "target-vector",
+            "decay-curve",
+            "convention-grid"
+          ]
+        },
+        "parametricParams": {
+          "type": "object"
+        }
+      }
+    },
+    "academicOrigin": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authors", "year", "title", "publication"],
+      "properties": {
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "type": "string" }
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1800,
+          "maximum": 2030
+        },
+        "title": {
+          "type": "string"
+        },
+        "publication": {
+          "type": "string"
+        },
+        "doi": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
