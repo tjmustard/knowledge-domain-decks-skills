@@ -1,0 +1,99 @@
+{
+  "id": "team",
+  "slug": "team",
+  "name": "Team Architecture",
+  "description": "Forty-four team and leadership frameworks in four dimensions, each with the friction symptom that says this is your card, the script a manager says when the team is stuck, and two checks fourteen days later.",
+  "categories": [
+    "Team Formation & Structural Architecture",
+    "Psychological Safety, Culture & Trust Dynamics",
+    "Feedback, Candor & Conflict Resolution",
+    "Operational Rhythms, Delegation & Cognitive Architecture"
+  ],
+  "accents": {
+    "Team Formation & Structural Architecture": "#0F766E",
+    "Psychological Safety, Culture & Trust Dynamics": "#B45309",
+    "Feedback, Candor & Conflict Resolution": "#1D4ED8",
+    "Operational Rhythms, Delegation & Cognitive Architecture": "#6D28D9"
+  },
+  "itemStyle": "checklist",
+  "fields": {
+    "group": "category",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "diagnostic",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Friction diagnostic",
+    "context": "Schematic",
+    "group": {
+      "Team Formation & Structural Architecture": "Team Formation",
+      "Psychological Safety, Culture & Trust Dynamics": "Psychological Safety",
+      "Feedback, Candor & Conflict Resolution": "Feedback & Conflict",
+      "Operational Rhythms, Delegation & Cognitive Architecture": "Operational Rhythms"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "script",
+      "label": "Manager script",
+      "style": "labelled"
+    },
+    {
+      "field": "audit",
+      "label": "Day-14 checks",
+      "style": "list"
+    },
+    {
+      "field": "foundation",
+      "label": "Foundation",
+      "style": "prose",
+      "card": false
+    },
+    {
+      "field": "auditFull",
+      "label": "Checks as written",
+      "style": "list",
+      "card": false
+    }
+  ],
+  "printOrder": "family",
+  "outputs": {
+    "rules": "rules/team-rules.md",
+    "skill": "skills/team",
+    "pdf": "packages/prepress/dist/team.pdf"
+  },
+  "rules": {
+    "title": "Team Architecture Rules",
+    "intro": "The frameworks come from public team and leadership literature: Tuckman's group development, Hackman's conditions, Edmondson's psychological safety, Westrum's culture typology, Scott's Radical Candor, the trust models of Mayer and of Maister, Lencioni, the Thomas-Kilmann conflict modes, and the operational canon from Grove, Doerr, Whitmore and Hersey-Blanchard. Each card names the work that originated the framework; where the source names a person without a work, the deck finds the work or says it cannot. The card text is written for this deck.\nEvery card is a script a manager can run: the friction symptom that says this is the card, the sentence to say when the team is stuck, and two checks fourteen days later. The script prints on the card exactly as the source states it, because it is the deliverable; the foundation and the checks as written follow here, because this file is the reference."
+  },
+  "skill": {
+    "name": "team",
+    "description": "Run a team or leadership intervention from a card: {cards} frameworks in four dimensions, each with the friction symptom that says it is the right one, the script a manager says, and two checks fourteen days later. Use when a team is stuck and the room needs a sentence, not a workshop.",
+    "title": "Team Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per dimension.\n\nChoosing starts from the symptom you are actually seeing. If the team is badly shaped, uncertain who decides or who belongs, read Team Formation. If people are not saying true things, read Psychological Safety. If the truth is said and still lands wrong, read Feedback and Conflict. If the team is right and its time is not, read Operational Rhythms. Then take the one card whose friction diagnostic matches what you saw this week.\n\nWhen two cards fit, prefer the one whose script you can imagine yourself saying. A script you would not say is a workshop.\n\nRoutes out of this deck. Blameless post-mortems (T27) also appear in the Retrospective and Narrative decks: those own the ritual, this card owns the conversation a manager has with a person after an incident. Cognitive load (T37) is also a UX law: the UX deck owns the interface rule, this card owns the team's capacity. The Eisenhower matrix (T42) is in the Narrative deck as technical-debt framing: that deck owns the debt decision, this card owns the prioritisation move. Cynefin (T40) and OKR cascading (T43) are in the Strategy deck: strategy owns the domain choice and the alignment, this card owns the cadence that runs it.",
+    "commonRules": [
+      "Diagnose before you script. If the symptom is not what the card describes, the script will sound like a poster.",
+      "Say the script in the room, not in a document. The words are written to be spoken.",
+      "One intervention at a time. Two scripts in one week read as management churn.",
+      "The day-14 checks are the commitment. Book them before the meeting ends, or the script was a speech.",
+      "Compression is the card's limit, not the framework's. Read the foundation and the unabridged checks here before arguing from the card.",
+      "A cited work names where the framework came from; it does not certify the card's wording."
+    ],
+    "footer": "Frameworks are credited to their originating works. The card text, diagnostics and checks are written for this deck."
+  },
+  "web": {
+    "global": "TEAM_DECK",
+    "accentsGlobal": "TEAM_DECK_ACCENTS",
+    "title": "Team Architecture — Knowledge Domain Decks",
+    "heading": "Team Architecture",
+    "lede": "{cards} team frameworks: the friction symptom that says this is your card, the script to say, and two checks fourteen days later.",
+    "source": "Generated from <code>decks/team/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the script"
+  }
+}

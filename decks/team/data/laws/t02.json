@@ -1,0 +1,37 @@
+{
+  "id": "T02",
+  "sourceCardNo": "Card 02",
+  "name": "Hackman’s Five Conditions for Team Effectiveness",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Diffuse team boundaries where individuals belong to multiple conflicting squads, shifting sprint targets resulting in cynicism, and inadequate CI/CD tooling or access privileges preventing work execution.",
+  "schematic": "Five-conditions radar",
+  "script": {
+    "label": "Structural Boundary Delineation",
+    "text": "\"Current sprint throughput indicates an ambiguous distribution of team capacity. We will delineate our boundary conditions. The team requires explicit definition: who is dedicated exclusively to this deliverable, what non-negotiable metric dictates success for this release, and what external dependencies lack operational support from engineering management?\""
+  },
+  "audit": [
+    "Does every contributor name one squad that owns their capacity?",
+    "Did the sprint goal stay unchanged across the fourteen-day interval?"
+  ],
+  "auditFull": [
+    "Do 100% of team contributors identify a single primary squad owner for their capacity?",
+    "Has the sprint roadmap established a quantitative goal that remained invariant over the fourteen-day interval?"
+  ],
+  "foundation": "Formulated by J. Richard Hackman (2002), this framework asserts that high team performance does not stem from charismatic leadership, but from five structural conditions: a real team with stable boundaries, a compelling direction, an enabling structure, a supportive organizational context, and expert coaching. Hackman’s empirical studies across corporate and governmental task forces revealed that these systemic conditions account for up to 60% of the variance in team outcomes.",
+  "origin": {
+    "authors": [
+      "J. Richard Hackman"
+    ],
+    "year": 2002,
+    "title": "Leading Teams: Setting the Stage for Great Performances",
+    "publication": "Harvard Business School Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 4
+    }
+  }
+}

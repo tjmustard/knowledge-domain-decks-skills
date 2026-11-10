@@ -1,0 +1,50 @@
+{
+  "id": "T01",
+  "sourceCardNo": "Card 01",
+  "name": "Tuckman’s Stages of Group Development",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Emergence of passive-aggressive interactions in code reviews, backchannel factionalism regarding technical stack choices, hesitation in public architecture discussions, and defensive justifications for pull request rejections.",
+  "schematic": "Five-stage developmental arc",
+  "script": {
+    "label": "Forming-to-Storming Facilitation",
+    "text": "\"The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified.\""
+  },
+  "audit": [
+    "Do reviews argue ideology, or apply the agreed linter and charter?",
+    "Are architecture disputes settled in open RFCs within forty-eight hours?"
+  ],
+  "auditFull": [
+    "Have peer code review cycles transitioned from ideological debates to agreed-upon linter or charter rules?",
+    "Are architectural disagreements resolved openly in RFC discussions within forty-eight hours rather than via backchannel side threads?"
+  ],
+  "foundation": "Bruce Tuckman’s 1965 meta-analysis of small group dynamics, expanded with Mary Ann Jensen in 1977, establishes that groups traverse five sequential developmental phases: Forming, Storming, Norming, Performing, and Adjourning. Empirical evaluations demonstrate that teams failing to address interpersonal and structural friction during the Storming phase regress, exhibiting chronic factionalism and suppressed velocity.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Bruce W. Tuckman"
+        ],
+        "year": 1965,
+        "title": "Developmental Sequence in Small Groups",
+        "publication": "Psychological Bulletin"
+      },
+      {
+        "authors": [
+          "Bruce W. Tuckman",
+          "Mary Ann C. Jensen"
+        ],
+        "year": 1977,
+        "title": "Stages of Small-Group Development Revisited",
+        "publication": "Group & Organization Studies"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

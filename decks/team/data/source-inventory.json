@@ -1,0 +1,861 @@
+{
+  "source": "Open Source Team Dynamics Framework.md",
+  "sourceSha256": "e365c3341c160ed69896ce9db7be829dc79661a146f0007e62f732a2e4e54acb",
+  "extractedBy": "job-tmp extractor, 2026-11-10; sections 1-44 only, stopping at the ecosystem heading",
+  "recordCount": 44,
+  "categoryCounts": {
+    "Team Formation & Structural Architecture": 11,
+    "Psychological Safety, Culture & Trust Dynamics": 11,
+    "Feedback, Candor & Conflict Resolution": 11,
+    "Operational Rhythms, Delegation & Cognitive Architecture": 11
+  },
+  "fieldLengths": {
+    "foundation": {
+      "min": 239,
+      "median": 339,
+      "max": 481
+    },
+    "diagnostic": {
+      "min": 125,
+      "median": 191,
+      "max": 241
+    },
+    "script": {
+      "min": 219,
+      "median": 350,
+      "max": 441
+    },
+    "audit": {
+      "min": 135,
+      "median": 193,
+      "max": 528
+    }
+  },
+  "note": "Every one of the 44 sections carries exactly four fields, all parsed mechanically: Organizational Psychology Foundation (239-481 chars), Team Friction Diagnostic (125-241), Step-by-Step Manager Script (219-443, one labelled script per card), Follow-up Audit Protocol Day 14 (135-528, two questions per card). The document's own telemetry table refers to 'Card NN'; every reference checked (4, 7, 12, 13, 18, 25, 27, 36, 39, 44) matches the card's position in document order, so T01-T44 is both the deck order and the source's own numbering. The document claims forty-four models in four taxonomies and the extraction confirms 11/11/11/11. Foundation text is recorded verbatim, including its empirical claims; the deck cites the work, it does not endorse the statistic. Committed here as the deck's authority (DECISIONS 46): no test or generator reads the source folder. Every record is compared to this file field by field; where a record is compressed for the card, the source text stays here and the rules file and skill carry it unabridged.",
+  "cardReferences": {
+    "4": [
+      "RACI/DACI"
+    ],
+    "7": [
+      "Team Topologies"
+    ],
+    "12": [
+      "Edmondson Safety Diagnostic"
+    ],
+    "13": [
+      "Westrum Culture"
+    ],
+    "18": [
+      "Clark's 4 Stages"
+    ],
+    "25": [
+      "TKI Modes"
+    ],
+    "27": [
+      "Blameless Post-Mortems"
+    ],
+    "36": [
+      "Maker Schedules"
+    ],
+    "39": [
+      "Energy Audits"
+    ],
+    "44": [
+      "Spotify Cadence"
+    ]
+  },
+  "records": [
+    {
+      "id": "T01",
+      "sourceCardNo": "Card 01",
+      "name": "Tuckman’s Stages of Group Development",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Bruce Tuckman’s 1965 meta-analysis of small group dynamics, expanded with Mary Ann Jensen in 1977, establishes that groups traverse five sequential developmental phases: Forming, Storming, Norming, Performing, and Adjourning. Empirical evaluations demonstrate that teams failing to address interpersonal and structural friction during the Storming phase regress, exhibiting chronic factionalism and suppressed velocity.",
+      "diagnostic": "Emergence of passive-aggressive interactions in code reviews, backchannel factionalism regarding technical stack choices, hesitation in public architecture discussions, and defensive justifications for pull request rejections.",
+      "scripts": [
+        {
+          "label": "Forming-to-Storming Facilitation",
+          "text": "\"The team has established basic communication channels, but distinct friction exists regarding our technical architectural decisions. This tension is normal and expected. During this retrospective, each team member will surface one unspoken friction point regarding current engineering practices. The objective is to bring latent technical divergence to light so standardized conventions can be codified.\""
+        }
+      ],
+      "audit": [
+        "Have peer code review cycles transitioned from ideological debates to agreed-upon linter or charter rules?",
+        "Are architectural disagreements resolved openly in RFC discussions within forty-eight hours rather than via backchannel side threads?"
+      ]
+    },
+    {
+      "id": "T02",
+      "sourceCardNo": "Card 02",
+      "name": "Hackman’s Five Conditions for Team Effectiveness",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Formulated by J. Richard Hackman (2002), this framework asserts that high team performance does not stem from charismatic leadership, but from five structural conditions: a real team with stable boundaries, a compelling direction, an enabling structure, a supportive organizational context, and expert coaching. Hackman’s empirical studies across corporate and governmental task forces revealed that these systemic conditions account for up to 60% of the variance in team outcomes.",
+      "diagnostic": "Diffuse team boundaries where individuals belong to multiple conflicting squads, shifting sprint targets resulting in cynicism, and inadequate CI/CD tooling or access privileges preventing work execution.",
+      "scripts": [
+        {
+          "label": "Structural Boundary Delineation",
+          "text": "\"Current sprint throughput indicates an ambiguous distribution of team capacity. We will delineate our boundary conditions. The team requires explicit definition: who is dedicated exclusively to this deliverable, what non-negotiable metric dictates success for this release, and what external dependencies lack operational support from engineering management?\""
+        }
+      ],
+      "audit": [
+        "Do 100% of team contributors identify a single primary squad owner for their capacity?",
+        "Has the sprint roadmap established a quantitative goal that remained invariant over the fourteen-day interval?"
+      ]
+    },
+    {
+      "id": "T03",
+      "sourceCardNo": "Card 03",
+      "name": "Team Charters & Social Contracts",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Derived from social contract theory and established in team effectiveness research by Mathieu & Rapp (2009), team charters operationalize psychological agreements regarding norms, roles, and communication rules. Empirical research shows that establishing early team charters significantly improves subsequent team performance trajectories, serving as a cognitive anchor during high-stress operational incidents.",
+      "diagnostic": "Chronic tardiness to daily standups, uneven distribution of code review workloads, ambiguous escalation pathways during production outages, and mismatched expectations surrounding work hours.",
+      "scripts": [
+        {
+          "label": "Charter Realignment",
+          "text": "\"Our current operational friction stems from implicit, unverified expectations around availability and code reviews. We are establishing an explicit social contract in our team repository. The charter will document core working hours, review turnaround expectations, and escalation paths. If an operational practice is not committed to the Markdown charter, it cannot be enforced.\""
+        }
+      ],
+      "audit": [
+        "Are pull request review turnarounds compliant with the documented service-level agreement in the team charter?",
+        "Did retrospective meetings reference charter commitments when evaluating delivery bottlenecks?"
+      ]
+    },
+    {
+      "id": "T04",
+      "sourceCardNo": "Card 04",
+      "name": "RACI vs. DACI Decision & Responsibility Allocation Matrices",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Traced to organizational design matrices from Project Management Institute standards and Intuit’s adaptation of DACI (Driver, Approver, Contributor, Informed), these models mitigate bystander apathy (Darley & Latané, 1968) and structural ambiguity in decision-making.",
+      "diagnostic": "Architectural paralysis where pull requests languish indefinitely awaiting sign-off; multi-party ownership where \"everyone owns, hence nobody owns\" critical service components; executive overrides late in deployment phases.",
+      "scripts": [
+        {
+          "label": "DACI Escalation",
+          "text": "\"This architectural initiative has halted due to diffuse decision rights. We are adopting a DACI framework for this deliverable. Contributor A is designated the Driver; Principal Engineer B is the sole Approver; domain specialists C and D are Contributors; the remaining squad members are Informed. The Driver coordinates input, and the Approver will deliver a binding technical decision by Thursday at 15:00 UTC.\""
+        }
+      ],
+      "audit": [
+        "Were pull requests and architectural RFCs reviewed and signed off by the singular designated Approver without secondary committee reviews?",
+        "Did uninformed stakeholders refrain from blocking deployment pipelines during release testing?"
+      ]
+    },
+    {
+      "id": "T05",
+      "sourceCardNo": "Card 05",
+      "name": "Belbin Team Inventory (Team Roles Theory)",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Meredith Belbin’s (1981) research at the Henley Management College identified nine team roles categorized into action-oriented, people-oriented, and thought-oriented behaviors. Belbin established that high-performing teams do not require identical high-intellect individuals (the \"Apollo syndrome\"), but rather cognitive and behavioral balance across roles (e.g., Shaper, Completer-Finisher, Monitor-Evaluator).",
+      "diagnostic": "Engineering initiatives stall during final verification because the team lacks execution-oriented focus, or innovative architecture proposals are immediately dismissed due to an excess of risk-averse Monitor-Evaluators.",
+      "scripts": [
+        {
+          "label": "Role Composition Calibration",
+          "text": "\"An evaluation of our recent delivery cycles reveals a gap between architectural ideation and deliverable hardening. The team possesses exceptional 'Plant' and 'Monitor-Evaluator' capabilities, yet lacks consistent 'Completer-Finisher' behaviors. For the upcoming cycle, Contributor X will drive the edge-case validation and deployment checklist.\""
+        }
+      ],
+      "audit": [
+        "Has the rate of missed regression bugs dropped during production deploy verification?",
+        "Are project post-mortems identifying balanced task distributions across planning, design, and execution phases?"
+      ]
+    },
+    {
+      "id": "T06",
+      "sourceCardNo": "Card 06",
+      "name": "Katzenbach & Smith’s Team Performance Curve",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Jon R. Katzenbach and Douglas K. Smith (1993) demonstrated in The Wisdom of Teams that groups navigate a performance curve moving from a \"Working Group\" to a \"Pseudo-Team\" (where performance drops below that of individual baselines), through a \"Potential Team,\" to a \"Real Team\" and ultimately a \"High-Performing Team.\"",
+      "diagnostic": "The squad calls itself a team but functions as individual silos with isolated backlogs; collective output is lower than individual contributions; cynicism emerges concerning shared meetings.",
+      "scripts": [
+        {
+          "label": "Pseudo-Team Intervention",
+          "text": "\"We currently operate as a pseudo-team: individual developers deliver isolated tickets, yet we absorb the meeting overhead of a collective unit without reaping collaborative output. We must choose: either decouple our tasks into discrete individual streams or define a single shared operational deliverable for which we are mutually accountable.\""
+        }
+      ],
+      "audit": [
+        "Does the sprint goal reflect a single shared deliverable rather than a collection of unrelated tickets?",
+        "Do cross-functional pairing sessions occur organically to resolve delivery pipeline blocks?"
+      ]
+    },
+    {
+      "id": "T07",
+      "sourceCardNo": "Card 07",
+      "name": "Dunbar’s Number & Team Topologies (Two-Pizza Teams)",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Combining Robin Dunbar’s anthropological research on cognitive group size limits (150-50-15-5) with Matthew Skelton and Manuel Pais’s Team Topologies (2019), this model establishes structural boundaries that protect cognitive load and preserve communication bandwidth.",
+      "diagnostic": "Standup meetings exceed twenty minutes; Slack channels become unmanageably noisy; engineers report feeling detached from end-to-end user impact; pull request review requests are routinely ignored due to notification overload.",
+      "scripts": [
+        {
+          "label": "Decoupling & Boundary Definition",
+          "text": "\"The current team has surpassed nine contributors, resulting in communication overhead and slowed delivery. In accordance with Team Topologies, we will split this unit into two Stream-Aligned Teams with an internal Platform API boundary. Each unit will maintain autonomous ownership of their deployable service boundary.\""
+        }
+      ],
+      "audit": [
+        "Did the average duration of standup meetings decrease below ten minutes?",
+        "Has cross-team communication migrated to defined API schemas and asynchronous interface contracts rather than real-time escalations?"
+      ]
+    },
+    {
+      "id": "T08",
+      "sourceCardNo": "Card 08",
+      "name": "Social Interdependence Theory & Cohesion",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Developed by Morton Deutsch (1949) and expanded by David and Roger Johnson (1989), this model distinguishes between positive interdependence (cooperation where individual success is tied to collective success), negative interdependence (competition), and independence. Empirical studies confirm that positive goal and reward interdependence drive peer assistance, psychological health, and joint problem-solving.",
+      "diagnostic": "Engineers refuse to pick up unassigned bugs or documentation tickets; individual metrics (such as committed lines of code or ticket closure counts) are prioritized over system delivery; sprint goals fail despite high individual velocity.",
+      "scripts": [
+        {
+          "label": "Interdependence Restructuring",
+          "text": "\"Our current operational dynamic incentivizes individual velocity over squad delivery, which compromises sprint completion. Effective immediately, our evaluation criteria hinge exclusively on shared service health: ticket throughput is irrelevant if the collective staging build remains red. Contributor velocity metrics are deprecated in favor of squad cycle time.\""
+        }
+      ],
+      "audit": [
+        "Did team members step in to pair on blocked high-priority tickets outside their immediate domain?",
+        "Has unassigned technical documentation and triage work been picked up collaboratively without managerial intervention?"
+      ]
+    },
+    {
+      "id": "T09",
+      "sourceCardNo": "Card 09",
+      "name": "Gersick’s Punctuated Equilibrium Model",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Connie Gersick’s (1988) empirical research revealed that teams do not progress linearly, but through extended periods of inertia interrupted by revolutionary transitions occurring at the calendar midpoint (\"Phase 2 Transition\") between project initiation and external deadline, regardless of total project duration.",
+      "diagnostic": "Prolonged lack of urgency during the initial 40% of a project timeline, followed by an abrupt panic approaching the midpoint; initial assumptions about system complexity prove false.",
+      "scripts": [
+        {
+          "label": "Midpoint Reset",
+          "text": "\"We have reached the calendar midpoint of this quarterly release. Gersick's punctuated equilibrium research demonstrates that now is the empirical inflection point: our early architectural assumptions must be adapted based on what we have observed so far. We will review our scope today, prune non-essential secondary features, and solidify our final delivery baseline.\""
+        }
+      ],
+      "audit": [
+        "Has the team pruned non-viable requirements from the current sprint backlog?",
+        "Is execution velocity elevated following the midpoint alignment session?"
+      ]
+    },
+    {
+      "id": "T10",
+      "sourceCardNo": "Card 10",
+      "name": "Ancona & Caldwell’s Boundary Spanning Framework",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Deborah Ancona and David Caldwell’s (1992) field studies on product teams demonstrated that external boundary-spanning activities—specifically \"Ambassador\" activities (protecting resources, lobbying leadership) and \"Task Coordinator\" activities (cross-functional technical sync)—are stronger predictors of team success than internal cohesion alone.",
+      "diagnostic": "The engineering team delivers a technically sophisticated system that product managers or operations teams reject; the squad reports feeling blindsided by corporate strategic shifts or downstream system migrations.",
+      "scripts": [
+        {
+          "label": "External Engagement Mandate",
+          "text": "\"Our internal execution is robust, but we are isolated from dependent domain changes. We are establishing formal boundary-spanning roles: Contributor A will operate as the Ambassador to the Infrastructure group; Contributor B will handle Task Coordination with the Product Strategy team. We will review external dependencies weekly in our architecture forum.\""
+        }
+      ],
+      "audit": [
+        "Have downstream API breaking changes been flagged at least five days before code freezes?",
+        "Has alignment with upstream product stakeholders prevented mid-sprint requirement disruptions?"
+      ]
+    },
+    {
+      "id": "T11",
+      "sourceCardNo": "Card 11",
+      "name": "Cog’s Ladder of Group Development",
+      "category": "Team Formation & Structural Architecture",
+      "foundation": "Formulated by George Charrier at Procter & Gamble (1972), this five-step model tracks small group dynamics through the Polite Stage, Why We’re Here Stage, Bid for Power Stage, Constructive Stage, and Esprit Stage. It emphasizes that skipping the \"Bid for Power\" phase leads to permanent underperformance.",
+      "diagnostic": "Team members engage in excessive politeness while privately dissenting; passive non-compliance occurs during feature planning; informal power struggles derail retrospective agendas.",
+      "scripts": [
+        {
+          "label": "Power Distribution Facilitation",
+          "text": "\"Our retrospective observations show that the team remains constrained by polite deference, which masks genuine operational disagreements. We need to formalize technical ownership. We will explicitly clarify the distribution of technical authority across frontend, backend, and data storage systems to resolve latent conflicts.\""
+        }
+      ],
+      "audit": [
+        "Do engineers openly debate design trade-offs during RFC reviews without manager intervention?",
+        "Has polite disengagement been replaced by direct, constructive technical debate in public channels? Engineering organizations operating with low psychological safety systematically suppress error reporting, creating blind spots that manifest as critical production failures. Psychological safety and generative trust provide the behavioral foundation required for blameless inquiry, continuous system learning, and fast feedback loops."
+      ]
+    },
+    {
+      "id": "T12",
+      "sourceCardNo": "Card 12",
+      "name": "Edmondson’s Psychological Safety Diagnostic",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Amy Edmondson’s seminal 1999 study (Administrative Science Quarterly) introduced psychological safety as a team-level climate characterized by interpersonal trust and mutual respect, demonstrating that higher psychological safety correlates with increased error reporting, learning behavior, and unit performance.",
+      "diagnostic": "Zero production errors or failures recorded over extended periods; silence in retrospectives; juniors hesitating to question senior architectural assumptions; sudden discovery of systemic defects near release deadlines.",
+      "scripts": [
+        {
+          "label": "Vulnerability Normalization",
+          "text": "\"Looking through our retro notes, we have not logged a single system failure or mistake in three sprints. In distributed software engineering, silence is not indicative of perfection; it is a leading indicator of risk aversion. As engineering lead, I made an architectural miscalculation on the caching layer last week that elevated latency. I am opening the floor: what system failures or uncertainties are currently remaining unaddressed?\""
+        }
+      ],
+      "audit": [
+        "Evaluate against Edmondson’s survey: \"If you make a mistake on this team, is it held against you?\" (Target: 100% negative response rate).",
+        "Did junior developers submit RFC questions or dispute a pull request from a senior staff engineer?"
+      ]
+    },
+    {
+      "id": "T13",
+      "sourceCardNo": "Card 13",
+      "name": "Westrum Organizational Culture Typology",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Ron Westrum’s (2004) sociological framework categorizes information flow into Pathological (power-oriented), Bureaucratic (rule-oriented), and Generative (performance-oriented) environments. Westrum’s model, validated at scale in Google’s DevOps Research and Assessment (DORA) research, demonstrates that Generative cultures correlate with elite software delivery velocity and organizational reliability.",
+      "diagnostic": "\"Messengers are shot\" when incidents occur; cross-functional silos refuse to share deployment data; failures result in bureaucratic procedure expansions rather than system automation.",
+      "scripts": [
+        {
+          "label": "Generative Inquiry Protocol",
+          "text": "\"The incident review for the recent outage showed that information was withheld due to fear of blame. In this engineering unit, failure is treated as systemic diagnostic data, not personal error. We will trace the socio-technical conditions that allowed this configuration error to deploy without human gatekeeping.\""
+        }
+      ],
+      "audit": [
+        "Are incident anomaly notifications posted publicly in under fifteen minutes without managerial filtering?",
+        "Has the response to service disruptions focused on automated linters and CI gating rather than manual sign-offs?"
+      ]
+    },
+    {
+      "id": "T14",
+      "sourceCardNo": "Card 14",
+      "name": "Coyle’s Vulnerability Loop & Belonging Cues",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Daniel Coyle’s research in The Culture Code (2018), building on Jeff Polzer’s behavioral interaction studies at Harvard, identifies the \"Vulnerability Loop\": an exchange where Person A sends a signal of vulnerability, Person B detects it and responds with their own vulnerability, establishing normative trust and mutual psychological security.",
+      "diagnostic": "Team members maintain an illusion of effortless competence; defensive pushback occurs when code quality concerns are flagged; isolationism during complex debugging sessions.",
+      "scripts": [
+        {
+          "label": "Vulnerability Signal Initiation",
+          "text": "\"I reviewed the performance profile of our core event broker. I do not have a working model for why this latency spike is happening under load. I need technical help. Who can pair with me to audit this trace and find where my mental model broke down?\""
+        }
+      ],
+      "audit": [
+        "Did developers initiate spontaneous pairing sessions by openly stating, \"I do not understand this component\"?",
+        "Have PR reviews evolved into collaborative learning dialogues rather than defensive negotiations?"
+      ]
+    },
+    {
+      "id": "T15",
+      "sourceCardNo": "Card 15",
+      "name": "Maister, Green & Galford’s Trust Equation",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "David Maister, Charles Green, and Robert Galford (2000) defined interpersonal trust through a formal quotient: T = \\frac{C + R + I}{S} Where C represents Credibility (words and competence), R represents Reliability (actions and dependability), I represents Intimacy (interpersonal security and emotional safety), and S represents Self-Orientation (perceived self-interest). As Self-Orientation increases, aggregate Trust declines regardless of technical competence.",
+      "diagnostic": "High individual technical brilliance accompanied by peer distrust; suspicion regarding team members playing political games for promotions; withholding help to secure personal velocity metrics.",
+      "scripts": [
+        {
+          "label": "Self-Orientation Calibration",
+          "text": "\"Our code reviews and technical roadmap planning show high Credibility and Reliability, but trust is being degraded by perceived high Self-Orientation. When engineers prioritize their individual performance metrics over team support, collaborative throughput suffers. We will recalibrate sprint evaluations to prioritize cross-functional enablement.\""
+        }
+      ],
+      "audit": [
+        "Are team members actively unblocking peers' pull requests before advancing their own secondary tasks?",
+        "Did individual project roadmaps incorporate shared maintenance tasks without executive friction?"
+      ]
+    },
+    {
+      "id": "T16",
+      "sourceCardNo": "Card 16",
+      "name": "Schein’s Three Levels of Organizational Culture",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Edgar Schein’s (1985) organizational culture model differentiates between: (1) Artifacts (visible structures, processes, languages); (2) Espoused Values (strategies, goals, philosophies); and (3) Basic Underlying Assumptions (unconscious, taken-for-granted beliefs). Cultural dysfunction emerges when espoused values conflict directly with underlying assumptions.",
+      "diagnostic": "The company claims to value \"engineering quality\" (espoused value), but rewards engineers who cut tests to meet aggressive dates (underlying assumption); team handbooks celebrate work-life balance while managers ping engineers late at night.",
+      "scripts": [
+        {
+          "label": "Cultural Incongruence Audit",
+          "text": "\"Our stated value is 'test-driven stability,' but our operational reality is that engineers who skip unit testing to hit dates are praised, while those fixing technical debt are questioned. We are addressing this discrepancy. We will freeze new feature development for this sprint to address structural technical debt.\""
+        }
+      ],
+      "audit": [
+        "Does sprint planning formally prioritize bug fixes and debt tickets without team-level pushback?",
+        "Are managerial communications during out-of-office hours discontinued or explicitly flagged as non-urgent?"
+      ]
+    },
+    {
+      "id": "T17",
+      "sourceCardNo": "Card 17",
+      "name": "Google’s Project Aristotle Normative Architecture",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Google’s internal study (2012–2015) analyzing hundreds of cross-functional teams identified that who is on a team matters far less than how team members interact. Five dynamics determine effectiveness: Psychological Safety (paramount), Dependability, Structure & Clarity, Meaning, and Impact. Conversational turn-taking and average social sensitivity were the two measurable behavioral drivers.",
+      "diagnostic": "Two senior engineers dominate 80% of standup and retrospective discussions; quieter developers do not participate; commitments made during sprint planning routinely drop without notice.",
+      "scripts": [
+        {
+          "label": "Conversational Equalization",
+          "text": "\"Our retrospective interaction metrics show unbalanced participation. Moving forward, we will implement structured turn-taking for architectural RFC reviews. Each participant will have two minutes of uninterrupted time to contribute before open floor debate begins. We will start with those who have contributed the least during the current session.\""
+        }
+      ],
+      "audit": [
+        "Did every squad member contribute at least once during sprint planning and retrospective discussions?",
+        "Has the variance in speaking time across squad members declined toward an even distribution?"
+      ]
+    },
+    {
+      "id": "T18",
+      "sourceCardNo": "Card 18",
+      "name": "Clark’s Four Stages of Psychological Safety",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Timothy R. Clark (2020) demonstrated that psychological safety progresses through four distinct stages: (1) Inclusion Safety (human connection and belonging); (2) Learner Safety (freedom to ask questions and experiment); (3) Contributor Safety (freedom to make meaningful contributions); and (4) Challenger Safety (freedom to challenge the status quo without fear of retaliation).",
+      "diagnostic": "The team tolerates questions (Learner Safety) and executes tasks (Contributor Safety), but immediately shuts down challenges to legacy code patterns or senior leadership roadmaps (lack of Challenger Safety).",
+      "scripts": [
+        {
+          "label": "Challenger Safety Facilitation",
+          "text": "\"The squad has proven its execution capability, but we have stopped innovating our internal architectural primitives. I am challenging this team to challenge the current design. In this meeting, each developer will identify one practice in our deployment pipeline that should be dismantled. The most disruptive, valid critique will be prioritized.\""
+        }
+      ],
+      "audit": [
+        "Has the team submitted and debated an RFC that directly challenges legacy code patterns?",
+        "Did junior developers voice disagreement with leadership decisions without experiencing organizational friction?"
+      ]
+    },
+    {
+      "id": "T19",
+      "sourceCardNo": "Card 19",
+      "name": "Mayer, Davis & Schoorman’s Integrative Model of Trust",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Mayer, Davis, and Schoorman (1995, Academy of Management Review) framed organizational trust through three distinct components of trustworthiness: Ability (technical competencies and domain expertise), Benevolence (the belief that the trustee wants to do good to the trustor), and Integrity (adherence to an acceptable set of principles).",
+      "diagnostic": "Developers trust a colleague's technical competence (Ability), but suspect they will claim exclusive credit for a joint project (low Benevolence), or catch them fabricating testing coverage numbers (low Integrity).",
+      "scripts": [
+        {
+          "label": "Integrity & Benevolence Alignment",
+          "text": "\"We have high technical competence in our squad, but our cross-functional alignment is fragile. For our code-sharing initiative to work, we need full transparency. We will conduct pair-programming rotations across the service layer to eliminate silos and verify that code ownership remains shared.\""
+        }
+      ],
+      "audit": [
+        "Did peer reviews include constructive explanations rather than curt or dismissive comments?",
+        "Are project wins and PR merges attributed accurately across pair-programming partners?"
+      ]
+    },
+    {
+      "id": "T20",
+      "sourceCardNo": "Card 20",
+      "name": "Cameron & Quinn’s Competing Values Framework",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Kim Cameron and Robert Quinn (1999) categorized organizational culture across two axes—Flexibility vs. Stability, and Internal Focus vs. External Focus—yielding four culture archetypes: Clan (collaborative), Adhocracy (creative), Market (competitive), and Hierarchy (controlled). Friction erupts when engineering processes clash with the prevailing archetype.",
+      "diagnostic": "Developers complain of heavy documentation procedures in a fast-paced environment (Hierarchy clash with Adhocracy) or lack of delivery focus in an operational scaling sprint (Clan clash with Market).",
+      "scripts": [
+        {
+          "label": "Archetype Realignment",
+          "text": "\"Our delivery friction is caused by a misalignment of our operational modes. We are treating a critical uptime reliability phase (Hierarchy) with an exploratory prototype mentality (Adhocracy). For the next month, operational rigor, logging standards, and monitoring compliance take precedence over novel prototyping.\""
+        }
+      ],
+      "audit": [
+        "Are incident response guidelines, monitoring alerts, and runbooks updated systematically?",
+        "Has exploratory feature development noise been suppressed during system stabilization periods?"
+      ]
+    },
+    {
+      "id": "T21",
+      "sourceCardNo": "Card 21",
+      "name": "The SCARF Model (David Rock)",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "David Rock’s (2008) neuroleadership framework operationalizes evolutionary threat/reward responses across five social domains: Status, Certainty, Autonomy, Relatedness, and Fairness. Social threats in these domains activate the brain's physical pain pathways, suppressing analytical cognition and prefrontal cortex function.",
+      "diagnostic": "Developers react with hostility to sudden code reassignments (Autonomy threat), unexpected changes in team leadership (Certainty/Status threat), or uneven on-call shifts (Fairness threat).",
+      "scripts": [
+        {
+          "label": "SCARF Threat Mitigation",
+          "text": "\"The upcoming architectural refactor introduces operational uncertainty. I want to emphasize our boundaries: every engineer retains complete Autonomy over implementation designs within their service. On-call rotations will be audited to ensure complete Fairness. Let's discuss where anyone feels their autonomy or technical continuity is constrained.\""
+        }
+      ],
+      "audit": [
+        "Did defensive reactions to architectural feedback decrease in ticket comments?",
+        "Is the on-call schedule perceived as equitable across both junior and senior staff?"
+      ]
+    },
+    {
+      "id": "T22",
+      "sourceCardNo": "Card 22",
+      "name": "Psychological Contract Theory (Denise Rousseau)",
+      "category": "Psychological Safety, Culture & Trust Dynamics",
+      "foundation": "Denise Rousseau’s (1989, 1995) psychological contract theory delineates the unwritten, subjective expectations held by an employee regarding reciprocal obligations between themselves and their organization. Violations (perceived breaches of these implicit promises) lead to employee cynicism, turnover, and catastrophic drops in discretionary effort.",
+      "diagnostic": "Sudden disengagement from an exceptional engineer; reluctance to participate in voluntary mentoring; abrupt shift from high commitment to \"quiet quitting\" or strict compliance with minimal requirements.",
+      "scripts": [
+        {
+          "label": "Contract Repair 1-on-1",
+          "text": "\"I have observed a shift in your energy over the past three sprints. Typically, this points to an unaddressed breach in our operating expectations—perhaps around career progression, technical ownership, or workload balancing. I want to uncover where our operational reality has diverged from your expectations.\""
+        }
+      ],
+      "audit": [
+        "Has the individual engineer re-engaged in collaborative discussions and forward-looking roadmap planning?",
+        "Was a concrete, written professional development plan formalized to restore parity in the psychological contract? Unresolved technical and interpersonal conflict degrades engineering velocity and introduces architectural flaws into systems. Engineering teams require structured feedback protocols that remove subjective blame and replace defensive posturing with empirical, blameless inquiry."
+      ]
+    },
+    {
+      "id": "T23",
+      "sourceCardNo": "Card 23",
+      "name": "Scott’s Radical Candor Matrix",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Developed by Kim Scott (2017), Radical Candor combines two orthogonal axes: Caring Personally and Challenging Directly. This produces four quadrants: Radical Candor, Ruinous Empathy (avoiding feedback to protect feelings), Obnoxious Aggression (unfiltered attacks without care), and Manipulative Insincerity (passive-aggressive political maneuvering).",
+      "diagnostic": "Substandard, defect-ridden code is approved in pull requests without constructive commentary to avoid tension (Ruinous Empathy); or reviewers leave caustic, sarcastic remarks on junior contributions (Obnoxious Aggression).",
+      "scripts": [
+        {
+          "label": "Ruinous Empathy Corrective",
+          "text": "\"In our team's PR reviews, I am observing Ruinous Empathy. We are approving pull requests with noticeable architectural and functional defects to keep interactions smooth. This is not kindness; it sets up production incidents and damages careers. Our standard is Radical Candor: we care personally about our peers' growth, which requires challenging their code directly.\""
+        }
+      ],
+      "audit": [
+        "Do code reviews display detailed, rigorous structural critiques framed constructively?",
+        "Have defect rates slipping past PR reviews into staging dropped?"
+      ]
+    },
+    {
+      "id": "T24",
+      "sourceCardNo": "Card 24",
+      "name": "Situation-Behavior-Impact (SBI) Feedback Framework",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Developed by the Center for Creative Leadership (CCL), the SBI model eliminates defensive cognitive reactions by separating subjective interpretations from verifiable facts. Feedback is constrained strictly to the objective Situation, the observable Behavior, and the measurable Impact.",
+      "diagnostic": "Managers provide vague, subjective feedback (e.g., \"You have a negative attitude in planning\" or \"You are not a team player\"), producing defensiveness, denial, and interpersonal hostility.",
+      "scripts": [
+        {
+          "label": "SBI Feedback Delivery",
+          "text": "\"I want to share feedback regarding this morning's architectural sync. In that meeting (Situation), when Contributor X presented their caching proposal, you interrupted them three times and stated their solution was completely broken without providing data (Behavior). As a consequence, the proposal was abandoned, X disengaged, and the team lost forty minutes of constructive technical design (Impact).\""
+        }
+      ],
+      "audit": [
+        "Did the recipient change the targeted behavior during cross-functional sync meetings?",
+        "Does team feedback in retrospectives adopt the SBI structure rather than personal attributions?"
+      ]
+    },
+    {
+      "id": "T25",
+      "sourceCardNo": "Card 25",
+      "name": "Thomas-Kilmann Conflict Mode Instrument (TKI)",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Kenneth Thomas and Ralph Kilmann (1974) identified five conflict-handling modes along two dimensions: Assertiveness (satisfying own concerns) and Cooperativeness (satisfying others' concerns): Competing, Collaborating, Compromising, Avoiding, and Accommodating.",
+      "diagnostic": "Over-reliance on Avoiding leads to unaddressed architecture issues; perpetual Competing turns every technical selection into an ideological war; habitual Accommodating produces brittle compromises.",
+      "scripts": [
+        {
+          "label": "Conflict Mode Intervention",
+          "text": "\"Our technical debates around the data migration have stalled in an Avoidance loop. We are moving toward a Collaborating mode. We will list the architectural constraints of each option side-by-side, map them to our business SLAs, and build an integrated solution that addresses both scaling and deployment requirements.\""
+        }
+      ],
+      "audit": [
+        "Are technical conflicts driving collaborative design workshops instead of being avoided or unilaterally decided?",
+        "Has the volume of unaddressed Jira backlog disputes declined?"
+      ]
+    },
+    {
+      "id": "T26",
+      "sourceCardNo": "Card 26",
+      "name": "Rosenberg’s Nonviolent Communication (NVC)",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Marshall Rosenberg’s (2003) Nonviolent Communication framework separates Observation, Feeling, Need, and Request. In engineering environments, it replaces subjective judgment with empirical observations and actionable, negotiable requests.",
+      "diagnostic": "Sarcastic exchanges on Slack channels; hostile comments on code commits; finger-pointing during on-call incident escalations.",
+      "scripts": [
+        {
+          "label": "NVC Facilitation",
+          "text": "\"When our staging build remains broken for three consecutive hours (Observation), the rest of the squad is blocked from testing and verifying their work (Impact). The team requires continuous integration reliability to maintain deployment velocity (Need). Can we agree that anyone whose commit breaks the main pipeline will prioritize reverting it within ten minutes? (Request).\""
+        }
+      ],
+      "audit": [
+        "Has time-to-revert for broken main builds dropped below fifteen minutes?",
+        "Have accusatory messages in engineering channels been replaced by operational, request-oriented communication?"
+      ]
+    },
+    {
+      "id": "T27",
+      "sourceCardNo": "Card 27",
+      "name": "Blameless Post-Mortems & Just Culture",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Rooted in safety science, Sidney Dekker’s Just Culture, and popularized in high-reliability organizations by John Allspaw (Etsy) and Google SRE, this model asserts that human error is the symptom of a deeper systemic failure, not the root cause. Punishing individuals suppresses anomaly reporting; analyzing systemic vulnerabilities strengthens operational resilience.",
+      "diagnostic": "Fear of deploying on Fridays; engineers withholding logs or timelines after an outage; production incident reviews focused on \"who introduced the bug\" rather than why the system allowed bad code through.",
+      "scripts": [
+        {
+          "label": "Blameless Framing",
+          "text": "\"We are convening the post-mortem for incident INC-4029. We operate from the fundamental premise: every engineer acted rationally based on the information and tools they had at the time. We will not discuss who ran the command or pushed the bad commit. We will determine why our automation and canary checks failed to catch this defect before customer impact.\""
+        }
+      ],
+      "audit": [
+        "Did the post-mortem document result in automated linters, guardrails, or integration tests rather than manual verification mandates?",
+        "Was the post-mortem completed and published within 48 hours without human attribution?"
+      ]
+    },
+    {
+      "id": "T28",
+      "sourceCardNo": "Card 28",
+      "name": "Crucial Conversations Framework",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Developed by Kerry Patterson, Joseph Grenny, Ron McMillan, and Al Switzler (2002), this model provides protocols for conversations where stakes are high, opinions vary, and emotions run strong. Psychological safety is preserved by clarifying \"Mutual Purpose\" and \"Mutual Respect,\" while actively contrasting (\"I don't mean X; I do mean Y\").",
+      "diagnostic": "Sudden explosive arguments in meetings; silent disengagement followed by resignations; escalation of minor technical disagreements to executive leaders.",
+      "scripts": [
+        {
+          "label": "Contrasting & Mutual Purpose",
+          "text": "\"I want to discuss the missed platform migration deadline. To be clear, my intent is not to question your technical ability or micromanage your work. My intent is to make sure we understand the architectural blockers so we can protect your time and hit our external commit dates. Can we review the work together?\""
+        }
+      ],
+      "audit": [
+        "Has the team member actively proactively surfaced schedule or technical risks without prompting?",
+        "Have direct interpersonal resolutions replaced managerial escalations?"
+      ]
+    },
+    {
+      "id": "T29",
+      "sourceCardNo": "Card 29",
+      "name": "The Johari Window for Interpersonal Transparency",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Created by Joseph Luft and Harrington Ingham (1955), the Johari Window maps cognitive awareness across four quadrants: Open/Arena (known to self and others), Blind Spot (unknown to self, known to others), Facade/Hidden (known to self, unknown to others), and Unknown. High-performing teams intentionally expand the Open Area through solicitation of feedback and disclosure.",
+      "diagnostic": "Developers repeatedly making the same communication or technical mistakes without realizing it (Blind Spot); engineers suffering from imposter syndrome or burnout in silence (Hidden Area).",
+      "scripts": [
+        {
+          "label": "Blind Spot Feedback Solicitation",
+          "text": "\"To accelerate my effectiveness as an engineering manager, I need to expand my open window. What is one operational habit I exhibit in sprint planning that slows you down or introduces noise, which I might be blind to?\""
+        }
+      ],
+      "audit": [
+        "Did direct reports initiate requests for constructive feedback in 1-on-1s?",
+        "Has the manager implemented at least one direct procedural change based on team feedback?"
+      ]
+    },
+    {
+      "id": "T30",
+      "sourceCardNo": "Card 30",
+      "name": "Argyris’s Ladder of Inference & Double-Loop Learning",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Chris Argyris (1970, 1990) outlined how humans jump from observable data to selected data, added meanings, assumptions, conclusions, and beliefs, culminating in reflexive actions. Argyris’s \"Double-Loop Learning\" challenges the underlying norms and objectives rather than merely adjusting immediate actions.",
+      "diagnostic": "Engineers making hasty, negative assumptions about why another squad's API failed; doubling down on broken sprint plans rather than questioning underlying architecture assumptions.",
+      "scripts": [
+        {
+          "label": "Ladder Disassembly Inquiry",
+          "text": "\"We have made a rapid assumption that Team B deliberately broke our endpoint to accelerate their own sprint. Let us climb down the ladder of inference. What is the raw, observable data in the git commit log? What assumptions did we attach to that data? Let us speak with their tech lead before acting on that belief.\""
+        }
+      ],
+      "audit": [
+        "Did cross-team debugging meetings evaluate API issues using telemetry metrics rather than personal intentions?",
+        "Did sprint retrospectives review core organizational assumptions rather than immediate symptoms?"
+      ]
+    },
+    {
+      "id": "T31",
+      "sourceCardNo": "Card 31",
+      "name": "Fisher & Ury’s Principled Negotiation",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Roger Fisher and William Ury’s Harvard Negotiation Project framework (Getting to Yes, 1981) focuses on four pillars: Separate the people from the problem; Focus on interests, not positions; Invent options for mutual gain; Insist on using objective criteria.",
+      "diagnostic": "Deadlocked discussions between Product Management and Engineering regarding scope vs. speed; engineers refusing to compromise on non-critical architectural preferences.",
+      "scripts": [
+        {
+          "label": "Interests vs. Positions Realignment",
+          "text": "\"We are locked in positional bargaining: Product demands a release by the 15th, and Engineering demands an additional month for testing. Let us decouple people from the problem. Product's underlying interest is meeting a client commitment; Engineering's underlying interest is preventing data loss in production. What delivery options fulfill both interests simultaneously?\""
+        }
+      ],
+      "audit": [
+        "Was a negotiated feature slice deployed on schedule with agreed-upon test coverage?",
+        "Did Product and Engineering establish an objective metric for release gating?"
+      ]
+    },
+    {
+      "id": "T32",
+      "sourceCardNo": "Card 32",
+      "name": "Stone & Heen’s Feedback Triggers",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Douglas Stone and Sheila Heen’s (2014) Thanks for the Feedback identifies three psychological triggers that block feedback processing: Truth Triggers (feeling the feedback is wrong, unhelpful, or unfair), Relationship Triggers (friction with the person giving feedback), and Identity Triggers (feedback challenging one's core self-worth).",
+      "diagnostic": "An engineer rejects accurate technical critique because it was delivered by a colleague they dislike (Relationship Trigger), or enters a defensive spiral over a minor PR suggestion (Identity Trigger).",
+      "scripts": [
+        {
+          "label": "Trigger Deconstruction",
+          "text": "\"When reviewing the feedback from the sprint retrospective, I noticed immediate pushback. Let us separate the message from the messenger. If we ignore who wrote this PR comment, is the technical critique regarding concurrency handling accurate? Let's analyze the technical merits of the code itself.\""
+        }
+      ],
+      "audit": [
+        "Did the recipient integrate the suggested technical changes into their PR branch?",
+        "Are code reviews centered on technical logic rather than reviewer seniority?"
+      ]
+    },
+    {
+      "id": "T33",
+      "sourceCardNo": "Card 33",
+      "name": "Lencioni’s Conflict Continuum",
+      "category": "Feedback, Candor & Conflict Resolution",
+      "foundation": "Patrick Lencioni’s (2002) model in The Five Dysfunctions of a Team frames conflict along a spectrum between Artificial Harmony (fear of conflict) and Mean-Spirited Personal Attacks. High-performing teams intentionally operate at the ideal sweet spot: passionate, unfiltered ideological debate focused entirely on concepts and ideas.",
+      "diagnostic": "Meetings are calm and quiet, yet real disagreements are voiced afterward in backchannels; decisions made in team meetings are ignored or resisted passively.",
+      "scripts": [
+        {
+          "label": "Artificial Harmony Disruption",
+          "text": "\"This architectural direction affects every engineer on this squad, yet no one has raised a counter-argument. That tells me we are stuck in artificial harmony. I will not accept universal agreement on a complex distributed systems migration. What is the primary weakness in this proposal that we are actively avoiding?\""
+        }
+      ],
+      "audit": [
+        "Did architectural RFCs accumulate substantive, dissenting technical critiques prior to approval?",
+        "Has post-meeting hallway complaints dropped to zero? Engineering productivity is constrained by cognitive load limits and attention fragmentation. Operational rhythms and delegation protocols establish predictable coordination patterns, protecting deep focus and ensuring autonomous team execution."
+      ]
+    },
+    {
+      "id": "T34",
+      "sourceCardNo": "Card 34",
+      "name": "Delegation Poker & Seven Levels of Authority",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Jurgen Appelo’s (Management 3.0, 2011) Delegation Poker operationalizes delegation as a continuum rather than a binary switch across seven levels: Tell, Sell, Consult, Agree, Advise, Inquire, and Delegate. This clarifies control and autonomy boundaries, reducing micromanagement and abandonment.",
+      "diagnostic": "An engineer escalates routine decisions to the manager out of caution; or conversely, an engineer deploys a breaking architectural change without team awareness or sign-off.",
+      "scripts": [
+        {
+          "label": "Delegation Clarity",
+          "text": "\"We have ambiguous authority boundaries regarding production database migrations. We will use the Seven Levels of Authority. For minor index updates, the authority level is Level 7: Delegate—execute without checking. For schema modifications, it is Level 4: Agree—we must come to a shared consensus. For core data migrations, it is Level 3: Consult—I will make the final decision after your input.\""
+        }
+      ],
+      "audit": [
+        "Did the manager refrain from intervening in decisions categorized at Level 5 or higher?",
+        "Did engineers make autonomous architectural decisions within designated bounds without manager escalation?"
+      ]
+    },
+    {
+      "id": "T35",
+      "sourceCardNo": "Card 35",
+      "name": "Whitmore’s GROW Coaching Model",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Sir John Whitmore’s (1992) GROW model (Goal, Current Reality, Options, Will/Way Forward) is grounded in self-directed learning theory. It shifts management interactions from prescriptive direction to coaching inquiry, building self-efficacy (Bandura, 1977) and critical problem-solving skills.",
+      "diagnostic": "Engineers enter 1-on-1s expecting the manager to solve their technical or team challenges; the manager becomes a bottleneck for tactical execution.",
+      "scripts": [
+        {
+          "label": "Coaching Facilitation",
+          "text": "\"Let us walk through this blocker using the GROW framework. What is the specific operational outcome you want to see here? (Goal). What have you tried so far, and where is the technical barrier? (Current Reality). If access or legacy code constraints were removed, what solutions exist? (Options). What concrete step will you take by Friday? (Will).\""
+        }
+      ],
+      "audit": [
+        "Did the engineer implement their self-selected solution without managerial intervention?",
+        "Have tactical escalation requests from this engineer dropped in subsequent 1-on-1s?"
+      ]
+    },
+    {
+      "id": "T36",
+      "sourceCardNo": "Card 36",
+      "name": "Graham’s Maker vs. Manager Schedules",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Paul Graham’s 2009 thesis delineates the fundamental conflict between two operating modes: the Manager Schedule (divided into discrete 30-minute blocks) and the Maker Schedule (requiring uninterrupted four-hour blocks to maintain deep flow and hold mental models in working memory).",
+      "diagnostic": "Engineers report low coding velocity despite high hours; commit graphs show activity only late at night; team members complain of fragmented attention caused by mid-morning or mid-afternoon syncs.",
+      "scripts": [
+        {
+          "label": "Maker Schedule Protection",
+          "text": "\"Our engineering calendar shows fractured Maker schedules. Effective immediately, we are establishing uninterrupted focus blocks. Tuesdays and Thursdays will be zero-meeting days. All sync standups, 1-on-1s, and planning sessions are restricted to Monday and Wednesday mornings. Deep work time will be protected.\""
+        }
+      ],
+      "audit": [
+        "Did the average uninterrupted focus block for developers increase past four continuous hours?",
+        "Did GitHub commit activity transition from late-night bursts to consistent midday focus hours?"
+      ]
+    },
+    {
+      "id": "T37",
+      "sourceCardNo": "Card 37",
+      "name": "Cognitive Load Theory in Software Teams",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "John Sweller’s (1988) Cognitive Load Theory, as adapted to software engineering by Skelton and Pais, identifies three loads: Intrinsic (inherent complexity of the domain), Extraneous (friction of the development environment, tooling, or deployment), and Germane (mental effort dedicated to business logic). Extraneous load must be minimized to maximize Germane problem-solving.",
+      "diagnostic": "Developers spend hours configuring local environments, dealing with flaky test suites, or chasing down complex deployment scripts; delivery of straightforward features takes weeks.",
+      "scripts": [
+        {
+          "label": "Extraneous Load Reduction",
+          "text": "\"The time required to run our integration suite locally has become an extraneous cognitive burden. We are pausing new feature development for 72 hours. We will containerize the local dev setup and stabilize flaky integration tests to return our cognitive focus to building core product features.\""
+        }
+      ],
+      "audit": [
+        "Did local test suite runtimes drop by more than 50%?",
+        "Did engineering cycle time from pull request creation to staging deployment improve?"
+      ]
+    },
+    {
+      "id": "T38",
+      "sourceCardNo": "Card 38",
+      "name": "Asynchronous Working Agreements & GitLab Remote Fluency",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Grounded in media richness theory (Daft & Lengel, 1986) and distributed software collaboration models pioneered by GitLab and Basecamp, this practice prioritizes written, asynchronous-first communication over ephemeral synchronous meetings. This democratizes participation across time zones and creates an auditable record of engineering decisions.",
+      "diagnostic": "Decisions are made in undocumented ad-hoc video calls, leaving distributed or remote members misaligned; engineers are constantly interrupted by \"@here\" or \"@channel\" mentions on Slack.",
+      "scripts": [
+        {
+          "label": "Async-First Mandate",
+          "text": "\"We are spending excessive time in status syncs that could be handled asynchronously. Moving forward, synchronous meetings require a shared document with context and options linked twenty-four hours in advance. If a meeting lacks a documented agenda, it is automatically cancelled. Real-time meetings are reserved strictly for high-context debate and social connection.\""
+        }
+      ],
+      "audit": [
+        "Did total scheduled synchronous meeting time decrease across the engineering squad?",
+        "Are critical decisions documented in version-controlled architectural decision records (ADRs) rather than Slack threads?"
+      ]
+    },
+    {
+      "id": "T39",
+      "sourceCardNo": "Card 39",
+      "name": "Loehr & Schwartz’s Energy Management Audit",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Jim Loehr and Tony Schwartz’s (2003) The Power of Full Engagement establishes that high performance requires managing energy rather than time across four dimensions: Physical, Emotional, Mental, and Spiritual. Sustainable pacing prevents catastrophic cognitive burnout and systemic attrition.",
+      "diagnostic": "Engineers submitting low-quality pull requests with careless bugs late on Friday nights; team members showing chronic irritability in retrospectives; declining participation in sprint events.",
+      "scripts": [
+        {
+          "label": "Energy Depletion Check-In",
+          "text": "\"The team has operated under sustained deployment pressure for three straight iterations. Extended hours do not yield increased software quality; they produce fragile code and cognitive burnout. We are running an operational energy audit. Each person will identify one non-essential operational obligation to drop this sprint. High-severity on-call pages will trigger immediate compensatory time off.\""
+        }
+      ],
+      "audit": [
+        "Were after-hours PR submissions and on-call alerts reduced?",
+        "Did engineers log compensatory rest hours following high-severity incidents?"
+      ]
+    },
+    {
+      "id": "T40",
+      "sourceCardNo": "Card 40",
+      "name": "Cynefin Framework for Operational Decision Making",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Dave Snowden’s (1999) Cynefin framework divides operational contexts into five domains: Clear (best practice), Complicated (expert analysis), Complex (probe-sense-respond), Chaotic (act-sense-respond), and Confused/Disorder. Pathologies emerge when applying \"best practices\" to Complex software engineering environments.",
+      "diagnostic": "Leaders demand detailed, six-month predictive roadmaps for emergent, exploratory research projects (treating Complex as Complicated); teams run open-ended brainstorms in the middle of a critical outage (treating Chaotic as Complex).",
+      "scripts": [
+        {
+          "label": "Context-Domain Alignment",
+          "text": "\"We are debating this research spike using the wrong operational mindset. This is not a Complicated domain where an expert can predict the ideal architecture in advance; it is a Complex domain. We cannot plan our way through it upfront. We will launch three lightweight spikes this week, probe system responses, and let the architecture emerge from live telemetry.\""
+        }
+      ],
+      "audit": [
+        "Did the engineering team complete quick exploratory spikes before committing to a final architecture?",
+        "Were incident response procedures executed quickly and decisively during outages without prolonged consensus meetings?"
+      ]
+    },
+    {
+      "id": "T41",
+      "sourceCardNo": "Card 41",
+      "name": "Hersey-Blanchard Situational Leadership Theory (SLII)",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Paul Hersey and Ken Blanchard’s (1969, 1985) model matches leadership behaviors (Directing, Coaching, Supporting, Delegating) to employee developmental maturity across Competence and Commitment (D1: Enthusiastic Beginner, D2: Disillusioned Learner, D3: Reluctant Contributor, D4: Peak Performer).",
+      "diagnostic": "A senior engineer feels micromanaged when given step-by-step task instructions (Directing applied to D4); a new junior engineer feels abandoned and overwhelmed when told to \"just figure out\" a complex codebase (Delegating applied to D1).",
+      "scripts": [
+        {
+          "label": "Situational Style Calibration",
+          "text": "\"You are tackling our distributed event pipeline, which is a new domain for you (D1/D2). I will not leave you to navigate this alone, nor will I take over the keyboard. For the first two sprints, we will use a Directing-Coaching cadence: we will pair daily on architecture reviews and outline explicit task parameters until you feel confident in the codebase.\""
+        }
+      ],
+      "audit": [
+        "Has the junior engineer independently submitted pull requests with clean design patterns?",
+        "Has the senior engineer retained autonomous technical ownership without micromanagement escalations?"
+      ]
+    },
+    {
+      "id": "T42",
+      "sourceCardNo": "Card 42",
+      "name": "Eisenhower Matrix for Technical Debt Prioritization",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Originating from Dwight D. Eisenhower and popularized by Stephen Covey, this matrix partitions work by Urgency and Importance. In engineering, unaddressed Quadrant II tasks (Important but Not Urgent, such as architecture updates and test tooling) are constantly postponed by Quadrant III distractions (Urgent but Not Important meetings and triage requests).",
+      "diagnostic": "The engineering team spends its sprints responding to immediate firefighting, alerts, and Slack messages; foundational refactoring and system improvements are neglected for quarters at a time.",
+      "scripts": [
+        {
+          "label": "Quadrant II Reclamation",
+          "text": "\"Our sprints have been consumed by urgent operational firefighting (Quadrant I and III) at the expense of core system resilience (Quadrant II). We will reserve 20% of every sprint's capacity exclusively for non-urgent, high-importance engineering work: addressing structural technical debt, automating test suites, and refining deployment pipelines.\""
+        }
+      ],
+      "audit": [
+        "Was 20% of engineering sprint capacity committed and delivered on system stabilization tickets?",
+        "Did the rate of urgent production alerts decrease as a result of preventative refactoring?"
+      ]
+    },
+    {
+      "id": "T43",
+      "sourceCardNo": "Card 43",
+      "name": "Grove & Doerr’s OKR Cascading Framework",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Conceptualized by Andy Grove at Intel (High Output Management, 1983) and expanded by John Doerr (Measure What Matters, 2018), Objectives and Key Results (OKRs) link ambitious strategic goals with measurable, outcome-based markers. The psychological mechanism relies on public goal commitment and decoupling goals from performance compensation to encourage aggressive risk-taking.",
+      "diagnostic": "Engineers deliver dozens of tickets without understanding their business impact; teams celebrate hitting output milestones while core product metrics remain stagnant.",
+      "scripts": [
+        {
+          "label": "Outcome Over Output Alignment",
+          "text": "\"Our sprint delivery shows high output, but our business impact is flat. Completing eight Jira tickets is an output; reducing checkout latency by 150 milliseconds is an outcome. We are defining our team OKRs around quantitative outcomes. If a deliverable does not move our key result metric, it will not enter the sprint backlog.\""
+        }
+      ],
+      "audit": [
+        "Can each squad contributor clearly articulate the key performance metric their current pull request moves?",
+        "Did the squad prune backlog items that did not map directly to primary team OKRs?"
+      ]
+    },
+    {
+      "id": "T44",
+      "sourceCardNo": "Card 44",
+      "name": "Spotify Cadence & Decoupled Deployments",
+      "category": "Operational Rhythms, Delegation & Cognitive Architecture",
+      "foundation": "Developed by Henrik Kniberg and Anders Ivarsson (2012), the Spotify operational rhythm decouples system release cycles from feature alignment through an integrated sync cadence (Tribes, Chapters, Guilds). By aligning on strategic priorities while decoupling deployment cadence, squads move fast without cross-team dependencies.",
+      "diagnostic": "Teams are blocked waiting for other squads to test or approve code; multiple squads attempt massive, simultaneous end-of-quarter deployments that fail in production.",
+      "scripts": [
+        {
+          "label": "Cadence Decoupling",
+          "text": "\"Our release cycle is stalled because four teams are synchronizing deployments on the same date. We are separating release cadence from code deployments. Squads will use feature flags and well-defined API boundaries to deploy to production independently. We will sync asynchronously across chapters on shared interface contracts.\""
+        }
+      ],
+      "audit": [
+        "Did the squad deploy code changes to production independently without scheduling a cross-team release train?",
+        "Are cross-team dependencies managed cleanly via feature flags and versioned API schemas?"
+      ]
+    }
+  ]
+}

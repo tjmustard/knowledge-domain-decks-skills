@@ -25,7 +25,7 @@
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
 // Field names, labels and item style come from the deck, written by build.mjs.
-#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, label-items, label-prompt, label-context, item-style, blocks
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
@@ -84,16 +84,18 @@
     #grid(
       columns: (1fr, auto),
       [#text(size: 7pt, weight: "bold", fill: rgb("#64748b"))[#card.id]],
-      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[#upper(card.at(field-group))]],
+      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[
+        #group-label.at(card.at(field-group), default: upper(card.at(field-group)))
+      ]],
     )
     #v(5pt)
-    #text(size: 14pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
+    #text(size: name-size, weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(4pt)
     #line(length: 100%, stroke: 1.5pt + accent(card))
     #v(6pt)
     #text(size: 9pt, style: "italic", fill: rgb("#334155"))[#card.at(field-headline)]
     #v(10pt)
-    #align(center)[#image(card.svgFile, width: 1.8in)]
+    #align(center)[#image(card.svgFile, width: figure-width)]
     #v(10pt)
     #text(size: 7pt, weight: "bold", fill: rgb("#0f172a"))[#label-context]
     #v(2pt)
@@ -174,10 +176,10 @@
           ] else if b.style == "labelled" [
             // A record that carries its own label beside its text: the label
             // names the move, the text is what is said.
-            #let v = card.at(b.field)
-            #text(size: 6.5pt, weight: "bold", fill: accent(card))[#v.label]
+            #let pair = card.at(b.field)
+            #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label]
             #v(1pt)
-            #text(size: 7pt)[#v.text]
+            #text(size: 7pt)[#pair.text]
           ]
         ]
       ]

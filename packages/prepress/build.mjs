@@ -94,6 +94,14 @@ if (version.error || version.status !== 0) {
 // template's fallback colour applies to every card.
 // The record shape, as the template sees it. A deck with no fields block gets
 // the first deck's names, which is what keeps its printed pages identical.
+function groupLabelTyp(labels) {
+  const entries = Object.entries(labels || {});
+  if (entries.length === 0) return "(:)";
+  return `(${entries
+    .map(([group, short]) => `(${JSON.stringify(group)}): ${JSON.stringify(short)}`)
+    .join(", ")})`;
+}
+
 function fieldsTyp(deck) {
   const shape = deckShape(deck);
   // A deck can map a field away - a card with no checklist and no anti-pattern
@@ -128,6 +136,13 @@ function fieldsTyp(deck) {
     `#let label-prompt = ${JSON.stringify(shape.labelPrompt.toUpperCase())}`,
     `#let label-context = ${JSON.stringify(shape.labelContext.toUpperCase())}`,
     `#let item-style = ${JSON.stringify(shape.itemStyle)}`,
+    // A deck with no short forms gets Typst's empty dictionary - `(:)`, not
+    // `()`, which is an array and would take an integer index - and the
+    // template falls back to the group's full name, so every earlier deck
+    // prints the line it always printed.
+    `#let group-label = ${groupLabelTyp(shape.groupLabels)}`,
+    `#let figure-width = ${shape.figureWidth}`,
+    `#let name-size = ${shape.nameSize}`,
     ...blocks,
     ""
   ].join("\n");

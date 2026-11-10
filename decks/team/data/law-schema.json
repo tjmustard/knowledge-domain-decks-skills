@@ -1,0 +1,256 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/team-schema.json",
+  "title": "Team Architecture card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceCardNo",
+    "name",
+    "category",
+    "diagnostic",
+    "schematic",
+    "script",
+    "audit",
+    "auditFull",
+    "foundation",
+    "origin",
+    "figure"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^T(0[1-9]|[1-3][0-9]|4[0-4])$"
+    },
+    "sourceCardNo": {
+      "description": "The document's own telemetry numbering, which matches deck order on every reference it makes.",
+      "type": "string",
+      "pattern": "^Card (0[1-9]|[1-3][0-9]|4[0-4])$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 70
+    },
+    "category": {
+      "enum": [
+        "Team Formation & Structural Architecture",
+        "Psychological Safety, Culture & Trust Dynamics",
+        "Feedback, Candor & Conflict Resolution",
+        "Operational Rhythms, Delegation & Cognitive Architecture"
+      ]
+    },
+    "diagnostic": {
+      "description": "The source's Team Friction Diagnostic, verbatim. Its measured range is 125-241 characters; this bound leaves room for the longest without admitting a paragraph.",
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 260
+    },
+    "schematic": {
+      "description": "The line the card prints under the figure. It names the drawing, so a reader can see that the label and the picture are the same claim.",
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 45
+    },
+    "script": {
+      "description": "The source's labelled manager script, verbatim and never compressed: it is the thing a card exists for.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "text"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        "text": {
+          "type": "string",
+          "minLength": 150,
+          "maxLength": 520
+        }
+      }
+    },
+    "audit": {
+      "description": "The two day-14 checks compressed to one line each. The card budget is measured by npm run check:fit; this bound is the back's remaining line capacity, not a summary of the source.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 30,
+        "maxLength": 84
+      }
+    },
+    "auditFull": {
+      "description": "The same two checks as the source states them. Printed in the rules file and skill resources so nothing is lost to the card's compression.",
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 40,
+        "maxLength": 320
+      }
+    },
+    "foundation": {
+      "description": "The source's Organizational Psychology Foundation, verbatim. Its measured range is 239-481 characters; it prints in the rules file and skill resources, not on the card.",
+      "type": "string",
+      "minLength": 200,
+      "maxLength": 520
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "authors"
+          ]
+        },
+        {
+          "required": [
+            "title"
+          ]
+        },
+        {
+          "required": [
+            "note"
+          ]
+        },
+        {
+          "required": [
+            "works"
+          ]
+        }
+      ],
+      "properties": {
+        "works": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "anyOf": [
+              {
+                "required": [
+                  "authors"
+                ]
+              },
+              {
+                "required": [
+                  "title"
+                ]
+              },
+              {
+                "required": [
+                  "note"
+                ]
+              }
+            ],
+            "properties": {
+              "authors": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 1900,
+                "maximum": 2100
+              },
+              "title": {
+                "type": "string",
+                "minLength": 2
+              },
+              "publication": {
+                "type": "string",
+                "minLength": 2
+              },
+              "note": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 160
+              }
+            }
+          }
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "publication": {
+          "type": "string",
+          "minLength": 2
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 160
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "const": "team-figure"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "family",
+            "divisions",
+            "mark"
+          ],
+          "properties": {
+            "family": {
+              "enum": [
+                "continuum",
+                "quadrant",
+                "arc",
+                "radar"
+              ]
+            },
+            "divisions": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9
+            },
+            "mark": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9
+            }
+          }
+        }
+      }
+    }
+  }
+}

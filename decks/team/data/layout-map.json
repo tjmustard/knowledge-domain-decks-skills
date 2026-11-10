@@ -1,0 +1,319 @@
+{
+  "note": "The source ships four drawn assets and assigns none of them to a card. This map is the assignment: per record, the source asset the figure belongs to, the family the drawing takes, its divisions and mark, and the exact line the card prints under it. A card's printed schematic names the drawing, and the deck test asserts the record's figure matches this row and the printed line matches its label. Divisions is how many parts the asset is divided into (segments, ticks per axis, stages, axes); mark is where the card's situation sits.",
+  "families": {
+    "continuum": "A half-circle gauge divided into equal segments, with a pointer in the one the team occupies. Typologies and ordered scales.",
+    "quadrant": "Two crossing axes with the marked zone shaded. Models with two independent dimensions.",
+    "arc": "A curve over stage columns, dipping through the friction trough before the peak. Sequential development models.",
+    "radar": "A polygon over radial axes, read against a dashed baseline. Multi-dimensional profiles."
+  },
+  "map": {
+    "T01": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Five-stage developmental arc"
+    },
+    "T02": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 4,
+      "label": "Five-conditions radar"
+    },
+    "T03": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Agreement-formality continuum"
+    },
+    "T04": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Decision-rights quadrant"
+    },
+    "T05": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 9,
+      "mark": 5,
+      "label": "Nine-role radar"
+    },
+    "T06": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 5,
+      "mark": 4,
+      "label": "Team-performance arc"
+    },
+    "T07": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 3,
+      "label": "Team-size continuum"
+    },
+    "T08": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Cohesion-profile radar"
+    },
+    "T09": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Punctuated-equilibrium arc"
+    },
+    "T10": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Boundary-spanning radar"
+    },
+    "T11": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 5,
+      "mark": 2,
+      "label": "Ladder-of-group-development arc"
+    },
+    "T12": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Five-axis safety radar"
+    },
+    "T13": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Culture continuum"
+    },
+    "T14": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Trust-signal continuum"
+    },
+    "T15": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Trust-equation radar"
+    },
+    "T16": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Three-level culture continuum"
+    },
+    "T17": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Five-norm safety radar"
+    },
+    "T18": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 3,
+      "label": "Four-stage safety continuum"
+    },
+    "T19": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Integrative-trust radar"
+    },
+    "T20": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Competing-values quadrant"
+    },
+    "T21": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3,
+      "label": "SCARF radar"
+    },
+    "T22": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Psychological-contract continuum"
+    },
+    "T23": {
+      "sourceAsset": "Radical Candor quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Care-and-challenge quadrant"
+    },
+    "T24": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Three-part feedback arc"
+    },
+    "T25": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Conflict-mode quadrant"
+    },
+    "T26": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Four-part request arc"
+    },
+    "T27": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Incident-review arc"
+    },
+    "T28": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Conversation-safety continuum"
+    },
+    "T29": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Johari quadrant"
+    },
+    "T30": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Ladder-of-inference arc"
+    },
+    "T31": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Negotiation-elements radar"
+    },
+    "T32": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Feedback-trigger radar"
+    },
+    "T33": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Conflict continuum"
+    },
+    "T34": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 7,
+      "mark": 4,
+      "label": "Seven-level authority continuum"
+    },
+    "T35": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 4,
+      "mark": 2,
+      "label": "GROW arc"
+    },
+    "T36": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Maker-to-manager continuum"
+    },
+    "T37": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Cognitive-load radar"
+    },
+    "T38": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Synchronous-to-asynchronous continuum"
+    },
+    "T39": {
+      "sourceAsset": "five-axis safety radar",
+      "family": "radar",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Four-domain energy radar"
+    },
+    "T40": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Four-domain decision quadrant"
+    },
+    "T41": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Four-style leadership continuum"
+    },
+    "T42": {
+      "sourceAsset": "two-axis quadrant",
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Urgency-and-importance quadrant"
+    },
+    "T43": {
+      "sourceAsset": "Tuckman developmental arc",
+      "family": "arc",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Three-level cascade arc"
+    },
+    "T44": {
+      "sourceAsset": "culture continuum",
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Cadence continuum"
+    }
+  }
+}

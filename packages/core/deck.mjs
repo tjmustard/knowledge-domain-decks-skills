@@ -190,6 +190,18 @@ export function deckShape(deck = {}) {
     fields,
     blocks,
     itemStyle,
+    // The card's kicker prints the group. A deck whose group names are longer
+    // than the kicker can hold gives each one a short printed form here; the
+    // records, the rules headings and the web keep the full name.
+    groupLabels: deck.labels?.group || {},
+    // A square figure's width, which is also its height. The default is the
+    // size every earlier deck was set at; a deck with a two-line name or a long
+    // front line can ask for less rather than cut its own text.
+    figureWidth: deck.figureWidth || "1.8in",
+    // The name is set at 14 pt on every earlier deck. A deck whose names are
+    // long enough to wrap three and four deep can set them smaller: on a 3x5
+    // card the name is a label, and the line it saves is the one that fits.
+    nameSize: deck.nameSize || "14pt",
     labelItems: deck.labels?.items || "Checklist",
     labelCardItems: cardItems,
     labelResourceItems: deck.labels?.resourceItems || "Check",

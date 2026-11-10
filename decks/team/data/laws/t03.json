@@ -1,0 +1,38 @@
+{
+  "id": "T03",
+  "sourceCardNo": "Card 03",
+  "name": "Team Charters & Social Contracts",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Chronic tardiness to daily standups, uneven distribution of code review workloads, ambiguous escalation pathways during production outages, and mismatched expectations surrounding work hours.",
+  "schematic": "Agreement-formality continuum",
+  "script": {
+    "label": "Charter Realignment",
+    "text": "\"Our current operational friction stems from implicit, unverified expectations around availability and code reviews. We are establishing an explicit social contract in our team repository. The charter will document core working hours, review turnaround expectations, and escalation paths. If an operational practice is not committed to the Markdown charter, it cannot be enforced.\""
+  },
+  "audit": [
+    "Do review turnarounds meet the turnaround the charter states?",
+    "Do retrospectives cite charter commitments when they assess delays?"
+  ],
+  "auditFull": [
+    "Are pull request review turnarounds compliant with the documented service-level agreement in the team charter?",
+    "Did retrospective meetings reference charter commitments when evaluating delivery bottlenecks?"
+  ],
+  "foundation": "Derived from social contract theory and established in team effectiveness research by Mathieu & Rapp (2009), team charters operationalize psychological agreements regarding norms, roles, and communication rules. Empirical research shows that establishing early team charters significantly improves subsequent team performance trajectories, serving as a cognitive anchor during high-stress operational incidents.",
+  "origin": {
+    "authors": [
+      "John E. Mathieu",
+      "Tammy L. Rapp"
+    ],
+    "year": 2009,
+    "title": "Laying the Foundation for Successful Team Performance Trajectories: The Roles of Team Charters and Performance Strategies",
+    "publication": "Journal of Applied Psychology"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}
