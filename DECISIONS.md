@@ -601,4 +601,8 @@ drawing does not change.
   existing shape draws fixations and saccades.
 
 The five names are in the schema's `svgShape` enum, and the deck now has fifteen
-shapes across twenty-four cards.
+shapes across twenty-four cards. QA measured the label margins on the six new
+cards at card size; the tightest are SHORT REACH at 0.25 pt, NARROW TARGET at
+0.50 pt and THUMB ZONE at 0.79 pt. The 45-character safe-box bound was measured
+on `decline-curve` and has not been re-measured on these geometries, so
+lengthening any label on the five new shapes needs a fresh measurement first.
