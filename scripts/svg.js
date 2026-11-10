@@ -577,7 +577,7 @@
       return out.join("");
     },
 
-    /* Isolation effect: one item differs from a field of uniform neighbours. */
+    /* Isolation effect: one item differs from a field of uniform neighbors. */
     "odd-one-out": function (p) {
       var cols = p.columns || 5;
       var rows = p.rows || 3;
@@ -688,9 +688,12 @@
           out.push(line(gateX, y, 330, y, 3, 0.95));
           out.push(circle(330, y, 7));
         } else {
-          out.push(line(gateX, y, gateX + 12, y, 2, 0.35));
-          out.push(line(gateX + 20, y - 6, gateX + 32, y + 6, 2, 0.55));
-          out.push(line(gateX + 32, y - 6, gateX + 20, y + 6, 2, 0.55));
+          /* Unattended channels are attenuated, not eliminated: the line runs
+             on past the gate thinner and fainter, ending in a hollow dot. Solid
+             rather than dashed, because a dash already means reference or limit
+             elsewhere in this deck, and a cross would claim a hard block. */
+          out.push(line(gateX, y, 330, y, 1.2, 0.35));
+          out.push(circle(330, y, 5, { hollow: true, opacity: 0.9, width: 1.5 }));
         }
       }
       if (caption) out.push(label(200, 350, caption, { size: 9 }));

@@ -382,7 +382,7 @@ public-domain principle, when to check for it, and the concrete fix.
 **Checklist.**
 - [ ] Pad small icon targets to widen the effective target without enlarging the glyph.
 - [ ] Expand drag targets as the pointer nears them, widening the effective target.
-- [ ] Separate destructive controls from their neighbours with a visible gutter.
+- [ ] Separate destructive controls from their neighbors with a visible gutter.
 
 **Anti-pattern.** Edit and Delete icons sit two pixels apart, so the wrong row is deleted.
 
@@ -428,12 +428,12 @@ public-domain principle, when to check for it, and the concrete fix.
 
 ### MPA-02 — Von Restorff Effect (Isolation Effect)
 
-**Axiom.** An item that differs from its neighbours is remembered better than the items around it.
+**Axiom.** An item that differs from its neighbors is remembered better than the items around it.
 
-**Apply when.** One row, button, or price is remembered while identical neighbours blur together.
+**Apply when.** One row, button, or price is remembered while identical neighbors blur together.
 
 **Checklist.**
-- [ ] Emphasise one item per view; a second highlight halves the first one's effect.
+- [ ] Emphasize one item per view; a second highlight halves the first one's effect.
 - [ ] Match the emphasis to the decision: the row people must recall gets the weight.
 - [ ] Test recall a day later, when the standout item is what remains.
 
@@ -496,7 +496,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 ### MPA-06 — Selective Attention and Attentional Bottleneck
 
-**Axiom.** Attention selects one channel and filters the rest before meaning is extracted.
+**Axiom.** Attention admits one channel at a time; unattended channels survive only as fragments.
 
 **Apply when.** Two simultaneous requests compete, and the second is missed entirely.
 

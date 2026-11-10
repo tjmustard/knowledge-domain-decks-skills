@@ -697,7 +697,7 @@ The research list's memory section runs 44-54. This slice writes six of its
 eleven cards: laws 44, 46, 47, 48, 49 and 50. Law 45 is the Serial Position
 Effect, already published as MPA-01. Von Restorff, Peak-End, Anchoring and
 Broadbent were confirmed against Crossref (title, authors, volume, pages, DOI)
-before the records were written; two need more than a record:
+before the records were written; three need more than a record:
 
 - **Zeigarnik has no DOI of its own, and the card prints none.** Crossref holds
   no record of the 1927 original. The only item under her name for this work is
@@ -720,6 +720,30 @@ before the records were written; two need more than a record:
   the origin of the paradigm and the reason he is not the printed source. The
   operator accepted a review in `academicOrigin` as the cost of printing the
   broad claim rather than the narrow demonstration.
+- **Selective Attention asserts the observable, not any one mechanism.** The
+  first axiom stated that attention filters the rest "before meaning is
+  extracted", which is Broadbent's early-selection model. Three accounts compete
+  and the deck does not choose between them: Broadbent (1958) selects before
+  meaning on the physical channel; Treisman's attenuation model puts the filter
+  in the same place but turns unattended channels down rather than off, which is
+  why a listener catches their own name; Deutsch & Deutsch (1963) move selection
+  after meaning, so every channel is analysed and attention decides what reaches
+  awareness. The card prints what all three agree on - one channel is admitted at
+  a time and unattended channels are retained only in fragments - so Treisman's
+  finding is an instance of the axiom rather than a counterexample to it.
+  Broadbent remains the printed source as the origin of the bottleneck account;
+  one channel passing a gate is true of all three models, so the shape and the
+  gate stay. The diagram carried the same mechanism claim and no longer does: the
+  unattended channels used to end in a cross past the gate, a hard block the
+  demonstration does not show, and now run on past it thinner and fainter,
+  ending in a hollow dot - present, but weak. They stay solid rather than dashed
+  because a dash already means a reference or a limit in this deck, on the
+  `split-bar` thresholds and the `reach-map` thumb zone, and in a schematic it
+  more often reads as absent or projected, which is the claim being removed. The
+  caption changed with them, from "the rest are filtered" to "one channel passes;
+  the others arrive weakened", because it was the second place the card argued
+  with itself. Same shape as DEC-11, which asserts the observable and
+  leaves the ego-depletion mechanism in the prose.
 
 **An ID is a stable key, not a position.** MPA-02 is law 44 while MPA-01 is law
 45, and DEC-11 is law 31 while DEC-09 is law 32, because Decision Fatigue was
@@ -727,7 +751,7 @@ restored after being dropped. One rule, two instances: an id is never renumbered
 to follow the source order.
 
 Four shapes are new because none of the fifteen existing ones draws the claim:
-`odd-one-out` sets one mark apart in a field of uniform neighbours
+`odd-one-out` sets one mark apart in a field of uniform neighbors
 (`proximity-grid` varies spacing, not the item); `peak-end-curve` marks the peak
 and the ending and draws no average (`decay-curve` is a U-shaped serial-position
 curve and would be read as the same claim); `anchor-line` puts an initial mark and
@@ -745,6 +769,17 @@ the odd mark. The longest is 41 characters at 221.9 units, inside the
 45-character, 248-unit bound measured on `decline-curve`. The pending font pin
 will re-derive all of these, so none is a permanent bound.
 
+**The six cards land in one block, and every card after them moves by twelve
+pages.** Cards print in ID order, so MPA-02 to MPA-07 fall between MPA-01 and
+TME-01 and nothing else reorders. Measured against `9b6ea3b`, the last
+twenty-four-card build, pages 1 to 28 carry the same text, and from page 29 on
+old page i is new page i+12, with one exception: old page 46, TME-09's verso,
+where this slice corrected a word. That identity holds only against that commit.
+Against `1b01c17`, the slice-2 tree, the same comparison fails at TME-07's pages
+because slice 3 renamed that card. A page number describes the deck at one
+commit, so any statement about where a card sits has to name the tree it is
+measured in.
+
 ## 31. Prefer the instrument that fails loudly
 
 A check must fail on the condition it cannot see, not return a plausible answer.
@@ -756,3 +791,35 @@ serving a cached file while the commit URL already carried the new one. None of
 them threw. When a check can be wrong without saying so, make it assert something
 it can only satisfy by looking, and report what it could not establish instead of
 reporting nothing found.
+
+## 32. A card is one argument
+
+A card states one claim in five places: the axiom, the diagram, the caption, the
+trigger and the checklist. A change to any of them re-opens the other four, so an
+axiom edit is not finished until all five have been read together against the new
+claim - axiom first, then the drawing and its caption, then what triggers the
+card and what the checklist tells the reader to do. Selective Attention is the
+evidence: the axiom moved to what all three attention models agree on, and the
+diagram was left asserting Broadbent's elimination through the caption ("the rest
+are filtered") and two crosses past the gate. For one build the card argued with
+itself, and each half passed every check - the schema measures the axiom's
+length, the page measures the block's fit, and no artifact states that the two
+describe the same question. The gate cannot catch a card that disagrees with
+itself, and no check can be written to: disagreement between a sentence and a
+drawing is not a property either one can be inspected for alone. Re-reading the
+five is the step, and it is a person's.
+
+## 33. The schema limit is not a page-fit guarantee
+
+The axiom's `maxLength` is 110 characters, and this page takes fewer. Measured on
+Selective Attention at the real 9 pt italic in the 171 pt column: 91 characters
+set to three lines and 86 to two, and the third line costs 11.66 pt against 7.36
+pt of slack, which puts the trigger's bottom ink 4.29 pt past the 22.5 pt floor,
+outside the safe box. Those are two points on one page, not a bound. Wrapping
+depends on where the spaces fall, not on how many characters there are, so the
+only way to know whether a new axiom fits is to compile it in the real column;
+the character count is a warning that it might not. Width also depends on the
+face and the measure, which is the same reason the 45-character label bound on
+`decline-curve` is re-derived whenever the font changes (§30). A future
+axiom-length check should therefore warn to re-measure, not decide, and the
+decision stays with the rendered page.

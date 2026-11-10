@@ -7,7 +7,7 @@
   "checklist": [
     "Pad small icon targets to widen the effective target without enlarging the glyph.",
     "Expand drag targets as the pointer nears them, widening the effective target.",
-    "Separate destructive controls from their neighbours with a visible gutter."
+    "Separate destructive controls from their neighbors with a visible gutter."
   ],
   "antiPattern": {
     "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",

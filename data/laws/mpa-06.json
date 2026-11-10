@@ -2,7 +2,7 @@
   "id": "MPA-06",
   "name": "Selective Attention and Attentional Bottleneck",
   "category": "Memory, Perception & Attention",
-  "axiom": "Attention selects one channel and filters the rest before meaning is extracted.",
+  "axiom": "Attention admits one channel at a time; unattended channels survive only as fragments.",
   "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
   "checklist": [
     "Route interruptions to one channel instead of stacking toasts and modals.",
@@ -22,7 +22,7 @@
       "inputLabel": "INPUTS",
       "gateLabel": "FILTER",
       "outputLabel": "ATTENDED",
-      "caption": "ONE CHANNEL PASSES; THE REST ARE FILTERED"
+      "caption": "ONE CHANNEL PASSES; THE OTHERS ARRIVE WEAKENED"
     }
   },
   "academicOrigin": {

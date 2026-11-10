@@ -637,10 +637,10 @@ window.UX_DECK = {
       "id": "MPA-02",
       "name": "Von Restorff Effect (Isolation Effect)",
       "category": "Memory, Perception & Attention",
-      "axiom": "An item that differs from its neighbours is remembered better than the items around it.",
-      "trigger": "One row, button, or price is remembered while identical neighbours blur together.",
+      "axiom": "An item that differs from its neighbors is remembered better than the items around it.",
+      "trigger": "One row, button, or price is remembered while identical neighbors blur together.",
       "checklist": [
-        "Emphasise one item per view; a second highlight halves the first one's effect.",
+        "Emphasize one item per view; a second highlight halves the first one's effect.",
         "Match the emphasis to the decision: the row people must recall gets the weight.",
         "Test recall a day later, when the standout item is what remains."
       ],
@@ -807,7 +807,7 @@ window.UX_DECK = {
       "id": "MPA-06",
       "name": "Selective Attention and Attentional Bottleneck",
       "category": "Memory, Perception & Attention",
-      "axiom": "Attention selects one channel and filters the rest before meaning is extracted.",
+      "axiom": "Attention admits one channel at a time; unattended channels survive only as fragments.",
       "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
       "checklist": [
         "Route interruptions to one channel instead of stacking toasts and modals.",
@@ -827,7 +827,7 @@ window.UX_DECK = {
           "inputLabel": "INPUTS",
           "gateLabel": "FILTER",
           "outputLabel": "ATTENDED",
-          "caption": "ONE CHANNEL PASSES; THE REST ARE FILTERED"
+          "caption": "ONE CHANNEL PASSES; THE OTHERS ARRIVE WEAKENED"
         }
       },
       "academicOrigin": {
@@ -841,7 +841,7 @@ window.UX_DECK = {
         "authorsLabel": "Donald E. Broadbent",
         "titleStop": "."
       },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"60\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INPUTS</text><text x=\"210\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FILTER</text><text x=\"330\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ATTENDED</text><line x1=\"210\" y1=\"100\" x2=\"210\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"110\" x2=\"210\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"110\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"104\" x2=\"242\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"104\" x2=\"230\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"180\" x2=\"210\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"180\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"180\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"250\" x2=\"210\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"250\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"250\" x2=\"222\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"244\" x2=\"242\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"244\" x2=\"230\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE CHANNEL PASSES; THE REST ARE FILTERED</text></svg>"
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"60\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INPUTS</text><text x=\"210\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FILTER</text><text x=\"330\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ATTENDED</text><line x1=\"210\" y1=\"100\" x2=\"210\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"110\" x2=\"210\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"110\" x2=\"330\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"110\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"180\" x2=\"210\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"180\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"180\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"250\" x2=\"210\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"250\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"250\" x2=\"330\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"250\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE CHANNEL PASSES; THE OTHERS ARRIVE WEAKENED</text></svg>"
     },
     {
       "id": "MPA-07",
@@ -1327,7 +1327,7 @@ window.UX_DECK = {
       "checklist": [
         "Pad small icon targets to widen the effective target without enlarging the glyph.",
         "Expand drag targets as the pointer nears them, widening the effective target.",
-        "Separate destructive controls from their neighbours with a visible gutter."
+        "Separate destructive controls from their neighbors with a visible gutter."
       ],
       "antiPattern": {
         "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",

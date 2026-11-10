@@ -114,6 +114,10 @@ and venue:
 | MPA-06 | **Selective Attention and Attentional Bottleneck** | Memory, Perception & Attention | Broadbent (1958), *Perception and Communication* |
 | MPA-07 | **Confirmation Bias** | Memory, Perception & Attention | Nickerson (1998), *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises* |
 
+That table follows the taxonomy's category order. The PDF and the viewer print
+cards in ID order - `DEC`, `GES`, `HMM`, `MPA`, `TME` - so the two sequences are
+different and neither is a mistake.
+
 The categories are part of the schema, so every later card lands in one of
 them and the filters, accents, and rules sections follow automatically:
 
@@ -159,14 +163,16 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 60-page file of 688,974 bytes (673 KiB), and two consecutive
+build:pdf` emits a 60-page file of 687,578 bytes (671 KiB), and two consecutive
 builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every text
 font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 thirty versos and absent from the rectos. The worst text overrun past the
 safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
-from the paper edge — is 0.97 pt on page 25, caused by glyph side-bearings rather
+from the paper edge — is about 1 pt on page 25 (0.97 pt by glyph metrics, 1.00 pt
+by ink at 12x, the last digit being instrument resolution rather than
+measurement), caused by glyph side-bearings rather
 than by text running long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
 empty placeholder.

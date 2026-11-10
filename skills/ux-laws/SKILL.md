@@ -280,7 +280,7 @@ smallest change that removes the failure state; do not restyle unrelated code.
 - **Check:**
   - Pad small icon targets to widen the effective target without enlarging the glyph.
   - Expand drag targets as the pointer nears them, widening the effective target.
-  - Separate destructive controls from their neighbours with a visible gutter.
+  - Separate destructive controls from their neighbors with a visible gutter.
 - **Instead of:** Edit and Delete icons sit two pixels apart, so the wrong row is deleted.
 - **Do:** Delete moves to an overflow menu and each row keeps one filled action.
 - **Source:** Alan T. Welford (1968), *Fundamentals of Skill*.
@@ -313,10 +313,10 @@ smallest change that removes the failure state; do not restyle unrelated code.
 
 ### MPA-02 — Von Restorff Effect (Isolation Effect)
 
-- **Axiom:** An item that differs from its neighbours is remembered better than the items around it.
-- **Apply when:** One row, button, or price is remembered while identical neighbours blur together.
+- **Axiom:** An item that differs from its neighbors is remembered better than the items around it.
+- **Apply when:** One row, button, or price is remembered while identical neighbors blur together.
 - **Check:**
-  - Emphasise one item per view; a second highlight halves the first one's effect.
+  - Emphasize one item per view; a second highlight halves the first one's effect.
   - Match the emphasis to the decision: the row people must recall gets the weight.
   - Test recall a day later, when the standout item is what remains.
 - **Instead of:** Every plan card is bright blue, so none of the three is remembered.
@@ -361,7 +361,7 @@ smallest change that removes the failure state; do not restyle unrelated code.
 
 ### MPA-06 — Selective Attention and Attentional Bottleneck
 
-- **Axiom:** Attention selects one channel and filters the rest before meaning is extracted.
+- **Axiom:** Attention admits one channel at a time; unattended channels survive only as fragments.
 - **Apply when:** Two simultaneous requests compete, and the second is missed entirely.
 - **Check:**
   - Route interruptions to one channel instead of stacking toasts and modals.
