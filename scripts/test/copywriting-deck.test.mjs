@@ -57,6 +57,40 @@ const section = (text, heading, marker) => {
 const attribution = (origin) =>
   origin.authors ? `${origin.authors.join(" & ")} (${origin.year})` : origin.note;
 
+// The front line, its size, the printed label and the drawing are the map's.
+// One function, because the fixture test below must exercise this comparison
+// rather than a copy of it: a guard refactored to compare the wrong field has
+// to make the fixture fail.
+const assertAgreesWithMap = (card, layout, record = card) => {
+  const row = layout.map[card.id];
+  assert.ok(row, `${card.id} has no layout map row`);
+  assert.equal(card.frontSize, row.frontSize, `${card.id} front size disagrees with the map`);
+  assert.equal(
+    card.schematic,
+    row.label,
+    `${card.id} schematic disagrees with the map: "${card.schematic}" is not "${row.label}"`
+  );
+  const ratio = layout.ratios[card.id];
+  assert.equal(
+    card.frontLine,
+    ratio ? ratio.frontLine : record.scope,
+    `${card.id} front line is neither its ratio nor its scope`
+  );
+  assert.deepEqual(card.ratio, ratio ? ratio.pairs : undefined, `${card.id} ratio disagrees with the map`);
+  assert.deepEqual(
+    Object.keys(card.figure.parametricParams).sort(),
+    ["divisions", "family", "mark"],
+    `${card.id} figure.parametricParams has unexpected fields`
+  );
+  for (const field of ["family", "divisions", "mark"]) {
+    assert.equal(
+      card.figure.parametricParams[field],
+      row[field],
+      `${card.id} figure.parametricParams.${field} disagrees with the map: ${card.figure.parametricParams[field]} is not ${row[field]}`
+    );
+  }
+};
+
 test("the printed deck is the inventory, record for record", async () => {
   const inventory = await loadInventory();
   const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
@@ -102,23 +136,33 @@ test("the printed deck is the inventory, record for record", async () => {
       assert.equal(card.example, null, `${record.id} invented an example`);
     }
 
-    // The front line, its size, the printed label and the drawing are the map's.
-    const row = layout.map[record.id];
-    assert.equal(card.frontSize, row.frontSize, `${record.id} front size disagrees with the map`);
-    assert.equal(card.schematic, row.label, `${record.id} schematic disagrees with the map`);
-    const ratio = layout.ratios[record.id];
-    assert.equal(
-      card.frontLine,
-      ratio ? ratio.frontLine : record.scope,
-      `${record.id} front line is neither its ratio nor its scope`
-    );
-    assert.deepEqual(card.ratio, ratio ? ratio.pairs : undefined, `${record.id} ratio disagrees with the map`);
-    assert.deepEqual(
-      card.figure.parametricParams,
-      { family: row.family, divisions: row.divisions, mark: row.mark },
-      `${record.id} figure disagrees with the map`
-    );
+    assertAgreesWithMap(card, layout, record);
   }
+});
+
+test("the map comparison rejects a card whose mark disagrees with its label", async () => {
+  // dev-review's probe, committed so it keeps failing on purpose. At c4c4659
+  // the layout check compared the inventory to the map and never read the card
+  // records, so a card could draw mark 7 under a "position 1 of 12" label and
+  // pass. The fixture is a copy of CPY-01 with the mark moved and the label
+  // left where the map puts it; it deliberately sits outside data/laws, which
+  // the builder guard diffs against a fresh build.
+  const fixture = JSON.parse(
+    await readFile(join(ROOT, "scripts", "fixtures", "copywriting-mark-disagrees-record.json"), "utf8")
+  );
+  const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
+  assert.equal(fixture.id, "CPY-01", "the fixture is a copy of CPY-01");
+  assert.equal(fixture.figure.parametricParams.mark, 7, "the fixture moved the mark");
+  assert.equal(fixture.schematic, layout.map["CPY-01"].label, "the fixture's label is the map's");
+  assert.throws(
+    () => assertAgreesWithMap(fixture, layout),
+    (error) => {
+      assert.match(error.message, /CPY-01/);
+      assert.match(error.message, /figure\.parametricParams\.mark/);
+      assert.match(error.message, /7 is not 1/);
+      return true;
+    }
+  );
 });
 
 test("the committed cards are exactly what the builder writes from the inventory", async () => {
