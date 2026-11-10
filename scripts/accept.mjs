@@ -75,6 +75,19 @@ function perturb(value) {
 
 const PROBEABLE = new Set(["number", "string", "boolean"]);
 
+
+// A failing child prints a stack whose tail is boilerplate. Take the lines that
+// name the failure, so a red layer is diagnosable from the gate's own output
+// instead of needing a hand-reproduction.
+function reason(text, limit = 3) {
+  const lines = String(text || "").split("\n").map((line) => line.trim()).filter(Boolean);
+  const named = lines.filter((line) =>
+    /\b\w*Error\b|code [A-Z]+|notarget|EUSAGE|ENOTFOUND|ECONNREFUSED|ETIMEDOUT/i.test(line)
+  );
+  const picked = (named.length > 0 ? named : lines).slice(0, limit);
+  return picked.join(" / ") || "no output";
+}
+
 const git = (args, cwd = ROOT) => run("git", args, { cwd });
 
 // --- resolve the commit -----------------------------------------------------
@@ -195,7 +208,7 @@ try {
     const output = `${result.stdout}\n${result.stderr}`;
     if (fixture.why === null) {
       record(fixture.label, result.status === 0 ? "pass" : "fail",
-        result.status === 0 ? "control fixture validates" : output.trim().split("\n").slice(-2).join(" / "));
+        result.status === 0 ? "control fixture validates" : reason(output, 2));
     } else {
       const rejected = result.status === 1;
       const forTheRightReason = fixture.why.test(output);
@@ -295,7 +308,7 @@ try {
     } else if (web.status === 2) {
       record("web 390x844", "not run", "no Chrome/Chromium available here (set CHROME_PATH to run it)");
     } else {
-      record("web 390x844", "fail", web.stderr.trim().split("\n").slice(-3).join(" / "));
+      record("web 390x844", "fail", reason(`${web.stderr} ${web.stdout}`));
     }
   }
 
@@ -305,7 +318,7 @@ try {
     if (built.status === 2) {
       record("print", "not run", "Typst is not installed, so no PDF exists - unknown, not a pass");
     } else if (built.status !== 0) {
-      record("print", "fail", built.stderr.trim().split("\n").slice(-3).join(" / "));
+      record("print", "fail", reason(`${built.stderr} ${built.stdout}`));
     } else {
       record("print: built", "pass", built.stdout.trim().split("\n").pop());
       const checked = npm(["run", "--silent", "check:pdf"]);
@@ -314,7 +327,7 @@ try {
       } else if (checked.status === 2) {
         record("print: page boxes", "not run", "no PDF to inspect after a successful build");
       } else {
-        record("print: page boxes", "fail", checked.stderr.trim().split("\n").slice(-3).join(" / "));
+        record("print: page boxes", "fail", reason(`${checked.stderr} ${checked.stdout}`));
       }
       record("print: contents", "not run",
         "page boxes are not evidence that trim marks are drawn, text is legible, or the SVG was embedded - inspect the PDF by hand");
