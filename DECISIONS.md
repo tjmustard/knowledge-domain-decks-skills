@@ -742,7 +742,12 @@ before the records were written; three need more than a record:
   more often reads as absent or projected, which is the claim being removed. The
   caption changed with them, from "the rest are filtered" to "one channel passes;
   the others arrive weakened", because it was the second place the card argued
-  with itself. Same shape as DEC-11, which asserts the observable and
+  with itself. The word and the mark differ on purpose: "fragments" is a metaphor
+  for how little survives, not a description of the stroke, because the drawing
+  shows quantity - one channel at full strength, two faint - and asserts no
+  mechanism at all. If a reader ever takes the picture literally and reads the
+  solid line as a whole message getting through, the fix is the word rather than
+  the mark. Same shape as DEC-11, which asserts the observable and
   leaves the ego-depletion mechanism in the prose.
 
 **An ID is a stable key, not a position.** MPA-02 is law 44 while MPA-01 is law
