@@ -1,0 +1,35 @@
+{
+  "id": "COR-08",
+  "name": "M&A Integration Thesis",
+  "family": "Corporate & Technical",
+  "axiom": "Two trajectories meeting is a plan only where the cultures already overlap.",
+  "trigger": "Mergers, acquisitions and internal reorganisations, where the synergy case must survive contact with two cultures.",
+  "steps": [
+    {
+      "text": "Trajectories: what each side does well alone."
+    },
+    {
+      "text": "Intersection: the specific work neither can do without the other."
+    },
+    {
+      "text": "Friction: where the two operating models disagree."
+    },
+    {
+      "text": "Unified platform: the single way of working, and who owns it."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A synergy spreadsheet with no operating model, so the number is plausible and the first quarter of joint work is spent negotiating process.",
+    "remediation": "Name the friction before the value. The integration plan is the answer to the culture question."
+  },
+  "origin": {
+    "title": "M&A Integration Thesis",
+    "publication": "Corporate strategy practice"
+  },
+  "figure": {
+    "svgShape": "crossing-curves",
+    "parametricParams": {
+      "caption": "TWO PATHS, ONE AFTER THE CROSSING"
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "MIC-06",
+  "name": "The Call to Adventure",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "End on one imperative the audience can start before the room empties.",
+  "trigger": "Closing slides and all-hands conclusions, where agreement exists but nothing has been asked for.",
+  "steps": [
+    {
+      "text": "Point at the goal in one sentence."
+    },
+    {
+      "text": "Name the first step, small and specific."
+    },
+    {
+      "text": "Say who owns it and when."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A closing slide of thanks, which converts a prepared audience into a dispersed one.",
+    "remediation": "Replace thanks with the first step. Gratitude is a mood; a call is a move."
+  },
+  "origin": {
+    "authors": [
+      "Joseph Campbell"
+    ],
+    "year": 1949,
+    "title": "The Hero with a Thousand Faces",
+    "publication": "Bollingen Foundation"
+  },
+  "figure": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 90,
+      "goalLabel": "FIRST STEP",
+      "startLabel": "NOW",
+      "caption": "ONE ARROW, ONE FIRST STEP"
+    }
+  }
+}

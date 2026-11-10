@@ -1,0 +1,47 @@
+{
+  "id": "MIC-07",
+  "name": "Identifiable Victim Effect",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "A statistic moves policy; one person moves an audience.",
+  "trigger": "Funding cases for accessibility, safety or user experience, where the aggregate number has stopped persuading.",
+  "steps": [
+    {
+      "text": "State the aggregate, with its source."
+    },
+    {
+      "text": "Introduce one person inside it, briefly and factually."
+    },
+    {
+      "text": "Return to the aggregate: this person is one of the number."
+    },
+    {
+      "text": "Ask for the change that would have helped them."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Using a story as a substitute for the number, so the audience commits to a case rather than to a policy.",
+    "remediation": "Pair the person with the proportion. The story is the door; the number is what the door opens onto."
+  },
+  "origin": {
+    "authors": [
+      "Thomas Schelling"
+    ],
+    "year": 1968,
+    "title": "The Life You Save May Be Your Own",
+    "publication": "Public Interest"
+  },
+  "figure": {
+    "svgShape": "odd-one-out",
+    "parametricParams": {
+      "columns": 6,
+      "rows": 5,
+      "spacingX": 46,
+      "spacingY": 44,
+      "oddIndex": 14,
+      "dotRadius": 6,
+      "oddRadius": 11,
+      "oddLabel": "ONE",
+      "caption": "ONE FIGURE CARRIES THE NUMBER"
+    }
+  }
+}

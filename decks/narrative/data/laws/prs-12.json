@@ -1,0 +1,43 @@
+{
+  "id": "PRS-12",
+  "name": "The Golden Circle",
+  "family": "Persuasion & Pitch",
+  "axiom": "Lead with why, then how, then what; the order is what makes it land.",
+  "trigger": "Employer branding and brand positioning, where comparable products compete and the difference is purpose.",
+  "steps": [
+    {
+      "text": "Why: the belief the work serves."
+    },
+    {
+      "text": "How: the distinctive way it is pursued."
+    },
+    {
+      "text": "What: the tangible thing that proves both."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Starting with what, so the audience compares features before it knows what the features are for.",
+    "remediation": "Move the what last. It is the evidence for the claim, not the claim."
+  },
+  "origin": {
+    "authors": [
+      "Simon Sinek"
+    ],
+    "year": 2009,
+    "title": "Start with Why",
+    "publication": "Portfolio"
+  },
+  "figure": {
+    "svgShape": "concentric-circles",
+    "parametricParams": {
+      "rings": 3,
+      "spread": 26,
+      "labels": [
+        "WHAT",
+        "HOW",
+        "WHY"
+      ],
+      "caption": "THE CENTRE IS THE CLAIM"
+    }
+  }
+}

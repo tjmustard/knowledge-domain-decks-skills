@@ -1,0 +1,51 @@
+{
+  "id": "PRS-08",
+  "name": "The 10/20/30 Venture Pattern",
+  "family": "Persuasion & Pitch",
+  "axiom": "Ten slides, twenty minutes, thirty-point type: the constraint is the argument.",
+  "trigger": "Formal venture partner meetings, where attention is short and the room has read a hundred decks that month.",
+  "steps": [
+    {
+      "text": "Ten slides: one idea each, no appendix crutches."
+    },
+    {
+      "text": "Twenty minutes: leave the rest of the hour for questions."
+    },
+    {
+      "text": "Thirty-point type: if it will not fit, it is not the pitch."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A forty-slide deck read aloud at speed, which proves the presenter can fill time and not that the idea survives compression.",
+    "remediation": "Cut to ten slides and move the detail to the appendix. The constraint is a test of the argument, not a style rule."
+  },
+  "origin": {
+    "authors": [
+      "Guy Kawasaki"
+    ],
+    "year": 2004,
+    "title": "The Art of the Start",
+    "publication": "Portfolio"
+  },
+  "figure": {
+    "svgShape": "limit-gauges",
+    "parametricParams": {
+      "labels": [
+        "SLIDES",
+        "MINUTES",
+        "TYPE"
+      ],
+      "used": [
+        10,
+        20,
+        30
+      ],
+      "caps": [
+        10,
+        20,
+        30
+      ],
+      "caption": "THE CONSTRAINT IS THE ARGUMENT"
+    }
+  }
+}

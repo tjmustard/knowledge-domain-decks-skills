@@ -1,0 +1,47 @@
+{
+  "id": "PRS-11",
+  "name": "Socratic Elenchus",
+  "family": "Persuasion & Pitch",
+  "axiom": "Ask for the definition, test it against a case, then let the gap argue.",
+  "trigger": "Architecture disputes among technical stakeholders who will accept a conclusion they reached and reject one they were handed.",
+  "steps": [
+    {
+      "text": "Hypothesis: state the other side's position at its strongest."
+    },
+    {
+      "text": "Counter-example: a case the position cannot absorb."
+    },
+    {
+      "text": "Aporia: sit with the gap rather than filling it."
+    },
+    {
+      "text": "Re-definition: a sharper claim that survives the case."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Using questions as a trap, which works once and costs the room's trust for every conversation after it.",
+    "remediation": "Argue in good faith and let the other person find the gap. If they do not, the case was not decisive."
+  },
+  "origin": {
+    "authors": [
+      "Plato"
+    ],
+    "year": -380,
+    "title": "Dialogues",
+    "publication": "Greek philosophy"
+  },
+  "figure": {
+    "svgShape": "story-circle",
+    "parametricParams": {
+      "sectors": 4,
+      "startAngle": -90,
+      "labels": [
+        "CLAIM",
+        "TEST",
+        "GAP",
+        "REDEFINE"
+      ],
+      "caption": "THE CASE DOES THE ARGUING"
+    }
+  }
+}

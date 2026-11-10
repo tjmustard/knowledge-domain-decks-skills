@@ -1,0 +1,36 @@
+{
+  "id": "MIC-10",
+  "name": "Zeigarnik Tension Loop",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "An open question keeps attention that a closed one releases.",
+  "trigger": "Multi-part updates and town halls, where the audience's attention must survive several sections.",
+  "steps": [
+    {
+      "text": "Open a question the audience cannot answer yet."
+    },
+    {
+      "text": "Do other work while it stays open."
+    },
+    {
+      "text": "Close it explicitly before introducing the next."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Opening loops faster than they close, which reads as incoherence rather than suspense.",
+    "remediation": "Count them. One open question is tension; four is noise."
+  },
+  "origin": {
+    "authors": [
+      "Bluma Zeigarnik"
+    ],
+    "year": 1927,
+    "title": "On Finished and Unfinished Tasks",
+    "publication": "Psychologische Forschung"
+  },
+  "figure": {
+    "svgShape": "feedback-loop",
+    "parametricParams": {
+      "caption": "OPEN, HOLD, CLOSE"
+    }
+  }
+}

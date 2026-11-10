@@ -131,7 +131,7 @@
     // present this prints the same line it always did.
     #let o = card.at(field-attribution)
     #let names = printed-authors(card)
-    #let year-text = if "year" in o [ (#o.year)] else []
+    #let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
     #let by = if names == "" [] else [#names#year-text.]
     #let has-work = "title" in o
     #let has-pub = "publication" in o

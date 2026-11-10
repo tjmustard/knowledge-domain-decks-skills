@@ -1,0 +1,48 @@
+{
+  "id": "ARC-07",
+  "name": "Man in a Hole",
+  "family": "Arc & Plot",
+  "axiom": "State the depth first; recovery is only credible if the fall was.",
+  "trigger": "Outage write-ups, security incidents, and turnaround plans where the audience already knows something went wrong.",
+  "steps": [
+    {
+      "text": "Baseline: the state everyone expected to hold."
+    },
+    {
+      "text": "Entrapment: the event that removes the easy options."
+    },
+    {
+      "text": "Bottom: name the cost without softening it."
+    },
+    {
+      "text": "Remediation: the specific work that changes the path."
+    },
+    {
+      "text": "Higher baseline: the state that is now possible."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A hole so shallow that the recovery looks like normal operation, leaving the audience unsure why the incident mattered.",
+    "remediation": "Quantify the bottom in the audience's terms. Recovery reads as an achievement only against a real depth."
+  },
+  "origin": {
+    "authors": [
+      "Kurt Vonnegut"
+    ],
+    "year": 1981,
+    "title": "Palm Sunday",
+    "publication": "Delacorte Press"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 120,
+      "bottomY": 285,
+      "endY": 85,
+      "startLabel": "BEFORE",
+      "bottomLabel": "OUTAGE",
+      "endLabel": "AFTER",
+      "caption": "THE HOLE COMES FIRST"
+    }
+  }
+}

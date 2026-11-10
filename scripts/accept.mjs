@@ -367,11 +367,17 @@ try {
   {
     const require = createRequire(join(worktree, "packages", "core", "svg.js"));
     const { renderSvg, shapeTraits } = require("./svg.js");
+    const { deckShape } = await import(
+      pathToFileURL(join(worktree, "packages", "core", "deck.mjs")).href
+    );
     const inputs = [];
+    // Each record is paired with the shape its own deck declares, so a deck
+    // that names its figure field something else is still checked.
     for (const deck of await decksIn(worktree)) {
+      const shape = deckShape(deck);
       const dir = join(worktree, "decks", deck.slug, "data", "laws");
       for (const name of (await readdir(dir)).filter((item) => item.endsWith(".json")).sort()) {
-        inputs.push(join(dir, name));
+        inputs.push({ file: join(dir, name), shape });
       }
     }
     const problems = [];
@@ -379,9 +385,9 @@ try {
     const monotoneChecked = [];
     const shapes = new Set();
 
-    for (const file of inputs) {
+    for (const { file, shape } of inputs) {
       const card = JSON.parse(await readFile(file, "utf8"));
-      const metaphor = card.graphicMetaphor;
+      const metaphor = shape.figure(card);
       const svg = renderSvg(metaphor);
       shapes.add(metaphor.svgShape);
 

@@ -1,0 +1,60 @@
+{
+  "id": "narrative",
+  "slug": "narrative",
+  "name": "Narrative Architecture",
+  "description": "Forty-eight story-structure patterns for turning a change into something an audience can follow, believe and act on.",
+  "categories": [
+    "Arc & Plot",
+    "Persuasion & Pitch",
+    "Corporate & Technical",
+    "Rhetorical Micro-tactic"
+  ],
+  "accents": {
+    "Arc & Plot": "#7C2D12",
+    "Persuasion & Pitch": "#9D174D",
+    "Corporate & Technical": "#1E40AF",
+    "Rhetorical Micro-tactic": "#4C1D95"
+  },
+  "fields": {
+    "group": "family",
+    "items": "steps",
+    "attribution": "origin",
+    "figure": "figure"
+  },
+  "labels": {
+    "items": "Structure",
+    "cardItems": "Structure",
+    "resourceItems": "Structure",
+    "prompt": "Prompt"
+  },
+  "itemStyle": "steps",
+  "outputs": {
+    "rules": "rules/narrative-rules.md",
+    "skill": "skills/narrative"
+  },
+  "rules": {
+    "title": "Narrative Architecture Rules",
+    "intro": "Apply these rules when shaping a change into a story an audience can follow.\nEach card names one structure, the beats that make it work, and where it fails."
+  },
+  "skill": {
+    "name": "narrative",
+    "description": "Structure a talk, proposal or case study against the Narrative Architecture deck — {cards} story patterns. Use when a message needs a shape: a pitch, an incident write-up, an executive brief, a launch. Start with the index below, then read the one resource file for the family you are shaping.",
+    "title": "Narrative Architecture",
+    "intro": "This file is the index. The cards themselves live in `resources/`, one\nfile per family. Use the tables below to decide which file to open, then\nread that file. Do not load every resource unless the change spans several\nfamilies.",
+    "commonRules": [
+      "Write the beats before choosing words; a structure that is not visible in\n  the order of the material is not the structure.",
+      "One structure per piece. A second one competes with the first for the same\n  attention.",
+      "The audience's change is the spine: say what they believed before, and what\n  they should believe after."
+    ],
+    "footer": "Every card cites a primary source or names the tradition it comes from; the citation travels with the card."
+  },
+  "web": {
+    "global": "NARRATIVE_DECK",
+    "accentsGlobal": "NARRATIVE_DECK_ACCENTS",
+    "title": "Narrative Architecture — Knowledge Domain Decks",
+    "heading": "Narrative Architecture",
+    "lede": "{cards} story-structure patterns for pitches, briefings and case studies. Tap a card to flip it and read the beats and the fix.",
+    "source": "Generated from <code>decks/narrative/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter to see the structure"
+  }
+}

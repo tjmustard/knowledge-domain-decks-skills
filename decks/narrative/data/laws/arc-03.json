@@ -1,0 +1,57 @@
+{
+  "id": "ARC-03",
+  "name": "Harmon Story Circle",
+  "family": "Arc & Plot",
+  "axiom": "Comfort, want, discomfort, cost, return: the smallest honest story.",
+  "trigger": "Sprint retrospectives, user journey maps, and short case studies where the whole arc has to fit on one slide.",
+  "steps": [
+    {
+      "text": "Comfort: someone in a zone they know."
+    },
+    {
+      "text": "Want: they reach for something outside it."
+    },
+    {
+      "text": "Go: they cross into unfamiliar ground."
+    },
+    {
+      "text": "Search: effort, adaptation, and its cost."
+    },
+    {
+      "text": "Take: they get what they came for, at a price."
+    },
+    {
+      "text": "Return and change: back where they started, not who they started as."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Using the circle as a checklist of eight headings with no change between the first and last, which is a table of contents, not a story.",
+    "remediation": "Write the first and last beat side by side. If they describe the same person, the circle has not turned."
+  },
+  "origin": {
+    "authors": [
+      "Dan Harmon"
+    ],
+    "year": 2000,
+    "title": "Story Circle",
+    "publication": "Channel 101"
+  },
+  "figure": {
+    "svgShape": "story-circle",
+    "parametricParams": {
+      "sectors": 8,
+      "startAngle": -90,
+      "labels": [
+        "YOU",
+        "NEED",
+        "GO",
+        "SEARCH",
+        "FIND",
+        "TAKE",
+        "RETURN",
+        "CHANGE"
+      ],
+      "caption": "EIGHT BEATS, ONE TURN"
+    }
+  }
+}

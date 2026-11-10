@@ -1,0 +1,41 @@
+{
+  "id": "COR-10",
+  "name": "Regulatory Compliance Crucible",
+  "family": "Corporate & Technical",
+  "axiom": "An audit finds the controls you believed in, not the ones you documented.",
+  "trigger": "Audit committee defence and compliance budget requests, where the exposure is real and the evidence is thin.",
+  "steps": [
+    {
+      "text": "Exposure: the obligation and what non-compliance costs."
+    },
+    {
+      "text": "Audit shock: the finding that shows the gap."
+    },
+    {
+      "text": "Mobilisation: the cross-functional work that closes it."
+    },
+    {
+      "text": "Hardened control: the evidence that now exists by default."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A policy document offered as evidence of control, which an auditor reads as intent rather than operation.",
+    "remediation": "Show the control running: a log, a test, a ticket. Documentation describes; evidence proves."
+  },
+  "origin": {
+    "title": "Regulatory Compliance Crucible",
+    "publication": "Financial and healthcare audit practice"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 120,
+      "bottomY": 280,
+      "endY": 90,
+      "startLabel": "EXPOSURE",
+      "bottomLabel": "FINDING",
+      "endLabel": "HARDENED",
+      "caption": "EVIDENCE, NOT INTENT"
+    }
+  }
+}

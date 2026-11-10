@@ -1,0 +1,41 @@
+{
+  "id": "COR-12",
+  "name": "Turnaround Restructuring Thesis",
+  "family": "Corporate & Technical",
+  "axiom": "Stabilise cash first; strategy is a luxury the balance sheet buys you.",
+  "trigger": "Turnaround memos and distressed unit reviews, where the audience is deciding how much time exists.",
+  "steps": [
+    {
+      "text": "Deterioration: how the unit reached its current position."
+    },
+    {
+      "text": "Triage: what stops the cash bleed this quarter."
+    },
+    {
+      "text": "Realignment: the assets and lines that no longer fit."
+    },
+    {
+      "text": "Lean operation: the cost base the new shape can carry."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Opening with a new strategy while the cash runway is under a quarter, which the board reads as denial.",
+    "remediation": "Sequence triage before strategy. Name the week the bleeding stops, then the plan that follows."
+  },
+  "origin": {
+    "title": "Turnaround Restructuring Thesis",
+    "publication": "Corporate restructuring practice"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 95,
+      "bottomY": 290,
+      "endY": 120,
+      "startLabel": "DETERIORATION",
+      "bottomLabel": "TRIAGE",
+      "endLabel": "LEAN",
+      "caption": "STABILISE, THEN REBUILD"
+    }
+  }
+}

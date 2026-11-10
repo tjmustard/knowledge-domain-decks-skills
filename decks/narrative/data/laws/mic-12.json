@@ -1,0 +1,52 @@
+{
+  "id": "MIC-12",
+  "name": "The Counterfactual Pivot",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Show what would have happened without the work; that gap is the value.",
+  "trigger": "Security, risk and compliance ROI cases, where prevention has no visible outcome to point at.",
+  "steps": [
+    {
+      "text": "State what actually happened, with its cost."
+    },
+    {
+      "text": "Describe the counterfactual at the same date."
+    },
+    {
+      "text": "Subtract one from the other."
+    },
+    {
+      "text": "Name the cost of the counterfactual recurring."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Claiming averted incidents that no one can verify, which converts a strong argument into an unfalsifiable one.",
+    "remediation": "Anchor the counterfactual to evidence: a peer incident, a near miss, a control that fired. Say what is estimated."
+  },
+  "origin": {
+    "authors": [
+      "Daniel Kahneman",
+      "Amos Tversky"
+    ],
+    "year": 1982,
+    "title": "The Simulation Heuristic",
+    "publication": "Judgment under Uncertainty"
+  },
+  "figure": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": {
+        "cells": 4,
+        "columns": 2,
+        "filled": 0,
+        "caption": "WITHOUT"
+      },
+      "right": {
+        "cells": 4,
+        "columns": 2,
+        "filled": 3,
+        "caption": "WITH"
+      },
+      "caption": "THE GAP IS THE ARGUMENT"
+    }
+  }
+}

@@ -14,6 +14,9 @@ import {
   loadDeck,
   loadCards,
   authorsLabel,
+  formatYear,
+  sourceLine,
+  sourceShort,
   titleStop,
   wordCount,
   withCitation
@@ -116,4 +119,19 @@ test("withCitation adds both strings and leaves the record alone", async () => {
   assert.equal(cited.academicOrigin.titleStop, titleStop(card.academicOrigin.title));
   assert.equal(cited.id, card.id);
   assert.equal(cited.axiom, card.axiom);
+});
+
+test("a year before the common era is printed as BCE, not as a negative number", () => {
+  assert.equal(formatYear(1999), "1999");
+  assert.equal(formatYear(0), "0");
+  assert.equal(formatYear(-335), "335 BCE");
+  assert.equal(formatYear(undefined), "");
+  assert.equal(
+    sourceLine({ authors: ["Aristotle"], year: -335, title: "Poetics" }),
+    "Aristotle (335 BCE). *Poetics*."
+  );
+  assert.equal(
+    sourceShort({ authors: ["Aristotle"], year: -335, title: "Poetics" }),
+    "Aristotle (335 BCE), *Poetics*."
+  );
 });

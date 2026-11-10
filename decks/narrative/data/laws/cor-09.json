@@ -1,0 +1,50 @@
+{
+  "id": "COR-09",
+  "name": "Digital Transformation Arc",
+  "family": "Corporate & Technical",
+  "axiom": "The core business funds the threat it cannot answer; give the answer its own room.",
+  "trigger": "Enterprise transformation updates and board reporting, where the current business is both the sponsor and the obstacle.",
+  "steps": [
+    {
+      "text": "Dominance: the core business and its margins."
+    },
+    {
+      "text": "Threat: the new model growing at the edge."
+    },
+    {
+      "text": "Skunkworks: the protected unit allowed to compete."
+    },
+    {
+      "text": "Re-platform: the core moved onto what the unit proved."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Housing the new model inside the core's roadmap, where it is ranked against the thing it is meant to replace and always loses.",
+    "remediation": "Give the new model its own metric and its own P&L. Protection is the only thing that buys it time."
+  },
+  "origin": {
+    "authors": [
+      "Clayton Christensen"
+    ],
+    "year": 1997,
+    "title": "The Innovator's Dilemma",
+    "publication": "Harvard Business Review Press"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        3,
+        2,
+        3
+      ],
+      "gap": 12,
+      "labels": [
+        "CORE",
+        "THREAT",
+        "RE-PLATFORM"
+      ],
+      "caption": "THE CORE FUNDS ITS OWN REPLACEMENT"
+    }
+  }
+}

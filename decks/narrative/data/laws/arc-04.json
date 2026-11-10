@@ -1,0 +1,56 @@
+{
+  "id": "ARC-04",
+  "name": "Three-Act Structure",
+  "family": "Arc & Plot",
+  "axiom": "Something happens, it gets worse, it resolves; give each act its own question.",
+  "trigger": "Pitch decks, keynotes, and proposals long enough that the audience needs to know where they are in the argument.",
+  "steps": [
+    {
+      "text": "Setup: the world and the question it cannot answer."
+    },
+    {
+      "text": "Inciting incident: the event that makes staying impossible."
+    },
+    {
+      "text": "Confrontation: obstacles escalate and alliances shift."
+    },
+    {
+      "text": "Midpoint: the protagonist stops reacting and starts choosing."
+    },
+    {
+      "text": "Crisis: the choice between two things they want."
+    },
+    {
+      "text": "Resolution: the world answers the opening question."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Three equal acts, because the presenter divided the running time rather than the work, so the middle sags and the end rushes.",
+    "remediation": "Give the confrontation the most room. Setup states a question; only the middle can make it expensive."
+  },
+  "origin": {
+    "authors": [
+      "Aristotle"
+    ],
+    "year": -335,
+    "title": "Poetics",
+    "publication": "Greek dramatic theory"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        1,
+        2,
+        1
+      ],
+      "gap": 10,
+      "labels": [
+        "SETUP",
+        "CONFRONTATION",
+        "RESOLUTION"
+      ],
+      "caption": "THE MIDDLE CARRIES THE WEIGHT"
+    }
+  }
+}

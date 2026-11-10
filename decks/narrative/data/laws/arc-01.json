@@ -1,0 +1,47 @@
+{
+  "id": "ARC-01",
+  "name": "Freytag’s Pyramid",
+  "family": "Arc & Plot",
+  "axiom": "A story earns its turn by building pressure, then releasing it.",
+  "trigger": "Explaining a product lifecycle, a multi-year transformation, or any change with an unavoidable peak of pressure.",
+  "steps": [
+    {
+      "text": "Exposition: establish who is involved and what is at stake."
+    },
+    {
+      "text": "Rising action: each attempt raises the cost of failing."
+    },
+    {
+      "text": "Climax: the decision that cannot be taken back."
+    },
+    {
+      "text": "Falling action: consequences arrive faster than remedies."
+    },
+    {
+      "text": "Denouement: the new baseline, stated plainly."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A flat retelling that lists events in order but never raises the stakes, so the climax arrives with nothing behind it.",
+    "remediation": "Name the pressure at every beat. If two beats raise the same pressure, one of them is filler."
+  },
+  "origin": {
+    "authors": [
+      "Gustav Freytag"
+    ],
+    "year": 1863,
+    "title": "Die Technik des Dramas",
+    "publication": "Leipzig"
+  },
+  "figure": {
+    "svgShape": "rise-fall-pyramid",
+    "parametricParams": {
+      "peakX": 0.5,
+      "crises": 0,
+      "riseLabel": "PRESSURE",
+      "fallLabel": "RELEASE",
+      "caption": "BUILD, THEN RESOLVE"
+    }
+  },
+  "prompt": "The peak our audience cannot skip past is ______."
+}

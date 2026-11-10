@@ -1,0 +1,43 @@
+{
+  "id": "MIC-11",
+  "name": "Reductio Ad Absurdum",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Push the current trajectory to its endpoint and let the endpoint argue.",
+  "trigger": "Discrediting inaction or the defence of a legacy system, where the audience believes the status quo is stable.",
+  "steps": [
+    {
+      "text": "State the current trajectory as its defenders would."
+    },
+    {
+      "text": "Extrapolate it at the same rate, without caricature."
+    },
+    {
+      "text": "Reach the endpoint and stop."
+    },
+    {
+      "text": "Ask what would have to change for the endpoint not to be next."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Extrapolating faster than the trend supports, which lets the audience dismiss the endpoint as a straw man.",
+    "remediation": "Use the measured rate and say so. The arithmetic should be theirs by the end."
+  },
+  "origin": {
+    "authors": [
+      "Zeno of Elea"
+    ],
+    "year": -450,
+    "title": "Paradoxes",
+    "publication": "Presocratic philosophy"
+  },
+  "figure": {
+    "svgShape": "decline-curve",
+    "parametricParams": {
+      "startY": 110,
+      "endY": 290,
+      "startLabel": "TODAY",
+      "endLabel": "ENDPOINT",
+      "caption": "SAME RATE, NO CARICATURE"
+    }
+  }
+}

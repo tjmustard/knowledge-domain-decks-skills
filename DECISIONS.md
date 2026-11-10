@@ -1422,3 +1422,43 @@ nothing to show. The field accepts a signed integer; how a renderer prints one i
 a typography decision, not a validation bound. This entry records that the value
 is accepted, not a format for it; if a card ever needs one, the format is decided
 then and implemented where the strings are built.
+
+## 39. Two source names change because they name a commercial methodology
+
+The second deck's inventory is a list of named tactics, and two of those names
+identify a commercial method rather than a public technique: a pitch arc sold
+as part of a named sales programme, and a story template usually attributed to
+a studio and popularised under its brand. A clean-room repository may describe
+the structure, but it should not use a company's name for it as a card title.
+
+The structures are unchanged. They are recorded under the public name for the
+same shape:
+
+- **The Story Spine** (source title: "The Pixar Pitch"), attributed to Emma
+  Coats, who published the five-clause form as a set of story rules in 2011.
+  The attribution is to the person who wrote it down, not to the studio.
+- **The Insight-Led Challenge** (source title: "The Challenger Commercial Arc"),
+  attributed to Matthew Dixon and Brent Adamson, whose 2011 book describes the
+  sequence. The card keeps the sequence and drops the product's name.
+
+Nothing else is renamed. Every other card carries the inventory's name verbatim
+and is checked against it, because the list is the artefact: a name quietly
+shortened here would be a name a reader could not find in the source.
+
+## 40. A BCE year prints as "335 BCE"
+
+§38 accepted signed years and left the print format undecided, on the grounds
+that no card needed it. The second deck cites Aristotle (-335), Horace (-13) and
+Sophocles (-429), so the case arrived and the format is now decided: a negative
+year prints as its absolute value followed by a space and `BCE`, in every
+renderer. A positive year prints unchanged.
+
+The conversion lives in one function (`formatYear`) for the generated markdown
+and in the two renderers' own year lines, which cannot import it: the Typst
+template and the browser bundle. Each prints `(335 BCE)` for -335 and `(1999)`
+for 1999, and the deck test asserts both strings. -1 prints `1 BCE`; there is no
+year zero in the conventional calendar, and a record that needs that precision
+should carry the year as text rather than as a number.
+
+UX cards are unaffected: none cites a negative year, so the printed artifact's
+bytes are unchanged.

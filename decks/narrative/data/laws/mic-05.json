@@ -1,0 +1,39 @@
+{
+  "id": "MIC-05",
+  "name": "Anagnorisis (The Aha-Moment)",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "The insight lands when the audience sees two readings were one figure.",
+  "trigger": "Research reveals and strategic unveilings, where the conclusion must feel discovered rather than asserted.",
+  "steps": [
+    {
+      "text": "Show the figure the audience already reads one way."
+    },
+    {
+      "text": "Add the evidence that makes the other reading visible."
+    },
+    {
+      "text": "Let the shift happen; do not narrate it."
+    },
+    {
+      "text": "Name the consequence of the new reading."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Announcing the insight before the evidence, which turns a discovery into a claim the audience now argues with.",
+    "remediation": "Withhold the conclusion until the second reading is available. The order is the effect."
+  },
+  "origin": {
+    "authors": [
+      "Aristotle"
+    ],
+    "year": -335,
+    "title": "Poetics",
+    "publication": "Greek dramatic theory"
+  },
+  "figure": {
+    "svgShape": "necker-cube",
+    "parametricParams": {
+      "caption": "ONE FIGURE, TWO READINGS"
+    }
+  }
+}

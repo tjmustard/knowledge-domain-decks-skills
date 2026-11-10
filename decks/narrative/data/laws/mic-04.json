@@ -1,0 +1,37 @@
+{
+  "id": "MIC-04",
+  "name": "Metaphorical Bridge",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Map the unfamiliar onto something the audience already operates.",
+  "trigger": "Explaining distributed consensus, machine learning or queueing to a mixed audience.",
+  "steps": [
+    {
+      "text": "Name the target concept and its hard part."
+    },
+    {
+      "text": "Choose a source domain with the same structure."
+    },
+    {
+      "text": "Map each part explicitly, and name where the mapping breaks."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A metaphor carried past the structure it shares, so the audience reasons correctly inside it and wrongly outside.",
+    "remediation": "State the boundary. 'It is like X, except Y' keeps the model useful past the diagram."
+  },
+  "origin": {
+    "authors": [
+      "George Lakoff",
+      "Mark Johnson"
+    ],
+    "year": 1980,
+    "title": "Metaphors We Live By",
+    "publication": "University of Chicago Press"
+  },
+  "figure": {
+    "svgShape": "shared-grammar",
+    "parametricParams": {
+      "caption": "SAME STRUCTURE, NEW DOMAIN"
+    }
+  }
+}

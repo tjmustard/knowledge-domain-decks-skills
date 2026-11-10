@@ -1,0 +1,43 @@
+{
+  "id": "COR-06",
+  "name": "Technical Debt Reckoning",
+  "family": "Corporate & Technical",
+  "axiom": "Shortcuts accrue interest quietly until the system cannot absorb its own change.",
+  "trigger": "Refactoring proposals and engineering re-allocation, where velocity has slowed and no one agrees why.",
+  "steps": [
+    {
+      "text": "Accrued shortcuts: the decisions that bought speed."
+    },
+    {
+      "text": "Drag: the recurring cost each one now adds."
+    },
+    {
+      "text": "Seizure: the change the system can no longer absorb."
+    },
+    {
+      "text": "Blueprint: the refactor sequence and what it unblocks."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Calling all code you did not write debt, which turns a specific argument about interest into a taste dispute.",
+    "remediation": "Price the interest: name the change that is now slow or impossible, and how often it comes up."
+  },
+  "origin": {
+    "authors": [
+      "Ward Cunningham"
+    ],
+    "year": 1992,
+    "title": "The WyCash Portfolio Management System",
+    "publication": "OOPSLA"
+  },
+  "figure": {
+    "svgShape": "decline-curve",
+    "parametricParams": {
+      "startY": 100,
+      "endY": 275,
+      "startLabel": "SHORTCUTS",
+      "endLabel": "SEIZURE",
+      "caption": "INTEREST COMPOUNDS UNTIL CHANGE STOPS"
+    }
+  }
+}

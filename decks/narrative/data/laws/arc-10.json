@@ -1,0 +1,45 @@
+{
+  "id": "ARC-10",
+  "name": "Cinderella Arc",
+  "family": "Arc & Plot",
+  "axiom": "A brief reprieve that is taken away makes the final elevation feel earned.",
+  "trigger": "Seed-to-scale stories, pilot programmes, and validation narratives where the first success did not hold.",
+  "steps": [
+    {
+      "text": "Deprivation: the baseline with no room to move."
+    },
+    {
+      "text": "Transient aid: help that is real but temporary."
+    },
+    {
+      "text": "Reversion: the test that sends the story back."
+    },
+    {
+      "text": "Enduring elevation: the change that outlasts its helper."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Cutting the reversion to keep the story upbeat, so the final success looks like luck rather than something tested.",
+    "remediation": "Keep the setback. The audience trusts an elevation that survived a version of the old problem."
+  },
+  "origin": {
+    "authors": [
+      "Charles Perrault"
+    ],
+    "year": 1697,
+    "title": "Cendrillon",
+    "publication": "Histoires ou contes du temps passe"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 150,
+      "bottomY": 270,
+      "endY": 70,
+      "startLabel": "CONSTRAINT",
+      "bottomLabel": "REVERSION",
+      "endLabel": "SCALE",
+      "caption": "THE SETBACK STAYS IN"
+    }
+  }
+}

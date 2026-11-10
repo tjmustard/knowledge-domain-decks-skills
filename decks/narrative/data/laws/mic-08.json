@@ -1,0 +1,48 @@
+{
+  "id": "MIC-08",
+  "name": "Tricolon (Rule of Three)",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Three clauses make a pattern, a rhythm and a stop.",
+  "trigger": "Speechwriting, mission statements and value definitions, where a line must be repeated out loud.",
+  "steps": [
+    {
+      "text": "Choose three items of the same kind."
+    },
+    {
+      "text": "Give them parallel grammatical form."
+    },
+    {
+      "text": "Let the third carry the weight or the turn."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Three items that are not the same kind, so the pattern promises a shape the list does not keep.",
+    "remediation": "Check they are the same part of speech and the same level of abstraction. Parallel form is the whole trick."
+  },
+  "origin": {
+    "authors": [
+      "Cicero"
+    ],
+    "year": -55,
+    "title": "De Oratore",
+    "publication": "Roman rhetorical theory"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "gap": 16,
+      "labels": [
+        "ONE",
+        "TWO",
+        "THREE"
+      ],
+      "turn": false,
+      "caption": "THREE, THEN STOP"
+    }
+  }
+}

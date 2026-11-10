@@ -1,0 +1,64 @@
+{
+  "id": "COR-11",
+  "name": "The Innovation Horizon Brief",
+  "family": "Corporate & Technical",
+  "axiom": "Fund three horizons at once or the third one quietly disappears.",
+  "trigger": "Annual R&D allocation and innovation reviews, where the current business always wins the budget argument.",
+  "steps": [
+    {
+      "text": "Horizon one: keep the core running and efficient."
+    },
+    {
+      "text": "Horizon two: expand what already earns."
+    },
+    {
+      "text": "Horizon three: options that could replace both."
+    },
+    {
+      "text": "Balance: a protected share for each, reviewed on its own terms."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Judging horizon three by horizon one's payback period, which guarantees it is cut before it can produce anything.",
+    "remediation": "Give each horizon its own metric and a protected share of the budget. A single yardstick eliminates the future."
+  },
+  "origin": {
+    "authors": [
+      "Mehrdad Baghai",
+      "Stephen Coley",
+      "David White"
+    ],
+    "year": 2000,
+    "title": "The Alchemy of Growth",
+    "publication": "Perseus"
+  },
+  "figure": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 100,
+      "rows": [
+        {
+          "label": "ALLOCATION",
+          "segments": [
+            {
+              "weight": 70,
+              "label": "H1",
+              "filled": true
+            },
+            {
+              "weight": 20,
+              "label": "H2",
+              "filled": false
+            },
+            {
+              "weight": 10,
+              "label": "H3",
+              "filled": false
+            }
+          ]
+        }
+      ],
+      "caption": "THREE HORIZONS, ONE BUDGET"
+    }
+  }
+}

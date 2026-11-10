@@ -1,0 +1,41 @@
+{
+  "id": "MIC-02",
+  "name": "Polarity Shift (Contrast & Tension)",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Change the sign of the sentence; the audience feels the drop before the numbers.",
+  "trigger": "Slides making urgency felt, where a flat list of risks has stopped registering.",
+  "steps": [
+    {
+      "text": "Establish the positive state in one clause."
+    },
+    {
+      "text": "Turn it in the next clause, without a hedge."
+    },
+    {
+      "text": "Quantify what the turn costs."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A turn in every sentence, which stops reading as contrast and starts reading as alarm.",
+    "remediation": "Spend the shift once, at the point where the decision changes. Repeating it flattens it."
+  },
+  "origin": {
+    "authors": [
+      "Robert McKee"
+    ],
+    "year": 1997,
+    "title": "Story",
+    "publication": "ReganBooks"
+  },
+  "figure": {
+    "svgShape": "gain-loss-bars",
+    "parametricParams": {
+      "gainHeight": 90,
+      "lossHeight": 120,
+      "gainLabel": "GAIN",
+      "lossLabel": "LOSS",
+      "zeroLabel": "TODAY",
+      "caption": "ONE TURN, ONCE"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "id": "MIC-03",
+  "name": "Sensory Detail Anchoring",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Give an abstract number a body: a wait, a click, a room.",
+  "trigger": "Explaining latency, scale or KPI movement to an audience that does not work with the number.",
+  "steps": [
+    {
+      "text": "Name the abstraction and its unit."
+    },
+    {
+      "text": "Place it in a scene the audience has lived."
+    },
+    {
+      "text": "Return to the number, now felt."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A metaphor that is vivid but maps the wrong quantity, so the audience remembers the picture and the wrong size.",
+    "remediation": "Keep the mapping one-to-one. If the scene has two scales, it will teach the wrong one."
+  },
+  "origin": {
+    "authors": [
+      "Allan Paivio"
+    ],
+    "year": 1971,
+    "title": "Imagery and Verbal Processes",
+    "publication": "Holt, Rinehart and Winston"
+  },
+  "figure": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": {
+        "cells": 4,
+        "columns": 2,
+        "caption": "NUMBER"
+      },
+      "right": {
+        "cells": 4,
+        "columns": 2,
+        "filled": 2,
+        "caption": "SCENE"
+      },
+      "caption": "TWO CODINGS, ONE MEANING"
+    }
+  }
+}

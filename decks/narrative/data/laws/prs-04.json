@@ -1,0 +1,54 @@
+{
+  "id": "PRS-04",
+  "name": "The Pitch Canvas",
+  "family": "Persuasion & Pitch",
+  "axiom": "An investor buys the problem, the engine and the edge, in that order.",
+  "trigger": "Seed and Series A presentations, where the audience is deciding whether the opportunity is real.",
+  "steps": [
+    {
+      "text": "Problem: who hurts, and what they do instead today."
+    },
+    {
+      "text": "Solution: the smallest thing that removes the hurt."
+    },
+    {
+      "text": "Engine: how demand arrives and how it compounds."
+    },
+    {
+      "text": "Advantage: why this is hard to copy."
+    },
+    {
+      "text": "Ask: the amount, the milestone it buys, and the risk it retires."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A product tour where the problem is assumed and the engine is a slide of logos, leaving the investor to infer the business.",
+    "remediation": "Open on the problem and close on the ask. The middle exists to make the ask cheaper to believe."
+  },
+  "origin": {
+    "authors": [
+      "Ash Maurya"
+    ],
+    "year": 2010,
+    "title": "Lean Canvas",
+    "publication": "Lean Startup movement"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        2,
+        3,
+        1
+      ],
+      "gap": 12,
+      "labels": [
+        "PROBLEM",
+        "ENGINE",
+        "ASK"
+      ],
+      "caption": "THE ASK IS THE SMALLEST BLOCK",
+      "turn": false
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ARC-08",
+  "name": "Rags to Riches",
+  "family": "Arc & Plot",
+  "axiom": "Show the starting deprivation in the audience's own terms, then climb without skipping.",
+  "trigger": "Account expansion case studies, bootstrap histories, and adoption stories where the starting point is the credibility.",
+  "steps": [
+    {
+      "text": "Deprivation: the constraint, measured."
+    },
+    {
+      "text": "Catalyst: the first decision that could compound."
+    },
+    {
+      "text": "Ascent: visible progress, each step built on the last."
+    },
+    {
+      "text": "Barrier: the point where the old method stops working."
+    },
+    {
+      "text": "Elevation: the new state, held and repeatable."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Starting at the first success, so the audience never sees the constraint the method actually removed.",
+    "remediation": "Open on a number from before. A climb with no recorded baseline is a brochure."
+  },
+  "origin": {
+    "authors": [
+      "Vladimir Propp"
+    ],
+    "year": 1928,
+    "title": "Morphology of the Folktale"
+  },
+  "figure": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 90,
+      "goalLabel": "ELEVATION",
+      "startLabel": "DEPRIVATION",
+      "caption": "ACCELERATES TOWARD THE GOAL"
+    }
+  }
+}

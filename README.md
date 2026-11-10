@@ -256,11 +256,13 @@ and duplicate IDs fail the run.
 ```
 .
 ├── decks/                       # One directory per deck; nothing else names a deck
-│   └── ux-laws/
-│       ├── deck.json            # id, slug, title, categories, accents, output paths, prose
-│       └── data/
-│           ├── law-schema.json  # Canonical JSON Schema (draft 2020-12)
-│           └── laws/*.json      # One validated record per card
+│   ├── ux-laws/                 # UX & Behavioral Design
+│   │   ├── deck.json            # id, slug, title, categories, accents, output paths, prose
+│   │   └── data/
+│   │       ├── law-schema.json  # Canonical JSON Schema (draft 2020-12)
+│   │       └── laws/*.json      # One validated record per card
+│   └── narrative/               # Narrative Architecture (same layout; its own schema,
+│                                #   field mapping and families)
 ├── packages/
 │   ├── core/                    # The engine: deck loading, schema, SVG shapes
 │   │   ├── deck.mjs
@@ -305,8 +307,13 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    fields are the ones `decks/ux-laws/deck.json` shows, and a deck with no
    accents simply falls back to a neutral colour on every card.
 2. Put a JSON Schema at `decks/<slug>/data/law-schema.json` and one record per
-   card in `data/laws/`. The schema's `category` enum is overridden by the
-   deck's own category list at validation time, so the two cannot disagree.
+   card in `data/laws/`. The enum on the schema's group field is overridden by
+   the deck's own category list at validation time, so the two cannot disagree.
+   A deck whose records are shaped differently declares that in `deck.json`:
+   `fields` maps the group, ordered items, attribution, figure and optional
+   prompt onto its own key names, `labels` names the list on the card face and
+   in the generated markdown, and `itemStyle` chooses ticking boxes or numbered
+   beats. A deck that declares none gets the first deck's shape.
 3. Build and check:
 
    ```bash

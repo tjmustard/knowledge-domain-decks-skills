@@ -46,9 +46,13 @@
   // part prints only when it is there, and the full case reads exactly as before.
   function citation(origin) {
     if (!origin) return "";
+    // The bundle carries signed years, where a negative value means BCE.
+    var year = origin.year === undefined || origin.year === null
+      ? ""
+      : origin.year < 0 ? " (" + (-origin.year) + " BCE)" : " (" + origin.year + ")";
     var by = origin.authorsLabel
-      ? origin.authorsLabel + (origin.year === undefined || origin.year === null ? "" : " (" + origin.year + ")")
-      : origin.year === undefined || origin.year === null ? "" : "(" + origin.year + ")";
+      ? origin.authorsLabel + year
+      : year === "" ? "" : year.trim();
     var parts = [];
     if (by) parts.push(by + ".");
     // The title carries its own stop, so the full stop after the publication is

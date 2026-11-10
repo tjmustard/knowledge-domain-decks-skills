@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decks/narrative/data/law-schema.json",
+  "title": "NarrativeCard",
+  "description": "One story-structure card in the Narrative Architecture deck. A record names a tactic, the ordered beats that make it work, and where it breaks.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "family",
+    "axiom",
+    "trigger",
+    "steps",
+    "antiPattern",
+    "origin",
+    "figure"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(ARC|PRS|COR|MIC)-[0-9]{2}$",
+      "description": "Family prefix and two-digit sequence: ARC, PRS, COR, MIC."
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "Arc & Plot",
+        "Persuasion & Pitch",
+        "Corporate & Technical",
+        "Rhetorical Micro-tactic"
+      ]
+    },
+    "axiom": {
+      "type": "string",
+      "maxLength": 110,
+      "description": "Core principle, 15 words or fewer. The validator enforces both limits."
+    },
+    "trigger": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "steps": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          }
+        }
+      }
+    },
+    "antiPattern": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "violation",
+        "remediation"
+      ],
+      "properties": {
+        "violation": {
+          "type": "string",
+          "maxLength": 250
+        },
+        "remediation": {
+          "type": "string",
+          "maxLength": 250
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "minProperties": 1,
+      "properties": {
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
+        "year": {
+          "type": "integer",
+          "maximum": 2100
+        },
+        "title": {
+          "type": "string"
+        },
+        "publication": {
+          "type": "string"
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "type": "string",
+          "enum": [
+            "convention-grid",
+            "proximity-grid",
+            "hierarchy",
+            "network",
+            "target-vector",
+            "steering-tunnel",
+            "decay-curve",
+            "decline-curve",
+            "split-bar",
+            "paired-panels",
+            "power-curve",
+            "ratio-scale",
+            "reach-map",
+            "difficulty-line",
+            "scan-path",
+            "odd-one-out",
+            "peak-end-curve",
+            "anchor-line",
+            "filter-gate",
+            "sunk-gate",
+            "gain-loss-bars",
+            "goal-gradient",
+            "default-fork",
+            "model-projection",
+            "shared-grammar",
+            "alignment-pair",
+            "promise-line",
+            "intake-funnel",
+            "parsimony-path",
+            "org-mirror",
+            "intent-gap",
+            "signifier-pair",
+            "feedback-loop",
+            "similarity-columns",
+            "common-region",
+            "simplest-form",
+            "broken-ring",
+            "shared-edge",
+            "crossing-curves",
+            "link-beats-gap",
+            "shared-motion",
+            "necker-cube",
+            "rise-fall-pyramid",
+            "story-circle",
+            "three-act-blocks",
+            "sparkline",
+            "concentric-circles",
+            "fall-rise-curve",
+            "limit-gauges"
+          ]
+        },
+        "parametricParams": {
+          "type": "object"
+        }
+      }
+    },
+    "prompt": {
+      "type": "string",
+      "maxLength": 200
+    }
+  }
+}

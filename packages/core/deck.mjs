@@ -204,17 +204,24 @@ export function withCitation(card, deck) {
 }
 
 /*
- * One printed citation line. The narrative deck's attributions are uneven by
- * nature - a named author with a work and a year, sometimes a bare name,
- * sometimes "folk tradition" with nothing else - so every part after the names
- * is optional. With all four parts present this returns exactly the string the
- * UX deck printed before the shape was parameterised.
+ * One printed citation line. A deck's attributions can be uneven by nature - a
+ * named author with a work and a year, sometimes a bare work, sometimes a
+ * tradition with nothing else - so every part after the names is optional. With
+ * all four parts present this returns exactly the string the first deck printed
+ * before the shape was parameterised.
  */
 // The shorter form used in the skill's resource files: names, year, title, no
 // publication. Same tolerance for absent parts.
+// A signed year as a citation prints it. The schema accepts negative years for
+// BCE, and a citation that prints "-335" is a data value leaking into prose.
+export function formatYear(year) {
+  if (year === undefined || year === null) return "";
+  return year < 0 ? `${-year} BCE` : String(year);
+}
+
 export function sourceShort(origin = {}) {
   const names = authorsLabel(origin);
-  const year = origin.year === undefined || origin.year === null ? "" : ` (${origin.year})`;
+  const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;
   const head = `${names}${year}`;
   const title = origin.title ? `*${origin.title}*${titleStop(origin.title)}` : "";
   // The comma belongs to the join, not to the title: an attribution that is
@@ -225,7 +232,7 @@ export function sourceShort(origin = {}) {
 
 export function sourceLine(origin = {}) {
   const names = authorsLabel(origin);
-  const year = origin.year === undefined || origin.year === null ? "" : ` (${origin.year})`;
+  const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;
   const head = `${names}${year}`;
   const title = origin.title ? ` *${origin.title}*${titleStop(origin.title)}` : "";
   const tail = origin.publication ? ` ${origin.publication}` : "";

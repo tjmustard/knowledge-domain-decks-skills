@@ -1,0 +1,49 @@
+{
+  "id": "PRS-09",
+  "name": "The Insight-Led Challenge",
+  "family": "Persuasion & Pitch",
+  "axiom": "Teach the buyer something they did not know, then let the implication do the selling.",
+  "trigger": "Complex B2B sales conversations, where the buyer believes their current approach is already reasonable.",
+  "steps": [
+    {
+      "text": "Warmer: acknowledge what the buyer already does well."
+    },
+    {
+      "text": "Reframe: a fact that changes how their situation reads."
+    },
+    {
+      "text": "Rational drowning: the cost of the old reading, quantified."
+    },
+    {
+      "text": "Emotional impact: what it means for a person they know."
+    },
+    {
+      "text": "Value: the new approach, stated as their conclusion."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Leading with the product, so the buyer hears a vendor before they hear an insight and defends the approach they already have.",
+    "remediation": "Earn the reframe first. If the insight could come from the buyer's own industry, it is not new enough to change a decision."
+  },
+  "origin": {
+    "authors": [
+      "Matthew Dixon",
+      "Brent Adamson"
+    ],
+    "year": 2011,
+    "title": "The Challenger Sale",
+    "publication": "Portfolio"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 150,
+      "bottomY": 280,
+      "endY": 90,
+      "startLabel": "WARMER",
+      "bottomLabel": "DROWNING",
+      "endLabel": "VALUE",
+      "caption": "TEACH, THEN LET IT LAND"
+    }
+  }
+}

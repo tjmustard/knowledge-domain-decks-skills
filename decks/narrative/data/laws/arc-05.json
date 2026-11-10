@@ -1,0 +1,44 @@
+{
+  "id": "ARC-05",
+  "name": "Kishōtenketsu",
+  "family": "Arc & Plot",
+  "axiom": "A twist that reframes what came before needs no villain and no conflict.",
+  "trigger": "Product reveals, design retrospectives, and audiences who resist being told there is a problem to defeat.",
+  "steps": [
+    {
+      "text": "Ki: introduce the subject plainly."
+    },
+    {
+      "text": "Sho: develop it without complication."
+    },
+    {
+      "text": "Ten: a turn that recontextualises everything so far."
+    },
+    {
+      "text": "Ketsu: hold the new reading together without a fight."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Importing a conflict the material does not have, so a straightforward improvement is dressed as a battle with an enemy.",
+    "remediation": "Let the turn do the work. If no one opposes the change, the twist is what refreshes attention."
+  },
+  "origin": {
+    "title": "Kishotenketsu",
+    "publication": "Classical Chinese and Japanese narrative tradition"
+  },
+  "figure": {
+    "svgShape": "story-circle",
+    "parametricParams": {
+      "sectors": 4,
+      "startAngle": -90,
+      "labels": [
+        "KI",
+        "SHO",
+        "TEN",
+        "KETSU"
+      ],
+      "caption": "FOUR BEATS, NO VILLAIN"
+    }
+  },
+  "prompt": "The turn that reframes our subject is ______."
+}

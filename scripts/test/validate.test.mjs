@@ -78,7 +78,9 @@ test("two records with the same id are rejected", async () => {
     await writeFile(first, source);
     await writeFile(second, source);
 
-    const { status, output } = validate(first, second);
+    // The fixture is a record of the first deck, and with more than one deck a
+    // file list has to say which schema to hold it to.
+    const { status, output } = validate("--deck", "ux-laws", first, second);
     assert.equal(status, 1);
     // The message names the first record seen, by name rather than by id, so
     // the assertion follows the validator's own wording instead of inventing

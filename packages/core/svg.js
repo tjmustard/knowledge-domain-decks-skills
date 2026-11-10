@@ -1238,6 +1238,245 @@
       }
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+
+    /* A story that rises to a single turning point and comes down. The apex can
+       sit anywhere along the span, which is what lets one drawing stand for a
+       climax at the end and for one placed near the opening. Notches on the
+       rising edge mark the crises that escalate before it. */
+    "rise-fall-pyramid": function (p) {
+      var peakX = p.peakX == null ? 0.5 : p.peakX;
+      var crises = p.crises == null ? 0 : p.crises;
+      var riseLabel = p.riseLabel || "RISE";
+      var fallLabel = p.fallLabel || "FALL";
+      var caption = p.caption || "";
+      var leftX = 60;
+      var rightX = 340;
+      var baseY = 300;
+      var apexX = leftX + (rightX - leftX) * peakX;
+      var apexY = 90;
+      var out = [];
+      out.push(line(leftX, baseY, rightX, baseY, 1, 0.3));
+      out.push(
+        '<path d="M ' + leftX + " " + baseY + " L " + apexX + " " + apexY +
+        " L " + rightX + " " + baseY + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      /* Each crisis is a beat that dips and recovers on the way up: the story
+         loses ground before it gains it. Their count is the parameter, so no
+         notch is drawn when the shape claims none. */
+      for (var i = 1; i <= crises; i++) {
+        var t = (i / (crises + 1)) * peakX;
+        var cx = leftX + (rightX - leftX) * t;
+        var cy = baseY + (apexY - baseY) * (t / peakX);
+        out.push(line(cx - 9, cy + 10, cx, cy - 6, 2, 0.75));
+        out.push(circle(cx, cy, 5, { hollow: true, opacity: 0.55, width: 1.5 }));
+      }
+      out.push(circle(apexX, apexY, 9));
+      out.push(label(apexX, apexY - 18, "TURN", { size: 9 }));
+      out.push(label(leftX + 22, baseY - 12, riseLabel, { size: 9, anchor: "start", opacity: 0.6 }));
+      out.push(label(rightX - 22, baseY - 12, fallLabel, { size: 9, anchor: "end", opacity: 0.6 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* A progression that returns to its starting point: the beats are numbered
+       around one ring, so the last step and the first are neighbours. Sector
+       count and starting angle place the marks; the labels name the beats. */
+    "story-circle": function (p) {
+      var sectors = p.sectors == null ? 8 : p.sectors;
+      var startAngle = p.startAngle == null ? -90 : p.startAngle;
+      var labels = p.labels || [];
+      var caption = p.caption || "";
+      var out = [];
+      var cx = 200;
+      var cy = 185;
+      var r = 105;
+      out.push(
+        '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" ' +
+        'stroke="currentColor" stroke-width="2.5" opacity="0.75" ' + "/>"
+      );
+      for (var i = 0; i < sectors; i++) {
+        var angle = ((startAngle + (360 / sectors) * i) * Math.PI) / 180;
+        var px = cx + Math.cos(angle) * r;
+        var py = cy + Math.sin(angle) * r;
+        out.push(circle(px, py, 8, { hollow: false, opacity: 0.9 }));
+        out.push(label(px, py + 3.5, String(i + 1), {
+          size: 7, opacity: 1, weight: 700
+        }));
+        var name = labels[i];
+        if (name) {
+          var lx = cx + Math.cos(angle) * (r + 34);
+          var ly = cy + Math.sin(angle) * (r + 34);
+          var anchor = Math.cos(angle) > 0.3 ? "start" : Math.cos(angle) < -0.3 ? "end" : "middle";
+          out.push(label(lx, ly + 3, name, { size: 8, anchor: anchor, opacity: 0.6 }));
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* A story in proportional parts. The bars are the acts and their widths are
+       the space each is given, so a lopsided narrative is visibly lopsided; the
+       marker sits where the direction changes. */
+    "three-act-blocks": function (p) {
+      var weights = p.weights || [1, 2, 1];
+      var gap = p.gap == null ? 8 : p.gap;
+      var labels = p.labels || [];
+      var turn = p.turn == null ? true : p.turn;
+      var caption = p.caption || "";
+      var out = [];
+      var leftX = 50;
+      var span = 300;
+      var total = 0;
+      for (var i = 0; i < weights.length; i++) total += weights[i];
+      var x = leftX;
+      var edges = [];
+      for (var k = 0; k < weights.length; k++) {
+        var width = (span - gap * (weights.length - 1)) * (weights[k] / total);
+        out.push(rect(x, 120, width, 160, { rx: 4, opacity: 0.35, width: 2 }));
+        out.push(label(x + width / 2, 200, String(k + 1), { size: 13, weight: 700 }));
+        var name = labels[k];
+        if (name) {
+          out.push(label(x + width / 2, 300, name, { size: 8, opacity: 0.6 }));
+        }
+        edges.push(x);
+        x += width + gap;
+      }
+      /* The turning point is the boundary between the opening and the body, at
+         the first edge after the first block. A structure with equal parts and
+         no reversal draws none. */
+      if (turn && edges.length > 1) {
+        out.push(line(edges[1] - gap / 2, 100, edges[1] - gap / 2, 322, 1.5, 0.6, "4 4"));
+        out.push(label(edges[1] - gap / 2, 92, "TURN", { size: 8, opacity: 0.6 }));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* A short run of values as a sparkline: no axes, no grid, the line itself
+       is the whole argument. One index is marked, because the shape is usually
+       drawn to say "here". */
+    "sparkline": function (p) {
+      var points = p.points || [2, 4, 3, 7, 5, 9];
+      var peakIndex = p.peakIndex == null ? points.length - 1 : p.peakIndex;
+      var caption = p.caption || "";
+      var leftX = 60;
+      var span = 280;
+      var topY = 150;
+      var bottomY = 270;
+      var out = [];
+      var hi = Math.max.apply(null, points);
+      var lo = Math.min.apply(null, points);
+      var range = hi - lo || 1;
+      var coords = [];
+      for (var i = 0; i < points.length; i++) {
+        var x = points.length === 1 ? leftX + span / 2 : leftX + (span * i) / (points.length - 1);
+        var y = bottomY - ((points[i] - lo) / range) * (bottomY - topY);
+        coords.push([x, y]);
+      }
+      var d = "M " + coords.map(function (c) { return c[0] + " " + c[1]; }).join(" L ");
+      out.push(line(leftX, bottomY + 20, leftX + span, bottomY + 20, 1, 0.25));
+      out.push(
+        '<path d="' + d + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      var mark = coords[peakIndex];
+      if (mark) {
+        out.push(circle(mark[0], mark[1], 9));
+        out.push(label(mark[0], mark[1] - 20, "HERE", { size: 8 }));
+      }
+      out.push(label(200, 130, "NO AXES, ONE LINE", { size: 9, opacity: 0.5 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Nested rings: the inner ring is the claim every outer ring must serve.
+       Ring count and the space between rings are the parameters; the labels
+       name what each ring stands for. */
+    "concentric-circles": function (p) {
+      var rings = p.rings == null ? 3 : p.rings;
+      var spread = p.spread == null ? 22 : p.spread;
+      var labels = p.labels || [];
+      var caption = p.caption || "";
+      var out = [];
+      var cx = 175;
+      var cy = 190;
+      var core = 34;
+      for (var i = 0; i < rings; i++) {
+        var r = core + spread * (rings - 1 - i);
+        out.push(
+          '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" ' +
+          'stroke="currentColor" stroke-width="2.5" opacity="' +
+          (0.85 - i * 0.12) + '"' + " " + STROKE + "/>"
+        );
+        var name = labels[i];
+        if (name) {
+          out.push(label(cx + r + 8, cy + 4, name, {
+            size: 8, anchor: "start", opacity: 0.6
+          }));
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* A story that goes down before it goes up. The baseline it starts from and
+       the baseline it ends on are separate numbers on purpose: a recovery that
+       merely returns to where it began has told a different story from one that
+       ends higher. */
+    "fall-rise-curve": function (p) {
+      var startY = p.startY == null ? 120 : p.startY;
+      var bottomY = p.bottomY == null ? 280 : p.bottomY;
+      var endY = p.endY == null ? 90 : p.endY;
+      var startLabel = p.startLabel || "BEFORE";
+      var bottomLabel = p.bottomLabel || "BOTTOM";
+      var endLabel = p.endLabel || "AFTER";
+      var caption = p.caption || "";
+      var out = [];
+      out.push(line(60, 310, 340, 310, 1, 0.3));
+      out.push(
+        '<path d="M 60 ' + startY + " C 110 " + (bottomY + 10) + ", 150 " +
+        bottomY + ", 200 " + bottomY + " C 250 " + bottomY + ", 300 " +
+        (endY + 20) + ", 340 " + endY + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(60, startY, 9));
+      out.push(circle(200, bottomY, 8, { hollow: true, opacity: 0.6, width: 1.5 }));
+      out.push(circle(340, endY, 9));
+      out.push(label(60, startY - 16, startLabel, { size: 9, anchor: "start" }));
+      out.push(label(200, bottomY + 24, bottomLabel, { size: 9, opacity: 0.6 }));
+      out.push(label(340, endY - 16, endLabel, { size: 9, anchor: "end" }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Three limits read against their caps. A limit is meaningful only against
+       the ceiling it is measured by, so each row prints both numbers: the track
+       is the cap, the fill is what the work actually used. */
+    "limit-gauges": function (p) {
+      var labels = p.labels || ["FIRST", "SECOND", "THIRD"];
+      var used = p.used || [6, 12, 24];
+      var caps = p.caps || [10, 20, 30];
+      var caption = p.caption || "";
+      var out = [];
+      var x0 = 60;
+      var track = 260;
+      for (var i = 0; i < labels.length; i++) {
+        var y = 130 + i * 70;
+        var cap = caps[i] || 1;
+        var fill = used[i] / cap;
+        out.push(label(x0, y - 14, labels[i], { size: 9, anchor: "start" }));
+        out.push(rect(x0, y, track, 26, { rx: 3, width: 1.5, opacity: 0.5 }));
+        out.push(rect(x0, y, track * fill, 26, {
+          rx: 3, fill: "currentColor", opacity: 0.7, width: 0
+        }));
+        out.push(label(x0 + track + 10, y + 18, String(used[i]) + "/" + String(caps[i]), {
+          size: 8, anchor: "start", opacity: 0.6
+        }));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 

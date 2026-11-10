@@ -1,0 +1,51 @@
+{
+  "id": "PRS-01",
+  "name": "Aristotle’s Rhetorical Triangle",
+  "family": "Persuasion & Pitch",
+  "axiom": "An argument needs credible ground, an audience that feels it, and a reason it follows.",
+  "trigger": "Board briefings and stakeholder memos, where being right is not yet being persuasive.",
+  "steps": [
+    {
+      "text": "Ethos: say what gives you standing on this question."
+    },
+    {
+      "text": "Pathos: name what the audience loses or gains."
+    },
+    {
+      "text": "Logos: show the reasoning and the evidence behind the ask."
+    },
+    {
+      "text": "Rebalance: strengthen the weakest of the three."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A deck of evidence with no speaker credibility and no stake for the audience, which is a report rather than an argument.",
+    "remediation": "Add the missing corner before adding more evidence. Each corner answers a different objection."
+  },
+  "origin": {
+    "authors": [
+      "Aristotle"
+    ],
+    "year": -350,
+    "title": "Rhetoric",
+    "publication": "Greek rhetorical theory"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        1,
+        1,
+        1
+      ],
+      "gap": 18,
+      "labels": [
+        "ETHOS",
+        "PATHOS",
+        "LOGOS"
+      ],
+      "caption": "THE WEAKEST CORNER CARRIES THE REST",
+      "turn": false
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "COR-05",
+  "name": "Enterprise Crucible Myth",
+  "family": "Corporate & Technical",
+  "axiom": "Culture is what the organisation did when the cost was real.",
+  "trigger": "Culture handbooks and leadership transitions, where stated values need a decision behind them.",
+  "steps": [
+    {
+      "text": "Constraint: the situation that left no easy option."
+    },
+    {
+      "text": "Threat: what the organisation stood to lose."
+    },
+    {
+      "text": "Stand: the decision that cost something to make."
+    },
+    {
+      "text": "Moral: the value it now stands for, in one line."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A list of aspirational values with no story attached, which the reader can neither remember nor test a decision against.",
+    "remediation": "Attach one real decision to each value. A value with no cost attached is a preference."
+  },
+  "origin": {
+    "authors": [
+      "Edgar Schein"
+    ],
+    "year": 1985,
+    "title": "Organizational Culture and Leadership",
+    "publication": "Jossey-Bass"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 110,
+      "bottomY": 285,
+      "endY": 95,
+      "startLabel": "CONSTRAINT",
+      "bottomLabel": "THE STAND",
+      "endLabel": "THE VALUE",
+      "caption": "A VALUE NEEDS A COST BEHIND IT"
+    }
+  }
+}

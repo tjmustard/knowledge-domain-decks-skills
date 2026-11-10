@@ -1,0 +1,41 @@
+{
+  "id": "PRS-06",
+  "name": "Before-After-Bridge (BAB)",
+  "family": "Persuasion & Pitch",
+  "axiom": "Show today, show the day it is fixed, then show the bridge between them.",
+  "trigger": "Cold outreach, case studies and transformation proposals, where the reader must want the after before hearing the how.",
+  "steps": [
+    {
+      "text": "Before: the current state, including what it costs."
+    },
+    {
+      "text": "After: the same scene, with the cost gone."
+    },
+    {
+      "text": "Bridge: the mechanism that moves one to the other."
+    },
+    {
+      "text": "Proof: who has already crossed it."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Describing the after in abstractions the reader cannot picture, so the bridge leads somewhere they do not want to go.",
+    "remediation": "Write the after as a scene with a person in it. If the reader cannot see themselves there, the bridge is too long."
+  },
+  "origin": {
+    "title": "Before-After-Bridge",
+    "publication": "Direct-marketing copy framework"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 210,
+      "bottomY": 200,
+      "endY": 80,
+      "startLabel": "BEFORE",
+      "bottomLabel": "BRIDGE",
+      "endLabel": "AFTER",
+      "caption": "TWO SCENES AND THE WAY ACROSS"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "ARC-06",
+  "name": "In Medias Res",
+  "family": "Arc & Plot",
+  "axiom": "Open at the moment of highest consequence, then earn it with the backstory.",
+  "trigger": "Incident briefings and executive updates, where the audience's first question is how bad it is, not how it began.",
+  "steps": [
+    {
+      "text": "Cold open: the consequence, before its cause is known."
+    },
+    {
+      "text": "Rewind: trace how the situation was built."
+    },
+    {
+      "text": "Rebuild tension: let the audience see the mistake forming."
+    },
+    {
+      "text": "Return: reach the opening moment, now understood."
+    },
+    {
+      "text": "Resolution: settle what the cold open left hanging."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Opening mid-crisis and never returning to it, so the flash-forward reads as a dropped thread rather than a promise.",
+    "remediation": "The cold open is a debt. Name the moment it promises, and come back to it before the end."
+  },
+  "origin": {
+    "authors": [
+      "Horace"
+    ],
+    "year": -13,
+    "title": "Ars Poetica"
+  },
+  "figure": {
+    "svgShape": "rise-fall-pyramid",
+    "parametricParams": {
+      "peakX": 0.12,
+      "crises": 0,
+      "riseLabel": "COLD OPEN",
+      "fallLabel": "BACKSTORY",
+      "caption": "START AT THE CONSEQUENCE"
+    }
+  }
+}

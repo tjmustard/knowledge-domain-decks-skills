@@ -1,0 +1,46 @@
+{
+  "id": "COR-03",
+  "name": "Customer Success Trajectory",
+  "family": "Corporate & Technical",
+  "axiom": "A success story is a change in behaviour, measured after the friction.",
+  "trigger": "Customer advocacy decks and retention reviews, where the claim is that the customer now works differently.",
+  "steps": [
+    {
+      "text": "Legacy limbo: the workaround and its hidden cost."
+    },
+    {
+      "text": "Friction: the moment the old method stopped scaling."
+    },
+    {
+      "text": "Integration: what the customer changed."
+    },
+    {
+      "text": "Behaviour shift: the new routine, visible in their data."
+    },
+    {
+      "text": "Impact: the number that moved, with its baseline."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A quotation without a metric, which shows the customer is happy but not that anything about their work changed.",
+    "remediation": "Pair every quote with a before-and-after number. A trajectory with no baseline is a testimonial."
+  },
+  "origin": {
+    "authors": [
+      "Totango"
+    ],
+    "year": 2014,
+    "title": "Customer Success",
+    "publication": "Customer Success movement"
+  },
+  "figure": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 85,
+      "goalLabel": "IMPACT",
+      "startLabel": "LEGACY LIMBO",
+      "caption": "BEHAVIOUR FIRST, NUMBER SECOND"
+    }
+  }
+}

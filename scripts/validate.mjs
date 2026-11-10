@@ -112,12 +112,19 @@ if (argFiles.length > 0) {
 
 const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
+let total = 0;
 for (const deck of decks) {
   const { schema, schemaPath, check } = await schemaFor(deck);
   const cards = await loadCards(deck);
   if (decks.length > 1) console.log(`== ${deck.slug}`);
   if (!checkRecords(cards, check, schema, schemaPath, `decks/${deck.slug}/data/laws/*.json`)) {
     ok = false;
+  } else {
+    total += cards.length;
   }
+}
+// The last deck's line would otherwise be read as the whole run.
+if (ok && decks.length > 1) {
+  console.log(`OK: ${total} record(s) valid across ${decks.length} decks, each against its own schema.`);
 }
 process.exit(ok ? 0 : 1);

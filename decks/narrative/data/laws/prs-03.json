@@ -1,0 +1,48 @@
+{
+  "id": "PRS-03",
+  "name": "Duarte’s Sparkline",
+  "family": "Persuasion & Pitch",
+  "axiom": "Alternate what is with what could be until the audience prefers the second.",
+  "trigger": "Visionary keynotes and strategic realignments, where the case is a change of direction rather than a fix.",
+  "steps": [
+    {
+      "text": "What is: the current state, plainly."
+    },
+    {
+      "text": "What could be: the alternative, vividly."
+    },
+    {
+      "text": "Repeat: alternate the two, raising the contrast each turn."
+    },
+    {
+      "text": "New bliss: land on the future and stop there."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Spending the talk on the present and flashing the future in one closing slide, so the contrast never builds.",
+    "remediation": "Count the turns. A change of direction needs the future stated at least as often as the present."
+  },
+  "origin": {
+    "authors": [
+      "Nancy Duarte"
+    ],
+    "year": 2010,
+    "title": "Resonate",
+    "publication": "Harvard Business Review Press"
+  },
+  "figure": {
+    "svgShape": "sparkline",
+    "parametricParams": {
+      "points": [
+        2,
+        6,
+        3,
+        8,
+        4,
+        9
+      ],
+      "peakIndex": 5,
+      "caption": "WHAT IS, WHAT COULD BE, REPEATED"
+    }
+  }
+}

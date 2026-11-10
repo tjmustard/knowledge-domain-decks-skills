@@ -1,0 +1,43 @@
+{
+  "id": "COR-07",
+  "name": "Sunset & Deprecation Eulogy",
+  "family": "Corporate & Technical",
+  "axiom": "Retire a system by honouring what it did and dating its replacement.",
+  "trigger": "System retirement briefings and API deprecation notices, where users must migrate rather than stall.",
+  "steps": [
+    {
+      "text": "Legacy: what the service has carried, stated with respect."
+    },
+    {
+      "text": "Incompatibility: the specific capability it cannot gain."
+    },
+    {
+      "text": "Migration: the path, with owners and a date."
+    },
+    {
+      "text": "Decommission: what stops, and when it is safe to stop."
+    }
+  ],
+  "antiPattern": {
+    "violation": "An announcement that the system is old, with no migration path, which leaves every caller to invent their own schedule.",
+    "remediation": "Date the shutdown and publish the replacement route. Respect for the legacy buys the migration window."
+  },
+  "origin": {
+    "authors": [
+      "Gene Kim"
+    ],
+    "year": 2013,
+    "title": "The Phoenix Project",
+    "publication": "IT Revolution"
+  },
+  "figure": {
+    "svgShape": "decline-curve",
+    "parametricParams": {
+      "startY": 95,
+      "endY": 285,
+      "startLabel": "IN SERVICE",
+      "endLabel": "RETIRED",
+      "caption": "HONOUR IT, THEN DATE THE END"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "id": "ARC-11",
+  "name": "Oedipus Arc",
+  "family": "Arc & Plot",
+  "axiom": "The flaw was in the system from the start; revelation is what makes it collapse.",
+  "trigger": "Post-mortems of strategic miscalculations, where the audience needs to see that the cause predates the failure.",
+  "steps": [
+    {
+      "text": "Unrecognised flaw: the assumption everyone shares."
+    },
+    {
+      "text": "Temporary relief: the workaround that appears to solve it."
+    },
+    {
+      "text": "Revelation: the evidence that the assumption was false."
+    },
+    {
+      "text": "Systemic collapse: everything built on it fails together."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Naming a villain, which lets the audience conclude that removing one person would have averted the collapse.",
+    "remediation": "Trace the flaw to a decision the audience would also have made, then show what it was load-bearing for."
+  },
+  "origin": {
+    "authors": [
+      "Sophocles"
+    ],
+    "year": -429,
+    "title": "Oedipus Tyrannus"
+  },
+  "figure": {
+    "svgShape": "broken-ring",
+    "parametricParams": {
+      "caption": "THE LOOP FAILS AS ONE"
+    }
+  }
+}

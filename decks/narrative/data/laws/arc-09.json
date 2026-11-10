@@ -1,0 +1,43 @@
+{
+  "id": "ARC-09",
+  "name": "Icarus Narrative",
+  "family": "Arc & Plot",
+  "axiom": "Warn by showing the ascent that felt right, then the boundary it crossed.",
+  "trigger": "Technical-debt reviews, growth retrospectives, and any warning where the audience is proud of the thing being criticised.",
+  "steps": [
+    {
+      "text": "Premature optimism: the shortcut that looked like speed."
+    },
+    {
+      "text": "Rapid ascent: the results that made it look wise."
+    },
+    {
+      "text": "Boundary breach: the assumption that was never true."
+    },
+    {
+      "text": "Rapid descent: the cost, arriving faster than the gain did."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Delivering the warning from the ground, so the audience hears a lecture instead of recognising their own ascent.",
+    "remediation": "Let the rise be genuinely attractive before the fall. The warning lands when the audience remembers choosing it."
+  },
+  "origin": {
+    "authors": [
+      "Ovid"
+    ],
+    "year": 8,
+    "title": "Metamorphoses"
+  },
+  "figure": {
+    "svgShape": "rise-fall-pyramid",
+    "parametricParams": {
+      "peakX": 0.6,
+      "crises": 1,
+      "riseLabel": "ASCENT",
+      "fallLabel": "DESCENT",
+      "caption": "THE WAX WAS THE STRATEGY"
+    }
+  },
+  "prompt": "The boundary we are not checking is ______."
+}

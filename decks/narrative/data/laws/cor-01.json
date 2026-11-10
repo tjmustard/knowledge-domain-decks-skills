@@ -1,0 +1,49 @@
+{
+  "id": "COR-01",
+  "name": "Blameless Post-Mortem Arc",
+  "family": "Corporate & Technical",
+  "axiom": "Report the system that failed, never the person who was holding it.",
+  "trigger": "Production incident reviews and operational reporting, where the next incident must be cheaper than this one.",
+  "steps": [
+    {
+      "text": "Baseline: what normal operation looked like before."
+    },
+    {
+      "text": "Anomaly: the first signal, and when it was visible."
+    },
+    {
+      "text": "Cascade: how one failure reached the next."
+    },
+    {
+      "text": "Remediation: what stopped it, and how long it took."
+    },
+    {
+      "text": "Hardening: the change that makes this cascade impossible."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A timeline that names the engineer who ran the command, which teaches everyone to write careful timelines instead of honest ones.",
+    "remediation": "Name the condition that made the command look correct. The fix is in the system, not the person."
+  },
+  "origin": {
+    "authors": [
+      "John Allspaw"
+    ],
+    "year": 2012,
+    "title": "Blameless PostMortems and a Just Culture",
+    "publication": "Etsy Code as Craft"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 130,
+      "bottomY": 280,
+      "endY": 100,
+      "startLabel": "BASELINE",
+      "bottomLabel": "OUTAGE",
+      "endLabel": "HARDENED",
+      "caption": "THE FIX OUTLASTS THE INCIDENT"
+    }
+  },
+  "prompt": "The condition that made the wrong action look right was ______."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "ARC-02",
+  "name": "Hero’s Journey (Monomyth)",
+  "family": "Arc & Plot",
+  "axiom": "An audience follows a protagonist who leaves, is changed, and brings something back.",
+  "trigger": "Onboarding journeys, founder stories, and any change that is really someone leaving a familiar state and returning altered.",
+  "steps": [
+    {
+      "text": "Ordinary world: show what staying costs."
+    },
+    {
+      "text": "Threshold: name what must be left behind."
+    },
+    {
+      "text": "Ordeal: the deepest test, faced without the old tools."
+    },
+    {
+      "text": "Return: bring the change home where it can be seen."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A journey with no ordinary world, so the audience never learns what the protagonist gave up and the return lands as a shrug.",
+    "remediation": "Open on the cost of staying. The departure only means something against a life worth missing."
+  },
+  "origin": {
+    "authors": [
+      "Joseph Campbell"
+    ],
+    "year": 1949,
+    "title": "The Hero with a Thousand Faces",
+    "publication": "Bollingen Foundation"
+  },
+  "figure": {
+    "svgShape": "story-circle",
+    "parametricParams": {
+      "sectors": 8,
+      "startAngle": -90,
+      "labels": [
+        "ORDINARY",
+        "CALL",
+        "THRESHOLD",
+        "ORDEAL",
+        "REWARD",
+        "ROAD BACK",
+        "RETURN",
+        "CHANGE"
+      ],
+      "caption": "OUT AND BACK, ALTERED"
+    }
+  }
+}

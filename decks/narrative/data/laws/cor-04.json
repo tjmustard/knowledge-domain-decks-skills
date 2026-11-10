@@ -1,0 +1,54 @@
+{
+  "id": "COR-04",
+  "name": "Architectural Decision Record (ADR)",
+  "family": "Corporate & Technical",
+  "axiom": "Record the options you rejected; the decision will be re-litigated without them.",
+  "trigger": "Architecture council submissions and technical governance, where a later engineer will ask why this way.",
+  "steps": [
+    {
+      "text": "Title and status: what was decided and whether it holds."
+    },
+    {
+      "text": "Context: the constraints that made a choice necessary."
+    },
+    {
+      "text": "Options: each with its trade-off named."
+    },
+    {
+      "text": "Decision: the one chosen, and by whom."
+    },
+    {
+      "text": "Consequences: what it costs, and how it would be reversed."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A record that states the decision and omits the alternatives, so the next team treats it as arbitrary and reopens it.",
+    "remediation": "Name two rejected options with their reasons. The record is for the person who inherits it."
+  },
+  "origin": {
+    "authors": [
+      "Michael Nygard"
+    ],
+    "year": 2011,
+    "title": "Documenting Architecture Decisions",
+    "publication": "Cognitect"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        2,
+        2,
+        1
+      ],
+      "gap": 12,
+      "labels": [
+        "CONTEXT",
+        "OPTIONS",
+        "DECISION"
+      ],
+      "turn": false,
+      "caption": "THE REJECTED OPTIONS ARE THE RECORD"
+    }
+  }
+}

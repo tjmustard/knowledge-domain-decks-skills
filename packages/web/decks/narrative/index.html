@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Narrative Architecture — Knowledge Domain Decks</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Knowledge Domain Decks</p>
+    <h1>Narrative Architecture</h1>
+    <p class="lede" id="lede">{cards} story-structure patterns for pitches, briefings and case studies. Tap a card to flip it and read the beats and the fix.</p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+
+  <main>
+    <div class="deck" id="deck"></div>
+    <p class="empty" id="empty" hidden>No cards in this category.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated from <code>decks/narrative/data/laws/*.json</code>. Code MIT · data CC0-1.0.</p>
+  </footer>
+
+  <script>window.DECK_GLOBAL = "NARRATIVE_DECK"; window.DECK_ACCENTS = "NARRATIVE_DECK_ACCENTS"; window.DECK_FIELDS = {"group":"family","items":"steps","attribution":"origin","prompt":"prompt","labelPrompt":"Prompt","labelItems":"Structure","itemStyle":"steps","backHint":"Tap or press Enter to see the structure"};</script>
+  <script src="deck-data.js"></script>
+  <script src="accents.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>

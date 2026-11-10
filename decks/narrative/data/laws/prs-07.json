@@ -1,0 +1,47 @@
+{
+  "id": "PRS-07",
+  "name": "The Story Spine",
+  "family": "Persuasion & Pitch",
+  "axiom": "Five clauses turn a status update into a story with a cause and a consequence.",
+  "trigger": "Sixty-second pitches and investor teasers, where the whole story must fit in one breath.",
+  "steps": [
+    {
+      "text": "Once upon a time: the world as it was."
+    },
+    {
+      "text": "Every day: the routine that held it there."
+    },
+    {
+      "text": "One day: the disruption that changed the routine."
+    },
+    {
+      "text": "Because of that: the consequences, chained."
+    },
+    {
+      "text": "Until finally: where the chain arrives."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Filling the clauses with product features, so 'because of that' has no causal force and the spine collapses into a list.",
+    "remediation": "Each clause must be caused by the one before. If you can reorder them, it is not a spine."
+  },
+  "origin": {
+    "authors": [
+      "Emma Coats"
+    ],
+    "year": 2011,
+    "title": "Story Rules",
+    "publication": "Pixar"
+  },
+  "figure": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 80,
+      "goalLabel": "UNTIL FINALLY",
+      "startLabel": "ONCE UPON A TIME",
+      "caption": "FIVE CLAUSES, ONE CHAIN"
+    }
+  },
+  "prompt": "Once upon a time, ______. Every day, ______. One day, ______."
+}

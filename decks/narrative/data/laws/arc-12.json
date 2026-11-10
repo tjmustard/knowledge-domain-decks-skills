@@ -1,0 +1,45 @@
+{
+  "id": "ARC-12",
+  "name": "The Fichtean Curve",
+  "family": "Arc & Plot",
+  "axiom": "Skip the setup; let a series of escalating crises carry the audience up.",
+  "trigger": "High-volatility scaling narratives, change-management briefings, and talks where attention must be earned every minute.",
+  "steps": [
+    {
+      "text": "Setup: the minimum the audience needs to follow a crisis."
+    },
+    {
+      "text": "Crisis one: a small failure with a visible cost."
+    },
+    {
+      "text": "Crisis two: a larger failure that closes an option."
+    },
+    {
+      "text": "Crisis three: the failure that forces the real decision."
+    },
+    {
+      "text": "Climax: the choice made under the accumulated pressure."
+    },
+    {
+      "text": "Resolution: brief, and only what the climax changed."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Escalating the stakes without changing their kind, so the third crisis lands as the first one, louder.",
+    "remediation": "Each crisis should remove an option the previous one left open. Volume is not escalation."
+  },
+  "origin": {
+    "title": "The Fichtean Curve",
+    "publication": "Modern fiction craft, after Fichte"
+  },
+  "figure": {
+    "svgShape": "rise-fall-pyramid",
+    "parametricParams": {
+      "peakX": 0.78,
+      "crises": 3,
+      "riseLabel": "ESCALATION",
+      "fallLabel": "RESOLUTION",
+      "caption": "CRISES, THEN THE CLIMAX"
+    }
+  }
+}

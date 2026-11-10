@@ -1,0 +1,40 @@
+{
+  "id": "MIC-01",
+  "name": "The In Medias Res Hook",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Start inside the consequence; explanation can wait for attention.",
+  "trigger": "Slide one and the executive summary, where the reader may stop after the first line.",
+  "steps": [
+    {
+      "text": "Open on a consequence already in motion."
+    },
+    {
+      "text": "Withhold the cause for exactly one beat."
+    },
+    {
+      "text": "Rewind only as far as the cause."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A hook that promises drama the rest of the document does not pay off, which spends trust the first page cannot repay.",
+    "remediation": "Make the opening a moment the body explains. If the body cannot, the hook was decoration."
+  },
+  "origin": {
+    "authors": [
+      "Homer"
+    ],
+    "year": -750,
+    "title": "Iliad",
+    "publication": "Greek epic tradition"
+  },
+  "figure": {
+    "svgShape": "rise-fall-pyramid",
+    "parametricParams": {
+      "peakX": 0.1,
+      "crises": 0,
+      "riseLabel": "HOOK",
+      "fallLabel": "EXPLAIN",
+      "caption": "CONSEQUENCE FIRST"
+    }
+  }
+}

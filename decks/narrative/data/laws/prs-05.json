@@ -1,0 +1,39 @@
+{
+  "id": "PRS-05",
+  "name": "Problem-Agitation-Solution (PAS)",
+  "family": "Persuasion & Pitch",
+  "axiom": "A solution is only as valuable as the problem the audience has just felt.",
+  "trigger": "Executive summaries and sales cadences where the reader is already busy and already sceptical.",
+  "steps": [
+    {
+      "text": "Problem: name it in the reader's own vocabulary."
+    },
+    {
+      "text": "Agitation: show the cost of the problem continuing."
+    },
+    {
+      "text": "Solution: the specific mechanism that stops the cost."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Agitating with fear the reader does not share, which reads as manipulation and closes the door.",
+    "remediation": "Agitate with their numbers, not yours. The cost must be one they already recognise."
+  },
+  "origin": {
+    "title": "Problem-Agitation-Solution",
+    "publication": "Direct-response copywriting tradition"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 130,
+      "bottomY": 285,
+      "endY": 95,
+      "startLabel": "PROBLEM",
+      "bottomLabel": "COST",
+      "endLabel": "SOLUTION",
+      "caption": "NAME IT, PRICE IT, THEN FIX IT"
+    }
+  },
+  "prompt": "The cost of leaving our problem in place is ______ per ______."
+}

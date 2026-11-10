@@ -1,0 +1,47 @@
+{
+  "id": "PRS-02",
+  "name": "Monroe’s Motivated Sequence",
+  "family": "Persuasion & Pitch",
+  "axiom": "Attention is earned, need is argued, and action is asked for by name.",
+  "trigger": "Sales pitches and budget approvals, where the audience must leave with a specific next step.",
+  "steps": [
+    {
+      "text": "Attention: a fact or moment the audience cannot ignore."
+    },
+    {
+      "text": "Need: the problem that fact exposes, in their terms."
+    },
+    {
+      "text": "Satisfaction: the mechanism that resolves it."
+    },
+    {
+      "text": "Visualisation: what life looks like once it does."
+    },
+    {
+      "text": "Action: the exact step, owner and date."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Ending on a summary instead of an ask, so a convinced audience leaves with nothing specific to do.",
+    "remediation": "Write the ask first. If it has no owner and no date, the pitch has not finished."
+  },
+  "origin": {
+    "authors": [
+      "Alan H. Monroe"
+    ],
+    "year": 1935,
+    "title": "The Motivated Sequence",
+    "publication": "Purdue University"
+  },
+  "figure": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 90,
+      "goalLabel": "ACTION",
+      "startLabel": "ATTENTION",
+      "caption": "EVERY BEAT POINTS AT THE ASK"
+    }
+  },
+  "prompt": "The one action we want is ______, owned by ______."
+}

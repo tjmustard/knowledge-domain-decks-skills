@@ -1,0 +1,54 @@
+{
+  "id": "COR-02",
+  "name": "Product Vision Narrative",
+  "family": "Corporate & Technical",
+  "axiom": "Write the launch announcement before the product; if it is dull, stop.",
+  "trigger": "New product vetting and zero-to-one allocation, where the decision is whether the outcome is worth funding.",
+  "steps": [
+    {
+      "text": "Headline: the announcement, as the customer would read it."
+    },
+    {
+      "text": "Pain: the current workaround and what it costs."
+    },
+    {
+      "text": "Solution: the change in the customer's day."
+    },
+    {
+      "text": "Quote: a customer describing the benefit in their words."
+    },
+    {
+      "text": "FAQ: the hardest internal objection, answered."
+    }
+  ],
+  "antiPattern": {
+    "violation": "A press release written for the company instead of the customer, full of internal milestones the reader has no reason to care about.",
+    "remediation": "Write it in the customer's vocabulary and name what they can stop doing. The internal version is the FAQ."
+  },
+  "origin": {
+    "authors": [
+      "Jeff Bezos"
+    ],
+    "year": 2004,
+    "title": "Working Backwards",
+    "publication": "Amazon product practice"
+  },
+  "figure": {
+    "svgShape": "three-act-blocks",
+    "parametricParams": {
+      "weights": [
+        1,
+        2,
+        2
+      ],
+      "gap": 12,
+      "labels": [
+        "PAIN",
+        "CHANGE",
+        "PROOF"
+      ],
+      "turn": false,
+      "caption": "START FROM THE ANNOUNCEMENT"
+    }
+  }
+}

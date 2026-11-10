@@ -157,9 +157,16 @@ if (explicit) {
 
 const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
+let pages = 0;
 for (const deck of decks) {
   const pdfPath = resolveFromRoot(deck.outputs?.pdf || `packages/prepress/dist/${deck.slug}.pdf`);
   const expected = expectedOverride ?? (await loadCards(deck)).length * 2;
   if (!(await checkDeck(deck, pdfPath, expected))) ok = false;
+  else pages += expected;
+}
+// One line that covers every deck, so a summary cannot describe only the last
+// one it happened to check.
+if (ok && decks.length > 1) {
+  console.log(`OK: ${decks.length} decks, ${pages} pages, every MediaBox 216.00 x 360.00 pt (3.00 x 5.00 in).`);
 }
 process.exit(ok ? 0 : 1);

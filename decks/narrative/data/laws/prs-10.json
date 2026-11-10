@@ -1,0 +1,45 @@
+{
+  "id": "PRS-10",
+  "name": "Strategic Narrative Architecture",
+  "family": "Persuasion & Pitch",
+  "axiom": "Name a shift the audience already feels, then make them choose a side.",
+  "trigger": "Category creation and enterprise positioning, where the question is not which vendor but which future.",
+  "steps": [
+    {
+      "text": "Shift: the change in the world that makes the old way obsolete."
+    },
+    {
+      "text": "Winners and losers: what the shift rewards and punishes."
+    },
+    {
+      "text": "Promised land: the state the audience wants to reach."
+    },
+    {
+      "text": "Magic gifts: how this product is the way through."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Declaring a shift the audience has not felt, which sounds like marketing and invites them to argue with the premise instead of the offer.",
+    "remediation": "Start from evidence they already accept. The shift must be something they could have said themselves."
+  },
+  "origin": {
+    "authors": [
+      "Andy Raskin"
+    ],
+    "year": 2016,
+    "title": "The Greatest Sales Deck I've Ever Seen",
+    "publication": "Medium"
+  },
+  "figure": {
+    "svgShape": "fall-rise-curve",
+    "parametricParams": {
+      "startY": 120,
+      "bottomY": 250,
+      "endY": 80,
+      "startLabel": "OLD WAY",
+      "bottomLabel": "THE SHIFT",
+      "endLabel": "PROMISED LAND",
+      "caption": "THE SHIFT DOES THE SELLING"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "MIC-09",
+  "name": "Chekhov’s Gun",
+  "family": "Rhetorical Micro-tactic",
+  "axiom": "Plant the detail early that will decide the end, and do not point at it.",
+  "trigger": "Strategy narratives and technical differentiators foreshadowed before they matter.",
+  "steps": [
+    {
+      "text": "Place the detail where it looks incidental."
+    },
+    {
+      "text": "Leave it unremarked for most of the piece."
+    },
+    {
+      "text": "Let it decide the outcome, and name it only then."
+    }
+  ],
+  "antiPattern": {
+    "violation": "Planting a detail and then explaining it, which turns foreshadowing into a footnote and removes the payoff.",
+    "remediation": "Trust the return. If the reader must be reminded, the plant was too quiet or too late."
+  },
+  "origin": {
+    "authors": [
+      "Anton Chekhov"
+    ],
+    "year": 1889,
+    "title": "Letter to Aleksandr Semenovich Lazarev",
+    "publication": "Correspondence"
+  },
+  "figure": {
+    "svgShape": "promise-line",
+    "parametricParams": {
+      "caption": "PLANT, WAIT, PAY OFF"
+    }
+  }
+}

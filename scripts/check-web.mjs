@@ -17,7 +17,8 @@ import {
   deckArgs,
   listDeckSlugs,
   loadCards,
-  loadDeck
+  loadDeck,
+  deckShape
 } from "../packages/core/deck.mjs";
 
 // One deck per run: the smoke test drives a real browser session and one page.
@@ -35,6 +36,9 @@ if (!only && slugs.length > 1) {
     );
     if (child.status !== 0) ok = false;
   }
+  // A summary covering every deck, so the last deck's line is not read as the
+  // result of the whole run.
+  if (ok) console.log(`OK: ${slugs.length} decks at 390 px, every page without horizontal overflow.`);
   process.exit(ok ? 0 : 1);
 }
 const deckSlug = only ? only[0] : slugs[0];
@@ -59,8 +63,12 @@ if (!browser) {
 }
 
 const cards = await loadCards(deck);
+// The group key and the word on the verso both come from the deck, so this
+// test never has to know which deck it is pointed at.
+const shape = deckShape(deck);
 const categoryCounts = cards.reduce((counts, card) => {
-  counts[card.category] = (counts[card.category] || 0) + 1;
+  const group = shape.group(card);
+  counts[group] = (counts[group] || 0) + 1;
   return counts;
 }, {});
 // Use the largest category that still narrows the deck, so the filter has
@@ -69,8 +77,9 @@ const categoryCounts = cards.reduce((counts, card) => {
 const largest = Object.keys(categoryCounts)
   .filter((category) => categoryCounts[category] < cards.length)
   .sort((a, b) => categoryCounts[b] - categoryCounts[a]);
-const filterCategory = largest[0] || cards[0].category;
+const filterCategory = largest[0] || shape.group(cards[0]);
 const expectedInCategory = categoryCounts[filterCategory];
+const versoLabel = shape.labelCardItems.toUpperCase();
 
 const url = `file://${join(ROOT, "packages", "web", "decks", deckSlug, "index.html")}`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
@@ -217,7 +226,7 @@ try {
       flipped: card.classList.contains('is-flipped'),
       pressed: card.getAttribute('aria-pressed'),
       versoVisible: card.querySelector('.back').getAttribute('aria-hidden') === 'false',
-      versoHasChecklist: card.querySelector('.back').innerText.includes('OPERATIONAL CHECKLIST')
+      versoHasChecklist: card.querySelector('.back').innerText.includes(${JSON.stringify(versoLabel)})
     };
   })()`);
 
