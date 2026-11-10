@@ -787,9 +787,11 @@ MPA-06's and MPA-08's are each 46 characters and 248.4 units, clearing it by
 is anchored near an edge, and the sharpest case is `decline-curve`'s end label,
 centred at x=340: 22 characters (118.8 units) leave 0.59 units to the edge and
 23 overrun it by 2.10, measured by lengthening that label and rebuilding rather
-than by arithmetic. Re-running this harness moves EVEN SPLIT by about 0.13 pt,
-so the second decimal is resolution here for the same reason it is on page 25's
-overrun. These numbers describe the vendored face (§65), so they replace the
+than by arithmetic. The harness was an ad-hoc headless-Chrome page written for
+this change and is not committed, so these figures are a report of one run
+rather than a check a reader can re-run today. Re-running it, once a committed
+harness exists, moves EVEN SPLIT by about 0.13 pt, so the second decimal is
+resolution here for the same reason it is on page 25's overrun. These numbers describe the vendored face (§65), so they replace the
 Menlo figures this section first printed; a Menlo run of the same harness
 differs by up to 1.33 units at size 9, because the two faces report different
 ascent and descent to Chrome.
@@ -2466,8 +2468,11 @@ thing its reproducibility claim could not cover. The face is now pinned.
   exactly as they did without it, ux-laws among them at `9162117d...`. That is
   what lets §29 close its font caveat.
 - **Metrics.** The advance is 600/1000 em, 5.4 units at size 9. Label bounds and
-  the character bound are re-derived in §30; §27's three mark clearances are the
-  one set not re-taken.
+  the character bound are re-derived in §30, from a harness that is not
+  committed; §27's three mark clearances are the one set not re-taken.
+  `scripts/check-fit.mjs` cannot cover the side edges: its ink scan reads only
+  inside the safe columns, so a label overrunning the left or right edge is
+  invisible to it, and the measured character bound is the only side guard.
 
 What this does not cover: a browser rendering the SVGs without the face still
 falls back to its own monospace, so the web viewer's labels can differ in
