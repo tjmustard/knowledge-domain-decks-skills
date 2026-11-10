@@ -2835,22 +2835,28 @@
     var out = [];
 
     if (family === "ladder") {
-      // A ladder of `div` rungs; the filled rungs are how far the evidence
-      // reaches, and the marker sits on the rung the tactic occupies.
+      // `div` stacked bands, lowest confidence at the foot; the marked band is
+      // the tactic's confidence rank, shaded the way the strip shades its
+      // marked step. The two families then share one grammar: bands upright,
+      // boxes on their side. A marker centred on a rung hung half outside the
+      // frame at the top and bottom ranks and read as a rendering fault.
       var lx0 = 112;
       var lx1 = 288;
       var top = 76;
       var bottom = 328;
-      var step = div > 1 ? (bottom - top) / (div - 1) : 0;
-      out.push(line(lx0, top, lx0, bottom, 2.2, 0.7));
-      out.push(line(lx1, top, lx1, bottom, 2.2, 0.7));
+      var bandH = (bottom - top) / div;
       for (var li = 0; li < div; li++) {
-        var ly = div > 1 ? bottom - step * li : (top + bottom) / 2;
-        var filled = li < mark;
-        out.push(line(lx0, ly, lx1, ly, filled ? 2.6 : 1.3, filled ? 0.85 : 0.3));
+        var by = bottom - bandH * (li + 1);
+        var marked = li === Math.min(mark, div) - 1;
+        out.push(
+          rect(lx0, by, lx1 - lx0, bandH, {
+            width: marked ? 2.2 : 1.3,
+            opacity: marked ? 0.9 : 0.4,
+            fill: marked ? "currentColor" : "none",
+            fillOpacity: marked ? 0.14 : undefined
+          })
+        );
       }
-      var my = div > 1 ? bottom - step * (Math.min(mark, div) - 1) : (top + bottom) / 2;
-      out.push(circle((lx0 + lx1) / 2, my, 8, { width: 1.8, opacity: 0.9 }));
     } else if (family === "funnel") {
       // `div` stacked stages narrowing from wide to narrow; the stage where
       // the evidence is read is shaded, so the drawing is the path and the
