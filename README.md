@@ -50,7 +50,9 @@ card record, rerun the generators, and the PDF, the viewer bundle, and the rules
 all move together.
 
 The ruleset, the skill, the viewer bundle, and the PDF all regenerate
-byte-identically, so the same records always produce the same bytes. The print
+byte-identically, so the same records produce the same bytes on the same Typst
+version and font environment; [`DECISIONS.md`](./DECISIONS.md) §29 records what
+that leaves open. The print
 build pins `SOURCE_DATE_EPOCH`, the reproducible-builds convention, to
 2026-11-09T00:00:00Z: Typst reads it for `/ModDate` and derives the trailer `/ID`
 from it, so two builds of one commit are identical rather than differing by the
