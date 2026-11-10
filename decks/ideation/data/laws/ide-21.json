@@ -1,0 +1,33 @@
+{
+  "id": "IDE-21",
+  "sourceTacticNo": 21,
+  "name": "TRIZ Principle 10: Preliminary Action (Prior Action)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "List three sequential operations required to serve an incoming client request. Re-architect two of them to execute during idle background cycles before the user triggers the workflow.",
+  "sprintSize": 9,
+  "schematic": "Timing at position 5 of 16",
+  "mechanism": "Temporal proactive dispatch. Minimizes critical-path latency by performing resource-intensive operations in advance of requirement triggers.",
+  "questions": [
+    "What compute operations are running synchronously that could be executed hours in advance?",
+    "How can client environments be pre-warmed with executable assets prior to user interaction?",
+    "What data structures can be pre-compiled into immutable binary representations at build time?"
+  ],
+  "example": "Static Site Generation (SSG) with Edge Invalidation. Rather than rendering web applications on-demand via dynamic server-side template computation during an incoming HTTP request, the architecture pre-renders all pages into static HTML and JSON structures at build time, deploying them directly to edge storage buckets to achieve sub-millisecond Time to First Byte (TTFB).",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "timing",
+      "divisions": 16,
+      "mark": 5
+    }
+  }
+}

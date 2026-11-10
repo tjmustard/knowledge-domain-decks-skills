@@ -1,0 +1,33 @@
+{
+  "id": "IDE-18",
+  "sourceTacticNo": 18,
+  "name": "TRIZ Principle 1: Segmentation",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Identify the largest monolithic component in your architecture. Deconstruct it into twenty autonomous units. Specify the messaging protocol that governs their coordination.",
+  "sprintSize": 9,
+  "schematic": "Separation at position 2 of 16",
+  "mechanism": "Structural discretization. Counters functional continuity bias by decomposing an integrated monolithic entity into independent, modular segments.",
+  "questions": [
+    "How can this single point of contention be segmented into parallel processing streams?",
+    "What occurs if we segment this macro-payload into microscopic self-routing chunks?",
+    "How can a continuous, long-running database transaction be divided into idempotent sub-steps?"
+  ],
+  "example": "High-Throughput Database Partitioning. Resolving global lock contention in relational databases by implementing virtual horizontal partitioning and log segmentation (e.g., Apache Kafka partition topologies or CockroachDB range-based hash distributions), segmenting global locks into isolated, concurrent partition streams.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 2
+    }
+  }
+}

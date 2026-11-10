@@ -1,0 +1,33 @@
+{
+  "id": "IDE-19",
+  "sourceTacticNo": 19,
+  "name": "TRIZ Principle 2: Extraction / Taking Out",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Isolate the component that causes 90% of maintenance overhead, latency, or operational instability. Separate it completely from the core execution domain.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 3 of 16",
+  "mechanism": "Structural segregation. Isolates and extracts an interfering property or non-essential component from an object, preserving only its core functional elements.",
+  "questions": [
+    "What element of this architecture creates operational noise, and how can it be extracted?",
+    "What core utility is the user consuming, and can every auxiliary layer be extracted?",
+    "How can security and authorization checks be extracted outside the application execution loop?"
+  ],
+  "example": "TLS Termination & Edge Media Delivery. Extracting computationally intensive cryptographic TLS handshake operations and static file delivery from application server daemons to edge Content Delivery Networks (CDNs), freeing application threadpools to execute business logic exclusively.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 3
+    }
+  }
+}

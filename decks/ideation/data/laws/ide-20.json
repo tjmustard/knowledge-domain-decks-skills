@@ -1,0 +1,33 @@
+{
+  "id": "IDE-20",
+  "sourceTacticNo": 20,
+  "name": "TRIZ Principle 4: Asymmetry",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Identify a balanced, symmetric interaction (such as synchronous request-response communication). Make one side 100x larger, faster, or structurally distinct relative to the other.",
+  "sprintSize": 9,
+  "schematic": "Reflection at position 4 of 16",
+  "mechanism": "Symmetry-breaking reframing. Counters spatial and architectural uniformity biases by introducing deliberate asymmetry to satisfy conflicting operational demands.",
+  "questions": [
+    "Where does uniform architectural symmetry introduce operational inefficiency?",
+    "Why are read and write operations routed through identical schemas when their traffic ratios are asymmetric?",
+    "How can asymmetric data placement accelerate critical-path execution?"
+  ],
+  "example": "Command Query Responsibility Segregation (CQRS). Resolving contradictions between high-write transaction rates and complex analytical query throughput. By replacing symmetric schemas, writes flow into an append-only event store (optimized for sequential write speed), while reads query denormalized projections (optimized for read lookups).",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 4
+    }
+  }
+}

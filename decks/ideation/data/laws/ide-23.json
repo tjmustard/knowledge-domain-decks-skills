@@ -1,0 +1,33 @@
+{
+  "id": "IDE-23",
+  "sourceTacticNo": 23,
+  "name": "TRIZ Principle 15: Dynamicity / Dynamization",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Identify an immutable configuration setting, static schema, or fixed hardware limit. Make it continuously variable, adjusting in real time to dynamic environmental loads.",
+  "sprintSize": 9,
+  "schematic": "Scale shift at position 7 of 16",
+  "mechanism": "Structural fluidification. Overcomes mechanical rigidity bias by enabling static attributes to become adaptive and mutable in response to changing environments.",
+  "questions": [
+    "What static parameter in our infrastructure would unlock significant efficiency if made dynamically adaptive?",
+    "How can this data schema restructure itself based on the queries executed against it?",
+    "Can we decompose a static cluster footprint into transient, self-assembling compute nodes?"
+  ],
+  "example": "Autoscaling Reactive Microservice Fabrics. Replacing static bare-metal deployments with dynamic container orchestration (e.g., Kubernetes Horizontal Pod Autoscaler). Compute capacity, connection threadpools, and memory allocations expand and contract dynamically based on real-time CPU telemetry and queue depth.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "scale",
+      "divisions": 16,
+      "mark": 7
+    }
+  }
+}

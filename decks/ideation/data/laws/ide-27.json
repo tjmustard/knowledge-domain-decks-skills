@@ -1,0 +1,33 @@
+{
+  "id": "IDE-27",
+  "sourceTacticNo": 27,
+  "name": "TRIZ Principle 24: Intermediary / Mediator",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Identify two components locked in tight operational coupling or semantic conflict. Insert an intermediate entity that insulates each component from changes in the other.",
+  "sprintSize": 9,
+  "schematic": "Separation at position 11 of 16",
+  "mechanism": "Relational decoupling. Resolves friction between conflicting subsystems by introducing an intermediary to handle translation, buffer capacity, or load balancing.",
+  "questions": [
+    "What two components are locked in synchronous dependencies that can be decoupled via an asynchronous mediator?",
+    "How can an intermediate abstraction hide operational churn from end consumers?",
+    "Can an ephemeral mediator absorb the computational shock of volatile traffic spikes?"
+  ],
+  "example": "Decoupling Microservices via Message Brokers. Direct synchronous HTTP calls between microservices create cascading latency failures when downstream dependencies degrade. Introducing an event intermediary (such as an Apache Pulsar or RabbitMQ message broker) decouples the producer from consumer availability, isolating failures and providing buffer storage for bursty loads.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 11
+    }
+  }
+}

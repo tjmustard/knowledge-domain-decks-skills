@@ -1,0 +1,33 @@
+{
+  "id": "IDE-17",
+  "sourceTacticNo": 17,
+  "name": "Morphological Analysis (Fritz Zwicky)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Define three fundamental parameters along the vertical axis. Populate each with four orthogonal implementation variants. Randomly select one variant from each parameter to evaluate the resulting combination.",
+  "sprintSize": 9,
+  "schematic": "Recombination at position 1 of 16",
+  "mechanism": "Exhaustive combinatorial parameter mapping. Overcomes cognitive availability limits by constructing an N-dimensional parameter space (Zwicky Box) to identify unexamined structural topologies.",
+  "questions": [
+    "What unpopulated cell intersection in our morphological parameter matrix represents a viable product?",
+    "Which two parameters have we treated as coupled that are mathematically orthogonal?",
+    "What architectural permutation was dismissed years ago because supporting infrastructure was unavailable?"
+  ],
+  "example": "Energy Storage Technology Selection. Morphological Matrix: Parameters are Active Ion (Lithium, Sodium, Zinc), Electrolyte Phase (Liquid Organic, Solid Ceramic, Polymer Gel), and Separator Architecture (Microporous Polymer, Composite Membrane, Zero-Separator Flow). Crossing \"Sodium\" with \"Solid Ceramic\" and \"Zero-Separator Flow\" isolates high-safety, ambient-temperature stationary storage architectures free from cobalt and lithium supply-chain risks.",
+  "origin": {
+    "authors": [
+      "Fritz Zwicky"
+    ],
+    "year": 1969,
+    "title": "Discovery, Invention, Research Through the Morphological Approach",
+    "publication": "Macmillan",
+    "note": "Checked 2026-11-10 against the Yale catalogue (SCSB-233993) and the Science review (21 March 1969, 163:1317): Macmillan, New York, 1969."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 1
+    }
+  }
+}

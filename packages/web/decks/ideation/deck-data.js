@@ -573,6 +573,294 @@ window.IDEATION_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 317 148 L 335 200 L 353 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 317 252 L 335 200 L 353 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
+      "id": "IDE-17",
+      "sourceTacticNo": 17,
+      "name": "Morphological Analysis (Fritz Zwicky)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Define three fundamental parameters along the vertical axis. Populate each with four orthogonal implementation variants. Randomly select one variant from each parameter to evaluate the resulting combination.",
+      "sprintSize": 9,
+      "schematic": "Recombination at position 1 of 16",
+      "mechanism": "Exhaustive combinatorial parameter mapping. Overcomes cognitive availability limits by constructing an N-dimensional parameter space (Zwicky Box) to identify unexamined structural topologies.",
+      "questions": [
+        "What unpopulated cell intersection in our morphological parameter matrix represents a viable product?",
+        "Which two parameters have we treated as coupled that are mathematically orthogonal?",
+        "What architectural permutation was dismissed years ago because supporting infrastructure was unavailable?"
+      ],
+      "example": "Energy Storage Technology Selection. Morphological Matrix: Parameters are Active Ion (Lithium, Sodium, Zinc), Electrolyte Phase (Liquid Organic, Solid Ceramic, Polymer Gel), and Separator Architecture (Microporous Polymer, Composite Membrane, Zero-Separator Flow). Crossing \"Sodium\" with \"Solid Ceramic\" and \"Zero-Separator Flow\" isolates high-safety, ambient-temperature stationary storage architectures free from cobalt and lithium supply-chain risks.",
+      "origin": {
+        "authors": [
+          "Fritz Zwicky"
+        ],
+        "year": 1969,
+        "title": "Discovery, Invention, Research Through the Morphological Approach",
+        "publication": "Macmillan",
+        "note": "Checked 2026-11-10 against the Yale catalogue (SCSB-233993) and the Science review (21 March 1969, 163:1317): Macmillan, New York, 1969.",
+        "authorsLabel": "Fritz Zwicky",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "recombination",
+          "divisions": 16,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"65\" y1=\"112\" x2=\"65\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"112\" x2=\"83\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"112\" x2=\"101\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"112\" x2=\"119\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"112\" x2=\"137\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"112\" x2=\"155\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"112\" x2=\"173\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"112\" x2=\"191\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"112\" x2=\"209\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"112\" x2=\"227\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"112\" x2=\"245\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"112\" x2=\"263\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"112\" x2=\"281\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"112\" x2=\"299\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"112\" x2=\"317\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"112\" x2=\"335\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"112\" x2=\"65\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"112\" x2=\"83\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"112\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"288\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-18",
+      "sourceTacticNo": 18,
+      "name": "TRIZ Principle 1: Segmentation",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify the largest monolithic component in your architecture. Deconstruct it into twenty autonomous units. Specify the messaging protocol that governs their coordination.",
+      "sprintSize": 9,
+      "schematic": "Separation at position 2 of 16",
+      "mechanism": "Structural discretization. Counters functional continuity bias by decomposing an integrated monolithic entity into independent, modular segments.",
+      "questions": [
+        "How can this single point of contention be segmented into parallel processing streams?",
+        "What occurs if we segment this macro-payload into microscopic self-routing chunks?",
+        "How can a continuous, long-running database transaction be divided into idempotent sub-steps?"
+      ],
+      "example": "High-Throughput Database Partitioning. Resolving global lock contention in relational databases by implementing virtual horizontal partitioning and log segmentation (e.g., Apache Kafka partition topologies or CockroachDB range-based hash distributions), segmenting global locks into isolated, concurrent partition streams.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "separation",
+          "divisions": 16,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"75.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"75.2\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"94.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"113.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"132.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"152\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"171.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"190.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"209.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"228.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"248\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"267.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"286.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"305.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"324.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-19",
+      "sourceTacticNo": 19,
+      "name": "TRIZ Principle 2: Extraction / Taking Out",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Isolate the component that causes 90% of maintenance overhead, latency, or operational instability. Separate it completely from the core execution domain.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 3 of 16",
+      "mechanism": "Structural segregation. Isolates and extracts an interfering property or non-essential component from an object, preserving only its core functional elements.",
+      "questions": [
+        "What element of this architecture creates operational noise, and how can it be extracted?",
+        "What core utility is the user consuming, and can every auxiliary layer be extracted?",
+        "How can security and authorization checks be extracted outside the application execution loop?"
+      ],
+      "example": "TLS Termination & Edge Media Delivery. Extracting computationally intensive cryptographic TLS handshake operations and static file delivery from application server daemons to edge Content Delivery Networks (CDNs), freeing application threadpools to execute business logic exclusively.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 16,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"81\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"98\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"115\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"132\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"149\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"166\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"183\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"217\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"234\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"251\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"268\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"285\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"302\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"319\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-20",
+      "sourceTacticNo": 20,
+      "name": "TRIZ Principle 4: Asymmetry",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify a balanced, symmetric interaction (such as synchronous request-response communication). Make one side 100x larger, faster, or structurally distinct relative to the other.",
+      "sprintSize": 9,
+      "schematic": "Reflection at position 4 of 16",
+      "mechanism": "Symmetry-breaking reframing. Counters spatial and architectural uniformity biases by introducing deliberate asymmetry to satisfy conflicting operational demands.",
+      "questions": [
+        "Where does uniform architectural symmetry introduce operational inefficiency?",
+        "Why are read and write operations routed through identical schemas when their traffic ratios are asymmetric?",
+        "How can asymmetric data placement accelerate critical-path execution?"
+      ],
+      "example": "Command Query Responsibility Segregation (CQRS). Resolving contradictions between high-write transaction rates and complex analytical query throughput. By replacing symmetric schemas, writes flow into an append-only event store (optimized for sequential write speed), while reads query denormalized projections (optimized for read lookups).",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 16,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 101 148 L 119 200 L 137 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 101 252 L 119 200 L 137 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-21",
+      "sourceTacticNo": 21,
+      "name": "TRIZ Principle 10: Preliminary Action (Prior Action)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "List three sequential operations required to serve an incoming client request. Re-architect two of them to execute during idle background cycles before the user triggers the workflow.",
+      "sprintSize": 9,
+      "schematic": "Timing at position 5 of 16",
+      "mechanism": "Temporal proactive dispatch. Minimizes critical-path latency by performing resource-intensive operations in advance of requirement triggers.",
+      "questions": [
+        "What compute operations are running synchronously that could be executed hours in advance?",
+        "How can client environments be pre-warmed with executable assets prior to user interaction?",
+        "What data structures can be pre-compiled into immutable binary representations at build time?"
+      ],
+      "example": "Static Site Generation (SSG) with Edge Invalidation. Rather than rendering web applications on-demand via dynamic server-side template computation during an incoming HTTP request, the architecture pre-renders all pages into static HTML and JSON structures at build time, deploying them directly to edge storage buckets to achieve sub-millisecond Time to First Byte (TTFB).",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "timing",
+          "divisions": 16,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"240\" x2=\"352\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"235\" x2=\"65\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"235\" x2=\"83\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"235\" x2=\"101\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"235\" x2=\"119\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"240\" x2=\"137\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"158\" x2=\"137\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"150\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121\" y1=\"150\" x2=\"153\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"235\" x2=\"155\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"235\" x2=\"173\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"235\" x2=\"191\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"235\" x2=\"209\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"235\" x2=\"227\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"235\" x2=\"245\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"235\" x2=\"263\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"235\" x2=\"281\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"235\" x2=\"299\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"235\" x2=\"317\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"235\" x2=\"335\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-22",
+      "sourceTacticNo": 22,
+      "name": "TRIZ Principle 13: The Other Way Round (Inversion)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "If a process moves an object through an environment, make the environment move around a stationary object. If processing pulls data from storage, push instructions to the data.",
+      "sprintSize": 9,
+      "schematic": "Reflection at position 6 of 16",
+      "mechanism": "Directional kinematic and operational inversion. Reverses the direction of movement, environmental forces, or control flows to uncover latent solutions.",
+      "questions": [
+        "Instead of transporting massive datasets to a central compute cluster, how can compute be brought to the storage nodes?",
+        "Instead of training users to understand the software interface, how can the interface adapt to user behavior?",
+        "How can the problem condition itself serve as the verification metric for the solution?"
+      ],
+      "example": "Distributed In-Situ Computing (Apache Spark / Hadoop). Rather than moving petabytes of unstructured data across network backbones to central processing servers (saturating top-of-rack switches), invert the topology: serialize the compute instructions and dispatch them to execute locally on the storage nodes where the data blocks reside.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 16,
+          "mark": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 137 148 L 155 200 L 173 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 137 252 L 155 200 L 173 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-23",
+      "sourceTacticNo": 23,
+      "name": "TRIZ Principle 15: Dynamicity / Dynamization",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify an immutable configuration setting, static schema, or fixed hardware limit. Make it continuously variable, adjusting in real time to dynamic environmental loads.",
+      "sprintSize": 9,
+      "schematic": "Scale shift at position 7 of 16",
+      "mechanism": "Structural fluidification. Overcomes mechanical rigidity bias by enabling static attributes to become adaptive and mutable in response to changing environments.",
+      "questions": [
+        "What static parameter in our infrastructure would unlock significant efficiency if made dynamically adaptive?",
+        "How can this data schema restructure itself based on the queries executed against it?",
+        "Can we decompose a static cluster footprint into transient, self-assembling compute nodes?"
+      ],
+      "example": "Autoscaling Reactive Microservice Fabrics. Replacing static bare-metal deployments with dynamic container orchestration (e.g., Kubernetes Horizontal Pod Autoscaler). Compute capacity, connection threadpools, and memory allocations expand and contract dynamically based on real-time CPU telemetry and queue depth.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "scale",
+          "divisions": 16,
+          "mark": 7
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"178\" y=\"178\" width=\"44\" height=\"44\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"169.466667\" y=\"169.466667\" width=\"61.06666666666666\" height=\"61.06666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"160.933333\" y=\"160.933333\" width=\"78.13333333333333\" height=\"78.13333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.4\" y=\"152.4\" width=\"95.2\" height=\"95.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"143.866667\" y=\"143.866667\" width=\"112.26666666666667\" height=\"112.26666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"135.333333\" y=\"135.333333\" width=\"129.33333333333331\" height=\"129.33333333333331\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"126.8\" y=\"126.8\" width=\"146.4\" height=\"146.4\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.4\" fill-opacity=\"0.07\" vector-effect=\"non-scaling-stroke\"/><rect x=\"118.266667\" y=\"118.266667\" width=\"163.46666666666667\" height=\"163.46666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"109.733333\" y=\"109.733333\" width=\"180.53333333333333\" height=\"180.53333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"101.2\" y=\"101.2\" width=\"197.6\" height=\"197.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"92.666667\" y=\"92.666667\" width=\"214.66666666666666\" height=\"214.66666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"84.133333\" y=\"84.133333\" width=\"231.73333333333332\" height=\"231.73333333333332\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"75.6\" y=\"75.6\" width=\"248.8\" height=\"248.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"67.066667\" y=\"67.066667\" width=\"265.8666666666667\" height=\"265.8666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"58.533333\" y=\"58.533333\" width=\"282.93333333333334\" height=\"282.93333333333334\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"300\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-24",
+      "sourceTacticNo": 24,
+      "name": "TRIZ Principle 16: Partial or Excessive Action",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "When achieving an exact outcome requires prohibitive compute or capital costs, design a system that delivers either 120% (excessive) or 95% (probabilistic) of the outcome.",
+      "sprintSize": 9,
+      "schematic": "Scale shift at position 8 of 16",
+      "mechanism": "Precision boundary violation. Relieves cognitive traps that insist on 100% precision by overshooting or undershooting operational targets to simplify system complexity.",
+      "questions": [
+        "Where is the pursuit of 100% precision driving non-linear architectural complexity?",
+        "If a 1% error margin is acceptable, how much compute overhead can be eliminated?",
+        "Can we broadcast redundant work and terminate execution upon the first successful response?"
+      ],
+      "example": "Probabilistic Data Structures (HyperLogLog & Bloom Filters). Rather than executing precise deduplication on multi-billion-item datasets using memory-intensive hash tables, deploy HyperLogLog algorithms to estimate distinct cardinalities within a 1% error bound using kilobytes of memory, reducing compute footprints by 99%.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "scale",
+          "divisions": 16,
+          "mark": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"178\" y=\"178\" width=\"44\" height=\"44\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"169.466667\" y=\"169.466667\" width=\"61.06666666666666\" height=\"61.06666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"160.933333\" y=\"160.933333\" width=\"78.13333333333333\" height=\"78.13333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.4\" y=\"152.4\" width=\"95.2\" height=\"95.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"143.866667\" y=\"143.866667\" width=\"112.26666666666667\" height=\"112.26666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"135.333333\" y=\"135.333333\" width=\"129.33333333333331\" height=\"129.33333333333331\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"126.8\" y=\"126.8\" width=\"146.4\" height=\"146.4\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"118.266667\" y=\"118.266667\" width=\"163.46666666666667\" height=\"163.46666666666667\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.4\" fill-opacity=\"0.07\" vector-effect=\"non-scaling-stroke\"/><rect x=\"109.733333\" y=\"109.733333\" width=\"180.53333333333333\" height=\"180.53333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"101.2\" y=\"101.2\" width=\"197.6\" height=\"197.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"92.666667\" y=\"92.666667\" width=\"214.66666666666666\" height=\"214.66666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"84.133333\" y=\"84.133333\" width=\"231.73333333333332\" height=\"231.73333333333332\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"75.6\" y=\"75.6\" width=\"248.8\" height=\"248.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"67.066667\" y=\"67.066667\" width=\"265.8666666666667\" height=\"265.8666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"58.533333\" y=\"58.533333\" width=\"282.93333333333334\" height=\"282.93333333333334\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"300\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "IDE-25",
       "sourceTacticNo": 25,
       "name": "TRIZ Principle 19: Periodic Action",
@@ -607,6 +895,222 @@ window.IDEATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"240\" x2=\"352\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"235\" x2=\"65\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"235\" x2=\"83\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"235\" x2=\"101\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"235\" x2=\"119\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"235\" x2=\"137\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"235\" x2=\"155\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"235\" x2=\"173\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"235\" x2=\"191\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"240\" x2=\"209\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"158\" x2=\"209\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"150\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"193\" y1=\"150\" x2=\"225\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"235\" x2=\"227\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"235\" x2=\"245\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"235\" x2=\"263\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"235\" x2=\"281\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"235\" x2=\"299\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"235\" x2=\"317\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"235\" x2=\"335\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-26",
+      "sourceTacticNo": 26,
+      "name": "TRIZ Principle 22: \"Blessing in Disguise\" (Convert Harm to Benefit)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Document the most damaging vulnerability, bug, or operational cost in your system. Formulate two designs where this exact harmful phenomenon powers a useful secondary process.",
+      "sprintSize": 9,
+      "schematic": "Reflection at position 10 of 16",
+      "mechanism": "Evaluative reframing of negative externalities. Repositions systemic hazards, waste energy, or malicious inputs as functional operating assets.",
+      "questions": [
+        "How can malicious actions by an adversary be converted into defensive strength?",
+        "How can memory overhead or latency jitter be harnessed as a source of cryptographic entropy?",
+        "What computational waste product can serve as a training signal for system optimization?"
+      ],
+      "example": "DDoS Mitigation via Proof-of-Work Challenges. Converting an attacker's volumetric traffic into an economic compute barrier: when malicious HTTP floods strike ingress gateways, the server responds with client-side mathematical puzzles (Proof-of-Work scripts). The attacker's CPU resources are consumed solving the challenges, making volumetric abuse economically unsustainable.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 16,
+          "mark": 10
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 209 148 L 227 200 L 245 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 209 252 L 227 200 L 245 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-27",
+      "sourceTacticNo": 27,
+      "name": "TRIZ Principle 24: Intermediary / Mediator",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify two components locked in tight operational coupling or semantic conflict. Insert an intermediate entity that insulates each component from changes in the other.",
+      "sprintSize": 9,
+      "schematic": "Separation at position 11 of 16",
+      "mechanism": "Relational decoupling. Resolves friction between conflicting subsystems by introducing an intermediary to handle translation, buffer capacity, or load balancing.",
+      "questions": [
+        "What two components are locked in synchronous dependencies that can be decoupled via an asynchronous mediator?",
+        "How can an intermediate abstraction hide operational churn from end consumers?",
+        "Can an ephemeral mediator absorb the computational shock of volatile traffic spikes?"
+      ],
+      "example": "Decoupling Microservices via Message Brokers. Direct synchronous HTTP calls between microservices create cascading latency failures when downstream dependencies degrade. Introducing an event intermediary (such as an Apache Pulsar or RabbitMQ message broker) decouples the producer from consumer availability, isolating failures and providing buffer storage for bursty loads.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "separation",
+          "divisions": 16,
+          "mark": 11
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"75.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"94.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"113.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"132.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"152\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"171.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"190.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"209.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"228.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"248\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"248\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"267.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"286.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"305.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"324.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-28",
+      "sourceTacticNo": 28,
+      "name": "TRIZ Principle 25: Self-Service",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "List three operational maintenance tasks performed by engineering personnel. Redesign the architecture so that these tasks trigger and resolve automatically through closed-loop diagnostics.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 12 of 16",
+      "mechanism": "Endogenous autonomy. Eliminates external maintenance dependencies by engineering a system to service, heal, or organize itself using ambient internal resources.",
+      "questions": [
+        "How can the system detect internal state corruption and execute self-restoration without human intervention?",
+        "What ambient resources exist within the execution runtime to support self-tuning configurations?",
+        "How can regular user interactions drive background maintenance tasks?"
+      ],
+      "example": "Self-Healing Infrastructure via Declarative Control Loops. Rather than relying on site reliability engineers (SREs) to monitor node health and restart crashed services manually, deploy continuous declarative reconciliation control loops. When a health check probe fails, the cluster controller terminates the faulty container, provisions an identical replica, and updates routing proxies autonomously.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 16,
+          "mark": 12
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"81\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"98\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"115\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"132\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"149\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"166\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"183\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"217\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"234\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"251\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"268\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"285\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"302\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"319\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-29",
+      "sourceTacticNo": 29,
+      "name": "TRIZ Principle 28: Mechanics Substitution (Field Interaction)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify a mechanical or heavy software mechanism (e.g., disk locks, polling checks, physical cards). Replace it with an intangible energetic field, signal, or logical relation.",
+      "sprintSize": 9,
+      "schematic": "Substitution at position 13 of 16",
+      "mechanism": "Physical paradigm transcendence. Counters mechanical fixedness by replacing physical or mechanical mechanisms with electromagnetic, optical, acoustic, or digital interactions.",
+      "questions": [
+        "What hardware mechanism can be converted into software-defined infrastructure?",
+        "How can contact-based verification be replaced with ambient field sensing?",
+        "What mechanical barrier can be replaced by an electromagnetic or optical control interface?"
+      ],
+      "example": "Physical Access & Authentication Systems. Replacing physical magnetic stripe credit cards, copper contact chips, and mechanical key-turn deadbolts with Near Field Communication (NFC) electromagnetic fields and Ultra-Wideband (UWB) spatial ranging. Transactions and cryptographic authentication complete over the air through secure enclave token exchange without physical contact or mechanical wear.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "substitution",
+          "divisions": 16,
+          "mark": 13
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"159\" y=\"63.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"80.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"97.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"114.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"131.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"148.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"165.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"182.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"199.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"216.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"233.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"250.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"267.5\" width=\"18\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"276.5\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"276.5\" x2=\"218\" y2=\"276.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"284.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"301.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"318.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-30",
+      "sourceTacticNo": 30,
+      "name": "TRIZ Principle 35: Parameter Changes",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Identify an immutable baseline state in your architecture (e.g., in-memory, synchronous, single-threaded). Change its state parameter to its opposite or fluid phase.",
+      "sprintSize": 9,
+      "schematic": "Scale shift at position 14 of 16",
+      "mechanism": "Aggregate state transformation. Discloses latent operational paths by altering the physical state, degree of flexibility, temperature, pressure, or core structural properties of an element.",
+      "questions": [
+        "What occurs if this in-memory operational state is transformed into an immutable, append-only disk sequence?",
+        "How does altering operating temperature or clock voltages unlock hidden hardware capacity?",
+        "Can a static configuration file be converted into an interpreted runtime script?"
+      ],
+      "example": "LSM-Tree Storage Engines (RocksDB/Cassandra). Traditional relational databases update data structures in place on disk via B-Trees, suffering random write I/O bottlenecks. Changing the state parameter: incoming mutations are treated as a liquid, sequential memory append (MemTable), then flushed to disk as immutable, sorted string tables (SSTables), converting random I/O into sequential writes.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "scale",
+          "divisions": 16,
+          "mark": 14
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"178\" y=\"178\" width=\"44\" height=\"44\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"169.466667\" y=\"169.466667\" width=\"61.06666666666666\" height=\"61.06666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"160.933333\" y=\"160.933333\" width=\"78.13333333333333\" height=\"78.13333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.4\" y=\"152.4\" width=\"95.2\" height=\"95.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"143.866667\" y=\"143.866667\" width=\"112.26666666666667\" height=\"112.26666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"135.333333\" y=\"135.333333\" width=\"129.33333333333331\" height=\"129.33333333333331\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"126.8\" y=\"126.8\" width=\"146.4\" height=\"146.4\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"118.266667\" y=\"118.266667\" width=\"163.46666666666667\" height=\"163.46666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"109.733333\" y=\"109.733333\" width=\"180.53333333333333\" height=\"180.53333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"101.2\" y=\"101.2\" width=\"197.6\" height=\"197.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"92.666667\" y=\"92.666667\" width=\"214.66666666666666\" height=\"214.66666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"84.133333\" y=\"84.133333\" width=\"231.73333333333332\" height=\"231.73333333333332\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"75.6\" y=\"75.6\" width=\"248.8\" height=\"248.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"67.066667\" y=\"67.066667\" width=\"265.8666666666667\" height=\"265.8666666666667\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.4\" fill-opacity=\"0.07\" vector-effect=\"non-scaling-stroke\"/><rect x=\"58.533333\" y=\"58.533333\" width=\"282.93333333333334\" height=\"282.93333333333334\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"300\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-31",
+      "sourceTacticNo": 31,
+      "name": "TRIZ Ideal Final Result (IFR) & Trimming",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "sprint": "Formulate the IFR statement: \"The system delivers [Core Function] without [System Mechanism] existing at all.\" Trim away the two largest auxiliary subsystems and reassign their functions to ambient resources.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 15 of 16",
+      "mechanism": "Radical teleological reduction. Directs focus entirely on functional utility while methodically removing auxiliary, supporting, and redundant components from the architectural footprint.",
+      "questions": [
+        "How can the system achieve its fundamental primary utility with zero code, zero hardware, and zero operating cost?",
+        "Which components can be trimmed away, leaving their functional responsibilities to be absorbed by adjacent subsystems?",
+        "What would the Ideal Final Result look like if the client's problem solved itself before entering our pipeline?"
+      ],
+      "example": "Serverless Edge Compute Trimming. Traditional web architectures maintain fleets of dedicated virtual machines running Linux OS kernels, monitoring daemons, and web servers to host simple business APIs. Applying IFR Trimming: trim the operating system and container layers entirely. Run code directly on bare V8 WebAssembly isolates at edge nodes, where compute initializes in sub-millisecond windows only when an HTTP request arrives, consuming zero idle memory.",
+      "origin": {
+        "authors": [
+          "Genrikh S. Altshuller"
+        ],
+        "year": 1984,
+        "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+        "publication": "Gordon and Breach",
+        "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams.",
+        "authorsLabel": "Genrikh S. Altshuller",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 16,
+          "mark": 15
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"81\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"98\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"115\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"132\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"149\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"166\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"183\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"217\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"234\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"251\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"268\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"285\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"302\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"319\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
       "id": "IDE-32",

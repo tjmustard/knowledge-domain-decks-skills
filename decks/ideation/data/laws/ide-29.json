@@ -1,0 +1,33 @@
+{
+  "id": "IDE-29",
+  "sourceTacticNo": 29,
+  "name": "TRIZ Principle 28: Mechanics Substitution (Field Interaction)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Identify a mechanical or heavy software mechanism (e.g., disk locks, polling checks, physical cards). Replace it with an intangible energetic field, signal, or logical relation.",
+  "sprintSize": 9,
+  "schematic": "Substitution at position 13 of 16",
+  "mechanism": "Physical paradigm transcendence. Counters mechanical fixedness by replacing physical or mechanical mechanisms with electromagnetic, optical, acoustic, or digital interactions.",
+  "questions": [
+    "What hardware mechanism can be converted into software-defined infrastructure?",
+    "How can contact-based verification be replaced with ambient field sensing?",
+    "What mechanical barrier can be replaced by an electromagnetic or optical control interface?"
+  ],
+  "example": "Physical Access & Authentication Systems. Replacing physical magnetic stripe credit cards, copper contact chips, and mechanical key-turn deadbolts with Near Field Communication (NFC) electromagnetic fields and Ultra-Wideband (UWB) spatial ranging. Transactions and cryptographic authentication complete over the air through secure enclave token exchange without physical contact or mechanical wear.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "substitution",
+      "divisions": 16,
+      "mark": 13
+    }
+  }
+}

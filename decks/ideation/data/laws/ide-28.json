@@ -1,0 +1,33 @@
+{
+  "id": "IDE-28",
+  "sourceTacticNo": 28,
+  "name": "TRIZ Principle 25: Self-Service",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "List three operational maintenance tasks performed by engineering personnel. Redesign the architecture so that these tasks trigger and resolve automatically through closed-loop diagnostics.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 12 of 16",
+  "mechanism": "Endogenous autonomy. Eliminates external maintenance dependencies by engineering a system to service, heal, or organize itself using ambient internal resources.",
+  "questions": [
+    "How can the system detect internal state corruption and execute self-restoration without human intervention?",
+    "What ambient resources exist within the execution runtime to support self-tuning configurations?",
+    "How can regular user interactions drive background maintenance tasks?"
+  ],
+  "example": "Self-Healing Infrastructure via Declarative Control Loops. Rather than relying on site reliability engineers (SREs) to monitor node health and restart crashed services manually, deploy continuous declarative reconciliation control loops. When a health check probe fails, the cluster controller terminates the faulty container, provisions an identical replica, and updates routing proxies autonomously.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 12
+    }
+  }
+}

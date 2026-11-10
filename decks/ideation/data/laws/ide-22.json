@@ -1,0 +1,33 @@
+{
+  "id": "IDE-22",
+  "sourceTacticNo": 22,
+  "name": "TRIZ Principle 13: The Other Way Round (Inversion)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "If a process moves an object through an environment, make the environment move around a stationary object. If processing pulls data from storage, push instructions to the data.",
+  "sprintSize": 9,
+  "schematic": "Reflection at position 6 of 16",
+  "mechanism": "Directional kinematic and operational inversion. Reverses the direction of movement, environmental forces, or control flows to uncover latent solutions.",
+  "questions": [
+    "Instead of transporting massive datasets to a central compute cluster, how can compute be brought to the storage nodes?",
+    "Instead of training users to understand the software interface, how can the interface adapt to user behavior?",
+    "How can the problem condition itself serve as the verification metric for the solution?"
+  ],
+  "example": "Distributed In-Situ Computing (Apache Spark / Hadoop). Rather than moving petabytes of unstructured data across network backbones to central processing servers (saturating top-of-rack switches), invert the topology: serialize the compute instructions and dispatch them to execute locally on the storage nodes where the data blocks reside.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 6
+    }
+  }
+}

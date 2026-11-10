@@ -1,0 +1,33 @@
+{
+  "id": "IDE-31",
+  "sourceTacticNo": 31,
+  "name": "TRIZ Ideal Final Result (IFR) & Trimming",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Formulate the IFR statement: \"The system delivers [Core Function] without [System Mechanism] existing at all.\" Trim away the two largest auxiliary subsystems and reassign their functions to ambient resources.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 15 of 16",
+  "mechanism": "Radical teleological reduction. Directs focus entirely on functional utility while methodically removing auxiliary, supporting, and redundant components from the architectural footprint.",
+  "questions": [
+    "How can the system achieve its fundamental primary utility with zero code, zero hardware, and zero operating cost?",
+    "Which components can be trimmed away, leaving their functional responsibilities to be absorbed by adjacent subsystems?",
+    "What would the Ideal Final Result look like if the client's problem solved itself before entering our pipeline?"
+  ],
+  "example": "Serverless Edge Compute Trimming. Traditional web architectures maintain fleets of dedicated virtual machines running Linux OS kernels, monitoring daemons, and web servers to host simple business APIs. Applying IFR Trimming: trim the operating system and container layers entirely. Run code directly on bare V8 WebAssembly isolates at edge nodes, where compute initializes in sub-millisecond windows only when an HTTP request arrives, consuming zero idle memory.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 15
+    }
+  }
+}

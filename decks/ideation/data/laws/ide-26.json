@@ -1,0 +1,33 @@
+{
+  "id": "IDE-26",
+  "sourceTacticNo": 26,
+  "name": "TRIZ Principle 22: \"Blessing in Disguise\" (Convert Harm to Benefit)",
+  "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+  "sprint": "Document the most damaging vulnerability, bug, or operational cost in your system. Formulate two designs where this exact harmful phenomenon powers a useful secondary process.",
+  "sprintSize": 9,
+  "schematic": "Reflection at position 10 of 16",
+  "mechanism": "Evaluative reframing of negative externalities. Repositions systemic hazards, waste energy, or malicious inputs as functional operating assets.",
+  "questions": [
+    "How can malicious actions by an adversary be converted into defensive strength?",
+    "How can memory overhead or latency jitter be harnessed as a source of cryptographic entropy?",
+    "What computational waste product can serve as a training signal for system optimization?"
+  ],
+  "example": "DDoS Mitigation via Proof-of-Work Challenges. Converting an attacker's volumetric traffic into an economic compute barrier: when malicious HTTP floods strike ingress gateways, the server responds with client-side mathematical puzzles (Proof-of-Work scripts). The attacker's CPU resources are consumed solving the challenges, making volumetric abuse economically unsustainable.",
+  "origin": {
+    "authors": [
+      "Genrikh S. Altshuller"
+    ],
+    "year": 1984,
+    "title": "Creativity as an Exact Science: The Theory of the Solution of Inventive Problems",
+    "publication": "Gordon and Breach",
+    "note": "Checked 2026-11-10 against the ECU library catalogue (record 248440) and the CERN record 450367: Gordon and Breach, 1984, translated by Anthony Williams."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 10
+    }
+  }
+}
