@@ -151,3 +151,65 @@ differ deliberately rather than by omission.
 What would change this: a colour press run, which the source specification's
 CMYK/FOGRA39 workflow anticipates. At that point the diagrams take the category
 hue, drawn from one accent source rather than three.
+
+## 12. Tesler's Law cites Saffer, because Tesler has no paper
+
+The source list attributes Tesler's Law to "Larry Tesler (c. 1984), personal
+communication; formalized by Dan Saffer (2007), *Designing for Interaction*".
+A personal communication has no authors, year, title, or venue that a card's
+`academicOrigin` can carry, and inventing one would be a fabricated citation.
+
+`DEC-03` is named **Tesler's Law** and cites Saffer (2007), *Designing for
+Interaction*, New Riders, first edition. The card name follows the law's common
+name; the citation follows what can be verified. Tesler's 1984 conversation is
+recorded here rather than on the card.
+
+The year needed checking rather than copying. The first edition was released on
+18 July 2006 and carries a 2007 copyright date; the British National
+Bibliography and the Internet Archive both catalogue it as 2007. The card prints
+2007 and says "first edition", so a reader who finds a 2006 release date is not
+misled about which book is meant.
+
+## 13. Cognitive Friction cites a trade book
+
+The one-primary-source rule prefers canonical academic papers or peer-reviewed
+HCI literature. `DEC-06` cites Cooper (1999), *The Inmates Are Running the
+Asylum*, Sams Publishing, which is a trade book.
+
+It is kept because Cooper coined the construct there. There is no peer-reviewed
+paper that defines "cognitive friction" as a named idea waiting to be cited
+instead; substituting a paper that merely overlaps would cite the wrong origin
+to satisfy the look of rigour. The card cites the book that named the thing.
+
+## 14. Miller's Law and Working Memory Capacity ship as two cards
+
+The source list carries law 24, Miller's Law (7 ± 2 chunks), and law 28,
+Working Memory Capacity Model (about 4 chunks). Both describe working memory
+capacity, and the shipped `DEC-02` already states the 7 ± 2 claim, so a second
+card risks restating it with a different number.
+
+That risk was put to the project owner, who decided against the lead's
+recommendation to drop the second card: the deck ships 54 cards, and `DEC-06`
+carries Cowan's revision. **The decision is the owner's, made with the
+duplication stated plainly; this entry is the mitigation, not a defence of the
+outcome.**
+
+The two cards are given different jobs:
+
+- `DEC-02` keeps Miller: the historical 7 ± 2 figure, chunking as a technique,
+  and the interface moves that follow from chunking — group digits, phase the
+  form, cap the overview.
+- `DEC-06` carries Cowan (2001), "The Magical Number 4 in Short-Term Memory",
+  *Behavioral and Brain Sciences*, 24(1), 87-114: the revision to about four
+  chunks of novel information in active operational memory, why 7 ± 2 overstates
+  what a person can hold while executing a task, and the opposite consequence —
+  do not chunk harder, take the burden out of memory entirely, with persistent
+  context, sticky headers, visible prior-step values, and copy affordances.
+
+The source list merges two papers in law 28's attribution, Baddeley & Hitch
+(1974) and Cowan (2001). Under the one-primary-source rule `DEC-06` cites Cowan
+alone, because Cowan carries the four-chunk revision that the card is about;
+Baddeley & Hitch are recorded here and appear in no deck field.
+
+If the two cards ever read as one claim, the honest repair is to fold them into
+`DEC-02`, not to keep a paraphrase in the deck.
