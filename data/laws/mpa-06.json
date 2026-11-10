@@ -1,0 +1,35 @@
+{
+  "id": "MPA-06",
+  "name": "Selective Attention and Attentional Bottleneck",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Attention selects one channel and filters the rest before meaning is extracted.",
+  "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
+  "checklist": [
+    "Route interruptions to one channel instead of stacking toasts and modals.",
+    "Do not put two demands in the same moment; queue the second.",
+    "Keep a missed request recoverable where the person will look for it."
+  ],
+  "antiPattern": {
+    "violation": "A toast, a modal, and a banner ask for attention at once.",
+    "remediation": "One request at a time, queued in a place the person can revisit."
+  },
+  "graphicMetaphor": {
+    "svgShape": "filter-gate",
+    "parametricParams": {
+      "channels": 3,
+      "gateX": 210,
+      "passIndex": 1,
+      "inputLabel": "INPUTS",
+      "gateLabel": "FILTER",
+      "outputLabel": "ATTENDED",
+      "caption": "ONE CHANNEL PASSES; THE REST ARE FILTERED"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Donald E. Broadbent"],
+    "year": 1958,
+    "title": "Perception and Communication",
+    "publication": "Pergamon Press, London",
+    "doi": "10.1037/10037-000"
+  }
+}

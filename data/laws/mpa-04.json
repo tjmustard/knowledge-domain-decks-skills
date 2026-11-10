@@ -1,0 +1,35 @@
+{
+  "id": "MPA-04",
+  "name": "Peak-End Rule",
+  "category": "Memory, Perception & Attention",
+  "axiom": "An experience is remembered by its peak and its ending, not its average.",
+  "trigger": "A smooth session is rated harshly because its last screen failed.",
+  "checklist": [
+    "End every flow on a clear confirmation that names what happens next.",
+    "Soften the most intense step: the peak sets the rating more than the middle.",
+    "Do not spend effort smoothing a middle the ending will overwrite."
+  ],
+  "antiPattern": {
+    "violation": "A fast checkout ends on a paywall error, so the whole flow is remembered as bad.",
+    "remediation": "The last screen thanks the person and confirms the order."
+  },
+  "graphicMetaphor": {
+    "svgShape": "peak-end-curve",
+    "parametricParams": {
+      "startY": 240,
+      "peakX": 230,
+      "peakY": 90,
+      "endY": 140,
+      "peakLabel": "PEAK",
+      "endLabel": "END",
+      "caption": "MEMORY FOLLOWS THE PEAK AND THE END"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Daniel Kahneman", "Barbara L. Fredrickson", "Charles A. Schreiber", "Donald A. Redelmeier"],
+    "year": 1993,
+    "title": "When More Pain Is Preferred to Less: Adding a Better End",
+    "publication": "Psychological Science, 4(6), 401-405",
+    "doi": "10.1111/j.1467-9280.1993.tb00589.x"
+  }
+}

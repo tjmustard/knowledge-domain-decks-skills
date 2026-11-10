@@ -1,0 +1,66 @@
+{
+  "id": "MPA-07",
+  "name": "Confirmation Bias",
+  "category": "Memory, Perception & Attention",
+  "axiom": "People seek and weight evidence that confirms what they already believe.",
+  "trigger": "A dashboard shows only the runs that support the current plan.",
+  "checklist": [
+    "Show disconfirming results at the same prominence as confirming ones.",
+    "Ask what evidence would change the decision before the test runs.",
+    "Record every run, including the ones that refute the hypothesis."
+  ],
+  "antiPattern": {
+    "violation": "Only successful test runs are shown, so a failing design looks proven.",
+    "remediation": "Report all runs, with refutations beside the successes."
+  },
+  "graphicMetaphor": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 100,
+      "rows": [
+        {
+          "label": "EVIDENCE SOUGHT",
+          "segments": [
+            {
+              "label": "CONFIRMING",
+              "weight": 78,
+              "filled": true
+            },
+            {
+              "label": "DISCONFIRMING",
+              "weight": 22,
+              "filled": false
+            }
+          ]
+        },
+        {
+          "label": "EVIDENCE WEIGHED",
+          "segments": [
+            {
+              "label": "CONFIRMING",
+              "weight": 72,
+              "filled": true
+            },
+            {
+              "label": "DISCONFIRMING",
+              "weight": 28,
+              "filled": false
+            }
+          ]
+        }
+      ],
+      "reference": {
+        "at": 0.5,
+        "label": "EVEN SPLIT"
+      },
+      "caption": "CONFIRMING EVIDENCE GETS THE FIRST LOOK"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Raymond S. Nickerson"],
+    "year": 1998,
+    "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+    "publication": "Review of General Psychology, 2(2), 175-220",
+    "doi": "10.1037/1089-2680.2.2.175"
+  }
+}

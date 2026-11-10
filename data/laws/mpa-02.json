@@ -1,0 +1,35 @@
+{
+  "id": "MPA-02",
+  "name": "Von Restorff Effect (Isolation Effect)",
+  "category": "Memory, Perception & Attention",
+  "axiom": "An item that differs from its neighbours is remembered better than the items around it.",
+  "trigger": "One row, button, or price is remembered while identical neighbours blur together.",
+  "checklist": [
+    "Emphasise one item per view; a second highlight halves the first one's effect.",
+    "Match the emphasis to the decision: the row people must recall gets the weight.",
+    "Test recall a day later, when the standout item is what remains."
+  ],
+  "antiPattern": {
+    "violation": "Every plan card is bright blue, so none of the three is remembered.",
+    "remediation": "Only the recommended plan is filled; the other two stay outlined."
+  },
+  "graphicMetaphor": {
+    "svgShape": "odd-one-out",
+    "parametricParams": {
+      "columns": 5,
+      "rows": 3,
+      "oddIndex": 7,
+      "dotRadius": 9,
+      "oddRadius": 17,
+      "oddLabel": "DISTINCT",
+      "caption": "ONE ITEM STANDS OUT AND IS REMEMBERED"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Hedwig von Restorff"],
+    "year": 1933,
+    "title": "Über die Wirkung von Bereichsbildungen im Spurenfeld",
+    "publication": "Psychologische Forschung, 18(1), 299-342",
+    "doi": "10.1007/BF02409636"
+  }
+}

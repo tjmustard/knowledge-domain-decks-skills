@@ -634,6 +634,287 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"280\" x2=\"340\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 80 120 C 120 260, 280 260, 320 120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"80\" cy=\"120\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"240\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"120\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"80\" y=\"100\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">PRIMACY</text><text x=\"200\" y=\"268\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.55\">DECAY</text><text x=\"320\" y=\"100\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">RECENCY</text><text x=\"200\" y=\"340\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SEQUENCE POSITION PREDICTS RECALL</text></svg>"
     },
     {
+      "id": "MPA-02",
+      "name": "Von Restorff Effect (Isolation Effect)",
+      "category": "Memory, Perception & Attention",
+      "axiom": "An item that differs from its neighbours is remembered better than the items around it.",
+      "trigger": "One row, button, or price is remembered while identical neighbours blur together.",
+      "checklist": [
+        "Emphasise one item per view; a second highlight halves the first one's effect.",
+        "Match the emphasis to the decision: the row people must recall gets the weight.",
+        "Test recall a day later, when the standout item is what remains."
+      ],
+      "antiPattern": {
+        "violation": "Every plan card is bright blue, so none of the three is remembered.",
+        "remediation": "Only the recommended plan is filled; the other two stay outlined."
+      },
+      "graphicMetaphor": {
+        "svgShape": "odd-one-out",
+        "parametricParams": {
+          "columns": 5,
+          "rows": 3,
+          "oddIndex": 7,
+          "dotRadius": 9,
+          "oddRadius": 17,
+          "oddLabel": "DISTINCT",
+          "caption": "ONE ITEM STANDS OUT AND IS REMEMBERED"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Hedwig von Restorff"
+        ],
+        "year": 1933,
+        "title": "Über die Wirkung von Bereichsbildungen im Spurenfeld",
+        "publication": "Psychologische Forschung, 18(1), 299-342",
+        "doi": "10.1007/BF02409636",
+        "authorsLabel": "Hedwig von Restorff",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"88\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"256\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"170\" r=\"17\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"207\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DISTINCT</text><circle cx=\"256\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"256\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE ITEM STANDS OUT AND IS REMEMBERED</text></svg>"
+    },
+    {
+      "id": "MPA-03",
+      "name": "Zeigarnik Effect",
+      "category": "Memory, Perception & Attention",
+      "axiom": "Unfinished tasks stay in memory longer than tasks already completed.",
+      "trigger": "People return days later and remember exactly where they stopped.",
+      "checklist": [
+        "Save progress automatically and offer to resume where the person stopped.",
+        "Show unfinished items on return; do not make people hunt for them.",
+        "End a session with a visible next step, not a blank confirmation."
+      ],
+      "antiPattern": {
+        "violation": "A half-finished application vanishes on reload, so the person starts over.",
+        "remediation": "The draft is saved and the return screen names the next question."
+      },
+      "graphicMetaphor": {
+        "svgShape": "paired-panels",
+        "parametricParams": {
+          "left": {
+            "cells": 6,
+            "columns": 3,
+            "filled": 2,
+            "caption": "FINISHED"
+          },
+          "right": {
+            "cells": 6,
+            "columns": 3,
+            "filled": 5,
+            "caption": "UNFINISHED"
+          },
+          "caption": "UNFINISHED TASKS ARE RECALLED MORE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Bluma Zeigarnik"
+        ],
+        "year": 1927,
+        "title": "Über das Behalten von erledigten und unerledigten Handlungen",
+        "publication": "Psychologische Forschung, 9",
+        "authorsLabel": "Bluma Zeigarnik",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FINISHED</text><rect x=\"42\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">UNFINISHED</text><rect x=\"222\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"318\" y=\"146\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"222\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"318\" y=\"194\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">UNFINISHED TASKS ARE RECALLED MORE</text></svg>"
+    },
+    {
+      "id": "MPA-04",
+      "name": "Peak-End Rule",
+      "category": "Memory, Perception & Attention",
+      "axiom": "An experience is remembered by its peak and its ending, not its average.",
+      "trigger": "A smooth session is rated harshly because its last screen failed.",
+      "checklist": [
+        "End every flow on a clear confirmation that names what happens next.",
+        "Soften the most intense step: the peak sets the rating more than the middle.",
+        "Do not spend effort smoothing a middle the ending will overwrite."
+      ],
+      "antiPattern": {
+        "violation": "A fast checkout ends on a paywall error, so the whole flow is remembered as bad.",
+        "remediation": "The last screen thanks the person and confirms the order."
+      },
+      "graphicMetaphor": {
+        "svgShape": "peak-end-curve",
+        "parametricParams": {
+          "startY": 240,
+          "peakX": 230,
+          "peakY": 90,
+          "endY": 140,
+          "peakLabel": "PEAK",
+          "endLabel": "END",
+          "caption": "MEMORY FOLLOWS THE PEAK AND THE END"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Daniel Kahneman",
+          "Barbara L. Fredrickson",
+          "Charles A. Schreiber",
+          "Donald A. Redelmeier"
+        ],
+        "year": 1993,
+        "title": "When More Pain Is Preferred to Less: Adding a Better End",
+        "publication": "Psychological Science, 4(6), 401-405",
+        "doi": "10.1111/j.1467-9280.1993.tb00589.x",
+        "authorsLabel": "Daniel Kahneman, Barbara L. Fredrickson, Charles A. Schreiber & Donald A. Redelmeier",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 240 C 162 180, 190 90, 230 90 C 270 90, 300 140, 340 140\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"90\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"140\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"230\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">PEAK</text><text x=\"340\" y=\"164\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">END</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">MEMORY FOLLOWS THE PEAK AND THE END</text></svg>"
+    },
+    {
+      "id": "MPA-05",
+      "name": "Anchoring Bias",
+      "category": "Memory, Perception & Attention",
+      "axiom": "An initial number pulls later estimates toward it, even when it is arbitrary.",
+      "trigger": "A suggested price, quantity, or budget shifts what people choose.",
+      "checklist": [
+        "Remove arbitrary defaults before asking for an estimate.",
+        "Show a reference range the evidence supports, not a number near the answer.",
+        "Test the same question with and without a starting figure."
+      ],
+      "antiPattern": {
+        "violation": "A donation field prefilled with the highest tier lifts every gift.",
+        "remediation": "The field starts empty and offers a range with its basis."
+      },
+      "graphicMetaphor": {
+        "svgShape": "anchor-line",
+        "parametricParams": {
+          "anchorX": 110,
+          "estimateGap": 24,
+          "estimates": 3,
+          "trueX": 320,
+          "anchorLabel": "ANCHOR",
+          "estimateLabel": "ESTIMATES",
+          "trueLabel": "TRUE VALUE",
+          "caption": "ESTIMATES STAY NEAR THE ANCHOR"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel Kahneman"
+        ],
+        "year": 1974,
+        "title": "Judgment under Uncertainty: Heuristics and Biases",
+        "publication": "Science, 185(4157), 1124-1131",
+        "doi": "10.1126/science.185.4157.1124",
+        "authorsLabel": "Amos Tversky & Daniel Kahneman",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"240\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ESTIMATES</text><line x1=\"110\" y1=\"186\" x2=\"110\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"172\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ANCHOR</text><circle cx=\"134\" cy=\"200\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"158\" cy=\"200\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"200\" r=\"7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"320\" cy=\"200\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"320\" y1=\"186\" x2=\"320\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"320\" y=\"172\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TRUE VALUE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ESTIMATES STAY NEAR THE ANCHOR</text></svg>"
+    },
+    {
+      "id": "MPA-06",
+      "name": "Selective Attention and Attentional Bottleneck",
+      "category": "Memory, Perception & Attention",
+      "axiom": "Attention selects one channel and filters the rest before meaning is extracted.",
+      "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
+      "checklist": [
+        "Route interruptions to one channel instead of stacking toasts and modals.",
+        "Do not put two demands in the same moment; queue the second.",
+        "Keep a missed request recoverable where the person will look for it."
+      ],
+      "antiPattern": {
+        "violation": "A toast, a modal, and a banner ask for attention at once.",
+        "remediation": "One request at a time, queued in a place the person can revisit."
+      },
+      "graphicMetaphor": {
+        "svgShape": "filter-gate",
+        "parametricParams": {
+          "channels": 3,
+          "gateX": 210,
+          "passIndex": 1,
+          "inputLabel": "INPUTS",
+          "gateLabel": "FILTER",
+          "outputLabel": "ATTENDED",
+          "caption": "ONE CHANNEL PASSES; THE REST ARE FILTERED"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Donald E. Broadbent"
+        ],
+        "year": 1958,
+        "title": "Perception and Communication",
+        "publication": "Pergamon Press, London",
+        "doi": "10.1037/10037-000",
+        "authorsLabel": "Donald E. Broadbent",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"60\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INPUTS</text><text x=\"210\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FILTER</text><text x=\"330\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ATTENDED</text><line x1=\"210\" y1=\"100\" x2=\"210\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"110\" x2=\"210\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"110\" x2=\"222\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"104\" x2=\"242\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"104\" x2=\"230\" y2=\"116\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"180\" x2=\"210\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"180\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"180\" x2=\"330\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"180\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"250\" x2=\"210\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"250\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"210\" y1=\"250\" x2=\"222\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"244\" x2=\"242\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"244\" x2=\"230\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE CHANNEL PASSES; THE REST ARE FILTERED</text></svg>"
+    },
+    {
+      "id": "MPA-07",
+      "name": "Confirmation Bias",
+      "category": "Memory, Perception & Attention",
+      "axiom": "People seek and weight evidence that confirms what they already believe.",
+      "trigger": "A dashboard shows only the runs that support the current plan.",
+      "checklist": [
+        "Show disconfirming results at the same prominence as confirming ones.",
+        "Ask what evidence would change the decision before the test runs.",
+        "Record every run, including the ones that refute the hypothesis."
+      ],
+      "antiPattern": {
+        "violation": "Only successful test runs are shown, so a failing design looks proven.",
+        "remediation": "Report all runs, with refutations beside the successes."
+      },
+      "graphicMetaphor": {
+        "svgShape": "split-bar",
+        "parametricParams": {
+          "max": 100,
+          "rows": [
+            {
+              "label": "EVIDENCE SOUGHT",
+              "segments": [
+                {
+                  "label": "CONFIRMING",
+                  "weight": 78,
+                  "filled": true
+                },
+                {
+                  "label": "DISCONFIRMING",
+                  "weight": 22,
+                  "filled": false
+                }
+              ]
+            },
+            {
+              "label": "EVIDENCE WEIGHED",
+              "segments": [
+                {
+                  "label": "CONFIRMING",
+                  "weight": 72,
+                  "filled": true
+                },
+                {
+                  "label": "DISCONFIRMING",
+                  "weight": 28,
+                  "filled": false
+                }
+              ]
+            }
+          ],
+          "reference": {
+            "at": 0.5,
+            "label": "EVEN SPLIT"
+          },
+          "caption": "CONFIRMING EVIDENCE GETS THE FIRST LOOK"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Raymond S. Nickerson"
+        ],
+        "year": 1998,
+        "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+        "publication": "Review of General Psychology, 2(2), 175-220",
+        "doi": "10.1037/1089-2680.2.2.175",
+        "authorsLabel": "Raymond S. Nickerson",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"40\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">EVIDENCE SOUGHT</text><rect x=\"40\" y=\"120\" width=\"249.60000000000002\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"164.8\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING</text><rect x=\"289.6\" y=\"120\" width=\"70.4\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"324.8\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DISCONFIRMING</text><text x=\"40\" y=\"184\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">EVIDENCE WEIGHED</text><rect x=\"40\" y=\"200\" width=\"230.39999999999998\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"155.2\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING</text><rect x=\"270.4\" y=\"200\" width=\"89.60000000000001\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"315.2\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DISCONFIRMING</text><line x1=\"200\" y1=\"86\" x2=\"200\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"120\" x2=\"200\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"78\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EVEN SPLIT</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING EVIDENCE GETS THE FIRST LOOK</text></svg>"
+    },
+    {
       "id": "TME-01",
       "name": "Fitts's Law",
       "category": "Time, Motion & Ergonomics",

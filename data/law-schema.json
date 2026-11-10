@@ -91,7 +91,11 @@
             "ratio-scale",
             "reach-map",
             "difficulty-line",
-            "scan-path"
+            "scan-path",
+            "odd-one-out",
+            "peak-end-curve",
+            "anchor-line",
+            "filter-gate"
           ]
         },
         "parametricParams": {

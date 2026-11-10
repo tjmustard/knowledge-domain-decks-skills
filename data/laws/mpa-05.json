@@ -1,0 +1,36 @@
+{
+  "id": "MPA-05",
+  "name": "Anchoring Bias",
+  "category": "Memory, Perception & Attention",
+  "axiom": "An initial number pulls later estimates toward it, even when it is arbitrary.",
+  "trigger": "A suggested price, quantity, or budget shifts what people choose.",
+  "checklist": [
+    "Remove arbitrary defaults before asking for an estimate.",
+    "Show a reference range the evidence supports, not a number near the answer.",
+    "Test the same question with and without a starting figure."
+  ],
+  "antiPattern": {
+    "violation": "A donation field prefilled with the highest tier lifts every gift.",
+    "remediation": "The field starts empty and offers a range with its basis."
+  },
+  "graphicMetaphor": {
+    "svgShape": "anchor-line",
+    "parametricParams": {
+      "anchorX": 110,
+      "estimateGap": 24,
+      "estimates": 3,
+      "trueX": 320,
+      "anchorLabel": "ANCHOR",
+      "estimateLabel": "ESTIMATES",
+      "trueLabel": "TRUE VALUE",
+      "caption": "ESTIMATES STAY NEAR THE ANCHOR"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Amos Tversky", "Daniel Kahneman"],
+    "year": 1974,
+    "title": "Judgment under Uncertainty: Heuristics and Biases",
+    "publication": "Science, 185(4157), 1124-1131",
+    "doi": "10.1126/science.185.4157.1124"
+  }
+}

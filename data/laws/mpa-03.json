@@ -1,0 +1,40 @@
+{
+  "id": "MPA-03",
+  "name": "Zeigarnik Effect",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Unfinished tasks stay in memory longer than tasks already completed.",
+  "trigger": "People return days later and remember exactly where they stopped.",
+  "checklist": [
+    "Save progress automatically and offer to resume where the person stopped.",
+    "Show unfinished items on return; do not make people hunt for them.",
+    "End a session with a visible next step, not a blank confirmation."
+  ],
+  "antiPattern": {
+    "violation": "A half-finished application vanishes on reload, so the person starts over.",
+    "remediation": "The draft is saved and the return screen names the next question."
+  },
+  "graphicMetaphor": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": {
+        "cells": 6,
+        "columns": 3,
+        "filled": 2,
+        "caption": "FINISHED"
+      },
+      "right": {
+        "cells": 6,
+        "columns": 3,
+        "filled": 5,
+        "caption": "UNFINISHED"
+      },
+      "caption": "UNFINISHED TASKS ARE RECALLED MORE"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Bluma Zeigarnik"],
+    "year": 1927,
+    "title": "Über das Behalten von erledigten und unerledigten Handlungen",
+    "publication": "Psychologische Forschung, 9"
+  }
+}

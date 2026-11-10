@@ -575,6 +575,126 @@
       }
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+
+    /* Isolation effect: one item differs from a field of uniform neighbours. */
+    "odd-one-out": function (p) {
+      var cols = p.columns || 5;
+      var rows = p.rows || 3;
+      var spacingX = p.spacingX == null ? 56 : p.spacingX;
+      var spacingY = p.spacingY == null ? 62 : p.spacingY;
+      var oddIndex = p.oddIndex == null ? 7 : p.oddIndex;
+      var dotRadius = p.dotRadius == null ? 9 : p.dotRadius;
+      var oddRadius = p.oddRadius == null ? 17 : p.oddRadius;
+      var oddLabel = p.oddLabel || "DISTINCT";
+      var caption = p.caption || "";
+      var x0 = 200 - ((cols - 1) * spacingX) / 2;
+      var y0 = 170 - ((rows - 1) * spacingY) / 2;
+      var out = [];
+      for (var i = 0; i < cols * rows; i++) {
+        var x = x0 + (i % cols) * spacingX;
+        var y = y0 + Math.floor(i / cols) * spacingY;
+        if (i === oddIndex) {
+          out.push(circle(x, y, oddRadius, { opacity: 0.9 }));
+          /* Below the mark: above it, the label crowds the row that precedes. */
+          out.push(label(x, y + oddRadius + 20, oddLabel, { size: 9 }));
+        } else {
+          out.push(circle(x, y, dotRadius, { hollow: true, opacity: 0.45, width: 1.5 }));
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Peak-end: a remembered episode peaks and then ends; the curve marks the
+       two moments memory keeps, and no average is drawn because none is kept. */
+    "peak-end-curve": function (p) {
+      var startY = p.startY == null ? 240 : p.startY;
+      var peakX = p.peakX == null ? 230 : p.peakX;
+      var peakY = p.peakY == null ? 90 : p.peakY;
+      var endY = p.endY == null ? 140 : p.endY;
+      var peakLabel = p.peakLabel || "PEAK";
+      var endLabel = p.endLabel || "END";
+      var caption = p.caption || "";
+      var c1x = 60 + (peakX - 60) * 0.6;
+      var out = [];
+      out.push(line(60, 300, 340, 300, 1, 0.3));
+      out.push(line(60, 300, 60, 60, 1, 0.3));
+      out.push(
+        '<path d="M 60 ' + startY + " C " + c1x + " " + (startY - 60) +
+        ", " + (peakX - 40) + " " + peakY + ", " + peakX + " " + peakY +
+        " C " + (peakX + 40) + " " + peakY + ", 300 " + endY +
+        ", 340 " + endY + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(peakX, peakY, 8));
+      out.push(circle(340, endY, 8));
+      out.push(label(peakX, peakY - 20, peakLabel, { size: 9 }));
+      out.push(label(340, endY + 24, endLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Anchoring: estimates gather near an initial number instead of near the
+       value the evidence supports. */
+    "anchor-line": function (p) {
+      var anchorX = p.anchorX == null ? 110 : p.anchorX;
+      var estimateGap = p.estimateGap == null ? 24 : p.estimateGap;
+      var estimates = p.estimates || 3;
+      var trueX = p.trueX == null ? 320 : p.trueX;
+      var anchorLabel = p.anchorLabel || "ANCHOR";
+      var estimateLabel = p.estimateLabel || "ESTIMATES";
+      var trueLabel = p.trueLabel || "TRUE VALUE";
+      var caption = p.caption || "";
+      var y = 200;
+      var out = [];
+      out.push(line(40, y, 360, y, 1, 0.35));
+      out.push(label(200, y + 40, estimateLabel, { size: 9 }));
+      out.push(line(anchorX, y - 14, anchorX, y + 14, 3, 0.9));
+      out.push(label(anchorX, y - 28, anchorLabel, { size: 9 }));
+      for (var i = 0; i < estimates; i++) {
+        out.push(circle(anchorX + estimateGap * (i + 1), y, 7, {
+          hollow: true, opacity: 0.8, width: 1.5
+        }));
+      }
+      out.push(circle(trueX, y, 9));
+      out.push(line(trueX, y - 14, trueX, y + 14, 3, 0.9));
+      out.push(label(trueX, y - 28, trueLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Selective attention: several inputs reach a filter, one is admitted. */
+    "filter-gate": function (p) {
+      var channels = p.channels || 3;
+      var gateX = p.gateX == null ? 210 : p.gateX;
+      var passIndex = p.passIndex == null ? 1 : p.passIndex;
+      var inputLabel = p.inputLabel || "INPUTS";
+      var gateLabel = p.gateLabel || "FILTER";
+      var outputLabel = p.outputLabel || "ATTENDED";
+      var caption = p.caption || "";
+      var top = 110;
+      var gap = 70;
+      var out = [];
+      out.push(label(60, top - 40, inputLabel, { size: 9 }));
+      out.push(label(gateX, top - 40, gateLabel, { size: 9 }));
+      out.push(label(330, top - 40, outputLabel, { size: 9 }));
+      out.push(line(gateX, top - 10, gateX, top + (channels - 1) * gap + 10, 2.5, 0.85));
+      for (var i = 0; i < channels; i++) {
+        var y = top + i * gap;
+        out.push(line(60, y, gateX, y, 2, i === passIndex ? 0.9 : 0.45));
+        out.push(circle(60, y, 5));
+        if (i === passIndex) {
+          out.push(line(gateX, y, 330, y, 3, 0.95));
+          out.push(circle(330, y, 7));
+        } else {
+          out.push(line(gateX, y, gateX + 12, y, 2, 0.35));
+          out.push(line(gateX + 20, y - 6, gateX + 32, y + 6, 2, 0.55));
+          out.push(line(gateX + 32, y - 6, gateX + 20, y + 6, 2, 0.55));
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 

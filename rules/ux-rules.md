@@ -425,3 +425,105 @@ public-domain principle, when to check for it, and the concrete fix.
 **Fix.** Place Dashboard first and Settings last, matching where scanning memory is strongest.
 
 **Source.** Bennet B. Murdock Jr. (1962). *The Serial Position Effect of Free Recall*. Journal of Experimental Psychology, 64(5), 482-488.
+
+### MPA-02 — Von Restorff Effect (Isolation Effect)
+
+**Axiom.** An item that differs from its neighbours is remembered better than the items around it.
+
+**Apply when.** One row, button, or price is remembered while identical neighbours blur together.
+
+**Checklist.**
+- [ ] Emphasise one item per view; a second highlight halves the first one's effect.
+- [ ] Match the emphasis to the decision: the row people must recall gets the weight.
+- [ ] Test recall a day later, when the standout item is what remains.
+
+**Anti-pattern.** Every plan card is bright blue, so none of the three is remembered.
+
+**Fix.** Only the recommended plan is filled; the other two stay outlined.
+
+**Source.** Hedwig von Restorff (1933). *Über die Wirkung von Bereichsbildungen im Spurenfeld*. Psychologische Forschung, 18(1), 299-342.
+
+### MPA-03 — Zeigarnik Effect
+
+**Axiom.** Unfinished tasks stay in memory longer than tasks already completed.
+
+**Apply when.** People return days later and remember exactly where they stopped.
+
+**Checklist.**
+- [ ] Save progress automatically and offer to resume where the person stopped.
+- [ ] Show unfinished items on return; do not make people hunt for them.
+- [ ] End a session with a visible next step, not a blank confirmation.
+
+**Anti-pattern.** A half-finished application vanishes on reload, so the person starts over.
+
+**Fix.** The draft is saved and the return screen names the next question.
+
+**Source.** Bluma Zeigarnik (1927). *Über das Behalten von erledigten und unerledigten Handlungen*. Psychologische Forschung, 9.
+
+### MPA-04 — Peak-End Rule
+
+**Axiom.** An experience is remembered by its peak and its ending, not its average.
+
+**Apply when.** A smooth session is rated harshly because its last screen failed.
+
+**Checklist.**
+- [ ] End every flow on a clear confirmation that names what happens next.
+- [ ] Soften the most intense step: the peak sets the rating more than the middle.
+- [ ] Do not spend effort smoothing a middle the ending will overwrite.
+
+**Anti-pattern.** A fast checkout ends on a paywall error, so the whole flow is remembered as bad.
+
+**Fix.** The last screen thanks the person and confirms the order.
+
+**Source.** Daniel Kahneman, Barbara L. Fredrickson, Charles A. Schreiber & Donald A. Redelmeier (1993). *When More Pain Is Preferred to Less: Adding a Better End*. Psychological Science, 4(6), 401-405.
+
+### MPA-05 — Anchoring Bias
+
+**Axiom.** An initial number pulls later estimates toward it, even when it is arbitrary.
+
+**Apply when.** A suggested price, quantity, or budget shifts what people choose.
+
+**Checklist.**
+- [ ] Remove arbitrary defaults before asking for an estimate.
+- [ ] Show a reference range the evidence supports, not a number near the answer.
+- [ ] Test the same question with and without a starting figure.
+
+**Anti-pattern.** A donation field prefilled with the highest tier lifts every gift.
+
+**Fix.** The field starts empty and offers a range with its basis.
+
+**Source.** Amos Tversky & Daniel Kahneman (1974). *Judgment under Uncertainty: Heuristics and Biases*. Science, 185(4157), 1124-1131.
+
+### MPA-06 — Selective Attention and Attentional Bottleneck
+
+**Axiom.** Attention selects one channel and filters the rest before meaning is extracted.
+
+**Apply when.** Two simultaneous requests compete, and the second is missed entirely.
+
+**Checklist.**
+- [ ] Route interruptions to one channel instead of stacking toasts and modals.
+- [ ] Do not put two demands in the same moment; queue the second.
+- [ ] Keep a missed request recoverable where the person will look for it.
+
+**Anti-pattern.** A toast, a modal, and a banner ask for attention at once.
+
+**Fix.** One request at a time, queued in a place the person can revisit.
+
+**Source.** Donald E. Broadbent (1958). *Perception and Communication*. Pergamon Press, London.
+
+### MPA-07 — Confirmation Bias
+
+**Axiom.** People seek and weight evidence that confirms what they already believe.
+
+**Apply when.** A dashboard shows only the runs that support the current plan.
+
+**Checklist.**
+- [ ] Show disconfirming results at the same prominence as confirming ones.
+- [ ] Ask what evidence would change the decision before the test runs.
+- [ ] Record every run, including the ones that refute the hypothesis.
+
+**Anti-pattern.** Only successful test runs are shown, so a failing design looks proven.
+
+**Fix.** Report all runs, with refutations beside the successes.
+
+**Source.** Raymond S. Nickerson (1998). *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises*. Review of General Psychology, 2(2), 175-220.
