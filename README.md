@@ -236,6 +236,10 @@ npm run check:pdf       # every MediaBox is 216 x 360 pt, page count matches
 npm run check:web       # headless 390 px smoke test (Chrome/Chromium)
 npm run check:all       # validate + regenerate rules and web data + web smoke test
 npm run check           # validate + regenerate, without the browser step
+
+# 6. Verify a specific commit, in a worktree nobody else is using
+npm run accept          # HEAD
+npm run accept -- <ref> # any commit-ish
 ```
 
 ### What the checks prove
@@ -247,13 +251,17 @@ npm run check           # validate + regenerate, without the browser step
 | `npm run build:rules` | The ruleset and skill regenerate from the same records |
 | `npm run check:web` | At 390 px: no horizontal overflow, six cards render, flip exposes the verso, a filter narrows to one |
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
+| `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
 
 Last full run: **2026-11-09**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
 `npm run check:all` exits 0 and the PDF builds.
 
-One honest limit: `npm run check:pdf` proves page geometry only. Whether the
+Two honest limits. `npm run check:pdf` proves page geometry only. Whether the
 marks land on paper and whether the type reads comfortably at print size are
-judgements from looking at rendered pages, not something the check asserts.
+judgements from looking at rendered pages, not something the check asserts. And
+`npm run accept` reports NOT RUN for anything it could not execute here - no
+browser, no Typst - so a layer it could not check stays unproven rather than
+passing, and it exits 3 when nothing at all could be verified.
 
 ---
 
