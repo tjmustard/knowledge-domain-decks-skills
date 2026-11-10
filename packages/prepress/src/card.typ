@@ -171,6 +171,13 @@
             ]
           ] else if b.style == "example" [
             #text(size: 6.5pt, style: "italic")[#card.at(b.field)]
+          ] else if b.style == "labelled" [
+            // A record that carries its own label beside its text: the label
+            // names the move, the text is what is said.
+            #let v = card.at(b.field)
+            #text(size: 6.5pt, weight: "bold", fill: accent(card))[#v.label]
+            #v(1pt)
+            #text(size: 7pt)[#v.text]
           ]
         ]
       ]

@@ -44,6 +44,11 @@ function blockLines(block, value) {
     const join = block.style === "quotes" ? " " : " · ";
     return [`**${block.label}.** ${value.join(join)}`];
   }
+  // A labelled block is the record's own { label, text } pair, printed as the
+  // two things it is: the name of the move, then the words of it.
+  if (typeof value === "object" && value.label && value.text) {
+    return [`**${block.label}.** ${value.label}`, "", value.text];
+  }
   return [`**${block.label}.** ${value}`];
 }
 

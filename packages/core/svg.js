@@ -2653,6 +2653,172 @@
     return out.join("");
   };
 
+  /* A team-development figure. The source ships four drawn assets - a culture
+     continuum, a candour quadrant, a developmental arc and a five-axis safety
+     radar - and every card's figure is one of them. `family` names the asset;
+     `divisions` is how many parts that asset is divided into (segments on the
+     gauge, ticks per axis, stages on the arc, axes on the radar); `mark` is
+     where the card's situation sits inside those divisions. Every family reads
+     both numbers, so neither is a knob its drawing ignores, and an unknown
+     family draws a marked frame rather than passing as one of the four. */
+  shapes["team-figure"] = function (p) {
+    var family = p.family || "continuum";
+    var div = Math.max(1, Math.round(p.divisions || 3));
+    var mark = Math.max(1, Math.round(p.mark || 1));
+    var out = [];
+
+    function at(cx, cy, r, a) {
+      return [coord(cx + Math.cos(a) * r), coord(cy + Math.sin(a) * r)];
+    }
+
+    function arc(cx, cy, r, from, to, width, opacity, dash) {
+      var s = at(cx, cy, r, from);
+      var e = at(cx, cy, r, to);
+      var large = to - from > Math.PI ? 1 : 0;
+      out.push(
+        '<path d="M ' + s[0] + " " + s[1] + " A " + r + " " + r + " 0 " + large +
+        " 1 " + e[0] + " " + e[1] + '" fill="none" stroke="currentColor" stroke-width="' +
+        width + '" stroke-linecap="round"' +
+        (dash ? ' stroke-dasharray="' + dash + '"' : "") +
+        ' opacity="' + opacity + '" ' + STROKE + "/>"
+      );
+    }
+
+    function polygon(cx, cy, r, sides, width, opacity, dash, fill) {
+      var pts = [];
+      for (var k = 0; k < sides; k++) {
+        pts.push(at(cx, cy, r, -Math.PI / 2 + (Math.PI * 2 * k) / sides));
+      }
+      var d = "M " + pts.map(function (q) { return q[0] + " " + q[1]; }).join(" L ") + " Z";
+      out.push(
+        '<path d="' + d + '" fill="' + (fill || "none") + '" stroke="currentColor" stroke-width="' +
+        width + '" stroke-linejoin="round"' +
+        (dash ? ' stroke-dasharray="' + dash + '"' : "") +
+        ' opacity="' + opacity + '" ' + STROKE + "/>"
+      );
+    }
+
+    if (family === "continuum") {
+      // A 180-degree gauge: `div` equal segments, the pointer in the one the
+      // team sits in. The reading is the segment, so the segment is drawn.
+      var cx = 200;
+      var cy = 252;
+      var r = 148;
+      arc(cx, cy, r, Math.PI, Math.PI * 2, 2.4, 0.75);
+      arc(cx, cy, r - 24, Math.PI, Math.PI * 2, 1.2, 0.45);
+      for (var ci = 0; ci <= div; ci++) {
+        var ca = Math.PI + (Math.PI * ci) / div;
+        var c0 = at(cx, cy, r - 24, ca);
+        var c1 = at(cx, cy, r, ca);
+        out.push(line(c0[0], c0[1], c1[0], c1[1], 1.4, 0.55));
+      }
+      var am = Math.PI + (Math.PI * (mark - 0.5)) / div;
+      var tip = at(cx, cy, r - 30, am);
+      out.push(line(cx, cy, tip[0], tip[1], 3, 0.9));
+      out.push(circle(cx, cy, 7, { width: 1.6, fill: "currentColor", opacity: 0.9 }));
+      out.push(line(cx - r - 6, cy, cx + r + 6, cy, 1.6, 0.4));
+    } else if (family === "quadrant") {
+      // Two axes crossing: `div` ticks along each, and the marked quadrant
+      // shaded. Cell order is reading order - top-left, top-right, bottom-left,
+      // bottom-right - so the number on the map means what a reader sees.
+      var left = 56;
+      var top = 56;
+      var side = 288;
+      var right = left + side;
+      var bottom = top + side;
+      var mx = left + side / 2;
+      var my = top + side / 2;
+      var cell = ((mark - 1) % 4 + 4) % 4;
+      var cellRect = [
+        [left, top],
+        [mx, top],
+        [left, my],
+        [mx, my]
+      ][cell];
+      out.push(rect(cellRect[0], cellRect[1], side / 2, side / 2, {
+        fill: "currentColor",
+        opacity: 0.14,
+        width: 0
+      }));
+      out.push(rect(left, top, side, side, { rx: 4, width: 1.2, opacity: 0.35 }));
+      out.push(line(left - 8, my, right + 8, my, 1.8, 0.7));
+      out.push(line(mx, bottom + 8, mx, top - 8, 1.8, 0.7));
+      for (var qi = 0; qi < div; qi++) {
+        var qt = (qi + 0.5) / div;
+        out.push(line(left + side * qt, my, left + side * qt, my - 7, 1.2, 0.45));
+        out.push(line(mx, top + side * qt, mx + 7, top + side * qt, 1.2, 0.45));
+      }
+      out.push(circle(mx, my, 4, { width: 1.3, fill: "currentColor", opacity: 0.8 }));
+    } else if (family === "arc") {
+      // A developmental arc over `div` stage columns: down through the friction
+      // trough, up past the peak, settling at handover. The marked stage sits on
+      // the curve, so the number on the map is a position on the arc.
+      var aLeft = 52;
+      var aRight = 348;
+      var baseY = 322;
+      var peakY = 96;
+
+      function value(t) {
+        var trough = 0.34 * Math.exp(-Math.pow((t - 0.3) / 0.17, 2));
+        var rise = 0.52 * Math.exp(-Math.pow((t - 0.72) / 0.22, 2));
+        return 0.5 - trough + rise - 0.08 * t;
+      }
+
+      for (var di = 0; di <= div; di++) {
+        var dx = aLeft + ((aRight - aLeft) * di) / div;
+        out.push(line(dx, baseY, dx, baseY - 8, 1.2, 0.45));
+      }
+      out.push(line(aLeft, baseY, aRight, baseY, 1.8, 0.6));
+      var prev = null;
+      var steps = Math.max(24, div * 6);
+      for (var si = 0; si <= steps; si++) {
+        var st = si / steps;
+        var ptq = [coord(aLeft + (aRight - aLeft) * st), coord(baseY - value(st) * (baseY - peakY))];
+        if (prev) out.push(line(prev[0], prev[1], ptq[0], ptq[1], 2.4, 0.75));
+        prev = ptq;
+      }
+      var mt = (mark - 0.5) / div;
+      var mX = aLeft + (aRight - aLeft) * mt;
+      var mY = baseY - value(mt) * (baseY - peakY);
+      out.push(line(mX, baseY, mX, mY, 1.2, 0.4, "5 5"));
+      out.push(circle(mX, mY, 6, { width: 1.8, fill: "currentColor", opacity: 0.9 }));
+    } else if (family === "radar") {
+      // `div` axes from a centre that means dysfunction; the plotted polygon at
+      // `mark` of the way out. Three grid rings and a dashed baseline, so the
+      // distance between the team and the baseline is the reading.
+      var rcx = 200;
+      var rcy = 198;
+      var rr = 148;
+      for (var ring = 1; ring <= 3; ring++) {
+        polygon(rcx, rcy, (rr * ring) / 3, div, 1.1, 0.32);
+      }
+      for (var ra = 0; ra < div; ra++) {
+        var av = -Math.PI / 2 + (Math.PI * 2 * ra) / div;
+        var avp = at(rcx, rcy, rr, av);
+        out.push(line(rcx, rcy, avp[0], avp[1], 1.3, 0.5));
+        out.push(circle(avp[0], avp[1], 2.6, { width: 1, opacity: 0.6 }));
+      }
+      polygon(rcx, rcy, rr * 0.62, div, 1.5, 0.5, "6 5");
+      var level = Math.min(1.6, mark / Math.max(1, div));
+      polygon(rcx, rcy, rr * level, div, 2.2, 0.85);
+    } else {
+      // An unknown family still reads both numbers, so a misspelling cannot
+      // declare knobs this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      out.push(line(82, 82, 318, 318, 1.6, 0.4, "7 6"));
+      out.push(line(82, 318, 318, 82, 1.6, 0.4, "7 6"));
+      for (var ui = 0; ui < div; ui++) {
+        var ux = 56 + (288 * (ui + 0.5)) / div;
+        out.push(line(ux, 56, ux, 66, 1.4, 0.4));
+      }
+      out.push(circle(56 + (288 * ((mark - 0.5) % div + 0.5)) / Math.max(1, div), 200, 8, {
+        width: 1.6,
+        opacity: 0.7
+      }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

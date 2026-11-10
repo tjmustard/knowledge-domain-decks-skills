@@ -138,8 +138,11 @@ export const DEFAULT_FIELDS = {
 
 // How a declared block is laid out. "traits" and "words" join short entries
 // with a centred dot, "quotes" joins them with a space, "prose" is a paragraph,
-// "list" is one entry per line, and "example" is a short italic paragraph.
-export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example"];
+// "list" is one entry per line, "example" is a short italic paragraph, and
+// "labelled" prints a record's own `{ label, text }` pair - the form the team
+// deck's manager scripts take, where the label names the move and the text is
+// the sentence said.
+export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled"];
 
 /*
  * A deck's back-face blocks, in the order the deck prints them. A block is
