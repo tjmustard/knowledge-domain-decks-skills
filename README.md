@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-8%20%C2%B7%20339%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-9%20%C2%B7%20389%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -584,9 +584,10 @@ the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
 retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
 deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), the team deck as 88 pages
-and 479,152 bytes (`482e7fc2…`), and the innovation deck as 84 pages and
-386,570 bytes (`c1b37678…`); two consecutive builds of one
-commit are byte-identical for all eight. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+and 479,152 bytes (`482e7fc2…`), the innovation deck as 84 pages and
+386,570 bytes (`c1b37678…`), and the ideation deck as 100 pages and
+746,190 bytes (`aced7d61…`); two consecutive builds of one
+commit are byte-identical for all nine. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
