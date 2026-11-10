@@ -60,7 +60,7 @@
     #grid(
       columns: (1fr, auto),
       [#text(size: 7pt, weight: "bold", fill: rgb("#64748b"))[#card.id]],
-      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[#card.category.upper()]],
+      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[#upper(card.category)]],
     )
     #v(5pt)
     #text(size: 14pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
