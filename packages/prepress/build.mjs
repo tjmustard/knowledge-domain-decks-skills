@@ -39,13 +39,18 @@ let epochSource = "the deck's fixed release epoch";
 
 const inherited = process.env.SOURCE_DATE_EPOCH;
 if (inherited !== undefined && inherited !== "") {
-  if (!/^\d+$/.test(inherited)) {
+  const seconds = Number(inherited);
+  /* All digits is not enough. 1e21 is digits before Number() makes it 1e21,
+     loses precision, and Typst then rejects "1e+21" with a message that blames
+     the renderer for an environment mistake. A safe integer is the value that
+     survives the round trip to Typst exactly. */
+  if (!/^\d+$/.test(inherited) || !Number.isSafeInteger(seconds)) {
     console.error(
       `SOURCE_DATE_EPOCH must be whole seconds since 1970, got "${inherited}".`
     );
     process.exit(2);
   }
-  epoch = Number(inherited);
+  epoch = seconds;
   epochSource = "the environment";
 }
 
@@ -100,5 +105,6 @@ console.log(
 );
 console.log(
   `SOURCE_DATE_EPOCH ${epoch} from ${epochSource}; ` +
-  `rebuilds of this commit are byte-identical.`
+  `rebuilds of this commit are byte-identical on this Typst version and font ` +
+  `environment.`
 );

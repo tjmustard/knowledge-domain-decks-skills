@@ -666,8 +666,10 @@ Three decisions in that change:
   time.
 - **An inherited `SOURCE_DATE_EPOCH` wins.** A distributor who repackages the
   deck can stamp their own date, as the convention intends. A value that is not
-  whole seconds exits 2 instead of falling back, so a typo cannot produce a file
-  that quietly claims the deck's epoch.
+  whole seconds, or is too large to survive JavaScript's integer precision
+  (`999999999999999999999` is digits before `Number()` turns it into `1e21`),
+  exits 2 instead of falling back, so a bad value cannot produce a file that
+  quietly claims the deck's epoch or a renderer error that blames Typst.
 - **Proven by effect, not by assumption.** Two builds with the pin are
   byte-identical at 579,849 bytes. Two direct `typst compile` runs without it
   differ in `/ModDate`, the XMP dates and `/ID` while both being 579,859 bytes,
