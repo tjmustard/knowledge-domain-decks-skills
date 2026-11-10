@@ -1,0 +1,52 @@
+{
+  "id": "S10",
+  "name": "Demand-Side / JTBD",
+  "category": "Market & Competition",
+  "diagnosis": "Does the organization fundamentally misunderstand why customers hire its product, resulting in bloated roadmaps that fail to solve user struggles?",
+  "schematic": "4-Force Dynamic Progress Model",
+  "canvas": "Dynamic customer progress framework mapping the Four Forces of Customer Progress: the Push of the Current Situation and the Pull of the New Solution (driving progress) counterbalanced by the Anxiety of the Unknown and the Inertia of Habit (resisting change).",
+  "stressTest": [
+    {
+      "text": "Can the team name the functional, social and emotional struggle that triggers switching?"
+    },
+    {
+      "text": "Are features prioritized by demographics rather than by the job's context?"
+    },
+    {
+      "text": "Does the product address the moment the incumbent is abandoned, or add features?"
+    }
+  ],
+  "stressTestFull": [
+    "Can the product team articulate the exact functional, social, and emotional struggle that triggers a customer to seek an alternative solution?",
+    "Are features prioritized around customer demographic profiles rather than the operational context in which the job arises?",
+    "Does the offering address the specific moment when the incumbent tool is abandoned, or does it add extraneous features that fail to disrupt existing habits?"
+  ],
+  "checklist": [
+    "Run ten switch interviews to isolate what actually started the purchase.",
+    "Rewrite epics as job statements: context, struggling moment, outcome.",
+    "Instrument whether updates cut the time to finish the core job."
+  ],
+  "checklistFull": [
+    "Conduct ten switch-interview protocols with recent customer conversions to isolate the structural catalyst that initiated the purchase journey.",
+    "Restructure backlog epics into standardized Job Statements defining the context, the struggling moment, and the desired outcome.",
+    "Implement product telemetry to measure whether feature updates reduce the time required to complete the core functional job."
+  ],
+  "origin": {
+    "authors": [
+      "Clayton M. Christensen",
+      "Bob Moesta",
+      "Michael B. Horn"
+    ],
+    "year": 2016,
+    "title": "Competing Against Luck: The Story of Innovation and Customer Choice",
+    "publication": "HarperBusiness"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

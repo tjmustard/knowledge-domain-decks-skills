@@ -178,6 +178,432 @@ window.STRATEGY_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S04",
+      "name": "Ansoff Growth Matrix",
+      "category": "Market & Competition",
+      "diagnosis": "Has core market penetration reached saturation, requiring capital redeployment into product extensions, new markets, or non-core diversification?",
+      "schematic": "2x2 Market-Product Matrix",
+      "canvas": "2x2 matrix plotting Products (Existing versus New) along the horizontal axis against Markets (Existing versus New) along the vertical axis, generating four distinct quadrants: Market Penetration, Product Development, Market Development, and Diversification.",
+      "stressTest": [
+        {
+          "text": "Does product development cannibalize R&D before the core category is won?"
+        },
+        {
+          "text": "Does geographic expansion carry local advantage, or replicate domestic churn?"
+        },
+        {
+          "text": "Does diversification reuse a proprietary capability, or enter as an under-resourced entrant?"
+        }
+      ],
+      "stressTestFull": [
+        "Does pursuing adjacent product development cannibalize R&D resources before category leadership is established in the core offering?",
+        "Is geographic or vertical market expansion supported by localized distribution advantages, or does it replicate existing domestic churn overseas?",
+        "Does diversification exploit a proprietary, reusable capability, or does it force the firm to compete as an under-resourced entrant in an unfamiliar market?"
+      ],
+      "checklist": [
+        "Compute penetration ratios across core segments to date stagnation.",
+        "Test willingness-to-pay for adjacent products inside the existing base.",
+        "Establish hard ninety-day off-ramps for diversification investments."
+      ],
+      "checklistFull": [
+        "Compute total addressable market penetration ratios across core customer segments to determine the timeline to growth stagnation.",
+        "Deploy an experimental squad to validate willingness-to-pay for adjacent product extensions within the existing enterprise customer base.",
+        "Establish hard ninety-day performance off-ramps for exploratory diversification investments."
+      ],
+      "origin": {
+        "authors": [
+          "H. Igor Ansoff"
+        ],
+        "year": 1965,
+        "title": "Corporate Strategy",
+        "publication": "McGraw-Hill",
+        "authorsLabel": "H. Igor Ansoff",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S05",
+      "name": "Porter's Generic Strategies",
+      "category": "Market & Competition",
+      "diagnosis": "Is the enterprise trapped in the middle, lacking either an insurmountable structural cost advantage or defensible premium pricing power?",
+      "schematic": "2x2 Advantage vs Scope Matrix",
+      "canvas": "2x2 matrix intersecting Strategic Advantage (Low Cost versus Differentiation) with Strategic Scope (Broad Industry-Wide versus Focused Segment), yielding Cost Leadership, Differentiation, Cost Focus, and Focused Differentiation.",
+      "stressTest": [
+        {
+          "text": "Can the firm prove a cost advantage rivals cannot copy on public cloud?"
+        },
+        {
+          "text": "Does differentiation sustain a 30% premium in tenders without losing conversion?"
+        },
+        {
+          "text": "Does the focus niche defend structurally, or isolate the firm in an unprofitable segment?"
+        }
+      ],
+      "stressTestFull": [
+        "Can the enterprise prove an architectural or economies-of-scale cost advantage that rivals cannot duplicate using commoditized public cloud infrastructure?",
+        "Is product differentiation strong enough to sustain a 30% price premium during formal procurement tenders without degrading conversion rates?",
+        "Does a focus strategy target a structurally defendable niche, or does it isolate the business within an unprofitable customer segment?"
+      ],
+      "checklist": [
+        "Benchmark cost of goods per seat against the lowest-cost peer.",
+        "Conduct double-blind willingness-to-pay tests to measure pricing elasticity.",
+        "Deprecate features that cost efficiency without earning verifiable pricing power."
+      ],
+      "checklistFull": [
+        "Benchmark direct cost-of-goods-sold per seat or transaction against the lowest-cost market peer.",
+        "Conduct double-blind customer willingness-to-pay evaluations to measure brand pricing elasticity.",
+        "Deprecate features that compromise architectural efficiency without generating verifiable pricing power."
+      ],
+      "origin": {
+        "authors": [
+          "Michael E. Porter"
+        ],
+        "year": 1980,
+        "title": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+        "publication": "The Free Press",
+        "authorsLabel": "Michael E. Porter",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S06",
+      "name": "Value Net & Coopetition",
+      "category": "Market & Competition",
+      "diagnosis": "Can aggregate market value be expanded by collaborating with direct competitors and complementary ecosystem participants?",
+      "schematic": "Diamond Relational Network",
+      "canvas": "Diamond network positioning the Company at the center, flanked horizontally by Competitors and Complementors, and vertically by Customers and Suppliers.",
+      "stressTest": [
+        {
+          "text": "Which external products exponentially raise the utility of this platform?"
+        },
+        {
+          "text": "Does the firm treat rivals only as adversaries, missing joint standards?"
+        },
+        {
+          "text": "Is a partner taking the customer relationship while we keep the low-margin work?"
+        }
+      ],
+      "stressTestFull": [
+        "Has the company identified the external products whose adoption exponentially increases the utility of its own platform?",
+        "Does the organization treat direct rivals exclusively as adversaries, missing opportunities to establish joint architectural standards?",
+        "Is an ecosystem partner capturing high-margin customer relationships while delegating low-margin operational execution back to the company?"
+      ],
+      "checklist": [
+        "Map five complementary technologies and build bidirectional integrations.",
+        "Form an open standard with competitors to disintermediate infrastructure gatekeepers.",
+        "Tie revenue sharing to the growth of critical complementors."
+      ],
+      "checklistFull": [
+        "Map the five primary complementary technologies that accelerate product adoption and establish bidirectional technical integrations.",
+        "Form an open standard or consortium with category competitors to disintermediate monopolistic infrastructure gatekeepers.",
+        "Structure revenue-sharing agreements that tie platform margins to the growth of critical complementors."
+      ],
+      "origin": {
+        "authors": [
+          "Adam M. Brandenburger",
+          "Barry J. Nalebuff"
+        ],
+        "year": 1996,
+        "title": "Co-Opetition: A Revolutionary Mindset That Combines Competition and Cooperation",
+        "publication": "Currency/Doubleday",
+        "authorsLabel": "Adam M. Brandenburger & Barry J. Nalebuff",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S07",
+      "name": "Strategic Group Mapping",
+      "category": "Market & Competition",
+      "diagnosis": "Which distinct clusters of market rivals share identical strategic approaches, and what mobility barriers prevent cross-group encroachment?",
+      "schematic": "2x2 Multi-attribute Scatter",
+      "canvas": "2x2 scatter matrix plotting industry participants along two uncorrelated strategic dimensions (e.g., Geographic Footprint versus Product Breadth, or Price/Tier versus Customization Level), using proportional bubble sizes to represent market share.",
+      "stressTest": [
+        {
+          "text": "Are the mapping axes genuinely uncorrelated, or the same numbers twice?"
+        },
+        {
+          "text": "What mobility barrier keeps lower-tier entrants out of this group?"
+        },
+        {
+          "text": "Is blank territory an opportunity, or a graveyard of proven unviability?"
+        }
+      ],
+      "stressTestFull": [
+        "Are the selected mapping axes genuinely uncorrelated, or do they simply restate identical underlying financial variables?",
+        "What concrete economic or technical mobility barriers insulate the organization's strategic group from well-funded lower-tier entrants?",
+        "Does empty territory on the map indicate an untapped market opportunity or a graveyard of proven unviability?"
+      ],
+      "checklist": [
+        "Plot twelve rivals on two orthogonal axes validated by buyers.",
+        "Quantify capital and IP barriers to entering this strategic group.",
+        "Interview accounts that defected to another group about shifting criteria."
+      ],
+      "checklistFull": [
+        "Plot top twelve industry competitors across two orthogonal strategic dimensions validated by customer evaluation criteria.",
+        "Quantify the exact capital requirements and intellectual property barriers required to enter the organization's strategic group.",
+        "Interview customer accounts that recently defected to alternative strategic groups to identify shifting purchase criteria."
+      ],
+      "origin": {
+        "authors": [
+          "Michael S. Hunt"
+        ],
+        "year": 1972,
+        "title": "Competition in the Major Home Appliance Industry 1960–1970",
+        "publication": "Doctoral dissertation, Harvard University",
+        "authorsLabel": "Michael S. Hunt",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S08",
+      "name": "GE-McKinsey Nine-Box",
+      "category": "Market & Competition",
+      "diagnosis": "How should capital and engineering bandwidth be distributed across a diversified portfolio of business units with divergent prospects?",
+      "schematic": "3x3 Attractiveness-Strength Matrix",
+      "canvas": "3x3 portfolio grid plotting Industry Attractiveness (High, Medium, Low) on the vertical axis against Business Unit Competitive Strength (High, Medium, Low) on the horizontal axis, establishing three strategic zones: Invest/Grow, Selectivity/Hold, and Harvest/Divest.",
+      "stressTest": [
+        {
+          "text": "Are attractiveness scores driven by multi-year growth, or a windfall year?"
+        },
+        {
+          "text": "Is premium talent still defending units that should be managed for cash?"
+        },
+        {
+          "text": "Does high strength reflect proprietary assets, or a temporary head start?"
+        }
+      ],
+      "stressTestFull": [
+        "Are industry attractiveness metrics evaluated on multi-year compound growth, or are they skewed by short-term macroeconomic windfalls?",
+        "Does the executive team continue allocating premium engineering talent to defend declining units that should be managed for cash flow?",
+        "Does a high competitive strength rating reflect proprietary assets or temporary first-mover advantages?"
+      ],
+      "checklist": [
+        "Score every product unit on weighted attractiveness and strength indices.",
+        "Move 20% of development capacity from weak lines to growth segments.",
+        "Build end-of-life or divestment plans for harvest-quadrant products."
+      ],
+      "checklistFull": [
+        "Score every active commercial product unit against weighted composite indices of market attractiveness and competitive capability.",
+        "Reallocate 20% of product development capacity away from low-strength/low-attractiveness lines toward designated growth segments.",
+        "Formalize orderly end-of-life or divestment plans for products positioned within the harvest/divest quadrant."
+      ],
+      "origin": {
+        "authors": [
+          "McKinsey & Company",
+          "General Electric"
+        ],
+        "year": 1971,
+        "authorsLabel": "McKinsey & Company & General Electric",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "matrix_3x3",
+          "columns": 1,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S09",
+      "name": "BCG Growth-Share Matrix",
+      "category": "Market & Competition",
+      "diagnosis": "Are market-leading cash flows being systematically recycled into emerging growth bets before core product lines mature?",
+      "schematic": "2x2 Cash-Growth Matrix",
+      "canvas": "2x2 matrix defined by Market Growth Rate along the vertical axis against Relative Market Share (logarithmic scale) along the horizontal axis, segmenting business lines into Cash Cows, Stars, Question Marks, and Dogs.",
+      "stressTest": [
+        {
+          "text": "Are cash cows treated as growth vehicles, over-investing where gains are capped?"
+        },
+        {
+          "text": "Do Question Marks pass strict gates, or burn capital without gaining share?"
+        },
+        {
+          "text": "Will leadership sunset or spin out Dogs instead of sustaining them?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the organization treating mature Cash Cows as growth vehicles, over-investing capital where marginal gains are structurally constrained?",
+        "Are speculative Question Marks subjected to strict operational gates, or do they consume capital without securing market share?",
+        "Does leadership maintain the operational resolve to sunset or spin out persistent Dogs rather than sustaining underperforming lines?"
+      ],
+      "checklist": [
+        "Compute relative share against category leaders for every product line.",
+        "Sweep cash from mature lines into funded Star initiatives.",
+        "Set ninety-day share milestones for Question Marks: scale or terminate."
+      ],
+      "checklistFull": [
+        "Compute relative market share ratios against category leaders across all commercial product lines.",
+        "Implement programmatic cash sweeps from mature product lines into funded Star growth initiatives.",
+        "Establish ninety-day market share milestones for all Question Marks to determine whether to scale or terminate investment."
+      ],
+      "origin": {
+        "authors": [
+          "Bruce D. Henderson"
+        ],
+        "year": 1970,
+        "title": "The Growth Share Matrix",
+        "publication": "Boston Consulting Group Perspectives",
+        "authorsLabel": "Bruce D. Henderson",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S10",
+      "name": "Demand-Side / JTBD",
+      "category": "Market & Competition",
+      "diagnosis": "Does the organization fundamentally misunderstand why customers hire its product, resulting in bloated roadmaps that fail to solve user struggles?",
+      "schematic": "4-Force Dynamic Progress Model",
+      "canvas": "Dynamic customer progress framework mapping the Four Forces of Customer Progress: the Push of the Current Situation and the Pull of the New Solution (driving progress) counterbalanced by the Anxiety of the Unknown and the Inertia of Habit (resisting change).",
+      "stressTest": [
+        {
+          "text": "Can the team name the functional, social and emotional struggle that triggers switching?"
+        },
+        {
+          "text": "Are features prioritized by demographics rather than by the job's context?"
+        },
+        {
+          "text": "Does the product address the moment the incumbent is abandoned, or add features?"
+        }
+      ],
+      "stressTestFull": [
+        "Can the product team articulate the exact functional, social, and emotional struggle that triggers a customer to seek an alternative solution?",
+        "Are features prioritized around customer demographic profiles rather than the operational context in which the job arises?",
+        "Does the offering address the specific moment when the incumbent tool is abandoned, or does it add extraneous features that fail to disrupt existing habits?"
+      ],
+      "checklist": [
+        "Run ten switch interviews to isolate what actually started the purchase.",
+        "Rewrite epics as job statements: context, struggling moment, outcome.",
+        "Instrument whether updates cut the time to finish the core job."
+      ],
+      "checklistFull": [
+        "Conduct ten switch-interview protocols with recent customer conversions to isolate the structural catalyst that initiated the purchase journey.",
+        "Restructure backlog epics into standardized Job Statements defining the context, the struggling moment, and the desired outcome.",
+        "Implement product telemetry to measure whether feature updates reduce the time required to complete the core functional job."
+      ],
+      "origin": {
+        "authors": [
+          "Clayton M. Christensen",
+          "Bob Moesta",
+          "Michael B. Horn"
+        ],
+        "year": 2016,
+        "title": "Competing Against Luck: The Story of Innovation and Customer Choice",
+        "publication": "HarperBusiness",
+        "authorsLabel": "Clayton M. Christensen, Bob Moesta & Michael B. Horn",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S11",
+      "name": "Hypercompetition",
+      "category": "Market & Competition",
+      "diagnosis": "Has competitive disruption accelerated to a velocity where static competitive moats are unsustainable, requiring continuous self-disruption?",
+      "schematic": "4-Arena Dynamic Iteration Loop",
+      "canvas": "Dynamic cycle tracing competitive maneuvers across four escalating arenas: Cost and Quality, Timing and Know-How, Strongholds/Creation, and Deep Pockets.",
+      "stressTest": [
+        {
+          "text": "Is the firm leaning on IP or brand where technical parity arrives fast?"
+        },
+        {
+          "text": "Does management delay self-disruption to protect high-margin revenue?"
+        },
+        {
+          "text": "Is operating tempo fast enough for sequential advantages without burnout?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the firm relying on static intellectual property or historical brand moats in a market where technical parity is achieved rapidly?",
+        "Does management delay self-disruptive product launches to protect existing high-margin revenue streams?",
+        "Is the organizational operating tempo fast enough to sustain sequential competitive advantages without inducing engineering burnout?"
+      ],
+      "checklist": [
+        "Measure mean time for rivals to ship parity versions of core features.",
+        "Run a skunkworks tasked with building a direct competitor to the flagship.",
+        "Reward delivery velocity of new revenue, not defence of legacy share."
+      ],
+      "checklistFull": [
+        "Measure the mean time required for competitors to duplicate and launch parity versions of core feature releases.",
+        "Deploy an autonomous internal skunkworks squad tasked with designing a direct competitor to the company's primary commercial offering.",
+        "Align team performance metrics with the delivery velocity of new revenue initiatives rather than the defense of legacy market share."
+      ],
+      "origin": {
+        "authors": [
+          "Richard A. D'Aveni"
+        ],
+        "year": 1994,
+        "title": "Hypercompetition: Managing the Dynamics of Strategic Maneuvering",
+        "publication": "The Free Press",
+        "authorsLabel": "Richard A. D'Aveni",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "kind": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

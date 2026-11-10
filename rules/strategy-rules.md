@@ -96,3 +96,243 @@ Every card answers what a leadership team actually argues about - the question t
 - Build redundancy for single-geography supply and infrastructure dependencies.
 
 **Source.** Francis J. Aguilar (1967). *Scanning the Business Environment*. Macmillan. Liam Fahey & V. K. Narayanan (1986). *Macroenvironmental Analysis for Strategic Management*. West Publishing.
+
+### S04 — Ansoff Growth Matrix
+
+**Diagnosis question.** Has core market penetration reached saturation, requiring capital redeployment into product extensions, new markets, or non-core diversification?
+
+**Schematic.** 2x2 Market-Product Matrix
+
+**Pressure test.**
+1. Does product development cannibalize R&D before the core category is won?
+2. Does geographic expansion carry local advantage, or replicate domestic churn?
+3. Does diversification reuse a proprietary capability, or enter as an under-resourced entrant?
+
+**Canvas.** 2x2 matrix plotting Products (Existing versus New) along the horizontal axis against Markets (Existing versus New) along the vertical axis, generating four distinct quadrants: Market Penetration, Product Development, Market Development, and Diversification.
+
+**Pressure questions, unabridged.**
+- Does pursuing adjacent product development cannibalize R&D resources before category leadership is established in the core offering?
+- Is geographic or vertical market expansion supported by localized distribution advantages, or does it replicate existing domestic churn overseas?
+- Does diversification exploit a proprietary, reusable capability, or does it force the firm to compete as an under-resourced entrant in an unfamiliar market?
+
+**Actions, unabridged.**
+- Compute total addressable market penetration ratios across core customer segments to determine the timeline to growth stagnation.
+- Deploy an experimental squad to validate willingness-to-pay for adjacent product extensions within the existing enterprise customer base.
+- Establish hard ninety-day performance off-ramps for exploratory diversification investments.
+
+**Actions.**
+- Compute penetration ratios across core segments to date stagnation.
+- Test willingness-to-pay for adjacent products inside the existing base.
+- Establish hard ninety-day off-ramps for diversification investments.
+
+**Source.** H. Igor Ansoff (1965). *Corporate Strategy*. McGraw-Hill.
+
+### S05 — Porter's Generic Strategies
+
+**Diagnosis question.** Is the enterprise trapped in the middle, lacking either an insurmountable structural cost advantage or defensible premium pricing power?
+
+**Schematic.** 2x2 Advantage vs Scope Matrix
+
+**Pressure test.**
+1. Can the firm prove a cost advantage rivals cannot copy on public cloud?
+2. Does differentiation sustain a 30% premium in tenders without losing conversion?
+3. Does the focus niche defend structurally, or isolate the firm in an unprofitable segment?
+
+**Canvas.** 2x2 matrix intersecting Strategic Advantage (Low Cost versus Differentiation) with Strategic Scope (Broad Industry-Wide versus Focused Segment), yielding Cost Leadership, Differentiation, Cost Focus, and Focused Differentiation.
+
+**Pressure questions, unabridged.**
+- Can the enterprise prove an architectural or economies-of-scale cost advantage that rivals cannot duplicate using commoditized public cloud infrastructure?
+- Is product differentiation strong enough to sustain a 30% price premium during formal procurement tenders without degrading conversion rates?
+- Does a focus strategy target a structurally defendable niche, or does it isolate the business within an unprofitable customer segment?
+
+**Actions, unabridged.**
+- Benchmark direct cost-of-goods-sold per seat or transaction against the lowest-cost market peer.
+- Conduct double-blind customer willingness-to-pay evaluations to measure brand pricing elasticity.
+- Deprecate features that compromise architectural efficiency without generating verifiable pricing power.
+
+**Actions.**
+- Benchmark cost of goods per seat against the lowest-cost peer.
+- Conduct double-blind willingness-to-pay tests to measure pricing elasticity.
+- Deprecate features that cost efficiency without earning verifiable pricing power.
+
+**Source.** Michael E. Porter (1980). *Competitive Strategy: Techniques for Analyzing Industries and Competitors*. The Free Press.
+
+### S06 — Value Net & Coopetition
+
+**Diagnosis question.** Can aggregate market value be expanded by collaborating with direct competitors and complementary ecosystem participants?
+
+**Schematic.** Diamond Relational Network
+
+**Pressure test.**
+1. Which external products exponentially raise the utility of this platform?
+2. Does the firm treat rivals only as adversaries, missing joint standards?
+3. Is a partner taking the customer relationship while we keep the low-margin work?
+
+**Canvas.** Diamond network positioning the Company at the center, flanked horizontally by Competitors and Complementors, and vertically by Customers and Suppliers.
+
+**Pressure questions, unabridged.**
+- Has the company identified the external products whose adoption exponentially increases the utility of its own platform?
+- Does the organization treat direct rivals exclusively as adversaries, missing opportunities to establish joint architectural standards?
+- Is an ecosystem partner capturing high-margin customer relationships while delegating low-margin operational execution back to the company?
+
+**Actions, unabridged.**
+- Map the five primary complementary technologies that accelerate product adoption and establish bidirectional technical integrations.
+- Form an open standard or consortium with category competitors to disintermediate monopolistic infrastructure gatekeepers.
+- Structure revenue-sharing agreements that tie platform margins to the growth of critical complementors.
+
+**Actions.**
+- Map five complementary technologies and build bidirectional integrations.
+- Form an open standard with competitors to disintermediate infrastructure gatekeepers.
+- Tie revenue sharing to the growth of critical complementors.
+
+**Source.** Adam M. Brandenburger & Barry J. Nalebuff (1996). *Co-Opetition: A Revolutionary Mindset That Combines Competition and Cooperation*. Currency/Doubleday.
+
+### S07 — Strategic Group Mapping
+
+**Diagnosis question.** Which distinct clusters of market rivals share identical strategic approaches, and what mobility barriers prevent cross-group encroachment?
+
+**Schematic.** 2x2 Multi-attribute Scatter
+
+**Pressure test.**
+1. Are the mapping axes genuinely uncorrelated, or the same numbers twice?
+2. What mobility barrier keeps lower-tier entrants out of this group?
+3. Is blank territory an opportunity, or a graveyard of proven unviability?
+
+**Canvas.** 2x2 scatter matrix plotting industry participants along two uncorrelated strategic dimensions (e.g., Geographic Footprint versus Product Breadth, or Price/Tier versus Customization Level), using proportional bubble sizes to represent market share.
+
+**Pressure questions, unabridged.**
+- Are the selected mapping axes genuinely uncorrelated, or do they simply restate identical underlying financial variables?
+- What concrete economic or technical mobility barriers insulate the organization's strategic group from well-funded lower-tier entrants?
+- Does empty territory on the map indicate an untapped market opportunity or a graveyard of proven unviability?
+
+**Actions, unabridged.**
+- Plot top twelve industry competitors across two orthogonal strategic dimensions validated by customer evaluation criteria.
+- Quantify the exact capital requirements and intellectual property barriers required to enter the organization's strategic group.
+- Interview customer accounts that recently defected to alternative strategic groups to identify shifting purchase criteria.
+
+**Actions.**
+- Plot twelve rivals on two orthogonal axes validated by buyers.
+- Quantify capital and IP barriers to entering this strategic group.
+- Interview accounts that defected to another group about shifting criteria.
+
+**Source.** Michael S. Hunt (1972). *Competition in the Major Home Appliance Industry 1960–1970*. Doctoral dissertation, Harvard University.
+
+### S08 — GE-McKinsey Nine-Box
+
+**Diagnosis question.** How should capital and engineering bandwidth be distributed across a diversified portfolio of business units with divergent prospects?
+
+**Schematic.** 3x3 Attractiveness-Strength Matrix
+
+**Pressure test.**
+1. Are attractiveness scores driven by multi-year growth, or a windfall year?
+2. Is premium talent still defending units that should be managed for cash?
+3. Does high strength reflect proprietary assets, or a temporary head start?
+
+**Canvas.** 3x3 portfolio grid plotting Industry Attractiveness (High, Medium, Low) on the vertical axis against Business Unit Competitive Strength (High, Medium, Low) on the horizontal axis, establishing three strategic zones: Invest/Grow, Selectivity/Hold, and Harvest/Divest.
+
+**Pressure questions, unabridged.**
+- Are industry attractiveness metrics evaluated on multi-year compound growth, or are they skewed by short-term macroeconomic windfalls?
+- Does the executive team continue allocating premium engineering talent to defend declining units that should be managed for cash flow?
+- Does a high competitive strength rating reflect proprietary assets or temporary first-mover advantages?
+
+**Actions, unabridged.**
+- Score every active commercial product unit against weighted composite indices of market attractiveness and competitive capability.
+- Reallocate 20% of product development capacity away from low-strength/low-attractiveness lines toward designated growth segments.
+- Formalize orderly end-of-life or divestment plans for products positioned within the harvest/divest quadrant.
+
+**Actions.**
+- Score every product unit on weighted attractiveness and strength indices.
+- Move 20% of development capacity from weak lines to growth segments.
+- Build end-of-life or divestment plans for harvest-quadrant products.
+
+**Source.** McKinsey & Company & General Electric (1971).
+
+### S09 — BCG Growth-Share Matrix
+
+**Diagnosis question.** Are market-leading cash flows being systematically recycled into emerging growth bets before core product lines mature?
+
+**Schematic.** 2x2 Cash-Growth Matrix
+
+**Pressure test.**
+1. Are cash cows treated as growth vehicles, over-investing where gains are capped?
+2. Do Question Marks pass strict gates, or burn capital without gaining share?
+3. Will leadership sunset or spin out Dogs instead of sustaining them?
+
+**Canvas.** 2x2 matrix defined by Market Growth Rate along the vertical axis against Relative Market Share (logarithmic scale) along the horizontal axis, segmenting business lines into Cash Cows, Stars, Question Marks, and Dogs.
+
+**Pressure questions, unabridged.**
+- Is the organization treating mature Cash Cows as growth vehicles, over-investing capital where marginal gains are structurally constrained?
+- Are speculative Question Marks subjected to strict operational gates, or do they consume capital without securing market share?
+- Does leadership maintain the operational resolve to sunset or spin out persistent Dogs rather than sustaining underperforming lines?
+
+**Actions, unabridged.**
+- Compute relative market share ratios against category leaders across all commercial product lines.
+- Implement programmatic cash sweeps from mature product lines into funded Star growth initiatives.
+- Establish ninety-day market share milestones for all Question Marks to determine whether to scale or terminate investment.
+
+**Actions.**
+- Compute relative share against category leaders for every product line.
+- Sweep cash from mature lines into funded Star initiatives.
+- Set ninety-day share milestones for Question Marks: scale or terminate.
+
+**Source.** Bruce D. Henderson (1970). *The Growth Share Matrix*. Boston Consulting Group Perspectives.
+
+### S10 — Demand-Side / JTBD
+
+**Diagnosis question.** Does the organization fundamentally misunderstand why customers hire its product, resulting in bloated roadmaps that fail to solve user struggles?
+
+**Schematic.** 4-Force Dynamic Progress Model
+
+**Pressure test.**
+1. Can the team name the functional, social and emotional struggle that triggers switching?
+2. Are features prioritized by demographics rather than by the job's context?
+3. Does the product address the moment the incumbent is abandoned, or add features?
+
+**Canvas.** Dynamic customer progress framework mapping the Four Forces of Customer Progress: the Push of the Current Situation and the Pull of the New Solution (driving progress) counterbalanced by the Anxiety of the Unknown and the Inertia of Habit (resisting change).
+
+**Pressure questions, unabridged.**
+- Can the product team articulate the exact functional, social, and emotional struggle that triggers a customer to seek an alternative solution?
+- Are features prioritized around customer demographic profiles rather than the operational context in which the job arises?
+- Does the offering address the specific moment when the incumbent tool is abandoned, or does it add extraneous features that fail to disrupt existing habits?
+
+**Actions, unabridged.**
+- Conduct ten switch-interview protocols with recent customer conversions to isolate the structural catalyst that initiated the purchase journey.
+- Restructure backlog epics into standardized Job Statements defining the context, the struggling moment, and the desired outcome.
+- Implement product telemetry to measure whether feature updates reduce the time required to complete the core functional job.
+
+**Actions.**
+- Run ten switch interviews to isolate what actually started the purchase.
+- Rewrite epics as job statements: context, struggling moment, outcome.
+- Instrument whether updates cut the time to finish the core job.
+
+**Source.** Clayton M. Christensen, Bob Moesta & Michael B. Horn (2016). *Competing Against Luck: The Story of Innovation and Customer Choice*. HarperBusiness.
+
+### S11 — Hypercompetition
+
+**Diagnosis question.** Has competitive disruption accelerated to a velocity where static competitive moats are unsustainable, requiring continuous self-disruption?
+
+**Schematic.** 4-Arena Dynamic Iteration Loop
+
+**Pressure test.**
+1. Is the firm leaning on IP or brand where technical parity arrives fast?
+2. Does management delay self-disruption to protect high-margin revenue?
+3. Is operating tempo fast enough for sequential advantages without burnout?
+
+**Canvas.** Dynamic cycle tracing competitive maneuvers across four escalating arenas: Cost and Quality, Timing and Know-How, Strongholds/Creation, and Deep Pockets.
+
+**Pressure questions, unabridged.**
+- Is the firm relying on static intellectual property or historical brand moats in a market where technical parity is achieved rapidly?
+- Does management delay self-disruptive product launches to protect existing high-margin revenue streams?
+- Is the organizational operating tempo fast enough to sustain sequential competitive advantages without inducing engineering burnout?
+
+**Actions, unabridged.**
+- Measure the mean time required for competitors to duplicate and launch parity versions of core feature releases.
+- Deploy an autonomous internal skunkworks squad tasked with designing a direct competitor to the company's primary commercial offering.
+- Align team performance metrics with the delivery velocity of new revenue initiatives rather than the defense of legacy market share.
+
+**Actions.**
+- Measure mean time for rivals to ship parity versions of core features.
+- Run a skunkworks tasked with building a direct competitor to the flagship.
+- Reward delivery velocity of new revenue, not defence of legacy share.
+
+**Source.** Richard A. D'Aveni (1994). *Hypercompetition: Managing the Dynamics of Strategic Maneuvering*. The Free Press.

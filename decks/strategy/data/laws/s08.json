@@ -1,0 +1,49 @@
+{
+  "id": "S08",
+  "name": "GE-McKinsey Nine-Box",
+  "category": "Market & Competition",
+  "diagnosis": "How should capital and engineering bandwidth be distributed across a diversified portfolio of business units with divergent prospects?",
+  "schematic": "3x3 Attractiveness-Strength Matrix",
+  "canvas": "3x3 portfolio grid plotting Industry Attractiveness (High, Medium, Low) on the vertical axis against Business Unit Competitive Strength (High, Medium, Low) on the horizontal axis, establishing three strategic zones: Invest/Grow, Selectivity/Hold, and Harvest/Divest.",
+  "stressTest": [
+    {
+      "text": "Are attractiveness scores driven by multi-year growth, or a windfall year?"
+    },
+    {
+      "text": "Is premium talent still defending units that should be managed for cash?"
+    },
+    {
+      "text": "Does high strength reflect proprietary assets, or a temporary head start?"
+    }
+  ],
+  "stressTestFull": [
+    "Are industry attractiveness metrics evaluated on multi-year compound growth, or are they skewed by short-term macroeconomic windfalls?",
+    "Does the executive team continue allocating premium engineering talent to defend declining units that should be managed for cash flow?",
+    "Does a high competitive strength rating reflect proprietary assets or temporary first-mover advantages?"
+  ],
+  "checklist": [
+    "Score every product unit on weighted attractiveness and strength indices.",
+    "Move 20% of development capacity from weak lines to growth segments.",
+    "Build end-of-life or divestment plans for harvest-quadrant products."
+  ],
+  "checklistFull": [
+    "Score every active commercial product unit against weighted composite indices of market attractiveness and competitive capability.",
+    "Reallocate 20% of product development capacity away from low-strength/low-attractiveness lines toward designated growth segments.",
+    "Formalize orderly end-of-life or divestment plans for products positioned within the harvest/divest quadrant."
+  ],
+  "origin": {
+    "authors": [
+      "McKinsey & Company",
+      "General Electric"
+    ],
+    "year": 1971
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "matrix_3x3",
+      "columns": 1,
+      "rows": 1
+    }
+  }
+}

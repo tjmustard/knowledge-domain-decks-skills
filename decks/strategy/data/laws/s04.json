@@ -1,0 +1,50 @@
+{
+  "id": "S04",
+  "name": "Ansoff Growth Matrix",
+  "category": "Market & Competition",
+  "diagnosis": "Has core market penetration reached saturation, requiring capital redeployment into product extensions, new markets, or non-core diversification?",
+  "schematic": "2x2 Market-Product Matrix",
+  "canvas": "2x2 matrix plotting Products (Existing versus New) along the horizontal axis against Markets (Existing versus New) along the vertical axis, generating four distinct quadrants: Market Penetration, Product Development, Market Development, and Diversification.",
+  "stressTest": [
+    {
+      "text": "Does product development cannibalize R&D before the core category is won?"
+    },
+    {
+      "text": "Does geographic expansion carry local advantage, or replicate domestic churn?"
+    },
+    {
+      "text": "Does diversification reuse a proprietary capability, or enter as an under-resourced entrant?"
+    }
+  ],
+  "stressTestFull": [
+    "Does pursuing adjacent product development cannibalize R&D resources before category leadership is established in the core offering?",
+    "Is geographic or vertical market expansion supported by localized distribution advantages, or does it replicate existing domestic churn overseas?",
+    "Does diversification exploit a proprietary, reusable capability, or does it force the firm to compete as an under-resourced entrant in an unfamiliar market?"
+  ],
+  "checklist": [
+    "Compute penetration ratios across core segments to date stagnation.",
+    "Test willingness-to-pay for adjacent products inside the existing base.",
+    "Establish hard ninety-day off-ramps for diversification investments."
+  ],
+  "checklistFull": [
+    "Compute total addressable market penetration ratios across core customer segments to determine the timeline to growth stagnation.",
+    "Deploy an experimental squad to validate willingness-to-pay for adjacent product extensions within the existing enterprise customer base.",
+    "Establish hard ninety-day performance off-ramps for exploratory diversification investments."
+  ],
+  "origin": {
+    "authors": [
+      "H. Igor Ansoff"
+    ],
+    "year": 1965,
+    "title": "Corporate Strategy",
+    "publication": "McGraw-Hill"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

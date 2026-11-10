@@ -1,0 +1,50 @@
+{
+  "id": "S09",
+  "name": "BCG Growth-Share Matrix",
+  "category": "Market & Competition",
+  "diagnosis": "Are market-leading cash flows being systematically recycled into emerging growth bets before core product lines mature?",
+  "schematic": "2x2 Cash-Growth Matrix",
+  "canvas": "2x2 matrix defined by Market Growth Rate along the vertical axis against Relative Market Share (logarithmic scale) along the horizontal axis, segmenting business lines into Cash Cows, Stars, Question Marks, and Dogs.",
+  "stressTest": [
+    {
+      "text": "Are cash cows treated as growth vehicles, over-investing where gains are capped?"
+    },
+    {
+      "text": "Do Question Marks pass strict gates, or burn capital without gaining share?"
+    },
+    {
+      "text": "Will leadership sunset or spin out Dogs instead of sustaining them?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the organization treating mature Cash Cows as growth vehicles, over-investing capital where marginal gains are structurally constrained?",
+    "Are speculative Question Marks subjected to strict operational gates, or do they consume capital without securing market share?",
+    "Does leadership maintain the operational resolve to sunset or spin out persistent Dogs rather than sustaining underperforming lines?"
+  ],
+  "checklist": [
+    "Compute relative share against category leaders for every product line.",
+    "Sweep cash from mature lines into funded Star initiatives.",
+    "Set ninety-day share milestones for Question Marks: scale or terminate."
+  ],
+  "checklistFull": [
+    "Compute relative market share ratios against category leaders across all commercial product lines.",
+    "Implement programmatic cash sweeps from mature product lines into funded Star growth initiatives.",
+    "Establish ninety-day market share milestones for all Question Marks to determine whether to scale or terminate investment."
+  ],
+  "origin": {
+    "authors": [
+      "Bruce D. Henderson"
+    ],
+    "year": 1970,
+    "title": "The Growth Share Matrix",
+    "publication": "Boston Consulting Group Perspectives"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

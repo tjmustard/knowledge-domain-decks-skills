@@ -1,0 +1,50 @@
+{
+  "id": "S05",
+  "name": "Porter's Generic Strategies",
+  "category": "Market & Competition",
+  "diagnosis": "Is the enterprise trapped in the middle, lacking either an insurmountable structural cost advantage or defensible premium pricing power?",
+  "schematic": "2x2 Advantage vs Scope Matrix",
+  "canvas": "2x2 matrix intersecting Strategic Advantage (Low Cost versus Differentiation) with Strategic Scope (Broad Industry-Wide versus Focused Segment), yielding Cost Leadership, Differentiation, Cost Focus, and Focused Differentiation.",
+  "stressTest": [
+    {
+      "text": "Can the firm prove a cost advantage rivals cannot copy on public cloud?"
+    },
+    {
+      "text": "Does differentiation sustain a 30% premium in tenders without losing conversion?"
+    },
+    {
+      "text": "Does the focus niche defend structurally, or isolate the firm in an unprofitable segment?"
+    }
+  ],
+  "stressTestFull": [
+    "Can the enterprise prove an architectural or economies-of-scale cost advantage that rivals cannot duplicate using commoditized public cloud infrastructure?",
+    "Is product differentiation strong enough to sustain a 30% price premium during formal procurement tenders without degrading conversion rates?",
+    "Does a focus strategy target a structurally defendable niche, or does it isolate the business within an unprofitable customer segment?"
+  ],
+  "checklist": [
+    "Benchmark cost of goods per seat against the lowest-cost peer.",
+    "Conduct double-blind willingness-to-pay tests to measure pricing elasticity.",
+    "Deprecate features that cost efficiency without earning verifiable pricing power."
+  ],
+  "checklistFull": [
+    "Benchmark direct cost-of-goods-sold per seat or transaction against the lowest-cost market peer.",
+    "Conduct double-blind customer willingness-to-pay evaluations to measure brand pricing elasticity.",
+    "Deprecate features that compromise architectural efficiency without generating verifiable pricing power."
+  ],
+  "origin": {
+    "authors": [
+      "Michael E. Porter"
+    ],
+    "year": 1980,
+    "title": "Competitive Strategy: Techniques for Analyzing Industries and Competitors",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S11",
+  "name": "Hypercompetition",
+  "category": "Market & Competition",
+  "diagnosis": "Has competitive disruption accelerated to a velocity where static competitive moats are unsustainable, requiring continuous self-disruption?",
+  "schematic": "4-Arena Dynamic Iteration Loop",
+  "canvas": "Dynamic cycle tracing competitive maneuvers across four escalating arenas: Cost and Quality, Timing and Know-How, Strongholds/Creation, and Deep Pockets.",
+  "stressTest": [
+    {
+      "text": "Is the firm leaning on IP or brand where technical parity arrives fast?"
+    },
+    {
+      "text": "Does management delay self-disruption to protect high-margin revenue?"
+    },
+    {
+      "text": "Is operating tempo fast enough for sequential advantages without burnout?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the firm relying on static intellectual property or historical brand moats in a market where technical parity is achieved rapidly?",
+    "Does management delay self-disruptive product launches to protect existing high-margin revenue streams?",
+    "Is the organizational operating tempo fast enough to sustain sequential competitive advantages without inducing engineering burnout?"
+  ],
+  "checklist": [
+    "Measure mean time for rivals to ship parity versions of core features.",
+    "Run a skunkworks tasked with building a direct competitor to the flagship.",
+    "Reward delivery velocity of new revenue, not defence of legacy share."
+  ],
+  "checklistFull": [
+    "Measure the mean time required for competitors to duplicate and launch parity versions of core feature releases.",
+    "Deploy an autonomous internal skunkworks squad tasked with designing a direct competitor to the company's primary commercial offering.",
+    "Align team performance metrics with the delivery velocity of new revenue initiatives rather than the defense of legacy market share."
+  ],
+  "origin": {
+    "authors": [
+      "Richard A. D'Aveni"
+    ],
+    "year": 1994,
+    "title": "Hypercompetition: Managing the Dynamics of Strategic Maneuvering",
+    "publication": "The Free Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

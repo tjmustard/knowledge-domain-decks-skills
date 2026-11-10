@@ -1,0 +1,50 @@
+{
+  "id": "S07",
+  "name": "Strategic Group Mapping",
+  "category": "Market & Competition",
+  "diagnosis": "Which distinct clusters of market rivals share identical strategic approaches, and what mobility barriers prevent cross-group encroachment?",
+  "schematic": "2x2 Multi-attribute Scatter",
+  "canvas": "2x2 scatter matrix plotting industry participants along two uncorrelated strategic dimensions (e.g., Geographic Footprint versus Product Breadth, or Price/Tier versus Customization Level), using proportional bubble sizes to represent market share.",
+  "stressTest": [
+    {
+      "text": "Are the mapping axes genuinely uncorrelated, or the same numbers twice?"
+    },
+    {
+      "text": "What mobility barrier keeps lower-tier entrants out of this group?"
+    },
+    {
+      "text": "Is blank territory an opportunity, or a graveyard of proven unviability?"
+    }
+  ],
+  "stressTestFull": [
+    "Are the selected mapping axes genuinely uncorrelated, or do they simply restate identical underlying financial variables?",
+    "What concrete economic or technical mobility barriers insulate the organization's strategic group from well-funded lower-tier entrants?",
+    "Does empty territory on the map indicate an untapped market opportunity or a graveyard of proven unviability?"
+  ],
+  "checklist": [
+    "Plot twelve rivals on two orthogonal axes validated by buyers.",
+    "Quantify capital and IP barriers to entering this strategic group.",
+    "Interview accounts that defected to another group about shifting criteria."
+  ],
+  "checklistFull": [
+    "Plot top twelve industry competitors across two orthogonal strategic dimensions validated by customer evaluation criteria.",
+    "Quantify the exact capital requirements and intellectual property barriers required to enter the organization's strategic group.",
+    "Interview customer accounts that recently defected to alternative strategic groups to identify shifting purchase criteria."
+  ],
+  "origin": {
+    "authors": [
+      "Michael S. Hunt"
+    ],
+    "year": 1972,
+    "title": "Competition in the Major Home Appliance Industry 1960–1970",
+    "publication": "Doctoral dissertation, Harvard University"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

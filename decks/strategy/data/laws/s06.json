@@ -1,0 +1,51 @@
+{
+  "id": "S06",
+  "name": "Value Net & Coopetition",
+  "category": "Market & Competition",
+  "diagnosis": "Can aggregate market value be expanded by collaborating with direct competitors and complementary ecosystem participants?",
+  "schematic": "Diamond Relational Network",
+  "canvas": "Diamond network positioning the Company at the center, flanked horizontally by Competitors and Complementors, and vertically by Customers and Suppliers.",
+  "stressTest": [
+    {
+      "text": "Which external products exponentially raise the utility of this platform?"
+    },
+    {
+      "text": "Does the firm treat rivals only as adversaries, missing joint standards?"
+    },
+    {
+      "text": "Is a partner taking the customer relationship while we keep the low-margin work?"
+    }
+  ],
+  "stressTestFull": [
+    "Has the company identified the external products whose adoption exponentially increases the utility of its own platform?",
+    "Does the organization treat direct rivals exclusively as adversaries, missing opportunities to establish joint architectural standards?",
+    "Is an ecosystem partner capturing high-margin customer relationships while delegating low-margin operational execution back to the company?"
+  ],
+  "checklist": [
+    "Map five complementary technologies and build bidirectional integrations.",
+    "Form an open standard with competitors to disintermediate infrastructure gatekeepers.",
+    "Tie revenue sharing to the growth of critical complementors."
+  ],
+  "checklistFull": [
+    "Map the five primary complementary technologies that accelerate product adoption and establish bidirectional technical integrations.",
+    "Form an open standard or consortium with category competitors to disintermediate monopolistic infrastructure gatekeepers.",
+    "Structure revenue-sharing agreements that tie platform margins to the growth of critical complementors."
+  ],
+  "origin": {
+    "authors": [
+      "Adam M. Brandenburger",
+      "Barry J. Nalebuff"
+    ],
+    "year": 1996,
+    "title": "Co-Opetition: A Revolutionary Mindset That Combines Competition and Cooperation",
+    "publication": "Currency/Doubleday"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "kind": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}
