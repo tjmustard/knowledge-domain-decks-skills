@@ -1544,7 +1544,10 @@ The ids are `ARCH-01` to `ARCH-16`, not `ARC-`. The narrative deck already uses
 `ARC-01` to `ARC-12` for Arc & Plot, and two decks whose ids differ by one
 letter invite a wrong lookup. `scripts/test/archetypes.test.mjs` extracts the
 sixteen card headings from the source and checks each id, name and family
-against that extraction rather than against a retyped list.
+against that extraction rather than against a retyped list. The regex captures
+each heading's text after its leading "The", so what the test proves is that
+names match the extraction modulo the article: the deck's names drop that word
+throughout, and do not differ from the source's headings in any other way.
 
 ## 44. Every figure parameter changes the drawing
 

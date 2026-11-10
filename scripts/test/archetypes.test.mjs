@@ -77,7 +77,10 @@ test("the sixteen records match the source's card headings, by extraction", asyn
   const cards = await loadCards(deck);
   assert.equal(cards.length, 16);
   // Ids in order, names against the extraction rather than against a retyped
-  // list: a card that drifts from its source heading fails here.
+  // list: a card that drifts from its source heading fails here. The regex
+  // captures the heading after its leading "The", so this proves names match
+  // the extraction modulo the article - the deck's names drop that word
+  // throughout, and differ from the source's headings in no other way.
   headings.forEach((heading, index) => {
     const card = cards[index];
     assert.equal(card.id, `ARCH-${String(heading.number).padStart(2, "0")}`);
