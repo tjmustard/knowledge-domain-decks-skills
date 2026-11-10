@@ -128,6 +128,42 @@ export function checkSectionMap(records, map) {
     }
   }
 
+  // The header's rename list is a written summary of the deckName rows, and an
+  // unchecked summary above tested data is how a map starts lying: someone
+  // renames a law in laws and forgets the list, or edits the list alone. Hold
+  // it to the rows exactly - same triples, same order, none missing, none extra.
+  const renamed = rows
+    .filter((row) => row.deckName !== undefined)
+    .map((row) => ({ number: row.number, sourceName: row.sourceName, deckName: row.deckName }));
+  const listed = map.header?.renames;
+  if (!Array.isArray(listed)) {
+    problems.push("header.renames is missing, so the rename list above the rows is unreadable");
+  } else {
+    const depth = Math.max(listed.length, renamed.length);
+    for (let i = 0; i < depth; i += 1) {
+      const listedRow = listed[i];
+      const row = renamed[i];
+      if (!row) {
+        problems.push(
+          `header.renames[${i}] lists ${listedRow.number} ${listedRow.sourceName}, but no row there carries deckName`
+        );
+      } else if (!listedRow) {
+        problems.push(
+          `header.renames is missing row ${row.number} ${row.sourceName} (deck: ${row.deckName})`
+        );
+      } else if (
+        listedRow.number !== row.number ||
+        listedRow.sourceName !== row.sourceName ||
+        listedRow.deckName !== row.deckName
+      ) {
+        problems.push(
+          `header.renames[${i}] is ${listedRow.number} ${listedRow.sourceName} -> ${listedRow.deckName}, ` +
+            `but the row is ${row.number} ${row.sourceName} -> ${row.deckName}`
+        );
+      }
+    }
+  }
+
   return {
     problems,
     rows: rows.length,
