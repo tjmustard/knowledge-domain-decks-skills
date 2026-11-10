@@ -88,8 +88,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 6 of 12
 - **Cognitive mechanism:** Progressive Disclosure & Cognitive Load Reduction
 - **Where it deploys:** Feature Discovery, Complex UX Workflows
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-31 — Feature Gate / Upgrade Modal
@@ -98,8 +97,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 7 of 12
 - **Cognitive mechanism:** Endowed Progress Effect & Sunk Cost Salience
 - **Where it deploys:** Freemium Upgrade Prompts, Soft Paywalls
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-32 — Input Field Inline Safeguard
@@ -108,8 +106,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 8 of 12
 - **Cognitive mechanism:** Privacy Preservation & Defensive Posturing Defusal
 - **Where it deploys:** Sensitive Form Fields (Billing, Security)
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-33 — Plan Recommendation Badge
@@ -118,8 +115,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 9 of 12
 - **Cognitive mechanism:** Default Bias & Compromise Effect
 - **Where it deploys:** SaaS Pricing Tables, Subscription Tiers
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-34 — Optimistic Inline Status Snack
@@ -128,8 +124,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** loop at position 10 of 12
 - **Cognitive mechanism:** Feedback Loop Closure & Temporal Discounting
 - **Where it deploys:** Async Process Completion, Save States
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-35 — Exit-Intent Preservation Defusal
@@ -138,8 +133,7 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** anchor at position 11 of 12
 - **Cognitive mechanism:** Endowment Effect & Work Sunk-Cost Capitalization
 - **Where it deploys:** Abandoned Form Recovery, Session Retention
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-36 — Subscription Pause/Downgrade
@@ -148,6 +142,5 @@ This approach is grounded in attribution theory and locus-of-control preservatio
 - **Schematic:** ease at position 12 of 12
 - **Cognitive mechanism:** Friction Asymmetry & Reactance Mitigation
 - **Where it deploys:** Cancellation Checkout Flows
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

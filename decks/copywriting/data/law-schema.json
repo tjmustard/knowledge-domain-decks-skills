@@ -18,7 +18,6 @@
     "frontLine",
     "frontSize",
     "template",
-    "templateLines",
     "origin",
     "figure"
   ],
@@ -121,8 +120,11 @@
       "maxLength": 160
     },
     "template": {
-      "description": "The fill-in pattern, verbatim, where the source prints one; otherwise the deck's own line saying the source prints no template for this formula. Never trimmed.",
-      "type": "string",
+      "description": "The fill-in pattern, verbatim and joined from its lines, where the source prints one; null where it prints none. Never trimmed.",
+      "type": [
+        "string",
+        "null"
+      ],
       "minLength": 20,
       "maxLength": 900
     },
@@ -136,6 +138,15 @@
         "minLength": 2,
         "maxLength": 900
       }
+    },
+    "noTemplate": {
+      "description": "The deck's own sentence, printed under the same heading the template uses, saying the source prints no template for this formula. Present only on taxonomy-only cards; nothing is filled in for them.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 40,
+      "maxLength": 300
     },
     "example": {
       "description": "The blueprint's bland and optimized rewrite. Illustrative, so it lives in the artifacts and never on the card; null where the source prints no blueprint.",

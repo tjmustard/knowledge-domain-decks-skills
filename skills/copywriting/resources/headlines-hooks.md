@@ -85,8 +85,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** identity at position 6 of 12
 - **Cognitive mechanism:** Self-Referencing Effect & Cognitive Dissonance
 - **Where it deploys:** Paid Search Ads, Retargeting Landers
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-19 — If-Then Conditional
@@ -95,8 +94,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** contrast at position 7 of 12
 - **Cognitive mechanism:** Asymmetric Upside Framing & Prospect Theory
 - **Where it deploys:** Cold Prospecting, Contextual Ads
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-20 — Mistake / Warning Hook
@@ -105,8 +103,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** aversion at position 8 of 12
 - **Cognitive mechanism:** Extreme Loss Aversion & Negativity Bias
 - **Where it deploys:** Organic Content Hooks, Editorial Leads
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-21 — Little-Known Secret Mechanism
@@ -115,8 +112,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** gap at position 9 of 12
 - **Cognitive mechanism:** Information Asymmetry & Privilege Heuristic
 - **Where it deploys:** Direct Mail, Information Products
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-22 — Reason-Why Anchor
@@ -125,8 +121,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** proof at position 10 of 12
 - **Cognitive mechanism:** Placebo Effect of Justification ("Because" Trigger)
 - **Where it deploys:** Technical Products, Developer Tools
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-23 — Contrarian Category Rejection
@@ -135,8 +130,7 @@ The cognitive foundation is the bandwagon effect and authority bias. In high-sta
 - **Schematic:** contrast at position 11 of 12
 - **Cognitive mechanism:** Cognitive Disruption & Reactance Theory
 - **Where it deploys:** Category Creation Startups, Manifestos
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-24 — Outcome-Without-Sacrifice

@@ -280,13 +280,21 @@ test("a card prints its template as exactly its templateLines, one per line", as
     }
 
     const printed = await printedTemplateLines(dir, "lines");
-    assert.equal(Object.keys(printed).length, TOTAL, "every card printed a template");
-    for (const record of inventory.records) {
+    const blueprints = inventory.records.filter((record) => record.blueprint);
+    assert.equal(Object.keys(printed).length, blueprints.length, "every blueprint printed its template");
+    for (const record of blueprints) {
       assert.deepEqual(
         printed[record.id],
         cards.get(record.id).templateLines,
         `${record.id} printed a different set of lines than its record`
       );
+    }
+    // A taxonomy-only card has no template lines to print: its sentence stands
+    // under the same heading instead, so nothing is flattened and nothing is
+    // invented.
+    for (const record of inventory.records.filter((entry) => !entry.blueprint)) {
+      assert.equal(printed[record.id], undefined, `${record.id} printed template lines it does not have`);
+      assert.ok(cards.get(record.id).noTemplate, `${record.id} has no no-template sentence`);
     }
     // The cards whose source is a list of parts print one line per part.
     assert.equal(printed["CPY-01"].length, 6, "AIDA prints its six parts");
@@ -298,10 +306,10 @@ test("a card prints its template as exactly its templateLines, one per line", as
     // flattened template.
     const flattened = await printedTemplateLines(dir, "prose");
     assert.equal(flattened["CPY-04"], undefined, "the joined run printed template lines");
-    for (const record of inventory.records) {
-      assert.notDeepEqual(
+    for (const record of blueprints) {
+      assert.equal(
         flattened[record.id],
-        cards.get(record.id).templateLines,
+        undefined,
         `${record.id} would pass the line rule with its template flattened`
       );
     }

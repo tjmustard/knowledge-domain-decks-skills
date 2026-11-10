@@ -91,8 +91,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** cadence at position 6 of 12
 - **Cognitive mechanism:** Attentional Decay Compensation & Scanning Laws
 - **Where it deploys:** Feature Descriptions, Technical Releases
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-43 — De-Nominalization
@@ -101,8 +100,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** ease at position 7 of 12
 - **Cognitive mechanism:** Conceptual Concreteness & Perceptual Grounding
 - **Where it deploys:** Enterprise B2B SaaS Descriptions
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-44 — Falsifiable Swap Rule
@@ -111,8 +109,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** proof at position 8 of 12
 - **Cognitive mechanism:** Signaling Theory & Costly Signaling Verification
 - **Where it deploys:** Value Propositions, Positioning Copy
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-45 — Affirmative Negation Removal
@@ -121,8 +118,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** ease at position 9 of 12
 - **Cognitive mechanism:** Negation Processing Penalty Elimination
 - **Where it deploys:** UX Copy, Conversion Guidance
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-46 — Colloquial Contraction Injection
@@ -131,8 +127,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** identity at position 10 of 12
 - **Cognitive mechanism:** Social Proximity Theory & In-Group Tone Matching
 - **Where it deploys:** Marketing Emails, B2B SaaS Interfaces
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-47 — Punctuation Cadence Gating
@@ -141,8 +136,7 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** cadence at position 11 of 12
 - **Cognitive mechanism:** Working Memory Buffer Optimization
 - **Where it deploys:** Short-Form Paid Ads, Hero Headlines
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-48 — Pronoun Ratio Balancing
@@ -151,6 +145,5 @@ This technique relies on auditory cortex entrainment and habituation disruption.
 - **Schematic:** identity at position 12 of 12
 - **Cognitive mechanism:** Empathic Perspective Taking & Self-Interest Bias
 - **Where it deploys:** Customer-Facing Pages, Documentation
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

@@ -92,14 +92,16 @@ const main = async () => {
 
     const blueprintProse =
       record.blueprintProse === null ? null : renderFormula(record.blueprintProse);
-    const template = record.blueprint ? record.template : NO_TEMPLATE;
+    const template = record.blueprint ? record.template : null;
     if (record.blueprint && typeof template !== "string") {
       throw new Error(`${record.formulaId} is a blueprint with no template`);
     }
-    // The back prints one line per source line. The joined string stays on the
-    // record so the artifacts and the schema keep one canonical template.
-    const templateLines = record.blueprint ? record.templateLines : [NO_TEMPLATE];
-    if (templateLines.join(" ") !== template) {
+    // The back prints one line per source line, and a taxonomy-only card prints
+    // the deck's own sentence under the same heading instead of a template.
+    // The joined string stays on the record so the artifacts and the schema
+    // keep one canonical template.
+    const templateLines = record.blueprint ? record.templateLines : null;
+    if (record.blueprint && templateLines.join(" ") !== template) {
       throw new Error(`${record.formulaId}'s templateLines do not join to its template`);
     }
 
@@ -118,7 +120,7 @@ const main = async () => {
       frontSize: row.frontSize,
       schematic: row.label,
       template,
-      templateLines,
+      ...(templateLines ? { templateLines } : { noTemplate: NO_TEMPLATE }),
       example: record.blueprint ? record.example : null,
       origin: ORIGINS[record.formulaId] || NO_ORIGIN,
       figure: {

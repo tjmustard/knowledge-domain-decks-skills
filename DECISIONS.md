@@ -2320,3 +2320,96 @@ four carried defects, the macro guard, and that the rules, each phase resource
 and the web bundle carry every record's full text and attribution. The printed
 PDF is 100 pages and 746,190 bytes at sha256 `aced7d61...`; the fifty-card SVG
 bundle hashes to `74d0bd5d...` in `cards.json` order.
+
+## 64. The copy deck prints the template verbatim, in its own lines, and credits what it can check
+
+The copy deck ships the source's forty-eight-formula taxonomy as a deck of
+cards. The card is a compression of the taxonomy row plus the blueprint, and
+the compression was chosen so that nothing a writer needs is cut: the front
+prints the source's formula id, the name, the ratio line where the blueprint
+states component percentages (seventeen of the twenty-two blueprints) or the
+readability and scope line where it does not, the drawing, and the map's own
+label. The back prints the cognitive mechanism, the deployment surface, the
+fill-in template verbatim and the attribution. The blueprint prose and the
+bland/optimized example illustrate rather than instruct, so they are `"card":
+false` and live in the rules and the resources.
+
+The template is the one field a reader can execute, and the extraction
+flattened it. Ten of the twenty-two blueprints are lists of parts, and joining
+the parts with spaces turned QUEST's five stages and the blank-state
+guidance's three lines into one run on the card. The staged inventory now
+records `templateLines` beside the joined `template` (`template ===
+templateLines.join(" ")` for all twenty-two, asserted in the builder and the
+deck test), the back prints one line per entry through a new `lines` block
+style, and the rules and the surface resources keep the same line structure.
+The taxonomy-only cards carry no template and no lines: they print the deck's
+own sentence under a heading that reads "Template — none in source", which is
+a second block on the same data, so the heading never contradicts the body and
+no engine field was added to say it.
+
+The ratio line is authored, not extracted. Seventeen cards print
+`{label, percent}` pairs taken from their own blueprint prose, and the guard is
+a pairing rule: the label and the percent must stand in the same sentence of
+that card's prose. The first version proved only presence, and the operator
+returned it after swapping AIDA's Attention and Desire shares with the front
+line updated - all six tests stayed green. The rule now ships with that exact
+falsification as a test. The count is measured from the prose, never assumed
+(the dispatcher's eye said about sixteen; the prose says seventeen).
+
+Attribution is in three forms and no others. Six formulas cite a work that a
+checked public record names, with the check recorded on the card: Lewis's
+*Financial Advertising* (Levey Bros. & Company, 1908) for AIDA - the check note
+says the book states attention, interest and conviction, and that the
+four-step AIDA and the 1898 date are later textbook attribution, which recent
+scholarship (Iwamoto 2024) supports against; Fortin's *The Death of the
+Salesletter* (2006) for QUEST; Edwards's *How to Write Copy That Sells* (Morgan
+James, 2016) for PASTOR, because the widely repeated 2006 date could not be
+corroborated; Brunson's *DotCom Secrets* (Hay House, 2022, script at p. 279)
+for Star-Story-Solution, with the record stating that Brunson credits Vince
+James and that James has no printed work naming it; Iny's Smashing Magazine
+article of 11 October 2011 for Danny Iny's 6+1; and Provost's *100 Ways to
+Improve Your Writing* (Signet, 1985, pp. 60-61) for the rhythm variation. PAS,
+BAB, the 4 Ps and FAB have no documented coiner; those cards, and the other
+thirty-seven, print "The source names no originator." The audit with its
+sources is `decks/copywriting/data/attribution-audit.json`, and the deck test
+holds every card's citation to it.
+
+Three engine additions came out of this deck, each defaulting to the shipped
+behaviour so the nine earlier decks rebuild byte-identical (`a6f177de`,
+`035429f5`, `aced7d61`, `c1b37678`, `435f2a9f`, `5ca91630`, `2bfc9fb5`,
+`482e7fc2`, `40164666`):
+
+- `fields.cardId` names the field a card prints its id from, because the
+  source's formula id (ST-01) is the card's kicker while the record's deck id
+  is CPY-01. The print template, the viewer and the generated page all read it,
+  and a deck that names none prints `card.id` as before.
+- A `lines` block style prints one entry per line and emits one metadata record
+  per printed line, so a test can query what Typst actually laid out. The test
+  builds the deck in a scratch tree, requires each blueprint card's printed
+  lines to equal its `templateLines` in order, and rebuilds the same deck with
+  the block printing the joined string to prove the flattened run fails.
+- A `beforeAfter` block style prints the record's `{ bland, optimized }` pair as
+  the two rewrites it is, in the rules and the resources.
+
+The card schema gained `schematic` (the map's printed label) and `frontSize`
+(the map's front-line size), and `template` became nullable because a
+taxonomy-only formula has none. One bound moved on evidence: the bland
+example's minimum fell from ten characters to one because UX-02's control is
+the single word "Submit." and a bound that rejects the source's own record is
+the defect, not the record.
+
+Two drawings did not read at card size and were redrawn within the approved
+vocabulary. The agency drawing put the reader and the target on one row, so at
+a low mark the arrow collapsed into a dot; the two rows are now separate and
+the surface's twelve positions run underneath. The identity drawing filled the
+marked ring, and a filled circle is a disc at any radius, hiding the rings
+inside it; the mark is now a heavy ring. The three drawings the operator had
+already read - sequence, gap and ease - are untouched.
+
+The printed deck is 96 pages and 430,955 bytes at sha256 `be66d059...`; the
+forty-eight-card SVG bundle hashes to `b404676b...` in `cards.json` order; all
+48 cards fit with zero OVER and zero TIGHT, worst recto 410 and worst verso
+429. The deck test compares the printed deck to the inventory record for
+record, holds each card's front line, size, label and figure to the layout
+map, requires the rules and each surface resource to carry the whole record,
+and holds every attribution to the audit.

@@ -11,10 +11,8 @@
   "frontLine": "Grade 5–7; Alert statement (7–13 words)",
   "frontSize": 9,
   "schematic": "aversion at position 8 of 12",
-  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-  "templateLines": [
-    "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-  ],
+  "template": null,
+  "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
   "example": null,
   "origin": {
     "note": "The source names no originator."

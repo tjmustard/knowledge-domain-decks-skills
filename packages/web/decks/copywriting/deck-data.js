@@ -360,10 +360,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 8–10; Persuasive narrative (300–800 words)",
       "frontSize": 9,
       "schematic": "sequence at position 7 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -393,10 +391,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 7–9; Comprehensive architecture (800–3,000 words)",
       "frontSize": 9,
       "schematic": "identity at position 8 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "authors": [
@@ -432,10 +428,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Narrative arc (400–1,000 words)",
       "frontSize": 9,
       "schematic": "sequence at position 9 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "authors": [
@@ -471,10 +465,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Cumulative list (150–600 words)",
       "frontSize": 9,
       "schematic": "proof at position 10 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -504,10 +496,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 7–8; Structured landing page (250–600 words)",
       "frontSize": 9,
       "schematic": "sequence at position 11 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "authors": [
@@ -543,10 +533,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 8–10; Medium-form conversion copy (300–900 words)",
       "frontSize": 9,
       "schematic": "proof at position 12 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -814,10 +802,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Interrogative header (6–12 words)",
       "frontSize": 9,
       "schematic": "identity at position 6 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -847,10 +833,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Conditional sentence (10–18 words)",
       "frontSize": 9,
       "schematic": "contrast at position 7 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -880,10 +864,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Alert statement (7–13 words)",
       "frontSize": 9,
       "schematic": "aversion at position 8 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -913,10 +895,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 7–8; Narrative headline (9–17 words)",
       "frontSize": 9,
       "schematic": "gap at position 9 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -946,10 +926,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 7–9; Explanatory hook (10–18 words)",
       "frontSize": 9,
       "schematic": "proof at position 10 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -979,10 +957,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Antithetical claim (8–14 words)",
       "frontSize": 9,
       "schematic": "contrast at position 11 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1311,10 +1287,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Tooltip overlay (12–28 words)",
       "frontSize": 9,
       "schematic": "ease at position 6 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1344,10 +1318,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Modal container (40–90 words)",
       "frontSize": 9,
       "schematic": "anchor at position 7 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1377,10 +1349,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–6; Helper label (5–15 words)",
       "frontSize": 9,
       "schematic": "ease at position 8 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1410,10 +1380,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Badge + Callout (8–20 words)",
       "frontSize": 9,
       "schematic": "anchor at position 9 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1443,10 +1411,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 4–6; Transient banner (4–10 words)",
       "frontSize": 9,
       "schematic": "loop at position 10 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1476,10 +1442,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Interstitial dialog (20–50 words)",
       "frontSize": 9,
       "schematic": "anchor at position 11 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1509,10 +1473,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Offboarding step (35–80 words)",
       "frontSize": 9,
       "schematic": "ease at position 12 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1732,10 +1694,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Paragraph structure (30–60 words)",
       "frontSize": 9,
       "schematic": "cadence at position 6 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1765,10 +1725,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–7; Verb-driven syntax",
       "frontSize": 9,
       "schematic": "ease at position 7 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1798,10 +1756,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 6–8; Differentiator assertion",
       "frontSize": 9,
       "schematic": "proof at position 8 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1831,10 +1787,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–6; Directive sentences",
       "frontSize": 9,
       "schematic": "ease at position 9 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1864,10 +1818,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Grade 5–7; Grammatical contraction policy",
       "frontSize": 9,
       "schematic": "identity at position 10 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1897,10 +1849,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "Strict punctuation constraint (0 em dashes, max 1 colon)",
       "frontSize": 9,
       "schematic": "cadence at position 11 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",
@@ -1930,10 +1880,8 @@ window.COPYWRITING_DECK = {
       "frontLine": "3:1 ratio of \"You/Your\" to \"We/Our/I\"",
       "frontSize": 9,
       "schematic": "identity at position 12 of 12",
-      "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
-      "templateLines": [
-        "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf."
-      ],
+      "template": null,
+      "noTemplate": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
       "example": null,
       "origin": {
         "note": "The source names no originator.",

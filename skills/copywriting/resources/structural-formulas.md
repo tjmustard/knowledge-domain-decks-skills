@@ -118,8 +118,7 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 7 of 12
 - **Cognitive mechanism:** Diagnostic Cognitive Processing
 - **Where it deploys:** Non-Profit Appeals, High-Consideration B2B
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-08 — PASTOR
@@ -128,8 +127,7 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** identity at position 8 of 12
 - **Cognitive mechanism:** Social Identity & Empathic Alignment
 - **Where it deploys:** Comprehensive Sales Pages, Long-Form VSLs
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** Ray Edwards (2016), *How to Write Copy That Sells*.
 
 ## CPY-09 — Star-Story-Solution
@@ -138,8 +136,7 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 9 of 12
 - **Cognitive mechanism:** Narrative Transportation & In-Group Favoritism
 - **Where it deploys:** Editorial Ads, Founder Story Pages
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** Russell Brunson (2022), *DotCom Secrets*.
 
 ## CPY-10 — String of Pearls
@@ -148,8 +145,7 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** proof at position 10 of 12
 - **Cognitive mechanism:** Anchoring-and-Adjustment & Proof Cascades
 - **Where it deploys:** Social Proof Walls, Long Sales Pitches
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.
 
 ## CPY-11 — Danny Iny’s 6+1
@@ -158,8 +154,7 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** sequence at position 11 of 12
 - **Cognitive mechanism:** Cognitive Dissonance & Action Priming
 - **Where it deploys:** High-Friction SaaS Conversions
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** Danny Iny (2011), *Introducing The Fabulous 6 + 1 Model For Effective Copywriting (Better Than AIDA!)*
 
 ## CPY-12 — AIDCA / IDCA
@@ -168,6 +163,5 @@ FAB is grounded in means-end chain theory. Decision-makers do not purchase funct
 - **Schematic:** proof at position 12 of 12
 - **Cognitive mechanism:** Risk-Mitigating Credibility Verification
 - **Where it deploys:** Enterprise Landing Pages, Quote Flows
-- **Template:**
-  The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
+- **Template — none in source:** The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.
 - **Source:** The source names no originator.

@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-9%20%C2%B7%20389%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-10%20%C2%B7%20437%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -26,6 +26,7 @@
 - [👥 Team Architecture](#-team-architecture)
 - [🧪 Innovation Architecture](#-innovation-architecture)
 - [💡 Ideation Architecture](#-ideation-architecture)
+- [✍️ Copy Architecture](#️-copy-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -42,7 +43,7 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Nine decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Ten decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
@@ -55,7 +56,8 @@ the script a manager says when the team is stuck. **Innovation Architecture**
 covers forty-two product-discovery and experimentation tactics, each carried as
 an hypothesis and the threshold that would prove it. **Ideation Architecture**
 covers fifty idea-generation tactics, each carried as a five-minute sprint you
-can run. Each card is distilled into the smallest usable form: a claim, a
+can run. **Copy Architecture** covers forty-eight copy formulas, each carried
+as the proportions it allocates and the template it fills. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -110,6 +112,7 @@ deck's copy, names, or trade dress is used.
 | **Team Architecture** | 44 | 4 dimensions | `packages/prepress/dist/team.pdf` | `packages/web/decks/team/` | `rules/team-rules.md` | `skills/team/` |
 | **Innovation Architecture** | 42 | 4 phases | `packages/prepress/dist/innovation.pdf` | `packages/web/decks/innovation/` | `rules/innovation-rules.md` | `skills/innovation/` |
 | **Ideation Architecture** | 50 | 4 phases | `packages/prepress/dist/ideation.pdf` | `packages/web/decks/ideation/` | `rules/ideation-rules.md` | `skills/ideation/` |
+| **Copy Architecture** | 48 | 4 surfaces | `packages/prepress/dist/copywriting.pdf` | `packages/web/decks/copywriting/` | `rules/copywriting-rules.md` | `skills/copywriting/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -542,6 +545,94 @@ TRIZ and Worst Possible Idea. The deck's records are in
 
 ---
 
+## ✍️ Copy Architecture
+
+**Copy Architecture** is a forty-eight-card deck of copy formulas in four
+surfaces of twelve: the structural sequences that carry a reader from attention
+to a decision, the headlines and hooks that interrupt a skimming habit, the
+microcopy of a product's own interface, and the sentence-level rhythm that keeps
+a page readable. Each card prints the source's own formula id as its kicker, the
+formula's name, and the line its proportions make: where the blueprint states
+component percentages, the front prints them as a ratio (AIDA's Attention 15 ·
+Interest 30 · Desire 40 · Action 15); where it states none, the front prints the
+formula's readability and scope. The back carries the cognitive mechanism, the
+surface it deploys on, the fill-in template verbatim and the attribution.
+
+The forty-eight divide into four surfaces, in the source's own order:
+
+| Surface | Cards | What it gives you |
+|---|---|---|
+| Structural Formulas | ST-01 to ST-12 | A sequence that carries a reader from first line to action |
+| Headlines & Hooks | HL-01 to HL-12 | A first line that earns the next one |
+| Product Microcopy | UX-01 to UX-12 | The words a product says about itself: buttons, empty screens, errors, plan names |
+| Clarity & Rhythm | CR-01 to CR-12 | Sentence and paragraph craft that keeps a page readable |
+
+The template is the only field a writer can execute, so it prints verbatim on
+the back and is never trimmed. A template that is a list of parts keeps its
+lines: ten of the twenty-two blueprints are lists, and QUEST's five stages and
+the blank-state guidance's three lines each print on their own line rather than
+as one run. Twenty-six formulas are taxonomy rows in the source and print no
+template; their cards say so under a heading that says so, and nothing is filled
+in for them. The blueprint prose and the bland/optimized example, which
+illustrate rather than instruct, follow in the rules file and the surface
+resources, because those files are the reference.
+
+The drawing follows the mechanism. `decks/copywriting/data/layout-map.json`
+files each card under one of eleven structural families - sequence 7, aversion
+4, contrast 3, anchor 4, identity 4, proof 5, gap 4, ease 9, agency 2, loop 2,
+cadence 4 - and records the datum it reads as a sentence quoted from the
+record, the mark (the card's position in its surface) and the divisions (the
+surface, twelve). Each family's basis quote must carry one of that family's
+operative stems, so a card cannot sit under a family its own mechanism does not
+support; a test fails when the quote exists in the record but carries no such
+stem. "Transport" is a sequence stem because AIDA and Star-Story-Solution move
+the reader through a staged narrative in order, and the map says so. The eleven
+families read as eleven drawings: stepping stones, an unbalanced beam, a ring
+open at the mark, stacked evidence, concentric rings, a path that smooths,
+split panels, a hung weight, alternating bars, a reader arrow to a marked
+target, and a returning loop.
+
+The ratio lines are authored from the blueprint prose, never guessed: seventeen
+of the twenty-two blueprints state component percentages, each `{label, percent}`
+pair is asserted to stand in the same sentence of that card's prose, and the
+count is measured rather than assumed. The check was returned once for proving
+presence instead of pairing; the swapped-percentage falsification now ships as a
+test.
+
+Attribution names the originating work where a checked public record names one:
+Lewis's *Financial Advertising* (1908) for AIDA, with the check note recording
+that the book states attention, interest and conviction and that the four-step
+AIDA and the 1898 date are later textbook attribution; Fortin's *The Death of
+the Salesletter* (2006) for QUEST; Edwards's *How to Write Copy That Sells*
+(2016) for PASTOR; Brunson's *DotCom Secrets* (2022, crediting Vince James) for
+Star-Story-Solution; Iny's *Smashing Magazine* article of 11 October 2011 for
+6+1; and Provost's *100 Ways to Improve Your Writing* (1985) for the rhythm
+variation. PAS, BAB, the 4 Ps and FAB have no documented coiner, and those cards,
+with the other thirty-seven, print "The source names no originator." The audit,
+with what was read and where, is
+`decks/copywriting/data/attribution-audit.json`.
+
+The source's eleven defects are carried rather than repaired: an italic formula
+id, five templates that arrived as headings, two wrapped in HTML comments, a
+glued example table and span markers, all stripped to their text and recorded.
+CR-02's Gunning Fog formula arrives as LaTeX and is rendered through a declared
+table - fractions as divisions, scaled brackets as brackets, text groups as
+words - and a guard test fails on any surviving backslash or brace in a printed
+field.
+
+Its 96-page print PDF is 430,955 bytes (sha256 `be66d059…`), byte-identical on
+rebuild, and its forty-eight SVGs hash to `b404676b…` in `cards.json` order. All
+48 cards fit inside the safe inset with zero OVER and zero TIGHT, the worst
+recto at row 410 and the worst verso at 429. Its ruleset and skill are
+[`rules/copywriting-rules.md`](./rules/copywriting-rules.md) and
+[`skills/copywriting/`](./skills/copywriting/), and the skill's index carries
+four routes: to Narrative for the pitch, to UX laws for the behaviour the copy
+uses, to Team for the blameless post-mortem, and to the microcopy this deck
+owns. The deck's records are in `decks/copywriting/data/laws/` and its schema in
+`decks/copywriting/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -585,9 +676,9 @@ facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
 retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
 deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), the team deck as 88 pages
 and 479,152 bytes (`482e7fc2…`), the innovation deck as 84 pages and
-386,570 bytes (`c1b37678…`), and the ideation deck as 100 pages and
-746,190 bytes (`aced7d61…`); two consecutive builds of one
-commit are byte-identical for all nine. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+386,570 bytes (`c1b37678…`), the ideation deck as 100 pages and 746,190 bytes
+(`aced7d61…`), and the copy deck as 96 pages and 430,955 bytes (`be66d059…`);
+two consecutive builds of one commit are byte-identical for all ten. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
@@ -730,8 +821,8 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    declares none of these gets the default shape and order.
    A deck whose cards are not a checklist at all declares `blocks`: an ordered
    list of `{ "field", "label", "style" }` naming the back-face sections it
-   prints, where `style` is one of `traits`, `words`, `quotes`, `prose`, `list`
-   or `example`. The same list drives the print verso, the web verso and the
+   prints, where `style` is one of `traits`, `words`, `quotes`, `prose`, `list`,
+   `example`, `labelled`, `labelledList`, `beforeAfter` or `lines`. The same list drives the print verso, the web verso and the
    generated markdown; a block whose field a record does not carry prints
    nothing at all. Map `items` and `antiPattern` to `null` for a deck with no
    checklist and no anti-pattern: the whole section is then absent rather than
