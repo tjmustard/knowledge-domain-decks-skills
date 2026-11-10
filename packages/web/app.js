@@ -54,6 +54,9 @@
   // part prints only when it is there, and the full case reads exactly as before.
   function citation(origin) {
     if (!origin) return "";
+    // A note-only attribution names no author, work or publication: a method in
+    // common use with no documented originator. The note is the whole line.
+    if (origin.note && !origin.authorsLabel && !origin.title && !origin.publication) return origin.note;
     // The bundle carries signed years, where a negative value means BCE.
     var year = origin.year === undefined || origin.year === null
       ? ""

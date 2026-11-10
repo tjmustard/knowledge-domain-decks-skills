@@ -179,7 +179,15 @@
       #let work = if has-work [ _#o.title#(o.titleStop)_] else []
       #let pub = if has-pub [ #o.publication] else []
       #let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
-      #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
+      // An attribution that names no author, work or publication may still
+      // carry a note: a method in common use whose originator is not
+      // documented. The note prints instead of an empty "Source: ." line.
+      #let bare-cite = names == "" and not has-work and not has-pub
+      #if bare-cite and "note" in o [
+        #text(size: 6.5pt, fill: rgb("#64748b"))[#o.note]
+      ] else [
+        #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
+      ]
     ]
   ])
 ]

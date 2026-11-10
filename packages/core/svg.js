@@ -1929,6 +1929,141 @@
   shapes["decline-curve"].traits = { monotoneDown: true };
   shapes["power-curve"].traits = { monotoneDown: true };
 
+  /* A bounded field with one vector inside it: the stage's work is deciding
+     what is inside the frame and which way the room will push. */
+  shapes["framing-square"] = function (p) {
+    var bounds = p.bounds || 90;
+    var angle = p.angle || 35;
+    var reach = p.reach || 95;
+    var grid = p.grid || 4;
+    var out = [];
+    var cx = 200;
+    var cy = 190;
+    out.push(rect(cx - bounds, cy - bounds, bounds * 2, bounds * 2, { rx: 4, width: 2, opacity: 0.45 }));
+    for (var i = 1; i <= grid; i++) {
+      var t = (bounds * 2 * i) / (grid + 1);
+      out.push(line(cx - bounds, cy - bounds + t, cx + bounds, cy - bounds + t, 1, 0.22));
+      out.push(line(cx - bounds + t, cy - bounds, cx - bounds + t, cy + bounds, 1, 0.22));
+    }
+    var rad = (angle * Math.PI) / 180;
+    var tx = cx + Math.cos(rad) * reach;
+    var ty = cy - Math.sin(rad) * reach;
+    out.push(line(cx, cy, tx, ty, 2.5, 0.95));
+    out.push(circle(cx, cy, 4, { width: 1.5, opacity: 0.9, fill: "currentColor" }));
+    var head = 9;
+    out.push(line(tx, ty, tx - head * Math.cos(rad - 0.5), ty + head * Math.sin(rad - 0.5), 2, 0.95));
+    out.push(line(tx, ty, tx - head * Math.cos(rad + 0.5), ty + head * Math.sin(rad + 0.5), 2, 0.95));
+    return out.join("");
+  };
+
+  /* Rays from one point that broaden as they travel: the spread of options
+     before anything is chosen. */
+  shapes["divergent-fan"] = function (p) {
+    var rays = p.rays || 7;
+    var spread = p.spread || 96;
+    var length = p.length || 130;
+    var offset = p.offset || 0;
+    var out = [];
+    var ox = 200 + offset;
+    var oy = 310;
+    var half = (spread * Math.PI) / 360;
+    out.push(circle(ox, oy, 5, { width: 1.5, fill: "currentColor", opacity: 0.9 }));
+    for (var i = 0; i < rays; i++) {
+      var t = rays === 1 ? 0.5 : i / (rays - 1);
+      var a = -Math.PI / 2 - half + t * half * 2;
+      var x = ox + Math.cos(a) * length;
+      var y = oy + Math.sin(a) * length;
+      out.push(line(ox, oy, x, y, 1.6, 0.55 + t * 0.35));
+      out.push(circle(x, y, 4, { width: 1.4, opacity: 0.9 }));
+    }
+    return out.join("");
+  };
+
+  /* Many ways in, one way out, and one path carrying more weight than the
+     rest: convergence with a visible choice. */
+  shapes["convergent-funnel"] = function (p) {
+    var inlets = p.inlets || 6;
+    var width = p.width || 180;
+    var depth = p.depth || 140;
+    var chosen = p.chosen || 1;
+    var out = [];
+    var top = 90;
+    var apexY = top + depth;
+    out.push(circle(200, apexY, 6, { width: 2, fill: "currentColor", opacity: 0.95 }));
+    for (var i = 0; i < inlets; i++) {
+      var x = 200 - width / 2 + (width / (inlets - 1 || 1)) * i;
+      var heavy = i === (chosen - 1) % inlets;
+      out.push(circle(x, top, heavy ? 5 : 3.5, { width: heavy ? 2 : 1.2, opacity: heavy ? 0.95 : 0.5 }));
+      out.push(line(x, top, 200, apexY, heavy ? 2.4 : 1.1, heavy ? 0.95 : 0.32));
+    }
+    return out.join("");
+  };
+
+  /* Concentric rings with a doorway cut through every one of them, and people
+     placed around the outer ring: a structure that is meant to be entered. */
+  shapes["liberating-rings"] = function (p) {
+    var rings = p.rings || 3;
+    var gap = p.gap || 34;
+    var dots = p.dots || 5;
+    var tilt = p.tilt || 0;
+    var out = [];
+    var cx = 200;
+    var cy = 195;
+    var start = (gap * Math.PI) / 360;
+    var end = Math.PI * 2 - start;
+    for (var r = 0; r < rings; r++) {
+      var radius = 48 + r * 34;
+      var x1 = cx + Math.cos(start) * radius;
+      var y1 = cy + Math.sin(start) * radius;
+      var x2 = cx + Math.cos(end) * radius;
+      var y2 = cy + Math.sin(end) * radius;
+      out.push(
+        '<path d="M ' + coord(x1) + " " + coord(y1) + " A " + coord(radius) + " " + coord(radius) +
+        " 0 1 0 " + coord(x2) + " " + coord(y2) + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="' + (2 - r * 0.3) + '" stroke-linecap="round"' + STROKE + "/>"
+      );
+    }
+    var offset = (tilt * Math.PI) / 180;
+    for (var d = 0; d < dots; d++) {
+      var a = offset + (Math.PI * 2 * d) / dots;
+      out.push(circle(cx + Math.cos(a) * 44, cy + Math.sin(a) * 44, 4, { width: 1.4, fill: "currentColor", opacity: 0.8 }));
+    }
+    return out.join("");
+  };
+
+  /* Steps that climb, a line tracing the climb, and a marker on the one the
+     room committed to: planning as a sequence with a first commitment. */
+  shapes["action-steps"] = function (p) {
+    var steps = p.steps || 4;
+    var rise = p.rise || 26;
+    var run = p.run || 58;
+    var marker = p.marker || 1;
+    var out = [];
+    var baseY = 310;
+    var startX = 200 - (run * (steps - 1)) / 2 - 22;
+    var tops = [];
+    for (var i = 0; i < steps; i++) {
+      var h = 34 + i * rise;
+      var x = startX + i * run;
+      var y = baseY - h;
+      out.push(rect(x, y, run - 14, h, { rx: 3, width: 1.8, opacity: 0.35 + i * 0.06 }));
+      tops.push([x + (run - 14) / 2, y]);
+    }
+    out.push(
+      '<path d="M ' + tops.map(function (t) { return coord(t[0]) + " " + coord(t[1]); }).join(" L ") +
+      '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"' + STROKE + "/>"
+    );
+    var chosen = tops[(marker - 1) % steps];
+    out.push(line(chosen[0], chosen[1], chosen[0], chosen[1] - 28, 2, 0.9));
+    out.push(
+      '<path d="M ' + coord(chosen[0]) + " " + coord(chosen[1] - 28) + " L " +
+      coord(chosen[0] + 18) + " " + coord(chosen[1] - 22) + " L " +
+      coord(chosen[0]) + " " + coord(chosen[1] - 16) + '" fill="currentColor" stroke="none"/>'
+    );
+    out.push(line(40, baseY + 6, 360, baseY + 6, 2, 0.5));
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

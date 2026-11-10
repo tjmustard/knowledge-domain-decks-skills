@@ -28,6 +28,7 @@ const escapeHtml = (text) =>
 // cannot drift silently.
 const citationText = (origin) => {
   if (!origin) return "";
+  if (origin.note && !origin.authorsLabel && !origin.title && !origin.publication) return origin.note;
   const year =
     origin.year === undefined || origin.year === null
       ? ""

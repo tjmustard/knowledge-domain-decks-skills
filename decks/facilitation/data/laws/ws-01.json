@@ -1,0 +1,43 @@
+{
+  "id": "WS-01",
+  "name": "Problem Framing Canvas",
+  "stage": "Alignment & Framing",
+  "groupSize": "5\u201315",
+  "minutes": "45\u201360",
+  "difficulty": "intermediate",
+  "deliverable": "A bounded problem statement with the user impact and the business cost written down.",
+  "atAGlance": "5\u201315 people \u00b7 45\u201360 min \u00b7 intermediate",
+  "steps": [
+    {
+      "text": "State the boundary: this session defines the problem, not features or specifications."
+    },
+    {
+      "text": "Each person writes one observable user friction per note, in silence. No causes or fixes."
+    },
+    {
+      "text": "Map each friction to its business cost: lost revenue, churn, or support load."
+    },
+    {
+      "text": "Cluster the notes and merge duplicates until a few distinct problems remain."
+    },
+    {
+      "text": "Draft the statement three ways and choose the one the room can defend."
+    }
+  ],
+  "failure": "Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.",
+  "intervention": "Strip the tool out of the sentence. Ask what happens in the workflow that costs measurable time or money; rewrite it without naming a product.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in design practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 92,
+      "angle": 38,
+      "reach": 100,
+      "grid": 4
+    }
+  }
+}

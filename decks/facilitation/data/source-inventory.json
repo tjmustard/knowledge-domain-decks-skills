@@ -1,0 +1,494 @@
+{
+  "source": "04 - Workshop Tactics/Open-Source Facilitation Protocols.md",
+  "extractedBy": "operator-agent@kernel, 2026-11-10, from the table headed ID | Exercise Name | Lifecycle Stage | Group Size | Time Budget (Min) | Difficulty Rating | Primary Deliverable / Outcome",
+  "note": "A row is protocol:true when the same document carries a #### section for that exercise. 24 of 48 do; the other 24 are inventory rows only.",
+  "stages": [
+    "Alignment & Framing",
+    "Divergent Ideation",
+    "Convergent Decision",
+    "Liberating Structures",
+    "Action Planning"
+  ],
+  "exercises": [
+    {
+      "id": 1,
+      "name": "Problem Framing Canvas",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15",
+      "minutes": "45–60",
+      "difficulty": "Intermediate",
+      "deliverable": "Bounded problem definition with user impact and business context",
+      "protocol": true
+    },
+    {
+      "id": 2,
+      "name": "How Might We (HMW)",
+      "stage": "Alignment & Framing",
+      "groupSize": "1–15+",
+      "minutes": "15–30",
+      "difficulty": "Beginner",
+      "deliverable": "Standardized opportunity statements ready for divergence",
+      "protocol": true
+    },
+    {
+      "id": 3,
+      "name": "5 Whys Root Cause Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "1–10",
+      "minutes": "20–30",
+      "difficulty": "Intermediate",
+      "deliverable": "Uncovered underlying structural failures rather than symptoms",
+      "protocol": true
+    },
+    {
+      "id": 4,
+      "name": "Sailboat Retrospective",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "Categorized operational anchors, wind, goals, and hidden rocks",
+      "protocol": true
+    },
+    {
+      "id": 5,
+      "name": "Pre-Mortem Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15",
+      "minutes": "45–60",
+      "difficulty": "Advanced",
+      "deliverable": "Comprehensive catalog of catastrophic risks and preventative controls",
+      "protocol": true
+    },
+    {
+      "id": 6,
+      "name": "Hopes and Fears",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15+",
+      "minutes": "20–30",
+      "difficulty": "Beginner",
+      "deliverable": "Calibrated baseline expectations and surfaced emotional hazards",
+      "protocol": false
+    },
+    {
+      "id": 7,
+      "name": "User Journey Mapping",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "60–90",
+      "difficulty": "Intermediate",
+      "deliverable": "End-to-end temporal visualization of user touchpoints and pain points",
+      "protocol": false
+    },
+    {
+      "id": 8,
+      "name": "Empathy Mapping",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "Synthesized user observations across Says, Thinks, Does, and Feels",
+      "protocol": false
+    },
+    {
+      "id": 9,
+      "name": "Problem Tree Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15",
+      "minutes": "45–60",
+      "difficulty": "Intermediate",
+      "deliverable": "Hierarchical root-cause, core challenge, and downstream effect tree",
+      "protocol": false
+    },
+    {
+      "id": 10,
+      "name": "Lightning Decision Jam (Framing)",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "30–40",
+      "difficulty": "Beginner",
+      "deliverable": "Rapid identification and re-framing of key operational blockers",
+      "protocol": false
+    },
+    {
+      "id": 11,
+      "name": "Crazy Eights",
+      "stage": "Divergent Ideation",
+      "groupSize": "1–15+",
+      "minutes": "10–15",
+      "difficulty": "Beginner",
+      "deliverable": "Rapid individual generation of eight distinct interface or concept riffs",
+      "protocol": true
+    },
+    {
+      "id": 12,
+      "name": "Reverse Brainstorming",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "High-volume generation of ways to intentionally cause failure",
+      "protocol": true
+    },
+    {
+      "id": 13,
+      "name": "Round Robin Brainstorming",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–12",
+      "minutes": "25–40",
+      "difficulty": "Intermediate",
+      "deliverable": "Sequentially built, peer-iterated solution concepts",
+      "protocol": true
+    },
+    {
+      "id": 14,
+      "name": "Mash-up / Cross-Pollination",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "Unconventional combinations of disparate technologies or business models",
+      "protocol": true
+    },
+    {
+      "id": 15,
+      "name": "Solution Sketching (4-Step)",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "60–90",
+      "difficulty": "Advanced",
+      "deliverable": "High-density, self-explanatory three-panel conceptual wireframes",
+      "protocol": true
+    },
+    {
+      "id": 16,
+      "name": "Brainwriting 6-3-5",
+      "stage": "Divergent Ideation",
+      "groupSize": "6",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "108 structured ideas generated silently across six team members",
+      "protocol": false
+    },
+    {
+      "id": 17,
+      "name": "SCAMPER Ideation",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–10",
+      "minutes": "45–60",
+      "difficulty": "Advanced",
+      "deliverable": "Systematic transformation of existing concepts using seven vectors",
+      "protocol": false
+    },
+    {
+      "id": 18,
+      "name": "Worst Possible Idea",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "20–30",
+      "difficulty": "Beginner",
+      "deliverable": "De-inhibited concept space built by surfacing terrible alternatives",
+      "protocol": false
+    },
+    {
+      "id": 19,
+      "name": "Analogous Inspiration",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "Structural transfer of mechanisms from unrelated industrial domains",
+      "protocol": false
+    },
+    {
+      "id": 20,
+      "name": "Speed Boat Ideation",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–12",
+      "minutes": "25–40",
+      "difficulty": "Beginner",
+      "deliverable": "Visual discovery of operational drag factors and mechanical engines",
+      "protocol": false
+    },
+    {
+      "id": 21,
+      "name": "Impact vs. Effort Matrix",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "2x2 prioritization of quick wins, major projects, and time sinks",
+      "protocol": true
+    },
+    {
+      "id": 22,
+      "name": "MoSCoW Prioritization",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "Categorization into Must-have, Should-have, Could-have, Won't-have",
+      "protocol": true
+    },
+    {
+      "id": 23,
+      "name": "Dot Voting / Heatmapping",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15+",
+      "minutes": "10–20",
+      "difficulty": "Beginner",
+      "deliverable": "Visual distribution of group attention across ideas without groupthink",
+      "protocol": true
+    },
+    {
+      "id": 24,
+      "name": "$100 Allocation Test",
+      "stage": "Convergent Decision",
+      "groupSize": "3–12",
+      "minutes": "20–35",
+      "difficulty": "Intermediate",
+      "deliverable": "Capital-constrained prioritization surfacing true value trade-offs",
+      "protocol": true
+    },
+    {
+      "id": 25,
+      "name": "2x2 Trade-off Grids",
+      "stage": "Convergent Decision",
+      "groupSize": "3–12",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "Flexible comparative evaluation across two arbitrary orthogonal axes",
+      "protocol": true
+    },
+    {
+      "id": 26,
+      "name": "Fist to Five Consensus",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15+",
+      "minutes": "10–15",
+      "difficulty": "Beginner",
+      "deliverable": "Rapid non-binary consensus calibration and identification of dissent",
+      "protocol": true
+    },
+    {
+      "id": 27,
+      "name": "Now-How-Wow Matrix",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "25–40",
+      "difficulty": "Intermediate",
+      "deliverable": "Idea classification across feasibility (Now), breakthrough (How), and original (Wow)",
+      "protocol": false
+    },
+    {
+      "id": 28,
+      "name": "Decider Super-Vote",
+      "stage": "Convergent Decision",
+      "groupSize": "5–12",
+      "minutes": "15–25",
+      "difficulty": "Intermediate",
+      "deliverable": "Executive decision lock-in combining democratic heatmaps with authority",
+      "protocol": false
+    },
+    {
+      "id": 29,
+      "name": "Trade-off Sliders",
+      "stage": "Convergent Decision",
+      "groupSize": "3–10",
+      "minutes": "20–30",
+      "difficulty": "Advanced",
+      "deliverable": "Hard ranking of competing technical attributes to eliminate ambiguity",
+      "protocol": false
+    },
+    {
+      "id": 30,
+      "name": "Nu/Steer/Zweck Framework",
+      "stage": "Convergent Decision",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "Advanced",
+      "deliverable": "Strategic validation against organizational mandate and execution utility",
+      "protocol": false
+    },
+    {
+      "id": 31,
+      "name": "1-2-4-All",
+      "stage": "Liberating Structures",
+      "groupSize": "4–15+",
+      "minutes": "12–15",
+      "difficulty": "Beginner",
+      "deliverable": "Progressive silent reflection, paired synthesis, quartet convergence",
+      "protocol": true
+    },
+    {
+      "id": 32,
+      "name": "Impromptu Networking",
+      "stage": "Liberating Structures",
+      "groupSize": "6–15+",
+      "minutes": "15–20",
+      "difficulty": "Beginner",
+      "deliverable": "Three rapid rounds of paired micro-interviews establishing shared context",
+      "protocol": true
+    },
+    {
+      "id": 33,
+      "name": "TRIZ (Creative Destruction)",
+      "stage": "Liberating Structures",
+      "groupSize": "5–15+",
+      "minutes": "35–50",
+      "difficulty": "Intermediate",
+      "deliverable": "Systematic cessation of self-sabotaging behaviors and counter-productive habits",
+      "protocol": true
+    },
+    {
+      "id": 34,
+      "name": "Troika Consulting",
+      "stage": "Liberating Structures",
+      "groupSize": "3–15+",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "Rapid triad peer consulting using back-turned active listening protocols",
+      "protocol": true
+    },
+    {
+      "id": 35,
+      "name": "25/10 Crowd Sourcing",
+      "stage": "Liberating Structures",
+      "groupSize": "15+",
+      "minutes": "20–30",
+      "difficulty": "Intermediate",
+      "deliverable": "High-velocity anonymous card exchange scoring boldest breakthrough ideas",
+      "protocol": true
+    },
+    {
+      "id": 36,
+      "name": "Min Specs",
+      "stage": "Liberating Structures",
+      "groupSize": "4–15",
+      "minutes": "40–50",
+      "difficulty": "Advanced",
+      "deliverable": "Ruthless reduction of operating protocols down to non-negotiable rules",
+      "protocol": false
+    },
+    {
+      "id": 37,
+      "name": "Nine Whys",
+      "stage": "Liberating Structures",
+      "groupSize": "2–15",
+      "minutes": "20–35",
+      "difficulty": "Intermediate",
+      "deliverable": "Progressive conversational excavation of intrinsic organizational purpose",
+      "protocol": false
+    },
+    {
+      "id": 38,
+      "name": "Conversation Café",
+      "stage": "Liberating Structures",
+      "groupSize": "5–12",
+      "minutes": "45–60",
+      "difficulty": "Beginner",
+      "deliverable": "Structured four-round dialogue suppressing cross-talk on contentious issues",
+      "protocol": false
+    },
+    {
+      "id": 39,
+      "name": "Wise Crowds",
+      "stage": "Liberating Structures",
+      "groupSize": "6–15+",
+      "minutes": "45–60",
+      "difficulty": "Advanced",
+      "deliverable": "Scaled peer advisory council consulting for individual challenge clients",
+      "protocol": false
+    },
+    {
+      "id": 40,
+      "name": "What, So What, Now What?",
+      "stage": "Liberating Structures",
+      "groupSize": "3–15+",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "Ladder of inference progression: observations, interpretations, actions",
+      "protocol": false
+    },
+    {
+      "id": 41,
+      "name": "Who-What-When Matrix",
+      "stage": "Action Planning",
+      "groupSize": "3–15",
+      "minutes": "20–30",
+      "difficulty": "Beginner",
+      "deliverable": "Linear operational assignment of accountable owners and hard deadlines",
+      "protocol": true
+    },
+    {
+      "id": 42,
+      "name": "Next Steps Commitment Canvas",
+      "stage": "Action Planning",
+      "groupSize": "3–10",
+      "minutes": "30–45",
+      "difficulty": "Intermediate",
+      "deliverable": "Explicit contractual agreement covering resources, cadence, and sign-offs",
+      "protocol": true
+    },
+    {
+      "id": 43,
+      "name": "Lean Canvas Experiment Matrix",
+      "stage": "Action Planning",
+      "groupSize": "3–10",
+      "minutes": "45–60",
+      "difficulty": "Advanced",
+      "deliverable": "Translation of assumptions into falsifiable hypotheses and metrics",
+      "protocol": true
+    },
+    {
+      "id": 44,
+      "name": "15% Solutions",
+      "stage": "Action Planning",
+      "groupSize": "1–15+",
+      "minutes": "15–25",
+      "difficulty": "Beginner",
+      "deliverable": "Immediate identification of autonomous individual actions requiring no budget",
+      "protocol": false
+    },
+    {
+      "id": 45,
+      "name": "SMART Action Roadmap",
+      "stage": "Action Planning",
+      "groupSize": "3–12",
+      "minutes": "30–45",
+      "difficulty": "Beginner",
+      "deliverable": "Time-phased mapping of milestones adhering to SMART validation criteria",
+      "protocol": false
+    },
+    {
+      "id": 46,
+      "name": "RACI Alignment Mapping",
+      "stage": "Action Planning",
+      "groupSize": "4–12",
+      "minutes": "45–60",
+      "difficulty": "Intermediate",
+      "deliverable": "Structural assignment of Responsible, Accountable, Consulted, and Informed",
+      "protocol": false
+    },
+    {
+      "id": 47,
+      "name": "Assumption Test Card",
+      "stage": "Action Planning",
+      "groupSize": "2–10",
+      "minutes": "30–40",
+      "difficulty": "Intermediate",
+      "deliverable": "Scientific decomposition of hypotheses into verification tests and success thresholds",
+      "protocol": false
+    },
+    {
+      "id": 48,
+      "name": "Definition of Done Workshop",
+      "stage": "Action Planning",
+      "groupSize": "3–15",
+      "minutes": "40–60",
+      "difficulty": "Advanced",
+      "deliverable": "Technical consensus alignment on quality gates for release readiness",
+      "protocol": false
+    }
+  ]
+}
