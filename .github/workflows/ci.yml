@@ -122,6 +122,35 @@ jobs:
             }
           '
 
+      # A red gate that says "regenerating changed committed output" names no
+      # byte. On this runner the generators can be run again for real, so the
+      # difference itself is published: the same annotations endpoint that
+      # carries the log reads it without an account.
+      - name: Locate a generator difference
+        if: failure()
+        run: |
+          set +e
+          git config user.email ci@example.invalid
+          git config user.name ci
+          npm run --silent build:rules >/dev/null 2>&1
+          npm run --silent build:web >/dev/null 2>&1
+          git status --porcelain
+          node -e '
+            const { execSync } = require("child_process");
+            const escape = (v) => v.replace(/%/g, "%25").replace(/\r/g, "").replace(/\n/g, "%0A");
+            let status = "";
+            try { status = execSync("git status --porcelain", { encoding: "utf8" }); } catch {}
+            const files = status.split("\n").map((line) => line.slice(3).trim()).filter(Boolean).slice(0, 3);
+            console.log(`::error title=${escape("regenerated files")}::${escape(status || "none")}`);
+            for (const file of files) {
+              let diff = "";
+              try { diff = execSync(`git diff -U2 -- ${JSON.stringify(file)}`, { encoding: "utf8", maxBuffer: 1 << 26 }); } catch {}
+              for (let i = 0, at = 0; at < diff.length && i < 4; i += 1, at += 3500) {
+                console.log(`::error title=${escape(`${file} ${i + 1}`)}::${escape(diff.slice(at, at + 3500))}`);
+              }
+            }
+          '
+
   # One job per deck, named after its slug. The job above proves the repository
   # as a whole; this one proves that each deck stands alone: its own records
   # validate, its own artifacts generate, its own viewer works at 390 px and its
