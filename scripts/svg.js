@@ -313,7 +313,11 @@
       out.push(circle(60, startY, 9));
       out.push(circle(340, endY, 9));
       out.push(label(60, startY - 18, startLabel, { size: 9 }));
-      out.push(label(340, endY - 18, endLabel, { size: 9 }));
+      /* The curve approaches the end point from above, so the end label sits
+         below it; above would strike through the line. Fall back above only
+         when the axis at y=300 leaves no room. */
+      out.push(label(340, endY + 24 <= 290 ? endY + 24 : endY - 34,
+        endLabel, { size: 9 }));
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
     },

@@ -18,8 +18,8 @@
     "parametricParams": {
       "startY": 110,
       "endY": 260,
-      "startLabel": "FIRST 20: 18 GOOD",
-      "endLabel": "LAST 20: 11 GOOD",
+      "startLabel": "EARLY: CONSIDERED",
+      "endLabel": "LATE: DEFAULTING",
       "caption": "QUALITY FALLS ACROSS A LONG SESSION"
     }
   },

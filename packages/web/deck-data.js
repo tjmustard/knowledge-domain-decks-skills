@@ -486,8 +486,8 @@ window.UX_DECK = {
         "parametricParams": {
           "startY": 110,
           "endY": 260,
-          "startLabel": "FIRST 20: 18 GOOD",
-          "endLabel": "LAST 20: 11 GOOD",
+          "startLabel": "EARLY: CONSIDERED",
+          "endLabel": "LATE: DEFAULTING",
           "caption": "QUALITY FALLS ACROSS A LONG SESSION"
         }
       },
@@ -502,7 +502,7 @@ window.UX_DECK = {
         "title": "Ego Depletion: Is the Active Self a Limited Resource?",
         "publication": "Journal of Personality and Social Psychology, 74(5), 1252-1265"
       },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 110 C 150 162.5, 250 207.5, 340 260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"260\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"92\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FIRST 20: 18 GOOD</text><text x=\"340\" y=\"242\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">LAST 20: 11 GOOD</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">QUALITY FALLS ACROSS A LONG SESSION</text></svg>"
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 110 C 150 162.5, 250 207.5, 340 260\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"260\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"92\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EARLY: CONSIDERED</text><text x=\"340\" y=\"284\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">LATE: DEFAULTING</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">QUALITY FALLS ACROSS A LONG SESSION</text></svg>"
     },
     {
       "id": "GES-01",
