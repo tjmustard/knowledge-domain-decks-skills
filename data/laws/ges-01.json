@@ -5,9 +5,9 @@
   "axiom": "Objects positioned close to one another are perceived as a unified conceptual group.",
   "trigger": "Form labels look attached to the wrong input, or unrelated actions read as one group because spacing is uniform.",
   "checklist": [
-    "Place labels closer to their own input than to the preceding field (4px vs 24px).",
-    "Keep spacing inside a card tighter (8-12px) than spacing between cards (24-32px).",
-    "Group a primary action with its explanatory copy inside one layout cluster."
+    {"text": "Place labels closer to their own input than to the preceding field (4px vs 24px).", "kind": "code"},
+    {"text": "Keep spacing inside a card tighter (8-12px) than spacing between cards (24-32px).", "kind": "code"},
+    {"text": "Group a primary action with its explanatory copy inside one layout cluster.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A form uses equal 16px margins everywhere, so each input visually attaches to the label below it.",

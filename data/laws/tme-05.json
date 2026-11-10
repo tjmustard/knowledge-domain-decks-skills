@@ -5,10 +5,10 @@
   "axiom": "Task time falls as a power of practice repetitions: steep early gains, then diminishing returns.",
   "trigger": "A workflow someone uses every day takes as long in month six as it did in week one.",
   "checklist": [
-    "Keep frequent actions in one fixed place so repetition trains aim instead of search.",
-    "Give daily paths keyboard shortcuts and let the interface remember recent choices.",
-    "Make the fastest route the default, not something found in settings.",
-    "Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice."
+    {"text": "Keep frequent actions in one fixed place so repetition trains aim instead of search.", "kind": "code"},
+    {"text": "Give daily paths keyboard shortcuts and let the interface remember recent choices.", "kind": "code"},
+    {"text": "Make the fastest route the default, not something found in settings.", "kind": "code"},
+    {"text": "Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "A ticketing tool moves its main action each release, so agents relearn the target every quarter.",

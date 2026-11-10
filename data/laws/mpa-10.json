@@ -5,9 +5,9 @@
   "axiom": "Effort rises as the goal nears; the last stretch gets the most.",
   "trigger": "People start slowly on a long task and speed up near its end.",
   "checklist": [
-    "Show how far the person has come, not only how much remains.",
-    "Split a long run into visible goals, so a near one is always in reach.",
-    "Put the last review beside the finish, where the end is in view."
+    {"text": "Show how far the person has come, not only how much remains.", "kind": "code"},
+    {"text": "Split a long run into visible goals, so a near one is always in reach.", "kind": "code"},
+    {"text": "Put the last review beside the finish, where the end is in view.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A ten-step setup shows one spinner for the whole run, so people leave at step three.",

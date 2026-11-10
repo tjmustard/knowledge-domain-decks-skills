@@ -5,9 +5,9 @@
   "axiom": "An experience is remembered by its peak and its ending, not its average.",
   "trigger": "A smooth session is rated harshly because its last screen failed.",
   "checklist": [
-    "End every flow on a clear confirmation that names what happens next.",
-    "Soften the most intense step: the peak sets the rating more than the middle.",
-    "Do not spend effort smoothing a middle the ending will overwrite."
+    {"text": "End every flow on a clear confirmation that names what happens next.", "kind": "code"},
+    {"text": "Soften the most intense step: the peak sets the rating more than the middle.", "kind": "code"},
+    {"text": "Do not spend effort smoothing a middle the ending will overwrite.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A fast checkout ends on a paywall error, so the whole flow is remembered as bad.",

@@ -5,9 +5,9 @@
   "axiom": "Attention admits one channel at a time; unattended channels survive only as fragments.",
   "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
   "checklist": [
-    "Route interruptions to one channel instead of stacking toasts and modals.",
-    "Do not put two demands in the same moment; queue the second.",
-    "Keep a missed request recoverable where the person will look for it."
+    {"text": "Route interruptions to one channel instead of stacking toasts and modals.", "kind": "code"},
+    {"text": "Do not put two demands in the same moment; queue the second.", "kind": "code"},
+    {"text": "Keep a missed request recoverable where the person will look for it.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A toast, a modal, and a banner ask for attention at once.",

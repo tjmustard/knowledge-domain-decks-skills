@@ -5,9 +5,9 @@
   "axiom": "Each wasted motion costs time and fatigue; remove it rather than speed it up.",
   "trigger": "A control used every few seconds sits at the far edge of the screen.",
   "checklist": [
-    "Place controls used together, and most-used controls, inside one-handed reach.",
-    "Keep primary actions in the lower third of a phone screen, near the thumb.",
-    "Let a gesture finish where it started; avoid crossing the screen mid-task."
+    {"text": "Place controls used together, and most-used controls, inside one-handed reach.", "kind": "code"},
+    {"text": "Keep primary actions in the lower third of a phone screen, near the thumb.", "kind": "code"},
+    {"text": "Let a gesture finish where it started; avoid crossing the screen mid-task.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Checkout puts Apply Promo bottom-left and Pay top-right, a reach across the whole screen.",

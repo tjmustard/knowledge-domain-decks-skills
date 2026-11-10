@@ -5,9 +5,9 @@
   "axiom": "Unfinished tasks stay in memory longer than tasks already completed.",
   "trigger": "People return days later and remember exactly where they stopped.",
   "checklist": [
-    "Save progress automatically and offer to resume where the person stopped.",
-    "Show unfinished items on return; do not make people hunt for them.",
-    "End a session with a visible next step, not a blank confirmation."
+    {"text": "Save progress automatically and offer to resume where the person stopped.", "kind": "code"},
+    {"text": "Show unfinished items on return; do not make people hunt for them.", "kind": "code"},
+    {"text": "End a session with a visible next step, not a blank confirmation.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A half-finished application vanishes on reload, so the person starts over.",

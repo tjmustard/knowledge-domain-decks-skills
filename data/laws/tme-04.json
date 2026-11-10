@@ -5,9 +5,9 @@
   "axiom": "Progress cues make the same wait feel shorter than a blank screen does.",
   "trigger": "An export runs for twelve seconds behind a blank screen, and people refresh because they think it froze.",
   "checklist": [
-    "Pair long operations with a determinate bar and motion that accelerates toward the end.",
-    "Replace a static spinner with skeleton screens or a pulsing placeholder.",
-    "Name the current stage in plain words: connecting, encrypting, finishing."
+    {"text": "Pair long operations with a determinate bar and motion that accelerates toward the end.", "kind": "code"},
+    {"text": "Replace a static spinner with skeleton screens or a pulsing placeholder.", "kind": "code"},
+    {"text": "Name the current stage in plain words: connecting, encrypting, finishing.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A large export shows a blank page and a static cursor for twelve seconds.",

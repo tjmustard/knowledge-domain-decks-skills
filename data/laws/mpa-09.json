@@ -5,9 +5,9 @@
   "axiom": "Losses weigh on choices more than equivalent gains do.",
   "trigger": "A change is refused for what it might lose, not weighed by what it gains.",
   "checklist": [
-    "Show the loss and the gain of a change side by side, in the same units.",
-    "Describe what staying costs as plainly as what moving costs.",
-    "Test whether the framing moved the decision, not only the preference."
+    {"text": "Show the loss and the gain of a change side by side, in the same units.", "kind": "code"},
+    {"text": "Describe what staying costs as plainly as what moving costs.", "kind": "code"},
+    {"text": "Test whether the framing moved the decision, not only the preference.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "A migration is presented only as what could break, so nobody approves it.",

@@ -5,9 +5,9 @@
   "axiom": "Users spend most time on other interfaces, expecting yours to function identically.",
   "trigger": "Users hesitate, hunt for navigation, or misuse controls because the layout diverges from conventions they know from other products.",
   "checklist": [
-    "Anchor the logo top-left, global navigation top or left, and account controls top-right.",
-    "Keep checkout steps in the expected billing, shipping, and payment order.",
-    "Preserve standard keyboard shortcuts and browser history behavior; never hijack them."
+    {"text": "Anchor the logo top-left, global navigation top or left, and account controls top-right.", "kind": "code"},
+    {"text": "Keep checkout steps in the expected billing, shipping, and payment order.", "kind": "code"},
+    {"text": "Preserve standard keyboard shortcuts and browser history behavior; never hijack them.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A web app rebinds the browser back button to internal tab switching and buries global search in the footer.",

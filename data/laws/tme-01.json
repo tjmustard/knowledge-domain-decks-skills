@@ -5,9 +5,9 @@
   "axiom": "Target acquisition time is a function of distance and target bounding width.",
   "trigger": "Users miss small controls or take long pointer trips for frequent actions, especially on touch screens.",
   "checklist": [
-    "Make touch targets at least 44 x 44 px, or 24 x 24 px with adequate spacing.",
-    "Pin frequent primary controls to screen edges or corners on desktop.",
-    "Place contextual actions next to the initiating click point."
+    {"text": "Make touch targets at least 44 x 44 px, or 24 x 24 px with adequate spacing.", "kind": "code"},
+    {"text": "Pin frequent primary controls to screen edges or corners on desktop.", "kind": "code"},
+    {"text": "Place contextual actions next to the initiating click point.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Mobile checkout puts a 12 x 12 px Confirm Order text link in the extreme top-right corner.",

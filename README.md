@@ -218,7 +218,7 @@ fields, so a record cannot quietly grow a second source of truth:
 | `category` | One of the five fixed categories |
 | `axiom` | The core claim, at most 15 words |
 | `trigger` | The observable symptom that means "check this card" |
-| `checklist` | Three or four concrete, testable actions |
+| `checklist` | Three or four actions, each with a `text` and a `kind`: `code` when reading code can check or act on it, `research` when it needs an experiment or a recorded run |
 | `antiPattern` | A `violation` and its `remediation`, as one pair |
 | `graphicMetaphor` | An `svgShape` plus the parameters that draw it |
 | `academicOrigin` | One primary source: authors, year, title, venue, optional DOI |

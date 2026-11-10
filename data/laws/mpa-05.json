@@ -5,9 +5,9 @@
   "axiom": "An initial number pulls later estimates toward it, even when it is arbitrary.",
   "trigger": "A suggested price, quantity, or budget shifts what people choose.",
   "checklist": [
-    "Remove arbitrary defaults before asking for an estimate.",
-    "Show a reference range the evidence supports, not a number near the answer.",
-    "Test the same question with and without a starting figure."
+    {"text": "Remove arbitrary defaults before asking for an estimate.", "kind": "code"},
+    {"text": "Show a reference range the evidence supports, not a number near the answer.", "kind": "code"},
+    {"text": "Test the same question with and without a starting figure.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "A donation field prefilled with the highest tier lifts every gift.",

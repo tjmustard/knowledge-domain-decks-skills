@@ -5,9 +5,9 @@
   "axiom": "Too many comparable options stall decisions and leave people less satisfied with what they choose.",
   "trigger": "A pricing page or settings screen shows many similar options and people stall, default, or leave without choosing.",
   "checklist": [
-    "Limit consumer pricing to three or four plans with visibly different value.",
-    "Mark one option as recommended so a default path through the comparison is obvious.",
-    "Move advanced filters and rare configurations behind progressive disclosure."
+    {"text": "Limit consumer pricing to three or four plans with visibly different value.", "kind": "code"},
+    {"text": "Mark one option as recommended so a default path through the comparison is obvious.", "kind": "code"},
+    {"text": "Move advanced filters and rare configurations behind progressive disclosure.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.",

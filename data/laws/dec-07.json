@@ -5,9 +5,9 @@
   "axiom": "Interfaces create friction when reaching a goal takes more or different actions than people expect.",
   "trigger": "Users click a search icon, wait for the overlay, then click the field again before they can type.",
   "checklist": [
-    "Let Enter submit single-field forms such as search and sign-in.",
-    "Move focus into the primary input as soon as a dialog opens.",
-    "Keep Tab, Shift+Tab, and arrow keys working through every menu."
+    {"text": "Let Enter submit single-field forms such as search and sign-in.", "kind": "code"},
+    {"text": "Move focus into the primary input as soon as a dialog opens.", "kind": "code"},
+    {"text": "Keep Tab, Shift+Tab, and arrow keys working through every menu.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Opening search means clicking the icon, waiting for the overlay, and clicking the field before typing.",

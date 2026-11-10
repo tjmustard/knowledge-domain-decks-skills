@@ -5,9 +5,9 @@
   "axiom": "Steering time through a tunnel grows with its length and shrinks with its width.",
   "trigger": "A cursor entering a nested fly-out drifts a few pixels sideways and the menu collapses.",
   "checklist": [
-    "Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.",
-    "Add a triangular safe-hover zone between the pointer and the open submenu.",
-    "Keep generous padding on drag tracks, sliders, and scrollbar thumbs."
+    {"text": "Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.", "kind": "code"},
+    {"text": "Add a triangular safe-hover zone between the pointer and the open submenu.", "kind": "code"},
+    {"text": "Keep generous padding on drag tracks, sliders, and scrollbar thumbs.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A desktop menu makes the pointer cross a fourteen-pixel submenu path, and one pixel outside closes it.",

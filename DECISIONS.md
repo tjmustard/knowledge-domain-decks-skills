@@ -947,3 +947,30 @@ description is a promise the body has to keep; the split is the change that made
 the promise visible. `scripts/accept.mjs` reads the resource files from disk for
 its committed-bytes and generator checks, so a category added later is checked
 without editing the gate.
+
+## 36. A checklist item says whether code can check it
+
+The skill audit's first finding was that the deck told an agent to do things an
+agent cannot do: test recall a day later, measure time-on-task, record every
+experimental run. An agent following the file could only skip them silently or
+claim them, and nothing in the data let it tell the two kinds of instruction
+apart. The card was written for a person who could run the study; the skill is
+loaded by a process that cannot.
+
+A checklist item is therefore an object: `text` as before, plus `kind`, either
+`code` or `research`. Six of the 113 items are `research`: MPA-02's recall test,
+MPA-05's anchored-estimate comparison, MPA-07's two process instructions, MPA-09's
+framing test, and TME-05's time-on-task measurement. Everything else is an
+instruction a reader of code can act on, including TME-06's keystroke count, which
+is an analysis of an interaction path rather than a study. The generated agent
+artifacts print the research items with a note that they are not checkable from
+code, so an agent can report the gap instead of fabricating a pass.
+
+The print surface does not change. The card prints the same 113 sentences in the
+same order, and the PDF is byte-identical to the build before the change - 68
+pages, 743,518 bytes, md5 `6292e2e8` - which is the evidence that this is a data
+change and not a layout change. Deliberate: the card is held by a person who may
+well run the experiment, and adding a mark to six bullets across six cards would
+change their fit for a distinction only the agent surface needs. What this leaves
+open is that a person reading the printed card still sees one checkbox style for
+both kinds; if that matters later, it is a print change with its own measurement.

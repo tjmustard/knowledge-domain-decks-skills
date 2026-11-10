@@ -5,9 +5,9 @@
   "axiom": "People seek and weight evidence that confirms what they already believe.",
   "trigger": "A dashboard shows only the runs that support the current plan.",
   "checklist": [
-    "Show disconfirming results at the same prominence as confirming ones.",
-    "Ask what evidence would change the decision before the test runs.",
-    "Record every run, including the ones that refute the hypothesis."
+    {"text": "Show disconfirming results at the same prominence as confirming ones.", "kind": "code"},
+    {"text": "Ask what evidence would change the decision before the test runs.", "kind": "research"},
+    {"text": "Record every run, including the ones that refute the hypothesis.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "Only successful test runs are shown, so a failing design looks proven.",

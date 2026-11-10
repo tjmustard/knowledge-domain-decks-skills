@@ -41,7 +41,7 @@
   function cardMarkup(card) {
     var accent = ACCENTS[card.category] || "#334155";
     var items = card.checklist.map(function (item) {
-      return "<li>" + esc(item) + "</li>";
+      return "<li>" + esc(item.text) + "</li>";
     }).join("");
     return (
       '<article class="card" tabindex="0" role="button" aria-pressed="false" ' +

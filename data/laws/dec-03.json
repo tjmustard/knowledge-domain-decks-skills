@@ -5,9 +5,9 @@
   "axiom": "Every system carries irreducible complexity; design moves it between the system and the user.",
   "trigger": "People are asked to supply details the product could derive, such as time zones, currency formats, or bank codes.",
   "checklist": [
-    "Derive time zones, currency formats, and country codes from context instead of prompting.",
-    "Resolve file type, encoding, and MIME parameters during upload rather than asking.",
-    "Ship production-ready defaults for advanced settings so people opt out, not in."
+    {"text": "Derive time zones, currency formats, and country codes from context instead of prompting.", "kind": "code"},
+    {"text": "Resolve file type, encoding, and MIME parameters during upload rather than asking.", "kind": "code"},
+    {"text": "Ship production-ready defaults for advanced settings so people opt out, not in.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "An international payment form asks customers for SWIFT, routing, clearing, and branch details by hand.",

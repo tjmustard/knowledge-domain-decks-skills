@@ -5,9 +5,9 @@
   "axiom": "Humans recall items positioned at the beginning and end of sequences most reliably.",
   "trigger": "Critical navigation or actions sit mid-list and are overlooked while first and last items dominate attention.",
   "checklist": [
-    "Put critical destinations at the far left or top and far right or bottom of navigation.",
-    "Place core value propositions in the first rows and conversion actions in the last.",
-    "Pin frequent dropdown options to the top and summary categories to the bottom."
+    {"text": "Put critical destinations at the far left or top and far right or bottom of navigation.", "kind": "code"},
+    {"text": "Place core value propositions in the first rows and conversion actions in the last.", "kind": "code"},
+    {"text": "Pin frequent dropdown options to the top and summary categories to the bottom.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",

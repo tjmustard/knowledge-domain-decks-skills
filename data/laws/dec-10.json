@@ -5,9 +5,9 @@
   "axiom": "Absorbed people lose track of time and stop noticing the interface around the task.",
   "trigger": "A notification, promotional banner, or modal interrupts a writing or coding session that was running smoothly.",
   "checklist": [
-    "Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.",
-    "Save in the background and report status without a dialog or a blocking spinner.",
-    "Offer a distraction-free mode and keyboard paths for sustained work."
+    {"text": "Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.", "kind": "code"},
+    {"text": "Save in the background and report status without a dialog or a blocking spinner.", "kind": "code"},
+    {"text": "Offer a distraction-free mode and keyboard paths for sustained work.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A code editor shows rating prompts and marketing toasts every ten minutes while someone is writing.",

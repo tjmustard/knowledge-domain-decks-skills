@@ -5,9 +5,9 @@
   "axiom": "People accept the first option that clears their threshold rather than searching for the best.",
   "trigger": "People page through all forty search results because nothing marks which listing is good enough to take.",
   "checklist": [
-    "Surface a clearly marked top pick with its rating or badge above the result list.",
-    "Show the criteria that make an option acceptable beside it, not one detail page away.",
-    "Keep essential filters visible instead of requiring a boolean query to narrow the set."
+    {"text": "Surface a clearly marked top pick with its rating or badge above the result list.", "kind": "code"},
+    {"text": "Show the criteria that make an option acceptable beside it, not one detail page away.", "kind": "code"},
+    {"text": "Keep essential filters visible instead of requiring a boolean query to narrow the set.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A hotel search makes people open all forty listings because none shows rating, cancellation terms, and price together.",

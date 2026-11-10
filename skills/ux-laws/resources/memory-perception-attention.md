@@ -23,7 +23,7 @@
 - **Check:**
   - Emphasize one item per view; a second highlight halves the first one's effect.
   - Match the emphasis to the decision: the row people must recall gets the weight.
-  - Test recall a day later, when the standout item is what remains.
+  - Test recall a day later, when the standout item is what remains. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** Every plan card is bright blue, so none of the three is remembered.
 - **Do:** Only the recommended plan is filled; the other two stay outlined.
 - **Source:** Hedwig von Restorff (1933), *Über die Wirkung von Bereichsbildungen im Spurenfeld*.
@@ -59,7 +59,7 @@
 - **Check:**
   - Remove arbitrary defaults before asking for an estimate.
   - Show a reference range the evidence supports, not a number near the answer.
-  - Test the same question with and without a starting figure.
+  - Test the same question with and without a starting figure. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** A donation field prefilled with the highest tier lifts every gift.
 - **Do:** The field starts empty and offers a range with its basis.
 - **Source:** Amos Tversky & Daniel Kahneman (1974), *Judgment under Uncertainty: Heuristics and Biases*.
@@ -82,8 +82,8 @@
 - **Apply when:** A dashboard shows only the runs that support the current plan.
 - **Check:**
   - Show disconfirming results at the same prominence as confirming ones.
-  - Ask what evidence would change the decision before the test runs.
-  - Record every run, including the ones that refute the hypothesis.
+  - Ask what evidence would change the decision before the test runs. _(research: an experiment or a recorded run; not checkable from code)_
+  - Record every run, including the ones that refute the hypothesis. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** Only successful test runs are shown, so a failing design looks proven.
 - **Do:** Report all runs, with refutations beside the successes.
 - **Source:** Raymond S. Nickerson (1998), *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises*.
@@ -107,7 +107,7 @@
 - **Check:**
   - Show the loss and the gain of a change side by side, in the same units.
   - Describe what staying costs as plainly as what moving costs.
-  - Test whether the framing moved the decision, not only the preference.
+  - Test whether the framing moved the decision, not only the preference. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** A migration is presented only as what could break, so nobody approves it.
 - **Do:** State the risk and the gain together, with the same visibility and the same units.
 - **Source:** Daniel Kahneman & Amos Tversky (1979), *Prospect Theory: An Analysis of Decision under Risk*.

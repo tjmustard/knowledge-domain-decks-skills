@@ -5,9 +5,9 @@
   "axiom": "Decision quality degrades over a long session of repetitive choices.",
   "trigger": "A flow reaches its twelfth configuration question, and the last three answers were left at the default.",
   "checklist": [
-    "Batch small choices into one review step instead of asking them one at a time.",
-    "Defer non-critical configuration until the main task is finished.",
-    "Pre-populate safe defaults so most questions need no answer."
+    {"text": "Batch small choices into one review step instead of asking them one at a time.", "kind": "code"},
+    {"text": "Defer non-critical configuration until the main task is finished.", "kind": "code"},
+    {"text": "Pre-populate safe defaults so most questions need no answer.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "An onboarding flow asks twenty separate configuration questions before the first task, each with no default.",

@@ -5,9 +5,9 @@
   "axiom": "When system response drops under four hundred milliseconds, people stay engaged and work faster.",
   "trigger": "A click blocks the interface for most of a second, and the person clicks again or looks away.",
   "checklist": [
-    "Update the interface at once on input, then reconcile with the server in the background.",
-    "Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.",
-    "Prefetch likely next screens on hover or focus."
+    {"text": "Update the interface at once on input, then reconcile with the server in the background.", "kind": "code"},
+    {"text": "Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.", "kind": "code"},
+    {"text": "Prefetch likely next screens on hover or focus.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A like button freezes for 750 ms while the request runs, with no visible change.",

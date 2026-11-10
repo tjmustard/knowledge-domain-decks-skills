@@ -5,9 +5,9 @@
   "axiom": "People decide differently when the same facts are described as gains rather than losses.",
   "trigger": "Two screens state one outcome, but one stresses what is gained and the other what is lost, and choices diverge.",
   "checklist": [
-    "State availability as uptime gained (99.9%) rather than downtime risk.",
-    "Present discounts as money saved rather than total billed.",
-    "Describe security work as protecting data rather than as a failure warning."
+    {"text": "State availability as uptime gained (99.9%) rather than downtime risk.", "kind": "code"},
+    {"text": "Present discounts as money saved rather than total billed.", "kind": "code"},
+    {"text": "Describe security work as protecting data rather than as a failure warning.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A backup prompt warns that refusing leaves all records open to total loss.",

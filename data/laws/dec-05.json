@@ -5,9 +5,9 @@
   "axiom": "Interaction suffers when extraneous cognitive demands consume the working memory a task needs.",
   "trigger": "People re-read instructions, hunt for guidance, or make avoidable errors in a dense single-page form.",
   "checklist": [
-    "Remove decoration, redundant banners, and instructions that repeat the visible label.",
-    "Reveal secondary detail only when the current step needs it.",
-    "Put guidance beside the field it explains instead of on a separate help page."
+    {"text": "Remove decoration, redundant banners, and instructions that repeat the visible label.", "kind": "code"},
+    {"text": "Reveal secondary detail only when the current step needs it.", "kind": "code"},
+    {"text": "Put guidance beside the field it explains instead of on a separate help page.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A tax form presents 100 fields on one scrolling page, each preceded by paragraphs of legal text.",

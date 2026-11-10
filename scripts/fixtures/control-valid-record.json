@@ -5,9 +5,9 @@
   "axiom": "A placeholder axiom used only by the acceptance fixtures.",
   "trigger": "Never rendered or published; exists so the validator can be shown rejecting known-bad records.",
   "checklist": [
-    "First fixture checklist item.",
-    "Second fixture checklist item.",
-    "Third fixture checklist item."
+    {"text": "First fixture checklist item.", "kind": "code"},
+    {"text": "Second fixture checklist item.", "kind": "code"},
+    {"text": "Third fixture checklist item.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "A fixture violation string, deliberately not real deck copy.",

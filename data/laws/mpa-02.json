@@ -5,9 +5,9 @@
   "axiom": "An item that differs from its neighbors is remembered better than the items around it.",
   "trigger": "One row, button, or price is remembered while identical neighbors blur together.",
   "checklist": [
-    "Emphasize one item per view; a second highlight halves the first one's effect.",
-    "Match the emphasis to the decision: the row people must recall gets the weight.",
-    "Test recall a day later, when the standout item is what remains."
+    {"text": "Emphasize one item per view; a second highlight halves the first one's effect.", "kind": "code"},
+    {"text": "Match the emphasis to the decision: the row people must recall gets the weight.", "kind": "code"},
+    {"text": "Test recall a day later, when the standout item is what remains.", "kind": "research"}
   ],
   "antiPattern": {
     "violation": "Every plan card is bright blue, so none of the three is remembered.",

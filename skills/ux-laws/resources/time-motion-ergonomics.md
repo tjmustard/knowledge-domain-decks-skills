@@ -60,7 +60,7 @@
   - Keep frequent actions in one fixed place so repetition trains aim instead of search.
   - Give daily paths keyboard shortcuts and let the interface remember recent choices.
   - Make the fastest route the default, not something found in settings.
-  - Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice.
+  - Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** A ticketing tool moves its main action each release, so agents relearn the target every quarter.
 - **Do:** The primary action keeps one position and gains a shortcut once an agent repeats it.
 - **Source:** Allen Newell & Paul S. Rosenbloom (1981), *Mechanisms of Skill Acquisition and the Law of Practice*.

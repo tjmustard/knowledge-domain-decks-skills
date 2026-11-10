@@ -5,10 +5,10 @@
   "axiom": "Expert task time sums discrete operator durations: keystroke, pointing, homing, mental, and response.",
   "trigger": "A task feels slow although no single step is slow; the time goes into small transitions.",
   "checklist": [
-    "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.",
-    "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.",
-    "Auto-advance focus in segmented fields such as one-time codes.",
-    "Name fields plainly so people do not pause to decode them before typing."
+    {"text": "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.", "kind": "code"},
+    {"text": "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.", "kind": "code"},
+    {"text": "Auto-advance focus in segmented fields such as one-time codes.", "kind": "code"},
+    {"text": "Name fields plainly so people do not pause to decode them before typing.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A six-digit code sits in six boxes, so each digit needs a click and then a key.",

@@ -5,10 +5,10 @@
   "axiom": "Active memory holds about four chunks, so take the task's burden out of memory.",
   "trigger": "A multi-step flow asks people to remember a value from an earlier step while entering data on a later one.",
   "checklist": [
-    "Keep earlier answers visible while someone enters related data in a later step.",
-    "Pin summary headers and context panels while people scroll a long table.",
-    "Show breadcrumbs and a persistent cart through checkout.",
-    "Put a copy button beside any value people must reuse on another screen."
+    {"text": "Keep earlier answers visible while someone enters related data in a later step.", "kind": "code"},
+    {"text": "Pin summary headers and context panels while people scroll a long table.", "kind": "code"},
+    {"text": "Show breadcrumbs and a persistent cart through checkout.", "kind": "code"},
+    {"text": "Put a copy button beside any value people must reuse on another screen.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A four-step wizard makes people memorize a key shown in step one and retype it in step four.",

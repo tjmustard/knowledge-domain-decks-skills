@@ -103,7 +103,7 @@
       #grid(
         columns: (10pt, 1fr),
         [#rect(width: 6pt, height: 6pt, stroke: 0.75pt + accent(card))],
-        [#text(size: 7pt)[#item]],
+        [#text(size: 7pt)[#item.text]],
       )
       #v(3pt)
     ]

@@ -5,9 +5,9 @@
   "axiom": "A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.",
   "trigger": "Two controls differ by the same amount, but one change is obvious and the other is invisible.",
   "checklist": [
-    "Set type hierarchy by ratio, not equal steps: 16, 20, 25, 31 px reads as clear levels.",
-    "Check dark-theme borders with the same relative contrast step, not the same hex delta.",
-    "Scale spacing and progress changes as a fraction of the current value."
+    {"text": "Set type hierarchy by ratio, not equal steps: 16, 20, 25, 31 px reads as clear levels.", "kind": "code"},
+    {"text": "Check dark-theme borders with the same relative contrast step, not the same hex delta.", "kind": "code"},
+    {"text": "Scale spacing and progress changes as a fraction of the current value.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Heading sizes step 16, 18, 20 px, so three levels look like one.",

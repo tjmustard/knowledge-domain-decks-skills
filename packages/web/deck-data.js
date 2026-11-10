@@ -9,9 +9,18 @@ window.UX_DECK = {
       "axiom": "Decision time increases logarithmically with the number and informational complexity of available choices.",
       "trigger": "Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.",
       "checklist": [
-        "Cap flat options in top-level navigation at five to seven items.",
-        "Group large select menus into categories or a filterable combobox.",
-        "Pre-highlight a recommended default to skip part of the decision tree."
+        {
+          "text": "Cap flat options in top-level navigation at five to seven items.",
+          "kind": "code"
+        },
+        {
+          "text": "Group large select menus into categories or a filterable combobox.",
+          "kind": "code"
+        },
+        {
+          "text": "Pre-highlight a recommended default to skip part of the decision tree.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "An enterprise settings page offers a flat, unordered dropdown of 85 country options.",
@@ -43,9 +52,18 @@ window.UX_DECK = {
       "axiom": "Working memory capacity spans approximately seven, plus or minus two, discrete information chunks.",
       "trigger": "Users lose track of values across long unbroken strings, forms, or dashboards with many competing figures.",
       "checklist": [
-        "Chunk long strings: format card numbers as four groups of four digits.",
-        "Split multi-step checkout into three to five navigable phases.",
-        "Cap visible summary cards on an overview dashboard at seven key indicators."
+        {
+          "text": "Chunk long strings: format card numbers as four groups of four digits.",
+          "kind": "code"
+        },
+        {
+          "text": "Split multi-step checkout into three to five navigable phases.",
+          "kind": "code"
+        },
+        {
+          "text": "Cap visible summary cards on an overview dashboard at seven key indicators.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A payment field demands a raw 16-digit card number in one unformatted text string.",
@@ -78,9 +96,18 @@ window.UX_DECK = {
       "axiom": "Every system carries irreducible complexity; design moves it between the system and the user.",
       "trigger": "People are asked to supply details the product could derive, such as time zones, currency formats, or bank codes.",
       "checklist": [
-        "Derive time zones, currency formats, and country codes from context instead of prompting.",
-        "Resolve file type, encoding, and MIME parameters during upload rather than asking.",
-        "Ship production-ready defaults for advanced settings so people opt out, not in."
+        {
+          "text": "Derive time zones, currency formats, and country codes from context instead of prompting.",
+          "kind": "code"
+        },
+        {
+          "text": "Resolve file type, encoding, and MIME parameters during upload rather than asking.",
+          "kind": "code"
+        },
+        {
+          "text": "Ship production-ready defaults for advanced settings so people opt out, not in.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "An international payment form asks customers for SWIFT, routing, clearing, and branch details by hand.",
@@ -144,9 +171,18 @@ window.UX_DECK = {
       "axiom": "Too many comparable options stall decisions and leave people less satisfied with what they choose.",
       "trigger": "A pricing page or settings screen shows many similar options and people stall, default, or leave without choosing.",
       "checklist": [
-        "Limit consumer pricing to three or four plans with visibly different value.",
-        "Mark one option as recommended so a default path through the comparison is obvious.",
-        "Move advanced filters and rare configurations behind progressive disclosure."
+        {
+          "text": "Limit consumer pricing to three or four plans with visibly different value.",
+          "kind": "code"
+        },
+        {
+          "text": "Mark one option as recommended so a default path through the comparison is obvious.",
+          "kind": "code"
+        },
+        {
+          "text": "Move advanced filters and rare configurations behind progressive disclosure.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.",
@@ -190,9 +226,18 @@ window.UX_DECK = {
       "axiom": "Interaction suffers when extraneous cognitive demands consume the working memory a task needs.",
       "trigger": "People re-read instructions, hunt for guidance, or make avoidable errors in a dense single-page form.",
       "checklist": [
-        "Remove decoration, redundant banners, and instructions that repeat the visible label.",
-        "Reveal secondary detail only when the current step needs it.",
-        "Put guidance beside the field it explains instead of on a separate help page."
+        {
+          "text": "Remove decoration, redundant banners, and instructions that repeat the visible label.",
+          "kind": "code"
+        },
+        {
+          "text": "Reveal secondary detail only when the current step needs it.",
+          "kind": "code"
+        },
+        {
+          "text": "Put guidance beside the field it explains instead of on a separate help page.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A tax form presents 100 fields on one scrolling page, each preceded by paragraphs of legal text.",
@@ -270,10 +315,22 @@ window.UX_DECK = {
       "axiom": "Active memory holds about four chunks, so take the task's burden out of memory.",
       "trigger": "A multi-step flow asks people to remember a value from an earlier step while entering data on a later one.",
       "checklist": [
-        "Keep earlier answers visible while someone enters related data in a later step.",
-        "Pin summary headers and context panels while people scroll a long table.",
-        "Show breadcrumbs and a persistent cart through checkout.",
-        "Put a copy button beside any value people must reuse on another screen."
+        {
+          "text": "Keep earlier answers visible while someone enters related data in a later step.",
+          "kind": "code"
+        },
+        {
+          "text": "Pin summary headers and context panels while people scroll a long table.",
+          "kind": "code"
+        },
+        {
+          "text": "Show breadcrumbs and a persistent cart through checkout.",
+          "kind": "code"
+        },
+        {
+          "text": "Put a copy button beside any value people must reuse on another screen.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A four-step wizard makes people memorize a key shown in step one and retype it in step four.",
@@ -312,9 +369,18 @@ window.UX_DECK = {
       "axiom": "Interfaces create friction when reaching a goal takes more or different actions than people expect.",
       "trigger": "Users click a search icon, wait for the overlay, then click the field again before they can type.",
       "checklist": [
-        "Let Enter submit single-field forms such as search and sign-in.",
-        "Move focus into the primary input as soon as a dialog opens.",
-        "Keep Tab, Shift+Tab, and arrow keys working through every menu."
+        {
+          "text": "Let Enter submit single-field forms such as search and sign-in.",
+          "kind": "code"
+        },
+        {
+          "text": "Move focus into the primary input as soon as a dialog opens.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep Tab, Shift+Tab, and arrow keys working through every menu.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Opening search means clicking the icon, waiting for the overlay, and clicking the field before typing.",
@@ -356,9 +422,18 @@ window.UX_DECK = {
       "axiom": "People decide differently when the same facts are described as gains rather than losses.",
       "trigger": "Two screens state one outcome, but one stresses what is gained and the other what is lost, and choices diverge.",
       "checklist": [
-        "State availability as uptime gained (99.9%) rather than downtime risk.",
-        "Present discounts as money saved rather than total billed.",
-        "Describe security work as protecting data rather than as a failure warning."
+        {
+          "text": "State availability as uptime gained (99.9%) rather than downtime risk.",
+          "kind": "code"
+        },
+        {
+          "text": "Present discounts as money saved rather than total billed.",
+          "kind": "code"
+        },
+        {
+          "text": "Describe security work as protecting data rather than as a failure warning.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A backup prompt warns that refusing leaves all records open to total loss.",
@@ -402,9 +477,18 @@ window.UX_DECK = {
       "axiom": "People accept the first option that clears their threshold rather than searching for the best.",
       "trigger": "People page through all forty search results because nothing marks which listing is good enough to take.",
       "checklist": [
-        "Surface a clearly marked top pick with its rating or badge above the result list.",
-        "Show the criteria that make an option acceptable beside it, not one detail page away.",
-        "Keep essential filters visible instead of requiring a boolean query to narrow the set."
+        {
+          "text": "Surface a clearly marked top pick with its rating or badge above the result list.",
+          "kind": "code"
+        },
+        {
+          "text": "Show the criteria that make an option acceptable beside it, not one detail page away.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep essential filters visible instead of requiring a boolean query to narrow the set.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A hotel search makes people open all forty listings because none shows rating, cancellation terms, and price together.",
@@ -447,9 +531,18 @@ window.UX_DECK = {
       "axiom": "Absorbed people lose track of time and stop noticing the interface around the task.",
       "trigger": "A notification, promotional banner, or modal interrupts a writing or coding session that was running smoothly.",
       "checklist": [
-        "Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.",
-        "Save in the background and report status without a dialog or a blocking spinner.",
-        "Offer a distraction-free mode and keyboard paths for sustained work."
+        {
+          "text": "Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.",
+          "kind": "code"
+        },
+        {
+          "text": "Save in the background and report status without a dialog or a blocking spinner.",
+          "kind": "code"
+        },
+        {
+          "text": "Offer a distraction-free mode and keyboard paths for sustained work.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A code editor shows rating prompts and marketing toasts every ten minutes while someone is writing.",
@@ -493,9 +586,18 @@ window.UX_DECK = {
       "axiom": "Decision quality degrades over a long session of repetitive choices.",
       "trigger": "A flow reaches its twelfth configuration question, and the last three answers were left at the default.",
       "checklist": [
-        "Batch small choices into one review step instead of asking them one at a time.",
-        "Defer non-critical configuration until the main task is finished.",
-        "Pre-populate safe defaults so most questions need no answer."
+        {
+          "text": "Batch small choices into one review step instead of asking them one at a time.",
+          "kind": "code"
+        },
+        {
+          "text": "Defer non-critical configuration until the main task is finished.",
+          "kind": "code"
+        },
+        {
+          "text": "Pre-populate safe defaults so most questions need no answer.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "An onboarding flow asks twenty separate configuration questions before the first task, each with no default.",
@@ -533,9 +635,18 @@ window.UX_DECK = {
       "axiom": "Objects positioned close to one another are perceived as a unified conceptual group.",
       "trigger": "Form labels look attached to the wrong input, or unrelated actions read as one group because spacing is uniform.",
       "checklist": [
-        "Place labels closer to their own input than to the preceding field (4px vs 24px).",
-        "Keep spacing inside a card tighter (8-12px) than spacing between cards (24-32px).",
-        "Group a primary action with its explanatory copy inside one layout cluster."
+        {
+          "text": "Place labels closer to their own input than to the preceding field (4px vs 24px).",
+          "kind": "code"
+        },
+        {
+          "text": "Keep spacing inside a card tighter (8-12px) than spacing between cards (24-32px).",
+          "kind": "code"
+        },
+        {
+          "text": "Group a primary action with its explanatory copy inside one layout cluster.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A form uses equal 16px margins everywhere, so each input visually attaches to the label below it.",
@@ -569,9 +680,18 @@ window.UX_DECK = {
       "axiom": "Users spend most time on other interfaces, expecting yours to function identically.",
       "trigger": "Users hesitate, hunt for navigation, or misuse controls because the layout diverges from conventions they know from other products.",
       "checklist": [
-        "Anchor the logo top-left, global navigation top or left, and account controls top-right.",
-        "Keep checkout steps in the expected billing, shipping, and payment order.",
-        "Preserve standard keyboard shortcuts and browser history behavior; never hijack them."
+        {
+          "text": "Anchor the logo top-left, global navigation top or left, and account controls top-right.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep checkout steps in the expected billing, shipping, and payment order.",
+          "kind": "code"
+        },
+        {
+          "text": "Preserve standard keyboard shortcuts and browser history behavior; never hijack them.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A web app rebinds the browser back button to internal tab switching and buries global search in the footer.",
@@ -604,9 +724,18 @@ window.UX_DECK = {
       "axiom": "Humans recall items positioned at the beginning and end of sequences most reliably.",
       "trigger": "Critical navigation or actions sit mid-list and are overlooked while first and last items dominate attention.",
       "checklist": [
-        "Put critical destinations at the far left or top and far right or bottom of navigation.",
-        "Place core value propositions in the first rows and conversion actions in the last.",
-        "Pin frequent dropdown options to the top and summary categories to the bottom."
+        {
+          "text": "Put critical destinations at the far left or top and far right or bottom of navigation.",
+          "kind": "code"
+        },
+        {
+          "text": "Place core value propositions in the first rows and conversion actions in the last.",
+          "kind": "code"
+        },
+        {
+          "text": "Pin frequent dropdown options to the top and summary categories to the bottom.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
@@ -640,9 +769,18 @@ window.UX_DECK = {
       "axiom": "An item that differs from its neighbors is remembered better than the items around it.",
       "trigger": "One row, button, or price is remembered while identical neighbors blur together.",
       "checklist": [
-        "Emphasize one item per view; a second highlight halves the first one's effect.",
-        "Match the emphasis to the decision: the row people must recall gets the weight.",
-        "Test recall a day later, when the standout item is what remains."
+        {
+          "text": "Emphasize one item per view; a second highlight halves the first one's effect.",
+          "kind": "code"
+        },
+        {
+          "text": "Match the emphasis to the decision: the row people must recall gets the weight.",
+          "kind": "code"
+        },
+        {
+          "text": "Test recall a day later, when the standout item is what remains.",
+          "kind": "research"
+        }
       ],
       "antiPattern": {
         "violation": "Every plan card is bright blue, so none of the three is remembered.",
@@ -680,9 +818,18 @@ window.UX_DECK = {
       "axiom": "Unfinished tasks stay in memory longer than tasks already completed.",
       "trigger": "People return days later and remember exactly where they stopped.",
       "checklist": [
-        "Save progress automatically and offer to resume where the person stopped.",
-        "Show unfinished items on return; do not make people hunt for them.",
-        "End a session with a visible next step, not a blank confirmation."
+        {
+          "text": "Save progress automatically and offer to resume where the person stopped.",
+          "kind": "code"
+        },
+        {
+          "text": "Show unfinished items on return; do not make people hunt for them.",
+          "kind": "code"
+        },
+        {
+          "text": "End a session with a visible next step, not a blank confirmation.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A half-finished application vanishes on reload, so the person starts over.",
@@ -725,9 +872,18 @@ window.UX_DECK = {
       "axiom": "An experience is remembered by its peak and its ending, not its average.",
       "trigger": "A smooth session is rated harshly because its last screen failed.",
       "checklist": [
-        "End every flow on a clear confirmation that names what happens next.",
-        "Soften the most intense step: the peak sets the rating more than the middle.",
-        "Do not spend effort smoothing a middle the ending will overwrite."
+        {
+          "text": "End every flow on a clear confirmation that names what happens next.",
+          "kind": "code"
+        },
+        {
+          "text": "Soften the most intense step: the peak sets the rating more than the middle.",
+          "kind": "code"
+        },
+        {
+          "text": "Do not spend effort smoothing a middle the ending will overwrite.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A fast checkout ends on a paywall error, so the whole flow is remembered as bad.",
@@ -768,9 +924,18 @@ window.UX_DECK = {
       "axiom": "An initial number pulls later estimates toward it, even when it is arbitrary.",
       "trigger": "A suggested price, quantity, or budget shifts what people choose.",
       "checklist": [
-        "Remove arbitrary defaults before asking for an estimate.",
-        "Show a reference range the evidence supports, not a number near the answer.",
-        "Test the same question with and without a starting figure."
+        {
+          "text": "Remove arbitrary defaults before asking for an estimate.",
+          "kind": "code"
+        },
+        {
+          "text": "Show a reference range the evidence supports, not a number near the answer.",
+          "kind": "code"
+        },
+        {
+          "text": "Test the same question with and without a starting figure.",
+          "kind": "research"
+        }
       ],
       "antiPattern": {
         "violation": "A donation field prefilled with the highest tier lifts every gift.",
@@ -810,9 +975,18 @@ window.UX_DECK = {
       "axiom": "Attention admits one channel at a time; unattended channels survive only as fragments.",
       "trigger": "Two simultaneous requests compete, and the second is missed entirely.",
       "checklist": [
-        "Route interruptions to one channel instead of stacking toasts and modals.",
-        "Do not put two demands in the same moment; queue the second.",
-        "Keep a missed request recoverable where the person will look for it."
+        {
+          "text": "Route interruptions to one channel instead of stacking toasts and modals.",
+          "kind": "code"
+        },
+        {
+          "text": "Do not put two demands in the same moment; queue the second.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep a missed request recoverable where the person will look for it.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A toast, a modal, and a banner ask for attention at once.",
@@ -850,9 +1024,18 @@ window.UX_DECK = {
       "axiom": "People seek and weight evidence that confirms what they already believe.",
       "trigger": "A dashboard shows only the runs that support the current plan.",
       "checklist": [
-        "Show disconfirming results at the same prominence as confirming ones.",
-        "Ask what evidence would change the decision before the test runs.",
-        "Record every run, including the ones that refute the hypothesis."
+        {
+          "text": "Show disconfirming results at the same prominence as confirming ones.",
+          "kind": "code"
+        },
+        {
+          "text": "Ask what evidence would change the decision before the test runs.",
+          "kind": "research"
+        },
+        {
+          "text": "Record every run, including the ones that refute the hypothesis.",
+          "kind": "research"
+        }
       ],
       "antiPattern": {
         "violation": "Only successful test runs are shown, so a failing design looks proven.",
@@ -921,9 +1104,18 @@ window.UX_DECK = {
       "axiom": "Money already spent pulls the next decision, though only future costs should.",
       "trigger": "A team keeps funding a feature because of what it has already cost.",
       "checklist": [
-        "Name the cost already spent and leave it out of the go/no-go calculation.",
-        "Judge the next step by what it costs from here and what it returns.",
-        "Rewrite a stuck decision as if nothing had been spent yet, then compare."
+        {
+          "text": "Name the cost already spent and leave it out of the go/no-go calculation.",
+          "kind": "code"
+        },
+        {
+          "text": "Judge the next step by what it costs from here and what it returns.",
+          "kind": "code"
+        },
+        {
+          "text": "Rewrite a stuck decision as if nothing had been spent yet, then compare.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A failing feature keeps its budget because half of it is already built.",
@@ -960,9 +1152,18 @@ window.UX_DECK = {
       "axiom": "Losses weigh on choices more than equivalent gains do.",
       "trigger": "A change is refused for what it might lose, not weighed by what it gains.",
       "checklist": [
-        "Show the loss and the gain of a change side by side, in the same units.",
-        "Describe what staying costs as plainly as what moving costs.",
-        "Test whether the framing moved the decision, not only the preference."
+        {
+          "text": "Show the loss and the gain of a change side by side, in the same units.",
+          "kind": "code"
+        },
+        {
+          "text": "Describe what staying costs as plainly as what moving costs.",
+          "kind": "code"
+        },
+        {
+          "text": "Test whether the framing moved the decision, not only the preference.",
+          "kind": "research"
+        }
       ],
       "antiPattern": {
         "violation": "A migration is presented only as what could break, so nobody approves it.",
@@ -1002,9 +1203,18 @@ window.UX_DECK = {
       "axiom": "Effort rises as the goal nears; the last stretch gets the most.",
       "trigger": "People start slowly on a long task and speed up near its end.",
       "checklist": [
-        "Show how far the person has come, not only how much remains.",
-        "Split a long run into visible goals, so a near one is always in reach.",
-        "Put the last review beside the finish, where the end is in view."
+        {
+          "text": "Show how far the person has come, not only how much remains.",
+          "kind": "code"
+        },
+        {
+          "text": "Split a long run into visible goals, so a near one is always in reach.",
+          "kind": "code"
+        },
+        {
+          "text": "Put the last review beside the finish, where the end is in view.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A ten-step setup shows one spinner for the whole run, so people leave at step three.",
@@ -1042,9 +1252,18 @@ window.UX_DECK = {
       "axiom": "People keep the option they already have unless something forces a change.",
       "trigger": "A setting nobody changed is treated as the one people chose.",
       "checklist": [
-        "Name the default in words and say what happens if nobody chooses.",
-        "Make any move away from the default reversible in one step.",
-        "Give the alternatives the same visibility as the default; do not bury them."
+        {
+          "text": "Name the default in words and say what happens if nobody chooses.",
+          "kind": "code"
+        },
+        {
+          "text": "Make any move away from the default reversible in one step.",
+          "kind": "code"
+        },
+        {
+          "text": "Give the alternatives the same visibility as the default; do not bury them.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Opt-out sits on a second screen, so the default is the only path anyone finds.",
@@ -1081,9 +1300,18 @@ window.UX_DECK = {
       "axiom": "Target acquisition time is a function of distance and target bounding width.",
       "trigger": "Users miss small controls or take long pointer trips for frequent actions, especially on touch screens.",
       "checklist": [
-        "Make touch targets at least 44 x 44 px, or 24 x 24 px with adequate spacing.",
-        "Pin frequent primary controls to screen edges or corners on desktop.",
-        "Place contextual actions next to the initiating click point."
+        {
+          "text": "Make touch targets at least 44 x 44 px, or 24 x 24 px with adequate spacing.",
+          "kind": "code"
+        },
+        {
+          "text": "Pin frequent primary controls to screen edges or corners on desktop.",
+          "kind": "code"
+        },
+        {
+          "text": "Place contextual actions next to the initiating click point.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Mobile checkout puts a 12 x 12 px Confirm Order text link in the extreme top-right corner.",
@@ -1121,9 +1349,18 @@ window.UX_DECK = {
       "axiom": "Steering time through a tunnel grows with its length and shrinks with its width.",
       "trigger": "A cursor entering a nested fly-out drifts a few pixels sideways and the menu collapses.",
       "checklist": [
-        "Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.",
-        "Add a triangular safe-hover zone between the pointer and the open submenu.",
-        "Keep generous padding on drag tracks, sliders, and scrollbar thumbs."
+        {
+          "text": "Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.",
+          "kind": "code"
+        },
+        {
+          "text": "Add a triangular safe-hover zone between the pointer and the open submenu.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep generous padding on drag tracks, sliders, and scrollbar thumbs.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A desktop menu makes the pointer cross a fourteen-pixel submenu path, and one pixel outside closes it.",
@@ -1160,9 +1397,18 @@ window.UX_DECK = {
       "axiom": "When system response drops under four hundred milliseconds, people stay engaged and work faster.",
       "trigger": "A click blocks the interface for most of a second, and the person clicks again or looks away.",
       "checklist": [
-        "Update the interface at once on input, then reconcile with the server in the background.",
-        "Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.",
-        "Prefetch likely next screens on hover or focus."
+        {
+          "text": "Update the interface at once on input, then reconcile with the server in the background.",
+          "kind": "code"
+        },
+        {
+          "text": "Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.",
+          "kind": "code"
+        },
+        {
+          "text": "Prefetch likely next screens on hover or focus.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A like button freezes for 750 ms while the request runs, with no visible change.",
@@ -1231,9 +1477,18 @@ window.UX_DECK = {
       "axiom": "Progress cues make the same wait feel shorter than a blank screen does.",
       "trigger": "An export runs for twelve seconds behind a blank screen, and people refresh because they think it froze.",
       "checklist": [
-        "Pair long operations with a determinate bar and motion that accelerates toward the end.",
-        "Replace a static spinner with skeleton screens or a pulsing placeholder.",
-        "Name the current stage in plain words: connecting, encrypting, finishing."
+        {
+          "text": "Pair long operations with a determinate bar and motion that accelerates toward the end.",
+          "kind": "code"
+        },
+        {
+          "text": "Replace a static spinner with skeleton screens or a pulsing placeholder.",
+          "kind": "code"
+        },
+        {
+          "text": "Name the current stage in plain words: connecting, encrypting, finishing.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A large export shows a blank page and a static cursor for twelve seconds.",
@@ -1276,10 +1531,22 @@ window.UX_DECK = {
       "axiom": "Task time falls as a power of practice repetitions: steep early gains, then diminishing returns.",
       "trigger": "A workflow someone uses every day takes as long in month six as it did in week one.",
       "checklist": [
-        "Keep frequent actions in one fixed place so repetition trains aim instead of search.",
-        "Give daily paths keyboard shortcuts and let the interface remember recent choices.",
-        "Make the fastest route the default, not something found in settings.",
-        "Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice."
+        {
+          "text": "Keep frequent actions in one fixed place so repetition trains aim instead of search.",
+          "kind": "code"
+        },
+        {
+          "text": "Give daily paths keyboard shortcuts and let the interface remember recent choices.",
+          "kind": "code"
+        },
+        {
+          "text": "Make the fastest route the default, not something found in settings.",
+          "kind": "code"
+        },
+        {
+          "text": "Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice.",
+          "kind": "research"
+        }
       ],
       "antiPattern": {
         "violation": "A ticketing tool moves its main action each release, so agents relearn the target every quarter.",
@@ -1315,10 +1582,22 @@ window.UX_DECK = {
       "axiom": "Expert task time sums discrete operator durations: keystroke, pointing, homing, mental, and response.",
       "trigger": "A task feels slow although no single step is slow; the time goes into small transitions.",
       "checklist": [
-        "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.",
-        "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.",
-        "Auto-advance focus in segmented fields such as one-time codes.",
-        "Name fields plainly so people do not pause to decode them before typing."
+        {
+          "text": "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.",
+          "kind": "code"
+        },
+        {
+          "text": "Auto-advance focus in segmented fields such as one-time codes.",
+          "kind": "code"
+        },
+        {
+          "text": "Name fields plainly so people do not pause to decode them before typing.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A six-digit code sits in six boxes, so each digit needs a click and then a key.",
@@ -1409,9 +1688,18 @@ window.UX_DECK = {
       "axiom": "A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.",
       "trigger": "Two controls differ by the same amount, but one change is obvious and the other is invisible.",
       "checklist": [
-        "Set type hierarchy by ratio, not equal steps: 16, 20, 25, 31 px reads as clear levels.",
-        "Check dark-theme borders with the same relative contrast step, not the same hex delta.",
-        "Scale spacing and progress changes as a fraction of the current value."
+        {
+          "text": "Set type hierarchy by ratio, not equal steps: 16, 20, 25, 31 px reads as clear levels.",
+          "kind": "code"
+        },
+        {
+          "text": "Check dark-theme borders with the same relative contrast step, not the same hex delta.",
+          "kind": "code"
+        },
+        {
+          "text": "Scale spacing and progress changes as a fraction of the current value.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Heading sizes step 16, 18, 20 px, so three levels look like one.",
@@ -1447,9 +1735,18 @@ window.UX_DECK = {
       "axiom": "Each wasted motion costs time and fatigue; remove it rather than speed it up.",
       "trigger": "A control used every few seconds sits at the far edge of the screen.",
       "checklist": [
-        "Place controls used together, and most-used controls, inside one-handed reach.",
-        "Keep primary actions in the lower third of a phone screen, near the thumb.",
-        "Let a gesture finish where it started; avoid crossing the screen mid-task."
+        {
+          "text": "Place controls used together, and most-used controls, inside one-handed reach.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep primary actions in the lower third of a phone screen, near the thumb.",
+          "kind": "code"
+        },
+        {
+          "text": "Let a gesture finish where it started; avoid crossing the screen mid-task.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Checkout puts Apply Promo bottom-left and Pay top-right, a reach across the whole screen.",
@@ -1485,9 +1782,18 @@ window.UX_DECK = {
       "axiom": "Target time rises linearly with log2(D/W + 0.5); the half sits inside the logarithm.",
       "trigger": "Small icons with tight spacing are missed while larger, padded targets are hit first time.",
       "checklist": [
-        "Pad small icon targets to widen the effective target without enlarging the glyph.",
-        "Expand drag targets as the pointer nears them, widening the effective target.",
-        "Separate destructive controls from their neighbors with a visible gutter."
+        {
+          "text": "Pad small icon targets to widen the effective target without enlarging the glyph.",
+          "kind": "code"
+        },
+        {
+          "text": "Expand drag targets as the pointer nears them, widening the effective target.",
+          "kind": "code"
+        },
+        {
+          "text": "Separate destructive controls from their neighbors with a visible gutter.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",
@@ -1522,9 +1828,18 @@ window.UX_DECK = {
       "axiom": "Vision pauses during rapid eye jumps; a clear field is read only during fixations.",
       "trigger": "A form's labels sit far from their fields, so the eye must travel for every answer.",
       "checklist": [
-        "Align form labels directly above or beside their fields, on one vertical axis.",
-        "Keep badges and status text inline with the row they describe.",
-        "Do not split one reading task across the far edges of a wide screen."
+        {
+          "text": "Align form labels directly above or beside their fields, on one vertical axis.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep badges and status text inline with the row they describe.",
+          "kind": "code"
+        },
+        {
+          "text": "Do not split one reading task across the far edges of a wide screen.",
+          "kind": "code"
+        }
       ],
       "antiPattern": {
         "violation": "A form alternates inputs between two columns, forcing zig-zag eye travel and skipped fields.",

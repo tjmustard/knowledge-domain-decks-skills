@@ -50,8 +50,20 @@
       "minItems": 3,
       "maxItems": 4,
       "items": {
-        "type": "string",
-        "maxLength": 120
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["text", "kind"],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "kind": {
+            "enum": ["code", "research"],
+            "description": "code: an agent can check or act on this by reading code. research: it needs an experiment or a recorded run, which an agent reading code cannot perform."
+          }
+        }
       }
     },
     "antiPattern": {

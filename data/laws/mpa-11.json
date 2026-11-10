@@ -5,9 +5,9 @@
   "axiom": "People keep the option they already have unless something forces a change.",
   "trigger": "A setting nobody changed is treated as the one people chose.",
   "checklist": [
-    "Name the default in words and say what happens if nobody chooses.",
-    "Make any move away from the default reversible in one step.",
-    "Give the alternatives the same visibility as the default; do not bury them."
+    {"text": "Name the default in words and say what happens if nobody chooses.", "kind": "code"},
+    {"text": "Make any move away from the default reversible in one step.", "kind": "code"},
+    {"text": "Give the alternatives the same visibility as the default; do not bury them.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Opt-out sits on a second screen, so the default is the only path anyone finds.",

@@ -5,9 +5,9 @@
   "axiom": "Working memory capacity spans approximately seven, plus or minus two, discrete information chunks.",
   "trigger": "Users lose track of values across long unbroken strings, forms, or dashboards with many competing figures.",
   "checklist": [
-    "Chunk long strings: format card numbers as four groups of four digits.",
-    "Split multi-step checkout into three to five navigable phases.",
-    "Cap visible summary cards on an overview dashboard at seven key indicators."
+    {"text": "Chunk long strings: format card numbers as four groups of four digits.", "kind": "code"},
+    {"text": "Split multi-step checkout into three to five navigable phases.", "kind": "code"},
+    {"text": "Cap visible summary cards on an overview dashboard at seven key indicators.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A payment field demands a raw 16-digit card number in one unformatted text string.",

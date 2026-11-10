@@ -44,7 +44,7 @@ function rulesMarkdown() {
       lines.push(`**Axiom.** ${card.axiom}`, "");
       lines.push(`**Apply when.** ${card.trigger}`, "");
       lines.push("**Checklist.**");
-      for (const item of card.checklist) lines.push(`- [ ] ${item}`);
+      for (const item of card.checklist) lines.push(`- [ ] ${checklistLine(item)}`);
       lines.push("");
       lines.push(`**Anti-pattern.** ${card.antiPattern.violation}`, "");
       lines.push(`**Fix.** ${card.antiPattern.remediation}`, "");
@@ -122,7 +122,7 @@ function resourceMarkdown(category, items) {
     lines.push(`- **Axiom:** ${card.axiom}`);
     lines.push(`- **Apply when:** ${card.trigger}`);
     lines.push(`- **Check:**`);
-    for (const item of card.checklist) lines.push(`  - ${item}`);
+    for (const item of card.checklist) lines.push(`  - ${checklistLine(item)}`);
     lines.push(`- **Instead of:** ${card.antiPattern.violation}`);
     lines.push(`- **Do:** ${card.antiPattern.remediation}`);
     lines.push(
@@ -131,6 +131,16 @@ function resourceMarkdown(category, items) {
     lines.push("");
   }
   return lines.join("\n");
+}
+
+// A research item is one an agent reading code cannot complete: it needs an
+// experiment or a recorded run. Saying so in the generated artifact is the
+// difference between an agent reporting the gap and an agent claiming a check
+// it never made.
+function checklistLine(item) {
+  return item.kind === "research"
+    ? `${item.text} _(research: an experiment or a recorded run; not checkable from code)_`
+    : item.text;
 }
 
 // A trigger is one sentence in the record; a table cell cannot hold a line

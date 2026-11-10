@@ -5,9 +5,9 @@
   "axiom": "Target time rises linearly with log2(D/W + 0.5); the half sits inside the logarithm.",
   "trigger": "Small icons with tight spacing are missed while larger, padded targets are hit first time.",
   "checklist": [
-    "Pad small icon targets to widen the effective target without enlarging the glyph.",
-    "Expand drag targets as the pointer nears them, widening the effective target.",
-    "Separate destructive controls from their neighbors with a visible gutter."
+    {"text": "Pad small icon targets to widen the effective target without enlarging the glyph.", "kind": "code"},
+    {"text": "Expand drag targets as the pointer nears them, widening the effective target.", "kind": "code"},
+    {"text": "Separate destructive controls from their neighbors with a visible gutter.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",

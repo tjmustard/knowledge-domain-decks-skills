@@ -5,9 +5,9 @@
   "axiom": "Decision time increases logarithmically with the number and informational complexity of available choices.",
   "trigger": "Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.",
   "checklist": [
-    "Cap flat options in top-level navigation at five to seven items.",
-    "Group large select menus into categories or a filterable combobox.",
-    "Pre-highlight a recommended default to skip part of the decision tree."
+    {"text": "Cap flat options in top-level navigation at five to seven items.", "kind": "code"},
+    {"text": "Group large select menus into categories or a filterable combobox.", "kind": "code"},
+    {"text": "Pre-highlight a recommended default to skip part of the decision tree.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "An enterprise settings page offers a flat, unordered dropdown of 85 country options.",

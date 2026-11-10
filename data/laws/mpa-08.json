@@ -5,9 +5,9 @@
   "axiom": "Money already spent pulls the next decision, though only future costs should.",
   "trigger": "A team keeps funding a feature because of what it has already cost.",
   "checklist": [
-    "Name the cost already spent and leave it out of the go/no-go calculation.",
-    "Judge the next step by what it costs from here and what it returns.",
-    "Rewrite a stuck decision as if nothing had been spent yet, then compare."
+    {"text": "Name the cost already spent and leave it out of the go/no-go calculation.", "kind": "code"},
+    {"text": "Judge the next step by what it costs from here and what it returns.", "kind": "code"},
+    {"text": "Rewrite a stuck decision as if nothing had been spent yet, then compare.", "kind": "code"}
   ],
   "antiPattern": {
     "violation": "A failing feature keeps its budget because half of it is already built.",
