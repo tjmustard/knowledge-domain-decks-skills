@@ -1,0 +1,33 @@
+{
+  "id": "IDE-15",
+  "sourceTacticNo": 15,
+  "name": "SCAMPER: Eliminate (E)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Delete 50% of your system's interaction steps, UI components, or architectural dependencies. Re-architect the remaining components to fulfill the core operational goal.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 15 of 16",
+  "mechanism": "Employs cognitive pruning, stripping secondary features, layers, and safeguards to expose fundamental system mechanics.",
+  "questions": [
+    "What subsystem, if deleted entirely, would improve system reliability and throughput?",
+    "What user input fields are collected speculatively and can be eliminated to eliminate compliance liabilities?",
+    "Can we eliminate the human interface layer entirely and deliver utility autonomously?"
+  ],
+  "example": "User Registration Conversion. Eliminating registration forms, email verification workflows, and username/password credentials. Replace with ephemeral, device-bound asymmetric cryptographic keys generated in the browser secure enclave, dropping customer drop-off rates while automating credential provisioning.",
+  "origin": {
+    "authors": [
+      "Bob Eberle"
+    ],
+    "year": 1971,
+    "title": "SCAMPER: Games for Imagination Development",
+    "publication": "D.O.K. Publishers",
+    "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 15
+    }
+  }
+}

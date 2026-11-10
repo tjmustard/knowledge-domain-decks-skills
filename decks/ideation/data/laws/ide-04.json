@@ -1,0 +1,33 @@
+{
+  "id": "IDE-04",
+  "sourceTacticNo": 4,
+  "name": "Six Thinking Hats: Black Hat (Systematic Fault Injection)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Assume the platform has suffered an unrecoverable failure in production. Spend five minutes drafting the post-mortem root cause analysis, detailing the overlooked operational vulnerability.",
+  "sprintSize": 9,
+  "schematic": "Perspective at position 4 of 16",
+  "mechanism": "Deploys defensive pessimism and systematic negative search, counteracting overconfidence heuristics and shared groupthink.",
+  "questions": [
+    "What catastrophic structural vulnerability is being dismissed to meet delivery deadlines?",
+    "Under what simultaneous network and hardware degradation states does this architecture enter permanent deadlock?",
+    "How could an adversary exploit our fallback recovery mechanisms to compromise data integrity?"
+  ],
+  "example": "Distributed Edge Consensus. Black Hat analysis isolates a split-brain condition: during cellular backhaul degradation that introduces severe packet loss without total disconnection, edge nodes flapping between consensus groups drain Raft leader election terms, cascading into an unrecoverable quorum failure.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "perspective",
+      "divisions": 16,
+      "mark": 4
+    }
+  }
+}

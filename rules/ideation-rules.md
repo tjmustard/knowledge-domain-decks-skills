@@ -7,6 +7,125 @@ The sprint prints on the card exactly as the source writes it, because it is the
 
 ## Systematic Lateral Thinking & Perceptual Restructuring
 
+### IDE-01 — Assumption Reversal
+
+**Five-minute sprint.** Document five foundational assumptions underpinning the technical problem. Write their direct inversions. Select the most counter-intuitive inversion and draft two operational conditions under which it functions effectively.
+
+**Schematic.** Reflection at position 1 of 16
+
+**Cognitive mechanism.** Reverses directional cognitive sets and disrupts normative schema reliance, forcing working memory to construct causal pathways from counterfactual preconditions.
+
+**Seed questions.**
+- What core assumption, if inverted, turns our primary operational bottleneck into our primary throughput mechanism?
+- How would this system operate if clients were paid to consume system resources rather than paying for service access?
+- What architectural opportunities emerge if output data is computed prior to the arrival of the input request?
+
+**Worked example.** Database Write Scalability. Standard assumption: "The database storage engine must await and validate incoming write requests before committing them to persistent storage." Reversed assumption: "The storage engine speculatively writes data blocks prior to client write dispatch." Implementation: Predictive log pre-allocation and speculative branch execution in log-structured merge-tree (LSM) architectures, transforming synchronous disk I/O stalls into speculative memory transactions validated by atomic commit checks.
+
+**Source.** The source names no originator.
+
+### IDE-02 — Six Thinking Hats: White Hat (Empirical Telemetry)
+
+**Five-minute sprint.** Strip all qualitative adjectives, interpretations, and conjectures from the incident report. Isolate only raw numerical telemetry, hardware metrics, and deterministic error codes.
+
+**Schematic.** Separation at position 2 of 16
+
+**Cognitive mechanism.** Decouples sensory observation from emotional and interpretive cognition, inhibiting confirmation bias and anchoring heuristics.
+
+**Seed questions.**
+- What verified system telemetry exists versus what subjective hypotheses are being treated as empirical facts?
+- If all diagnostic interpretations were discarded, what do the raw system event logs prove occurred?
+- What missing instrumentation metric would immediately resolve the current architectural debate?
+
+**Worked example.** Microservice P99 Latency Spikes. Decoupling diagnostic conjectures ("the Redis cluster is saturated") into strict empirical White Hat metrics: cache hit ratios remain constant at 99.4%, but Linux kernel socket tables reveal TCP ephemeral port exhaustion caused by rapid connection teardowns without connection reuse.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
+### IDE-03 — Six Thinking Hats: Red Hat (Unjustified Intuition)
+
+**Five-minute sprint.** Set a 60-second timer. Participants record their intuitive reaction regarding where the technical proposal will fail, prohibiting rationalization or analytical defense.
+
+**Schematic.** Perspective at position 3 of 16
+
+**Cognitive mechanism.** Engages pre-attentive pattern matching and tacit expert knowledge without the operational friction of immediate analytical justification.
+
+**Seed questions.**
+- Instinctively, which architectural component feels brittle or unstable?
+- What hidden operational friction in this workflow will drive an end user to abandon the process within three seconds?
+- If forced to wager personal capital on this deployment failing, where does immediate intuition point?
+
+**Worked example.** Enterprise SSO Rollout. Senior engineers report intuitive unease regarding authentication flows without immediate empirical proof. Rapid Red Hat prompting surfaces unspoken anxieties about state synchronization latency during SAML assertion handoffs, identifying unhandled edge cases in legacy Active Directory federations prior to production rollout.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
+### IDE-04 — Six Thinking Hats: Black Hat (Systematic Fault Injection)
+
+**Five-minute sprint.** Assume the platform has suffered an unrecoverable failure in production. Spend five minutes drafting the post-mortem root cause analysis, detailing the overlooked operational vulnerability.
+
+**Schematic.** Perspective at position 4 of 16
+
+**Cognitive mechanism.** Deploys defensive pessimism and systematic negative search, counteracting overconfidence heuristics and shared groupthink.
+
+**Seed questions.**
+- What catastrophic structural vulnerability is being dismissed to meet delivery deadlines?
+- Under what simultaneous network and hardware degradation states does this architecture enter permanent deadlock?
+- How could an adversary exploit our fallback recovery mechanisms to compromise data integrity?
+
+**Worked example.** Distributed Edge Consensus. Black Hat analysis isolates a split-brain condition: during cellular backhaul degradation that introduces severe packet loss without total disconnection, edge nodes flapping between consensus groups drain Raft leader election terms, cascading into an unrecoverable quorum failure.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
+### IDE-05 — Six Thinking Hats: Yellow Hat (Speculative Optimization)
+
+**Five-minute sprint.** Assume infrastructure, storage, and networking costs are zero. Identify three dormant value streams within the current architecture that could yield exponential returns.
+
+**Schematic.** Perspective at position 5 of 16
+
+**Cognitive mechanism.** Activates reward pathways and value-seeking networks, mitigating loss aversion and status-quo bias through systematic exploration of best-case dynamics.
+
+**Seed questions.**
+- What is the compounding systemic benefit if this feature scales by three orders of magnitude?
+- How does an internal error-handling mechanism contain the foundation for an external platform?
+- What latent, underutilized resource within our existing infrastructure can be converted into an operational asset?
+
+**Worked example.** Read Replica Resource Utilization. Rather than treating multi-region read replicas as passive read-offloading infrastructure, Yellow Hat analysis recognizes that parsing change data capture (CDC) streams from these nodes enables real-time feature extraction for continuous model inference without adding query overhead to the primary database.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
+### IDE-06 — Six Thinking Hats: Green Hat (Provocative Novelty)
+
+**Five-minute sprint.** Generate ten architectural variations that violate established engineering patterns within the problem domain. Practical feasibility is ignored; novelty is mandatory.
+
+**Schematic.** Perspective at position 6 of 16
+
+**Cognitive mechanism.** Promotes lateral divergence and conceptual jumping by suspending logical consistency checks and operational constraints.
+
+**Seed questions.**
+- What architectural pattern would emerge if conventional design best practices were treated as operational errors?
+- If an alien biological mechanism were translated into this software subsystem, how would it process events?
+- How can we resolve this architectural constraint by introducing an intentional, controlled imperfection?
+
+**Worked example.** API Rate Limiting. Instead of dropping abusive clients via conventional HTTP 429 Too Many Requests responses, a Green Hat provocation executes incoming requests inside an isolated WebAssembly sandbox with progressively throttled execution time-slices. This forces the abusive client to wait on socket connections, draining its local compute resources until it disconnects.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
+### IDE-07 — Six Thinking Hats: Blue Hat (Metacognitive Orchestration)
+
+**Five-minute sprint.** Step back from technical problem solving. Chart the cognitive modalities deployed during the current meeting, identify analytical loops, and mandate the next thinking protocol.
+
+**Schematic.** Perspective at position 7 of 16
+
+**Cognitive mechanism.** Activates executive control and metacognitive monitoring, regulating cognitive switching between exploratory divergent and evaluative convergent modes.
+
+**Seed questions.**
+- Are we debating the engineering details of a problem whose underlying premise is invalid?
+- Which cognitive perspective has been omitted during this architectural evaluation?
+- What quantitative stopping criterion will terminate debate and initiate empirical testing?
+
+**Worked example.** Architecture Review Gridlock. An engineering team reaches an impasse debating Apache Kafka versus RabbitMQ. A Blue Hat intervention halts the discussion, identifies that the team is cycling between unquantified Black Hat fears and Green Hat speculation, and institutes a 48-hour time-boxed spike to benchmark throughput under a 10,000-connection load, terminating theoretical debate.
+
+**Source.** Edward de Bono (1985). *Six Thinking Hats*. Little, Brown.
+
 ### IDE-08 — Lateral Thinking Provocations: Escape Principle (Po)
 
 **Five-minute sprint.** Identify an indispensable system component. Declare: "Po: [Component] does not exist." Conceive two functional configurations that achieve the system's objective without that component.
@@ -23,6 +142,142 @@ The sprint prints on the card exactly as the source writes it, because it is the
 **Worked example.** Collaborative Workspace Synchronization. "Po: The distributed application contains no central database server." Breakthrough: The architecture migrates from client-server relational storage to Conflict-free Replicated Data Types (CRDTs) over WebRTC mesh connections, enabling local mutation and deterministic peer-to-peer merge operations without a centralized persistence cluster.
 
 **Source.** Edward de Bono (1970). *Lateral Thinking: Creativity Step by Step*. Harper & Row.
+
+### IDE-09 — Lateral Thinking Provocations: Stepping Stone (Po)
+
+**Five-minute sprint.** Articulate an absurd technical premise ("Po: The application must terminate every process after ten requests"). Derive two hardened architectural patterns from that premise.
+
+**Schematic.** Provocation at position 9 of 16
+
+**Cognitive mechanism.** Employs an intentionally illogical or technically absurd intermediate construct as an unstable mental platform to access non-obvious, viable configurations.
+
+**Seed questions.**
+- What operational benefits occur if this absurd condition is made mandatory?
+- If this extreme premise were non-negotiable, what defensive infrastructure would we engineer?
+- What systemic fragility does this stepping-stone assertion make visible?
+
+**Worked example.** Fault-Tolerant Microservice Resilience. "Po: Every microservice crashes instantly after handling ten transactions." Stepping stone logic leads to Erlang-style "crash-only" architectures and ephemeral Kubernetes pods that terminate aggressively after handling fixed batch sizes. This clears memory leaks, resets socket pools, and purges state drift before performance degrades.
+
+**Source.** Edward de Bono (1970). *Lateral Thinking: Creativity Step by Step*. Harper & Row.
+
+### IDE-10 — SCAMPER: Substitute (S)
+
+**Five-minute sprint.** Select a core component of the software stack (e.g., protocol, serialization layer, authentication provider). Replace it with three mechanisms borrowed from distinct engineering domains.
+
+**Schematic.** Substitution at position 10 of 16
+
+**Cognitive mechanism.** Breaks component-binding fixations by isolating functional interfaces and substituting alternative materials, actors, or protocols.
+
+**Seed questions.**
+- What protocol, runtime, or hardware layer can be substituted to eliminate this latency bottleneck?
+- What happens if we substitute manual administrative approval with cryptographic validation?
+- Can we substitute continuous operational polling with hardware interrupt mechanisms?
+
+**Worked example.** User Authentication and Identity Verification. Substituting persistent shared secrets (passwords) and SMS OTPs with asymmetric public-key cryptography via WebAuthn/FIDO2 hardware-backed passkeys, eliminating credential database storage vulnerabilities and credential-stuffing threat vectors entirely.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-11 — SCAMPER: Combine (C)
+
+**Five-minute sprint.** Select two disconnected tools, services, or workflow phases. Merge their functional boundaries so that executing the first intrinsically finishes the second.
+
+**Schematic.** Recombination at position 11 of 16
+
+**Cognitive mechanism.** Drives cognitive bisociation by merging separate functional operational boundaries into an integrated structural entity.
+
+**Seed questions.**
+- Which two asynchronous data pipelines can be combined into a single atomic pass?
+- How can system observability be merged directly into the core execution runtime?
+- What independent data structures can be unified to eliminate serialization conversion costs?
+
+**Worked example.** Edge Security and Application Observability. Instead of routing requests through an API reverse proxy and then publishing analytical events to a downstream queue via a daemon, combine the proxy with an eBPF Linux kernel probe that traces, filters, metrics-scores, and rate-limits network frames directly inside the kernel networking stack.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-12 — SCAMPER: Adapt (A)
+
+**Five-minute sprint.** Identify an external industry that manages identical dynamic forces (e.g., fluid dynamics, air-traffic logistics, forestry management). Adapt its primary structural mechanism to the problem.
+
+**Schematic.** Mapping at position 12 of 16
+
+**Cognitive mechanism.** Leverages analogical mapping, transferring relational mechanisms from a foreign domain while ignoring superficial surface differences.
+
+**Seed questions.**
+- What non-software engineering discipline resolved this throughput balance decades ago?
+- How does biological cellular mechanics handle this exact transport or routing constraint?
+- How can an obsolete historical protocol be adapted to solve a modern distributed system problem?
+
+**Worked example.** Asynchronous API Ingress Throttling. Adapting hydraulic fluid restrictors and mechanical dashpots into software token-bucket rate limiters (specifically the Generic Cell Rate Algorithm, GCRA), ensuring smooth, deterministic traffic-shaping across distributed ingress gateways.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-13 — SCAMPER: Modify / Magnify / Minify (M)
+
+**Five-minute sprint.** Select a primary system parameter (payload volume, sync frequency, timeout limit). Scale it by a factor of 1,000x, then compress it to 1/1,000th. Design an architecture capable of operating at both boundaries.
+
+**Schematic.** Scale shift at position 13 of 16
+
+**Cognitive mechanism.** Adjusts scale and parametric boundaries, provoking non-linear cognitive shifts by breaking baseline assumptions regarding size and throughput.
+
+**Seed questions.**
+- What happens if the data payload size is magnified to 100 gigabytes per event?
+- What happens if operational turnaround must be compressed from 50 milliseconds to 50 nanoseconds?
+- How must the system be architected if user lifespans are compressed to ten seconds or magnified to fifty years?
+
+**Worked example.** Event Pipeline Memory Utilization. Minifying tracking payloads: instead of transmitting verbose JSON payloads (1.5 KB per record) across Kafka topics, modify the payload to a zero-copy flat binary buffer (Cap'n Proto or FlatBuffers) occupying 48 bytes. This reduces network bandwidth consumption by 96% and eliminates CPU deserialization costs.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-14 — SCAMPER: Put to Another Use (P)
+
+**Five-minute sprint.** Identify the primary waste byproduct, error log stream, or unused telemetry of your application. Devise two external use cases that treat this byproduct as their most valuable input.
+
+**Schematic.** Separation at position 14 of 16
+
+**Cognitive mechanism.** Overcomes functional fixedness by uncoupling a technical side effect or discarded artifact from its original context and identifying its latent utility.
+
+**Seed questions.**
+- What discarded operational metadata contains latent commercial or technical value?
+- Who outside our core market would pay to access our real-time system performance telemetry?
+- How can an internal regression-testing harness be repurposed as a customer-facing product feature?
+
+**Worked example.** Datacenter Thermal Dissipation. Repurposing server thermal rejection: instead of venting heat into the atmosphere using chillers, data center liquid-cooling loops are piped directly into municipal district heating grids and commercial greenhouses, turning an operational cooling expense into a municipal energy utility.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-15 — SCAMPER: Eliminate (E)
+
+**Five-minute sprint.** Delete 50% of your system's interaction steps, UI components, or architectural dependencies. Re-architect the remaining components to fulfill the core operational goal.
+
+**Schematic.** Removal at position 15 of 16
+
+**Cognitive mechanism.** Employs cognitive pruning, stripping secondary features, layers, and safeguards to expose fundamental system mechanics.
+
+**Seed questions.**
+- What subsystem, if deleted entirely, would improve system reliability and throughput?
+- What user input fields are collected speculatively and can be eliminated to eliminate compliance liabilities?
+- Can we eliminate the human interface layer entirely and deliver utility autonomously?
+
+**Worked example.** User Registration Conversion. Eliminating registration forms, email verification workflows, and username/password credentials. Replace with ephemeral, device-bound asymmetric cryptographic keys generated in the browser secure enclave, dropping customer drop-off rates while automating credential provisioning.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
+
+### IDE-16 — SCAMPER: Reverse / Rearrange (R)
+
+**Five-minute sprint.** Write down the sequential execution stages of your product or computing pipeline. Invert the chronological order from last to first, and evaluate the architectural implications.
+
+**Schematic.** Reflection at position 16 of 16
+
+**Cognitive mechanism.** Reverses temporal and causal sequences, disrupting standard workflow schemas and exposing structural dependencies.
+
+**Seed questions.**
+- What if user payment and resource consumption precede product discovery and configuration?
+- What happens if downstream database indexing formats dictate upstream application logic?
+- Can the client act as the authoritative storage tier while the central server acts merely as an ephemeral cache?
+
+**Worked example.** E-Commerce Checkout Workflows. Inverting standard transactional sequences: instead of "Discover → Configure → Input Payment → Deliver," reverse to "Pre-authorized Predictive Delivery → Customer Evaluation → Automated Account Reconciliation." This try-before-you-buy workflow removes point-of-sale friction.
+
+**Source.** Bob Eberle (1971). *SCAMPER: Games for Imagination Development*. D.O.K. Publishers.
 
 ## Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)
 

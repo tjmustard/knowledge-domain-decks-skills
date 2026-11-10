@@ -1,0 +1,33 @@
+{
+  "id": "IDE-10",
+  "sourceTacticNo": 10,
+  "name": "SCAMPER: Substitute (S)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Select a core component of the software stack (e.g., protocol, serialization layer, authentication provider). Replace it with three mechanisms borrowed from distinct engineering domains.",
+  "sprintSize": 9,
+  "schematic": "Substitution at position 10 of 16",
+  "mechanism": "Breaks component-binding fixations by isolating functional interfaces and substituting alternative materials, actors, or protocols.",
+  "questions": [
+    "What protocol, runtime, or hardware layer can be substituted to eliminate this latency bottleneck?",
+    "What happens if we substitute manual administrative approval with cryptographic validation?",
+    "Can we substitute continuous operational polling with hardware interrupt mechanisms?"
+  ],
+  "example": "User Authentication and Identity Verification. Substituting persistent shared secrets (passwords) and SMS OTPs with asymmetric public-key cryptography via WebAuthn/FIDO2 hardware-backed passkeys, eliminating credential database storage vulnerabilities and credential-stuffing threat vectors entirely.",
+  "origin": {
+    "authors": [
+      "Bob Eberle"
+    ],
+    "year": 1971,
+    "title": "SCAMPER: Games for Imagination Development",
+    "publication": "D.O.K. Publishers",
+    "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "substitution",
+      "divisions": 16,
+      "mark": 10
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "IDE-03",
+  "sourceTacticNo": 3,
+  "name": "Six Thinking Hats: Red Hat (Unjustified Intuition)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Set a 60-second timer. Participants record their intuitive reaction regarding where the technical proposal will fail, prohibiting rationalization or analytical defense.",
+  "sprintSize": 9,
+  "schematic": "Perspective at position 3 of 16",
+  "mechanism": "Engages pre-attentive pattern matching and tacit expert knowledge without the operational friction of immediate analytical justification.",
+  "questions": [
+    "Instinctively, which architectural component feels brittle or unstable?",
+    "What hidden operational friction in this workflow will drive an end user to abandon the process within three seconds?",
+    "If forced to wager personal capital on this deployment failing, where does immediate intuition point?"
+  ],
+  "example": "Enterprise SSO Rollout. Senior engineers report intuitive unease regarding authentication flows without immediate empirical proof. Rapid Red Hat prompting surfaces unspoken anxieties about state synchronization latency during SAML assertion handoffs, identifying unhandled edge cases in legacy Active Directory federations prior to production rollout.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "perspective",
+      "divisions": 16,
+      "mark": 3
+    }
+  }
+}

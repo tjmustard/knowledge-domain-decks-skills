@@ -1,0 +1,33 @@
+{
+  "id": "IDE-05",
+  "sourceTacticNo": 5,
+  "name": "Six Thinking Hats: Yellow Hat (Speculative Optimization)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Assume infrastructure, storage, and networking costs are zero. Identify three dormant value streams within the current architecture that could yield exponential returns.",
+  "sprintSize": 9,
+  "schematic": "Perspective at position 5 of 16",
+  "mechanism": "Activates reward pathways and value-seeking networks, mitigating loss aversion and status-quo bias through systematic exploration of best-case dynamics.",
+  "questions": [
+    "What is the compounding systemic benefit if this feature scales by three orders of magnitude?",
+    "How does an internal error-handling mechanism contain the foundation for an external platform?",
+    "What latent, underutilized resource within our existing infrastructure can be converted into an operational asset?"
+  ],
+  "example": "Read Replica Resource Utilization. Rather than treating multi-region read replicas as passive read-offloading infrastructure, Yellow Hat analysis recognizes that parsing change data capture (CDC) streams from these nodes enables real-time feature extraction for continuous model inference without adding query overhead to the primary database.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "perspective",
+      "divisions": 16,
+      "mark": 5
+    }
+  }
+}

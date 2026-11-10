@@ -1,0 +1,33 @@
+{
+  "id": "IDE-11",
+  "sourceTacticNo": 11,
+  "name": "SCAMPER: Combine (C)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Select two disconnected tools, services, or workflow phases. Merge their functional boundaries so that executing the first intrinsically finishes the second.",
+  "sprintSize": 9,
+  "schematic": "Recombination at position 11 of 16",
+  "mechanism": "Drives cognitive bisociation by merging separate functional operational boundaries into an integrated structural entity.",
+  "questions": [
+    "Which two asynchronous data pipelines can be combined into a single atomic pass?",
+    "How can system observability be merged directly into the core execution runtime?",
+    "What independent data structures can be unified to eliminate serialization conversion costs?"
+  ],
+  "example": "Edge Security and Application Observability. Instead of routing requests through an API reverse proxy and then publishing analytical events to a downstream queue via a daemon, combine the proxy with an eBPF Linux kernel probe that traces, filters, metrics-scores, and rate-limits network frames directly inside the kernel networking stack.",
+  "origin": {
+    "authors": [
+      "Bob Eberle"
+    ],
+    "year": 1971,
+    "title": "SCAMPER: Games for Imagination Development",
+    "publication": "D.O.K. Publishers",
+    "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 11
+    }
+  }
+}

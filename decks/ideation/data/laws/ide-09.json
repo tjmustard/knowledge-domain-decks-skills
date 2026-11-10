@@ -1,0 +1,33 @@
+{
+  "id": "IDE-09",
+  "sourceTacticNo": 9,
+  "name": "Lateral Thinking Provocations: Stepping Stone (Po)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Articulate an absurd technical premise (\"Po: The application must terminate every process after ten requests\"). Derive two hardened architectural patterns from that premise.",
+  "sprintSize": 9,
+  "schematic": "Provocation at position 9 of 16",
+  "mechanism": "Employs an intentionally illogical or technically absurd intermediate construct as an unstable mental platform to access non-obvious, viable configurations.",
+  "questions": [
+    "What operational benefits occur if this absurd condition is made mandatory?",
+    "If this extreme premise were non-negotiable, what defensive infrastructure would we engineer?",
+    "What systemic fragility does this stepping-stone assertion make visible?"
+  ],
+  "example": "Fault-Tolerant Microservice Resilience. \"Po: Every microservice crashes instantly after handling ten transactions.\" Stepping stone logic leads to Erlang-style \"crash-only\" architectures and ephemeral Kubernetes pods that terminate aggressively after handling fixed batch sizes. This clears memory leaks, resets socket pools, and purges state drift before performance degrades.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1970,
+    "title": "Lateral Thinking: Creativity Step by Step",
+    "publication": "Harper & Row",
+    "note": "Checked 2026-11-10: the 1970 book frames the intermediate impossible as a stepping stone; the named Stepping Stone Method is in Thinking Course (BBC, 1982)."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "provocation",
+      "divisions": 16,
+      "mark": 9
+    }
+  }
+}

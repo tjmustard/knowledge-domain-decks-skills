@@ -3,6 +3,252 @@ window.IDEATION_DECK = {
   "deck": "Ideation Architecture",
   "cards": [
     {
+      "id": "IDE-01",
+      "sourceTacticNo": 1,
+      "name": "Assumption Reversal",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Document five foundational assumptions underpinning the technical problem. Write their direct inversions. Select the most counter-intuitive inversion and draft two operational conditions under which it functions effectively.",
+      "sprintSize": 9,
+      "schematic": "Reflection at position 1 of 16",
+      "mechanism": "Reverses directional cognitive sets and disrupts normative schema reliance, forcing working memory to construct causal pathways from counterfactual preconditions.",
+      "questions": [
+        "What core assumption, if inverted, turns our primary operational bottleneck into our primary throughput mechanism?",
+        "How would this system operate if clients were paid to consume system resources rather than paying for service access?",
+        "What architectural opportunities emerge if output data is computed prior to the arrival of the input request?"
+      ],
+      "example": "Database Write Scalability. Standard assumption: \"The database storage engine must await and validate incoming write requests before committing them to persistent storage.\" Reversed assumption: \"The storage engine speculatively writes data blocks prior to client write dispatch.\" Implementation: Predictive log pre-allocation and speculative branch execution in log-structured merge-tree (LSM) architectures, transforming synchronous disk I/O stalls into speculative memory transactions validated by atomic commit checks.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 16,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 47 148 L 65 200 L 83 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 47 252 L 65 200 L 83 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-02",
+      "sourceTacticNo": 2,
+      "name": "Six Thinking Hats: White Hat (Empirical Telemetry)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Strip all qualitative adjectives, interpretations, and conjectures from the incident report. Isolate only raw numerical telemetry, hardware metrics, and deterministic error codes.",
+      "sprintSize": 9,
+      "schematic": "Separation at position 2 of 16",
+      "mechanism": "Decouples sensory observation from emotional and interpretive cognition, inhibiting confirmation bias and anchoring heuristics.",
+      "questions": [
+        "What verified system telemetry exists versus what subjective hypotheses are being treated as empirical facts?",
+        "If all diagnostic interpretations were discarded, what do the raw system event logs prove occurred?",
+        "What missing instrumentation metric would immediately resolve the current architectural debate?"
+      ],
+      "example": "Microservice P99 Latency Spikes. Decoupling diagnostic conjectures (\"the Redis cluster is saturated\") into strict empirical White Hat metrics: cache hit ratios remain constant at 99.4%, but Linux kernel socket tables reveal TCP ephemeral port exhaustion caused by rapid connection teardowns without connection reuse.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "separation",
+          "divisions": 16,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"75.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"75.2\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"94.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"113.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"132.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"152\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"171.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"190.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"209.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"228.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"248\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"267.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"286.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"305.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"324.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-03",
+      "sourceTacticNo": 3,
+      "name": "Six Thinking Hats: Red Hat (Unjustified Intuition)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Set a 60-second timer. Participants record their intuitive reaction regarding where the technical proposal will fail, prohibiting rationalization or analytical defense.",
+      "sprintSize": 9,
+      "schematic": "Perspective at position 3 of 16",
+      "mechanism": "Engages pre-attentive pattern matching and tacit expert knowledge without the operational friction of immediate analytical justification.",
+      "questions": [
+        "Instinctively, which architectural component feels brittle or unstable?",
+        "What hidden operational friction in this workflow will drive an end user to abandon the process within three seconds?",
+        "If forced to wager personal capital on this deployment failing, where does immediate intuition point?"
+      ],
+      "example": "Enterprise SSO Rollout. Senior engineers report intuitive unease regarding authentication flows without immediate empirical proof. Rapid Red Hat prompting surfaces unspoken anxieties about state synchronization latency during SAML assertion handoffs, identifying unhandled edge cases in legacy Active Directory federations prior to production rollout.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "perspective",
+          "divisions": 16,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"82\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"283.4386\" y2=\"116.5614\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"116.5614\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"318\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"318\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"82\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-04",
+      "sourceTacticNo": 4,
+      "name": "Six Thinking Hats: Black Hat (Systematic Fault Injection)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Assume the platform has suffered an unrecoverable failure in production. Spend five minutes drafting the post-mortem root cause analysis, detailing the overlooked operational vulnerability.",
+      "sprintSize": 9,
+      "schematic": "Perspective at position 4 of 16",
+      "mechanism": "Deploys defensive pessimism and systematic negative search, counteracting overconfidence heuristics and shared groupthink.",
+      "questions": [
+        "What catastrophic structural vulnerability is being dismissed to meet delivery deadlines?",
+        "Under what simultaneous network and hardware degradation states does this architecture enter permanent deadlock?",
+        "How could an adversary exploit our fallback recovery mechanisms to compromise data integrity?"
+      ],
+      "example": "Distributed Edge Consensus. Black Hat analysis isolates a split-brain condition: during cellular backhaul degradation that introduces severe packet loss without total disconnection, edge nodes flapping between consensus groups drain Raft leader election terms, cascading into an unrecoverable quorum failure.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "perspective",
+          "divisions": 16,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"82\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"309.017785\" y2=\"154.843355\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"154.843355\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"318\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"318\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"82\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-05",
+      "sourceTacticNo": 5,
+      "name": "Six Thinking Hats: Yellow Hat (Speculative Optimization)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Assume infrastructure, storage, and networking costs are zero. Identify three dormant value streams within the current architecture that could yield exponential returns.",
+      "sprintSize": 9,
+      "schematic": "Perspective at position 5 of 16",
+      "mechanism": "Activates reward pathways and value-seeking networks, mitigating loss aversion and status-quo bias through systematic exploration of best-case dynamics.",
+      "questions": [
+        "What is the compounding systemic benefit if this feature scales by three orders of magnitude?",
+        "How does an internal error-handling mechanism contain the foundation for an external platform?",
+        "What latent, underutilized resource within our existing infrastructure can be converted into an operational asset?"
+      ],
+      "example": "Read Replica Resource Utilization. Rather than treating multi-region read replicas as passive read-offloading infrastructure, Yellow Hat analysis recognizes that parsing change data capture (CDC) streams from these nodes enables real-time feature extraction for continuous model inference without adding query overhead to the primary database.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "perspective",
+          "divisions": 16,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"82\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"318\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"318\" cy=\"200\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"318\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"82\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-06",
+      "sourceTacticNo": 6,
+      "name": "Six Thinking Hats: Green Hat (Provocative Novelty)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Generate ten architectural variations that violate established engineering patterns within the problem domain. Practical feasibility is ignored; novelty is mandatory.",
+      "sprintSize": 9,
+      "schematic": "Perspective at position 6 of 16",
+      "mechanism": "Promotes lateral divergence and conceptual jumping by suspending logical consistency checks and operational constraints.",
+      "questions": [
+        "What architectural pattern would emerge if conventional design best practices were treated as operational errors?",
+        "If an alien biological mechanism were translated into this software subsystem, how would it process events?",
+        "How can we resolve this architectural constraint by introducing an intentional, controlled imperfection?"
+      ],
+      "example": "API Rate Limiting. Instead of dropping abusive clients via conventional HTTP 429 Too Many Requests responses, a Green Hat provocation executes incoming requests inside an isolated WebAssembly sandbox with progressively throttled execution time-slices. This forces the abusive client to wait on socket connections, draining its local compute resources until it disconnects.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "perspective",
+          "divisions": 16,
+          "mark": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"82\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"318\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"309.017785\" y2=\"245.156645\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"245.156645\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"318\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"82\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-07",
+      "sourceTacticNo": 7,
+      "name": "Six Thinking Hats: Blue Hat (Metacognitive Orchestration)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Step back from technical problem solving. Chart the cognitive modalities deployed during the current meeting, identify analytical loops, and mandate the next thinking protocol.",
+      "sprintSize": 9,
+      "schematic": "Perspective at position 7 of 16",
+      "mechanism": "Activates executive control and metacognitive monitoring, regulating cognitive switching between exploratory divergent and evaluative convergent modes.",
+      "questions": [
+        "Are we debating the engineering details of a problem whose underlying premise is invalid?",
+        "Which cognitive perspective has been omitted during this architectural evaluation?",
+        "What quantitative stopping criterion will terminate debate and initiate empirical testing?"
+      ],
+      "example": "Architecture Review Gridlock. An engineering team reaches an impasse debating Apache Kafka versus RabbitMQ. A Blue Hat intervention halts the discussion, identifies that the team is cycling between unquantified Black Hat fears and Green Hat speculation, and institutes a 48-hour time-boxed spike to benchmark throughput under a 10,000-connection load, terminating theoretical debate.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1985,
+        "title": "Six Thinking Hats",
+        "publication": "Little, Brown",
+        "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985.",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "perspective",
+          "divisions": 16,
+          "mark": 7
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"82\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"318\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309.017785\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"283.4386\" y2=\"283.4386\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"283.4386\" cy=\"283.4386\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245.156645\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"318\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"309.017785\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"283.4386\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"245.156645\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"82\" cy=\"200\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.982215\" cy=\"154.843355\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"116.5614\" cy=\"116.5614\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.843355\" cy=\"90.982215\" r=\"3.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "IDE-08",
       "sourceTacticNo": 8,
       "name": "Lateral Thinking Provocations: Escape Principle (Po)",
@@ -37,6 +283,294 @@ window.IDEATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 173 148 L 191 200 L 209 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 173 252 L 191 200 L 209 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-09",
+      "sourceTacticNo": 9,
+      "name": "Lateral Thinking Provocations: Stepping Stone (Po)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Articulate an absurd technical premise (\"Po: The application must terminate every process after ten requests\"). Derive two hardened architectural patterns from that premise.",
+      "sprintSize": 9,
+      "schematic": "Provocation at position 9 of 16",
+      "mechanism": "Employs an intentionally illogical or technically absurd intermediate construct as an unstable mental platform to access non-obvious, viable configurations.",
+      "questions": [
+        "What operational benefits occur if this absurd condition is made mandatory?",
+        "If this extreme premise were non-negotiable, what defensive infrastructure would we engineer?",
+        "What systemic fragility does this stepping-stone assertion make visible?"
+      ],
+      "example": "Fault-Tolerant Microservice Resilience. \"Po: Every microservice crashes instantly after handling ten transactions.\" Stepping stone logic leads to Erlang-style \"crash-only\" architectures and ephemeral Kubernetes pods that terminate aggressively after handling fixed batch sizes. This clears memory leaks, resets socket pools, and purges state drift before performance degrades.",
+      "origin": {
+        "authors": [
+          "Edward de Bono"
+        ],
+        "year": 1970,
+        "title": "Lateral Thinking: Creativity Step by Step",
+        "publication": "Harper & Row",
+        "note": "Checked 2026-11-10: the 1970 book frames the intermediate impossible as a stepping stone; the named Stepping Stone Method is in Thinking Course (BBC, 1982).",
+        "authorsLabel": "Edward de Bono",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "provocation",
+          "divisions": 16,
+          "mark": 9
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"344\" x2=\"65\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"344\" x2=\"83\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"344\" x2=\"101\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"344\" x2=\"119\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"344\" x2=\"137\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"344\" x2=\"155\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"344\" x2=\"173\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"344\" x2=\"191\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"344\" x2=\"209\" y2=\"356\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 356 32 L 322 96 L 344 112 L 209 336\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"336\" r=\"5.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"344\" x2=\"227\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"344\" x2=\"245\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"344\" x2=\"263\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"344\" x2=\"281\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"344\" x2=\"299\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"344\" x2=\"317\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"344\" x2=\"335\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-10",
+      "sourceTacticNo": 10,
+      "name": "SCAMPER: Substitute (S)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Select a core component of the software stack (e.g., protocol, serialization layer, authentication provider). Replace it with three mechanisms borrowed from distinct engineering domains.",
+      "sprintSize": 9,
+      "schematic": "Substitution at position 10 of 16",
+      "mechanism": "Breaks component-binding fixations by isolating functional interfaces and substituting alternative materials, actors, or protocols.",
+      "questions": [
+        "What protocol, runtime, or hardware layer can be substituted to eliminate this latency bottleneck?",
+        "What happens if we substitute manual administrative approval with cryptographic validation?",
+        "Can we substitute continuous operational polling with hardware interrupt mechanisms?"
+      ],
+      "example": "User Authentication and Identity Verification. Substituting persistent shared secrets (passwords) and SMS OTPs with asymmetric public-key cryptography via WebAuthn/FIDO2 hardware-backed passkeys, eliminating credential database storage vulnerabilities and credential-stuffing threat vectors entirely.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "substitution",
+          "divisions": 16,
+          "mark": 10
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"159\" y=\"63.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"80.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"97.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"114.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"131.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"148.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"165.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"182.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"199.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"216.5\" width=\"18\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"225.5\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"225.5\" x2=\"218\" y2=\"225.5\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"233.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"250.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"267.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"284.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"301.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"318.5\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-11",
+      "sourceTacticNo": 11,
+      "name": "SCAMPER: Combine (C)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Select two disconnected tools, services, or workflow phases. Merge their functional boundaries so that executing the first intrinsically finishes the second.",
+      "sprintSize": 9,
+      "schematic": "Recombination at position 11 of 16",
+      "mechanism": "Drives cognitive bisociation by merging separate functional operational boundaries into an integrated structural entity.",
+      "questions": [
+        "Which two asynchronous data pipelines can be combined into a single atomic pass?",
+        "How can system observability be merged directly into the core execution runtime?",
+        "What independent data structures can be unified to eliminate serialization conversion costs?"
+      ],
+      "example": "Edge Security and Application Observability. Instead of routing requests through an API reverse proxy and then publishing analytical events to a downstream queue via a daemon, combine the proxy with an eBPF Linux kernel probe that traces, filters, metrics-scores, and rate-limits network frames directly inside the kernel networking stack.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "recombination",
+          "divisions": 16,
+          "mark": 11
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"65\" y1=\"112\" x2=\"65\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"112\" x2=\"83\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"112\" x2=\"101\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"112\" x2=\"119\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"112\" x2=\"137\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"112\" x2=\"155\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"112\" x2=\"173\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"112\" x2=\"191\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"112\" x2=\"209\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"112\" x2=\"227\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"112\" x2=\"245\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"112\" x2=\"263\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"112\" x2=\"281\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"112\" x2=\"299\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"112\" x2=\"317\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"112\" x2=\"335\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"112\" x2=\"245\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"112\" x2=\"263\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"112\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"288\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-12",
+      "sourceTacticNo": 12,
+      "name": "SCAMPER: Adapt (A)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Identify an external industry that manages identical dynamic forces (e.g., fluid dynamics, air-traffic logistics, forestry management). Adapt its primary structural mechanism to the problem.",
+      "sprintSize": 9,
+      "schematic": "Mapping at position 12 of 16",
+      "mechanism": "Leverages analogical mapping, transferring relational mechanisms from a foreign domain while ignoring superficial surface differences.",
+      "questions": [
+        "What non-software engineering discipline resolved this throughput balance decades ago?",
+        "How does biological cellular mechanics handle this exact transport or routing constraint?",
+        "How can an obsolete historical protocol be adapted to solve a modern distributed system problem?"
+      ],
+      "example": "Asynchronous API Ingress Throttling. Adapting hydraulic fluid restrictors and mechanical dashpots into software token-bucket rate limiters (specifically the Generic Cell Rate Algorithm, GCRA), ensuring smooth, deterministic traffic-shaping across distributed ingress gateways.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "mapping",
+          "divisions": 16,
+          "mark": 12
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"65\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"65\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"83\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"101\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"119\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"191\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"281\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"299\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"317\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"128\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"263\" cy=\"272\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 263 136 L 263 258\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 256 255 L 263 264 L 270 255\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-13",
+      "sourceTacticNo": 13,
+      "name": "SCAMPER: Modify / Magnify / Minify (M)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Select a primary system parameter (payload volume, sync frequency, timeout limit). Scale it by a factor of 1,000x, then compress it to 1/1,000th. Design an architecture capable of operating at both boundaries.",
+      "sprintSize": 9,
+      "schematic": "Scale shift at position 13 of 16",
+      "mechanism": "Adjusts scale and parametric boundaries, provoking non-linear cognitive shifts by breaking baseline assumptions regarding size and throughput.",
+      "questions": [
+        "What happens if the data payload size is magnified to 100 gigabytes per event?",
+        "What happens if operational turnaround must be compressed from 50 milliseconds to 50 nanoseconds?",
+        "How must the system be architected if user lifespans are compressed to ten seconds or magnified to fifty years?"
+      ],
+      "example": "Event Pipeline Memory Utilization. Minifying tracking payloads: instead of transmitting verbose JSON payloads (1.5 KB per record) across Kafka topics, modify the payload to a zero-copy flat binary buffer (Cap'n Proto or FlatBuffers) occupying 48 bytes. This reduces network bandwidth consumption by 96% and eliminates CPU deserialization costs.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "scale",
+          "divisions": 16,
+          "mark": 13
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"178\" y=\"178\" width=\"44\" height=\"44\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"169.466667\" y=\"169.466667\" width=\"61.06666666666666\" height=\"61.06666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"160.933333\" y=\"160.933333\" width=\"78.13333333333333\" height=\"78.13333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.4\" y=\"152.4\" width=\"95.2\" height=\"95.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"143.866667\" y=\"143.866667\" width=\"112.26666666666667\" height=\"112.26666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"135.333333\" y=\"135.333333\" width=\"129.33333333333331\" height=\"129.33333333333331\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"126.8\" y=\"126.8\" width=\"146.4\" height=\"146.4\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"118.266667\" y=\"118.266667\" width=\"163.46666666666667\" height=\"163.46666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"109.733333\" y=\"109.733333\" width=\"180.53333333333333\" height=\"180.53333333333333\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"101.2\" y=\"101.2\" width=\"197.6\" height=\"197.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"92.666667\" y=\"92.666667\" width=\"214.66666666666666\" height=\"214.66666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"84.133333\" y=\"84.133333\" width=\"231.73333333333332\" height=\"231.73333333333332\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"75.6\" y=\"75.6\" width=\"248.8\" height=\"248.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.4\" fill-opacity=\"0.07\" vector-effect=\"non-scaling-stroke\"/><rect x=\"67.066667\" y=\"67.066667\" width=\"265.8666666666667\" height=\"265.8666666666667\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"58.533333\" y=\"58.533333\" width=\"282.93333333333334\" height=\"282.93333333333334\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"300\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-14",
+      "sourceTacticNo": 14,
+      "name": "SCAMPER: Put to Another Use (P)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Identify the primary waste byproduct, error log stream, or unused telemetry of your application. Devise two external use cases that treat this byproduct as their most valuable input.",
+      "sprintSize": 9,
+      "schematic": "Separation at position 14 of 16",
+      "mechanism": "Overcomes functional fixedness by uncoupling a technical side effect or discarded artifact from its original context and identifying its latent utility.",
+      "questions": [
+        "What discarded operational metadata contains latent commercial or technical value?",
+        "Who outside our core market would pay to access our real-time system performance telemetry?",
+        "How can an internal regression-testing harness be repurposed as a customer-facing product feature?"
+      ],
+      "example": "Datacenter Thermal Dissipation. Repurposing server thermal rejection: instead of venting heat into the atmosphere using chillers, data center liquid-cooling loops are piped directly into municipal district heating grids and commercial greenhouses, turning an operational cooling expense into a municipal energy utility.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "separation",
+          "divisions": 16,
+          "mark": 14
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"75.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"94.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"113.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"132.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"152\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"171.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"190.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"209.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"228.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"248\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"267.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"286.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"305.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"305.6\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"324.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-15",
+      "sourceTacticNo": 15,
+      "name": "SCAMPER: Eliminate (E)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Delete 50% of your system's interaction steps, UI components, or architectural dependencies. Re-architect the remaining components to fulfill the core operational goal.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 15 of 16",
+      "mechanism": "Employs cognitive pruning, stripping secondary features, layers, and safeguards to expose fundamental system mechanics.",
+      "questions": [
+        "What subsystem, if deleted entirely, would improve system reliability and throughput?",
+        "What user input fields are collected speculatively and can be eliminated to eliminate compliance liabilities?",
+        "Can we eliminate the human interface layer entirely and deliver utility autonomously?"
+      ],
+      "example": "User Registration Conversion. Eliminating registration forms, email verification workflows, and username/password credentials. Replace with ephemeral, device-bound asymmetric cryptographic keys generated in the browser secure enclave, dropping customer drop-off rates while automating credential provisioning.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 16,
+          "mark": 15
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"81\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"98\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"115\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"132\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"149\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"166\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"183\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"217\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"234\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"251\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"268\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"285\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"302\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"319\" width=\"136\" height=\"13\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-16",
+      "sourceTacticNo": 16,
+      "name": "SCAMPER: Reverse / Rearrange (R)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "sprint": "Write down the sequential execution stages of your product or computing pipeline. Invert the chronological order from last to first, and evaluate the architectural implications.",
+      "sprintSize": 9,
+      "schematic": "Reflection at position 16 of 16",
+      "mechanism": "Reverses temporal and causal sequences, disrupting standard workflow schemas and exposing structural dependencies.",
+      "questions": [
+        "What if user payment and resource consumption precede product discovery and configuration?",
+        "What happens if downstream database indexing formats dictate upstream application logic?",
+        "Can the client act as the authoritative storage tier while the central server acts merely as an ephemeral cache?"
+      ],
+      "example": "E-Commerce Checkout Workflows. Inverting standard transactional sequences: instead of \"Discover → Configure → Input Payment → Deliver,\" reverse to \"Pre-authorized Predictive Delivery → Customer Evaluation → Automated Account Reconciliation.\" This try-before-you-buy workflow removes point-of-sale friction.",
+      "origin": {
+        "authors": [
+          "Bob Eberle"
+        ],
+        "year": 1971,
+        "title": "SCAMPER: Games for Imagination Development",
+        "publication": "D.O.K. Publishers",
+        "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971.",
+        "authorsLabel": "Bob Eberle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 16,
+          "mark": 16
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"65\" y1=\"195\" x2=\"65\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83\" y1=\"195\" x2=\"83\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"195\" x2=\"101\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"119\" y1=\"195\" x2=\"119\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137\" y1=\"195\" x2=\"137\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155\" y1=\"195\" x2=\"155\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173\" y1=\"195\" x2=\"173\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"195\" x2=\"191\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209\" y1=\"195\" x2=\"209\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227\" y1=\"195\" x2=\"227\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245\" y1=\"195\" x2=\"245\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263\" y1=\"195\" x2=\"263\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"195\" x2=\"281\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"299\" y1=\"195\" x2=\"299\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"317\" y1=\"195\" x2=\"317\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335\" y1=\"195\" x2=\"335\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 317 148 L 335 200 L 353 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 317 252 L 335 200 L 353 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
       "id": "IDE-25",

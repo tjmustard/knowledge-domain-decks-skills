@@ -1,0 +1,27 @@
+{
+  "id": "IDE-01",
+  "sourceTacticNo": 1,
+  "name": "Assumption Reversal",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Document five foundational assumptions underpinning the technical problem. Write their direct inversions. Select the most counter-intuitive inversion and draft two operational conditions under which it functions effectively.",
+  "sprintSize": 9,
+  "schematic": "Reflection at position 1 of 16",
+  "mechanism": "Reverses directional cognitive sets and disrupts normative schema reliance, forcing working memory to construct causal pathways from counterfactual preconditions.",
+  "questions": [
+    "What core assumption, if inverted, turns our primary operational bottleneck into our primary throughput mechanism?",
+    "How would this system operate if clients were paid to consume system resources rather than paying for service access?",
+    "What architectural opportunities emerge if output data is computed prior to the arrival of the input request?"
+  ],
+  "example": "Database Write Scalability. Standard assumption: \"The database storage engine must await and validate incoming write requests before committing them to persistent storage.\" Reversed assumption: \"The storage engine speculatively writes data blocks prior to client write dispatch.\" Implementation: Predictive log pre-allocation and speculative branch execution in log-structured merge-tree (LSM) architectures, transforming synchronous disk I/O stalls into speculative memory transactions validated by atomic commit checks.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 1
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "IDE-07",
+  "sourceTacticNo": 7,
+  "name": "Six Thinking Hats: Blue Hat (Metacognitive Orchestration)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Step back from technical problem solving. Chart the cognitive modalities deployed during the current meeting, identify analytical loops, and mandate the next thinking protocol.",
+  "sprintSize": 9,
+  "schematic": "Perspective at position 7 of 16",
+  "mechanism": "Activates executive control and metacognitive monitoring, regulating cognitive switching between exploratory divergent and evaluative convergent modes.",
+  "questions": [
+    "Are we debating the engineering details of a problem whose underlying premise is invalid?",
+    "Which cognitive perspective has been omitted during this architectural evaluation?",
+    "What quantitative stopping criterion will terminate debate and initiate empirical testing?"
+  ],
+  "example": "Architecture Review Gridlock. An engineering team reaches an impasse debating Apache Kafka versus RabbitMQ. A Blue Hat intervention halts the discussion, identifies that the team is cycling between unquantified Black Hat fears and Green Hat speculation, and institutes a 48-hour time-boxed spike to benchmark throughput under a 10,000-connection load, terminating theoretical debate.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "perspective",
+      "divisions": 16,
+      "mark": 7
+    }
+  }
+}

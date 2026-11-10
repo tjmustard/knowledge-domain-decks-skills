@@ -1,0 +1,33 @@
+{
+  "id": "IDE-14",
+  "sourceTacticNo": 14,
+  "name": "SCAMPER: Put to Another Use (P)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Identify the primary waste byproduct, error log stream, or unused telemetry of your application. Devise two external use cases that treat this byproduct as their most valuable input.",
+  "sprintSize": 9,
+  "schematic": "Separation at position 14 of 16",
+  "mechanism": "Overcomes functional fixedness by uncoupling a technical side effect or discarded artifact from its original context and identifying its latent utility.",
+  "questions": [
+    "What discarded operational metadata contains latent commercial or technical value?",
+    "Who outside our core market would pay to access our real-time system performance telemetry?",
+    "How can an internal regression-testing harness be repurposed as a customer-facing product feature?"
+  ],
+  "example": "Datacenter Thermal Dissipation. Repurposing server thermal rejection: instead of venting heat into the atmosphere using chillers, data center liquid-cooling loops are piped directly into municipal district heating grids and commercial greenhouses, turning an operational cooling expense into a municipal energy utility.",
+  "origin": {
+    "authors": [
+      "Bob Eberle"
+    ],
+    "year": 1971,
+    "title": "SCAMPER: Games for Imagination Development",
+    "publication": "D.O.K. Publishers",
+    "note": "Checked 2026-11-10 against the Gifted Child Quarterly review (doi 10.1177/001698627201600109) and the books.org record: D.O.K. Publishers, Buffalo, 1971."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 14
+    }
+  }
+}

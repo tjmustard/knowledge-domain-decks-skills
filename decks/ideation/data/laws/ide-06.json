@@ -1,0 +1,33 @@
+{
+  "id": "IDE-06",
+  "sourceTacticNo": 6,
+  "name": "Six Thinking Hats: Green Hat (Provocative Novelty)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Generate ten architectural variations that violate established engineering patterns within the problem domain. Practical feasibility is ignored; novelty is mandatory.",
+  "sprintSize": 9,
+  "schematic": "Perspective at position 6 of 16",
+  "mechanism": "Promotes lateral divergence and conceptual jumping by suspending logical consistency checks and operational constraints.",
+  "questions": [
+    "What architectural pattern would emerge if conventional design best practices were treated as operational errors?",
+    "If an alien biological mechanism were translated into this software subsystem, how would it process events?",
+    "How can we resolve this architectural constraint by introducing an intentional, controlled imperfection?"
+  ],
+  "example": "API Rate Limiting. Instead of dropping abusive clients via conventional HTTP 429 Too Many Requests responses, a Green Hat provocation executes incoming requests inside an isolated WebAssembly sandbox with progressively throttled execution time-slices. This forces the abusive client to wait on socket connections, draining its local compute resources until it disconnects.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "perspective",
+      "divisions": 16,
+      "mark": 6
+    }
+  }
+}

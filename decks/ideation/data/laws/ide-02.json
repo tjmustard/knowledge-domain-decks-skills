@@ -1,0 +1,33 @@
+{
+  "id": "IDE-02",
+  "sourceTacticNo": 2,
+  "name": "Six Thinking Hats: White Hat (Empirical Telemetry)",
+  "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+  "sprint": "Strip all qualitative adjectives, interpretations, and conjectures from the incident report. Isolate only raw numerical telemetry, hardware metrics, and deterministic error codes.",
+  "sprintSize": 9,
+  "schematic": "Separation at position 2 of 16",
+  "mechanism": "Decouples sensory observation from emotional and interpretive cognition, inhibiting confirmation bias and anchoring heuristics.",
+  "questions": [
+    "What verified system telemetry exists versus what subjective hypotheses are being treated as empirical facts?",
+    "If all diagnostic interpretations were discarded, what do the raw system event logs prove occurred?",
+    "What missing instrumentation metric would immediately resolve the current architectural debate?"
+  ],
+  "example": "Microservice P99 Latency Spikes. Decoupling diagnostic conjectures (\"the Redis cluster is saturated\") into strict empirical White Hat metrics: cache hit ratios remain constant at 99.4%, but Linux kernel socket tables reveal TCP ephemeral port exhaustion caused by rapid connection teardowns without connection reuse.",
+  "origin": {
+    "authors": [
+      "Edward de Bono"
+    ],
+    "year": 1985,
+    "title": "Six Thinking Hats",
+    "publication": "Little, Brown",
+    "note": "Checked 2026-11-10 against the BYU library catalogue (cat. 643383) and Google Books: Little, Brown, Boston, 1985."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 2
+    }
+  }
+}
