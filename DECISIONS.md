@@ -1592,3 +1592,38 @@ was never computed, it was an estimate written as a measurement. The computed
 value is 6.29:1, so it passed AA and failed AAA. Worse, `#059669` computes to
 3.77:1, below AA for the small text it colours. The whole set was darkened to
 the table above, and the correction stands here rather than being edited out.
+
+## 46. The extraction is committed, because the source is not in git
+
+`scripts/test/archetypes.test.mjs` checked the sixteen records against the
+source's card headings by reading `SupportingInformation/03 - Archetypes/
+Archetype Card Deck Framework.md` and extracting them. That folder is
+gitignored (`.gitignore`: the research input stays out of git, §10), so the test
+read a file that only exists in a working copy that happens to carry the
+research. It passed on every machine that had the input and failed on every
+checkout without it.
+
+CI found this and I did not: run 42878987087 on `bf91451` failed at *Tests and
+gate* with `ENOENT ... SupportingInformation/03 - Archetypes/...` while the
+three per-deck jobs passed and `npm test` passed locally. The local green was
+not a weaker test; it was a different tree.
+
+The fix keeps the extraction as the authority without needing the source at
+test time. `scripts/extract-source-headings.mjs` extracts the sixteen headings
+and writes them to `decks/archetypes/data/source-headings.json`, with the
+source's path and sha256 recorded beside them. The test compares the records
+against that committed file, always, and where the research input *is* present
+it extracts again and requires the two to agree - so on a working copy with the
+source, the committed artifact cannot drift from it; on a bare checkout, the
+records are still held to a copy taken from the source rather than retyped.
+
+What this does not prove, and does not need to: CI cannot notice that the
+research input changed. The input is fixed, read-only and the person's to
+version; if it ever changes, rerunning the script is the deliberate act that
+records it. Nor is the committed copy an asset from the source: it is sixteen
+card headings, the same public names the records already print.
+
+The instrument lesson is the one §45 and the truncation finding already make in
+another key: a test that reads an untracked file is testing the machine it runs
+on. Any input a test depends on belongs in git, or its absence belongs in the
+test as a stated condition.
