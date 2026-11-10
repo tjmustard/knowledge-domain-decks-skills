@@ -66,11 +66,20 @@ function setPath(root, path, next) {
 
 // Move a leaf far enough that a drawing that reads it must change, and keep
 // the type stable so the generator is not fed a value it would reject.
-function perturb(value) {
-  if (typeof value === "number") return value === 0 ? 7 : value * 2 + 3;
-  if (typeof value === "string") return `${value}X`;
-  if (typeof value === "boolean") return !value;
-  return value;
+//
+// A number gets three probes, not one: a parameter the drawing bounds (an
+// index taken modulo the number of inlets, a count clamped at its maximum) is
+// live yet saturates, and one large probe can land on the same drawing as the
+// record's own value. Three facilitation cards did exactly that.
+// The parameter passes when any probe changes the drawing and fails only when
+// every one leaves it identical, which is what a parameter nobody reads does.
+function perturbations(value) {
+  if (typeof value === "number") {
+    return [...new Set([value * 2 + 3, value + 1, value - 1])];
+  }
+  if (typeof value === "string") return [`${value}X`];
+  if (typeof value === "boolean") return [!value];
+  return [value];
 }
 
 const PROBEABLE = new Set(["number", "string", "boolean"]);
@@ -436,9 +445,13 @@ try {
           unprobed.push(`${card.id}:${path.join(".")}`);
           continue;
         }
-        const probe = JSON.parse(JSON.stringify(metaphor));
-        setPath(probe.parametricParams, path, perturb(getPath(probe.parametricParams, path)));
-        if (renderSvg(probe) === svg) {
+        const value = getPath(metaphor.parametricParams, path);
+        const changed = perturbations(value).some((next) => {
+          const probe = JSON.parse(JSON.stringify(metaphor));
+          setPath(probe.parametricParams, path, next);
+          return renderSvg(probe) !== svg;
+        });
+        if (!changed) {
           problems.push(`${card.id}: parameter "${path.join(".")}" does not affect the drawing`);
         }
       }
@@ -481,8 +494,19 @@ try {
       } else {
         record("print: page boxes", "fail", reason(`${checked.stderr} ${checked.stdout}`));
       }
+      // Vertical fit is mechanical: every face is rendered and its lowest ink
+      // row measured against the trim line, because Typst lets a full back face
+      // run past the page and cut words nobody sees in a page box.
+      const fit = npm(["run", "--silent", "check:fit"]);
+      if (fit.status === 0) {
+        record("print: fit", "pass", fit.stdout.trim().split("\n").pop());
+      } else if (fit.status === 2) {
+        record("print: fit", "not run", "Typst is not installed, so no page can be measured");
+      } else {
+        record("print: fit", "fail", reason(`${fit.stderr} ${fit.stdout}`));
+      }
       record("print: contents", "not run",
-        "page boxes are not evidence that trim marks are drawn, text is legible, or the SVG was embedded - inspect the PDF by hand");
+        "page boxes and fit rows are not evidence that trim marks are drawn, text is legible, or the SVG was embedded - inspect the PDF by hand");
     }
   }
 } finally {

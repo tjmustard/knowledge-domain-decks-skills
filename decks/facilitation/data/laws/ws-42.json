@@ -9,20 +9,20 @@
   "atAGlance": "3–10 people · 30–45 min · intermediate",
   "steps": [
     {
-      "text": "Frame the canvas as a delivery charter: what the room signs today is what the team will be held to once the workshop ends."
+      "text": "Frame the canvas as a charter the room signs today."
     },
     {
-      "text": "Fill the sections together: scope, resources, review cadence, and the risks that could break the commitment."
+      "text": "Fill scope, resources, review cadence, and the risks that could break the whole commitment."
     },
     {
-      "text": "Write the definition of done as a check that can pass or fail, not as an activity someone will keep working on."
+      "text": "Write done as a check that can pass or fail."
     },
     {
-      "text": "Read the charter back, have each core member sign, and publish it where the team already looks for decisions."
+      "text": "Read it back, have each member sign, and publish it."
     }
   ],
-  "failure": "Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.",
-  "intervention": "Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.",
+  "failure": "Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.",
+  "intervention": "Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

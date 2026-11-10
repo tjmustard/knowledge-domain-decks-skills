@@ -9,23 +9,20 @@
   "atAGlance": "6–15+ people · 15–20 min · beginner",
   "steps": [
     {
-      "text": "Open with two questions everyone will answer: the challenge you bring and the asset you offer this group."
+      "text": "Ask two questions: the challenge you bring and the asset you offer this group."
     },
     {
-      "text": "Send people to stand and find a partner they do not work with day to day, then start a four-minute round."
+      "text": "Pair outside your team; chime at two minutes."
     },
     {
-      "text": "Chime at two minutes and have the listener take the floor; close the round after both people have answered."
+      "text": "Re-answer both questions with a new partner."
     },
     {
-      "text": "Run two more rounds with new partners, asking each person to sharpen the same two answers each time."
-    },
-    {
-      "text": "Close by asking a few people what changed in how they described their challenge or their offer."
+      "text": "Run round three with one more partner."
     }
   ],
-  "failure": "One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.",
-  "intervention": "Stop the round on the chime and model the handoff: \"If you are mid-sentence, stop; your partner's two minutes start now.\"",
+  "failure": "One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.",
+  "intervention": "Stop on the chime and model the handoff: if you are mid-sentence, stop; your partner's time starts now.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

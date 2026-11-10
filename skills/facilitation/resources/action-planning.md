@@ -8,24 +8,24 @@
 
 - **Deliverable:** Linear operational assignment of accountable owners and hard deadlines
 - **At a glance:** 3–15 people · 20–30 min · beginner
-- **When it goes wrong:** Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.
-- **The fix:** Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.
+- **When it goes wrong:** Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.
+- **The fix:** At that row, name one driver, call the other a contributor, and replace any soft date with a real one.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-42 — Next Steps Commitment Canvas
 
 - **Deliverable:** Explicit contractual agreement covering resources, cadence, and sign-offs
 - **At a glance:** 3–10 people · 30–45 min · intermediate
-- **When it goes wrong:** Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.
-- **The fix:** Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.
+- **When it goes wrong:** Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.
+- **The fix:** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-43 — Lean Canvas Experiment Matrix
 
 - **Deliverable:** Translation of assumptions into falsifiable hypotheses and metrics
 - **At a glance:** 3–10 people · 45–60 min · advanced
-- **When it goes wrong:** Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.
-- **The fix:** Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.
+- **When it goes wrong:** Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.
+- **The fix:** Ask for both numbers now: what rate proves the case, and what rate kills it? Write them down first.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Ash Maurya, *Running Lean*.
 
@@ -33,8 +33,8 @@
 
 - **Deliverable:** Immediate identification of autonomous individual actions requiring no budget
 - **At a glance:** 1–15+ people · 15–25 min · beginner
-- **When it goes wrong:** The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.
-- **The fix:** Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.
+- **When it goes wrong:** The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.
+- **The fix:** Park the blockers on a separate list, then ask again what each person can do this week without them.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -42,8 +42,8 @@
 
 - **Deliverable:** Time-phased mapping of milestones adhering to SMART validation criteria
 - **At a glance:** 3–12 people · 30–45 min · beginner
-- **When it goes wrong:** Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.
-- **The fix:** Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.
+- **When it goes wrong:** Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.
+- **The fix:** Take the weakest one and ask for the date, number, and person; without all three, it is a wish.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** George T. Doran (1981), *There's a S.M.A.R.T. way to write management's goals and objectives*.
 
@@ -51,15 +51,15 @@
 
 - **Deliverable:** Structural assignment of Responsible, Accountable, Consulted, and Informed
 - **At a glance:** 4–12 people · 45–60 min · intermediate
-- **When it goes wrong:** Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.
-- **The fix:** Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.
+- **When it goes wrong:** Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.
+- **The fix:** Put one accountable name in every row, and remove anyone marked both who does not do the work.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-47 — Assumption Test Card
 
 - **Deliverable:** Scientific decomposition of hypotheses into verification tests and success thresholds
 - **At a glance:** 2–10 people · 30–40 min · intermediate
-- **When it goes wrong:** A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.
+- **When it goes wrong:** A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.
 - **The fix:** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -67,6 +67,6 @@
 
 - **Deliverable:** Technical consensus alignment on quality gates for release readiness
 - **At a glance:** 3–15 people · 40–60 min · advanced
-- **When it goes wrong:** Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.
-- **The fix:** Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.
+- **When it goes wrong:** Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.
+- **The fix:** Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

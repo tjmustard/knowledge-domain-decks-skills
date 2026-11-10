@@ -2,7 +2,7 @@
   "name": "knowledge-domain-decks-skills",
   "version": "0.1.0",
   "private": true,
-  "description": "Knowledge Domain Decks — printable and digital reference card decks built from a single validated dataset.",
+  "description": "Knowledge Domain Decks \u2014 printable and digital reference card decks built from a single validated dataset.",
   "license": "MIT",
   "scripts": {
     "validate": "node scripts/validate.mjs",
@@ -10,6 +10,7 @@
     "build:rules": "node packages/rules/generate.mjs",
     "build:pdf": "node packages/prepress/build.mjs",
     "check:pdf": "node scripts/pdf-check.mjs",
+    "check:fit": "node scripts/check-fit.mjs",
     "check:web": "node scripts/check-web.mjs",
     "check:all": "npm run validate && npm run build:rules && npm run build:web && npm run check:web",
     "accept": "node scripts/accept.mjs",

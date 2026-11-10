@@ -9,23 +9,23 @@
   "atAGlance": "3–15 people · 60–90 min · advanced",
   "steps": [
     {
-      "text": "Run four timed beats: silent gathering, rough ideation, eight quick variations, then a three-panel sketch."
+      "text": "Run four timed beats: gather, ideate, riff, then sketch."
     },
     {
-      "text": "First, have everyone review the framing and research silently and take notes without discussion."
+      "text": "Review framing and research silently, taking notes only."
     },
     {
-      "text": "Next, each person diagrams possible flows privately, then pushes the strongest one through eight one-minute riffs."
+      "text": "Diagram flows, then riff the strongest idea eight times."
     },
     {
-      "text": "Finish with a three-panel storyboard that a stranger can follow without a spoken explanation."
+      "text": "Finish with a three-panel storyboard a stranger follows."
     },
     {
-      "text": "Collect the sketches anonymously and hang them side by side for a silent read before any discussion."
+      "text": "Hang the anonymous sketches for a silent read."
     }
   ],
-  "failure": "Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.",
-  "intervention": "Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.",
+  "failure": "Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.",
+  "intervention": "Ask whether a stranger could follow the sketch without you, then add headlines and labels until they can.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

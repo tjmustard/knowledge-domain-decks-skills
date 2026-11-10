@@ -9,23 +9,23 @@
   "atAGlance": "3–15 people · 30–45 min · intermediate",
   "steps": [
     {
-      "text": "State the premise: new concepts come from recombining mechanisms that already work in other domains."
+      "text": "State the premise: ideas recombine proven mechanisms."
     },
     {
-      "text": "List several external products and have the room write the mechanism behind each, never its brand or style."
+      "text": "Name each outside product's mechanism, not its brand."
     },
     {
-      "text": "Pair one extracted mechanism with your own customer problem and force a concept out of the collision."
+      "text": "Force one mechanism against your customer problem."
     },
     {
-      "text": "Draft at least three mash-ups, naming the borrowed mechanism and what it changes in your context."
+      "text": "Draft three mash-ups naming the borrowed mechanism."
     },
     {
-      "text": "Present each mash-up as a mechanism transfer, and ask what behavior it changes, not what it looks like."
+      "text": "Present each as a transfer; name the behavior change."
     }
   ],
-  "failure": "Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.",
-  "intervention": "Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.",
+  "failure": "Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.",
+  "intervention": "Ask what behavior it changes, then make that the concept.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

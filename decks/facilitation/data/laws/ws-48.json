@@ -9,26 +9,17 @@
   "atAGlance": "3–15 people · 40–60 min · advanced",
   "steps": [
     {
-      "text": "Name the increment the criteria will cover, so the room is agreeing on the same scope."
+      "text": "Name the increment the criteria cover, then list what must be true before it is finished."
     },
     {
-      "text": "Ask each person to list what must be true before they would call that increment finished."
+      "text": "Turn vague items into pass-or-fail checks, tested against a recent release and its defects."
     },
     {
-      "text": "Cluster the lists and turn vague items into checks someone could run and mark pass or fail."
-    },
-    {
-      "text": "Test the draft against a recent release: would these criteria have caught a defect the team shipped?"
-    },
-    {
-      "text": "Agree the final list, including the evidence each check needs, and publish it where work is tracked."
-    },
-    {
-      "text": "Set a review date and name who may change the definition, so it stays a living standard."
+      "text": "Publish the checks and name who may change them."
     }
   ],
-  "failure": "Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.",
-  "intervention": "Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.",
+  "failure": "Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.",
+  "intervention": "Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

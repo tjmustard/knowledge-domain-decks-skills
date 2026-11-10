@@ -15,7 +15,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **When it goes wrong.** Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.
 
-**The fix.** Strip the tool out of the sentence. Ask what happens in the workflow that costs measurable time or money; rewrite it without naming a product.
+**The fix.** Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -27,7 +27,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **When it goes wrong.** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
 
-**The fix.** Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.
+**The fix.** Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -37,9 +37,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–10 people · 20–30 min · intermediate
 
-**When it goes wrong.** The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.
+**When it goes wrong.** The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.
 
-**The fix.** Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.
+**The fix.** Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -49,9 +49,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · beginner
 
-**When it goes wrong.** Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.
+**When it goes wrong.** Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.
 
-**The fix.** Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.
+**The fix.** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -61,9 +61,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 45–60 min · advanced
 
-**When it goes wrong.** Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.
+**When it goes wrong.** Owners defend the plan as each risk is read, so the room rehearses reassurance instead of failure.
 
-**The fix.** Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.
+**The fix.** Say the failure already happened, then ask what collapsed despite the controls and name the risk people avoid.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -75,9 +75,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15+ people · 20–30 min · beginner
 
-**When it goes wrong.** Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.
+**When it goes wrong.** Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.
 
-**The fix.** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.
+**The fix.** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -87,9 +87,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 60–90 min · intermediate
 
-**When it goes wrong.** The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.
+**When it goes wrong.** The map lists internal process steps in company language, documenting the organization, not the user.
 
-**The fix.** Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.
+**The fix.** Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -99,9 +99,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 30–45 min · beginner
 
-**When it goes wrong.** The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.
+**When it goes wrong.** The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.
 
-**The fix.** Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.
+**The fix.** Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -111,9 +111,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 45–60 min · intermediate
 
-**When it goes wrong.** The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.
+**When it goes wrong.** The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.
 
-**The fix.** Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.
+**The fix.** Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -123,9 +123,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 30–40 min · beginner
 
-**When it goes wrong.** The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.
+**When it goes wrong.** The room votes on blockers but never reframes them, so the session ends with the same complaints.
 
-**The fix.** Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.
+**The fix.** Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -137,9 +137,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–15+ people · 10–15 min · beginner
 
-**When it goes wrong.** Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.
+**When it goes wrong.** One polished box and seven blanks: the clock stops driving.
 
-**The fix.** Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.
+**The fix.** Say: crude boxes are the point; move on unfinished, now.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -151,9 +151,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 30–45 min · intermediate
 
-**When it goes wrong.** Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.
+**When it goes wrong.** Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.
 
-**The fix.** Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.
+**The fix.** Sabotage is over: one green mechanism per red cluster.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -163,9 +163,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–12 people · 25–40 min · intermediate
 
-**When it goes wrong.** Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.
+**When it goes wrong.** Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.
 
-**The fix.** Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.
+**The fix.** Say: treat the seed as given, then answer yes-and.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -175,9 +175,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · intermediate
 
-**When it goes wrong.** Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.
+**When it goes wrong.** Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.
 
-**The fix.** Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.
+**The fix.** Ask what behavior it changes, then make that the concept.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -187,9 +187,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 60–90 min · advanced
 
-**When it goes wrong.** Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.
+**When it goes wrong.** Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.
 
-**The fix.** Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.
+**The fix.** Ask whether a stranger could follow the sketch without you, then add headlines and labels until they can.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -201,9 +201,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 6 people · 30–45 min · intermediate
 
-**When it goes wrong.** Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.
+**When it goes wrong.** Half-working looks like columns of restatements: people copy the idea above and change one word.
 
-**The fix.** Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.
+**The fix.** Before each pass, require a different part of the question or a new mechanism, not a rewording.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -213,9 +213,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 45–60 min · advanced
 
-**When it goes wrong.** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.
+**When it goes wrong.** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.
 
-**The fix.** Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.
+**The fix.** Pick one prompt and force it: state exactly what changes.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -225,9 +225,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 20–30 min · beginner
 
-**When it goes wrong.** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.
+**When it goes wrong.** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.
 
-**The fix.** For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.
+**The fix.** Name the need each joke insults, then write the flip.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -237,9 +237,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 30–45 min · intermediate
 
-**When it goes wrong.** Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.
+**When it goes wrong.** Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.
 
-**The fix.** Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.
+**The fix.** Ask what it does structurally, then how we would copy it.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -249,9 +249,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–12 people · 25–40 min · beginner
 
-**When it goes wrong.** Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.
+**When it goes wrong.** Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.
 
-**The fix.** Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.
+**The fix.** Ask for the two anchors that cost the most progress this month, and assign each one an owner.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -263,9 +263,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · beginner
 
-**When it goes wrong.** Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.
+**When it goes wrong.** Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.
 
-**The fix.** Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.
+**The fix.** Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -277,7 +277,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **When it goes wrong.** Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.
 
-**The fix.** Ask for the workaround on the spot. If one exists, demote the card and show how the sixty percent cap protects the date.
+**The fix.** Ask for the workaround. If one exists, demote the card and show the sixty percent cap.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -289,9 +289,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15+ people · 10–20 min · beginner
 
-**When it goes wrong.** Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.
+**When it goes wrong.** Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.
 
-**The fix.** Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.
+**The fix.** Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -301,9 +301,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–12 people · 20–35 min · intermediate
 
-**When it goes wrong.** Peanut-buttering: the budget is split evenly across every item, so no trade-off is made and nothing is ranked.
+**When it goes wrong.** Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.
 
-**The fix.** Reject a flat allocation and require one zero plus at least forty dollars on a single item; ask what that choice reveals.
+**The fix.** Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -313,9 +313,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–12 people · 30–45 min · intermediate
 
-**When it goes wrong.** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.
+**When it goes wrong.** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.
 
-**The fix.** Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.
+**The fix.** Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -325,9 +325,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15+ people · 10–15 min · beginner
 
-**When it goes wrong.** The room chases unanimity, spending the session lifting threes to fives while a real blocker in the corner goes unheard.
+**When it goes wrong.** The room chases unanimity, spending the session lifting threes to fives while a real blocker goes unheard.
 
-**The fix.** Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it to three, then re-vote.
+**The fix.** Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -351,7 +351,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **When it goes wrong.** The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.
 
-**The fix.** Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides, the record names both.
+**The fix.** Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -365,7 +365,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **When it goes wrong.** Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.
 
-**The fix.** Ask which end each candidate must give up. If the group cannot name a sacrifice, that candidate has not been compared.
+**The fix.** Ask which end each candidate must give up. If none can name a sacrifice, it was not compared.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -375,9 +375,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 30–45 min · advanced
 
-**When it goes wrong.** Purpose is recited as a slogan while the now-facts and steering levers stay vague, so every candidate passes.
+**When it goes wrong.** Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.
 
-**The fix.** Ask what would change if the purpose were different. If nothing would, the purpose is decoration and the candidate is unvalidated.
+**The fix.** Ask what would change if the purpose were different; if nothing would, the purpose is decoration.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -389,9 +389,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 4–15+ people · 12–15 min · beginner
 
-**When it goes wrong.** The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.
+**When it goes wrong.** The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.
 
-**The fix.** Restart the timer and say the first minute is solo: "When we talk early, the quickest voice sets the frame and the room stops thinking."
+**The fix.** Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -403,9 +403,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 6–15+ people · 15–20 min · beginner
 
-**When it goes wrong.** One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.
+**When it goes wrong.** One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.
 
-**The fix.** Stop the round on the chime and model the handoff: "If you are mid-sentence, stop; your partner's two minutes start now."
+**The fix.** Stop on the chime and model the handoff: if you are mid-sentence, stop; your partner's time starts now.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -417,9 +417,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15+ people · 35–50 min · intermediate
 
-**When it goes wrong.** The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.
+**When it goes wrong.** The audit protects feelings, so the room lists habits that describe someone else's organization.
 
-**The fix.** Circle an obvious item yourself and say: "We cannot remove what we will not name. What else here are we pretending we do not do?"
+**The fix.** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -429,9 +429,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15+ people · 30–45 min · intermediate
 
-**When it goes wrong.** The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.
+**When it goes wrong.** The client turns around to defend decisions, so consultants manage reactions instead of exploring the problem.
 
-**The fix.** Say to the client: "Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming."
+**The fix.** Tell the client: turn back and stay silent; every word you add narrows what they will say.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -443,9 +443,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 15+ people · 20–30 min · intermediate
 
-**When it goes wrong.** Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.
+**When it goes wrong.** Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.
 
-**The fix.** Say: "A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale."
+**The fix.** Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -457,9 +457,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 4–15 people · 40–50 min · advanced
 
-**When it goes wrong.** The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.
+**When it goes wrong.** Every rule has a defender, so the list stays long and the group leaves with a tidier bureaucracy.
 
-**The fix.** Hold up one must and ask: "If we broke this tomorrow, what exactly would fail?" If no one can name the failure, cut it.
+**The fix.** Hold up one rule and ask what exactly would fail if we broke it tomorrow; cut what no one can name.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -471,9 +471,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 2–15 people · 20–35 min · intermediate
 
-**When it goes wrong.** The partner accepts a general answer like "because it matters" and the chain stalls at a slogan instead of reaching a real purpose.
+**When it goes wrong.** The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.
 
-**The fix.** Ask the follow-up once more: "Why does that matter to you, specifically?" Keep the silence until the answer gets concrete.
+**The fix.** Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -485,9 +485,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–12 people · 45–60 min · beginner
 
-**When it goes wrong.** Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.
+**When it goes wrong.** Cross-talk creeps in, two people debate, and the quiet members stop speaking before the later rounds.
 
-**The fix.** Hold up the talking object and say: "No replies yet. We are here to understand, not to win; the debate round comes later."
+**The fix.** Hold up the object and say no replies yet; we are here to understand, not to win this round.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -499,9 +499,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 6–15+ people · 45–60 min · advanced
 
-**When it goes wrong.** Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.
+**When it goes wrong.** Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.
 
-**The fix.** Turn the conversation back to the circle: "Advisors, talk to each other. Client, write only; your turn to answer comes at the end."
+**The fix.** Tell the advisors to talk to each other; the client only writes until their final turn comes.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -513,9 +513,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15+ people · 30–45 min · beginner
 
-**When it goes wrong.** The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.
+**When it goes wrong.** The room jumps to opinions and fixes, so the group argues about interpretations without agreeing on facts.
 
-**The fix.** Point at the observation column and say: "Before we explain it, what did we actually see? Facts first; meaning next."
+**The fix.** Point at the observations and ask what we actually saw before anyone explains it; facts first.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -529,9 +529,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 20–30 min · beginner
 
-**When it goes wrong.** Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.
+**When it goes wrong.** Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.
 
-**The fix.** Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.
+**The fix.** At that row, name one driver, call the other a contributor, and replace any soft date with a real one.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -541,9 +541,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 30–45 min · intermediate
 
-**When it goes wrong.** Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.
+**When it goes wrong.** Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.
 
-**The fix.** Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.
+**The fix.** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -553,9 +553,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 45–60 min · advanced
 
-**When it goes wrong.** Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.
+**When it goes wrong.** Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.
 
-**The fix.** Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.
+**The fix.** Ask for both numbers now: what rate proves the case, and what rate kills it? Write them down first.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
 
@@ -567,9 +567,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–15+ people · 15–25 min · beginner
 
-**When it goes wrong.** The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.
+**When it goes wrong.** The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.
 
-**The fix.** Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.
+**The fix.** Park the blockers on a separate list, then ask again what each person can do this week without them.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -581,9 +581,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–12 people · 30–45 min · beginner
 
-**When it goes wrong.** Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.
+**When it goes wrong.** Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.
 
-**The fix.** Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.
+**The fix.** Take the weakest one and ask for the date, number, and person; without all three, it is a wish.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -595,9 +595,9 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 4–12 people · 45–60 min · intermediate
 
-**When it goes wrong.** Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.
+**When it goes wrong.** Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.
 
-**The fix.** Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.
+**The fix.** Put one accountable name in every row, and remove anyone marked both who does not do the work.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
 
@@ -607,7 +607,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 2–10 people · 30–40 min · intermediate
 
-**When it goes wrong.** A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.
+**When it goes wrong.** A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.
 
 **The fix.** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
 
@@ -619,8 +619,8 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 40–60 min · advanced
 
-**When it goes wrong.** Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.
+**When it goes wrong.** Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.
 
-**The fix.** Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.
+**The fix.** Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.
 
 **Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.

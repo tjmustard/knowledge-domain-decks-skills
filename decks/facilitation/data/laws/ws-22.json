@@ -9,23 +9,23 @@
   "atAGlance": "3–15 people · 30–45 min · beginner",
   "steps": [
     {
-      "text": "Mark four lanes: Must, Should, Could, and Won't. Say that Won't is a protected boundary, not a rejected idea."
+      "text": "Mark four lanes: Must, Should, Could, and Won't."
     },
     {
-      "text": "Define Must aloud: without it the release is canceled or noncompliant, and no workaround exists."
+      "text": "Define Must: no release without it, no workaround."
     },
     {
-      "text": "Review each card in turn. Ask whether a workaround exists; if it does, move the card down one lane."
+      "text": "Demote any card that has a workaround."
     },
     {
-      "text": "Cap Must at about sixty percent of capacity and leave the rest for risk, defects, and Should items."
+      "text": "Cap Must near sixty percent of capacity."
     },
     {
-      "text": "Read the Won't lane back to the room and note what would have to change before anyone reopens it."
+      "text": "Read Won't back and name what would reopen it."
     }
   ],
   "failure": "Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.",
-  "intervention": "Ask for the workaround on the spot. If one exists, demote the card and show how the sixty percent cap protects the date.",
+  "intervention": "Ask for the workaround. If one exists, demote the card and show the sixty percent cap.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

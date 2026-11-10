@@ -9,19 +9,13 @@
   "atAGlance": "3–15 people · 25–40 min · intermediate",
   "steps": [
     {
-      "text": "Post three columns, Now, How, and Wow, and define each in one sentence before anything is sorted."
+      "text": "Post Now, How, and Wow columns and define each."
     },
     {
-      "text": "Read every idea aloud once without debate so the group hears the whole set before judging any of it."
+      "text": "Read every idea aloud once without debate, then sort each by feasibility and breakthrough."
     },
     {
-      "text": "Sort each idea: Now if today's means can deliver it, How if it needs a route, Wow if it changes the offer."
-    },
-    {
-      "text": "For each How item, write the missing capability or experiment that would move it toward Now."
-    },
-    {
-      "text": "Choose one Now to schedule, one How to investigate, and one Wow to prototype, each with an owner."
+      "text": "Choose one Now to schedule, one How to test, and one Wow to prototype, each with an owner."
     }
   ],
   "failure": "Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.",

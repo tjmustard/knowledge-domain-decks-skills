@@ -9,20 +9,20 @@
   "atAGlance": "1–15+ people · 10–15 min · beginner",
   "steps": [
     {
-      "text": "Give each person one sheet folded into eight boxes and state the rule: sixty seconds per box, no exceptions."
+      "text": "Fold each sheet into eight boxes and state the rule: sixty seconds per box, no exceptions."
     },
     {
-      "text": "State the challenge once, then start the clock and call each box aloud so the room keeps pace."
+      "text": "State the challenge once, start the clock, and call each box aloud so the room keeps pace."
     },
     {
-      "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, or inverted."
+      "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, inverted."
     },
     {
-      "text": "Call the final box, stop everyone exactly on time, and collect the sheets without discussing them."
+      "text": "Call the final box, stop everyone on time, and collect the sheets without discussing them."
     }
   ],
-  "failure": "Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.",
-  "intervention": "Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.",
+  "failure": "One polished box and seven blanks: the clock stops driving.",
+  "intervention": "Say: crude boxes are the point; move on unfinished, now.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

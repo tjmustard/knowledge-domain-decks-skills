@@ -9,23 +9,23 @@
   "atAGlance": "3–15 people · 30–45 min · beginner",
   "steps": [
     {
-      "text": "Draw two axes: impact on the north-star metric upward, delivery effort rightward. Define what each end means."
+      "text": "Draw the impact and effort axes and define both ends."
     },
     {
-      "text": "Choose one agreed baseline item, then place each card by comparing it with the baseline on impact first."
+      "text": "Place items against one agreed baseline, impact first."
     },
     {
-      "text": "Shift each card horizontally by real effort: build, coordination, review, and risk, not coding hours alone."
+      "text": "Shift by real effort, not coding hours alone."
     },
     {
-      "text": "Push every card off the center line so no item hides in an ambiguous middle position."
+      "text": "Push every card off the center line."
     },
     {
-      "text": "Read the quadrants aloud and name the action each one authorizes: sprint, spike, backlog, or drop."
+      "text": "Read each quadrant and name its action."
     }
   ],
-  "failure": "Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.",
-  "intervention": "Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.",
+  "failure": "Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.",
+  "intervention": "Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

@@ -8,8 +8,8 @@
 
 - **Deliverable:** Progressive silent reflection, paired synthesis, quartet convergence
 - **At a glance:** 4–15+ people · 12–15 min · beginner
-- **When it goes wrong:** The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.
-- **The fix:** Restart the timer and say the first minute is solo: "When we talk early, the quickest voice sets the frame and the room stops thinking."
+- **When it goes wrong:** The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.
+- **The fix:** Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -17,8 +17,8 @@
 
 - **Deliverable:** Three rapid rounds of paired micro-interviews establishing shared context
 - **At a glance:** 6–15+ people · 15–20 min · beginner
-- **When it goes wrong:** One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.
-- **The fix:** Stop the round on the chime and model the handoff: "If you are mid-sentence, stop; your partner's two minutes start now."
+- **When it goes wrong:** One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.
+- **The fix:** Stop on the chime and model the handoff: if you are mid-sentence, stop; your partner's time starts now.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -26,16 +26,16 @@
 
 - **Deliverable:** Systematic cessation of self-sabotaging behaviors and counter-productive habits
 - **At a glance:** 5–15+ people · 35–50 min · intermediate
-- **When it goes wrong:** The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.
-- **The fix:** Circle an obvious item yourself and say: "We cannot remove what we will not name. What else here are we pretending we do not do?"
+- **When it goes wrong:** The audit protects feelings, so the room lists habits that describe someone else's organization.
+- **The fix:** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-34 — Troika Consulting
 
 - **Deliverable:** Rapid triad peer consulting using back-turned active listening protocols
 - **At a glance:** 3–15+ people · 30–45 min · intermediate
-- **When it goes wrong:** The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.
-- **The fix:** Say to the client: "Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming."
+- **When it goes wrong:** The client turns around to defend decisions, so consultants manage reactions instead of exploring the problem.
+- **The fix:** Tell the client: turn back and stay silent; every word you add narrows what they will say.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -43,8 +43,8 @@
 
 - **Deliverable:** High-velocity anonymous card exchange scoring boldest breakthrough ideas
 - **At a glance:** 15+ people · 20–30 min · intermediate
-- **When it goes wrong:** Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.
-- **The fix:** Say: "A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale."
+- **When it goes wrong:** Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.
+- **The fix:** Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -52,8 +52,8 @@
 
 - **Deliverable:** Ruthless reduction of operating protocols down to non-negotiable rules
 - **At a glance:** 4–15 people · 40–50 min · advanced
-- **When it goes wrong:** The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.
-- **The fix:** Hold up one must and ask: "If we broke this tomorrow, what exactly would fail?" If no one can name the failure, cut it.
+- **When it goes wrong:** Every rule has a defender, so the list stays long and the group leaves with a tidier bureaucracy.
+- **The fix:** Hold up one rule and ask what exactly would fail if we broke it tomorrow; cut what no one can name.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -61,8 +61,8 @@
 
 - **Deliverable:** Progressive conversational excavation of intrinsic organizational purpose
 - **At a glance:** 2–15 people · 20–35 min · intermediate
-- **When it goes wrong:** The partner accepts a general answer like "because it matters" and the chain stalls at a slogan instead of reaching a real purpose.
-- **The fix:** Ask the follow-up once more: "Why does that matter to you, specifically?" Keep the silence until the answer gets concrete.
+- **When it goes wrong:** The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.
+- **The fix:** Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -70,8 +70,8 @@
 
 - **Deliverable:** Structured four-round dialogue suppressing cross-talk on contentious issues
 - **At a glance:** 5–12 people · 45–60 min · beginner
-- **When it goes wrong:** Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.
-- **The fix:** Hold up the talking object and say: "No replies yet. We are here to understand, not to win; the debate round comes later."
+- **When it goes wrong:** Cross-talk creeps in, two people debate, and the quiet members stop speaking before the later rounds.
+- **The fix:** Hold up the object and say no replies yet; we are here to understand, not to win this round.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -79,8 +79,8 @@
 
 - **Deliverable:** Scaled peer advisory council consulting for individual challenge clients
 - **At a glance:** 6–15+ people · 45–60 min · advanced
-- **When it goes wrong:** Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.
-- **The fix:** Turn the conversation back to the circle: "Advisors, talk to each other. Client, write only; your turn to answer comes at the end."
+- **When it goes wrong:** Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.
+- **The fix:** Tell the advisors to talk to each other; the client only writes until their final turn comes.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.
 
@@ -88,7 +88,7 @@
 
 - **Deliverable:** Ladder of inference progression: observations, interpretations, actions
 - **At a glance:** 3–15+ people · 30–45 min · beginner
-- **When it goes wrong:** The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.
-- **The fix:** Point at the observation column and say: "Before we explain it, what did we actually see? Facts first; meaning next."
+- **When it goes wrong:** The room jumps to opinions and fixes, so the group argues about interpretations without agreeing on facts.
+- **The fix:** Point at the observations and ask what we actually saw before anyone explains it; facts first.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 - **Source:** Henri Lipmanowicz & Keith McCandless (2014), *The Surprising Power of Liberating Structures*.

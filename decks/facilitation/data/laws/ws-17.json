@@ -9,23 +9,17 @@
   "atAGlance": "3–10 people · 45–60 min · advanced",
   "steps": [
     {
-      "text": "Put an existing concept in front of the room and list the seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse."
+      "text": "Put the concept up; name seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse."
     },
     {
-      "text": "Work one prompt at a time, asking what would change in the concept if that verb were mandatory."
+      "text": "Work one prompt at a time, asking what changes if that verb were mandatory, and write one variant."
     },
     {
-      "text": "Write one concrete variant per prompt rather than a general suggestion, keeping the original visible."
-    },
-    {
-      "text": "Group the variants by the prompt that produced them so the room sees which vectors yielded most."
-    },
-    {
-      "text": "Choose the variants worth developing and record the prompt that produced each one."
+      "text": "Group the variants by prompt, then keep the ones worth developing and record each prompt."
     }
   ],
-  "failure": "Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.",
-  "intervention": "Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.",
+  "failure": "Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.",
+  "intervention": "Pick one prompt and force it: state exactly what changes.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

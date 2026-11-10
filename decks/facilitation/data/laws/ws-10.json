@@ -9,23 +9,17 @@
   "atAGlance": "3–10 people · 30–40 min · beginner",
   "steps": [
     {
-      "text": "Set the timer and have everyone silently write the blockers they hit in this work, one per note."
+      "text": "Set the timer and have everyone silently write the blockers they hit, one per note."
     },
     {
-      "text": "Post, read, and dot-vote the blockers; keep the three the room feels most."
+      "text": "Dot-vote the blockers and keep the top three."
     },
     {
-      "text": "Rewrite each kept blocker as a How Might We question that points at the user's need."
-    },
-    {
-      "text": "Silently add solutions to the reframed questions, then vote again for the strongest."
-    },
-    {
-      "text": "Close by naming the one reframe the group will carry into the next working session."
+      "text": "Reframe each kept blocker as a How Might We, then vote and carry the best reframe forward."
     }
   ],
-  "failure": "The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.",
-  "intervention": "Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.",
+  "failure": "The room votes on blockers but never reframes them, so the session ends with the same complaints.",
+  "intervention": "Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

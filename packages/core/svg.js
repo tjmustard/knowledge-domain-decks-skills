@@ -1992,7 +1992,10 @@
     out.push(circle(200, apexY, 6, { width: 2, fill: "currentColor", opacity: 0.95 }));
     for (var i = 0; i < inlets; i++) {
       var x = 200 - width / 2 + (width / (inlets - 1 || 1)) * i;
-      var heavy = i === (chosen - 1) % inlets;
+      // The chosen inlet is a position, so a value past the last inlet means
+      // the last one. Taking it modulo instead would turn 6 into the third
+      // inlet of six and make the parameter's meaning depend on its range.
+      var heavy = i === Math.min(Math.max(chosen, 1), inlets) - 1;
       out.push(circle(x, top, heavy ? 5 : 3.5, { width: heavy ? 2 : 1.2, opacity: heavy ? 0.95 : 0.5 }));
       out.push(line(x, top, 200, apexY, heavy ? 2.4 : 1.1, heavy ? 0.95 : 0.32));
     }

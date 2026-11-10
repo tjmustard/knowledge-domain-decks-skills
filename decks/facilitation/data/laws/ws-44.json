@@ -9,26 +9,17 @@
   "atAGlance": "1–15+ people · 15–25 min · beginner",
   "steps": [
     {
-      "text": "Ask each person: what is the 15 percent you can do right now, with the authority and resources you already hold?"
+      "text": "Ask each person what 15 percent they can do now with the authority and resources they hold."
     },
     {
-      "text": "Have everyone write one action in silence that needs no budget, no permission, and no one else's decision."
+      "text": "Have everyone write one action in silence that needs no budget, permission, or anyone's decision."
     },
     {
-      "text": "Pair people to read their action aloud and answer one question: what would make it easier to start this week?"
-    },
-    {
-      "text": "Collect the actions on a shared board without ranking or editing them; the point is what is already possible."
-    },
-    {
-      "text": "Ask each person to name the day they will take the first step and what they will notice when it is done."
-    },
-    {
-      "text": "Close by asking what help each person needs from the room, and who in the room can give it."
+      "text": "Share in pairs, then name your first step and help."
     }
   ],
-  "failure": "The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.",
-  "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.",
+  "failure": "The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.",
+  "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without them.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

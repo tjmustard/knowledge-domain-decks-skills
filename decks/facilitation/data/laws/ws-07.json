@@ -9,23 +9,17 @@
   "atAGlance": "3–10 people · 60–90 min · intermediate",
   "steps": [
     {
-      "text": "Agree the persona, the goal, and where the journey starts and ends before drawing anything."
+      "text": "Agree persona, goal, start, and end first."
     },
     {
-      "text": "Lay out the stages in time order as columns and name each one from the user's point of view."
+      "text": "Lay out stages in time order as columns, naming each from the user's point of view."
     },
     {
-      "text": "Under each stage, record what the user does, sees, and has to use to move forward."
-    },
-    {
-      "text": "Mark the pain points and the moments where users drop out or need help."
-    },
-    {
-      "text": "Walk the whole path once and circle the two transitions worth fixing first."
+      "text": "Mark pain points and drop-offs, then circle the two transitions this team should fix first."
     }
   ],
-  "failure": "The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.",
-  "intervention": "Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.",
+  "failure": "The map lists internal process steps in company language, documenting the organization, not the user.",
+  "intervention": "Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

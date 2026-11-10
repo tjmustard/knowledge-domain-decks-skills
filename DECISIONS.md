@@ -1627,3 +1627,177 @@ The instrument lesson is the one §45 and the truncation finding already make in
 another key: a test that reads an untracked file is testing the machine it runs
 on. Any input a test depends on belongs in git, or its absence belongs in the
 test as a stated condition.
+
+## 47. The inventory is the deck's data, and the test holds the records to it
+
+The facilitation deck's forty-eight exercises are an inventory before they are
+cards: number, name, stage, room, clock, difficulty, deliverable, and whether the
+source prints a protocol for the exercise. That inventory is committed at
+`decks/facilitation/data/source-inventory.json`, for the reason §46 records: the
+research input is gitignored, so anything a test depends on has to be in git.
+
+`scripts/test/facilitation.test.mjs` compares all forty-eight records to it,
+field by field, and also checks the 10/10/10/10/8 stage split and that no two
+cards draw the same picture. What that proves is exactly what it says: the
+records match the committed extraction. It does not prove that the extraction
+matches the source, which is a transcription the operator made and this seat can
+re-run but cannot independently re-derive without the input.
+
+Two records drifted from the inventory while they were being written, and both
+were caught by comparing rather than by reading.
+
+- WS-16 Brainwriting 6-3-5 has a room of `"6"`. The schema said `minLength: 2`,
+  a bound nobody chose on purpose, and the author wrote `"Six"` and `"Six people
+  · 30–45 min · intermediate"` to satisfy it. The bound encoded a guess about
+  what sizes look like; the data says otherwise. `groupSize` and `minutes` now
+  bound at the inventory's own longest value, five characters, and WS-16
+  carries `"6"`.
+- WS-01's deliverable was paraphrased into "A bounded problem statement with the
+  user impact and the business cost written down." The inventory says "Bounded
+  problem definition with user impact and business context". The record now
+  carries the inventory's words.
+
+The lesson is the one §38 records in another form and the schema keeps
+repeating: a validation bound is a claim about the world. When the bound and the
+data disagree, the bound is the thing to examine.
+
+## 48. A method with no documented originator prints a note, not a blank
+
+Thirty-one of the forty-eight methods are in common use with no single
+documented originator - dot voting, fist to five, hopes and fears. Naming an
+inventor for them would be an invention. The record's `origin` may therefore
+carry a `note` alone: a sentence saying where the method comes from in the
+ordinary sense ("Widely used in design practice; no single documented
+originator."), printed as the whole source line.
+
+The engine change is small and declarative. `packages/prepress/src/card.typ`
+prints the note instead of `Source:` when an origin has a note and no author,
+work or publication; `packages/web/app.js` and
+`scripts/generate-web-data.mjs` hold the same rule for the viewer and for the
+generated index, and `check-web.mjs` compares every index cell to the rendered
+card so the three cannot drift. An origin that names an author, a work or a
+publication is untouched, which is why the three shipped decks still print what
+they printed.
+
+Seventeen cards name a documented originator - the Liberating Structures cards
+credit Lipmanowicz and McCandless, MoSCoW credits Dai Clegg, Decider Super-Vote
+credits Jake Knapp's *Sprint*, the Lean Canvas Experiment Matrix credits Ash
+Maurya, and SMART credits George T. Doran. The rest say plainly that no one is
+documented, which is a better attribution than a plausible name.
+
+## 49. The provenance split is a schema enum, not a paragraph
+
+The deck's contract is that every card tells the reader, in words, whether its
+steps follow a written protocol in the source or were written for this deck from
+the method's public definition. Twenty-four cards are in each half.
+
+The sentence is not free text. `decks/facilitation/data/law-schema.json` carries
+the two exact strings as an enum:
+
+    "Source protocol: the steps follow the written script in the source."
+    "Steps written for this deck from the method's public definition; the source has no protocol."
+
+An enum does three jobs. It makes the disclosure uniform, so a reader learns to
+recognise it rather than interpret a new sentence per card. It makes drift
+impossible: a record cannot half-claim a protocol, and a generator cannot
+rewrite the claim. And it makes the split checkable, which is why the deck's
+test can assert that every card's `sourceProtocol` boolean, its provenance
+string and the inventory's `protocol` column agree rather than merely coexist.
+
+The cost is real and is recorded in §52: those two sentences are two or three
+lines on every back face, and a back face has a measured budget.
+
+## 50. Five shapes draw how a session moves
+
+The deck declares five new shapes in `packages/core/svg.js`, taking the registry
+from 65 to 70. Each draws a property of a facilitated session that the earlier
+shapes do not:
+
+- `framing-square` - a square boundary ruled into a survey grid, with one
+  measured vector running out of its centre: a problem bounded before work
+  begins, and a direction chosen inside it (Alignment & Framing).
+- `divergent-fan` - rays of equal length fanning out of one origin across an
+  arc, each fainter than the last: options widening before anything is chosen
+  (Divergent Ideation).
+- `convergent-funnel` - many inlets meeting one point, one inlet carrying the
+  weight: narrowing to a choice (Convergent Decision).
+- `liberating-rings` - concentric rings with one doorway cut through all of them
+  and people placed around the outside: a structure that changes who speaks by
+  making entry the move (Liberating Structures).
+- `action-steps` - ascending blocks, a line tracing the climb, and a marker on
+  the one step the room committed to (Action Planning).
+
+Two of them shipped with a defect that the gate caught and the eye would not
+have: `liberating-rings` and `action-steps` emitted two attributes with no space
+between them (`stroke-linecap="round"vector-effect=...`), which Typst refuses to
+parse. The deck would not build at all until it was fixed. Every parameter of
+all five shapes is read by the drawing, proven by the gate's liveness check.
+
+## 51. A live parameter can saturate, so one probe is not proof
+
+The gate proves a figure parameter is live by perturbing it and comparing the
+rendered SVG (§44). It used one probe per number, `2n+3`; three facilitation
+cards failed with `parameter "chosen" does not affect the drawing` even though
+the parameter plainly did.
+
+`convergent-funnel` read `chosen` modulo the number of inlets. WS-22 chose the
+third inlet of six, and `2*3+3 = 9` is the third inlet of six again. WS-26 chose
+the sixth of nine, and `2*6+3 = 15` is the sixth of nine. WS-27 chose the second
+of five, and `2*2+3 = 7` is the second of five. The parameter was live; the
+probe was saturated, and the gate reported the probe's blind spot as a defect
+in the drawing.
+
+Both ends are fixed. The shape clamps `chosen` to the inlet range instead of
+taking it modulo, which is what "the chosen option" means and is also how a
+value past the last inlet stops wrapping around to the third. The gate now
+probes each number three ways - `2n+3`, `n+1`, `n-1` - and fails only when every
+one leaves the drawing identical, which is what a parameter nobody reads does.
+A dead parameter still fails; a saturating one no longer fails by accident.
+The change affects no shipped drawing: the three earlier decks pass the same
+liveness check they passed before, and their PDFs still hash to their baselines.
+
+## 52. A card's back face is a measured budget, not a word count
+
+The first pass at the facilitation deck wrote what the methods needed and did
+not ask whether it fitted. It did not: every card's face carries a deliverable,
+a figure and an at-a-glance line, and its back carries numbered steps, the
+failure, the fix, the provenance sentence and the origin line. At the template's
+7 pt that is a real constraint, and Typst does not clip content to the block it
+is given - it runs on past the safe inset, through the trim line, and off the
+page.
+
+Measured at 100 ppi on the shipped template (page 500 px tall, safe content
+bottom at row 468.75, trim line at row 487.5):
+
+| | Before the editorial pass | After |
+|---|---|---|
+| Versos past the safe inset | 45 of 48 | 0 |
+| Versos past the trim line (clipped) | 30 of 48 | 0 |
+| Worst true overrun (tall-page probe) | 121 px, 87 pt, ~10.6 lines | 0; all versos end at 438–457 |
+| Text per card (steps + failure + fix + provenance) | 693–977 characters | 468–584 |
+
+The fix is editorial, not typographic: the shipped 7 pt type and the layout are
+untouched. What a back face holds at this size is about 10–13 body lines, and
+the provenance sentence and origin line take 3–4 of those lines before any
+steps. In characters that is roughly 480–580 including provenance, not the ~700 the
+first brief guessed: the editors measured 700 landing between rows 462 and 495,
+past the safe inset in every case.
+
+Two rules kept the cut honest. On the twenty-four cards whose steps follow a
+written protocol, no beat was dropped: each card keeps at least the source's own
+number of timed beats, in order, with the wording compressed. The check for that
+is mechanical - the source's `####` section has a counted number of timed
+`Step-by-Step Script` beats, and every protocol card carries at least that many
+steps; no protocol card has fewer. On the twenty-four cards with no protocol in
+the source, beats were merged, which is what the provenance sentence already
+tells a reader they are.
+
+Before this, vertical fit was a hand measurement that `scripts/pdf-check.mjs`
+said in as many words it could not make (§37): rendered, looked at, and hoped to
+be repeated. `scripts/check-fit.mjs` now renders every face of every deck and
+measures the lowest ink row against both lines, and the acceptance gate records
+`print: fit`. A face past the trim line fails; a face past the safe inset but
+inside the trim is reported as TIGHT rather than failed, because the archetype
+deck shipped five faces at row 475 (4.5 pt into the cushion, still 0.125 in
+inside the trim) and turning an accepted deck red retroactively is not this
+slice's call. UX and narrative are clean on both lines.

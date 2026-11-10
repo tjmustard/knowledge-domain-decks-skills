@@ -9,26 +9,17 @@
   "atAGlance": "1–15+ people · 15–30 min · beginner",
   "steps": [
     {
-      "text": "Explain the three words: How assumes a path exists, Might permits failure, We shares ownership."
+      "text": "Explain How, Might, We: a path exists, failure is permitted, ownership is shared; ban solutions."
     },
     {
-      "text": "Post the validated pain points where everyone can read them before writing begins."
+      "text": "Post the validated pain points, then each person drafts two to four ten-word questions per point."
     },
     {
-      "text": "Each person silently drafts two to four questions per pain point, ten words or fewer."
-    },
-    {
-      "text": "Forbid solutions: rewrite any question that names a feature, screen, or tool."
-    },
-    {
-      "text": "Post the cards and cluster identical intents without speaking, merging duplicates."
-    },
-    {
-      "text": "Read one question from each cluster aloud and confirm it carries a usable constraint."
+      "text": "Cluster identical intents without speaking, moving other people's notes that belong together."
     }
   ],
   "failure": "Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.",
-  "intervention": "Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.",
+  "intervention": "Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

@@ -9,23 +9,17 @@
   "atAGlance": "6 people · 30–45 min · intermediate",
   "steps": [
     {
-      "text": "Seat six people, give each a sheet with three columns and five rows, and restate the question on the board."
+      "text": "Seat six people with a three-column, five-row sheet, and restate the question on the board."
     },
     {
-      "text": "For five minutes, each person writes three ideas, one per row, in the first column, in complete silence."
+      "text": "For five silent minutes, have each person write three ideas in the first column."
     },
     {
-      "text": "Pass every sheet one seat to the right, then each person reads it and adds three new ideas in the next column."
-    },
-    {
-      "text": "Repeat for five rounds so every sheet passes through every person and returns to its owner."
-    },
-    {
-      "text": "Collect the sheets, count the ideas, then cluster duplicates and themes before any discussion starts."
+      "text": "Pass right; add three ideas in the next column for five rounds, then count and cluster."
     }
   ],
-  "failure": "Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.",
-  "intervention": "Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.",
+  "failure": "Half-working looks like columns of restatements: people copy the idea above and change one word.",
+  "intervention": "Before each pass, require a different part of the question or a new mechanism, not a rewording.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

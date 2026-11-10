@@ -9,23 +9,17 @@
   "atAGlance": "2–15 people · 20–35 min · intermediate",
   "steps": [
     {
-      "text": "Pair people and have one describe an activity or project they care about in a sentence or two."
+      "text": "Pair people; one describes a project they care about and why it matters to them."
     },
     {
-      "text": "Instruct the partner to ask \"Why is that important to you?\" and nothing else for the first rounds."
+      "text": "Ask 'Why does that matter?' of each answer, following the chain through nine whys."
     },
     {
-      "text": "Keep asking why of each answer, following the chain rather than accepting the first reason."
-    },
-    {
-      "text": "Notice when the answer stops being about the task and starts naming a person or value worth serving."
-    },
-    {
-      "text": "Switch roles and run the same chain, then have each person state the purpose they reached in one line."
+      "text": "Switch roles and state the purpose you reached."
     }
   ],
-  "failure": "The partner accepts a general answer like \"because it matters\" and the chain stalls at a slogan instead of reaching a real purpose.",
-  "intervention": "Ask the follow-up once more: \"Why does that matter to you, specifically?\" Keep the silence until the answer gets concrete.",
+  "failure": "The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.",
+  "intervention": "Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

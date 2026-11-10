@@ -9,23 +9,17 @@
   "atAGlance": "5–15 people · 45–60 min · intermediate",
   "steps": [
     {
-      "text": "Write the core problem on the trunk in one sentence with no cause or solution in it."
+      "text": "Write the core problem on the trunk in one sentence, with no cause or solution in it."
     },
     {
-      "text": "Ask why it exists and place each root cause below as a root; go two levels deep."
+      "text": "Ask why, and place root causes two levels deep."
     },
     {
-      "text": "Ask what it causes and place each consequence above as a branch."
-    },
-    {
-      "text": "Check that every root and branch connects to the trunk, not to a neighbor."
-    },
-    {
-      "text": "Circle the roots this team can influence and agree which one to work on."
+      "text": "Place consequences above as branches, then circle the roots this team can influence."
     }
   ],
-  "failure": "The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.",
-  "intervention": "Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.",
+  "failure": "The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.",
+  "intervention": "Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

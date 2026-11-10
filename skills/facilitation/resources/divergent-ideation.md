@@ -8,8 +8,8 @@
 
 - **Deliverable:** Rapid individual generation of eight distinct interface or concept riffs
 - **At a glance:** 1–15+ people · 10–15 min · beginner
-- **When it goes wrong:** Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.
-- **The fix:** Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.
+- **When it goes wrong:** One polished box and seven blanks: the clock stops driving.
+- **The fix:** Say: crude boxes are the point; move on unfinished, now.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Jake Knapp (2016), *Sprint*.
 
@@ -17,32 +17,32 @@
 
 - **Deliverable:** High-volume generation of ways to intentionally cause failure
 - **At a glance:** 5–15 people · 30–45 min · intermediate
-- **When it goes wrong:** Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.
-- **The fix:** Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.
+- **When it goes wrong:** Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.
+- **The fix:** Sabotage is over: one green mechanism per red cluster.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-13 — Round Robin Brainstorming
 
 - **Deliverable:** Sequentially built, peer-iterated solution concepts
 - **At a glance:** 5–12 people · 25–40 min · intermediate
-- **When it goes wrong:** Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.
-- **The fix:** Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.
+- **When it goes wrong:** Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.
+- **The fix:** Say: treat the seed as given, then answer yes-and.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-14 — Mash-up / Cross-Pollination
 
 - **Deliverable:** Unconventional combinations of disparate technologies or business models
 - **At a glance:** 3–15 people · 30–45 min · intermediate
-- **When it goes wrong:** Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.
-- **The fix:** Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.
+- **When it goes wrong:** Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.
+- **The fix:** Ask what behavior it changes, then make that the concept.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-15 — Solution Sketching (4-Step)
 
 - **Deliverable:** High-density, self-explanatory three-panel conceptual wireframes
 - **At a glance:** 3–15 people · 60–90 min · advanced
-- **When it goes wrong:** Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.
-- **The fix:** Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.
+- **When it goes wrong:** Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.
+- **The fix:** Ask whether a stranger could follow the sketch without you, then add headlines and labels until they can.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Jake Knapp (2016), *Sprint*.
 
@@ -50,38 +50,38 @@
 
 - **Deliverable:** 108 structured ideas generated silently across six team members
 - **At a glance:** 6 people · 30–45 min · intermediate
-- **When it goes wrong:** Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.
-- **The fix:** Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.
+- **When it goes wrong:** Half-working looks like columns of restatements: people copy the idea above and change one word.
+- **The fix:** Before each pass, require a different part of the question or a new mechanism, not a rewording.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-17 — SCAMPER Ideation
 
 - **Deliverable:** Systematic transformation of existing concepts using seven vectors
 - **At a glance:** 3–10 people · 45–60 min · advanced
-- **When it goes wrong:** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.
-- **The fix:** Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.
+- **When it goes wrong:** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.
+- **The fix:** Pick one prompt and force it: state exactly what changes.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-18 — Worst Possible Idea
 
 - **Deliverable:** De-inhibited concept space built by surfacing terrible alternatives
 - **At a glance:** 3–15 people · 20–30 min · beginner
-- **When it goes wrong:** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.
-- **The fix:** For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.
+- **When it goes wrong:** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.
+- **The fix:** Name the need each joke insults, then write the flip.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-19 — Analogous Inspiration
 
 - **Deliverable:** Structural transfer of mechanisms from unrelated industrial domains
 - **At a glance:** 5–15 people · 30–45 min · intermediate
-- **When it goes wrong:** Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.
-- **The fix:** Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.
+- **When it goes wrong:** Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.
+- **The fix:** Ask what it does structurally, then how we would copy it.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-20 — Speed Boat Ideation
 
 - **Deliverable:** Visual discovery of operational drag factors and mechanical engines
 - **At a glance:** 3–12 people · 25–40 min · beginner
-- **When it goes wrong:** Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.
-- **The fix:** Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.
+- **When it goes wrong:** Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.
+- **The fix:** Ask for the two anchors that cost the most progress this month, and assign each one an owner.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

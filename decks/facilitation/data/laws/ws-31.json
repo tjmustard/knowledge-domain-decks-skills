@@ -9,20 +9,20 @@
   "atAGlance": "4–15+ people · 12–15 min · beginner",
   "steps": [
     {
-      "text": "Pose one question worth the room's attention, then give everyone sixty seconds of silent writing before any talking starts."
+      "text": "Pose one question worth the room's attention, then give everyone a minute of silent writing."
     },
     {
-      "text": "Pair people where they sit and give them two minutes to compare notes and agree on the most urgent shared point."
+      "text": "Give pairs two minutes to agree on one point."
     },
     {
-      "text": "Merge pairs into fours for four minutes; ask them to name the patterns and reduce to one idea the whole room needs."
+      "text": "Have fours spend four minutes finding one pattern."
     },
     {
-      "text": "Harvest in plenary without a round robin: ask who can add a theme not yet heard, and keep taking only new material."
+      "text": "Harvest only themes the room has not heard yet."
     }
   ],
-  "failure": "The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.",
-  "intervention": "Restart the timer and say the first minute is solo: \"When we talk early, the quickest voice sets the frame and the room stops thinking.\"",
+  "failure": "The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.",
+  "intervention": "Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

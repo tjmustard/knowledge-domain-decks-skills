@@ -9,23 +9,20 @@
   "atAGlance": "15+ people · 20–30 min · intermediate",
   "steps": [
     {
-      "text": "Give everyone a card: write a bold action for the bottleneck on top and its first step below, with no name."
+      "text": "Each person writes a bold action for the bottleneck and its first step on an unsigned card."
     },
     {
-      "text": "Have them draw five scoring rows on the back, ready to mark each card they see from one to five."
+      "text": "Draw five scoring rows, one per shuffle round."
     },
     {
-      "text": "Run five shuffle rounds: pass cards continuously, stop, read the card in hand, discuss briefly, score privately."
+      "text": "Run five blind rounds, scoring each card 1 to 5."
     },
     {
-      "text": "Keep each round's score hidden from the author and leave earlier scores untouched."
-    },
-    {
-      "text": "Total the five scores and call the countdown from twenty-five down, reading out the highest cards."
+      "text": "Count from 25 down, reading the top-scoring cards."
     }
   ],
-  "failure": "Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.",
-  "intervention": "Say: \"A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale.\"",
+  "failure": "Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.",
+  "intervention": "Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

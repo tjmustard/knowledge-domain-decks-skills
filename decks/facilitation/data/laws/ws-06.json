@@ -9,23 +9,17 @@
   "atAGlance": "5–15+ people · 20–30 min · beginner",
   "steps": [
     {
-      "text": "Draw two columns, Hopes and Fears, and hand everyone notes in two colors."
+      "text": "Draw Hopes and Fears columns, two note colors."
     },
     {
-      "text": "Ask each person to write one hope and one fear about this work, silently and specifically."
+      "text": "Ask each person to write one specific hope and one specific fear about this work, in silence."
     },
     {
-      "text": "Post the notes and read both columns aloud without rebutting anything yet."
-    },
-    {
-      "text": "Group the themes and name which fears point to a real risk the plan has not addressed."
-    },
-    {
-      "text": "Agree one action for the biggest fear and one signal that the hope is being met."
+      "text": "Post and read both columns aloud, group the themes, then agree one action for the biggest fear."
     }
   ],
-  "failure": "Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.",
-  "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.",
+  "failure": "Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.",
+  "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

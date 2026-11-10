@@ -9,20 +9,17 @@
   "atAGlance": "4–12 people · 45–60 min · intermediate",
   "steps": [
     {
-      "text": "List the decisions or deliverables that need a clear owner before work starts, keeping one per row."
+      "text": "List the decisions or deliverables that each need one clear owner before work starts."
     },
     {
-      "text": "For each row, mark who is responsible for the work and exactly one person accountable for the outcome."
+      "text": "For each row, name who is responsible for the work and exactly one person accountable for it."
     },
     {
-      "text": "Add who must be consulted before the decision and who only needs to be informed after it."
-    },
-    {
-      "text": "Check the map for overload and gaps, then confirm each named person accepts the role they were given."
+      "text": "Check overload, then confirm each person accepts."
     }
   ],
-  "failure": "Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.",
-  "intervention": "Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.",
+  "failure": "Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.",
+  "intervention": "Put one accountable name in every row, and remove anyone marked both who does not do the work.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

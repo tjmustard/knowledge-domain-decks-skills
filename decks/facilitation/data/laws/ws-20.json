@@ -12,20 +12,14 @@
       "text": "Draw a boat labeled with the product or team, a destination, and an empty sea around it."
     },
     {
-      "text": "Ask people to add anchors for everything slowing progress and engines for everything speeding it up."
+      "text": "Have people add anchors for what slows progress and engines for what speeds it, then explain one of each."
     },
     {
-      "text": "Have each person explain one anchor and one engine, placing the notes on the drawing."
-    },
-    {
-      "text": "Cluster the anchors and engines by theme, then rank which anchors should be cut first."
-    },
-    {
-      "text": "Turn the top anchors into commitments and name the engines the team must protect."
+      "text": "Cluster and rank the anchors, turn the top ones into owned commitments, and name the engines to protect."
     }
   ],
-  "failure": "Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.",
-  "intervention": "Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.",
+  "failure": "Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.",
+  "intervention": "Ask for the two anchors that cost the most progress this month, and assign each one an owner.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

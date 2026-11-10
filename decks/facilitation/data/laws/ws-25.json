@@ -9,23 +9,23 @@
   "atAGlance": "3–12 people · 30–45 min · intermediate",
   "steps": [
     {
-      "text": "Name the two axes driving the deadlock, then check that one does not simply imply the other."
+      "text": "Name the axes; check one does not imply the other."
     },
     {
-      "text": "Label both ends of each axis in plain language and post the labels where the whole room can see them."
+      "text": "Label both ends plainly and post them for the room."
     },
     {
-      "text": "Place each candidate by arguing its position on one axis, then the other, against cards already placed."
+      "text": "Place candidates by arguing each axis in turn."
     },
     {
-      "text": "Rename the quadrants for this decision and say what action each quadrant authorizes."
+      "text": "Rename the quadrants and name each one's action."
     },
     {
-      "text": "Choose at least one high-risk, high-value candidate and name the experiment that would de-risk it."
+      "text": "Pick one high-risk, high-value bet and name its test."
     }
   ],
-  "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.",
-  "intervention": "Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.",
+  "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.",
+  "intervention": "Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

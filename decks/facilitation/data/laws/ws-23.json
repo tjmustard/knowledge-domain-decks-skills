@@ -9,23 +9,23 @@
   "atAGlance": "3–15+ people · 10–20 min · beginner",
   "steps": [
     {
-      "text": "Give each person five dots. Explain that all five may go on one idea or be spread across many."
+      "text": "Give each person five dots for the ideas."
     },
     {
-      "text": "Have everyone write their choices privately before approaching the wall, so no one follows a cursor."
+      "text": "Choose privately before anyone reaches the wall."
     },
     {
-      "text": "Walk the wall in silence, place dots on the ideas themselves, and keep comments and gestures to yourself."
+      "text": "Walk the wall silently and place dots without comment."
     },
     {
-      "text": "Step back and circle the three densest clusters, not the cards with the loudest advocates."
+      "text": "Circle the three densest clusters, not the loudest."
     },
     {
-      "text": "Invite those authors to explain the mechanism in one minute each, then open the discussion."
+      "text": "Let each cluster's author explain the mechanism."
     }
   ],
-  "failure": "Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.",
-  "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.",
+  "failure": "Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.",
+  "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

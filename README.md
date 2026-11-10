@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-3%20%C2%B7%20118%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-4%20%C2%B7%20166%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -20,6 +20,7 @@
 - [🧭 UX & Behavioral Design](#-ux--behavioral-design)
 - [📖 Narrative Architecture](#-narrative-architecture)
 - [🎭 Archetypal Architecture](#-archetypal-architecture)
+- [🗣️ Facilitation Architecture](#️-facilitation-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -83,6 +84,7 @@ deck's copy, names, or trade dress is used.
 | **UX & Behavioral Design** | 54 | 5 categories | `packages/prepress/dist/ux-laws.pdf` | `packages/web/decks/ux-laws/` | `rules/ux-rules.md` | `skills/ux-laws/` |
 | **Narrative Architecture** | 48 | 4 families | `packages/prepress/dist/narrative.pdf` | `packages/web/decks/narrative/` | `rules/narrative-rules.md` | `skills/narrative/` |
 | **Archetypal Architecture** | 16 | 5 families | `packages/prepress/dist/archetypes.pdf` | `packages/web/decks/archetypes/` | `rules/archetypes-rules.md` | `skills/archetypes/` |
+| **Facilitation Architecture** | 48 | 5 stages | `packages/prepress/dist/facilitation.pdf` | `packages/web/decks/facilitation/` | `rules/facilitation-rules.md` | `skills/facilitation/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -198,6 +200,41 @@ Its ruleset and skill are
 [`skills/archetypes/`](./skills/archetypes/). The deck's records are in
 `decks/archetypes/data/laws/` and its schema in
 `decks/archetypes/data/law-schema.json`.
+
+---
+
+## 🗣️ Facilitation Architecture
+
+**Facilitation Architecture** is a forty-eight-card deck of facilitation
+exercises. Each card answers the four questions a facilitator has in the room -
+how many people, how long, how hard, and what the group leaves with - then the
+steps to run it, the failure that usually arrives, and the sentence that
+rescues it. Where the other three decks describe a structure, a message or a
+voice, this one hands you a session.
+
+The forty-eight cards divide into five lifecycle stages, ten each except eight
+in Action Planning:
+
+| Stage | Cards | What it runs |
+|---|---|---|
+| Alignment & Framing | WS-01 to WS-10 | Agreeing what problem the room is solving before anyone solves it |
+| Divergent Ideation | WS-11 to WS-20 | Widening the set of options without converging early |
+| Convergent Decision | WS-21 to WS-30 | Narrowing to a choice the room will defend |
+| Liberating Structures | WS-31 to WS-40 | Reusable structures that change who speaks and how |
+| Action Planning | WS-41 to WS-48 | Turning the decision into owners, dates and tests |
+
+The deck declares `"printOrder": "family"`, so its PDF and viewer run stage by
+stage. Half the deck - twenty-four cards - follows a written protocol in the
+source; the other twenty-four carry steps written for this deck from each
+method's public definition, and every card says in words which half it is in.
+Attribution names the public originator where one is documented, and says
+plainly where none is.
+
+Its ruleset and skill are
+[`rules/facilitation-rules.md`](./rules/facilitation-rules.md) and
+[`skills/facilitation/`](./skills/facilitation/). The deck's records are in
+`decks/facilitation/data/laws/` and its schema in
+`decks/facilitation/data/law-schema.json`.
 
 ---
 

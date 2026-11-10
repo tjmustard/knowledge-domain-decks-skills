@@ -9,23 +9,17 @@
   "atAGlance": "5–15 people · 30–45 min · advanced",
   "steps": [
     {
-      "text": "Write three questions on the wall: what is true now, what are we steering toward, and what purpose does this serve?"
+      "text": "Write three questions: now, steering, and purpose."
     },
     {
-      "text": "For each candidate, record current facts under Nu without opinions or forecasts."
+      "text": "Record facts under Nu, then the lever and metric under Steer."
     },
     {
-      "text": "State the steering choice under Steer: the lever the team can actually pull and the metric it moves."
-    },
-    {
-      "text": "State the purpose under Zweck in one sentence, then ask whether the candidate survives a change of purpose."
-    },
-    {
-      "text": "Park any candidate whose three answers do not line up, and give the owner the specific mismatch."
+      "text": "State the purpose under Zweck and park candidates that do not line up."
     }
   ],
-  "failure": "Purpose is recited as a slogan while the now-facts and steering levers stay vague, so every candidate passes.",
-  "intervention": "Ask what would change if the purpose were different. If nothing would, the purpose is decoration and the candidate is unvalidated.",
+  "failure": "Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.",
+  "intervention": "Ask what would change if the purpose were different; if nothing would, the purpose is decoration.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

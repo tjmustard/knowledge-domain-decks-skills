@@ -9,22 +9,16 @@
   "atAGlance": "2–10 people · 30–40 min · intermediate",
   "steps": [
     {
-      "text": "Pick the assumption the plan depends on most and would hurt most if it turned out to be wrong."
+      "text": "Pick the assumption the plan depends on most and would hurt most if it turned out wrong."
     },
     {
-      "text": "Rewrite it as a hypothesis with a subject, a predicted behavior, and a measurable outcome."
+      "text": "Rewrite it as a measurable, falsifiable hypothesis."
     },
     {
-      "text": "Design the smallest test that could contradict the hypothesis, using people and tools the team already has."
-    },
-    {
-      "text": "Set the success threshold and the sample size before the test runs, so the result cannot be reinterpreted later."
-    },
-    {
-      "text": "Record the outcome and the decision it supports, then move to the next assumption or stop."
+      "text": "Set the success threshold first, then design the smallest test that could contradict it."
     }
   ],
-  "failure": "A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.",
+  "failure": "A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.",
   "intervention": "Ask what result would prove the assumption wrong, then design the test so that result could actually appear.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,

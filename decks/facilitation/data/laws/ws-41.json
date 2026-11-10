@@ -9,17 +9,17 @@
   "atAGlance": "3–15 people · 20–30 min · beginner",
   "steps": [
     {
-      "text": "Open with the three rules: each task is an observable artifact, each owner is one named person, each date is a calendar date."
+      "text": "State the rules: each task is a visible artifact, each owner a named person, each date a calendar date."
     },
     {
-      "text": "Work through the priority decisions one row at a time, asking for the single owner first, then the exact due date and how it will be proved."
+      "text": "List the priority decisions as rows, one task per row, and name the single owner and exact due date."
     },
     {
-      "text": "Read the finished matrix aloud and confirm each owner has the authority and time to meet the date before anyone leaves."
+      "text": "Read the matrix back and confirm each owner has the authority and time to meet that date."
     }
   ],
-  "failure": "Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.",
-  "intervention": "Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.",
+  "failure": "Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.",
+  "intervention": "At that row, name one driver, call the other a contributor, and replace any soft date with a real one.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

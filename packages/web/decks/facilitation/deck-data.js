@@ -13,23 +13,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 45–60 min · intermediate",
       "steps": [
         {
-          "text": "State the boundary: this session defines the problem, not features or specifications."
+          "text": "Bound the work: problem, not features or specs."
         },
         {
-          "text": "Each person writes one observable user friction per note, in silence. No causes or fixes."
+          "text": "Each person notes one observable friction silently."
         },
         {
-          "text": "Map each friction to its business cost: lost revenue, churn, or support load."
+          "text": "Map frictions to revenue, churn, or support load."
         },
         {
-          "text": "Cluster the notes and merge duplicates until a few distinct problems remain."
-        },
-        {
-          "text": "Draft the statement three ways and choose the one the room can defend."
+          "text": "Cluster duplicates, then draft three problem statements and choose the one the room defends."
         }
       ],
       "failure": "Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.",
-      "intervention": "Strip the tool out of the sentence. Ask what happens in the workflow that costs measurable time or money; rewrite it without naming a product.",
+      "intervention": "Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -59,26 +56,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "1–15+ people · 15–30 min · beginner",
       "steps": [
         {
-          "text": "Explain the three words: How assumes a path exists, Might permits failure, We shares ownership."
+          "text": "Explain How, Might, We: a path exists, failure is permitted, ownership is shared; ban solutions."
         },
         {
-          "text": "Post the validated pain points where everyone can read them before writing begins."
+          "text": "Post the validated pain points, then each person drafts two to four ten-word questions per point."
         },
         {
-          "text": "Each person silently drafts two to four questions per pain point, ten words or fewer."
-        },
-        {
-          "text": "Forbid solutions: rewrite any question that names a feature, screen, or tool."
-        },
-        {
-          "text": "Post the cards and cluster identical intents without speaking, merging duplicates."
-        },
-        {
-          "text": "Read one question from each cluster aloud and confirm it carries a usable constraint."
+          "text": "Cluster identical intents without speaking, moving other people's notes that belong together."
         }
       ],
       "failure": "Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.",
-      "intervention": "Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.",
+      "intervention": "Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -108,23 +96,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "1–10 people · 20–30 min · intermediate",
       "steps": [
         {
-          "text": "Write the symptom as a fact: what happened, when, how many, and for how long. Agree it first."
+          "text": "Write the symptom as a fact: what happened, when, how many, and for how long it lasted."
         },
         {
-          "text": "Ask why that state was possible, and record the direct enabling condition at each level."
+          "text": "Ask why five times, recording the direct enabling condition, never a person's lapse."
         },
         {
-          "text": "Reject 'a person forgot' as a stopping point; ask what let one action run unchecked."
-        },
-        {
-          "text": "Keep one primary chain, noting plausible side branches in the margin instead of chasing them."
-        },
-        {
-          "text": "Stop when you reach a policy, gate, or architecture choice this team can actually change."
+          "text": "Keep one necessary chain and stop at a policy or architecture choice this team can change."
         }
       ],
-      "failure": "The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.",
-      "intervention": "Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.",
+      "failure": "The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.",
+      "intervention": "Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -154,23 +136,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Draw the boat, island, wind, anchors, and reefs, and say what each one stands for here."
+          "text": "Draw the boat, island, wind, anchors, and reefs; say what each one means for this team."
         },
         {
           "text": "Give eight silent minutes: at least two winds, two anchors, and one reef per person."
         },
         {
-          "text": "Insist on complete sentences that name an artifact, handoff, or event, not a mood."
-        },
-        {
-          "text": "Post notes beside similar ones; stack yours under an existing card to show its weight."
-        },
-        {
-          "text": "Walk the wall together and name the two anchors this team can cut this cycle."
+          "text": "Group notes by similarity, stack duplicates to show weight, then name two anchors to cut."
         }
       ],
-      "failure": "Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.",
-      "intervention": "Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.",
+      "failure": "Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.",
+      "intervention": "Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -200,23 +176,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 45–60 min · advanced",
       "steps": [
         {
-          "text": "Fast-forward: the initiative shipped and failed badly. State that as settled history, not a hypothetical."
+          "text": "Treat the failed launch as settled history."
         },
         {
-          "text": "Give six silent minutes to write the specific chain of events that produced the disaster."
+          "text": "Give six silent minutes to write the causal chain."
         },
         {
-          "text": "Read every failure aloud, allowing no defense, explanation, or reassurance while the list grows."
+          "text": "Read every failure aloud, no defense allowed."
         },
         {
-          "text": "Give each person three votes for failures that are both likely and fatal; keep the top three."
-        },
-        {
-          "text": "For each top failure, name the gate, check, or design change to build this month."
+          "text": "Vote for failures both likely and fatal, keep the top three, then name the gate to build."
         }
       ],
-      "failure": "Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.",
-      "intervention": "Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.",
+      "failure": "Owners defend the plan as each risk is read, so the room rehearses reassurance instead of failure.",
+      "intervention": "Say the failure already happened, then ask what collapsed despite the controls and name the risk people avoid.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -251,23 +224,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15+ people · 20–30 min · beginner",
       "steps": [
         {
-          "text": "Draw two columns, Hopes and Fears, and hand everyone notes in two colors."
+          "text": "Draw Hopes and Fears columns, two note colors."
         },
         {
-          "text": "Ask each person to write one hope and one fear about this work, silently and specifically."
+          "text": "Ask each person to write one specific hope and one specific fear about this work, in silence."
         },
         {
-          "text": "Post the notes and read both columns aloud without rebutting anything yet."
-        },
-        {
-          "text": "Group the themes and name which fears point to a real risk the plan has not addressed."
-        },
-        {
-          "text": "Agree one action for the biggest fear and one signal that the hope is being met."
+          "text": "Post and read both columns aloud, group the themes, then agree one action for the biggest fear."
         }
       ],
-      "failure": "Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.",
-      "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.",
+      "failure": "Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.",
+      "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -297,23 +264,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 60–90 min · intermediate",
       "steps": [
         {
-          "text": "Agree the persona, the goal, and where the journey starts and ends before drawing anything."
+          "text": "Agree persona, goal, start, and end first."
         },
         {
-          "text": "Lay out the stages in time order as columns and name each one from the user's point of view."
+          "text": "Lay out stages in time order as columns, naming each from the user's point of view."
         },
         {
-          "text": "Under each stage, record what the user does, sees, and has to use to move forward."
-        },
-        {
-          "text": "Mark the pain points and the moments where users drop out or need help."
-        },
-        {
-          "text": "Walk the whole path once and circle the two transitions worth fixing first."
+          "text": "Mark pain points and drop-offs, then circle the two transitions this team should fix first."
         }
       ],
-      "failure": "The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.",
-      "intervention": "Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.",
+      "failure": "The map lists internal process steps in company language, documenting the organization, not the user.",
+      "intervention": "Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -343,23 +304,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Draw four quadrants, Says, Thinks, Does, and Feels, and pin one real user in the center."
+          "text": "Draw Says, Thinks, Does, Feels for one real user."
         },
         {
           "text": "Fill Says and Does first from observed quotes and actions, not from assumptions."
         },
         {
-          "text": "Infer Thinks and Feels from the same observations and mark each inference as a guess."
-        },
-        {
-          "text": "Look for contradictions between what the user says and what they actually do."
-        },
-        {
-          "text": "Summarize the map in two sentences: the user's goal and the tension in the way."
+          "text": "Infer Thinks and Feels from those observations, mark each guess, then name the tension."
         }
       ],
-      "failure": "The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.",
-      "intervention": "Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.",
+      "failure": "The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.",
+      "intervention": "Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -389,23 +344,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 45–60 min · intermediate",
       "steps": [
         {
-          "text": "Write the core problem on the trunk in one sentence with no cause or solution in it."
+          "text": "Write the core problem on the trunk in one sentence, with no cause or solution in it."
         },
         {
-          "text": "Ask why it exists and place each root cause below as a root; go two levels deep."
+          "text": "Ask why, and place root causes two levels deep."
         },
         {
-          "text": "Ask what it causes and place each consequence above as a branch."
-        },
-        {
-          "text": "Check that every root and branch connects to the trunk, not to a neighbor."
-        },
-        {
-          "text": "Circle the roots this team can influence and agree which one to work on."
+          "text": "Place consequences above as branches, then circle the roots this team can influence."
         }
       ],
-      "failure": "The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.",
-      "intervention": "Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.",
+      "failure": "The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.",
+      "intervention": "Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -435,23 +384,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 30–40 min · beginner",
       "steps": [
         {
-          "text": "Set the timer and have everyone silently write the blockers they hit in this work, one per note."
+          "text": "Set the timer and have everyone silently write the blockers they hit, one per note."
         },
         {
-          "text": "Post, read, and dot-vote the blockers; keep the three the room feels most."
+          "text": "Dot-vote the blockers and keep the top three."
         },
         {
-          "text": "Rewrite each kept blocker as a How Might We question that points at the user's need."
-        },
-        {
-          "text": "Silently add solutions to the reframed questions, then vote again for the strongest."
-        },
-        {
-          "text": "Close by naming the one reframe the group will carry into the next working session."
+          "text": "Reframe each kept blocker as a How Might We, then vote and carry the best reframe forward."
         }
       ],
-      "failure": "The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.",
-      "intervention": "Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.",
+      "failure": "The room votes on blockers but never reframes them, so the session ends with the same complaints.",
+      "intervention": "Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -481,20 +424,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "1–15+ people · 10–15 min · beginner",
       "steps": [
         {
-          "text": "Give each person one sheet folded into eight boxes and state the rule: sixty seconds per box, no exceptions."
+          "text": "Fold each sheet into eight boxes and state the rule: sixty seconds per box, no exceptions."
         },
         {
-          "text": "State the challenge once, then start the clock and call each box aloud so the room keeps pace."
+          "text": "State the challenge once, start the clock, and call each box aloud so the room keeps pace."
         },
         {
-          "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, or inverted."
+          "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, inverted."
         },
         {
-          "text": "Call the final box, stop everyone exactly on time, and collect the sheets without discussing them."
+          "text": "Call the final box, stop everyone on time, and collect the sheets without discussing them."
         }
       ],
-      "failure": "Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.",
-      "intervention": "Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.",
+      "failure": "One polished box and seven blanks: the clock stops driving.",
+      "intervention": "Say: crude boxes are the point; move on unfinished, now.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -528,23 +471,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Reframe the goal as sabotage: ask how to guarantee the failure you fear, and write that question where everyone can see it."
+          "text": "Reframe it as sabotage: how do we guarantee failure?"
         },
         {
-          "text": "Send the room to write anti-solutions on red notes, one failure tactic per note, for a timed eight minutes."
+          "text": "Give eight minutes: red notes, one failure tactic each."
         },
         {
-          "text": "Cluster the notes by failure vector, such as friction, opacity, latency, or overload, and name each cluster aloud."
+          "text": "Cluster red notes by failure vector, then name each."
         },
         {
-          "text": "Invert each cluster into a countermeasure on a green note, and insist on a mechanism rather than a negation."
+          "text": "Turn each cluster into a green mechanism, not a denial."
         },
         {
-          "text": "Post each green note beside the red cluster it answers and read the strongest pair aloud."
+          "text": "Pair each green note with its red cluster; read the best."
         }
       ],
-      "failure": "Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.",
-      "intervention": "Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.",
+      "failure": "Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.",
+      "intervention": "Sabotage is over: one green mechanism per red cluster.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -574,23 +517,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–12 people · 25–40 min · intermediate",
       "steps": [
         {
-          "text": "Arrange seats in a circle and state the rule plainly: sketch, pass left, build, pass left, harden."
+          "text": "Seat a circle; rule: sketch, pass left, build, harden."
         },
         {
-          "text": "Round one: each person seeds a concept in zone one of their sheet, with a headline and a rough sketch."
+          "text": "Seed zone one with a concept, a headline, and a sketch."
         },
         {
-          "text": "Round two: pass left, read the seed, add one enhancement in zone two, and neither erase nor evaluate."
+          "text": "Pass left; add to zone two and never erase or judge."
         },
         {
-          "text": "Round three: pass left again, name the concept's biggest failure point in zone three, and design a patch."
+          "text": "Pass left; name zone three's biggest failure and patch it."
         },
         {
-          "text": "Return each sheet to its originator and have them read the chain of additions aloud to the group."
+          "text": "Return each sheet to its originator and read the chain."
         }
       ],
-      "failure": "Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.",
-      "intervention": "Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.",
+      "failure": "Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.",
+      "intervention": "Say: treat the seed as given, then answer yes-and.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -620,23 +563,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "State the premise: new concepts come from recombining mechanisms that already work in other domains."
+          "text": "State the premise: ideas recombine proven mechanisms."
         },
         {
-          "text": "List several external products and have the room write the mechanism behind each, never its brand or style."
+          "text": "Name each outside product's mechanism, not its brand."
         },
         {
-          "text": "Pair one extracted mechanism with your own customer problem and force a concept out of the collision."
+          "text": "Force one mechanism against your customer problem."
         },
         {
-          "text": "Draft at least three mash-ups, naming the borrowed mechanism and what it changes in your context."
+          "text": "Draft three mash-ups naming the borrowed mechanism."
         },
         {
-          "text": "Present each mash-up as a mechanism transfer, and ask what behavior it changes, not what it looks like."
+          "text": "Present each as a transfer; name the behavior change."
         }
       ],
-      "failure": "Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.",
-      "intervention": "Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.",
+      "failure": "Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.",
+      "intervention": "Ask what behavior it changes, then make that the concept.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -666,23 +609,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 60–90 min · advanced",
       "steps": [
         {
-          "text": "Run four timed beats: silent gathering, rough ideation, eight quick variations, then a three-panel sketch."
+          "text": "Run four timed beats: gather, ideate, riff, then sketch."
         },
         {
-          "text": "First, have everyone review the framing and research silently and take notes without discussion."
+          "text": "Review framing and research silently, taking notes only."
         },
         {
-          "text": "Next, each person diagrams possible flows privately, then pushes the strongest one through eight one-minute riffs."
+          "text": "Diagram flows, then riff the strongest idea eight times."
         },
         {
-          "text": "Finish with a three-panel storyboard that a stranger can follow without a spoken explanation."
+          "text": "Finish with a three-panel storyboard a stranger follows."
         },
         {
-          "text": "Collect the sketches anonymously and hang them side by side for a silent read before any discussion."
+          "text": "Hang the anonymous sketches for a silent read."
         }
       ],
-      "failure": "Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.",
-      "intervention": "Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.",
+      "failure": "Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.",
+      "intervention": "Ask whether a stranger could follow the sketch without you, then add headlines and labels until they can.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -716,23 +659,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "6 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Seat six people, give each a sheet with three columns and five rows, and restate the question on the board."
+          "text": "Seat six people with a three-column, five-row sheet, and restate the question on the board."
         },
         {
-          "text": "For five minutes, each person writes three ideas, one per row, in the first column, in complete silence."
+          "text": "For five silent minutes, have each person write three ideas in the first column."
         },
         {
-          "text": "Pass every sheet one seat to the right, then each person reads it and adds three new ideas in the next column."
-        },
-        {
-          "text": "Repeat for five rounds so every sheet passes through every person and returns to its owner."
-        },
-        {
-          "text": "Collect the sheets, count the ideas, then cluster duplicates and themes before any discussion starts."
+          "text": "Pass right; add three ideas in the next column for five rounds, then count and cluster."
         }
       ],
-      "failure": "Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.",
-      "intervention": "Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.",
+      "failure": "Half-working looks like columns of restatements: people copy the idea above and change one word.",
+      "intervention": "Before each pass, require a different part of the question or a new mechanism, not a rewording.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -762,23 +699,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 45–60 min · advanced",
       "steps": [
         {
-          "text": "Put an existing concept in front of the room and list the seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse."
+          "text": "Put the concept up; name seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse."
         },
         {
-          "text": "Work one prompt at a time, asking what would change in the concept if that verb were mandatory."
+          "text": "Work one prompt at a time, asking what changes if that verb were mandatory, and write one variant."
         },
         {
-          "text": "Write one concrete variant per prompt rather than a general suggestion, keeping the original visible."
-        },
-        {
-          "text": "Group the variants by the prompt that produced them so the room sees which vectors yielded most."
-        },
-        {
-          "text": "Choose the variants worth developing and record the prompt that produced each one."
+          "text": "Group the variants by prompt, then keep the ones worth developing and record each prompt."
         }
       ],
-      "failure": "Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.",
-      "intervention": "Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.",
+      "failure": "Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.",
+      "intervention": "Pick one prompt and force it: state exactly what changes.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -811,20 +742,14 @@ window.FACILITATION_DECK = {
           "text": "Set the challenge, then invert it: ask for the worst possible way to handle it, the more useless the better."
         },
         {
-          "text": "Give a short timed round where people write or call out deliberately terrible ideas without defending them."
+          "text": "Give a short timed round for terrible ideas without defense, then read them aloud and let the room laugh."
         },
         {
-          "text": "Read the worst ideas aloud and let the room laugh; the point is to lower the cost of saying something."
-        },
-        {
-          "text": "For each bad idea, ask what requirement it insults, then write the opposite or the fix it implies."
-        },
-        {
-          "text": "Keep the strongest flips and drop the jokes that carry no requirement."
+          "text": "For each bad idea, name the requirement it insults, write the flip, and keep only what survives."
         }
       ],
-      "failure": "Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.",
-      "intervention": "For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.",
+      "failure": "Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.",
+      "intervention": "Name the need each joke insults, then write the flip.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -854,23 +779,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Name the problem as a function, such as routing, matching, or recovery, and strip out your industry's vocabulary."
+          "text": "Name the problem as a function, such as routing or matching, and strip your industry's vocabulary."
         },
         {
-          "text": "Send people to find how unrelated domains solve that same function, one example per person or pair."
+          "text": "Find how unrelated domains solve that function and extract each mechanism in one sentence."
         },
         {
-          "text": "For each example, extract the mechanism in a sentence: what it does and what makes it work."
-        },
-        {
-          "text": "Map each mechanism onto your problem and write the transfer, naming what changes in your context."
-        },
-        {
-          "text": "Present the transfers as mechanisms, then mark which ones need evidence before the room trusts them."
+          "text": "Map each mechanism onto your problem, write the transfer, and mark what needs evidence."
         }
       ],
-      "failure": "Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.",
-      "intervention": "Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.",
+      "failure": "Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.",
+      "intervention": "Ask what it does structurally, then how we would copy it.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -903,20 +822,14 @@ window.FACILITATION_DECK = {
           "text": "Draw a boat labeled with the product or team, a destination, and an empty sea around it."
         },
         {
-          "text": "Ask people to add anchors for everything slowing progress and engines for everything speeding it up."
+          "text": "Have people add anchors for what slows progress and engines for what speeds it, then explain one of each."
         },
         {
-          "text": "Have each person explain one anchor and one engine, placing the notes on the drawing."
-        },
-        {
-          "text": "Cluster the anchors and engines by theme, then rank which anchors should be cut first."
-        },
-        {
-          "text": "Turn the top anchors into commitments and name the engines the team must protect."
+          "text": "Cluster and rank the anchors, turn the top ones into owned commitments, and name the engines to protect."
         }
       ],
-      "failure": "Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.",
-      "intervention": "Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.",
+      "failure": "Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.",
+      "intervention": "Ask for the two anchors that cost the most progress this month, and assign each one an owner.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -946,23 +859,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Draw two axes: impact on the north-star metric upward, delivery effort rightward. Define what each end means."
+          "text": "Draw the impact and effort axes and define both ends."
         },
         {
-          "text": "Choose one agreed baseline item, then place each card by comparing it with the baseline on impact first."
+          "text": "Place items against one agreed baseline, impact first."
         },
         {
-          "text": "Shift each card horizontally by real effort: build, coordination, review, and risk, not coding hours alone."
+          "text": "Shift by real effort, not coding hours alone."
         },
         {
-          "text": "Push every card off the center line so no item hides in an ambiguous middle position."
+          "text": "Push every card off the center line."
         },
         {
-          "text": "Read the quadrants aloud and name the action each one authorizes: sprint, spike, backlog, or drop."
+          "text": "Read each quadrant and name its action."
         }
       ],
-      "failure": "Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.",
-      "intervention": "Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.",
+      "failure": "Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.",
+      "intervention": "Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -992,23 +905,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Mark four lanes: Must, Should, Could, and Won't. Say that Won't is a protected boundary, not a rejected idea."
+          "text": "Mark four lanes: Must, Should, Could, and Won't."
         },
         {
-          "text": "Define Must aloud: without it the release is canceled or noncompliant, and no workaround exists."
+          "text": "Define Must: no release without it, no workaround."
         },
         {
-          "text": "Review each card in turn. Ask whether a workaround exists; if it does, move the card down one lane."
+          "text": "Demote any card that has a workaround."
         },
         {
-          "text": "Cap Must at about sixty percent of capacity and leave the rest for risk, defects, and Should items."
+          "text": "Cap Must near sixty percent of capacity."
         },
         {
-          "text": "Read the Won't lane back to the room and note what would have to change before anyone reopens it."
+          "text": "Read Won't back and name what would reopen it."
         }
       ],
       "failure": "Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.",
-      "intervention": "Ask for the workaround on the spot. If one exists, demote the card and show how the sixty percent cap protects the date.",
+      "intervention": "Ask for the workaround. If one exists, demote the card and show the sixty percent cap.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1041,23 +954,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15+ people · 10–20 min · beginner",
       "steps": [
         {
-          "text": "Give each person five dots. Explain that all five may go on one idea or be spread across many."
+          "text": "Give each person five dots for the ideas."
         },
         {
-          "text": "Have everyone write their choices privately before approaching the wall, so no one follows a cursor."
+          "text": "Choose privately before anyone reaches the wall."
         },
         {
-          "text": "Walk the wall in silence, place dots on the ideas themselves, and keep comments and gestures to yourself."
+          "text": "Walk the wall silently and place dots without comment."
         },
         {
-          "text": "Step back and circle the three densest clusters, not the cards with the loudest advocates."
+          "text": "Circle the three densest clusters, not the loudest."
         },
         {
-          "text": "Invite those authors to explain the mechanism in one minute each, then open the discussion."
+          "text": "Let each cluster's author explain the mechanism."
         }
       ],
-      "failure": "Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.",
-      "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.",
+      "failure": "Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.",
+      "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1087,23 +1000,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–12 people · 20–35 min · intermediate",
       "steps": [
         {
-          "text": "Give every person one hundred dollars of play budget and require the whole amount to be spent."
+          "text": "Give each person one hundred dollars to spend."
         },
         {
-          "text": "State that allocations are whole dollars across the slate, so every choice costs another option."
+          "text": "Require whole dollars so every choice costs another."
         },
         {
-          "text": "Have people invest silently and independently, then hand in their sheets before any discussion."
+          "text": "Invest silently and independently, then hand in sheets."
         },
         {
-          "text": "Total the sheets and mark broad consensus assets above a quarter of the money, plus single-bidder bets."
+          "text": "Total the sheets and mark consensus and solo bets."
         },
         {
-          "text": "Discuss the outliers and the zeros; a shared zero shows what the group will not fund."
+          "text": "Discuss the outliers and the shared zeros."
         }
       ],
-      "failure": "Peanut-buttering: the budget is split evenly across every item, so no trade-off is made and nothing is ranked.",
-      "intervention": "Reject a flat allocation and require one zero plus at least forty dollars on a single item; ask what that choice reveals.",
+      "failure": "Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.",
+      "intervention": "Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1133,23 +1046,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–12 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Name the two axes driving the deadlock, then check that one does not simply imply the other."
+          "text": "Name the axes; check one does not imply the other."
         },
         {
-          "text": "Label both ends of each axis in plain language and post the labels where the whole room can see them."
+          "text": "Label both ends plainly and post them for the room."
         },
         {
-          "text": "Place each candidate by arguing its position on one axis, then the other, against cards already placed."
+          "text": "Place candidates by arguing each axis in turn."
         },
         {
-          "text": "Rename the quadrants for this decision and say what action each quadrant authorizes."
+          "text": "Rename the quadrants and name each one's action."
         },
         {
-          "text": "Choose at least one high-risk, high-value candidate and name the experiment that would de-risk it."
+          "text": "Pick one high-risk, high-value bet and name its test."
         }
       ],
-      "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.",
-      "intervention": "Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.",
+      "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.",
+      "intervention": "Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1179,23 +1092,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15+ people · 10–15 min · beginner",
       "steps": [
         {
-          "text": "Explain the scale: a fist blocks, one or two means reservations, three agrees, and four or five actively supports."
+          "text": "Explain the scale from fist-block to five-support."
         },
         {
-          "text": "State the proposal in one sentence and give everyone a silent moment to choose a number."
+          "text": "State the proposal, then allow a silent moment."
         },
         {
-          "text": "Count down and reveal together, with eyes closed or screens hidden, so no one reads the room first."
+          "text": "Reveal together and read the lowest hand."
         },
         {
-          "text": "Go to the lowest hand, ask what single change would raise it to three, then revise the proposal."
+          "text": "Ask what single change would raise it to three."
         },
         {
-          "text": "Re-vote once. When no fist or one remains, record the decision as made and stop chasing fives."
+          "text": "Re-vote once, then record the decision."
         }
       ],
-      "failure": "The room chases unanimity, spending the session lifting threes to fives while a real blocker in the corner goes unheard.",
-      "intervention": "Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it to three, then re-vote.",
+      "failure": "The room chases unanimity, spending the session lifting threes to fives while a real blocker goes unheard.",
+      "intervention": "Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1225,19 +1138,13 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 25–40 min · intermediate",
       "steps": [
         {
-          "text": "Post three columns, Now, How, and Wow, and define each in one sentence before anything is sorted."
+          "text": "Post Now, How, and Wow columns and define each."
         },
         {
-          "text": "Read every idea aloud once without debate so the group hears the whole set before judging any of it."
+          "text": "Read every idea aloud once without debate, then sort each by feasibility and breakthrough."
         },
         {
-          "text": "Sort each idea: Now if today's means can deliver it, How if it needs a route, Wow if it changes the offer."
-        },
-        {
-          "text": "For each How item, write the missing capability or experiment that would move it toward Now."
-        },
-        {
-          "text": "Choose one Now to schedule, one How to investigate, and one Wow to prototype, each with an owner."
+          "text": "Choose one Now to schedule, one How to test, and one Wow to prototype, each with an owner."
         }
       ],
       "failure": "Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.",
@@ -1271,23 +1178,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–12 people · 15–25 min · intermediate",
       "steps": [
         {
-          "text": "Show the shortlist and give every participant the same small number of ordinary votes."
+          "text": "Show the shortlist and give everyone ordinary votes."
         },
         {
           "text": "Let people vote silently, then cluster the dots and read the heat back to the room."
         },
         {
-          "text": "Give the decider a fixed set of supervotes worth more than ordinary dots and let them place them openly."
-        },
-        {
-          "text": "Ask the decider to state the decision and its reason in one sentence, naming what the heat changed."
-        },
-        {
-          "text": "Record the decision, the owner, and the next checkpoint so the vote cannot quietly reopen tomorrow."
+          "text": "Give the decider fixed supervotes, then record the decision, the owner, and the next checkpoint."
         }
       ],
       "failure": "The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.",
-      "intervention": "Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides, the record names both.",
+      "intervention": "Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1322,23 +1223,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 20–30 min · advanced",
       "steps": [
         {
-          "text": "List the attributes that genuinely trade against each other, and drop any pair that moves together."
+          "text": "List attributes that genuinely trade against each other."
         },
         {
-          "text": "Draw a slider for each attribute with named ends, then mark the current position as the baseline."
+          "text": "Draw a slider for each attribute with named ends, and mark the current position as baseline."
         },
         {
-          "text": "For each candidate, move the sliders to show what choosing it requires and which attribute it sacrifices."
-        },
-        {
-          "text": "Rank candidates by the sacrifices the group can accept, not by a summed score."
-        },
-        {
-          "text": "Record the final slider settings and the sacrifice accepted for each choice, so the trade-off stays visible."
+          "text": "Move the sliders per candidate to show what each choice sacrifices, then rank by accepted sacrifices."
         }
       ],
       "failure": "Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.",
-      "intervention": "Ask which end each candidate must give up. If the group cannot name a sacrifice, that candidate has not been compared.",
+      "intervention": "Ask which end each candidate must give up. If none can name a sacrifice, it was not compared.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1368,23 +1263,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15 people · 30–45 min · advanced",
       "steps": [
         {
-          "text": "Write three questions on the wall: what is true now, what are we steering toward, and what purpose does this serve?"
+          "text": "Write three questions: now, steering, and purpose."
         },
         {
-          "text": "For each candidate, record current facts under Nu without opinions or forecasts."
+          "text": "Record facts under Nu, then the lever and metric under Steer."
         },
         {
-          "text": "State the steering choice under Steer: the lever the team can actually pull and the metric it moves."
-        },
-        {
-          "text": "State the purpose under Zweck in one sentence, then ask whether the candidate survives a change of purpose."
-        },
-        {
-          "text": "Park any candidate whose three answers do not line up, and give the owner the specific mismatch."
+          "text": "State the purpose under Zweck and park candidates that do not line up."
         }
       ],
-      "failure": "Purpose is recited as a slogan while the now-facts and steering levers stay vague, so every candidate passes.",
-      "intervention": "Ask what would change if the purpose were different. If nothing would, the purpose is decoration and the candidate is unvalidated.",
+      "failure": "Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.",
+      "intervention": "Ask what would change if the purpose were different; if nothing would, the purpose is decoration.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1414,20 +1303,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "4–15+ people · 12–15 min · beginner",
       "steps": [
         {
-          "text": "Pose one question worth the room's attention, then give everyone sixty seconds of silent writing before any talking starts."
+          "text": "Pose one question worth the room's attention, then give everyone a minute of silent writing."
         },
         {
-          "text": "Pair people where they sit and give them two minutes to compare notes and agree on the most urgent shared point."
+          "text": "Give pairs two minutes to agree on one point."
         },
         {
-          "text": "Merge pairs into fours for four minutes; ask them to name the patterns and reduce to one idea the whole room needs."
+          "text": "Have fours spend four minutes finding one pattern."
         },
         {
-          "text": "Harvest in plenary without a round robin: ask who can add a theme not yet heard, and keep taking only new material."
+          "text": "Harvest only themes the room has not heard yet."
         }
       ],
-      "failure": "The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.",
-      "intervention": "Restart the timer and say the first minute is solo: \"When we talk early, the quickest voice sets the frame and the room stops thinking.\"",
+      "failure": "The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.",
+      "intervention": "Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1462,23 +1351,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "6–15+ people · 15–20 min · beginner",
       "steps": [
         {
-          "text": "Open with two questions everyone will answer: the challenge you bring and the asset you offer this group."
+          "text": "Ask two questions: the challenge you bring and the asset you offer this group."
         },
         {
-          "text": "Send people to stand and find a partner they do not work with day to day, then start a four-minute round."
+          "text": "Pair outside your team; chime at two minutes."
         },
         {
-          "text": "Chime at two minutes and have the listener take the floor; close the round after both people have answered."
+          "text": "Re-answer both questions with a new partner."
         },
         {
-          "text": "Run two more rounds with new partners, asking each person to sharpen the same two answers each time."
-        },
-        {
-          "text": "Close by asking a few people what changed in how they described their challenge or their offer."
+          "text": "Run round three with one more partner."
         }
       ],
-      "failure": "One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.",
-      "intervention": "Stop the round on the chime and model the handoff: \"If you are mid-sentence, stop; your partner's two minutes start now.\"",
+      "failure": "One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.",
+      "intervention": "Stop on the chime and model the handoff: if you are mid-sentence, stop; your partner's time starts now.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1513,23 +1399,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–15+ people · 35–50 min · intermediate",
       "steps": [
         {
-          "text": "Invert the goal: ask the room to design the worst possible version of the system, one that guarantees the failure they fear."
+          "text": "Invert the goal: ask the room to design the worst possible system, one that guarantees failure."
         },
         {
-          "text": "Have people draft in silence for two minutes, then build one ruinous list per table for eight minutes."
+          "text": "Draft alone, then build one ruinous list per table."
         },
         {
-          "text": "Audit each item honestly: ask whether the team already does this, even slightly, and mark every yes."
+          "text": "Circle every item we already do, even slightly."
         },
         {
-          "text": "Pick the marked habit doing the most damage and name the first concrete thing to stop."
-        },
-        {
-          "text": "Assign an owner and a date to each cessation; do not replace it with a new improvement project."
+          "text": "Stop the worst habit; name an owner and a date."
         }
       ],
-      "failure": "The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.",
-      "intervention": "Circle an obvious item yourself and say: \"We cannot remove what we will not name. What else here are we pretending we do not do?\"",
+      "failure": "The audit protects feelings, so the room lists habits that describe someone else's organization.",
+      "intervention": "Circle an obvious item yourself and ask the room: what else are we pretending we do not do?",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1559,23 +1442,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15+ people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Form triads and assign one client and two consultants; run three ten-minute rounds so each person takes every role."
+          "text": "Form triads; the client states the challenge."
         },
         {
-          "text": "Give the client two minutes to state the challenge, what has been tried, and where they are stuck; consultants listen only."
+          "text": "Consultants ask facts only; hold all advice."
         },
         {
-          "text": "Allow two minutes of clarifying questions about facts and constraints, then stop all advice until the next beat."
+          "text": "Client turns their back while the consultants discuss for five minutes."
         },
         {
-          "text": "Have the client turn away or mute while the consultants talk to each other for five minutes about the real problem."
-        },
-        {
-          "text": "Turn the client back for one minute to name what was useful and the single next step they will try."
+          "text": "Client names what landed, then one next step; rotate."
         }
       ],
-      "failure": "The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.",
-      "intervention": "Say to the client: \"Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming.\"",
+      "failure": "The client turns around to defend decisions, so consultants manage reactions instead of exploring the problem.",
+      "intervention": "Tell the client: turn back and stay silent; every word you add narrows what they will say.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1610,23 +1490,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "15+ people · 20–30 min · intermediate",
       "steps": [
         {
-          "text": "Give everyone a card: write a bold action for the bottleneck on top and its first step below, with no name."
+          "text": "Each person writes a bold action for the bottleneck and its first step on an unsigned card."
         },
         {
-          "text": "Have them draw five scoring rows on the back, ready to mark each card they see from one to five."
+          "text": "Draw five scoring rows, one per shuffle round."
         },
         {
-          "text": "Run five shuffle rounds: pass cards continuously, stop, read the card in hand, discuss briefly, score privately."
+          "text": "Run five blind rounds, scoring each card 1 to 5."
         },
         {
-          "text": "Keep each round's score hidden from the author and leave earlier scores untouched."
-        },
-        {
-          "text": "Total the five scores and call the countdown from twenty-five down, reading out the highest cards."
+          "text": "Count from 25 down, reading the top-scoring cards."
         }
       ],
-      "failure": "Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.",
-      "intervention": "Say: \"A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale.\"",
+      "failure": "Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.",
+      "intervention": "Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1661,23 +1538,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "4–15 people · 40–50 min · advanced",
       "steps": [
         {
-          "text": "State the purpose the group must achieve and write it where everyone can see it."
+          "text": "State the purpose, then list every rule and habit the group treats as required."
         },
         {
-          "text": "List every rule, policy, and habit the group currently treats as required, one per note."
+          "text": "Split the list into musts and shoulds; test each must by what breaking it would cost."
         },
         {
-          "text": "Separate each item into must or should; move everything that is merely customary to the should pile."
-        },
-        {
-          "text": "Test each must by asking whether breaking it would still let the group achieve the stated purpose."
-        },
-        {
-          "text": "Discard anything that survives the test only by habit, then publish the small set that remains."
+          "text": "Publish the rules that survive; cut the rest."
         }
       ],
-      "failure": "The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.",
-      "intervention": "Hold up one must and ask: \"If we broke this tomorrow, what exactly would fail?\" If no one can name the failure, cut it.",
+      "failure": "Every rule has a defender, so the list stays long and the group leaves with a tidier bureaucracy.",
+      "intervention": "Hold up one rule and ask what exactly would fail if we broke it tomorrow; cut what no one can name.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1712,23 +1583,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "2–15 people · 20–35 min · intermediate",
       "steps": [
         {
-          "text": "Pair people and have one describe an activity or project they care about in a sentence or two."
+          "text": "Pair people; one describes a project they care about and why it matters to them."
         },
         {
-          "text": "Instruct the partner to ask \"Why is that important to you?\" and nothing else for the first rounds."
+          "text": "Ask 'Why does that matter?' of each answer, following the chain through nine whys."
         },
         {
-          "text": "Keep asking why of each answer, following the chain rather than accepting the first reason."
-        },
-        {
-          "text": "Notice when the answer stops being about the task and starts naming a person or value worth serving."
-        },
-        {
-          "text": "Switch roles and run the same chain, then have each person state the purpose they reached in one line."
+          "text": "Switch roles and state the purpose you reached."
         }
       ],
-      "failure": "The partner accepts a general answer like \"because it matters\" and the chain stalls at a slogan instead of reaching a real purpose.",
-      "intervention": "Ask the follow-up once more: \"Why does that matter to you, specifically?\" Keep the silence until the answer gets concrete.",
+      "failure": "The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.",
+      "intervention": "Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1763,23 +1628,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "5–12 people · 45–60 min · beginner",
       "steps": [
         {
-          "text": "State one contentious question and set four rounds: three where only the person holding the object speaks, one open."
+          "text": "Name one contentious question; set four rounds with a talking object in the center."
         },
         {
-          "text": "Place an object in the center and pass it around; each person speaks once per round while others listen."
+          "text": "For three rounds, only the object holder speaks; no replies or side talk."
         },
         {
-          "text": "Forbid cross-talk in the first three rounds: no rebuttals, side conversations, or advice."
-        },
-        {
-          "text": "In round four, open the floor for genuine dialogue, but keep the listening rules visible."
-        },
-        {
-          "text": "Close by asking what each person heard that shifted or deepened their view."
+          "text": "Open round four; ask what shifted your view."
         }
       ],
-      "failure": "Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.",
-      "intervention": "Hold up the talking object and say: \"No replies yet. We are here to understand, not to win; the debate round comes later.\"",
+      "failure": "Cross-talk creeps in, two people debate, and the quiet members stop speaking before the later rounds.",
+      "intervention": "Hold up the object and say no replies yet; we are here to understand, not to win this round.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1814,23 +1673,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "6–15+ people · 45–60 min · advanced",
       "steps": [
         {
-          "text": "Seat one client in front of a circle of advisors and name the challenge they want help with."
+          "text": "Seat one client before a circle; the client describes the challenge and what they have tried."
         },
         {
-          "text": "Give the client two minutes to describe the situation, what they have tried, and what help they need."
+          "text": "Advisors ask clarifying questions, then discuss the problem with each other while the client listens."
         },
         {
-          "text": "Let advisors ask clarifying questions for two minutes; the client answers but hears no advice yet."
-        },
-        {
-          "text": "Have advisors discuss and offer ideas to each other for ten minutes while the client listens and takes notes."
-        },
-        {
-          "text": "Return to the client for three minutes: name what landed, what to discard, and the next step."
+          "text": "Have the client name what landed; then rotate."
         }
       ],
-      "failure": "Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.",
-      "intervention": "Turn the conversation back to the circle: \"Advisors, talk to each other. Client, write only; your turn to answer comes at the end.\"",
+      "failure": "Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.",
+      "intervention": "Tell the advisors to talk to each other; the client only writes until their final turn comes.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1865,23 +1718,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15+ people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Ask the group to list only what happened, one observation per note, with no interpretation or judgment."
+          "text": "List only what happened, one observation per note, with no interpretation or judgment."
         },
         {
-          "text": "Read the observations together and remove anything that already contains a cause or an opinion."
+          "text": "Ask what patterns the observations carry, and record the different readings side by side."
         },
         {
-          "text": "Ask what patterns or meaning the observations carry, and record the different readings side by side."
-        },
-        {
-          "text": "Turn to implications: what does this mean for the work or the people involved?"
-        },
-        {
-          "text": "Finish by naming concrete next actions, owners, and when the group will check them."
+          "text": "Name next actions, owners, and a check-in date."
         }
       ],
-      "failure": "The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.",
-      "intervention": "Point at the observation column and say: \"Before we explain it, what did we actually see? Facts first; meaning next.\"",
+      "failure": "The room jumps to opinions and fixes, so the group argues about interpretations without agreeing on facts.",
+      "intervention": "Point at the observations and ask what we actually saw before anyone explains it; facts first.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -1916,17 +1763,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 20–30 min · beginner",
       "steps": [
         {
-          "text": "Open with the three rules: each task is an observable artifact, each owner is one named person, each date is a calendar date."
+          "text": "State the rules: each task is a visible artifact, each owner a named person, each date a calendar date."
         },
         {
-          "text": "Work through the priority decisions one row at a time, asking for the single owner first, then the exact due date and how it will be proved."
+          "text": "List the priority decisions as rows, one task per row, and name the single owner and exact due date."
         },
         {
-          "text": "Read the finished matrix aloud and confirm each owner has the authority and time to meet the date before anyone leaves."
+          "text": "Read the matrix back and confirm each owner has the authority and time to meet that date."
         }
       ],
-      "failure": "Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.",
-      "intervention": "Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.",
+      "failure": "Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.",
+      "intervention": "At that row, name one driver, call the other a contributor, and replace any soft date with a real one.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1956,20 +1803,20 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 30–45 min · intermediate",
       "steps": [
         {
-          "text": "Frame the canvas as a delivery charter: what the room signs today is what the team will be held to once the workshop ends."
+          "text": "Frame the canvas as a charter the room signs today."
         },
         {
-          "text": "Fill the sections together: scope, resources, review cadence, and the risks that could break the commitment."
+          "text": "Fill scope, resources, review cadence, and the risks that could break the whole commitment."
         },
         {
-          "text": "Write the definition of done as a check that can pass or fail, not as an activity someone will keep working on."
+          "text": "Write done as a check that can pass or fail."
         },
         {
-          "text": "Read the charter back, have each core member sign, and publish it where the team already looks for decisions."
+          "text": "Read it back, have each member sign, and publish it."
         }
       ],
-      "failure": "Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.",
-      "intervention": "Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.",
+      "failure": "Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.",
+      "intervention": "Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -1999,23 +1846,23 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–10 people · 45–60 min · advanced",
       "steps": [
         {
-          "text": "Reframe the feature list as assumptions: each item is a guess about customer behavior that no one has tested yet."
+          "text": "Turn each feature on the canvas into an assumption."
         },
         {
-          "text": "Take the riskiest assumption and write it as a falsifiable hypothesis naming the persona, the action, and the reason."
+          "text": "Write the riskiest as a falsifiable hypothesis."
         },
         {
-          "text": "Choose the cheapest test that could prove it wrong: a landing page, a manual service, or a prototype walkthrough."
+          "text": "Pick the cheapest test that could prove it wrong."
         },
         {
-          "text": "Set the pass threshold before running anything: the exact metric and the number that counts as a result."
+          "text": "Set the metric and the number before the test runs."
         },
         {
-          "text": "Name the decision the result will trigger, so the room knows in advance what a failing test means for the plan."
+          "text": "Name the decision a failing result will trigger."
         }
       ],
-      "failure": "Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.",
-      "intervention": "Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.",
+      "failure": "Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.",
+      "intervention": "Ask for both numbers now: what rate proves the case, and what rate kills it? Write them down first.",
       "provenance": "Source protocol: the steps follow the written script in the source.",
       "sourceProtocol": true,
       "origin": {
@@ -2048,26 +1895,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "1–15+ people · 15–25 min · beginner",
       "steps": [
         {
-          "text": "Ask each person: what is the 15 percent you can do right now, with the authority and resources you already hold?"
+          "text": "Ask each person what 15 percent they can do now with the authority and resources they hold."
         },
         {
-          "text": "Have everyone write one action in silence that needs no budget, no permission, and no one else's decision."
+          "text": "Have everyone write one action in silence that needs no budget, permission, or anyone's decision."
         },
         {
-          "text": "Pair people to read their action aloud and answer one question: what would make it easier to start this week?"
-        },
-        {
-          "text": "Collect the actions on a shared board without ranking or editing them; the point is what is already possible."
-        },
-        {
-          "text": "Ask each person to name the day they will take the first step and what they will notice when it is done."
-        },
-        {
-          "text": "Close by asking what help each person needs from the room, and who in the room can give it."
+          "text": "Share in pairs, then name your first step and help."
         }
       ],
-      "failure": "The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.",
-      "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.",
+      "failure": "The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.",
+      "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without them.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -2102,17 +1940,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–12 people · 30–45 min · beginner",
       "steps": [
         {
-          "text": "Lay the goal out as milestones in order, each one a result the team can see rather than a phase of work."
+          "text": "Lay the goal out as milestones in order, each a result the team can see rather than a phase."
         },
         {
-          "text": "Test every milestone against specific, measurable, achievable, relevant, and time-bound, and rewrite the ones that fail."
+          "text": "Test every milestone against specific, measurable, achievable, relevant, and time-bound, then rewrite."
         },
         {
-          "text": "Put the milestones on a calendar and name the first step each owner takes before the next meeting."
+          "text": "Calendar each milestone and name its first step."
         }
       ],
-      "failure": "Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.",
-      "intervention": "Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.",
+      "failure": "Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.",
+      "intervention": "Take the weakest one and ask for the date, number, and person; without all three, it is a wish.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -2147,20 +1985,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "4–12 people · 45–60 min · intermediate",
       "steps": [
         {
-          "text": "List the decisions or deliverables that need a clear owner before work starts, keeping one per row."
+          "text": "List the decisions or deliverables that each need one clear owner before work starts."
         },
         {
-          "text": "For each row, mark who is responsible for the work and exactly one person accountable for the outcome."
+          "text": "For each row, name who is responsible for the work and exactly one person accountable for it."
         },
         {
-          "text": "Add who must be consulted before the decision and who only needs to be informed after it."
-        },
-        {
-          "text": "Check the map for overload and gaps, then confirm each named person accepts the role they were given."
+          "text": "Check overload, then confirm each person accepts."
         }
       ],
-      "failure": "Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.",
-      "intervention": "Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.",
+      "failure": "Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.",
+      "intervention": "Put one accountable name in every row, and remove anyone marked both who does not do the work.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {
@@ -2190,22 +2025,16 @@ window.FACILITATION_DECK = {
       "atAGlance": "2–10 people · 30–40 min · intermediate",
       "steps": [
         {
-          "text": "Pick the assumption the plan depends on most and would hurt most if it turned out to be wrong."
+          "text": "Pick the assumption the plan depends on most and would hurt most if it turned out wrong."
         },
         {
-          "text": "Rewrite it as a hypothesis with a subject, a predicted behavior, and a measurable outcome."
+          "text": "Rewrite it as a measurable, falsifiable hypothesis."
         },
         {
-          "text": "Design the smallest test that could contradict the hypothesis, using people and tools the team already has."
-        },
-        {
-          "text": "Set the success threshold and the sample size before the test runs, so the result cannot be reinterpreted later."
-        },
-        {
-          "text": "Record the outcome and the decision it supports, then move to the next assumption or stop."
+          "text": "Set the success threshold first, then design the smallest test that could contradict it."
         }
       ],
-      "failure": "A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.",
+      "failure": "A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.",
       "intervention": "Ask what result would prove the assumption wrong, then design the test so that result could actually appear.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
@@ -2236,26 +2065,17 @@ window.FACILITATION_DECK = {
       "atAGlance": "3–15 people · 40–60 min · advanced",
       "steps": [
         {
-          "text": "Name the increment the criteria will cover, so the room is agreeing on the same scope."
+          "text": "Name the increment the criteria cover, then list what must be true before it is finished."
         },
         {
-          "text": "Ask each person to list what must be true before they would call that increment finished."
+          "text": "Turn vague items into pass-or-fail checks, tested against a recent release and its defects."
         },
         {
-          "text": "Cluster the lists and turn vague items into checks someone could run and mark pass or fail."
-        },
-        {
-          "text": "Test the draft against a recent release: would these criteria have caught a defect the team shipped?"
-        },
-        {
-          "text": "Agree the final list, including the evidence each check needs, and publish it where work is tracked."
-        },
-        {
-          "text": "Set a review date and name who may change the definition, so it stays a living standard."
+          "text": "Publish the checks and name who may change them."
         }
       ],
-      "failure": "Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.",
-      "intervention": "Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.",
+      "failure": "Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.",
+      "intervention": "Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.",
       "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
       "sourceProtocol": false,
       "origin": {

@@ -9,23 +9,23 @@
   "atAGlance": "5–12 people · 25–40 min · intermediate",
   "steps": [
     {
-      "text": "Arrange seats in a circle and state the rule plainly: sketch, pass left, build, pass left, harden."
+      "text": "Seat a circle; rule: sketch, pass left, build, harden."
     },
     {
-      "text": "Round one: each person seeds a concept in zone one of their sheet, with a headline and a rough sketch."
+      "text": "Seed zone one with a concept, a headline, and a sketch."
     },
     {
-      "text": "Round two: pass left, read the seed, add one enhancement in zone two, and neither erase nor evaluate."
+      "text": "Pass left; add to zone two and never erase or judge."
     },
     {
-      "text": "Round three: pass left again, name the concept's biggest failure point in zone three, and design a patch."
+      "text": "Pass left; name zone three's biggest failure and patch it."
     },
     {
-      "text": "Return each sheet to its originator and have them read the chain of additions aloud to the group."
+      "text": "Return each sheet to its originator and read the chain."
     }
   ],
-  "failure": "Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.",
-  "intervention": "Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.",
+  "failure": "Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.",
+  "intervention": "Say: treat the seed as given, then answer yes-and.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

@@ -9,23 +9,17 @@
   "atAGlance": "6–15+ people · 45–60 min · advanced",
   "steps": [
     {
-      "text": "Seat one client in front of a circle of advisors and name the challenge they want help with."
+      "text": "Seat one client before a circle; the client describes the challenge and what they have tried."
     },
     {
-      "text": "Give the client two minutes to describe the situation, what they have tried, and what help they need."
+      "text": "Advisors ask clarifying questions, then discuss the problem with each other while the client listens."
     },
     {
-      "text": "Let advisors ask clarifying questions for two minutes; the client answers but hears no advice yet."
-    },
-    {
-      "text": "Have advisors discuss and offer ideas to each other for ten minutes while the client listens and takes notes."
-    },
-    {
-      "text": "Return to the client for three minutes: name what landed, what to discard, and the next step."
+      "text": "Have the client name what landed; then rotate."
     }
   ],
-  "failure": "Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.",
-  "intervention": "Turn the conversation back to the circle: \"Advisors, talk to each other. Client, write only; your turn to answer comes at the end.\"",
+  "failure": "Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.",
+  "intervention": "Tell the advisors to talk to each other; the client only writes until their final turn comes.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

@@ -9,23 +9,23 @@
   "atAGlance": "3–10 people · 45–60 min · advanced",
   "steps": [
     {
-      "text": "Reframe the feature list as assumptions: each item is a guess about customer behavior that no one has tested yet."
+      "text": "Turn each feature on the canvas into an assumption."
     },
     {
-      "text": "Take the riskiest assumption and write it as a falsifiable hypothesis naming the persona, the action, and the reason."
+      "text": "Write the riskiest as a falsifiable hypothesis."
     },
     {
-      "text": "Choose the cheapest test that could prove it wrong: a landing page, a manual service, or a prototype walkthrough."
+      "text": "Pick the cheapest test that could prove it wrong."
     },
     {
-      "text": "Set the pass threshold before running anything: the exact metric and the number that counts as a result."
+      "text": "Set the metric and the number before the test runs."
     },
     {
-      "text": "Name the decision the result will trigger, so the room knows in advance what a failing test means for the plan."
+      "text": "Name the decision a failing result will trigger."
     }
   ],
-  "failure": "Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.",
-  "intervention": "Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.",
+  "failure": "Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.",
+  "intervention": "Ask for both numbers now: what rate proves the case, and what rate kills it? Write them down first.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

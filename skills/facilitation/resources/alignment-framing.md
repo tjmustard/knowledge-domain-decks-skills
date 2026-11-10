@@ -9,7 +9,7 @@
 - **Deliverable:** Bounded problem definition with user impact and business context
 - **At a glance:** 5–15 people · 45–60 min · intermediate
 - **When it goes wrong:** Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.
-- **The fix:** Strip the tool out of the sentence. Ask what happens in the workflow that costs measurable time or money; rewrite it without naming a product.
+- **The fix:** Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-02 — How Might We (HMW)
@@ -17,31 +17,31 @@
 - **Deliverable:** Standardized opportunity statements ready for divergence
 - **At a glance:** 1–15+ people · 15–30 min · beginner
 - **When it goes wrong:** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
-- **The fix:** Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.
+- **The fix:** Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-03 — 5 Whys Root Cause Analysis
 
 - **Deliverable:** Uncovered underlying structural failures rather than symptoms
 - **At a glance:** 1–10 people · 20–30 min · intermediate
-- **When it goes wrong:** The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.
-- **The fix:** Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.
+- **When it goes wrong:** The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.
+- **The fix:** Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-04 — Sailboat Retrospective
 
 - **Deliverable:** Categorized operational anchors, wind, goals, and hidden rocks
 - **At a glance:** 3–15 people · 30–45 min · beginner
-- **When it goes wrong:** Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.
-- **The fix:** Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.
+- **When it goes wrong:** Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.
+- **The fix:** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 
 ## WS-05 — Pre-Mortem Analysis
 
 - **Deliverable:** Comprehensive catalog of catastrophic risks and preventative controls
 - **At a glance:** 5–15 people · 45–60 min · advanced
-- **When it goes wrong:** Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.
-- **The fix:** Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.
+- **When it goes wrong:** Owners defend the plan as each risk is read, so the room rehearses reassurance instead of failure.
+- **The fix:** Say the failure already happened, then ask what collapsed despite the controls and name the risk people avoid.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
 - **Source:** Gary Klein (2007), *Performing a Project Premortem*.
 
@@ -49,38 +49,38 @@
 
 - **Deliverable:** Calibrated baseline expectations and surfaced emotional hazards
 - **At a glance:** 5–15+ people · 20–30 min · beginner
-- **When it goes wrong:** Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.
-- **The fix:** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.
+- **When it goes wrong:** Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.
+- **The fix:** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-07 — User Journey Mapping
 
 - **Deliverable:** End-to-end temporal visualization of user touchpoints and pain points
 - **At a glance:** 3–10 people · 60–90 min · intermediate
-- **When it goes wrong:** The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.
-- **The fix:** Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.
+- **When it goes wrong:** The map lists internal process steps in company language, documenting the organization, not the user.
+- **The fix:** Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-08 — Empathy Mapping
 
 - **Deliverable:** Synthesized user observations across Says, Thinks, Does, and Feels
 - **At a glance:** 3–10 people · 30–45 min · beginner
-- **When it goes wrong:** The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.
-- **The fix:** Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.
+- **When it goes wrong:** The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.
+- **The fix:** Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-09 — Problem Tree Analysis
 
 - **Deliverable:** Hierarchical root-cause, core challenge, and downstream effect tree
 - **At a glance:** 5–15 people · 45–60 min · intermediate
-- **When it goes wrong:** The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.
-- **The fix:** Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.
+- **When it goes wrong:** The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.
+- **The fix:** Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
 
 ## WS-10 — Lightning Decision Jam (Framing)
 
 - **Deliverable:** Rapid identification and re-framing of key operational blockers
 - **At a glance:** 3–10 people · 30–40 min · beginner
-- **When it goes wrong:** The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.
-- **The fix:** Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.
+- **When it goes wrong:** The room votes on blockers but never reframes them, so the session ends with the same complaints.
+- **The fix:** Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

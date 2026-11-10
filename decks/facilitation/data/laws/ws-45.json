@@ -9,17 +9,17 @@
   "atAGlance": "3–12 people · 30–45 min · beginner",
   "steps": [
     {
-      "text": "Lay the goal out as milestones in order, each one a result the team can see rather than a phase of work."
+      "text": "Lay the goal out as milestones in order, each a result the team can see rather than a phase."
     },
     {
-      "text": "Test every milestone against specific, measurable, achievable, relevant, and time-bound, and rewrite the ones that fail."
+      "text": "Test every milestone against specific, measurable, achievable, relevant, and time-bound, then rewrite."
     },
     {
-      "text": "Put the milestones on a calendar and name the first step each owner takes before the next meeting."
+      "text": "Calendar each milestone and name its first step."
     }
   ],
-  "failure": "Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.",
-  "intervention": "Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.",
+  "failure": "Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.",
+  "intervention": "Take the weakest one and ask for the date, number, and person; without all three, it is a wish.",
   "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
   "sourceProtocol": false,
   "origin": {

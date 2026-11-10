@@ -9,23 +9,23 @@
   "atAGlance": "3–12 people · 20–35 min · intermediate",
   "steps": [
     {
-      "text": "Give every person one hundred dollars of play budget and require the whole amount to be spent."
+      "text": "Give each person one hundred dollars to spend."
     },
     {
-      "text": "State that allocations are whole dollars across the slate, so every choice costs another option."
+      "text": "Require whole dollars so every choice costs another."
     },
     {
-      "text": "Have people invest silently and independently, then hand in their sheets before any discussion."
+      "text": "Invest silently and independently, then hand in sheets."
     },
     {
-      "text": "Total the sheets and mark broad consensus assets above a quarter of the money, plus single-bidder bets."
+      "text": "Total the sheets and mark consensus and solo bets."
     },
     {
-      "text": "Discuss the outliers and the zeros; a shared zero shows what the group will not fund."
+      "text": "Discuss the outliers and the shared zeros."
     }
   ],
-  "failure": "Peanut-buttering: the budget is split evenly across every item, so no trade-off is made and nothing is ranked.",
-  "intervention": "Reject a flat allocation and require one zero plus at least forty dollars on a single item; ask what that choice reveals.",
+  "failure": "Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.",
+  "intervention": "Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {

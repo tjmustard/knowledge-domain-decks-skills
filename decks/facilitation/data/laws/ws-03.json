@@ -9,23 +9,17 @@
   "atAGlance": "1–10 people · 20–30 min · intermediate",
   "steps": [
     {
-      "text": "Write the symptom as a fact: what happened, when, how many, and for how long. Agree it first."
+      "text": "Write the symptom as a fact: what happened, when, how many, and for how long it lasted."
     },
     {
-      "text": "Ask why that state was possible, and record the direct enabling condition at each level."
+      "text": "Ask why five times, recording the direct enabling condition, never a person's lapse."
     },
     {
-      "text": "Reject 'a person forgot' as a stopping point; ask what let one action run unchecked."
-    },
-    {
-      "text": "Keep one primary chain, noting plausible side branches in the margin instead of chasing them."
-    },
-    {
-      "text": "Stop when you reach a policy, gate, or architecture choice this team can actually change."
+      "text": "Keep one necessary chain and stop at a policy or architecture choice this team can change."
     }
   ],
-  "failure": "The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.",
-  "intervention": "Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.",
+  "failure": "The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.",
+  "intervention": "Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.",
   "provenance": "Source protocol: the steps follow the written script in the source.",
   "sourceProtocol": true,
   "origin": {
