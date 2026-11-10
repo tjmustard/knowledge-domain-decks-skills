@@ -336,3 +336,335 @@ Every card answers what a leadership team actually argues about - the question t
 - Reward delivery velocity of new revenue, not defence of legacy share.
 
 **Source.** Richard A. D'Aveni (1994). *Hypercompetition: Managing the Dynamics of Strategic Maneuvering*. The Free Press.
+
+## Tech & Dynamics
+
+### S12 — Wardley Mapping
+
+**Diagnosis question.** Is the engineering organization building custom solutions for architectural components that have already evolved into industrialized commodity utilities?
+
+**Schematic.** 2-Axis Topographical Value Chain
+
+**Pressure test.**
+1. Do internal teams rebuild infrastructure that commodity APIs already provide?
+2. Will leadership anticipate the inertia resisting a move to external utilities?
+3. Does the firm see which commodities could fund its genesis-stage capabilities?
+
+**Canvas.** Topographical value landscape plotting Value Chain Visibility along the vertical axis (from direct user need down to underlying infrastructure) against Evolution along the horizontal axis across four phases: Genesis, Custom-Built, Product/Rental, and Commodity/Utility.
+
+**Pressure questions, unabridged.**
+- Are internal engineering teams building and maintaining bespoke infrastructure where standardized open-source or utility APIs exist?
+- Does the executive team anticipate the capital and cultural inertia that will resist shifting internal architectures to external utilities?
+- Does the enterprise recognize which commodity components can serve as the standardized foundation to enable novel Genesis-stage capabilities?
+
+**Actions, unabridged.**
+- Map the primary product architecture into an OnlineWardleyMaps DSL or Mermaid script tracing dependencies to base infrastructure.
+- Identify components in the Custom-Built quadrant and schedule their replacement with external managed services or open-source libraries.
+- Evaluate the 32 climatic patterns to forecast upstream component commoditization over a 24-month horizon.
+
+**Actions.**
+- Map the architecture into a Wardley DSL or Mermaid dependency script.
+- Replace Custom-Built components with managed services or open source.
+- Evaluate the 32 climatic patterns against 24-month commoditization.
+
+**Source.** Simon Wardley (2016). *Wardley Maps*. CC BY-SA 4.0.
+
+### S13 — Disruptive Innovation
+
+**Diagnosis question.** Are market incumbents over-serving mainstream enterprise accounts with high-margin products, leaving low-end and non-consumer segments open to low-cost alternatives?
+
+**Schematic.** Performance vs Time Trajectory
+
+**Pressure test.**
+1. Does leadership dismiss low-end rivals for their deficits and poor margins?
+2. Does the roadmap add enterprise features mainstream users never require?
+3. Could the cost structure survive prices falling to the low-cost alternative?
+
+**Canvas.** Dual Cartesian trajectory plotting Product Performance along the vertical axis against Time along the horizontal axis, displaying customer demand trajectories (Mainstream vs. Low-End) intersected by Sustaining Technology paths and steep Disruptive Technology paths.
+
+**Pressure questions, unabridged.**
+- Does the leadership team dismiss emerging low-end competitors due to their initial feature deficits, low margins, and unappealing customer quality?
+- Does the product roadmap focus on enterprise capabilities that exceed the functional requirements of mainstream users?
+- Can the company’s operating cost structure sustain profitability if unit prices fall to match incoming low-cost alternatives?
+
+**Actions, unabridged.**
+- Analyze feature utilization metrics to identify over-engineering within the core product.
+- Establish an autonomous business unit with an isolated cost structure to pursue non-consumers or lower-tier accounts.
+- Build a simplified product variant that prioritizes ease of deployment and lower costs over comprehensive feature parity.
+
+**Actions.**
+- Analyze feature utilization to find over-engineering in the core product.
+- Give a separate unit its own cost structure to chase non-consumers.
+- Ship a simpler variant: easier to deploy, cheaper, not feature-parity.
+
+**Source.** Clayton M. Christensen (1997). *The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail*. Harvard Business School Press.
+
+### S14 — Three Horizons of Growth
+
+**Diagnosis question.** Is the company compromising its long-term survival by allocating all capital to immediate quarterly operations while neglecting future growth options?
+
+**Schematic.** 3 Overlapping S-Curves
+
+**Pressure test.**
+1. Does H1 governance impose short-term profit rules on early-stage bets?
+2. Are H3 experiments disconnected research without a commercial path?
+3. Do operators raid H2 and H3 to cover a short-term core revenue gap?
+
+**Canvas.** Three overlapping S-curves plotting Value and Profitability against Time across Horizon 1 (Defend and extend core business), Horizon 2 (Scale emerging high-growth businesses), and Horizon 3 (Seed viable future options).
+
+**Pressure questions, unabridged.**
+- Does Horizon 1 governance stifle Horizon 2 and Horizon 3 exploration by enforcing short-term profit requirements on early-stage concepts?
+- Are Horizon 3 exploratory efforts disconnected research projects that lack a viable commercial pathway?
+- Do operational leaders reallocate Horizon 2 and 3 resources to cover short-term revenue deficits in the core business?
+
+**Actions, unabridged.**
+- Audit all active development projects, categorizing budget and engineering allocations across Horizon 1 (70%), Horizon 2 (20%), and Horizon 3 (10%).
+- Establish distinct governance cadences: sprint delivery velocity for H1, customer cohort expansion for H2, and hypothesis validation for H3.
+- Ring-fence exploratory capital to protect it from re-absorption during mid-year budget reallocations.
+
+**Actions.**
+- Audit budget and engineering allocation across H1 70, H2 20, H3 10.
+- Run distinct cadences: delivery for H1, cohorts for H2, hypotheses for H3.
+- Ring-fence exploratory capital against mid-year budget reabsorption.
+
+**Source.** Mehrdad Baghai, Stephen Coley & David White (1999). *The Alchemy of Growth: Kickstarting and Sustaining Growth in Your Company*. McKinsey & Company / Perseus Publishing.
+
+### S15 — Crossing the Chasm
+
+**Diagnosis question.** Has adoption stalled after early success with visionary technology enthusiasts because the product fails to satisfy pragmatic enterprise buyers?
+
+**Schematic.** Segmented Bell Curve with Chasm
+
+**Pressure test.**
+1. Do case studies from visionaries convince pragmatic buyers who trust peers?
+2. Is the whole product built: integrations, certifications, training, support?
+3. Are sales resources spread thin instead of owning one beachhead vertical?
+
+**Canvas.** Technology Adoption Life Cycle bell curve divided into Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%), bisected by a chasm between Early Adopters and the Early Majority.
+
+**Pressure questions, unabridged.**
+- Does the marketing team rely on early adopter case studies to convince pragmatic buyers who only accept references from conservative peers?
+- Has the company built the complete "Whole Product" ecosystem—including integrations, compliance certifications, and training—required by mainstream buyers?
+- Is the enterprise spreading sales resources across multiple segments instead of securing dominant market share within a single beachhead vertical?
+
+**Actions, unabridged.**
+- Identify and focus resources on a specific beachhead market segment where the product addresses a critical business problem.
+- Complete the Whole Product offering by integrating third-party software and enterprise security tooling.
+- Reposition marketing narratives from technical innovation to risk mitigation, operational reliability, and industry compliance.
+
+**Actions.**
+- Focus resources on one beachhead where the product solves a critical problem.
+- Complete the whole product with third-party integrations and security tooling.
+- Reframe marketing from innovation to reliability, compliance and risk.
+
+**Source.** Geoffrey A. Moore (1991). *Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers*. HarperBusiness.
+
+### S16 — S-Curve Life Cycle
+
+**Diagnosis question.** Have internal R&D investments reached a point of diminishing returns along the current technological architecture?
+
+**Schematic.** Sigmoidal Spend vs Benchmarks
+
+**Pressure test.**
+1. Does extra engineering spend now buy negligible performance gain?
+2. Is leadership blaming teams rather than the architecture for the plateau?
+3. Is a lower-performing paradigm with a far higher ceiling being ignored?
+
+**Canvas.** Sigmoidal curve plotting Performance along the vertical axis against Cumulative Engineering Effort/R&D Spend along the horizontal axis, displaying early validation, rapid scaling, performance plateaus, and the emergence of an intersecting next-generation S-curve.
+
+**Pressure questions, unabridged.**
+- Does an incremental capital investment in engineering yield negligible improvements in core product performance metrics?
+- Is leadership misattributing architectural limits to team inefficiency rather than systemic technical constraints?
+- Is the company ignoring a nascent technological paradigm that displays lower initial performance but possesses a substantially higher theoretical ceiling?
+
+**Actions, unabridged.**
+- Calculate the historical ratio of performance improvements relative to engineering spend over the preceding eight quarters.
+- Survey open-source and academic developments that bypass the physical or architectural limits of the current technology stack.
+- Fund an isolated engineering squad to build a prototype using the emerging technology paradigm.
+
+**Actions.**
+- Compute performance gained per engineering dollar over eight quarters.
+- Survey research that bypasses the current stack's physical limits.
+- Fund a small squad to prototype on the emerging paradigm.
+
+**Source.** Richard N. Foster (1986). *Innovation: The Attacker's Advantage*. Summit Books / McKinsey & Company.
+
+### S17 — Attractive Profits Law
+
+**Diagnosis question.** When an integrated product subsystem becomes modularized and commoditized, where do attractive economic profits migrate within the value chain?
+
+**Schematic.** Vertical Value Chain Architecture
+
+**Pressure test.**
+1. Is the firm defending margin in a layer open source is commoditizing?
+2. Does the firm own the interdependent bottleneck downstream users must pass?
+3. Are teams wrapping modular parts without owning the integration points?
+
+**Canvas.** Vertical Value Chain Architecture demonstrating that when a previously proprietary subsystem becomes modular and commoditized, an adjacent proprietary, interdependent subsystem captures the primary industry profits.
+
+**Pressure questions, unabridged.**
+- Is the firm attempting to protect profit margins in a software layer that is rapidly being commoditized by open-source alternatives?
+- Does the organization control the proprietary, interdependent bottleneck that downstream users must utilize to access commoditized components?
+- Are product teams building proprietary wrappers around modular components without owning the underlying integration points?
+
+**Actions, unabridged.**
+- Diagram the full software and delivery stack, classifying every layer as either modular or interdependent.
+- Halt internal proprietary development on modular layers and transition to standard open-source components to reduce delivery costs.
+- Focus capital on controlling the adjacent interdependent bottleneck where economic value is concentrating.
+
+**Actions.**
+- Diagram the stack, marking every layer modular or interdependent.
+- Stop proprietary work on modular layers; adopt standard components.
+- Concentrate capital on the adjacent interdependent bottleneck.
+
+**Source.** Clayton M. Christensen (2003). *The Innovator's Solution: Creating and Sustaining Successful Growth*. Harvard Business School Press.
+
+### S18 — Increasing Returns
+
+**Diagnosis question.** Can small, early market-share advantages be amplified through self-reinforcing mechanisms to establish standard lock-in before competing alternatives mature?
+
+**Schematic.** Non-linear Compounding Feedback
+
+**Pressure test.**
+1. Is diminishing-returns logic being applied to an increasing-returns market?
+2. Which early architectural choice could lock the system into a dead end?
+3. Does scale buy distribution partnerships that widen the gap with rivals?
+
+**Canvas.** Compounding feedback model linking Early Market Share to Higher Expected Utility, Greater R&D Scale, Lower Per-Unit Transaction Costs, Ecosystem Coordination Lock-in, and Category Dominance.
+
+**Pressure questions, unabridged.**
+- Is the company applying diminishing-returns economic logic to a market segment governed by increasing-returns network dynamics?
+- Has the product team identified the early architectural choices that could lock the system into an inflexible technical pathway?
+- Does the enterprise leverage market scale to secure asymmetric distribution partnerships that broaden the gap against rivals?
+
+**Actions, unabridged.**
+- Subsidize initial user acquisition to surpass critical-mass adoption thresholds ahead of competitors.
+- Deliver third-party developer integrations to ensure migration away from the platform carries high financial and operational switching costs.
+- Monitor customer churn among long-standing accounts to detect early indicators of platform decay.
+
+**Actions.**
+- Subsidize acquisition to cross critical mass before rivals do.
+- Ship developer integrations so leaving the platform carries real switching cost.
+- Watch churn among long-standing accounts for signs of platform decay.
+
+**Source.** W. Brian Arthur (1994). *Increasing Returns and Path Dependence in the Economy*. University of Michigan Press.
+
+### S19 — Gartner Hype Cycle
+
+**Diagnosis question.** Is the leadership team deploying capital at the peak of inflated expectations, or divesting during the trough of disillusionment right before practical enterprise utility scales?
+
+**Schematic.** 5-Phase Expectation Wave
+
+**Pressure test.**
+1. Is the roadmap built on validated workflows, or on vendor-driven enthusiasm?
+2. Can reserves carry the company through the consolidation phase?
+3. Do concrete milestones mark the move from hype to practical enterprise utility?
+
+**Canvas.** Non-linear trajectory plotting Visibility and Expectations along the vertical axis against Time along the horizontal axis through five phases: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity.
+
+**Pressure questions, unabridged.**
+- Is current product development based on validated customer workflows or on speculative market enthusiasm driven by vendor marketing?
+- Has the company retained sufficient capital reserves to operate through the industry consolidation phase?
+- Has the team established concrete operational milestones to verify when the technology transitions from early hype into practical enterprise utility?
+
+**Actions, unabridged.**
+- Audit technology investments against Amara’s Law: balance short-term over-investment with long-term capital allocation for structural changes.
+- Shift product metrics from speculative vanity indicators to customer cost-per-transaction and operational ROI.
+- Acquire distressed intellectual property or recruit specialized engineering talent during the trough of disillusionment.
+
+**Actions.**
+- Weigh investments against Amara's Law: short-term hype, long-term shift.
+- Move metrics from vanity indicators to cost per transaction and ROI.
+- Buy distressed IP or hire specialized talent during the trough.
+
+**Source.** Jackie Fenn (1995). Gartner Group.
+
+### S20 — Conway’s Law / IMC
+
+**Diagnosis question.** Are rigid internal communication structures forcing the production of fragmented, monolithic software architectures that slow delivery velocity?
+
+**Schematic.** Bipartite Org-to-Code Alignment
+
+**Pressure test.**
+1. Does the architecture mirror old org hierarchy rather than user value flow?
+2. Are squads blocked by shared databases and a monolithic codebase?
+3. Will leadership restructure teams to force services to decouple?
+
+**Canvas.** Bipartite mapping model showing Organizational Communication Topologies (team reporting lines, organizational boundaries) directly mirrored in Software System Topologies (service boundaries, API interfaces).
+
+**Pressure questions, unabridged.**
+- Does the software architecture reflect historical corporate hierarchy rather than the natural flow of user value?
+- Are independent engineering squads delayed by cross-team synchronization bottlenecks caused by shared databases and monolithic codebases?
+- Is executive leadership prepared to restructure teams and reporting lines to force software services to decouple into modular architectures?
+
+**Actions, unabridged.**
+- Restructure engineering squads to map directly to bounded product domains and strategic business capabilities.
+- Implement contract-driven API boundaries between teams to eliminate synchronous coordination meetings and cross-team dependencies.
+- Audit pull requests to verify that squads operate autonomously without modifying external codebases.
+
+**Actions.**
+- Map squads directly to bounded product domains and capabilities.
+- Put contract-driven APIs between teams to end synchronous coordination.
+- Audit pull requests for squads editing other teams' code.
+
+**Source.** Melvin E. Conway (1968). *How Do Committees Invent?* Datamation.
+
+### S21 — Cynefin Framework
+
+**Diagnosis question.** Is executive leadership misapplying linear, predictive planning models to complex or chaotic operational problems?
+
+**Schematic.** 5-Domain Sensemaking Topology
+
+**Pressure test.**
+1. Is exhaustive analysis being used to force certainty in a Complex domain?
+2. Are standard procedures being applied where probing is required?
+3. In a crisis, does leadership deliberate instead of acting to stabilize?
+
+**Canvas.** Five-domain sensemaking topology mapping Clear (Sense-Categorize-Respond), Complicated (Sense-Analyze-Respond), Complex (Probe-Sense-Respond), Chaotic (Act-Sense-Respond), and Confused/Disorder at the center.
+
+**Pressure questions, unabridged.**
+- Is management attempting to use exhaustive analysis to create certainty in a Complex domain that requires empirical probing and experimentation?
+- Are standard operating procedures being applied to complex challenges, introducing rigid bureaucratic processes into emergent execution environments?
+- When an operational crisis occurs, does leadership deliberate instead of taking immediate stabilizing actions to exit the Chaotic domain?
+
+**Actions, unabridged.**
+- Categorize all active strategic initiatives into Clear, Complicated, Complex, and Chaotic domains during executive planning.
+- Design safe-to-fail experiments with predefined termination criteria for every initiative identified as Complex.
+- Establish standard operating procedures and deterministic automation for all capabilities located within the Clear domain.
+
+**Actions.**
+- Sort every initiative into Clear, Complicated, Complex or Chaotic.
+- Design safe-to-fail experiments with predefined stopping criteria.
+- Automate the Clear domain with standard procedures and deterministic runs.
+
+**Source.** Dave Snowden & Mary E. Boone (2007). *A Leader's Framework for Decision Making*. Harvard Business Review.
+
+### S22 — Systems Archetypes
+
+**Diagnosis question.** Is rapid early growth encountering an unseen internal constraint, or are quick fixes eroding the underlying operational capabilities of the business?
+
+**Schematic.** Closed Causal Loop Diagrams (CLD)
+
+**Pressure test.**
+1. Does slowing acquisition trigger more paid spend instead of fixing the product?
+2. Do stopgap workarounds quietly weaken core technical capability?
+3. Which balancing loops will bind when transaction volume triples?
+
+**Canvas.** Closed-loop causal loop diagram (CLD) showing a Reinforcing Growth Loop (R) counteracted by a Balancing Constraint Loop (B), alongside a Shifting the Burden archetype where a symptomatic solution undermines the fundamental solution.
+
+**Pressure questions, unabridged.**
+- Does the leadership team respond to slowing user acquisition by investing more in paid acquisition rather than resolving core product bottlenecks?
+- Is the company relying on temporary operational workarounds that weaken core technical and operational capabilities over time?
+- Has the team identified the secondary balancing loops that will constrain capacity when transaction volume triples?
+
+**Actions, unabridged.**
+- Diagram the causal feedback loops linking reinforcing growth drivers to emerging capacity and support constraints.
+- Reallocate capital from short-term customer acquisition incentives directly into resolving the primary operational bottleneck.
+- Establish automated alerts for early indicators of system stress, such as customer support escalation rates and database query latencies.
+
+**Actions.**
+- Diagram the loops that tie growth drivers to capacity constraints.
+- Move capital from acquisition incentives into the core bottleneck.
+- Alert on early stress: support escalations, query latency, error rates.
+
+**Source.** Jay W. Forrester (1961). *Industrial Dynamics*. MIT Press.

@@ -1,0 +1,50 @@
+{
+  "id": "S13",
+  "name": "Disruptive Innovation",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Are market incumbents over-serving mainstream enterprise accounts with high-margin products, leaving low-end and non-consumer segments open to low-cost alternatives?",
+  "schematic": "Performance vs Time Trajectory",
+  "canvas": "Dual Cartesian trajectory plotting Product Performance along the vertical axis against Time along the horizontal axis, displaying customer demand trajectories (Mainstream vs. Low-End) intersected by Sustaining Technology paths and steep Disruptive Technology paths.",
+  "stressTest": [
+    {
+      "text": "Does leadership dismiss low-end rivals for their deficits and poor margins?"
+    },
+    {
+      "text": "Does the roadmap add enterprise features mainstream users never require?"
+    },
+    {
+      "text": "Could the cost structure survive prices falling to the low-cost alternative?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the leadership team dismiss emerging low-end competitors due to their initial feature deficits, low margins, and unappealing customer quality?",
+    "Does the product roadmap focus on enterprise capabilities that exceed the functional requirements of mainstream users?",
+    "Can the company’s operating cost structure sustain profitability if unit prices fall to match incoming low-cost alternatives?"
+  ],
+  "checklist": [
+    "Analyze feature utilization to find over-engineering in the core product.",
+    "Give a separate unit its own cost structure to chase non-consumers.",
+    "Ship a simpler variant: easier to deploy, cheaper, not feature-parity."
+  ],
+  "checklistFull": [
+    "Analyze feature utilization metrics to identify over-engineering within the core product.",
+    "Establish an autonomous business unit with an isolated cost structure to pursue non-consumers or lower-tier accounts.",
+    "Build a simplified product variant that prioritizes ease of deployment and lower costs over comprehensive feature parity."
+  ],
+  "origin": {
+    "authors": [
+      "Clayton M. Christensen"
+    ],
+    "year": 1997,
+    "title": "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail",
+    "publication": "Harvard Business School Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_trajectory",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

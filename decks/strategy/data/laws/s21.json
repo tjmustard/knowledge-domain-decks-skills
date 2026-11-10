@@ -1,0 +1,51 @@
+{
+  "id": "S21",
+  "name": "Cynefin Framework",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Is executive leadership misapplying linear, predictive planning models to complex or chaotic operational problems?",
+  "schematic": "5-Domain Sensemaking Topology",
+  "canvas": "Five-domain sensemaking topology mapping Clear (Sense-Categorize-Respond), Complicated (Sense-Analyze-Respond), Complex (Probe-Sense-Respond), Chaotic (Act-Sense-Respond), and Confused/Disorder at the center.",
+  "stressTest": [
+    {
+      "text": "Is exhaustive analysis being used to force certainty in a Complex domain?"
+    },
+    {
+      "text": "Are standard procedures being applied where probing is required?"
+    },
+    {
+      "text": "In a crisis, does leadership deliberate instead of acting to stabilize?"
+    }
+  ],
+  "stressTestFull": [
+    "Is management attempting to use exhaustive analysis to create certainty in a Complex domain that requires empirical probing and experimentation?",
+    "Are standard operating procedures being applied to complex challenges, introducing rigid bureaucratic processes into emergent execution environments?",
+    "When an operational crisis occurs, does leadership deliberate instead of taking immediate stabilizing actions to exit the Chaotic domain?"
+  ],
+  "checklist": [
+    "Sort every initiative into Clear, Complicated, Complex or Chaotic.",
+    "Design safe-to-fail experiments with predefined stopping criteria.",
+    "Automate the Clear domain with standard procedures and deterministic runs."
+  ],
+  "checklistFull": [
+    "Categorize all active strategic initiatives into Clear, Complicated, Complex, and Chaotic domains during executive planning.",
+    "Design safe-to-fail experiments with predefined termination criteria for every initiative identified as Complex.",
+    "Establish standard operating procedures and deterministic automation for all capabilities located within the Clear domain."
+  ],
+  "origin": {
+    "authors": [
+      "Dave Snowden",
+      "Mary E. Boone"
+    ],
+    "year": 2007,
+    "title": "A Leader's Framework for Decision Making",
+    "publication": "Harvard Business Review"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "topology",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

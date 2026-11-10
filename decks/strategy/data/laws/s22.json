@@ -1,0 +1,50 @@
+{
+  "id": "S22",
+  "name": "Systems Archetypes",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Is rapid early growth encountering an unseen internal constraint, or are quick fixes eroding the underlying operational capabilities of the business?",
+  "schematic": "Closed Causal Loop Diagrams (CLD)",
+  "canvas": "Closed-loop causal loop diagram (CLD) showing a Reinforcing Growth Loop (R) counteracted by a Balancing Constraint Loop (B), alongside a Shifting the Burden archetype where a symptomatic solution undermines the fundamental solution.",
+  "stressTest": [
+    {
+      "text": "Does slowing acquisition trigger more paid spend instead of fixing the product?"
+    },
+    {
+      "text": "Do stopgap workarounds quietly weaken core technical capability?"
+    },
+    {
+      "text": "Which balancing loops will bind when transaction volume triples?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the leadership team respond to slowing user acquisition by investing more in paid acquisition rather than resolving core product bottlenecks?",
+    "Is the company relying on temporary operational workarounds that weaken core technical and operational capabilities over time?",
+    "Has the team identified the secondary balancing loops that will constrain capacity when transaction volume triples?"
+  ],
+  "checklist": [
+    "Diagram the loops that tie growth drivers to capacity constraints.",
+    "Move capital from acquisition incentives into the core bottleneck.",
+    "Alert on early stress: support escalations, query latency, error rates."
+  ],
+  "checklistFull": [
+    "Diagram the causal feedback loops linking reinforcing growth drivers to emerging capacity and support constraints.",
+    "Reallocate capital from short-term customer acquisition incentives directly into resolving the primary operational bottleneck.",
+    "Establish automated alerts for early indicators of system stress, such as customer support escalation rates and database query latencies."
+  ],
+  "origin": {
+    "authors": [
+      "Jay W. Forrester"
+    ],
+    "year": 1961,
+    "title": "Industrial Dynamics",
+    "publication": "MIT Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "feedback_loop",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}

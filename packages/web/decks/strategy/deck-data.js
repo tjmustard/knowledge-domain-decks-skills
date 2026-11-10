@@ -604,6 +604,591 @@ window.STRATEGY_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S12",
+      "name": "Wardley Mapping",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Is the engineering organization building custom solutions for architectural components that have already evolved into industrialized commodity utilities?",
+      "schematic": "2-Axis Topographical Value Chain",
+      "canvas": "Topographical value landscape plotting Value Chain Visibility along the vertical axis (from direct user need down to underlying infrastructure) against Evolution along the horizontal axis across four phases: Genesis, Custom-Built, Product/Rental, and Commodity/Utility.",
+      "stressTest": [
+        {
+          "text": "Do internal teams rebuild infrastructure that commodity APIs already provide?"
+        },
+        {
+          "text": "Will leadership anticipate the inertia resisting a move to external utilities?"
+        },
+        {
+          "text": "Does the firm see which commodities could fund its genesis-stage capabilities?"
+        }
+      ],
+      "stressTestFull": [
+        "Are internal engineering teams building and maintaining bespoke infrastructure where standardized open-source or utility APIs exist?",
+        "Does the executive team anticipate the capital and cultural inertia that will resist shifting internal architectures to external utilities?",
+        "Does the enterprise recognize which commodity components can serve as the standardized foundation to enable novel Genesis-stage capabilities?"
+      ],
+      "checklist": [
+        "Map the architecture into a Wardley DSL or Mermaid dependency script.",
+        "Replace Custom-Built components with managed services or open source.",
+        "Evaluate the 32 climatic patterns against 24-month commoditization."
+      ],
+      "checklistFull": [
+        "Map the primary product architecture into an OnlineWardleyMaps DSL or Mermaid script tracing dependencies to base infrastructure.",
+        "Identify components in the Custom-Built quadrant and schedule their replacement with external managed services or open-source libraries.",
+        "Evaluate the 32 climatic patterns to forecast upstream component commoditization over a 24-month horizon."
+      ],
+      "origin": {
+        "authors": [
+          "Simon Wardley"
+        ],
+        "year": 2016,
+        "title": "Wardley Maps",
+        "publication": "CC BY-SA 4.0",
+        "authorsLabel": "Simon Wardley",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "value_chain",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"130\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"130\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"200\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"188\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258\" y1=\"200\" x2=\"270\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S13",
+      "name": "Disruptive Innovation",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Are market incumbents over-serving mainstream enterprise accounts with high-margin products, leaving low-end and non-consumer segments open to low-cost alternatives?",
+      "schematic": "Performance vs Time Trajectory",
+      "canvas": "Dual Cartesian trajectory plotting Product Performance along the vertical axis against Time along the horizontal axis, displaying customer demand trajectories (Mainstream vs. Low-End) intersected by Sustaining Technology paths and steep Disruptive Technology paths.",
+      "stressTest": [
+        {
+          "text": "Does leadership dismiss low-end rivals for their deficits and poor margins?"
+        },
+        {
+          "text": "Does the roadmap add enterprise features mainstream users never require?"
+        },
+        {
+          "text": "Could the cost structure survive prices falling to the low-cost alternative?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the leadership team dismiss emerging low-end competitors due to their initial feature deficits, low margins, and unappealing customer quality?",
+        "Does the product roadmap focus on enterprise capabilities that exceed the functional requirements of mainstream users?",
+        "Can the company’s operating cost structure sustain profitability if unit prices fall to match incoming low-cost alternatives?"
+      ],
+      "checklist": [
+        "Analyze feature utilization to find over-engineering in the core product.",
+        "Give a separate unit its own cost structure to chase non-consumers.",
+        "Ship a simpler variant: easier to deploy, cheaper, not feature-parity."
+      ],
+      "checklistFull": [
+        "Analyze feature utilization metrics to identify over-engineering within the core product.",
+        "Establish an autonomous business unit with an isolated cost structure to pursue non-consumers or lower-tier accounts.",
+        "Build a simplified product variant that prioritizes ease of deployment and lower costs over comprehensive feature parity."
+      ],
+      "origin": {
+        "authors": [
+          "Clayton M. Christensen"
+        ],
+        "year": 1997,
+        "title": "The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail",
+        "publication": "Harvard Business School Press",
+        "authorsLabel": "Clayton M. Christensen",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_trajectory",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"109.333333\" y1=\"332\" x2=\"109.333333\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"332\" x2=\"200\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290.666667\" y1=\"332\" x2=\"290.666667\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"265\" x2=\"70\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"131\" x2=\"70\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"278.4\" x2=\"75.333333\" y2=\"275.05\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"75.333333\" y1=\"275.05\" x2=\"86.666667\" y2=\"271.7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"86.666667\" y1=\"271.7\" x2=\"98\" y2=\"268.35\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"268.35\" x2=\"109.333333\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"109.333333\" y1=\"265\" x2=\"120.666667\" y2=\"261.65\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120.666667\" y1=\"261.65\" x2=\"132\" y2=\"258.3\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"258.3\" x2=\"143.333333\" y2=\"254.95\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.333333\" y1=\"254.95\" x2=\"154.666667\" y2=\"251.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"251.6\" x2=\"166\" y2=\"248.25\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"248.25\" x2=\"177.333333\" y2=\"244.9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"177.333333\" y1=\"244.9\" x2=\"188.666667\" y2=\"241.55\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"188.666667\" y1=\"241.55\" x2=\"200\" y2=\"238.2\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"238.2\" x2=\"211.333333\" y2=\"234.85\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"211.333333\" y1=\"234.85\" x2=\"222.666667\" y2=\"231.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222.666667\" y1=\"231.5\" x2=\"234\" y2=\"228.15\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"228.15\" x2=\"245.333333\" y2=\"224.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.333333\" y1=\"224.8\" x2=\"256.666667\" y2=\"221.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"256.666667\" y1=\"221.45\" x2=\"268\" y2=\"218.1\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"218.1\" x2=\"279.333333\" y2=\"214.75\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"279.333333\" y1=\"214.75\" x2=\"290.666667\" y2=\"211.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290.666667\" y1=\"211.4\" x2=\"302\" y2=\"208.05\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"208.05\" x2=\"313.333333\" y2=\"204.7\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"313.333333\" y1=\"204.7\" x2=\"324.666667\" y2=\"201.35\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324.666667\" y1=\"201.35\" x2=\"336\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"299.84\" x2=\"75.333333\" y2=\"299.430556\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"75.333333\" y1=\"299.430556\" x2=\"86.666667\" y2=\"298.202222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"86.666667\" y1=\"298.202222\" x2=\"98\" y2=\"296.155\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"296.155\" x2=\"109.333333\" y2=\"293.288889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"109.333333\" y1=\"293.288889\" x2=\"120.666667\" y2=\"289.603889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120.666667\" y1=\"289.603889\" x2=\"132\" y2=\"285.1\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"285.1\" x2=\"143.333333\" y2=\"279.777222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.333333\" y1=\"279.777222\" x2=\"154.666667\" y2=\"273.635556\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"273.635556\" x2=\"166\" y2=\"266.675\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"266.675\" x2=\"177.333333\" y2=\"258.895556\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"177.333333\" y1=\"258.895556\" x2=\"188.666667\" y2=\"250.297222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"188.666667\" y1=\"250.297222\" x2=\"200\" y2=\"240.88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"240.88\" x2=\"211.333333\" y2=\"230.643889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"211.333333\" y1=\"230.643889\" x2=\"222.666667\" y2=\"219.588889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222.666667\" y1=\"219.588889\" x2=\"234\" y2=\"207.715\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"207.715\" x2=\"245.333333\" y2=\"195.022222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.333333\" y1=\"195.022222\" x2=\"256.666667\" y2=\"181.510556\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"256.666667\" y1=\"181.510556\" x2=\"268\" y2=\"167.18\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"167.18\" x2=\"279.333333\" y2=\"152.030556\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"279.333333\" y1=\"152.030556\" x2=\"290.666667\" y2=\"136.062222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290.666667\" y1=\"136.062222\" x2=\"302\" y2=\"119.275\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"119.275\" x2=\"313.333333\" y2=\"101.668889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"313.333333\" y1=\"101.668889\" x2=\"324.666667\" y2=\"83.243889\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324.666667\" y1=\"83.243889\" x2=\"336\" y2=\"64\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S14",
+      "name": "Three Horizons of Growth",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Is the company compromising its long-term survival by allocating all capital to immediate quarterly operations while neglecting future growth options?",
+      "schematic": "3 Overlapping S-Curves",
+      "canvas": "Three overlapping S-curves plotting Value and Profitability against Time across Horizon 1 (Defend and extend core business), Horizon 2 (Scale emerging high-growth businesses), and Horizon 3 (Seed viable future options).",
+      "stressTest": [
+        {
+          "text": "Does H1 governance impose short-term profit rules on early-stage bets?"
+        },
+        {
+          "text": "Are H3 experiments disconnected research without a commercial path?"
+        },
+        {
+          "text": "Do operators raid H2 and H3 to cover a short-term core revenue gap?"
+        }
+      ],
+      "stressTestFull": [
+        "Does Horizon 1 governance stifle Horizon 2 and Horizon 3 exploration by enforcing short-term profit requirements on early-stage concepts?",
+        "Are Horizon 3 exploratory efforts disconnected research projects that lack a viable commercial pathway?",
+        "Do operational leaders reallocate Horizon 2 and 3 resources to cover short-term revenue deficits in the core business?"
+      ],
+      "checklist": [
+        "Audit budget and engineering allocation across H1 70, H2 20, H3 10.",
+        "Run distinct cadences: delivery for H1, cohorts for H2, hypotheses for H3.",
+        "Ring-fence exploratory capital against mid-year budget reabsorption."
+      ],
+      "checklistFull": [
+        "Audit all active development projects, categorizing budget and engineering allocations across Horizon 1 (70%), Horizon 2 (20%), and Horizon 3 (10%).",
+        "Establish distinct governance cadences: sprint delivery velocity for H1, customer cohort expansion for H2, and hypothesis validation for H3.",
+        "Ring-fence exploratory capital to protect it from re-absorption during mid-year budget reallocations."
+      ],
+      "origin": {
+        "authors": [
+          "Mehrdad Baghai",
+          "Stephen Coley",
+          "David White"
+        ],
+        "year": 1999,
+        "title": "The Alchemy of Growth: Kickstarting and Sustaining Growth in Your Company",
+        "publication": "McKinsey & Company / Perseus Publishing",
+        "authorsLabel": "Mehrdad Baghai, Stephen Coley & David White",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_multis",
+          "columns": 3,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"109.333333\" y1=\"332\" x2=\"109.333333\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"332\" x2=\"200\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290.666667\" y1=\"332\" x2=\"290.666667\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"287.333333\" x2=\"70\" y2=\"287.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"198\" x2=\"70\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"108.666667\" x2=\"70\" y2=\"108.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"302.762052\" x2=\"73.714286\" y2=\"286.980927\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"73.714286\" y1=\"286.980927\" x2=\"83.428571\" y2=\"265.069708\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83.428571\" y1=\"265.069708\" x2=\"93.142857\" y2=\"237.03589\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"93.142857\" y1=\"237.03589\" x2=\"102.857143\" y2=\"204.694422\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"102.857143\" y1=\"204.694422\" x2=\"112.571429\" y2=\"171.551707\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.571429\" y1=\"171.551707\" x2=\"122.285714\" y2=\"141.465533\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"122.285714\" y1=\"141.465533\" x2=\"132\" y2=\"117.014718\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"117.014718\" x2=\"141.714286\" y2=\"98.869071\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"141.714286\" y1=\"98.869071\" x2=\"151.428571\" y2=\"86.290283\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"151.428571\" y1=\"86.290283\" x2=\"161.142857\" y2=\"77.977155\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"161.142857\" y1=\"77.977155\" x2=\"170.857143\" y2=\"72.655185\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.857143\" y1=\"72.655185\" x2=\"180.571429\" y2=\"69.317202\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.571429\" y1=\"69.317202\" x2=\"190.285714\" y2=\"67.250421\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.285714\" y1=\"67.250421\" x2=\"200\" y2=\"65.980933\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"65.980933\" x2=\"209.714286\" y2=\"65.205001\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.714286\" y1=\"65.205001\" x2=\"219.428571\" y2=\"64.732165\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.428571\" y1=\"64.732165\" x2=\"229.142857\" y2=\"64.444559\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.142857\" y1=\"64.444559\" x2=\"238.857143\" y2=\"64.269815\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"238.857143\" y1=\"64.269815\" x2=\"248.571429\" y2=\"64.163716\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248.571429\" y1=\"64.163716\" x2=\"258.285714\" y2=\"64.099322\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258.285714\" y1=\"64.099322\" x2=\"268\" y2=\"64.060251\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"64.060251\" x2=\"277.714286\" y2=\"64.036547\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"277.714286\" y1=\"64.036547\" x2=\"287.428571\" y2=\"64.022168\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.428571\" y1=\"64.022168\" x2=\"297.142857\" y2=\"64.013446\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"297.142857\" y1=\"64.013446\" x2=\"306.857143\" y2=\"64.008156\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"306.857143\" y1=\"64.008156\" x2=\"316.571429\" y2=\"64.004947\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"316.571429\" y1=\"64.004947\" x2=\"326.285714\" y2=\"64.003\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326.285714\" y1=\"64.003\" x2=\"336\" y2=\"64.00182\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"329.503323\" x2=\"73.714286\" y2=\"327.908403\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"73.714286\" y1=\"327.908403\" x2=\"83.428571\" y2=\"325.320254\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83.428571\" y1=\"325.320254\" x2=\"93.142857\" y2=\"321.162197\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"93.142857\" y1=\"321.162197\" x2=\"102.857143\" y2=\"314.588263\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"102.857143\" y1=\"314.588263\" x2=\"112.571429\" y2=\"304.453881\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.571429\" y1=\"304.453881\" x2=\"122.285714\" y2=\"289.42308\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"122.285714\" y1=\"289.42308\" x2=\"132\" y2=\"268.361248\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"268.361248\" x2=\"141.714286\" y2=\"241.082707\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"141.714286\" y1=\"241.082707\" x2=\"151.428571\" y2=\"209.14089\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"151.428571\" y1=\"209.14089\" x2=\"161.142857\" y2=\"175.871185\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"161.142857\" y1=\"175.871185\" x2=\"170.857143\" y2=\"145.188112\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.857143\" y1=\"145.188112\" x2=\"180.571429\" y2=\"119.907085\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.571429\" y1=\"119.907085\" x2=\"190.285714\" y2=\"100.941564\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.285714\" y1=\"100.941564\" x2=\"200\" y2=\"87.691113\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"87.691113\" x2=\"209.714286\" y2=\"78.887202\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.714286\" y1=\"78.887202\" x2=\"219.428571\" y2=\"73.231312\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.428571\" y1=\"73.231312\" x2=\"229.142857\" y2=\"69.676002\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.142857\" y1=\"69.676002\" x2=\"238.857143\" y2=\"67.471599\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"238.857143\" y1=\"67.471599\" x2=\"248.571429\" y2=\"66.116418\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248.571429\" y1=\"66.116418\" x2=\"258.285714\" y2=\"65.287674\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258.285714\" y1=\"65.287674\" x2=\"268\" y2=\"64.782493\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"64.782493\" x2=\"277.714286\" y2=\"64.475152\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"277.714286\" y1=\"64.475152\" x2=\"287.428571\" y2=\"64.288395\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.428571\" y1=\"64.288395\" x2=\"297.142857\" y2=\"64.174995\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"297.142857\" y1=\"64.174995\" x2=\"306.857143\" y2=\"64.106167\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"306.857143\" y1=\"64.106167\" x2=\"316.571429\" y2=\"64.064404\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"316.571429\" y1=\"64.064404\" x2=\"326.285714\" y2=\"64.039066\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326.285714\" y1=\"64.039066\" x2=\"336\" y2=\"64.023696\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"331.806614\" x2=\"73.714286\" y2=\"331.68131\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"73.714286\" y1=\"331.68131\" x2=\"83.428571\" y2=\"331.474974\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"83.428571\" y1=\"331.474974\" x2=\"93.142857\" y2=\"331.135477\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"93.142857\" y1=\"331.135477\" x2=\"102.857143\" y2=\"330.577619\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"102.857143\" y1=\"330.577619\" x2=\"112.571429\" y2=\"329.662937\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.571429\" y1=\"329.662937\" x2=\"122.285714\" y2=\"328.16851\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"122.285714\" y1=\"328.16851\" x2=\"132\" y2=\"325.74099\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"325.74099\" x2=\"141.714286\" y2=\"321.834647\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"141.714286\" y1=\"321.834647\" x2=\"151.428571\" y2=\"315.64266\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"151.428571\" y1=\"315.64266\" x2=\"161.142857\" y2=\"306.058451\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"161.142857\" y1=\"306.058451\" x2=\"170.857143\" y2=\"291.756663\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.857143\" y1=\"291.756663\" x2=\"180.571429\" y2=\"271.539589\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.571429\" y1=\"271.539589\" x2=\"190.285714\" y2=\"245.043735\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.285714\" y1=\"245.043735\" x2=\"200\" y2=\"213.562788\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"213.562788\" x2=\"209.714286\" y2=\"180.238462\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.714286\" y1=\"180.238462\" x2=\"219.428571\" y2=\"149.009765\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.428571\" y1=\"149.009765\" x2=\"229.142857\" y2=\"122.914011\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.142857\" y1=\"122.914011\" x2=\"238.857143\" y2=\"103.11657\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"238.857143\" y1=\"103.11657\" x2=\"248.571429\" y2=\"89.170961\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248.571429\" y1=\"89.170961\" x2=\"258.285714\" y2=\"79.852804\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258.285714\" y1=\"79.852804\" x2=\"268\" y2=\"73.844334\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"73.844334\" x2=\"277.714286\" y2=\"70.058454\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"277.714286\" y1=\"70.058454\" x2=\"287.428571\" y2=\"67.707617\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.428571\" y1=\"67.707617\" x2=\"297.142857\" y2=\"66.261091\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"297.142857\" y1=\"66.261091\" x2=\"306.857143\" y2=\"65.375989\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"306.857143\" y1=\"65.375989\" x2=\"316.571429\" y2=\"64.836269\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"316.571429\" y1=\"64.836269\" x2=\"326.285714\" y2=\"64.507846\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326.285714\" y1=\"64.507846\" x2=\"336\" y2=\"64.308254\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S15",
+      "name": "Crossing the Chasm",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Has adoption stalled after early success with visionary technology enthusiasts because the product fails to satisfy pragmatic enterprise buyers?",
+      "schematic": "Segmented Bell Curve with Chasm",
+      "canvas": "Technology Adoption Life Cycle bell curve divided into Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%), bisected by a chasm between Early Adopters and the Early Majority.",
+      "stressTest": [
+        {
+          "text": "Do case studies from visionaries convince pragmatic buyers who trust peers?"
+        },
+        {
+          "text": "Is the whole product built: integrations, certifications, training, support?"
+        },
+        {
+          "text": "Are sales resources spread thin instead of owning one beachhead vertical?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the marketing team rely on early adopter case studies to convince pragmatic buyers who only accept references from conservative peers?",
+        "Has the company built the complete \"Whole Product\" ecosystem—including integrations, compliance certifications, and training—required by mainstream buyers?",
+        "Is the enterprise spreading sales resources across multiple segments instead of securing dominant market share within a single beachhead vertical?"
+      ],
+      "checklist": [
+        "Focus resources on one beachhead where the product solves a critical problem.",
+        "Complete the whole product with third-party integrations and security tooling.",
+        "Reframe marketing from innovation to reliability, compliance and risk."
+      ],
+      "checklistFull": [
+        "Identify and focus resources on a specific beachhead market segment where the product addresses a critical business problem.",
+        "Complete the Whole Product offering by integrating third-party software and enterprise security tooling.",
+        "Reposition marketing narratives from technical innovation to risk mitigation, operational reliability, and industry compliance."
+      ],
+      "origin": {
+        "authors": [
+          "Geoffrey A. Moore"
+        ],
+        "year": 1991,
+        "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
+        "publication": "HarperBusiness",
+        "authorsLabel": "Geoffrey A. Moore",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_bell",
+          "columns": 6,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"86.666667\" y1=\"332\" x2=\"86.666667\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"332\" x2=\"132\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"177.333333\" y1=\"332\" x2=\"177.333333\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222.666667\" y1=\"332\" x2=\"222.666667\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"332\" x2=\"268\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"313.333333\" y1=\"332\" x2=\"313.333333\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"198\" x2=\"70\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"327.091409\" x2=\"71.684\" y2=\"321.937146\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"71.684\" y1=\"321.937146\" x2=\"79.368\" y2=\"312.783373\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"79.368\" y1=\"312.783373\" x2=\"87.052\" y2=\"297.815854\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"87.052\" y1=\"297.815854\" x2=\"94.736\" y2=\"275.35469\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"94.736\" y1=\"275.35469\" x2=\"102.42\" y2=\"244.563087\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"102.42\" y1=\"244.563087\" x2=\"110.104\" y2=\"206.276257\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110.104\" y1=\"206.276257\" x2=\"117.788\" y2=\"163.604137\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"117.788\" y1=\"163.604137\" x2=\"125.472\" y2=\"121.894622\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"125.472\" y1=\"121.894622\" x2=\"133.156\" y2=\"87.806247\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"133.156\" y1=\"87.806247\" x2=\"140.84\" y2=\"67.623065\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.84\" y1=\"67.623065\" x2=\"148.524\" y2=\"65.372949\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"148.524\" y1=\"65.372949\" x2=\"156.208\" y2=\"81.51802\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"156.208\" y1=\"81.51802\" x2=\"163.892\" y2=\"112.800077\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163.892\" y1=\"112.800077\" x2=\"171.576\" y2=\"153.311773\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"171.576\" y1=\"153.311773\" x2=\"179.26\" y2=\"196.311478\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"179.26\" y1=\"196.311478\" x2=\"186.944\" y2=\"236.019741\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186.944\" y1=\"236.019741\" x2=\"194.628\" y2=\"268.757016\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"194.628\" y1=\"268.757016\" x2=\"202.312\" y2=\"293.181886\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"202.312\" y1=\"293.181886\" x2=\"209.996\" y2=\"309.805359\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.996\" y1=\"309.805359\" x2=\"217.68\" y2=\"320.179021\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236.72\" y1=\"84.38245\" x2=\"241.684\" y2=\"71.38732\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"241.684\" y1=\"71.38732\" x2=\"246.648\" y2=\"64.755301\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.648\" y1=\"64.755301\" x2=\"251.612\" y2=\"64.99334\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"251.612\" y1=\"64.99334\" x2=\"256.576\" y2=\"72.083096\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"256.576\" y1=\"72.083096\" x2=\"261.54\" y2=\"85.483272\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.54\" y1=\"85.483272\" x2=\"266.504\" y2=\"104.197912\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"266.504\" y1=\"104.197912\" x2=\"271.468\" y2=\"126.898686\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"271.468\" y1=\"126.898686\" x2=\"276.432\" y2=\"152.08034\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"276.432\" y1=\"152.08034\" x2=\"281.396\" y2=\"178.224114\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281.396\" y1=\"178.224114\" x2=\"286.36\" y2=\"203.944778\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.36\" y1=\"203.944778\" x2=\"291.324\" y2=\"228.102336\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"291.324\" y1=\"228.102336\" x2=\"296.288\" y2=\"249.867752\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"296.288\" y1=\"249.867752\" x2=\"301.252\" y2=\"268.741182\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"301.252\" y1=\"268.741182\" x2=\"306.216\" y2=\"284.529055\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"306.216\" y1=\"284.529055\" x2=\"311.18\" y2=\"297.291638\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311.18\" y1=\"297.291638\" x2=\"316.144\" y2=\"307.274801\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"316.144\" y1=\"307.274801\" x2=\"321.108\" y2=\"314.838909\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"321.108\" y1=\"314.838909\" x2=\"326.072\" y2=\"320.394885\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326.072\" y1=\"320.394885\" x2=\"331.036\" y2=\"324.353663\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"331.036\" y1=\"324.353663\" x2=\"336\" y2=\"327.091409\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"217.68\" y1=\"337.36\" x2=\"217.68\" y2=\"184.6\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236.72\" y1=\"337.36\" x2=\"236.72\" y2=\"184.6\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"217.68\" y1=\"326.64\" x2=\"236.72\" y2=\"326.64\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S16",
+      "name": "S-Curve Life Cycle",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Have internal R&D investments reached a point of diminishing returns along the current technological architecture?",
+      "schematic": "Sigmoidal Spend vs Benchmarks",
+      "canvas": "Sigmoidal curve plotting Performance along the vertical axis against Cumulative Engineering Effort/R&D Spend along the horizontal axis, displaying early validation, rapid scaling, performance plateaus, and the emergence of an intersecting next-generation S-curve.",
+      "stressTest": [
+        {
+          "text": "Does extra engineering spend now buy negligible performance gain?"
+        },
+        {
+          "text": "Is leadership blaming teams rather than the architecture for the plateau?"
+        },
+        {
+          "text": "Is a lower-performing paradigm with a far higher ceiling being ignored?"
+        }
+      ],
+      "stressTestFull": [
+        "Does an incremental capital investment in engineering yield negligible improvements in core product performance metrics?",
+        "Is leadership misattributing architectural limits to team inefficiency rather than systemic technical constraints?",
+        "Is the company ignoring a nascent technological paradigm that displays lower initial performance but possesses a substantially higher theoretical ceiling?"
+      ],
+      "checklist": [
+        "Compute performance gained per engineering dollar over eight quarters.",
+        "Survey research that bypasses the current stack's physical limits.",
+        "Fund a small squad to prototype on the emerging paradigm."
+      ],
+      "checklistFull": [
+        "Calculate the historical ratio of performance improvements relative to engineering spend over the preceding eight quarters.",
+        "Survey open-source and academic developments that bypass the physical or architectural limits of the current technology stack.",
+        "Fund an isolated engineering squad to build a prototype using the emerging technology paradigm."
+      ],
+      "origin": {
+        "authors": [
+          "Richard N. Foster"
+        ],
+        "year": 1986,
+        "title": "Innovation: The Attacker's Advantage",
+        "publication": "Summit Books / McKinsey & Company",
+        "authorsLabel": "Richard N. Foster",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_sigmoid",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"332\" x2=\"98\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"332\" x2=\"166\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"332\" x2=\"234\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"332\" x2=\"302\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"198\" x2=\"70\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"329.055499\" x2=\"71.555556\" y2=\"328.230948\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"71.555556\" y1=\"328.230948\" x2=\"79.111111\" y2=\"327.179696\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"79.111111\" y1=\"327.179696\" x2=\"86.666667\" y2=\"325.842065\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"86.666667\" y1=\"325.842065\" x2=\"94.222222\" y2=\"324.144322\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"94.222222\" y1=\"324.144322\" x2=\"101.777778\" y2=\"321.996394\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.777778\" y1=\"321.996394\" x2=\"109.333333\" y2=\"319.289866\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"109.333333\" y1=\"319.289866\" x2=\"116.888889\" y2=\"315.896778\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"116.888889\" y1=\"315.896778\" x2=\"124.444444\" y2=\"311.670008\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"124.444444\" y1=\"311.670008\" x2=\"132\" y2=\"306.446343\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"306.446343\" x2=\"139.555556\" y2=\"300.053617\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"139.555556\" y1=\"300.053617\" x2=\"147.111111\" y2=\"292.323351\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"147.111111\" y1=\"292.323351\" x2=\"154.666667\" y2=\"283.10996\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"283.10996\" x2=\"162.222222\" y2=\"272.316363\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162.222222\" y1=\"272.316363\" x2=\"169.777778\" y2=\"259.923699\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"169.777778\" y1=\"259.923699\" x2=\"177.333333\" y2=\"246.019891\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"177.333333\" y1=\"246.019891\" x2=\"184.888889\" y2=\"230.819101\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"184.888889\" y1=\"230.819101\" x2=\"192.444444\" y2=\"214.663302\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192.444444\" y1=\"214.663302\" x2=\"200\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"207.555556\" y2=\"181.336698\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"207.555556\" y1=\"181.336698\" x2=\"215.111111\" y2=\"165.180899\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"215.111111\" y1=\"165.180899\" x2=\"222.666667\" y2=\"149.980109\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222.666667\" y1=\"149.980109\" x2=\"230.222222\" y2=\"136.076301\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230.222222\" y1=\"136.076301\" x2=\"237.777778\" y2=\"123.683637\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237.777778\" y1=\"123.683637\" x2=\"245.333333\" y2=\"112.89004\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.333333\" y1=\"112.89004\" x2=\"252.888889\" y2=\"103.676649\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"252.888889\" y1=\"103.676649\" x2=\"260.444444\" y2=\"95.946383\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"260.444444\" y1=\"95.946383\" x2=\"268\" y2=\"89.553657\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"89.553657\" x2=\"275.555556\" y2=\"84.329992\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275.555556\" y1=\"84.329992\" x2=\"283.111111\" y2=\"80.103222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"283.111111\" y1=\"80.103222\" x2=\"290.666667\" y2=\"76.710134\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290.666667\" y1=\"76.710134\" x2=\"298.222222\" y2=\"74.003606\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.222222\" y1=\"74.003606\" x2=\"305.777778\" y2=\"71.855678\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"305.777778\" y1=\"71.855678\" x2=\"313.333333\" y2=\"70.157935\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"313.333333\" y1=\"70.157935\" x2=\"320.888889\" y2=\"68.820304\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"320.888889\" y1=\"68.820304\" x2=\"328.444444\" y2=\"67.769052\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"328.444444\" y1=\"67.769052\" x2=\"336\" y2=\"66.944501\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S17",
+      "name": "Attractive Profits Law",
+      "category": "Tech & Dynamics",
+      "diagnosis": "When an integrated product subsystem becomes modularized and commoditized, where do attractive economic profits migrate within the value chain?",
+      "schematic": "Vertical Value Chain Architecture",
+      "canvas": "Vertical Value Chain Architecture demonstrating that when a previously proprietary subsystem becomes modular and commoditized, an adjacent proprietary, interdependent subsystem captures the primary industry profits.",
+      "stressTest": [
+        {
+          "text": "Is the firm defending margin in a layer open source is commoditizing?"
+        },
+        {
+          "text": "Does the firm own the interdependent bottleneck downstream users must pass?"
+        },
+        {
+          "text": "Are teams wrapping modular parts without owning the integration points?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the firm attempting to protect profit margins in a software layer that is rapidly being commoditized by open-source alternatives?",
+        "Does the organization control the proprietary, interdependent bottleneck that downstream users must utilize to access commoditized components?",
+        "Are product teams building proprietary wrappers around modular components without owning the underlying integration points?"
+      ],
+      "checklist": [
+        "Diagram the stack, marking every layer modular or interdependent.",
+        "Stop proprietary work on modular layers; adopt standard components.",
+        "Concentrate capital on the adjacent interdependent bottleneck."
+      ],
+      "checklistFull": [
+        "Diagram the full software and delivery stack, classifying every layer as either modular or interdependent.",
+        "Halt internal proprietary development on modular layers and transition to standard open-source components to reduce delivery costs.",
+        "Focus capital on controlling the adjacent interdependent bottleneck where economic value is concentrating."
+      ],
+      "origin": {
+        "authors": [
+          "Clayton M. Christensen"
+        ],
+        "year": 2003,
+        "title": "The Innovator's Solution: Creating and Sustaining Successful Growth",
+        "publication": "Harvard Business School Press",
+        "authorsLabel": "Clayton M. Christensen",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "value_chain",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"130\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"130\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"200\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"188\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258\" y1=\"200\" x2=\"270\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S18",
+      "name": "Increasing Returns",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Can small, early market-share advantages be amplified through self-reinforcing mechanisms to establish standard lock-in before competing alternatives mature?",
+      "schematic": "Non-linear Compounding Feedback",
+      "canvas": "Compounding feedback model linking Early Market Share to Higher Expected Utility, Greater R&D Scale, Lower Per-Unit Transaction Costs, Ecosystem Coordination Lock-in, and Category Dominance.",
+      "stressTest": [
+        {
+          "text": "Is diminishing-returns logic being applied to an increasing-returns market?"
+        },
+        {
+          "text": "Which early architectural choice could lock the system into a dead end?"
+        },
+        {
+          "text": "Does scale buy distribution partnerships that widen the gap with rivals?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the company applying diminishing-returns economic logic to a market segment governed by increasing-returns network dynamics?",
+        "Has the product team identified the early architectural choices that could lock the system into an inflexible technical pathway?",
+        "Does the enterprise leverage market scale to secure asymmetric distribution partnerships that broaden the gap against rivals?"
+      ],
+      "checklist": [
+        "Subsidize acquisition to cross critical mass before rivals do.",
+        "Ship developer integrations so leaving the platform carries real switching cost.",
+        "Watch churn among long-standing accounts for signs of platform decay."
+      ],
+      "checklistFull": [
+        "Subsidize initial user acquisition to surpass critical-mass adoption thresholds ahead of competitors.",
+        "Deliver third-party developer integrations to ensure migration away from the platform carries high financial and operational switching costs.",
+        "Monitor customer churn among long-standing accounts to detect early indicators of platform decay."
+      ],
+      "origin": {
+        "authors": [
+          "W. Brian Arthur"
+        ],
+        "year": 1994,
+        "title": "Increasing Returns and Path Dependence in the Economy",
+        "publication": "University of Michigan Press",
+        "authorsLabel": "W. Brian Arthur",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S19",
+      "name": "Gartner Hype Cycle",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Is the leadership team deploying capital at the peak of inflated expectations, or divesting during the trough of disillusionment right before practical enterprise utility scales?",
+      "schematic": "5-Phase Expectation Wave",
+      "canvas": "Non-linear trajectory plotting Visibility and Expectations along the vertical axis against Time along the horizontal axis through five phases: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity.",
+      "stressTest": [
+        {
+          "text": "Is the roadmap built on validated workflows, or on vendor-driven enthusiasm?"
+        },
+        {
+          "text": "Can reserves carry the company through the consolidation phase?"
+        },
+        {
+          "text": "Do concrete milestones mark the move from hype to practical enterprise utility?"
+        }
+      ],
+      "stressTestFull": [
+        "Is current product development based on validated customer workflows or on speculative market enthusiasm driven by vendor marketing?",
+        "Has the company retained sufficient capital reserves to operate through the industry consolidation phase?",
+        "Has the team established concrete operational milestones to verify when the technology transitions from early hype into practical enterprise utility?"
+      ],
+      "checklist": [
+        "Weigh investments against Amara's Law: short-term hype, long-term shift.",
+        "Move metrics from vanity indicators to cost per transaction and ROI.",
+        "Buy distressed IP or hire specialized talent during the trough."
+      ],
+      "checklistFull": [
+        "Audit technology investments against Amara’s Law: balance short-term over-investment with long-term capital allocation for structural changes.",
+        "Shift product metrics from speculative vanity indicators to customer cost-per-transaction and operational ROI.",
+        "Acquire distressed intellectual property or recruit specialized engineering talent during the trough of disillusionment."
+      ],
+      "origin": {
+        "authors": [
+          "Jackie Fenn"
+        ],
+        "year": 1995,
+        "publication": "Gartner Group",
+        "authorsLabel": "Jackie Fenn",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_wave",
+          "columns": 5,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.2\" y1=\"332\" x2=\"91.2\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"145.6\" y1=\"332\" x2=\"145.6\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"332\" x2=\"200\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254.4\" y1=\"332\" x2=\"254.4\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.8\" y1=\"332\" x2=\"308.8\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"198\" x2=\"70\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"325.694207\" x2=\"70.8\" y2=\"319.267836\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70.8\" y1=\"319.267836\" x2=\"77.6\" y2=\"308.125059\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.6\" y1=\"308.125059\" x2=\"84.4\" y2=\"290.422365\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"84.4\" y1=\"290.422365\" x2=\"91.2\" y2=\"264.755881\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.2\" y1=\"264.755881\" x2=\"98\" y2=\"230.999196\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"230.999196\" x2=\"104.8\" y2=\"191.113794\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104.8\" y1=\"191.113794\" x2=\"111.6\" y2=\"149.493869\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.6\" y1=\"149.493869\" x2=\"118.4\" y2=\"112.45122\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118.4\" y1=\"112.45122\" x2=\"125.2\" y2=\"86.769501\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"125.2\" y1=\"86.769501\" x2=\"132\" y2=\"77.747347\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"77.747347\" x2=\"138.8\" y2=\"87.523017\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.8\" y1=\"87.523017\" x2=\"145.6\" y2=\"114.450371\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"145.6\" y1=\"114.450371\" x2=\"152.4\" y2=\"153.824351\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"152.4\" y1=\"153.824351\" x2=\"159.2\" y2=\"199.584342\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"159.2\" y1=\"199.584342\" x2=\"166\" y2=\"246.157545\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"246.157545\" x2=\"172.8\" y2=\"289.619222\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"172.8\" y1=\"289.619222\" x2=\"179.6\" y2=\"327.811791\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"179.6\" y1=\"327.811791\" x2=\"186.4\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186.4\" y1=\"345.4\" x2=\"193.2\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"193.2\" y1=\"345.4\" x2=\"200\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"345.4\" x2=\"206.8\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"206.8\" y1=\"345.4\" x2=\"213.6\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"213.6\" y1=\"345.4\" x2=\"220.4\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"220.4\" y1=\"345.4\" x2=\"227.2\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227.2\" y1=\"345.4\" x2=\"234\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"345.4\" x2=\"240.8\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.8\" y1=\"345.4\" x2=\"247.6\" y2=\"345.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"247.6\" y1=\"345.4\" x2=\"254.4\" y2=\"342.804064\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254.4\" y1=\"342.804064\" x2=\"261.2\" y2=\"267.517456\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.2\" y1=\"267.517456\" x2=\"268\" y2=\"261.357518\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"261.357518\" x2=\"274.8\" y2=\"256.596327\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274.8\" y1=\"256.596327\" x2=\"281.6\" y2=\"252.644905\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281.6\" y1=\"252.644905\" x2=\"288.4\" y2=\"249.110826\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.4\" y1=\"249.110826\" x2=\"295.2\" y2=\"245.769605\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"295.2\" y1=\"245.769605\" x2=\"302\" y2=\"242.50868\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"242.50868\" x2=\"308.8\" y2=\"239.277976\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.8\" y1=\"239.277976\" x2=\"315.6\" y2=\"236.057584\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"315.6\" y1=\"236.057584\" x2=\"322.4\" y2=\"232.840385\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"322.4\" y1=\"232.840385\" x2=\"329.2\" y2=\"232.840086\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"329.2\" y1=\"232.840086\" x2=\"336\" y2=\"232.840018\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S20",
+      "name": "Conway’s Law / IMC",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Are rigid internal communication structures forcing the production of fragmented, monolithic software architectures that slow delivery velocity?",
+      "schematic": "Bipartite Org-to-Code Alignment",
+      "canvas": "Bipartite mapping model showing Organizational Communication Topologies (team reporting lines, organizational boundaries) directly mirrored in Software System Topologies (service boundaries, API interfaces).",
+      "stressTest": [
+        {
+          "text": "Does the architecture mirror old org hierarchy rather than user value flow?"
+        },
+        {
+          "text": "Are squads blocked by shared databases and a monolithic codebase?"
+        },
+        {
+          "text": "Will leadership restructure teams to force services to decouple?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the software architecture reflect historical corporate hierarchy rather than the natural flow of user value?",
+        "Are independent engineering squads delayed by cross-team synchronization bottlenecks caused by shared databases and monolithic codebases?",
+        "Is executive leadership prepared to restructure teams and reporting lines to force software services to decouple into modular architectures?"
+      ],
+      "checklist": [
+        "Map squads directly to bounded product domains and capabilities.",
+        "Put contract-driven APIs between teams to end synchronous coordination.",
+        "Audit pull requests for squads editing other teams' code."
+      ],
+      "checklistFull": [
+        "Restructure engineering squads to map directly to bounded product domains and strategic business capabilities.",
+        "Implement contract-driven API boundaries between teams to eliminate synchronous coordination meetings and cross-team dependencies.",
+        "Audit pull requests to verify that squads operate autonomously without modifying external codebases."
+      ],
+      "origin": {
+        "authors": [
+          "Melvin E. Conway"
+        ],
+        "year": 1968,
+        "title": "How Do Committees Invent?",
+        "publication": "Datamation",
+        "authorsLabel": "Melvin E. Conway",
+        "titleStop": ""
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "bipartite",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"93.333333\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"120\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"93.333333\" x2=\"282\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"280\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"93.333333\" x2=\"282\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"200\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"282\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"282\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"306.666667\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"306.666667\" x2=\"282\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"306.666667\" x2=\"282\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S21",
+      "name": "Cynefin Framework",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Is executive leadership misapplying linear, predictive planning models to complex or chaotic operational problems?",
+      "schematic": "5-Domain Sensemaking Topology",
+      "canvas": "Five-domain sensemaking topology mapping Clear (Sense-Categorize-Respond), Complicated (Sense-Analyze-Respond), Complex (Probe-Sense-Respond), Chaotic (Act-Sense-Respond), and Confused/Disorder at the center.",
+      "stressTest": [
+        {
+          "text": "Is exhaustive analysis being used to force certainty in a Complex domain?"
+        },
+        {
+          "text": "Are standard procedures being applied where probing is required?"
+        },
+        {
+          "text": "In a crisis, does leadership deliberate instead of acting to stabilize?"
+        }
+      ],
+      "stressTestFull": [
+        "Is management attempting to use exhaustive analysis to create certainty in a Complex domain that requires empirical probing and experimentation?",
+        "Are standard operating procedures being applied to complex challenges, introducing rigid bureaucratic processes into emergent execution environments?",
+        "When an operational crisis occurs, does leadership deliberate instead of taking immediate stabilizing actions to exit the Chaotic domain?"
+      ],
+      "checklist": [
+        "Sort every initiative into Clear, Complicated, Complex or Chaotic.",
+        "Design safe-to-fail experiments with predefined stopping criteria.",
+        "Automate the Clear domain with standard procedures and deterministic runs."
+      ],
+      "checklistFull": [
+        "Categorize all active strategic initiatives into Clear, Complicated, Complex, and Chaotic domains during executive planning.",
+        "Design safe-to-fail experiments with predefined termination criteria for every initiative identified as Complex.",
+        "Establish standard operating procedures and deterministic automation for all capabilities located within the Clear domain."
+      ],
+      "origin": {
+        "authors": [
+          "Dave Snowden",
+          "Mary E. Boone"
+        ],
+        "year": 2007,
+        "title": "A Leader's Framework for Decision Making",
+        "publication": "Harvard Business Review",
+        "authorsLabel": "Dave Snowden & Mary E. Boone",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "topology",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"26\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"167\" x2=\"200\" y2=\"115\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"95\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"2.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"233\" y1=\"200\" x2=\"285\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"305\" cy=\"200\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"310\" cy=\"200\" r=\"2.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"233\" x2=\"200\" y2=\"285\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"305\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"310\" r=\"2.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"167\" y1=\"200\" x2=\"115\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95\" cy=\"200\" r=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90\" cy=\"200\" r=\"2.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S22",
+      "name": "Systems Archetypes",
+      "category": "Tech & Dynamics",
+      "diagnosis": "Is rapid early growth encountering an unseen internal constraint, or are quick fixes eroding the underlying operational capabilities of the business?",
+      "schematic": "Closed Causal Loop Diagrams (CLD)",
+      "canvas": "Closed-loop causal loop diagram (CLD) showing a Reinforcing Growth Loop (R) counteracted by a Balancing Constraint Loop (B), alongside a Shifting the Burden archetype where a symptomatic solution undermines the fundamental solution.",
+      "stressTest": [
+        {
+          "text": "Does slowing acquisition trigger more paid spend instead of fixing the product?"
+        },
+        {
+          "text": "Do stopgap workarounds quietly weaken core technical capability?"
+        },
+        {
+          "text": "Which balancing loops will bind when transaction volume triples?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the leadership team respond to slowing user acquisition by investing more in paid acquisition rather than resolving core product bottlenecks?",
+        "Is the company relying on temporary operational workarounds that weaken core technical and operational capabilities over time?",
+        "Has the team identified the secondary balancing loops that will constrain capacity when transaction volume triples?"
+      ],
+      "checklist": [
+        "Diagram the loops that tie growth drivers to capacity constraints.",
+        "Move capital from acquisition incentives into the core bottleneck.",
+        "Alert on early stress: support escalations, query latency, error rates."
+      ],
+      "checklistFull": [
+        "Diagram the causal feedback loops linking reinforcing growth drivers to emerging capacity and support constraints.",
+        "Reallocate capital from short-term customer acquisition incentives directly into resolving the primary operational bottleneck.",
+        "Establish automated alerts for early indicators of system stress, such as customer support escalation rates and database query latencies."
+      ],
+      "origin": {
+        "authors": [
+          "Jay W. Forrester"
+        ],
+        "year": 1961,
+        "title": "Industrial Dynamics",
+        "publication": "MIT Press",
+        "authorsLabel": "Jay W. Forrester",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "feedback_loop",
+          "columns": 4,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"114\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"86\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"314\" cy=\"200\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"314\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"86\" cy=\"200\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

@@ -1,0 +1,49 @@
+{
+  "id": "S19",
+  "name": "Gartner Hype Cycle",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Is the leadership team deploying capital at the peak of inflated expectations, or divesting during the trough of disillusionment right before practical enterprise utility scales?",
+  "schematic": "5-Phase Expectation Wave",
+  "canvas": "Non-linear trajectory plotting Visibility and Expectations along the vertical axis against Time along the horizontal axis through five phases: Innovation Trigger, Peak of Inflated Expectations, Trough of Disillusionment, Slope of Enlightenment, and Plateau of Productivity.",
+  "stressTest": [
+    {
+      "text": "Is the roadmap built on validated workflows, or on vendor-driven enthusiasm?"
+    },
+    {
+      "text": "Can reserves carry the company through the consolidation phase?"
+    },
+    {
+      "text": "Do concrete milestones mark the move from hype to practical enterprise utility?"
+    }
+  ],
+  "stressTestFull": [
+    "Is current product development based on validated customer workflows or on speculative market enthusiasm driven by vendor marketing?",
+    "Has the company retained sufficient capital reserves to operate through the industry consolidation phase?",
+    "Has the team established concrete operational milestones to verify when the technology transitions from early hype into practical enterprise utility?"
+  ],
+  "checklist": [
+    "Weigh investments against Amara's Law: short-term hype, long-term shift.",
+    "Move metrics from vanity indicators to cost per transaction and ROI.",
+    "Buy distressed IP or hire specialized talent during the trough."
+  ],
+  "checklistFull": [
+    "Audit technology investments against Amara’s Law: balance short-term over-investment with long-term capital allocation for structural changes.",
+    "Shift product metrics from speculative vanity indicators to customer cost-per-transaction and operational ROI.",
+    "Acquire distressed intellectual property or recruit specialized engineering talent during the trough of disillusionment."
+  ],
+  "origin": {
+    "authors": [
+      "Jackie Fenn"
+    ],
+    "year": 1995,
+    "publication": "Gartner Group"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_wave",
+      "columns": 5,
+      "rows": 1
+    }
+  }
+}

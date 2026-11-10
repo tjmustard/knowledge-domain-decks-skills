@@ -1,0 +1,50 @@
+{
+  "id": "S17",
+  "name": "Attractive Profits Law",
+  "category": "Tech & Dynamics",
+  "diagnosis": "When an integrated product subsystem becomes modularized and commoditized, where do attractive economic profits migrate within the value chain?",
+  "schematic": "Vertical Value Chain Architecture",
+  "canvas": "Vertical Value Chain Architecture demonstrating that when a previously proprietary subsystem becomes modular and commoditized, an adjacent proprietary, interdependent subsystem captures the primary industry profits.",
+  "stressTest": [
+    {
+      "text": "Is the firm defending margin in a layer open source is commoditizing?"
+    },
+    {
+      "text": "Does the firm own the interdependent bottleneck downstream users must pass?"
+    },
+    {
+      "text": "Are teams wrapping modular parts without owning the integration points?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the firm attempting to protect profit margins in a software layer that is rapidly being commoditized by open-source alternatives?",
+    "Does the organization control the proprietary, interdependent bottleneck that downstream users must utilize to access commoditized components?",
+    "Are product teams building proprietary wrappers around modular components without owning the underlying integration points?"
+  ],
+  "checklist": [
+    "Diagram the stack, marking every layer modular or interdependent.",
+    "Stop proprietary work on modular layers; adopt standard components.",
+    "Concentrate capital on the adjacent interdependent bottleneck."
+  ],
+  "checklistFull": [
+    "Diagram the full software and delivery stack, classifying every layer as either modular or interdependent.",
+    "Halt internal proprietary development on modular layers and transition to standard open-source components to reduce delivery costs.",
+    "Focus capital on controlling the adjacent interdependent bottleneck where economic value is concentrating."
+  ],
+  "origin": {
+    "authors": [
+      "Clayton M. Christensen"
+    ],
+    "year": 2003,
+    "title": "The Innovator's Solution: Creating and Sustaining Successful Growth",
+    "publication": "Harvard Business School Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "value_chain",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

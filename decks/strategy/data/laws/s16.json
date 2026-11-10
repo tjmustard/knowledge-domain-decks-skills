@@ -1,0 +1,50 @@
+{
+  "id": "S16",
+  "name": "S-Curve Life Cycle",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Have internal R&D investments reached a point of diminishing returns along the current technological architecture?",
+  "schematic": "Sigmoidal Spend vs Benchmarks",
+  "canvas": "Sigmoidal curve plotting Performance along the vertical axis against Cumulative Engineering Effort/R&D Spend along the horizontal axis, displaying early validation, rapid scaling, performance plateaus, and the emergence of an intersecting next-generation S-curve.",
+  "stressTest": [
+    {
+      "text": "Does extra engineering spend now buy negligible performance gain?"
+    },
+    {
+      "text": "Is leadership blaming teams rather than the architecture for the plateau?"
+    },
+    {
+      "text": "Is a lower-performing paradigm with a far higher ceiling being ignored?"
+    }
+  ],
+  "stressTestFull": [
+    "Does an incremental capital investment in engineering yield negligible improvements in core product performance metrics?",
+    "Is leadership misattributing architectural limits to team inefficiency rather than systemic technical constraints?",
+    "Is the company ignoring a nascent technological paradigm that displays lower initial performance but possesses a substantially higher theoretical ceiling?"
+  ],
+  "checklist": [
+    "Compute performance gained per engineering dollar over eight quarters.",
+    "Survey research that bypasses the current stack's physical limits.",
+    "Fund a small squad to prototype on the emerging paradigm."
+  ],
+  "checklistFull": [
+    "Calculate the historical ratio of performance improvements relative to engineering spend over the preceding eight quarters.",
+    "Survey open-source and academic developments that bypass the physical or architectural limits of the current technology stack.",
+    "Fund an isolated engineering squad to build a prototype using the emerging technology paradigm."
+  ],
+  "origin": {
+    "authors": [
+      "Richard N. Foster"
+    ],
+    "year": 1986,
+    "title": "Innovation: The Attacker's Advantage",
+    "publication": "Summit Books / McKinsey & Company"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_sigmoid",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

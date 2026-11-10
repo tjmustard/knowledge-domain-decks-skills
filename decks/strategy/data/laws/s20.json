@@ -1,0 +1,50 @@
+{
+  "id": "S20",
+  "name": "Conway’s Law / IMC",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Are rigid internal communication structures forcing the production of fragmented, monolithic software architectures that slow delivery velocity?",
+  "schematic": "Bipartite Org-to-Code Alignment",
+  "canvas": "Bipartite mapping model showing Organizational Communication Topologies (team reporting lines, organizational boundaries) directly mirrored in Software System Topologies (service boundaries, API interfaces).",
+  "stressTest": [
+    {
+      "text": "Does the architecture mirror old org hierarchy rather than user value flow?"
+    },
+    {
+      "text": "Are squads blocked by shared databases and a monolithic codebase?"
+    },
+    {
+      "text": "Will leadership restructure teams to force services to decouple?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the software architecture reflect historical corporate hierarchy rather than the natural flow of user value?",
+    "Are independent engineering squads delayed by cross-team synchronization bottlenecks caused by shared databases and monolithic codebases?",
+    "Is executive leadership prepared to restructure teams and reporting lines to force software services to decouple into modular architectures?"
+  ],
+  "checklist": [
+    "Map squads directly to bounded product domains and capabilities.",
+    "Put contract-driven APIs between teams to end synchronous coordination.",
+    "Audit pull requests for squads editing other teams' code."
+  ],
+  "checklistFull": [
+    "Restructure engineering squads to map directly to bounded product domains and strategic business capabilities.",
+    "Implement contract-driven API boundaries between teams to eliminate synchronous coordination meetings and cross-team dependencies.",
+    "Audit pull requests to verify that squads operate autonomously without modifying external codebases."
+  ],
+  "origin": {
+    "authors": [
+      "Melvin E. Conway"
+    ],
+    "year": 1968,
+    "title": "How Do Committees Invent?",
+    "publication": "Datamation"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "bipartite",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

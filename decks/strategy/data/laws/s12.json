@@ -1,0 +1,50 @@
+{
+  "id": "S12",
+  "name": "Wardley Mapping",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Is the engineering organization building custom solutions for architectural components that have already evolved into industrialized commodity utilities?",
+  "schematic": "2-Axis Topographical Value Chain",
+  "canvas": "Topographical value landscape plotting Value Chain Visibility along the vertical axis (from direct user need down to underlying infrastructure) against Evolution along the horizontal axis across four phases: Genesis, Custom-Built, Product/Rental, and Commodity/Utility.",
+  "stressTest": [
+    {
+      "text": "Do internal teams rebuild infrastructure that commodity APIs already provide?"
+    },
+    {
+      "text": "Will leadership anticipate the inertia resisting a move to external utilities?"
+    },
+    {
+      "text": "Does the firm see which commodities could fund its genesis-stage capabilities?"
+    }
+  ],
+  "stressTestFull": [
+    "Are internal engineering teams building and maintaining bespoke infrastructure where standardized open-source or utility APIs exist?",
+    "Does the executive team anticipate the capital and cultural inertia that will resist shifting internal architectures to external utilities?",
+    "Does the enterprise recognize which commodity components can serve as the standardized foundation to enable novel Genesis-stage capabilities?"
+  ],
+  "checklist": [
+    "Map the architecture into a Wardley DSL or Mermaid dependency script.",
+    "Replace Custom-Built components with managed services or open source.",
+    "Evaluate the 32 climatic patterns against 24-month commoditization."
+  ],
+  "checklistFull": [
+    "Map the primary product architecture into an OnlineWardleyMaps DSL or Mermaid script tracing dependencies to base infrastructure.",
+    "Identify components in the Custom-Built quadrant and schedule their replacement with external managed services or open-source libraries.",
+    "Evaluate the 32 climatic patterns to forecast upstream component commoditization over a 24-month horizon."
+  ],
+  "origin": {
+    "authors": [
+      "Simon Wardley"
+    ],
+    "year": 2016,
+    "title": "Wardley Maps",
+    "publication": "CC BY-SA 4.0"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "value_chain",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S18",
+  "name": "Increasing Returns",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Can small, early market-share advantages be amplified through self-reinforcing mechanisms to establish standard lock-in before competing alternatives mature?",
+  "schematic": "Non-linear Compounding Feedback",
+  "canvas": "Compounding feedback model linking Early Market Share to Higher Expected Utility, Greater R&D Scale, Lower Per-Unit Transaction Costs, Ecosystem Coordination Lock-in, and Category Dominance.",
+  "stressTest": [
+    {
+      "text": "Is diminishing-returns logic being applied to an increasing-returns market?"
+    },
+    {
+      "text": "Which early architectural choice could lock the system into a dead end?"
+    },
+    {
+      "text": "Does scale buy distribution partnerships that widen the gap with rivals?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the company applying diminishing-returns economic logic to a market segment governed by increasing-returns network dynamics?",
+    "Has the product team identified the early architectural choices that could lock the system into an inflexible technical pathway?",
+    "Does the enterprise leverage market scale to secure asymmetric distribution partnerships that broaden the gap against rivals?"
+  ],
+  "checklist": [
+    "Subsidize acquisition to cross critical mass before rivals do.",
+    "Ship developer integrations so leaving the platform carries real switching cost.",
+    "Watch churn among long-standing accounts for signs of platform decay."
+  ],
+  "checklistFull": [
+    "Subsidize initial user acquisition to surpass critical-mass adoption thresholds ahead of competitors.",
+    "Deliver third-party developer integrations to ensure migration away from the platform carries high financial and operational switching costs.",
+    "Monitor customer churn among long-standing accounts to detect early indicators of platform decay."
+  ],
+  "origin": {
+    "authors": [
+      "W. Brian Arthur"
+    ],
+    "year": 1994,
+    "title": "Increasing Returns and Path Dependence in the Economy",
+    "publication": "University of Michigan Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

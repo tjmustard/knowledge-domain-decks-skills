@@ -1,0 +1,50 @@
+{
+  "id": "S15",
+  "name": "Crossing the Chasm",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Has adoption stalled after early success with visionary technology enthusiasts because the product fails to satisfy pragmatic enterprise buyers?",
+  "schematic": "Segmented Bell Curve with Chasm",
+  "canvas": "Technology Adoption Life Cycle bell curve divided into Innovators (2.5%), Early Adopters (13.5%), Early Majority (34%), Late Majority (34%), and Laggards (16%), bisected by a chasm between Early Adopters and the Early Majority.",
+  "stressTest": [
+    {
+      "text": "Do case studies from visionaries convince pragmatic buyers who trust peers?"
+    },
+    {
+      "text": "Is the whole product built: integrations, certifications, training, support?"
+    },
+    {
+      "text": "Are sales resources spread thin instead of owning one beachhead vertical?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the marketing team rely on early adopter case studies to convince pragmatic buyers who only accept references from conservative peers?",
+    "Has the company built the complete \"Whole Product\" ecosystem—including integrations, compliance certifications, and training—required by mainstream buyers?",
+    "Is the enterprise spreading sales resources across multiple segments instead of securing dominant market share within a single beachhead vertical?"
+  ],
+  "checklist": [
+    "Focus resources on one beachhead where the product solves a critical problem.",
+    "Complete the whole product with third-party integrations and security tooling.",
+    "Reframe marketing from innovation to reliability, compliance and risk."
+  ],
+  "checklistFull": [
+    "Identify and focus resources on a specific beachhead market segment where the product addresses a critical business problem.",
+    "Complete the Whole Product offering by integrating third-party software and enterprise security tooling.",
+    "Reposition marketing narratives from technical innovation to risk mitigation, operational reliability, and industry compliance."
+  ],
+  "origin": {
+    "authors": [
+      "Geoffrey A. Moore"
+    ],
+    "year": 1991,
+    "title": "Crossing the Chasm: Marketing and Selling High-Tech Products to Mainstream Customers",
+    "publication": "HarperBusiness"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_bell",
+      "columns": 6,
+      "rows": 1
+    }
+  }
+}

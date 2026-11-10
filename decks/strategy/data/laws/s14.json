@@ -1,0 +1,52 @@
+{
+  "id": "S14",
+  "name": "Three Horizons of Growth",
+  "category": "Tech & Dynamics",
+  "diagnosis": "Is the company compromising its long-term survival by allocating all capital to immediate quarterly operations while neglecting future growth options?",
+  "schematic": "3 Overlapping S-Curves",
+  "canvas": "Three overlapping S-curves plotting Value and Profitability against Time across Horizon 1 (Defend and extend core business), Horizon 2 (Scale emerging high-growth businesses), and Horizon 3 (Seed viable future options).",
+  "stressTest": [
+    {
+      "text": "Does H1 governance impose short-term profit rules on early-stage bets?"
+    },
+    {
+      "text": "Are H3 experiments disconnected research without a commercial path?"
+    },
+    {
+      "text": "Do operators raid H2 and H3 to cover a short-term core revenue gap?"
+    }
+  ],
+  "stressTestFull": [
+    "Does Horizon 1 governance stifle Horizon 2 and Horizon 3 exploration by enforcing short-term profit requirements on early-stage concepts?",
+    "Are Horizon 3 exploratory efforts disconnected research projects that lack a viable commercial pathway?",
+    "Do operational leaders reallocate Horizon 2 and 3 resources to cover short-term revenue deficits in the core business?"
+  ],
+  "checklist": [
+    "Audit budget and engineering allocation across H1 70, H2 20, H3 10.",
+    "Run distinct cadences: delivery for H1, cohorts for H2, hypotheses for H3.",
+    "Ring-fence exploratory capital against mid-year budget reabsorption."
+  ],
+  "checklistFull": [
+    "Audit all active development projects, categorizing budget and engineering allocations across Horizon 1 (70%), Horizon 2 (20%), and Horizon 3 (10%).",
+    "Establish distinct governance cadences: sprint delivery velocity for H1, customer cohort expansion for H2, and hypothesis validation for H3.",
+    "Ring-fence exploratory capital to protect it from re-absorption during mid-year budget reallocations."
+  ],
+  "origin": {
+    "authors": [
+      "Mehrdad Baghai",
+      "Stephen Coley",
+      "David White"
+    ],
+    "year": 1999,
+    "title": "The Alchemy of Growth: Kickstarting and Sustaining Growth in Your Company",
+    "publication": "McKinsey & Company / Perseus Publishing"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_multis",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}
