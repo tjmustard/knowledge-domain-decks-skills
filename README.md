@@ -193,14 +193,14 @@ measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 fifty-four versos and absent from the rectos. The labels drawn inside the
-diagrams are smaller by design: a 9-unit label on the 400-unit drawing prints at
-2.9 pt, so the figures are annotations rather than type, and each one was
-inspected on its own card at 400 ppi. Every recto's lowest ink was measured against the
+diagrams are smaller by design: figure labels print at 2.59 to 3.24 pt, the
+smallest at 8 units, so the figures are annotations rather than type, and each
+one was inspected on its own card at 400 ppi. Every recto's lowest ink was measured against the
 bottom safe edge — the internal margin, 0.1875 in inside the trim line, so
-0.3125 in from the paper edge — at 864 dpi inside the page frame; the tightest
-card clears it by 7.32 pt. The topmost ink on every recto stands 0.08 pt above
+0.3125 in from the paper edge — as the lowest vector outline inside the page
+frame; the tightest card clears it by 7.32 pt. The topmost ink on every recto stands 0.08 pt above
 the top safe edge, a constant of the template rather than a card's line running
-long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
+long, and about 8 pt of paper remains before the trim. Every diagram is drawn as form XObjects with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
 empty placeholder.
 
