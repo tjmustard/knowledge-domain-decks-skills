@@ -1,0 +1,63 @@
+{
+  "id": "I10",
+  "sourceTacticNo": 10,
+  "name": "Critical Incident Technique (CIT) Audit",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [event X] triggers operational failure in [workflow Y]. We will verify this by collecting 15 detailed critical incident reports from practitioners, and consider it validated if ≥ 80% report that the incident caused acute workflow delays, compliance exposure, or direct financial loss.",
+  "hypothesisSize": 8,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 5–8 days",
+    "Cost: $0",
+    "Confidence: High (Incident-focused)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Set explicit inclusion criteria for a critical incident: downtime, SLA breach or emergency briefing."
+    },
+    {
+      "label": "Execution",
+      "text": "Ask practitioners to recount the most recent failure, the conditions before it, and what failed in response."
+    },
+    {
+      "label": "Data collection",
+      "text": "Build a chronological event map per incident: root trigger, compounding effects, downstream cost."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Establish explicit inclusion criteria for what constitutes a critical incident (e.g., unscheduled downtime, SLA breach, or emergency executive briefing)."
+    },
+    {
+      "label": "Execution",
+      "text": "Interview qualified practitioners using the CIT protocol: \"Recount the most recent operational failure in your workflow. What specific conditions preceded it? What interventions were deployed, and what systems failed?\""
+    },
+    {
+      "label": "Data collection",
+      "text": "Reconstruct a chronological event map for each incident, detailing the root triggers, secondary compounding effects, and downstream financial costs."
+    }
+  ],
+  "warning": {
+    "label": "Salience and Availability Bias",
+    "text": "Vivid crises are remembered clearly and mistaken for routine, recurring market needs."
+  },
+  "warningFull": "Participants recall dramatic, emotionally charged anomalies with extreme clarity, leading researchers to mistake infrequent operational crises for routine, recurring market needs.",
+  "origin": {
+    "authors": [
+      "John C. Flanagan"
+    ],
+    "year": 1954,
+    "title": "The Critical Incident Technique",
+    "publication": "Psychological Bulletin"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

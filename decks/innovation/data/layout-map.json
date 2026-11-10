@@ -28,7 +28,7 @@
       "divisions": 5,
       "mark": 3,
       "label": "Moderate confidence: rung 3 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 7.5,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -40,7 +40,7 @@
       "divisions": 5,
       "mark": 3,
       "label": "Moderate confidence: rung 3 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -52,7 +52,7 @@
       "divisions": 5,
       "mark": 4,
       "label": "Moderate-High confidence: rung 4 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -64,7 +64,7 @@
       "divisions": 5,
       "mark": 5,
       "label": "High confidence: rung 5 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -76,7 +76,7 @@
       "divisions": 5,
       "mark": 3,
       "label": "Moderate confidence: rung 3 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -88,7 +88,7 @@
       "divisions": 5,
       "mark": 5,
       "label": "High confidence: rung 5 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -100,7 +100,7 @@
       "divisions": 5,
       "mark": 2,
       "label": "Low-Moderate confidence: rung 2 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -112,7 +112,7 @@
       "divisions": 5,
       "mark": 3,
       "label": "Moderate confidence: rung 3 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -124,7 +124,7 @@
       "divisions": 5,
       "mark": 3,
       "label": "Moderate confidence: rung 3 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8.5,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",
@@ -136,7 +136,7 @@
       "divisions": 5,
       "mark": 5,
       "label": "High confidence: rung 5 of 5",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "confidence rank",
         "field": "method.confidence",

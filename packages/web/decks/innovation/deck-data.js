@@ -3,6 +3,648 @@ window.INNOVATION_DECK = {
   "deck": "Innovation Architecture",
   "cards": [
     {
+      "id": "I01",
+      "sourceTacticNo": 1,
+      "name": "The Mom Test Conversational Protocol",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [target customer segment] experiences severe operational inefficiency when [executing specific task]. We will verify this by conducting 12 conversational interviews focusing exclusively on past actions, and consider it validated if at least 8 of 12 respondents independently describe a dedicated, imperfect workaround they used within the last 14 days without prompting.",
+      "hypothesisSize": 7.5,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 5–7 days",
+        "Cost: $0",
+        "Confidence: Moderate (Qualitative behavioral)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Write five prompts about past events; strip every reference to a solution, a business or a hypothetical."
+        },
+        {
+          "label": "Execution",
+          "text": "Run 30-minute interviews anchored in the last time they did the task, what it cost, and what they tried first."
+        },
+        {
+          "label": "Data collection",
+          "text": "Transcribe verbatim; label each line historical behaviour, speculation or feeling, and drop speculation."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Formulate 5 open-ended inquiry prompts anchored strictly in historical occurrences. Strip all references to prospective solutions, business concepts, and hypothetical feature sets."
+        },
+        {
+          "label": "Execution",
+          "text": "Conduct 30-minute semi-structured interviews. Anchor discussions in past events using prompts such as: \"Walk me through the last time you completed [task],\" \"How much time or budget did resolving that bottleneck consume?\" and \"What alternative approaches failed?\"."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record the dialogue verbatim. Classify every statement into three categories: historical behavior, stated forward-looking speculation, or emotional frustration. Disregard speculative statements entirely during synthesis."
+        }
+      ],
+      "warning": {
+        "label": "Courtesy Bias",
+        "text": "Show your concept and interviewees politely affirm it to avoid friction, manufacturing validation."
+      },
+      "warningFull": "When interviewers disclose their product concept, interviewees offer polite affirmations to avoid interpersonal friction, generating an illusion of validation.",
+      "origin": {
+        "authors": [
+          "Rob Fitzpatrick"
+        ],
+        "year": 2013,
+        "title": "The Mom Test",
+        "publication": "Robfitz",
+        "authorsLabel": "Rob Fitzpatrick",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I02",
+      "sourceTacticNo": 2,
+      "name": "Blank Customer Problem Discovery Interview",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [industry persona] suffers from [critical operational bottleneck]. We will verify this by executing 15 structured problem interviews across 3 distinct sub-verticals, and consider it validated if ≥ 70% of interviewees rank this problem as one of their top two operational challenges for the current fiscal quarter.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 7–10 days",
+        "Cost: $0–$100",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Define the ideal customer profile from firmographic traits; frame outreach as research, not a sales pitch."
+        },
+        {
+          "label": "Execution",
+          "text": "Ask for the quarter’s top three operational priorities and see whether the problem surfaces unprompted."
+        },
+        {
+          "label": "Data collection",
+          "text": "Score urgency one to five from documented budget, executive visibility and active software evaluations."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Define the Ideal Customer Profile (ICP) based on observable firmographic attributes. Secure interview access by framing outreach as academic or industrial research rather than commercial solicitation."
+        },
+        {
+          "label": "Execution",
+          "text": "Introduce the macro domain and instruct respondents to identify their top 3 operational priorities for the quarter. Observe whether the hypothesized problem surfaces organically without prompting."
+        },
+        {
+          "label": "Data collection",
+          "text": "Score the problem's organizational urgency on a 1–5 scale based on documented resource allocation, executive visibility, and active software evaluations."
+        }
+      ],
+      "warning": {
+        "label": "Polite Problem Inflation",
+        "text": "Interviewees lament minor inconveniences they have no budget or mandate to resolve."
+      },
+      "warningFull": "In professional contexts, interviewees frequently lament minor operational inconveniences that they have no budget or mandate to resolve.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I03",
+      "sourceTacticNo": 3,
+      "name": "Jobs-to-Be-Done (JTBD) Switch and Forces Interview",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [persona] switches away from [incumbent solution] primarily due to [catalyzing push/pull force]. We will verify this by interviewing 10 individuals who transitioned between solutions within the last 90 days, and consider it validated if ≥ 60% point to the exact same triggering event and emotional crisis point.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate-High confidence: rung 4 of 5",
+      "method": [
+        "Time: 7–14 days",
+        "Cost: $0–$250",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Recruit ten people who switched in the last 90 days and build the four-force inquiry matrix."
+        },
+        {
+          "label": "Execution",
+          "text": "Walk the arc - first thought, active looking, deciding, consuming - and ask what nearly stopped the purchase."
+        },
+        {
+          "label": "Data collection",
+          "text": "Map the active forces on a matrix, keeping push mechanisms apart from feature wishlists."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Recruit participants who recently switched products within the category. Construct an inquiry matrix covering the four core forces: Push of the Current Situation, Pull of the New Solution, Habit/Inertia, and Anxiety of Change."
+        },
+        {
+          "label": "Execution",
+          "text": "Interrogate the chronological arc of the transition: First Thought, Active Looking, Deciding, and Consuming. Inquire: \"Where were you when you decided the prior solution was untenable?\" \"What almost prevented you from finalizing the purchase?\""
+        },
+        {
+          "label": "Data collection",
+          "text": "Map the active forces onto a Cartesian matrix, separating push mechanisms from unvalidated feature wishlists."
+        }
+      ],
+      "warning": {
+        "label": "Post-Hoc Rationalization",
+        "text": "Buyers build coherent narratives for decisions that were emotional, impulsive or organisational."
+      },
+      "warningFull": "Consumers routinely construct coherent, rational narratives for purchasing decisions that were fundamentally driven by emotional, impulsive, or organizational impulses.",
+      "origin": {
+        "authors": [
+          "Clayton M. Christensen",
+          "Taddy Hall",
+          "Karen Dillon",
+          "David S. Duncan"
+        ],
+        "year": 2016,
+        "title": "Competing Against Luck: The Story of Innovation and Customer Choice",
+        "publication": "HarperBusiness",
+        "authorsLabel": "Clayton M. Christensen, Taddy Hall, Karen Dillon & David S. Duncan",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"139\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I04",
+      "sourceTacticNo": 4,
+      "name": "Ethnographic Contextual Inquiry (Shadowing)",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [operators] face unrecorded cognitive overload while [operating system X]. We will verify this by observing 6 operators in their natural workplace for 4 hours each, and consider it validated if we record ≥ 5 unprompted compensatory mechanisms (e.g., sticky notes, personal spreadsheets, ad-hoc scripts) per operator per shift.",
+      "hypothesisSize": 8,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 10–14 days",
+        "Cost: $0–$500",
+        "Confidence: High (Direct observation)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Clear confidentiality and access; build a ledger for micro-interruptions, non-verbal cues and app switches."
+        },
+        {
+          "label": "Execution",
+          "text": "Observe silently through a shift; interrupt only on a deviation and ask what motivated that step."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compile a minute-by-minute trace of application switches, error recovery, movement and distraction."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Execute confidentiality agreements and workplace access protocols. Construct an observation ledger focused on micro-interruptions, non-verbal cues, and application-switching frequency."
+        },
+        {
+          "label": "Execution",
+          "text": "Observe the operator silently during regular shifts. Interrupt only when an operational deviation occurs: \"I observed you copied that string into an external editor before pasting it. What motivated that step?\""
+        },
+        {
+          "label": "Data collection",
+          "text": "Compile a minute-by-minute workflow trace logging application switches, error recovery efforts, physical movements, and environmental distractions."
+        }
+      ],
+      "warning": {
+        "label": "Hawthorne Effect",
+        "text": "Observed operators tidy their workarounds and follow formal protocol because someone is watching."
+      },
+      "warningFull": "Subjects alter their conventional workflows, adhere more strictly to formal protocols, or tidy operational workarounds simply because they are being observed.",
+      "origin": {
+        "authors": [
+          "Hugh Beyer",
+          "Karen Holtzblatt"
+        ],
+        "year": 1998,
+        "title": "Contextual Design: Defining Customer-Centered Systems",
+        "publication": "Morgan Kaufmann",
+        "authorsLabel": "Hugh Beyer & Karen Holtzblatt",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I05",
+      "sourceTacticNo": 5,
+      "name": "Value Proposition Canvas Customer Profiling",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [customer segment] considers [pain point Y] significantly more critical than [pain point Z]. We will verify this by conducting 10 canvas alignment exercises, and consider it validated if ≥ 75% of participants independently cluster their top 3 jobs and pains into identical operational nodes.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Lay out an empty customer profile of jobs, pains and gains on a board that participants can move."
+        },
+        {
+          "label": "Execution",
+          "text": "Run an unmoderated card sort into functional, social and emotional categories, then rank pains and gains."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record where items cluster and correlate the rankings across participants."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Construct an unpopulated Value Proposition Canvas Customer Profile (comprising Jobs, Pains, and Gains) using standardized markdown or digital boards."
+        },
+        {
+          "label": "Execution",
+          "text": "Guide users through an unmoderated card-sort protocol. Instruct them to place operational responsibilities into functional, social, and emotional categories, then rank pains by severity and gains by relevance."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record the spatial clustering of items. Calculate Spearman rank-order correlation coefficients across participant cards."
+        }
+      ],
+      "warning": {
+        "label": "Aspirational Self-Deception",
+        "text": "People elevate noble social and emotional jobs above the mundane functional tasks that decide the purchase."
+      },
+      "warningFull": "Participants consistently overemphasize noble emotional or social jobs while minimizing the mundane, repetitive functional tasks that dictate enterprise purchase behavior.",
+      "origin": {
+        "authors": [
+          "Alexander Osterwalder",
+          "Yves Pigneur",
+          "Gregory Bernarda",
+          "Alan Smith"
+        ],
+        "year": 2014,
+        "title": "Value Proposition Design: How to Create Products and Services Customers Want",
+        "publication": "John Wiley & Sons",
+        "authorsLabel": "Alexander Osterwalder, Yves Pigneur, Gregory Bernarda & Alan Smith",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I06",
+      "sourceTacticNo": 6,
+      "name": "Customer Churn and Exit Interview Mining",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that customers abandon [incumbent solution category] because of [deficiency X]. We will verify this by auditing 20 canceled customer accounts or exit interviews, and consider it validated if ≥ 50% identify [deficiency X] as their primary non-negotiable exit driver rather than pricing or budget constraints.",
+      "hypothesisSize": 8,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 7–12 days",
+        "Cost: $0",
+        "Confidence: High (Post-behavioral)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Pull accounts cancelled in the last 30 to 60 days; frame the call as a process post-mortem, not a win-back."
+        },
+        {
+          "label": "Execution",
+          "text": "Ask when value stopped, what workaround they built before leaving, and what replaced the product."
+        },
+        {
+          "label": "Data collection",
+          "text": "Code each exit into price, product defect, reorganisation or loss of internal champion."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Extract lists of accounts canceled within the prior 30–60 days. Frame interview outreach as an operational post-mortem aimed at process improvement rather than customer win-back."
+        },
+        {
+          "label": "Execution",
+          "text": "Conduct 20-minute structured exit interviews inquiring: \"At what specific moment did the product cease delivering anticipated value?\" \"What workaround did you build prior to cancellation?\" \"What replacement system was deployed?\""
+        },
+        {
+          "label": "Data collection",
+          "text": "Code exit rationales into root categories: price sensitivity, core product defect, organizational reorganization, or loss of internal champion."
+        }
+      ],
+      "warning": {
+        "label": "Scapegoat Rationalization",
+        "text": "Churned clients blame price or a peripheral bug rather than admit the organisation could not adopt it."
+      },
+      "warningFull": "Churned clients routinely point to price or peripheral software bugs as polite covers rather than acknowledging their organization lacked the operational competence to adopt the platform.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I07",
+      "sourceTacticNo": 7,
+      "name": "Public Community and Social Sentiment Mining",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that users of [incumbent software] are actively seeking alternatives due to [specific systemic flaw]. We will verify this by analyzing 300 unresolved negative comments and support threads across industry forums, and consider it validated if ≥ 25% of organic complaint threads focus specifically on [flaw].",
+      "hypothesisSize": 8,
+      "schematic": "Low-Moderate confidence: rung 2 of 5",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $0",
+        "Confidence: Low-Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Map the practitioner communities: specialist forums, issue trackers, subreddits and professional groups."
+        },
+        {
+          "label": "Execution",
+          "text": "Search with diagnostic boolean strings - how do I fix, alternative to, terrible UX, workaround."
+        },
+        {
+          "label": "Data collection",
+          "text": "Group complaints into themes, reported losses and the operational driver under each."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Map primary practitioner communities across specialized forums, GitHub issue trackers, subreddit channels, and professional discussion spaces."
+        },
+        {
+          "label": "Execution",
+          "text": "Execute systematic diagnostic search queries using boolean strings (e.g., \"how do I fix\", \"alternative to\", \"terrible UX\", \"workaround\")."
+        },
+        {
+          "label": "Data collection",
+          "text": "Aggregate complaint structures into an analysis matrix. Track recurring themes, estimated financial losses reported by users, and underlying operational drivers."
+        }
+      ],
+      "warning": {
+        "label": "Selection Bias of Vocal Minorities",
+        "text": "Public threads amplify edge-case power users whose needs diverge from the mainstream market."
+      },
+      "warningFull": "Public communities amplify the grievances of highly vocal edge-case power users whose requirements diverge significantly from the mainstream market.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"265\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I08",
+      "sourceTacticNo": 8,
+      "name": "Customer Advisory Board Problem Council",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [industry vertical] executives consider [nascent regulatory or operational challenge] a board-level risk. We will verify this by hosting a 6-executive roundtable, and consider it validated if ≥ 4 members confirm they have formally committed budget to mitigate the issue in the current fiscal year.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 14–21 days",
+        "Cost: $500–$$$",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Recruit six non-competing executives and frame the session as an off-the-record working council."
+        },
+        {
+          "label": "Execution",
+          "text": "Under the Chatham House Rule, have each name their single greatest vulnerability, with no product pitch."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record how peers validate each other, which budget lines are disclosed, and which problems recur."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Recruit 6 non-competing industry executives. Frame the session as an off-the-record working council on emerging operational bottlenecks."
+        },
+        {
+          "label": "Execution",
+          "text": "Facilitate an executive Chatham House Rule discussion around operational risks. Require each participant to detail their single greatest vulnerability without evaluating potential software solutions."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record the level of inter-participant validation, specific budget line items disclosed, and shared operational challenges that surface organically across accounts."
+        }
+      ],
+      "warning": {
+        "label": "Executive Echo Chamber",
+        "text": "Executives echo industry buzzwords to look forward-thinking before peers, regardless of budget."
+      },
+      "warningFull": "Board members often echo high-level industry buzzwords and macro narratives to appear forward-thinking before peers, irrespective of actual internal budget allocation.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I09",
+      "sourceTacticNo": 9,
+      "name": "Search Intent and Semantic Volume Reconnaissance",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that consumers are actively searching for ways to solve [problem X]. We will verify this by analyzing search engine queries across targeted keyword groups, and consider it validated if high-intent terms show ≥ 2,500 monthly organic queries with a year-over-year growth rate of ≥ 20%.",
+      "hypothesisSize": 8.5,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 2–4 days",
+        "Cost: $0–$150",
+        "Confidence: Moderate (Intent-based)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Compile seed variants of high-intent syntax: how to automate X, X alternative, X compliance template."
+        },
+        {
+          "label": "Execution",
+          "text": "Query volume databases for regional density, historical trend, cost per click and competitor saturation."
+        },
+        {
+          "label": "Data collection",
+          "text": "Split queries into informational, navigational, commercial and transactional, then total commercial volume."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Compile a seed dictionary of high-intent search syntax variants (e.g., \"how to automate X\", \"X alternative\", \"X compliance template\")."
+        },
+        {
+          "label": "Execution",
+          "text": "Query search volume databases to extract regional search density, historical trajectory, cost-per-click bids, and competitor domain saturation."
+        },
+        {
+          "label": "Data collection",
+          "text": "Segment search queries into Informational, Navigational, Commercial, and Transactional categories. Calculate the total addressable commercial search volume."
+        }
+      ],
+      "warning": {
+        "label": "Informational Intent Conflation",
+        "text": "High informational volume can mean curiosity or free-guide seekers, not buyers with commercial intent."
+      },
+      "warningFull": "High search volumes for informational queries often signify academic curiosity or individuals looking for free guides, rather than buyers demonstrating commercial intent.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I10",
+      "sourceTacticNo": 10,
+      "name": "Critical Incident Technique (CIT) Audit",
+      "phase": "Customer Discovery and Problem Validation Tactics",
+      "hypothesis": "We believe that [event X] triggers operational failure in [workflow Y]. We will verify this by collecting 15 detailed critical incident reports from practitioners, and consider it validated if ≥ 80% report that the incident caused acute workflow delays, compliance exposure, or direct financial loss.",
+      "hypothesisSize": 8,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 5–8 days",
+        "Cost: $0",
+        "Confidence: High (Incident-focused)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Set explicit inclusion criteria for a critical incident: downtime, SLA breach or emergency briefing."
+        },
+        {
+          "label": "Execution",
+          "text": "Ask practitioners to recount the most recent failure, the conditions before it, and what failed in response."
+        },
+        {
+          "label": "Data collection",
+          "text": "Build a chronological event map per incident: root trigger, compounding effects, downstream cost."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Establish explicit inclusion criteria for what constitutes a critical incident (e.g., unscheduled downtime, SLA breach, or emergency executive briefing)."
+        },
+        {
+          "label": "Execution",
+          "text": "Interview qualified practitioners using the CIT protocol: \"Recount the most recent operational failure in your workflow. What specific conditions preceded it? What interventions were deployed, and what systems failed?\""
+        },
+        {
+          "label": "Data collection",
+          "text": "Reconstruct a chronological event map for each incident, detailing the root triggers, secondary compounding effects, and downstream financial costs."
+        }
+      ],
+      "warning": {
+        "label": "Salience and Availability Bias",
+        "text": "Vivid crises are remembered clearly and mistaken for routine, recurring market needs."
+      },
+      "warningFull": "Participants recall dramatic, emotionally charged anomalies with extreme clarity, leading researchers to mistake infrequent operational crises for routine, recurring market needs.",
+      "origin": {
+        "authors": [
+          "John C. Flanagan"
+        ],
+        "year": 1954,
+        "title": "The Critical Incident Technique",
+        "publication": "Psychological Bulletin",
+        "authorsLabel": "John C. Flanagan",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "I30",
       "sourceTacticNo": 30,
       "name": "Refundable Deposit Pre-Order",

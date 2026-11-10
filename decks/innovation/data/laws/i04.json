@@ -1,0 +1,64 @@
+{
+  "id": "I04",
+  "sourceTacticNo": 4,
+  "name": "Ethnographic Contextual Inquiry (Shadowing)",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [operators] face unrecorded cognitive overload while [operating system X]. We will verify this by observing 6 operators in their natural workplace for 4 hours each, and consider it validated if we record ≥ 5 unprompted compensatory mechanisms (e.g., sticky notes, personal spreadsheets, ad-hoc scripts) per operator per shift.",
+  "hypothesisSize": 8,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 10–14 days",
+    "Cost: $0–$500",
+    "Confidence: High (Direct observation)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Clear confidentiality and access; build a ledger for micro-interruptions, non-verbal cues and app switches."
+    },
+    {
+      "label": "Execution",
+      "text": "Observe silently through a shift; interrupt only on a deviation and ask what motivated that step."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compile a minute-by-minute trace of application switches, error recovery, movement and distraction."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Execute confidentiality agreements and workplace access protocols. Construct an observation ledger focused on micro-interruptions, non-verbal cues, and application-switching frequency."
+    },
+    {
+      "label": "Execution",
+      "text": "Observe the operator silently during regular shifts. Interrupt only when an operational deviation occurs: \"I observed you copied that string into an external editor before pasting it. What motivated that step?\""
+    },
+    {
+      "label": "Data collection",
+      "text": "Compile a minute-by-minute workflow trace logging application switches, error recovery efforts, physical movements, and environmental distractions."
+    }
+  ],
+  "warning": {
+    "label": "Hawthorne Effect",
+    "text": "Observed operators tidy their workarounds and follow formal protocol because someone is watching."
+  },
+  "warningFull": "Subjects alter their conventional workflows, adhere more strictly to formal protocols, or tidy operational workarounds simply because they are being observed.",
+  "origin": {
+    "authors": [
+      "Hugh Beyer",
+      "Karen Holtzblatt"
+    ],
+    "year": 1998,
+    "title": "Contextual Design: Defining Customer-Centered Systems",
+    "publication": "Morgan Kaufmann"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

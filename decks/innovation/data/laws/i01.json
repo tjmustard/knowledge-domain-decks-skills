@@ -1,0 +1,63 @@
+{
+  "id": "I01",
+  "sourceTacticNo": 1,
+  "name": "The Mom Test Conversational Protocol",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [target customer segment] experiences severe operational inefficiency when [executing specific task]. We will verify this by conducting 12 conversational interviews focusing exclusively on past actions, and consider it validated if at least 8 of 12 respondents independently describe a dedicated, imperfect workaround they used within the last 14 days without prompting.",
+  "hypothesisSize": 7.5,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 5–7 days",
+    "Cost: $0",
+    "Confidence: Moderate (Qualitative behavioral)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Write five prompts about past events; strip every reference to a solution, a business or a hypothetical."
+    },
+    {
+      "label": "Execution",
+      "text": "Run 30-minute interviews anchored in the last time they did the task, what it cost, and what they tried first."
+    },
+    {
+      "label": "Data collection",
+      "text": "Transcribe verbatim; label each line historical behaviour, speculation or feeling, and drop speculation."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Formulate 5 open-ended inquiry prompts anchored strictly in historical occurrences. Strip all references to prospective solutions, business concepts, and hypothetical feature sets."
+    },
+    {
+      "label": "Execution",
+      "text": "Conduct 30-minute semi-structured interviews. Anchor discussions in past events using prompts such as: \"Walk me through the last time you completed [task],\" \"How much time or budget did resolving that bottleneck consume?\" and \"What alternative approaches failed?\"."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record the dialogue verbatim. Classify every statement into three categories: historical behavior, stated forward-looking speculation, or emotional frustration. Disregard speculative statements entirely during synthesis."
+    }
+  ],
+  "warning": {
+    "label": "Courtesy Bias",
+    "text": "Show your concept and interviewees politely affirm it to avoid friction, manufacturing validation."
+  },
+  "warningFull": "When interviewers disclose their product concept, interviewees offer polite affirmations to avoid interpersonal friction, generating an illusion of validation.",
+  "origin": {
+    "authors": [
+      "Rob Fitzpatrick"
+    ],
+    "year": 2013,
+    "title": "The Mom Test",
+    "publication": "Robfitz"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

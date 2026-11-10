@@ -1,0 +1,66 @@
+{
+  "id": "I05",
+  "sourceTacticNo": 5,
+  "name": "Value Proposition Canvas Customer Profiling",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [customer segment] considers [pain point Y] significantly more critical than [pain point Z]. We will verify this by conducting 10 canvas alignment exercises, and consider it validated if ≥ 75% of participants independently cluster their top 3 jobs and pains into identical operational nodes.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Lay out an empty customer profile of jobs, pains and gains on a board that participants can move."
+    },
+    {
+      "label": "Execution",
+      "text": "Run an unmoderated card sort into functional, social and emotional categories, then rank pains and gains."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record where items cluster and correlate the rankings across participants."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Construct an unpopulated Value Proposition Canvas Customer Profile (comprising Jobs, Pains, and Gains) using standardized markdown or digital boards."
+    },
+    {
+      "label": "Execution",
+      "text": "Guide users through an unmoderated card-sort protocol. Instruct them to place operational responsibilities into functional, social, and emotional categories, then rank pains by severity and gains by relevance."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record the spatial clustering of items. Calculate Spearman rank-order correlation coefficients across participant cards."
+    }
+  ],
+  "warning": {
+    "label": "Aspirational Self-Deception",
+    "text": "People elevate noble social and emotional jobs above the mundane functional tasks that decide the purchase."
+  },
+  "warningFull": "Participants consistently overemphasize noble emotional or social jobs while minimizing the mundane, repetitive functional tasks that dictate enterprise purchase behavior.",
+  "origin": {
+    "authors": [
+      "Alexander Osterwalder",
+      "Yves Pigneur",
+      "Gregory Bernarda",
+      "Alan Smith"
+    ],
+    "year": 2014,
+    "title": "Value Proposition Design: How to Create Products and Services Customers Want",
+    "publication": "John Wiley & Sons"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

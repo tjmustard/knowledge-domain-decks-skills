@@ -1,0 +1,58 @@
+{
+  "id": "I09",
+  "sourceTacticNo": 9,
+  "name": "Search Intent and Semantic Volume Reconnaissance",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that consumers are actively searching for ways to solve [problem X]. We will verify this by analyzing search engine queries across targeted keyword groups, and consider it validated if high-intent terms show ≥ 2,500 monthly organic queries with a year-over-year growth rate of ≥ 20%.",
+  "hypothesisSize": 8.5,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 2–4 days",
+    "Cost: $0–$150",
+    "Confidence: Moderate (Intent-based)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Compile seed variants of high-intent syntax: how to automate X, X alternative, X compliance template."
+    },
+    {
+      "label": "Execution",
+      "text": "Query volume databases for regional density, historical trend, cost per click and competitor saturation."
+    },
+    {
+      "label": "Data collection",
+      "text": "Split queries into informational, navigational, commercial and transactional, then total commercial volume."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Compile a seed dictionary of high-intent search syntax variants (e.g., \"how to automate X\", \"X alternative\", \"X compliance template\")."
+    },
+    {
+      "label": "Execution",
+      "text": "Query search volume databases to extract regional search density, historical trajectory, cost-per-click bids, and competitor domain saturation."
+    },
+    {
+      "label": "Data collection",
+      "text": "Segment search queries into Informational, Navigational, Commercial, and Transactional categories. Calculate the total addressable commercial search volume."
+    }
+  ],
+  "warning": {
+    "label": "Informational Intent Conflation",
+    "text": "High informational volume can mean curiosity or free-guide seekers, not buyers with commercial intent."
+  },
+  "warningFull": "High search volumes for informational queries often signify academic curiosity or individuals looking for free guides, rather than buyers demonstrating commercial intent.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

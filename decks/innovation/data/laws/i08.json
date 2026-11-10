@@ -1,0 +1,58 @@
+{
+  "id": "I08",
+  "sourceTacticNo": 8,
+  "name": "Customer Advisory Board Problem Council",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [industry vertical] executives consider [nascent regulatory or operational challenge] a board-level risk. We will verify this by hosting a 6-executive roundtable, and consider it validated if ≥ 4 members confirm they have formally committed budget to mitigate the issue in the current fiscal year.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 14–21 days",
+    "Cost: $500–$$$",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Recruit six non-competing executives and frame the session as an off-the-record working council."
+    },
+    {
+      "label": "Execution",
+      "text": "Under the Chatham House Rule, have each name their single greatest vulnerability, with no product pitch."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record how peers validate each other, which budget lines are disclosed, and which problems recur."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Recruit 6 non-competing industry executives. Frame the session as an off-the-record working council on emerging operational bottlenecks."
+    },
+    {
+      "label": "Execution",
+      "text": "Facilitate an executive Chatham House Rule discussion around operational risks. Require each participant to detail their single greatest vulnerability without evaluating potential software solutions."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record the level of inter-participant validation, specific budget line items disclosed, and shared operational challenges that surface organically across accounts."
+    }
+  ],
+  "warning": {
+    "label": "Executive Echo Chamber",
+    "text": "Executives echo industry buzzwords to look forward-thinking before peers, regardless of budget."
+  },
+  "warningFull": "Board members often echo high-level industry buzzwords and macro narratives to appear forward-thinking before peers, irrespective of actual internal budget allocation.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

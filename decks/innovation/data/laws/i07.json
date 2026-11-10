@@ -1,0 +1,58 @@
+{
+  "id": "I07",
+  "sourceTacticNo": 7,
+  "name": "Public Community and Social Sentiment Mining",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that users of [incumbent software] are actively seeking alternatives due to [specific systemic flaw]. We will verify this by analyzing 300 unresolved negative comments and support threads across industry forums, and consider it validated if ≥ 25% of organic complaint threads focus specifically on [flaw].",
+  "hypothesisSize": 8,
+  "schematic": "Low-Moderate confidence: rung 2 of 5",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $0",
+    "Confidence: Low-Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Map the practitioner communities: specialist forums, issue trackers, subreddits and professional groups."
+    },
+    {
+      "label": "Execution",
+      "text": "Search with diagnostic boolean strings - how do I fix, alternative to, terrible UX, workaround."
+    },
+    {
+      "label": "Data collection",
+      "text": "Group complaints into themes, reported losses and the operational driver under each."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Map primary practitioner communities across specialized forums, GitHub issue trackers, subreddit channels, and professional discussion spaces."
+    },
+    {
+      "label": "Execution",
+      "text": "Execute systematic diagnostic search queries using boolean strings (e.g., \"how do I fix\", \"alternative to\", \"terrible UX\", \"workaround\")."
+    },
+    {
+      "label": "Data collection",
+      "text": "Aggregate complaint structures into an analysis matrix. Track recurring themes, estimated financial losses reported by users, and underlying operational drivers."
+    }
+  ],
+  "warning": {
+    "label": "Selection Bias of Vocal Minorities",
+    "text": "Public threads amplify edge-case power users whose needs diverge from the mainstream market."
+  },
+  "warningFull": "Public communities amplify the grievances of highly vocal edge-case power users whose requirements diverge significantly from the mainstream market.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 2
+    }
+  }
+}

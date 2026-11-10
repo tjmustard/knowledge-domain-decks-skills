@@ -1,0 +1,66 @@
+{
+  "id": "I03",
+  "sourceTacticNo": 3,
+  "name": "Jobs-to-Be-Done (JTBD) Switch and Forces Interview",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [persona] switches away from [incumbent solution] primarily due to [catalyzing push/pull force]. We will verify this by interviewing 10 individuals who transitioned between solutions within the last 90 days, and consider it validated if ≥ 60% point to the exact same triggering event and emotional crisis point.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate-High confidence: rung 4 of 5",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $0–$250",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Recruit ten people who switched in the last 90 days and build the four-force inquiry matrix."
+    },
+    {
+      "label": "Execution",
+      "text": "Walk the arc - first thought, active looking, deciding, consuming - and ask what nearly stopped the purchase."
+    },
+    {
+      "label": "Data collection",
+      "text": "Map the active forces on a matrix, keeping push mechanisms apart from feature wishlists."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Recruit participants who recently switched products within the category. Construct an inquiry matrix covering the four core forces: Push of the Current Situation, Pull of the New Solution, Habit/Inertia, and Anxiety of Change."
+    },
+    {
+      "label": "Execution",
+      "text": "Interrogate the chronological arc of the transition: First Thought, Active Looking, Deciding, and Consuming. Inquire: \"Where were you when you decided the prior solution was untenable?\" \"What almost prevented you from finalizing the purchase?\""
+    },
+    {
+      "label": "Data collection",
+      "text": "Map the active forces onto a Cartesian matrix, separating push mechanisms from unvalidated feature wishlists."
+    }
+  ],
+  "warning": {
+    "label": "Post-Hoc Rationalization",
+    "text": "Buyers build coherent narratives for decisions that were emotional, impulsive or organisational."
+  },
+  "warningFull": "Consumers routinely construct coherent, rational narratives for purchasing decisions that were fundamentally driven by emotional, impulsive, or organizational impulses.",
+  "origin": {
+    "authors": [
+      "Clayton M. Christensen",
+      "Taddy Hall",
+      "Karen Dillon",
+      "David S. Duncan"
+    ],
+    "year": 2016,
+    "title": "Competing Against Luck: The Story of Innovation and Customer Choice",
+    "publication": "HarperBusiness"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 4
+    }
+  }
+}

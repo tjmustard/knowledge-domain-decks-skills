@@ -1,0 +1,58 @@
+{
+  "id": "I06",
+  "sourceTacticNo": 6,
+  "name": "Customer Churn and Exit Interview Mining",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that customers abandon [incumbent solution category] because of [deficiency X]. We will verify this by auditing 20 canceled customer accounts or exit interviews, and consider it validated if ≥ 50% identify [deficiency X] as their primary non-negotiable exit driver rather than pricing or budget constraints.",
+  "hypothesisSize": 8,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 7–12 days",
+    "Cost: $0",
+    "Confidence: High (Post-behavioral)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Pull accounts cancelled in the last 30 to 60 days; frame the call as a process post-mortem, not a win-back."
+    },
+    {
+      "label": "Execution",
+      "text": "Ask when value stopped, what workaround they built before leaving, and what replaced the product."
+    },
+    {
+      "label": "Data collection",
+      "text": "Code each exit into price, product defect, reorganisation or loss of internal champion."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Extract lists of accounts canceled within the prior 30–60 days. Frame interview outreach as an operational post-mortem aimed at process improvement rather than customer win-back."
+    },
+    {
+      "label": "Execution",
+      "text": "Conduct 20-minute structured exit interviews inquiring: \"At what specific moment did the product cease delivering anticipated value?\" \"What workaround did you build prior to cancellation?\" \"What replacement system was deployed?\""
+    },
+    {
+      "label": "Data collection",
+      "text": "Code exit rationales into root categories: price sensitivity, core product defect, organizational reorganization, or loss of internal champion."
+    }
+  ],
+  "warning": {
+    "label": "Scapegoat Rationalization",
+    "text": "Churned clients blame price or a peripheral bug rather than admit the organisation could not adopt it."
+  },
+  "warningFull": "Churned clients routinely point to price or peripheral software bugs as polite covers rather than acknowledging their organization lacked the operational competence to adopt the platform.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

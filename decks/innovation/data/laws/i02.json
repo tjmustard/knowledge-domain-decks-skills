@@ -1,0 +1,58 @@
+{
+  "id": "I02",
+  "sourceTacticNo": 2,
+  "name": "Blank Customer Problem Discovery Interview",
+  "phase": "Customer Discovery and Problem Validation Tactics",
+  "hypothesis": "We believe that [industry persona] suffers from [critical operational bottleneck]. We will verify this by executing 15 structured problem interviews across 3 distinct sub-verticals, and consider it validated if ≥ 70% of interviewees rank this problem as one of their top two operational challenges for the current fiscal quarter.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 7–10 days",
+    "Cost: $0–$100",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Define the ideal customer profile from firmographic traits; frame outreach as research, not a sales pitch."
+    },
+    {
+      "label": "Execution",
+      "text": "Ask for the quarter’s top three operational priorities and see whether the problem surfaces unprompted."
+    },
+    {
+      "label": "Data collection",
+      "text": "Score urgency one to five from documented budget, executive visibility and active software evaluations."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Define the Ideal Customer Profile (ICP) based on observable firmographic attributes. Secure interview access by framing outreach as academic or industrial research rather than commercial solicitation."
+    },
+    {
+      "label": "Execution",
+      "text": "Introduce the macro domain and instruct respondents to identify their top 3 operational priorities for the quarter. Observe whether the hypothesized problem surfaces organically without prompting."
+    },
+    {
+      "label": "Data collection",
+      "text": "Score the problem's organizational urgency on a 1–5 scale based on documented resource allocation, executive visibility, and active software evaluations."
+    }
+  ],
+  "warning": {
+    "label": "Polite Problem Inflation",
+    "text": "Interviewees lament minor inconveniences they have no budget or mandate to resolve."
+  },
+  "warningFull": "In professional contexts, interviewees frequently lament minor operational inconveniences that they have no budget or mandate to resolve.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

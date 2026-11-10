@@ -5,6 +5,268 @@
 The tactics come from public product-discovery and experimentation practice: customer interviews, assumption mapping, smoke tests, service prototypes, pre-commitments, and the innovation-accounting metrics that decide whether any of them was worth running. Each card states a hypothesis with the threshold it pre-commits to, the method (time, cost, confidence), the three stages that run it, and the named false positive that makes that particular test lie.
 The hypothesis prints on the card exactly as the source states it, threshold included, because an experiment without its validation criterion is an opinion. The three stages print compressed to one line each; the full stages, the full warning and the method values follow here, because this file is the reference.
 
+## Customer Discovery and Problem Validation Tactics
+
+### I01 — The Mom Test Conversational Protocol
+
+**Hypothesis and threshold.** We believe that [target customer segment] experiences severe operational inefficiency when [executing specific task]. We will verify this by conducting 12 conversational interviews focusing exclusively on past actions, and consider it validated if at least 8 of 12 respondents independently describe a dedicated, imperfect workaround they used within the last 14 days without prompting.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 5–7 days · Cost: $0 · Confidence: Moderate (Qualitative behavioral)
+
+**Plan.**
+- Preparation: Write five prompts about past events; strip every reference to a solution, a business or a hypothetical.
+- Execution: Run 30-minute interviews anchored in the last time they did the task, what it cost, and what they tried first.
+- Data collection: Transcribe verbatim; label each line historical behaviour, speculation or feeling, and drop speculation.
+
+**False positive.** Courtesy Bias
+
+Show your concept and interviewees politely affirm it to avoid friction, manufacturing validation.
+
+**Plan as written.**
+- Preparation: Formulate 5 open-ended inquiry prompts anchored strictly in historical occurrences. Strip all references to prospective solutions, business concepts, and hypothetical feature sets.
+- Execution: Conduct 30-minute semi-structured interviews. Anchor discussions in past events using prompts such as: "Walk me through the last time you completed [task]," "How much time or budget did resolving that bottleneck consume?" and "What alternative approaches failed?".
+- Data collection: Record the dialogue verbatim. Classify every statement into three categories: historical behavior, stated forward-looking speculation, or emotional frustration. Disregard speculative statements entirely during synthesis.
+
+**Warning as written.** When interviewers disclose their product concept, interviewees offer polite affirmations to avoid interpersonal friction, generating an illusion of validation.
+
+**Source.** Rob Fitzpatrick (2013). *The Mom Test*. Robfitz.
+
+### I02 — Blank Customer Problem Discovery Interview
+
+**Hypothesis and threshold.** We believe that [industry persona] suffers from [critical operational bottleneck]. We will verify this by executing 15 structured problem interviews across 3 distinct sub-verticals, and consider it validated if ≥ 70% of interviewees rank this problem as one of their top two operational challenges for the current fiscal quarter.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 7–10 days · Cost: $0–$100 · Confidence: Moderate
+
+**Plan.**
+- Preparation: Define the ideal customer profile from firmographic traits; frame outreach as research, not a sales pitch.
+- Execution: Ask for the quarter’s top three operational priorities and see whether the problem surfaces unprompted.
+- Data collection: Score urgency one to five from documented budget, executive visibility and active software evaluations.
+
+**False positive.** Polite Problem Inflation
+
+Interviewees lament minor inconveniences they have no budget or mandate to resolve.
+
+**Plan as written.**
+- Preparation: Define the Ideal Customer Profile (ICP) based on observable firmographic attributes. Secure interview access by framing outreach as academic or industrial research rather than commercial solicitation.
+- Execution: Introduce the macro domain and instruct respondents to identify their top 3 operational priorities for the quarter. Observe whether the hypothesized problem surfaces organically without prompting.
+- Data collection: Score the problem's organizational urgency on a 1–5 scale based on documented resource allocation, executive visibility, and active software evaluations.
+
+**Warning as written.** In professional contexts, interviewees frequently lament minor operational inconveniences that they have no budget or mandate to resolve.
+
+**Source.** The source names no originator.
+
+### I03 — Jobs-to-Be-Done (JTBD) Switch and Forces Interview
+
+**Hypothesis and threshold.** We believe that [persona] switches away from [incumbent solution] primarily due to [catalyzing push/pull force]. We will verify this by interviewing 10 individuals who transitioned between solutions within the last 90 days, and consider it validated if ≥ 60% point to the exact same triggering event and emotional crisis point.
+
+**Schematic.** Moderate-High confidence: rung 4 of 5
+
+**Method.** Time: 7–14 days · Cost: $0–$250 · Confidence: Moderate-High
+
+**Plan.**
+- Preparation: Recruit ten people who switched in the last 90 days and build the four-force inquiry matrix.
+- Execution: Walk the arc - first thought, active looking, deciding, consuming - and ask what nearly stopped the purchase.
+- Data collection: Map the active forces on a matrix, keeping push mechanisms apart from feature wishlists.
+
+**False positive.** Post-Hoc Rationalization
+
+Buyers build coherent narratives for decisions that were emotional, impulsive or organisational.
+
+**Plan as written.**
+- Preparation: Recruit participants who recently switched products within the category. Construct an inquiry matrix covering the four core forces: Push of the Current Situation, Pull of the New Solution, Habit/Inertia, and Anxiety of Change.
+- Execution: Interrogate the chronological arc of the transition: First Thought, Active Looking, Deciding, and Consuming. Inquire: "Where were you when you decided the prior solution was untenable?" "What almost prevented you from finalizing the purchase?"
+- Data collection: Map the active forces onto a Cartesian matrix, separating push mechanisms from unvalidated feature wishlists.
+
+**Warning as written.** Consumers routinely construct coherent, rational narratives for purchasing decisions that were fundamentally driven by emotional, impulsive, or organizational impulses.
+
+**Source.** Clayton M. Christensen, Taddy Hall, Karen Dillon & David S. Duncan (2016). *Competing Against Luck: The Story of Innovation and Customer Choice*. HarperBusiness.
+
+### I04 — Ethnographic Contextual Inquiry (Shadowing)
+
+**Hypothesis and threshold.** We believe that [operators] face unrecorded cognitive overload while [operating system X]. We will verify this by observing 6 operators in their natural workplace for 4 hours each, and consider it validated if we record ≥ 5 unprompted compensatory mechanisms (e.g., sticky notes, personal spreadsheets, ad-hoc scripts) per operator per shift.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 10–14 days · Cost: $0–$500 · Confidence: High (Direct observation)
+
+**Plan.**
+- Preparation: Clear confidentiality and access; build a ledger for micro-interruptions, non-verbal cues and app switches.
+- Execution: Observe silently through a shift; interrupt only on a deviation and ask what motivated that step.
+- Data collection: Compile a minute-by-minute trace of application switches, error recovery, movement and distraction.
+
+**False positive.** Hawthorne Effect
+
+Observed operators tidy their workarounds and follow formal protocol because someone is watching.
+
+**Plan as written.**
+- Preparation: Execute confidentiality agreements and workplace access protocols. Construct an observation ledger focused on micro-interruptions, non-verbal cues, and application-switching frequency.
+- Execution: Observe the operator silently during regular shifts. Interrupt only when an operational deviation occurs: "I observed you copied that string into an external editor before pasting it. What motivated that step?"
+- Data collection: Compile a minute-by-minute workflow trace logging application switches, error recovery efforts, physical movements, and environmental distractions.
+
+**Warning as written.** Subjects alter their conventional workflows, adhere more strictly to formal protocols, or tidy operational workarounds simply because they are being observed.
+
+**Source.** Hugh Beyer & Karen Holtzblatt (1998). *Contextual Design: Defining Customer-Centered Systems*. Morgan Kaufmann.
+
+### I05 — Value Proposition Canvas Customer Profiling
+
+**Hypothesis and threshold.** We believe that [customer segment] considers [pain point Y] significantly more critical than [pain point Z]. We will verify this by conducting 10 canvas alignment exercises, and consider it validated if ≥ 75% of participants independently cluster their top 3 jobs and pains into identical operational nodes.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 3–5 days · Cost: $0 · Confidence: Moderate
+
+**Plan.**
+- Preparation: Lay out an empty customer profile of jobs, pains and gains on a board that participants can move.
+- Execution: Run an unmoderated card sort into functional, social and emotional categories, then rank pains and gains.
+- Data collection: Record where items cluster and correlate the rankings across participants.
+
+**False positive.** Aspirational Self-Deception
+
+People elevate noble social and emotional jobs above the mundane functional tasks that decide the purchase.
+
+**Plan as written.**
+- Preparation: Construct an unpopulated Value Proposition Canvas Customer Profile (comprising Jobs, Pains, and Gains) using standardized markdown or digital boards.
+- Execution: Guide users through an unmoderated card-sort protocol. Instruct them to place operational responsibilities into functional, social, and emotional categories, then rank pains by severity and gains by relevance.
+- Data collection: Record the spatial clustering of items. Calculate Spearman rank-order correlation coefficients across participant cards.
+
+**Warning as written.** Participants consistently overemphasize noble emotional or social jobs while minimizing the mundane, repetitive functional tasks that dictate enterprise purchase behavior.
+
+**Source.** Alexander Osterwalder, Yves Pigneur, Gregory Bernarda & Alan Smith (2014). *Value Proposition Design: How to Create Products and Services Customers Want*. John Wiley & Sons.
+
+### I06 — Customer Churn and Exit Interview Mining
+
+**Hypothesis and threshold.** We believe that customers abandon [incumbent solution category] because of [deficiency X]. We will verify this by auditing 20 canceled customer accounts or exit interviews, and consider it validated if ≥ 50% identify [deficiency X] as their primary non-negotiable exit driver rather than pricing or budget constraints.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 7–12 days · Cost: $0 · Confidence: High (Post-behavioral)
+
+**Plan.**
+- Preparation: Pull accounts cancelled in the last 30 to 60 days; frame the call as a process post-mortem, not a win-back.
+- Execution: Ask when value stopped, what workaround they built before leaving, and what replaced the product.
+- Data collection: Code each exit into price, product defect, reorganisation or loss of internal champion.
+
+**False positive.** Scapegoat Rationalization
+
+Churned clients blame price or a peripheral bug rather than admit the organisation could not adopt it.
+
+**Plan as written.**
+- Preparation: Extract lists of accounts canceled within the prior 30–60 days. Frame interview outreach as an operational post-mortem aimed at process improvement rather than customer win-back.
+- Execution: Conduct 20-minute structured exit interviews inquiring: "At what specific moment did the product cease delivering anticipated value?" "What workaround did you build prior to cancellation?" "What replacement system was deployed?"
+- Data collection: Code exit rationales into root categories: price sensitivity, core product defect, organizational reorganization, or loss of internal champion.
+
+**Warning as written.** Churned clients routinely point to price or peripheral software bugs as polite covers rather than acknowledging their organization lacked the operational competence to adopt the platform.
+
+**Source.** The source names no originator.
+
+### I07 — Public Community and Social Sentiment Mining
+
+**Hypothesis and threshold.** We believe that users of [incumbent software] are actively seeking alternatives due to [specific systemic flaw]. We will verify this by analyzing 300 unresolved negative comments and support threads across industry forums, and consider it validated if ≥ 25% of organic complaint threads focus specifically on [flaw].
+
+**Schematic.** Low-Moderate confidence: rung 2 of 5
+
+**Method.** Time: 3–5 days · Cost: $0 · Confidence: Low-Moderate
+
+**Plan.**
+- Preparation: Map the practitioner communities: specialist forums, issue trackers, subreddits and professional groups.
+- Execution: Search with diagnostic boolean strings - how do I fix, alternative to, terrible UX, workaround.
+- Data collection: Group complaints into themes, reported losses and the operational driver under each.
+
+**False positive.** Selection Bias of Vocal Minorities
+
+Public threads amplify edge-case power users whose needs diverge from the mainstream market.
+
+**Plan as written.**
+- Preparation: Map primary practitioner communities across specialized forums, GitHub issue trackers, subreddit channels, and professional discussion spaces.
+- Execution: Execute systematic diagnostic search queries using boolean strings (e.g., "how do I fix", "alternative to", "terrible UX", "workaround").
+- Data collection: Aggregate complaint structures into an analysis matrix. Track recurring themes, estimated financial losses reported by users, and underlying operational drivers.
+
+**Warning as written.** Public communities amplify the grievances of highly vocal edge-case power users whose requirements diverge significantly from the mainstream market.
+
+**Source.** The source names no originator.
+
+### I08 — Customer Advisory Board Problem Council
+
+**Hypothesis and threshold.** We believe that [industry vertical] executives consider [nascent regulatory or operational challenge] a board-level risk. We will verify this by hosting a 6-executive roundtable, and consider it validated if ≥ 4 members confirm they have formally committed budget to mitigate the issue in the current fiscal year.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 14–21 days · Cost: $500–$$$ · Confidence: Moderate
+
+**Plan.**
+- Preparation: Recruit six non-competing executives and frame the session as an off-the-record working council.
+- Execution: Under the Chatham House Rule, have each name their single greatest vulnerability, with no product pitch.
+- Data collection: Record how peers validate each other, which budget lines are disclosed, and which problems recur.
+
+**False positive.** Executive Echo Chamber
+
+Executives echo industry buzzwords to look forward-thinking before peers, regardless of budget.
+
+**Plan as written.**
+- Preparation: Recruit 6 non-competing industry executives. Frame the session as an off-the-record working council on emerging operational bottlenecks.
+- Execution: Facilitate an executive Chatham House Rule discussion around operational risks. Require each participant to detail their single greatest vulnerability without evaluating potential software solutions.
+- Data collection: Record the level of inter-participant validation, specific budget line items disclosed, and shared operational challenges that surface organically across accounts.
+
+**Warning as written.** Board members often echo high-level industry buzzwords and macro narratives to appear forward-thinking before peers, irrespective of actual internal budget allocation.
+
+**Source.** The source names no originator.
+
+### I09 — Search Intent and Semantic Volume Reconnaissance
+
+**Hypothesis and threshold.** We believe that consumers are actively searching for ways to solve [problem X]. We will verify this by analyzing search engine queries across targeted keyword groups, and consider it validated if high-intent terms show ≥ 2,500 monthly organic queries with a year-over-year growth rate of ≥ 20%.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 2–4 days · Cost: $0–$150 · Confidence: Moderate (Intent-based)
+
+**Plan.**
+- Preparation: Compile seed variants of high-intent syntax: how to automate X, X alternative, X compliance template.
+- Execution: Query volume databases for regional density, historical trend, cost per click and competitor saturation.
+- Data collection: Split queries into informational, navigational, commercial and transactional, then total commercial volume.
+
+**False positive.** Informational Intent Conflation
+
+High informational volume can mean curiosity or free-guide seekers, not buyers with commercial intent.
+
+**Plan as written.**
+- Preparation: Compile a seed dictionary of high-intent search syntax variants (e.g., "how to automate X", "X alternative", "X compliance template").
+- Execution: Query search volume databases to extract regional search density, historical trajectory, cost-per-click bids, and competitor domain saturation.
+- Data collection: Segment search queries into Informational, Navigational, Commercial, and Transactional categories. Calculate the total addressable commercial search volume.
+
+**Warning as written.** High search volumes for informational queries often signify academic curiosity or individuals looking for free guides, rather than buyers demonstrating commercial intent.
+
+**Source.** The source names no originator.
+
+### I10 — Critical Incident Technique (CIT) Audit
+
+**Hypothesis and threshold.** We believe that [event X] triggers operational failure in [workflow Y]. We will verify this by collecting 15 detailed critical incident reports from practitioners, and consider it validated if ≥ 80% report that the incident caused acute workflow delays, compliance exposure, or direct financial loss.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 5–8 days · Cost: $0 · Confidence: High (Incident-focused)
+
+**Plan.**
+- Preparation: Set explicit inclusion criteria for a critical incident: downtime, SLA breach or emergency briefing.
+- Execution: Ask practitioners to recount the most recent failure, the conditions before it, and what failed in response.
+- Data collection: Build a chronological event map per incident: root trigger, compounding effects, downstream cost.
+
+**False positive.** Salience and Availability Bias
+
+Vivid crises are remembered clearly and mistaken for routine, recurring market needs.
+
+**Plan as written.**
+- Preparation: Establish explicit inclusion criteria for what constitutes a critical incident (e.g., unscheduled downtime, SLA breach, or emergency executive briefing).
+- Execution: Interview qualified practitioners using the CIT protocol: "Recount the most recent operational failure in your workflow. What specific conditions preceded it? What interventions were deployed, and what systems failed?"
+- Data collection: Reconstruct a chronological event map for each incident, detailing the root triggers, secondary compounding effects, and downstream financial costs.
+
+**Warning as written.** Participants recall dramatic, emotionally charged anomalies with extreme clarity, leading researchers to mistake infrequent operational crises for routine, recurring market needs.
+
+**Source.** John C. Flanagan (1954). *The Critical Incident Technique*. Psychological Bulletin.
+
 ## Low-Fidelity Prototyping and Smoke Testing Tactics
 
 ### I30 — Refundable Deposit Pre-Order
