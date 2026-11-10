@@ -361,7 +361,18 @@ try {
       const dirty = at(["status", "--porcelain"]).stdout.trim();
 
       if (before !== after) {
-        record("generators", "fail", "regenerating changed committed output, so committed artifacts are stale");
+        // The target list and a hash mismatch say which file, never which
+        // bytes. A red run whose log cannot be read from outside then costs
+        // every reader a round trip. The changed lines are the fact a reader
+        // needs; print them with the verdict.
+        const changed = at(["diff", "--no-color", "--unified=0", "--", ...targets]).stdout
+          .split("\n")
+          .filter((line) => /^[+-][^+-]/.test(line))
+          .slice(0, 12)
+          .join(" / ");
+        record("generators", "fail",
+          "regenerating changed committed output, so committed artifacts are stale" +
+            (changed ? `; changed lines: ${changed}` : ""));
       } else if (dirty) {
         record("generators", "fail", `regeneration left the checkout dirty: ${dirty.split("\n").slice(0, 3).join(", ")}`);
       } else {

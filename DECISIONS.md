@@ -1879,3 +1879,12 @@ What this proves: a rebuild on another libm reproduces the committed bytes for
 these values. It does not prove that two doubles can never straddle a rounding
 boundary - a 1-ulp difference is ~1e-14 against a 1e-6 grid, so the residual
 risk is about one in a hundred million per number, not zero.
+
+The rule is enforced, not merely applied. `scripts/test/svg-precision.test.mjs`
+renders every card in every deck and reads every committed bundle, and fails if
+any number inside those attribute names carries more than six decimals or is
+printed in exponent form. Removing the rounding from `wrap()` makes it fail, so
+the guard is known to be able to fail. The attribute list is the one hole: a
+shape that writes geometry into a new attribute name is outside the rule until
+that name is added to `wrap()` and to the test, and putting it in the test is
+where that decision becomes visible rather than silent.

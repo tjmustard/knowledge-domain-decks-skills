@@ -144,18 +144,31 @@ for (const deck of decks) {
       typstMissing = true;
       break;
     }
-    throw error;
+    // Keep the build's own last words. Rethrowing the bare child-process error
+    // prints a stack that names the command and says nothing about why Typst
+    // refused the deck, which is the one sentence a reader needs.
+    const said = String(error.stderr || "").trim() || String(error.stdout || "").trim();
+    throw new Error(
+      `could not build ${deck.slug} (exit ${error.status})` + (said ? `:\n${said}` : "")
+    );
   }
   void build;
 
   const dir = mkdtempSync(join(tmpdir(), `fit-${deck.slug}-`));
   try {
-    execFileSync(
-      "typst",
-      ["compile", "--root", "packages/prepress", "packages/prepress/src/card.typ",
-        join(dir, "page-{p}.png"), "--format", "png", "--ppi", String(PPI)],
-      { cwd: ROOT, stdio: "ignore" }
-    );
+    try {
+      execFileSync(
+        "typst",
+        ["compile", "--root", "packages/prepress", "packages/prepress/src/card.typ",
+          join(dir, "page-{p}.png"), "--format", "png", "--ppi", String(PPI)],
+        { cwd: ROOT, stdio: "pipe" }
+      );
+    } catch (error) {
+      const said = String(error.stderr || "").trim();
+      throw new Error(
+        `typst could not render ${deck.slug}` + (said ? `:\n${said}` : " and wrote no reason")
+      );
+    }
     // The printed order, which a deck may declare; the page number is a
     // position in that order, not in the ids.
     const ordered = orderCards(deck, cards);
