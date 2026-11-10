@@ -26,7 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - **Citations (`data/laws/dec-01.json`, `data/laws/mpa-01.json`)**: Each card now carries exactly one primary paper with that paper's own authors, year, title, and venue. DEC-01 cites Hick (1952), and the card is named Hick's Law to match; MPA-01 cites Murdock (1962). Merged attributions were removed deck-wide.
 - **Schema requirements (`data/law-schema.json`)**: Removed `remediatedPattern` from `required[]` without declaring it, because the source schema required a property it never defined and `additionalProperties: false` made every record invalid. The `antiPattern { violation, remediation }` pair remains the single remediation field.
-- **Schema identifier (`data/law-schema.json`)**: `$id` is now the published raw URL, `https://raw.githubusercontent.com/tjmustard/knowledge-domain-decks-skills/main/data/law-schema.json`, replacing the `.example` placeholder.
+- **Schema identifier (`data/law-schema.json`)**: `$id` now points at the intended published URL, `https://raw.githubusercontent.com/tjmustard/knowledge-domain-decks-skills/main/data/law-schema.json`, replacing the `.example` placeholder. It is live only once this slice is merged to `main`; until then it is the intended canonical location, not a resolvable identifier.
 - **Package name (`package.json`, `package-lock.json`)**: Renamed to `knowledge-domain-decks-skills` to match the repository slug.
 
 ### Fixed
