@@ -8,6 +8,11 @@
 
 - **Deliverable:** Rapid individual generation of eight distinct interface or concept riffs
 - **At a glance:** 1–15+ people · 10–15 min · beginner
+- **Steps:**
+  - Fold each sheet into eight boxes and state the rule: sixty seconds per box, no exceptions.
+  - State the challenge once, start the clock, and call each box aloud so the room keeps pace.
+  - At box five, name the fatigue and demand a different mechanism: zero-UI, automated, inverted.
+  - Call the final box, stop everyone on time, and collect the sheets without discussing them.
 - **When it goes wrong:** One polished box and seven blanks: the clock stops driving.
 - **The fix:** Say: crude boxes are the point; move on unfinished, now.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -17,6 +22,12 @@
 
 - **Deliverable:** High-volume generation of ways to intentionally cause failure
 - **At a glance:** 5–15 people · 30–45 min · intermediate
+- **Steps:**
+  - Reframe it as sabotage: how do we guarantee failure?
+  - Give eight minutes: red notes, one failure tactic each.
+  - Cluster red notes by failure vector, then name each.
+  - Turn each cluster into a green mechanism, not a denial.
+  - Pair each green note with its red cluster; read the best.
 - **When it goes wrong:** Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.
 - **The fix:** Sabotage is over: one green mechanism per red cluster.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -25,6 +36,12 @@
 
 - **Deliverable:** Sequentially built, peer-iterated solution concepts
 - **At a glance:** 5–12 people · 25–40 min · intermediate
+- **Steps:**
+  - Seat a circle; rule: sketch, pass left, build, harden.
+  - Seed zone one with a concept, a headline, and a sketch.
+  - Pass left; add to zone two and never erase or judge.
+  - Pass left; name zone three's biggest failure and patch it.
+  - Return each sheet to its originator and read the chain.
 - **When it goes wrong:** Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.
 - **The fix:** Say: treat the seed as given, then answer yes-and.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -33,6 +50,12 @@
 
 - **Deliverable:** Unconventional combinations of disparate technologies or business models
 - **At a glance:** 3–15 people · 30–45 min · intermediate
+- **Steps:**
+  - State the premise: ideas recombine proven mechanisms.
+  - Name each outside product's mechanism, not its brand.
+  - Force one mechanism against your customer problem.
+  - Draft three mash-ups naming the borrowed mechanism.
+  - Present each as a transfer; name the behavior change.
 - **When it goes wrong:** Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.
 - **The fix:** Ask what behavior it changes, then make that the concept.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -41,6 +64,12 @@
 
 - **Deliverable:** High-density, self-explanatory three-panel conceptual wireframes
 - **At a glance:** 3–15 people · 60–90 min · advanced
+- **Steps:**
+  - Run four timed beats: gather, ideate, riff, then sketch.
+  - Review framing and research silently, taking notes only.
+  - Diagram flows, then riff the strongest idea eight times.
+  - Finish with a three-panel storyboard a stranger follows.
+  - Hang the anonymous sketches for a silent read.
 - **When it goes wrong:** Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.
 - **The fix:** Ask whether a stranger could follow the sketch without you, then add headlines and labels until they can.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -50,6 +79,10 @@
 
 - **Deliverable:** 108 structured ideas generated silently across six team members
 - **At a glance:** 6 people · 30–45 min · intermediate
+- **Steps:**
+  - Seat six people with a three-column, five-row sheet, and restate the question on the board.
+  - For five silent minutes, have each person write three ideas in the first column.
+  - Pass right; add three ideas in the next column for five rounds, then count and cluster.
 - **When it goes wrong:** Half-working looks like columns of restatements: people copy the idea above and change one word.
 - **The fix:** Before each pass, require a different part of the question or a new mechanism, not a rewording.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -58,6 +91,10 @@
 
 - **Deliverable:** Systematic transformation of existing concepts using seven vectors
 - **At a glance:** 3–10 people · 45–60 min · advanced
+- **Steps:**
+  - Put the concept up; name seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse.
+  - Work one prompt at a time, asking what changes if that verb were mandatory, and write one variant.
+  - Group the variants by prompt, then keep the ones worth developing and record each prompt.
 - **When it goes wrong:** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.
 - **The fix:** Pick one prompt and force it: state exactly what changes.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -66,6 +103,10 @@
 
 - **Deliverable:** De-inhibited concept space built by surfacing terrible alternatives
 - **At a glance:** 3–15 people · 20–30 min · beginner
+- **Steps:**
+  - Set the challenge, then invert it: ask for the worst possible way to handle it, the more useless the better.
+  - Give a short timed round for terrible ideas without defense, then read them aloud and let the room laugh.
+  - For each bad idea, name the requirement it insults, write the flip, and keep only what survives.
 - **When it goes wrong:** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.
 - **The fix:** Name the need each joke insults, then write the flip.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -74,6 +115,10 @@
 
 - **Deliverable:** Structural transfer of mechanisms from unrelated industrial domains
 - **At a glance:** 5–15 people · 30–45 min · intermediate
+- **Steps:**
+  - Name the problem as a function, such as routing or matching, and strip your industry's vocabulary.
+  - Find how unrelated domains solve that function and extract each mechanism in one sentence.
+  - Map each mechanism onto your problem, write the transfer, and mark what needs evidence.
 - **When it goes wrong:** Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.
 - **The fix:** Ask what it does structurally, then how we would copy it.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -82,6 +127,10 @@
 
 - **Deliverable:** Visual discovery of operational drag factors and mechanical engines
 - **At a glance:** 3–12 people · 25–40 min · beginner
+- **Steps:**
+  - Draw a boat labeled with the product or team, a destination, and an empty sea around it.
+  - Have people add anchors for what slows progress and engines for what speeds it, then explain one of each.
+  - Cluster and rank the anchors, turn the top ones into owned commitments, and name the engines to protect.
 - **When it goes wrong:** Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.
 - **The fix:** Ask for the two anchors that cost the most progress this month, and assign each one an owner.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

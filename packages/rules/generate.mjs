@@ -69,6 +69,22 @@ function rulesMarkdown(deck, shape, grouped) {
       out.push(`### ${card.id} — ${card.name}`, "");
       if (blocks) {
         out.push(...frontLines(shape, card));
+        // A deck can declare back-face blocks and still carry ordered items:
+        // the facilitation deck prints steps, failure, fix and provenance. The
+        // block branch used to skip the items, which silently dropped the run
+        // sheet from the rules file. A deck with no items field adds nothing.
+        if (shape.fields.items) {
+          const cardItems = shape.items(card);
+          if (cardItems.length > 0) {
+            out.push(`**${shape.labelItems}.**`);
+            if (shape.itemStyle === "steps") {
+              cardItems.forEach((item, index) => out.push(`${index + 1}. ${checklistLine(item)}`));
+            } else {
+              for (const item of cardItems) out.push(`- [ ] ${checklistLine(item)}`);
+            }
+            out.push("");
+          }
+        }
         for (const block of shape.blocks) out.push(...blockLines(block, card[block.field]), "");
         const source = sourceLine(shape.attribution(card));
         if (source) out.push(`**Source.** ${source}`, "");
@@ -166,6 +182,15 @@ function resourceMarkdown(category, shape, items) {
       }
       const context = shape.fields.context;
       if (context && card[context]) out.push(`- **${shape.labelContext}:** ${card[context]}`);
+      // The same rule as the rules file: a block deck that declares items
+      // prints them, in order, under the deck's own label.
+      if (shape.fields.items) {
+        const cardItems = shape.items(card);
+        if (cardItems.length > 0) {
+          out.push(`- **${shape.labelResourceItems}:**`);
+          for (const item of cardItems) out.push(`  - ${checklistLine(item)}`);
+        }
+      }
       for (const block of shape.blocks) {
         const value = card[block.field];
         if (value === undefined || value === null || value === "") continue;

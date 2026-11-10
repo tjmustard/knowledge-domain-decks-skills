@@ -8,6 +8,10 @@
 
 - **Deliverable:** Linear operational assignment of accountable owners and hard deadlines
 - **At a glance:** 3–15 people · 20–30 min · beginner
+- **Steps:**
+  - State the rules: each task is a visible artifact, each owner a named person, each date a calendar date.
+  - List the priority decisions as rows, one task per row, and name the single owner and exact due date.
+  - Read the matrix back and confirm each owner has the authority and time to meet that date.
 - **When it goes wrong:** Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.
 - **The fix:** At that row, name one driver, call the other a contributor, and replace any soft date with a real one.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -16,6 +20,11 @@
 
 - **Deliverable:** Explicit contractual agreement covering resources, cadence, and sign-offs
 - **At a glance:** 3–10 people · 30–45 min · intermediate
+- **Steps:**
+  - Frame the canvas as a charter the room signs today.
+  - Fill scope, resources, review cadence, and the risks that could break the whole commitment.
+  - Write done as a check that can pass or fail.
+  - Read it back, have each member sign, and publish it.
 - **When it goes wrong:** Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.
 - **The fix:** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -24,6 +33,12 @@
 
 - **Deliverable:** Translation of assumptions into falsifiable hypotheses and metrics
 - **At a glance:** 3–10 people · 45–60 min · advanced
+- **Steps:**
+  - Turn each feature on the canvas into an assumption.
+  - Write the riskiest as a falsifiable hypothesis.
+  - Pick the cheapest test that could prove it wrong.
+  - Set the metric and the number before the test runs.
+  - Name the decision a failing result will trigger.
 - **When it goes wrong:** Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.
 - **The fix:** Ask for both numbers now: what rate proves the case, and what rate kills it? Write them down first.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -33,6 +48,10 @@
 
 - **Deliverable:** Immediate identification of autonomous individual actions requiring no budget
 - **At a glance:** 1–15+ people · 15–25 min · beginner
+- **Steps:**
+  - Ask each person what 15 percent they can do now with the authority and resources they hold.
+  - Have everyone write one action in silence that needs no budget, permission, or anyone's decision.
+  - Share in pairs, then name your first step and help.
 - **When it goes wrong:** The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.
 - **The fix:** Park the blockers on a separate list, then ask again what each person can do this week without them.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -42,6 +61,10 @@
 
 - **Deliverable:** Time-phased mapping of milestones adhering to SMART validation criteria
 - **At a glance:** 3–12 people · 30–45 min · beginner
+- **Steps:**
+  - Lay the goal out as milestones in order, each a result the team can see rather than a phase.
+  - Test every milestone against specific, measurable, achievable, relevant, and time-bound, then rewrite.
+  - Calendar each milestone and name its first step.
 - **When it goes wrong:** Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.
 - **The fix:** Take the weakest one and ask for the date, number, and person; without all three, it is a wish.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -51,6 +74,10 @@
 
 - **Deliverable:** Structural assignment of Responsible, Accountable, Consulted, and Informed
 - **At a glance:** 4–12 people · 45–60 min · intermediate
+- **Steps:**
+  - List the decisions or deliverables that each need one clear owner before work starts.
+  - For each row, name who is responsible for the work and exactly one person accountable for it.
+  - Check overload, then confirm each person accepts.
 - **When it goes wrong:** Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.
 - **The fix:** Put one accountable name in every row, and remove anyone marked both who does not do the work.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -59,6 +86,10 @@
 
 - **Deliverable:** Scientific decomposition of hypotheses into verification tests and success thresholds
 - **At a glance:** 2–10 people · 30–40 min · intermediate
+- **Steps:**
+  - Pick the assumption the plan depends on most and would hurt most if it turned out wrong.
+  - Rewrite it as a measurable, falsifiable hypothesis.
+  - Set the success threshold first, then design the smallest test that could contradict it.
 - **When it goes wrong:** A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.
 - **The fix:** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -67,6 +98,10 @@
 
 - **Deliverable:** Technical consensus alignment on quality gates for release readiness
 - **At a glance:** 3–15 people · 40–60 min · advanced
+- **Steps:**
+  - Name the increment the criteria cover, then list what must be true before it is finished.
+  - Turn vague items into pass-or-fail checks, tested against a recent release and its defects.
+  - Publish the checks and name who may change them.
 - **When it goes wrong:** Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.
 - **The fix:** Take each item and ask how a reviewer verifies it in five minutes; if no one can, rewrite it as a check.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

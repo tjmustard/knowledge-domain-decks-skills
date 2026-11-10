@@ -13,6 +13,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 45–60 min · intermediate
 
+**Run it.**
+1. Bound the work: problem, not features or specs.
+2. Each person notes one observable friction silently.
+3. Map frictions to revenue, churn, or support load.
+4. Cluster duplicates, then draft three problem statements and choose the one the room defends.
+
 **When it goes wrong.** Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.
 
 **The fix.** Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.
@@ -24,6 +30,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Standardized opportunity statements ready for divergence
 
 **At a glance.** 1–15+ people · 15–30 min · beginner
+
+**Run it.**
+1. Explain How, Might, We: a path exists, failure is permitted, ownership is shared; ban solutions.
+2. Post the validated pain points, then each person drafts two to four ten-word questions per point.
+3. Cluster identical intents without speaking, moving other people's notes that belong together.
 
 **When it goes wrong.** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
 
@@ -37,6 +48,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–10 people · 20–30 min · intermediate
 
+**Run it.**
+1. Write the symptom as a fact: what happened, when, how many, and for how long it lasted.
+2. Ask why five times, recording the direct enabling condition, never a person's lapse.
+3. Keep one necessary chain and stop at a policy or architecture choice this team can change.
+
 **When it goes wrong.** The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.
 
 **The fix.** Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.
@@ -49,6 +65,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · beginner
 
+**Run it.**
+1. Draw the boat, island, wind, anchors, and reefs; say what each one means for this team.
+2. Give eight silent minutes: at least two winds, two anchors, and one reef per person.
+3. Group notes by similarity, stack duplicates to show weight, then name two anchors to cut.
+
 **When it goes wrong.** Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.
 
 **The fix.** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
@@ -60,6 +81,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Comprehensive catalog of catastrophic risks and preventative controls
 
 **At a glance.** 5–15 people · 45–60 min · advanced
+
+**Run it.**
+1. Treat the failed launch as settled history.
+2. Give six silent minutes to write the causal chain.
+3. Read every failure aloud, no defense allowed.
+4. Vote for failures both likely and fatal, keep the top three, then name the gate to build.
 
 **When it goes wrong.** Owners defend the plan as each risk is read, so the room rehearses reassurance instead of failure.
 
@@ -75,6 +102,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15+ people · 20–30 min · beginner
 
+**Run it.**
+1. Draw Hopes and Fears columns, two note colors.
+2. Ask each person to write one specific hope and one specific fear about this work, in silence.
+3. Post and read both columns aloud, group the themes, then agree one action for the biggest fear.
+
 **When it goes wrong.** Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.
 
 **The fix.** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.
@@ -86,6 +118,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** End-to-end temporal visualization of user touchpoints and pain points
 
 **At a glance.** 3–10 people · 60–90 min · intermediate
+
+**Run it.**
+1. Agree persona, goal, start, and end first.
+2. Lay out stages in time order as columns, naming each from the user's point of view.
+3. Mark pain points and drop-offs, then circle the two transitions this team should fix first.
 
 **When it goes wrong.** The map lists internal process steps in company language, documenting the organization, not the user.
 
@@ -99,6 +136,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 30–45 min · beginner
 
+**Run it.**
+1. Draw Says, Thinks, Does, Feels for one real user.
+2. Fill Says and Does first from observed quotes and actions, not from assumptions.
+3. Infer Thinks and Feels from those observations, mark each guess, then name the tension.
+
 **When it goes wrong.** The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.
 
 **The fix.** Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.
@@ -111,6 +153,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 45–60 min · intermediate
 
+**Run it.**
+1. Write the core problem on the trunk in one sentence, with no cause or solution in it.
+2. Ask why, and place root causes two levels deep.
+3. Place consequences above as branches, then circle the roots this team can influence.
+
 **When it goes wrong.** The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.
 
 **The fix.** Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.
@@ -122,6 +169,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Rapid identification and re-framing of key operational blockers
 
 **At a glance.** 3–10 people · 30–40 min · beginner
+
+**Run it.**
+1. Set the timer and have everyone silently write the blockers they hit, one per note.
+2. Dot-vote the blockers and keep the top three.
+3. Reframe each kept blocker as a How Might We, then vote and carry the best reframe forward.
 
 **When it goes wrong.** The room votes on blockers but never reframes them, so the session ends with the same complaints.
 
@@ -137,6 +189,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–15+ people · 10–15 min · beginner
 
+**Run it.**
+1. Fold each sheet into eight boxes and state the rule: sixty seconds per box, no exceptions.
+2. State the challenge once, start the clock, and call each box aloud so the room keeps pace.
+3. At box five, name the fatigue and demand a different mechanism: zero-UI, automated, inverted.
+4. Call the final box, stop everyone on time, and collect the sheets without discussing them.
+
 **When it goes wrong.** One polished box and seven blanks: the clock stops driving.
 
 **The fix.** Say: crude boxes are the point; move on unfinished, now.
@@ -151,6 +209,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 30–45 min · intermediate
 
+**Run it.**
+1. Reframe it as sabotage: how do we guarantee failure?
+2. Give eight minutes: red notes, one failure tactic each.
+3. Cluster red notes by failure vector, then name each.
+4. Turn each cluster into a green mechanism, not a denial.
+5. Pair each green note with its red cluster; read the best.
+
 **When it goes wrong.** Half-working looks like a wall of red notes and a thin green column: the room enjoyed failure and stopped.
 
 **The fix.** Sabotage is over: one green mechanism per red cluster.
@@ -162,6 +227,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Sequentially built, peer-iterated solution concepts
 
 **At a glance.** 5–12 people · 25–40 min · intermediate
+
+**Run it.**
+1. Seat a circle; rule: sketch, pass left, build, harden.
+2. Seed zone one with a concept, a headline, and a sketch.
+3. Pass left; add to zone two and never erase or judge.
+4. Pass left; name zone three's biggest failure and patch it.
+5. Return each sheet to its originator and read the chain.
 
 **When it goes wrong.** Half-working looks like zone two full of objections: the chain stops evolving and each sheet becomes opinions.
 
@@ -175,6 +247,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · intermediate
 
+**Run it.**
+1. State the premise: ideas recombine proven mechanisms.
+2. Name each outside product's mechanism, not its brand.
+3. Force one mechanism against your customer problem.
+4. Draft three mash-ups naming the borrowed mechanism.
+5. Present each as a transfer; name the behavior change.
+
 **When it goes wrong.** Half-working looks like concepts that borrow the logo and nothing else: a theme, not a mechanism.
 
 **The fix.** Ask what behavior it changes, then make that the concept.
@@ -186,6 +265,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** High-density, self-explanatory three-panel conceptual wireframes
 
 **At a glance.** 3–15 people · 60–90 min · advanced
+
+**Run it.**
+1. Run four timed beats: gather, ideate, riff, then sketch.
+2. Review framing and research silently, taking notes only.
+3. Diagram flows, then riff the strongest idea eight times.
+4. Finish with a three-panel storyboard a stranger follows.
+5. Hang the anonymous sketches for a silent read.
 
 **When it goes wrong.** Half-working looks like arrows and empty boxes only the author can narrate: the idea dies.
 
@@ -201,6 +287,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 6 people · 30–45 min · intermediate
 
+**Run it.**
+1. Seat six people with a three-column, five-row sheet, and restate the question on the board.
+2. For five silent minutes, have each person write three ideas in the first column.
+3. Pass right; add three ideas in the next column for five rounds, then count and cluster.
+
 **When it goes wrong.** Half-working looks like columns of restatements: people copy the idea above and change one word.
 
 **The fix.** Before each pass, require a different part of the question or a new mechanism, not a rewording.
@@ -212,6 +303,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Systematic transformation of existing concepts using seven vectors
 
 **At a glance.** 3–10 people · 45–60 min · advanced
+
+**Run it.**
+1. Put the concept up; name seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse.
+2. Work one prompt at a time, asking what changes if that verb were mandatory, and write one variant.
+3. Group the variants by prompt, then keep the ones worth developing and record each prompt.
 
 **When it goes wrong.** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output.
 
@@ -225,6 +321,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 20–30 min · beginner
 
+**Run it.**
+1. Set the challenge, then invert it: ask for the worst possible way to handle it, the more useless the better.
+2. Give a short timed round for terrible ideas without defense, then read them aloud and let the room laugh.
+3. For each bad idea, name the requirement it insults, write the flip, and keep only what survives.
+
 **When it goes wrong.** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined.
 
 **The fix.** Name the need each joke insults, then write the flip.
@@ -237,6 +338,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15 people · 30–45 min · intermediate
 
+**Run it.**
+1. Name the problem as a function, such as routing or matching, and strip your industry's vocabulary.
+2. Find how unrelated domains solve that function and extract each mechanism in one sentence.
+3. Map each mechanism onto your problem, write the transfer, and mark what needs evidence.
+
 **When it goes wrong.** Half-working looks like a mood board of other industries: the examples are admired, nothing transfers.
 
 **The fix.** Ask what it does structurally, then how we would copy it.
@@ -248,6 +354,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Visual discovery of operational drag factors and mechanical engines
 
 **At a glance.** 3–12 people · 25–40 min · beginner
+
+**Run it.**
+1. Draw a boat labeled with the product or team, a destination, and an empty sea around it.
+2. Have people add anchors for what slows progress and engines for what speeds it, then explain one of each.
+3. Cluster and rank the anchors, turn the top ones into owned commitments, and name the engines to protect.
 
 **When it goes wrong.** Half-working looks like a decorated boat with dozens of anchors and no ranking: no decision is made.
 
@@ -263,6 +374,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 30–45 min · beginner
 
+**Run it.**
+1. Draw the impact and effort axes and define both ends.
+2. Place items against one agreed baseline, impact first.
+3. Shift by real effort, not coding hours alone.
+4. Push every card off the center line.
+5. Read each quadrant and name its action.
+
 **When it goes wrong.** Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.
 
 **The fix.** Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.
@@ -274,6 +392,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Categorization into Must-have, Should-have, Could-have, Won't-have
 
 **At a glance.** 3–15 people · 30–45 min · beginner
+
+**Run it.**
+1. Mark four lanes: Must, Should, Could, and Won't.
+2. Define Must: no release without it, no workaround.
+3. Demote any card that has a workaround.
+4. Cap Must near sixty percent of capacity.
+5. Read Won't back and name what would reopen it.
 
 **When it goes wrong.** Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.
 
@@ -289,6 +414,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15+ people · 10–20 min · beginner
 
+**Run it.**
+1. Give each person five dots for the ideas.
+2. Choose privately before anyone reaches the wall.
+3. Walk the wall silently and place dots without comment.
+4. Circle the three densest clusters, not the loudest.
+5. Let each cluster's author explain the mechanism.
+
 **When it goes wrong.** Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.
 
 **The fix.** Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.
@@ -300,6 +432,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Capital-constrained prioritization surfacing true value trade-offs
 
 **At a glance.** 3–12 people · 20–35 min · intermediate
+
+**Run it.**
+1. Give each person one hundred dollars to spend.
+2. Require whole dollars so every choice costs another.
+3. Invest silently and independently, then hand in sheets.
+4. Total the sheets and mark consensus and solo bets.
+5. Discuss the outliers and the shared zeros.
 
 **When it goes wrong.** Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.
 
@@ -313,6 +452,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–12 people · 30–45 min · intermediate
 
+**Run it.**
+1. Name the axes; check one does not imply the other.
+2. Label both ends plainly and post them for the room.
+3. Place candidates by arguing each axis in turn.
+4. Rename the quadrants and name each one's action.
+5. Pick one high-risk, high-value bet and name its test.
+
 **When it goes wrong.** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.
 
 **The fix.** Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.
@@ -324,6 +470,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Rapid non-binary consensus calibration and identification of dissent
 
 **At a glance.** 3–15+ people · 10–15 min · beginner
+
+**Run it.**
+1. Explain the scale from fist-block to five-support.
+2. State the proposal, then allow a silent moment.
+3. Reveal together and read the lowest hand.
+4. Ask what single change would raise it to three.
+5. Re-vote once, then record the decision.
 
 **When it goes wrong.** The room chases unanimity, spending the session lifting threes to fives while a real blocker goes unheard.
 
@@ -337,6 +490,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 25–40 min · intermediate
 
+**Run it.**
+1. Post Now, How, and Wow columns and define each.
+2. Read every idea aloud once without debate, then sort each by feasibility and breakthrough.
+3. Choose one Now to schedule, one How to test, and one Wow to prototype, each with an owner.
+
 **When it goes wrong.** Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.
 
 **The fix.** Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.
@@ -348,6 +506,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Executive decision lock-in combining democratic heatmaps with authority
 
 **At a glance.** 5–12 people · 15–25 min · intermediate
+
+**Run it.**
+1. Show the shortlist and give everyone ordinary votes.
+2. Let people vote silently, then cluster the dots and read the heat back to the room.
+3. Give the decider fixed supervotes, then record the decision, the owner, and the next checkpoint.
 
 **When it goes wrong.** The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.
 
@@ -363,6 +526,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 20–30 min · advanced
 
+**Run it.**
+1. List attributes that genuinely trade against each other.
+2. Draw a slider for each attribute with named ends, and mark the current position as baseline.
+3. Move the sliders per candidate to show what each choice sacrifices, then rank by accepted sacrifices.
+
 **When it goes wrong.** Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.
 
 **The fix.** Ask which end each candidate must give up. If none can name a sacrifice, it was not compared.
@@ -374,6 +542,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Strategic validation against organizational mandate and execution utility
 
 **At a glance.** 5–15 people · 30–45 min · advanced
+
+**Run it.**
+1. Write three questions: now, steering, and purpose.
+2. Record facts under Nu, then the lever and metric under Steer.
+3. State the purpose under Zweck and park candidates that do not line up.
 
 **When it goes wrong.** Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.
 
@@ -389,6 +562,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 4–15+ people · 12–15 min · beginner
 
+**Run it.**
+1. Pose one question worth the room's attention, then give everyone a minute of silent writing.
+2. Give pairs two minutes to agree on one point.
+3. Have fours spend four minutes finding one pattern.
+4. Harvest only themes the room has not heard yet.
+
 **When it goes wrong.** The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.
 
 **The fix.** Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.
@@ -402,6 +581,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Three rapid rounds of paired micro-interviews establishing shared context
 
 **At a glance.** 6–15+ people · 15–20 min · beginner
+
+**Run it.**
+1. Ask two questions: the challenge you bring and the asset you offer this group.
+2. Pair outside your team; chime at two minutes.
+3. Re-answer both questions with a new partner.
+4. Run round three with one more partner.
 
 **When it goes wrong.** One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.
 
@@ -417,6 +602,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 5–15+ people · 35–50 min · intermediate
 
+**Run it.**
+1. Invert the goal: ask the room to design the worst possible system, one that guarantees failure.
+2. Draft alone, then build one ruinous list per table.
+3. Circle every item we already do, even slightly.
+4. Stop the worst habit; name an owner and a date.
+
 **When it goes wrong.** The audit protects feelings, so the room lists habits that describe someone else's organization.
 
 **The fix.** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
@@ -428,6 +619,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Rapid triad peer consulting using back-turned active listening protocols
 
 **At a glance.** 3–15+ people · 30–45 min · intermediate
+
+**Run it.**
+1. Form triads; the client states the challenge.
+2. Consultants ask facts only; hold all advice.
+3. Client turns their back while the consultants discuss for five minutes.
+4. Client names what landed, then one next step; rotate.
 
 **When it goes wrong.** The client turns around to defend decisions, so consultants manage reactions instead of exploring the problem.
 
@@ -443,6 +640,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 15+ people · 20–30 min · intermediate
 
+**Run it.**
+1. Each person writes a bold action for the bottleneck and its first step on an unsigned card.
+2. Draw five scoring rows, one per shuffle round.
+3. Run five blind rounds, scoring each card 1 to 5.
+4. Count from 25 down, reading the top-scoring cards.
+
 **When it goes wrong.** Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.
 
 **The fix.** Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.
@@ -456,6 +659,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Ruthless reduction of operating protocols down to non-negotiable rules
 
 **At a glance.** 4–15 people · 40–50 min · advanced
+
+**Run it.**
+1. State the purpose, then list every rule and habit the group treats as required.
+2. Split the list into musts and shoulds; test each must by what breaking it would cost.
+3. Publish the rules that survive; cut the rest.
 
 **When it goes wrong.** Every rule has a defender, so the list stays long and the group leaves with a tidier bureaucracy.
 
@@ -471,6 +679,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 2–15 people · 20–35 min · intermediate
 
+**Run it.**
+1. Pair people; one describes a project they care about and why it matters to them.
+2. Ask 'Why does that matter?' of each answer, following the chain through nine whys.
+3. Switch roles and state the purpose you reached.
+
 **When it goes wrong.** The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.
 
 **The fix.** Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.
@@ -484,6 +697,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Structured four-round dialogue suppressing cross-talk on contentious issues
 
 **At a glance.** 5–12 people · 45–60 min · beginner
+
+**Run it.**
+1. Name one contentious question; set four rounds with a talking object in the center.
+2. For three rounds, only the object holder speaks; no replies or side talk.
+3. Open round four; ask what shifted your view.
 
 **When it goes wrong.** Cross-talk creeps in, two people debate, and the quiet members stop speaking before the later rounds.
 
@@ -499,6 +717,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 6–15+ people · 45–60 min · advanced
 
+**Run it.**
+1. Seat one client before a circle; the client describes the challenge and what they have tried.
+2. Advisors ask clarifying questions, then discuss the problem with each other while the client listens.
+3. Have the client name what landed; then rotate.
+
 **When it goes wrong.** Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.
 
 **The fix.** Tell the advisors to talk to each other; the client only writes until their final turn comes.
@@ -512,6 +735,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Ladder of inference progression: observations, interpretations, actions
 
 **At a glance.** 3–15+ people · 30–45 min · beginner
+
+**Run it.**
+1. List only what happened, one observation per note, with no interpretation or judgment.
+2. Ask what patterns the observations carry, and record the different readings side by side.
+3. Name next actions, owners, and a check-in date.
 
 **When it goes wrong.** The room jumps to opinions and fixes, so the group argues about interpretations without agreeing on facts.
 
@@ -529,6 +757,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–15 people · 20–30 min · beginner
 
+**Run it.**
+1. State the rules: each task is a visible artifact, each owner a named person, each date a calendar date.
+2. List the priority decisions as rows, one task per row, and name the single owner and exact due date.
+3. Read the matrix back and confirm each owner has the authority and time to meet that date.
+
 **When it goes wrong.** Shared ownership: a row goes to two names, so nobody feels the commitment when the date arrives.
 
 **The fix.** At that row, name one driver, call the other a contributor, and replace any soft date with a real one.
@@ -541,6 +774,12 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 3–10 people · 30–45 min · intermediate
 
+**Run it.**
+1. Frame the canvas as a charter the room signs today.
+2. Fill scope, resources, review cadence, and the risks that could break the whole commitment.
+3. Write done as a check that can pass or fail.
+4. Read it back, have each member sign, and publish it.
+
 **When it goes wrong.** Hidden starvation: the team signs an ambitious scope while every hour is already promised elsewhere.
 
 **The fix.** Before signing, ask what each person will drop to make room; if nothing is named, cut the scope.
@@ -552,6 +791,13 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Translation of assumptions into falsifiable hypotheses and metrics
 
 **At a glance.** 3–10 people · 45–60 min · advanced
+
+**Run it.**
+1. Turn each feature on the canvas into an assumption.
+2. Write the riskiest as a falsifiable hypothesis.
+3. Pick the cheapest test that could prove it wrong.
+4. Set the metric and the number before the test runs.
+5. Name the decision a failing result will trigger.
 
 **When it goes wrong.** Post-hoc rationalization: with no threshold, any number arrives as support for the preferred idea.
 
@@ -567,6 +813,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 1–15+ people · 15–25 min · beginner
 
+**Run it.**
+1. Ask each person what 15 percent they can do now with the authority and resources they hold.
+2. Have everyone write one action in silence that needs no budget, permission, or anyone's decision.
+3. Share in pairs, then name your first step and help.
+
 **When it goes wrong.** The group drifts into the 85 percent: everyone lists what leadership must change, not their own move.
 
 **The fix.** Park the blockers on a separate list, then ask again what each person can do this week without them.
@@ -580,6 +831,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Time-phased mapping of milestones adhering to SMART validation criteria
 
 **At a glance.** 3–12 people · 30–45 min · beginner
+
+**Run it.**
+1. Lay the goal out as milestones in order, each a result the team can see rather than a phase.
+2. Test every milestone against specific, measurable, achievable, relevant, and time-bound, then rewrite.
+3. Calendar each milestone and name its first step.
 
 **When it goes wrong.** Milestones that pass the acronym but not the calendar: none has an owner, a date, or a number.
 
@@ -595,6 +851,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 4–12 people · 45–60 min · intermediate
 
+**Run it.**
+1. List the decisions or deliverables that each need one clear owner before work starts.
+2. For each row, name who is responsible for the work and exactly one person accountable for it.
+3. Check overload, then confirm each person accepts.
+
 **When it goes wrong.** Two accountable names in a row, or a name in every column, so the map looks full while decisions stall.
 
 **The fix.** Put one accountable name in every row, and remove anyone marked both who does not do the work.
@@ -607,6 +868,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 **At a glance.** 2–10 people · 30–40 min · intermediate
 
+**Run it.**
+1. Pick the assumption the plan depends on most and would hurt most if it turned out wrong.
+2. Rewrite it as a measurable, falsifiable hypothesis.
+3. Set the success threshold first, then design the smallest test that could contradict it.
+
 **When it goes wrong.** A test that can only confirm: leading questions and counted enthusiasm let the assumption survive.
 
 **The fix.** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
@@ -618,6 +884,11 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **Deliverable.** Technical consensus alignment on quality gates for release readiness
 
 **At a glance.** 3–15 people · 40–60 min · advanced
+
+**Run it.**
+1. Name the increment the criteria cover, then list what must be true before it is finished.
+2. Turn vague items into pass-or-fail checks, tested against a recent release and its defects.
+3. Publish the checks and name who may change them.
 
 **When it goes wrong.** Activity criteria: the list records work done, such as code reviewed, but not what must be true for done.
 

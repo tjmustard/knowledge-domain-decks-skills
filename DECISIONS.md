@@ -1801,3 +1801,28 @@ inside the trim is reported as TIGHT rather than failed, because the archetype
 deck shipped five faces at row 475 (4.5 pt into the cushion, still 0.125 in
 inside the trim) and turning an accepted deck red retroactively is not this
 slice's call. UX and narrative are clean on both lines.
+
+## 53. A card can carry blocks and ordered steps, and the artifacts print both
+
+The engine grew back-face blocks for the archetype deck, whose cards have no
+ordered items, and it already had ordered items for the narrative deck, whose
+cards declare no blocks. The generated rules and skill resources branched on
+`blocks`: a block deck printed its blocks and nothing else. Facilitation is the
+first deck that declares both - numbered steps under a "Run it" heading, then
+the failure, the fix and the provenance - and both artifacts silently dropped
+the steps: `rules/facilitation-rules.md` listed a deliverable, an at-a-glance
+line, two prose blocks and a source, with no run sheet at all, and the skill
+resource did the same. The print PDF and the viewer always had the steps; only
+the two artifacts an agent reads had lost them, which is the worse half to lose.
+
+The fix is a guard, not a new field. In the block branch, a deck whose `items`
+field is declared prints its items before the blocks - numbered when the deck's
+item style is `steps`, checkboxes otherwise - in both `rulesMarkdown` and
+`resourceMarkdown`. `deckShape` already returns `[]` for a deck with no items
+field, so the archetype deck's artifacts are unchanged; the UX and narrative
+decks never take the block branch. Regenerating all four decks changed only the
+facilitation rules and skill files, byte for byte elsewhere.
+
+`scripts/test/facilitation.test.mjs` now asserts that every card's numbered
+steps appear in `rules/facilitation-rules.md` and in its stage's skill resource,
+so the omission cannot return without a test failing.

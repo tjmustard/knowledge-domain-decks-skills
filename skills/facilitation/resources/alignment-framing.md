@@ -8,6 +8,11 @@
 
 - **Deliverable:** Bounded problem definition with user impact and business context
 - **At a glance:** 5–15 people · 45–60 min · intermediate
+- **Steps:**
+  - Bound the work: problem, not features or specs.
+  - Each person notes one observable friction silently.
+  - Map frictions to revenue, churn, or support load.
+  - Cluster duplicates, then draft three problem statements and choose the one the room defends.
 - **When it goes wrong:** Solution jumping: the statement names the fix the room already wanted, so the session debates a tool.
 - **The fix:** Strip the tool out. Ask what in the workflow costs measurable time or money, then rewrite without a product.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -16,6 +21,10 @@
 
 - **Deliverable:** Standardized opportunity statements ready for divergence
 - **At a glance:** 1–15+ people · 15–30 min · beginner
+- **Steps:**
+  - Explain How, Might, We: a path exists, failure is permitted, ownership is shared; ban solutions.
+  - Post the validated pain points, then each person drafts two to four ten-word questions per point.
+  - Cluster identical intents without speaking, moving other people's notes that belong together.
 - **When it goes wrong:** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
 - **The fix:** Ask what the user is deciding at that moment, then rewrite around that decision with one concrete constraint.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -24,6 +33,10 @@
 
 - **Deliverable:** Uncovered underlying structural failures rather than symptoms
 - **At a glance:** 1–10 people · 20–30 min · intermediate
+- **Steps:**
+  - Write the symptom as a fact: what happened, when, how many, and for how long it lasted.
+  - Ask why five times, recording the direct enabling condition, never a person's lapse.
+  - Keep one necessary chain and stop at a policy or architecture choice this team can change.
 - **When it goes wrong:** The chain ends at a name or splits into rival trees, so the room leaves with blame or a diagram, not a fix.
 - **The fix:** Say the person was the trigger, not the cause; ask what safeguard was missing and follow that path.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -32,6 +45,10 @@
 
 - **Deliverable:** Categorized operational anchors, wind, goals, and hidden rocks
 - **At a glance:** 3–15 people · 30–45 min · beginner
+- **Steps:**
+  - Draw the boat, island, wind, anchors, and reefs; say what each one means for this team.
+  - Give eight silent minutes: at least two winds, two anchors, and one reef per person.
+  - Group notes by similarity, stack duplicates to show weight, then name two anchors to cut.
 - **When it goes wrong:** Anchors arrive as vague complaints and the room spends most of the hour on forces it cannot move.
 - **The fix:** Ask which specific handoff broke and what was missing from it, then park company-level items at the perimeter.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -40,6 +57,11 @@
 
 - **Deliverable:** Comprehensive catalog of catastrophic risks and preventative controls
 - **At a glance:** 5–15 people · 45–60 min · advanced
+- **Steps:**
+  - Treat the failed launch as settled history.
+  - Give six silent minutes to write the causal chain.
+  - Read every failure aloud, no defense allowed.
+  - Vote for failures both likely and fatal, keep the top three, then name the gate to build.
 - **When it goes wrong:** Owners defend the plan as each risk is read, so the room rehearses reassurance instead of failure.
 - **The fix:** Say the failure already happened, then ask what collapsed despite the controls and name the risk people avoid.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -49,6 +71,10 @@
 
 - **Deliverable:** Calibrated baseline expectations and surfaced emotional hazards
 - **At a glance:** 5–15+ people · 20–30 min · beginner
+- **Steps:**
+  - Draw Hopes and Fears columns, two note colors.
+  - Ask each person to write one specific hope and one specific fear about this work, in silence.
+  - Post and read both columns aloud, group the themes, then agree one action for the biggest fear.
 - **When it goes wrong:** Fears soften into vague worries and hopes into cheerleading, so the board names no real hazard.
 - **The fix:** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -57,6 +83,10 @@
 
 - **Deliverable:** End-to-end temporal visualization of user touchpoints and pain points
 - **At a glance:** 3–10 people · 60–90 min · intermediate
+- **Steps:**
+  - Agree persona, goal, start, and end first.
+  - Lay out stages in time order as columns, naming each from the user's point of view.
+  - Mark pain points and drop-offs, then circle the two transitions this team should fix first.
 - **When it goes wrong:** The map lists internal process steps in company language, documenting the organization, not the user.
 - **The fix:** Ask what the user would say they were doing; if it is an internal handoff, rewrite the visible user moment.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -65,6 +95,10 @@
 
 - **Deliverable:** Synthesized user observations across Says, Thinks, Does, and Feels
 - **At a glance:** 3–10 people · 30–45 min · beginner
+- **Steps:**
+  - Draw Says, Thinks, Does, Feels for one real user.
+  - Fill Says and Does first from observed quotes and actions, not from assumptions.
+  - Infer Thinks and Feels from those observations, mark each guess, then name the tension.
 - **When it goes wrong:** The team fills all four quadrants from memory, so Thinks and Feels become invented inner monologue.
 - **The fix:** Ask for the quote or action behind each note; if absent, park it in a to-verify corner outside synthesis.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -73,6 +107,10 @@
 
 - **Deliverable:** Hierarchical root-cause, core challenge, and downstream effect tree
 - **At a glance:** 5–15 people · 45–60 min · intermediate
+- **Steps:**
+  - Write the core problem on the trunk in one sentence, with no cause or solution in it.
+  - Ask why, and place root causes two levels deep.
+  - Place consequences above as branches, then circle the roots this team can influence.
 - **When it goes wrong:** The tree becomes a wish list: causes and effects share a level, and the trunk is a vague label.
 - **The fix:** Sort each note as a reason below or an effect above, then rewrite the trunk with an actor and a cost.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -81,6 +119,10 @@
 
 - **Deliverable:** Rapid identification and re-framing of key operational blockers
 - **At a glance:** 3–10 people · 30–40 min · beginner
+- **Steps:**
+  - Set the timer and have everyone silently write the blockers they hit, one per note.
+  - Dot-vote the blockers and keep the top three.
+  - Reframe each kept blocker as a How Might We, then vote and carry the best reframe forward.
 - **When it goes wrong:** The room votes on blockers but never reframes them, so the session ends with the same complaints.
 - **The fix:** Take the top blocker, ask what opportunity hides in it, and make the room solve that question instead.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

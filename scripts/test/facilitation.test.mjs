@@ -86,3 +86,34 @@ test("no two cards draw the same picture", async () => {
   }
   assert.equal(drawings.size, cards.length);
 });
+
+/*
+ * A deck that declares back-face blocks used to have its ordered items dropped
+ * from the generated rules and skill: the block branch printed the blocks and
+ * nothing else. Facilitation is the first deck with both, so this pins the
+ * steps into both artifacts. The print and the viewer always had them.
+ */
+test("the generated rules and skill carry every card's steps", async () => {
+  const deck = await loadDeck("facilitation");
+  const cards = await loadCards(deck);
+  const rules = await readFile(join(ROOT, "rules", "facilitation-rules.md"), "utf8");
+  const stageSlug = (stage) =>
+    stage.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const resources = {};
+  for (const stage of deck.categories) {
+    resources[stage] = await readFile(
+      join(ROOT, "skills", "facilitation", "resources", `${stageSlug(stage)}.md`),
+      "utf8"
+    );
+  }
+  for (const card of cards) {
+    assert.ok(rules.includes(`### ${card.id} — ${card.name}`), `${card.id} is missing from the rules`);
+    card.steps.forEach((step, index) => {
+      assert.ok(rules.includes(`${index + 1}. ${step.text}`), `${card.id} step ${index + 1} is missing from the rules`);
+      assert.ok(
+        resources[card.stage].includes(step.text),
+        `${card.id} step ${index + 1} is missing from the ${card.stage} skill resource`
+      );
+    });
+  }
+});

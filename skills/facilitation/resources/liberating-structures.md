@@ -8,6 +8,11 @@
 
 - **Deliverable:** Progressive silent reflection, paired synthesis, quartet convergence
 - **At a glance:** 4–15+ people · 12–15 min · beginner
+- **Steps:**
+  - Pose one question worth the room's attention, then give everyone a minute of silent writing.
+  - Give pairs two minutes to agree on one point.
+  - Have fours spend four minutes finding one pattern.
+  - Harvest only themes the room has not heard yet.
 - **When it goes wrong:** The silent minute becomes chatter, the loudest voice frames the pair, and the plenary repeats itself.
 - **The fix:** Restart the timer and say the first minute is solo; early talk lets the quickest voice set the frame.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -17,6 +22,11 @@
 
 - **Deliverable:** Three rapid rounds of paired micro-interviews establishing shared context
 - **At a glance:** 6–15+ people · 15–20 min · beginner
+- **Steps:**
+  - Ask two questions: the challenge you bring and the asset you offer this group.
+  - Pair outside your team; chime at two minutes.
+  - Re-answer both questions with a new partner.
+  - Run round three with one more partner.
 - **When it goes wrong:** One partner talks through most of the round, so the other gets a rushed answer and the room learns half its assets.
 - **The fix:** Stop on the chime and model the handoff: if you are mid-sentence, stop; your partner's time starts now.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -26,6 +36,11 @@
 
 - **Deliverable:** Systematic cessation of self-sabotaging behaviors and counter-productive habits
 - **At a glance:** 5–15+ people · 35–50 min · intermediate
+- **Steps:**
+  - Invert the goal: ask the room to design the worst possible system, one that guarantees failure.
+  - Draft alone, then build one ruinous list per table.
+  - Circle every item we already do, even slightly.
+  - Stop the worst habit; name an owner and a date.
 - **When it goes wrong:** The audit protects feelings, so the room lists habits that describe someone else's organization.
 - **The fix:** Circle an obvious item yourself and ask the room: what else are we pretending we do not do?
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -34,6 +49,11 @@
 
 - **Deliverable:** Rapid triad peer consulting using back-turned active listening protocols
 - **At a glance:** 3–15+ people · 30–45 min · intermediate
+- **Steps:**
+  - Form triads; the client states the challenge.
+  - Consultants ask facts only; hold all advice.
+  - Client turns their back while the consultants discuss for five minutes.
+  - Client names what landed, then one next step; rotate.
 - **When it goes wrong:** The client turns around to defend decisions, so consultants manage reactions instead of exploring the problem.
 - **The fix:** Tell the client: turn back and stay silent; every word you add narrows what they will say.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -43,6 +63,11 @@
 
 - **Deliverable:** High-velocity anonymous card exchange scoring boldest breakthrough ideas
 - **At a glance:** 15+ people · 20–30 min · intermediate
+- **Steps:**
+  - Each person writes a bold action for the bottleneck and its first step on an unsigned card.
+  - Draw five scoring rows, one per shuffle round.
+  - Run five blind rounds, scoring each card 1 to 5.
+  - Count from 25 down, reading the top-scoring cards.
 - **When it goes wrong:** Scorers cluster on safe threes, so every card lands near 15 and bold ideas look merely polite.
 - **The fix:** Say a three is a refusal to judge; score a platitude one, brave and actionable ideas five.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -52,6 +77,10 @@
 
 - **Deliverable:** Ruthless reduction of operating protocols down to non-negotiable rules
 - **At a glance:** 4–15 people · 40–50 min · advanced
+- **Steps:**
+  - State the purpose, then list every rule and habit the group treats as required.
+  - Split the list into musts and shoulds; test each must by what breaking it would cost.
+  - Publish the rules that survive; cut the rest.
 - **When it goes wrong:** Every rule has a defender, so the list stays long and the group leaves with a tidier bureaucracy.
 - **The fix:** Hold up one rule and ask what exactly would fail if we broke it tomorrow; cut what no one can name.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -61,6 +90,10 @@
 
 - **Deliverable:** Progressive conversational excavation of intrinsic organizational purpose
 - **At a glance:** 2–15 people · 20–35 min · intermediate
+- **Steps:**
+  - Pair people; one describes a project they care about and why it matters to them.
+  - Ask 'Why does that matter?' of each answer, following the chain through nine whys.
+  - Switch roles and state the purpose you reached.
 - **When it goes wrong:** The partner accepts a general answer like 'because it matters,' and the chain stalls at a slogan.
 - **The fix:** Ask once more: 'Why does that matter to you, specifically?' Then wait out the silence before moving on.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -70,6 +103,10 @@
 
 - **Deliverable:** Structured four-round dialogue suppressing cross-talk on contentious issues
 - **At a glance:** 5–12 people · 45–60 min · beginner
+- **Steps:**
+  - Name one contentious question; set four rounds with a talking object in the center.
+  - For three rounds, only the object holder speaks; no replies or side talk.
+  - Open round four; ask what shifted your view.
 - **When it goes wrong:** Cross-talk creeps in, two people debate, and the quiet members stop speaking before the later rounds.
 - **The fix:** Hold up the object and say no replies yet; we are here to understand, not to win this round.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -79,6 +116,10 @@
 
 - **Deliverable:** Scaled peer advisory council consulting for individual challenge clients
 - **At a glance:** 6–15+ people · 45–60 min · advanced
+- **Steps:**
+  - Seat one client before a circle; the client describes the challenge and what they have tried.
+  - Advisors ask clarifying questions, then discuss the problem with each other while the client listens.
+  - Have the client name what landed; then rotate.
 - **When it goes wrong:** Advisors slip into asking the client what to do, and the circle becomes an ordinary meeting.
 - **The fix:** Tell the advisors to talk to each other; the client only writes until their final turn comes.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -88,6 +129,10 @@
 
 - **Deliverable:** Ladder of inference progression: observations, interpretations, actions
 - **At a glance:** 3–15+ people · 30–45 min · beginner
+- **Steps:**
+  - List only what happened, one observation per note, with no interpretation or judgment.
+  - Ask what patterns the observations carry, and record the different readings side by side.
+  - Name next actions, owners, and a check-in date.
 - **When it goes wrong:** The room jumps to opinions and fixes, so the group argues about interpretations without agreeing on facts.
 - **The fix:** Point at the observations and ask what we actually saw before anyone explains it; facts first.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.

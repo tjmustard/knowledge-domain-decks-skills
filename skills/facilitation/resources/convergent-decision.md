@@ -8,6 +8,12 @@
 
 - **Deliverable:** 2x2 prioritization of quick wins, major projects, and time sinks
 - **At a glance:** 3–15 people · 30–45 min · beginner
+- **Steps:**
+  - Draw the impact and effort axes and define both ends.
+  - Place items against one agreed baseline, impact first.
+  - Shift by real effort, not coding hours alone.
+  - Push every card off the center line.
+  - Read each quadrant and name its action.
 - **When it goes wrong:** Effort optimism and pet-feature impact inflate every card until the grid crowds one corner and ranks nothing.
 - **The fix:** Ask what the item costs beyond coding hours, compare it with a known small change, and order the top three.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -16,6 +22,12 @@
 
 - **Deliverable:** Categorization into Must-have, Should-have, Could-have, Won't-have
 - **At a glance:** 3–15 people · 30–45 min · beginner
+- **Steps:**
+  - Mark four lanes: Must, Should, Could, and Won't.
+  - Define Must: no release without it, no workaround.
+  - Demote any card that has a workaround.
+  - Cap Must near sixty percent of capacity.
+  - Read Won't back and name what would reopen it.
 - **When it goes wrong:** Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.
 - **The fix:** Ask for the workaround. If one exists, demote the card and show the sixty percent cap.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -25,6 +37,12 @@
 
 - **Deliverable:** Visual distribution of group attention across ideas without groupthink
 - **At a glance:** 3–15+ people · 10–20 min · beginner
+- **Steps:**
+  - Give each person five dots for the ideas.
+  - Choose privately before anyone reaches the wall.
+  - Walk the wall silently and place dots without comment.
+  - Circle the three densest clusters, not the loudest.
+  - Let each cluster's author explain the mechanism.
 - **When it goes wrong:** Bandwagon voting: waiting for leadership, people pile on, so heat measures hierarchy.
 - **The fix:** Stop the wall, have everyone write choices on paper first, and hide cursors and counts until the timer ends.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -33,6 +51,12 @@
 
 - **Deliverable:** Capital-constrained prioritization surfacing true value trade-offs
 - **At a glance:** 3–12 people · 20–35 min · intermediate
+- **Steps:**
+  - Give each person one hundred dollars to spend.
+  - Require whole dollars so every choice costs another.
+  - Invest silently and independently, then hand in sheets.
+  - Total the sheets and mark consensus and solo bets.
+  - Discuss the outliers and the shared zeros.
 - **When it goes wrong:** Peanut-buttering: the budget splits evenly across every item, so no trade-off is made and nothing is ranked.
 - **The fix:** Reject a flat allocation and require one zero plus forty dollars on a single item; ask what that choice reveals.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -41,6 +65,12 @@
 
 - **Deliverable:** Flexible comparative evaluation across two arbitrary orthogonal axes
 - **At a glance:** 3–12 people · 30–45 min · intermediate
+- **Steps:**
+  - Name the axes; check one does not imply the other.
+  - Label both ends plainly and post them for the room.
+  - Place candidates by arguing each axis in turn.
+  - Rename the quadrants and name each one's action.
+  - Pick one high-risk, high-value bet and name its test.
 - **When it goes wrong:** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session decides nothing.
 - **The fix:** Test whether high on one axis forces high on the other. If it does, replace the axis with a pressure that truly conflicts.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -49,6 +79,12 @@
 
 - **Deliverable:** Rapid non-binary consensus calibration and identification of dissent
 - **At a glance:** 3–15+ people · 10–15 min · beginner
+- **Steps:**
+  - Explain the scale from fist-block to five-support.
+  - State the proposal, then allow a silent moment.
+  - Reveal together and read the lowest hand.
+  - Ask what single change would raise it to three.
+  - Re-vote once, then record the decision.
 - **When it goes wrong:** The room chases unanimity, spending the session lifting threes to fives while a real blocker goes unheard.
 - **The fix:** Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it.
 - **Provenance:** Source protocol: the steps follow the written script in the source.
@@ -57,6 +93,10 @@
 
 - **Deliverable:** Idea classification across feasibility (Now), breakthrough (How), and original (Wow)
 - **At a glance:** 3–15 people · 25–40 min · intermediate
+- **Steps:**
+  - Post Now, How, and Wow columns and define each.
+  - Read every idea aloud once without debate, then sort each by feasibility and breakthrough.
+  - Choose one Now to schedule, one How to test, and one Wow to prototype, each with an owner.
 - **When it goes wrong:** Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.
 - **The fix:** Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -65,6 +105,10 @@
 
 - **Deliverable:** Executive decision lock-in combining democratic heatmaps with authority
 - **At a glance:** 5–12 people · 15–25 min · intermediate
+- **Steps:**
+  - Show the shortlist and give everyone ordinary votes.
+  - Let people vote silently, then cluster the dots and read the heat back to the room.
+  - Give the decider fixed supervotes, then record the decision, the owner, and the next checkpoint.
 - **When it goes wrong:** The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.
 - **The fix:** Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -74,6 +118,10 @@
 
 - **Deliverable:** Hard ranking of competing technical attributes to eliminate ambiguity
 - **At a glance:** 3–10 people · 20–30 min · advanced
+- **Steps:**
+  - List attributes that genuinely trade against each other.
+  - Draw a slider for each attribute with named ends, and mark the current position as baseline.
+  - Move the sliders per candidate to show what each choice sacrifices, then rank by accepted sacrifices.
 - **When it goes wrong:** Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.
 - **The fix:** Ask which end each candidate must give up. If none can name a sacrifice, it was not compared.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
@@ -82,6 +130,10 @@
 
 - **Deliverable:** Strategic validation against organizational mandate and execution utility
 - **At a glance:** 5–15 people · 30–45 min · advanced
+- **Steps:**
+  - Write three questions: now, steering, and purpose.
+  - Record facts under Nu, then the lever and metric under Steer.
+  - State the purpose under Zweck and park candidates that do not line up.
 - **When it goes wrong:** Purpose is recited as a slogan while now-facts and levers stay vague, so every candidate passes.
 - **The fix:** Ask what would change if the purpose were different; if nothing would, the purpose is decoration.
 - **Provenance:** Steps written for this deck from the method's public definition; the source has no protocol.
