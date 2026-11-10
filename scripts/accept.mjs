@@ -18,7 +18,7 @@
  * here (no Typst, no browser), so the corresponding claim stays unproven.
  */
 import { spawnSync } from "node:child_process";
-import { createHash } from "node:crypto";
+import { createHash, randomBytes } from "node:crypto";
 import { createRequire } from "node:module";
 import { existsSync, readFileSync } from "node:fs";
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
@@ -100,13 +100,20 @@ const sha = resolved.stdout.trim();
 const subject = git(["log", "-1", "--format=%s", sha]).stdout.trim();
 const short = sha.slice(0, 7);
 
-const worktree = join(ROOT, ".worktrees", `accept-${short}`);
+// The tree is named for the run, not for the ref: two seats verifying the same
+// commit at the same time must not share a directory, or one run's cleanup
+// deletes the other's tree mid-check and the survivor reports ENOENT on a file
+// that is tracked in the commit it is verifying.
+const runId = `${process.pid.toString(36)}-${randomBytes(3).toString("hex")}`;
+const worktree = join(ROOT, ".worktrees", `accept-${short}-${runId}`);
 console.log(`acceptance run: ${short}  ${subject}`);
 console.log(`tree:           ${worktree} (detached worktree of ${sha})`);
 console.log("");
 
 // --- prepare the isolated tree ---------------------------------------------
 await mkdir(join(ROOT, ".worktrees"), { recursive: true });
+// Unique per run, so this only ever removes a leftover from a previous run with
+// the same id, never another seat's live tree.
 await rm(worktree, { recursive: true, force: true });
 git(["worktree", "prune"]);
 const added = git(["worktree", "add", "--detach", worktree, sha]);
