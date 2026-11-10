@@ -2184,3 +2184,63 @@ byte-identical on rebuild; all six earlier decks rebuild to their baselines.
 The web index lists seven decks on this branch, which is correct here and not
 shippable until the branch is merged. No merge or push is requested without the
 person's word.
+
+## 62. The innovation deck prints its threshold, and the drawing reads its own record
+
+The innovation deck's front line is the source's hypothesis, verbatim, threshold
+included: 264 to 465 characters before the extractor's residue was repaired, and
+406 at the longest now. An experiment whose validation criterion is written
+afterwards is a story about the result, so the line is never trimmed. The card
+carries a per-card `headlineSize` instead, resolved through a deck-level
+`fields.headlineSize`, and the map is the authority: the deck test asserts the
+printed size equals the map's and that no hypothesis over 400 characters is left
+at 9 pt. Ten of the first ten cards do not fit at 9 pt; they settle between 7 and
+8.5 by measurement, and the whole deck now runs 7 to 9.
+
+The map assigns four families, each reading a datum the record already holds. A
+ladder marks the confidence band (`method.confidence`, split on its parenthesis,
+ranked against `families.ladder.rungs`, declared once rather than twenty times);
+a strip marks the plan step that carries the commitment; a funnel marks the
+stage where the evidence is read, and only where the record enumerates an
+ordered sequence - a metrics list is not a funnel, and the operator moved four
+cards to strip for exactly that; one curve marks the week the decision is due.
+The rung is derived from the record's word, not agreed with the label: setting
+I04 to rung 4 fails with "I04 prints \"High confidence\" at rung 4, but \"High\"
+is rung 5 of 5". The ladder is drawn as five shaded bands rather than a marker
+centred on a rung, because at rung 1 and rung 5 the marker hung half outside the
+frame and read as a rendering fault; the ladder and the strip now share one
+grammar, upright and on its side.
+
+The back carries three stages compressed to 110 characters each in a
+`labelledList` block, with the stages as the source writes them (`planFull`,
+bounded at 400) and the warning unabridged (`warningFull`) carried by the rules
+and the skill. `scripts/test/innovation.test.mjs` compares every printed field
+to the committed inventory, recomputes the inventory's summary including its
+lower median, checks the 10/10/11/11 split, asserts the 42 false-positive names
+are distinct, and asserts the artifacts carry each card's hypothesis, full plan,
+full warning and method strip. I28's cost is broken markup in the source, so the
+strip says "Cost: unreadable in the source ($$–$$ * $$)" and invents no number.
+
+The extractor strips backslashes, so six records arrived as `text{...}` and
+`frac{...}` residue: the skeleton of a formula rather than the formula. The
+never-trim rule protects meaning, not damaged markup, so the six are restored to
+plain text with their structure kept - a multi-term denominator parenthesised,
+because Target ARR / ARPU x Funnel Conversion Rate means something else. The
+inventory records it as the third source defect, and a guard fails on exactly
+those six rows at the preceding commit.
+
+Two engine additions keep the seven earlier decks byte-identical: a per-card
+`headlineSize`, defaulting to 9 pt, and a `labelledList` block, defaulting to
+absent. The printed PDF is 84 pages and 386,570 bytes at sha256 `c1b37678...`;
+every face ends inside the safe row, the worst recto at 462 and the worst verso
+at 453.
+
+One measurement lesson belongs here because it cost a round trip. The deck's
+recorded PDF digests are sha256; this seat reported md5 values and read the
+mismatch as an environment divergence, then built an epoch theory and a font
+theory on top of it. Both were wrong: one file, two algorithms. The guard now
+names its algorithm - the record is sha256, a comparison re-runs sha256, md5
+appears nowhere - and the cross-machine check hashes the deck's SVG bundle in
+`cards.json` order, because `packages/prepress/build/svg/` is never cleared and
+a glob over it depends on which deck was built last. Same machine, two builds,
+identical bytes stays the hard check.

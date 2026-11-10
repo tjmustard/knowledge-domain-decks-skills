@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-7%20%C2%B7%20297%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-8%20%C2%B7%20339%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -24,6 +24,7 @@
 - [🔁 Retrospective Architecture](#-retrospective-architecture)
 - [🎯 Strategy Architecture](#-strategy-architecture)
 - [👥 Team Architecture](#-team-architecture)
+- [🧪 Innovation Architecture](#-innovation-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -71,7 +72,12 @@ all move together.
 The ruleset, the skill, the viewer bundle, and the PDF all regenerate
 byte-identically, so the same records produce the same bytes on the same Typst
 version and font environment; [`DECISIONS.md`](./DECISIONS.md) §29 records what
-that leaves open. The print build pins `SOURCE_DATE_EPOCH`, the
+that leaves open. The recorded digest is sha256, and a comparison re-runs
+sha256 - never md5, which differs for the same file and reads as an environment
+divergence that does not exist. A cross-machine check hashes the deck's SVG
+bundle in `cards.json` order, because `packages/prepress/build/svg/` is never
+cleared and a glob over it depends on which deck was built last
+([`DECISIONS.md`](./DECISIONS.md) §62). The print build pins `SOURCE_DATE_EPOCH`, the
 reproducible-builds convention, to
 2026-11-09T00:00:00Z: Typst reads it for `/ModDate` and derives the trailer `/ID`
 from it, so two builds of one commit are identical rather than differing by the
@@ -97,6 +103,7 @@ deck's copy, names, or trade dress is used.
 | **Retrospective Architecture** | 45 | 5 categories | `packages/prepress/dist/retrospectives.pdf` | `packages/web/decks/retrospectives/` | `rules/retrospectives-rules.md` | `skills/retrospectives/` |
 | **Strategy Architecture** | 42 | 4 dimensions | `packages/prepress/dist/strategy.pdf` | `packages/web/decks/strategy/` | `rules/strategy-rules.md` | `skills/strategy/` |
 | **Team Architecture** | 44 | 4 dimensions | `packages/prepress/dist/team.pdf` | `packages/web/decks/team/` | `rules/team-rules.md` | `skills/team/` |
+| **Innovation Architecture** | 42 | 4 phases | `packages/prepress/dist/innovation.pdf` | `packages/web/decks/innovation/` | `rules/innovation-rules.md` | `skills/innovation/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -401,6 +408,61 @@ its schema in `decks/team/data/law-schema.json`.
 
 ---
 
+## 🧪 Innovation Architecture
+
+**Innovation Architecture** is a forty-two-card deck of product-discovery and
+experimentation tactics. Each card states the bet, the threshold that would prove
+it, the method that runs it, and the named false positive that makes it lie.
+
+The forty-two divide into four phases:
+
+| Phase | Cards | What it answers |
+|---|---|---|
+| Customer Discovery and Problem Validation | I01 to I10 | Is this problem real, and whose is it? |
+| Hypothesis Framing and Assumption Mapping | I11 to I20 | Which assumption would sink us, and what would settle it? |
+| Low-Fidelity Prototyping and Smoke Testing | I21 to I31 | Will anyone commit before we build? |
+| Metrics, Telemetry and Innovation Accounting | I32 to I42 | Do the numbers say continue, pivot or stop? |
+
+The hypothesis is printed on the front exactly as the source states it, with its
+validation threshold included, and it is never trimmed. An experiment without
+its threshold is an opinion, so the deck would rather set one card at 7 pt than
+cut the line that makes it falsifiable. Each card carries a per-card `headlineSize`
+for that reason; the layout map is the authority and the deck test asserts the
+printed size is the map's. The back carries the method strip - time, cost,
+confidence - three stages compressed to one line each, and the false positive's
+name with one clause of why it happens. The stages and the warning as the source
+writes them follow in the rules file and the skill resources, because the card
+is the playable surface and those files are the reference.
+
+The drawings read a datum the record already holds. A ladder marks the card's
+confidence band, a strip marks the plan step that carries the commitment, a
+funnel marks the stage where the evidence is read, and one decay curve marks the
+week the decision is due. Twenty cards are ladders, eighteen strips, three
+funnels and one curve. A ladder's rung is derived from its confidence word
+against the order declared once in the layout map, so a card cannot print a
+rung its own method contradicts, and since the operator's ruling the ladder is
+drawn as five shaded bands rather than a marked rung - the same grammar as the
+strip, upright instead of on its side.
+
+Attribution names the originating work where a checked public record names one:
+Fitzpatrick's *The Mom Test* (2013), Christensen, Hall, Dillon and Duncan's
+*Competing Against Luck* (2016), Beyer and Holtzblatt's *Contextual Design*
+(1998), Osterwalder, Pigneur, Bernarda and Smith's *Value Proposition Design*
+(2014), Van Westendorp's 1976 ESOMAR paper, Flanagan's *The Critical Incident
+Technique* (1954), Reichheld's *The One Number You Need to Grow* (2003), Ellis
+and Brown's *Hacking Growth* (2017) and McClure's *Startup Metrics for Pirates*
+(2007). Every other card says "The source names no originator." rather than
+guess. Card text is written for this deck.
+
+Its 84-page print PDF is 386,570 bytes (sha256 `c1b37678…`), byte-identical on
+rebuild. Its ruleset and skill are [`rules/innovation-rules.md`](./rules/innovation-rules.md)
+and [`skills/innovation/`](./skills/innovation/), and the skill's index carries
+five routes to cards that also live in other decks. The deck's records are in
+`decks/innovation/data/laws/` and its schema in
+`decks/innovation/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -435,15 +497,17 @@ The output is one PDF per deck under `packages/prepress/dist/`. This step requir
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer.
 
-**What has been checked in the built PDFs.** With Typst 0.15.1, `npm run
+**What has been checked in the built PDFs.** With Typst 0.15.1 (9dfd3a08) and
+the 379-font environment measured here, `npm run
 build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes (sha256
 `40164666…`), the narrative deck as 96 pages and 758,240 bytes (`435f2a9f…`),
 the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
 retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
-deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), and the team deck as 88 pages
-and 479,152 bytes (`482e7fc2…`); two consecutive builds of one
-commit are byte-identical for all seven. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), the team deck as 88 pages
+and 479,152 bytes (`482e7fc2…`), and the innovation deck as 84 pages and
+386,570 bytes (`c1b37678…`); two consecutive builds of one
+commit are byte-identical for all eight. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
