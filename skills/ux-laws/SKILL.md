@@ -249,7 +249,7 @@ smallest change that removes the failure state; do not restyle unrelated code.
 - **Do:** One field accepts the whole code, pasted or typed, and validates once.
 - **Source:** Stuart K. Card, Thomas P. Moran & Allen Newell (1980), *The Keystroke-Level Model for User Performance Time with Interactive Systems*.
 
-### TME-07 — Weber-Fechner Law
+### TME-07 — Weber-Fechner JND Law
 
 - **Axiom:** A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.
 - **Apply when:** Two controls differ by the same amount, but one change is obvious and the other is invisible.

@@ -528,7 +528,9 @@ comparatarum percipimus*, with difference thresholds of about 1/15 or 1/30 for
 lifted weights, 1/100 for line lengths, and 1/320 for tone frequencies.
 Fechner's log form and his 1860 book are the later formalisation. Listing both
 men as authors of a card neither co-wrote would print the collaboration as a
-fact.
+fact. The placement is the weaker of this file's two cross-category notes: the
+JND is a perceptual ratio law rather than a timing law, and the source's
+sectioning is the only thing holding it in Time, Motion & Ergonomics.
 
 **Law 41, Gilbreth.** The Repository's attribution names Frank and Lillian
 Gilbreth. The 1911 Van Nostrand title page names Frank Bunker Gilbreth alone:
@@ -572,7 +574,22 @@ eye movements are "very short, for movements of 10° certainly not more than 60
 synthesis and is not printed. This is a motion card rather than an attention
 card because it measures the timing of a movement and what that movement does
 to the incoming field — the same subject as target acquisition and steering. It
-makes no claim about what attention selects.
+makes no claim about what attention selects. The card prints no durations:
+Dodge gives only the under-60 ms bound at p. 464, so the Repository's 200-300 ms
+fixation and 30-50 ms saccade figures are not printed. A diagram prints a number
+only when the cited work reports it — the same discipline that removed the
+performance counts from DEC-11's diagram.
+
+Three other names shorten the Repository by house style and fit the 50-character
+cap — Keystroke-Level Model drops "(KLM-GOMS)", Gilbreth Motion Economy drops
+"Principles", and Weber-Fechner JND Law compresses "of Just Noticeable
+Difference (JND)" — as distinct from TME-09's forced trim.
+
+TME-05 prints no chapter pages. Newell & Rosenbloom is conventionally pp. 1-55
+in the 1981 Erlbaum first edition, while the recoverable index gives pp. 12-66
+for the 2013 Psychology Press reissue; printing either without naming the
+edition sends a reader to the wrong pages. The card prints neither, the same
+rule §19 applied to the Doherty report's extent.
 
 ## 27. Five shapes for the motion cards, and one reused
 

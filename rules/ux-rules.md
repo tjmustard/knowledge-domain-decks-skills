@@ -339,7 +339,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** Stuart K. Card, Thomas P. Moran & Allen Newell (1980). *The Keystroke-Level Model for User Performance Time with Interactive Systems*. Communications of the ACM, 23(7), 396-410.
 
-### TME-07 — Weber-Fechner Law
+### TME-07 — Weber-Fechner JND Law
 
 **Axiom.** A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.
 

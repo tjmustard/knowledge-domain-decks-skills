@@ -1,6 +1,6 @@
 {
   "id": "TME-07",
-  "name": "Weber-Fechner Law",
+  "name": "Weber-Fechner JND Law",
   "category": "Time, Motion & Ergonomics",
   "axiom": "A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.",
   "trigger": "Two controls differ by the same amount, but one change is obvious and the other is invisible.",
