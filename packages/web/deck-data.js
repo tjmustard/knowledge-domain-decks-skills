@@ -68,6 +68,320 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"180\" r=\"110\" fill=\"currentColor\" fill-opacity=\"0.04\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"120\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"152\" cy=\"152\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"248\" cy=\"152\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"134\" cy=\"206\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"216\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"266\" cy=\"206\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"164\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"56\" cy=\"180\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"56\" y1=\"196\" x2=\"56\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"2 2\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"344\" cy=\"180\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"344\" y1=\"196\" x2=\"344\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"2 2\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"56\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">-2</text><text x=\"200\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">7 CORE CHUNKS</text><text x=\"344\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">+2</text><text x=\"200\" y=\"340\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CAPACITY: 7 +/- 2 UNITS</text></svg>"
     },
     {
+      "id": "DEC-03",
+      "name": "Tesler's Law",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "Every system carries irreducible complexity; design moves it between the system and the user.",
+      "trigger": "People are asked to supply details the product could derive, such as time zones, currency formats, or bank codes.",
+      "checklist": [
+        "Derive time zones, currency formats, and country codes from context instead of prompting.",
+        "Resolve file type, encoding, and MIME parameters during upload rather than asking.",
+        "Ship production-ready defaults for advanced settings so people opt out, not in."
+      ],
+      "antiPattern": {
+        "violation": "An international payment form asks customers for SWIFT, routing, clearing, and branch details by hand.",
+        "remediation": "Accept the IBAN and resolve the bank name, branch, and routing codes in the backend."
+      },
+      "graphicMetaphor": {
+        "svgShape": "split-bar",
+        "parametricParams": {
+          "max": 100,
+          "rows": [
+            {
+              "label": "USER ABSORBS 70",
+              "segments": [
+                {
+                  "label": "USER",
+                  "weight": 70,
+                  "filled": true
+                },
+                {
+                  "label": "SYSTEM",
+                  "weight": 30,
+                  "filled": false
+                }
+              ]
+            },
+            {
+              "label": "SYSTEM ABSORBS 70",
+              "segments": [
+                {
+                  "label": "USER",
+                  "weight": 30,
+                  "filled": true
+                },
+                {
+                  "label": "SYSTEM",
+                  "weight": 70,
+                  "filled": false
+                }
+              ]
+            }
+          ],
+          "caption": "COMPLEXITY MOVES; THE TOTAL DOES NOT"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Dan Saffer"
+        ],
+        "year": 2007,
+        "title": "Designing for Interaction",
+        "publication": "New Riders, first edition"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"200\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">USER ABSORBS 70</text><rect x=\"40\" y=\"120\" width=\"224\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"152\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">USER</text><rect x=\"264\" y=\"120\" width=\"96\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"312\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SYSTEM</text><text x=\"200\" y=\"184\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SYSTEM ABSORBS 70</text><rect x=\"40\" y=\"200\" width=\"96\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"88\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">USER</text><rect x=\"136\" y=\"200\" width=\"224\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"248\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SYSTEM</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">COMPLEXITY MOVES; THE TOTAL DOES NOT</text></svg>"
+    },
+    {
+      "id": "DEC-04",
+      "name": "Choice Overload",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "Too many comparable options stall decisions and leave people less satisfied with what they choose.",
+      "trigger": "A pricing page or settings screen shows many similar options and people stall, default, or leave without choosing.",
+      "checklist": [
+        "Limit consumer pricing to three or four plans with visibly different value.",
+        "Mark one option as recommended so a default path through the comparison is obvious.",
+        "Move advanced filters and rare configurations behind progressive disclosure."
+      ],
+      "antiPattern": {
+        "violation": "A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.",
+        "remediation": "Offer three clear tiers, mark one recommended, and route custom plans to a separate inquiry."
+      },
+      "graphicMetaphor": {
+        "svgShape": "paired-panels",
+        "parametricParams": {
+          "left": {
+            "caption": "9 PLANS",
+            "cells": 9,
+            "columns": 3,
+            "filled": 0
+          },
+          "right": {
+            "caption": "3 PLANS, 1 PICK",
+            "cells": 3,
+            "columns": 3,
+            "filled": 1
+          },
+          "caption": "MORE OPTIONS MAKE THE CHOICE HARDER"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Sheena S. Iyengar",
+          "Mark R. Lepper"
+        ],
+        "year": 2000,
+        "title": "When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?",
+        "publication": "Journal of Personality and Social Psychology, 79(6), 995-1006"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">9 PLANS</text><rect x=\"42\" y=\"122\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"122\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"122\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"218\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"218\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"218\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">3 PLANS, 1 PICK</text><rect x=\"222\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"318\" y=\"170\" width=\"40\" height=\"40\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">MORE OPTIONS MAKE THE CHOICE HARDER</text></svg>"
+    },
+    {
+      "id": "DEC-05",
+      "name": "Cognitive Load Theory",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "Interaction suffers when extraneous cognitive demands consume the working memory a task needs.",
+      "trigger": "People re-read instructions, hunt for guidance, or make avoidable errors in a dense single-page form.",
+      "checklist": [
+        "Remove decoration, redundant banners, and instructions that repeat the visible label.",
+        "Reveal secondary detail only when the current step needs it.",
+        "Put guidance beside the field it explains instead of on a separate help page."
+      ],
+      "antiPattern": {
+        "violation": "A tax form presents 100 fields on one scrolling page, each preceded by paragraphs of legal text.",
+        "remediation": "Split filing into focused steps and move legal detail into inline popovers."
+      },
+      "graphicMetaphor": {
+        "svgShape": "split-bar",
+        "parametricParams": {
+          "max": 100,
+          "rows": [
+            {
+              "label": "THIS SCREEN: 100 LOAD",
+              "segments": [
+                {
+                  "label": "INTRINSIC",
+                  "weight": 30,
+                  "filled": false
+                },
+                {
+                  "label": "EXTRANEOUS",
+                  "weight": 45,
+                  "filled": true
+                },
+                {
+                  "label": "GERMANE",
+                  "weight": 25,
+                  "filled": false
+                }
+              ]
+            },
+            {
+              "label": "AFTER TRIMMING: 70",
+              "segments": [
+                {
+                  "label": "INTRINSIC",
+                  "weight": 30,
+                  "filled": false
+                },
+                {
+                  "label": "EXTRANEOUS",
+                  "weight": 15,
+                  "filled": true
+                },
+                {
+                  "label": "GERMANE",
+                  "weight": 25,
+                  "filled": false
+                }
+              ]
+            }
+          ],
+          "reference": {
+            "at": 0.85,
+            "label": "CAPACITY 85"
+          },
+          "caption": "LOAD PAST CAPACITY COSTS THE TASK"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "John Sweller"
+        ],
+        "year": 1988,
+        "title": "Cognitive Load During Problem Solving: Effects on Learning",
+        "publication": "Cognitive Science, 12(2), 257-285"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"200\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THIS SCREEN: 100 LOAD</text><rect x=\"40\" y=\"120\" width=\"96\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"88\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INTRINSIC</text><rect x=\"136\" y=\"120\" width=\"144\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"208\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXTRANEOUS</text><rect x=\"280\" y=\"120\" width=\"80\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"320\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">GERMANE</text><text x=\"200\" y=\"184\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">AFTER TRIMMING: 70</text><rect x=\"40\" y=\"200\" width=\"96\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"88\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INTRINSIC</text><rect x=\"136\" y=\"200\" width=\"48\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"160\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXTRANEOUS</text><rect x=\"184\" y=\"200\" width=\"80\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"224\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">GERMANE</text><line x1=\"312\" y1=\"86\" x2=\"312\" y2=\"256\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"312\" y=\"78\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CAPACITY 85</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">LOAD PAST CAPACITY COSTS THE TASK</text></svg>"
+    },
+    {
+      "id": "DEC-06",
+      "name": "Working Memory Capacity Model",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "Active memory holds about four chunks, so take the task's burden out of memory.",
+      "trigger": "A multi-step flow asks people to remember a value from an earlier step while entering data on a later one.",
+      "checklist": [
+        "Keep earlier answers visible while someone enters related data in a later step.",
+        "Pin summary headers and context panels while people scroll a long table.",
+        "Show breadcrumbs and a persistent cart through checkout.",
+        "Put a copy button beside any value people must reuse on another screen."
+      ],
+      "antiPattern": {
+        "violation": "A four-step wizard makes people memorize a key shown in step one and retype it in step four.",
+        "remediation": "Step four shows the key in a read-only card with a copy button."
+      },
+      "graphicMetaphor": {
+        "svgShape": "network",
+        "parametricParams": {
+          "nodes": 4,
+          "satellites": 2,
+          "hullRadius": 88,
+          "coreLabel": "4 ACTIVE CHUNKS",
+          "surplusLabels": [
+            "-1",
+            "+1"
+          ],
+          "capacityLabel": "CAPACITY: 4 +/- 1 CHUNKS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Nelson Cowan"
+        ],
+        "year": 2001,
+        "title": "The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity",
+        "publication": "Behavioral and Brain Sciences, 24(1), 87-114"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"180\" r=\"88\" fill=\"currentColor\" fill-opacity=\"0.04\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-dasharray=\"4 4\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"120\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"152\" cy=\"152\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"248\" cy=\"152\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"134\" cy=\"206\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"78\" cy=\"180\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"78\" y1=\"196\" x2=\"78\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"2 2\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"322\" cy=\"180\" r=\"12\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"322\" y1=\"196\" x2=\"322\" y2=\"226\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"2 2\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"78\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">-1</text><text x=\"200\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">4 ACTIVE CHUNKS</text><text x=\"322\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">+1</text><text x=\"200\" y=\"340\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CAPACITY: 4 +/- 1 CHUNKS</text></svg>"
+    },
+    {
+      "id": "DEC-07",
+      "name": "Cognitive Friction",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "Interfaces create friction when reaching a goal takes more or different actions than people expect.",
+      "trigger": "Users click a search icon, wait for the overlay, then click the field again before they can type.",
+      "checklist": [
+        "Let Enter submit single-field forms such as search and sign-in.",
+        "Move focus into the primary input as soon as a dialog opens.",
+        "Keep Tab, Shift+Tab, and arrow keys working through every menu."
+      ],
+      "antiPattern": {
+        "violation": "Opening search means clicking the icon, waiting for the overlay, and clicking the field before typing.",
+        "remediation": "Bind search to a keyboard shortcut that opens the dialog already focused on its input."
+      },
+      "graphicMetaphor": {
+        "svgShape": "paired-panels",
+        "parametricParams": {
+          "cellSize": 20,
+          "left": {
+            "caption": "EXPECTED: 1 STEP",
+            "cells": 1,
+            "columns": 1,
+            "filled": 1
+          },
+          "right": {
+            "caption": "ACTUAL: 5 STEPS",
+            "cells": 5,
+            "columns": 5,
+            "filled": 5
+          },
+          "caption": "EXTRA STEPS ARE FRICTION"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Alan Cooper"
+        ],
+        "year": 1999,
+        "title": "The Inmates Are Running the Asylum",
+        "publication": "Sams Publishing"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXPECTED: 1 STEP</text><rect x=\"100\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ACTUAL: 5 STEPS</text><rect x=\"224\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"252\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"280\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"308\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"336\" y=\"180\" width=\"20\" height=\"20\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXTRA STEPS ARE FRICTION</text></svg>"
+    },
+    {
+      "id": "DEC-08",
+      "name": "Framing Effect",
+      "category": "Decision-Making & Cognitive Load",
+      "axiom": "People decide differently when the same facts are described as gains rather than losses.",
+      "trigger": "Two screens state one outcome, but one stresses what is gained and the other what is lost, and choices diverge.",
+      "checklist": [
+        "State availability as uptime gained (99.9%) rather than downtime risk.",
+        "Present discounts as money saved rather than total billed.",
+        "Describe security work as protecting data rather than as a failure warning."
+      ],
+      "antiPattern": {
+        "violation": "A backup prompt warns that refusing leaves all records open to total loss.",
+        "remediation": "The same prompt explains that enabling backup protects local files against hardware failure."
+      },
+      "graphicMetaphor": {
+        "svgShape": "paired-panels",
+        "parametricParams": {
+          "left": {
+            "caption": "9 IN 10 SURVIVE",
+            "cells": 10,
+            "columns": 5,
+            "filled": 9
+          },
+          "right": {
+            "caption": "1 IN 10 DIE",
+            "cells": 10,
+            "columns": 5,
+            "filled": 9
+          },
+          "caption": "SAME TEN CASES, TWO DESCRIPTIONS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Amos Tversky",
+          "Daniel Kahneman"
+        ],
+        "year": 1981,
+        "title": "The Framing of Decisions and the Psychology of Choice",
+        "publication": "Science, 211(4481), 453-458"
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">9 IN 10 SURVIVE</text><rect x=\"42\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"70.8\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"99.6\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"128.4\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"157.2\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"70.8\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"99.6\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"128.4\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"157.2\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1 IN 10 DIE</text><rect x=\"222\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"250.8\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"279.6\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"308.4\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"337.2\" y=\"165.2\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"222\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"250.8\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"279.6\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"308.4\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"337.2\" y=\"194\" width=\"20.8\" height=\"20.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SAME TEN CASES, TWO DESCRIPTIONS</text></svg>"
+    },
+    {
       "id": "GES-01",
       "name": "Law of Proximity",
       "category": "Gestalt & Visual Perception",

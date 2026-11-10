@@ -82,7 +82,9 @@
             "proximity-grid",
             "target-vector",
             "decay-curve",
-            "convention-grid"
+            "convention-grid",
+            "split-bar",
+            "paired-panels"
           ]
         },
         "parametricParams": {

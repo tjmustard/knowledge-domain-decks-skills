@@ -27,13 +27,13 @@ enforces both: Ajv applies the schema's 110-character limit, and the validator
 additionally rejects axioms longer than 15 words. Every current record passes
 both.
 
-## 3. Added one `svgShape` value: `convention-grid`
+## 3. Added three `svgShape` values: `convention-grid`, `split-bar`, `paired-panels`
 
 The source enum is `network`, `hierarchy`, `proximity-grid`, `target-vector`,
 `decay-curve`. Those five cannot express Jakob's Law, which compares a
-conventional layout with a divergent one. Rather than force the card into a
-shape that misrepresents the principle, the enum adds `convention-grid`. The
-other five cards use the original values:
+conventional layout with a divergent one, so the enum adds `convention-grid`.
+Slice 2 adds `split-bar` and `paired-panels` for the decision cards; section 12
+gives the reason. The cards use these values:
 
 | Card | Shape |
 | :-- | :-- |
@@ -41,6 +41,12 @@ other five cards use the original values:
 | GES-01 Law of Proximity | `proximity-grid` |
 | DEC-01 Hick's Law | `hierarchy` |
 | DEC-02 Miller's Law | `network` |
+| DEC-03 Tesler's Law | `split-bar` (added) |
+| DEC-04 Choice Overload | `paired-panels` (added) |
+| DEC-05 Cognitive Load Theory | `split-bar` (added) |
+| DEC-06 Working Memory Capacity Model | `network` |
+| DEC-07 Cognitive Friction | `paired-panels` (added) |
+| DEC-08 Framing Effect | `paired-panels` (added) |
 | TME-01 Fitts's Law | `target-vector` |
 | MPA-01 Serial Position Effect | `decay-curve` |
 
@@ -173,7 +179,7 @@ misled about which book is meant.
 ## 13. Cognitive Friction cites a trade book
 
 The one-primary-source rule prefers canonical academic papers or peer-reviewed
-HCI literature. `DEC-06` cites Cooper (1999), *The Inmates Are Running the
+HCI literature. `DEC-07` cites Cooper (1999), *The Inmates Are Running the
 Asylum*, Sams Publishing, which is a trade book.
 
 It is kept because Cooper coined the construct there. There is no peer-reviewed
@@ -213,3 +219,29 @@ Baddeley & Hitch are recorded here and appear in no deck field.
 
 If the two cards ever read as one claim, the honest repair is to fold them into
 `DEC-02`, not to keep a paraphrase in the deck.
+
+## 15. `split-bar` and `paired-panels` draw what the existing shapes cannot
+
+None of the six existing shapes could draw the six decision cards honestly.
+`network` draws a bounded set of chunks, `hierarchy` draws one decision into
+branches, `proximity-grid` draws grouping, `target-vector` draws motor distance,
+`decay-curve` draws a sequence curve, and `convention-grid` draws a familiar
+layout beside a chaotic one. A conserved total that moves between two owners
+(Tesler's Law) and a fixed set of demands measured against a capacity line
+(Cognitive Load Theory) are both a partition of one track: `split-bar` draws
+labelled segments on a fixed track with an optional dashed reference line, so
+the total stays visibly constant while the partition moves.
+
+A difference in how many things there are, or the same things under two
+descriptions, needs two comparable bodies: `paired-panels` draws two bordered
+panels of equal cells with captions. Choice Overload gets nine plans against
+three with one marked; Cognitive Friction gets one expected step against five
+actual ones at one fixed cell size; Framing gets two identical panel bodies, so
+only the caption changes. In each case the geometry carries the claim rather
+than the caption alone.
+
+Both shapes read every parameter they declare, and neither needs generator
+support beyond `renderSvg`: the rules and skill do not read `graphicMetaphor`,
+and the web bundle and print build both call the same function. `network`
+gained optional label and surplus-text parameters so DEC-06 can print Cowan's
+four-chunk capacity; with no overrides, DEC-02 renders byte-identically.

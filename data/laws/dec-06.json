@@ -1,0 +1,34 @@
+{
+  "id": "DEC-06",
+  "name": "Working Memory Capacity Model",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Active memory holds about four chunks, so take the task's burden out of memory.",
+  "trigger": "A multi-step flow asks people to remember a value from an earlier step while entering data on a later one.",
+  "checklist": [
+    "Keep earlier answers visible while someone enters related data in a later step.",
+    "Pin summary headers and context panels while people scroll a long table.",
+    "Show breadcrumbs and a persistent cart through checkout.",
+    "Put a copy button beside any value people must reuse on another screen."
+  ],
+  "antiPattern": {
+    "violation": "A four-step wizard makes people memorize a key shown in step one and retype it in step four.",
+    "remediation": "Step four shows the key in a read-only card with a copy button."
+  },
+  "graphicMetaphor": {
+    "svgShape": "network",
+    "parametricParams": {
+      "nodes": 4,
+      "satellites": 2,
+      "hullRadius": 88,
+      "coreLabel": "4 ACTIVE CHUNKS",
+      "surplusLabels": ["-1", "+1"],
+      "capacityLabel": "CAPACITY: 4 +/- 1 CHUNKS"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Nelson Cowan"],
+    "year": 2001,
+    "title": "The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity",
+    "publication": "Behavioral and Brain Sciences, 24(1), 87-114"
+  }
+}

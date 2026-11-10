@@ -1,0 +1,48 @@
+{
+  "id": "DEC-05",
+  "name": "Cognitive Load Theory",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Interaction suffers when extraneous cognitive demands consume the working memory a task needs.",
+  "trigger": "People re-read instructions, hunt for guidance, or make avoidable errors in a dense single-page form.",
+  "checklist": [
+    "Remove decoration, redundant banners, and instructions that repeat the visible label.",
+    "Reveal secondary detail only when the current step needs it.",
+    "Put guidance beside the field it explains instead of on a separate help page."
+  ],
+  "antiPattern": {
+    "violation": "A tax form presents 100 fields on one scrolling page, each preceded by paragraphs of legal text.",
+    "remediation": "Split filing into focused steps and move legal detail into inline popovers."
+  },
+  "graphicMetaphor": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 100,
+      "rows": [
+        {
+          "label": "THIS SCREEN: 100 LOAD",
+          "segments": [
+            { "label": "INTRINSIC", "weight": 30, "filled": false },
+            { "label": "EXTRANEOUS", "weight": 45, "filled": true },
+            { "label": "GERMANE", "weight": 25, "filled": false }
+          ]
+        },
+        {
+          "label": "AFTER TRIMMING: 70",
+          "segments": [
+            { "label": "INTRINSIC", "weight": 30, "filled": false },
+            { "label": "EXTRANEOUS", "weight": 15, "filled": true },
+            { "label": "GERMANE", "weight": 25, "filled": false }
+          ]
+        }
+      ],
+      "reference": { "at": 0.85, "label": "CAPACITY 85" },
+      "caption": "LOAD PAST CAPACITY COSTS THE TASK"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["John Sweller"],
+    "year": 1988,
+    "title": "Cognitive Load During Problem Solving: Effects on Learning",
+    "publication": "Cognitive Science, 12(2), 257-285"
+  }
+}

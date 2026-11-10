@@ -177,11 +177,14 @@
       return out.join("");
     },
 
-    /* Miller's Law: a bounded working-memory hull with satellites. */
+    /* Working memory: a bounded hull of active chunks with overflow satellites. */
     network: function (p) {
       var nodes = p.nodes || 7;
       var satellites = p.satellites || 2;
       var radius = p.hullRadius || 110;
+      var coreLabel = p.coreLabel || (nodes + " CORE CHUNKS");
+      var capacityLabel = p.capacityLabel || "CAPACITY: 7 +/- 2 UNITS";
+      var surplus = p.surplusLabels || ["-2", "+2"];
       var out = [];
       out.push(
         '<circle cx="200" cy="180" r="' + radius +
@@ -205,10 +208,10 @@
         out.push(circle(sx, 180, 12, { hollow: true, opacity: 0.45, width: 1.5 }));
         out.push(line(sx, 196, sx, 226, 1.2, 0.4, "2 2"));
       }
-      out.push(label(200 - radius - 34, 248, "-2", { size: 9 }));
-      out.push(label(200, 248, nodes + " CORE CHUNKS", { size: 9 }));
-      out.push(label(200 + radius + 34, 248, "+2", { size: 9 }));
-      out.push(label(200, 340, "CAPACITY: 7 +/- 2 UNITS", { size: 9 }));
+      out.push(label(200 - radius - 34, 248, surplus[0], { size: 9 }));
+      out.push(label(200, 248, coreLabel, { size: 9 }));
+      out.push(label(200 + radius + 34, 248, surplus[1], { size: 9 }));
+      out.push(label(200, 340, capacityLabel, { size: 9 }));
       return out.join("");
     },
 
@@ -255,6 +258,95 @@
       out.push(label(200, trough + 28, "DECAY", { size: 9, opacity: 0.55 }));
       out.push(label(right, peak - 20, "RECENCY", { size: 9 }));
       out.push(label(200, 340, "SEQUENCE POSITION PREDICTS RECALL", { size: 9 }));
+      return out.join("");
+    },
+
+    /* Complexity budget: one fixed track partitioned into labelled demands,
+       optionally measured against a capacity line. */
+    "split-bar": function (p) {
+      var rows = p.rows || [];
+      var max = p.max || 100;
+      var ref = p.reference;
+      var caption = p.caption || "";
+      var x0 = 40;
+      var track = 320;
+      var top = 120;
+      var gap = 80;
+      var barH = 30;
+      var out = [];
+      rows.forEach(function (row, i) {
+        var y = top + i * gap;
+        out.push(label(200, y - 16, row.label, { size: 9 }));
+        var x = x0;
+        (row.segments || []).forEach(function (seg) {
+          var sw = (seg.weight / max) * track;
+          out.push(rect(x, y, sw, barH, {
+            rx: 3,
+            fill: seg.filled ? "currentColor" : "none",
+            opacity: seg.filled ? 0.8 : 0.4,
+            width: 1.5
+          }));
+          out.push(label(x + sw / 2, y + barH + 16, seg.label, { size: 8 }));
+          x += sw;
+        });
+      });
+      if (ref) {
+        var rx = x0 + ref.at * track;
+        var bottom = top + (rows.length - 1) * gap + barH + 26;
+        out.push(line(rx, top - 34, rx, bottom, 1.5, 0.75, "4 4"));
+        out.push(label(rx, top - 42, ref.label, { size: 8 }));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Paired comparison: two panels of equal cells, one per condition. */
+    "paired-panels": function (p) {
+      var caption = p.caption || "";
+      var size = p.cellSize || 0;
+      var out = [];
+      var top = 70;
+      var panelH = 240;
+      var panelW = 168;
+      [
+        { x: 26, panel: p.left || {} },
+        { x: 206, panel: p.right || {} }
+      ].forEach(function (side) {
+        var panel = side.panel;
+        var cells = panel.cells || 1;
+        var cols = panel.columns || Math.min(cells, 3);
+        var rows = Math.ceil(cells / cols);
+        var pad = 16;
+        var cellGap = 8;
+        var cw;
+        var chh;
+        if (size) {
+          cw = size;
+          chh = size;
+        } else {
+          cw = (panelW - 2 * pad - (cols - 1) * cellGap) / cols;
+          chh = Math.min(cw, (panelH - 2 * pad - (rows - 1) * cellGap) / rows);
+        }
+        var gridW = cols * cw + (cols - 1) * cellGap;
+        var gridH = rows * chh + (rows - 1) * cellGap;
+        var gx = side.x + (panelW - gridW) / 2;
+        var gy = top + (panelH - gridH) / 2;
+        out.push(rect(side.x, top, panelW, panelH, { rx: 6, opacity: 0.35, width: 1.5 }));
+        out.push(label(side.x + panelW / 2, top - 14, panel.caption || "", { size: 9 }));
+        for (var i = 0; i < cells; i++) {
+          var r = Math.floor(i / cols);
+          var c = i % cols;
+          var filled = i < (panel.filled || 0);
+          out.push(rect(gx + c * (cw + cellGap), gy + r * (chh + cellGap),
+            cw, chh, {
+              rx: 3,
+              fill: filled ? "currentColor" : "none",
+              opacity: filled ? 0.8 : 0.4,
+              width: 1.5
+            }));
+        }
+      });
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
     }
   };

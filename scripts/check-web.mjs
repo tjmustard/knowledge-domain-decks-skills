@@ -194,7 +194,7 @@ try {
   const failures = [];
   if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
   if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
-  if (layout.cards !== 6) failures.push(`${layout.cards} cards rendered, expected 6`);
+  if (layout.cards !== 12) failures.push(`${layout.cards} cards rendered, expected 12`);
   if (!flip.flipped || flip.pressed !== "true") failures.push("flip did not toggle aria-pressed");
   if (!flip.versoVisible || !flip.versoHasChecklist) failures.push("verso fields not exposed after flip");
   if (filter.visible !== 1 || filter.pressed !== 1) failures.push("category filter did not reduce to one card");

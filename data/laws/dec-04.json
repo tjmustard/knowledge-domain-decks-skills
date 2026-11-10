@@ -1,0 +1,30 @@
+{
+  "id": "DEC-04",
+  "name": "Choice Overload",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Too many comparable options stall decisions and leave people less satisfied with what they choose.",
+  "trigger": "A pricing page or settings screen shows many similar options and people stall, default, or leave without choosing.",
+  "checklist": [
+    "Limit consumer pricing to three or four plans with visibly different value.",
+    "Mark one option as recommended so a default path through the comparison is obvious.",
+    "Move advanced filters and rare configurations behind progressive disclosure."
+  ],
+  "antiPattern": {
+    "violation": "A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.",
+    "remediation": "Offer three clear tiers, mark one recommended, and route custom plans to a separate inquiry."
+  },
+  "graphicMetaphor": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": { "caption": "9 PLANS", "cells": 9, "columns": 3, "filled": 0 },
+      "right": { "caption": "3 PLANS, 1 PICK", "cells": 3, "columns": 3, "filled": 1 },
+      "caption": "MORE OPTIONS MAKE THE CHOICE HARDER"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Sheena S. Iyengar", "Mark R. Lepper"],
+    "year": 2000,
+    "title": "When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?",
+    "publication": "Journal of Personality and Social Psychology, 79(6), 995-1006"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "DEC-07",
+  "name": "Cognitive Friction",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Interfaces create friction when reaching a goal takes more or different actions than people expect.",
+  "trigger": "Users click a search icon, wait for the overlay, then click the field again before they can type.",
+  "checklist": [
+    "Let Enter submit single-field forms such as search and sign-in.",
+    "Move focus into the primary input as soon as a dialog opens.",
+    "Keep Tab, Shift+Tab, and arrow keys working through every menu."
+  ],
+  "antiPattern": {
+    "violation": "Opening search means clicking the icon, waiting for the overlay, and clicking the field before typing.",
+    "remediation": "Bind search to a keyboard shortcut that opens the dialog already focused on its input."
+  },
+  "graphicMetaphor": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "cellSize": 20,
+      "left": { "caption": "EXPECTED: 1 STEP", "cells": 1, "columns": 1, "filled": 1 },
+      "right": { "caption": "ACTUAL: 5 STEPS", "cells": 5, "columns": 5, "filled": 5 },
+      "caption": "EXTRA STEPS ARE FRICTION"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Alan Cooper"],
+    "year": 1999,
+    "title": "The Inmates Are Running the Asylum",
+    "publication": "Sams Publishing"
+  }
+}

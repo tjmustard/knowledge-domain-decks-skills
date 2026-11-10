@@ -1,0 +1,45 @@
+{
+  "id": "DEC-03",
+  "name": "Tesler's Law",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Every system carries irreducible complexity; design moves it between the system and the user.",
+  "trigger": "People are asked to supply details the product could derive, such as time zones, currency formats, or bank codes.",
+  "checklist": [
+    "Derive time zones, currency formats, and country codes from context instead of prompting.",
+    "Resolve file type, encoding, and MIME parameters during upload rather than asking.",
+    "Ship production-ready defaults for advanced settings so people opt out, not in."
+  ],
+  "antiPattern": {
+    "violation": "An international payment form asks customers for SWIFT, routing, clearing, and branch details by hand.",
+    "remediation": "Accept the IBAN and resolve the bank name, branch, and routing codes in the backend."
+  },
+  "graphicMetaphor": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 100,
+      "rows": [
+        {
+          "label": "USER ABSORBS 70",
+          "segments": [
+            { "label": "USER", "weight": 70, "filled": true },
+            { "label": "SYSTEM", "weight": 30, "filled": false }
+          ]
+        },
+        {
+          "label": "SYSTEM ABSORBS 70",
+          "segments": [
+            { "label": "USER", "weight": 30, "filled": true },
+            { "label": "SYSTEM", "weight": 70, "filled": false }
+          ]
+        }
+      ],
+      "caption": "COMPLEXITY MOVES; THE TOTAL DOES NOT"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Dan Saffer"],
+    "year": 2007,
+    "title": "Designing for Interaction",
+    "publication": "New Riders, first edition"
+  }
+}

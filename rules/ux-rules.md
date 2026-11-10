@@ -79,6 +79,109 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** George A. Miller (1956). *The Magical Number Seven, Plus or Minus Two: Some Limits on Our Capacity for Processing Information*. Psychological Review, 63(2), 81-97.
 
+### DEC-03 — Tesler's Law
+
+**Axiom.** Every system carries irreducible complexity; design moves it between the system and the user.
+
+**Apply when.** People are asked to supply details the product could derive, such as time zones, currency formats, or bank codes.
+
+**Checklist.**
+- [ ] Derive time zones, currency formats, and country codes from context instead of prompting.
+- [ ] Resolve file type, encoding, and MIME parameters during upload rather than asking.
+- [ ] Ship production-ready defaults for advanced settings so people opt out, not in.
+
+**Anti-pattern.** An international payment form asks customers for SWIFT, routing, clearing, and branch details by hand.
+
+**Fix.** Accept the IBAN and resolve the bank name, branch, and routing codes in the backend.
+
+**Source.** Dan Saffer (2007). *Designing for Interaction*. New Riders, first edition.
+
+### DEC-04 — Choice Overload
+
+**Axiom.** Too many comparable options stall decisions and leave people less satisfied with what they choose.
+
+**Apply when.** A pricing page or settings screen shows many similar options and people stall, default, or leave without choosing.
+
+**Checklist.**
+- [ ] Limit consumer pricing to three or four plans with visibly different value.
+- [ ] Mark one option as recommended so a default path through the comparison is obvious.
+- [ ] Move advanced filters and rare configurations behind progressive disclosure.
+
+**Anti-pattern.** A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.
+
+**Fix.** Offer three clear tiers, mark one recommended, and route custom plans to a separate inquiry.
+
+**Source.** Sheena S. Iyengar & Mark R. Lepper (2000). *When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?*. Journal of Personality and Social Psychology, 79(6), 995-1006.
+
+### DEC-05 — Cognitive Load Theory
+
+**Axiom.** Interaction suffers when extraneous cognitive demands consume the working memory a task needs.
+
+**Apply when.** People re-read instructions, hunt for guidance, or make avoidable errors in a dense single-page form.
+
+**Checklist.**
+- [ ] Remove decoration, redundant banners, and instructions that repeat the visible label.
+- [ ] Reveal secondary detail only when the current step needs it.
+- [ ] Put guidance beside the field it explains instead of on a separate help page.
+
+**Anti-pattern.** A tax form presents 100 fields on one scrolling page, each preceded by paragraphs of legal text.
+
+**Fix.** Split filing into focused steps and move legal detail into inline popovers.
+
+**Source.** John Sweller (1988). *Cognitive Load During Problem Solving: Effects on Learning*. Cognitive Science, 12(2), 257-285.
+
+### DEC-06 — Working Memory Capacity Model
+
+**Axiom.** Active memory holds about four chunks, so take the task's burden out of memory.
+
+**Apply when.** A multi-step flow asks people to remember a value from an earlier step while entering data on a later one.
+
+**Checklist.**
+- [ ] Keep earlier answers visible while someone enters related data in a later step.
+- [ ] Pin summary headers and context panels while people scroll a long table.
+- [ ] Show breadcrumbs and a persistent cart through checkout.
+- [ ] Put a copy button beside any value people must reuse on another screen.
+
+**Anti-pattern.** A four-step wizard makes people memorize a key shown in step one and retype it in step four.
+
+**Fix.** Step four shows the key in a read-only card with a copy button.
+
+**Source.** Nelson Cowan (2001). *The Magical Number 4 in Short-Term Memory: A Reconsideration of Mental Storage Capacity*. Behavioral and Brain Sciences, 24(1), 87-114.
+
+### DEC-07 — Cognitive Friction
+
+**Axiom.** Interfaces create friction when reaching a goal takes more or different actions than people expect.
+
+**Apply when.** Users click a search icon, wait for the overlay, then click the field again before they can type.
+
+**Checklist.**
+- [ ] Let Enter submit single-field forms such as search and sign-in.
+- [ ] Move focus into the primary input as soon as a dialog opens.
+- [ ] Keep Tab, Shift+Tab, and arrow keys working through every menu.
+
+**Anti-pattern.** Opening search means clicking the icon, waiting for the overlay, and clicking the field before typing.
+
+**Fix.** Bind search to a keyboard shortcut that opens the dialog already focused on its input.
+
+**Source.** Alan Cooper (1999). *The Inmates Are Running the Asylum*. Sams Publishing.
+
+### DEC-08 — Framing Effect
+
+**Axiom.** People decide differently when the same facts are described as gains rather than losses.
+
+**Apply when.** Two screens state one outcome, but one stresses what is gained and the other what is lost, and choices diverge.
+
+**Checklist.**
+- [ ] State availability as uptime gained (99.9%) rather than downtime risk.
+- [ ] Present discounts as money saved rather than total billed.
+- [ ] Describe security work as protecting data rather than as a failure warning.
+
+**Anti-pattern.** A backup prompt warns that refusing leaves all records open to total loss.
+
+**Fix.** The same prompt explains that enabling backup protects local files against hardware failure.
+
+**Source.** Amos Tversky & Daniel Kahneman (1981). *The Framing of Decisions and the Psychology of Choice*. Science, 211(4481), 453-458.
+
 ## Time, Motion & Ergonomics
 
 ### TME-01 — Fitts's Law
