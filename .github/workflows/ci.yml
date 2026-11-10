@@ -107,10 +107,18 @@ jobs:
             const path = process.env.RUNNER_TEMP + "/tests.log";
             let text = "";
             try { text = fs.readFileSync(path, "utf8"); } catch {}
-            text = text.slice(-36000);
             const escape = (v) => v.replace(/%/g, "%25").replace(/\r/g, "").replace(/\n/g, "%0A");
-            for (let i = 0, at = 0; at < text.length && i < 6; i += 1, at += 6000) {
-              console.log(`::error title=${escape(`Tests and gate ${i + 1}`)}::${escape(text.slice(at, at + 6000))}`);
+            // The layer verdicts first, so the shape of the failure is readable
+            // even if the chunked tail below is cut off.
+            const verdicts = text.split("\n").filter((line) => /^(PASS|FAIL|NOT RUN)\s/.test(line) || /passed, \d+ failed/.test(line));
+            if (verdicts.length > 0) {
+              console.log(`::error title=${escape("gate verdicts")}::${escape(verdicts.join("\n"))}`);
+            }
+            // GitHub truncates an annotation message at 4096 characters, so the
+            // chunks are smaller than that on purpose.
+            text = text.slice(-34000);
+            for (let i = 0, at = 0; at < text.length && i < 9; i += 1, at += 3600) {
+              console.log(`::error title=${escape(`Tests and gate ${i + 1}`)}::${escape(text.slice(at, at + 3600))}`);
             }
           '
 
