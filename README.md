@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="./media/icon.png" width="128" height="128" alt="Knowledge Domain Decks icon" style="border-radius: 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
+    <img src="./media/icons/web/icon-192.webp" width="128" height="128" alt="Knowledge Domain Decks icon" style="border-radius: 28px; box-shadow: 0 8px 24px rgba(0,0,0,0.25);" />
     <h1>Knowledge Domain Decks</h1>
     <p><strong>One dataset. Print, phone, and agent output.</strong></p>
     <p><em>An open-source reference card deck for UX and behavioral design, where every card is a validated record and every artifact is generated from it.</em></p>
@@ -186,7 +186,9 @@ and duplicate IDs fail the run.
 │   ├── generate-web-data.mjs    # Builds packages/web/deck-data.js
 │   ├── check-web.mjs            # Headless 390 px viewer smoke test
 │   └── pdf-check.mjs            # Page-box and page-count check
-├── media/                       # Project icon and README screenshot
+├── media/
+│   ├── icons/                   # Transparent WebP icon set (1024 master, web sizes)
+│   └── card-viewer-390.png      # README screenshot
 ├── DECISIONS.md                 # Deviations from the source specs and why
 ├── CHANGELOG.md
 ├── LICENSE                      # MIT (code)
