@@ -341,7 +341,7 @@
             cw, chh, {
               rx: 3,
               fill: filled ? "currentColor" : "none",
-              opacity: filled ? 0.8 : 0.4,
+              opacity: filled ? 0.8 : 0.55,
               width: 1.5
             }));
         }

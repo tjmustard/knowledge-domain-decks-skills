@@ -17,8 +17,8 @@
     "svgShape": "paired-panels",
     "parametricParams": {
       "cellSize": 20,
-      "left": { "caption": "EXPECTED: 1 STEP", "cells": 1, "columns": 1, "filled": 1 },
-      "right": { "caption": "ACTUAL: 5 STEPS", "cells": 5, "columns": 5, "filled": 5 },
+      "left": { "caption": "EXPECTED: 1 STEP", "cells": 1, "columns": 1 },
+      "right": { "caption": "ACTUAL: 5 STEPS", "cells": 5, "columns": 5 },
       "caption": "EXTRA STEPS ARE FRICTION"
     }
   },
