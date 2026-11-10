@@ -1,0 +1,642 @@
+{
+  "note": "Each figure reads its own record twice: the family is the structure the mechanism states, and the mark is the tactic's position inside its phase. The label under the figure names both, so the drawing and the words are the same claim. sprintSize is the front sprint's type size; the probe at the third checkpoint sets it from measurement and this map stays the authority.",
+  "families": {
+    "reflection": {
+      "drawing": "two chevrons meeting at a mirror line on the marked position",
+      "reads": "a reversed or negated property",
+      "noun": "reflection"
+    },
+    "separation": {
+      "drawing": "one origin fanning into the phase's positions, the marked path separated out",
+      "reads": "a mode, time, or part separated from the rest",
+      "noun": "separation"
+    },
+    "removal": {
+      "drawing": "the phase's cells stacked, the marked slot emptied and dashed",
+      "reads": "a component or feature removed",
+      "noun": "removal"
+    },
+    "scale": {
+      "drawing": "nested frames growing outward, the marked ring at the card's scale",
+      "reads": "a change of magnitude, precision, or state",
+      "noun": "scale shift"
+    },
+    "recombination": {
+      "drawing": "two rows of nodes joined one to one, the marked pair's join crossing",
+      "reads": "two things joined that were apart",
+      "noun": "recombination"
+    },
+    "constraint": {
+      "drawing": "a channel narrowing over the phase's bars, the marked bar open",
+      "reads": "a non-negotiable limit forcing a route",
+      "noun": "constraint"
+    },
+    "substitution": {
+      "drawing": "a column of slots, the marked square emptied and a round element in its place",
+      "reads": "one element put in another's place",
+      "noun": "substitution"
+    }
+  },
+  "map": {
+    "IDE-01": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 1,
+      "label": "Reflection at position 1 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Reverses directional cognitive sets"
+      }
+    },
+    "IDE-02": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 2,
+      "label": "Separation at position 2 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Decouples sensory observation from emotional and interpretive cognition"
+      }
+    },
+    "IDE-03": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 3,
+      "label": "Separation at position 3 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Engages pre-attentive pattern matching and tacit expert knowledge"
+      }
+    },
+    "IDE-04": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 4,
+      "label": "Separation at position 4 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Deploys defensive pessimism and systematic negative search"
+      }
+    },
+    "IDE-05": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 5,
+      "label": "Separation at position 5 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Activates reward pathways and value-seeking networks"
+      }
+    },
+    "IDE-06": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 6,
+      "label": "Separation at position 6 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Promotes lateral divergence and conceptual jumping"
+      }
+    },
+    "IDE-07": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 7,
+      "label": "Separation at position 7 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "regulating cognitive switching between exploratory divergent and evaluative convergent modes"
+      }
+    },
+    "IDE-08": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 8,
+      "label": "Reflection at position 8 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Negates an axiomatic system property"
+      }
+    },
+    "IDE-09": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 9,
+      "label": "Reflection at position 9 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "intentionally illogical or technically absurd intermediate construct"
+      }
+    },
+    "IDE-10": {
+      "family": "substitution",
+      "divisions": 16,
+      "mark": 10,
+      "label": "Substitution at position 10 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "substituting alternative materials, actors, or protocols"
+      }
+    },
+    "IDE-11": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 11,
+      "label": "Recombination at position 11 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "merging separate functional operational boundaries"
+      }
+    },
+    "IDE-12": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 12,
+      "label": "Recombination at position 12 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Leverages analogical mapping"
+      }
+    },
+    "IDE-13": {
+      "family": "scale",
+      "divisions": 16,
+      "mark": 13,
+      "label": "Scale shift at position 13 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Adjusts scale and parametric boundaries"
+      }
+    },
+    "IDE-14": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 14,
+      "label": "Recombination at position 14 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "uncoupling a technical side effect or discarded artifact from its original context"
+      }
+    },
+    "IDE-15": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 15,
+      "label": "Removal at position 15 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Employs cognitive pruning"
+      }
+    },
+    "IDE-16": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 16,
+      "label": "Reflection at position 16 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Reverses temporal and causal sequences"
+      }
+    },
+    "IDE-17": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 1,
+      "label": "Recombination at position 1 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Exhaustive combinatorial parameter mapping"
+      }
+    },
+    "IDE-18": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 2,
+      "label": "Separation at position 2 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "decomposing an integrated monolithic entity into independent, modular segments"
+      }
+    },
+    "IDE-19": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 3,
+      "label": "Removal at position 3 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Isolates and extracts an interfering property"
+      }
+    },
+    "IDE-20": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 4,
+      "label": "Reflection at position 4 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Symmetry-breaking reframing"
+      }
+    },
+    "IDE-21": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 5,
+      "label": "Separation at position 5 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "performing resource-intensive operations in advance of requirement triggers"
+      }
+    },
+    "IDE-22": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 6,
+      "label": "Reflection at position 6 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Reverses the direction of movement, environmental forces, or control flows"
+      }
+    },
+    "IDE-23": {
+      "family": "substitution",
+      "divisions": 16,
+      "mark": 7,
+      "label": "Substitution at position 7 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "enabling static attributes to become adaptive and mutable"
+      }
+    },
+    "IDE-24": {
+      "family": "scale",
+      "divisions": 16,
+      "mark": 8,
+      "label": "Scale shift at position 8 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "overshooting or undershooting operational targets"
+      }
+    },
+    "IDE-25": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 9,
+      "label": "Separation at position 9 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "replacing steady-state processes with pulsed, periodic, or interleaved interventions"
+      }
+    },
+    "IDE-26": {
+      "family": "reflection",
+      "divisions": 16,
+      "mark": 10,
+      "label": "Reflection at position 10 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Repositions systemic hazards, waste energy, or malicious inputs as functional operating assets"
+      }
+    },
+    "IDE-27": {
+      "family": "recombination",
+      "divisions": 16,
+      "mark": 11,
+      "label": "Recombination at position 11 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "introducing an intermediary to handle translation"
+      }
+    },
+    "IDE-28": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 12,
+      "label": "Removal at position 12 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Eliminates external maintenance dependencies"
+      }
+    },
+    "IDE-29": {
+      "family": "substitution",
+      "divisions": 16,
+      "mark": 13,
+      "label": "Substitution at position 13 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "replacing physical or mechanical mechanisms with electromagnetic, optical, acoustic, or digital interactions"
+      }
+    },
+    "IDE-30": {
+      "family": "scale",
+      "divisions": 16,
+      "mark": 14,
+      "label": "Scale shift at position 14 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "altering the physical state, degree of flexibility, temperature, pressure"
+      }
+    },
+    "IDE-31": {
+      "family": "removal",
+      "divisions": 16,
+      "mark": 15,
+      "label": "Removal at position 15 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "methodically removing auxiliary, supporting, and redundant components"
+      }
+    },
+    "IDE-32": {
+      "family": "separation",
+      "divisions": 16,
+      "mark": 16,
+      "label": "Separation at position 16 of 16",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "separating conflicting parameters across time, space, condition, or system scale"
+      }
+    },
+    "IDE-33": {
+      "family": "reflection",
+      "divisions": 10,
+      "mark": 1,
+      "label": "Reflection at position 1 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Semantic defamiliarization and cognitive estrangement"
+      }
+    },
+    "IDE-34": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 2,
+      "label": "Constraint at position 2 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Prohibits off-the-shelf commercial solutions"
+      }
+    },
+    "IDE-35": {
+      "family": "scale",
+      "divisions": 10,
+      "mark": 3,
+      "label": "Scale shift at position 3 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Conceptual scale refactoring"
+      }
+    },
+    "IDE-36": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 4,
+      "label": "Removal at position 4 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Removes visual design cues and form-filling affordances"
+      }
+    },
+    "IDE-37": {
+      "family": "reflection",
+      "divisions": 10,
+      "mark": 5,
+      "label": "Reflection at position 5 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "directing cognitive capacity toward generating the most destructive, inefficient, and catastrophic solutions"
+      }
+    },
+    "IDE-38": {
+      "family": "separation",
+      "divisions": 10,
+      "mark": 6,
+      "label": "Separation at position 6 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Operating from the hypothetical certainty that a future catastrophe has occurred"
+      }
+    },
+    "IDE-39": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 7,
+      "label": "Constraint at position 7 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Prohibits assumed access to infinite network backhauls"
+      }
+    },
+    "IDE-40": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 8,
+      "label": "Constraint at position 8 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "forcing the designer to strip out specialized jargon, complex cognitive models, and dexterity demands"
+      }
+    },
+    "IDE-41": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 9,
+      "label": "Removal at position 9 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "forcing engineers to eliminate non-performing features"
+      }
+    },
+    "IDE-42": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 10,
+      "label": "Constraint at position 10 of 10",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "ground the problem in the non-negotiable laws of physics"
+      }
+    },
+    "IDE-43": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 1,
+      "label": "Recombination at position 1 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "construct relational bridges between two unrelated semantic domains"
+      }
+    },
+    "IDE-44": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 2,
+      "label": "Recombination at position 2 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Injects an arbitrary, entropy-rich stimulus into working memory"
+      }
+    },
+    "IDE-45": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 3,
+      "label": "Recombination at position 3 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "systematically varying each one to break gestalt continuity"
+      }
+    },
+    "IDE-46": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 4,
+      "label": "Recombination at position 4 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Imports evolutionary mechanical solutions"
+      }
+    },
+    "IDE-47": {
+      "family": "substitution",
+      "divisions": 8,
+      "mark": 5,
+      "label": "Substitution at position 5 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Replaces brittle, hierarchical, centralized command-and-control logic with simple local interaction rules"
+      }
+    },
+    "IDE-48": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 6,
+      "label": "Recombination at position 6 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Implements self-correcting negative feedback loops"
+      }
+    },
+    "IDE-49": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 7,
+      "label": "Recombination at position 7 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "projects their own consciousness into a non-human or abstract system component"
+      }
+    },
+    "IDE-50": {
+      "family": "reflection",
+      "divisions": 8,
+      "mark": 8,
+      "label": "Reflection at position 8 of 8",
+      "sprintSize": 9,
+      "basis": {
+        "datum": "move structure",
+        "field": "mechanism",
+        "quote": "Figure-ground perceptual reversal"
+      }
+    }
+  }
+}

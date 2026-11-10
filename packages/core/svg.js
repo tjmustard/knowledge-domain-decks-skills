@@ -2973,6 +2973,179 @@
     return out.join("");
   };
 
+  /* --- Ideation: the shape of the move -------------------------------- */
+
+  /* An ideation card's figure reads its own record twice: the family is the
+     structure the mechanism states (it reverses, separates, removes, changes
+     scale, recombines, constrains, or substitutes), and the mark is the
+     tactic's position inside its phase. Every drawing shows the phase as
+     `div` positions and marks one, so the label under it - "Removal at
+     position 6 of 16" - is a claim a reader can check against the picture.
+
+     The source ships thirty abstract provocations; none of them assigns a
+     card. A figure that came from the companion document's ordering would be
+     a drawing the record cannot justify, which is the deck-six defect. */
+  shapes["ideation-figure"] = function (p) {
+    var family = p.family || "reflection";
+    var div = Math.max(1, Math.round(p.divisions || 4));
+    var mark = Math.max(1, Math.min(div, Math.round(p.mark || 1)));
+    var out = [];
+    var x0 = 56;
+    var span = 288;
+    var posX = function (i) {
+      return x0 + (span * (i - 0.5)) / div;
+    };
+    var dashed = function (x, y, w, h) {
+      return (
+        '<rect x="' + coord(x) + '" y="' + coord(y) + '" width="' + coord(w) +
+        '" height="' + coord(h) + '" rx="3" fill="none" stroke="currentColor" ' +
+        'stroke-width="1.9" stroke-dasharray="7 6" opacity="0.85" ' + STROKE + "/>"
+      );
+    };
+
+    if (family === "reflection") {
+      // The marked position is where the axis is crossed: two chevrons meet
+      // at the mirror line, so the drawing is the reversal and the mark is
+      // where it happens.
+      var ay = 200;
+      var mx = posX(mark);
+      out.push(line(x0 - 8, ay, x0 + span + 8, ay, 1.2, 0.35, "6 6"));
+      for (var ri = 1; ri <= div; ri++) {
+        var rx = posX(ri);
+        out.push(line(rx, ay - 5, rx, ay + 5, 1.1, 0.3));
+      }
+      out.push(
+        '<path d="M ' + coord(mx - 18) + " " + coord(ay - 52) +
+        " L " + coord(mx) + " " + coord(ay) +
+        " L " + coord(mx + 18) + " " + coord(ay - 52) +
+        '" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(
+        '<path d="M ' + coord(mx - 18) + " " + coord(ay + 52) +
+        " L " + coord(mx) + " " + coord(ay) +
+        " L " + coord(mx + 18) + " " + coord(ay + 52) +
+        '" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(mx, ay, 5, { hollow: true, width: 1.6, opacity: 0.9 }));
+    } else if (family === "separation") {
+      // One origin fanning into `div` separated paths; the marked path is
+      // the mode this card separates out.
+      var ox = 200;
+      var oy = 64;
+      var ey = 336;
+      for (var si = 1; si <= div; si++) {
+        var sx = div > 1 ? x0 + (span * (si - 1)) / (div - 1) : ox;
+        var on = si === mark;
+        out.push(line(ox, oy, sx, ey, on ? 2.4 : 1.2, on ? 0.9 : 0.28));
+        if (on) out.push(circle(sx, ey, 5, { hollow: true, width: 1.6, opacity: 0.9 }));
+      }
+    } else if (family === "removal") {
+      // A stack of `div` cells with one slot emptied: the removal is drawn,
+      // not named, and the dashed cell is the position the card takes.
+      var cellTop = 64;
+      var cellBottom = 336;
+      var cellH = (cellBottom - cellTop) / div;
+      var cellW = 136;
+      var cellX = 200 - cellW / 2;
+      for (var ci = 1; ci <= div; ci++) {
+        var cy = cellTop + cellH * (ci - 1);
+        if (ci === mark) {
+          out.push(dashed(cellX, cy, cellW, cellH - 4));
+        } else {
+          out.push(rect(cellX, cy, cellW, cellH - 4, { rx: 3, width: 1.2, opacity: 0.32 }));
+        }
+      }
+    } else if (family === "scale") {
+      // `div` nested frames growing outward; the marked ring is the scale the
+      // card pushes to.
+      var cx = 200;
+      var cy2 = 200;
+      var inner = 44;
+      var outer = 300;
+      for (var ki = 1; ki <= div; ki++) {
+        var side = div > 1 ? inner + ((outer - inner) * (ki - 1)) / (div - 1) : inner;
+        var onRing = ki === mark;
+        out.push(
+          rect(cx - side / 2, cy2 - side / 2, side, side, {
+            rx: 3,
+            width: onRing ? 2.4 : 1.1,
+            opacity: onRing ? 0.9 : 0.28,
+            fill: onRing ? "currentColor" : "none",
+            fillOpacity: onRing ? 0.07 : undefined
+          })
+        );
+      }
+    } else if (family === "recombination") {
+      // Two rows of `div` nodes joined one to one; at the mark the join
+      // crosses to a second node, which is what recombination means.
+      var topY = 112;
+      var botY = 288;
+      for (var ni = 1; ni <= div; ni++) {
+        var nx = posX(ni);
+        out.push(line(nx, topY, nx, botY, 1, 0.2));
+      }
+      for (var nj = 1; nj <= div; nj++) {
+        var nxj = posX(nj);
+        out.push(circle(nxj, topY, 3.2, { hollow: true, width: 1.2, opacity: 0.45 }));
+        out.push(circle(nxj, botY, 3.2, { hollow: true, width: 1.2, opacity: 0.45 }));
+      }
+      var mx2 = posX(mark);
+      var nextX = posX(mark === div ? 1 : mark + 1);
+      out.push(line(mx2, topY, mx2, botY, 2.4, 0.9));
+      out.push(line(mx2, topY, nextX, botY, 1.8, 0.65));
+      out.push(circle(mx2, topY, 5, { width: 1.6, opacity: 0.9 }));
+      out.push(circle(mx2, botY, 5, { width: 1.6, opacity: 0.9 }));
+    } else if (family === "constraint") {
+      // A channel narrowing over `div` bars; at the mark the bar leaves a
+      // gap, so the constraint is the passage the card opens.
+      var topC = 64;
+      var botC = 336;
+      var halfAt = function (y) {
+        return 150 - (110 * (y - topC)) / (botC - topC);
+      };
+      out.push(line(200 - halfAt(topC), topC, 200 - halfAt(botC), botC, 1.6, 0.5));
+      out.push(line(200 + halfAt(topC), topC, 200 + halfAt(botC), botC, 1.6, 0.5));
+      for (var bi2 = 1; bi2 <= div; bi2++) {
+        var by2 = topC + ((botC - topC) * (bi2 - 0.5)) / div;
+        var bh = halfAt(by2);
+        var open = bi2 === mark;
+        if (open) {
+          out.push(line(200 - bh, by2, 200 - 24, by2, 2.4, 0.9));
+          out.push(line(200 + 24, by2, 200 + bh, by2, 2.4, 0.9));
+          out.push(circle(200, by2, 5, { hollow: true, width: 1.6, opacity: 0.9 }));
+        } else {
+          out.push(line(200 - bh, by2, 200 + bh, by2, 1.1, 0.28));
+        }
+      }
+    } else if (family === "substitution") {
+      // A column of `div` slots; at the mark the square slot is emptied and a
+      // round element takes its place, joined by a short arrow.
+      var colTop = 64;
+      var colBot = 336;
+      var slotX = 168;
+      for (var ui2 = 1; ui2 <= div; ui2++) {
+        var uy = colTop + ((colBot - colTop) * (ui2 - 0.5)) / div;
+        if (ui2 === mark) {
+          out.push(dashed(slotX - 9, uy - 9, 18, 18));
+          out.push(circle(slotX + 62, uy, 9, { width: 1.8, opacity: 0.9 }));
+          out.push(line(slotX + 12, uy, slotX + 50, uy, 1.4, 0.55));
+        } else {
+          out.push(rect(slotX - 9, uy - 9, 18, 18, { rx: 2, width: 1.2, opacity: 0.3 }));
+        }
+      }
+    } else {
+      // An unknown family still reads both numbers, so a misspelling cannot
+      // declare knobs this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var fi2 = 0; fi2 < div; fi2++) {
+        var fx = 56 + (288 * (fi2 + 0.5)) / div;
+        out.push(line(fx, 56, fx, 66, 1.4, 0.4));
+      }
+      out.push(circle(posX(mark), 200, 8, { width: 1.6, opacity: 0.7 }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

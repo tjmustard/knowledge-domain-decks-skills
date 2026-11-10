@@ -17,6 +17,7 @@ import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const INVENTORY = join(ROOT, "decks", "ideation", "data", "source-inventory.json");
+const LAYOUT = join(ROOT, "decks", "ideation", "data", "layout-map.json");
 const TOTAL = 50;
 
 const loadInventory = async () => JSON.parse(await readFile(INVENTORY, "utf8"));
@@ -178,4 +179,47 @@ test("no card text carries a surviving macro token or backslash", async () => {
     );
   assert.ok(has("→"), "the rendered arrow is present");
   assert.ok(has("ε"), "the rendered epsilon is present");
+});
+
+test("every figure follows the committed layout map and names what it draws", async () => {
+  // Deck six shipped ten cards whose figures contradicted their labels. The
+  // map is the authority here, and the label under a figure must name the
+  // family and the position the drawing marks.
+  const inventory = await loadInventory();
+  const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
+  const map = layout.map;
+  const families = layout.families;
+  const rows = new Map(inventory.records.map((record) => [record.id, record]));
+
+  assert.equal(Object.keys(map).length, TOTAL, "the layout map covers every tactic");
+  for (const [cardId, record] of rows) {
+    const row = map[cardId];
+    assert.ok(row, `${cardId} has no layout-map row`);
+    assert.ok(families[row.family], `${cardId} names an unknown family: ${row.family}`);
+    assert.ok(Number.isInteger(row.divisions) && row.divisions >= 1, `${cardId} divisions`);
+    assert.ok(Number.isInteger(row.mark) && row.mark >= 1, `${cardId} mark`);
+    assert.ok(row.mark <= row.divisions, `${cardId} mark is outside the drawing`);
+    assert.ok(row.sprintSize >= 6.5 && row.sprintSize <= 9, `${cardId} sprint size`);
+
+    // The label names the drawing: the family's noun and the marked position
+    // in the phase the drawing counts out.
+    const noun = families[row.family].noun;
+    assert.ok(
+      row.label.toLowerCase().startsWith(noun),
+      `${cardId} label does not name its family "${noun}": "${row.label}"`
+    );
+    assert.ok(
+      row.label.includes(`position ${row.mark} of ${row.divisions}`),
+      `${cardId} label omits its marked position: "${row.label}"`
+    );
+
+    // The basis is a stated datum, quoted from the record it claims.
+    const basis = row.basis;
+    assert.ok(basis && basis.datum && basis.field && basis.quote, `${cardId} has no basis`);
+    const value = basis.field.split(".").reduce((v, key) => (v == null ? v : v[key]), record);
+    assert.ok(
+      typeof value === "string" && value.includes(basis.quote),
+      `${cardId} basis quote is not in ${basis.field}`
+    );
+  }
 });
