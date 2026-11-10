@@ -34,10 +34,29 @@
     "resourceItems": "Pressure questions"
   },
   "blocks": [
-    { "field": "canvas", "label": "Canvas", "style": "prose", "card": false },
-    { "field": "stressTestFull", "label": "Pressure questions, unabridged", "style": "list", "card": false },
-    { "field": "checklistFull", "label": "Actions, unabridged", "style": "list", "card": false },
-    { "field": "checklist", "label": "Actions", "style": "list" }
+    {
+      "field": "canvas",
+      "label": "Canvas",
+      "style": "prose",
+      "card": false
+    },
+    {
+      "field": "stressTestFull",
+      "label": "Pressure questions, unabridged",
+      "style": "list",
+      "card": false
+    },
+    {
+      "field": "checklistFull",
+      "label": "Actions, unabridged",
+      "style": "list",
+      "card": false
+    },
+    {
+      "field": "checklist",
+      "label": "Actions",
+      "style": "list"
+    }
   ],
   "printOrder": "family",
   "outputs": {
@@ -47,7 +66,7 @@
   },
   "rules": {
     "title": "Strategy Architecture Rules",
-    "intro": "The frameworks come from public strategy literature: Michael Porter's structural analysis, the resource-based and dynamic-capabilities schools, W. Hamilton Helmer's seven powers, Clayton Christensen's disruption theory, and the execution canon from Rumelt, Lafley and Martin, and Osterberg's canvas lineage. Each card names the work that originated the framework; where the source names no originator, it says so.\nEvery card answers what a leadership team actually argues about - the question that says this framework is the one you need, the schematic the argument is drawn on - then three pressure questions that show whether the room is fooling itself, then three actions that make the decision real. The canvas and the unabridged items follow, because the card is the playable surface and this file is the reference."
+    "intro": "The frameworks come from public strategy literature: Michael Porter's structural analysis, the resource-based and dynamic-capabilities schools, W. Hamilton Helmer's seven powers, Clayton Christensen's disruption theory, and the execution canon from Rumelt, Lafley and Martin, and Osterwalder's canvas lineage. Each card names the work that originated the framework; where the source names no originator, it says so.\nEvery card answers what a leadership team actually argues about - the question that says this framework is the one you need, the schematic the argument is drawn on - then three pressure questions that show whether the room is fooling itself, then three actions that make the decision real. The canvas and the unabridged items follow, because the card is the playable surface and this file is the reference."
   },
   "skill": {
     "name": "strategy",

@@ -1788,6 +1788,519 @@ window.STRATEGY_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"153.333333\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"141.333333\" y1=\"200\" x2=\"153.333333\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.333333\" y1=\"200\" x2=\"147.190255\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.333333\" y1=\"200\" x2=\"147.190255\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"246.666667\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234.666667\" y1=\"200\" x2=\"246.666667\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.666667\" y1=\"200\" x2=\"240.523589\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.666667\" y1=\"200\" x2=\"240.523589\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S34",
+      "name": "Strategy Kernel",
+      "category": "Execution & Coherence",
+      "diagnosis": "Is executive leadership confusing performance targets and wishful thinking with a focused strategy that tackles the company's core challenges?",
+      "schematic": "Tripartite Foundation Block",
+      "canvas": "Tripartite foundation architecture: Diagnosis (simplifying reality by identifying the critical challenge) connecting to Guiding Policy (an overall approach designed to address the diagnosed challenge) leading to Coherent Actions (coordinated steps that reinforce one another).",
+      "stressTest": [
+        {
+          "text": "Does the plan restate financial targets instead of naming the real challenge?"
+        },
+        {
+          "text": "Does the policy make hard trade-offs about what the firm will decline to do?"
+        },
+        {
+          "text": "Do initiatives reinforce each other, so one raises the leverage of the next?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the strategic plan simply restate financial goals (such as achieving $50M ARR) instead of addressing an underlying operational or market challenge?",
+        "Does the guiding policy make difficult trade-offs regarding what the organization will deliberately decline to do?",
+        "Are execution initiatives coordinated so that completing one initiative directly increases the leverage and impact of the next?"
+      ],
+      "checklist": [
+        "Write a one-page diagnosis naming the single critical structural constraint.",
+        "Draft a guiding policy that concentrates resources on one asymmetric objective.",
+        "Cut every backlog project that does not support the coherent action plan."
+      ],
+      "checklistFull": [
+        "Write a one-page Diagnosis detailing the single most critical structural constraint currently facing the enterprise.",
+        "Draft a Guiding Policy that addresses this constraint by concentrating organizational resources on a focused, asymmetric objective.",
+        "Audit the product backlog, removing any projects that do not directly support the coherent action plan."
+      ],
+      "origin": {
+        "authors": [
+          "Richard P. Rumelt"
+        ],
+        "year": 2011,
+        "title": "Good Strategy/Bad Strategy: The Difference and Why It Matters",
+        "publication": "Crown Business",
+        "authorsLabel": "Richard P. Rumelt",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tree",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"350\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"70\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"350\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S35",
+      "name": "Playing to Win",
+      "category": "Execution & Coherence",
+      "diagnosis": "Are the company's choices of where to compete matched by a differentiated capability system capable of winning in those selected arenas?",
+      "schematic": "5-Stage Strategy Cascade",
+      "canvas": "Five-stage nested vertical cascade: Winning Aspiration connecting to Where to Play, leading to How to Win, supported by Core Capabilities, and reinforced by Management Systems.",
+      "stressTest": [
+        {
+          "text": "Is Where to Play too broad, instead of naming segments, profiles and channels?"
+        },
+        {
+          "text": "Is How to Win a real advantage, or a list of industry-standard best practices?"
+        },
+        {
+          "text": "Do capabilities and review rhythms actually support the chosen play and win?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the Where to Play choice defined too broadly instead of specifying exact target customer profiles, market segments, and channels?",
+        "Does the How to Win choice represent a genuine competitive advantage, or is it merely a list of industry-standard best practices?",
+        "Do the company's existing internal capabilities and operational review rhythms directly support the chosen Where to Play and How to Win choices?"
+      ],
+      "checklist": [
+        "Run a reverse-engineering session: what must be true for this strategy to work?",
+        "Document the segments, products and regions the firm will deliberately not serve.",
+        "Tie performance reviews, OKRs and capital to the required core capabilities."
+      ],
+      "checklistFull": [
+        "Execute a reverse-engineering strategy session: identify what must be true about market conditions, buyer behavior, and competitors for the strategy to succeed.",
+        "Clearly document the customer segments, product types, and geographic regions the organization will deliberately choose not to serve.",
+        "Align team performance reviews, OKRs, and capital allocations directly with the required core capabilities."
+      ],
+      "origin": {
+        "authors": [
+          "A.G. Lafley",
+          "Roger L. Martin"
+        ],
+        "year": 2013,
+        "title": "Playing to Win: How Strategy Really Works",
+        "publication": "Harvard Business Review Press",
+        "authorsLabel": "A.G. Lafley & Roger L. Martin",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "stage_progression",
+          "columns": 5,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"55\" y=\"332\" width=\"46\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"113\" y=\"325.2\" width=\"46\" height=\"24.8\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.48000000000000004\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101\" y1=\"341\" x2=\"113\" y2=\"337.6\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113\" y1=\"337.6\" x2=\"108.004429\" y2=\"342.503496\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113\" y1=\"337.6\" x2=\"106.174732\" y2=\"336.045742\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"171\" y=\"318.4\" width=\"46\" height=\"31.6\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.56\" vector-effect=\"non-scaling-stroke\"/><line x1=\"159\" y1=\"337.6\" x2=\"171\" y2=\"334.2\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"171\" y1=\"334.2\" x2=\"166.004429\" y2=\"339.103496\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"171\" y1=\"334.2\" x2=\"164.174732\" y2=\"332.645742\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"229\" y=\"311.6\" width=\"46\" height=\"38.4\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.64\" vector-effect=\"non-scaling-stroke\"/><line x1=\"217\" y1=\"334.2\" x2=\"229\" y2=\"330.8\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229\" y1=\"330.8\" x2=\"224.004429\" y2=\"335.703496\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229\" y1=\"330.8\" x2=\"222.174732\" y2=\"329.245742\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"287\" y=\"304.8\" width=\"46\" height=\"45.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.72\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275\" y1=\"330.8\" x2=\"287\" y2=\"327.4\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287\" y1=\"327.4\" x2=\"282.004429\" y2=\"332.303496\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287\" y1=\"327.4\" x2=\"280.174732\" y2=\"325.845742\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"50\" y1=\"350\" x2=\"350\" y2=\"350\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S36",
+      "name": "Opportunity Solution Trees",
+      "category": "Execution & Coherence",
+      "diagnosis": "Is the engineering team shipping unvalidated solutions without mapping the underlying customer opportunity space?",
+      "schematic": "Hierarchical Discovery Tree",
+      "canvas": "Hierarchical tree diagram branching from an Outcome Metric at the root into customer Opportunities (unmet needs, pains, desires), which branch into multiple competing Solutions, terminating in focused Assumption Tests.",
+      "stressTest": [
+        {
+          "text": "Did the squad jump from a business goal to a feature without mapping opportunities?"
+        },
+        {
+          "text": "Are competing solutions evaluated per opportunity, or is the team committed to one?"
+        },
+        {
+          "text": "Are desirability, usability, feasibility and viability tested before production code?"
+        }
+      ],
+      "stressTestFull": [
+        "Did the squad jump directly from an executive business goal to building a specific feature without exploring multiple customer opportunities?",
+        "Are multiple competing solution ideas being evaluated concurrently for each identified opportunity, or is the team committed to a single option?",
+        "Are teams running discrete assumption tests (covering desirability, usability, feasibility, and viability) before deploying production code?"
+      ],
+      "checklist": [
+        "Interview at least two target customers every week to find recurring opportunities.",
+        "Tie every user story to an opportunity node and a business outcome.",
+        "Test the riskiest assumptions before scheduling a development sprint."
+      ],
+      "checklistFull": [
+        "Establish a continuous interview schedule with at least two target customers every week to discover recurring opportunities.",
+        "Reorganize the backlog so that every user story connects to a specific opportunity node and business outcome.",
+        "Create assumption-testing matrices to test the riskiest assumptions before scheduling development sprints."
+      ],
+      "origin": {
+        "authors": [
+          "Teresa Torres"
+        ],
+        "year": 2016,
+        "title": "An Introduction to Opportunity Solution Trees",
+        "publication": "Product Talk",
+        "authorsLabel": "Teresa Torres",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tree",
+          "columns": 3,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"350\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"70\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"350\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S37",
+      "name": "North Star Metric Trees",
+      "category": "Execution & Coherence",
+      "diagnosis": "Are individual squads optimizing disconnected vanity metrics that fail to drive long-term business value?",
+      "schematic": "Hierarchical Math Metric Tree",
+      "canvas": "Mathematical tree linking an overarching North Star Metric (representing the intersection of customer value delivery and sustainable business exchange) to four input dimensions: Breadth, Depth, Frequency, and Efficiency.",
+      "stressTest": [
+        {
+          "text": "Does the North Star measure real value, or a vanity metric easy to game?"
+        },
+        {
+          "text": "Can each squad trace its own metric to a move in the North Star?"
+        },
+        {
+          "text": "Do leading usage indicators sit alongside lagging financial retention?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the selected North Star metric measure authentic value delivery to the customer, or is it a vanity metric vulnerable to manipulation?",
+        "Can individual product squads trace how changes in their specific team metrics directly influence the overarching North Star metric?",
+        "Does the metric structure maintain balance by tracking leading usage indicators alongside lagging financial retention metrics?"
+      ],
+      "checklist": [
+        "Agree one North Star metric that captures real customer value exchange.",
+        "Split the North Star into breadth, depth, frequency and efficiency inputs.",
+        "Give each input metric a named squad owner."
+      ],
+      "checklistFull": [
+        "Run an executive alignment session to define a single North Star Metric that captures actual customer value exchange.",
+        "Deconstruct the North Star metric into four operational inputs: Breadth, Depth, Frequency, and Efficiency.",
+        "Assign direct operational ownership of each input metric to a specific product squad."
+      ],
+      "origin": {
+        "authors": [
+          "Sean Ellis"
+        ],
+        "year": 2017,
+        "title": "Hacking Growth",
+        "publication": "Crown Business",
+        "authorsLabel": "Sean Ellis",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tree",
+          "columns": 3,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"350\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"70\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"150\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"220\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"350\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S38",
+      "name": "Business Model Canvas",
+      "category": "Execution & Coherence",
+      "diagnosis": "Does the organization maintain a coherent, balanced blueprint of how it creates, delivers, and captures economic value?",
+      "schematic": "9-Block Structural Blueprint",
+      "canvas": "Nine-block architectural layout mapping Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure.",
+      "stressTest": [
+        {
+          "text": "Are value propositions matched to segments, or generic capabilities for no market?"
+        },
+        {
+          "text": "Does cost structure support the key activities, or do unit economics degrade with scale?"
+        },
+        {
+          "text": "Does the canvas say how value is captured, or rely on future monetization?"
+        }
+      ],
+      "stressTestFull": [
+        "Are Value Propositions matched directly to distinct Customer Segments, or does the canvas list generic capabilities for an undefined market?",
+        "Does the Cost Structure support the operational demands of the Key Activities and Resources, or do unit economics degrade as the business scales?",
+        "Does the canvas specify how value will be captured, or does it depend on vague assumptions about future monetization?"
+      ],
+      "checklist": [
+        "Declare the model in a versioned YAML or JSON schema to track revisions.",
+        "Validate that every segment connects to a value proposition, channel and revenue.",
+        "Name the three riskiest assumptions and schedule validation sprints."
+      ],
+      "checklistFull": [
+        "Document the business model in a declarative BMML (YAML) or JSON schema to track revisions over time.",
+        "Run validation scripts to confirm that every customer segment connects to a specific value proposition, distribution channel, and revenue stream.",
+        "Identify the three riskiest assumptions across the canvas and schedule validation sprints to test them."
+      ],
+      "origin": {
+        "authors": [
+          "Alexander Osterwalder",
+          "Yves Pigneur"
+        ],
+        "year": 2010,
+        "title": "Business Model Generation",
+        "publication": "John Wiley & Sons",
+        "authorsLabel": "Alexander Osterwalder & Yves Pigneur",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "matrix_3x3",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S39",
+      "name": "Lean Canvas",
+      "category": "Execution & Coherence",
+      "diagnosis": "In an early-stage venture facing high uncertainty, what are the primary unvalidated assumptions that threaten company viability?",
+      "schematic": "9-Block Risk-Hypothesis Grid",
+      "canvas": "Nine-block early-stage canvas substituting operational boxes with startup-focused elements: Problem (top three), Customer Segments (Early Adopters), Unique Value Proposition, Solution (top three features), Channels, Revenue Streams, Cost Structure, Key Metrics, and Unfair Advantage.",
+      "stressTest": [
+        {
+          "text": "Is the Unfair Advantage a real barrier, or just internal execution effort?"
+        },
+        {
+          "text": "Do the top three problems rest on observed workarounds, or on hypotheses?"
+        },
+        {
+          "text": "Has the team named early adopters who will use an incomplete first release?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the Unfair Advantage describe a genuine competitive barrier—such as network effects or proprietary data—or merely internal execution effort?",
+        "Are the top three problems supported by observed customer workarounds, or are they hypothetical issues that customers will not pay to resolve?",
+        "Has the team identified a specific profile of early adopters willing to use an incomplete initial release?"
+      ],
+      "checklist": [
+        "Complete the canvas in twenty minutes, noting existing alternatives per problem.",
+        "Interview targets to confirm the main problem is urgent for them.",
+        "Validate the schema to flag missing or generic Unfair Advantage entries."
+      ],
+      "checklistFull": [
+        "Complete the Lean Canvas within a single 20-minute exercise, explicitly noting existing customer alternatives for each identified problem.",
+        "Conduct discovery interviews to verify that target customers consider the primary problem an urgent priority.",
+        "Execute a schema validation check to flag any missing entries or generic descriptions in the Unfair Advantage block."
+      ],
+      "origin": {
+        "authors": [
+          "Ash Maurya"
+        ],
+        "year": 2012,
+        "title": "Running Lean: Iterate from Plan A to a Plan That Works",
+        "publication": "O'Reilly Media",
+        "authorsLabel": "Ash Maurya",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "matrix_3x3",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"88.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"97.833333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"195.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"204.5\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"302.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"311.166667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S40",
+      "name": "PLG & Hook Loop",
+      "category": "Execution & Coherence",
+      "diagnosis": "Are high sales and marketing acquisition costs choking distribution, requiring the product experience itself to drive customer acquisition, conversion, and retention?",
+      "schematic": "4-Stage Behavioral Retention Loop",
+      "canvas": "Four-stage recurring loop linking an internal or external Trigger to an Action (completed in anticipation of reward), a Variable Reward (satisfying user interest), and an Investment (loading the next trigger).",
+      "stressTest": [
+        {
+          "text": "Does the product need a sales conversation before delivering its core value?"
+        },
+        {
+          "text": "Can users reach the aha moment fast, or does onboarding outlast their patience?"
+        },
+        {
+          "text": "Does the user accumulate data, settings or colleagues that raise switching cost?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the product require a conversation with a sales representative before delivering its core value proposition?",
+        "Can users reach the core \"aha\" moment quickly, or does onboarding friction delay time-to-value beyond the user's patience threshold?",
+        "Does the user make a cumulative investment—such as saving data, customizing settings, or inviting colleagues—that increases switching costs over time?"
+      ],
+      "checklist": [
+        "Halve onboarding steps and measure time-to-value from signup to aha.",
+        "Build invitation loops that pull colleagues into the user's workspace.",
+        "Trigger product-qualified leads from feature usage, not form submissions."
+      ],
+      "checklistFull": [
+        "Measure time-to-value from initial account creation to the primary realization of value, eliminating half of the onboarding steps.",
+        "Implement collaboration loops that encourage users to invite colleagues directly into their workspace.",
+        "Set up automated product-qualified lead (PQL) alerts based on active feature usage rather than marketing form submissions."
+      ],
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Nir Eyal"
+            ],
+            "year": 2014,
+            "title": "Hooked: How to Build Habit-Forming Products",
+            "publication": "Portfolio/Penguin",
+            "authorsLabel": "Nir Eyal",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Wes Bush"
+            ],
+            "year": 2019,
+            "title": "Product-Led Growth: How to Build a Product That Sells Itself",
+            "publication": "ProductLed Press",
+            "authorsLabel": "Wes Bush",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S41",
+      "name": "OKR Alignment Cascades",
+      "category": "Execution & Coherence",
+      "diagnosis": "Are company departments misaligned and pursuing divergent goals that fail to translate executive strategy into measurable outcomes?",
+      "schematic": "2-Tier Objective-Result Network",
+      "canvas": "Two-tier goal architecture linking directional, qualitative Objectives with three to five quantitative, time-bound Key Results that demonstrate objective attainment.",
+      "stressTest": [
+        {
+          "text": "Are key results task lists, or measurable changes in business performance?"
+        },
+        {
+          "text": "Do OKRs drive compensation, pushing teams toward conservative targets?"
+        },
+        {
+          "text": "Does leadership set more than three objectives a quarter, diluting focus?"
+        }
+      ],
+      "stressTestFull": [
+        "Are Key Results written as completed tasks and activity checklists rather than measurable changes in business performance?",
+        "Are OKRs tied directly to individual compensation, encouraging teams to set conservative, easily achievable targets?",
+        "Does executive leadership set more than three core Objectives per quarter, diluting overall organizational focus?"
+      ],
+      "checklist": [
+        "Give every key result a baseline, a target and automated tracking.",
+        "Review dependencies across teams so cross-functional priorities align.",
+        "Hold a fifteen-minute weekly check-in on confidence and blockers."
+      ],
+      "checklistFull": [
+        "Audit every proposed Key Result to ensure it includes a baseline metric, a target value, and an automated tracking pipeline.",
+        "Review OKR dependencies across interdependent teams to confirm cross-functional priorities are acknowledged and aligned.",
+        "Establish a weekly fifteen-minute check-in rhythm to review progress, track confidence scores, and remove operational blockers."
+      ],
+      "origin": {
+        "authors": [
+          "Andrew S. Grove"
+        ],
+        "year": 1983,
+        "title": "High Output Management",
+        "publication": "Random House",
+        "authorsLabel": "Andrew S. Grove",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tree",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"350\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"70\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"200\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"350\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S42",
+      "name": "Dual Transformation",
+      "category": "Execution & Coherence",
+      "diagnosis": "How can an enterprise modernize mission-critical legacy architectures while simultaneously developing greenfield, disruptive product capabilities?",
+      "schematic": "2-Track Transformation Canvas",
+      "canvas": "Dual transformation architecture displaying Transformation A (Defending and modernizing the core business) alongside Transformation B (Developing the greenfield growth engine), connected by a shared Capability Linkage layer.",
+      "stressTest": [
+        {
+          "text": "Are modernization and greenfield run sequentially instead of in parallel?"
+        },
+        {
+          "text": "Does the core treat the greenfield venture as a rival, limiting shared assets?"
+        },
+        {
+          "text": "Do legacy teams measure technical completion, not delivery speed or agility?"
+        }
+      ],
+      "stressTestFull": [
+        "Is the business executing legacy modernization and greenfield exploration sequentially rather than as concurrent, parallel initiatives?",
+        "Does the core business treat the greenfield venture as an internal competitor, limiting access to shared data and enterprise assets?",
+        "Are legacy modernization teams measuring success through technical completion rather than improved delivery speed and business agility?"
+      ],
+      "checklist": [
+        "Run two parallel tracks: decouple the legacy core; build greenfield capability.",
+        "Use a strangler-fig gateway to retire monolith services call by call.",
+        "Keep strategic goals as version-controlled YAML checked into the repo."
+      ],
+      "checklistFull": [
+        "Establish two parallel delivery tracks: Track A focused on decoupling legacy architectures, and Track B on developing greenfield capabilities.",
+        "Apply the Strangler Fig pattern to intercept legacy system calls via API gateways, gradually deprecating monolithic services.",
+        "Define strategic goals as version-controlled YAML specifications checked directly into code repositories."
+      ],
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "The Open Group"
+            ],
+            "year": 2020,
+            "title": "Open Agile Architecture Standard",
+            "publication": "O-AA",
+            "authorsLabel": "The Open Group",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Clark Gilbert",
+              "Matthew Eyring",
+              "Richard N. Foster"
+            ],
+            "year": 2012,
+            "title": "Two Routes to Resilience",
+            "publication": "Harvard Business Review",
+            "authorsLabel": "Clark Gilbert, Matthew Eyring & Richard N. Foster",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tracks",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"106\" width=\"288\" height=\"28\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"152\" y1=\"106\" x2=\"152\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248\" y1=\"106\" x2=\"248\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"104\" cy=\"120\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"120\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"296\" cy=\"120\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"266\" width=\"288\" height=\"28\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"152\" y1=\"266\" x2=\"152\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248\" y1=\"266\" x2=\"248\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"104\" cy=\"280\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"296\" cy=\"280\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

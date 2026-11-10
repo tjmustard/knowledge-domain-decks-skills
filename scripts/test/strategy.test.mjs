@@ -50,7 +50,10 @@ test("every record matches the committed inventory", async () => {
   for (const card of cards) {
     const row = rows.get(card.id);
     assert.ok(row, `${card.id} is not in the inventory`);
-    assert.equal(card.name, row.name, `${card.id} name`);
+    assert.ok(
+      row.name === card.name || row.name.includes(card.name),
+      `${card.id} name is neither the table's phrase nor a shorter phrase within it`
+    );
     assert.equal(card.category, row.category, `${card.id} category`);
     assert.equal(card.diagnosis, row.diagnosis, `${card.id} diagnosis`);
     assert.ok(row.tableSchematic, `${card.id} inventory carries the table's schematic tag`);
@@ -65,7 +68,7 @@ test("every record matches the committed inventory", async () => {
     assert.equal(card.checklist.length, 3, `${card.id} carries three actions`);
   }
   assert.equal(new Set(cards.map((card) => card.id)).size, cards.length, "ids are unique");
-  assert.ok(cards.length <= TOTAL, `${cards.length} cards exceeds the source's ${TOTAL}`);
+  assert.equal(cards.length, TOTAL, "all four dimensions are committed");
 });
 
 test("every figure follows the committed layout map", async () => {

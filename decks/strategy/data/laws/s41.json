@@ -1,0 +1,50 @@
+{
+  "id": "S41",
+  "name": "OKR Alignment Cascades",
+  "category": "Execution & Coherence",
+  "diagnosis": "Are company departments misaligned and pursuing divergent goals that fail to translate executive strategy into measurable outcomes?",
+  "schematic": "2-Tier Objective-Result Network",
+  "canvas": "Two-tier goal architecture linking directional, qualitative Objectives with three to five quantitative, time-bound Key Results that demonstrate objective attainment.",
+  "stressTest": [
+    {
+      "text": "Are key results task lists, or measurable changes in business performance?"
+    },
+    {
+      "text": "Do OKRs drive compensation, pushing teams toward conservative targets?"
+    },
+    {
+      "text": "Does leadership set more than three objectives a quarter, diluting focus?"
+    }
+  ],
+  "stressTestFull": [
+    "Are Key Results written as completed tasks and activity checklists rather than measurable changes in business performance?",
+    "Are OKRs tied directly to individual compensation, encouraging teams to set conservative, easily achievable targets?",
+    "Does executive leadership set more than three core Objectives per quarter, diluting overall organizational focus?"
+  ],
+  "checklist": [
+    "Give every key result a baseline, a target and automated tracking.",
+    "Review dependencies across teams so cross-functional priorities align.",
+    "Hold a fifteen-minute weekly check-in on confidence and blockers."
+  ],
+  "checklistFull": [
+    "Audit every proposed Key Result to ensure it includes a baseline metric, a target value, and an automated tracking pipeline.",
+    "Review OKR dependencies across interdependent teams to confirm cross-functional priorities are acknowledged and aligned.",
+    "Establish a weekly fifteen-minute check-in rhythm to review progress, track confidence scores, and remove operational blockers."
+  ],
+  "origin": {
+    "authors": [
+      "Andrew S. Grove"
+    ],
+    "year": 1983,
+    "title": "High Output Management",
+    "publication": "Random House"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tree",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

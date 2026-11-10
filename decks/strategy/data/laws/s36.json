@@ -1,0 +1,50 @@
+{
+  "id": "S36",
+  "name": "Opportunity Solution Trees",
+  "category": "Execution & Coherence",
+  "diagnosis": "Is the engineering team shipping unvalidated solutions without mapping the underlying customer opportunity space?",
+  "schematic": "Hierarchical Discovery Tree",
+  "canvas": "Hierarchical tree diagram branching from an Outcome Metric at the root into customer Opportunities (unmet needs, pains, desires), which branch into multiple competing Solutions, terminating in focused Assumption Tests.",
+  "stressTest": [
+    {
+      "text": "Did the squad jump from a business goal to a feature without mapping opportunities?"
+    },
+    {
+      "text": "Are competing solutions evaluated per opportunity, or is the team committed to one?"
+    },
+    {
+      "text": "Are desirability, usability, feasibility and viability tested before production code?"
+    }
+  ],
+  "stressTestFull": [
+    "Did the squad jump directly from an executive business goal to building a specific feature without exploring multiple customer opportunities?",
+    "Are multiple competing solution ideas being evaluated concurrently for each identified opportunity, or is the team committed to a single option?",
+    "Are teams running discrete assumption tests (covering desirability, usability, feasibility, and viability) before deploying production code?"
+  ],
+  "checklist": [
+    "Interview at least two target customers every week to find recurring opportunities.",
+    "Tie every user story to an opportunity node and a business outcome.",
+    "Test the riskiest assumptions before scheduling a development sprint."
+  ],
+  "checklistFull": [
+    "Establish a continuous interview schedule with at least two target customers every week to discover recurring opportunities.",
+    "Reorganize the backlog so that every user story connects to a specific opportunity node and business outcome.",
+    "Create assumption-testing matrices to test the riskiest assumptions before scheduling development sprints."
+  ],
+  "origin": {
+    "authors": [
+      "Teresa Torres"
+    ],
+    "year": 2016,
+    "title": "An Introduction to Opportunity Solution Trees",
+    "publication": "Product Talk"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tree",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

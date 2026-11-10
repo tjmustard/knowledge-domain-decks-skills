@@ -1,0 +1,51 @@
+{
+  "id": "S35",
+  "name": "Playing to Win",
+  "category": "Execution & Coherence",
+  "diagnosis": "Are the company's choices of where to compete matched by a differentiated capability system capable of winning in those selected arenas?",
+  "schematic": "5-Stage Strategy Cascade",
+  "canvas": "Five-stage nested vertical cascade: Winning Aspiration connecting to Where to Play, leading to How to Win, supported by Core Capabilities, and reinforced by Management Systems.",
+  "stressTest": [
+    {
+      "text": "Is Where to Play too broad, instead of naming segments, profiles and channels?"
+    },
+    {
+      "text": "Is How to Win a real advantage, or a list of industry-standard best practices?"
+    },
+    {
+      "text": "Do capabilities and review rhythms actually support the chosen play and win?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the Where to Play choice defined too broadly instead of specifying exact target customer profiles, market segments, and channels?",
+    "Does the How to Win choice represent a genuine competitive advantage, or is it merely a list of industry-standard best practices?",
+    "Do the company's existing internal capabilities and operational review rhythms directly support the chosen Where to Play and How to Win choices?"
+  ],
+  "checklist": [
+    "Run a reverse-engineering session: what must be true for this strategy to work?",
+    "Document the segments, products and regions the firm will deliberately not serve.",
+    "Tie performance reviews, OKRs and capital to the required core capabilities."
+  ],
+  "checklistFull": [
+    "Execute a reverse-engineering strategy session: identify what must be true about market conditions, buyer behavior, and competitors for the strategy to succeed.",
+    "Clearly document the customer segments, product types, and geographic regions the organization will deliberately choose not to serve.",
+    "Align team performance reviews, OKRs, and capital allocations directly with the required core capabilities."
+  ],
+  "origin": {
+    "authors": [
+      "A.G. Lafley",
+      "Roger L. Martin"
+    ],
+    "year": 2013,
+    "title": "Playing to Win: How Strategy Really Works",
+    "publication": "Harvard Business Review Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "stage_progression",
+      "columns": 5,
+      "rows": 1
+    }
+  }
+}

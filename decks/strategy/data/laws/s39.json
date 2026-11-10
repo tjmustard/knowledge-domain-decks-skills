@@ -1,0 +1,50 @@
+{
+  "id": "S39",
+  "name": "Lean Canvas",
+  "category": "Execution & Coherence",
+  "diagnosis": "In an early-stage venture facing high uncertainty, what are the primary unvalidated assumptions that threaten company viability?",
+  "schematic": "9-Block Risk-Hypothesis Grid",
+  "canvas": "Nine-block early-stage canvas substituting operational boxes with startup-focused elements: Problem (top three), Customer Segments (Early Adopters), Unique Value Proposition, Solution (top three features), Channels, Revenue Streams, Cost Structure, Key Metrics, and Unfair Advantage.",
+  "stressTest": [
+    {
+      "text": "Is the Unfair Advantage a real barrier, or just internal execution effort?"
+    },
+    {
+      "text": "Do the top three problems rest on observed workarounds, or on hypotheses?"
+    },
+    {
+      "text": "Has the team named early adopters who will use an incomplete first release?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the Unfair Advantage describe a genuine competitive barrier—such as network effects or proprietary data—or merely internal execution effort?",
+    "Are the top three problems supported by observed customer workarounds, or are they hypothetical issues that customers will not pay to resolve?",
+    "Has the team identified a specific profile of early adopters willing to use an incomplete initial release?"
+  ],
+  "checklist": [
+    "Complete the canvas in twenty minutes, noting existing alternatives per problem.",
+    "Interview targets to confirm the main problem is urgent for them.",
+    "Validate the schema to flag missing or generic Unfair Advantage entries."
+  ],
+  "checklistFull": [
+    "Complete the Lean Canvas within a single 20-minute exercise, explicitly noting existing customer alternatives for each identified problem.",
+    "Conduct discovery interviews to verify that target customers consider the primary problem an urgent priority.",
+    "Execute a schema validation check to flag any missing entries or generic descriptions in the Unfair Advantage block."
+  ],
+  "origin": {
+    "authors": [
+      "Ash Maurya"
+    ],
+    "year": 2012,
+    "title": "Running Lean: Iterate from Plan A to a Plan That Works",
+    "publication": "O'Reilly Media"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "matrix_3x3",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

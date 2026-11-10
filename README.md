@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-5%20%C2%B7%20211%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-6%20%C2%B7%20253%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -22,6 +22,7 @@
 - [🎭 Archetypal Architecture](#-archetypal-architecture)
 - [🗣️ Facilitation Architecture](#️-facilitation-architecture)
 - [🔁 Retrospective Architecture](#-retrospective-architecture)
+- [🎯 Strategy Architecture](#-strategy-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -38,13 +39,14 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Five decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Six decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
 **Facilitation Architecture** covers forty-eight exercises for running a session.
 **Retrospective Architecture** covers forty-five rituals for a team looking at
-its own work. Each card is distilled into the smallest usable form: a claim, a
+its own work. **Strategy Architecture** covers forty-two frameworks for a
+leadership team deciding where to compete and why a lead survives. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -90,6 +92,7 @@ deck's copy, names, or trade dress is used.
 | **Archetypal Architecture** | 16 | 5 families | `packages/prepress/dist/archetypes.pdf` | `packages/web/decks/archetypes/` | `rules/archetypes-rules.md` | `skills/archetypes/` |
 | **Facilitation Architecture** | 48 | 5 stages | `packages/prepress/dist/facilitation.pdf` | `packages/web/decks/facilitation/` | `rules/facilitation-rules.md` | `skills/facilitation/` |
 | **Retrospective Architecture** | 45 | 5 categories | `packages/prepress/dist/retrospectives.pdf` | `packages/web/decks/retrospectives/` | `rules/retrospectives-rules.md` | `skills/retrospectives/` |
+| **Strategy Architecture** | 42 | 4 dimensions | `packages/prepress/dist/strategy.pdf` | `packages/web/decks/strategy/` | `rules/strategy-rules.md` | `skills/strategy/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -287,6 +290,60 @@ Its ruleset and skill are
 
 ---
 
+## 🎯 Strategy Architecture
+
+**Strategy Architecture** is a forty-two-card deck of strategy frameworks. Each
+card is an argument a leadership team can actually run: the diagnosis question
+that says this framework is the one the room needs, the schematic the argument
+is drawn on, three pressure questions that show whether the room is fooling
+itself, and three actions that make the decision real.
+
+The forty-two divide into four dimensions:
+
+| Dimension | Cards | What it is for |
+|---|---|---|
+| Market & Competition | S01 to S11 | Where profit comes from and how rivals move |
+| Tech & Dynamics | S12 to S22 | How the ground moves under the current position |
+| Defensibility | S23 to S33 | Why a lead survives, and what erodes it |
+| Execution & Coherence | S34 to S42 | Why a strategy fails to change what people do |
+
+The source's own fields run 900 to 1,060 characters per card against a
+468 to 584-character back, so the card is a playable surface and the ruleset is
+the reference. The front carries the diagnosis and the schematic tag; the back
+carries three compressed pressure questions, three actions and a short
+citation. The rules file and the skill resources carry the full canvas
+schematic and both item lists unabridged, and the deck's test asserts that every
+record's full text reaches them.
+
+Figures come from the source's six layout types - `2x2`,
+`stage_progression`, `value_chain`, `feedback_loop`, `tree`, `matrix_3x3` -
+and from treatments that draw what a table tag names when none of the six does:
+a bell curve with a chasm, a sigmoid, an amortization curve, overlapping
+S-curves, an expectation wave, a five-domain topology, a value-price wedge, a
+bipartite org-to-code diagram, a column board, a scatter, an enclosure and
+parallel tracks. The mapping is committed at
+[`decks/strategy/data/layout-map.json`](./decks/strategy/data/layout-map.json),
+which names each card's source family, drawing, counts, the table's tag and the
+line the card prints; the test asserts the printed schematic and the drawing
+agree.
+
+Attribution names the originating work. Four cards carry two parents where the
+source names two works - S03 (Aguilar's 1967 environment scan and Fahey and
+Narayanan's 1986 macroenvironmental analysis), S31 (Riehle's commercial
+open-source model and Levine's commercialization account), S40 (Eyal's hook
+loop and Bush's product-led growth) and S42 (The Open Group's Open Agile
+Architecture standard and Gilbert, Eyring and Foster's 2012 HBR article "Two
+Routes to Resilience"). The source's S42 citation merges that article with the
+2017 book *Dual Transformation*; the record cites the article, and the
+correction is recorded in the committed inventory note.
+
+Its ruleset and skill are [`rules/strategy-rules.md`](./rules/strategy-rules.md)
+and [`skills/strategy/`](./skills/strategy/). The deck's records are in
+`decks/strategy/data/laws/` and its schema in
+`decks/strategy/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -326,8 +383,9 @@ build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes (sha256
 `40164666…`), the narrative deck as 96 pages and 758,240 bytes (`435f2a9f…`),
 the archetype deck as 32 pages and 293,746 bytes (`a6f177de…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
-retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`); two consecutive
-builds of one commit are byte-identical for all five. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), and the strategy
+deck as 84 pages and 888,138 bytes (`2bfc9fb5…`); two consecutive builds of one
+commit are byte-identical for all six. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all

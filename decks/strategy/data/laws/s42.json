@@ -1,0 +1,64 @@
+{
+  "id": "S42",
+  "name": "Dual Transformation",
+  "category": "Execution & Coherence",
+  "diagnosis": "How can an enterprise modernize mission-critical legacy architectures while simultaneously developing greenfield, disruptive product capabilities?",
+  "schematic": "2-Track Transformation Canvas",
+  "canvas": "Dual transformation architecture displaying Transformation A (Defending and modernizing the core business) alongside Transformation B (Developing the greenfield growth engine), connected by a shared Capability Linkage layer.",
+  "stressTest": [
+    {
+      "text": "Are modernization and greenfield run sequentially instead of in parallel?"
+    },
+    {
+      "text": "Does the core treat the greenfield venture as a rival, limiting shared assets?"
+    },
+    {
+      "text": "Do legacy teams measure technical completion, not delivery speed or agility?"
+    }
+  ],
+  "stressTestFull": [
+    "Is the business executing legacy modernization and greenfield exploration sequentially rather than as concurrent, parallel initiatives?",
+    "Does the core business treat the greenfield venture as an internal competitor, limiting access to shared data and enterprise assets?",
+    "Are legacy modernization teams measuring success through technical completion rather than improved delivery speed and business agility?"
+  ],
+  "checklist": [
+    "Run two parallel tracks: decouple the legacy core; build greenfield capability.",
+    "Use a strangler-fig gateway to retire monolith services call by call.",
+    "Keep strategic goals as version-controlled YAML checked into the repo."
+  ],
+  "checklistFull": [
+    "Establish two parallel delivery tracks: Track A focused on decoupling legacy architectures, and Track B on developing greenfield capabilities.",
+    "Apply the Strangler Fig pattern to intercept legacy system calls via API gateways, gradually deprecating monolithic services.",
+    "Define strategic goals as version-controlled YAML specifications checked directly into code repositories."
+  ],
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "The Open Group"
+        ],
+        "year": 2020,
+        "title": "Open Agile Architecture Standard",
+        "publication": "O-AA"
+      },
+      {
+        "authors": [
+          "Clark Gilbert",
+          "Matthew Eyring",
+          "Richard N. Foster"
+        ],
+        "year": 2012,
+        "title": "Two Routes to Resilience",
+        "publication": "Harvard Business Review"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tracks",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "id": "S37",
+  "name": "North Star Metric Trees",
+  "category": "Execution & Coherence",
+  "diagnosis": "Are individual squads optimizing disconnected vanity metrics that fail to drive long-term business value?",
+  "schematic": "Hierarchical Math Metric Tree",
+  "canvas": "Mathematical tree linking an overarching North Star Metric (representing the intersection of customer value delivery and sustainable business exchange) to four input dimensions: Breadth, Depth, Frequency, and Efficiency.",
+  "stressTest": [
+    {
+      "text": "Does the North Star measure real value, or a vanity metric easy to game?"
+    },
+    {
+      "text": "Can each squad trace its own metric to a move in the North Star?"
+    },
+    {
+      "text": "Do leading usage indicators sit alongside lagging financial retention?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the selected North Star metric measure authentic value delivery to the customer, or is it a vanity metric vulnerable to manipulation?",
+    "Can individual product squads trace how changes in their specific team metrics directly influence the overarching North Star metric?",
+    "Does the metric structure maintain balance by tracking leading usage indicators alongside lagging financial retention metrics?"
+  ],
+  "checklist": [
+    "Agree one North Star metric that captures real customer value exchange.",
+    "Split the North Star into breadth, depth, frequency and efficiency inputs.",
+    "Give each input metric a named squad owner."
+  ],
+  "checklistFull": [
+    "Run an executive alignment session to define a single North Star Metric that captures actual customer value exchange.",
+    "Deconstruct the North Star metric into four operational inputs: Breadth, Depth, Frequency, and Efficiency.",
+    "Assign direct operational ownership of each input metric to a specific product squad."
+  ],
+  "origin": {
+    "authors": [
+      "Sean Ellis"
+    ],
+    "year": 2017,
+    "title": "Hacking Growth",
+    "publication": "Crown Business"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tree",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

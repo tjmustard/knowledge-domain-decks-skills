@@ -1,0 +1,51 @@
+{
+  "id": "S38",
+  "name": "Business Model Canvas",
+  "category": "Execution & Coherence",
+  "diagnosis": "Does the organization maintain a coherent, balanced blueprint of how it creates, delivers, and captures economic value?",
+  "schematic": "9-Block Structural Blueprint",
+  "canvas": "Nine-block architectural layout mapping Customer Segments, Value Propositions, Channels, Customer Relationships, Revenue Streams, Key Resources, Key Activities, Key Partnerships, and Cost Structure.",
+  "stressTest": [
+    {
+      "text": "Are value propositions matched to segments, or generic capabilities for no market?"
+    },
+    {
+      "text": "Does cost structure support the key activities, or do unit economics degrade with scale?"
+    },
+    {
+      "text": "Does the canvas say how value is captured, or rely on future monetization?"
+    }
+  ],
+  "stressTestFull": [
+    "Are Value Propositions matched directly to distinct Customer Segments, or does the canvas list generic capabilities for an undefined market?",
+    "Does the Cost Structure support the operational demands of the Key Activities and Resources, or do unit economics degrade as the business scales?",
+    "Does the canvas specify how value will be captured, or does it depend on vague assumptions about future monetization?"
+  ],
+  "checklist": [
+    "Declare the model in a versioned YAML or JSON schema to track revisions.",
+    "Validate that every segment connects to a value proposition, channel and revenue.",
+    "Name the three riskiest assumptions and schedule validation sprints."
+  ],
+  "checklistFull": [
+    "Document the business model in a declarative BMML (YAML) or JSON schema to track revisions over time.",
+    "Run validation scripts to confirm that every customer segment connects to a specific value proposition, distribution channel, and revenue stream.",
+    "Identify the three riskiest assumptions across the canvas and schedule validation sprints to test them."
+  ],
+  "origin": {
+    "authors": [
+      "Alexander Osterwalder",
+      "Yves Pigneur"
+    ],
+    "year": 2010,
+    "title": "Business Model Generation",
+    "publication": "John Wiley & Sons"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "matrix_3x3",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

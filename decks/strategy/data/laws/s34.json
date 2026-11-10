@@ -1,0 +1,50 @@
+{
+  "id": "S34",
+  "name": "Strategy Kernel",
+  "category": "Execution & Coherence",
+  "diagnosis": "Is executive leadership confusing performance targets and wishful thinking with a focused strategy that tackles the company's core challenges?",
+  "schematic": "Tripartite Foundation Block",
+  "canvas": "Tripartite foundation architecture: Diagnosis (simplifying reality by identifying the critical challenge) connecting to Guiding Policy (an overall approach designed to address the diagnosed challenge) leading to Coherent Actions (coordinated steps that reinforce one another).",
+  "stressTest": [
+    {
+      "text": "Does the plan restate financial targets instead of naming the real challenge?"
+    },
+    {
+      "text": "Does the policy make hard trade-offs about what the firm will decline to do?"
+    },
+    {
+      "text": "Do initiatives reinforce each other, so one raises the leverage of the next?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the strategic plan simply restate financial goals (such as achieving $50M ARR) instead of addressing an underlying operational or market challenge?",
+    "Does the guiding policy make difficult trade-offs regarding what the organization will deliberately decline to do?",
+    "Are execution initiatives coordinated so that completing one initiative directly increases the leverage and impact of the next?"
+  ],
+  "checklist": [
+    "Write a one-page diagnosis naming the single critical structural constraint.",
+    "Draft a guiding policy that concentrates resources on one asymmetric objective.",
+    "Cut every backlog project that does not support the coherent action plan."
+  ],
+  "checklistFull": [
+    "Write a one-page Diagnosis detailing the single most critical structural constraint currently facing the enterprise.",
+    "Draft a Guiding Policy that addresses this constraint by concentrating organizational resources on a focused, asymmetric objective.",
+    "Audit the product backlog, removing any projects that do not directly support the coherent action plan."
+  ],
+  "origin": {
+    "authors": [
+      "Richard P. Rumelt"
+    ],
+    "year": 2011,
+    "title": "Good Strategy/Bad Strategy: The Difference and Why It Matters",
+    "publication": "Crown Business"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tree",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}

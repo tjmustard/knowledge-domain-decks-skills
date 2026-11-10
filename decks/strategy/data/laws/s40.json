@@ -1,0 +1,62 @@
+{
+  "id": "S40",
+  "name": "PLG & Hook Loop",
+  "category": "Execution & Coherence",
+  "diagnosis": "Are high sales and marketing acquisition costs choking distribution, requiring the product experience itself to drive customer acquisition, conversion, and retention?",
+  "schematic": "4-Stage Behavioral Retention Loop",
+  "canvas": "Four-stage recurring loop linking an internal or external Trigger to an Action (completed in anticipation of reward), a Variable Reward (satisfying user interest), and an Investment (loading the next trigger).",
+  "stressTest": [
+    {
+      "text": "Does the product need a sales conversation before delivering its core value?"
+    },
+    {
+      "text": "Can users reach the aha moment fast, or does onboarding outlast their patience?"
+    },
+    {
+      "text": "Does the user accumulate data, settings or colleagues that raise switching cost?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the product require a conversation with a sales representative before delivering its core value proposition?",
+    "Can users reach the core \"aha\" moment quickly, or does onboarding friction delay time-to-value beyond the user's patience threshold?",
+    "Does the user make a cumulative investment—such as saving data, customizing settings, or inviting colleagues—that increases switching costs over time?"
+  ],
+  "checklist": [
+    "Halve onboarding steps and measure time-to-value from signup to aha.",
+    "Build invitation loops that pull colleagues into the user's workspace.",
+    "Trigger product-qualified leads from feature usage, not form submissions."
+  ],
+  "checklistFull": [
+    "Measure time-to-value from initial account creation to the primary realization of value, eliminating half of the onboarding steps.",
+    "Implement collaboration loops that encourage users to invite colleagues directly into their workspace.",
+    "Set up automated product-qualified lead (PQL) alerts based on active feature usage rather than marketing form submissions."
+  ],
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Nir Eyal"
+        ],
+        "year": 2014,
+        "title": "Hooked: How to Build Habit-Forming Products",
+        "publication": "Portfolio/Penguin"
+      },
+      {
+        "authors": [
+          "Wes Bush"
+        ],
+        "year": 2019,
+        "title": "Product-Led Growth: How to Build a Product That Sells Itself",
+        "publication": "ProductLed Press"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

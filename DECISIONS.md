@@ -2066,3 +2066,53 @@ corrected, and the correction is visible rather than silent.
 
 The web index now lists six decks while this deck is incomplete; that is correct
 on this branch and not shippable until the deck is whole. No merge is requested.
+
+## 60. The strategy deck is complete, and what it measures
+
+All forty-two frameworks are committed in four dimensions of 11, 11, 11 and 9,
+on branch `feat/strategy-deck`. Nothing is half-extracted: the deck test checks
+the dimension split against the inventory, so a dimension arrives whole.
+
+The deck's shape settles at one decision surface per card. The front is the
+diagnosis question - the question that tells a room this framework is the one
+it needs - and the schematic the argument is drawn on. The back is three
+pressure questions and three actions, then the citation. The canvas and both
+unabridged lists are declared blocks with `"card": false`: the rules file and
+the skill resource carry the source in full, and the card stays playable. The
+probe that set the budget measured a full record at 900-1,060 characters
+against a back face of 468-584; the compression rule that follows is three
+items of at most 96 characters each, with the source verbatim beside them.
+
+Compression is measured, not asserted. `npm run check:fit -- --deck strategy`
+renders every printed face at 100 ppi and compares its lowest ink row to the
+safe inset (row 468.75) and the trim line (row 487.5). The final run reports
+42 cards, both faces, zero OVER and zero TIGHT. The last recto to be fixed was
+S42: "Agile Dual Transformation" wrapped to two lines at 14 pt and ended at row
+475, so the card prints "Dual Transformation", a shorter phrase the table's own
+name contains, and the test accepts a name that is a phrase within the source
+name. The rule was added because a two-line name costs about 17 pt of the back's
+budget, and no card is worth that cost to spell an adjective.
+
+Four records cite two works, in declaration order, through `origin.works`: S03
+(Aguilar 1967 and Fahey & Narayanan 1986), S31 (Riehle 2009 and Levine 2014),
+S40 (Eyal 2014 and Bush 2019), and S42 (The Open Group 2020 and Gilbert, Eyring
+& Foster 2012). S42's second work is the article, not the book, under §59.
+
+The treatment contract from §59 stands and supersedes the `kind` design in §57:
+`layout-map.json` is the authority for each card's source tag, drawing,
+treatment, counts and printed label, and the test asserts all five. Twenty-one
+treatments cover the source's six families and the shapes its tags actually
+name.
+
+Evidence at the final commit: the suite is 92 passing tests; the strategy PDF
+is 84 pages and 888,138 bytes at sha256
+`2bfc9fb56a173520b8edc50cb655f8af0150549e909f186204063ac2e3ddcf0a`,
+byte-identical on rebuild; the five shipped decks rebuild to their baselines
+(`ux-laws` `40164666…`, `narrative` `435f2a9f…`, `archetypes` `a6f177de…`,
+`facilitation` `035429f5…`, `retrospectives` `5ca91630…`); and the acceptance
+gate reports 14 passed, 0 failed, 1 not run - the hand-checked print contents,
+which no script can make.
+
+The web index lists six decks on this branch. That is correct here and is not
+shippable until this branch is merged; no merge is requested without the
+person's word.
