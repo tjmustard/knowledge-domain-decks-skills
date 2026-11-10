@@ -76,8 +76,29 @@ jobs:
 
       - run: npm ci
 
+      # The suite's output is captured as well as printed. A failed run's log
+      # needs repository admin to download, and a public job page carries no
+      # output at all, so without this a red run says only "process exited 1".
+      # The step summary below is readable by anyone who can see the run.
       - name: Tests and gate
-        run: npm test
+        run: |
+          set -o pipefail
+          npm test 2>&1 | tee "$RUNNER_TEMP/tests.log"
+
+      - name: Publish the failing output
+        if: failure()
+        run: |
+          {
+            echo '### Tests and gate failed'
+            echo
+            echo '```'
+            if [ -s "$RUNNER_TEMP/tests.log" ]; then
+              tail -c 50000 "$RUNNER_TEMP/tests.log"
+            else
+              echo 'no output was captured before the step failed'
+            fi
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
   # One job per deck, named after its slug. The job above proves the repository
   # as a whole; this one proves that each deck stands alone: its own records
