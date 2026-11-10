@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-18%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/deck-24%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,7 +29,7 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: eighteen principles, each distilled
+The first deck covers UX and behavioral design: twenty-four principles, each distilled
 into the smallest usable form — an axiom, a trigger, a checklist, an
 anti-pattern, a generated diagram, and one exact academic source.
 
@@ -62,8 +62,8 @@ and no other deck's copy, names, or trade dress is used.
 
 ## 🃏 The First Deck
 
-**UX & Behavioral Design** is an eighteen-card deck in progress: every category
-has at least one card, and eleven of the eighteen are decision-making. It proves the
+**UX & Behavioral Design** is a twenty-four-card deck in progress: every category
+has at least one card, and eleven of the twenty-four are decision-making. It proves the
 whole pipeline end to end and is genuinely usable while the rest is written.
 
 The deck is being built one card per principle, across all **54 principles** in
@@ -93,6 +93,12 @@ and venue:
 | TME-02 | **Accot-Zhai Steering Law** | Time, Motion & Ergonomics | Accot & Zhai (1997), *Beyond Fitts' Law: Models for Trajectory-Based HCI Tasks* |
 | TME-03 | **Doherty Threshold** | Time, Motion & Ergonomics | Doherty & Thadhani (1982), *The Economic Value of Rapid Response Time* |
 | TME-04 | **Perceived Performance Heuristics** | Time, Motion & Ergonomics | Seow (2008), *Designing and Engineering Time* |
+| TME-05 | **Power Law of Practice** | Time, Motion & Ergonomics | Newell & Rosenbloom (1981), *Mechanisms of Skill Acquisition and the Law of Practice* |
+| TME-06 | **Keystroke-Level Model** | Time, Motion & Ergonomics | Card, Moran & Newell (1980), *The Keystroke-Level Model for User Performance Time with Interactive Systems* |
+| TME-07 | **Weber-Fechner Law** | Time, Motion & Ergonomics | Weber (1834), *De Pulsu, Resorptione, Auditu et Tactu* |
+| TME-08 | **Gilbreth Motion Economy** | Time, Motion & Ergonomics | Gilbreth (1911), *Motion Study* |
+| TME-09 | **Crossman's Velocity Law (Welford's Variant)** | Time, Motion & Ergonomics | Welford (1968), *Fundamentals of Skill* |
+| TME-10 | **Visual Saccadic Latency Law** | Time, Motion & Ergonomics | Dodge (1900), *Visual Perception During Eye Movement* |
 | MPA-01 | **Serial Position Effect** | Memory, Perception & Attention | Murdock (1962), *The Serial Position Effect of Free Recall* |
 
 The categories are part of the schema, so every later card lands in one of
@@ -103,7 +109,7 @@ them and the filters, accents, and rules sections follow automatically:
 | Heuristic & Mental Models | HMM-01 | Whether the interface matches what people already know |
 | Gestalt & Visual Perception | GES-01 | Grouping, spacing, and perceived structure |
 | Decision-Making & Cognitive Load | DEC-01 to DEC-11 | Option count, comparison effort, working memory, decision quality over time |
-| Time, Motion & Ergonomics | TME-01 to TME-04 | Target size, distance, motor effort, and response timing |
+| Time, Motion & Ergonomics | TME-01 to TME-10 | Target size, distance, motor effort, practice, operator time, perceptual ratio, motion economy, and saccade timing |
 | Memory, Perception & Attention | MPA-01 | Position, sequence, and what survives recall |
 
 ---
@@ -140,14 +146,14 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 36-page file of about 457 KiB. `npm run check:pdf` measured a
-216 x 360 pt MediaBox on every page. On the rendered pages, trim ticks sit in
-the bleed band at all four trim corners of every page; every font is 6.5 pt or
-larger, with the Source line read back at 6.5 pt on all eighteen versos and absent
-from the rectos. The worst text overrun past the safe box — the internal margin,
-0.1875 in inside the trim line, so 0.3125 in from the paper edge — is about 1 pt,
-caused by glyph side-bearings rather than by text running long, and about 8 pt of
-paper remains before the trim. Every diagram is a form XObject with ink measured
+build:pdf` emits a 48-page file of 579,843 bytes (566 KiB). `npm run check:pdf`
+measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
+ticks sit in the bleed band at all four trim corners of every page; every text
+font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
+twenty-four versos and absent from the rectos. The worst text overrun past the
+safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
+from the paper edge — is 0.98 pt on page 25, caused by glyph side-bearings rather
+than by text running long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
 empty placeholder.
 

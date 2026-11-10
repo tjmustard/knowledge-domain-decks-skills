@@ -504,3 +504,97 @@ stays plain. The evidence that the printed ampersand is no longer line-final
 is a rendered page, which is what `print: contents` would cover if it had a
 text layer; a string comparison cannot see a line break, so that assertion
 belongs with the print layer, not here.
+
+## 26. The axiom and the citation move together
+
+Where a card's canonical attribution names more than one work, or names a
+collaborator the work itself does not, the verse cites the single work whose
+statement the axiom expresses. The card's name and this file carry the rest.
+A printed Source line is a claim about what a book says, so a lineage the cited
+work does not contain is the same false attribution the one-primary-source rule
+exists to prevent. Laws 40, 41, 42 and 43 apply the rule.
+
+**Law 40, Weber-Fechner.** The Repository names Weber (1834), *De Pulsu,
+Resorptione, Auditu et Tactu*, and Fechner (1860), *Elemente der Psychophysik*.
+The card cites Weber alone, because the axiom — a just-noticeable difference is
+a ratio of the starting magnitude — is Weber's statement, not Fechner's
+logarithmic scale. Read in the e-rara scan of the 1834 edition (ETH-Bibliothek
+Zürich, DOI 10.3931/e-rara-70261): the title page reads *De Pulsu, Resorptione,
+Auditu et Tactu. Annotationes Anatomicae et Physiologicae. Auctore Ernesto
+Henrico Weber ... Lipsiae, prost... C. F. Koehler. 1834*. At pp. 172-173, in the
+*Summa doctrinae de tactu*, Weber writes that in comparing things *non
+differentiam rerum, sed rationem differentiae ad magnitudinem rerum inter se
+comparatarum percipimus*, with difference thresholds of about 1/15 or 1/30 for
+lifted weights, 1/100 for line lengths, and 1/320 for tone frequencies.
+Fechner's log form and his 1860 book are the later formalisation. Listing both
+men as authors of a card neither co-wrote would print the collaboration as a
+fact.
+
+**Law 41, Gilbreth.** The Repository's attribution names Frank and Lillian
+Gilbreth. The 1911 Van Nostrand title page names Frank Bunker Gilbreth alone:
+*Motion Study: A Method for Increasing the Efficiency of the Workman / by Frank
+B. Gilbreth ... with an introduction by Robert Thurston Kent*. The Internet
+Archive scan and the Wellcome catalogue both carry one author. **This card
+corrects the Repository.** The "& Gilbreth" is a later customary attribution,
+not this edition's authorship. Lillian Gilbreth collaborated with Frank from
+around 1907, is credited on their later joint works, and her solo *Psychology of
+Management* (1914) is the more directly relevant book to this subject, though it
+is not the one cited here. Naming her on a title page that does not carry her
+would be the same error in the other direction.
+
+**Law 42, Crossman and Welford.** The Repository names Crossman (1956),
+formalised by Welford (1968). The card cites Welford, *Fundamentals of Skill*
+(Methuen, London, 1968), because the axiom and the diagram print Welford's
+index, MT = a + b log2(A/W + 0.5). Read at ch. V, "Movement", pp. 145-160: p. 147
+gives the equation and credits Crossman's suggested error-correction for target
+width, and the added 0.5 keeps the index finite as distance approaches width.
+Crossman (1956) is not a journal article but an unpublished University of
+Birmingham PhD thesis, *The measurement of perceptual load in manual
+operations* (WorldCat OCLC 55953230); its index is log2(D/W), without the 0.5,
+so it is not the formula on the card. The velocity-adjusts-to-width-to-prevent-
+overshoot framing belongs to the iterative-corrections account in Crossman &
+Goodeve (1963, published 1983), not to the 1956 thesis, and is not printed. Two
+consequences follow: the originating name is not the printed source because the
+card prints the formula and the formula is Welford's; and the lineage the card
+name carries stops at Crossman, where the index begins.
+
+**Law 43, Dodge.** The Repository names Dodge (1900) and Rayner (1998). The card
+cites Dodge alone. Read in the Zenodo scan of the article (DOI
+10.1037/h0067215): *Psychological Review* 7(5), 454-465; at p. 456 Dodge reports
+that the eyes are "never in motion" in a mirror, at p. 457 that words in the
+middle of a fixated line are illegible while the eye travels, and at p. 464 that
+eye movements are "very short, for movements of 10° certainly not more than 60
+σ, and possibly less than half that". Rayner's 1998 review is the later
+synthesis and is not printed. This is a motion card rather than an attention
+card because it measures the timing of a movement and what that movement does
+to the incoming field — the same subject as target acquisition and steering. It
+makes no claim about what attention selects.
+
+## 27. Five shapes for the motion cards, and one reused
+
+None of the ten existing shapes draws these claims, so this slice adds five and
+reuses `split-bar` for the keystroke model. Every parameter listed here is read
+by `scripts/svg.js`; the acceptance gate perturbs each leaf and fails if the
+drawing does not change.
+
+- `power-curve` (TME-05) draws a fall that is steep early and flat late.
+  `decline-curve` is monotone but its two control points interpolate at fixed
+  fractions, so it cannot bend that way. The new shape moves both control points
+  early and declares `monotoneDown: true`, so the gate samples this path as it
+  samples `DEC-11`'s.
+- `split-bar` (TME-06) is reused: the keystroke model is one track partitioned
+  into labelled operator durations, which is what the shape already draws.
+- `ratio-scale` (TME-07) puts the same four values on two axes, one spaced by
+  value and one by ratio, because the claim is about spacing rather than about
+  a curve. No existing shape compares two scalings.
+- `reach-map` (TME-08) draws a phone outline, a target in the thumb zone, a
+  target in the far corner, and the travel each costs. No existing shape encodes
+  a route.
+- `difficulty-line` (TME-09) plots movement time against the index of
+  difficulty. `target-vector` draws two targets and hard-codes Fitts's formula,
+  which is a different index and cannot be relabelled without changing TME-01.
+- `scan-path` (TME-10) alternates dwell points and the gaps between them; no
+  existing shape draws fixations and saccades.
+
+The five names are in the schema's `svgShape` enum, and the deck now has fifteen
+shapes across twenty-four cards.
