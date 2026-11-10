@@ -1,0 +1,967 @@
+{
+  "source": "09 - Idea Tactics/Creative Ideation Heuristics Engine.md",
+  "count": 50,
+  "phaseCounts": {
+    "Systematic Lateral Thinking & Perceptual Restructuring": 16,
+    "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)": 16,
+    "Constraints & Oblique Sparks": 10,
+    "Combinatorial & Associative Prompts": 8
+  },
+  "fieldLengths": {
+    "mechanism": {
+      "min": 114,
+      "median": 161,
+      "max": 228
+    },
+    "sprint": {
+      "min": 145,
+      "median": 185,
+      "max": 227
+    },
+    "questions": {
+      "min": 240,
+      "median": 288,
+      "max": 343
+    },
+    "example": {
+      "min": 239,
+      "median": 350,
+      "max": 493
+    },
+    "total": {
+      "min": 823,
+      "median": 951,
+      "max": 1219
+    }
+  },
+  "sourceDefects": [
+    {
+      "id": "IDE-07",
+      "field": "questions",
+      "kind": "escaped-label",
+      "note": "\"Divergent Seed Questions\" is written `\\**Divergent Seed Questions*\\*`; text intact, label markup escaped."
+    },
+    {
+      "id": "IDE-15",
+      "field": "sprint",
+      "kind": "glued-bullet",
+      "note": "The 5-Minute Sprint is glued onto the end of the Cognitive Mechanism line behind an escaped bullet; text intact."
+    },
+    {
+      "id": "IDE-26",
+      "field": "questions",
+      "kind": "glued-bullet",
+      "note": "Divergent Seed Questions is glued onto the end of the 5-Minute Sprint line behind an escaped bullet; text intact."
+    },
+    {
+      "id": "IDE-35",
+      "field": "sprint",
+      "kind": "escaped-label",
+      "note": "The 5-Minute Sprint label is written `\\**The 5-Minute Sprint*\\*`; text intact, label markup escaped."
+    }
+  ],
+  "records": [
+    {
+      "id": "IDE-01",
+      "n": 1,
+      "name": "Assumption Reversal",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Reverses directional cognitive sets and disrupts normative schema reliance, forcing working memory to construct causal pathways from counterfactual preconditions.",
+      "sprint": "Document five foundational assumptions underpinning the technical problem. Write their direct inversions. Select the most counter-intuitive inversion and draft two operational conditions under which it functions effectively.",
+      "questions": [
+        "What core assumption, if inverted, turns our primary operational bottleneck into our primary throughput mechanism?",
+        "How would this system operate if clients were paid to consume system resources rather than paying for service access?",
+        "What architectural opportunities emerge if output data is computed prior to the arrival of the input request?"
+      ],
+      "example": {
+        "domain": "Database Write Scalability",
+        "text": "Standard assumption: \"The database storage engine must await and validate incoming write requests before committing them to persistent storage.\" Reversed assumption: \"The storage engine speculatively writes data blocks prior to client write dispatch.\" Implementation: Predictive log pre-allocation and speculative branch execution in log-structured merge-tree (LSM) architectures, transforming synchronous disk I/O stalls into speculative memory transactions validated by atomic commit checks."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-02",
+      "n": 2,
+      "name": "Six Thinking Hats: White Hat (Empirical Telemetry)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Decouples sensory observation from emotional and interpretive cognition, inhibiting confirmation bias and anchoring heuristics.",
+      "sprint": "Strip all qualitative adjectives, interpretations, and conjectures from the incident report. Isolate only raw numerical telemetry, hardware metrics, and deterministic error codes.",
+      "questions": [
+        "What verified system telemetry exists versus what subjective hypotheses are being treated as empirical facts?",
+        "If all diagnostic interpretations were discarded, what do the raw system event logs prove occurred?",
+        "What missing instrumentation metric would immediately resolve the current architectural debate?"
+      ],
+      "example": {
+        "domain": "Microservice P99 Latency Spikes",
+        "text": "Decoupling diagnostic conjectures (\"the Redis cluster is saturated\") into strict empirical White Hat metrics: cache hit ratios remain constant at 99.4%, but Linux kernel socket tables reveal TCP ephemeral port exhaustion caused by rapid connection teardowns without connection reuse."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-03",
+      "n": 3,
+      "name": "Six Thinking Hats: Red Hat (Unjustified Intuition)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Engages pre-attentive pattern matching and tacit expert knowledge without the operational friction of immediate analytical justification.",
+      "sprint": "Set a 60-second timer. Participants record their intuitive reaction regarding where the technical proposal will fail, prohibiting rationalization or analytical defense.",
+      "questions": [
+        "Instinctively, which architectural component feels brittle or unstable?",
+        "What hidden operational friction in this workflow will drive an end user to abandon the process within three seconds?",
+        "If forced to wager personal capital on this deployment failing, where does immediate intuition point?"
+      ],
+      "example": {
+        "domain": "Enterprise SSO Rollout",
+        "text": "Senior engineers report intuitive unease regarding authentication flows without immediate empirical proof. Rapid Red Hat prompting surfaces unspoken anxieties about state synchronization latency during SAML assertion handoffs, identifying unhandled edge cases in legacy Active Directory federations prior to production rollout."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-04",
+      "n": 4,
+      "name": "Six Thinking Hats: Black Hat (Systematic Fault Injection)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Deploys defensive pessimism and systematic negative search, counteracting overconfidence heuristics and shared groupthink.",
+      "sprint": "Assume the platform has suffered an unrecoverable failure in production. Spend five minutes drafting the post-mortem root cause analysis, detailing the overlooked operational vulnerability.",
+      "questions": [
+        "What catastrophic structural vulnerability is being dismissed to meet delivery deadlines?",
+        "Under what simultaneous network and hardware degradation states does this architecture enter permanent deadlock?",
+        "How could an adversary exploit our fallback recovery mechanisms to compromise data integrity?"
+      ],
+      "example": {
+        "domain": "Distributed Edge Consensus",
+        "text": "Black Hat analysis isolates a split-brain condition: during cellular backhaul degradation that introduces severe packet loss without total disconnection, edge nodes flapping between consensus groups drain Raft leader election terms, cascading into an unrecoverable quorum failure."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-05",
+      "n": 5,
+      "name": "Six Thinking Hats: Yellow Hat (Speculative Optimization)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Activates reward pathways and value-seeking networks, mitigating loss aversion and status-quo bias through systematic exploration of best-case dynamics.",
+      "sprint": "Assume infrastructure, storage, and networking costs are zero. Identify three dormant value streams within the current architecture that could yield exponential returns.",
+      "questions": [
+        "What is the compounding systemic benefit if this feature scales by three orders of magnitude?",
+        "How does an internal error-handling mechanism contain the foundation for an external platform?",
+        "What latent, underutilized resource within our existing infrastructure can be converted into an operational asset?"
+      ],
+      "example": {
+        "domain": "Read Replica Resource Utilization",
+        "text": "Rather than treating multi-region read replicas as passive read-offloading infrastructure, Yellow Hat analysis recognizes that parsing change data capture (CDC) streams from these nodes enables real-time feature extraction for continuous model inference without adding query overhead to the primary database."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-06",
+      "n": 6,
+      "name": "Six Thinking Hats: Green Hat (Provocative Novelty)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Promotes lateral divergence and conceptual jumping by suspending logical consistency checks and operational constraints.",
+      "sprint": "Generate ten architectural variations that violate established engineering patterns within the problem domain. Practical feasibility is ignored; novelty is mandatory.",
+      "questions": [
+        "What architectural pattern would emerge if conventional design best practices were treated as operational errors?",
+        "If an alien biological mechanism were translated into this software subsystem, how would it process events?",
+        "How can we resolve this architectural constraint by introducing an intentional, controlled imperfection?"
+      ],
+      "example": {
+        "domain": "API Rate Limiting",
+        "text": "Instead of dropping abusive clients via conventional HTTP 429 Too Many Requests responses, a Green Hat provocation executes incoming requests inside an isolated WebAssembly sandbox with progressively throttled execution time-slices. This forces the abusive client to wait on socket connections, draining its local compute resources until it disconnects."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-07",
+      "n": 7,
+      "name": "Six Thinking Hats: Blue Hat (Metacognitive Orchestration)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Activates executive control and metacognitive monitoring, regulating cognitive switching between exploratory divergent and evaluative convergent modes.",
+      "sprint": "Step back from technical problem solving. Chart the cognitive modalities deployed during the current meeting, identify analytical loops, and mandate the next thinking protocol.",
+      "questions": [
+        "Are we debating the engineering details of a problem whose underlying premise is invalid?",
+        "Which cognitive perspective has been omitted during this architectural evaluation?",
+        "What quantitative stopping criterion will terminate debate and initiate empirical testing?"
+      ],
+      "example": {
+        "domain": "Architecture Review Gridlock",
+        "text": "An engineering team reaches an impasse debating Apache Kafka versus RabbitMQ. A Blue Hat intervention halts the discussion, identifies that the team is cycling between unquantified Black Hat fears and Green Hat speculation, and institutes a 48-hour time-boxed spike to benchmark throughput under a 10,000-connection load, terminating theoretical debate."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-08",
+      "n": 8,
+      "name": "Lateral Thinking Provocations: Escape Principle (Po)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Negates an axiomatic system property (\"Po: Component X does not exist\"), forcing working memory to construct alternative functional pathways.",
+      "sprint": "Identify an indispensable system component. Declare: \"Po: [Component] does not exist.\" Conceive two functional configurations that achieve the system's objective without that component.",
+      "questions": [
+        "Po: The web platform maintains no centralized database; where does authoritative state live?",
+        "Po: The client hardware transmits zero data packets to the backend; how does coordination occur?",
+        "Po: The software contains zero conditional branch statements; how is logic evaluated?"
+      ],
+      "example": {
+        "domain": "Collaborative Workspace Synchronization",
+        "text": "\"Po: The distributed application contains no central database server.\" Breakthrough: The architecture migrates from client-server relational storage to Conflict-free Replicated Data Types (CRDTs) over WebRTC mesh connections, enabling local mutation and deterministic peer-to-peer merge operations without a centralized persistence cluster."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-09",
+      "n": 9,
+      "name": "Lateral Thinking Provocations: Stepping Stone (Po)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Employs an intentionally illogical or technically absurd intermediate construct as an unstable mental platform to access non-obvious, viable configurations.",
+      "sprint": "Articulate an absurd technical premise (\"Po: The application must terminate every process after ten requests\"). Derive two hardened architectural patterns from that premise.",
+      "questions": [
+        "What operational benefits occur if this absurd condition is made mandatory?",
+        "If this extreme premise were non-negotiable, what defensive infrastructure would we engineer?",
+        "What systemic fragility does this stepping-stone assertion make visible?"
+      ],
+      "example": {
+        "domain": "Fault-Tolerant Microservice Resilience",
+        "text": "\"Po: Every microservice crashes instantly after handling ten transactions.\" Stepping stone logic leads to Erlang-style \"crash-only\" architectures and ephemeral Kubernetes pods that terminate aggressively after handling fixed batch sizes. This clears memory leaks, resets socket pools, and purges state drift before performance degrades."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-10",
+      "n": 10,
+      "name": "SCAMPER: Substitute (S)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Breaks component-binding fixations by isolating functional interfaces and substituting alternative materials, actors, or protocols.",
+      "sprint": "Select a core component of the software stack (e.g., protocol, serialization layer, authentication provider). Replace it with three mechanisms borrowed from distinct engineering domains.",
+      "questions": [
+        "What protocol, runtime, or hardware layer can be substituted to eliminate this latency bottleneck?",
+        "What happens if we substitute manual administrative approval with cryptographic validation?",
+        "Can we substitute continuous operational polling with hardware interrupt mechanisms?"
+      ],
+      "example": {
+        "domain": "User Authentication and Identity Verification",
+        "text": "Substituting persistent shared secrets (passwords) and SMS OTPs with asymmetric public-key cryptography via WebAuthn/FIDO2 hardware-backed passkeys, eliminating credential database storage vulnerabilities and credential-stuffing threat vectors entirely."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-11",
+      "n": 11,
+      "name": "SCAMPER: Combine (C)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Drives cognitive bisociation by merging separate functional operational boundaries into an integrated structural entity.",
+      "sprint": "Select two disconnected tools, services, or workflow phases. Merge their functional boundaries so that executing the first intrinsically finishes the second.",
+      "questions": [
+        "Which two asynchronous data pipelines can be combined into a single atomic pass?",
+        "How can system observability be merged directly into the core execution runtime?",
+        "What independent data structures can be unified to eliminate serialization conversion costs?"
+      ],
+      "example": {
+        "domain": "Edge Security and Application Observability",
+        "text": "Instead of routing requests through an API reverse proxy and then publishing analytical events to a downstream queue via a daemon, combine the proxy with an eBPF Linux kernel probe that traces, filters, metrics-scores, and rate-limits network frames directly inside the kernel networking stack."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-12",
+      "n": 12,
+      "name": "SCAMPER: Adapt (A)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Leverages analogical mapping, transferring relational mechanisms from a foreign domain while ignoring superficial surface differences.",
+      "sprint": "Identify an external industry that manages identical dynamic forces (e.g., fluid dynamics, air-traffic logistics, forestry management). Adapt its primary structural mechanism to the problem.",
+      "questions": [
+        "What non-software engineering discipline resolved this throughput balance decades ago?",
+        "How does biological cellular mechanics handle this exact transport or routing constraint?",
+        "How can an obsolete historical protocol be adapted to solve a modern distributed system problem?"
+      ],
+      "example": {
+        "domain": "Asynchronous API Ingress Throttling",
+        "text": "Adapting hydraulic fluid restrictors and mechanical dashpots into software token-bucket rate limiters (specifically the Generic Cell Rate Algorithm, GCRA), ensuring smooth, deterministic traffic-shaping across distributed ingress gateways."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-13",
+      "n": 13,
+      "name": "SCAMPER: Modify / Magnify / Minify (M)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Adjusts scale and parametric boundaries, provoking non-linear cognitive shifts by breaking baseline assumptions regarding size and throughput.",
+      "sprint": "Select a primary system parameter (payload volume, sync frequency, timeout limit). Scale it by a factor of 1,000x, then compress it to 1/1,000th. Design an architecture capable of operating at both boundaries.",
+      "questions": [
+        "What happens if the data payload size is magnified to 100 gigabytes per event?",
+        "What happens if operational turnaround must be compressed from 50 milliseconds to 50 nanoseconds?",
+        "How must the system be architected if user lifespans are compressed to ten seconds or magnified to fifty years?"
+      ],
+      "example": {
+        "domain": "Event Pipeline Memory Utilization",
+        "text": "Minifying tracking payloads: instead of transmitting verbose JSON payloads (1.5 KB per record) across Kafka topics, modify the payload to a zero-copy flat binary buffer (Cap'n Proto or FlatBuffers) occupying 48 bytes. This reduces network bandwidth consumption by 96% and eliminates CPU deserialization costs."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-14",
+      "n": 14,
+      "name": "SCAMPER: Put to Another Use (P)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Overcomes functional fixedness by uncoupling a technical side effect or discarded artifact from its original context and identifying its latent utility.",
+      "sprint": "Identify the primary waste byproduct, error log stream, or unused telemetry of your application. Devise two external use cases that treat this byproduct as their most valuable input.",
+      "questions": [
+        "What discarded operational metadata contains latent commercial or technical value?",
+        "Who outside our core market would pay to access our real-time system performance telemetry?",
+        "How can an internal regression-testing harness be repurposed as a customer-facing product feature?"
+      ],
+      "example": {
+        "domain": "Datacenter Thermal Dissipation",
+        "text": "Repurposing server thermal rejection: instead of venting heat into the atmosphere using chillers, data center liquid-cooling loops are piped directly into municipal district heating grids and commercial greenhouses, turning an operational cooling expense into a municipal energy utility."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-15",
+      "n": 15,
+      "name": "SCAMPER: Eliminate (E)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Employs cognitive pruning, stripping secondary features, layers, and safeguards to expose fundamental system mechanics.",
+      "sprint": "Delete 50% of your system's interaction steps, UI components, or architectural dependencies. Re-architect the remaining components to fulfill the core operational goal.",
+      "questions": [
+        "What subsystem, if deleted entirely, would improve system reliability and throughput?",
+        "What user input fields are collected speculatively and can be eliminated to eliminate compliance liabilities?",
+        "Can we eliminate the human interface layer entirely and deliver utility autonomously?"
+      ],
+      "example": {
+        "domain": "User Registration Conversion",
+        "text": "Eliminating registration forms, email verification workflows, and username/password credentials. Replace with ephemeral, device-bound asymmetric cryptographic keys generated in the browser secure enclave, dropping customer drop-off rates while automating credential provisioning."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-16",
+      "n": 16,
+      "name": "SCAMPER: Reverse / Rearrange (R)",
+      "phase": "Systematic Lateral Thinking & Perceptual Restructuring",
+      "mechanism": "Reverses temporal and causal sequences, disrupting standard workflow schemas and exposing structural dependencies.",
+      "sprint": "Write down the sequential execution stages of your product or computing pipeline. Invert the chronological order from last to first, and evaluate the architectural implications.",
+      "questions": [
+        "What if user payment and resource consumption precede product discovery and configuration?",
+        "What happens if downstream database indexing formats dictate upstream application logic?",
+        "Can the client act as the authoritative storage tier while the central server acts merely as an ephemeral cache?"
+      ],
+      "example": {
+        "domain": "E-Commerce Checkout Workflows",
+        "text": "Inverting standard transactional sequences: instead of \"Discover → Configure → Input Payment → Deliver,\" reverse to \"Pre-authorized Predictive Delivery → Customer Evaluation → Automated Account Reconciliation.\" This try-before-you-buy workflow removes point-of-sale friction."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-17",
+      "n": 17,
+      "name": "Morphological Analysis (Fritz Zwicky)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Exhaustive combinatorial parameter mapping. Overcomes cognitive availability limits by constructing an N-dimensional parameter space (Zwicky Box) to identify unexamined structural topologies.",
+      "sprint": "Define three fundamental parameters along the vertical axis. Populate each with four orthogonal implementation variants. Randomly select one variant from each parameter to evaluate the resulting combination.",
+      "questions": [
+        "What unpopulated cell intersection in our morphological parameter matrix represents a viable product?",
+        "Which two parameters have we treated as coupled that are mathematically orthogonal?",
+        "What architectural permutation was dismissed years ago because supporting infrastructure was unavailable?"
+      ],
+      "example": {
+        "domain": "Energy Storage Technology Selection",
+        "text": "Morphological Matrix: Parameters are Active Ion (Lithium, Sodium, Zinc), Electrolyte Phase (Liquid Organic, Solid Ceramic, Polymer Gel), and Separator Architecture (Microporous Polymer, Composite Membrane, Zero-Separator Flow). Crossing \"Sodium\" with \"Solid Ceramic\" and \"Zero-Separator Flow\" isolates high-safety, ambient-temperature stationary storage architectures free from cobalt and lithium supply-chain risks."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-18",
+      "n": 18,
+      "name": "TRIZ Principle 1: Segmentation",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Structural discretization. Counters functional continuity bias by decomposing an integrated monolithic entity into independent, modular segments.",
+      "sprint": "Identify the largest monolithic component in your architecture. Deconstruct it into twenty autonomous units. Specify the messaging protocol that governs their coordination.",
+      "questions": [
+        "How can this single point of contention be segmented into parallel processing streams?",
+        "What occurs if we segment this macro-payload into microscopic self-routing chunks?",
+        "How can a continuous, long-running database transaction be divided into idempotent sub-steps?"
+      ],
+      "example": {
+        "domain": "High-Throughput Database Partitioning",
+        "text": "Resolving global lock contention in relational databases by implementing virtual horizontal partitioning and log segmentation (e.g., Apache Kafka partition topologies or CockroachDB range-based hash distributions), segmenting global locks into isolated, concurrent partition streams."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-19",
+      "n": 19,
+      "name": "TRIZ Principle 2: Extraction / Taking Out",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Structural segregation. Isolates and extracts an interfering property or non-essential component from an object, preserving only its core functional elements.",
+      "sprint": "Isolate the component that causes 90% of maintenance overhead, latency, or operational instability. Separate it completely from the core execution domain.",
+      "questions": [
+        "What element of this architecture creates operational noise, and how can it be extracted?",
+        "What core utility is the user consuming, and can every auxiliary layer be extracted?",
+        "How can security and authorization checks be extracted outside the application execution loop?"
+      ],
+      "example": {
+        "domain": "TLS Termination & Edge Media Delivery",
+        "text": "Extracting computationally intensive cryptographic TLS handshake operations and static file delivery from application server daemons to edge Content Delivery Networks (CDNs), freeing application threadpools to execute business logic exclusively."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-20",
+      "n": 20,
+      "name": "TRIZ Principle 4: Asymmetry",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Symmetry-breaking reframing. Counters spatial and architectural uniformity biases by introducing deliberate asymmetry to satisfy conflicting operational demands.",
+      "sprint": "Identify a balanced, symmetric interaction (such as synchronous request-response communication). Make one side 100x larger, faster, or structurally distinct relative to the other.",
+      "questions": [
+        "Where does uniform architectural symmetry introduce operational inefficiency?",
+        "Why are read and write operations routed through identical schemas when their traffic ratios are asymmetric?",
+        "How can asymmetric data placement accelerate critical-path execution?"
+      ],
+      "example": {
+        "domain": "Command Query Responsibility Segregation (CQRS)",
+        "text": "Resolving contradictions between high-write transaction rates and complex analytical query throughput. By replacing symmetric schemas, writes flow into an append-only event store (optimized for sequential write speed), while reads query denormalized projections (optimized for read lookups)."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-21",
+      "n": 21,
+      "name": "TRIZ Principle 10: Preliminary Action (Prior Action)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Temporal proactive dispatch. Minimizes critical-path latency by performing resource-intensive operations in advance of requirement triggers.",
+      "sprint": "List three sequential operations required to serve an incoming client request. Re-architect two of them to execute during idle background cycles before the user triggers the workflow.",
+      "questions": [
+        "What compute operations are running synchronously that could be executed hours in advance?",
+        "How can client environments be pre-warmed with executable assets prior to user interaction?",
+        "What data structures can be pre-compiled into immutable binary representations at build time?"
+      ],
+      "example": {
+        "domain": "Static Site Generation (SSG) with Edge Invalidation",
+        "text": "Rather than rendering web applications on-demand via dynamic server-side template computation during an incoming HTTP request, the architecture pre-renders all pages into static HTML and JSON structures at build time, deploying them directly to edge storage buckets to achieve sub-millisecond Time to First Byte (TTFB)."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-22",
+      "n": 22,
+      "name": "TRIZ Principle 13: The Other Way Round (Inversion)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Directional kinematic and operational inversion. Reverses the direction of movement, environmental forces, or control flows to uncover latent solutions.",
+      "sprint": "If a process moves an object through an environment, make the environment move around a stationary object. If processing pulls data from storage, push instructions to the data.",
+      "questions": [
+        "Instead of transporting massive datasets to a central compute cluster, how can compute be brought to the storage nodes?",
+        "Instead of training users to understand the software interface, how can the interface adapt to user behavior?",
+        "How can the problem condition itself serve as the verification metric for the solution?"
+      ],
+      "example": {
+        "domain": "Distributed In-Situ Computing (Apache Spark / Hadoop)",
+        "text": "Rather than moving petabytes of unstructured data across network backbones to central processing servers (saturating top-of-rack switches), invert the topology: serialize the compute instructions and dispatch them to execute locally on the storage nodes where the data blocks reside."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-23",
+      "n": 23,
+      "name": "TRIZ Principle 15: Dynamicity / Dynamization",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Structural fluidification. Overcomes mechanical rigidity bias by enabling static attributes to become adaptive and mutable in response to changing environments.",
+      "sprint": "Identify an immutable configuration setting, static schema, or fixed hardware limit. Make it continuously variable, adjusting in real time to dynamic environmental loads.",
+      "questions": [
+        "What static parameter in our infrastructure would unlock significant efficiency if made dynamically adaptive?",
+        "How can this data schema restructure itself based on the queries executed against it?",
+        "Can we decompose a static cluster footprint into transient, self-assembling compute nodes?"
+      ],
+      "example": {
+        "domain": "Autoscaling Reactive Microservice Fabrics",
+        "text": "Replacing static bare-metal deployments with dynamic container orchestration (e.g., Kubernetes Horizontal Pod Autoscaler). Compute capacity, connection threadpools, and memory allocations expand and contract dynamically based on real-time CPU telemetry and queue depth."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-24",
+      "n": 24,
+      "name": "TRIZ Principle 16: Partial or Excessive Action",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Precision boundary violation. Relieves cognitive traps that insist on 100% precision by overshooting or undershooting operational targets to simplify system complexity.",
+      "sprint": "When achieving an exact outcome requires prohibitive compute or capital costs, design a system that delivers either 120% (excessive) or 95% (probabilistic) of the outcome.",
+      "questions": [
+        "Where is the pursuit of 100% precision driving non-linear architectural complexity?",
+        "If a 1% error margin is acceptable, how much compute overhead can be eliminated?",
+        "Can we broadcast redundant work and terminate execution upon the first successful response?"
+      ],
+      "example": {
+        "domain": "Probabilistic Data Structures (HyperLogLog & Bloom Filters)",
+        "text": "Rather than executing precise deduplication on multi-billion-item datasets using memory-intensive hash tables, deploy HyperLogLog algorithms to estimate distinct cardinalities within a 1% error bound using kilobytes of memory, reducing compute footprints by 99%."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-25",
+      "n": 25,
+      "name": "TRIZ Principle 19: Periodic Action",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Temporal pulse modulation. Counters the cognitive assumption of continuous operations by replacing steady-state processes with pulsed, periodic, or interleaved interventions.",
+      "sprint": "Identify an operation that runs continuously. Redesign it to execute in short, intense bursts followed by extended low-energy hibernation states.",
+      "questions": [
+        "Why drain energy via continuous polling when periodic pulsed synchronization achieves equivalent functional fidelity?",
+        "What happens if operational frequency is modulated based on the volatility of the observed metric?",
+        "How can periodic micro-pulses be used to reset cumulative memory fragmentation or thermal buildup?"
+      ],
+      "example": {
+        "domain": "Ultra-Low-Power Biomedical IoT Wearables",
+        "text": "Continuous biosensor telemetry drains coin-cell batteries within 8 hours. Applying Periodic Action: the sensor operates in a sub-milliamp sleep state for 990 milliseconds, wakes for 10 milliseconds to capture biological metrics, compresses the data into a burst buffer, transmits an encrypted BLE packet, and hibernates, extending operational battery longevity from 8 hours to 34 days."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-26",
+      "n": 26,
+      "name": "TRIZ Principle 22: \"Blessing in Disguise\" (Convert Harm to Benefit)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Evaluative reframing of negative externalities. Repositions systemic hazards, waste energy, or malicious inputs as functional operating assets.",
+      "sprint": "Document the most damaging vulnerability, bug, or operational cost in your system. Formulate two designs where this exact harmful phenomenon powers a useful secondary process.",
+      "questions": [
+        "How can malicious actions by an adversary be converted into defensive strength?",
+        "How can memory overhead or latency jitter be harnessed as a source of cryptographic entropy?",
+        "What computational waste product can serve as a training signal for system optimization?"
+      ],
+      "example": {
+        "domain": "DDoS Mitigation via Proof-of-Work Challenges",
+        "text": "Converting an attacker's volumetric traffic into an economic compute barrier: when malicious HTTP floods strike ingress gateways, the server responds with client-side mathematical puzzles (Proof-of-Work scripts). The attacker's CPU resources are consumed solving the challenges, making volumetric abuse economically unsustainable."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-27",
+      "n": 27,
+      "name": "TRIZ Principle 24: Intermediary / Mediator",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Relational decoupling. Resolves friction between conflicting subsystems by introducing an intermediary to handle translation, buffer capacity, or load balancing.",
+      "sprint": "Identify two components locked in tight operational coupling or semantic conflict. Insert an intermediate entity that insulates each component from changes in the other.",
+      "questions": [
+        "What two components are locked in synchronous dependencies that can be decoupled via an asynchronous mediator?",
+        "How can an intermediate abstraction hide operational churn from end consumers?",
+        "Can an ephemeral mediator absorb the computational shock of volatile traffic spikes?"
+      ],
+      "example": {
+        "domain": "Decoupling Microservices via Message Brokers",
+        "text": "Direct synchronous HTTP calls between microservices create cascading latency failures when downstream dependencies degrade. Introducing an event intermediary (such as an Apache Pulsar or RabbitMQ message broker) decouples the producer from consumer availability, isolating failures and providing buffer storage for bursty loads."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-28",
+      "n": 28,
+      "name": "TRIZ Principle 25: Self-Service",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Endogenous autonomy. Eliminates external maintenance dependencies by engineering a system to service, heal, or organize itself using ambient internal resources.",
+      "sprint": "List three operational maintenance tasks performed by engineering personnel. Redesign the architecture so that these tasks trigger and resolve automatically through closed-loop diagnostics.",
+      "questions": [
+        "How can the system detect internal state corruption and execute self-restoration without human intervention?",
+        "What ambient resources exist within the execution runtime to support self-tuning configurations?",
+        "How can regular user interactions drive background maintenance tasks?"
+      ],
+      "example": {
+        "domain": "Self-Healing Infrastructure via Declarative Control Loops",
+        "text": "Rather than relying on site reliability engineers (SREs) to monitor node health and restart crashed services manually, deploy continuous declarative reconciliation control loops. When a health check probe fails, the cluster controller terminates the faulty container, provisions an identical replica, and updates routing proxies autonomously."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-29",
+      "n": 29,
+      "name": "TRIZ Principle 28: Mechanics Substitution (Field Interaction)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Physical paradigm transcendence. Counters mechanical fixedness by replacing physical or mechanical mechanisms with electromagnetic, optical, acoustic, or digital interactions.",
+      "sprint": "Identify a mechanical or heavy software mechanism (e.g., disk locks, polling checks, physical cards). Replace it with an intangible energetic field, signal, or logical relation.",
+      "questions": [
+        "What hardware mechanism can be converted into software-defined infrastructure?",
+        "How can contact-based verification be replaced with ambient field sensing?",
+        "What mechanical barrier can be replaced by an electromagnetic or optical control interface?"
+      ],
+      "example": {
+        "domain": "Physical Access & Authentication Systems",
+        "text": "Replacing physical magnetic stripe credit cards, copper contact chips, and mechanical key-turn deadbolts with Near Field Communication (NFC) electromagnetic fields and Ultra-Wideband (UWB) spatial ranging. Transactions and cryptographic authentication complete over the air through secure enclave token exchange without physical contact or mechanical wear."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-30",
+      "n": 30,
+      "name": "TRIZ Principle 35: Parameter Changes",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Aggregate state transformation. Discloses latent operational paths by altering the physical state, degree of flexibility, temperature, pressure, or core structural properties of an element.",
+      "sprint": "Identify an immutable baseline state in your architecture (e.g., in-memory, synchronous, single-threaded). Change its state parameter to its opposite or fluid phase.",
+      "questions": [
+        "What occurs if this in-memory operational state is transformed into an immutable, append-only disk sequence?",
+        "How does altering operating temperature or clock voltages unlock hidden hardware capacity?",
+        "Can a static configuration file be converted into an interpreted runtime script?"
+      ],
+      "example": {
+        "domain": "LSM-Tree Storage Engines (RocksDB/Cassandra)",
+        "text": "Traditional relational databases update data structures in place on disk via B-Trees, suffering random write I/O bottlenecks. Changing the state parameter: incoming mutations are treated as a liquid, sequential memory append (MemTable), then flushed to disk as immutable, sorted string tables (SSTables), converting random I/O into sequential writes."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-31",
+      "n": 31,
+      "name": "TRIZ Ideal Final Result (IFR) & Trimming",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Radical teleological reduction. Directs focus entirely on functional utility while methodically removing auxiliary, supporting, and redundant components from the architectural footprint.",
+      "sprint": "Formulate the IFR statement: \"The system delivers [Core Function] without [System Mechanism] existing at all.\" Trim away the two largest auxiliary subsystems and reassign their functions to ambient resources.",
+      "questions": [
+        "How can the system achieve its fundamental primary utility with zero code, zero hardware, and zero operating cost?",
+        "Which components can be trimmed away, leaving their functional responsibilities to be absorbed by adjacent subsystems?",
+        "What would the Ideal Final Result look like if the client's problem solved itself before entering our pipeline?"
+      ],
+      "example": {
+        "domain": "Serverless Edge Compute Trimming",
+        "text": "Traditional web architectures maintain fleets of dedicated virtual machines running Linux OS kernels, monitoring daemons, and web servers to host simple business APIs. Applying IFR Trimming: trim the operating system and container layers entirely. Run code directly on bare V8 WebAssembly isolates at edge nodes, where compute initializes in sub-millisecond windows only when an HTTP request arrives, consuming zero idle memory."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-32",
+      "n": 32,
+      "name": "TRIZ Physical Contradiction Resolution (Separation Principles)",
+      "phase": "Algorithmic & Systematic Innovation (TRIZ & Morphological Analysis)",
+      "mechanism": "Dialectical decomposition. Resolves mutual exclusivity by separating conflicting parameters across time, space, condition, or system scale.",
+      "sprint": "State the physical contradiction: \"Component X must have Property P to satisfy Requirement 1, and Property NOT-P to satisfy Requirement 2.\" Map how X can be P in Time 1 and NOT-P in Time 2, or P in Space A and NOT-P in Space B.",
+      "questions": [
+        "How can this component be totally open and completely secure at different points in time?",
+        "Where can this parameter be rigid at the macro-scale while remaining flexible at the micro-scale?",
+        "Under what conditional state can Property P convert into Property NOT-P dynamically?"
+      ],
+      "example": {
+        "domain": "Read Concurrency vs. Write Isolation in High-Throughput Databases",
+        "text": "Physical Contradiction: \"The database record must be mutable to allow immediate write operations, but immutable to allow non-blocking concurrent reads.\" Separation in Time and Condition via Multi-Version Concurrency Control (MVCC): records are never updated in place. When a write occurs, a new immutable version is appended with a timestamp. Readers inspect point-in-time snapshots without acquiring locks, eliminating read/write blocking."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-33",
+      "n": 33,
+      "name": "Oblique Strategies: Aphoristic Defamiliarization (Brian Eno & Peter Schmidt)",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Semantic defamiliarization and cognitive estrangement. Disrupts routine problem solving by introducing poetic, oblique aphorisms that force associative networks to map lateral connections back to technical challenges.",
+      "sprint": "Draw an Oblique Strategy at random (e.g., \"Honor thy error as a hidden intention\" or \"Discard an axiom\"). Spend four minutes deriving three concrete technical implementations of the prompt.",
+      "questions": [
+        "If this operational failure was an intentional design decision, what architectural advantages does it unlock?",
+        "How can we embrace the most frustrating limitation of our infrastructure as its distinguishing capability?",
+        "What happens if we perform this entire technical process backward, starting from the destroyed residue?"
+      ],
+      "example": {
+        "domain": "Chaos Engineering (Netflix Chaos Monkey)",
+        "text": "Prompt: \"Honor thy error as a hidden intention.\" Rather than treating production node crashes, packet drops, and network splits as unacceptable operational anomalies to be masked, the engineering team intentionally automated their injection into production environments. This forced all downstream microservices to be designed with self-healing, graceful degradation, and distributed failover patterns by default."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-34",
+      "n": 34,
+      "name": "Zero Budget Constraint ($0 Marginal Cost Architecture)",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Resource-scarcity induced divergent routing. Prohibits off-the-shelf commercial solutions, forcing cognitive models to seek high-utility, ambient, or underutilized open-source resources.",
+      "sprint": "Assume operating budgets have been reduced to $0.00/month. Design an architecture capable of sustaining 10,000 active daily users using solely free-tier, client-side, or ambient compute.",
+      "questions": [
+        "How can we offload our primary compute load entirely onto the client’s browser hardware?",
+        "What public, free open-source infrastructure can we repurpose to bypass expensive managed cloud platforms?",
+        "How can we store system state without maintaining a proprietary cloud database?"
+      ],
+      "example": {
+        "domain": "Serverless Global Web Applications",
+        "text": "By pairing client-side SQLite databases compiled to WebAssembly (e.g., via SQLite in browser storage), client-side public-key cryptography, and peer-to-peer data sync over free STUN/TURN relays, an application operates with near-zero recurring hosting overhead, eliminating enterprise cloud database bills."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-35",
+      "n": 35,
+      "name": "10x / 100x Scale Stress Test (Hyper-Scaling)",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Conceptual scale refactoring. Renders incremental, patch-based solutions unviable, forcing executive cognitive structures to abandon routine patterns and devise radical architectures.",
+      "sprint": "Assume that tomorrow morning, concurrent user interactions or ingestion data volumes expand by 100x. Identify the exact sub-components that will collapse within thirty seconds, and discard them.",
+      "questions": [
+        "What architectural component collapses first when throughput surges by two orders of magnitude?",
+        "If all human-in-the-loop operational reviews had to scale 100x without expanding staff, how would they be automated?",
+        "How would our data ingestion logic survive if disk storage had to be pruned every sixty seconds?"
+      ],
+      "example": {
+        "domain": "Real-Time Telemetry Processing",
+        "text": "Handling 100,000 metrics/sec overwhelms standard relational database row inserts. When forced to architect for 10,000,000 metrics/sec, row-level persistence is abandoned in favor of memory-mapped append-only circular ring buffers, lock-free ring queues (e.g., LMAX Disruptor), and batched columnar disk writes via Apache Parquet files flushed directly to object storage."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-36",
+      "n": 36,
+      "name": "Zero UI / Invisible Interface Constraint",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Interactional reduction. Removes visual design cues and form-filling affordances, forcing the mind to model ambient, context-driven, and autonomous service delivery.",
+      "sprint": "Remove every screen, button, input box, and visual display from your product's user journey. Conceive an autonomous mechanism to deliver identical utility through passive telemetry, sensors, or background daemons.",
+      "questions": [
+        "How can the system infer user intent without requiring explicit, manual input?",
+        "What hardware or ambient environmental signals already indicate the user's current goal?",
+        "If the user never interacted with our application visually, how would they realize its value?"
+      ],
+      "example": {
+        "domain": "Mobile Parking Payment & Toll Collection",
+        "text": "Instead of requiring drivers to pull out a smartphone, open a parking application, search for a location zone code, input credit card details, and submit payment, install geofencing and Bluetooth low-energy beacons. The vehicle or smartphone automatically negotiates cryptographic location handshakes upon entry and exit, charging the user's account in the background without explicit UI interaction."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-37",
+      "n": 37,
+      "name": "The \"Worst Possible Idea\" (Anti-Solution Reframing)",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Evaluative inhibition release. Eliminates performance anxiety, risk aversion, and internal self-censorship by directing cognitive capacity toward generating the most destructive, inefficient, and catastrophic solutions possible.",
+      "sprint": "Spend three minutes generating five ideas guaranteed to exacerbate the problem or ruin user trust. Pick the most catastrophic idea, invert its core operative mechanism, and discover the hidden insight.",
+      "questions": [
+        "What architectural implementation would maximize latency, vulnerability, and operational costs?",
+        "How could we design this onboarding process to ensure 100% of prospective clients abandon within five seconds?",
+        "What would an adversary build if their goal was to completely destabilize our database state?"
+      ],
+      "example": {
+        "domain": "Preventing User Accidental Data Loss",
+        "text": "The \"Worst Possible Idea\": \"Every time the user types a character, immediately erase another random document.\" Inverting this destructive anti-solution: build an automated, aggressive document history journal that captures fine-grained keystroke deltas to an immutable local undo buffer, enabling instantaneous time-travel restoration to any second of document history."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-38",
+      "n": 38,
+      "name": "Pre-Mortem & Catastrophic Failure Mode Projection",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Prospective hindsight. Operating from the hypothetical certainty that a future catastrophe has occurred improves the human capacity to identify causal vulnerabilities by up to 30%, bypassing optimistic confirmation bias.",
+      "sprint": "Assume today is one year from now, and the project has suffered a catastrophic failure, resulting in regulatory fines and complete system collapse. Write three distinct failure chain chronologies.",
+      "questions": [
+        "What silent failure mode is quietly propagating through our infrastructure today that will take us offline next year?",
+        "Which single external dependency or vendor holds the power to unilaterally bankrupt our operational architecture?",
+        "If an engineer intentionally wanted to bring this platform down undetected, where would they strike?"
+      ],
+      "example": {
+        "domain": "Cloud Identity & Cryptographic Key Expiration",
+        "text": "Pre-mortem analysis reveals that hardcoded automated CI/CD pipeline secrets and SSL/TLS root certificates will expire silently over a weekend, taking critical e-commerce checkout paths offline. Driven by this prospective hindsight, the team builds an automated cert-manager system with alerting windows and automatic ACME protocol renewal cycles 30 days prior to expiration."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-39",
+      "n": 39,
+      "name": "Strict Latency / Bandwidth Zero Constraint (Offline-First / Air-Gap)",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Extreme contextual starvation. Prohibits assumed access to infinite network backhauls, forcing the cognitive model to decouple state resolution from centralized infrastructure.",
+      "sprint": "Assume your client applications are completely disconnected from the Internet for three weeks in a subterranean bunker. Design how users continue interacting, mutating data, and resolving conflicts upon reconnection.",
+      "questions": [
+        "What fundamental features must function flawlessly when available bandwidth is precisely zero kilobits per second?",
+        "How can we distribute computational truth so that zero round-trip network hops are required to confirm a transaction?",
+        "What peer-to-peer mechanisms can propagate local updates without touching a centralized server?"
+      ],
+      "example": {
+        "domain": "Collaborative Workspace Mutation Sync",
+        "text": "Resolving cloud latency and intermittent field connectivity: instead of relying on operational transforms that demand continuous web-socket round-trips to an authoritative central cluster, implement state-based Conflict-free Replicated Data Types (CRDTs, e.g., Yjs or Automerge). Users mutate state locally with instant UI feedback; state vectors merge deterministically across nodes upon network reconnection."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-40",
+      "n": 40,
+      "name": "Extreme Accessibility & Cognitive Simplicity Floor",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Radical empathetic de-framing. Neutralizes the curse of knowledge by forcing the designer to strip out specialized jargon, complex cognitive models, and dexterity demands.",
+      "sprint": "Re-architect your system's interaction workflow assuming the operator possesses an 8-year-old child's literacy level, is suffering severe sleep deprivation, and has only one hand free to interact.",
+      "questions": [
+        "Where does our interaction model assume an expert user who understands internal systems?",
+        "What single action can we eliminate so that this complex decision reduces to a binary choice?",
+        "How can our error messages explain the exact fix in three plain-English words rather than displaying technical stack traces?"
+      ],
+      "example": {
+        "domain": "Kubernetes Incident Remediation CLI",
+        "text": "Rather than requiring an on-call engineer to run complex multi-parameter kubectl diagnostic commands and inspect raw JSON log outputs during a 3:00 AM production incident, engineers build an automated terminal binary. The tool surfaces a single plain-English remediation prompt: \"Postgres Pod 2 out of memory. Press [Enter] to double RAM allocation and restart.\""
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-41",
+      "n": 41,
+      "name": "Ruthless Trimming / Feature Deprecation Hard Ceiling",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "Sunk-cost fallacy disruption. Overcomes loss aversion by establishing non-negotiable operational ceilings, forcing engineers to eliminate non-performing features to introduce new capabilities.",
+      "sprint": "Impose a hard engineering ceiling: \"To ship this proposed capability, we must deprecate and remove two existing features from the codebase.\" Select the two target features for removal and calculate the maintenance relief.",
+      "questions": [
+        "Which legacy feature consumes 30% of our maintenance bandwidth while delivering value to less than 1% of the user base?",
+        "What capabilities are we maintaining out of emotional attachment rather than objective empirical usage?",
+        "If our codebase was constrained to a maximum of 10,000 lines of executable code, what would we purge immediately?"
+      ],
+      "example": {
+        "domain": "Microservice Architectural Complexity Reduction",
+        "text": "An enterprise codebase accumulates 40 disparate API endpoints over five years, complicating testing and deployments. Imposing a feature deprecation ceiling: the team deprecates 25 low-volume endpoints, consolidating their functionality into a single flexible GraphQL or query-filtered endpoint, stripping 40,000 lines of boilerplate maintenance code."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-42",
+      "n": 42,
+      "name": "Speed-of-Light & Thermodynamic Physics-Limit Floor",
+      "phase": "Constraints & Oblique Sparks",
+      "mechanism": "First-principles physical bounding. Strips away software conventions to ground the problem in the non-negotiable laws of physics, exposing artificial software latency.",
+      "sprint": "Calculate the absolute theoretical minimum latency or energy budget for your operation according to the speed of light, electron transit, or thermodynamic limits. Compare it to your current performance metrics.",
+      "questions": [
+        "What is the speed-of-light theoretical latency limit between our users and compute nodes, and why are we 50x slower?",
+        "How many joules of physical work are required to complete this mathematical calculation?",
+        "What software abstraction layers sit between our code and bare physical hardware that can be bypassed?"
+      ],
+      "example": {
+        "domain": "High-Frequency Financial Trading Gateways",
+        "text": "Conventional socket I/O traversing the Linux OS network stack introduces 15–30 microseconds of kernel interrupt latency. Benchmarking against physical limits: the speed of light in optical fiber traverses 200 km per millisecond. To approach physics-level latency, developers bypass the kernel entirely, using Kernel Bypass Networking (DPDK / Solarflare OpenOnload) and FPGA hardware logic to process and route UDP packets in 120 nanoseconds."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-43",
+      "n": 43,
+      "name": "Forced Connections (Bisociative Synthesis)",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Forced conceptual integration. Obligates the mind to construct relational bridges between two unrelated semantic domains, generating non-obvious structural hybridizations.",
+      "sprint": "Pick a random physical object from the room (e.g., a coffee thermos, a wristwatch, an office chair). Synthesize three distinct features of that object with your technical system.",
+      "questions": [
+        "How can the functional mechanics of a mechanical wristwatch regulate our distributed consensus engine?",
+        "What does the thermal insulating principle of a thermos teach us about memory cache retention policies?",
+        "How would our software architecture change if it had to function like the suspension system of a mountain bicycle?"
+      ],
+      "example": {
+        "domain": "Distributed Transaction Clock Synchronization",
+        "text": "Forced connection with a mechanical quartz watch: rather than relying on brittle, non-synchronized software NTP servers that introduce drift and causal anomalies across datacenters, Google’s TrueTime API integrates atomic cesium clocks and GPS receivers directly into datacenter server racks, bounding clock uncertainty (ε) to deterministic single-digit millisecond windows for global ACID transactions."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-44",
+      "n": 44,
+      "name": "Random Stimulus / Semantic Priming Injection",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Exogenous spreading activation. Injects an arbitrary, entropy-rich stimulus into working memory to activate distant associative nodes within semantic memory networks.",
+      "sprint": "Generate a random word from an open dictionary (e.g., \"Mushroom\"). Write down four innate properties of this word. Map each property directly to a solution for your technical challenge.",
+      "questions": [
+        "How does the randomly selected concept approach resource allocation or replication?",
+        "What unexpected operational metaphor does this random stimulus introduce?",
+        "How can we re-name our system components using the conceptual vocabulary of the random stimulus?"
+      ],
+      "example": {
+        "domain": "Edge Compute Resilience",
+        "text": "Random Word: \"Mycelium\" (underground fungal network). Properties: decentralized nutrient sharing, lack of centralized root structure, subterranean propagation, opportunistic growth along moisture gradients. Application: P2P edge worker clusters that dynamically offload cold cache blocks to neighboring peer nodes across local LAN subnets, eliminating centralized parent cloud egress bandwidth during edge network partitioning."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-45",
+      "n": 45,
+      "name": "Attribute Listing & Morphological Variation",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Deconstructive attribute decomposition. Decouples an object into its component properties (color, weight, protocol, statefulness), systematically varying each one to break gestalt continuity.",
+      "sprint": "Deconstruct your primary data entity or component into six granular attributes. For each attribute, list three non-standard variations. Recombine them into an alternative operational profile.",
+      "questions": [
+        "Which attribute of this system have we always treated as immutable simply out of habit?",
+        "What happens if we transform a stateful synchronous attribute into a stateless asynchronous property?",
+        "How can we vary the granularity of this attribute dynamically based on available network throughput?"
+      ],
+      "example": {
+        "domain": "Web Session Token Architecture",
+        "text": "Attribute decomposition: (1) Format: ASCII string → Cryptographic CBOR token; (2) Location: Browser Cookie → Isolated Web Worker Memory; (3) Expiration: Static 30 days → Sliding dynamic multi-tiered lease; (4) Authority: Server DB lookup → Cryptographically verifiable self-contained Ed25519 signature. Result: Session verification overhead drops to zero server database lookups."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-46",
+      "n": 46,
+      "name": "Biomimetic Adaptation: Structural Hierarchy & Porosity",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Morphological evolutionary scaling. Imports evolutionary mechanical solutions—such as lightweight structural strength through hierarchical porosity—into human engineering systems.",
+      "sprint": "Identify where your system is heavy, slow, or resource-dense. Redesign its structural architecture to integrate nested, hierarchical voids that preserve functional integrity while saving resources.",
+      "questions": [
+        "Where can we introduce intentional voids or empty space into our data structures to accelerate lookups?",
+        "How does natural bone or wood architecture balance light weight with high structural integrity?",
+        "Can we arrange our compute tasks hierarchically so that 90% of requests are handled by low-energy layers?"
+      ],
+      "example": {
+        "domain": "Sparse Indexing & Bloom Filter Nesting in Database Engines",
+        "text": "Rather than maintaining a dense, resource-heavy index that maps every primary key to an exact disk offset (which strains RAM capacity), database architects deploy porous, hierarchical sparse indexes paired with hardware-optimized Bloom filters. These verify key non-existence in memory using near-zero space before traversing hierarchical SSTables on persistent storage."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-47",
+      "n": 47,
+      "name": "Biomimetic Adaptation: Swarm & Decentralized Coordination",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Decentralized emergent self-organization. Replaces brittle, hierarchical, centralized command-and-control logic with simple local interaction rules that generate coherent macroscopic behavior.",
+      "sprint": "Eliminate the master controller or orchestrator node in your architecture. Formulate three simple behavioral rules for individual worker agents to achieve global coordination.",
+      "questions": [
+        "How would an ant colony or flock of starlings allocate this compute workload across 10,000 independent nodes?",
+        "What local sensory data can individual worker agents use to coordinate without talking to a central coordinator?",
+        "How can simple emergent feedback loops self-balance network routing and avoid localized congestion?"
+      ],
+      "example": {
+        "domain": "Gossip-Based Cluster Membership Protocols (SWIM)",
+        "text": "In distributed database clusters containing thousands of nodes, maintaining a centralized heartbeat coordinator creates an operational bottleneck and single point of failure. Deploying biomimetic swarm mechanics: nodes periodically transmit lightweight ping/ack messages to a few randomly selected peers. Failure detection and membership changes propagate through the cluster via epidemiological gossip protocols in logarithmic time."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-48",
+      "n": 48,
+      "name": "Biomimetic Adaptation: Homeostasis & Dynamic Negative Feedback",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Physiological homeostatic regulation. Implements self-correcting negative feedback loops to maintain systemic internal stability despite volatile environmental fluctuations.",
+      "sprint": "Identify the primary metric that fluctuates under operational load (e.g., latency, queue size, memory). Design a closed-loop negative feedback mechanism that exerts opposing force as the metric drifts from equilibrium.",
+      "questions": [
+        "How does the human endocrine system balance insulin and glucagon to stabilize blood glucose under varying dietary conditions?",
+        "What automated internal feedback loop can prevent this system from cascading into catastrophic collapse?",
+        "How can the system naturally reject external work when internal equilibrium is threatened?"
+      ],
+      "example": {
+        "domain": "Adaptive Concurrency Limits via TCP Vegas / CoDel Mechanics",
+        "text": "Traditional software services set static concurrency limits (e.g., max 200 concurrent threads), leading to queuing delays when downstream dependencies slow down. Applying homeostatic negative feedback: the service dynamically measures round-trip latency; as latency climbs above normal baselines, concurrency limits contract automatically. This sheds incoming load and protects the system from collapse, stabilizing internal latency."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-49",
+      "n": 49,
+      "name": "Synectics: Personal Analogy (Empathic Projection)",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Egocentric embodied simulation. The engineer projects their own consciousness into a non-human or abstract system component, identifying structural stresses through introspective embodiment.",
+      "sprint": "Imagine you are a single data packet or byte traversing your system architecture. Describe what you feel, see, and experience as you encounter bottlenecks, lock contentions, and serialization hurdles.",
+      "questions": [
+        "As a single database query, why do you feel terrified when entering this complex table join?",
+        "If you were an electron attempting to escape this battery anode, what physical obstacles block your path?",
+        "If you were an unhandled runtime error exception, how would you escape logging traps to reveal your true cause?"
+      ],
+      "example": {
+        "domain": "Thread Pool Starvation Diagnostics",
+        "text": "An architect mentally adopts the persona of a synchronous HTTP request worker thread: \"I arrive at the application layer, but I am blocked at a synchronized database connection pool. I cannot sleep or exit; I am forced to hold memory resources while waiting for a remote API response, accumulating behind hundreds of other worker threads.\" This mental simulation reveals the need for non-blocking, asynchronous reactive I/O patterns (e.g., Netty or Tokio event loops)."
+      },
+      "missing": []
+    },
+    {
+      "id": "IDE-50",
+      "n": 50,
+      "name": "Negative Space Mapping (The Un-Product / Void Exploitation)",
+      "phase": "Combinatorial & Associative Prompts",
+      "mechanism": "Figure-ground perceptual reversal. Shifts focus away from existing objects and active features (figure) to analyze the unbuilt whitespace, empty time-slots, and missing interactions (ground).",
+      "sprint": "Chart the typical user or data lifecycle. Highlight every period where the system is completely idle or where data remains untouched. Design a high-value utility that executes exclusively during these voids.",
+      "questions": [
+        "What is our product *not* doing during the 98% of the day when the user is not actively interacting with it?",
+        "What data are we deliberately choosing not to track, and how does omitting it serve as a competitive security feature?",
+        "Where does the white space exist between the specialized feature sets of industry-leading competitors?"
+      ],
+      "example": {
+        "domain": "Proactive Database Index Compaction & Predictive State Assembly",
+        "text": "Rather than executing computationally heavy index restructuring and analytical rollups during active user transaction windows, modern database engines detect idle CPU intervals. During these quiet windows, the system executes background compaction, verifies cryptographic Merkle root trees, and pre-warms predictive memory caches for expected workloads."
+      },
+      "missing": []
+    }
+  ],
+  "sourceSha256": "61f7a9e95fd68d8b",
+  "note": "Lower-median convention: for an even count the median is the value at index (n-1)/2 in sorted order, with no interpolation (deck seven, DECISIONS 61). The source overview claims 48 core heuristics; its section headings count to 50 and the headings are the authority. Macro rendering: \\to -> → and \\epsilon -> ε before backslash stripping; the four escaped-label / glued-bullet defects are recorded, not repaired."
+}
