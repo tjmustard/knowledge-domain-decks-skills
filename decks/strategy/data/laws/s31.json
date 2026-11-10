@@ -1,0 +1,62 @@
+{
+  "id": "S31",
+  "name": "Open-Source Archetypes",
+  "category": "Defensibility",
+  "diagnosis": "How can an organization distribute software with zero marginal cost via open source while establishing a sustainable, defensible value-capture model?",
+  "schematic": "Two-Tier Commercial Separation",
+  "canvas": "Two-tier model with an open, permissively licensed core (MIT/Apache 2.0) driving widespread developer distribution, separated by a monetization boundary from a managed cloud SaaS platform and commercial enterprise extensions (SSO, RBAC, Auditing, Multi-tenancy).",
+  "stressTest": [
+    {
+      "text": "Does the free edition include features that cannibalize commercial revenue?"
+    },
+    {
+      "text": "Could a major cloud host the project cheaper than the creator can?"
+    },
+    {
+      "text": "Does the community contribute distribution and development, or only drain it?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the open-source release cannibalize commercial revenue by including enterprise-grade administrative features in the free edition?",
+    "Can a major cloud provider host the open-source software and provide a managed service at lower cost than the creator?",
+    "Does the open-source community actively contribute to distribution and product development, or does it function primarily as an operational drain on engineering?"
+  ],
+  "checklist": [
+    "Keep developer libraries permissive; put security and compliance in paid tiers.",
+    "Offer a managed cloud that monetizes speed and infrastructure management.",
+    "Track downloads, forks and contributions alongside enterprise pipeline."
+  ],
+  "checklistFull": [
+    "Establish a licensing boundary that keeps developer libraries permissive while placing enterprise security and compliance features in commercial tiers.",
+    "Deploy a managed cloud hosted offering that monetizes deployment speed and infrastructure management.",
+    "Monitor developer adoption metrics—including package downloads, repository forks, and community contributions—alongside enterprise sales pipelines."
+  ],
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Dirk Riehle"
+        ],
+        "year": 2009,
+        "title": "The Commercial Open Source Business Model",
+        "publication": "Value Creation in E-Business"
+      },
+      {
+        "authors": [
+          "Peter Levine"
+        ],
+        "year": 2014,
+        "title": "Open Source: From Community to Commercialization",
+        "publication": "Andreessen Horowitz"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "tree",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

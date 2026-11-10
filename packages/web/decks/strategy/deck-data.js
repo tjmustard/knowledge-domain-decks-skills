@@ -1189,6 +1189,605 @@ window.STRATEGY_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"114\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"86\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"314\" cy=\"200\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"314\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"86\" cy=\"200\" r=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S23",
+      "name": "Scale Economies",
+      "category": "Defensibility",
+      "diagnosis": "Does the organization’s scale create a decreasing per-unit cost curve that smaller competitors cannot match without incurring unsustainable losses?",
+      "schematic": "Cost-Volume Amortization Curve",
+      "canvas": "2x2 Power Matrix plotting Operational Benefit (Lower Cost or Higher Price) against Barrier to Arbitrage (Why competitors cannot duplicate), where Scale Economies generate cost advantages through fixed-cost amortization over high volume.",
+      "stressTest": [
+        {
+          "text": "Are unit-cost falls from volume amortization, or temporary vendor discounts?"
+        },
+        {
+          "text": "Do internal diseconomies, like communication overhead, cancel the cost lead?"
+        },
+        {
+          "text": "Can a new entrant bypass the scale advantage with managed cloud services?"
+        }
+      ],
+      "stressTestFull": [
+        "Are reported unit cost reductions driven by fixed-cost amortization over high volume, or do they represent temporary vendor discounts?",
+        "Does the organization suffer from internal diseconomies of scale, such as communication overhead, that offset unit-cost advantages?",
+        "Can a new entrant bypass the company's scale advantage by leveraging commoditized cloud infrastructure or managed services?"
+      ],
+      "checklist": [
+        "Separate fixed from variable cost to get marginal cost per account.",
+        "Pass some scale savings to customers as lower prices to raise entry barriers.",
+        "Automate routine operations so headcount does not scale with volume."
+      ],
+      "checklistFull": [
+        "Separate fixed from variable costs to calculate the marginal cost of serving each incremental customer account.",
+        "Return a portion of scale efficiencies to customers through lower prices to increase competitive barriers against new entrants.",
+        "Automate routine operational workflows to prevent headcount from scaling linearly with transaction volume."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "curve_decay",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"332\" x2=\"98\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"332\" x2=\"166\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"332\" x2=\"234\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"332\" x2=\"302\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"198\" x2=\"70\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"80.08\" x2=\"72.5\" y2=\"105.069717\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"72.5\" y1=\"105.069717\" x2=\"81\" y2=\"127.470355\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"81\" y1=\"127.470355\" x2=\"89.5\" y2=\"147.550157\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89.5\" y1=\"147.550157\" x2=\"98\" y2=\"165.549575\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"98\" y1=\"165.549575\" x2=\"106.5\" y2=\"181.68415\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"106.5\" y1=\"181.68415\" x2=\"115\" y2=\"196.147088\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"115\" y1=\"196.147088\" x2=\"123.5\" y2=\"209.111583\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"123.5\" y1=\"209.111583\" x2=\"132\" y2=\"220.732881\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"220.732881\" x2=\"140.5\" y2=\"231.150145\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.5\" y1=\"231.150145\" x2=\"149\" y2=\"240.48812\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"149\" y1=\"240.48812\" x2=\"157.5\" y2=\"248.858627\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"157.5\" y1=\"248.858627\" x2=\"166\" y2=\"256.361901\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166\" y1=\"256.361901\" x2=\"174.5\" y2=\"263.087792\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174.5\" y1=\"263.087792\" x2=\"183\" y2=\"269.116842\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"183\" y1=\"269.116842\" x2=\"191.5\" y2=\"274.521247\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191.5\" y1=\"274.521247\" x2=\"200\" y2=\"279.365725\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"279.365725\" x2=\"208.5\" y2=\"283.708287\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208.5\" y1=\"283.708287\" x2=\"217\" y2=\"287.600934\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"217\" y1=\"287.600934\" x2=\"225.5\" y2=\"291.09028\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"225.5\" y1=\"291.09028\" x2=\"234\" y2=\"294.21811\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234\" y1=\"294.21811\" x2=\"242.5\" y2=\"297.021879\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242.5\" y1=\"297.021879\" x2=\"251\" y2=\"299.535161\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"251\" y1=\"299.535161\" x2=\"259.5\" y2=\"301.788052\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"259.5\" y1=\"301.788052\" x2=\"268\" y2=\"303.807531\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"303.807531\" x2=\"276.5\" y2=\"305.61778\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"276.5\" y1=\"305.61778\" x2=\"285\" y2=\"307.240476\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"285\" y1=\"307.240476\" x2=\"293.5\" y2=\"308.695052\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"293.5\" y1=\"308.695052\" x2=\"302\" y2=\"309.998926\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"302\" y1=\"309.998926\" x2=\"310.5\" y2=\"311.167711\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"310.5\" y1=\"311.167711\" x2=\"319\" y2=\"312.215402\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"319\" y1=\"312.215402\" x2=\"327.5\" y2=\"313.154547\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"327.5\" y1=\"313.154547\" x2=\"336\" y2=\"313.996391\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S24",
+      "name": "Network Effects",
+      "category": "Defensibility",
+      "diagnosis": "Does each additional user of the platform systematically increase the product's value for all other active participants?",
+      "schematic": "2-Sided Relational Network Grid",
+      "canvas": "Two-Sided Network Diagram tracking direct utility scaling on one side alongside cross-side indirect utility loops (Consumers to Developers and Producers), bounded by multi-homing barriers.",
+      "stressTest": [
+        {
+          "text": "Are users drawn by other participants, or by subsidized marketing?"
+        },
+        {
+          "text": "Can users multi-home across platforms with little friction or cost?"
+        },
+        {
+          "text": "Do negative network effects, spam or poor content, grow with volume?"
+        }
+      ],
+      "stressTestFull": [
+        "Are users genuinely attracted by the presence of other participants, or is active engagement driven by subsidized marketing incentives?",
+        "Can users easily multi-home, using competing platforms simultaneously with minimal friction or switching cost?",
+        "Does the platform suffer from negative network effects, such as spam or degraded content quality, as user volume grows?"
+      ],
+      "checklist": [
+        "Track multi-homing on both sides to measure retention strength.",
+        "Build collaboration that only pays off when peers join in.",
+        "Automate moderation and trust systems to keep quality at scale."
+      ],
+      "checklistFull": [
+        "Track multi-homing rates among both supply-side and demand-side participants to measure platform retention strength.",
+        "Build collaborative features into the core product that require peer engagement to unlock primary utility.",
+        "Implement automated moderation and trust systems to prevent platform congestion and maintain network quality at scale."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "bipartite",
+          "columns": 3,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"93.333333\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"93.333333\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"93.333333\" x2=\"282\" y2=\"93.333333\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"200\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"93.333333\" x2=\"282\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"306.666667\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"93.333333\" x2=\"282\" y2=\"306.666667\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"200\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"282\" y2=\"93.333333\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"282\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"282\" y2=\"306.666667\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"306.666667\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"306.666667\" x2=\"282\" y2=\"93.333333\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"306.666667\" x2=\"282\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"306.666667\" x2=\"282\" y2=\"306.666667\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S25",
+      "name": "Counter-Positioning",
+      "category": "Defensibility",
+      "diagnosis": "Does the challenger’s business model cause such severe collateral damage to an incumbent’s existing revenue and asset base that the incumbent is economically paralyzed?",
+      "schematic": "Game-Theoretic Payoff Matrix",
+      "canvas": "Payoff matrix mapping Challenger Strategy against Incumbent Response, demonstrating that copying the challenger's approach destroys the incumbent's legacy profits.",
+      "stressTest": [
+        {
+          "text": "Does the challenger read delayed incumbent response as ignorance, not calculus?"
+        },
+        {
+          "text": "Would the advantage survive the incumbent absorbing losses to copy the model?"
+        },
+        {
+          "text": "Is the model profitable alone, or does it need continuous venture subsidy?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the challenger mistake an incumbent's delayed response for ignorance, rather than recognizing it as a rational effort to protect legacy cash flows?",
+        "Will the challenger maintain its economic advantage if the incumbent eventually decides to absorb the losses and duplicate the model?",
+        "Is the counter-positioned model profitable on a standalone basis, or does it require continuous venture capital subsidies to survive?"
+      ],
+      "checklist": [
+        "Name the revenue and margin the incumbent would cannibalize by copying.",
+        "Price against the incumbent's highest-margin vulnerability, at positive unit economics.",
+        "Stay out of domains where the incumbent is structurally constrained."
+      ],
+      "checklistFull": [
+        "Detail the specific revenue streams and operating margins that an incumbent would cannibalize if it copied the product.",
+        "Price the product to exploit the incumbent’s highest-margin vulnerabilities while preserving positive unit economics.",
+        "Avoid competing within the incumbent’s primary operational domains, focusing instead on areas where the incumbent is constrained."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S26",
+      "name": "Switching Costs",
+      "category": "Defensibility",
+      "diagnosis": "Does abandoning the product impose such significant operational, financial, or data-loss risks that customer migration to a rival is practically unfeasible?",
+      "schematic": "Balance Sheet Friction Matrix",
+      "canvas": "Economic Balance Sheet weighing Alternative Product Benefits against Total Switching Costs (including data extraction, workflow disruption, employee retraining, integration rebuilding, and operational downtime).",
+      "stressTest": [
+        {
+          "text": "Are switching costs deep integration, or just restrictive contract terms?"
+        },
+        {
+          "text": "At a 30% renewal increase, what share of enterprise accounts would start migrating?"
+        },
+        {
+          "text": "Have export capabilities made it easier for customers to leave?"
+        }
+      ],
+      "stressTestFull": [
+        "Are switching costs driven by deep workflow and data integration, or are they dependent on restrictive contractual terms?",
+        "If the platform raised renewal pricing by 30%, what percentage of enterprise customers would actively begin migration to a competitor?",
+        "Has the product introduced export capabilities that make it easier for customers to transition to competing platforms?"
+      ],
+      "checklist": [
+        "Become the system of record for critical operational data.",
+        "Extend integrations into adjacent workflows so migration gets harder.",
+        "Ship historical analytics and triggers whose value compounds with tenure."
+      ],
+      "checklistFull": [
+        "Integrate the product into enterprise infrastructure to become the authoritative system of record for critical operational data.",
+        "Expand integration points into adjacent business workflows to increase the operational complexity of migration.",
+        "Provide historical analytics and automated workflow triggers that compound in utility the longer the customer uses the platform."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "matrix_3x3",
+          "columns": 2,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"146.666667\" x2=\"360\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"360\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"93.333333\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"200\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88.833333\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"97.833333\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.5\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.5\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"302.166667\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"311.166667\" cy=\"306.666667\" r=\"2.4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S27",
+      "name": "Branding Power",
+      "category": "Defensibility",
+      "diagnosis": "Does the organization command a durable pricing premium or conversion advantage driven by affective trust, identity signaling, or counterparty risk reduction?",
+      "schematic": "Value-Price Surplus Wedge",
+      "canvas": "Value-Price Wedge diagram displaying the Brand Surplus: the price differential customers are willing to pay for a branded offering compared to an objectively identical alternative.",
+      "stressTest": [
+        {
+          "text": "Does the brand lower perceived risk in big decisions, or just enjoy awareness?"
+        },
+        {
+          "text": "Could marketing spend drop without an immediate pipeline decline?"
+        },
+        {
+          "text": "Does delivery keep the brand promise, or is a gap opening with marketing?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the brand reduce perceived risk in high-stakes enterprise decisions, or does it merely enjoy high awareness without pricing power?",
+        "Could the enterprise decrease marketing spend without causing an immediate decline in inbound sales pipeline?",
+        "Is the brand promise supported by reliable product delivery, or is a gap developing between marketing narrative and user experience?"
+      ],
+      "checklist": [
+        "Run double-blind pricing tests to isolate the premium brand adds.",
+        "Set communication standards and incident response across every touchpoint.",
+        "Publish technical papers and compliance certifications to prove trust."
+      ],
+      "checklistFull": [
+        "Conduct double-blind pricing experiments to quantify the precise price premium attributable strictly to brand reputation.",
+        "Establish company-wide communication standards and incident-response protocols across all customer touchpoints.",
+        "Publish technical white papers, research reports, and compliance certifications to reinforce enterprise security and trust."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "wedge",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"64\" x2=\"64\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"332\" x2=\"336\" y2=\"332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"332\" x2=\"132\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"332\" x2=\"268\" y2=\"326\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"265\" x2=\"70\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"131\" x2=\"70\" y2=\"131\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"256.96\" x2=\"77.6\" y2=\"248.92\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.6\" y1=\"248.92\" x2=\"91.2\" y2=\"240.88\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.2\" y1=\"240.88\" x2=\"104.8\" y2=\"232.84\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104.8\" y1=\"232.84\" x2=\"118.4\" y2=\"224.8\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118.4\" y1=\"224.8\" x2=\"132\" y2=\"216.76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"216.76\" x2=\"145.6\" y2=\"208.72\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"145.6\" y1=\"208.72\" x2=\"159.2\" y2=\"200.68\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"159.2\" y1=\"200.68\" x2=\"172.8\" y2=\"192.64\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"172.8\" y1=\"192.64\" x2=\"186.4\" y2=\"184.6\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186.4\" y1=\"184.6\" x2=\"200\" y2=\"176.56\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"176.56\" x2=\"213.6\" y2=\"168.52\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"213.6\" y1=\"168.52\" x2=\"227.2\" y2=\"160.48\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227.2\" y1=\"160.48\" x2=\"240.8\" y2=\"152.44\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.8\" y1=\"152.44\" x2=\"254.4\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254.4\" y1=\"144.4\" x2=\"268\" y2=\"136.36\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"136.36\" x2=\"281.6\" y2=\"128.32\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281.6\" y1=\"128.32\" x2=\"295.2\" y2=\"120.28\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"295.2\" y1=\"120.28\" x2=\"308.8\" y2=\"112.24\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.8\" y1=\"112.24\" x2=\"322.4\" y2=\"104.2\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"322.4\" y1=\"104.2\" x2=\"336\" y2=\"96.16\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64\" y1=\"291.8\" x2=\"77.6\" y2=\"287.11\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.6\" y1=\"287.11\" x2=\"91.2\" y2=\"282.42\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.2\" y1=\"282.42\" x2=\"104.8\" y2=\"277.73\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104.8\" y1=\"277.73\" x2=\"118.4\" y2=\"273.04\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118.4\" y1=\"273.04\" x2=\"132\" y2=\"268.35\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"268.35\" x2=\"145.6\" y2=\"263.66\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"145.6\" y1=\"263.66\" x2=\"159.2\" y2=\"258.97\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"159.2\" y1=\"258.97\" x2=\"172.8\" y2=\"254.28\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"172.8\" y1=\"254.28\" x2=\"186.4\" y2=\"249.59\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186.4\" y1=\"249.59\" x2=\"200\" y2=\"244.9\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"244.9\" x2=\"213.6\" y2=\"240.21\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"213.6\" y1=\"240.21\" x2=\"227.2\" y2=\"235.52\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227.2\" y1=\"235.52\" x2=\"240.8\" y2=\"230.83\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.8\" y1=\"230.83\" x2=\"254.4\" y2=\"226.14\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254.4\" y1=\"226.14\" x2=\"268\" y2=\"221.45\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"221.45\" x2=\"281.6\" y2=\"216.76\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281.6\" y1=\"216.76\" x2=\"295.2\" y2=\"212.07\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"295.2\" y1=\"212.07\" x2=\"308.8\" y2=\"207.38\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.8\" y1=\"207.38\" x2=\"322.4\" y2=\"202.69\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"322.4\" y1=\"202.69\" x2=\"336\" y2=\"198\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132\" y1=\"216.76\" x2=\"132\" y2=\"268.35\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"268\" y1=\"136.36\" x2=\"268\" y2=\"221.45\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.666667\" y1=\"203.36\" x2=\"164.666667\" y2=\"260.533333\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.333333\" y1=\"149.76\" x2=\"255.333333\" y2=\"229.266667\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"3 3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S28",
+      "name": "Cornered Resource",
+      "category": "Defensibility",
+      "diagnosis": "Does the organization maintain exclusive access to a scarce, non-replicable asset—such as patents, regulatory licenses, unique talent, or proprietary data—that generates enduring economic rents?",
+      "schematic": "Asset Enclosure Diagram",
+      "canvas": "Asset Enclosure Diagram illustrating legal, contractual, or physical ownership over a critical input, preventing rivals from replicating the production function.",
+      "stressTest": [
+        {
+          "text": "Is the resource under institutional control, or could key people leave with it?"
+        },
+        {
+          "text": "Would the patents, licences or data rights hold under sustained challenge?"
+        },
+        {
+          "text": "Could a technology shift make the asset obsolete before it pays back?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the resource remain under institutional control, or could key personnel depart and recreate the asset elsewhere?",
+        "Are the company's patents, regulatory licenses, or exclusive data agreements legally enforceable under sustained challenge?",
+        "Will architectural or technological shifts make the cornered asset obsolete before its capital cost is recouped?"
+      ],
+      "checklist": [
+        "Lock IP assignment, exclusive data rights and patents around core innovations.",
+        "Build proprietary pipelines that structure non-public domain data.",
+        "Use long-term equity to retain the people who hold critical expertise."
+      ],
+      "checklistFull": [
+        "Secure long-term IP assignment agreements, exclusive data rights, and patent protections around foundational innovations.",
+        "Build proprietary data pipelines that automatically ingest, clean, and structure non-public domain data.",
+        "Implement long-term equity retention structures to secure key contributors who possess critical domain expertise."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "enclosure",
+          "columns": 3,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"74\" y=\"74\" width=\"252\" height=\"252\" rx=\"10\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"86\" y=\"86\" width=\"228\" height=\"228\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"24\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"173\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"128\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"223.382686\" y1=\"213.5\" x2=\"257.157677\" y2=\"233\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"262.353829\" cy=\"236\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"176.617314\" y1=\"213.5\" x2=\"142.842323\" y2=\"233\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"137.646171\" cy=\"236\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"36\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"46\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S29",
+      "name": "Process Power",
+      "category": "Defensibility",
+      "diagnosis": "Has the company embedded complex operational routines that produce superior cost and quality outcomes that competitors cannot duplicate through external observation?",
+      "schematic": "Tacit Operational Flow Network",
+      "canvas": "Tacit Knowledge Flow diagram mapping cross-functional feedback loops, continuous optimization routines, and operational procedures that cannot be reduced to simple instruction manuals.",
+      "stressTest": [
+        {
+          "text": "Could a funded rival match performance by hiring a few key leaders?"
+        },
+        {
+          "text": "Are process advantages cultural, or procedures a public teardown can copy?"
+        },
+        {
+          "text": "Has optimization made the organization too rigid to absorb a tech shift?"
+        }
+      ],
+      "stressTestFull": [
+        "Could a well-capitalized competitor match operational performance simply by hiring away several key engineering or operational leaders?",
+        "Are process advantages embedded in company culture, or are they standard procedures that can be replicated via public teardowns?",
+        "Does relentless process optimization make the organization rigid, preventing it from adapting to major technology shifts?"
+      ],
+      "checklist": [
+        "Turn static manuals into active, continuously run operational routines.",
+        "Track error rates, cycle times and latency against industry benchmarks.",
+        "Run post-mortems and Kaizen loops that feed learnings back into tools."
+      ],
+      "checklistFull": [
+        "Transition operational knowledge from static manuals into active, continuous operational routines.",
+        "Track error rates, cycle times, and operational latencies to identify workflows operating significantly ahead of industry benchmarks.",
+        "Establish continuous post-mortem and Kaizen feedback loops to incorporate operational learnings into internal tools."
+      ],
+      "origin": {
+        "authors": [
+          "W. Hamilton Helmer"
+        ],
+        "year": 2016,
+        "title": "7 Powers: The Foundations of Business Strategy",
+        "publication": "Deep Search Press",
+        "authorsLabel": "W. Hamilton Helmer",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "value_chain",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"130\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"118\" y1=\"200\" x2=\"130\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"200\" x2=\"123.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"200\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"188\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"193.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"184\" width=\"58\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258\" y1=\"200\" x2=\"270\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"200\" x2=\"263.856922\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S30",
+      "name": "Flywheel Effect",
+      "category": "Defensibility",
+      "diagnosis": "Are business initiatives organized as disconnected tactical projects, or do they feed into a self-reinforcing, compounding momentum engine?",
+      "schematic": "Compounding Clockwise Loop",
+      "canvas": "Closed-loop clockwise kinetic flywheel mapping four to six operational steps, where executing Step A naturally drives Step B, fueling Step C, accelerating Step D, and reinvesting momentum back into Step A.",
+      "stressTest": [
+        {
+          "text": "Can leadership say how every funded project speeds the flywheel?"
+        },
+        {
+          "text": "Is there a break where customer value stops funding reinvestment?"
+        },
+        {
+          "text": "Does the model ignore drag like churn or platform taxes bleeding energy?"
+        }
+      ],
+      "stressTestFull": [
+        "Can leadership explain how every funded project on the roadmap directly increases the rotational momentum of the flywheel?",
+        "Is there a break in the flywheel loop where customer value fails to generate resources for reinvestment?",
+        "Does the flywheel model overlook external drag forces—such as customer churn or platform taxes—that bleed energy from the system?"
+      ],
+      "checklist": [
+        "Draw a five-step flywheel with explicit causal connections.",
+        "Move capital away from projects that do not feed the flywheel.",
+        "Instrument the handover points between adjacent flywheel steps."
+      ],
+      "checklistFull": [
+        "Create a five-step flywheel diagram showing explicit causal connections between each operational phase.",
+        "Reallocate capital away from engineering initiatives that do not directly feed energy into the core flywheel.",
+        "Add telemetry to track performance metrics at the handover points between adjacent flywheel steps."
+      ],
+      "origin": {
+        "authors": [
+          "Jim Collins"
+        ],
+        "year": 2001,
+        "title": "Good to Great: Why Some Companies Make the Leap... and Others Don't",
+        "publication": "HarperBusiness",
+        "authorsLabel": "Jim Collins",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "feedback_loop",
+          "columns": 4,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"128\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"72\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"72\" cy=\"200\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 72 A 128 128 0 1 1 74.3 224\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S31",
+      "name": "Open-Source Archetypes",
+      "category": "Defensibility",
+      "diagnosis": "How can an organization distribute software with zero marginal cost via open source while establishing a sustainable, defensible value-capture model?",
+      "schematic": "Two-Tier Commercial Separation",
+      "canvas": "Two-tier model with an open, permissively licensed core (MIT/Apache 2.0) driving widespread developer distribution, separated by a monetization boundary from a managed cloud SaaS platform and commercial enterprise extensions (SSO, RBAC, Auditing, Multi-tenancy).",
+      "stressTest": [
+        {
+          "text": "Does the free edition include features that cannibalize commercial revenue?"
+        },
+        {
+          "text": "Could a major cloud host the project cheaper than the creator can?"
+        },
+        {
+          "text": "Does the community contribute distribution and development, or only drain it?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the open-source release cannibalize commercial revenue by including enterprise-grade administrative features in the free edition?",
+        "Can a major cloud provider host the open-source software and provide a managed service at lower cost than the creator?",
+        "Does the open-source community actively contribute to distribution and product development, or does it function primarily as an operational drain on engineering?"
+      ],
+      "checklist": [
+        "Keep developer libraries permissive; put security and compliance in paid tiers.",
+        "Offer a managed cloud that monetizes speed and infrastructure management.",
+        "Track downloads, forks and contributions alongside enterprise pipeline."
+      ],
+      "checklistFull": [
+        "Establish a licensing boundary that keeps developer libraries permissive while placing enterprise security and compliance features in commercial tiers.",
+        "Deploy a managed cloud hosted offering that monetizes deployment speed and infrastructure management.",
+        "Monitor developer adoption metrics—including package downloads, repository forks, and community contributions—alongside enterprise sales pipelines."
+      ],
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Dirk Riehle"
+            ],
+            "year": 2009,
+            "title": "The Commercial Open Source Business Model",
+            "publication": "Value Creation in E-Business",
+            "authorsLabel": "Dirk Riehle",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Peter Levine"
+            ],
+            "year": 2014,
+            "title": "Open Source: From Community to Commercialization",
+            "publication": "Andreessen Horowitz",
+            "authorsLabel": "Peter Levine",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "tree",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"350\" x2=\"200\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"70\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"110\" x2=\"330\" y2=\"80\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"185\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"350\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S32",
+      "name": "Teece's PFI Model",
+      "category": "Defensibility",
+      "diagnosis": "In an environment with weak intellectual property protection, will the innovating company capture the economic value of its breakthrough, or will profits flow to owners of critical complementary assets?",
+      "schematic": "2x2 Appropriability Matrix",
+      "canvas": "2x2 Matrix plotting Appropriability Regime (Tight versus Weak) against Complementary Assets (Freely Available versus Specialized/Bottleneck), determining whether value is captured by Inventors, Imitators, or Complementary Asset Owners.",
+      "stressTest": [
+        {
+          "text": "Does the firm lean on patents where rivals can design around them?"
+        },
+        {
+          "text": "Does an incumbent own the channels, relationships or approvals needed to scale?"
+        },
+        {
+          "text": "Were complementary assets secured before the breakthrough was shown?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the firm rely primarily on patent protection in an industry where competitors can readily design around intellectual property?",
+        "Does an established incumbent control the critical distribution channels, customer relationships, or regulatory approvals needed to commercialize the innovation at scale?",
+        "Has the business secured ownership of critical complementary assets before revealing its technical breakthrough to the market?"
+      ],
+      "checklist": [
+        "Judge whether law and technology give tight or weak IP protection here.",
+        "Name the specialized assets, sales network or cloud, that scaling needs.",
+        "Secure or acquire those assets before launching the offering."
+      ],
+      "checklistFull": [
+        "Assess whether the industry’s legal and technical environment provides tight or weak protection for intellectual property.",
+        "Identify the specialized complementary assets—such as enterprise sales networks or cloud infrastructure—required for scaled commercialization.",
+        "Secure strategic partnerships or acquire proprietary control over key complementary assets before launching the offering."
+      ],
+      "origin": {
+        "authors": [
+          "David J. Teece"
+        ],
+        "year": 1986,
+        "title": "Profiting from Technological Innovation: Implications for Integration, Collaboration, Licensing and Public Policy",
+        "publication": "Research Policy",
+        "authorsLabel": "David J. Teece",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "2x2",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"40\" x2=\"120\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"352\" x2=\"120\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"40\" x2=\"280\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"352\" x2=\"280\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"48\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"48\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"352\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"120\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"280\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "S33",
+      "name": "Aggregation Theory",
+      "category": "Defensibility",
+      "diagnosis": "Can the company leverage zero marginal costs and direct user relationships to commoditize suppliers and aggregate market demand?",
+      "schematic": "3-Tier Supplier-Platform-User",
+      "canvas": "Three-tier ecosystem hierarchy showing Distributed Commoditized Suppliers at the base, integrated through an API platform layer, serving an expanding base of End Consumers at zero marginal cost.",
+      "stressTest": [
+        {
+          "text": "Does the platform own the customer relationship and billing directly?"
+        },
+        {
+          "text": "Is delivery, onboarding and transaction cost effectively zero at the margin?"
+        },
+        {
+          "text": "Are suppliers commoditized into accepting platform standards?"
+        }
+      ],
+      "stressTestFull": [
+        "Does the platform maintain direct ownership of the customer relationship and billing, or is it mediated by a third-party marketplace or aggregator?",
+        "Does the business achieve zero marginal cost for delivery, onboarding, and transactions, enabling seamless scaling?",
+        "Are upstream suppliers commoditized and forced to accept platform standards due to the platform's control over consumer demand?"
+      ],
+      "checklist": [
+        "Cut onboarding cost toward zero through digital provisioning.",
+        "Standardize supplier integrations into uniform API schemas.",
+        "Use concentrated demand to negotiate terms and exclusive catalog access."
+      ],
+      "checklistFull": [
+        "Optimize digital onboarding workflows to reduce marginal customer acquisition and provisioning costs to near zero.",
+        "Standardize supplier integrations into uniform API data schemas to lower supplier switching power.",
+        "Use concentrated consumer demand to negotiate favorable supply terms and exclusive catalog integrations."
+      ],
+      "origin": {
+        "authors": [
+          "Ben Thompson"
+        ],
+        "year": 2015,
+        "title": "Aggregation Theory",
+        "publication": "Stratechery",
+        "authorsLabel": "Ben Thompson",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "strategy-canvas",
+        "parametricParams": {
+          "treatment": "value_chain",
+          "columns": 3,
+          "rows": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"153.333333\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"141.333333\" y1=\"200\" x2=\"153.333333\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.333333\" y1=\"200\" x2=\"147.190255\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.333333\" y1=\"200\" x2=\"147.190255\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"246.666667\" y=\"184\" width=\"81.33333333333333\" height=\"32\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"234.666667\" y1=\"200\" x2=\"246.666667\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.666667\" y1=\"200\" x2=\"240.523589\" y2=\"203.355979\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.666667\" y1=\"200\" x2=\"240.523589\" y2=\"196.644021\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

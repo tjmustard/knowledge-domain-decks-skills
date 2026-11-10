@@ -1,0 +1,50 @@
+{
+  "id": "S24",
+  "name": "Network Effects",
+  "category": "Defensibility",
+  "diagnosis": "Does each additional user of the platform systematically increase the product's value for all other active participants?",
+  "schematic": "2-Sided Relational Network Grid",
+  "canvas": "Two-Sided Network Diagram tracking direct utility scaling on one side alongside cross-side indirect utility loops (Consumers to Developers and Producers), bounded by multi-homing barriers.",
+  "stressTest": [
+    {
+      "text": "Are users drawn by other participants, or by subsidized marketing?"
+    },
+    {
+      "text": "Can users multi-home across platforms with little friction or cost?"
+    },
+    {
+      "text": "Do negative network effects, spam or poor content, grow with volume?"
+    }
+  ],
+  "stressTestFull": [
+    "Are users genuinely attracted by the presence of other participants, or is active engagement driven by subsidized marketing incentives?",
+    "Can users easily multi-home, using competing platforms simultaneously with minimal friction or switching cost?",
+    "Does the platform suffer from negative network effects, such as spam or degraded content quality, as user volume grows?"
+  ],
+  "checklist": [
+    "Track multi-homing on both sides to measure retention strength.",
+    "Build collaboration that only pays off when peers join in.",
+    "Automate moderation and trust systems to keep quality at scale."
+  ],
+  "checklistFull": [
+    "Track multi-homing rates among both supply-side and demand-side participants to measure platform retention strength.",
+    "Build collaborative features into the core product that require peer engagement to unlock primary utility.",
+    "Implement automated moderation and trust systems to prevent platform congestion and maintain network quality at scale."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "bipartite",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

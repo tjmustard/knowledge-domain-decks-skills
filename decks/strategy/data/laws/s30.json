@@ -1,0 +1,50 @@
+{
+  "id": "S30",
+  "name": "Flywheel Effect",
+  "category": "Defensibility",
+  "diagnosis": "Are business initiatives organized as disconnected tactical projects, or do they feed into a self-reinforcing, compounding momentum engine?",
+  "schematic": "Compounding Clockwise Loop",
+  "canvas": "Closed-loop clockwise kinetic flywheel mapping four to six operational steps, where executing Step A naturally drives Step B, fueling Step C, accelerating Step D, and reinvesting momentum back into Step A.",
+  "stressTest": [
+    {
+      "text": "Can leadership say how every funded project speeds the flywheel?"
+    },
+    {
+      "text": "Is there a break where customer value stops funding reinvestment?"
+    },
+    {
+      "text": "Does the model ignore drag like churn or platform taxes bleeding energy?"
+    }
+  ],
+  "stressTestFull": [
+    "Can leadership explain how every funded project on the roadmap directly increases the rotational momentum of the flywheel?",
+    "Is there a break in the flywheel loop where customer value fails to generate resources for reinvestment?",
+    "Does the flywheel model overlook external drag forces—such as customer churn or platform taxes—that bleed energy from the system?"
+  ],
+  "checklist": [
+    "Draw a five-step flywheel with explicit causal connections.",
+    "Move capital away from projects that do not feed the flywheel.",
+    "Instrument the handover points between adjacent flywheel steps."
+  ],
+  "checklistFull": [
+    "Create a five-step flywheel diagram showing explicit causal connections between each operational phase.",
+    "Reallocate capital away from engineering initiatives that do not directly feed energy into the core flywheel.",
+    "Add telemetry to track performance metrics at the handover points between adjacent flywheel steps."
+  ],
+  "origin": {
+    "authors": [
+      "Jim Collins"
+    ],
+    "year": 2001,
+    "title": "Good to Great: Why Some Companies Make the Leap... and Others Don't",
+    "publication": "HarperBusiness"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "feedback_loop",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

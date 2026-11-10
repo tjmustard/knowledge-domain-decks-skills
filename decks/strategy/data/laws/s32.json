@@ -1,0 +1,50 @@
+{
+  "id": "S32",
+  "name": "Teece's PFI Model",
+  "category": "Defensibility",
+  "diagnosis": "In an environment with weak intellectual property protection, will the innovating company capture the economic value of its breakthrough, or will profits flow to owners of critical complementary assets?",
+  "schematic": "2x2 Appropriability Matrix",
+  "canvas": "2x2 Matrix plotting Appropriability Regime (Tight versus Weak) against Complementary Assets (Freely Available versus Specialized/Bottleneck), determining whether value is captured by Inventors, Imitators, or Complementary Asset Owners.",
+  "stressTest": [
+    {
+      "text": "Does the firm lean on patents where rivals can design around them?"
+    },
+    {
+      "text": "Does an incumbent own the channels, relationships or approvals needed to scale?"
+    },
+    {
+      "text": "Were complementary assets secured before the breakthrough was shown?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the firm rely primarily on patent protection in an industry where competitors can readily design around intellectual property?",
+    "Does an established incumbent control the critical distribution channels, customer relationships, or regulatory approvals needed to commercialize the innovation at scale?",
+    "Has the business secured ownership of critical complementary assets before revealing its technical breakthrough to the market?"
+  ],
+  "checklist": [
+    "Judge whether law and technology give tight or weak IP protection here.",
+    "Name the specialized assets, sales network or cloud, that scaling needs.",
+    "Secure or acquire those assets before launching the offering."
+  ],
+  "checklistFull": [
+    "Assess whether the industry’s legal and technical environment provides tight or weak protection for intellectual property.",
+    "Identify the specialized complementary assets—such as enterprise sales networks or cloud infrastructure—required for scaled commercialization.",
+    "Secure strategic partnerships or acquire proprietary control over key complementary assets before launching the offering."
+  ],
+  "origin": {
+    "authors": [
+      "David J. Teece"
+    ],
+    "year": 1986,
+    "title": "Profiting from Technological Innovation: Implications for Integration, Collaboration, Licensing and Public Policy",
+    "publication": "Research Policy"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

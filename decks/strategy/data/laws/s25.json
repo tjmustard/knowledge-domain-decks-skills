@@ -1,0 +1,50 @@
+{
+  "id": "S25",
+  "name": "Counter-Positioning",
+  "category": "Defensibility",
+  "diagnosis": "Does the challenger’s business model cause such severe collateral damage to an incumbent’s existing revenue and asset base that the incumbent is economically paralyzed?",
+  "schematic": "Game-Theoretic Payoff Matrix",
+  "canvas": "Payoff matrix mapping Challenger Strategy against Incumbent Response, demonstrating that copying the challenger's approach destroys the incumbent's legacy profits.",
+  "stressTest": [
+    {
+      "text": "Does the challenger read delayed incumbent response as ignorance, not calculus?"
+    },
+    {
+      "text": "Would the advantage survive the incumbent absorbing losses to copy the model?"
+    },
+    {
+      "text": "Is the model profitable alone, or does it need continuous venture subsidy?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the challenger mistake an incumbent's delayed response for ignorance, rather than recognizing it as a rational effort to protect legacy cash flows?",
+    "Will the challenger maintain its economic advantage if the incumbent eventually decides to absorb the losses and duplicate the model?",
+    "Is the counter-positioned model profitable on a standalone basis, or does it require continuous venture capital subsidies to survive?"
+  ],
+  "checklist": [
+    "Name the revenue and margin the incumbent would cannibalize by copying.",
+    "Price against the incumbent's highest-margin vulnerability, at positive unit economics.",
+    "Stay out of domains where the incumbent is structurally constrained."
+  ],
+  "checklistFull": [
+    "Detail the specific revenue streams and operating margins that an incumbent would cannibalize if it copied the product.",
+    "Price the product to exploit the incumbent’s highest-margin vulnerabilities while preserving positive unit economics.",
+    "Avoid competing within the incumbent’s primary operational domains, focusing instead on areas where the incumbent is constrained."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "2x2",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

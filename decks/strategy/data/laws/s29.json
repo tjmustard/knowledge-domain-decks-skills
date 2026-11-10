@@ -1,0 +1,50 @@
+{
+  "id": "S29",
+  "name": "Process Power",
+  "category": "Defensibility",
+  "diagnosis": "Has the company embedded complex operational routines that produce superior cost and quality outcomes that competitors cannot duplicate through external observation?",
+  "schematic": "Tacit Operational Flow Network",
+  "canvas": "Tacit Knowledge Flow diagram mapping cross-functional feedback loops, continuous optimization routines, and operational procedures that cannot be reduced to simple instruction manuals.",
+  "stressTest": [
+    {
+      "text": "Could a funded rival match performance by hiring a few key leaders?"
+    },
+    {
+      "text": "Are process advantages cultural, or procedures a public teardown can copy?"
+    },
+    {
+      "text": "Has optimization made the organization too rigid to absorb a tech shift?"
+    }
+  ],
+  "stressTestFull": [
+    "Could a well-capitalized competitor match operational performance simply by hiring away several key engineering or operational leaders?",
+    "Are process advantages embedded in company culture, or are they standard procedures that can be replicated via public teardowns?",
+    "Does relentless process optimization make the organization rigid, preventing it from adapting to major technology shifts?"
+  ],
+  "checklist": [
+    "Turn static manuals into active, continuously run operational routines.",
+    "Track error rates, cycle times and latency against industry benchmarks.",
+    "Run post-mortems and Kaizen loops that feed learnings back into tools."
+  ],
+  "checklistFull": [
+    "Transition operational knowledge from static manuals into active, continuous operational routines.",
+    "Track error rates, cycle times, and operational latencies to identify workflows operating significantly ahead of industry benchmarks.",
+    "Establish continuous post-mortem and Kaizen feedback loops to incorporate operational learnings into internal tools."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "value_chain",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

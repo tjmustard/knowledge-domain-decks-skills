@@ -1,0 +1,50 @@
+{
+  "id": "S27",
+  "name": "Branding Power",
+  "category": "Defensibility",
+  "diagnosis": "Does the organization command a durable pricing premium or conversion advantage driven by affective trust, identity signaling, or counterparty risk reduction?",
+  "schematic": "Value-Price Surplus Wedge",
+  "canvas": "Value-Price Wedge diagram displaying the Brand Surplus: the price differential customers are willing to pay for a branded offering compared to an objectively identical alternative.",
+  "stressTest": [
+    {
+      "text": "Does the brand lower perceived risk in big decisions, or just enjoy awareness?"
+    },
+    {
+      "text": "Could marketing spend drop without an immediate pipeline decline?"
+    },
+    {
+      "text": "Does delivery keep the brand promise, or is a gap opening with marketing?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the brand reduce perceived risk in high-stakes enterprise decisions, or does it merely enjoy high awareness without pricing power?",
+    "Could the enterprise decrease marketing spend without causing an immediate decline in inbound sales pipeline?",
+    "Is the brand promise supported by reliable product delivery, or is a gap developing between marketing narrative and user experience?"
+  ],
+  "checklist": [
+    "Run double-blind pricing tests to isolate the premium brand adds.",
+    "Set communication standards and incident response across every touchpoint.",
+    "Publish technical papers and compliance certifications to prove trust."
+  ],
+  "checklistFull": [
+    "Conduct double-blind pricing experiments to quantify the precise price premium attributable strictly to brand reputation.",
+    "Establish company-wide communication standards and incident-response protocols across all customer touchpoints.",
+    "Publish technical white papers, research reports, and compliance certifications to reinforce enterprise security and trust."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "wedge",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

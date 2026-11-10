@@ -1,0 +1,50 @@
+{
+  "id": "S26",
+  "name": "Switching Costs",
+  "category": "Defensibility",
+  "diagnosis": "Does abandoning the product impose such significant operational, financial, or data-loss risks that customer migration to a rival is practically unfeasible?",
+  "schematic": "Balance Sheet Friction Matrix",
+  "canvas": "Economic Balance Sheet weighing Alternative Product Benefits against Total Switching Costs (including data extraction, workflow disruption, employee retraining, integration rebuilding, and operational downtime).",
+  "stressTest": [
+    {
+      "text": "Are switching costs deep integration, or just restrictive contract terms?"
+    },
+    {
+      "text": "At a 30% renewal increase, what share of enterprise accounts would start migrating?"
+    },
+    {
+      "text": "Have export capabilities made it easier for customers to leave?"
+    }
+  ],
+  "stressTestFull": [
+    "Are switching costs driven by deep workflow and data integration, or are they dependent on restrictive contractual terms?",
+    "If the platform raised renewal pricing by 30%, what percentage of enterprise customers would actively begin migration to a competitor?",
+    "Has the product introduced export capabilities that make it easier for customers to transition to competing platforms?"
+  ],
+  "checklist": [
+    "Become the system of record for critical operational data.",
+    "Extend integrations into adjacent workflows so migration gets harder.",
+    "Ship historical analytics and triggers whose value compounds with tenure."
+  ],
+  "checklistFull": [
+    "Integrate the product into enterprise infrastructure to become the authoritative system of record for critical operational data.",
+    "Expand integration points into adjacent business workflows to increase the operational complexity of migration.",
+    "Provide historical analytics and automated workflow triggers that compound in utility the longer the customer uses the platform."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "matrix_3x3",
+      "columns": 2,
+      "rows": 1
+    }
+  }
+}

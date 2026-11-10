@@ -1,0 +1,50 @@
+{
+  "id": "S33",
+  "name": "Aggregation Theory",
+  "category": "Defensibility",
+  "diagnosis": "Can the company leverage zero marginal costs and direct user relationships to commoditize suppliers and aggregate market demand?",
+  "schematic": "3-Tier Supplier-Platform-User",
+  "canvas": "Three-tier ecosystem hierarchy showing Distributed Commoditized Suppliers at the base, integrated through an API platform layer, serving an expanding base of End Consumers at zero marginal cost.",
+  "stressTest": [
+    {
+      "text": "Does the platform own the customer relationship and billing directly?"
+    },
+    {
+      "text": "Is delivery, onboarding and transaction cost effectively zero at the margin?"
+    },
+    {
+      "text": "Are suppliers commoditized into accepting platform standards?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the platform maintain direct ownership of the customer relationship and billing, or is it mediated by a third-party marketplace or aggregator?",
+    "Does the business achieve zero marginal cost for delivery, onboarding, and transactions, enabling seamless scaling?",
+    "Are upstream suppliers commoditized and forced to accept platform standards due to the platform's control over consumer demand?"
+  ],
+  "checklist": [
+    "Cut onboarding cost toward zero through digital provisioning.",
+    "Standardize supplier integrations into uniform API schemas.",
+    "Use concentrated demand to negotiate terms and exclusive catalog access."
+  ],
+  "checklistFull": [
+    "Optimize digital onboarding workflows to reduce marginal customer acquisition and provisioning costs to near zero.",
+    "Standardize supplier integrations into uniform API data schemas to lower supplier switching power.",
+    "Use concentrated consumer demand to negotiate favorable supply terms and exclusive catalog integrations."
+  ],
+  "origin": {
+    "authors": [
+      "Ben Thompson"
+    ],
+    "year": 2015,
+    "title": "Aggregation Theory",
+    "publication": "Stratechery"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "value_chain",
+      "columns": 3,
+      "rows": 1
+    }
+  }
+}

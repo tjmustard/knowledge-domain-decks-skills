@@ -1,0 +1,50 @@
+{
+  "id": "S23",
+  "name": "Scale Economies",
+  "category": "Defensibility",
+  "diagnosis": "Does the organization’s scale create a decreasing per-unit cost curve that smaller competitors cannot match without incurring unsustainable losses?",
+  "schematic": "Cost-Volume Amortization Curve",
+  "canvas": "2x2 Power Matrix plotting Operational Benefit (Lower Cost or Higher Price) against Barrier to Arbitrage (Why competitors cannot duplicate), where Scale Economies generate cost advantages through fixed-cost amortization over high volume.",
+  "stressTest": [
+    {
+      "text": "Are unit-cost falls from volume amortization, or temporary vendor discounts?"
+    },
+    {
+      "text": "Do internal diseconomies, like communication overhead, cancel the cost lead?"
+    },
+    {
+      "text": "Can a new entrant bypass the scale advantage with managed cloud services?"
+    }
+  ],
+  "stressTestFull": [
+    "Are reported unit cost reductions driven by fixed-cost amortization over high volume, or do they represent temporary vendor discounts?",
+    "Does the organization suffer from internal diseconomies of scale, such as communication overhead, that offset unit-cost advantages?",
+    "Can a new entrant bypass the company's scale advantage by leveraging commoditized cloud infrastructure or managed services?"
+  ],
+  "checklist": [
+    "Separate fixed from variable cost to get marginal cost per account.",
+    "Pass some scale savings to customers as lower prices to raise entry barriers.",
+    "Automate routine operations so headcount does not scale with volume."
+  ],
+  "checklistFull": [
+    "Separate fixed from variable costs to calculate the marginal cost of serving each incremental customer account.",
+    "Return a portion of scale efficiencies to customers through lower prices to increase competitive barriers against new entrants.",
+    "Automate routine operational workflows to prevent headcount from scaling linearly with transaction volume."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "curve_decay",
+      "columns": 4,
+      "rows": 1
+    }
+  }
+}

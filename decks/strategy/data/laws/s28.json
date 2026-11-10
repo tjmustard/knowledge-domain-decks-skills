@@ -1,0 +1,50 @@
+{
+  "id": "S28",
+  "name": "Cornered Resource",
+  "category": "Defensibility",
+  "diagnosis": "Does the organization maintain exclusive access to a scarce, non-replicable asset—such as patents, regulatory licenses, unique talent, or proprietary data—that generates enduring economic rents?",
+  "schematic": "Asset Enclosure Diagram",
+  "canvas": "Asset Enclosure Diagram illustrating legal, contractual, or physical ownership over a critical input, preventing rivals from replicating the production function.",
+  "stressTest": [
+    {
+      "text": "Is the resource under institutional control, or could key people leave with it?"
+    },
+    {
+      "text": "Would the patents, licences or data rights hold under sustained challenge?"
+    },
+    {
+      "text": "Could a technology shift make the asset obsolete before it pays back?"
+    }
+  ],
+  "stressTestFull": [
+    "Does the resource remain under institutional control, or could key personnel depart and recreate the asset elsewhere?",
+    "Are the company's patents, regulatory licenses, or exclusive data agreements legally enforceable under sustained challenge?",
+    "Will architectural or technological shifts make the cornered asset obsolete before its capital cost is recouped?"
+  ],
+  "checklist": [
+    "Lock IP assignment, exclusive data rights and patents around core innovations.",
+    "Build proprietary pipelines that structure non-public domain data.",
+    "Use long-term equity to retain the people who hold critical expertise."
+  ],
+  "checklistFull": [
+    "Secure long-term IP assignment agreements, exclusive data rights, and patent protections around foundational innovations.",
+    "Build proprietary data pipelines that automatically ingest, clean, and structure non-public domain data.",
+    "Implement long-term equity retention structures to secure key contributors who possess critical domain expertise."
+  ],
+  "origin": {
+    "authors": [
+      "W. Hamilton Helmer"
+    ],
+    "year": 2016,
+    "title": "7 Powers: The Foundations of Business Strategy",
+    "publication": "Deep Search Press"
+  },
+  "figure": {
+    "svgShape": "strategy-canvas",
+    "parametricParams": {
+      "treatment": "enclosure",
+      "columns": 3,
+      "rows": 2
+    }
+  }
+}
