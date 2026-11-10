@@ -3133,6 +3133,83 @@
           out.push(rect(slotX - 9, uy - 9, 18, 18, { rx: 2, width: 1.2, opacity: 0.3 }));
         }
       }
+    } else if (family === "perspective") {
+      // The phase's viewpoints set on a ring; the card sights one of them
+      // from the centre, so the mark is the point of view and not the angle.
+      var pcx = 200;
+      var pcy = 200;
+      var ring = 118;
+      for (var vi = 1; vi <= div; vi++) {
+        var va = (2 * Math.PI * (vi - 1)) / div - Math.PI / 2;
+        var vx = pcx + ring * Math.cos(va);
+        var vy = pcy + ring * Math.sin(va);
+        var seen = vi === mark;
+        if (seen) {
+          out.push(line(pcx, pcy, vx, vy, 2.4, 0.9));
+          out.push(circle(vx, vy, 6, { width: 1.8, opacity: 0.9 }));
+        } else {
+          out.push(circle(vx, vy, 3.4, { hollow: true, width: 1.2, opacity: 0.35 }));
+        }
+      }
+      out.push(circle(pcx, pcy, 4, { hollow: true, width: 1.4, opacity: 0.6 }));
+    } else if (family === "mapping") {
+      // The source row and the target row, with one arrow at the mark: the
+      // mechanism is carried across, not merely joined.
+      var mTop = 128;
+      var mBot = 272;
+      for (var mi = 1; mi <= div; mi++) {
+        var mxs = posX(mi);
+        out.push(circle(mxs, mTop, 3.2, { hollow: true, width: 1.2, opacity: 0.3 }));
+        out.push(circle(mxs, mBot, 3.2, { hollow: true, width: 1.2, opacity: 0.3 }));
+      }
+      var mmx = posX(mark);
+      out.push(circle(mmx, mTop, 6, { width: 1.8, opacity: 0.9 }));
+      out.push(circle(mmx, mBot, 6, { width: 1.8, opacity: 0.9 }));
+      out.push(
+        '<path d="M ' + coord(mmx) + " " + coord(mTop + 8) +
+        " L " + coord(mmx) + " " + coord(mBot - 14) +
+        '" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(
+        '<path d="M ' + coord(mmx - 7) + " " + coord(mBot - 17) +
+        " L " + coord(mmx) + " " + coord(mBot - 8) +
+        " L " + coord(mmx + 7) + " " + coord(mBot - 17) +
+        '" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.9" ' + STROKE + "/>"
+      );
+    } else if (family === "provocation") {
+      // A framed field with the phase's positions along its foot and a strike
+      // entering from outside at the marked one: the stimulus comes from
+      // beyond the frame, which is what makes it a provocation.
+      var pTop = 56;
+      var pSide = 288;
+      out.push(rect(200 - pSide / 2, pTop, pSide, pSide, { rx: 8, width: 1.5, opacity: 0.4 }));
+      for (var qi = 1; qi <= div; qi++) {
+        var qx = posX(qi);
+        var lit = qi === mark;
+        out.push(line(qx, pTop + pSide, qx, pTop + pSide + (lit ? 12 : 7), lit ? 2.4 : 1.1, lit ? 0.9 : 0.3));
+        if (lit) {
+          out.push(
+            '<path d="M 356 32 L 322 96 L 344 112 L ' + coord(qx) + " " + coord(pTop + pSide - 8) +
+            '" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" opacity="0.9" ' + STROKE + "/>"
+          );
+          out.push(circle(qx, pTop + pSide - 8, 5.5, { width: 1.7, opacity: 0.9 }));
+        }
+      }
+    } else if (family === "timing") {
+      // A timeline of the phase's positions, with the marked moment lifted
+      // off the line: the move is about when, and the lift is where.
+      var tLine = 240;
+      out.push(line(48, tLine, 352, tLine, 1.8, 0.6));
+      for (var ti = 1; ti <= div; ti++) {
+        var tx = posX(ti);
+        var when = ti === mark;
+        out.push(line(tx, tLine - (when ? 0 : 5), tx, tLine + (when ? 0 : 5), when ? 2.4 : 1.1, when ? 0.9 : 0.3));
+        if (when) {
+          out.push(line(tx, tLine - 82, tx, tLine, 1.4, 0.5, "6 6"));
+          out.push(circle(tx, tLine - 90, 6, { width: 1.8, opacity: 0.9 }));
+          out.push(line(tx - 16, tLine - 90, tx + 16, tLine - 90, 1.2, 0.45));
+        }
+      }
     } else {
       // An unknown family still reads both numbers, so a misspelling cannot
       // declare knobs this shape ignores.

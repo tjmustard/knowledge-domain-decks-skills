@@ -213,7 +213,10 @@ test("every figure follows the committed layout map and names what it draws", as
       `${cardId} label omits its marked position: "${row.label}"`
     );
 
-    // The basis is a stated datum, quoted from the record it claims.
+    // The basis is a stated datum, quoted from the record it claims, and the
+    // quote must carry the family's own operative verb. A quote that merely
+    // exists in the mechanism proves nothing: "Engages pre-attentive pattern
+    // matching" is in the record and supports no separation at all.
     const basis = row.basis;
     assert.ok(basis && basis.datum && basis.field && basis.quote, `${cardId} has no basis`);
     const value = basis.field.split(".").reduce((v, key) => (v == null ? v : v[key]), record);
@@ -221,5 +224,21 @@ test("every figure follows the committed layout map and names what it draws", as
       typeof value === "string" && value.includes(basis.quote),
       `${cardId} basis quote is not in ${basis.field}`
     );
+    const stems = families[row.family].operative;
+    assert.ok(Array.isArray(stems) && stems.length > 0, `${row.family} declares no operative words`);
+    const lowered = basis.quote.toLowerCase();
+    const hit = stems.find((stem) => lowered.includes(stem));
+    assert.ok(
+      hit,
+      `${cardId} is filed as ${row.family}, but its quote carries no ${row.family} verb: "${basis.quote}"`
+    );
+  }
+
+  // A family with one card is evidence the vocabulary is wrong, not that the
+  // card is special.
+  const counts = {};
+  for (const row of Object.values(map)) counts[row.family] = (counts[row.family] || 0) + 1;
+  for (const [family, count] of Object.entries(counts)) {
+    assert.ok(count > 1, `family "${family}" holds a single card`);
   }
 });
