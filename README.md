@@ -63,8 +63,13 @@ and no other deck's copy, names, or trade dress is used.
 ## 🃏 The First Deck
 
 **UX & Behavioral Design** is a six-card vertical slice that proves the whole
-pipeline end to end. It is not the finished 52-card deck; it is a small deck
-that is genuinely usable while the rest is written.
+pipeline end to end. It is not the finished deck; it is a small deck that is
+genuinely usable while the rest is written.
+
+The deck is being built one card per principle, across all **54 principles** in
+the project's research list. That list is longer than the 52-item taxonomy in
+the project's architecture notes: where the two differ, the longer list wins,
+and each difference is recorded in [`DECISIONS.md`](./DECISIONS.md).
 
 Each card cites one primary paper, with that paper's own authors, year, title,
 and venue:
