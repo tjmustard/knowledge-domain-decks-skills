@@ -134,7 +134,12 @@ try {
   // install failure look like a broken machine. Keep npm's reason instead.
   const installed = npm(["ci", "--prefix", worktree, "--loglevel=error", "--no-audit", "--no-fund"]);
   if (installed.status !== 0) {
-    const message = installed.stderr.trim().split("\n").filter(Boolean).slice(-2).join(" / ") || "npm gave no reason";
+    // Keep npm's actual reason, not the boilerplate tail it prints after it.
+    const message = installed.stderr.split("\n")
+      .map((line) => line.replace(/^npm (error|warn)\s*/, "").trim())
+      .filter((line) => line && !/^A complete log of this run|^Run "npm help|^\/?Users\/.*\/_logs\//.test(line))
+      .slice(0, 2)
+      .join(" / ") || "npm gave no reason";
     // Allowlist, not a denylist: only these mean "this machine cannot install",
     // which is NOT RUN. Anything else is the commit's own fault. A denylist of
     // known-bad phrasings silently misses each new npm failure mode.
