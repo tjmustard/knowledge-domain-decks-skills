@@ -19,7 +19,8 @@ import {
   loadCards,
   loadDeck,
   loadDecks,
-  deckShape
+  deckShape,
+  resolveFromRoot
 } from "../packages/core/deck.mjs";
 
 // --deck-index checks the repository's entry page, which lists every deck and
@@ -111,13 +112,25 @@ if (!indexMode) {
     .sort((a, b) => categoryCounts[b] - categoryCounts[a]);
   filterCategory = largest[0] || shape.group(cards[0]);
   expectedInCategory = categoryCounts[filterCategory];
-  versoLabel = shape.labelCardItems.toUpperCase();
+  // What the flip must expose. A deck that prints declared blocks on the verso
+  // has no checklist heading, so the first block the first card actually carries
+  // is the label to look for; the CSS uppercases it either way.
+  const carried = shape.blocks.find((block) => {
+    const value = cards[0][block.field];
+    if (value === undefined || value === null || value === "") return false;
+    return !(Array.isArray(value) && value.length === 0);
+  });
+  versoLabel = carried
+    ? carried.label.toUpperCase()
+    : shape.labelCardItems.toUpperCase();
 }
 
 const deckSlug = indexMode ? null : only ? only[0] : slugs[0];
+// The viewer page lives where the deck says it does; the default is the
+// repository's per-slug directory, which is what every shipped deck uses.
 const url = indexMode
   ? `file://${join(ROOT, "packages", "web", "index.html")}`
-  : `file://${join(ROOT, "packages", "web", "decks", deckSlug, "index.html")}`;
+  : `file://${join(resolveFromRoot(deck.web.dir || `packages/web/decks/${deckSlug}`), "index.html")}`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // A cold start under load can take longer than a fixed 9 s budget, and a check

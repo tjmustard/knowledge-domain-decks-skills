@@ -126,11 +126,53 @@ export const DEFAULT_FIELDS = {
   figure: "graphicMetaphor",
   // A fill-in-the-blank line some records carry and most do not. Naming it
   // here means a record with no prompt renders nothing at all.
-  prompt: "prompt"
+  prompt: "prompt",
+  // The two lines on the front face. A deck that calls them something else
+  // prints its own words without the template knowing which deck it is.
+  headline: "axiom",
+  context: "trigger",
+  // The failure pair. A deck whose cards carry no such pair maps this to a
+  // field its records do not have, and the block is absent rather than empty.
+  antiPattern: "antiPattern"
 };
+
+// How a declared block is laid out. "traits" and "words" join short entries
+// with a centred dot, "quotes" joins them with a space, "prose" is a paragraph,
+// "list" is one entry per line, and "example" is a short italic paragraph.
+export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example"];
+
+/*
+ * A deck's back-face blocks, in the order the deck prints them. A block is
+ * declarative data, not a template: { field, label, style }. A deck that
+ * declares none gets the face every earlier deck had, so the same code builds
+ * both kinds of card. A block whose field a record does not carry prints
+ * nothing, which is why every block is implicitly optional per card.
+ */
+export function deckBlocks(deck = {}) {
+  const declared = deck.blocks || [];
+  if (!Array.isArray(declared)) {
+    throw new Error("deck.json blocks must be an array");
+  }
+  return declared.map((block, index) => {
+    if (!block || typeof block.field !== "string" || block.field === "") {
+      throw new Error(`deck.json blocks[${index}] needs a field name`);
+    }
+    if (!BLOCK_STYLES.includes(block.style)) {
+      throw new Error(
+        `deck.json blocks[${index}] (${block.field}) style must be one of ${BLOCK_STYLES.join(", ")}, got ${JSON.stringify(block.style)}`
+      );
+    }
+    return {
+      field: block.field,
+      label: block.label || block.field,
+      style: block.style
+    };
+  });
+}
 
 export function deckShape(deck = {}) {
   const fields = { ...DEFAULT_FIELDS, ...(deck.fields || {}) };
+  const blocks = deckBlocks(deck);
   const itemStyle = deck.itemStyle || "checklist";
   // The card face calls the same list by a longer name than the rules file does,
   // and a deck that names its own items names them on both. The default is
@@ -138,15 +180,24 @@ export function deckShape(deck = {}) {
   const cardItems = deck.labels?.cardItems || (itemStyle === "steps" ? "Structure" : "Operational checklist");
   return {
     fields,
+    blocks,
     itemStyle,
     labelItems: deck.labels?.items || "Checklist",
     labelCardItems: cardItems,
     labelResourceItems: deck.labels?.resourceItems || "Check",
     labelPrompt: deck.labels?.prompt || "Prompt",
     labelGroup: deck.labels?.group || null,
+    // The heading over the front face's second line. Only a deck that replaces
+    // the default wording reads this; every earlier deck prints "When to apply".
+    labelContext: deck.labels?.context || "When to apply",
+    // The words the rules file uses for the headline and context fields, for a
+    // deck that prints blocks instead of a checklist and an anti-pattern.
+    labelHeadline: deck.labels?.headline || null,
     group: (card) => card[fields.group],
-    items: (card) => card[fields.items] || [],
-    attribution: (card) => card[fields.attribution] || {},
+    items: (card) => (fields.items ? card[fields.items] : []) || [],
+    // A deck may declare no attribution at all. The accessor returns nothing
+    // then, and every renderer already tolerates an absent citation.
+    attribution: (card) => (fields.attribution ? card[fields.attribution] : undefined) || {},
     figure: (card) => card[fields.figure] || card.graphicMetaphor
   };
 }
@@ -211,6 +262,9 @@ export function titleStop(title) {
 // and the web bundle both carry them, so no renderer re-implements the rule.
 export function withCitation(card, deck) {
   const shape = deckShape(deck);
+  // A deck may carry no attribution field. There is then no citation to
+  // prepare, and adding a key named "undefined" would be worse than nothing.
+  if (!shape.fields.attribution) return { ...card };
   const origin = shape.attribution(card);
   return {
     ...card,

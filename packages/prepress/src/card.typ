@@ -25,7 +25,7 @@
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
 // Field names, labels and item style come from the deck, written by build.mjs.
-#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, label-items, label-prompt, item-style
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, label-items, label-prompt, label-context, item-style, blocks
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
@@ -72,13 +72,13 @@
     #v(4pt)
     #line(length: 100%, stroke: 1.5pt + accent(card))
     #v(6pt)
-    #text(size: 9pt, style: "italic", fill: rgb("#334155"))[#card.axiom]
+    #text(size: 9pt, style: "italic", fill: rgb("#334155"))[#card.at(field-headline)]
     #v(10pt)
     #align(center)[#image(card.svgFile, width: 1.8in)]
     #v(10pt)
-    #text(size: 7pt, weight: "bold", fill: rgb("#0f172a"))[WHEN TO APPLY]
+    #text(size: 7pt, weight: "bold", fill: rgb("#0f172a"))[#label-context]
     #v(2pt)
-    #text(size: 7pt, fill: rgb("#475569"))[#card.trigger]
+    #text(size: 7pt, fill: rgb("#475569"))[#card.at(field-context)]
   ])
 ]
 
@@ -95,50 +95,87 @@
     #v(2pt)
     #text(size: 11pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(10pt)
-    #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-items]
-    #v(3pt)
-    #for (i, item) in card.at(field-items).enumerate() [
-      #grid(
-        columns: (10pt, 1fr),
-        if item-style == "steps" [
-          #text(size: 7pt, weight: "bold", fill: accent(card))[#(i + 1)]
-        ] else [
-          #rect(width: 6pt, height: 6pt, stroke: 0.75pt + accent(card))
-        ],
-        [#text(size: 7pt)[#item.text]],
-      )
+    #if field-items != none and field-items in card [
+      #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-items]
       #v(3pt)
+      #for (i, item) in card.at(field-items).enumerate() [
+        #grid(
+          columns: (10pt, 1fr),
+          if item-style == "steps" [
+            #text(size: 7pt, weight: "bold", fill: accent(card))[#(i + 1)]
+          ] else [
+            #rect(width: 6pt, height: 6pt, stroke: 0.75pt + accent(card))
+          ],
+          [#text(size: 7pt)[#item.text]],
+        )
+        #v(3pt)
+      ]
+      #v(6pt)
     ]
-    #v(6pt)
-    #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[ANTI-PATTERN VS REMEDIATION]
-    #v(2pt)
-    #text(size: 6.5pt, fill: rgb("#b91c1c"))[Violation: #card.antiPattern.violation]
-    #v(3pt)
-    #text(size: 6.5pt, fill: rgb("#15803d"))[Fix: #card.antiPattern.remediation]
+    #if field-anti != none and field-anti in card [
+      #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[ANTI-PATTERN VS REMEDIATION]
+      #v(2pt)
+      #text(size: 6.5pt, fill: rgb("#b91c1c"))[Violation: #card.antiPattern.violation]
+      #v(3pt)
+      #text(size: 6.5pt, fill: rgb("#15803d"))[Fix: #card.antiPattern.remediation]
+    ]
     // An optional fill-in-the-blank line. A deck that has none on a card gets
     // no heading, no gap and no mark: the whole block is absent, not empty.
-    #if field-prompt in card and card.at(field-prompt) != "" [
+    #if field-prompt != none and field-prompt in card and card.at(field-prompt) != "" [
       #v(6pt)
       #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-prompt]
       #v(2pt)
       #text(size: 6.5pt)[#card.at(field-prompt)]
     ]
-    #v(8pt)
-    #line(length: 100%, stroke: rule-stroke)
-    #v(4pt)
-    // Every part of a citation is optional. A named work with no author or no
-    // year must not leave a dangling stop or an empty space; with all parts
-    // present this prints the same line it always did.
-    #let o = card.at(field-attribution)
-    #let names = printed-authors(card)
-    #let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
-    #let by = if names == "" [] else [#names#year-text.]
-    #let has-work = "title" in o
-    #let has-pub = "publication" in o
-    #let work = if has-work [ _#o.title#(o.titleStop)_] else []
-    #let pub = if has-pub [ #o.publication] else []
-    #let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
-    #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
+    // The back-face blocks a deck declares, in its own order and under its own
+    // labels. A deck that declares none renders none of this, which is what
+    // keeps every earlier card's page identical.
+    #if blocks.len() > 0 [
+      #for b in blocks [
+        #if b.field in card and card.at(b.field) != "" [
+          #v(6pt)
+          #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#b.label]
+          #v(2pt)
+          #if b.style == "traits" or b.style == "words" [
+            #text(size: 7pt)[#card.at(b.field).join(" · ")]
+          ] else if b.style == "quotes" [
+            #text(size: 7pt)[#card.at(b.field).join("  ")]
+          ] else if b.style == "prose" [
+            #text(size: 7pt)[#card.at(b.field)]
+          ] else if b.style == "list" [
+            #for entry in card.at(b.field) [
+              #grid(
+                columns: (8pt, 1fr),
+                [#text(size: 7pt, fill: accent(card))[·]],
+                [#text(size: 7pt)[#entry]],
+              )
+            ]
+          ] else if b.style == "example" [
+            #text(size: 6.5pt, style: "italic")[#card.at(b.field)]
+          ]
+        ]
+      ]
+    ]
+    // A deck with no attribution has no source line: there is nothing to cite
+    // and a heading over nothing would be a claim the record does not make.
+    #if field-attribution != none and field-attribution in card [
+      #v(8pt)
+      #line(length: 100%, stroke: rule-stroke)
+      #v(4pt)
+      // Every part of a citation is optional. A named work with no author or no
+      // year must not leave a dangling stop or an empty space; with all parts
+      // present this prints the same line it always did.
+      #let o = card.at(field-attribution)
+      #let names = printed-authors(card)
+      #let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
+      #let by = if names == "" [] else [#names#year-text.]
+      #let has-work = "title" in o
+      #let has-pub = "publication" in o
+      #let work = if has-work [ _#o.title#(o.titleStop)_] else []
+      #let pub = if has-pub [ #o.publication] else []
+      #let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
+      #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
+    ]
   ])
 ]
 

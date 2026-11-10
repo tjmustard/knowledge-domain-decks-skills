@@ -29,13 +29,51 @@ function lines(text) {
   return String(text).split("\n");
 }
 
+// How one declared block reads as a sentence, for the artifacts that present a
+// card's fields as prose rather than as a face. Returns the lines to push.
+function blockLines(block, value) {
+  if (value === undefined || value === null || value === "") return [];
+  if (Array.isArray(value)) {
+    if (value.length === 0) return [];
+    if (block.style === "list") {
+      return [
+        `**${block.label}.**`,
+        ...value.map((entry) => `- ${entry}`)
+      ];
+    }
+    const join = block.style === "quotes" ? " " : " · ";
+    return [`**${block.label}.** ${value.join(join)}`];
+  }
+  return [`**${block.label}.** ${value}`];
+}
+
+// The card's own words for its two front lines, under the deck's own headings.
+// A block deck names these fields in deck.json; a deck that does not has no
+// block list, so this never runs for the decks that shipped before it.
+function frontLines(shape, card) {
+  const out = [];
+  const headline = shape.fields.headline;
+  if (headline && card[headline]) out.push(`**${shape.labelHeadline || "Headline"}.** ${card[headline]}`, "");
+  const context = shape.fields.context;
+  if (context && card[context]) out.push(`**${shape.labelContext}.** ${card[context]}`, "");
+  return out;
+}
+
 function rulesMarkdown(deck, shape, grouped) {
   const out = [`# ${deck.rules.title}`, "", GENERATED, "", ...lines(deck.rules.intro), ""];
+  const blocks = shape.blocks.length > 0;
   for (const [category, items] of grouped) {
     if (items.length === 0) continue;
     out.push(`## ${category}`, "");
     for (const card of items) {
       out.push(`### ${card.id} — ${card.name}`, "");
+      if (blocks) {
+        out.push(...frontLines(shape, card));
+        for (const block of shape.blocks) out.push(...blockLines(block, card[block.field]), "");
+        const source = sourceLine(shape.attribution(card));
+        if (source) out.push(`**Source.** ${source}`, "");
+        continue;
+      }
       out.push(`**Axiom.** ${card.axiom}`, "");
       out.push(`**Apply when.** ${card.trigger}`, "");
       out.push(`**${shape.labelItems}.**`);
@@ -59,8 +97,13 @@ function categorySlug(category) {
     .replace(/^-|-$/g, "");
 }
 
-function skillMarkdown(deck, grouped, cardCount) {
+function skillMarkdown(deck, shape, grouped, cardCount) {
   const description = deck.skill.description.replace(/\{cards\}/g, String(cardCount));
+  // A block deck's card is indexed by the line its front prints under the
+  // deck's own heading; the shipped decks keep the words they always had.
+  const blocks = shape.blocks.length > 0;
+  const contextHeader = blocks ? shape.labelContext : "Apply when";
+  const contextOf = (card) => (blocks ? card[shape.fields.context] : card.trigger);
   const out = [
     "---",
     `name: ${deck.skill.name}`,
@@ -84,11 +127,16 @@ function skillMarkdown(deck, grouped, cardCount) {
     if (items.length === 0) continue;
     const slug = categorySlug(category);
     out.push(`## ${category} (${items.length} ${items.length === 1 ? "card" : "cards"})`, "");
-    out.push(`Read \`resources/${slug}.md\` for the checks, fixes and sources.`, "");
-    out.push("| ID | Card | Apply when |");
+    out.push(
+      blocks
+        ? `Read \`resources/${slug}.md\` for the full card text.`
+        : `Read \`resources/${slug}.md\` for the checks, fixes and sources.`,
+      ""
+    );
+    out.push(`| ID | Card | ${contextHeader} |`);
     out.push("|---|---|---|");
     for (const card of items) {
-      out.push(`| ${card.id} | ${card.name} | ${oneLine(card.trigger)} |`);
+      out.push(`| ${card.id} | ${card.name} | ${oneLine(contextOf(card) || "")} |`);
     }
     out.push("");
   }
@@ -98,16 +146,46 @@ function skillMarkdown(deck, grouped, cardCount) {
 }
 
 function resourceMarkdown(category, shape, items) {
+  const blocks = shape.blocks.length > 0;
   const out = [
     `# ${category}`,
     "",
     GENERATED,
     "",
-    `${items.length} card(s). Check the code in front of you against each one that applies.`,
+    blocks
+      ? `${items.length} card(s). Read each one that applies in full.`
+      : `${items.length} card(s). Check the code in front of you against each one that applies.`,
     ""
   ];
   for (const card of items) {
     out.push(`## ${card.id} — ${card.name}`, "");
+    if (blocks) {
+      const headline = shape.fields.headline;
+      if (headline && card[headline]) {
+        out.push(`- **${shape.labelHeadline || "Headline"}:** ${card[headline]}`);
+      }
+      const context = shape.fields.context;
+      if (context && card[context]) out.push(`- **${shape.labelContext}:** ${card[context]}`);
+      for (const block of shape.blocks) {
+        const value = card[block.field];
+        if (value === undefined || value === null || value === "") continue;
+        if (Array.isArray(value)) {
+          if (value.length === 0) continue;
+          if (block.style === "list") {
+            out.push(`- **${block.label}:**`);
+            for (const entry of value) out.push(`  - ${entry}`);
+          } else {
+            out.push(`- **${block.label}:** ${value.join(block.style === "quotes" ? " " : " · ")}`);
+          }
+        } else {
+          out.push(`- **${block.label}:** ${value}`);
+        }
+      }
+      const source = sourceShort(shape.attribution(card));
+      if (source) out.push(`- **Source:** ${source}`);
+      out.push("");
+      continue;
+    }
     out.push(`- **Axiom:** ${card.axiom}`);
     out.push(`- **Apply when:** ${card.trigger}`);
     out.push(`- **${shape.labelResourceItems}:**`);
@@ -151,7 +229,7 @@ async function generateDeck(deck) {
   await mkdir(dirname(rulesFile), { recursive: true });
   await mkdir(join(skillDir, "resources"), { recursive: true });
   await writeFile(rulesFile, rulesMarkdown(deck, shape, grouped));
-  await writeFile(join(skillDir, "SKILL.md"), skillMarkdown(deck, grouped, cards.length));
+  await writeFile(join(skillDir, "SKILL.md"), skillMarkdown(deck, shape, grouped, cards.length));
 
   const written = [];
   for (const [category, items] of grouped) {

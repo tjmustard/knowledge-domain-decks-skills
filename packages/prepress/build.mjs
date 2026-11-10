@@ -96,14 +96,36 @@ if (version.error || version.status !== 0) {
 // the first deck's names, which is what keeps its printed pages identical.
 function fieldsTyp(deck) {
   const shape = deckShape(deck);
+  // A deck can map a field away - a card with no checklist and no anti-pattern
+  // says so by naming no field for it. Typst's spelling of "no field" is
+  // `none`, and the template tests for that before looking a key up.
+  const typ = (value) => (value ? JSON.stringify(value) : "none");
+  const attribution = typ(shape.fields.attribution);
+  const blocks = shape.blocks.length
+    ? [
+        "#let blocks = (",
+        ...shape.blocks.map(
+          (block) =>
+            `  (field: ${JSON.stringify(block.field)}, ` +
+            `label: ${JSON.stringify(block.label.toUpperCase())}, ` +
+            `style: ${JSON.stringify(block.style)}),`
+        ),
+        ")"
+      ]
+    : ["#let blocks = ()"];
   return [
     `#let field-group = ${JSON.stringify(shape.fields.group)}`,
-    `#let field-items = ${JSON.stringify(shape.fields.items)}`,
-    `#let field-attribution = ${JSON.stringify(shape.fields.attribution)}`,
-    `#let field-prompt = ${JSON.stringify(shape.fields.prompt)}`,
+    `#let field-items = ${typ(shape.fields.items)}`,
+    `#let field-attribution = ${attribution}`,
+    `#let field-prompt = ${typ(shape.fields.prompt)}`,
+    `#let field-headline = ${typ(shape.fields.headline)}`,
+    `#let field-context = ${typ(shape.fields.context)}`,
+    `#let field-anti = ${typ(shape.fields.antiPattern)}`,
     `#let label-items = ${JSON.stringify(shape.labelCardItems.toUpperCase())}`,
     `#let label-prompt = ${JSON.stringify(shape.labelPrompt.toUpperCase())}`,
+    `#let label-context = ${JSON.stringify(shape.labelContext.toUpperCase())}`,
     `#let item-style = ${JSON.stringify(shape.itemStyle)}`,
+    ...blocks,
     ""
   ].join("\n");
 }

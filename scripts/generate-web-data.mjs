@@ -28,11 +28,34 @@ const template = await readFile(join(ROOT, "packages", "web", "index.template.ht
 
 for (const deck of decks) {
   // Same declared order as the printed pages, so the two cannot disagree.
+  const shape = deckShape(deck);
   const cards = orderCards(deck, await loadCards(deck));
   const bundled = cards.map((card) => ({
     ...withCitation(card, deck),
-    svg: renderSvg(deckShape(deck).figure(card))
+    svg: renderSvg(shape.figure(card))
   }));
+
+  // The keys every deck already had, in the same order, so a deck that
+  // declares nothing new keeps its generated page byte for byte. A deck with
+  // back-face blocks adds the four keys that describe them.
+  const fields = {
+    group: shape.fields.group,
+    items: shape.fields.items,
+    attribution: shape.fields.attribution,
+    prompt: shape.fields.prompt,
+    labelPrompt: shape.labelPrompt,
+    labelItems: shape.labelCardItems,
+    itemStyle: shape.itemStyle,
+    // The line on the card's face that invites a flip. A deck whose back
+    // is ordered beats rather than a checklist says so in its own words.
+    backHint: deck.web.backHint || "Tap or press Enter to see the checklist"
+  };
+  if (shape.blocks.length > 0) {
+    fields.blocks = shape.blocks;
+    fields.headline = shape.fields.headline;
+    fields.context = shape.fields.context;
+    fields.labelContext = shape.labelContext;
+  }
 
   const dir = webDir(deck);
   await mkdir(dir, { recursive: true });
@@ -61,21 +84,7 @@ for (const deck of decks) {
     .replaceAll("{{source}}", deck.web.source)
     .replaceAll("{{global}}", deck.web.global)
     .replaceAll("{{accentsGlobal}}", deck.web.accentsGlobal)
-    .replaceAll(
-      "{{fields}}",
-      JSON.stringify({
-        group: deckShape(deck).fields.group,
-        items: deckShape(deck).fields.items,
-        attribution: deckShape(deck).fields.attribution,
-        prompt: deckShape(deck).fields.prompt,
-        labelPrompt: deckShape(deck).labelPrompt,
-        labelItems: deckShape(deck).labelCardItems,
-        itemStyle: deckShape(deck).itemStyle,
-        // The line on the card's face that invites a flip. A deck whose back
-        // is ordered beats rather than a checklist says so in its own words.
-        backHint: deck.web.backHint || "Tap or press Enter to see the checklist"
-      })
-    );
+    .replaceAll("{{fields}}", JSON.stringify(fields));
   await writeFile(join(dir, "index.html"), page);
 
   console.log(`wrote packages/web/decks/${deck.slug}/ (deck-data.js, accents.js, index.html; ${bundled.length} cards)`);

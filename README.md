@@ -393,6 +393,14 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    beats. `printOrder` chooses the order the deck is read in: `"id"` (the
    default) or `"family"`, which follows the category list above. A deck that
    declares none of these gets the default shape and order.
+   A deck whose cards are not a checklist at all declares `blocks`: an ordered
+   list of `{ "field", "label", "style" }` naming the back-face sections it
+   prints, where `style` is one of `traits`, `words`, `quotes`, `prose`, `list`
+   or `example`. The same list drives the print verso, the web verso and the
+   generated markdown; a block whose field a record does not carry prints
+   nothing at all. Map `items` and `antiPattern` to `null` for a deck with no
+   checklist and no anti-pattern: the whole section is then absent rather than
+   empty.
 3. Build and check:
 
    ```bash
@@ -406,7 +414,8 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    deck-agnostic for that deck and the edit belongs in `packages/core/`, not in
    the deck. `scripts/test/invented-deck.test.mjs` is that rule as a test: it
    builds a deck invented inside the test, never committed, through this whole
-   pipeline.
+   pipeline, and `scripts/test/blocks.test.mjs` is the same rule for a deck
+   whose cards print declared blocks instead of a checklist.
 
 Every command takes `--deck <slug>`; with no flag it runs over every deck in
 `decks/`, in sorted order. `npm run accept` gates whatever is committed.

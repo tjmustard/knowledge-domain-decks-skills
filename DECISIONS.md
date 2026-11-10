@@ -1481,3 +1481,30 @@ Micro, and a reader had no way to know which order the deck intended.
 
 The default keeps the first deck byte-identical, because "id" is the order
 `loadCards` already returned. A deck that wants the source's order says so.
+
+## 42. A deck declares what its card backs print
+
+A card's back was a checklist, an anti-pattern and an optional prompt. The next
+deck's backs are none of those: voice traits, a lexicon, phrasing to avoid, a
+shadow, anchors, an example. None of it is a checklist, and printing it under
+that heading would make the label lie.
+
+`deck.json` may now declare `blocks`: an ordered list of `{ field, label,
+style }`, where `style` is one of `traits`, `words`, `quotes`, `prose`, `list`
+or `example`. `deckBlocks` in the core validates the list - a field name is
+required and an unknown style fails loudly - and the print template, the web
+viewer and the rules generator each read it instead of hard-coding a face.
+`fields.items` and `fields.antiPattern` may be `null`, which names no field;
+every renderer then omits that section entirely rather than printing a heading
+over nothing.
+
+The default is no blocks. That is what keeps the two shipped decks byte for
+byte: with an empty list the print template's block branch renders nothing,
+the viewer takes the path it always took, and the rules generator prints the
+lines it always printed. Verified by rebuilding both PDFs against their
+committed hashes, and every generated web, rules and skill file against its
+committed bytes.
+
+A block whose field a record does not carry prints nothing, which is why the
+list is shared across records that carry different subsets of it; a block that
+is absent needs no per-card flag to say so.

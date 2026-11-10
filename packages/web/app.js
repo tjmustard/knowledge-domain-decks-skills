@@ -26,6 +26,14 @@
   var ITEM_LABEL = FIELDS.labelItems || "Operational checklist";
   var ITEM_STYLE = FIELDS.itemStyle || "checklist";
   var BACK_HINT = FIELDS.backHint || "Tap or press Enter to see the checklist";
+  // A deck may print the back of its cards as named blocks instead of a
+  // checklist and an anti-pattern. The blocks are declared by the deck, so the
+  // viewer still knows nothing about which deck it is showing; a deck that
+  // declares none keeps the face it always had.
+  var BLOCKS = FIELDS.blocks || [];
+  var HEADLINE = FIELDS.headline || "axiom";
+  var CONTEXT = FIELDS.context || "trigger";
+  var CONTEXT_LABEL = FIELDS.labelContext || "When to apply";
   var groupOf = function (card) { return card[GROUP]; };
 
   var categories = [];
@@ -66,6 +74,32 @@
     return parts.join(" ");
   }
 
+  // One declared block, laid out the way the deck asked for it. A block whose
+  // field the record does not carry prints nothing at all: no heading over an
+  // empty space.
+  function blockMarkup(card) {
+    return BLOCKS.map(function (block) {
+      var value = card[block.field];
+      if (value === undefined || value === null || value === "") return "";
+      if (Array.isArray(value) && value.length === 0) return "";
+      var body;
+      if (block.style === "traits" || block.style === "words") {
+        body = "<p>" + esc(Array.isArray(value) ? value.join(" · ") : value) + "</p>";
+      } else if (block.style === "quotes") {
+        body = "<p>" + esc(Array.isArray(value) ? value.join("  ") : value) + "</p>";
+      } else if (block.style === "prose") {
+        body = "<p>" + esc(value) + "</p>";
+      } else if (block.style === "list") {
+        body = "<ul>" + value.map(function (entry) {
+          return "<li>" + esc(entry) + "</li>";
+        }).join("") + "</ul>";
+      } else {
+        body = '<p class="example">' + esc(value) + "</p>";
+      }
+      return "<h3>" + esc(block.label) + "</h3>" + body;
+    }).join("");
+  }
+
   function cardMarkup(card) {
     var accent = ACCENTS[groupOf(card)] || "#334155";
     var items = (card[ITEMS] || []).map(function (item) {
@@ -78,6 +112,27 @@
     var promptBlock = prompt
       ? "<h3>" + esc(PROMPT_LABEL) + '</h3><p class="prompt">' + esc(prompt) + "</p>"
       : "";
+    // A block deck's front carries its own heading over the second line, and its
+    // back is the declared blocks rather than a checklist and an anti-pattern.
+    var blocks = BLOCKS.length > 0;
+    var front = blocks
+      ? '<p class="axiom">' + esc(card[HEADLINE]) + "</p>" +
+        '<div class="figure" aria-hidden="true">' + card.svg + "</div>" +
+        '<p class="trigger"><strong>' + esc(CONTEXT_LABEL) + ".</strong> " + esc(card[CONTEXT]) + "</p>"
+      : '<p class="axiom">' + esc(card.axiom) + "</p>" +
+        '<div class="figure" aria-hidden="true">' + card.svg + "</div>" +
+        '<p class="trigger"><strong>When to apply.</strong> ' + esc(card.trigger) + "</p>";
+    var verso = blocks
+      ? blockMarkup(card) + promptBlock
+      : "<h3>" + esc(ITEM_LABEL) + "</h3>" +
+        "<" + listTag + ">" + items + "</" + listTag + ">" +
+        "<h3>Anti-pattern</h3>" +
+        '<p class="violation">' + esc(card.antiPattern.violation) + "</p>" +
+        "<h3>Fix</h3>" +
+        '<p class="fix">' + esc(card.antiPattern.remediation) + "</p>" +
+        promptBlock;
+    var source = citation(card[ATTRIBUTION]);
+    var sourceBlock = source ? '<p class="source">' + esc(source) + "</p>" : "";
     return (
       '<article class="card" tabindex="0" role="button" aria-pressed="false" ' +
       'aria-label="' + esc(card.name) + " — activate to flip" + '" ' +
@@ -87,24 +142,16 @@
             '<div class="card-head"><span class="card-id">' + esc(card.id) +
               '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
-            '<p class="axiom">' + esc(card.axiom) + "</p>" +
-            '<div class="figure" aria-hidden="true">' + card.svg + "</div>" +
-            '<p class="trigger"><strong>When to apply.</strong> ' + esc(card.trigger) + "</p>" +
+            front +
             '<span class="hint">' + esc(BACK_HINT) + "</span>" +
           "</section>" +
           '<section class="face back" aria-hidden="true">' +
             '<div class="card-head"><span class="card-id">' + esc(card.id) +
               '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
-            "<h3>" + esc(ITEM_LABEL) + "</h3>" +
-            "<" + listTag + ">" + items + "</" + listTag + ">" +
-            "<h3>Anti-pattern</h3>" +
-            '<p class="violation">' + esc(card.antiPattern.violation) + "</p>" +
-            "<h3>Fix</h3>" +
-            '<p class="fix">' + esc(card.antiPattern.remediation) + "</p>" +
-            promptBlock +
-            '<p class="source">' + esc(citation(card[ATTRIBUTION])) + "</p>" +
-          "</section>" +
+            verso +
+            sourceBlock +
+            "</section>" +
         "</div>" +
       "</article>"
     );
