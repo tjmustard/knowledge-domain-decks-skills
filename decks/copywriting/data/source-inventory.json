@@ -968,7 +968,8 @@
     "A card that says 'the source gives no template' is the honest record of a taxonomy-only formula, not a defect to hide.",
     "Each blueprint template is also recorded as templateLines, the source's own lines, because ten of the twenty-two are lists of parts (ST-01 has six, ST-04 five, UX-03 three): the joined string is the record, the lines are how the card prints it. template === templateLines.join(\" \") for every blueprint.",
     "Medians in lengths are the upper middle value for an even sample (the value at index n/2 of the sorted list), with no interpolation; deck nine recorded the lower middle, and each inventory states its own convention rather than inheriting one.",
-    "The ratio summary is measured from the records: seventeen blueprint prose states component percentages, and those are the cards whose front prints a ratio line."
+    "The ratio summary is measured from the records: seventeen blueprint prose states component percentages, and those are the cards whose front prints a ratio line.",
+    "One contradiction in the source is carried, not repaired: CR-05’s taxonomy row states \"Alternating metrics: 5 to 25 words/sentence\" while its blueprint prose states the passage moves \"between 3-word and 25-word sentences\". The card prints both, the front line from the row and the blueprint verbatim, so a reader sees the source disagree with itself rather than a bound chosen for it. It is not in sourceDefects, which lists extraction defects, not source contradictions."
   ],
   "ratios": {
     "cards": 17,
