@@ -189,8 +189,8 @@ capacity, and the shipped `DEC-02` already states the 7 ± 2 claim, so a second
 card risks restating it with a different number.
 
 That risk was put to the project owner, who decided against the lead's
-recommendation to drop the second card: the deck ships 54 cards, and `DEC-06`
-carries Cowan's revision. **The decision is the owner's, made with the
+recommendation to drop the second card: every one of the 54 principles gets a
+card, and `DEC-06` carries Cowan's revision. **The decision is the owner's, made with the
 duplication stated plainly; this entry is the mitigation, not a defence of the
 outcome.**
 
