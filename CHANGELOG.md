@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- **The schema's year field no longer has a floor (`data/law-schema.json`)**: `academicOrigin.year` accepts any integer up to 2100, and the description records that a negative year means BCE while printing one is not implemented. The floor of 1800 dated from the first commit, was never documented, and encoded the range of the current corpus rather than a property of a source - it had already put Ockham's c. 1320 out of reach for HMM-07. `DECISIONS.md` §38 records both bounds as typo catchers and the deferred BCE format.
+
 ### Fixed
 - **HMM-06 drew three output boxes under a caption saying "EMIT ONE"**: Postel's Law now draws one output block, centred on the funnel's throat, and the record no longer declares `variants`, a parameter the shape clamps to its three glyph templates and which therefore could not change the drawing. The gate's SVG check failed on that parameter; the wrong drawing was in the deck from the first commit.
 

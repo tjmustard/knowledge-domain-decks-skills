@@ -163,8 +163,8 @@
         },
         "year": {
           "type": "integer",
-          "minimum": 1800,
-          "maximum": 2030
+          "maximum": 2100,
+          "description": "Signed integer; negative values mean BCE. How a BCE year is printed on a card is undecided - see DECISIONS."
         },
         "title": {
           "type": "string"

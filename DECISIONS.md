@@ -1371,3 +1371,31 @@ rather than adding a second contrast picture.
 The two keys that were bare identifiers - `hierarchy` and `network` - are quoted
 like the other shapes, so a script that enumerates shapes from the source finds
 all forty-two. No behaviour changes.
+
+
+## 38. The year field accepts what a source says; the bounds are typo catchers
+
+`academicOrigin.year` is a signed integer. The schema caps it at 2100 and sets
+no floor. Both bounds are typo catchers rather than historical claims: a year
+typed with one digit too many lands above the ceiling, and a year typed as
+anything but an integer is rejected by the type.
+
+The floor of 1800 that shipped in d66d48d was the same kind of guard, but it was
+never documented, and it encoded the range of the sources the deck happened to
+have at that moment - Weber (1834) is the oldest - rather than a property of a
+source. A later card can cite something older, and then the schema, not the
+author, would decide what the record may say. A series-level bound that no one
+chose had edited a card's content. It also moved HMM-07 off its origin: Ockham, c. 1320, is the heuristic's origin and the floor made that year
+unrecordable, so the record's year is Maeda (2006), the design statement the
+card actually makes (see §37). Removing the floor costs nothing that the type
+does not already protect: a year is a fact the author records, and a bound that
+is a fact about today's corpus will be wrong later, while a bound that catches a
+typo stays right.
+
+A negative year means BCE, and **printing a BCE year on a card is undecided and
+not implemented**. The citation strings are computed in one place (§25); no card
+in this deck needs the case, and adding a helper now would build a control with
+nothing to show. The field accepts a signed integer; how a renderer prints one is
+a typography decision, not a validation bound. This entry records that the value
+is accepted, not a format for it; if a card ever needs one, the format is decided
+then and implemented where the strings are built.
