@@ -414,3 +414,42 @@ the change: the party fills and the 85 capacity line still land on the tracks
 their labels name. This is a correction to a shared shape, not a revert, and it
 is recorded so a reader comparing the published cards against the current
 output finds the reason beside the other shape notes.
+
+## 24. A sentence-ending title keeps its own stop, in three expressions
+
+The Source line appended a period unconditionally, so a title ending in "?"
+printed a doubled stop. `DEC-11`'s title exposed it ("Limited Resource?."), but
+the general rule was fixed rather than the instance: suppress the added stop
+when the title already ends in `?`, `!` or `.`, the convention Chicago and MLA
+both use. The general form caught `DEC-04` immediately — "Good Thing?." was
+wrong in the same build and nobody had noticed — which is the argument for
+fixing the rule.
+
+It was four surfaces, not one: the card (`packages/prepress/src/card.typ`), the
+web viewer (`packages/web/app.js`), and the two generated artifacts
+(`packages/rules/generate.mjs`), where the same field is rendered with no
+publication after it. A dead `formatCitation` in `scripts/lib/deck.mjs` carried
+the same bug and was deleted rather than fixed, because dead code with a live
+bug is how the bug returns. The other sixteen cards' source lines were shown
+unchanged by a text diff of the two builds.
+
+The rule now exists as three expressions, because the languages cannot share
+code without a build step: an inline conditional in Typst, and the same
+`/[.?!]$/` test in the two JavaScript renderers. They agree today. Two limits
+are recorded with it.
+
+The first is the duplication itself. The trigger to act early is: if any one of
+the three expressions changes before the formatter slice lands, change all
+three. The planned remedy is the one in §16's direction - compute `titleStop`
+and `authorsLabel` once in `scripts/lib/deck.mjs`, emit them into both
+generated bundles, and let each renderer print a value instead of
+re-implementing a rule.
+
+The second is that the rule tests the last character, so a title ending in a
+closing quote still takes the added stop. Measured rather than reasoned: with
+`DEC-11`'s title changed to end `Resource?"` in a scratch worktree and rebuilt,
+the PDF prints `Resource?".` and the JavaScript predicate returns false for the
+same string, so both renderers give the same wrong answer. No card in the deck
+ends that way, so neither limit is a defect in today's output; this entry
+exists so the first card that does is recognised as a known edge rather than
+rediscovered.

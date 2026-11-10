@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-12%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/deck-18%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,7 +29,7 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: twelve principles, each distilled
+The first deck covers UX and behavioral design: eighteen principles, each distilled
 into the smallest usable form — an axiom, a trigger, a checklist, an
 anti-pattern, a generated diagram, and one exact academic source.
 
@@ -62,8 +62,8 @@ and no other deck's copy, names, or trade dress is used.
 
 ## 🃏 The First Deck
 
-**UX & Behavioral Design** is a twelve-card deck in progress: every category has
-at least one card, and eight of the twelve are decision-making. It proves the
+**UX & Behavioral Design** is an eighteen-card deck in progress: every category
+has at least one card, and eleven of the eighteen are decision-making. It proves the
 whole pipeline end to end and is genuinely usable while the rest is written.
 
 The deck is being built one card per principle, across all **54 principles** in
@@ -86,7 +86,13 @@ and venue:
 | DEC-06 | **Working Memory Capacity Model** | Decision-Making & Cognitive Load | Cowan (2001), *The Magical Number 4 in Short-Term Memory* |
 | DEC-07 | **Cognitive Friction** | Decision-Making & Cognitive Load | Cooper (1999), *The Inmates Are Running the Asylum* |
 | DEC-08 | **Framing Effect** | Decision-Making & Cognitive Load | Tversky & Kahneman (1981), *The Framing of Decisions and the Psychology of Choice* |
+| DEC-09 | **Simon's Bounded Rationality and Satisficing** | Decision-Making & Cognitive Load | Simon (1956), *Rational Choice and the Structure of the Environment* |
+| DEC-10 | **Cognitive Absorption** | Decision-Making & Cognitive Load | Agarwal & Karahanna (2000), *Time Flies When You're Having Fun* |
+| DEC-11 | **Decision Fatigue** | Decision-Making & Cognitive Load | Baumeister et al. (1998), *Ego Depletion: Is the Active Self a Limited Resource?* |
 | TME-01 | **Fitts's Law** | Time, Motion & Ergonomics | Fitts (1954), *The Information Capacity of the Human Motor System* |
+| TME-02 | **Accot-Zhai Steering Law** | Time, Motion & Ergonomics | Accot & Zhai (1997), *Beyond Fitts' Law: Models for Trajectory-Based HCI Tasks* |
+| TME-03 | **Doherty Threshold** | Time, Motion & Ergonomics | Doherty & Thadhani (1982), *The Economic Value of Rapid Response Time* |
+| TME-04 | **Perceived Performance Heuristics** | Time, Motion & Ergonomics | Seow (2008), *Designing and Engineering Time* |
 | MPA-01 | **Serial Position Effect** | Memory, Perception & Attention | Murdock (1962), *The Serial Position Effect of Free Recall* |
 
 The categories are part of the schema, so every later card lands in one of
@@ -96,8 +102,8 @@ them and the filters, accents, and rules sections follow automatically:
 |---|---|---|
 | Heuristic & Mental Models | HMM-01 | Whether the interface matches what people already know |
 | Gestalt & Visual Perception | GES-01 | Grouping, spacing, and perceived structure |
-| Decision-Making & Cognitive Load | DEC-01 to DEC-08 | Option count, comparison effort, working memory |
-| Time, Motion & Ergonomics | TME-01 | Target size, distance, and motor effort |
+| Decision-Making & Cognitive Load | DEC-01 to DEC-11 | Option count, comparison effort, working memory, decision quality over time |
+| Time, Motion & Ergonomics | TME-01 to TME-04 | Target size, distance, motor effort, and response timing |
 | Memory, Perception & Attention | MPA-01 | Position, sequence, and what survives recall |
 
 ---
@@ -134,10 +140,10 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 24-page file of about 282 KiB. `npm run check:pdf` measured a
+build:pdf` emits a 36-page file of about 457 KiB. `npm run check:pdf` measured a
 216 x 360 pt MediaBox on every page. On the rendered pages, trim ticks sit in
 the bleed band at all four trim corners of every page; every font is 6.5 pt or
-larger, with the Source line read back at 6.5 pt on all twelve versos and absent
+larger, with the Source line read back at 6.5 pt on all eighteen versos and absent
 from the rectos. The worst text overrun past the safe box — the internal margin,
 0.1875 in inside the trim line, so 0.3125 in from the paper edge — is about 1 pt,
 caused by glyph side-bearings rather than by text running long, and about 8 pt of
