@@ -9,7 +9,10 @@
  *   npm run accept              # accepts HEAD
  *   npm run accept -- <ref>     # any commit-ish
  *
- * Exit codes: 0 every layer passed (a layer may be NOT RUN), 1 something failed.
+ * Exit codes:
+ *   0  at least one layer passed and none failed (others may be NOT RUN)
+ *   1  something failed
+ *   3  nothing was verified - every layer was NOT RUN, so this is not a pass
  *
  * NOT RUN is a real verdict, not a pass: it means a check could not execute
  * here (no Typst, no browser), so the corresponding claim stays unproven.
@@ -66,8 +69,11 @@ function setPath(root, path, next) {
 function perturb(value) {
   if (typeof value === "number") return value === 0 ? 7 : value * 2 + 3;
   if (typeof value === "string") return `${value}X`;
+  if (typeof value === "boolean") return !value;
   return value;
 }
+
+const PROBEABLE = new Set(["number", "string", "boolean"]);
 
 const git = (args, cwd = ROOT) => run("git", args, { cwd });
 
@@ -110,8 +116,9 @@ const cleanup = () => {
 // finally block here: process.exit would skip it and leak a registered worktree.
 const finish = (code) => {
   cleanup();
-  const failed = report(results, sha);
-  process.exit(code === undefined ? (failed > 0 ? 1 : 0) : code);
+  const { failed, passed } = report(results, sha);
+  // Nothing verified is not a pass - but an explicit caller decision wins.
+  process.exit(code === undefined ? (failed > 0 ? 1 : passed === 0 ? 3 : 0) : code);
 };
 
 try {
@@ -120,20 +127,23 @@ try {
   // the calling project's node_modules instead of the isolated tree.
   if (!existsSync(join(worktree, "package.json"))) {
     record("dependencies", "not run", "this commit has no package.json, so there is nothing to install");
-    finish(0);
+    finish();
   }
 
-  const installed = npm(["ci", "--prefix", worktree, "--silent", "--no-audit", "--no-fund"]);
+  // --silent writes nothing to stderr on failure, which would make every
+  // install failure look like a broken machine. Keep npm's reason instead.
+  const installed = npm(["ci", "--prefix", worktree, "--loglevel=error", "--no-audit", "--no-fund"]);
   if (installed.status !== 0) {
-    const message = installed.stderr.trim().split("\n").filter(Boolean).slice(-2).join(" / ");
-    // A lockfile that cannot satisfy package.json is a defect in the commit; a
-    // machine that cannot reach the registry is not. Do not conflate them.
-    const lockfileFault = /package-lock\.json|lock file|EUSAGE|Invalid:/i.test(installed.stderr);
-    record("dependencies", lockfileFault ? "fail" : "not run",
-      lockfileFault
-        ? `npm ci could not satisfy the lockfile: ${message}`
-        : `could not install dependencies here (setup, not a defect): ${message}`);
-    finish(lockfileFault ? 1 : 0);
+    const message = installed.stderr.trim().split("\n").filter(Boolean).slice(-2).join(" / ") || "npm gave no reason";
+    // Allowlist, not a denylist: only these mean "this machine cannot install",
+    // which is NOT RUN. Anything else is the commit's own fault. A denylist of
+    // known-bad phrasings silently misses each new npm failure mode.
+    const machineFault = /ENOTFOUND|EAI_AGAIN|ECONNREFUSED|ETIMEDOUT|ENETUNREACH|EHOSTUNREACH|ECONNRESET|E403|403 Forbidden|self.signed certificate|CERT_/i.test(installed.stderr);
+    record("dependencies", machineFault ? "not run" : "fail",
+      machineFault
+        ? `could not reach the registry from here, so nothing was verified: ${message}`
+        : `npm ci failed against this commit: ${message}`);
+    finish(machineFault ? undefined : 1);
   }
 
   // --- 1. nothing that should stay out of the repository is committed ------
@@ -235,6 +245,7 @@ try {
     const dir = join(worktree, "data", "laws");
     const files = (await readdir(dir)).filter((name) => name.endsWith(".json")).sort();
     const problems = [];
+    const unprobed = [];
     const shapes = new Set();
 
     for (const file of files) {
@@ -252,6 +263,10 @@ try {
       // nothing. Nested parameters count - an object parameter that is skipped
       // would let a dead knob hide one level down and still report clean.
       for (const path of leafPaths(metaphor.parametricParams || {})) {
+        if (!PROBEABLE.has(typeof getPath(metaphor.parametricParams, path))) {
+          unprobed.push(`${card.id}:${path.join(".")}`);
+          continue;
+        }
         const probe = JSON.parse(JSON.stringify(metaphor));
         setPath(probe.parametricParams, path, perturb(getPath(probe.parametricParams, path)));
         if (renderSvg(probe) === svg) {
@@ -262,7 +277,8 @@ try {
 
     record("svg", problems.length === 0 ? "pass" : "fail",
       problems.length === 0
-        ? `${files.length} cards, shapes: ${[...shapes].sort().join(", ")}; contract holds and every parameter is used`
+        ? `${files.length} cards, shapes: ${[...shapes].sort().join(", ")}; contract holds and every parameter is used` +
+          (unprobed.length ? ` (not probeable, so unproven: ${unprobed.join(", ")})` : "")
         : problems.join(" | "));
   }
 
@@ -320,7 +336,10 @@ function report(rows, commit) {
     `${passed} passed, ${failed} failed, ${notRun} not run — commit ${commit}` +
       (notRun > 0 ? "\nNOT RUN means unproven, not accepted." : "")
   );
-  return failed;
+  return { failed, passed };
 }
 
-finish();
+const { failed, passed } = report(results, sha);
+cleanup();
+// Nothing verified is not a pass: a CI step must not read this as green.
+process.exit(failed > 0 ? 1 : passed === 0 ? 3 : 0);
