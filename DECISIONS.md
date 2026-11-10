@@ -1834,3 +1834,48 @@ facilitation rules and skill files, byte for byte elsewhere.
 `scripts/test/facilitation.test.mjs` now asserts that every card's numbered
 steps appear in `rules/facilitation-rules.md` and in its stage's skill resource,
 so the omission cannot return without a test failing.
+
+## 54. A coordinate is printed to six decimals, because the platform's trig is not part of the drawing
+
+The gate went red on Linux at `0626387` and green on macOS at the same commit,
+in two layers and one artifact: `FAIL generators` ("regenerating changed
+committed output") and `FAIL working tree` (`M
+packages/web/decks/facilitation/deck-data.js`). Every other layer passed,
+including `print: fit`, which ruled out the five archetype versos that sat
+4.5 pt inside the safe cushion as a candidate.
+
+The gate could say only that the bytes differed. The workflow now republishes
+the diff on failure, and the diff is a handful of digits:
+
+    macOS  cy="251.11650664042045"
+    Linux  cy="251.11650664042048"
+
+Those are `Math.sin`/`Math.cos` results fed straight into the `<circle>` and
+`<line>` emitters. They agree to every digit a page can show and disagree in
+the last bit of the double, because Apple's libm and glibc are different
+implementations. `coord()` already rounds path coordinates to a tenth of a
+unit for exactly this reason - "the drawing is the contract, not the
+floating-point noise a trig call leaves behind" - but the attribute emitters
+and two shapes that write their circles out by hand never went through it.
+
+The fix is one pass in `wrap()`: every number inside a geometry attribute
+(`x`, `y`, `x1`, `y1`, `x2`, `y2`, `cx`, `cy`, `r`, `rx`, `ry`, `d`) is printed
+to at most six decimals. Six is `0.000001` of a unit on a 400-unit page, below
+anything ink can show, and it is applied to the whole body rather than to each
+emitter so a shape cannot miss it. `opacity` and `font-size` are deliberately
+not touched: they carry design values that are exact decimals already.
+Rounding is a no-op for every number that already has six or fewer decimals,
+so the churn is 60 lines across the four bundles - the long-decimal
+coordinates only.
+
+Three baselines move, and one does not. `ux-laws.pdf` is unchanged at
+`40164666…` / 1,069,546 B; `narrative.pdf` moves to `435f2a9f…` / 758,240 B,
+`archetypes.pdf` to `a6f177de…` / 293,746 B and `facilitation.pdf` to
+`035429f5…` / 801,246 B, each identical on rebuild. Page counts are unchanged
+(108, 96, 32, 96) and `npm run check:fit` reports every face inside the safe
+inset with no TIGHT faces.
+
+What this proves: a rebuild on another libm reproduces the committed bytes for
+these values. It does not prove that two doubles can never straddle a rounding
+boundary - a 1-ulp difference is ~1e-14 against a 1e-6 grid, so the residual
+risk is about one in a hundred million per number, not zero.
