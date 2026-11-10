@@ -11,7 +11,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 3 Columns: Start, Stop, Continue · 45–60 min
 
-**When to run it.** Baseline operational calibration; routine sprint cadence.
+**When to run it.** Operational drift during standard bi-weekly sprint cadences; teams requiring a direct, low-friction mechanism to discard counterproductive habits and institutionalize emerging engineering practices.
 
 **The five phases.**
 1. Set the stage (5m): recite Kerth's Prime Directive verbatim; one-word check-in.
@@ -28,7 +28,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 3 Columns: Mad, Sad, Glad · 60 min
 
-**When to run it.** Emotional friction, unvoiced developer frustration.
+**When to run it.** Sprints characterized by emotional volatility, interpersonal friction, or organizational friction that technical burndown charts fail to capture.
 
 **The five phases.**
 1. Set the stage (5m): recite the Prime Directive; emotion is a system signal.
@@ -45,7 +45,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 4 Quadrants: Loved, Learned, Loathed, Longed For · 60–75 min
 
-**When to run it.** Intellectual reflection combined with process critique.
+**When to run it.** Milestone or sprint reviews within engineering teams requiring a balanced evaluation of intellectual growth, product value, and operational friction.
 
 **The five phases.**
 1. Set the stage (5m): recite the Prime Directive; Loathed targets tooling, never a colleague.
@@ -62,7 +62,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 4 Quadrants: Keep, Add, Less, More · 60 min
 
-**When to run it.** Value optimization; fine-tuning existing process volume.
+**When to run it.** Teams experiencing process fatigue that need to modulate the intensity of existing activities rather than reinvent their workflow.
 
 **The five phases.**
 1. Set the stage (5m): recite the Prime Directive; this is tuning, not rebuilding.
@@ -79,7 +79,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 4 Quadrants: Glad, Sad, Mad, Afraid · 60–90 min
 
-**When to run it.** Organizational restructurings, impending pivots, systemic anxiety.
+**When to run it.** Impending corporate reorganizations, high-stakes platform migrations, or strategic pivots where latent psychological anxiety must be addressed directly.
 
 **The five phases.**
 1. Set the stage (10m): recite the Prime Directive; fear is a predictable response to change.
@@ -96,7 +96,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 4 Quadrants: Drop, Add, Keep, Improve · 60 min
 
-**When to run it.** Process bloat, administrative drag, redundant ceremonies.
+**When to run it.** Teams overwhelmed by operational baggage, meeting sprawl, redundant documentation, or outdated tooling.
 
 **The five phases.**
 1. Set the stage (5m): recite the Prime Directive; dropping a process is not criticising its author.
@@ -113,7 +113,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 3 Zones: House of Straw, Sticks, Bricks · 60–90 min
 
-**When to run it.** Architectural review; testing structural resilience under load.
+**When to run it.** Architectural debt retrospectives, stabilization sprints, or infrastructure reviews following high-traffic incidents.
 
 **The five phases.**
 1. Set the stage (10m): recite the Prime Directive; Straw was a compromise, not bad craft.
@@ -130,7 +130,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 3 Columns: Rose, Thorn, Bud · 45–60 min
 
-**When to run it.** Cross-functional design and engineering collaboration.
+**When to run it.** Product discovery sprints, UI/UX iterations, and collaborative design-engineering syncs.
 
 **The five phases.**
 1. Set the stage (5m): recite the Prime Directive before any note is written.
@@ -147,7 +147,7 @@ Every card answers what a facilitator actually needs - when the situation calls 
 
 **Canvas and timebox.** 2 Columns: Plus (+), Delta (Δ) · 30–45 min
 
-**When to run it.** High-tempo, lightweight operational check-ins.
+**When to run it.** High-cadence micro-retrospectives, daily debriefs during release crunches, or rapid 30-minute timeboxed checkpoints.
 
 **The five phases.**
 1. Set the stage (3m): show the Prime Directive; one sentence on the sprint's aim.

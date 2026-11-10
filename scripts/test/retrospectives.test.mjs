@@ -57,9 +57,13 @@ test("every committed record matches the committed inventory", async () => {
   for (const card of cards) {
     const row = rows.get(card.id);
     assert.ok(row, `${card.id} is not in the inventory`);
+    assert.ok(
+      row.scenarioTag && row.scenarioTrigger,
+      `${row.id} inventory carries both the table tag and the section scenario`
+    );
     assert.equal(card.name, row.name, `${card.id} name`);
     assert.equal(card.category, row.category, `${card.id} category`);
-    assert.equal(card.trigger, row.trigger, `${card.id} trigger`);
+    assert.equal(card.trigger, row.scenarioTrigger, `${card.id} scenario trigger`);
     assert.equal(card.canvas, row.canvas, `${card.id} canvas`);
     assert.equal(card.timebox, row.timebox, `${card.id} timebox`);
     assert.equal(card.canvasLine, `${card.canvas} · ${card.timebox}`, `${card.id} canvas line`);

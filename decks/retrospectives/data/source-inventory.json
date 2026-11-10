@@ -1,7 +1,7 @@
 {
   "source": "05 - Retros/Open Source Retrospective Card Deck.md",
   "extractedBy": "operator-agent@kernel, 2026-11-10, from the table headed ID | Ritual Name | Category | Primary Scenario Trigger | Visual Topology / Canvas Layout | Standard Timebox",
-  "note": "Every one of the 45 cards has its own ### section in the same document, so there is no inventory-only half as there was in deck four.",
+  "note": "Every one of the 45 cards has its own ### section in the same document, so there is no inventory-only half as there was in deck four. R05 name corrected on 2026-11-10 from \"Glad, Sad, Mad \\\\+ Afraid\" to \"Glad, Sad, Mad + Afraid\": the backslash was a markdown escape in the source heading, not part of the name. The scenarioTrigger field holds each section's Scenario Trigger sentence; scenarioTag keeps the table's short phrase.",
   "categories": [
     "Foundation & Rhythm",
     "Metaphor & Systems",
@@ -17,7 +17,9 @@
       "trigger": "Baseline operational calibration; routine sprint cadence.",
       "canvas": "3 Columns: Start, Stop, Continue",
       "timebox": "45–60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Baseline operational calibration; routine sprint cadence.",
+      "scenarioTrigger": "Operational drift during standard bi-weekly sprint cadences; teams requiring a direct, low-friction mechanism to discard counterproductive habits and institutionalize emerging engineering practices."
     },
     {
       "id": "R02",
@@ -26,7 +28,9 @@
       "trigger": "Emotional friction, unvoiced developer frustration.",
       "canvas": "3 Columns: Mad, Sad, Glad",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Emotional friction, unvoiced developer frustration.",
+      "scenarioTrigger": "Sprints characterized by emotional volatility, interpersonal friction, or organizational friction that technical burndown charts fail to capture."
     },
     {
       "id": "R03",
@@ -35,7 +39,9 @@
       "trigger": "Intellectual reflection combined with process critique.",
       "canvas": "4 Quadrants: Loved, Learned, Loathed, Longed For",
       "timebox": "60–75 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Intellectual reflection combined with process critique.",
+      "scenarioTrigger": "Milestone or sprint reviews within engineering teams requiring a balanced evaluation of intellectual growth, product value, and operational friction."
     },
     {
       "id": "R04",
@@ -44,7 +50,9 @@
       "trigger": "Value optimization; fine-tuning existing process volume.",
       "canvas": "4 Quadrants: Keep, Add, Less, More",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Value optimization; fine-tuning existing process volume.",
+      "scenarioTrigger": "Teams experiencing process fatigue that need to modulate the intensity of existing activities rather than reinvent their workflow."
     },
     {
       "id": "R05",
@@ -53,7 +61,9 @@
       "trigger": "Organizational restructurings, impending pivots, systemic anxiety.",
       "canvas": "4 Quadrants: Glad, Sad, Mad, Afraid",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Organizational restructurings, impending pivots, systemic anxiety.",
+      "scenarioTrigger": "Impending corporate reorganizations, high-stakes platform migrations, or strategic pivots where latent psychological anxiety must be addressed directly."
     },
     {
       "id": "R06",
@@ -62,7 +72,9 @@
       "trigger": "Process bloat, administrative drag, redundant ceremonies.",
       "canvas": "4 Quadrants: Drop, Add, Keep, Improve",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Process bloat, administrative drag, redundant ceremonies.",
+      "scenarioTrigger": "Teams overwhelmed by operational baggage, meeting sprawl, redundant documentation, or outdated tooling."
     },
     {
       "id": "R07",
@@ -71,7 +83,9 @@
       "trigger": "Architectural review; testing structural resilience under load.",
       "canvas": "3 Zones: House of Straw, Sticks, Bricks",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Architectural review; testing structural resilience under load.",
+      "scenarioTrigger": "Architectural debt retrospectives, stabilization sprints, or infrastructure reviews following high-traffic incidents."
     },
     {
       "id": "R08",
@@ -80,7 +94,9 @@
       "trigger": "Cross-functional design and engineering collaboration.",
       "canvas": "3 Columns: Rose, Thorn, Bud",
       "timebox": "45–60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Cross-functional design and engineering collaboration.",
+      "scenarioTrigger": "Product discovery sprints, UI/UX iterations, and collaborative design-engineering syncs."
     },
     {
       "id": "R09",
@@ -89,7 +105,9 @@
       "trigger": "High-tempo, lightweight operational check-ins.",
       "canvas": "2 Columns: Plus (+), Delta (Δ)",
       "timebox": "30–45 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "High-tempo, lightweight operational check-ins.",
+      "scenarioTrigger": "High-cadence micro-retrospectives, daily debriefs during release crunches, or rapid 30-minute timeboxed checkpoints."
     },
     {
       "id": "R10",
@@ -98,7 +116,9 @@
       "trigger": "Systemic drag vs. external drivers; hidden impediments.",
       "canvas": "4 Zones: Island, Wind, Anchors, Rocks",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Systemic drag vs. external drivers; hidden impediments.",
+      "scenarioTrigger": "Teams struggling to decouple their aspirational product goals from current technical drag, organizational dependencies, and impending environmental risks."
     },
     {
       "id": "R11",
@@ -107,7 +127,9 @@
       "trigger": "Velocity bottlenecks and technical performance drags.",
       "canvas": "4 Zones: Engine, Parachute, Pit Stop, Hazards",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Velocity bottlenecks and technical performance drags.",
+      "scenarioTrigger": "Teams experiencing velocity bottlenecks, deployment throttling, or code review stalls."
     },
     {
       "id": "R12",
@@ -116,7 +138,9 @@
       "trigger": "Uplifting team morale while shedding operational deadweight.",
       "canvas": "4 Zones: Hot Air, Sandbags, Storm Clouds, Skies",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Uplifting team morale while shedding operational deadweight.",
+      "scenarioTrigger": "Low-morale sprints where the team needs to acknowledge positive contributions while systematically identifying operational baggage."
     },
     {
       "id": "R13",
@@ -125,7 +149,9 @@
       "trigger": "Milestone completions, epic delivery, long-horizon campaigns.",
       "canvas": "4 Zones: Summit, Basecamp, Crevasses, Gear",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Milestone completions, epic delivery, long-horizon campaigns.",
+      "scenarioTrigger": "Multi-sprint delivery campaigns, quarterly releases, or major infrastructural initiatives."
     },
     {
       "id": "R14",
@@ -134,7 +160,9 @@
       "trigger": "Post-crunch release reviews; transformational team arcs.",
       "canvas": "5 Stages: Ordinary World, Call, Abyss, Transformation, Elixir",
       "timebox": "90–120 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Post-crunch release reviews; transformational team arcs.",
+      "scenarioTrigger": "Post-release reviews following demanding delivery crunches or major technical recoveries."
     },
     {
       "id": "R15",
@@ -143,7 +171,9 @@
       "trigger": "Major product launches, high-risk technical exploration.",
       "canvas": "4 Zones: Thrusters, Gravity, Asteroids, Target Orbit",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Major product launches, high-risk technical exploration.",
+      "scenarioTrigger": "High-risk exploratory initiatives, zero-to-one product development, or deep R&D milestones."
     },
     {
       "id": "R16",
@@ -152,7 +182,9 @@
       "trigger": "Crisis management, extreme resource starvation, survival mode.",
       "canvas": "4 Zones: Shelter, Fresh Spring, Predators, SOS Flare",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Crisis management, extreme resource starvation, survival mode.",
+      "scenarioTrigger": "Sudden loss of team capacity, extreme resource starvation, or emergency operational survival mode."
     },
     {
       "id": "R17",
@@ -161,7 +193,9 @@
       "trigger": "Accumulated technical debt, submerged bugs, pressure spikes.",
       "canvas": "4 Zones: Propulsion, Ballast Tanks, Hull Breaches, Periscope",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Accumulated technical debt, submerged bugs, pressure spikes.",
+      "scenarioTrigger": "Accumulated technical debt, creeping memory leaks, latent architectural fragility, or mounting compliance risks."
     },
     {
       "id": "R18",
@@ -170,7 +204,9 @@
       "trigger": "Long-term team health, cultural values, knowledge sharing.",
       "canvas": "5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Long-term team health, cultural values, knowledge sharing.",
+      "scenarioTrigger": "Annual retrospectives, long-term engineering health reviews, or major team structural reorganizations."
     },
     {
       "id": "R19",
@@ -179,7 +215,9 @@
       "trigger": "Major production incidents (SEV-1/SEV-2 outages).",
       "canvas": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Major production incidents (SEV-1/SEV-2 outages).",
+      "scenarioTrigger": "Production service interruptions (SEV-1/SEV-2 outages, data corruption, security breaches)."
     },
     {
       "id": "R20",
@@ -188,7 +226,9 @@
       "trigger": "Chronic, recurring defects; deep causal chain analysis.",
       "canvas": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Chronic, recurring defects; deep causal chain analysis.",
+      "scenarioTrigger": "Chronic, recurring technical defects across sprint cycles that resist simple operational triage."
     },
     {
       "id": "R21",
@@ -197,7 +237,9 @@
       "trigger": "Cascading failures across defense-in-depth barriers.",
       "canvas": "4 Slices: Organization, Supervision, Preconditions, Defenses",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Cascading failures across defense-in-depth barriers.",
+      "scenarioTrigger": "Cascading systemic outages where multiple independent defensive barriers failed simultaneously."
     },
     {
       "id": "R22",
@@ -206,7 +248,9 @@
       "trigger": "Divergence between standard procedures and actual practices.",
       "canvas": "Dual-Axis Chronology: Work as Imagined vs. Work as Done",
       "timebox": "75–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Divergence between standard procedures and actual practices.",
+      "scenarioTrigger": "Operational failures where engineering practices deviated significantly from written operating procedures."
     },
     {
       "id": "R23",
@@ -215,7 +259,9 @@
       "trigger": "Architectural risk evaluation; proactive vulnerability reviews.",
       "canvas": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN",
       "timebox": "90–120 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Architectural risk evaluation; proactive vulnerability reviews.",
+      "scenarioTrigger": "Pre-launch architectural reviews, critical database schema migrations, or infrastructure cutovers."
     },
     {
       "id": "R24",
@@ -224,7 +270,9 @@
       "trigger": "Microservice cascade failures; logic-gate dependency breakdowns.",
       "canvas": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Microservice cascade failures; logic-gate dependency breakdowns.",
+      "scenarioTrigger": "Complex microservice outages involving race conditions, deadlocks, or distributed cascading dependencies."
     },
     {
       "id": "R25",
@@ -233,7 +281,9 @@
       "trigger": "Cognitive fatigue, on-call alert overload, human factor failures.",
       "canvas": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Cognitive fatigue, on-call alert overload, human factor failures.",
+      "scenarioTrigger": "Incidents characterized by on-call cognitive fatigue, misread alerts, or communication breakdowns during emergency response."
     },
     {
       "id": "R26",
@@ -242,7 +292,9 @@
       "trigger": "Cross-functional incidents involving third-party vendors and ops.",
       "canvas": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Cross-functional incidents involving third-party vendors and ops.",
+      "scenarioTrigger": "Complex outages cutting across organizational boundaries (e.g., third-party APIs, external vendors, corporate security mandates)."
     },
     {
       "id": "R27",
@@ -251,7 +303,9 @@
       "trigger": "Fast-turnaround SEV-3 operational debriefs.",
       "canvas": "2x2 Matrix: Internal/External vs. Expected/Unexpected",
       "timebox": "45 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Fast-turnaround SEV-3 operational debriefs.",
+      "scenarioTrigger": "Low-severity incidents (SEV-3/SEV-4); recurring bug triage sessions requiring rapid classification."
     },
     {
       "id": "R28",
@@ -260,7 +314,9 @@
       "trigger": "Project kick-offs, high-risk migrations, architectural overhauls.",
       "canvas": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Project kick-offs, high-risk migrations, architectural overhauls.",
+      "scenarioTrigger": "Project kick-offs, major architectural migrations, or high-stakes feature releases."
     },
     {
       "id": "R29",
@@ -269,7 +325,9 @@
       "trigger": "Team formation, quarterly roadmapping, strategic visioning.",
       "canvas": "3 Chronological Zones: Today, The Odyssey, The Promised Land",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Team formation, quarterly roadmapping, strategic visioning.",
+      "scenarioTrigger": "Team formation, greenfield project kick-offs, or quarterly goal setting where the team must chart a path toward a defined future milestone."
     },
     {
       "id": "R30",
@@ -278,7 +336,9 @@
       "trigger": "High ambiguity, organizational mergers, major architectural pivots.",
       "canvas": "2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks)",
       "timebox": "45–60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "High ambiguity, organizational mergers, major architectural pivots.",
+      "scenarioTrigger": "High-uncertainty environments, corporate acquisitions, sudden tech stack shifts, or major reorganizations."
     },
     {
       "id": "R31",
@@ -287,7 +347,9 @@
       "trigger": "Aligning expectations around success vs. systemic stagnation.",
       "canvas": "2 Narrative Channels: Triumph Letter vs. Regret Letter",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Aligning expectations around success vs. systemic stagnation.",
+      "scenarioTrigger": "Teams struggling to align on product vision, architectural consistency, or long-term operational health."
     },
     {
       "id": "R32",
@@ -296,7 +358,9 @@
       "trigger": "Multi-year platform initiatives, legacy system deprecation.",
       "canvas": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint",
       "timebox": "90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Multi-year platform initiatives, legacy system deprecation.",
+      "scenarioTrigger": "Formulating multi-year engineering roadmaps, complex cloud migrations, or legacy system deprecation plans."
     },
     {
       "id": "R33",
@@ -305,7 +369,9 @@
       "trigger": "Resilience testing against low-probability, catastrophic shocks.",
       "canvas": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach",
       "timebox": "60–75 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Resilience testing against low-probability, catastrophic shocks.",
+      "scenarioTrigger": "Quarterly business continuity reviews, security posture hardening, or mission-critical launch readiness assessments."
     },
     {
       "id": "R34",
@@ -314,7 +380,9 @@
       "trigger": "Inception phases, customer impact alignment, mission synthesis.",
       "canvas": "Newspaper Grid: Headline, Sub-bullet, Metric Callout, Quote",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Inception phases, customer impact alignment, mission synthesis.",
+      "scenarioTrigger": "Inception phase of new products or major open-source modules; aligning cross-functional teams around end-user value."
     },
     {
       "id": "R35",
@@ -323,7 +391,9 @@
       "trigger": "Managing complex dependencies and shifting technical environments.",
       "canvas": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals",
       "timebox": "45–60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Managing complex dependencies and shifting technical environments.",
+      "scenarioTrigger": "High-velocity projects with complex external vendor, compliance, or infrastructure dependencies."
     },
     {
       "id": "R36",
@@ -332,7 +402,9 @@
       "trigger": "Ceremony fatigue, disengagement, stalled action item velocity.",
       "canvas": "4 Quadrants: Format, Psychological Safety, Action Velocity, Value",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Ceremony fatigue, disengagement, stalled action item velocity.",
+      "scenarioTrigger": "Retrospective meetings have become stale, mechanical, or cynical; participants report low return on investment and action items are ignored."
     },
     {
       "id": "R37",
@@ -341,7 +413,9 @@
       "trigger": "Squad health benchmarking; multi-dimensional culture calibration.",
       "canvas": "6 Dimensions: Code Health, Delivery, Fun, Safety, Autonomy, Speed",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Squad health benchmarking; multi-dimensional culture calibration.",
+      "scenarioTrigger": "Teams needing a holistic, multi-dimensional health assessment beyond velocity and bug counts."
     },
     {
       "id": "R38",
@@ -350,7 +424,9 @@
       "trigger": "Broken team norms, PR bottlenecks, after-hours communication drift.",
       "canvas": "3 Columns: Existing Agreement, Reality Check, Ratified Rules",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Broken team norms, PR bottlenecks, after-hours communication drift.",
+      "scenarioTrigger": "Broken team norms, recurring PR review bottlenecks, off-hours messaging, or boundary violations."
     },
     {
       "id": "R39",
@@ -359,7 +435,9 @@
       "trigger": "Post-crunch exhaustion, organizational trauma, acute interpersonal friction.",
       "canvas": "3 Sequestered Zones: Containment Trench, Decontamination, Clean Ground",
       "timebox": "60–90 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Post-crunch exhaustion, organizational trauma, acute interpersonal friction.",
+      "scenarioTrigger": "Severe post-crunch burnout, organizational trauma, executive conflict, or high interpersonal frustration."
     },
     {
       "id": "R40",
@@ -368,7 +446,9 @@
       "trigger": "Covert disengagement, low trust, uncommunicative check-ins.",
       "canvas": "4 Anonymous Buckets: Explorer, Shopper, Vacationer, Prisoner",
       "timebox": "15–20 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Covert disengagement, low trust, uncommunicative check-ins.",
+      "scenarioTrigger": "Noticeable disengagement, passive-aggressive silence, or when facilitating a newly formed team."
     },
     {
       "id": "R41",
@@ -377,7 +457,9 @@
       "trigger": "Learned helplessness, externalized blame, loss of agency.",
       "canvas": "3 Concentric Circles: Control, Influence, The Soup",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Learned helplessness, externalized blame, loss of agency.",
+      "scenarioTrigger": "Teams trapped in learned helplessness, complaining about executive decisions or external dependencies beyond their control."
     },
     {
       "id": "R42",
@@ -386,7 +468,9 @@
       "trigger": "Complacency, repetitive mistakes, uncritical groupthink.",
       "canvas": "3 Phases: Maximum Sabotage, Brutal Reality, Firebreak Actions",
       "timebox": "75 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Complacency, repetitive mistakes, uncritical groupthink.",
+      "scenarioTrigger": "Complacency, repeated missed sprint goals, or teams resistant to traditional process retrospectives."
     },
     {
       "id": "R43",
@@ -395,7 +479,9 @@
       "trigger": "Unequal conversational dynamics; dominance by senior leads.",
       "canvas": "4 Sequential Workspaces: 1-min Solo, 2-min Pair, 4-min Quad, Plenary",
       "timebox": "30–45 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Unequal conversational dynamics; dominance by senior leads.",
+      "scenarioTrigger": "Retrospectives dominated by senior engineers, architects, or managers, where junior and introverted team members remain silent."
     },
     {
       "id": "R44",
@@ -404,7 +490,9 @@
       "trigger": "Demoralized teams, lack of recognition, transactional dynamics.",
       "canvas": "Grid Layout: Core Peer Categories (Heroics, Glue-Work, Empathy, Mentorship)",
       "timebox": "30–45 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Demoralized teams, lack of recognition, transactional dynamics.",
+      "scenarioTrigger": "Teams recovering from sustained deadlines, high-stress delivery cycles, or transactional working relationships."
     },
     {
       "id": "R45",
@@ -413,7 +501,9 @@
       "trigger": "Architectural gridlock, overlapping mandates, review bottlenecks.",
       "canvas": "3 Operational Tiers: Do, Discuss, Decide",
       "timebox": "60 min",
-      "section": true
+      "section": true,
+      "scenarioTag": "Architectural gridlock, overlapping mandates, review bottlenecks.",
+      "scenarioTrigger": "Friction over code reviews, ambiguous PR approvals, overlapping responsibilities, or micro-management disputes."
     }
   ]
 }

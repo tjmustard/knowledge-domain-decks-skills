@@ -31,14 +31,14 @@ Read `resources/foundation-rhythm.md` for the full card text.
 
 | ID | Card | When to run it |
 |---|---|---|
-| R01 | Start, Stop, Continue | Baseline operational calibration; routine sprint cadence. |
-| R02 | Mad, Sad, Glad | Emotional friction, unvoiced developer frustration. |
-| R03 | 4Ls (Loved, Learned, Loathed, Longed For) | Intellectual reflection combined with process critique. |
-| R04 | KALM (Keep, Add, Less, More) | Value optimization; fine-tuning existing process volume. |
-| R05 | Glad, Sad, Mad + Afraid | Organizational restructurings, impending pivots, systemic anxiety. |
-| R06 | DAKI (Drop, Add, Keep, Improve) | Process bloat, administrative drag, redundant ceremonies. |
-| R07 | The Three Little Pigs | Architectural review; testing structural resilience under load. |
-| R08 | Rose, Thorn, Bud | Cross-functional design and engineering collaboration. |
-| R09 | Plus / Delta (+ / Δ) | High-tempo, lightweight operational check-ins. |
+| R01 | Start, Stop, Continue | Operational drift during standard bi-weekly sprint cadences; teams requiring a direct, low-friction mechanism to discard counterproductive habits and institutionalize emerging engineering practices. |
+| R02 | Mad, Sad, Glad | Sprints characterized by emotional volatility, interpersonal friction, or organizational friction that technical burndown charts fail to capture. |
+| R03 | 4Ls (Loved, Learned, Loathed, Longed For) | Milestone or sprint reviews within engineering teams requiring a balanced evaluation of intellectual growth, product value, and operational friction. |
+| R04 | KALM (Keep, Add, Less, More) | Teams experiencing process fatigue that need to modulate the intensity of existing activities rather than reinvent their workflow. |
+| R05 | Glad, Sad, Mad + Afraid | Impending corporate reorganizations, high-stakes platform migrations, or strategic pivots where latent psychological anxiety must be addressed directly. |
+| R06 | DAKI (Drop, Add, Keep, Improve) | Teams overwhelmed by operational baggage, meeting sprawl, redundant documentation, or outdated tooling. |
+| R07 | The Three Little Pigs | Architectural debt retrospectives, stabilization sprints, or infrastructure reviews following high-traffic incidents. |
+| R08 | Rose, Thorn, Bud | Product discovery sprints, UI/UX iterations, and collaborative design-engineering syncs. |
+| R09 | Plus / Delta (+ / Δ) | High-cadence micro-retrospectives, daily debriefs during release crunches, or rapid 30-minute timeboxed checkpoints. |
 
 Rituals are credited to their public originators where one is documented. The card text, phases and minutes are written for this deck.

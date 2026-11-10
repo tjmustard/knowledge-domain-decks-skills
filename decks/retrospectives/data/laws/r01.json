@@ -2,7 +2,7 @@
   "id": "R01",
   "name": "Start, Stop, Continue",
   "category": "Foundation & Rhythm",
-  "trigger": "Baseline operational calibration; routine sprint cadence.",
+  "trigger": "Operational drift during standard bi-weekly sprint cadences; teams requiring a direct, low-friction mechanism to discard counterproductive habits and institutionalize emerging engineering practices.",
   "canvas": "3 Columns: Start, Stop, Continue",
   "timebox": "45–60 min",
   "canvasLine": "3 Columns: Start, Stop, Continue · 45–60 min",

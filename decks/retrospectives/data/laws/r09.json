@@ -2,7 +2,7 @@
   "id": "R09",
   "name": "Plus / Delta (+ / Δ)",
   "category": "Foundation & Rhythm",
-  "trigger": "High-tempo, lightweight operational check-ins.",
+  "trigger": "High-cadence micro-retrospectives, daily debriefs during release crunches, or rapid 30-minute timeboxed checkpoints.",
   "canvas": "2 Columns: Plus (+), Delta (Δ)",
   "timebox": "30–45 min",
   "canvasLine": "2 Columns: Plus (+), Delta (Δ) · 30–45 min",

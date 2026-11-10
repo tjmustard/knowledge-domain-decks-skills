@@ -7,7 +7,7 @@
 ## R01 — Start, Stop, Continue
 
 - **Canvas and timebox:** 3 Columns: Start, Stop, Continue · 45–60 min
-- **When to run it:** Baseline operational calibration; routine sprint cadence.
+- **When to run it:** Operational drift during standard bi-weekly sprint cadences; teams requiring a direct, low-friction mechanism to discard counterproductive habits and institutionalize emerging engineering practices.
 - **Phases:**
   - Set the stage (5m): recite Kerth's Prime Directive verbatim; one-word check-in.
   - Gather data (15m): silent notes; Start missing, Stop wasteful, Continue working.
@@ -20,7 +20,7 @@
 ## R02 — Mad, Sad, Glad
 
 - **Canvas and timebox:** 3 Columns: Mad, Sad, Glad · 60 min
-- **When to run it:** Emotional friction, unvoiced developer frustration.
+- **When to run it:** Sprints characterized by emotional volatility, interpersonal friction, or organizational friction that technical burndown charts fail to capture.
 - **Phases:**
   - Set the stage (5m): recite the Prime Directive; emotion is a system signal.
   - Gather data (15m): silent notes in Mad, Sad, Glad; colour by column.
@@ -33,7 +33,7 @@
 ## R03 — 4Ls (Loved, Learned, Loathed, Longed For)
 
 - **Canvas and timebox:** 4 Quadrants: Loved, Learned, Loathed, Longed For · 60–75 min
-- **When to run it:** Intellectual reflection combined with process critique.
+- **When to run it:** Milestone or sprint reviews within engineering teams requiring a balanced evaluation of intellectual growth, product value, and operational friction.
 - **Phases:**
   - Set the stage (5m): recite the Prime Directive; Loathed targets tooling, never a colleague.
   - Gather data (20m): two notes each into Loved, Learned, Loathed, Longed For.
@@ -46,7 +46,7 @@
 ## R04 — KALM (Keep, Add, Less, More)
 
 - **Canvas and timebox:** 4 Quadrants: Keep, Add, Less, More · 60 min
-- **When to run it:** Value optimization; fine-tuning existing process volume.
+- **When to run it:** Teams experiencing process fatigue that need to modulate the intensity of existing activities rather than reinvent their workflow.
 - **Phases:**
   - Set the stage (5m): recite the Prime Directive; this is tuning, not rebuilding.
   - Gather data (15m): sort current practices into Keep, Add, Less, More.
@@ -59,7 +59,7 @@
 ## R05 — Glad, Sad, Mad + Afraid
 
 - **Canvas and timebox:** 4 Quadrants: Glad, Sad, Mad, Afraid · 60–90 min
-- **When to run it:** Organizational restructurings, impending pivots, systemic anxiety.
+- **When to run it:** Impending corporate reorganizations, high-stakes platform migrations, or strategic pivots where latent psychological anxiety must be addressed directly.
 - **Phases:**
   - Set the stage (10m): recite the Prime Directive; fear is a predictable response to change.
   - Gather data (15m): anonymous notes into Glad, Sad, Mad, Afraid.
@@ -72,7 +72,7 @@
 ## R06 — DAKI (Drop, Add, Keep, Improve)
 
 - **Canvas and timebox:** 4 Quadrants: Drop, Add, Keep, Improve · 60 min
-- **When to run it:** Process bloat, administrative drag, redundant ceremonies.
+- **When to run it:** Teams overwhelmed by operational baggage, meeting sprawl, redundant documentation, or outdated tooling.
 - **Phases:**
   - Set the stage (5m): recite the Prime Directive; dropping a process is not criticising its author.
   - Gather data (15m): silent notes into Drop, Add, Keep, Improve.
@@ -85,7 +85,7 @@
 ## R07 — The Three Little Pigs
 
 - **Canvas and timebox:** 3 Zones: House of Straw, Sticks, Bricks · 60–90 min
-- **When to run it:** Architectural review; testing structural resilience under load.
+- **When to run it:** Architectural debt retrospectives, stabilization sprints, or infrastructure reviews following high-traffic incidents.
 - **Phases:**
   - Set the stage (10m): recite the Prime Directive; Straw was a compromise, not bad craft.
   - Gather data (20m): list systems under Straw, Sticks, Bricks with evidence.
@@ -98,7 +98,7 @@
 ## R08 — Rose, Thorn, Bud
 
 - **Canvas and timebox:** 3 Columns: Rose, Thorn, Bud · 45–60 min
-- **When to run it:** Cross-functional design and engineering collaboration.
+- **When to run it:** Product discovery sprints, UI/UX iterations, and collaborative design-engineering syncs.
 - **Phases:**
   - Set the stage (5m): recite the Prime Directive before any note is written.
   - Gather data (15m): silent notes into Rose, Thorn, Bud.
@@ -111,7 +111,7 @@
 ## R09 — Plus / Delta (+ / Δ)
 
 - **Canvas and timebox:** 2 Columns: Plus (+), Delta (Δ) · 30–45 min
-- **When to run it:** High-tempo, lightweight operational check-ins.
+- **When to run it:** High-cadence micro-retrospectives, daily debriefs during release crunches, or rapid 30-minute timeboxed checkpoints.
 - **Phases:**
   - Set the stage (3m): show the Prime Directive; one sentence on the sprint's aim.
   - Gather data (7m): silent notes into Plus and Delta.

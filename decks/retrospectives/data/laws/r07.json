@@ -2,7 +2,7 @@
   "id": "R07",
   "name": "The Three Little Pigs",
   "category": "Foundation & Rhythm",
-  "trigger": "Architectural review; testing structural resilience under load.",
+  "trigger": "Architectural debt retrospectives, stabilization sprints, or infrastructure reviews following high-traffic incidents.",
   "canvas": "3 Zones: House of Straw, Sticks, Bricks",
   "timebox": "60–90 min",
   "canvasLine": "3 Zones: House of Straw, Sticks, Bricks · 60–90 min",

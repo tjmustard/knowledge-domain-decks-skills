@@ -2,7 +2,7 @@
   "id": "R02",
   "name": "Mad, Sad, Glad",
   "category": "Foundation & Rhythm",
-  "trigger": "Emotional friction, unvoiced developer frustration.",
+  "trigger": "Sprints characterized by emotional volatility, interpersonal friction, or organizational friction that technical burndown charts fail to capture.",
   "canvas": "3 Columns: Mad, Sad, Glad",
   "timebox": "60 min",
   "canvasLine": "3 Columns: Mad, Sad, Glad · 60 min",
