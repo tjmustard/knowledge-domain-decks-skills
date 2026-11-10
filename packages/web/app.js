@@ -2,7 +2,9 @@
 (function () {
   "use strict";
 
-  var DECK = window.UX_DECK;
+  // The page names its own deck bundle before this script runs, so the viewer
+  // holds no deck of its own: build:web writes both the bundle and that line.
+  var DECK = window[window.DECK_GLOBAL || ""];
   var deckEl = document.getElementById("deck");
   var filtersEl = document.getElementById("filters");
   var emptyEl = document.getElementById("empty");
@@ -12,13 +14,7 @@
     return;
   }
 
-  var ACCENTS = {
-    "Heuristic & Mental Models": "#1e3a8a",
-    "Gestalt & Visual Perception": "#065f46",
-    "Decision-Making & Cognitive Load": "#78350f",
-    "Time, Motion & Ergonomics": "#831843",
-    "Memory, Perception & Attention": "#312e81"
-  };
+  var ACCENTS = window[window.DECK_ACCENTS || ""] || {};
 
   var categories = [];
   DECK.cards.forEach(function (card) {

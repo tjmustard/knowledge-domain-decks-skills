@@ -1,0 +1,48 @@
+{
+  "id": "ux-laws",
+  "slug": "ux-laws",
+  "name": "UX & Behavioral Design",
+  "description": "Public-domain principles for interface reviews, each with an axiom, a trigger, a checklist and a citation.",
+  "categories": [
+    "Heuristic & Mental Models",
+    "Gestalt & Visual Perception",
+    "Decision-Making & Cognitive Load",
+    "Time, Motion & Ergonomics",
+    "Memory, Perception & Attention"
+  ],
+  "accents": {
+    "Heuristic & Mental Models": "#1E3A8A",
+    "Gestalt & Visual Perception": "#065F46",
+    "Decision-Making & Cognitive Load": "#78350F",
+    "Time, Motion & Ergonomics": "#831843",
+    "Memory, Perception & Attention": "#312E81"
+  },
+  "outputs": {
+    "rules": "rules/ux-rules.md",
+    "skill": "skills/ux-laws"
+  },
+  "rules": {
+    "title": "UX & Behavioral Design Rules",
+    "intro": "Apply these rules when reviewing or writing interface code. Each card names one\npublic-domain principle, when to check for it, and the concrete fix."
+  },
+  "skill": {
+    "name": "ux-laws",
+    "description": "Review or write interface code against the UX & Behavioral Design deck — {cards} public-domain principles. Use when auditing layouts, forms, navigation, or touch targets. Start with the index below, then read the one resource file for the area you are checking.",
+    "title": "UX & Behavioral Design",
+    "intro": "This file is the index. The cards themselves live in `resources/`, one\nfile per category. Use the tables below to decide which file to open, then\nread that file. Do not load every resource unless the change spans several\ncategories.",
+    "commonRules": [
+      "Prefer the smallest change that removes the failure state.",
+      "Check the code in front of you; do not restyle unrelated code.",
+      "A checklist item that asks for a human-subject experiment cannot be\n  satisfied by reading code. Say so rather than claiming it was done."
+    ],
+    "footer": "Every card cites one primary paper; the citation travels with the card."
+  },
+  "web": {
+    "global": "UX_DECK",
+    "accentsGlobal": "UX_DECK_ACCENTS",
+    "title": "UX & Behavioral Design — Knowledge Domain Decks",
+    "heading": "UX & Behavioral Design",
+    "lede": "Public-domain principles for interface reviews. Tap a card to flip it and read the checklist and remediation.",
+    "source": "Generated from <code>decks/ux-laws/data/laws/*.json</code>. Code MIT · data CC0-1.0."
+  }
+}

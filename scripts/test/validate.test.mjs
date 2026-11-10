@@ -42,7 +42,7 @@ test("every shipped record validates", () => {
 });
 
 test("an over-long axiom is rejected for the word limit, not some other reason", async () => {
-  const { status, output } = validate("scripts/fixtures/sixteen-word-axiom.json");
+  const { status, output } = validate("--deck", "ux-laws", "scripts/fixtures/sixteen-word-axiom.json");
   assert.equal(status, 1, "a rejected fixture must exit 1");
   // The reason is the point. A fixture that fails because a required property
   // went missing has stopped testing the rule it is named for, and "it failed"
@@ -51,13 +51,13 @@ test("an over-long axiom is rejected for the word limit, not some other reason",
 });
 
 test("an unknown property is rejected", async () => {
-  const { status, output } = validate("scripts/fixtures/extra-property-record.json");
+  const { status, output } = validate("--deck", "ux-laws", "scripts/fixtures/extra-property-record.json");
   assert.equal(status, 1);
   assert.match(output, /additional propert/i);
 });
 
 test("the control fixture is accepted", async () => {
-  const { status, output } = validate("scripts/fixtures/control-valid-record.json");
+  const { status, output } = validate("--deck", "ux-laws", "scripts/fixtures/control-valid-record.json");
   assert.equal(status, 0, output);
 });
 

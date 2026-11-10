@@ -8,11 +8,37 @@
  *
  * Exits 2 when no supported browser is found (setup problem, not a code failure).
  */
-import { spawn } from "node:child_process";
+import { spawn, spawnSync } from "node:child_process";
 import { existsSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { ROOT, loadCards } from "./lib/deck.mjs";
+import {
+  ROOT,
+  deckArgs,
+  listDeckSlugs,
+  loadCards,
+  loadDeck
+} from "../packages/core/deck.mjs";
+
+// One deck per run: the smoke test drives a real browser session and one page.
+// With several decks and no --deck, re-run this script once per deck so each
+// page is checked in its own process rather than sharing a session and a port.
+const { only } = deckArgs();
+const slugs = await listDeckSlugs();
+if (!only && slugs.length > 1) {
+  let ok = true;
+  for (const slug of slugs) {
+    const child = spawnSync(
+      process.execPath,
+      ["scripts/check-web.mjs", "--deck", slug],
+      { cwd: ROOT, stdio: "inherit" }
+    );
+    if (child.status !== 0) ok = false;
+  }
+  process.exit(ok ? 0 : 1);
+}
+const deckSlug = only ? only[0] : slugs[0];
+const deck = await loadDeck(deckSlug);
 
 const CANDIDATES = [
   process.env.CHROME_PATH,
@@ -32,7 +58,7 @@ if (!browser) {
   process.exit(2);
 }
 
-const cards = await loadCards();
+const cards = await loadCards(deck);
 const categoryCounts = cards.reduce((counts, card) => {
   counts[card.category] = (counts[card.category] || 0) + 1;
   return counts;
@@ -46,7 +72,7 @@ const largest = Object.keys(categoryCounts)
 const filterCategory = largest[0] || cards[0].category;
 const expectedInCategory = categoryCounts[filterCategory];
 
-const url = `file://${join(ROOT, "packages", "web", "index.html")}`;
+const url = `file://${join(ROOT, "packages", "web", "decks", deckSlug, "index.html")}`;
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 // A cold start under load can take longer than a fixed 9 s budget, and a check
@@ -223,7 +249,7 @@ try {
     process.exitCode = 1;
   } else {
     console.log(
-      `OK: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
+      `OK: ${deckSlug}: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
       `(${layout.cardWidth} px wide), flip exposes verso, ` +
       `${filterCategory} filter shows ${expectedInCategory}.`
     );

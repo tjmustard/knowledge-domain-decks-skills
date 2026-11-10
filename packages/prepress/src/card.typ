@@ -1,4 +1,4 @@
-// UX & Behavioral Design — print card template.
+// Print card template, shared by every deck. Deck data arrives as JSON.
 //
 // Page = trim + bleed: 2.75 x 4.75 in trim with 0.125 in bleed on every side
 // gives a 3.00 x 5.00 in page box. Content sits inside a 0.1875 in safe inset
@@ -21,13 +21,9 @@
 #let mark-stroke = 0.25pt + rgb("#94a3b8")
 #let rule-stroke = 0.5pt + rgb("#e2e8f0")
 
-#let accent-color = (
-  "Heuristic & Mental Models": rgb("#1E3A8A"),
-  "Gestalt & Visual Perception": rgb("#065F46"),
-  "Decision-Making & Cognitive Load": rgb("#78350F"),
-  "Time, Motion & Ergonomics": rgb("#831843"),
-  "Memory, Perception & Attention": rgb("#312E81"),
-)
+// Category colours come from the deck, not from this template: build.mjs writes
+// them from deck.json before compiling, so a new deck needs no edit here.
+#import "../build/accents.typ": accent-color
 
 #let accent(card) = accent-color.at(card.category, default: rgb("#334155"))
 

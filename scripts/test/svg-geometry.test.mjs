@@ -23,7 +23,7 @@ import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
-const require = createRequire(join(ROOT, "scripts", "svg.js"));
+const require = createRequire(join(ROOT, "packages", "core", "svg.js"));
 const { renderSvg } = require("./svg.js");
 
 const draw = (svgShape, parametricParams = {}) => renderSvg({ svgShape, parametricParams });

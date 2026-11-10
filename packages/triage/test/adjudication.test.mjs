@@ -37,7 +37,7 @@ const verified = (quote, overrides = {}) => ({
   id: "A-01",
   quote,
   status: "verified",
-  evidence: "skills/ux-laws/SKILL.md:234",
+  evidence: "skills/example-deck/SKILL.md:234",
   ...overrides
 });
 

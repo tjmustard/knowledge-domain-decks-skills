@@ -21,7 +21,9 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { loadCards } from "../lib/deck.mjs";
+import { loadCards, loadDeck } from "../../packages/core/deck.mjs";
+
+const deck = await loadDeck("ux-laws");
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 
@@ -35,17 +37,17 @@ function regenerate() {
 
 async function artifactHashes() {
   const files = [
-    "rules/ux-rules.md",
-    "skills/ux-laws/SKILL.md",
-    "packages/web/deck-data.js"
+    deck.outputs.rules,
+    `${deck.outputs.skill}/SKILL.md`,
+    "packages/web/decks/ux-laws/deck-data.js"
   ];
   // The web bundle is a different generator's output, but it is read here for
   // the same reason the gate reads it: these four artifacts are one dataset.
-  const resources = (await loadCards()).map((card) => card.category);
+  const resources = (await loadCards(deck)).map((card) => card.category);
   const slugs = [...new Set(resources)].map((category) =>
     category.toLowerCase().replace(/&/g, " ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
   );
-  for (const slug of slugs) files.push(`skills/ux-laws/resources/${slug}.md`);
+  for (const slug of slugs) files.push(`${deck.outputs.skill}/resources/${slug}.md`);
 
   const hashes = {};
   for (const file of files) {
@@ -80,11 +82,11 @@ test("generated artifacts carry no no-break space", async () => {
 
 test("every card's year reaches the rules file, and only those years do", async () => {
   regenerate();
-  const rules = await readFile(join(ROOT, "rules", "ux-rules.md"), "utf8");
+  const rules = await readFile(join(ROOT, deck.outputs.rules), "utf8");
   const printed = [...rules.matchAll(/^\*\*Source\.\*\* .*\((\d{4})\)\./gm)].map((match) =>
     Number(match[1])
   );
-  const cards = await loadCards();
+  const cards = await loadCards(deck);
 
   assert.equal(printed.length, cards.length, "one Source line per card");
   assert.deepEqual(
@@ -98,9 +100,9 @@ test("every card's year reaches the rules file, and only those years do", async 
 
 test("the web bundle carries the same years as the records", async () => {
   regenerate();
-  const bundle = await readFile(join(ROOT, "packages", "web", "deck-data.js"), "utf8");
+  const bundle = await readFile(join(ROOT, "packages", "web", "decks", "ux-laws", "deck-data.js"), "utf8");
   const printed = [...bundle.matchAll(/"year":\s*(\d+)/g)].map((match) => Number(match[1]));
-  const cards = await loadCards();
+  const cards = await loadCards(deck);
   assert.deepEqual(
     [...printed].sort((a, b) => a - b),
     cards.map((card) => card.academicOrigin.year).sort((a, b) => a - b)

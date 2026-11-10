@@ -3,19 +3,22 @@
  * Build the print deck.
  *
  * 1. Generate one SVG per card from its graphicMetaphor data.
- * 2. Write build/cards.json for the Typst template.
- * 3. Run Typst to emit dist/ux-deck.pdf (one card per 3.00 x 5.00 in page).
+ * 2. Write build/cards.json and build/accents.typ for the Typst template.
+ * 3. Run Typst to emit dist/<slug>.pdf (one card per 3.00 x 5.00 in page).
  *
  * Typst is required. This script will not silently substitute another renderer.
+ *
+ * The template is deck-neutral: the category colours and the card records are
+ * handed to it as files, so nothing in packages/prepress names a deck.
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { join } from "node:path";
-import { ROOT, loadCards, withCitation } from "../../scripts/lib/deck.mjs";
+import { ROOT, deckArgs, loadCards, loadDecks, withCitation } from "../core/deck.mjs";
 
 const require = createRequire(import.meta.url);
-const { renderSvg } = require("../../scripts/svg.js");
+const { renderSvg } = require("../core/svg.js");
 
 const here = join(ROOT, "packages", "prepress");
 const buildDir = join(here, "build");
@@ -34,25 +37,19 @@ const distDir = join(here, "dist");
  * so a distributor that repackages the deck can stamp their own.
  */
 const DECK_EPOCH = 1794182400; // 2026-11-09T00:00:00Z, the deck's first release
-let epoch = DECK_EPOCH;
 let epochSource = "the deck's fixed release epoch";
 
 const inherited = process.env.SOURCE_DATE_EPOCH;
 if (inherited !== undefined && inherited !== "") {
-  const seconds = Number(inherited);
-  /* All digits is not enough. 1e21 is digits before Number() makes it 1e21,
-     loses precision, and Typst then rejects "1e+21" with a message that blames
-     the renderer for an environment mistake. A safe integer is the value that
-     survives the round trip to Typst exactly. */
-  if (!/^\d+$/.test(inherited) || !Number.isSafeInteger(seconds)) {
+  if (!/^\d+$/.test(inherited) || !Number.isSafeInteger(Number(inherited))) {
     console.error(
       `SOURCE_DATE_EPOCH must be whole seconds since 1970, got "${inherited}".`
     );
     process.exit(2);
   }
-  epoch = seconds;
   epochSource = "the environment";
 }
+const epoch = inherited !== undefined && inherited !== "" ? Number(inherited) : DECK_EPOCH;
 
 const version = spawnSync("typst", ["--version"], { encoding: "utf8" });
 if (version.error || version.status !== 0) {
@@ -64,47 +61,56 @@ if (version.error || version.status !== 0) {
   process.exit(2);
 }
 
-const cards = await loadCards();
+// Typst source for one deck's category colours. Written where the template
+// looks for it, so a deck without accents simply gets an empty map and the
+// template's fallback colour applies to every card.
+function accentsTyp(deck) {
+  const entries = Object.entries(deck.accents || {});
+  if (entries.length === 0) return "#let accent-color = (:)\n";
+  const lines = entries.map(([category, hex]) => `  "${category}": rgb("${hex}"),`);
+  return ["#let accent-color = (", ...lines, ")", ""].join("\n");
+}
+
+const decks = await loadDecks(deckArgs());
 await mkdir(svgDir, { recursive: true });
 await mkdir(distDir, { recursive: true });
 
-const manifest = [];
-for (const card of cards) {
-  const svg = renderSvg(card.graphicMetaphor);
-  const svgFile = join(svgDir, `${card.id}.svg`);
-  await writeFile(svgFile, svg);
-  manifest.push({
-    ...withCitation(card),
-    svgFile: `../build/svg/${card.id}.svg`
-  });
-}
-await writeFile(
-  join(buildDir, "cards.json"),
-  JSON.stringify(manifest, null, 2) + "\n"
-);
-
-const result = spawnSync(
-  "typst",
-  ["compile", "--root", ".", "src/card.typ", "dist/ux-deck.pdf"],
-  {
-    cwd: here,
-    encoding: "utf8",
-    env: { ...process.env, SOURCE_DATE_EPOCH: String(epoch) }
+for (const deck of decks) {
+  const cards = await loadCards(deck);
+  const manifest = [];
+  for (const card of cards) {
+    await writeFile(join(svgDir, `${card.id}.svg`), renderSvg(card.graphicMetaphor));
+    manifest.push({
+      ...withCitation(card),
+      svgFile: `../build/svg/${card.id}.svg`
+    });
   }
-);
-if (result.status !== 0) {
-  console.error(result.stdout || "");
-  console.error(result.stderr || "");
-  console.error("Typst compile failed.");
-  process.exit(result.status || 1);
-}
+  await writeFile(join(buildDir, "cards.json"), JSON.stringify(manifest, null, 2) + "\n");
+  await writeFile(join(buildDir, "accents.typ"), accentsTyp(deck));
 
-console.log(
-  `Typst ${version.stdout.trim()} built packages/prepress/dist/ux-deck.pdf ` +
-  `(${cards.length * 2} pages: ${cards.length} cards, recto + verso).`
-);
-console.log(
-  `SOURCE_DATE_EPOCH ${epoch} from ${epochSource}; ` +
-  `rebuilds of this commit are byte-identical on this Typst version and font ` +
-  `environment.`
-);
+  const pdf = join(distDir, `${deck.slug}.pdf`);
+  const result = spawnSync(
+    "typst",
+    ["compile", "--root", ".", "src/card.typ", `dist/${deck.slug}.pdf`],
+    {
+      cwd: here,
+      encoding: "utf8",
+      env: { ...process.env, SOURCE_DATE_EPOCH: String(epoch) }
+    }
+  );
+  if (result.status !== 0) {
+    console.error(result.stdout || "");
+    console.error(result.stderr || "");
+    console.error(`Typst compile failed for deck ${deck.slug}.`);
+    process.exit(result.status || 1);
+  }
+
+  console.log(
+    `Typst ${version.stdout.trim()} built packages/prepress/dist/${deck.slug}.pdf ` +
+      `(${cards.length * 2} pages: ${cards.length} cards, recto + verso).`
+  );
+  console.log(
+    `SOURCE_DATE_EPOCH ${epoch} from ${epochSource}; ` +
+      `rebuilds are byte-identical on this Typst version and font environment.`
+  );
+}

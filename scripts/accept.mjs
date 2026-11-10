@@ -129,13 +129,47 @@ const npm = (args) => run("npm", args, { cwd: worktree });
 // bytes checks have to see them. Listed from disk rather than hard-coded: a new
 // deck category adds a file, and a check that did not notice would pass a file
 // it never read.
-async function resourceFiles(root) {
-  const dir = join(root, "skills", "ux-laws", "resources");
+// Every deck in the tree being verified, from its own deck.json. The gate is
+// not told which decks exist: a deck that is present and did not get built is
+// the failure this ordering is designed to catch.
+async function decksIn(root) {
+  const dir = join(root, "decks");
+  if (!existsSync(dir)) return [];
+  const decks = [];
+  for (const name of (await readdir(dir, { withFileTypes: true }))
+    .filter((entry) => entry.isDirectory())
+    .map((entry) => entry.name)
+    .sort()) {
+    const file = join(dir, name, "deck.json");
+    if (existsSync(file)) {
+      decks.push({ slug: name, ...JSON.parse(await readFile(file, "utf8")) });
+    }
+  }
+  return decks;
+}
+
+// The skill's per-category resource files are generated too, so the committed-
+// bytes checks have to see them. Listed from disk rather than hard-coded: a new
+// deck category adds a file, and a check that did not notice would pass a file
+// it never read.
+async function resourceFiles(root, deck) {
+  const dir = join(root, deck.outputs.skill, "resources");
   if (!existsSync(dir)) return [];
   return (await readdir(dir))
     .filter((name) => name.endsWith(".md"))
     .sort()
-    .map((name) => `skills/ux-laws/resources/${name}`);
+    .map((name) => `${deck.outputs.skill}/resources/${name}`);
+}
+
+// Everything a deck writes and commits: its rules file, its skill index, its
+// resource files and its web bundle. One list, so no layer can miss a deck.
+async function deckArtifacts(root, deck) {
+  return [
+    deck.outputs.rules,
+    `${deck.outputs.skill}/SKILL.md`,
+    `packages/web/decks/${deck.slug}/deck-data.js`,
+    ...(await resourceFiles(root, deck))
+  ];
 }
 
 let cleanedUp = false;
@@ -215,16 +249,16 @@ try {
   // Each must fail, and for its own reason - otherwise "it failed" proves
   // nothing about which rule is live.
   const fixtures = [
-    { file: "scripts/fixtures/extra-property-record.json", why: /additional propert/i, label: "schema: extra property rejected" },
-    { file: "scripts/fixtures/sixteen-word-axiom.json", why: /exceeds 15 words/i, label: "schema: over-long axiom rejected" },
-    { file: "scripts/fixtures/control-valid-record.json", why: null, label: "schema: control record accepted" }
+    { file: "scripts/fixtures/extra-property-record.json", deck: "ux-laws", why: /additional propert/i, label: "schema: extra property rejected" },
+    { file: "scripts/fixtures/sixteen-word-axiom.json", deck: "ux-laws", why: /exceeds 15 words/i, label: "schema: over-long axiom rejected" },
+    { file: "scripts/fixtures/control-valid-record.json", deck: "ux-laws", why: null, label: "schema: control record accepted" }
   ];
   for (const fixture of fixtures) {
     if (!existsSync(join(worktree, fixture.file))) {
       record(fixture.label, "fail", `${fixture.file} is not in this commit, so the rule behind it is untested`);
       continue;
     }
-    const result = run("node", ["scripts/validate.mjs", fixture.file], { cwd: worktree });
+    const result = run("node", ["scripts/validate.mjs", "--deck", fixture.deck, fixture.file], { cwd: worktree });
     const output = `${result.stdout}\n${result.stderr}`;
     if (fixture.why === null) {
       record(fixture.label, result.status === 0 ? "pass" : "fail",
@@ -280,7 +314,7 @@ try {
   // how this mistake survives a human review, so this reads the bytes.
   {
     const noBreak = Buffer.from([0xc2, 0xa0]);
-    const artifacts = ["packages/web/deck-data.js", "rules/ux-rules.md", "skills/ux-laws/SKILL.md", ...(await resourceFiles(worktree))];
+    const artifacts = (await Promise.all((await decksIn(worktree)).map((deck) => deckArtifacts(worktree, deck)))).flat();
     const hits = [];
     for (const file of artifacts) {
       const bytes = readFileSync(join(worktree, file));
@@ -297,7 +331,7 @@ try {
 
   // --- 3. generators are deterministic and match what is committed ---------
   {
-    const targets = ["rules/ux-rules.md", "skills/ux-laws/SKILL.md", "packages/web/deck-data.js", ...(await resourceFiles(worktree))];
+    const targets = (await Promise.all((await decksIn(worktree)).map((deck) => deckArtifacts(worktree, deck)))).flat();
     const missing = targets.filter((target) => !existsSync(join(worktree, target)));
     const hashOf = async () => {
       const out = [];
@@ -331,10 +365,16 @@ try {
 
   // --- 4. parametric SVG contract ------------------------------------------
   {
-    const require = createRequire(join(worktree, "scripts", "svg.js"));
+    const require = createRequire(join(worktree, "packages", "core", "svg.js"));
     const { renderSvg, shapeTraits } = require("./svg.js");
-    const dir = join(worktree, "data", "laws");
-    const files = (await readdir(dir)).filter((name) => name.endsWith(".json")).sort();
+    const inputs = [];
+    for (const deck of await decksIn(worktree)) {
+      const dir = join(worktree, "decks", deck.slug, "data", "laws");
+      for (const name of (await readdir(dir)).filter((item) => item.endsWith(".json")).sort()) {
+        inputs.push(join(dir, name));
+      }
+    }
+    const files = inputs;
     const problems = [];
     const unprobed = [];
     const monotoneChecked = [];

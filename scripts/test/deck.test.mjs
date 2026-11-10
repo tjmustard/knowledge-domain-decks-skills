@@ -11,19 +11,21 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  loadDeck,
   loadCards,
   authorsLabel,
   titleStop,
   wordCount,
-  withCitation,
-  CATEGORY_ORDER
-} from "../lib/deck.mjs";
+  withCitation
+} from "../../packages/core/deck.mjs";
+
+const deck = await loadDeck("ux-laws");
 
 // The counts are written out rather than derived from the directory so that
 // adding a card stops the build. A derived expectation would grow silently with
 // the dataset, and "54 cards" is a claim the README makes about this deck.
 test("the deck holds 54 records, eleven from each section but TME", async () => {
-  const cards = await loadCards();
+  const cards = await loadCards(deck);
   assert.equal(cards.length, 54);
   const byPrefix = Object.fromEntries(
     ["DEC", "GES", "HMM", "MPA", "TME"].map((prefix) => [
@@ -35,7 +37,7 @@ test("the deck holds 54 records, eleven from each section but TME", async () => 
 });
 
 test("records come out in deck order", async () => {
-  const ids = (await loadCards()).map((card) => card.id);
+  const ids = (await loadCards(deck)).map((card) => card.id);
   // The loader sorts with localeCompare. On this dataset a plain codepoint
   // sort gives the identical sequence, so this pins the order and not the
   // comparator: a test claiming to catch a comparator swap would assert
@@ -53,18 +55,18 @@ test("each id prefix carries the category the deck says it does", async () => {
     MPA: "Memory, Perception & Attention",
     TME: "Time, Motion & Ergonomics"
   };
-  const cards = await loadCards();
+  const cards = await loadCards(deck);
   const wrong = cards
     .filter((card) => card.category !== expected[card.id.slice(0, 3)])
     .map((card) => `${card.id} is filed under ${card.category}`);
   assert.deepEqual(wrong, []);
 
-  // CATEGORY_ORDER decides how the generated skill groups its tables. It is a
+  // deck.categories decides how the generated skill groups its tables. It is a
   // different order from the id order, so asserting they agree would be wrong;
   // what must hold is that it names exactly the categories the records use.
   assert.deepEqual(
     [...new Set(cards.map((card) => card.category))].sort(),
-    [...CATEGORY_ORDER].sort()
+    [...deck.categories].sort()
   );
 });
 
@@ -106,7 +108,7 @@ test("titleStop adds a stop unless the title already ends one", () => {
 });
 
 test("withCitation adds both strings and leaves the record alone", async () => {
-  const [card] = (await loadCards()).filter((item) => item.id === "DEC-01");
+  const [card] = (await loadCards(deck)).filter((item) => item.id === "DEC-01");
   const before = JSON.stringify(card);
   const cited = withCitation(card);
   assert.equal(JSON.stringify(card), before, "withCitation must not mutate its argument");

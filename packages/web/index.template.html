@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Knowledge Domain Decks</p>
+    <h1>{{heading}}</h1>
+    <p class="lede" id="lede">{{lede}}</p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+
+  <main>
+    <div class="deck" id="deck"></div>
+    <p class="empty" id="empty" hidden>No cards in this category.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>{{source}}</p>
+  </footer>
+
+  <script>window.DECK_GLOBAL = "{{global}}"; window.DECK_ACCENTS = "{{accentsGlobal}}";</script>
+  <script src="deck-data.js"></script>
+  <script src="accents.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>
