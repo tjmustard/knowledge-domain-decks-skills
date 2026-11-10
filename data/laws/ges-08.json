@@ -1,0 +1,45 @@
+{
+  "id": "GES-08",
+  "name": "Law of Uniform Connectedness",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Where a line joins two things, people group them before they weigh the distance.",
+  "trigger": "Wizard steps float unconnected, so the order has to be inferred from the numbers.",
+  "checklist": [
+    {
+      "text": "Join nodes in a flow editor with one continuous stroke, not arrows that stop short.",
+      "kind": "code"
+    },
+    {
+      "text": "Connect checkout steps with a single track so the sequence is drawn, not implied.",
+      "kind": "code"
+    },
+    {
+      "text": "Attach a tab to its panel with a shared border instead of relying on colour alone.",
+      "kind": "code"
+    },
+    {
+      "text": "Remove the connecting line as a test; if grouping survives, the line was decoration.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Four numbered circles float with no links, and the user must guess the sequence.",
+    "remediation": "The circles sit on one continuous track that fills as each stage completes."
+  },
+  "graphicMetaphor": {
+    "svgShape": "link-beats-gap",
+    "parametricParams": {
+      "caption": "A LINE OUTRANKS THE GAP"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Stephen E. Palmer",
+      "Irvin Rock"
+    ],
+    "year": 1994,
+    "title": "Rethinking perceptual organization: The role of uniform connectedness",
+    "publication": "Psychonomic Bulletin & Review, 1(1), 29-55",
+    "doi": "10.3758/BF03200760"
+  }
+}

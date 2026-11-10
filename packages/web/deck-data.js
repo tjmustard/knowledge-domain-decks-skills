@@ -769,6 +769,386 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"48\" y=\"150\" width=\"184\" height=\"100\" rx=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" fill-opacity=\"0.07\" stroke-opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"100\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"300\" cy=\"200\" r=\"12\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE LINE DRAWS THE GROUP</text></svg>"
     },
     {
+      "id": "GES-04",
+      "name": "Law of Prägnanz (Law of Simplicity / Good Figure)",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "Of the readings a shape allows, perception takes the simplest and most regular.",
+      "trigger": "A layout can be parsed two ways, and the harder reading is the one users settle on.",
+      "checklist": [
+        {
+          "text": "Align cards and panels to one grid so their edges resolve into a few straight lines.",
+          "kind": "code"
+        },
+        {
+          "text": "Strip icon detail until the silhouette reads at a glance; keep one recognisable outline.",
+          "kind": "code"
+        },
+        {
+          "text": "Replace diagonal cuts and stepped dividers with rectangles on the same axes.",
+          "kind": "code"
+        },
+        {
+          "text": "Show a layout to someone for two seconds and ask what the page is made of.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Cards are skewed and cut on diagonals with stepped dividers, so every block needs tracing.",
+        "remediation": "Cards are rectangles on one grid, with edges that line up and a readable silhouette."
+      },
+      "graphicMetaphor": {
+        "svgShape": "simplest-form",
+        "parametricParams": {
+          "caption": "ONE OF THESE IS WHAT YOU SEE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Max Wertheimer"
+        ],
+        "year": 1923,
+        "title": "Untersuchungen zur Lehre von der Gestalt II",
+        "publication": "Psychologische Forschung, 4, 301-350",
+        "doi": "10.1007/BF00410640",
+        "authorsLabel": "Max Wertheimer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 110.0 112.0 L 142.0 134.6 L 175.8 152.0 L 192.0 190.0 L 168.0 223.5 L 149.5 258.4 L 110.0 253.0 L 72.5 255.0 L 40.7 230.0 L 44.0 190.0 L 43.3 151.5 L 76.0 131.1 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"190\" r=\"72\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">AS DRAWN</text><text x=\"290\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">AS SEEN</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE OF THESE IS WHAT YOU SEE</text></svg>"
+    },
+    {
+      "id": "GES-05",
+      "name": "Law of Closure",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "The eye completes a broken outline and sees the whole shape it implies.",
+      "trigger": "A carousel stops exactly at the screen edge, so nothing signals more content.",
+      "checklist": [
+        {
+          "text": "Let the next card peek past the edge instead of ending the list flush with the viewport.",
+          "kind": "code"
+        },
+        {
+          "text": "Draw icons as open strokes where the missing segment does not change the meaning.",
+          "kind": "code"
+        },
+        {
+          "text": "Use skeleton shapes that outline the incoming content rather than a centred spinner.",
+          "kind": "code"
+        },
+        {
+          "text": "Ask users whether a scrollable list has more items; a no is a closure failure.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A carousel snaps flush to the margins, so the row reads as complete and nobody swipes.",
+        "remediation": "One card sits two-thirds off the edge, so the row visibly continues."
+      },
+      "graphicMetaphor": {
+        "svgShape": "broken-ring",
+        "parametricParams": {
+          "caption": "THE EYE FINISHES THE RING"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Kurt Koffka"
+        ],
+        "year": 1935,
+        "title": "Principles of Gestalt Psychology",
+        "publication": "Harcourt, Brace & World",
+        "authorsLabel": "Kurt Koffka",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"110\" cy=\"190\" r=\"66\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHOLE</text><path d=\"M 301.5 125.0 A 66 66 0 0 1 355.0 178.5 M 355.0 201.5 A 66 66 0 0 1 301.5 255.0 M 278.5 255.0 A 66 66 0 0 1 225.0 201.5 M 225.0 178.5 A 66 66 0 0 1 278.5 125.0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">BROKEN</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE EYE FINISHES THE RING</text></svg>"
+    },
+    {
+      "id": "GES-06",
+      "name": "Law of Figure/Ground",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "A view reads as a figure against a ground, and one edge separates them.",
+      "trigger": "A dialog opens with no dimmed backdrop, so its text bleeds into the page behind it.",
+      "checklist": [
+        {
+          "text": "Dim the page under a modal so the dialog is the only thing competing for the eye.",
+          "kind": "code"
+        },
+        {
+          "text": "Raise menus and sheets off the surface with one shadow direction, not several.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep body text at least 7:1 against its background; the figure needs its ground.",
+          "kind": "code"
+        },
+        {
+          "text": "Check a screenshot in grey; if figure and ground merge, contrast is carrying it alone.",
+          "kind": "code"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A modal opens over a dense page with no scrim, and its copy mixes with the text behind it.",
+        "remediation": "The modal sits on a dark scrim with one soft shadow, and the page behind recedes."
+      },
+      "graphicMetaphor": {
+        "svgShape": "shared-edge",
+        "parametricParams": {
+          "caption": "ONE EDGE, TWO SIDES"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Edgar Rubin"
+        ],
+        "year": 1915,
+        "title": "Synsoplevede Figurer",
+        "publication": "Gyldendalske Boghandel",
+        "authorsLabel": "Edgar Rubin",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 70 90 L 200 90 L 182 125 L 214 160 L 186 195 L 212 230 L 196 280 L 70 280 Z\" fill=\"currentColor\" fill-opacity=\"0.12\" stroke=\"none\"/><rect x=\"70\" y=\"90\" width=\"260\" height=\"190\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 90 L 182 125 L 214 160 L 186 195 L 212 230 L 196 280\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"120\" y=\"76\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FIGURE</text><text x=\"280\" y=\"76\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">GROUND</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE EDGE, TWO SIDES</text></svg>"
+    },
+    {
+      "id": "GES-07",
+      "name": "Law of Continuity (Good Continuation)",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "Marks along one smooth path read as a single line, not a series.",
+      "trigger": "Numbers in a table centre-align, so the decimal points stagger down the column.",
+      "checklist": [
+        {
+          "text": "Right-align numeric columns and use tabular figures so digits stack in one plane.",
+          "kind": "code"
+        },
+        {
+          "text": "Run onboarding steps along one visible axis instead of wrapping them into a grid.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep scan paths predictable; do not break a column of links with a full-width banner.",
+          "kind": "code"
+        },
+        {
+          "text": "Track a reader's eye across a dense screen; sideways jumps mark a broken continuation.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A ledger centres its figures, the decimal points stagger, and the column cannot be scanned.",
+        "remediation": "Every amount is right-aligned in tabular figures, forming one vertical line of decimals."
+      },
+      "graphicMetaphor": {
+        "svgShape": "crossing-curves",
+        "parametricParams": {
+          "caption": "EACH LINE CONTINUES"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Max Wertheimer"
+        ],
+        "year": 1923,
+        "title": "Untersuchungen zur Lehre von der Gestalt II",
+        "publication": "Psychologische Forschung, 4, 301-350",
+        "doi": "10.1007/BF00410640",
+        "authorsLabel": "Max Wertheimer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 55 120 C 130 120 170 280 345 280\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 55 280 C 130 280 170 120 345 120\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EACH LINE CONTINUES</text></svg>"
+    },
+    {
+      "id": "GES-08",
+      "name": "Law of Uniform Connectedness",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "Where a line joins two things, people group them before they weigh the distance.",
+      "trigger": "Wizard steps float unconnected, so the order has to be inferred from the numbers.",
+      "checklist": [
+        {
+          "text": "Join nodes in a flow editor with one continuous stroke, not arrows that stop short.",
+          "kind": "code"
+        },
+        {
+          "text": "Connect checkout steps with a single track so the sequence is drawn, not implied.",
+          "kind": "code"
+        },
+        {
+          "text": "Attach a tab to its panel with a shared border instead of relying on colour alone.",
+          "kind": "code"
+        },
+        {
+          "text": "Remove the connecting line as a test; if grouping survives, the line was decoration.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Four numbered circles float with no links, and the user must guess the sequence.",
+        "remediation": "The circles sit on one continuous track that fills as each stage completes."
+      },
+      "graphicMetaphor": {
+        "svgShape": "link-beats-gap",
+        "parametricParams": {
+          "caption": "A LINE OUTRANKS THE GAP"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Stephen E. Palmer",
+          "Irvin Rock"
+        ],
+        "year": 1994,
+        "title": "Rethinking perceptual organization: The role of uniform connectedness",
+        "publication": "Psychonomic Bulletin & Review, 1(1), 29-55",
+        "doi": "10.3758/BF03200760",
+        "authorsLabel": "Stephen E. Palmer & Irvin Rock",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"70\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"150\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"150\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"270\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"270\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"310\" cy=\"120\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"310\" cy=\"250\" r=\"10\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160\" y1=\"250\" x2=\"220\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"88\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">UNLINKED</text><text x=\"110\" y=\"296\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">LINKED</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">A LINE OUTRANKS THE GAP</text></svg>"
+    },
+    {
+      "id": "GES-09",
+      "name": "Law of Common Fate",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "Things that move together in one direction are seen as one thing, whatever else differs.",
+      "trigger": "A sidebar collapses while its labels reflow at a different speed, so the panel tears.",
+      "checklist": [
+        {
+          "text": "Animate a menu and its items as one surface, not as a stagger of separate parts.",
+          "kind": "code"
+        },
+        {
+          "text": "Give every element of a collapsing panel the same duration and easing curve.",
+          "kind": "code"
+        },
+        {
+          "text": "Dismiss table rows along one exit path so the remaining rows move as a block.",
+          "kind": "code"
+        },
+        {
+          "text": "Record a slowed transition; any part that arrives late is moving in its own direction.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A sidebar slides left while its child text wraps and drops, so the panel comes apart.",
+        "remediation": "Sidebar, labels, and icons translate together on one 200 ms curve."
+      },
+      "graphicMetaphor": {
+        "svgShape": "shared-motion",
+        "parametricParams": {
+          "columns": 4,
+          "rows": 3,
+          "moving": 0,
+          "caption": "SAME DIRECTION, ONE THING"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Max Wertheimer"
+        ],
+        "year": 1923,
+        "title": "Untersuchungen zur Lehre von der Gestalt II",
+        "publication": "Psychologische Forschung, 4, 301-350",
+        "doi": "10.1007/BF00410640",
+        "authorsLabel": "Max Wertheimer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"90\" cy=\"140\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"114\" x2=\"104\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 104 107 L 114 114 L 104 121 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"140\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"236\" cy=\"140\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309\" cy=\"140\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90\" cy=\"200\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"174\" x2=\"104\" y2=\"174\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 104 167 L 114 174 L 104 181 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"200\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"236\" cy=\"200\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309\" cy=\"200\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90\" cy=\"260\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"234\" x2=\"104\" y2=\"234\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 104 227 L 114 234 L 104 241 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163\" cy=\"260\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"236\" cy=\"260\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"309\" cy=\"260\" r=\"11\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SAME DIRECTION, ONE THING</text></svg>"
+    },
+    {
+      "id": "GES-10",
+      "name": "Law of Focal Point",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "One mark with the most contrast takes the eye, and everything else waits its turn.",
+      "trigger": "Every plan in a pricing table has a solid red Buy button, so none stands out.",
+      "checklist": [
+        {
+          "text": "Give one action per view the strongest fill, and demote the rest to outline.",
+          "kind": "code"
+        },
+        {
+          "text": "Allow one high-contrast badge per screen; a second cancels the first.",
+          "kind": "code"
+        },
+        {
+          "text": "Put the recommended option in one accent border rather than five coloured buttons.",
+          "kind": "code"
+        },
+        {
+          "text": "Screenshot the view, blur it, and see which element survives; it should be the action.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Four pricing cards each carry an identical solid red Buy button, so no tier is focal.",
+        "remediation": "Three tiers use outline buttons; the recommended one is framed and filled."
+      },
+      "graphicMetaphor": {
+        "svgShape": "odd-one-out",
+        "parametricParams": {
+          "columns": 5,
+          "rows": 3,
+          "oddIndex": 7,
+          "oddLabel": "FOCUS",
+          "caption": "ONE MARK TAKES THE EYE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Stephen E. Palmer"
+        ],
+        "year": 1999,
+        "title": "Vision Science: Photons to Phenomenology",
+        "publication": "MIT Press",
+        "authorsLabel": "Stephen E. Palmer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"88\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"256\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"108\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"170\" r=\"17\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"207\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FOCUS</text><circle cx=\"256\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"170\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"88\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"256\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"312\" cy=\"232\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE MARK TAKES THE EYE</text></svg>"
+    },
+    {
+      "id": "GES-11",
+      "name": "Law of Past Experience",
+      "category": "Gestalt & Visual Perception",
+      "axiom": "People read an ambiguous mark by the conventions they already carry.",
+      "trigger": "A green button deletes an account, or a back arrow sits on the right of the row.",
+      "checklist": [
+        {
+          "text": "Keep red for destructive, green for success, and amber for caution, because users already do.",
+          "kind": "code"
+        },
+        {
+          "text": "Use a cart for the basket, a gear for settings, a speech bubble for comments.",
+          "kind": "code"
+        },
+        {
+          "text": "Put forward on the right and back on the left in left-to-right locales.",
+          "kind": "code"
+        },
+        {
+          "text": "Test an icon without its label; a wrong guess marks a convention the user does not share.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A green button deletes an account, and the undo prompt is the first time anyone is told.",
+        "remediation": "Destructive actions are red and named; success is green and never destroys."
+      },
+      "graphicMetaphor": {
+        "svgShape": "necker-cube",
+        "parametricParams": {
+          "caption": "SAME EDGES, TWO READINGS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Kurt Koffka"
+        ],
+        "year": 1935,
+        "title": "Principles of Gestalt Psychology",
+        "publication": "Harcourt, Brace & World",
+        "authorsLabel": "Kurt Koffka",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"110\" y1=\"130\" x2=\"250\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150\" y1=\"170\" x2=\"290\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"130\" x2=\"150\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250\" y1=\"130\" x2=\"250\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"170\" x2=\"290\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250\" y1=\"130\" x2=\"290\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250\" y1=\"270\" x2=\"110\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"310\" x2=\"150\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250\" y1=\"270\" x2=\"290\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"270\" x2=\"110\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150\" y1=\"310\" x2=\"150\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"270\" x2=\"150\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SAME EDGES, TWO READINGS</text></svg>"
+    },
+    {
       "id": "HMM-01",
       "name": "Jakob's Law",
       "category": "Heuristic & Mental Models",

@@ -257,6 +257,150 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** Stephen E. Palmer (1992). *Common region: A new principle of perceptual grouping*. Cognitive Psychology, 24(3), 436-447.
 
+### GES-04 — Law of Prägnanz (Law of Simplicity / Good Figure)
+
+**Axiom.** Of the readings a shape allows, perception takes the simplest and most regular.
+
+**Apply when.** A layout can be parsed two ways, and the harder reading is the one users settle on.
+
+**Checklist.**
+- [ ] Align cards and panels to one grid so their edges resolve into a few straight lines.
+- [ ] Strip icon detail until the silhouette reads at a glance; keep one recognisable outline.
+- [ ] Replace diagonal cuts and stepped dividers with rectangles on the same axes.
+- [ ] Show a layout to someone for two seconds and ask what the page is made of. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Cards are skewed and cut on diagonals with stepped dividers, so every block needs tracing.
+
+**Fix.** Cards are rectangles on one grid, with edges that line up and a readable silhouette.
+
+**Source.** Max Wertheimer (1923). *Untersuchungen zur Lehre von der Gestalt II*. Psychologische Forschung, 4, 301-350.
+
+### GES-05 — Law of Closure
+
+**Axiom.** The eye completes a broken outline and sees the whole shape it implies.
+
+**Apply when.** A carousel stops exactly at the screen edge, so nothing signals more content.
+
+**Checklist.**
+- [ ] Let the next card peek past the edge instead of ending the list flush with the viewport.
+- [ ] Draw icons as open strokes where the missing segment does not change the meaning.
+- [ ] Use skeleton shapes that outline the incoming content rather than a centred spinner.
+- [ ] Ask users whether a scrollable list has more items; a no is a closure failure. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A carousel snaps flush to the margins, so the row reads as complete and nobody swipes.
+
+**Fix.** One card sits two-thirds off the edge, so the row visibly continues.
+
+**Source.** Kurt Koffka (1935). *Principles of Gestalt Psychology*. Harcourt, Brace & World.
+
+### GES-06 — Law of Figure/Ground
+
+**Axiom.** A view reads as a figure against a ground, and one edge separates them.
+
+**Apply when.** A dialog opens with no dimmed backdrop, so its text bleeds into the page behind it.
+
+**Checklist.**
+- [ ] Dim the page under a modal so the dialog is the only thing competing for the eye.
+- [ ] Raise menus and sheets off the surface with one shadow direction, not several.
+- [ ] Keep body text at least 7:1 against its background; the figure needs its ground.
+- [ ] Check a screenshot in grey; if figure and ground merge, contrast is carrying it alone.
+
+**Anti-pattern.** A modal opens over a dense page with no scrim, and its copy mixes with the text behind it.
+
+**Fix.** The modal sits on a dark scrim with one soft shadow, and the page behind recedes.
+
+**Source.** Edgar Rubin (1915). *Synsoplevede Figurer*. Gyldendalske Boghandel.
+
+### GES-07 — Law of Continuity (Good Continuation)
+
+**Axiom.** Marks along one smooth path read as a single line, not a series.
+
+**Apply when.** Numbers in a table centre-align, so the decimal points stagger down the column.
+
+**Checklist.**
+- [ ] Right-align numeric columns and use tabular figures so digits stack in one plane.
+- [ ] Run onboarding steps along one visible axis instead of wrapping them into a grid.
+- [ ] Keep scan paths predictable; do not break a column of links with a full-width banner.
+- [ ] Track a reader's eye across a dense screen; sideways jumps mark a broken continuation. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A ledger centres its figures, the decimal points stagger, and the column cannot be scanned.
+
+**Fix.** Every amount is right-aligned in tabular figures, forming one vertical line of decimals.
+
+**Source.** Max Wertheimer (1923). *Untersuchungen zur Lehre von der Gestalt II*. Psychologische Forschung, 4, 301-350.
+
+### GES-08 — Law of Uniform Connectedness
+
+**Axiom.** Where a line joins two things, people group them before they weigh the distance.
+
+**Apply when.** Wizard steps float unconnected, so the order has to be inferred from the numbers.
+
+**Checklist.**
+- [ ] Join nodes in a flow editor with one continuous stroke, not arrows that stop short.
+- [ ] Connect checkout steps with a single track so the sequence is drawn, not implied.
+- [ ] Attach a tab to its panel with a shared border instead of relying on colour alone.
+- [ ] Remove the connecting line as a test; if grouping survives, the line was decoration. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Four numbered circles float with no links, and the user must guess the sequence.
+
+**Fix.** The circles sit on one continuous track that fills as each stage completes.
+
+**Source.** Stephen E. Palmer & Irvin Rock (1994). *Rethinking perceptual organization: The role of uniform connectedness*. Psychonomic Bulletin & Review, 1(1), 29-55.
+
+### GES-09 — Law of Common Fate
+
+**Axiom.** Things that move together in one direction are seen as one thing, whatever else differs.
+
+**Apply when.** A sidebar collapses while its labels reflow at a different speed, so the panel tears.
+
+**Checklist.**
+- [ ] Animate a menu and its items as one surface, not as a stagger of separate parts.
+- [ ] Give every element of a collapsing panel the same duration and easing curve.
+- [ ] Dismiss table rows along one exit path so the remaining rows move as a block.
+- [ ] Record a slowed transition; any part that arrives late is moving in its own direction. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A sidebar slides left while its child text wraps and drops, so the panel comes apart.
+
+**Fix.** Sidebar, labels, and icons translate together on one 200 ms curve.
+
+**Source.** Max Wertheimer (1923). *Untersuchungen zur Lehre von der Gestalt II*. Psychologische Forschung, 4, 301-350.
+
+### GES-10 — Law of Focal Point
+
+**Axiom.** One mark with the most contrast takes the eye, and everything else waits its turn.
+
+**Apply when.** Every plan in a pricing table has a solid red Buy button, so none stands out.
+
+**Checklist.**
+- [ ] Give one action per view the strongest fill, and demote the rest to outline.
+- [ ] Allow one high-contrast badge per screen; a second cancels the first.
+- [ ] Put the recommended option in one accent border rather than five coloured buttons.
+- [ ] Screenshot the view, blur it, and see which element survives; it should be the action. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Four pricing cards each carry an identical solid red Buy button, so no tier is focal.
+
+**Fix.** Three tiers use outline buttons; the recommended one is framed and filled.
+
+**Source.** Stephen E. Palmer (1999). *Vision Science: Photons to Phenomenology*. MIT Press.
+
+### GES-11 — Law of Past Experience
+
+**Axiom.** People read an ambiguous mark by the conventions they already carry.
+
+**Apply when.** A green button deletes an account, or a back arrow sits on the right of the row.
+
+**Checklist.**
+- [ ] Keep red for destructive, green for success, and amber for caution, because users already do.
+- [ ] Use a cart for the basket, a gear for settings, a speech bubble for comments.
+- [ ] Put forward on the right and back on the left in left-to-right locales.
+- [ ] Test an icon without its label; a wrong guess marks a convention the user does not share. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** A green button deletes an account, and the undo prompt is the first time anyone is told.
+
+**Fix.** Destructive actions are red and named; success is green and never destroys.
+
+**Source.** Kurt Koffka (1935). *Principles of Gestalt Psychology*. Harcourt, Brace & World.
+
 ## Decision-Making & Cognitive Load
 
 ### DEC-01 — Hick's Law

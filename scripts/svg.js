@@ -1088,6 +1088,157 @@
       out.push(circle(300, 200, 12, { opacity: 0.85 }));
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+
+    /* Pragnanz: the same twelve points, joined once with jitter and once as a
+       circle. Both drawings are legal descriptions of the marks; the second is
+       the one the visual system prefers. */
+    "simplest-form": function (p) {
+      var caption = p.caption || "";
+      var jitter = [6, -8, 4, 10, -5, 7, -9, 3, 8, -6, 5, -4];
+      var pts = [];
+      for (var i = 0; i < 12; i++) {
+        var a = (i / 12) * Math.PI * 2 - Math.PI / 2;
+        var r = 72 + jitter[i];
+        pts.push([110 + r * Math.cos(a), 190 + r * Math.sin(a)]);
+      }
+      var d = "M " + pts.map(function (q) {
+        return q[0].toFixed(1) + " " + q[1].toFixed(1);
+      }).join(" L ") + " Z";
+      var out = [];
+      out.push('<path d="' + d + '" fill="none" stroke="currentColor" stroke-width="2" ' +
+        'opacity="0.75" ' + STROKE + "/>");
+      out.push(circle(290, 190, 72, { hollow: true, width: 2, opacity: 0.75 }));
+      out.push(label(110, 96, "AS DRAWN", { size: 9 }));
+      out.push(label(290, 96, "AS SEEN", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Closure: a whole ring beside a ring broken into four arcs. The broken
+       one is not completed in the drawing; the reader supplies the missing
+       segments, which is the claim. */
+    "broken-ring": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(circle(110, 190, 66, { hollow: true, width: 2, opacity: 0.75 }));
+      out.push(label(110, 96, "WHOLE", { size: 9 }));
+      var arcs = [[-80, -10], [10, 80], [100, 170], [190, 260]];
+      var d = "";
+      for (var i = 0; i < arcs.length; i++) {
+        var a0 = (arcs[i][0] * Math.PI) / 180;
+        var a1 = (arcs[i][1] * Math.PI) / 180;
+        d += "M " + (290 + 66 * Math.cos(a0)).toFixed(1) + " " +
+          (190 + 66 * Math.sin(a0)).toFixed(1) + " A 66 66 0 0 1 " +
+          (290 + 66 * Math.cos(a1)).toFixed(1) + " " +
+          (190 + 66 * Math.sin(a1)).toFixed(1) + " ";
+      }
+      out.push('<path d="' + d.trim() + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="2" opacity="0.75" ' + STROKE + "/>");
+      out.push(label(290, 96, "BROKEN", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Figure and ground: one wavy contour divides one field into two regions,
+       with no cue saying which region owns the edge. */
+    "shared-edge": function (p) {
+      var caption = p.caption || "";
+      var wave = [[200, 90], [182, 125], [214, 160], [186, 195], [212, 230], [196, 280]];
+      var d = "M 70 90 L 200 90 ";
+      for (var i = 1; i < wave.length; i++) d += "L " + wave[i][0] + " " + wave[i][1] + " ";
+      d += "L 70 280 Z";
+      var out = [];
+      out.push('<path d="' + d + '" fill="currentColor" fill-opacity="0.12" ' +
+        'stroke="none"/>');
+      out.push(rect(70, 90, 260, 190, { rx: 4, opacity: 0.75, width: 2 }));
+      out.push('<path d="M 200 90 ' + wave.slice(1).map(function (q) {
+        return "L " + q[0] + " " + q[1];
+      }).join(" ") + '" fill="none" stroke="currentColor" stroke-width="3" ' +
+        'opacity="0.85" ' + STROKE + "/>");
+      out.push(label(120, 76, "FIGURE", { size: 9 }));
+      out.push(label(280, 76, "GROUND", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Continuity: two curves cross, and each is drawn as one unbroken line
+       through the crossing. A reading as two V shapes is available and less
+       costly to the eye only if the curves are broken. */
+    "crossing-curves": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push('<path d="M 55 120 C 130 120 170 280 345 280" fill="none" ' +
+        'stroke="currentColor" stroke-width="3" opacity="0.8" ' + STROKE + "/>");
+      out.push('<path d="M 55 280 C 130 280 170 120 345 120" fill="none" ' +
+        'stroke="currentColor" stroke-width="3" opacity="0.8" ' + STROKE + "/>");
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Uniform connectedness: the same six marks at the same spacing, once with
+       no link and once with a stroke joining the middle pair. The link, not the
+       gap, decides the grouping in the second row. */
+    "link-beats-gap": function (p) {
+      var caption = p.caption || "";
+      var xs = [70, 110, 150, 230, 270, 310];
+      var out = [];
+      for (var i = 0; i < xs.length; i++) {
+        out.push(circle(xs[i], 120, 10, { opacity: 0.75 }));
+        out.push(circle(xs[i], 250, 10, { opacity: 0.75 }));
+      }
+      out.push(line(160, 250, 220, 250, 3, 0.85));
+      out.push(label(110, 88, "UNLINKED", { size: 9 }));
+      out.push(label(110, 296, "LINKED", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Common fate: a field of static marks and four that carry the same
+       direction arrow. Direction is drawn as an arrow because a still picture
+       has no motion, and the caption says what the arrows stand for. */
+    "shared-motion": function (p) {
+      var caption = p.caption || "";
+      var cols = p.columns || 4;
+      var rows = p.rows || 3;
+      var moving = p.moving || 0;
+      var out = [];
+      var x0 = 90, y0 = 140, stepX = 73, stepY = 60;
+      for (var r = 0; r < rows; r++) {
+        for (var c = 0; c < cols; c++) {
+          var x = x0 + c * stepX, y = y0 + r * stepY;
+          out.push(circle(x, y, 11, { opacity: 0.7 }));
+          if (c === moving) {
+            /* The arrow sits above the mark and stops short of the next
+               column: drawn between two marks it reads as a link, which is
+               GES-08's claim, not this card's. */
+            out.push(line(x - 16, y - 26, x + 14, y - 26, 3, 0.85));
+            out.push('<path d="M ' + (x + 14) + ' ' + (y - 33) + ' L ' +
+              (x + 24) + ' ' + (y - 26) + ' L ' + (x + 14) + ' ' + (y - 19) +
+              ' Z" fill="currentColor" opacity="0.85" ' + STROKE + "/>");
+          }
+        }
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Past experience: the Necker cube. The same twelve edges support two
+       readings; nothing in the drawing prefers one, and habit supplies the
+       rest. */
+    "necker-cube": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      var front = [[110, 130], [250, 130], [250, 270], [110, 270]];
+      var back = [[150, 170], [290, 170], [290, 310], [150, 310]];
+      for (var i = 0; i < 4; i++) {
+        var j = (i + 1) % 4;
+        out.push(line(front[i][0], front[i][1], front[j][0], front[j][1], 2.5, 0.8));
+        out.push(line(back[i][0], back[i][1], back[j][0], back[j][1], 2.5, 0.8));
+        out.push(line(front[i][0], front[i][1], back[i][0], back[i][1], 2.5, 0.8));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 

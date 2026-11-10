@@ -1,0 +1,44 @@
+{
+  "id": "GES-04",
+  "name": "Law of Prägnanz (Law of Simplicity / Good Figure)",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Of the readings a shape allows, perception takes the simplest and most regular.",
+  "trigger": "A layout can be parsed two ways, and the harder reading is the one users settle on.",
+  "checklist": [
+    {
+      "text": "Align cards and panels to one grid so their edges resolve into a few straight lines.",
+      "kind": "code"
+    },
+    {
+      "text": "Strip icon detail until the silhouette reads at a glance; keep one recognisable outline.",
+      "kind": "code"
+    },
+    {
+      "text": "Replace diagonal cuts and stepped dividers with rectangles on the same axes.",
+      "kind": "code"
+    },
+    {
+      "text": "Show a layout to someone for two seconds and ask what the page is made of.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Cards are skewed and cut on diagonals with stepped dividers, so every block needs tracing.",
+    "remediation": "Cards are rectangles on one grid, with edges that line up and a readable silhouette."
+  },
+  "graphicMetaphor": {
+    "svgShape": "simplest-form",
+    "parametricParams": {
+      "caption": "ONE OF THESE IS WHAT YOU SEE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Max Wertheimer"
+    ],
+    "year": 1923,
+    "title": "Untersuchungen zur Lehre von der Gestalt II",
+    "publication": "Psychologische Forschung, 4, 301-350",
+    "doi": "10.1007/BF00410640"
+  }
+}

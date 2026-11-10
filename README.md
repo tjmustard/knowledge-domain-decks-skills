@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-34%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/deck-54%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,7 +29,7 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: thirty-four principles, each distilled
+The first deck covers UX and behavioral design: fifty-four principles, each distilled
 into the smallest usable form — an axiom, a trigger, a checklist, an
 anti-pattern, a generated diagram, and one exact academic source.
 
@@ -69,14 +69,14 @@ and no other deck's copy, names, or trade dress is used.
 
 ## 🃏 The First Deck
 
-**UX & Behavioral Design** is a thirty-four-card deck in progress: every category
-has at least one card, and eleven of the thirty-four are decision-making. It proves the
-whole pipeline end to end and is genuinely usable while the rest is written.
+**UX & Behavioral Design** is a fifty-four-card deck: every category is complete,
+and eleven of the fifty-four are decision-making. It proves the whole pipeline end
+to end and is useful as it stands.
 
-The deck is being built one card per principle, across all **54 principles** in
-the project's research list. That list is longer than the 52-item taxonomy in
-the project's architecture notes: where the two differ, the longer list wins,
-and each difference is recorded in [`DECISIONS.md`](./DECISIONS.md).
+Every one of the **54 principles** in the project's research list now has a
+card. That list is longer than the 52-item taxonomy in the project's
+architecture notes: where the two differ, the longer list wins, and each
+difference is recorded in [`DECISIONS.md`](./DECISIONS.md).
 
 Each card cites one primary paper, with that paper's own authors, year, title,
 and venue:
@@ -84,7 +84,27 @@ and venue:
 | ID | Card | Category | Primary source |
 |---|---|---|---|
 | HMM-01 | **Jakob's Law** | Heuristic & Mental Models | Nielsen (2000), *Designing Web Usability* |
+| HMM-02 | **Mental Model Theory** | Heuristic & Mental Models | Craik (1943), *The Nature of Explanation* |
+| HMM-03 | **Conceptual Integrity** | Heuristic & Mental Models | Brooks (1975), *The Mythical Man-Month* |
+| HMM-04 | **Aesthetic-Usability Effect** | Heuristic & Mental Models | Kurosu & Kashimura (1995), *Apparent usability vs. inherent usability* |
+| HMM-05 | **Principle of Least Astonishment (POLA)** | Heuristic & Mental Models | Cowlishaw (1984), *The design of the REXX language* |
+| HMM-06 | **Postel's Law (Robustness Principle)** | Heuristic & Mental Models | Postel (1980), *DoD standard Transmission Control Protocol* (RFC 761) |
+| HMM-07 | **Occam's Razor (Principle of Parsimony)** | Heuristic & Mental Models | Maeda (2006), *The Laws of Simplicity* |
+| HMM-08 | **Conway's Law** | Heuristic & Mental Models | Conway (1968), *How Do Committees Invent?* |
+| HMM-09 | **Gulf of Execution and Gulf of Evaluation** | Heuristic & Mental Models | Norman (1986), *Cognitive Engineering* |
+| HMM-10 | **Affordance Theory** | Heuristic & Mental Models | Gibson (1977), *The Theory of Affordances* |
+| HMM-11 | **Feedback Principle (Cybernetic Loop)** | Heuristic & Mental Models | Wiener (1948), *Cybernetics: Or Control and Communication in the Animal and the Machine* |
 | GES-01 | **Law of Proximity** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
+| GES-02 | **Law of Similarity** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
+| GES-03 | **Law of Common Region** | Gestalt & Visual Perception | Palmer (1992), *Common region: A new principle of perceptual grouping* |
+| GES-04 | **Law of Prägnanz (Law of Simplicity / Good Figure)** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
+| GES-05 | **Law of Closure** | Gestalt & Visual Perception | Koffka (1935), *Principles of Gestalt Psychology* |
+| GES-06 | **Law of Figure/Ground** | Gestalt & Visual Perception | Rubin (1915), *Synsoplevede Figurer* |
+| GES-07 | **Law of Continuity (Good Continuation)** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
+| GES-08 | **Law of Uniform Connectedness** | Gestalt & Visual Perception | Palmer & Rock (1994), *Rethinking perceptual organization: The role of uniform connectedness* |
+| GES-09 | **Law of Common Fate** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
+| GES-10 | **Law of Focal Point** | Gestalt & Visual Perception | Palmer (1999), *Vision Science: Photons to Phenomenology* |
+| GES-11 | **Law of Past Experience** | Gestalt & Visual Perception | Koffka (1935), *Principles of Gestalt Psychology* |
 | DEC-01 | **Hick's Law** | Decision-Making & Cognitive Load | Hick (1952), *On the Rate of Gain of Information* |
 | DEC-02 | **Miller's Law** | Decision-Making & Cognitive Load | Miller (1956), *The Magical Number Seven, Plus or Minus Two* |
 | DEC-03 | **Tesler's Law** | Decision-Making & Cognitive Load | Saffer (2007), *Designing for Interaction*, first edition |
@@ -127,8 +147,8 @@ them and the filters, accents, and rules sections follow automatically:
 
 | Category | Cards | What it audits |
 |---|---|---|
-| Heuristic & Mental Models | HMM-01 | Whether the interface matches what people already know |
-| Gestalt & Visual Perception | GES-01 | Grouping, spacing, and perceived structure |
+| Heuristic & Mental Models | HMM-01 to HMM-11 | Whether the interface matches what people already know |
+| Gestalt & Visual Perception | GES-01 to GES-11 | Grouping, spacing, and perceived structure |
 | Decision-Making & Cognitive Load | DEC-01 to DEC-11 | Option count, comparison effort, working memory, decision quality over time |
 | Time, Motion & Ergonomics | TME-01 to TME-10 | Target size, distance, motor effort, practice, operator time, perceptual ratio, motion economy, and saccade timing |
 | Memory, Perception & Attention | MPA-01 to MPA-11 | Position, distinctiveness, unfinished tasks, remembered peaks, anchor values, selective attention, confirmation, sunk costs, loss asymmetry, goal proximity, and defaults |
@@ -167,20 +187,20 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 68-page file of 743,518 bytes (726 KiB), and two consecutive
-builds of one commit are byte-identical. `npm run check:pdf`
+build:pdf` emits a 108-page file of 1,072,772 bytes (1,047 KiB), and two
+consecutive builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
-thirty-four versos and absent from the rectos. The labels drawn inside the
+fifty-four versos and absent from the rectos. The labels drawn inside the
 diagrams are smaller by design: a 9-unit label on the 400-unit drawing prints at
 2.9 pt, so the figures are annotations rather than type, and each one was
-inspected on its own card at 400 ppi. The worst text overrun past the
-safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
-from the paper edge — is about 1 pt on page 25 (0.97 pt by glyph metrics, 1.00 pt
-by ink at 12x, the last digit being instrument resolution rather than
-measurement), caused by glyph side-bearings rather
-than by text running long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
+inspected on its own card at 400 ppi. Every recto's lowest ink was measured against the
+bottom safe edge — the internal margin, 0.1875 in inside the trim line, so
+0.3125 in from the paper edge — at 864 ppi inside the page frame; the tightest
+card clears it by 7.32 pt. The topmost ink on every recto stands 0.08 pt above
+the top safe edge, a constant of the template rather than a card's line running
+long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
 empty placeholder.
 

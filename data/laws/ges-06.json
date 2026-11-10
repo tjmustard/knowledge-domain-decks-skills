@@ -1,0 +1,43 @@
+{
+  "id": "GES-06",
+  "name": "Law of Figure/Ground",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "A view reads as a figure against a ground, and one edge separates them.",
+  "trigger": "A dialog opens with no dimmed backdrop, so its text bleeds into the page behind it.",
+  "checklist": [
+    {
+      "text": "Dim the page under a modal so the dialog is the only thing competing for the eye.",
+      "kind": "code"
+    },
+    {
+      "text": "Raise menus and sheets off the surface with one shadow direction, not several.",
+      "kind": "code"
+    },
+    {
+      "text": "Keep body text at least 7:1 against its background; the figure needs its ground.",
+      "kind": "code"
+    },
+    {
+      "text": "Check a screenshot in grey; if figure and ground merge, contrast is carrying it alone.",
+      "kind": "code"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A modal opens over a dense page with no scrim, and its copy mixes with the text behind it.",
+    "remediation": "The modal sits on a dark scrim with one soft shadow, and the page behind recedes."
+  },
+  "graphicMetaphor": {
+    "svgShape": "shared-edge",
+    "parametricParams": {
+      "caption": "ONE EDGE, TWO SIDES"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Edgar Rubin"
+    ],
+    "year": 1915,
+    "title": "Synsoplevede Figurer",
+    "publication": "Gyldendalske Boghandel"
+  }
+}

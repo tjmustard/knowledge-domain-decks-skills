@@ -1,0 +1,44 @@
+{
+  "id": "GES-07",
+  "name": "Law of Continuity (Good Continuation)",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Marks along one smooth path read as a single line, not a series.",
+  "trigger": "Numbers in a table centre-align, so the decimal points stagger down the column.",
+  "checklist": [
+    {
+      "text": "Right-align numeric columns and use tabular figures so digits stack in one plane.",
+      "kind": "code"
+    },
+    {
+      "text": "Run onboarding steps along one visible axis instead of wrapping them into a grid.",
+      "kind": "code"
+    },
+    {
+      "text": "Keep scan paths predictable; do not break a column of links with a full-width banner.",
+      "kind": "code"
+    },
+    {
+      "text": "Track a reader's eye across a dense screen; sideways jumps mark a broken continuation.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A ledger centres its figures, the decimal points stagger, and the column cannot be scanned.",
+    "remediation": "Every amount is right-aligned in tabular figures, forming one vertical line of decimals."
+  },
+  "graphicMetaphor": {
+    "svgShape": "crossing-curves",
+    "parametricParams": {
+      "caption": "EACH LINE CONTINUES"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Max Wertheimer"
+    ],
+    "year": 1923,
+    "title": "Untersuchungen zur Lehre von der Gestalt II",
+    "publication": "Psychologische Forschung, 4, 301-350",
+    "doi": "10.1007/BF00410640"
+  }
+}

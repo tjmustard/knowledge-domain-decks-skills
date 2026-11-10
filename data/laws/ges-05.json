@@ -1,0 +1,43 @@
+{
+  "id": "GES-05",
+  "name": "Law of Closure",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "The eye completes a broken outline and sees the whole shape it implies.",
+  "trigger": "A carousel stops exactly at the screen edge, so nothing signals more content.",
+  "checklist": [
+    {
+      "text": "Let the next card peek past the edge instead of ending the list flush with the viewport.",
+      "kind": "code"
+    },
+    {
+      "text": "Draw icons as open strokes where the missing segment does not change the meaning.",
+      "kind": "code"
+    },
+    {
+      "text": "Use skeleton shapes that outline the incoming content rather than a centred spinner.",
+      "kind": "code"
+    },
+    {
+      "text": "Ask users whether a scrollable list has more items; a no is a closure failure.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A carousel snaps flush to the margins, so the row reads as complete and nobody swipes.",
+    "remediation": "One card sits two-thirds off the edge, so the row visibly continues."
+  },
+  "graphicMetaphor": {
+    "svgShape": "broken-ring",
+    "parametricParams": {
+      "caption": "THE EYE FINISHES THE RING"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Kurt Koffka"
+    ],
+    "year": 1935,
+    "title": "Principles of Gestalt Psychology",
+    "publication": "Harcourt, Brace & World"
+  }
+}

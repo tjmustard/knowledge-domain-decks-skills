@@ -1,0 +1,43 @@
+{
+  "id": "GES-11",
+  "name": "Law of Past Experience",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "People read an ambiguous mark by the conventions they already carry.",
+  "trigger": "A green button deletes an account, or a back arrow sits on the right of the row.",
+  "checklist": [
+    {
+      "text": "Keep red for destructive, green for success, and amber for caution, because users already do.",
+      "kind": "code"
+    },
+    {
+      "text": "Use a cart for the basket, a gear for settings, a speech bubble for comments.",
+      "kind": "code"
+    },
+    {
+      "text": "Put forward on the right and back on the left in left-to-right locales.",
+      "kind": "code"
+    },
+    {
+      "text": "Test an icon without its label; a wrong guess marks a convention the user does not share.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A green button deletes an account, and the undo prompt is the first time anyone is told.",
+    "remediation": "Destructive actions are red and named; success is green and never destroys."
+  },
+  "graphicMetaphor": {
+    "svgShape": "necker-cube",
+    "parametricParams": {
+      "caption": "SAME EDGES, TWO READINGS"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Kurt Koffka"
+    ],
+    "year": 1935,
+    "title": "Principles of Gestalt Psychology",
+    "publication": "Harcourt, Brace & World"
+  }
+}

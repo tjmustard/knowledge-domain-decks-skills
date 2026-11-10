@@ -1,0 +1,47 @@
+{
+  "id": "GES-10",
+  "name": "Law of Focal Point",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "One mark with the most contrast takes the eye, and everything else waits its turn.",
+  "trigger": "Every plan in a pricing table has a solid red Buy button, so none stands out.",
+  "checklist": [
+    {
+      "text": "Give one action per view the strongest fill, and demote the rest to outline.",
+      "kind": "code"
+    },
+    {
+      "text": "Allow one high-contrast badge per screen; a second cancels the first.",
+      "kind": "code"
+    },
+    {
+      "text": "Put the recommended option in one accent border rather than five coloured buttons.",
+      "kind": "code"
+    },
+    {
+      "text": "Screenshot the view, blur it, and see which element survives; it should be the action.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Four pricing cards each carry an identical solid red Buy button, so no tier is focal.",
+    "remediation": "Three tiers use outline buttons; the recommended one is framed and filled."
+  },
+  "graphicMetaphor": {
+    "svgShape": "odd-one-out",
+    "parametricParams": {
+      "columns": 5,
+      "rows": 3,
+      "oddIndex": 7,
+      "oddLabel": "FOCUS",
+      "caption": "ONE MARK TAKES THE EYE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Stephen E. Palmer"
+    ],
+    "year": 1999,
+    "title": "Vision Science: Photons to Phenomenology",
+    "publication": "MIT Press"
+  }
+}

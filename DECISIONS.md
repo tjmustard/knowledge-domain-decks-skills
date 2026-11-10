@@ -981,8 +981,8 @@ The deck's Heuristic & Mental Models category shipped with one card, Jakob's Law
 This slice writes laws 2-11 of the research list as HMM-02 to HMM-11, in three
 commits of six, six and eight cards, and completes Gestalt & Visual Perception
 at GES-02 to GES-11. The ID rule is the list's own: HMM-0n is law n, GES-0n is
-law n+11. This entry records the first two commits: HMM-02 to HMM-07, then
-HMM-08 to HMM-11 with GES-02 and GES-03.
+law n+11. This entry records the three card commits: HMM-02 to HMM-07, then
+HMM-08 to HMM-11 with GES-02 and GES-03, then GES-04 to GES-11.
 
 ### What each card cites, and where the Repository is wrong
 
@@ -1075,13 +1075,66 @@ principle of perceptual grouping", DOI `10.1016/0010-0285(92)90014-S`,
 *Cognitive Psychology* 24(3), 436-447. Palmer is the paper that named the
 principle; the card's claim is his.
 
+**GES-04 Law of Pragnanz** cites Wertheimer (1923), DOI `10.1007/BF00410640`.
+The Repository names Wertheimer and then Koffka (1935) as the "formal
+mathematical synthesis". The record holds one source, and the paper is the
+primary statement of the good-figure principle; Koffka's book is the systematic
+treatment, recorded here because a reader following the Repository will look
+for it.
+
+**GES-05 Law of Closure** cites Koffka (1935), *Principles of Gestalt
+Psychology*, Harcourt, Brace & World. No Crossref record was found. The
+Repository's heading attributes closure to Koffka, not Wertheimer, and the
+record follows it; closure is not one of the five principles the 1923 paper
+names.
+
+**GES-06 Law of Figure/Ground** cites Rubin (1915), *Synsoplevede Figurer*,
+Gyldendalske Boghandel. No Crossref record was found. The figure/ground
+distinction reaches the deck from Rubin's demonstration rather than from the
+Wertheimer paper, and the Repository names Rubin.
+
+**GES-07 Law of Continuity (Good Continuation)** cites Wertheimer (1923), DOI
+`10.1007/BF00410640`. The Repository's angular-threshold claim, that coherence
+degrades past 45 degrees, is not printed: it is a number the paper does not
+state and the format could not test.
+
+**GES-08 Law of Uniform Connectedness** cites Palmer & Rock (1994), DOI
+`10.3758/BF03200760`, *Psychonomic Bulletin & Review* 1(1), 29-55. The
+Repository prints a ranking - connectedness supersedes proximity and
+similarity - as an inequality. The card does not print the inequality: the
+drawing shows a link deciding a grouping, not a measured ordering among cues.
+
+**GES-09 Law of Common Fate** cites Wertheimer (1923), DOI
+`10.1007/BF00410640`, which the Repository also names. Metzger (1934),
+*Gesetze des Sehens*, is where the experimental demonstration appears; no
+Crossref record was found for it, and the card cites the paper that states the
+principle rather than the demonstration alone, because a record citing only the
+demonstration would leave the axiom's statement unsourced.
+
+**GES-10 Law of Focal Point** cites Palmer (1999), *Vision Science: Photons to
+Phenomenology*, MIT Press. No Crossref record was found for the book. No
+primary source for the principle was located: the Repository attributes it to
+"Gestalt visual theory", which is not an author and is not printed. The card
+therefore cites the survey that states the principle, not its origin, and a
+reader should not take Palmer (1999) for the paper that named it. What the card
+stands on is the observable - a mark with more contrast captures attention -
+and that sentence is here so the citation is not read as more than it is.
+
+**GES-11 Law of Past Experience** cites Koffka (1935), *Principles of Gestalt
+Psychology*. No Crossref record was found. The Repository names Koffka, and
+the record follows it; Palmer (1999) is not the source of the principle and is
+not cited here, though it is cited for GES-10.
+
+Koffka (1935) carries two cards, as Wertheimer (1923) carries five. They name
+two principles and not one observation twice: Closure is the completion of an
+incomplete contour, Past Experience is the reading of an ambiguous one by
+habit, and the two cards share no axiom, trigger or checklist item.
+
 **One paper, five named principles.** Wertheimer (1923) is the source of five
 cards in this category: Proximity (GES-01), Similarity (GES-02), Continuity
-(GES-07), Common Fate (GES-09, where the Repository also names Metzger 1934)
-and Pragnanz (GES-04, whose primary attribution is this paper). Five Source
-lines naming one paper is the paper's scope, not a shortcut: it named these
-principles, and each card isolates one of them in its axiom, trigger and
-checklist.
+(GES-07), Common Fate (GES-09) and Pragnanz (GES-04). Five Source lines naming
+one paper is the paper's scope, not a shortcut: it named these principles, and
+each card isolates one of them in its axiom, trigger and checklist.
 
 ### The vertical fit of a recto, measured
 
@@ -1092,7 +1145,7 @@ then has no room. The check is therefore a measurement of the built page, not
 a formula: every card is rendered and its lowest ink read before it is
 committed.
 
-Measured on the forty-six rectos of the deck as this commit leaves it. `T` is
+Measured on the fifty-four rectos of the deck as this commit leaves it. `T` is
 title lines at 14 pt, `A` axiom lines at 9 pt, `B` trigger lines at 7 pt
 *below* the "WHEN TO APPLY" label - the label itself, the card id and the
 running head are not counted. Bottom ink is the lowest point of the text's
@@ -1106,21 +1159,40 @@ every recto stands at 337.58 to 337.59, 0.08 to 0.09 pt above the 337.5 safe
 top, a constant of the template present on the 4e4109a baseline.
 
     T  A  B  cards  last baseline  lowest vector outline, pt from the paper edge
-    2  2  2   12    31.5           29.822 ×7, 29.850 ×3, 29.864 ×2
+    2  2  2   15    31.5           29.822 ×8, 29.850 ×3, 29.864 ×2, 31.405, 31.404
     1  3  2   10    38.0           36.297 ×7, 36.339, 37.879 ×2
     1  2  3    3    40.5           38.796, 38.824, 40.392
-    1  2  2   21    49.6           47.952 ×5, 47.980 ×4, 47.994 ×3,
-                                   49.534 ×3, 49.535 ×3, 49.548 ×3
+    1  2  2   26    49.6           47.952 ×8, 47.980 ×5, 47.994 ×3,
+                                   49.534 ×3, 49.535 ×4, 49.548 ×3
 
-Clearance from the 22.5 pt safe edge: +7.32 to +7.36, +13.80 to +15.38,
-+16.30 to +17.89 and +25.45 to +27.05.
+Clearance from the 22.5 pt safe edge: +7.32 to +8.90 in the tight band, +13.80
+to +15.38, +16.30 to +17.89 and +25.45 to +27.05.
 
-The twelve cards at `T=2, A=2, B=2` are the tight band. Seven share the lowest
-outline, 29.822 pt (+7.32): DEC-06, DEC-09, HMM-05, HMM-06, HMM-11, MPA-02 and
-TME-09. Three read 29.850 (+7.35) - HMM-07, HMM-09 and TME-04 - and two 29.864
-(+7.36), MPA-06 and TME-10, because their last rendered line ends in a deeper
-descender. HMM-07 sat at 22.33 (-0.17) before its trigger was cut from three
-lines to two; that cut is the reason it now reads 29.850.
+The fifteen cards at `T=2, A=2, B=2` are the tight band. Eight share the lowest
+outline, 29.822 pt (+7.32): DEC-06, DEC-09, GES-07, HMM-05, HMM-06, HMM-11,
+MPA-02 and TME-09. Three read 29.850 (+7.35) - HMM-07, HMM-09 and TME-04 - and
+two 29.864 (+7.36), MPA-06 and TME-10, because their last rendered line ends in
+a deeper descender. GES-04 reads 31.405 and GES-08 31.404 (+8.90). HMM-07 sat at 22.33
+(-0.17) before its trigger was cut from three lines to two; that cut is the
+reason it now reads 29.850.
+
+Four instruments read the same line differently:
+
+    VECTOR OUTLINE  29.822 (g)  29.850 (p)  29.864 (y)   exact path geometry, no grid
+    GLYPH BOX       +0.007                              pypdfium, per-glyph metric
+    LINE BOX        -0.056, constant per line           PyMuPDF, carries the font's descent
+    RASTER INK      quantised to 1/dpi                  864 dpi cannot resolve a 0.042 pt band
+
+A table that puts a line box and a glyph box in one column, under one heading,
+is comparing two things and calling it a measurement. The first version of
+this table quoted a 864 dpi raster without naming its dpi, threshold or row
+convention; its values were multiples of 1/12 pt - 29.75 is row 357, 29.8333
+row 358, 31.3333 row 376 - and its grouping was a property of the grid, which
+a 0.042 pt band cannot survive. The floor is load-bearing: g's outline, 29.822,
+is 357.864 rows and floors to 357, while p's 29.850 (358.200) and y's 29.864
+(358.368) floor to 358, which is where the 7/5 split comes from; rounded
+rather than floored, all twelve collapse onto row 358 and the split
+disappears. The column is now the vector outline, which has no grid.
 
 The four groups are separated by exactly the three line pitches, so the
 measurement yields the model the operator derived independently from PyMuPDF
@@ -1129,11 +1201,12 @@ text boxes. It predicts the last line's glyph box, not rendered ink:
     bottom box = 38.74 − 18.13(T − 1) − 11.66(A − 2) − 9.16(B − 3)
 
 Rendered ink sits at or above the box by the descender depth of the last
-glyph, 0.02 to 1.7 pt; TME-05's box is 36.24 and its ink 37.83. The raster
-agrees with the box to 0.02 pt at threshold 245 and a little above it at
-threshold 200. Its reference is HMM-01, `T1 A2 B3`, which is in the deck and
-measures 38.83 ink at 864 ppi and 38.90 at 200 ppi (40.5 baseline), against the
-model's 38.74: a residual of 0.09 to 0.16 on the reference itself. Every
+glyph, 0.05 to 1.7 pt; TME-05's box is 36.24 and its outline 37.879. The raster
+agrees with the box to 0.01 pt at 864 ppi and threshold 245, and reads 0.08 pt
+higher at threshold 200. Its reference is HMM-01, `T1 A2 B3`, which is in the
+deck and measures 38.824 by outline (38.83 at 864 ppi, 38.90 at 200 ppi, 40.5
+baseline), against the model's 38.74: a residual of 0.08 to 0.16 on the
+reference itself. Every
 prediction inherits that residual, so it is printed rather than assumed away.
 The relation reproduces the lowest ink of every group to 0.06 pt; every other
 card in a group measures 0.08 to 1.7 pt higher, which is the descender range,
@@ -1177,7 +1250,7 @@ statement that names the main path as the thing nobody can describe. Each card
 still says when to apply its law. If the type sizes change, the table must be
 measured again.
 
-### What each new shape draws that the other twenty-three do not
+### What each new shape draws that the other shapes do not
 
 `model-projection` (HMM-02): two domains and the correspondence between them,
 which is the card's claim. `network` draws one bounded set of nodes, `hierarchy`
@@ -1252,6 +1325,41 @@ around two of them. No other shape draws a boundary, so in this deck enclosure
 has no other meaning to confuse it with. The boundary encloses exactly two of
 three; the count is legibility, not a measured claim.
 
+`simplest-form` (GES-04): twelve points on a circle, joined once with jitter and
+once as a circle. The two panels are two descriptions of the same marks; nothing
+else in the deck draws one set of points twice. The jitter is fixed drawing, not
+a measured irregularity.
+
+`broken-ring` (GES-05): a whole ring beside one broken into four arcs. The
+broken ring is not completed in the drawing; the reader supplies the segments,
+which is the claim. No other shape leaves a mark deliberately unfinished.
+
+`shared-edge` (GES-06): one wavy contour divides one field into a filled and an
+unfilled region, with no cue saying which region owns the edge. `common-region`
+draws a boundary around a group; this draws a boundary that belongs to neither
+side, which is the figure/ground relation and not an enclosure claim.
+
+`crossing-curves` (GES-07): two smooth curves crossing once and continuing
+through. Nothing else in the deck crosses itself; `intent-gap` breaks a path on
+purpose and `promise-line` bends one away, while this shows continuity winning
+at the crossing.
+
+`link-beats-gap` (GES-08): six marks at one spacing, once unlinked and once with
+a stroke joining the middle pair across the widest gap. `proximity-grid` and
+`similarity-columns` vary distance and form; this holds both constant and varies
+only the link, so the three grouping cards each isolate a different factor.
+
+`shared-motion` (GES-09): a field of still marks and one column carrying the same
+direction arrow above each mark. A still drawing has no motion, so the arrow is
+a sign for it, and the caption says what the arrows stand for. The arrows sit
+above the marks rather than between them, because an arrow drawn between two
+marks reads as a link, which is GES-08's claim.
+
+`necker-cube` (GES-11): a wireframe cube whose twelve edges support two
+readings. The drawing prefers neither; the caption says there are two. Nothing
+else in the deck is deliberately ambiguous, and GES-10 reuses `odd-one-out`
+rather than adding a second contrast picture.
+
 The two keys that were bare identifiers - `hierarchy` and `network` - are quoted
 like the other shapes, so a script that enumerates shapes from the source finds
-all thirty-five. No behaviour changes.
+all forty-two. No behaviour changes.

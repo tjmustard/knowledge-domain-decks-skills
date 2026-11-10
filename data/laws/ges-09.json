@@ -1,0 +1,47 @@
+{
+  "id": "GES-09",
+  "name": "Law of Common Fate",
+  "category": "Gestalt & Visual Perception",
+  "axiom": "Things that move together in one direction are seen as one thing, whatever else differs.",
+  "trigger": "A sidebar collapses while its labels reflow at a different speed, so the panel tears.",
+  "checklist": [
+    {
+      "text": "Animate a menu and its items as one surface, not as a stagger of separate parts.",
+      "kind": "code"
+    },
+    {
+      "text": "Give every element of a collapsing panel the same duration and easing curve.",
+      "kind": "code"
+    },
+    {
+      "text": "Dismiss table rows along one exit path so the remaining rows move as a block.",
+      "kind": "code"
+    },
+    {
+      "text": "Record a slowed transition; any part that arrives late is moving in its own direction.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "A sidebar slides left while its child text wraps and drops, so the panel comes apart.",
+    "remediation": "Sidebar, labels, and icons translate together on one 200 ms curve."
+  },
+  "graphicMetaphor": {
+    "svgShape": "shared-motion",
+    "parametricParams": {
+      "columns": 4,
+      "rows": 3,
+      "moving": 0,
+      "caption": "SAME DIRECTION, ONE THING"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Max Wertheimer"
+    ],
+    "year": 1923,
+    "title": "Untersuchungen zur Lehre von der Gestalt II",
+    "publication": "Psychologische Forschung, 4, 301-350",
+    "doi": "10.1007/BF00410640"
+  }
+}

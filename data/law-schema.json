@@ -129,7 +129,14 @@
             "signifier-pair",
             "feedback-loop",
             "similarity-columns",
-            "common-region"
+            "common-region",
+            "simplest-form",
+            "broken-ring",
+            "shared-edge",
+            "crossing-curves",
+            "link-beats-gap",
+            "shared-motion",
+            "necker-cube"
           ]
         },
         "parametricParams": {
