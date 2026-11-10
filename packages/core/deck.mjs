@@ -10,21 +10,26 @@
  * come out of deck.json, because the same generator builds the next deck too.
  */
 import { readdir, readFile } from "node:fs/promises";
-import { join, dirname } from "node:path";
+import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..", "..");
 export const DECKS_DIR = join(ROOT, "decks");
 
+// Output paths in deck.json are resolved against the repository root, the way
+// a reader would read them. An absolute path wins, which is what lets a test
+// build a deck into a scratch directory without touching the checkout.
+export const resolveFromRoot = (path) => resolve(ROOT, path);
+
 // A deck directory is one with a deck.json. Sorted, so "all decks" is a stable
 // order and two machines generating every deck agree on what came first.
-export async function listDeckSlugs() {
-  const entries = await readdir(DECKS_DIR, { withFileTypes: true });
+export async function listDeckSlugs(dir = DECKS_DIR) {
+  const entries = await readdir(dir, { withFileTypes: true });
   const slugs = [];
   for (const entry of entries) {
     if (!entry.isDirectory()) continue;
     try {
-      await readFile(join(DECKS_DIR, entry.name, "deck.json"), "utf8");
+      await readFile(join(dir, entry.name, "deck.json"), "utf8");
       slugs.push(entry.name);
     } catch {
       // A directory without a deck.json is not a deck; skip it silently rather
@@ -34,8 +39,8 @@ export async function listDeckSlugs() {
   return slugs.sort();
 }
 
-export async function loadDeck(slug) {
-  const dir = join(DECKS_DIR, slug);
+export async function loadDeck(slug, decksDir = DECKS_DIR) {
+  const dir = join(decksDir, slug);
   const deck = JSON.parse(await readFile(join(dir, "deck.json"), "utf8"));
   if (deck.slug !== slug) {
     throw new Error(`decks/${slug}/deck.json declares slug "${deck.slug}"; the directory and the slug must agree`);
@@ -45,23 +50,24 @@ export async function loadDeck(slug) {
 
 // Load every deck, or the one named by --deck. Unknown slugs fail loudly: a
 // typo that silently builds nothing is the failure this refuses.
-export async function loadDecks({ only } = {}) {
+export async function loadDecks({ only, dir = DECKS_DIR } = {}) {
   if (only) {
     for (const slug of only) {
-      const available = await listDeckSlugs();
+      const available = await listDeckSlugs(dir);
       if (!available.includes(slug)) {
         throw new Error(`No deck "${slug}". Available: ${available.join(", ")}`);
       }
     }
-    return Promise.all(only.map(loadDeck));
+    return Promise.all(only.map((slug) => loadDeck(slug, dir)));
   }
-  return Promise.all((await listDeckSlugs()).map(loadDeck));
+  return Promise.all((await listDeckSlugs(dir)).map((slug) => loadDeck(slug, dir)));
 }
 
 // --deck a --deck b, --deck=a, and --deck a,b all mean the same thing, because
 // people type all three.
 export function deckArgs(argv = process.argv.slice(2)) {
   const only = [];
+  let dir = DECKS_DIR;
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
     if (arg === "--deck") {
@@ -73,9 +79,14 @@ export function deckArgs(argv = process.argv.slice(2)) {
       i += 1;
     } else if (arg.startsWith("--deck=")) {
       only.push(...arg.slice("--deck=".length).split(",").filter(Boolean));
+    } else if (arg === "--decks-dir") {
+      dir = resolve(argv[i + 1] || "");
+      i += 1;
+    } else if (arg.startsWith("--decks-dir=")) {
+      dir = resolve(arg.slice("--decks-dir=".length));
     }
   }
-  return { only: only.length > 0 ? only : null };
+  return { only: only.length > 0 ? only : null, dir };
 }
 
 // The arguments that are not --deck: a file list, for validate's fixtures.
@@ -83,9 +94,9 @@ export function positionalArgs(argv = process.argv.slice(2)) {
   const out = [];
   for (let i = 0; i < argv.length; i += 1) {
     const arg = argv[i];
-    if (arg === "--deck") {
+    if (arg === "--deck" || arg === "--decks-dir") {
       i += 1;
-    } else if (!arg.startsWith("--deck=")) {
+    } else if (!arg.startsWith("--deck=") && !arg.startsWith("--decks-dir=")) {
       out.push(arg);
     }
   }

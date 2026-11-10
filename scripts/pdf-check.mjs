@@ -21,18 +21,28 @@
 import { readFile } from "node:fs/promises";
 import { inflateSync } from "node:zlib";
 import { join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks } from "../packages/core/deck.mjs";
+import { deckArgs, loadCards, loadDecks, resolveFromRoot } from "../packages/core/deck.mjs";
 
-const { only } = deckArgs();
-const args = process.argv.slice(2).filter((arg, i, all) => {
-  if (arg === "--deck") return false;
-  if (arg.startsWith("--deck=")) return false;
-  if (i > 0 && all[i - 1] === "--deck") return false;
-  return true;
-});
-const explicit = args.find((arg) => !arg.startsWith("--"));
-const expectIndex = args.indexOf("--expect-pages");
-const expectedOverride = expectIndex >= 0 ? Number(args[expectIndex + 1]) : null;
+const { only, dir: decksDir } = deckArgs();
+// Arguments are parsed rather than searched: a value left behind by
+// --decks-dir or --expect-pages would otherwise be mistaken for the PDF path.
+let explicit = null;
+let expectedOverride = null;
+{
+  const argv = process.argv.slice(2);
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--deck" || arg === "--decks-dir") {
+      i += 1;
+    } else if (arg.startsWith("--deck=") || arg.startsWith("--decks-dir=")) {
+      continue;
+    } else if (arg === "--expect-pages") {
+      expectedOverride = Number(argv[(i += 1)]);
+    } else if (!arg.startsWith("--")) {
+      explicit = arg;
+    }
+  }
+}
 
 function collect(text) {
   const boxes = [];
@@ -136,7 +146,7 @@ async function checkDeck(deck, pdfPath, expectedPages) {
 if (explicit) {
   // An explicit path still needs a deck for its schema and card count; say so
   // rather than guessing which deck's rules apply.
-  const decks = await loadDecks({ only });
+  const decks = await loadDecks({ only, dir: decksDir });
   if (decks.length !== 1) {
     console.error(`A path needs --deck when more than one deck exists (${decks.map((d) => d.slug).join(", ")}).`);
     process.exit(1);
@@ -145,10 +155,10 @@ if (explicit) {
   process.exit((await checkDeck(decks[0], explicit, expected)) ? 0 : 1);
 }
 
-const decks = await loadDecks({ only });
+const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
 for (const deck of decks) {
-  const pdfPath = join(ROOT, "packages", "prepress", "dist", `${deck.slug}.pdf`);
+  const pdfPath = resolveFromRoot(deck.outputs?.pdf || `packages/prepress/dist/${deck.slug}.pdf`);
   const expected = expectedOverride ?? (await loadCards(deck)).length * 2;
   if (!(await checkDeck(deck, pdfPath, expected))) ok = false;
 }

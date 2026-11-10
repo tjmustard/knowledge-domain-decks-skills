@@ -39,7 +39,7 @@ all three come from the same validated records:
 ```mermaid
 flowchart LR
     Schema["Card schema<br/>data/law-schema.json"] --> Check{"npm run validate"}
-    Check --> Data["Validated records<br/>data/laws/*.json"]
+    Check --> Data["Validated records<br/>decks/&lt;slug&gt;/data/laws/*.json"]
     Data --> Print["Typst prepress<br/>3.00 x 5.00 in PDF"]
     Data --> Web["Static web viewer<br/>packages/web"]
     Data --> Rules["Agent ruleset<br/>rules/ + skills/ux-laws"]
@@ -182,7 +182,7 @@ plus 0.125 in bleed, with corner trim marks.
 npm run build:pdf
 ```
 
-The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
+The output is `packages/prepress/dist/ux-laws.pdf`. This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer.
 
@@ -218,7 +218,7 @@ The same deck reaches an agent's working context two ways:
 - [`rules/ux-rules.md`](./rules/ux-rules.md) — every card in one plain ruleset,
   for pasting into a review prompt or project instructions.
 
-All are generated from `data/laws/*.json` by `npm run build:rules`. Edit the
+All are generated from the deck's `data/laws/*.json` by `npm run build:rules`. Edit the
 records, not the generated files. The split is deliberate: the index is about
 6 KB and the largest resource file about 10 KB, where the single skill file was
 28 KB loaded whole before the agent read any code. [`DECISIONS.md`](./DECISIONS.md)
@@ -255,30 +255,35 @@ and duplicate IDs fail the run.
 
 ```
 .
-├── data/
-│   ├── law-schema.json          # Canonical JSON Schema (draft 2020-12)
-│   └── laws/*.json              # One validated record per card
+├── decks/                       # One directory per deck; nothing else names a deck
+│   └── ux-laws/
+│       ├── deck.json            # id, slug, title, categories, accents, output paths, prose
+│       └── data/
+│           ├── law-schema.json  # Canonical JSON Schema (draft 2020-12)
+│           └── laws/*.json      # One validated record per card
 ├── packages/
-│   ├── prepress/                # Typst template + PDF build script
+│   ├── core/                    # The engine: deck loading, schema, SVG shapes
+│   │   ├── deck.mjs
+│   │   └── svg.js               # Parametric SVG generator
+│   ├── prepress/                # Typst template + PDF build (deck-neutral)
 │   │   ├── src/card.typ
 │   │   └── build.mjs
-│   ├── web/                     # Static viewer (open index.html)
-│   │   ├── index.html
+│   ├── web/                     # Static viewer shell
+│   │   ├── index.template.html
 │   │   ├── styles.css
 │   │   ├── app.js
-│   │   └── deck-data.js         # Generated card bundle
-│   ├── rules/                   # Ruleset generator
+│   │   └── decks/<slug>/        # Generated per deck: deck-data.js, accents.js, index.html
+│   ├── rules/                   # Ruleset generator (reads any deck)
 │   ├── judges/                  # Cross-model audit panel (needs a model endpoint)
 │   └── triage/                  # Adjudication: turns claims into checked verdicts
-├── rules/ux-rules.md            # Generated agent ruleset
-├── skills/ux-laws/
+├── rules/<slug>-rules.md        # Generated agent ruleset, one per deck
+├── skills/<slug>/
 │   ├── SKILL.md                 # Generated skill index
 │   └── resources/*.md           # Generated card bodies, one file per category
 ├── scripts/
 │   ├── validate.mjs             # Schema + cross-record checks
-│   ├── svg.js                   # Parametric SVG generator
-│   ├── generate-web-data.mjs    # Builds packages/web/deck-data.js
-│   ├── check-web.mjs            # Headless 390 px viewer smoke test
+│   ├── generate-web-data.mjs    # Builds packages/web/decks/<slug>/
+│   ├── check-web.mjs            # Headless 390 px viewer smoke test, one page per deck
 │   └── pdf-check.mjs            # Page-box and page-count check
 ├── media/
 │   ├── icons/                   # Transparent WebP icon set (1024 master, web sizes)
@@ -287,6 +292,38 @@ and duplicate IDs fail the run.
 ├── CHANGELOG.md
 ├── LICENSE                      # MIT (code)
 └── LICENSE-DATA                 # CC0-1.0 (data and schema)
+```
+
+Everything a deck says about itself lives in its `deck.json`: the category
+order, every title and paragraph the generators print, the skill name, the
+category accents, and where its artifacts go. The engine reads those; nothing
+in `packages/` names a deck, which is what lets `decks/` hold a second one.
+
+### Adding a deck
+
+1. `mkdir -p decks/<slug>/data/laws` and write `decks/<slug>/deck.json` — the
+   fields are the ones `decks/ux-laws/deck.json` shows, and a deck with no
+   accents simply falls back to a neutral colour on every card.
+2. Put a JSON Schema at `decks/<slug>/data/law-schema.json` and one record per
+   card in `data/laws/`. The schema's `category` enum is overridden by the
+   deck's own category list at validation time, so the two cannot disagree.
+3. Build and check:
+
+   ```bash
+   npm run validate -- --deck <slug>
+   npm run build -- --deck <slug>       # web bundle, rules, skill, PDF
+   npm run check:web -- --deck <slug>
+   npm run check:pdf -- --deck <slug>
+   ```
+
+4. Nothing else. If a step needs an edit under `packages/`, the engine is not
+   deck-agnostic for that deck and the edit belongs in `packages/core/`, not in
+   the deck. `scripts/test/invented-deck.test.mjs` is that rule as a test: it
+   builds a deck invented inside the test, never committed, through this whole
+   pipeline.
+
+Every command takes `--deck <slug>`; with no flag it runs over every deck in
+`decks/`, in sorted order. `npm run accept` gates whatever is committed.
 ```
 
 ---
@@ -310,11 +347,11 @@ npm install
 npm run validate
 
 # 3. Regenerate the derived artifacts
-npm run build:web       # packages/web/deck-data.js
+npm run build:web       # packages/web/decks/<slug>/{deck-data.js,accents.js,index.html}
 npm run build:rules     # rules/ux-rules.md, skills/ux-laws/SKILL.md and resources/
 
 # 4. Print layer (requires Typst)
-npm run build:pdf       # packages/prepress/dist/ux-deck.pdf
+npm run build:pdf       # packages/prepress/dist/<slug>.pdf
 npm run check:pdf       # every MediaBox is 216 x 360 pt, page count matches
 
 # 5. Checks
@@ -415,9 +452,9 @@ same thing.
 | Command | Proves |
 |---|---|
 | `npm run validate` | Every record satisfies the schema, axiom length and word limits hold, IDs are unique |
-| `npm run build:web` | The viewer bundle regenerates from `data/laws/` |
+| `npm run build:web` | Each deck's viewer bundle regenerates from its own `data/laws/` |
 | `npm run build:rules` | The ruleset and skill regenerate from the same records |
-| `npm run check:web` | At 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from `data/laws/`, not hardcoded |
+| `npm run check:web` | At 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from the deck's `data/laws/`, not hardcoded |
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
 | `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
 | `npm test` | All of the above, plus what they cannot see: the deck's record counts and order, the validator's duplicate-ID rule, generator byte stability outside a worktree, the geometry of the two shapes that have drawn wrong before, and the pipeline in one order before the gate runs on HEAD |

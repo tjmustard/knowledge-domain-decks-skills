@@ -26,12 +26,21 @@ import {
   wordCount
 } from "../packages/core/deck.mjs";
 
-const { only } = deckArgs();
+const { only, dir: decksDir } = deckArgs();
 const argFiles = positionalArgs();
 
 async function schemaFor(deck) {
   const schemaPath = join(deck.dir, "data", "law-schema.json");
   const schema = JSON.parse(await readFile(schemaPath, "utf8"));
+  // The schema file ships with an enum of the categories it was written for.
+  // That list belongs to the deck, not to the schema: a second deck has its own
+  // categories, and a schema that enumerates the first deck's would reject
+  // every record in it. The deck's own list is authoritative here, and the
+  // file is left alone so its committed bytes stay what they were.
+  const category = schema.properties?.category;
+  if (category && Array.isArray(category.enum)) {
+    category.enum = [...deck.categories];
+  }
   const ajv = new Ajv2020({ allErrors: true, strict: false });
   return { schema, schemaPath, check: ajv.compile(schema) };
 }
@@ -84,7 +93,7 @@ if (argFiles.length > 0) {
   // Fixtures: one schema, chosen explicitly or by there being only one deck.
   let slug = only ? only[0] : null;
   if (!slug) {
-    const slugs = await listDeckSlugs();
+    const slugs = await listDeckSlugs(decksDir);
     if (slugs.length !== 1) {
       console.error(
         `A file list needs --deck: ${slugs.length} decks exist (${slugs.join(", ")}), ` +
@@ -94,14 +103,14 @@ if (argFiles.length > 0) {
     }
     [slug] = slugs;
   }
-  const deck = await loadDeck(slug);
+  const deck = await loadDeck(slug, decksDir);
   const { schema, schemaPath, check } = await schemaFor(deck);
   const cards = [];
   for (const file of argFiles) cards.push(JSON.parse(await readFile(file, "utf8")));
   process.exit(checkRecords(cards, check, schema, schemaPath, argFiles.join(", ")) ? 0 : 1);
 }
 
-const decks = await loadDecks({ only });
+const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
 for (const deck of decks) {
   const { schema, schemaPath, check } = await schemaFor(deck);

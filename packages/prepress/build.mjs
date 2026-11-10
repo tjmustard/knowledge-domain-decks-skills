@@ -15,7 +15,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks, withCitation } from "../core/deck.mjs";
+import { ROOT, deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../core/svg.js");
@@ -88,10 +88,11 @@ for (const deck of decks) {
   await writeFile(join(buildDir, "cards.json"), JSON.stringify(manifest, null, 2) + "\n");
   await writeFile(join(buildDir, "accents.typ"), accentsTyp(deck));
 
-  const pdf = join(distDir, `${deck.slug}.pdf`);
+  const pdfName = deck.outputs?.pdf || `packages/prepress/dist/${deck.slug}.pdf`;
+  const pdf = resolveFromRoot(pdfName);
   const result = spawnSync(
     "typst",
-    ["compile", "--root", ".", "src/card.typ", `dist/${deck.slug}.pdf`],
+    ["compile", "--root", ".", "src/card.typ", pdf],
     {
       cwd: here,
       encoding: "utf8",
@@ -106,7 +107,7 @@ for (const deck of decks) {
   }
 
   console.log(
-    `Typst ${version.stdout.trim()} built packages/prepress/dist/${deck.slug}.pdf ` +
+    `Typst ${version.stdout.trim()} built ${pdfName} ` +
       `(${cards.length * 2} pages: ${cards.length} cards, recto + verso).`
   );
   console.log(

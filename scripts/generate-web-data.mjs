@@ -10,13 +10,13 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks, withCitation } from "../packages/core/deck.mjs";
+import { ROOT, deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../packages/core/svg.js");
 
 export function webDir(deck) {
-  return join(ROOT, "packages", "web", "decks", deck.slug);
+  return resolveFromRoot(deck.web.dir || `packages/web/decks/${deck.slug}`);
 }
 
 const escapeHtml = (text) =>

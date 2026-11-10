@@ -282,7 +282,7 @@ try {
   // mid-title apostrophes that must not be mistaken for closers.
   {
     const { titleStop } = await import(
-      pathToFileURL(join(worktree, "scripts", "lib", "deck.mjs")).href
+      pathToFileURL(join(worktree, "packages", "core", "deck.mjs")).href
     );
     const cases = [
       ["Plain", "."],
@@ -374,14 +374,13 @@ try {
         inputs.push(join(dir, name));
       }
     }
-    const files = inputs;
     const problems = [];
     const unprobed = [];
     const monotoneChecked = [];
     const shapes = new Set();
 
-    for (const file of files) {
-      const card = JSON.parse(await readFile(join(dir, file), "utf8"));
+    for (const file of inputs) {
+      const card = JSON.parse(await readFile(file, "utf8"));
       const metaphor = card.graphicMetaphor;
       const svg = renderSvg(metaphor);
       shapes.add(metaphor.svgShape);
@@ -441,7 +440,7 @@ try {
 
     record("svg", problems.length === 0 ? "pass" : "fail",
       problems.length === 0
-        ? `${files.length} cards, shapes: ${[...shapes].sort().join(", ")}; contract holds and every parameter is used` +
+        ? `${inputs.length} cards, shapes: ${[...shapes].sort().join(", ")}; contract holds and every parameter is used` +
           (monotoneChecked.length ? `; monotone claims checked: ${monotoneChecked.join(", ")}` : "") +
           (unprobed.length ? ` (not probeable, so unproven: ${unprobed.join(", ")})` : "")
         : problems.join(" | "));

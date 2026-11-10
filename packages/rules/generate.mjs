@@ -17,7 +17,7 @@
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks, withCitation } from "../core/deck.mjs";
+import { deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
 
 // The provenance line is deliberately deck-neutral in its wording but names
 // the old data/ path: changing it would change the bytes of a shipped
@@ -149,8 +149,8 @@ async function generateDeck(deck) {
     grouped.get(card.category).push(card);
   }
 
-  const rulesFile = join(ROOT, deck.outputs.rules);
-  const skillDir = join(ROOT, deck.outputs.skill);
+  const rulesFile = resolveFromRoot(deck.outputs.rules);
+  const skillDir = resolveFromRoot(deck.outputs.skill);
   await mkdir(dirname(rulesFile), { recursive: true });
   await mkdir(join(skillDir, "resources"), { recursive: true });
   await writeFile(rulesFile, rulesMarkdown(deck, grouped));
