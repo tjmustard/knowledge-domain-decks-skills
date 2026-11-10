@@ -1,0 +1,30 @@
+{
+  "id": "CPY-37",
+  "formulaId": "CR-01",
+  "name": "Active Transmutation",
+  "phase": "Clarity & Rhythm",
+  "surface": "Document-Wide Stylistic Heuristic",
+  "mechanism": "Cognitive Processing Fluency & Agency Clarity",
+  "scope": "Grade 5–8; Syntactic standard",
+  "blueprint": true,
+  "blueprintProse": "Active Transmutation systematically converts passive constructions into active voice: [Agent/Subject] + [Transitive Verb] + [Direct Object]. It eliminates passive auxiliary verbs and trailing prepositions, ensuring that sentences clearly identify who is taking action. \nNeurolinguistic research reveals that the human brain processes subject-verb-object structures with lower metabolic cognitive load than inverted passive arrangements. Passive sentences obscure agency, causing minor interpretive delays that dilute persuasive impact. Active constructions establish clear agency, improving reading comprehension and driving user momentum.",
+  "frontLine": "Grade 5–8; Syntactic standard",
+  "frontSize": 9,
+  "schematic": "ease at position 1 of 12",
+  "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]",
+  "example": {
+    "bland": "Scalable data infrastructure is built by our engineers, and cloud configurations are monitored continuously by the automation platform to prevent downtime.",
+    "optimized": "Our engineers build scalable data infrastructure. The automation platform monitors your cloud configurations 24/7 to prevent downtime."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 1
+    }
+  }
+}

@@ -141,8 +141,9 @@ export const DEFAULT_FIELDS = {
 // "list" is one entry per line, "example" is a short italic paragraph, and
 // "labelled" prints a record's own `{ label, text }` pair - the form the team
 // deck's manager scripts take, where the label names the move and the text is
-// the sentence said.
-export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled", "labelledList"];
+// the sentence said. "beforeAfter" prints a record's `{ bland, optimized }`
+// pair as the two rewrites it is.
+export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled", "labelledList", "beforeAfter"];
 
 /*
  * A deck's back-face blocks, in the order the deck prints them. A block is
@@ -198,6 +199,11 @@ export function deckShape(deck = {}) {
     // deck whose front line is long enough to need a different size on
     // different cards. A deck that names none prints the template's 9 pt.
     headlineSize: fields.headlineSize || null,
+    // The field that carries the id a card prints, where the source's own id
+    // differs from the record's deck id (the copy deck prints ST-01 on a card
+    // whose record is CPY-01). A deck that names none prints card.id, as every
+    // earlier deck did.
+    cardId: fields.cardId || null,
     // A square figure's width, which is also its height. The default is the
     // size every earlier deck was set at; a deck with a two-line name or a long
     // front line can ask for less rather than cut its own text.

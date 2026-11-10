@@ -1,0 +1,40 @@
+{
+  "id": "CPY-13",
+  "formulaId": "HL-01",
+  "name": "How-To with a Twist",
+  "phase": "Headlines & Hooks",
+  "surface": "Blog Posts, Lead Magnet Landing Pages",
+  "mechanism": "Curiosity Gap & Self-Efficacy Expectation",
+  "scope": "Grade 5–7; Headline (8–16 words)",
+  "blueprint": true,
+  "blueprintProse": "The How-To with a Twist formula pairs a highly desired operational milestone with the elimination of a painful friction point traditionally required to achieve it. The component ratio allocates 50% of the headline to the objective outcome and 50% to the removal of the expected trade-off. \nIts cognitive mechanism relies on curiosity gap induction and risk compensation. Standard how-to headlines frequently trigger fatigue because the reader assumes the path to achievement requires significant effort and sacrifice. By eliminating the expected negative trade-off, the hook introduces an information gap regarding how such an outcome is possible without the standard cost.",
+  "ratio": [
+    {
+      "label": "Outcome",
+      "percent": 50
+    },
+    {
+      "label": "Trade-off",
+      "percent": 50
+    }
+  ],
+  "frontLine": "Outcome 50 · Trade-off 50",
+  "frontSize": 9,
+  "schematic": "gap at position 1 of 12",
+  "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]",
+  "example": {
+    "bland": "How to write automated unit tests for your code.",
+    "optimized": "How to reach 100% test coverage across legacy codebases without writing manual assertions."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 1
+    }
+  }
+}

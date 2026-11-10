@@ -1,0 +1,27 @@
+{
+  "id": "CPY-23",
+  "formulaId": "HL-11",
+  "name": "Contrarian Category Rejection",
+  "phase": "Headlines & Hooks",
+  "surface": "Category Creation Startups, Manifestos",
+  "mechanism": "Cognitive Disruption & Reactance Theory",
+  "scope": "Grade 5–7; Antithetical claim (8–14 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 5–7; Antithetical claim (8–14 words)",
+  "frontSize": 9,
+  "schematic": "contrast at position 11 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 11
+    }
+  }
+}

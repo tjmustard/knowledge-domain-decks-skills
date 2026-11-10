@@ -1,0 +1,27 @@
+{
+  "id": "CPY-46",
+  "formulaId": "CR-10",
+  "name": "Colloquial Contraction Injection",
+  "phase": "Clarity & Rhythm",
+  "surface": "Marketing Emails, B2B SaaS Interfaces",
+  "mechanism": "Social Proximity Theory & In-Group Tone Matching",
+  "scope": "Grade 5–7; Grammatical contraction policy",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 5–7; Grammatical contraction policy",
+  "frontSize": 9,
+  "schematic": "identity at position 10 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 10
+    }
+  }
+}

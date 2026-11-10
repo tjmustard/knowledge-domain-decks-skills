@@ -1,0 +1,40 @@
+{
+  "id": "CPY-15",
+  "formulaId": "HL-03",
+  "name": "The Paradox / Secret Revealer",
+  "phase": "Headlines & Hooks",
+  "surface": "Thought Leadership, Ad Creative",
+  "mechanism": "Schema Incongruity Resolution",
+  "scope": "Grade 6–8; Headline (6–12 words)",
+  "blueprint": true,
+  "blueprintProse": "The Paradox hook exposes a contradiction within established industry workflows. The formula dedicates 40% of its space to naming a widely accepted best practice and 60% to revealing how that practice causes the exact failure it was implemented to prevent. \nIts effectiveness is rooted in schema incongruity resolution. When sensory or intellectual inputs directly conflict with existing cognitive mental models, the brain registers an error signal, elevating alertness to reconcile the contradiction.",
+  "ratio": [
+    {
+      "label": "Best practice",
+      "percent": 40
+    },
+    {
+      "label": "Failure",
+      "percent": 60
+    }
+  ],
+  "frontLine": "Best practice 40 · Failure 60",
+  "frontSize": 9,
+  "schematic": "gap at position 3 of 12",
+  "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]",
+  "example": {
+    "bland": "Why you should stop micro-optimizing your database.",
+    "optimized": "Why adding database read-replicas is quietly tripling your p99 latency during traffic spikes."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 3
+    }
+  }
+}

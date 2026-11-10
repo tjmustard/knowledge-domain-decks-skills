@@ -55,6 +55,10 @@ function blockLines(block, value) {
   if (typeof value === "object" && value.label && value.text) {
     return [`**${block.label}.** ${value.label}`, "", value.text];
   }
+  // A before-and-after pair is two rewrites, printed as the two they are.
+  if (block.style === "beforeAfter") {
+    return [`**${block.label}.**`, "", `**Before.** ${value.bland}`, "", `**After.** ${value.optimized}`];
+  }
   return [`**${block.label}.** ${value}`];
 }
 
@@ -209,6 +213,10 @@ function resourceMarkdown(category, shape, items) {
         // of the move, then the words of it.
         if (!Array.isArray(value) && typeof value === "object" && value.label && value.text) {
           out.push(`- **${block.label}:** ${value.label}`, `  ${value.text}`);
+          continue;
+        }
+        if (block.style === "beforeAfter") {
+          out.push(`- **${block.label}:**`, `  - **Before:** ${value.bland}`, `  - **After:** ${value.optimized}`);
           continue;
         }
         if (Array.isArray(value)) {

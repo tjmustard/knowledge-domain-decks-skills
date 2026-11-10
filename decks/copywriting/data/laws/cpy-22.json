@@ -1,0 +1,27 @@
+{
+  "id": "CPY-22",
+  "formulaId": "HL-10",
+  "name": "Reason-Why Anchor",
+  "phase": "Headlines & Hooks",
+  "surface": "Technical Products, Developer Tools",
+  "mechanism": "Placebo Effect of Justification (\"Because\" Trigger)",
+  "scope": "Grade 7–9; Explanatory hook (10–18 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 7–9; Explanatory hook (10–18 words)",
+  "frontSize": 9,
+  "schematic": "proof at position 10 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 10
+    }
+  }
+}

@@ -14,7 +14,9 @@
     "mechanism",
     "scope",
     "blueprint",
+    "schematic",
     "frontLine",
+    "frontSize",
     "template",
     "origin",
     "figure"
@@ -99,6 +101,18 @@
         }
       }
     },
+    "schematic": {
+      "description": "The figure's own label, from the committed layout map: the family's noun, the mark and the divisions. It prints under the drawing and names what the shape draws.",
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 70
+    },
+    "frontSize": {
+      "description": "The point size of the front line, from the layout map: 6.5 to 9. A card whose ratio line runs long is set smaller rather than cut.",
+      "type": "number",
+      "minimum": 6.5,
+      "maximum": 9
+    },
     "frontLine": {
       "description": "The line the front prints under the rule: the ratio rendered as labels and percentages where the source states them, otherwise the scope line.",
       "type": "string",
@@ -125,8 +139,9 @@
       "properties": {
         "bland": {
           "type": "string",
-          "minLength": 10,
-          "maxLength": 800
+          "minLength": 1,
+          "maxLength": 800,
+          "description": "The control rewrite. It may be a single word: one blueprint's blank control is \"Submit.\", and a before state is not required to be a sentence."
         },
         "optimized": {
           "type": "string",

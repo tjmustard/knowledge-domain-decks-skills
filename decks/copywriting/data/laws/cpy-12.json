@@ -1,0 +1,27 @@
+{
+  "id": "CPY-12",
+  "formulaId": "ST-12",
+  "name": "AIDCA / IDCA",
+  "phase": "Structural Formulas",
+  "surface": "Enterprise Landing Pages, Quote Flows",
+  "mechanism": "Risk-Mitigating Credibility Verification",
+  "scope": "Grade 8–10; Medium-form conversion copy (300–900 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 8–10; Medium-form conversion copy (300–900 words)",
+  "frontSize": 9,
+  "schematic": "proof at position 12 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 12
+    }
+  }
+}

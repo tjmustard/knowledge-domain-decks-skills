@@ -1,0 +1,27 @@
+{
+  "id": "CPY-36",
+  "formulaId": "UX-12",
+  "name": "Subscription Pause/Downgrade",
+  "phase": "Product Microcopy",
+  "surface": "Cancellation Checkout Flows",
+  "mechanism": "Friction Asymmetry & Reactance Mitigation",
+  "scope": "Grade 6–8; Offboarding step (35–80 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 6–8; Offboarding step (35–80 words)",
+  "frontSize": 9,
+  "schematic": "ease at position 12 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 12
+    }
+  }
+}

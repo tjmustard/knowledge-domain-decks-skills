@@ -1,0 +1,44 @@
+{
+  "id": "CPY-29",
+  "formulaId": "UX-05",
+  "name": "Blameless Error Notification",
+  "phase": "Product Microcopy",
+  "surface": "System Exception Handlers, Alerts",
+  "mechanism": "Attribution Bias & Locus of Control Maintenance",
+  "scope": "Grade 6–7; Alert banner (15–35 words)",
+  "blueprint": true,
+  "blueprintProse": "Blameless error messages divide their content into three balanced components: an objective status description (30%), a technical cause statement (30%), and an immediate remediation pathway (40%). \nThis approach is grounded in attribution theory and locus-of-control preservation. Accusatory error messages trigger frustration and defense mechanisms, often causing users to abandon the application. Framing errors as neutral system conditions paired with direct remediation links maintains user composure and workflow efficiency.",
+  "ratio": [
+    {
+      "label": "Status",
+      "percent": 30
+    },
+    {
+      "label": "Cause",
+      "percent": 30
+    },
+    {
+      "label": "Remediation",
+      "percent": 40
+    }
+  ],
+  "frontLine": "Status 30 · Cause 30 · Remediation 40",
+  "frontSize": 9,
+  "schematic": "agency at position 5 of 12",
+  "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume].",
+  "example": {
+    "bland": "Error 403: Invalid Submission You entered an incompatible JSON payload format. Correct your mistakes and resubmit the form.",
+    "optimized": "JSON Schema Validation Halted The payload was missing the required \"environment_id\" string on line 42. Insert the project identifier to resume compilation. [View Documentation Reference] or [Auto-Fix Schema Formatting]"
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "agency",
+      "divisions": 12,
+      "mark": 5
+    }
+  }
+}

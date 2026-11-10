@@ -1,0 +1,44 @@
+{
+  "id": "CPY-06",
+  "formulaId": "ST-06",
+  "name": "FAB",
+  "phase": "Structural Formulas",
+  "surface": "Product Feature Cards, Pricing Tiers",
+  "mechanism": "Means-End Chain Theory",
+  "scope": "Grade 8–10; Micro-units (30–80 words per card)",
+  "blueprint": true,
+  "blueprintProse": "The FAB unit divides its micro-budget into Feature (25%), Advantage (35%), and Benefit (40%). The Feature identifies an objective structural or technological attribute of the product. The Advantage explains the mechanical utility of that feature compared to legacy alternatives. The Benefit translates that mechanical utility into meaningful financial, temporal, or strategic improvements for the human operator. \nFAB is grounded in means-end chain theory. Decision-makers do not purchase functional features; they purchase the emotional and practical values that those features facilitate. By explicitly bridging technical architecture to tangible business outcomes, the FAB sequence guides the prospect's cognitive appraisal from functional comprehension to personal valuation.",
+  "ratio": [
+    {
+      "label": "Feature",
+      "percent": 25
+    },
+    {
+      "label": "Advantage",
+      "percent": 35
+    },
+    {
+      "label": "Benefit",
+      "percent": 40
+    }
+  ],
+  "frontLine": "Feature 25 · Advantage 35 · Benefit 40",
+  "frontSize": 9,
+  "schematic": "sequence at position 6 of 12",
+  "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]",
+  "example": {
+    "bland": "Feature: Rust-based backend architecture. Advantage: It is faster and uses less memory. Benefit: Saves server costs for your company.",
+    "optimized": "Built on an asynchronous, memory-safe Rust execution kernel (Feature), preventing garbage collection pauses and processing 120,000 concurrent network transactions per second on a single thread (Advantage). This eliminates infrastructure overprovisioning, reducing monthly cloud runtime expenses by up to 60% while insulating engineering teams from Sev-1 latency outages (Benefit)."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 6
+    }
+  }
+}

@@ -100,6 +100,10 @@ for (const deck of decks) {
     fields.context = shape.fields.context;
     fields.labelContext = shape.labelContext;
   }
+  // A deck may print the source's own id on the card while the record keeps
+  // its deck id. Added only when declared, so a deck that names none keeps
+  // its generated page byte for byte.
+  if (shape.cardId) fields.cardId = shape.cardId;
 
   const dir = webDir(deck);
   await mkdir(dir, { recursive: true });

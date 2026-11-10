@@ -25,7 +25,7 @@
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
 // Field names, labels and item style come from the deck, written by build.mjs.
-#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, field-headline-size, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, field-headline-size, field-card-id, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
@@ -33,6 +33,15 @@
 // card whose line is half as long again as its neighbours can step the type
 // down instead of cutting the line. A deck that names no size field prints the
 // 9 pt every earlier deck printed.
+// The id a card prints. A deck may print the source's own id (the copy deck's
+// ST-01) while the record keeps its deck id; a deck that names no such field
+// prints card.id, as every earlier deck did.
+#let printed-id(card) = if field-card-id != none and field-card-id in card {
+  card.at(field-card-id)
+} else {
+  card.id
+}
+
 #let headline-size(card) = if field-headline-size != none and field-headline-size in card {
   card.at(field-headline-size) * 1pt
 } else {
@@ -93,7 +102,7 @@
     #set text(size: 7pt, fill: rgb("#334155"))
     #grid(
       columns: (1fr, auto),
-      [#text(size: 7pt, weight: "bold", fill: rgb("#64748b"))[#card.id]],
+      [#text(size: 7pt, weight: "bold", fill: rgb("#64748b"))[#printed-id(card)]],
       [#text(size: 6.5pt, weight: "bold", fill: accent(card))[
         #group-label.at(card.at(field-group), default: upper(card.at(field-group)))
       ]],
@@ -122,7 +131,7 @@
   ))
   #place(top + left, dx: safe, dy: safe, block(width: cw, height: ch, inset: 0pt)[
     #set text(size: 7pt, fill: rgb("#334155"))
-    #text(size: 7pt, weight: "bold", fill: accent(card))[#card.id]
+    #text(size: 7pt, weight: "bold", fill: accent(card))[#printed-id(card)]
     #v(2pt)
     #text(size: 11pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(10pt)

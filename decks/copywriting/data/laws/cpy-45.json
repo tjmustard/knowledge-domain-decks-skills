@@ -1,0 +1,27 @@
+{
+  "id": "CPY-45",
+  "formulaId": "CR-09",
+  "name": "Affirmative Negation Removal",
+  "phase": "Clarity & Rhythm",
+  "surface": "UX Copy, Conversion Guidance",
+  "mechanism": "Negation Processing Penalty Elimination",
+  "scope": "Grade 5–6; Directive sentences",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 5–6; Directive sentences",
+  "frontSize": 9,
+  "schematic": "ease at position 9 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 9
+    }
+  }
+}

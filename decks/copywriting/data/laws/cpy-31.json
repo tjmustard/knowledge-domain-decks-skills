@@ -1,0 +1,27 @@
+{
+  "id": "CPY-31",
+  "formulaId": "UX-07",
+  "name": "Feature Gate / Upgrade Modal",
+  "phase": "Product Microcopy",
+  "surface": "Freemium Upgrade Prompts, Soft Paywalls",
+  "mechanism": "Endowed Progress Effect & Sunk Cost Salience",
+  "scope": "Grade 6–8; Modal container (40–90 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 6–8; Modal container (40–90 words)",
+  "frontSize": 9,
+  "schematic": "anchor at position 7 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "anchor",
+      "divisions": 12,
+      "mark": 7
+    }
+  }
+}

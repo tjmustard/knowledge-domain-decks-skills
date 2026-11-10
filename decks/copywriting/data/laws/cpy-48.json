@@ -1,0 +1,27 @@
+{
+  "id": "CPY-48",
+  "formulaId": "CR-12",
+  "name": "Pronoun Ratio Balancing",
+  "phase": "Clarity & Rhythm",
+  "surface": "Customer-Facing Pages, Documentation",
+  "mechanism": "Empathic Perspective Taking & Self-Interest Bias",
+  "scope": "3:1 ratio of \"You/Your\" to \"We/Our/I\"",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "3:1 ratio of \"You/Your\" to \"We/Our/I\"",
+  "frontSize": 9,
+  "schematic": "identity at position 12 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 12
+    }
+  }
+}

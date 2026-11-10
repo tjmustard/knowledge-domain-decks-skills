@@ -1,0 +1,27 @@
+{
+  "id": "CPY-19",
+  "formulaId": "HL-07",
+  "name": "If-Then Conditional",
+  "phase": "Headlines & Hooks",
+  "surface": "Cold Prospecting, Contextual Ads",
+  "mechanism": "Asymmetric Upside Framing & Prospect Theory",
+  "scope": "Grade 6–8; Conditional sentence (10–18 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 6–8; Conditional sentence (10–18 words)",
+  "frontSize": 9,
+  "schematic": "contrast at position 7 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 7
+    }
+  }
+}

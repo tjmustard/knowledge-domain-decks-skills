@@ -1,0 +1,40 @@
+{
+  "id": "CPY-26",
+  "formulaId": "UX-02",
+  "name": "Action + Benefit Button CTA",
+  "phase": "Product Microcopy",
+  "surface": "Interactive Conversion Components",
+  "mechanism": "Instrumental Conditioning & Agency Affirmation",
+  "scope": "Grade 4–6; Micro-unit (2–6 words)",
+  "blueprint": true,
+  "blueprintProse": "The Action + Benefit CTA restricts its footprint to a concise 2 to 6 words. Structurally, 40% of the token space contains a first-person active imperative verb, while 60% states the immediate asset or state acquired. \nIts psychological driver is instrumental conditioning and agency affirmation. Generic commands like \"Submit\" or \"Click Here\" focus user attention on cognitive effort and submission. In contrast, linking the action directly to an immediate benefit transforms the button click into an empowering act of acquisition.",
+  "ratio": [
+    {
+      "label": "Imperative verb",
+      "percent": 40
+    },
+    {
+      "label": "Asset",
+      "percent": 60
+    }
+  ],
+  "frontLine": "Imperative verb 40 · Asset 60",
+  "frontSize": 9,
+  "schematic": "agency at position 2 of 12",
+  "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]",
+  "example": {
+    "bland": "Submit.",
+    "optimized": "Build My Production Cluster."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "agency",
+      "divisions": 12,
+      "mark": 2
+    }
+  }
+}

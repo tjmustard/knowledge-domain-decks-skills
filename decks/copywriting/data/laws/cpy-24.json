@@ -1,0 +1,44 @@
+{
+  "id": "CPY-24",
+  "formulaId": "HL-12",
+  "name": "Outcome-Without-Sacrifice",
+  "phase": "Headlines & Hooks",
+  "surface": "B2B SaaS Heroes, App Value Propositions",
+  "mechanism": "Friction Elimination & Trade-off Resistance",
+  "scope": "Grade 5–7; Formulaic claim (8–15 words)",
+  "blueprint": true,
+  "blueprintProse": "This framework links an ambitious operational achievement to the absolute preservation of a resource typically sacrificed during execution. Structurally, 30% defines the category, 35% articulates the outcome, and 35% eliminates the expected compromise. \nThe cognitive driver is trade-off resistance. High-consideration buyers frequently stall when forced to balance conflicting priorities, such as development velocity versus security compliance. Promising the primary outcome while guaranteeing zero compromise on secondary priorities removes this decision friction.",
+  "ratio": [
+    {
+      "label": "Category",
+      "percent": 30
+    },
+    {
+      "label": "Outcome",
+      "percent": 35
+    },
+    {
+      "label": "Compromise",
+      "percent": 35
+    }
+  ],
+  "frontLine": "Category 30 · Outcome 35 · Compromise 35",
+  "frontSize": 9,
+  "schematic": "ease at position 12 of 12",
+  "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]",
+  "example": {
+    "bland": "Fast and secure compliance platform for modern teams.",
+    "optimized": "Enterprise SOC 2 automation that passes security audits in 14 days without slowing engineering sprint velocity."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 12
+    }
+  }
+}

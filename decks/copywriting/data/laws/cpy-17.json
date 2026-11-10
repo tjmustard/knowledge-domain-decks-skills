@@ -1,0 +1,44 @@
+{
+  "id": "CPY-17",
+  "formulaId": "HL-05",
+  "name": "Social Proof Anchor",
+  "phase": "Headlines & Hooks",
+  "surface": "Homepage Banners, Hero Headlines",
+  "mechanism": "Bandwagon Effect & Authority Bias",
+  "scope": "Grade 6–8; Headline (8–15 words)",
+  "blueprint": true,
+  "blueprintProse": "The Social Proof Anchor leads with verified cohort adoption figures. The formula allocates 30% to the verified peer quantity, 30% to precise persona identifiers, and 40% to the business transformation achieved. \nThe cognitive foundation is the bandwagon effect and authority bias. In high-stakes enterprise environments, decision-makers face professional risk when choosing unrecognized solutions. Displaying verified adoption metrics from industry peers provides psychological safety and social validation.",
+  "ratio": [
+    {
+      "label": "Peer quantity",
+      "percent": 30
+    },
+    {
+      "label": "Persona",
+      "percent": 30
+    },
+    {
+      "label": "Transformation",
+      "percent": 40
+    }
+  ],
+  "frontLine": "Peer quantity 30 · Persona 30 · Transformation 40",
+  "frontSize": 9,
+  "schematic": "proof at position 5 of 12",
+  "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]",
+  "example": {
+    "bland": "Many companies use our database management software.",
+    "optimized": "How 4,120 DevOps architects maintain 99.999% uptime across Kubernetes without on-call pages."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 5
+    }
+  }
+}

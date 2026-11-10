@@ -1,0 +1,44 @@
+{
+  "id": "CPY-25",
+  "formulaId": "UX-01",
+  "name": "Value Proposition Matrix",
+  "phase": "Product Microcopy",
+  "surface": "Hero Fold, Positioning Headers",
+  "mechanism": "Cognitive Ease & Mental Model Alignment",
+  "scope": "Grade 6–8; Hero container (20–45 words)",
+  "blueprint": true,
+  "blueprintProse": "The Value Proposition Matrix serves as the cognitive anchor for landing page hero sections and product headers. It breaks down into three key elements: a target identifier defining the specific user segment (20%), a clear statement of the operational friction endured (35%), and an explanation of the differentiated mechanism providing relief (45%). \nThis matrix operates via cognitive ease and self-categorization theory. Online users scan digital interfaces within milliseconds; explicitly stating the target audience and operational mechanism allows evaluators to immediately recognize relevance and proceed through the conversion funnel.",
+  "ratio": [
+    {
+      "label": "Target identifier",
+      "percent": 20
+    },
+    {
+      "label": "Friction",
+      "percent": 35
+    },
+    {
+      "label": "Mechanism",
+      "percent": 45
+    }
+  ],
+  "frontLine": "Target identifier 20 · Friction 35 · Mechanism 45",
+  "frontSize": 9,
+  "schematic": "ease at position 1 of 12",
+  "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism].",
+  "example": {
+    "bland": "All-in-one Project Management We help engineering teams collaborate better and track tasks efficiently with our modern workflow dashboard.",
+    "optimized": "The Linear Git Integration for Autonomous Systems Engineers Stop reconciling GitHub issues against Jira tickets manually. Automatically transition sprint status, resolve bugs, and sync PR reviews straight from terminal commits."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 1
+    }
+  }
+}

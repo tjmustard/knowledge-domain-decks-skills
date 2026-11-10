@@ -1,0 +1,48 @@
+{
+  "id": "CPY-01",
+  "formulaId": "ST-01",
+  "name": "AIDA",
+  "phase": "Structural Formulas",
+  "surface": "Landing Pages, Sales Letters, VSLs",
+  "mechanism": "Orienting Reflex & Narrative Transportation",
+  "scope": "Grade 7–8; Full-page sequence (300–1,500 words)",
+  "blueprint": true,
+  "blueprintProse": "The AIDA framework allocates structural weight across four sequential phases designed to progress a prospect from passive observation to active transactional commitment. The Attention component commands roughly 15% of the total word count, utilizing unexpected assertions or jarring telemetry to break reader habituation. The Interest component consumes 30% of the budget, contextualizing why the status quo has fractured and building mechanistic curiosity. The Desire phase occupies the largest allocation at 40%, grounding technical capabilities into concrete business outcomes and social validation. The final Action phase represents 15% of the copy, providing an unambiguous, low-friction command specifying the immediate next step. \nThe psychological power of AIDA rests upon the orienting reflex and narrative transportation. The human central nervous system filters out routine stimuli through sensory gating, responding only when an external input deviates from expected patterns. Once the orienting reflex interrupts passive skimming, the interest and desire segments trigger narrative transportation, enabling the reader to mentally simulate the operational relief of adopting the proposed mechanism before committing to the final action.",
+  "ratio": [
+    {
+      "label": "Attention",
+      "percent": 15
+    },
+    {
+      "label": "Interest",
+      "percent": 30
+    },
+    {
+      "label": "Desire",
+      "percent": 40
+    },
+    {
+      "label": "Action",
+      "percent": 15
+    }
+  ],
+  "frontLine": "Attention 15 · Interest 30 · Desire 40 · Action 15",
+  "frontSize": 9,
+  "schematic": "sequence at position 1 of 12",
+  "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]",
+  "example": {
+    "bland": "Our enterprise database provides robust performance monitoring tools. You can track latency and query metrics across multi-region clusters with ease. Improve database efficiency and eliminate slow queries with our automated system. Sign up today for a demo.",
+    "optimized": "Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 1
+    }
+  }
+}

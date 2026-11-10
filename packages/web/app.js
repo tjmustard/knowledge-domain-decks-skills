@@ -21,6 +21,9 @@
   var GROUP = FIELDS.group || "category";
   var ITEMS = FIELDS.items || "checklist";
   var ATTRIBUTION = FIELDS.attribution || "academicOrigin";
+  // The field a card prints its id from; a deck that names none prints the
+  // record's own id, as every earlier deck did.
+  var PRINTED_ID = FIELDS.cardId || "id";
   var PROMPT = FIELDS.prompt || "prompt";
   var PROMPT_LABEL = FIELDS.labelPrompt || "Prompt";
   var ITEM_LABEL = FIELDS.labelItems || "Operational checklist";
@@ -154,14 +157,14 @@
       'data-category="' + esc(groupOf(card)) + '" style="--accent:' + accent + '">' +
         '<div class="card-inner">' +
           '<section class="face front">' +
-            '<div class="card-head"><span class="card-id">' + esc(card.id) +
+            '<div class="card-head"><span class="card-id">' + esc(card[PRINTED_ID]) +
               '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
             front +
             '<span class="hint">' + esc(BACK_HINT) + "</span>" +
           "</section>" +
           '<section class="face back" aria-hidden="true">' +
-            '<div class="card-head"><span class="card-id">' + esc(card.id) +
+            '<div class="card-head"><span class="card-id">' + esc(card[PRINTED_ID]) +
               '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
             verso +

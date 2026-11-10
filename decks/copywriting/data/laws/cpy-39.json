@@ -1,0 +1,30 @@
+{
+  "id": "CPY-39",
+  "formulaId": "CR-03",
+  "name": "Conversational Bucket Brigades",
+  "phase": "Clarity & Rhythm",
+  "surface": "Long-Form Technical and Marketing Copy",
+  "mechanism": "Narrative Inertia & Information Foraging Continuation",
+  "scope": "Grade 4–6; Punctuation/Transition connectors (2–6 words)",
+  "blueprint": true,
+  "blueprintProse": "Bucket Brigades are brief transition phrases—often terminating in a colon—that break up dense arguments. Standard expressions include \"Here is why:\", \"Look at it this way:\", \"The takeaway:\", and \"It gets worse:\". They typically occupy 1 to 4 words. \nThis device leverages information foraging theory and micro-commitments. Digital audiences read in quick, F-shaped scanning sweeps. Short, isolated bridge lines interrupt these rapid skimming patterns, pulling the reader's eye downward into the substantive explanation that follows.",
+  "frontLine": "Grade 4–6; Punctuation/Transition connectors (2–6 words)",
+  "frontSize": 9,
+  "schematic": "loop at position 3 of 12",
+  "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication].",
+  "example": {
+    "bland": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt because your developers end up spending more time patching dependencies than shipping user features. This costs organizations hundreds of thousands of dollars annually.",
+    "optimized": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt. Here is why: Your developers end up spending more time patching dependencies than shipping revenue-generating features. It gets worse. This misallocation quietly burns over $300,000 in unrecoverable payroll every single quarter."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 12,
+      "mark": 3
+    }
+  }
+}

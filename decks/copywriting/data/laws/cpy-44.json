@@ -1,0 +1,27 @@
+{
+  "id": "CPY-44",
+  "formulaId": "CR-08",
+  "name": "Falsifiable Swap Rule",
+  "phase": "Clarity & Rhythm",
+  "surface": "Value Propositions, Positioning Copy",
+  "mechanism": "Signaling Theory & Costly Signaling Verification",
+  "scope": "Grade 6–8; Differentiator assertion",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 6–8; Differentiator assertion",
+  "frontSize": 9,
+  "schematic": "proof at position 8 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 8
+    }
+  }
+}

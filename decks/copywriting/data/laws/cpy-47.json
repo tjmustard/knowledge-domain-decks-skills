@@ -1,0 +1,27 @@
+{
+  "id": "CPY-47",
+  "formulaId": "CR-11",
+  "name": "Punctuation Cadence Gating",
+  "phase": "Clarity & Rhythm",
+  "surface": "Short-Form Paid Ads, Hero Headlines",
+  "mechanism": "Working Memory Buffer Optimization",
+  "scope": "Strict punctuation constraint (0 em dashes, max 1 colon)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Strict punctuation constraint (0 em dashes, max 1 colon)",
+  "frontSize": 9,
+  "schematic": "cadence at position 11 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 11
+    }
+  }
+}

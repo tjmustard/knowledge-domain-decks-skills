@@ -1,0 +1,44 @@
+{
+  "id": "CPY-16",
+  "formulaId": "HL-04",
+  "name": "Specific Numbers Guarantee",
+  "phase": "Headlines & Hooks",
+  "surface": "Paid Search Landing Pages, Performance Tools",
+  "mechanism": "Ambiguity Aversion & Specificity Heuristic",
+  "scope": "Grade 5–7; Headline + Subhead (10–20 words)",
+  "blueprint": true,
+  "blueprintProse": "This formula combines precise performance integers, bounded time horizons, and complete risk reversals. The structural ratio divides into 40% for the exact performance metric, 25% for the timeframe, and 35% for the risk reversal. \nThis pattern activates ambiguity aversion and the specificity heuristic. Humans subconsciously interpret rounded figures as approximations or promotional exaggerations. In contrast, irregular integers signal precise telemetry and verifiable data, reassuring risk-averse evaluators.",
+  "ratio": [
+    {
+      "label": "Metric",
+      "percent": 40
+    },
+    {
+      "label": "Timeframe",
+      "percent": 25
+    },
+    {
+      "label": "Risk reversal",
+      "percent": 35
+    }
+  ],
+  "frontLine": "Metric 40 · Timeframe 25 · Risk reversal 35",
+  "frontSize": 9,
+  "schematic": "aversion at position 4 of 12",
+  "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]",
+  "example": {
+    "bland": "We make your website load faster or your money back.",
+    "optimized": "Cut your mobile checkout page render speed below 750ms in 14 days, or you pay nothing."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 4
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "CPY-02",
+  "formulaId": "ST-02",
+  "name": "PAS",
+  "phase": "Structural Formulas",
+  "surface": "Pain-Focused Landing Pages, Cold Email",
+  "mechanism": "Loss Aversion & Negative Reinforcement",
+  "scope": "Grade 6–8; Modular section (100–400 words)",
+  "blueprint": true,
+  "blueprintProse": "The PAS framework distributes copy to surface and agitate operational bottlenecks. The Problem component accounts for 25% of the total word budget, defining an immediate, recognizable operational friction in the customer's native vernacular. The Agitate phase is the structural anchor, demanding 45% of the copy to expose the compounding, systemic consequences of leaving the problem unresolved. The Solve phase concludes the unit at 30% of the word count, presenting the product as the single logical mechanism capable of defusing the agitated friction. \nPAS is driven by prospect theory and loss aversion. Behavioral economics demonstrates that the disutility of an unaddressed loss is perceived as roughly twice as motivating as the utility of an equivalent gain. Agitation elevates cognitive dissonance and emotional arousal, preventing the prospect from rationalizing delay and priming them to embrace the presented solution.",
+  "ratio": [
+    {
+      "label": "Problem",
+      "percent": 25
+    },
+    {
+      "label": "Agitate",
+      "percent": 45
+    },
+    {
+      "label": "Solve",
+      "percent": 30
+    }
+  ],
+  "frontLine": "Problem 25 · Agitate 45 · Solve 30",
+  "frontSize": 9,
+  "schematic": "aversion at position 2 of 12",
+  "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]",
+  "example": {
+    "bland": "Managing cloud infrastructure costs is difficult for growing engineering teams. Cloud bills often exceed forecasts, leading to budget problems and friction with the finance department. Our FinOps platform helps you monitor spending and save money on your cloud provider.",
+    "optimized": "AWS infrastructure bills arrived 22% over forecast again this month. Finance is demanding line-item justification for Kubernetes cluster scaling, while engineering managers waste 14 hours every sprint reverse-engineering unallocated compute spikes instead of shipping core roadmap features. Continuing to absorb this drag means cutting headcount or deferring product launches. Our FinOps engine reconciles real-time container utilization directly with cloud billing APIs, automatically terminating orphaned compute nodes."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 2
+    }
+  }
+}

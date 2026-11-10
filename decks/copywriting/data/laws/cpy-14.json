@@ -1,0 +1,40 @@
+{
+  "id": "CPY-14",
+  "formulaId": "HL-02",
+  "name": "The Cliffhanger",
+  "phase": "Headlines & Hooks",
+  "surface": "Social Media Openers, Video Ads",
+  "mechanism": "Zeigarnik Effect (Unclosed Cognitive Tension)",
+  "scope": "Grade 5–7; Single sentence (7–14 words)",
+  "blueprint": true,
+  "blueprintProse": "The Cliffhanger hook deliberately withholds the outcome or concluding mechanism of an escalating narrative. The word count stays concise, between 7 and 14 words, split evenly between narrative momentum (50%) and the withheld conclusion (50%). \nThis hook is driven by the Zeigarnik effect, which observes that uncompleted tasks or unresolved narrative sequences produce persistent cognitive tension within working memory. The reader's cognitive equilibrium is temporarily destabilized, compelling them to consume the subsequent body copy to resolve the narrative tension.",
+  "ratio": [
+    {
+      "label": "Momentum",
+      "percent": 50
+    },
+    {
+      "label": "Withheld conclusion",
+      "percent": 50
+    }
+  ],
+  "frontLine": "Momentum 50 · Withheld conclusion 50",
+  "frontSize": 9,
+  "schematic": "gap at position 2 of 12",
+  "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]",
+  "example": {
+    "bland": "A security breach happened at a major bank yesterday.",
+    "optimized": "When their root certificates expired at 2:00 AM, the engineering team made one fatal command line mistake."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 2
+    }
+  }
+}

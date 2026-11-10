@@ -1,0 +1,104 @@
+{
+  "id": "copywriting",
+  "slug": "copywriting",
+  "name": "Copy Architecture",
+  "description": "Forty-eight copy formulas in four surfaces. Each card prints the proportions the source states for its components, the mechanism it works by, the surface it deploys on and the fill-in template verbatim, so a writer can fill a pattern rather than recall one.",
+  "categories": [
+    "Structural Formulas",
+    "Headlines & Hooks",
+    "Product Microcopy",
+    "Clarity & Rhythm"
+  ],
+  "accents": {
+    "Structural Formulas": "#B45309",
+    "Headlines & Hooks": "#9D174D",
+    "Product Microcopy": "#0E7490",
+    "Clarity & Rhythm": "#4C1D95"
+  },
+  "itemStyle": "checklist",
+  "fields": {
+    "group": "phase",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "frontLine",
+    "headlineSize": "frontSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null,
+    "cardId": "formulaId"
+  },
+  "labels": {
+    "headline": "Front line",
+    "context": "Schematic",
+    "group": {
+      "Structural Formulas": "Structure",
+      "Headlines & Hooks": "Headlines",
+      "Product Microcopy": "Microcopy",
+      "Clarity & Rhythm": "Clarity"
+    }
+  },
+  "figureWidth": "1.6in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "mechanism",
+      "label": "Cognitive mechanism",
+      "style": "prose"
+    },
+    {
+      "field": "surface",
+      "label": "Where it deploys",
+      "style": "prose"
+    },
+    {
+      "field": "template",
+      "label": "Template",
+      "style": "prose"
+    },
+    {
+      "field": "blueprintProse",
+      "label": "Blueprint",
+      "style": "prose",
+      "card": false
+    },
+    {
+      "field": "example",
+      "label": "Before and after",
+      "style": "beforeAfter",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/copywriting-rules.md",
+    "skill": "skills/copywriting",
+    "pdf": "packages/prepress/dist/copywriting.pdf"
+  },
+  "rules": {
+    "title": "Copy Architecture Rules",
+    "intro": "The formulas come from public practice in persuasive writing: sequences that carry a reader from attention to a decision, hooks that interrupt a skimming habit, the microcopy of a product's own interface, and the sentence-level rhythm that keeps a page readable. Each card states the front line - the component proportions where the source states them, otherwise the formula's readability and scope - the mechanism it works by, the surface it deploys on, and the fill-in template.\nThe template prints on the card exactly as the source writes it, because it is the only field a writer can execute: a deck of pattern names without the patterns is a glossary, not a deck. Twenty-two formulas carry a full blueprint here, with its proportion prose and a bland/optimized rewrite; the other twenty-six are taxonomy rows in the source, and their cards say so rather than filling a template in from anywhere else."
+  },
+  "skill": {
+    "name": "copywriting",
+    "description": "Write copy from a filled formula: {cards} formulas in four surfaces, each with its proportions, mechanism, deployment surface and verbatim template. Use when a page, hook, interface string or paragraph needs a pattern to fill rather than a blank page.",
+    "title": "Copy Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per surface.\n\nChoosing starts from what you are writing. A page or a sequence: Structural Formulas. A first line that has to earn the next one: Headlines and Hooks. A product's own words - a button, an empty screen, an error, a plan name: Product Microcopy. A paragraph that has to stay readable at length: Clarity and Rhythm. Then take the card whose surface matches the thing you are writing.\n\nWhen two cards fit, fill the template before you judge it. The proportions are the source's statement of where the effort goes; a template copied without its proportions is a shape with the wrong weight in it.\n\nA card whose template says the source prints none is not an invitation to invent one. Write the pattern from the surface and the mechanism the card names, and keep it in the artifact you are working in, not in this deck.\n\nRoutes out of this deck. Narrative owns the pitch and the pitch deck: PAS and BAB appear there as narrative beats, here as fill-in formulas; when the need is a story the deck owns it, when the need is a pattern this deck owns it. UX laws owns the Zeigarnik effect, Miller's limit, loss aversion and the goal-gradient: those cards state the law, these state the copy that uses it, and UX-05's blameless error message is this deck's. Team owns the blameless post-mortem: that deck runs the meeting, this card writes the notification.",
+    "commonRules": [
+      "Fill the template before judging the formula. The pattern produces the draft; evaluating first returns you to the blank page the card exists to remove.",
+      "Keep the proportions where the source states them. They are the source's claim about where the effort goes, and a card that prints a ratio line means it.",
+      "The template is the source's words, not the card's. Where it prints on the card, it is verbatim; do not tidy its phrasing while keeping its shape.",
+      "Where the card says the source prints no template, write your own and keep it where the work lives. Nothing was filled in for that formula here.",
+      "A named origin is the source's, not the card's. Where the record cites a work, the citation is the work the formula came from; where it does not, the card says the source names no originator."
+    ],
+    "footer": "Formulas are credited to the works that originated them where a checked public record names one. The card text states the source's own proportions, mechanism and template."
+  },
+  "web": {
+    "global": "COPYWRITING_DECK",
+    "accentsGlobal": "COPYWRITING_DECK_ACCENTS",
+    "title": "Copy Architecture — Knowledge Domain Decks",
+    "heading": "Copy Architecture",
+    "lede": "{cards} copy formulas in four surfaces: the front's ratio line, the back's mechanism, the surface it deploys on and the template it fills.",
+    "source": "Generated from <code>decks/copywriting/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the template"
+  }
+}

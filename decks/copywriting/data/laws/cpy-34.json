@@ -1,0 +1,27 @@
+{
+  "id": "CPY-34",
+  "formulaId": "UX-10",
+  "name": "Optimistic Inline Status Snack",
+  "phase": "Product Microcopy",
+  "surface": "Async Process Completion, Save States",
+  "mechanism": "Feedback Loop Closure & Temporal Discounting",
+  "scope": "Grade 4–6; Transient banner (4–10 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 4–6; Transient banner (4–10 words)",
+  "frontSize": 9,
+  "schematic": "loop at position 10 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 12,
+      "mark": 10
+    }
+  }
+}

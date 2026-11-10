@@ -1,0 +1,30 @@
+{
+  "id": "CPY-38",
+  "formulaId": "CR-02",
+  "name": "Polysyllabic Fog Pruning",
+  "phase": "Clarity & Rhythm",
+  "surface": "Technical Marketing, Sales Enablement",
+  "mechanism": "Cognitive Strain Elimination & Fluency Heuristic",
+  "scope": "Gunning Fog < 8.0; Lexical constraint",
+  "blueprint": true,
+  "blueprintProse": "This heuristic regulates vocabulary complexity to maintain a Gunning Fog index below 8.0. It identifies words of three or more syllables and replaces them with direct Germanic alternatives. The standard mathematical formulation for Gunning Fog balances sentence length with complex word frequency: \nFog = 0.4 [ (total words ÷ total sentences) + 100 (complex words ÷ total words) ] \nwhere complex words exclude proper nouns, hyphenated compounds, and standard jargon. \nThe behavioral driver is cognitive fluency. Readers subconsciously associate processing difficulty with low credibility and deceptive intent. Pruning polysyllabic bloat reduces cognitive strain, increasing both content recall and reader trust.",
+  "frontLine": "Gunning Fog < 8.0; Lexical constraint",
+  "frontSize": 9,
+  "schematic": "ease at position 2 of 12",
+  "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density.",
+  "example": {
+    "bland": "Organizations must leverage comprehensive enterprise orchestration capabilities in order to facilitate synergistic cross-functional departmental communication.",
+    "optimized": "Teams must use clear automated tools to talk directly across departments and ship faster."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 2
+    }
+  }
+}

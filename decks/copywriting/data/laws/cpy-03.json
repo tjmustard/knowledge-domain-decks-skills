@@ -1,0 +1,44 @@
+{
+  "id": "CPY-03",
+  "formulaId": "ST-03",
+  "name": "BAB",
+  "phase": "Structural Formulas",
+  "surface": "Case Studies, Email Pitches, Hero Sections",
+  "mechanism": "Contrast Principle & Counterfactual Simulation",
+  "scope": "Grade 6–7; Concise block (80–250 words)",
+  "blueprint": true,
+  "blueprintProse": "The BAB framework balances its structure into three balanced sections: 35% dedicated to Before, 35% to After, and 30% to the Bridge. The Before section grounds the narrative in the reader's current reality, marked by manual toil and inefficiencies. The After section constructs an alternative reality where those operational burdens have been eradicated. The Bridge introduces the specific technology, methodology, or tool that connects the painful baseline to the frictionless outcome. \nThe cognitive foundation of BAB relies on perceptual contrast and counterfactual simulation. By establishing an explicit contrast between the baseline and the transformed state, the copy exploits the brain's anchoring tendencies. Counterfactual thinking creates cognitive dissonance between the user's current situation and their potential future, transforming the product into an indispensable conduit for progress.",
+  "ratio": [
+    {
+      "label": "Before",
+      "percent": 35
+    },
+    {
+      "label": "After",
+      "percent": 35
+    },
+    {
+      "label": "Bridge",
+      "percent": 30
+    }
+  ],
+  "frontLine": "Before 35 · After 35 · Bridge 30",
+  "frontSize": 9,
+  "schematic": "contrast at position 3 of 12",
+  "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]",
+  "example": {
+    "bland": "Writing documentation manually takes a lot of time. Our automated generator turns your internal source code into clean documentation sites quickly and easily, saving your developers time and keeping content up to date.",
+    "optimized": "Your senior systems architects spend Fridays manually writing API reference markdown while pull requests pile up unreviewed. Imagine continuous deployment where every merged commit automatically builds, verifies, and publishes interactive API documentation without an engineer typing a single explanatory sentence. Our schema-driven static documentation compiler synchronizes your OpenAPI specifications directly into high-speed search portals on every git push."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 3
+    }
+  }
+}

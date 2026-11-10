@@ -1,0 +1,30 @@
+{
+  "id": "CPY-40",
+  "formulaId": "CR-04",
+  "name": "Tricolon Harmonic Grouping",
+  "phase": "Clarity & Rhythm",
+  "surface": "Structural Bullet Points, Value Pillars",
+  "mechanism": "Miller's Law (Chunking) & Aesthetic Fluency",
+  "scope": "Grade 6–8; Tripartite phrase syntax",
+  "blueprint": true,
+  "blueprintProse": "Tricolon Harmonic Grouping structures core arguments into three parallel grammatical units sharing equivalent meter and syntactic cadence. The standard pattern follows: [Imperative Verb + Target Object], [Imperative Verb + Target Object], and [Imperative Verb + Target Object]. \nThis pattern is rooted in Miller's Law and cognitive chunking heuristics. Human working memory processes small chunks of information with peak efficiency. Three items form the smallest sequence necessary to create a recognizable rhythmic pattern, balancing rhetorical completeness with minimal cognitive load.",
+  "frontLine": "Grade 6–8; Tripartite phrase syntax",
+  "frontSize": 9,
+  "schematic": "cadence at position 4 of 12",
+  "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]",
+  "example": {
+    "bland": "Our application helps with streamlining your everyday engineering tasks, provides security for code repositories, and increases team happiness.",
+    "optimized": "Automate your deployment pipelines. Secure your core repositories. Accelerate your engineering delivery."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 4
+    }
+  }
+}

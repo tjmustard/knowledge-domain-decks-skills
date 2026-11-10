@@ -3347,7 +3347,9 @@
       for (var ii = 1; ii <= div; ii++) {
         var ir = 12 + (128 * ii) / div;
         var ion = ii === mark;
-        out.push(circle(icx, icy, ir, { hollow: !ion, width: ion ? 2.4 : 1.1, opacity: ion ? 0.9 : 0.26 }));
+        // The marked ring is drawn heavy, not filled: a filled circle is a
+        // disc at every radius, and it would hide the rings inside it.
+        out.push(circle(icx, icy, ir, { hollow: true, width: ion ? 6 : 1.1, opacity: ion ? 0.95 : 0.26 }));
       }
       out.push(circle(icx, icy, 4, { width: 1.4, opacity: 0.7 }));
     } else if (family === "ease") {
@@ -3427,16 +3429,42 @@
       out.push(line(48, base, 352, base, 1.4, 0.45));
     } else if (family === "agency") {
       // An arrow from the reader to the marked target: the copy hands control
-      // over rather than asking for it.
+      // over rather than asking for it. The reader and the target sit on
+      // different rows so the arrow stays a gesture at every mark, and the
+      // surface's twelve positions run underneath, so "position N of 12" is
+      // readable from the drawing rather than only from its label.
       var tx2 = posX(mark);
-      out.push(circle(84, 236, 12, { hollow: true, width: 1.8, opacity: 0.8 }));
-      out.push(line(96, 236, tx2 - 22, 200, 1.8, 0.7));
+      var sx2 = 76;
+      var sy2 = 272;
+      var sr2 = 15;
+      var ty2 = 120;
+      var tr2 = 21;
+      out.push(circle(sx2, sy2, sr2, { hollow: true, width: 2, opacity: 0.8 }));
+      var dx2 = tx2 - sx2;
+      var dy2 = ty2 - sy2;
+      var len2 = Math.sqrt(dx2 * dx2 + dy2 * dy2);
+      var ux2 = dx2 / len2;
+      var uy2 = dy2 / len2;
+      var ax1 = sx2 + ux2 * (sr2 + 4);
+      var ay1 = sy2 + uy2 * (sr2 + 4);
+      var ax2 = tx2 - ux2 * (tr2 + 8);
+      var ay2 = ty2 - uy2 * (tr2 + 8);
+      out.push(line(ax1, ay1, ax2, ay2, 2, 0.75));
+      var bx1 = ax2 - ux2 * 15;
+      var by1 = ay2 - uy2 * 15;
+      var wpx = -uy2 * 7;
+      var wpy = ux2 * 7;
       out.push(
-        '<path d="M ' + coord(tx2 - 34) + " " + coord(200) + " L " + coord(tx2 - 20) + " " + coord(190) +
-          " L " + coord(tx2 - 22) + " " + coord(204) + ' Z" fill="currentColor" opacity="0.75" ' + STROKE + "/>"
+        '<path d="M ' + coord(ax2) + " " + coord(ay2) + " L " + coord(bx1 + wpx) + " " + coord(by1 + wpy) +
+          " L " + coord(bx1 - wpx) + " " + coord(by1 - wpy) + ' Z" fill="currentColor" opacity="0.75" ' + STROKE + "/>"
       );
-      out.push(circle(tx2, 200, 11, { width: 2, opacity: 0.9 }));
-      out.push(circle(tx2, 200, 4, { width: 1.4, opacity: 0.8 }));
+      out.push(circle(tx2, ty2, tr2, { width: 2.4, opacity: 0.9 }));
+      out.push(circle(tx2, ty2, 7, { width: 1.6, opacity: 0.85 }));
+      for (var gi2 = 1; gi2 <= div; gi2++) {
+        var gx2 = posX(gi2);
+        out.push(line(gx2, 312, gx2, gi2 === mark ? 300 : 318, 1.1, gi2 === mark ? 0.9 : 0.3));
+      }
+      out.push(line(x0, 330, x0 + span, 330, 1.2, 0.25));
     } else if (family === "loop") {
       // A returning arc; the marked segment is drawn heavy, and the arrowhead
       // closes the circle.

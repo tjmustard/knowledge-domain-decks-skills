@@ -1,0 +1,27 @@
+{
+  "id": "CPY-11",
+  "formulaId": "ST-11",
+  "name": "Danny Iny’s 6+1",
+  "phase": "Structural Formulas",
+  "surface": "High-Friction SaaS Conversions",
+  "mechanism": "Cognitive Dissonance & Action Priming",
+  "scope": "Grade 7–8; Structured landing page (250–600 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 7–8; Structured landing page (250–600 words)",
+  "frontSize": 9,
+  "schematic": "sequence at position 11 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 11
+    }
+  }
+}

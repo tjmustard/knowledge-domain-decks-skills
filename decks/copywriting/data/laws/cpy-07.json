@@ -1,0 +1,27 @@
+{
+  "id": "CPY-07",
+  "formulaId": "ST-07",
+  "name": "ACCA",
+  "phase": "Structural Formulas",
+  "surface": "Non-Profit Appeals, High-Consideration B2B",
+  "mechanism": "Diagnostic Cognitive Processing",
+  "scope": "Grade 8–10; Persuasive narrative (300–800 words)",
+  "blueprint": false,
+  "blueprintProse": null,
+  "frontLine": "Grade 8–10; Persuasive narrative (300–800 words)",
+  "frontSize": 9,
+  "schematic": "sequence at position 7 of 12",
+  "template": "The source prints this formula as a taxonomy row only: no template, no proportions, no worked example. Write the pattern yourself from its surface and its mechanism. Nothing here has been filled in on its behalf.",
+  "example": null,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 7
+    }
+  }
+}

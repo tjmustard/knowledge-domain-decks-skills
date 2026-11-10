@@ -1,0 +1,44 @@
+{
+  "id": "CPY-28",
+  "formulaId": "UX-04",
+  "name": "Friction-Reducing Reassurances",
+  "phase": "Product Microcopy",
+  "surface": "Form Terminus, Checkout Under-buttons",
+  "mechanism": "Ambiguity Aversion & Perceived Risk Defusal",
+  "scope": "Grade 4–6; Micro-string (4–12 words)",
+  "blueprint": true,
+  "blueprintProse": "Positioned directly adjacent to conversion inputs, this micro-unit uses a brief 4 to 12 words to neutralize last-minute hesitation. It covers three key reassurances: confirming trial freedom (33%), removing credit card requirements (33%), and stating setup brevity (34%). \nThis unit addresses ambiguity aversion and pre-conversion micro-anxiety. Users at the point of action often worry about hidden financial commitments or complex onboarding workflows. Placing clear reassurances adjacent to conversion triggers defuses perceived risk and preserves momentum.",
+  "ratio": [
+    {
+      "label": "Trial freedom",
+      "percent": 33
+    },
+    {
+      "label": "Card requirement",
+      "percent": 33
+    },
+    {
+      "label": "Setup brevity",
+      "percent": 34
+    }
+  ],
+  "frontLine": "Trial freedom 33 · Card requirement 33 · Setup brevity 34",
+  "frontSize": 9,
+  "schematic": "aversion at position 4 of 12",
+  "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]",
+  "example": {
+    "bland": "Terms and conditions apply. Free trial.",
+    "optimized": "14-day free sandbox • No credit card required • Deploy with 1 line of bash."
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 4
+    }
+  }
+}

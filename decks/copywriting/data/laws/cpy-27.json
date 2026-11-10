@@ -1,0 +1,44 @@
+{
+  "id": "CPY-27",
+  "formulaId": "UX-03",
+  "name": "Blank-State Guidance",
+  "phase": "Product Microcopy",
+  "surface": "Dashboards, First-Time User Experience",
+  "mechanism": "Goal-Gradient Effect & Activation Energy Relief",
+  "scope": "Grade 5–7; Empty state container (25–60 words)",
+  "blueprint": true,
+  "blueprintProse": "Blank-state interfaces distribute their word budget across three primary tasks: confirming zero-state status (25%), introducing the operational leverage unlocked upon setup (35%), and providing a single call-to-action to begin onboarding (40%). \nThis pattern leverages the goal-gradient effect and minimizes activation energy. Encountering an unpopulated application screen often induces choice paralysis and user confusion. Structuring the blank state as a clear launching pad with a guided onboarding step accelerates time-to-value and drives early product adoption.",
+  "ratio": [
+    {
+      "label": "Zero-state",
+      "percent": 25
+    },
+    {
+      "label": "Leverage",
+      "percent": 35
+    },
+    {
+      "label": "Call-to-action",
+      "percent": 40
+    }
+  ],
+  "frontLine": "Zero-state 25 · Leverage 35 · Call-to-action 40",
+  "frontSize": 9,
+  "schematic": "sequence at position 3 of 12",
+  "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]",
+  "example": {
+    "bland": "No API Keys Created Yet You have not generated any secret keys. Click the button below if you want to make an API key for your account.",
+    "optimized": "Zero Live Production Keys Configured Generate your first read-only authentication token to begin querying telemetry endpoints over encrypted TLS. Integrates in 60 seconds via our curl quickstart. [Generate Production Key →]"
+  },
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "copywriting-figure",
+    "parametricParams": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 3
+    }
+  }
+}
