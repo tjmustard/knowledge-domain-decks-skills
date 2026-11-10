@@ -1,0 +1,27 @@
+{
+  "id": "IDE-40",
+  "sourceTacticNo": 40,
+  "name": "Extreme Accessibility & Cognitive Simplicity Floor",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Re-architect your system's interaction workflow assuming the operator possesses an 8-year-old child's literacy level, is suffering severe sleep deprivation, and has only one hand free to interact.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 8 of 10",
+  "mechanism": "Radical empathetic de-framing. Neutralizes the curse of knowledge by forcing the designer to strip out specialized jargon, complex cognitive models, and dexterity demands.",
+  "questions": [
+    "Where does our interaction model assume an expert user who understands internal systems?",
+    "What single action can we eliminate so that this complex decision reduces to a binary choice?",
+    "How can our error messages explain the exact fix in three plain-English words rather than displaying technical stack traces?"
+  ],
+  "example": "Kubernetes Incident Remediation CLI. Rather than requiring an on-call engineer to run complex multi-parameter kubectl diagnostic commands and inspect raw JSON log outputs during a 3:00 AM production incident, engineers build an automated terminal binary. The tool surfaces a single plain-English remediation prompt: \"Postgres Pod 2 out of memory. Press [Enter] to double RAM allocation and restart.\"",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 8
+    }
+  }
+}

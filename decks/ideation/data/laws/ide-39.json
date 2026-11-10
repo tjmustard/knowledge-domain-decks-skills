@@ -1,0 +1,27 @@
+{
+  "id": "IDE-39",
+  "sourceTacticNo": 39,
+  "name": "Strict Latency / Bandwidth Zero Constraint (Offline-First / Air-Gap)",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Assume your client applications are completely disconnected from the Internet for three weeks in a subterranean bunker. Design how users continue interacting, mutating data, and resolving conflicts upon reconnection.",
+  "sprintSize": 8.5,
+  "schematic": "Constraint at position 7 of 10",
+  "mechanism": "Extreme contextual starvation. Prohibits assumed access to infinite network backhauls, forcing the cognitive model to decouple state resolution from centralized infrastructure.",
+  "questions": [
+    "What fundamental features must function flawlessly when available bandwidth is precisely zero kilobits per second?",
+    "How can we distribute computational truth so that zero round-trip network hops are required to confirm a transaction?",
+    "What peer-to-peer mechanisms can propagate local updates without touching a centralized server?"
+  ],
+  "example": "Collaborative Workspace Mutation Sync. Resolving cloud latency and intermittent field connectivity: instead of relying on operational transforms that demand continuous web-socket round-trips to an authoritative central cluster, implement state-based Conflict-free Replicated Data Types (CRDTs, e.g., Yjs or Automerge). Users mutate state locally with instant UI feedback; state vectors merge deterministically across nodes upon network reconnection.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 7
+    }
+  }
+}

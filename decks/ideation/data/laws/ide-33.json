@@ -1,0 +1,34 @@
+{
+  "id": "IDE-33",
+  "sourceTacticNo": 33,
+  "name": "Oblique Strategies: Aphoristic Defamiliarization (Brian Eno & Peter Schmidt)",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Draw an Oblique Strategy at random (e.g., \"Honor thy error as a hidden intention\" or \"Discard an axiom\"). Spend four minutes deriving three concrete technical implementations of the prompt.",
+  "sprintSize": 8.5,
+  "schematic": "Provocation at position 1 of 10",
+  "mechanism": "Semantic defamiliarization and cognitive estrangement. Disrupts routine problem solving by introducing poetic, oblique aphorisms that force associative networks to map lateral connections back to technical challenges.",
+  "questions": [
+    "If this operational failure was an intentional design decision, what architectural advantages does it unlock?",
+    "How can we embrace the most frustrating limitation of our infrastructure as its distinguishing capability?",
+    "What happens if we perform this entire technical process backward, starting from the destroyed residue?"
+  ],
+  "example": "Chaos Engineering (Netflix Chaos Monkey). Prompt: \"Honor thy error as a hidden intention.\" Rather than treating production node crashes, packet drops, and network splits as unacceptable operational anomalies to be masked, the engineering team intentionally automated their injection into production environments. This forced all downstream microservices to be designed with self-healing, graceful degradation, and distributed failover patterns by default.",
+  "origin": {
+    "authors": [
+      "Brian Eno",
+      "Peter Schmidt"
+    ],
+    "year": 1975,
+    "title": "Oblique Strategies: Over One Hundred Worthwhile Dilemmas",
+    "publication": "Privately printed, edition of 500",
+    "note": "Checked 2026-11-10 against the Oblique Strategies FAQ and Cabinet Magazine's history: first edition January 1975, 500 numbered copies."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "provocation",
+      "divisions": 10,
+      "mark": 1
+    }
+  }
+}

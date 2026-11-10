@@ -552,3 +552,175 @@ The sprint prints on the card exactly as the source writes it, because it is the
 **Worked example.** Read Concurrency vs. Write Isolation in High-Throughput Databases. Physical Contradiction: "The database record must be mutable to allow immediate write operations, but immutable to allow non-blocking concurrent reads." Separation in Time and Condition via Multi-Version Concurrency Control (MVCC): records are never updated in place. When a write occurs, a new immutable version is appended with a timestamp. Readers inspect point-in-time snapshots without acquiring locks, eliminating read/write blocking.
 
 **Source.** Genrikh S. Altshuller (1984). *Creativity as an Exact Science: The Theory of the Solution of Inventive Problems*. Gordon and Breach.
+
+## Constraints & Oblique Sparks
+
+### IDE-33 — Oblique Strategies: Aphoristic Defamiliarization (Brian Eno & Peter Schmidt)
+
+**Five-minute sprint.** Draw an Oblique Strategy at random (e.g., "Honor thy error as a hidden intention" or "Discard an axiom"). Spend four minutes deriving three concrete technical implementations of the prompt.
+
+**Schematic.** Provocation at position 1 of 10
+
+**Cognitive mechanism.** Semantic defamiliarization and cognitive estrangement. Disrupts routine problem solving by introducing poetic, oblique aphorisms that force associative networks to map lateral connections back to technical challenges.
+
+**Seed questions.**
+- If this operational failure was an intentional design decision, what architectural advantages does it unlock?
+- How can we embrace the most frustrating limitation of our infrastructure as its distinguishing capability?
+- What happens if we perform this entire technical process backward, starting from the destroyed residue?
+
+**Worked example.** Chaos Engineering (Netflix Chaos Monkey). Prompt: "Honor thy error as a hidden intention." Rather than treating production node crashes, packet drops, and network splits as unacceptable operational anomalies to be masked, the engineering team intentionally automated their injection into production environments. This forced all downstream microservices to be designed with self-healing, graceful degradation, and distributed failover patterns by default.
+
+**Source.** Brian Eno & Peter Schmidt (1975). *Oblique Strategies: Over One Hundred Worthwhile Dilemmas*. Privately printed, edition of 500.
+
+### IDE-34 — Zero Budget Constraint ($0 Marginal Cost Architecture)
+
+**Five-minute sprint.** Assume operating budgets have been reduced to $0.00/month. Design an architecture capable of sustaining 10,000 active daily users using solely free-tier, client-side, or ambient compute.
+
+**Schematic.** Constraint at position 2 of 10
+
+**Cognitive mechanism.** Resource-scarcity induced divergent routing. Prohibits off-the-shelf commercial solutions, forcing cognitive models to seek high-utility, ambient, or underutilized open-source resources.
+
+**Seed questions.**
+- How can we offload our primary compute load entirely onto the client’s browser hardware?
+- What public, free open-source infrastructure can we repurpose to bypass expensive managed cloud platforms?
+- How can we store system state without maintaining a proprietary cloud database?
+
+**Worked example.** Serverless Global Web Applications. By pairing client-side SQLite databases compiled to WebAssembly (e.g., via SQLite in browser storage), client-side public-key cryptography, and peer-to-peer data sync over free STUN/TURN relays, an application operates with near-zero recurring hosting overhead, eliminating enterprise cloud database bills.
+
+**Source.** The source names no originator.
+
+### IDE-35 — 10x / 100x Scale Stress Test (Hyper-Scaling)
+
+**Five-minute sprint.** Assume that tomorrow morning, concurrent user interactions or ingestion data volumes expand by 100x. Identify the exact sub-components that will collapse within thirty seconds, and discard them.
+
+**Schematic.** Scale shift at position 3 of 10
+
+**Cognitive mechanism.** Conceptual scale refactoring. Renders incremental, patch-based solutions unviable, forcing executive cognitive structures to abandon routine patterns and devise radical architectures.
+
+**Seed questions.**
+- What architectural component collapses first when throughput surges by two orders of magnitude?
+- If all human-in-the-loop operational reviews had to scale 100x without expanding staff, how would they be automated?
+- How would our data ingestion logic survive if disk storage had to be pruned every sixty seconds?
+
+**Worked example.** Real-Time Telemetry Processing. Handling 100,000 metrics/sec overwhelms standard relational database row inserts. When forced to architect for 10,000,000 metrics/sec, row-level persistence is abandoned in favor of memory-mapped append-only circular ring buffers, lock-free ring queues (e.g., LMAX Disruptor), and batched columnar disk writes via Apache Parquet files flushed directly to object storage.
+
+**Source.** The source names no originator.
+
+### IDE-36 — Zero UI / Invisible Interface Constraint
+
+**Five-minute sprint.** Remove every screen, button, input box, and visual display from your product's user journey. Conceive an autonomous mechanism to deliver identical utility through passive telemetry, sensors, or background daemons.
+
+**Schematic.** Removal at position 4 of 10
+
+**Cognitive mechanism.** Interactional reduction. Removes visual design cues and form-filling affordances, forcing the mind to model ambient, context-driven, and autonomous service delivery.
+
+**Seed questions.**
+- How can the system infer user intent without requiring explicit, manual input?
+- What hardware or ambient environmental signals already indicate the user's current goal?
+- If the user never interacted with our application visually, how would they realize its value?
+
+**Worked example.** Mobile Parking Payment & Toll Collection. Instead of requiring drivers to pull out a smartphone, open a parking application, search for a location zone code, input credit card details, and submit payment, install geofencing and Bluetooth low-energy beacons. The vehicle or smartphone automatically negotiates cryptographic location handshakes upon entry and exit, charging the user's account in the background without explicit UI interaction.
+
+**Source.** The source names no originator.
+
+### IDE-37 — The "Worst Possible Idea" (Anti-Solution Reframing)
+
+**Five-minute sprint.** Spend three minutes generating five ideas guaranteed to exacerbate the problem or ruin user trust. Pick the most catastrophic idea, invert its core operative mechanism, and discover the hidden insight.
+
+**Schematic.** Removal at position 5 of 10
+
+**Cognitive mechanism.** Evaluative inhibition release. Eliminates performance anxiety, risk aversion, and internal self-censorship by directing cognitive capacity toward generating the most destructive, inefficient, and catastrophic solutions possible.
+
+**Seed questions.**
+- What architectural implementation would maximize latency, vulnerability, and operational costs?
+- How could we design this onboarding process to ensure 100% of prospective clients abandon within five seconds?
+- What would an adversary build if their goal was to completely destabilize our database state?
+
+**Worked example.** Preventing User Accidental Data Loss. The "Worst Possible Idea": "Every time the user types a character, immediately erase another random document." Inverting this destructive anti-solution: build an automated, aggressive document history journal that captures fine-grained keystroke deltas to an immutable local undo buffer, enabling instantaneous time-travel restoration to any second of document history.
+
+**Source.** The source names no originator.
+
+### IDE-38 — Pre-Mortem & Catastrophic Failure Mode Projection
+
+**Five-minute sprint.** Assume today is one year from now, and the project has suffered a catastrophic failure, resulting in regulatory fines and complete system collapse. Write three distinct failure chain chronologies.
+
+**Schematic.** Timing at position 6 of 10
+
+**Cognitive mechanism.** Prospective hindsight. Operating from the hypothetical certainty that a future catastrophe has occurred improves the human capacity to identify causal vulnerabilities by up to 30%, bypassing optimistic confirmation bias.
+
+**Seed questions.**
+- What silent failure mode is quietly propagating through our infrastructure today that will take us offline next year?
+- Which single external dependency or vendor holds the power to unilaterally bankrupt our operational architecture?
+- If an engineer intentionally wanted to bring this platform down undetected, where would they strike?
+
+**Worked example.** Cloud Identity & Cryptographic Key Expiration. Pre-mortem analysis reveals that hardcoded automated CI/CD pipeline secrets and SSL/TLS root certificates will expire silently over a weekend, taking critical e-commerce checkout paths offline. Driven by this prospective hindsight, the team builds an automated cert-manager system with alerting windows and automatic ACME protocol renewal cycles 30 days prior to expiration.
+
+**Source.** The source names no originator.
+
+### IDE-39 — Strict Latency / Bandwidth Zero Constraint (Offline-First / Air-Gap)
+
+**Five-minute sprint.** Assume your client applications are completely disconnected from the Internet for three weeks in a subterranean bunker. Design how users continue interacting, mutating data, and resolving conflicts upon reconnection.
+
+**Schematic.** Constraint at position 7 of 10
+
+**Cognitive mechanism.** Extreme contextual starvation. Prohibits assumed access to infinite network backhauls, forcing the cognitive model to decouple state resolution from centralized infrastructure.
+
+**Seed questions.**
+- What fundamental features must function flawlessly when available bandwidth is precisely zero kilobits per second?
+- How can we distribute computational truth so that zero round-trip network hops are required to confirm a transaction?
+- What peer-to-peer mechanisms can propagate local updates without touching a centralized server?
+
+**Worked example.** Collaborative Workspace Mutation Sync. Resolving cloud latency and intermittent field connectivity: instead of relying on operational transforms that demand continuous web-socket round-trips to an authoritative central cluster, implement state-based Conflict-free Replicated Data Types (CRDTs, e.g., Yjs or Automerge). Users mutate state locally with instant UI feedback; state vectors merge deterministically across nodes upon network reconnection.
+
+**Source.** The source names no originator.
+
+### IDE-40 — Extreme Accessibility & Cognitive Simplicity Floor
+
+**Five-minute sprint.** Re-architect your system's interaction workflow assuming the operator possesses an 8-year-old child's literacy level, is suffering severe sleep deprivation, and has only one hand free to interact.
+
+**Schematic.** Removal at position 8 of 10
+
+**Cognitive mechanism.** Radical empathetic de-framing. Neutralizes the curse of knowledge by forcing the designer to strip out specialized jargon, complex cognitive models, and dexterity demands.
+
+**Seed questions.**
+- Where does our interaction model assume an expert user who understands internal systems?
+- What single action can we eliminate so that this complex decision reduces to a binary choice?
+- How can our error messages explain the exact fix in three plain-English words rather than displaying technical stack traces?
+
+**Worked example.** Kubernetes Incident Remediation CLI. Rather than requiring an on-call engineer to run complex multi-parameter kubectl diagnostic commands and inspect raw JSON log outputs during a 3:00 AM production incident, engineers build an automated terminal binary. The tool surfaces a single plain-English remediation prompt: "Postgres Pod 2 out of memory. Press [Enter] to double RAM allocation and restart."
+
+**Source.** The source names no originator.
+
+### IDE-41 — Ruthless Trimming / Feature Deprecation Hard Ceiling
+
+**Five-minute sprint.** Impose a hard engineering ceiling: "To ship this proposed capability, we must deprecate and remove two existing features from the codebase." Select the two target features for removal and calculate the maintenance relief.
+
+**Schematic.** Removal at position 9 of 10
+
+**Cognitive mechanism.** Sunk-cost fallacy disruption. Overcomes loss aversion by establishing non-negotiable operational ceilings, forcing engineers to eliminate non-performing features to introduce new capabilities.
+
+**Seed questions.**
+- Which legacy feature consumes 30% of our maintenance bandwidth while delivering value to less than 1% of the user base?
+- What capabilities are we maintaining out of emotional attachment rather than objective empirical usage?
+- If our codebase was constrained to a maximum of 10,000 lines of executable code, what would we purge immediately?
+
+**Worked example.** Microservice Architectural Complexity Reduction. An enterprise codebase accumulates 40 disparate API endpoints over five years, complicating testing and deployments. Imposing a feature deprecation ceiling: the team deprecates 25 low-volume endpoints, consolidating their functionality into a single flexible GraphQL or query-filtered endpoint, stripping 40,000 lines of boilerplate maintenance code.
+
+**Source.** The source names no originator.
+
+### IDE-42 — Speed-of-Light & Thermodynamic Physics-Limit Floor
+
+**Five-minute sprint.** Calculate the absolute theoretical minimum latency or energy budget for your operation according to the speed of light, electron transit, or thermodynamic limits. Compare it to your current performance metrics.
+
+**Schematic.** Constraint at position 10 of 10
+
+**Cognitive mechanism.** First-principles physical bounding. Strips away software conventions to ground the problem in the non-negotiable laws of physics, exposing artificial software latency.
+
+**Seed questions.**
+- What is the speed-of-light theoretical latency limit between our users and compute nodes, and why are we 50x slower?
+- How many joules of physical work are required to complete this mathematical calculation?
+- What software abstraction layers sit between our code and bare physical hardware that can be bypassed?
+
+**Worked example.** High-Frequency Financial Trading Gateways. Conventional socket I/O traversing the Linux OS network stack introduces 15–30 microseconds of kernel interrupt latency. Benchmarking against physical limits: the speed of light in optical fiber traverses 200 km per millisecond. To approach physics-level latency, developers bypass the kernel entirely, using Kernel Bypass Networking (DPDK / Solarflare OpenOnload) and FPGA hardware logic to process and route UDP packets in 120 nanoseconds.
+
+**Source.** The source names no originator.

@@ -1,0 +1,27 @@
+{
+  "id": "IDE-36",
+  "sourceTacticNo": 36,
+  "name": "Zero UI / Invisible Interface Constraint",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Remove every screen, button, input box, and visual display from your product's user journey. Conceive an autonomous mechanism to deliver identical utility through passive telemetry, sensors, or background daemons.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 4 of 10",
+  "mechanism": "Interactional reduction. Removes visual design cues and form-filling affordances, forcing the mind to model ambient, context-driven, and autonomous service delivery.",
+  "questions": [
+    "How can the system infer user intent without requiring explicit, manual input?",
+    "What hardware or ambient environmental signals already indicate the user's current goal?",
+    "If the user never interacted with our application visually, how would they realize its value?"
+  ],
+  "example": "Mobile Parking Payment & Toll Collection. Instead of requiring drivers to pull out a smartphone, open a parking application, search for a location zone code, input credit card details, and submit payment, install geofencing and Bluetooth low-energy beacons. The vehicle or smartphone automatically negotiates cryptographic location handshakes upon entry and exit, charging the user's account in the background without explicit UI interaction.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 4
+    }
+  }
+}

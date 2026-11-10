@@ -1147,6 +1147,313 @@ window.IDEATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"75.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"94.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"113.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"132.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"152\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"171.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"190.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"209.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"228.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"248\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"267.2\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"286.4\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"305.6\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"324.8\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"344\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-33",
+      "sourceTacticNo": 33,
+      "name": "Oblique Strategies: Aphoristic Defamiliarization (Brian Eno & Peter Schmidt)",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Draw an Oblique Strategy at random (e.g., \"Honor thy error as a hidden intention\" or \"Discard an axiom\"). Spend four minutes deriving three concrete technical implementations of the prompt.",
+      "sprintSize": 8.5,
+      "schematic": "Provocation at position 1 of 10",
+      "mechanism": "Semantic defamiliarization and cognitive estrangement. Disrupts routine problem solving by introducing poetic, oblique aphorisms that force associative networks to map lateral connections back to technical challenges.",
+      "questions": [
+        "If this operational failure was an intentional design decision, what architectural advantages does it unlock?",
+        "How can we embrace the most frustrating limitation of our infrastructure as its distinguishing capability?",
+        "What happens if we perform this entire technical process backward, starting from the destroyed residue?"
+      ],
+      "example": "Chaos Engineering (Netflix Chaos Monkey). Prompt: \"Honor thy error as a hidden intention.\" Rather than treating production node crashes, packet drops, and network splits as unacceptable operational anomalies to be masked, the engineering team intentionally automated their injection into production environments. This forced all downstream microservices to be designed with self-healing, graceful degradation, and distributed failover patterns by default.",
+      "origin": {
+        "authors": [
+          "Brian Eno",
+          "Peter Schmidt"
+        ],
+        "year": 1975,
+        "title": "Oblique Strategies: Over One Hundred Worthwhile Dilemmas",
+        "publication": "Privately printed, edition of 500",
+        "note": "Checked 2026-11-10 against the Oblique Strategies FAQ and Cabinet Magazine's history: first edition January 1975, 500 numbered copies.",
+        "authorsLabel": "Brian Eno & Peter Schmidt",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "provocation",
+          "divisions": 10,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70.4\" y1=\"344\" x2=\"70.4\" y2=\"356\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 356 32 L 322 96 L 344 112 L 70.4 336\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70.4\" cy=\"336\" r=\"5.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.2\" y1=\"344\" x2=\"99.2\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"128\" y1=\"344\" x2=\"128\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"156.8\" y1=\"344\" x2=\"156.8\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"185.6\" y1=\"344\" x2=\"185.6\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214.4\" y1=\"344\" x2=\"214.4\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"243.2\" y1=\"344\" x2=\"243.2\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"272\" y1=\"344\" x2=\"272\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300.8\" y1=\"344\" x2=\"300.8\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"329.6\" y1=\"344\" x2=\"329.6\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-34",
+      "sourceTacticNo": 34,
+      "name": "Zero Budget Constraint ($0 Marginal Cost Architecture)",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Assume operating budgets have been reduced to $0.00/month. Design an architecture capable of sustaining 10,000 active daily users using solely free-tier, client-side, or ambient compute.",
+      "sprintSize": 9,
+      "schematic": "Constraint at position 2 of 10",
+      "mechanism": "Resource-scarcity induced divergent routing. Prohibits off-the-shelf commercial solutions, forcing cognitive models to seek high-utility, ambient, or underutilized open-source resources.",
+      "questions": [
+        "How can we offload our primary compute load entirely onto the client’s browser hardware?",
+        "What public, free open-source infrastructure can we repurpose to bypass expensive managed cloud platforms?",
+        "How can we store system state without maintaining a proprietary cloud database?"
+      ],
+      "example": "Serverless Global Web Applications. By pairing client-side SQLite databases compiled to WebAssembly (e.g., via SQLite in browser storage), client-side public-key cryptography, and peer-to-peer data sync over free STUN/TURN relays, an application operates with near-zero recurring hosting overhead, eliminating enterprise cloud database bills.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "constraint",
+          "divisions": 10,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"50\" y1=\"64\" x2=\"160\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"350\" y1=\"64\" x2=\"240\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"55.5\" y1=\"77.6\" x2=\"344.5\" y2=\"77.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66.5\" y1=\"104.8\" x2=\"176\" y2=\"104.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224\" y1=\"104.8\" x2=\"333.5\" y2=\"104.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"104.8\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.5\" y1=\"132\" x2=\"322.5\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.5\" y1=\"159.2\" x2=\"311.5\" y2=\"159.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.5\" y1=\"186.4\" x2=\"300.5\" y2=\"186.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110.5\" y1=\"213.6\" x2=\"289.5\" y2=\"213.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.5\" y1=\"240.8\" x2=\"278.5\" y2=\"240.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132.5\" y1=\"268\" x2=\"267.5\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.5\" y1=\"295.2\" x2=\"256.5\" y2=\"295.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.5\" y1=\"322.4\" x2=\"245.5\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-35",
+      "sourceTacticNo": 35,
+      "name": "10x / 100x Scale Stress Test (Hyper-Scaling)",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Assume that tomorrow morning, concurrent user interactions or ingestion data volumes expand by 100x. Identify the exact sub-components that will collapse within thirty seconds, and discard them.",
+      "sprintSize": 9,
+      "schematic": "Scale shift at position 3 of 10",
+      "mechanism": "Conceptual scale refactoring. Renders incremental, patch-based solutions unviable, forcing executive cognitive structures to abandon routine patterns and devise radical architectures.",
+      "questions": [
+        "What architectural component collapses first when throughput surges by two orders of magnitude?",
+        "If all human-in-the-loop operational reviews had to scale 100x without expanding staff, how would they be automated?",
+        "How would our data ingestion logic survive if disk storage had to be pruned every sixty seconds?"
+      ],
+      "example": "Real-Time Telemetry Processing. Handling 100,000 metrics/sec overwhelms standard relational database row inserts. When forced to architect for 10,000,000 metrics/sec, row-level persistence is abandoned in favor of memory-mapped append-only circular ring buffers, lock-free ring queues (e.g., LMAX Disruptor), and batched columnar disk writes via Apache Parquet files flushed directly to object storage.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "scale",
+          "divisions": 10,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"178\" y=\"178\" width=\"44\" height=\"44\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"163.777778\" y=\"163.777778\" width=\"72.44444444444444\" height=\"72.44444444444444\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"149.555556\" y=\"149.555556\" width=\"100.88888888888889\" height=\"100.88888888888889\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.4\" fill-opacity=\"0.07\" vector-effect=\"non-scaling-stroke\"/><rect x=\"135.333333\" y=\"135.333333\" width=\"129.33333333333331\" height=\"129.33333333333331\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"121.111111\" y=\"121.111111\" width=\"157.77777777777777\" height=\"157.77777777777777\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"106.888889\" y=\"106.888889\" width=\"186.22222222222223\" height=\"186.22222222222223\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"92.666667\" y=\"92.666667\" width=\"214.66666666666666\" height=\"214.66666666666666\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"78.444444\" y=\"78.444444\" width=\"243.11111111111111\" height=\"243.11111111111111\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"64.222222\" y=\"64.222222\" width=\"271.55555555555554\" height=\"271.55555555555554\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><rect x=\"50\" y=\"50\" width=\"300\" height=\"300\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-36",
+      "sourceTacticNo": 36,
+      "name": "Zero UI / Invisible Interface Constraint",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Remove every screen, button, input box, and visual display from your product's user journey. Conceive an autonomous mechanism to deliver identical utility through passive telemetry, sensors, or background daemons.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 4 of 10",
+      "mechanism": "Interactional reduction. Removes visual design cues and form-filling affordances, forcing the mind to model ambient, context-driven, and autonomous service delivery.",
+      "questions": [
+        "How can the system infer user intent without requiring explicit, manual input?",
+        "What hardware or ambient environmental signals already indicate the user's current goal?",
+        "If the user never interacted with our application visually, how would they realize its value?"
+      ],
+      "example": "Mobile Parking Payment & Toll Collection. Instead of requiring drivers to pull out a smartphone, open a parking application, search for a location zone code, input credit card details, and submit payment, install geofencing and Bluetooth low-energy beacons. The vehicle or smartphone automatically negotiates cryptographic location handshakes upon entry and exit, charging the user's account in the background without explicit UI interaction.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 10,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"91.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"118.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"145.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"172.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"227.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"254.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"281.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"308.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-37",
+      "sourceTacticNo": 37,
+      "name": "The \"Worst Possible Idea\" (Anti-Solution Reframing)",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Spend three minutes generating five ideas guaranteed to exacerbate the problem or ruin user trust. Pick the most catastrophic idea, invert its core operative mechanism, and discover the hidden insight.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 5 of 10",
+      "mechanism": "Evaluative inhibition release. Eliminates performance anxiety, risk aversion, and internal self-censorship by directing cognitive capacity toward generating the most destructive, inefficient, and catastrophic solutions possible.",
+      "questions": [
+        "What architectural implementation would maximize latency, vulnerability, and operational costs?",
+        "How could we design this onboarding process to ensure 100% of prospective clients abandon within five seconds?",
+        "What would an adversary build if their goal was to completely destabilize our database state?"
+      ],
+      "example": "Preventing User Accidental Data Loss. The \"Worst Possible Idea\": \"Every time the user types a character, immediately erase another random document.\" Inverting this destructive anti-solution: build an automated, aggressive document history journal that captures fine-grained keystroke deltas to an immutable local undo buffer, enabling instantaneous time-travel restoration to any second of document history.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 10,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"91.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"118.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"145.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"172.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"227.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"254.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"281.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"308.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-38",
+      "sourceTacticNo": 38,
+      "name": "Pre-Mortem & Catastrophic Failure Mode Projection",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Assume today is one year from now, and the project has suffered a catastrophic failure, resulting in regulatory fines and complete system collapse. Write three distinct failure chain chronologies.",
+      "sprintSize": 9,
+      "schematic": "Timing at position 6 of 10",
+      "mechanism": "Prospective hindsight. Operating from the hypothetical certainty that a future catastrophe has occurred improves the human capacity to identify causal vulnerabilities by up to 30%, bypassing optimistic confirmation bias.",
+      "questions": [
+        "What silent failure mode is quietly propagating through our infrastructure today that will take us offline next year?",
+        "Which single external dependency or vendor holds the power to unilaterally bankrupt our operational architecture?",
+        "If an engineer intentionally wanted to bring this platform down undetected, where would they strike?"
+      ],
+      "example": "Cloud Identity & Cryptographic Key Expiration. Pre-mortem analysis reveals that hardcoded automated CI/CD pipeline secrets and SSL/TLS root certificates will expire silently over a weekend, taking critical e-commerce checkout paths offline. Driven by this prospective hindsight, the team builds an automated cert-manager system with alerting windows and automatic ACME protocol renewal cycles 30 days prior to expiration.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "timing",
+          "divisions": 10,
+          "mark": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"240\" x2=\"352\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70.4\" y1=\"235\" x2=\"70.4\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.2\" y1=\"235\" x2=\"99.2\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"128\" y1=\"235\" x2=\"128\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"156.8\" y1=\"235\" x2=\"156.8\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"185.6\" y1=\"235\" x2=\"185.6\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214.4\" y1=\"240\" x2=\"214.4\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214.4\" y1=\"158\" x2=\"214.4\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"214.4\" cy=\"150\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"198.4\" y1=\"150\" x2=\"230.4\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"243.2\" y1=\"235\" x2=\"243.2\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"272\" y1=\"235\" x2=\"272\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300.8\" y1=\"235\" x2=\"300.8\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"329.6\" y1=\"235\" x2=\"329.6\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-39",
+      "sourceTacticNo": 39,
+      "name": "Strict Latency / Bandwidth Zero Constraint (Offline-First / Air-Gap)",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Assume your client applications are completely disconnected from the Internet for three weeks in a subterranean bunker. Design how users continue interacting, mutating data, and resolving conflicts upon reconnection.",
+      "sprintSize": 8.5,
+      "schematic": "Constraint at position 7 of 10",
+      "mechanism": "Extreme contextual starvation. Prohibits assumed access to infinite network backhauls, forcing the cognitive model to decouple state resolution from centralized infrastructure.",
+      "questions": [
+        "What fundamental features must function flawlessly when available bandwidth is precisely zero kilobits per second?",
+        "How can we distribute computational truth so that zero round-trip network hops are required to confirm a transaction?",
+        "What peer-to-peer mechanisms can propagate local updates without touching a centralized server?"
+      ],
+      "example": "Collaborative Workspace Mutation Sync. Resolving cloud latency and intermittent field connectivity: instead of relying on operational transforms that demand continuous web-socket round-trips to an authoritative central cluster, implement state-based Conflict-free Replicated Data Types (CRDTs, e.g., Yjs or Automerge). Users mutate state locally with instant UI feedback; state vectors merge deterministically across nodes upon network reconnection.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "constraint",
+          "divisions": 10,
+          "mark": 7
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"50\" y1=\"64\" x2=\"160\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"350\" y1=\"64\" x2=\"240\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"55.5\" y1=\"77.6\" x2=\"344.5\" y2=\"77.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66.5\" y1=\"104.8\" x2=\"333.5\" y2=\"104.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.5\" y1=\"132\" x2=\"322.5\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.5\" y1=\"159.2\" x2=\"311.5\" y2=\"159.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.5\" y1=\"186.4\" x2=\"300.5\" y2=\"186.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110.5\" y1=\"213.6\" x2=\"289.5\" y2=\"213.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.5\" y1=\"240.8\" x2=\"176\" y2=\"240.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224\" y1=\"240.8\" x2=\"278.5\" y2=\"240.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"240.8\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132.5\" y1=\"268\" x2=\"267.5\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.5\" y1=\"295.2\" x2=\"256.5\" y2=\"295.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.5\" y1=\"322.4\" x2=\"245.5\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-40",
+      "sourceTacticNo": 40,
+      "name": "Extreme Accessibility & Cognitive Simplicity Floor",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Re-architect your system's interaction workflow assuming the operator possesses an 8-year-old child's literacy level, is suffering severe sleep deprivation, and has only one hand free to interact.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 8 of 10",
+      "mechanism": "Radical empathetic de-framing. Neutralizes the curse of knowledge by forcing the designer to strip out specialized jargon, complex cognitive models, and dexterity demands.",
+      "questions": [
+        "Where does our interaction model assume an expert user who understands internal systems?",
+        "What single action can we eliminate so that this complex decision reduces to a binary choice?",
+        "How can our error messages explain the exact fix in three plain-English words rather than displaying technical stack traces?"
+      ],
+      "example": "Kubernetes Incident Remediation CLI. Rather than requiring an on-call engineer to run complex multi-parameter kubectl diagnostic commands and inspect raw JSON log outputs during a 3:00 AM production incident, engineers build an automated terminal binary. The tool surfaces a single plain-English remediation prompt: \"Postgres Pod 2 out of memory. Press [Enter] to double RAM allocation and restart.\"",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 10,
+          "mark": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"91.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"118.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"145.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"172.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"227.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"254.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"281.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"308.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-41",
+      "sourceTacticNo": 41,
+      "name": "Ruthless Trimming / Feature Deprecation Hard Ceiling",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Impose a hard engineering ceiling: \"To ship this proposed capability, we must deprecate and remove two existing features from the codebase.\" Select the two target features for removal and calculate the maintenance relief.",
+      "sprintSize": 9,
+      "schematic": "Removal at position 9 of 10",
+      "mechanism": "Sunk-cost fallacy disruption. Overcomes loss aversion by establishing non-negotiable operational ceilings, forcing engineers to eliminate non-performing features to introduce new capabilities.",
+      "questions": [
+        "Which legacy feature consumes 30% of our maintenance bandwidth while delivering value to less than 1% of the user base?",
+        "What capabilities are we maintaining out of emotional attachment rather than objective empirical usage?",
+        "If our codebase was constrained to a maximum of 10,000 lines of executable code, what would we purge immediately?"
+      ],
+      "example": "Microservice Architectural Complexity Reduction. An enterprise codebase accumulates 40 disparate API endpoints over five years, complicating testing and deployments. Imposing a feature deprecation ceiling: the team deprecates 25 low-volume endpoints, consolidating their functionality into a single flexible GraphQL or query-filtered endpoint, stripping 40,000 lines of boilerplate maintenance code.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "removal",
+          "divisions": 10,
+          "mark": 9
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"132\" y=\"64\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"91.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"118.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"145.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"172.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"200\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"227.2\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"254.4\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"281.6\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"132\" y=\"308.8\" width=\"136\" height=\"23.2\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-42",
+      "sourceTacticNo": 42,
+      "name": "Speed-of-Light & Thermodynamic Physics-Limit Floor",
+      "phase": "Constraints & Oblique Sparks",
+      "sprint": "Calculate the absolute theoretical minimum latency or energy budget for your operation according to the speed of light, electron transit, or thermodynamic limits. Compare it to your current performance metrics.",
+      "sprintSize": 8.5,
+      "schematic": "Constraint at position 10 of 10",
+      "mechanism": "First-principles physical bounding. Strips away software conventions to ground the problem in the non-negotiable laws of physics, exposing artificial software latency.",
+      "questions": [
+        "What is the speed-of-light theoretical latency limit between our users and compute nodes, and why are we 50x slower?",
+        "How many joules of physical work are required to complete this mathematical calculation?",
+        "What software abstraction layers sit between our code and bare physical hardware that can be bypassed?"
+      ],
+      "example": "High-Frequency Financial Trading Gateways. Conventional socket I/O traversing the Linux OS network stack introduces 15–30 microseconds of kernel interrupt latency. Benchmarking against physical limits: the speed of light in optical fiber traverses 200 km per millisecond. To approach physics-level latency, developers bypass the kernel entirely, using Kernel Bypass Networking (DPDK / Solarflare OpenOnload) and FPGA hardware logic to process and route UDP packets in 120 nanoseconds.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "constraint",
+          "divisions": 10,
+          "mark": 10
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"50\" y1=\"64\" x2=\"160\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"350\" y1=\"64\" x2=\"240\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"55.5\" y1=\"77.6\" x2=\"344.5\" y2=\"77.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66.5\" y1=\"104.8\" x2=\"333.5\" y2=\"104.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.5\" y1=\"132\" x2=\"322.5\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.5\" y1=\"159.2\" x2=\"311.5\" y2=\"159.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.5\" y1=\"186.4\" x2=\"300.5\" y2=\"186.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110.5\" y1=\"213.6\" x2=\"289.5\" y2=\"213.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.5\" y1=\"240.8\" x2=\"278.5\" y2=\"240.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132.5\" y1=\"268\" x2=\"267.5\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.5\" y1=\"295.2\" x2=\"256.5\" y2=\"295.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.5\" y1=\"322.4\" x2=\"176\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224\" y1=\"322.4\" x2=\"245.5\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"322.4\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

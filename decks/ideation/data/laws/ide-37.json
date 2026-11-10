@@ -1,0 +1,27 @@
+{
+  "id": "IDE-37",
+  "sourceTacticNo": 37,
+  "name": "The \"Worst Possible Idea\" (Anti-Solution Reframing)",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Spend three minutes generating five ideas guaranteed to exacerbate the problem or ruin user trust. Pick the most catastrophic idea, invert its core operative mechanism, and discover the hidden insight.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 5 of 10",
+  "mechanism": "Evaluative inhibition release. Eliminates performance anxiety, risk aversion, and internal self-censorship by directing cognitive capacity toward generating the most destructive, inefficient, and catastrophic solutions possible.",
+  "questions": [
+    "What architectural implementation would maximize latency, vulnerability, and operational costs?",
+    "How could we design this onboarding process to ensure 100% of prospective clients abandon within five seconds?",
+    "What would an adversary build if their goal was to completely destabilize our database state?"
+  ],
+  "example": "Preventing User Accidental Data Loss. The \"Worst Possible Idea\": \"Every time the user types a character, immediately erase another random document.\" Inverting this destructive anti-solution: build an automated, aggressive document history journal that captures fine-grained keystroke deltas to an immutable local undo buffer, enabling instantaneous time-travel restoration to any second of document history.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 5
+    }
+  }
+}

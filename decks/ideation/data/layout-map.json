@@ -571,7 +571,7 @@
       "divisions": 10,
       "mark": 1,
       "label": "Provocation at position 1 of 10",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",
@@ -649,7 +649,7 @@
       "divisions": 10,
       "mark": 7,
       "label": "Constraint at position 7 of 10",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",
@@ -688,7 +688,7 @@
       "divisions": 10,
       "mark": 10,
       "label": "Constraint at position 10 of 10",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",

@@ -1,0 +1,27 @@
+{
+  "id": "IDE-42",
+  "sourceTacticNo": 42,
+  "name": "Speed-of-Light & Thermodynamic Physics-Limit Floor",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Calculate the absolute theoretical minimum latency or energy budget for your operation according to the speed of light, electron transit, or thermodynamic limits. Compare it to your current performance metrics.",
+  "sprintSize": 8.5,
+  "schematic": "Constraint at position 10 of 10",
+  "mechanism": "First-principles physical bounding. Strips away software conventions to ground the problem in the non-negotiable laws of physics, exposing artificial software latency.",
+  "questions": [
+    "What is the speed-of-light theoretical latency limit between our users and compute nodes, and why are we 50x slower?",
+    "How many joules of physical work are required to complete this mathematical calculation?",
+    "What software abstraction layers sit between our code and bare physical hardware that can be bypassed?"
+  ],
+  "example": "High-Frequency Financial Trading Gateways. Conventional socket I/O traversing the Linux OS network stack introduces 15–30 microseconds of kernel interrupt latency. Benchmarking against physical limits: the speed of light in optical fiber traverses 200 km per millisecond. To approach physics-level latency, developers bypass the kernel entirely, using Kernel Bypass Networking (DPDK / Solarflare OpenOnload) and FPGA hardware logic to process and route UDP packets in 120 nanoseconds.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "constraint",
+      "divisions": 10,
+      "mark": 10
+    }
+  }
+}

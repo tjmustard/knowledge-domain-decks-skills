@@ -1,0 +1,27 @@
+{
+  "id": "IDE-38",
+  "sourceTacticNo": 38,
+  "name": "Pre-Mortem & Catastrophic Failure Mode Projection",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Assume today is one year from now, and the project has suffered a catastrophic failure, resulting in regulatory fines and complete system collapse. Write three distinct failure chain chronologies.",
+  "sprintSize": 9,
+  "schematic": "Timing at position 6 of 10",
+  "mechanism": "Prospective hindsight. Operating from the hypothetical certainty that a future catastrophe has occurred improves the human capacity to identify causal vulnerabilities by up to 30%, bypassing optimistic confirmation bias.",
+  "questions": [
+    "What silent failure mode is quietly propagating through our infrastructure today that will take us offline next year?",
+    "Which single external dependency or vendor holds the power to unilaterally bankrupt our operational architecture?",
+    "If an engineer intentionally wanted to bring this platform down undetected, where would they strike?"
+  ],
+  "example": "Cloud Identity & Cryptographic Key Expiration. Pre-mortem analysis reveals that hardcoded automated CI/CD pipeline secrets and SSL/TLS root certificates will expire silently over a weekend, taking critical e-commerce checkout paths offline. Driven by this prospective hindsight, the team builds an automated cert-manager system with alerting windows and automatic ACME protocol renewal cycles 30 days prior to expiration.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "timing",
+      "divisions": 10,
+      "mark": 6
+    }
+  }
+}

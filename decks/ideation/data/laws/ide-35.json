@@ -1,0 +1,27 @@
+{
+  "id": "IDE-35",
+  "sourceTacticNo": 35,
+  "name": "10x / 100x Scale Stress Test (Hyper-Scaling)",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Assume that tomorrow morning, concurrent user interactions or ingestion data volumes expand by 100x. Identify the exact sub-components that will collapse within thirty seconds, and discard them.",
+  "sprintSize": 9,
+  "schematic": "Scale shift at position 3 of 10",
+  "mechanism": "Conceptual scale refactoring. Renders incremental, patch-based solutions unviable, forcing executive cognitive structures to abandon routine patterns and devise radical architectures.",
+  "questions": [
+    "What architectural component collapses first when throughput surges by two orders of magnitude?",
+    "If all human-in-the-loop operational reviews had to scale 100x without expanding staff, how would they be automated?",
+    "How would our data ingestion logic survive if disk storage had to be pruned every sixty seconds?"
+  ],
+  "example": "Real-Time Telemetry Processing. Handling 100,000 metrics/sec overwhelms standard relational database row inserts. When forced to architect for 10,000,000 metrics/sec, row-level persistence is abandoned in favor of memory-mapped append-only circular ring buffers, lock-free ring queues (e.g., LMAX Disruptor), and batched columnar disk writes via Apache Parquet files flushed directly to object storage.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "scale",
+      "divisions": 10,
+      "mark": 3
+    }
+  }
+}

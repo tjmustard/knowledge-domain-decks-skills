@@ -1,0 +1,27 @@
+{
+  "id": "IDE-41",
+  "sourceTacticNo": 41,
+  "name": "Ruthless Trimming / Feature Deprecation Hard Ceiling",
+  "phase": "Constraints & Oblique Sparks",
+  "sprint": "Impose a hard engineering ceiling: \"To ship this proposed capability, we must deprecate and remove two existing features from the codebase.\" Select the two target features for removal and calculate the maintenance relief.",
+  "sprintSize": 9,
+  "schematic": "Removal at position 9 of 10",
+  "mechanism": "Sunk-cost fallacy disruption. Overcomes loss aversion by establishing non-negotiable operational ceilings, forcing engineers to eliminate non-performing features to introduce new capabilities.",
+  "questions": [
+    "Which legacy feature consumes 30% of our maintenance bandwidth while delivering value to less than 1% of the user base?",
+    "What capabilities are we maintaining out of emotional attachment rather than objective empirical usage?",
+    "If our codebase was constrained to a maximum of 10,000 lines of executable code, what would we purge immediately?"
+  ],
+  "example": "Microservice Architectural Complexity Reduction. An enterprise codebase accumulates 40 disparate API endpoints over five years, complicating testing and deployments. Imposing a feature deprecation ceiling: the team deprecates 25 low-volume endpoints, consolidating their functionality into a single flexible GraphQL or query-filtered endpoint, stripping 40,000 lines of boilerplate maintenance code.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "removal",
+      "divisions": 10,
+      "mark": 9
+    }
+  }
+}
