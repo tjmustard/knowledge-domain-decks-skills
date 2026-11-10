@@ -253,7 +253,7 @@ window.ARCHETYPES_DECK = {
         "\"Standard procedure\"",
         "\"Take small, safe steps\""
       ],
-      "shadow": "The Charlatan: when the trick matters more than the change, it sells jargon, hides the mechanism, and keeps the audience dependent.",
+      "shadow": "The Charlatan: when the trick matters more than the change, it sells jargon and keeps the audience dependent.",
       "anchors": [
         "Hermes Trismegistus, the Hermetica",
         "Merlin, Arthurian cycle",
@@ -298,7 +298,7 @@ window.ARCHETYPES_DECK = {
         "\"Exclusive access\"",
         "\"Deconstructed value\""
       ],
-      "shadow": "The Cynical Victim: resentment of anyone who stands out becomes a rule. It levels every distinction, teaches helplessness, and calls the result fairness.",
+      "shadow": "The Cynical Victim: resentment of whoever stands out becomes a rule that levels all distinction and calls it fair.",
       "anchors": [
         "Sancho Panza, Cervantes' Don Quixote",
         "Dr. Watson, Doyle's Sherlock Holmes",
@@ -568,7 +568,7 @@ window.ARCHETYPES_DECK = {
         "\"Don't worry about requirements\"",
         "\"I'll let it slide\""
       ],
-      "shadow": "The Corrupted Bureaucrat: smallness compensated by power. It invents obstacles to feel large, and sells passage to whoever flatters it.",
+      "shadow": "The Corrupted Bureaucrat: smallness compensated by power; it invents obstacles and sells passage to flatterers.",
       "anchors": [
         "The Sphinx, Sophocles' Oedipus Rex",
         "Cerberus, Greco-Roman underworld",
@@ -658,7 +658,7 @@ window.ARCHETYPES_DECK = {
         "\"It is black and white\"",
         "\"Here is the simple truth\""
       ],
-      "shadow": "The Treacherous Betrayer: intimacy is a tactic. It builds trust in order to spend it at the moment of greatest exposure.",
+      "shadow": "The Treacherous Betrayer: intimacy is a tactic, building trust to spend it at the moment of greatest exposure.",
       "anchors": [
         "Proteus, Greek myth",
         "Morgan le Fay, Arthurian legend",
@@ -703,7 +703,7 @@ window.ARCHETYPES_DECK = {
         "\"Not my problem\"",
         "\"What's in it for me?\""
       ],
-      "shadow": "The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone who might get closer.",
+      "shadow": "The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone closer.",
       "anchors": [
         "Patroclus, Homer's Iliad",
         "Horatio, Shakespeare's Hamlet",

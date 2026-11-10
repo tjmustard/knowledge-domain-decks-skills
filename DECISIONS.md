@@ -1799,8 +1799,16 @@ measures the lowest ink row against both lines, and the acceptance gate records
 `print: fit`. A face past the trim line fails; a face past the safe inset but
 inside the trim is reported as TIGHT rather than failed, because the archetype
 deck shipped five faces at row 475 (4.5 pt into the cushion, still 0.125 in
-inside the trim) and turning an accepted deck red retroactively is not this
-slice's call. UX and narrative are clean on both lines.
+inside the trim) and turning an accepted deck red retroactively was not this
+slice's call at the time.
+
+The person has since asked for that cushion back rather than a warning the
+release carries. ARCH-06, 07, 13, 15 and 16 were compressed editorially - the
+shadow sentence in each, no declared block dropped and no type or layout
+touched - and all sixteen archetype cards now end inside the safe inset with
+zero TIGHT faces. Republishing the deck moves its baseline on purpose:
+`archetypes.pdf` is now sha256 `1bc638d4…`, 293,740 B, replacing `5d34f5a5…` at
+293,925 B, byte-identical on rebuild. UX and narrative are clean on both lines.
 
 ## 53. A card can carry blocks and ordered steps, and the artifacts print both
 

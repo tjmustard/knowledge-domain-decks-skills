@@ -50,7 +50,7 @@
   - "Linear growth"
   - "Standard procedure"
   - "Take small, safe steps"
-- **Shadow:** The Charlatan: when the trick matters more than the change, it sells jargon, hides the mechanism, and keeps the audience dependent.
+- **Shadow:** The Charlatan: when the trick matters more than the change, it sells jargon and keeps the audience dependent.
 - **Anchors:**
   - Hermes Trismegistus, the Hermetica
   - Merlin, Arthurian cycle

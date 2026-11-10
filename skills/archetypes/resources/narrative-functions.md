@@ -14,7 +14,7 @@
   - "Come right in"
   - "Don't worry about requirements"
   - "I'll let it slide"
-- **Shadow:** The Corrupted Bureaucrat: smallness compensated by power. It invents obstacles to feel large, and sells passage to whoever flatters it.
+- **Shadow:** The Corrupted Bureaucrat: smallness compensated by power; it invents obstacles and sells passage to flatterers.
 - **Anchors:**
   - The Sphinx, Sophocles' Oedipus Rex
   - Cerberus, Greco-Roman underworld
@@ -50,7 +50,7 @@
   - "I promise unconditionally"
   - "It is black and white"
   - "Here is the simple truth"
-- **Shadow:** The Treacherous Betrayer: intimacy is a tactic. It builds trust in order to spend it at the moment of greatest exposure.
+- **Shadow:** The Treacherous Betrayer: intimacy is a tactic, building trust to spend it at the moment of greatest exposure.
 - **Anchors:**
   - Proteus, Greek myth
   - Morgan le Fay, Arthurian legend
@@ -68,7 +68,7 @@
   - "You're on your own"
   - "Not my problem"
   - "What's in it for me?"
-- **Shadow:** The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone who might get closer.
+- **Shadow:** The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone closer.
 - **Anchors:**
   - Patroclus, Homer's Iliad
   - Horatio, Shakespeare's Hamlet

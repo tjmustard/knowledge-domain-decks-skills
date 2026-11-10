@@ -149,7 +149,7 @@ Each card states what the archetype wants, what it dreads, how it speaks, what i
 - "Standard procedure"
 - "Take small, safe steps"
 
-**Shadow.** The Charlatan: when the trick matters more than the change, it sells jargon, hides the mechanism, and keeps the audience dependent.
+**Shadow.** The Charlatan: when the trick matters more than the change, it sells jargon and keeps the audience dependent.
 
 **Anchors.**
 - Hermes Trismegistus, the Hermetica
@@ -176,7 +176,7 @@ Each card states what the archetype wants, what it dreads, how it speaks, what i
 - "Exclusive access"
 - "Deconstructed value"
 
-**Shadow.** The Cynical Victim: resentment of anyone who stands out becomes a rule. It levels every distinction, teaches helplessness, and calls the result fairness.
+**Shadow.** The Cynical Victim: resentment of whoever stands out becomes a rule that levels all distinction and calls it fair.
 
 **Anchors.**
 - Sancho Panza, Cervantes' Don Quixote
@@ -330,7 +330,7 @@ Each card states what the archetype wants, what it dreads, how it speaks, what i
 - "Don't worry about requirements"
 - "I'll let it slide"
 
-**Shadow.** The Corrupted Bureaucrat: smallness compensated by power. It invents obstacles to feel large, and sells passage to whoever flatters it.
+**Shadow.** The Corrupted Bureaucrat: smallness compensated by power; it invents obstacles and sells passage to flatterers.
 
 **Anchors.**
 - The Sphinx, Sophocles' Oedipus Rex
@@ -380,7 +380,7 @@ Each card states what the archetype wants, what it dreads, how it speaks, what i
 - "It is black and white"
 - "Here is the simple truth"
 
-**Shadow.** The Treacherous Betrayer: intimacy is a tactic. It builds trust in order to spend it at the moment of greatest exposure.
+**Shadow.** The Treacherous Betrayer: intimacy is a tactic, building trust to spend it at the moment of greatest exposure.
 
 **Anchors.**
 - Proteus, Greek myth
@@ -405,7 +405,7 @@ Each card states what the archetype wants, what it dreads, how it speaks, what i
 - "Not my problem"
 - "What's in it for me?"
 
-**Shadow.** The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone who might get closer.
+**Shadow.** The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone closer.
 
 **Anchors.**
 - Patroclus, Homer's Iliad
