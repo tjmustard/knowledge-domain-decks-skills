@@ -1,0 +1,58 @@
+{
+  "id": "I18",
+  "sourceTacticNo": 18,
+  "name": "Regulatory and Compliance Gate Audit",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe our proposed data architecture complies fully with relevant regulatory standards (e.g., GDPR, HIPAA, SOC2). We will verify this by completing a formal compliance audit with an external specialist, and consider it validated if the audit reveals zero critical regulatory blockers that would require fundamentally altering the product model.",
+  "hypothesisSize": 8,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 5–10 days",
+    "Cost: $0–$$$$",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Document data lifecycles, consent mechanisms, storage tiers and cross-border transfer paths."
+    },
+    {
+      "label": "Execution",
+      "text": "Walk legal and compliance specialists through the end-to-end data flow to find every regulatory touchpoint."
+    },
+    {
+      "label": "Data collection",
+      "text": "Log legal hurdles, certification costs and implementation timelines against the product model."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Document data lifecycles, user consent mechanisms, storage tiers, and cross-border transfer paths."
+    },
+    {
+      "label": "Execution",
+      "text": "Walk legal and compliance specialists through the end-to-end data flow to identify regulatory touchpoints."
+    },
+    {
+      "label": "Data collection",
+      "text": "Log potential legal hurdles, compliance requirements, certification expenses, and expected implementation timelines."
+    }
+  ],
+  "warning": {
+    "label": "Informal Legal Assurances",
+    "text": "Casual early guidance from corporate counsel is mistaken for formal, binding regulatory clearance."
+  },
+  "warningFull": "Early-stage teams frequently mistake casual, preliminary guidance from corporate attorneys for formal, binding regulatory clearance.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

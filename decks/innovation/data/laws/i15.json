@@ -1,0 +1,66 @@
+{
+  "id": "I15",
+  "sourceTacticNo": 15,
+  "name": "Value Proposition Fit Matrix (Relievers vs. Pains)",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that our core value proposition outranks existing market alternatives on speed and clarity. We will verify this by presenting a relative comparison matrix to 12 prospective users, and consider it validated if ≥ 70% prioritize our specific pain relievers over incumbent alternatives.",
+  "hypothesisSize": 8.5,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 2–4 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Build a two-sided canvas that maps pain relievers to customer pains and gain creators to gains."
+    },
+    {
+      "label": "Execution",
+      "text": "Have target users rate each element’s clarity, relevance and difference against their current alternative."
+    },
+    {
+      "label": "Data collection",
+      "text": "Score fit with a weighted model calibrated to the pains users ranked highest."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a two-sided Value Proposition Canvas explicitly mapping Pain Relievers to Customer Pains and Gain Creators to Customer Gains."
+    },
+    {
+      "label": "Execution",
+      "text": "Conduct structured review sessions where target users evaluate the clarity, relevance, and differentiation of each value proposition element against their current operational alternatives."
+    },
+    {
+      "label": "Data collection",
+      "text": "Quantify the fit score using a weighted distribution model calibrated to user-prioritized pain points."
+    }
+  ],
+  "warning": {
+    "label": "Theoretical Value Congruence",
+    "text": "A proposition can read as cohesive and compelling on paper and still not move anyone off the incumbent."
+  },
+  "warningFull": "A value proposition can appear conceptually cohesive and compelling on paper while failing to generate sufficient switching momentum to overcome incumbent inertia.",
+  "origin": {
+    "authors": [
+      "Alexander Osterwalder",
+      "Yves Pigneur",
+      "Gregory Bernarda",
+      "Alan Smith"
+    ],
+    "year": 2014,
+    "title": "Value Proposition Design: How to Create Products and Services Customers Want",
+    "publication": "John Wiley & Sons"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

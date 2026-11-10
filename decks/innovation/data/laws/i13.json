@@ -1,0 +1,58 @@
+{
+  "id": "I13",
+  "sourceTacticNo": 13,
+  "name": "Problem-Solution Fit Scorecarding",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe our proposed solution addresses the primary pain points discovered in Phase 1. We will verify this by scoring our feature set against validated customer problems using a blind scoring rubric, and consider it validated if ≥ 80% of features map directly to high-severity problems, with all secondary unmapped features eliminated.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "List validated customer problems on the vertical axis and proposed feature specifications across the top."
+    },
+    {
+      "label": "Execution",
+      "text": "For each intersection ask whether the feature relieves that problem, and justify it with phase-one data."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compute the coverage ratio; drop features that solve unvalidated problems or miss the core bottleneck."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Construct a matrix listing validated customer problems on the vertical axis and proposed feature specifications on the horizontal axis."
+    },
+    {
+      "label": "Execution",
+      "text": "Evaluate each intersection: Does this feature directly alleviate this specific problem? Require cross-functional leads to justify each connection with behavioral data gathered in Phase 1."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate the operational coverage ratio. Flag and discard features that solve unvalidated problems or fail to resolve the core bottleneck."
+    }
+  ],
+  "warning": {
+    "label": "Sunk Cost Feature Attachment",
+    "text": "Teams write elaborate post-hoc justifications for favourite features with no link to validated problems."
+  },
+  "warningFull": "Product teams routinely construct elaborate post-hoc justifications for favorite features that have no demonstrable link to validated customer problems.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

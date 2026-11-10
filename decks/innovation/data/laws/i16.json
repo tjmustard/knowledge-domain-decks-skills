@@ -1,0 +1,58 @@
+{
+  "id": "I16",
+  "sourceTacticNo": 16,
+  "name": "Reverse-Income Economic Viability Model",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe this business model can achieve sustainable profitability at target scale. We will verify this by building a reverse unit-economics model, and consider it validated if the required conversion rates and average revenue per user (ARPU) remain within historical benchmark ranges for this industry vertical.",
+  "hypothesisSize": 8,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 1–2 days",
+    "Cost: $0",
+    "Confidence: High (Mathematical proof)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Fix an ambitious revenue milestone, such as ten million in annual recurring revenue."
+    },
+    {
+      "label": "Execution",
+      "text": "Work backward from revenue: required customers = ARR / ARPU, then conversion and acquisition cost."
+    },
+    {
+      "label": "Data collection",
+      "text": "Check the required metrics against benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Fix an ambitious financial milestone (e.g., 10,000,000 ARR)."
+    },
+    {
+      "label": "Execution",
+      "text": "Work backward to calculate the necessary funnel metrics: divide target revenue by expected ARPU to determine the required customer volume, then calculate the necessary conversion rates and acquisition costs across the funnel."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compare required operational metrics against real-world industry benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)"
+    }
+  ],
+  "warning": {
+    "label": "Spreadsheet Viability Syndrome",
+    "text": "A model balances by inserting aggressive growth or fantasy acquisition costs, hiding an unviable business."
+  },
+  "warningFull": "Financial models can always be balanced by inserting aggressive compound growth rates or unrealistically low customer acquisition costs, masking unviable business fundamentals.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

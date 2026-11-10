@@ -1,0 +1,58 @@
+{
+  "id": "I12",
+  "sourceTacticNo": 12,
+  "name": "Riskiest Assumption Test (RAT) Decomposition",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that [Assumption A] represents the single existential bottleneck for the business model. We will verify this by decomposing the business concept into causal dependency trees, and consider it validated if breaking this single assumption mathematically invalidates all downstream unit economics.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 2–3 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Take the top-ranked assumption from the DFV matrix and break it into discrete component premises."
+    },
+    {
+      "label": "Execution",
+      "text": "Build a causal tree of what must be true and trace back to the premise whose failure collapses it."
+    },
+    {
+      "label": "Data collection",
+      "text": "Write the test specification for that root: thresholds, time boundaries and required evidence weight."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Isolate the top-ranked assumption from the DFV matrix. Break it down into discrete component premises."
+    },
+    {
+      "label": "Execution",
+      "text": "Construct a causal dependency tree using \"What Must Be True\" statements. Trace dependencies backward to identify the foundational premise whose failure collapses the entire structure."
+    },
+    {
+      "label": "Data collection",
+      "text": "Draft a dedicated testing specification for this root assumption, detailing validation thresholds, temporal boundaries, and required evidence weights."
+    }
+  ],
+  "warning": {
+    "label": "Premature Optimization of Secondary Assumptions",
+    "text": "Teams test easy details - interface polish, onboarding copy - while skipping the existential risk."
+  },
+  "warningFull": "Teams frequently expend energy testing easily measurable operational details (such as interface aesthetics or onboarding micro-copy) while sidestepping existential commercial viability risks.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "I14",
+  "sourceTacticNo": 14,
+  "name": "Stakeholder and Buying Center Influence Mapping (B2B)",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that [Role A] controls purchase authority, while [Role B] serves as an internal champion. We will verify this by mapping the buying center dynamics across 8 enterprise target accounts, and consider it validated if the operational economic buyer matches our target persona in ≥ 75% of evaluated org charts.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate-High confidence: rung 4 of 5",
+  "method": [
+    "Time: 5–7 days",
+    "Cost: $0",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Define the six buying roles: economic buyer, champion, end user, technical gatekeeper, procurement, blocker."
+    },
+    {
+      "label": "Execution",
+      "text": "Call across departments in each account and ask whose budget pays and who holds the veto in review."
+    },
+    {
+      "label": "Data collection",
+      "text": "Chart the decision, veto and capital-authorisation path for each of the eight accounts."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Define the six canonical enterprise purchasing roles: Economic Buyer, Champion, End User, Technical Gatekeeper, Procurement, and Blocker."
+    },
+    {
+      "label": "Execution",
+      "text": "Conduct organizational discovery calls across multiple departments within each target account. Ask: \"Whose departmental budget pays for this solution?\" \"Who possesses absolute veto authority during procurement and security review?\"."
+    },
+    {
+      "label": "Data collection",
+      "text": "Chart the formal decision, veto, and capital authorization pathways for each enterprise account."
+    }
+  ],
+  "warning": {
+    "label": "Champion Conflation",
+    "text": "An enthusiastic end user is mistaken for the economic buyer, and the deal stalls at procurement."
+  },
+  "warningFull": "Founders routinely mistake an enthusiastic end-user champion for the economic buyer, discovering too late that the deal stalls indefinitely when presented to procurement.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 4
+    }
+  }
+}

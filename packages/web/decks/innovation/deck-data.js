@@ -645,6 +645,629 @@ window.INNOVATION_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
+      "id": "I11",
+      "sourceTacticNo": 11,
+      "name": "Desirability, Feasibility, and Viability (DFV) Mapping",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that our cross-functional team holds strategic alignment on our core business vulnerabilities. We will verify this by mapping all operational assumptions across a 2 × 2 matrix (Impact vs. Evidence), and consider it validated if participants achieve ≥ 90% consensus on the top 5 assumptions categorized in the High Impact / Low Evidence quadrant.",
+      "hypothesisSize": 7.5,
+      "schematic": "Low confidence: rung 1 of 5",
+      "method": [
+        "Time: 1–2 days",
+        "Cost: $0",
+        "Confidence: Low (Conceptual alignment)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Assemble product, engineering, design and commercial leads with desirability, feasibility, viability cards."
+        },
+        {
+          "label": "Execution",
+          "text": "Have each write their explicit premises, then place every assumption on a shared impact-by-evidence grid."
+        },
+        {
+          "label": "Data collection",
+          "text": "Cluster overlapping cards into themes and isolate high-impact, low-evidence as the experiment backlog."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Assemble product, engineering, design, and commercial leaders. Provide each member with assumption tracking cards categorized into Desirability, Feasibility, and Viability."
+        },
+        {
+          "label": "Execution",
+          "text": "Instruct members to independently document explicit operational premises. Place every assumption onto a shared 2 × 2 grid: Vertical Axis = Impact (Low vs. High); Horizontal Axis = Current Evidence (Known vs. Unknown)."
+        },
+        {
+          "label": "Data collection",
+          "text": "Cluster overlapping cards into distinct operational themes. Isolate the High Impact / Low Evidence quadrant as the designated experiment backlog."
+        }
+      ],
+      "warning": {
+        "label": "HiPPO Distortion",
+        "text": "Senior executives drag risky assumptions into the known quadrant on personal conviction."
+      },
+      "warningFull": "Senior executives frequently drag high-risk assumptions into the \"Known\" quadrant based entirely on personal conviction, blinding the team to critical structural vulnerabilities.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"328\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I12",
+      "sourceTacticNo": 12,
+      "name": "Riskiest Assumption Test (RAT) Decomposition",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that [Assumption A] represents the single existential bottleneck for the business model. We will verify this by decomposing the business concept into causal dependency trees, and consider it validated if breaking this single assumption mathematically invalidates all downstream unit economics.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 2–3 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Take the top-ranked assumption from the DFV matrix and break it into discrete component premises."
+        },
+        {
+          "label": "Execution",
+          "text": "Build a causal tree of what must be true and trace back to the premise whose failure collapses it."
+        },
+        {
+          "label": "Data collection",
+          "text": "Write the test specification for that root: thresholds, time boundaries and required evidence weight."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Isolate the top-ranked assumption from the DFV matrix. Break it down into discrete component premises."
+        },
+        {
+          "label": "Execution",
+          "text": "Construct a causal dependency tree using \"What Must Be True\" statements. Trace dependencies backward to identify the foundational premise whose failure collapses the entire structure."
+        },
+        {
+          "label": "Data collection",
+          "text": "Draft a dedicated testing specification for this root assumption, detailing validation thresholds, temporal boundaries, and required evidence weights."
+        }
+      ],
+      "warning": {
+        "label": "Premature Optimization of Secondary Assumptions",
+        "text": "Teams test easy details - interface polish, onboarding copy - while skipping the existential risk."
+      },
+      "warningFull": "Teams frequently expend energy testing easily measurable operational details (such as interface aesthetics or onboarding micro-copy) while sidestepping existential commercial viability risks.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I13",
+      "sourceTacticNo": 13,
+      "name": "Problem-Solution Fit Scorecarding",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe our proposed solution addresses the primary pain points discovered in Phase 1. We will verify this by scoring our feature set against validated customer problems using a blind scoring rubric, and consider it validated if ≥ 80% of features map directly to high-severity problems, with all secondary unmapped features eliminated.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "List validated customer problems on the vertical axis and proposed feature specifications across the top."
+        },
+        {
+          "label": "Execution",
+          "text": "For each intersection ask whether the feature relieves that problem, and justify it with phase-one data."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compute the coverage ratio; drop features that solve unvalidated problems or miss the core bottleneck."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Construct a matrix listing validated customer problems on the vertical axis and proposed feature specifications on the horizontal axis."
+        },
+        {
+          "label": "Execution",
+          "text": "Evaluate each intersection: Does this feature directly alleviate this specific problem? Require cross-functional leads to justify each connection with behavioral data gathered in Phase 1."
+        },
+        {
+          "label": "Data collection",
+          "text": "Calculate the operational coverage ratio. Flag and discard features that solve unvalidated problems or fail to resolve the core bottleneck."
+        }
+      ],
+      "warning": {
+        "label": "Sunk Cost Feature Attachment",
+        "text": "Teams write elaborate post-hoc justifications for favourite features with no link to validated problems."
+      },
+      "warningFull": "Product teams routinely construct elaborate post-hoc justifications for favorite features that have no demonstrable link to validated customer problems.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I14",
+      "sourceTacticNo": 14,
+      "name": "Stakeholder and Buying Center Influence Mapping (B2B)",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that [Role A] controls purchase authority, while [Role B] serves as an internal champion. We will verify this by mapping the buying center dynamics across 8 enterprise target accounts, and consider it validated if the operational economic buyer matches our target persona in ≥ 75% of evaluated org charts.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate-High confidence: rung 4 of 5",
+      "method": [
+        "Time: 5–7 days",
+        "Cost: $0",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Define the six buying roles: economic buyer, champion, end user, technical gatekeeper, procurement, blocker."
+        },
+        {
+          "label": "Execution",
+          "text": "Call across departments in each account and ask whose budget pays and who holds the veto in review."
+        },
+        {
+          "label": "Data collection",
+          "text": "Chart the decision, veto and capital-authorisation path for each of the eight accounts."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Define the six canonical enterprise purchasing roles: Economic Buyer, Champion, End User, Technical Gatekeeper, Procurement, and Blocker."
+        },
+        {
+          "label": "Execution",
+          "text": "Conduct organizational discovery calls across multiple departments within each target account. Ask: \"Whose departmental budget pays for this solution?\" \"Who possesses absolute veto authority during procurement and security review?\"."
+        },
+        {
+          "label": "Data collection",
+          "text": "Chart the formal decision, veto, and capital authorization pathways for each enterprise account."
+        }
+      ],
+      "warning": {
+        "label": "Champion Conflation",
+        "text": "An enthusiastic end user is mistaken for the economic buyer, and the deal stalls at procurement."
+      },
+      "warningFull": "Founders routinely mistake an enthusiastic end-user champion for the economic buyer, discovering too late that the deal stalls indefinitely when presented to procurement.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"139\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I15",
+      "sourceTacticNo": 15,
+      "name": "Value Proposition Fit Matrix (Relievers vs. Pains)",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that our core value proposition outranks existing market alternatives on speed and clarity. We will verify this by presenting a relative comparison matrix to 12 prospective users, and consider it validated if ≥ 70% prioritize our specific pain relievers over incumbent alternatives.",
+      "hypothesisSize": 8.5,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 2–4 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Build a two-sided canvas that maps pain relievers to customer pains and gain creators to gains."
+        },
+        {
+          "label": "Execution",
+          "text": "Have target users rate each element’s clarity, relevance and difference against their current alternative."
+        },
+        {
+          "label": "Data collection",
+          "text": "Score fit with a weighted model calibrated to the pains users ranked highest."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a two-sided Value Proposition Canvas explicitly mapping Pain Relievers to Customer Pains and Gain Creators to Customer Gains."
+        },
+        {
+          "label": "Execution",
+          "text": "Conduct structured review sessions where target users evaluate the clarity, relevance, and differentiation of each value proposition element against their current operational alternatives."
+        },
+        {
+          "label": "Data collection",
+          "text": "Quantify the fit score using a weighted distribution model calibrated to user-prioritized pain points."
+        }
+      ],
+      "warning": {
+        "label": "Theoretical Value Congruence",
+        "text": "A proposition can read as cohesive and compelling on paper and still not move anyone off the incumbent."
+      },
+      "warningFull": "A value proposition can appear conceptually cohesive and compelling on paper while failing to generate sufficient switching momentum to overcome incumbent inertia.",
+      "origin": {
+        "authors": [
+          "Alexander Osterwalder",
+          "Yves Pigneur",
+          "Gregory Bernarda",
+          "Alan Smith"
+        ],
+        "year": 2014,
+        "title": "Value Proposition Design: How to Create Products and Services Customers Want",
+        "publication": "John Wiley & Sons",
+        "authorsLabel": "Alexander Osterwalder, Yves Pigneur, Gregory Bernarda & Alan Smith",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I16",
+      "sourceTacticNo": 16,
+      "name": "Reverse-Income Economic Viability Model",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe this business model can achieve sustainable profitability at target scale. We will verify this by building a reverse unit-economics model, and consider it validated if the required conversion rates and average revenue per user (ARPU) remain within historical benchmark ranges for this industry vertical.",
+      "hypothesisSize": 8,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 1–2 days",
+        "Cost: $0",
+        "Confidence: High (Mathematical proof)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Fix an ambitious revenue milestone, such as ten million in annual recurring revenue."
+        },
+        {
+          "label": "Execution",
+          "text": "Work backward from revenue: required customers = ARR / ARPU, then conversion and acquisition cost."
+        },
+        {
+          "label": "Data collection",
+          "text": "Check the required metrics against benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Fix an ambitious financial milestone (e.g., 10,000,000 ARR)."
+        },
+        {
+          "label": "Execution",
+          "text": "Work backward to calculate the necessary funnel metrics: divide target revenue by expected ARPU to determine the required customer volume, then calculate the necessary conversion rates and acquisition costs across the funnel."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compare required operational metrics against real-world industry benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)"
+        }
+      ],
+      "warning": {
+        "label": "Spreadsheet Viability Syndrome",
+        "text": "A model balances by inserting aggressive growth or fantasy acquisition costs, hiding an unviable business."
+      },
+      "warningFull": "Financial models can always be balanced by inserting aggressive compound growth rates or unrealistically low customer acquisition costs, masking unviable business fundamentals.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I17",
+      "sourceTacticNo": 17,
+      "name": "Technical Feasibility Spike and Architecture Proof",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that [external API / architecture] can process [X volume] within [Y latency]. We will verify this by deploying an isolated technical spike in a staging environment, and consider it validated if latency remains below 250ms at 1,500 concurrent requests without data loss.",
+      "hypothesisSize": 9,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 3–7 days",
+        "Cost: $0–$$$",
+        "Confidence: High (Empirical technical)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Strip the front end and every non-essential dependency; isolate the one algorithmic or throughput unknown."
+        },
+        {
+          "label": "Execution",
+          "text": "Build the smallest codebase that can stress the integration, algorithm or pipeline at the target load."
+        },
+        {
+          "label": "Data collection",
+          "text": "Run automated load scripts and log latency distribution, memory, error codes and compute cost."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Strip away all frontend interfaces and non-essential dependencies. Isolate the specific algorithmic or data throughput unknown."
+        },
+        {
+          "label": "Execution",
+          "text": "Build a minimal codebase designed solely to stress-test the core integration, algorithm, or data pipeline."
+        },
+        {
+          "label": "Data collection",
+          "text": "Run automated load scripts, logging latency distributions, memory usage, error codes, and compute costs."
+        }
+      ],
+      "warning": {
+        "label": "Sandbox Isolation Bias",
+        "text": "A clean staging spike degrades on real edge cases, dirty legacy data and unoptimised production dependencies."
+      },
+      "warningFull": "A technical architecture that operates smoothly in a clean, isolated staging environment often degrades when exposed to real-world edge cases, dirty legacy data, and unoptimized production dependencies.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I18",
+      "sourceTacticNo": 18,
+      "name": "Regulatory and Compliance Gate Audit",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe our proposed data architecture complies fully with relevant regulatory standards (e.g., GDPR, HIPAA, SOC2). We will verify this by completing a formal compliance audit with an external specialist, and consider it validated if the audit reveals zero critical regulatory blockers that would require fundamentally altering the product model.",
+      "hypothesisSize": 8,
+      "schematic": "High confidence: rung 5 of 5",
+      "method": [
+        "Time: 5–10 days",
+        "Cost: $0–$$$$",
+        "Confidence: High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Document data lifecycles, consent mechanisms, storage tiers and cross-border transfer paths."
+        },
+        {
+          "label": "Execution",
+          "text": "Walk legal and compliance specialists through the end-to-end data flow to find every regulatory touchpoint."
+        },
+        {
+          "label": "Data collection",
+          "text": "Log legal hurdles, certification costs and implementation timelines against the product model."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Document data lifecycles, user consent mechanisms, storage tiers, and cross-border transfer paths."
+        },
+        {
+          "label": "Execution",
+          "text": "Walk legal and compliance specialists through the end-to-end data flow to identify regulatory touchpoints."
+        },
+        {
+          "label": "Data collection",
+          "text": "Log potential legal hurdles, compliance requirements, certification expenses, and expected implementation timelines."
+        }
+      ],
+      "warning": {
+        "label": "Informal Legal Assurances",
+        "text": "Casual early guidance from corporate counsel is mistaken for formal, binding regulatory clearance."
+      },
+      "warningFull": "Early-stage teams frequently mistake casual, preliminary guidance from corporate attorneys for formal, binding regulatory clearance.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"76\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I19",
+      "sourceTacticNo": 19,
+      "name": "Acquisition Channel Scalability Matrix",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that [Channel X] can sustainably deliver customer acquisition at targeted unit costs. We will verify this by cross-referencing industry channel benchmarks against product characteristics, and consider it validated if the channel delivers an estimated CAC:LTV ratio of ≥ 1:3 at target market scale.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate confidence: rung 3 of 5",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Map candidate acquisition channels against ARPU tiers and the way the target users actually buy."
+        },
+        {
+          "label": "Execution",
+          "text": "Drop channels that cannot carry the price point - enterprise direct sales rarely pays below $1,000 ARPU."
+        },
+        {
+          "label": "Data collection",
+          "text": "Build a projection matrix of saturation, cost-per-click trend and conversion assumptions per channel."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Map potential acquisition channels against ARPU tiers and user buying habits."
+        },
+        {
+          "label": "Execution",
+          "text": "Eliminate channels that don't match the product's price point (e.g., enterprise direct sales forces are rarely viable for products with an ARPU under $1,000/year)."
+        },
+        {
+          "label": "Data collection",
+          "text": "Build a channel projection matrix comparing expected saturation points, cost-per-click trends, and estimated conversion rates."
+        }
+      ],
+      "warning": {
+        "label": "Channel Mirage Effect",
+        "text": "Traction in niche or closed communities rarely scales when broad advertising is switched on."
+      },
+      "warningFull": "Early customer acquisition traction achieved in niche communities or closed groups rarely scales efficiently once broader advertising channels are deployed.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"202\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I20",
+      "sourceTacticNo": 20,
+      "name": "Van Westendorp Price Sensitivity Meter",
+      "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+      "hypothesis": "We believe that the acceptable price band for our offering falls between [Price A] and [Price B]. We will verify this by surveying 50 qualified target customers using the four standard Van Westendorp questions, and consider it validated if the Indifference Price Point aligns with our planned market pricing within a ±10% margin.",
+      "hypothesisSize": 8,
+      "schematic": "Moderate-High confidence: rung 4 of 5",
+      "method": [
+        "Time: 5–7 days",
+        "Cost: $50–$300",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Build the survey around the four price questions: too cheap, a bargain, getting expensive, too expensive."
+        },
+        {
+          "label": "Execution",
+          "text": "Send the instrument only to qualified buyers who match the defined ideal customer profile."
+        },
+        {
+          "label": "Data collection",
+          "text": "Plot the cumulative curves; read the indifference and optimal price points and compare with the plan price."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Construct a survey detailing the core value proposition. Include the four standard pricing questions: (1) At what price is it too cheap to trust the quality? (2) A bargain? (3) Getting expensive, but still worth considering? (4) Too expensive to consider?"
+        },
+        {
+          "label": "Execution",
+          "text": "Distribute the instrument strictly to qualified target buyers who match the defined ICP."
+        },
+        {
+          "label": "Data collection",
+          "text": "Plot cumulative distribution curves to identify the Indifference Price Point (intersection of \"Cheap\" and \"Expensive\") and the Optimal Price Point (intersection of \"Too Cheap\" and \"Too Expensive\"): Optimal Price Point (OPP) = Intersection of \"Too Cheap\" and \"Too Expensive\""
+        }
+      ],
+      "warning": {
+        "label": "Stated Willingness Bias",
+        "text": "Stated-price surveys overestimate what people pay when asked to enter real payment details."
+      },
+      "warningFull": "Theoretical pricing surveys reliably overestimate how much customers will actually spend when asked to enter real payment details.",
+      "origin": {
+        "authors": [
+          "Peter H. Van Westendorp"
+        ],
+        "year": 1976,
+        "title": "NSS-Price Sensitivity Meter (PSM): A New Approach to Study Consumer Perception of Price",
+        "publication": "Proceedings of the 29th ESOMAR Congress",
+        "authorsLabel": "Peter H. Van Westendorp",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "ladder",
+          "divisions": 5,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"112\" y1=\"76\" x2=\"112\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288\" y1=\"76\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"328\" x2=\"288\" y2=\"328\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"265\" x2=\"288\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202\" x2=\"288\" y2=\"202\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"139\" x2=\"288\" y2=\"139\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"76\" x2=\"288\" y2=\"76\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"139\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "I30",
       "sourceTacticNo": 30,
       "name": "Refundable Deposit Pre-Order",

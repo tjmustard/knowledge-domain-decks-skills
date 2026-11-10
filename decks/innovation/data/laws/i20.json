@@ -1,0 +1,63 @@
+{
+  "id": "I20",
+  "sourceTacticNo": 20,
+  "name": "Van Westendorp Price Sensitivity Meter",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that the acceptable price band for our offering falls between [Price A] and [Price B]. We will verify this by surveying 50 qualified target customers using the four standard Van Westendorp questions, and consider it validated if the Indifference Price Point aligns with our planned market pricing within a ±10% margin.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate-High confidence: rung 4 of 5",
+  "method": [
+    "Time: 5–7 days",
+    "Cost: $50–$300",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Build the survey around the four price questions: too cheap, a bargain, getting expensive, too expensive."
+    },
+    {
+      "label": "Execution",
+      "text": "Send the instrument only to qualified buyers who match the defined ideal customer profile."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot the cumulative curves; read the indifference and optimal price points and compare with the plan price."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Construct a survey detailing the core value proposition. Include the four standard pricing questions: (1) At what price is it too cheap to trust the quality? (2) A bargain? (3) Getting expensive, but still worth considering? (4) Too expensive to consider?"
+    },
+    {
+      "label": "Execution",
+      "text": "Distribute the instrument strictly to qualified target buyers who match the defined ICP."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot cumulative distribution curves to identify the Indifference Price Point (intersection of \"Cheap\" and \"Expensive\") and the Optimal Price Point (intersection of \"Too Cheap\" and \"Too Expensive\"): Optimal Price Point (OPP) = Intersection of \"Too Cheap\" and \"Too Expensive\""
+    }
+  ],
+  "warning": {
+    "label": "Stated Willingness Bias",
+    "text": "Stated-price surveys overestimate what people pay when asked to enter real payment details."
+  },
+  "warningFull": "Theoretical pricing surveys reliably overestimate how much customers will actually spend when asked to enter real payment details.",
+  "origin": {
+    "authors": [
+      "Peter H. Van Westendorp"
+    ],
+    "year": 1976,
+    "title": "NSS-Price Sensitivity Meter (PSM): A New Approach to Study Consumer Perception of Price",
+    "publication": "Proceedings of the 29th ESOMAR Congress"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 4
+    }
+  }
+}

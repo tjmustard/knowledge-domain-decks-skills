@@ -1,0 +1,58 @@
+{
+  "id": "I19",
+  "sourceTacticNo": 19,
+  "name": "Acquisition Channel Scalability Matrix",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that [Channel X] can sustainably deliver customer acquisition at targeted unit costs. We will verify this by cross-referencing industry channel benchmarks against product characteristics, and consider it validated if the channel delivers an estimated CAC:LTV ratio of ≥ 1:3 at target market scale.",
+  "hypothesisSize": 8,
+  "schematic": "Moderate confidence: rung 3 of 5",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Map candidate acquisition channels against ARPU tiers and the way the target users actually buy."
+    },
+    {
+      "label": "Execution",
+      "text": "Drop channels that cannot carry the price point - enterprise direct sales rarely pays below $1,000 ARPU."
+    },
+    {
+      "label": "Data collection",
+      "text": "Build a projection matrix of saturation, cost-per-click trend and conversion assumptions per channel."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Map potential acquisition channels against ARPU tiers and user buying habits."
+    },
+    {
+      "label": "Execution",
+      "text": "Eliminate channels that don't match the product's price point (e.g., enterprise direct sales forces are rarely viable for products with an ARPU under $1,000/year)."
+    },
+    {
+      "label": "Data collection",
+      "text": "Build a channel projection matrix comparing expected saturation points, cost-per-click trends, and estimated conversion rates."
+    }
+  ],
+  "warning": {
+    "label": "Channel Mirage Effect",
+    "text": "Traction in niche or closed communities rarely scales when broad advertising is switched on."
+  },
+  "warningFull": "Early customer acquisition traction achieved in niche communities or closed groups rarely scales efficiently once broader advertising channels are deployed.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

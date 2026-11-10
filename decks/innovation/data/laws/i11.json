@@ -1,0 +1,58 @@
+{
+  "id": "I11",
+  "sourceTacticNo": 11,
+  "name": "Desirability, Feasibility, and Viability (DFV) Mapping",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that our cross-functional team holds strategic alignment on our core business vulnerabilities. We will verify this by mapping all operational assumptions across a 2 × 2 matrix (Impact vs. Evidence), and consider it validated if participants achieve ≥ 90% consensus on the top 5 assumptions categorized in the High Impact / Low Evidence quadrant.",
+  "hypothesisSize": 7.5,
+  "schematic": "Low confidence: rung 1 of 5",
+  "method": [
+    "Time: 1–2 days",
+    "Cost: $0",
+    "Confidence: Low (Conceptual alignment)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Assemble product, engineering, design and commercial leads with desirability, feasibility, viability cards."
+    },
+    {
+      "label": "Execution",
+      "text": "Have each write their explicit premises, then place every assumption on a shared impact-by-evidence grid."
+    },
+    {
+      "label": "Data collection",
+      "text": "Cluster overlapping cards into themes and isolate high-impact, low-evidence as the experiment backlog."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Assemble product, engineering, design, and commercial leaders. Provide each member with assumption tracking cards categorized into Desirability, Feasibility, and Viability."
+    },
+    {
+      "label": "Execution",
+      "text": "Instruct members to independently document explicit operational premises. Place every assumption onto a shared 2 × 2 grid: Vertical Axis = Impact (Low vs. High); Horizontal Axis = Current Evidence (Known vs. Unknown)."
+    },
+    {
+      "label": "Data collection",
+      "text": "Cluster overlapping cards into distinct operational themes. Isolate the High Impact / Low Evidence quadrant as the designated experiment backlog."
+    }
+  ],
+  "warning": {
+    "label": "HiPPO Distortion",
+    "text": "Senior executives drag risky assumptions into the known quadrant on personal conviction."
+  },
+  "warningFull": "Senior executives frequently drag high-risk assumptions into the \"Known\" quadrant based entirely on personal conviction, blinding the team to critical structural vulnerabilities.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 1
+    }
+  }
+}

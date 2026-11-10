@@ -1,0 +1,58 @@
+{
+  "id": "I17",
+  "sourceTacticNo": 17,
+  "name": "Technical Feasibility Spike and Architecture Proof",
+  "phase": "Hypothesis Framing and Assumption Mapping Tactics",
+  "hypothesis": "We believe that [external API / architecture] can process [X volume] within [Y latency]. We will verify this by deploying an isolated technical spike in a staging environment, and consider it validated if latency remains below 250ms at 1,500 concurrent requests without data loss.",
+  "hypothesisSize": 9,
+  "schematic": "High confidence: rung 5 of 5",
+  "method": [
+    "Time: 3–7 days",
+    "Cost: $0–$$$",
+    "Confidence: High (Empirical technical)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Strip the front end and every non-essential dependency; isolate the one algorithmic or throughput unknown."
+    },
+    {
+      "label": "Execution",
+      "text": "Build the smallest codebase that can stress the integration, algorithm or pipeline at the target load."
+    },
+    {
+      "label": "Data collection",
+      "text": "Run automated load scripts and log latency distribution, memory, error codes and compute cost."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Strip away all frontend interfaces and non-essential dependencies. Isolate the specific algorithmic or data throughput unknown."
+    },
+    {
+      "label": "Execution",
+      "text": "Build a minimal codebase designed solely to stress-test the core integration, algorithm, or data pipeline."
+    },
+    {
+      "label": "Data collection",
+      "text": "Run automated load scripts, logging latency distributions, memory usage, error codes, and compute costs."
+    }
+  ],
+  "warning": {
+    "label": "Sandbox Isolation Bias",
+    "text": "A clean staging spike degrades on real edge cases, dirty legacy data and unoptimised production dependencies."
+  },
+  "warningFull": "A technical architecture that operates smoothly in a clean, isolated staging environment often degrades when exposed to real-world edge cases, dirty legacy data, and unoptimized production dependencies.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

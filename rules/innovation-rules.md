@@ -267,6 +267,268 @@ Vivid crises are remembered clearly and mistaken for routine, recurring market n
 
 **Source.** John C. Flanagan (1954). *The Critical Incident Technique*. Psychological Bulletin.
 
+## Hypothesis Framing and Assumption Mapping Tactics
+
+### I11 — Desirability, Feasibility, and Viability (DFV) Mapping
+
+**Hypothesis and threshold.** We believe that our cross-functional team holds strategic alignment on our core business vulnerabilities. We will verify this by mapping all operational assumptions across a 2 × 2 matrix (Impact vs. Evidence), and consider it validated if participants achieve ≥ 90% consensus on the top 5 assumptions categorized in the High Impact / Low Evidence quadrant.
+
+**Schematic.** Low confidence: rung 1 of 5
+
+**Method.** Time: 1–2 days · Cost: $0 · Confidence: Low (Conceptual alignment)
+
+**Plan.**
+- Preparation: Assemble product, engineering, design and commercial leads with desirability, feasibility, viability cards.
+- Execution: Have each write their explicit premises, then place every assumption on a shared impact-by-evidence grid.
+- Data collection: Cluster overlapping cards into themes and isolate high-impact, low-evidence as the experiment backlog.
+
+**False positive.** HiPPO Distortion
+
+Senior executives drag risky assumptions into the known quadrant on personal conviction.
+
+**Plan as written.**
+- Preparation: Assemble product, engineering, design, and commercial leaders. Provide each member with assumption tracking cards categorized into Desirability, Feasibility, and Viability.
+- Execution: Instruct members to independently document explicit operational premises. Place every assumption onto a shared 2 × 2 grid: Vertical Axis = Impact (Low vs. High); Horizontal Axis = Current Evidence (Known vs. Unknown).
+- Data collection: Cluster overlapping cards into distinct operational themes. Isolate the High Impact / Low Evidence quadrant as the designated experiment backlog.
+
+**Warning as written.** Senior executives frequently drag high-risk assumptions into the "Known" quadrant based entirely on personal conviction, blinding the team to critical structural vulnerabilities.
+
+**Source.** The source names no originator.
+
+### I12 — Riskiest Assumption Test (RAT) Decomposition
+
+**Hypothesis and threshold.** We believe that [Assumption A] represents the single existential bottleneck for the business model. We will verify this by decomposing the business concept into causal dependency trees, and consider it validated if breaking this single assumption mathematically invalidates all downstream unit economics.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 2–3 days · Cost: $0 · Confidence: Moderate
+
+**Plan.**
+- Preparation: Take the top-ranked assumption from the DFV matrix and break it into discrete component premises.
+- Execution: Build a causal tree of what must be true and trace back to the premise whose failure collapses it.
+- Data collection: Write the test specification for that root: thresholds, time boundaries and required evidence weight.
+
+**False positive.** Premature Optimization of Secondary Assumptions
+
+Teams test easy details - interface polish, onboarding copy - while skipping the existential risk.
+
+**Plan as written.**
+- Preparation: Isolate the top-ranked assumption from the DFV matrix. Break it down into discrete component premises.
+- Execution: Construct a causal dependency tree using "What Must Be True" statements. Trace dependencies backward to identify the foundational premise whose failure collapses the entire structure.
+- Data collection: Draft a dedicated testing specification for this root assumption, detailing validation thresholds, temporal boundaries, and required evidence weights.
+
+**Warning as written.** Teams frequently expend energy testing easily measurable operational details (such as interface aesthetics or onboarding micro-copy) while sidestepping existential commercial viability risks.
+
+**Source.** The source names no originator.
+
+### I13 — Problem-Solution Fit Scorecarding
+
+**Hypothesis and threshold.** We believe our proposed solution addresses the primary pain points discovered in Phase 1. We will verify this by scoring our feature set against validated customer problems using a blind scoring rubric, and consider it validated if ≥ 80% of features map directly to high-severity problems, with all secondary unmapped features eliminated.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 3–5 days · Cost: $0 · Confidence: Moderate
+
+**Plan.**
+- Preparation: List validated customer problems on the vertical axis and proposed feature specifications across the top.
+- Execution: For each intersection ask whether the feature relieves that problem, and justify it with phase-one data.
+- Data collection: Compute the coverage ratio; drop features that solve unvalidated problems or miss the core bottleneck.
+
+**False positive.** Sunk Cost Feature Attachment
+
+Teams write elaborate post-hoc justifications for favourite features with no link to validated problems.
+
+**Plan as written.**
+- Preparation: Construct a matrix listing validated customer problems on the vertical axis and proposed feature specifications on the horizontal axis.
+- Execution: Evaluate each intersection: Does this feature directly alleviate this specific problem? Require cross-functional leads to justify each connection with behavioral data gathered in Phase 1.
+- Data collection: Calculate the operational coverage ratio. Flag and discard features that solve unvalidated problems or fail to resolve the core bottleneck.
+
+**Warning as written.** Product teams routinely construct elaborate post-hoc justifications for favorite features that have no demonstrable link to validated customer problems.
+
+**Source.** The source names no originator.
+
+### I14 — Stakeholder and Buying Center Influence Mapping (B2B)
+
+**Hypothesis and threshold.** We believe that [Role A] controls purchase authority, while [Role B] serves as an internal champion. We will verify this by mapping the buying center dynamics across 8 enterprise target accounts, and consider it validated if the operational economic buyer matches our target persona in ≥ 75% of evaluated org charts.
+
+**Schematic.** Moderate-High confidence: rung 4 of 5
+
+**Method.** Time: 5–7 days · Cost: $0 · Confidence: Moderate-High
+
+**Plan.**
+- Preparation: Define the six buying roles: economic buyer, champion, end user, technical gatekeeper, procurement, blocker.
+- Execution: Call across departments in each account and ask whose budget pays and who holds the veto in review.
+- Data collection: Chart the decision, veto and capital-authorisation path for each of the eight accounts.
+
+**False positive.** Champion Conflation
+
+An enthusiastic end user is mistaken for the economic buyer, and the deal stalls at procurement.
+
+**Plan as written.**
+- Preparation: Define the six canonical enterprise purchasing roles: Economic Buyer, Champion, End User, Technical Gatekeeper, Procurement, and Blocker.
+- Execution: Conduct organizational discovery calls across multiple departments within each target account. Ask: "Whose departmental budget pays for this solution?" "Who possesses absolute veto authority during procurement and security review?".
+- Data collection: Chart the formal decision, veto, and capital authorization pathways for each enterprise account.
+
+**Warning as written.** Founders routinely mistake an enthusiastic end-user champion for the economic buyer, discovering too late that the deal stalls indefinitely when presented to procurement.
+
+**Source.** The source names no originator.
+
+### I15 — Value Proposition Fit Matrix (Relievers vs. Pains)
+
+**Hypothesis and threshold.** We believe that our core value proposition outranks existing market alternatives on speed and clarity. We will verify this by presenting a relative comparison matrix to 12 prospective users, and consider it validated if ≥ 70% prioritize our specific pain relievers over incumbent alternatives.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 2–4 days · Cost: $0 · Confidence: Moderate
+
+**Plan.**
+- Preparation: Build a two-sided canvas that maps pain relievers to customer pains and gain creators to gains.
+- Execution: Have target users rate each element’s clarity, relevance and difference against their current alternative.
+- Data collection: Score fit with a weighted model calibrated to the pains users ranked highest.
+
+**False positive.** Theoretical Value Congruence
+
+A proposition can read as cohesive and compelling on paper and still not move anyone off the incumbent.
+
+**Plan as written.**
+- Preparation: Build a two-sided Value Proposition Canvas explicitly mapping Pain Relievers to Customer Pains and Gain Creators to Customer Gains.
+- Execution: Conduct structured review sessions where target users evaluate the clarity, relevance, and differentiation of each value proposition element against their current operational alternatives.
+- Data collection: Quantify the fit score using a weighted distribution model calibrated to user-prioritized pain points.
+
+**Warning as written.** A value proposition can appear conceptually cohesive and compelling on paper while failing to generate sufficient switching momentum to overcome incumbent inertia.
+
+**Source.** Alexander Osterwalder, Yves Pigneur, Gregory Bernarda & Alan Smith (2014). *Value Proposition Design: How to Create Products and Services Customers Want*. John Wiley & Sons.
+
+### I16 — Reverse-Income Economic Viability Model
+
+**Hypothesis and threshold.** We believe this business model can achieve sustainable profitability at target scale. We will verify this by building a reverse unit-economics model, and consider it validated if the required conversion rates and average revenue per user (ARPU) remain within historical benchmark ranges for this industry vertical.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 1–2 days · Cost: $0 · Confidence: High (Mathematical proof)
+
+**Plan.**
+- Preparation: Fix an ambitious revenue milestone, such as ten million in annual recurring revenue.
+- Execution: Work backward from revenue: required customers = ARR / ARPU, then conversion and acquisition cost.
+- Data collection: Check the required metrics against benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate).
+
+**False positive.** Spreadsheet Viability Syndrome
+
+A model balances by inserting aggressive growth or fantasy acquisition costs, hiding an unviable business.
+
+**Plan as written.**
+- Preparation: Fix an ambitious financial milestone (e.g., 10,000,000 ARR).
+- Execution: Work backward to calculate the necessary funnel metrics: divide target revenue by expected ARPU to determine the required customer volume, then calculate the necessary conversion rates and acquisition costs across the funnel.
+- Data collection: Compare required operational metrics against real-world industry benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)
+
+**Warning as written.** Financial models can always be balanced by inserting aggressive compound growth rates or unrealistically low customer acquisition costs, masking unviable business fundamentals.
+
+**Source.** The source names no originator.
+
+### I17 — Technical Feasibility Spike and Architecture Proof
+
+**Hypothesis and threshold.** We believe that [external API / architecture] can process [X volume] within [Y latency]. We will verify this by deploying an isolated technical spike in a staging environment, and consider it validated if latency remains below 250ms at 1,500 concurrent requests without data loss.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 3–7 days · Cost: $0–$$$ · Confidence: High (Empirical technical)
+
+**Plan.**
+- Preparation: Strip the front end and every non-essential dependency; isolate the one algorithmic or throughput unknown.
+- Execution: Build the smallest codebase that can stress the integration, algorithm or pipeline at the target load.
+- Data collection: Run automated load scripts and log latency distribution, memory, error codes and compute cost.
+
+**False positive.** Sandbox Isolation Bias
+
+A clean staging spike degrades on real edge cases, dirty legacy data and unoptimised production dependencies.
+
+**Plan as written.**
+- Preparation: Strip away all frontend interfaces and non-essential dependencies. Isolate the specific algorithmic or data throughput unknown.
+- Execution: Build a minimal codebase designed solely to stress-test the core integration, algorithm, or data pipeline.
+- Data collection: Run automated load scripts, logging latency distributions, memory usage, error codes, and compute costs.
+
+**Warning as written.** A technical architecture that operates smoothly in a clean, isolated staging environment often degrades when exposed to real-world edge cases, dirty legacy data, and unoptimized production dependencies.
+
+**Source.** The source names no originator.
+
+### I18 — Regulatory and Compliance Gate Audit
+
+**Hypothesis and threshold.** We believe our proposed data architecture complies fully with relevant regulatory standards (e.g., GDPR, HIPAA, SOC2). We will verify this by completing a formal compliance audit with an external specialist, and consider it validated if the audit reveals zero critical regulatory blockers that would require fundamentally altering the product model.
+
+**Schematic.** High confidence: rung 5 of 5
+
+**Method.** Time: 5–10 days · Cost: $0–$$$$ · Confidence: High
+
+**Plan.**
+- Preparation: Document data lifecycles, consent mechanisms, storage tiers and cross-border transfer paths.
+- Execution: Walk legal and compliance specialists through the end-to-end data flow to find every regulatory touchpoint.
+- Data collection: Log legal hurdles, certification costs and implementation timelines against the product model.
+
+**False positive.** Informal Legal Assurances
+
+Casual early guidance from corporate counsel is mistaken for formal, binding regulatory clearance.
+
+**Plan as written.**
+- Preparation: Document data lifecycles, user consent mechanisms, storage tiers, and cross-border transfer paths.
+- Execution: Walk legal and compliance specialists through the end-to-end data flow to identify regulatory touchpoints.
+- Data collection: Log potential legal hurdles, compliance requirements, certification expenses, and expected implementation timelines.
+
+**Warning as written.** Early-stage teams frequently mistake casual, preliminary guidance from corporate attorneys for formal, binding regulatory clearance.
+
+**Source.** The source names no originator.
+
+### I19 — Acquisition Channel Scalability Matrix
+
+**Hypothesis and threshold.** We believe that [Channel X] can sustainably deliver customer acquisition at targeted unit costs. We will verify this by cross-referencing industry channel benchmarks against product characteristics, and consider it validated if the channel delivers an estimated CAC:LTV ratio of ≥ 1:3 at target market scale.
+
+**Schematic.** Moderate confidence: rung 3 of 5
+
+**Method.** Time: 3–5 days · Cost: $0 · Confidence: Moderate
+
+**Plan.**
+- Preparation: Map candidate acquisition channels against ARPU tiers and the way the target users actually buy.
+- Execution: Drop channels that cannot carry the price point - enterprise direct sales rarely pays below $1,000 ARPU.
+- Data collection: Build a projection matrix of saturation, cost-per-click trend and conversion assumptions per channel.
+
+**False positive.** Channel Mirage Effect
+
+Traction in niche or closed communities rarely scales when broad advertising is switched on.
+
+**Plan as written.**
+- Preparation: Map potential acquisition channels against ARPU tiers and user buying habits.
+- Execution: Eliminate channels that don't match the product's price point (e.g., enterprise direct sales forces are rarely viable for products with an ARPU under $1,000/year).
+- Data collection: Build a channel projection matrix comparing expected saturation points, cost-per-click trends, and estimated conversion rates.
+
+**Warning as written.** Early customer acquisition traction achieved in niche communities or closed groups rarely scales efficiently once broader advertising channels are deployed.
+
+**Source.** The source names no originator.
+
+### I20 — Van Westendorp Price Sensitivity Meter
+
+**Hypothesis and threshold.** We believe that the acceptable price band for our offering falls between [Price A] and [Price B]. We will verify this by surveying 50 qualified target customers using the four standard Van Westendorp questions, and consider it validated if the Indifference Price Point aligns with our planned market pricing within a ±10% margin.
+
+**Schematic.** Moderate-High confidence: rung 4 of 5
+
+**Method.** Time: 5–7 days · Cost: $50–$300 · Confidence: Moderate-High
+
+**Plan.**
+- Preparation: Build the survey around the four price questions: too cheap, a bargain, getting expensive, too expensive.
+- Execution: Send the instrument only to qualified buyers who match the defined ideal customer profile.
+- Data collection: Plot the cumulative curves; read the indifference and optimal price points and compare with the plan price.
+
+**False positive.** Stated Willingness Bias
+
+Stated-price surveys overestimate what people pay when asked to enter real payment details.
+
+**Plan as written.**
+- Preparation: Construct a survey detailing the core value proposition. Include the four standard pricing questions: (1) At what price is it too cheap to trust the quality? (2) A bargain? (3) Getting expensive, but still worth considering? (4) Too expensive to consider?
+- Execution: Distribute the instrument strictly to qualified target buyers who match the defined ICP.
+- Data collection: Plot cumulative distribution curves to identify the Indifference Price Point (intersection of "Cheap" and "Expensive") and the Optimal Price Point (intersection of "Too Cheap" and "Too Expensive"): Optimal Price Point (OPP) = Intersection of "Too Cheap" and "Too Expensive"
+
+**Warning as written.** Theoretical pricing surveys reliably overestimate how much customers will actually spend when asked to enter real payment details.
+
+**Source.** Peter H. Van Westendorp (1976). *NSS-Price Sensitivity Meter (PSM): A New Approach to Study Consumer Perception of Price*. Proceedings of the 29th ESOMAR Congress.
+
 ## Low-Fidelity Prototyping and Smoke Testing Tactics
 
 ### I30 — Refundable Deposit Pre-Order
