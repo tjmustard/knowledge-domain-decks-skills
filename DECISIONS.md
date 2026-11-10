@@ -1202,9 +1202,10 @@ text boxes. It predicts the last line's glyph box, not rendered ink:
 
 Rendered ink sits at or above the box by the descender depth of the last
 glyph, 0.05 to 1.7 pt; TME-05's box is 36.24 and its outline 37.879. The raster
-agrees with the box to 0.01 pt at 864 ppi and threshold 245, and reads 0.08 pt
+agrees with the box to 0.01 pt at 864 dpi and threshold 245, and reads 0.08 pt
 higher at threshold 200. Its reference is HMM-01, `T1 A2 B3`, which is in the
-deck and measures 38.824 by outline (38.83 at 864 ppi, 38.90 at 200 ppi, 40.5
+deck and measures 38.824 by outline (38.83 at 864 dpi, threshold 245; 38.90 at
+threshold 200; 40.5
 baseline), against the model's 38.74: a residual of 0.08 to 0.16 on the
 reference itself. Every
 prediction inherits that residual, so it is printed rather than assumed away.
@@ -1284,8 +1285,8 @@ measured deviation, and the caption does not turn it into one.
 forms normalised into one canonical form. It encodes no ratio: three input
 forms, chosen for legibility; a single output box, because the card's claim is
 that the output is one form. The first drawing had three output boxes, so it
-showed many forms in and many forms out under a caption saying "EMIT ONE" - the
-opposite of the card. The output count was fixed after that was found, and the
+showed one output form three times under a caption saying "EMIT ONE", which
+invites a reader to count three outputs - the opposite of the card. The output count was fixed after that was found, and the
 output stack was centred on the funnel's throat. The record also declared
 `variants`, which the shape clamps to its three glyph templates: it could not
 change the drawing at its own declared value, the gate failed it, and it is
@@ -1319,6 +1320,27 @@ which is the affordance claim. Neither surface is a picture of a click.
 carries the result back to the actor. `goal-gradient`, `decline-curve` and the
 other curves run in one direction; no existing shape closes a loop back to its
 origin, which is what feedback is.
+
+`proximity-grid` (GES-01): two clusters of identical marks, four by two, with
+spacing the only cue. The grid drew a faint rounded rectangle around each
+cluster from its first commit. While nothing else in the deck was about
+grouping, the frame was harmless annotation; after similarity and common region
+arrived it offered a second cue - enclosure - in the drawing whose claim is
+spacing, so it was removed. The dots keep their intra-cluster gap of 40 and the
+clusters now sit exactly 110 apart, which is what the dashed line measures and
+the card says.
+
+The removal also corrected a number that had been wrong since the first commit.
+Each cluster's box was drawn 20 pt beyond its dots, so the two clusters sat 130
+pt apart while the dashed line measured 110 and the label said 110 - the line
+stopped 20 pt short of the lower cluster and pointed at empty paper. Without the
+boxes the padding has no purpose, the gap is the 110 the line measures, and the
+number on the drawing is now the distance on the page. The deck therefore keeps one enclosure treatment and one only:
+the filled surface in the common-region drawing, which belongs to the card whose
+claim is that a region creates the group. The proximity grid's frame is gone
+rather than replaced, so a reader who has seen the earlier deck loses nothing -
+the drawing that had a rectangle has none, and the drawing that argues for
+rectangles still has one.
 
 `similarity-columns` (GES-02): four columns, evenly spaced, with circles in the
 first and last and squares in the middle two. `proximity-grid` varies distance
@@ -1355,7 +1377,8 @@ at the crossing.
 `link-beats-gap` (GES-08): six marks at one spacing, once unlinked and once with
 a stroke joining the middle pair across the widest gap. `proximity-grid` and
 `similarity-columns` vary distance and form; this holds both constant and varies
-only the link, so the three grouping cards each isolate a different factor.
+only the link, so the four grouping cards isolate one factor each - spacing,
+form, enclosure and link.
 
 `shared-motion` (GES-09): a field of still marks and one column carrying the same
 direction arrow above each mark. A still drawing has no motion, so the arrow is

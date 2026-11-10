@@ -197,7 +197,7 @@ diagrams are smaller by design: a 9-unit label on the 400-unit drawing prints at
 2.9 pt, so the figures are annotations rather than type, and each one was
 inspected on its own card at 400 ppi. Every recto's lowest ink was measured against the
 bottom safe edge — the internal margin, 0.1875 in inside the trim line, so
-0.3125 in from the paper edge — at 864 ppi inside the page frame; the tightest
+0.3125 in from the paper edge — at 864 dpi inside the page frame; the tightest
 card clears it by 7.32 pt. The topmost ink on every recto stands 0.08 pt above
 the top safe edge, a constant of the template rather than a card's line running
 long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured

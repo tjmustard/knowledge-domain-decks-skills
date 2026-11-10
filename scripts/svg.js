@@ -149,11 +149,9 @@
       var out = [];
       var clusterW = 40 + (cols - 1) * intra;
       var x0 = 200 - clusterW / 2;
-      var topY = 150 - inter / 2 - ((rows - 1) * intra) / 2 - 20;
-      var bottomY = 150 + inter / 2 + 20;
+      var topY = 150 - inter / 2 - (rows - 1) * intra;
+      var bottomY = 150 + inter / 2;
       [topY, bottomY].forEach(function (baseY) {
-        out.push(rect(x0 - 20, baseY - 20, clusterW + 40,
-          (rows - 1) * intra + 40, { rx: 6, opacity: 0.35, width: 1.5 }));
         for (var r = 0; r < rows; r++) {
           for (var c = 0; c < cols; c++) {
             out.push(circle(x0 + c * intra, baseY + r * intra, 9, {
