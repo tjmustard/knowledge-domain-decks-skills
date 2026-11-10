@@ -17,6 +17,7 @@ import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const INVENTORY = join(ROOT, "decks", "innovation", "data", "source-inventory.json");
+const LAYOUT = join(ROOT, "decks", "innovation", "data", "layout-map.json");
 const TOTAL = 42;
 
 const loadInventory = async () => JSON.parse(await readFile(INVENTORY, "utf8"));
@@ -116,4 +117,51 @@ test("the two recorded source defects are carried, not repaired away", async () 
   );
   assert.ok(crowdfunding.method.timeToResult.length > 0, "I28's time is recoverable");
   assert.ok(crowdfunding.method.confidence.length > 0, "I28's confidence is recoverable");
+});
+
+test("every figure follows the committed layout map and names what it draws", async () => {
+  const inventory = await loadInventory();
+  const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
+  const map = layout.map;
+  const families = layout.families;
+  const rows = new Map(inventory.records.map((record) => ["I" + String(record.number).padStart(2, "0"), record]));
+
+  assert.equal(Object.keys(map).length, TOTAL, "the layout map covers every tactic");
+  for (const [cardId, record] of rows) {
+    const row = map[cardId];
+    assert.ok(row, `${cardId} has no layout-map row`);
+    assert.ok(families[row.family], `${cardId} names an unknown family`);
+    assert.equal(row.family, families[row.family] ? row.family : "", `${cardId} family`);
+    assert.ok(Number.isInteger(row.divisions) && row.divisions >= 1, `${cardId} divisions`);
+    assert.ok(Number.isInteger(row.mark) && row.mark >= 1, `${cardId} mark`);
+    assert.ok(row.mark <= row.divisions, `${cardId} mark is outside the drawing`);
+    assert.ok(row.hypothesisSize >= 6.5 && row.hypothesisSize <= 9, `${cardId} hypothesis size`);
+
+    // The label names the drawing: it carries the marked number and ends in
+    // the family's own noun, so a card cannot print a schematic its figure
+    // does not show. A curve's mark is a time bucket, so the label carries
+    // the day that bucket stands for rather than the bucket's index.
+    const curveDays = [7, 14, 30, 60];
+    if (row.family === "curve") {
+      assert.ok(
+        row.label.includes(`day ${curveDays[row.mark - 1]}`),
+        `${cardId} label does not name its horizon: "${row.label}"`
+      );
+    } else {
+      assert.ok(row.label.includes(String(row.mark)), `${cardId} label omits its mark: "${row.label}"`);
+    }
+    assert.ok(
+      row.label.endsWith(families[row.family].noun),
+      `${cardId} label does not end in "${families[row.family].noun}": "${row.label}"`
+    );
+
+    // The basis is a stated datum, quoted from the record it claims.
+    const basis = row.basis;
+    assert.ok(basis && basis.datum && basis.field && basis.quote, `${cardId} has no basis`);
+    const value = basis.field.split(".").reduce((v, key) => (v == null ? v : v[key]), record);
+    assert.ok(
+      typeof value === "string" && value.includes(basis.quote),
+      `${cardId} basis quote is not in ${basis.field}`
+    );
+  }
 });

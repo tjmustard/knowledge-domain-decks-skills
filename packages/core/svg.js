@@ -2819,6 +2819,142 @@
     return out.join("");
   };
 
+  /*
+   * The innovation deck's four drawings. Every family reads a datum the
+   * record already holds, and the label the card prints names the drawing
+   * rather than the tactic: a ladder of `divisions` rungs with the tactic's
+   * confidence band marked; a funnel of the tactic's own conversion stages
+   * with the stage where the evidence is read marked; a time curve of
+   * `divisions` periods with the decision horizon marked; a strip of the
+   * three plan stages with the step that carries the commitment marked.
+   */
+  shapes["innovation-figure"] = function (p) {
+    var family = p.family || "ladder";
+    var div = Math.max(1, Math.round(p.divisions || 3));
+    var mark = Math.max(1, Math.round(p.mark || 1));
+    var out = [];
+
+    if (family === "ladder") {
+      // A ladder of `div` rungs; the filled rungs are how far the evidence
+      // reaches, and the marker sits on the rung the tactic occupies.
+      var lx0 = 112;
+      var lx1 = 288;
+      var top = 76;
+      var bottom = 328;
+      var step = div > 1 ? (bottom - top) / (div - 1) : 0;
+      out.push(line(lx0, top, lx0, bottom, 2.2, 0.7));
+      out.push(line(lx1, top, lx1, bottom, 2.2, 0.7));
+      for (var li = 0; li < div; li++) {
+        var ly = div > 1 ? bottom - step * li : (top + bottom) / 2;
+        var filled = li < mark;
+        out.push(line(lx0, ly, lx1, ly, filled ? 2.6 : 1.3, filled ? 0.85 : 0.3));
+      }
+      var my = div > 1 ? bottom - step * (Math.min(mark, div) - 1) : (top + bottom) / 2;
+      out.push(circle((lx0 + lx1) / 2, my, 8, { width: 1.8, opacity: 0.9 }));
+    } else if (family === "funnel") {
+      // `div` stacked stages narrowing from wide to narrow; the stage where
+      // the evidence is read is shaded, so the drawing is the path and the
+      // mark is the reading point.
+      var fTop = 64;
+      var fBottom = 324;
+      var fh = (fBottom - fTop) / div;
+      var wide = 150;
+      var narrow = 44;
+      var half = function (t) { return wide - (wide - narrow) * t; };
+      for (var fi = 0; fi < div; fi++) {
+        var t0 = fi / div;
+        var t1 = (fi + 1) / div;
+        var y0 = fTop + fh * fi;
+        var y1 = y0 + fh;
+        var h0 = half(t0);
+        var h1 = half(t1);
+        var marked = fi === Math.min(mark, div) - 1;
+        var cx = 200;
+        var d =
+          "M " + coord(cx - h0) + " " + coord(y0) +
+          " L " + coord(cx + h0) + " " + coord(y0) +
+          " L " + coord(cx + h1) + " " + coord(y1) +
+          " L " + coord(cx - h1) + " " + coord(y1) + " Z";
+        out.push(
+          '<path d="' + d + '" fill="' + (marked ? "currentColor" : "none") +
+          '" fill-opacity="' + (marked ? "0.14" : "0") +
+          '" stroke="currentColor" stroke-width="' + (marked ? 2.2 : 1.4) +
+          '" stroke-linejoin="round" opacity="' + (marked ? 0.9 : 0.45) + '" ' + STROKE + "/>"
+        );
+        if (marked) out.push(circle(cx, y0 + fh / 2, 6, { width: 1.6, opacity: 0.9 }));
+      }
+    } else if (family === "curve") {
+      // A falling curve over `div` periods: retention decays, and the marker
+      // is the period by which the decision is due.
+      var cx0 = 62;
+      var cx1 = 348;
+      var cy0 = 320;
+      var cy1 = 76;
+      function value(t) {
+        return 0.16 + 0.74 * Math.exp(-2.1 * t);
+      }
+      for (var pi = 0; pi <= div; pi++) {
+        var px = cx0 + ((cx1 - cx0) * pi) / div;
+        out.push(line(px, cy0, px, cy0 - 8, 1.2, 0.4));
+      }
+      out.push(line(cx0, cy0, cx1, cy0, 1.8, 0.6));
+      var prev = null;
+      var steps = Math.max(24, div * 8);
+      for (var si = 0; si <= steps; si++) {
+        var st = si / steps;
+        var pt = [coord(cx0 + (cx1 - cx0) * st), coord(cy0 - value(st) * (cy0 - cy1))];
+        if (prev) out.push(line(prev[0], prev[1], pt[0], pt[1], 2.4, 0.75));
+        prev = pt;
+      }
+      var mt = (Math.min(mark, div) - 0.5) / div;
+      var mx = cx0 + (cx1 - cx0) * mt;
+      var myy = cy0 - value(mt) * (cy0 - cy1);
+      out.push(line(mx, cy0, mx, myy, 1.2, 0.4, "5 5"));
+      out.push(circle(mx, myy, 6, { width: 1.8, fill: "currentColor", opacity: 0.9 }));
+    } else if (family === "strip") {
+      // `div` stages in a row, joined; the marked stage is the one that
+      // carries the commitment or the reading, so the strip is the plan and
+      // the fill is where it lands.
+      var left = 46;
+      var right = 354;
+      var gap = 12;
+      var boxW = (right - left - gap * (div - 1)) / div;
+      var boxTop = 150;
+      var boxH = 110;
+      for (var bi = 0; bi < div; bi++) {
+        var bx = left + bi * (boxW + gap);
+        var on = bi === Math.min(mark, div) - 1;
+        out.push(
+          rect(bx, boxTop, boxW, boxH, {
+            rx: 5,
+            width: on ? 2.2 : 1.3,
+            opacity: on ? 0.9 : 0.4,
+            fill: on ? "currentColor" : "none",
+            fillOpacity: on ? 0.14 : undefined
+          })
+        );
+        if (on) out.push(circle(bx + boxW / 2, boxTop + boxH / 2, 7, { width: 1.6, opacity: 0.9 }));
+        if (bi < div - 1) {
+          out.push(line(bx + boxW, boxTop + boxH / 2, bx + boxW + gap, boxTop + boxH / 2, 1.6, 0.5));
+        }
+      }
+      out.push(line(left, boxTop - 14, right, boxTop - 14, 1.2, 0.25));
+    } else {
+      // An unknown family still reads both numbers, so a misspelling cannot
+      // declare knobs this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var ui = 0; ui < div; ui++) {
+        var ux = 56 + (288 * (ui + 0.5)) / div;
+        out.push(line(ux, 56, ux, 66, 1.4, 0.4));
+      }
+      out.push(circle(56 + (288 * ((mark - 0.5) % div + 0.5)) / Math.max(1, div), 200, 8, {
+        width: 1.6,
+        opacity: 0.7
+      }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");
