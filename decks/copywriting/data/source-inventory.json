@@ -1,0 +1,904 @@
+{
+  "source": "SupportingInformation/10 - Copywriting Tactics/Open-Source Copywriting Research.md",
+  "sourceSha256": "f8481210c806fdb466348725ca0f345ae092c002f5fc8b2a92237fb9fa9c9628",
+  "claim": {
+    "taxonomyRows": 48,
+    "surfaces": [
+      "ST",
+      "HL",
+      "UX",
+      "CR"
+    ],
+    "phases": [
+      "Structural Formulas",
+      "Headlines & Hooks",
+      "Product Microcopy",
+      "Clarity & Rhythm"
+    ]
+  },
+  "counts": {
+    "records": 48,
+    "byPrefix": {
+      "ST": 12,
+      "HL": 12,
+      "UX": 12,
+      "CR": 12
+    },
+    "blueprints": 22,
+    "noBlueprint": 26
+  },
+  "lengths": {
+    "name": {
+      "n": 48,
+      "min": 3,
+      "median": 24,
+      "max": 32
+    },
+    "mechanism": {
+      "n": 48,
+      "min": 22,
+      "median": 43,
+      "max": 53
+    },
+    "scope": {
+      "n": 48,
+      "min": 29,
+      "median": 41,
+      "max": 56
+    },
+    "blueprintProse": {
+      "n": 22,
+      "min": 500,
+      "median": 588,
+      "max": 1248
+    },
+    "template": {
+      "n": 22,
+      "min": 79,
+      "median": 179,
+      "max": 643
+    },
+    "exampleOptimized": {
+      "n": 22,
+      "min": 28,
+      "median": 218,
+      "max": 688
+    }
+  },
+  "sourceDefects": [
+    {
+      "where": "line 58",
+      "kind": "italic formula id",
+      "detail": "CR-08 is the only row written in italics upstream"
+    },
+    {
+      "where": "blueprint ST-01",
+      "kind": "template emitted as heading",
+      "detail": "1 template line(s) carry a markdown # prefix"
+    },
+    {
+      "where": "blueprint ST-02",
+      "kind": "template emitted as heading",
+      "detail": "1 template line(s) carry a markdown # prefix"
+    },
+    {
+      "where": "blueprint ST-04",
+      "kind": "template emitted as heading",
+      "detail": "1 template line(s) carry a markdown # prefix"
+    },
+    {
+      "where": "blueprint HL-03",
+      "kind": "glued example table",
+      "detail": "header, separator and both example cells are one line behind escaped pipes"
+    },
+    {
+      "where": "blueprint UX-01",
+      "kind": "template emitted as heading",
+      "detail": "1 template line(s) carry a markdown # prefix"
+    },
+    {
+      "where": "blueprint UX-03",
+      "kind": "template emitted as heading",
+      "detail": "1 template line(s) carry a markdown # prefix"
+    },
+    {
+      "where": "blueprint CR-01",
+      "kind": "template written as HTML comment",
+      "detail": "the instruction is wrapped in <!-- --> markup"
+    },
+    {
+      "where": "blueprint CR-02",
+      "kind": "template written as HTML comment",
+      "detail": "the instruction is wrapped in <!-- --> markup"
+    },
+    {
+      "where": "blueprint CR-02",
+      "kind": "span artifact in template",
+      "detail": "extraction marker inside the template text"
+    },
+    {
+      "where": "blueprint CR-02",
+      "kind": "LaTeX formula in prose",
+      "detail": "the formula is written in LaTeX and needs the declared rendering table"
+    }
+  ],
+  "records": [
+    {
+      "id": "CPY-01",
+      "formulaId": "ST-01",
+      "phase": "Structural Formulas",
+      "name": "AIDA",
+      "surface": "Landing Pages, Sales Letters, VSLs",
+      "mechanism": "Orienting Reflex & Narrative Transportation",
+      "scope": "Grade 7–8; Full-page sequence (300–1,500 words)",
+      "blueprint": true,
+      "blueprintProse": "The AIDA framework allocates structural weight across four sequential phases designed to progress a prospect from passive observation to active transactional commitment. The Attention component commands roughly 15% of the total word count, utilizing unexpected assertions or jarring telemetry to break reader habituation. The Interest component consumes 30% of the budget, contextualizing why the status quo has fractured and building mechanistic curiosity. The Desire phase occupies the largest allocation at 40%, grounding technical capabilities into concrete business outcomes and social validation. The final Action phase represents 15% of the copy, providing an unambiguous, low-friction command specifying the immediate next step. \nThe psychological power of AIDA rests upon the orienting reflex and narrative transportation. The human central nervous system filters out routine stimuli through sensory gating, responding only when an external input deviates from expected patterns. Once the orienting reflex interrupts passive skimming, the interest and desire segments trigger narrative transportation, enabling the reader to mentally simulate the operational relief of adopting the proposed mechanism before committing to the final action.",
+      "example": {
+        "bland": "Our enterprise database provides robust performance monitoring tools. You can track latency and query metrics across multi-region clusters with ease. Improve database efficiency and eliminate slow queries with our automated system. Sign up today for a demo.",
+        "optimized": "Nine out of ten distributed database failures stem from unindexed query drift—invisible until checkout times quadruple. Our telemetry engine samples active queries every 400 microseconds, mapping query execution paths against memory allocation in real time. Engineering leads at three Tier-1 payment platforms reduced p99 query latency from 840ms to 12ms within 48 hours of installation. Deploy the lightweight collector agent across your staging cluster in 4 minutes."
+      },
+      "exampleOptimizedLen": 468,
+      "template": "[Attention: Provocative metric, shocking industry truth, or bold contrarian assertion] [Interest: Contextualize why the status quo failed; explain the underlying technical or economic mechanism driving this issue in 2–3 sentences] [Desire: Present the transformed end-state. Introduce verified proof points, explicit metrics, and tangible operational outcomes experienced by peers] [Proof Point 1: Quantitative baseline vs. result] [Proof Point 2: Specific operational friction eradicated] [Action: Precise directive specifying the friction-free first step, execution time, and immediate deliverable]"
+    },
+    {
+      "id": "CPY-02",
+      "formulaId": "ST-02",
+      "phase": "Structural Formulas",
+      "name": "PAS",
+      "surface": "Pain-Focused Landing Pages, Cold Email",
+      "mechanism": "Loss Aversion & Negative Reinforcement",
+      "scope": "Grade 6–8; Modular section (100–400 words)",
+      "blueprint": true,
+      "blueprintProse": "The PAS framework distributes copy to surface and agitate operational bottlenecks. The Problem component accounts for 25% of the total word budget, defining an immediate, recognizable operational friction in the customer's native vernacular. The Agitate phase is the structural anchor, demanding 45% of the copy to expose the compounding, systemic consequences of leaving the problem unresolved. The Solve phase concludes the unit at 30% of the word count, presenting the product as the single logical mechanism capable of defusing the agitated friction. \nPAS is driven by prospect theory and loss aversion. Behavioral economics demonstrates that the disutility of an unaddressed loss is perceived as roughly twice as motivating as the utility of an equivalent gain. Agitation elevates cognitive dissonance and emotional arousal, preventing the prospect from rationalizing delay and priming them to embrace the presented solution.",
+      "example": {
+        "bland": "Managing cloud infrastructure costs is difficult for growing engineering teams. Cloud bills often exceed forecasts, leading to budget problems and friction with the finance department. Our FinOps platform helps you monitor spending and save money on your cloud provider.",
+        "optimized": "AWS infrastructure bills arrived 22% over forecast again this month. Finance is demanding line-item justification for Kubernetes cluster scaling, while engineering managers waste 14 hours every sprint reverse-engineering unallocated compute spikes instead of shipping core roadmap features. Continuing to absorb this drag means cutting headcount or deferring product launches. Our FinOps engine reconciles real-time container utilization directly with cloud billing APIs, automatically terminating orphaned compute nodes."
+      },
+      "exampleOptimizedLen": 521,
+      "template": "[Problem: Name the immediate, undeniable operational pain point in the prospect's native terminology] [Agitate: Expose the compounding damage. Detail how this unresolved problem spreads into secondary bottlenecks, creates financial waste, or causes internal conflict. Quantify the hidden costs over 30, 60, and 90 days] [Solve: Reveal the proprietary or definitive mechanism that eliminates the root cause of the friction. Show the direct path to equilibrium]"
+    },
+    {
+      "id": "CPY-03",
+      "formulaId": "ST-03",
+      "phase": "Structural Formulas",
+      "name": "BAB",
+      "surface": "Case Studies, Email Pitches, Hero Sections",
+      "mechanism": "Contrast Principle & Counterfactual Simulation",
+      "scope": "Grade 6–7; Concise block (80–250 words)",
+      "blueprint": true,
+      "blueprintProse": "The BAB framework balances its structure into three balanced sections: 35% dedicated to Before, 35% to After, and 30% to the Bridge. The Before section grounds the narrative in the reader's current reality, marked by manual toil and inefficiencies. The After section constructs an alternative reality where those operational burdens have been eradicated. The Bridge introduces the specific technology, methodology, or tool that connects the painful baseline to the frictionless outcome. \nThe cognitive foundation of BAB relies on perceptual contrast and counterfactual simulation. By establishing an explicit contrast between the baseline and the transformed state, the copy exploits the brain's anchoring tendencies. Counterfactual thinking creates cognitive dissonance between the user's current situation and their potential future, transforming the product into an indispensable conduit for progress.",
+      "example": {
+        "bland": "Writing documentation manually takes a lot of time. Our automated generator turns your internal source code into clean documentation sites quickly and easily, saving your developers time and keeping content up to date.",
+        "optimized": "Your senior systems architects spend Fridays manually writing API reference markdown while pull requests pile up unreviewed. Imagine continuous deployment where every merged commit automatically builds, verifies, and publishes interactive API documentation without an engineer typing a single explanatory sentence. Our schema-driven static documentation compiler synchronizes your OpenAPI specifications directly into high-speed search portals on every git push."
+      },
+      "exampleOptimizedLen": 462,
+      "template": "[The Baseline: Describe the current, frustrating day-to-day reality, emphasizing the manual hours consumed and the recurring friction points] [The Transformation: Depict the frictionless, automated future state where the baseline drag is entirely removed and high-leverage outcomes are standard] [The Bridge: Introduce the product/system as the deterministic operational pipeline that transitions the user from the baseline to the transformed state]"
+    },
+    {
+      "id": "CPY-04",
+      "formulaId": "ST-04",
+      "phase": "Structural Formulas",
+      "name": "QUEST",
+      "surface": "Educational Email Sequences, Webinars",
+      "mechanism": "Framing Effect & Progressive Commitment",
+      "scope": "Grade 8–9; Long-form narrative (500–2,000 words)",
+      "blueprint": true,
+      "blueprintProse": "The QUEST framework organizes long-form educational copy through five distinct communicative blocks. Qualify opens the copy with 15% of the total budget, identifying who the material is for while filtering out inappropriate prospects. Understand takes 20%, establishing empathy through granular articulation of the reader's operational bottlenecks. Educate forms the intellectual core with 30%, teaching an analytical model or exposing a structural industry misconception. Stimulate occupies 20%, detailing the quantitative leverage achieved when the educational principle is applied. Transition completes the final 15%, guiding the reader from conceptual agreement to commercial engagement. \nQUEST leverages framing theory and commitment consistency. By educating prospects and delivering objective insights before asking for capital, the author activates the reciprocity norm. The systematic qualification sequence also triggers in-group status validation: readers who match the qualification criteria feel compelled to maintain consistency with that high-value professional identity.",
+      "example": {
+        "bland": "Are you a software founder trying to improve retention? Retention is hard, but by using customer feedback loops, you can improve retention. We teach you how to build product feedback loops that retain users. Enroll in our course today.",
+        "optimized": "This architectural masterclass is exclusively for post-Series A technical founders whose 90-day Net Revenue Retention is sliding below 105%. We understand the exhaustion of shipping customer-requested features every sprint, only to watch churn hold flat while engineering complexity compounds. The root cause is the \"Feature Trajectory Fallacy\": building custom requests for departing accounts instead of reinforcing the behavioral habit loops of top-decile retained cohorts. When engineering transitions from backlog reactivity to algorithmic telemetry loops, activation spikes by 34% within single reporting periods. Review the complete curriculum and reserve an onboarding cohort slot."
+      },
+      "exampleOptimizedLen": 688,
+      "template": "Target: [Qualify: Specify exactly who this analysis is for, citing company scale, title, or structural challenge] [Understand: Detail the systemic frustrations unique to this group. Demonstrate mastery of their internal vocabulary and constraints] [Educate: Expose the structural flaw in how the industry conventionally solves this issue. Introduce a foundational mental model or algorithmic principle] [Stimulate: Demonstrate what operational leverage looks like once this mechanism is implemented, citing concrete performance shifts] [Transition: Bridge directly into the vehicle that implements this mechanism: schedule, audit, or purchase]"
+    },
+    {
+      "id": "CPY-05",
+      "formulaId": "ST-05",
+      "phase": "Structural Formulas",
+      "name": "4 Ps",
+      "surface": "High-Ticket Offers, Direct Mail",
+      "mechanism": "Mental Accounting & Vividness Effect",
+      "scope": "Grade 7–8; Medium-form sales page (400–1,200 words)",
+      "blueprint": true,
+      "blueprintProse": "The 4 Ps framework distributes its word count across four components: Picture (30%), Promise (20%), Prove (35%), and Push (15%). The Picture phase creates an immersive mental scenario of operational freedom. The Promise section states an explicit, falsifiable business or performance claim. The Prove component provides rigorous empirical substantiation via benchmarks, customer data, and system telemetry. The Push section concludes the copy with an immediate, incentive-backed call to action. \nThe behavioral efficacy of the 4 Ps relies on the vividness effect and mental accounting. Concrete, sensory imagery is encoded and recalled more efficiently than abstract technical assertions, lowering cognitive processing resistance. Once vividness establishes initial emotional salience, empirical proof satisfies analytical scrutiny, allowing the prospect to justify the purchase decision rationally.",
+      "example": {
+        "bland": "Picture a workplace where you never have to deal with broken builds. We promise our CI/CD runner is faster and more reliable than the alternatives. It has been tested by top engineering organizations. Sign up now before the current pricing tier ends.",
+        "optimized": "Picture your deployment dashboard running entirely in solid green: fifty microservices testing, compiling, and pushing to staging without a single hanging worker or flaky container restart. We guarantee that your enterprise CI test suites will complete in under 180 seconds—or you do not pay. Benchmarked against 1.2 million pipeline hours across 450 engineering organizations, our bare-metal kernel orchestration reduced failed pipeline retries by 94.2%. Onboard your engineering team this week before current compute allocations close for the quarter."
+      },
+      "exampleOptimizedLen": 553,
+      "template": "[Picture: Paint a detailed, sensory, day-in-the-life depiction of the ultimate transformed state, free from everyday operational failure] [Promise: Declare an absolute, measurable performance standard guaranteed by the product] [Prove: Document verifiable evidence, statistical validation, system benchmarks, and customer reference data] [Push: Provide a direct call to action backed by genuine structural scarcity or deadline-driven incentive]"
+    },
+    {
+      "id": "CPY-06",
+      "formulaId": "ST-06",
+      "phase": "Structural Formulas",
+      "name": "FAB",
+      "surface": "Product Feature Cards, Pricing Tiers",
+      "mechanism": "Means-End Chain Theory",
+      "scope": "Grade 8–10; Micro-units (30–80 words per card)",
+      "blueprint": true,
+      "blueprintProse": "The FAB unit divides its micro-budget into Feature (25%), Advantage (35%), and Benefit (40%). The Feature identifies an objective structural or technological attribute of the product. The Advantage explains the mechanical utility of that feature compared to legacy alternatives. The Benefit translates that mechanical utility into meaningful financial, temporal, or strategic improvements for the human operator. \nFAB is grounded in means-end chain theory. Decision-makers do not purchase functional features; they purchase the emotional and practical values that those features facilitate. By explicitly bridging technical architecture to tangible business outcomes, the FAB sequence guides the prospect's cognitive appraisal from functional comprehension to personal valuation.",
+      "example": {
+        "bland": "Feature: Rust-based backend architecture. Advantage: It is faster and uses less memory. Benefit: Saves server costs for your company.",
+        "optimized": "Built on an asynchronous, memory-safe Rust execution kernel (Feature), preventing garbage collection pauses and processing 120,000 concurrent network transactions per second on a single thread (Advantage). This eliminates infrastructure overprovisioning, reducing monthly cloud runtime expenses by up to 60% while insulating engineering teams from Sev-1 latency outages (Benefit)."
+      },
+      "exampleOptimizedLen": 380,
+      "template": "Feature: [Technical architecture, physical dimension, or concrete operational mechanism] Advantage: [Why this architectural choice out-executes conventional industry approaches in speed, capacity, or security] Benefit: [The downstream consequence for the user: time saved, overhead eliminated, or organizational status amplified]"
+    },
+    {
+      "id": "CPY-07",
+      "formulaId": "ST-07",
+      "phase": "Structural Formulas",
+      "name": "ACCA",
+      "surface": "Non-Profit Appeals, High-Consideration B2B",
+      "mechanism": "Diagnostic Cognitive Processing",
+      "scope": "Grade 8–10; Persuasive narrative (300–800 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-08",
+      "formulaId": "ST-08",
+      "phase": "Structural Formulas",
+      "name": "PASTOR",
+      "surface": "Comprehensive Sales Pages, Long-Form VSLs",
+      "mechanism": "Social Identity & Empathic Alignment",
+      "scope": "Grade 7–9; Comprehensive architecture (800–3,000 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-09",
+      "formulaId": "ST-09",
+      "phase": "Structural Formulas",
+      "name": "Star-Story-Solution",
+      "surface": "Editorial Ads, Founder Story Pages",
+      "mechanism": "Narrative Transportation & In-Group Favoritism",
+      "scope": "Grade 6–8; Narrative arc (400–1,000 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-10",
+      "formulaId": "ST-10",
+      "phase": "Structural Formulas",
+      "name": "String of Pearls",
+      "surface": "Social Proof Walls, Long Sales Pitches",
+      "mechanism": "Anchoring-and-Adjustment & Proof Cascades",
+      "scope": "Grade 6–8; Cumulative list (150–600 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-11",
+      "formulaId": "ST-11",
+      "phase": "Structural Formulas",
+      "name": "Danny Iny’s 6+1",
+      "surface": "High-Friction SaaS Conversions",
+      "mechanism": "Cognitive Dissonance & Action Priming",
+      "scope": "Grade 7–8; Structured landing page (250–600 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-12",
+      "formulaId": "ST-12",
+      "phase": "Structural Formulas",
+      "name": "AIDCA / IDCA",
+      "surface": "Enterprise Landing Pages, Quote Flows",
+      "mechanism": "Risk-Mitigating Credibility Verification",
+      "scope": "Grade 8–10; Medium-form conversion copy (300–900 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-13",
+      "formulaId": "HL-01",
+      "phase": "Headlines & Hooks",
+      "name": "How-To with a Twist",
+      "surface": "Blog Posts, Lead Magnet Landing Pages",
+      "mechanism": "Curiosity Gap & Self-Efficacy Expectation",
+      "scope": "Grade 5–7; Headline (8–16 words)",
+      "blueprint": true,
+      "blueprintProse": "The How-To with a Twist formula pairs a highly desired operational milestone with the elimination of a painful friction point traditionally required to achieve it. The component ratio allocates 50% of the headline to the objective outcome and 50% to the removal of the expected trade-off. \nIts cognitive mechanism relies on curiosity gap induction and risk compensation. Standard how-to headlines frequently trigger fatigue because the reader assumes the path to achievement requires significant effort and sacrifice. By eliminating the expected negative trade-off, the hook introduces an information gap regarding how such an outcome is possible without the standard cost.",
+      "example": {
+        "bland": "How to write automated unit tests for your code.",
+        "optimized": "How to reach 100% test coverage across legacy codebases without writing manual assertions."
+      },
+      "exampleOptimizedLen": 90,
+      "template": "How to [Attain High-Value Operational Milestone] Without [Incurring Industry-Standard Penalty or Manual Drag]"
+    },
+    {
+      "id": "CPY-14",
+      "formulaId": "HL-02",
+      "phase": "Headlines & Hooks",
+      "name": "The Cliffhanger",
+      "surface": "Social Media Openers, Video Ads",
+      "mechanism": "Zeigarnik Effect (Unclosed Cognitive Tension)",
+      "scope": "Grade 5–7; Single sentence (7–14 words)",
+      "blueprint": true,
+      "blueprintProse": "The Cliffhanger hook deliberately withholds the outcome or concluding mechanism of an escalating narrative. The word count stays concise, between 7 and 14 words, split evenly between narrative momentum (50%) and the withheld conclusion (50%). \nThis hook is driven by the Zeigarnik effect, which observes that uncompleted tasks or unresolved narrative sequences produce persistent cognitive tension within working memory. The reader's cognitive equilibrium is temporarily destabilized, compelling them to consume the subsequent body copy to resolve the narrative tension.",
+      "example": {
+        "bland": "A security breach happened at a major bank yesterday.",
+        "optimized": "When their root certificates expired at 2:00 AM, the engineering team made one fatal command line mistake."
+      },
+      "exampleOptimizedLen": 106,
+      "template": "When [Expected Operational Routine Failed], [Protagonist/Team] Tried [Unconventional Action]—And Then [Unintended Consequence Emerged]"
+    },
+    {
+      "id": "CPY-15",
+      "formulaId": "HL-03",
+      "phase": "Headlines & Hooks",
+      "name": "The Paradox / Secret Revealer",
+      "surface": "Thought Leadership, Ad Creative",
+      "mechanism": "Schema Incongruity Resolution",
+      "scope": "Grade 6–8; Headline (6–12 words)",
+      "blueprint": true,
+      "blueprintProse": "The Paradox hook exposes a contradiction within established industry workflows. The formula dedicates 40% of its space to naming a widely accepted best practice and 60% to revealing how that practice causes the exact failure it was implemented to prevent. \nIts effectiveness is rooted in schema incongruity resolution. When sensory or intellectual inputs directly conflict with existing cognitive mental models, the brain registers an error signal, elevating alertness to reconcile the contradiction.",
+      "example": {
+        "bland": "Why you should stop micro-optimizing your database.",
+        "optimized": "Why adding database read-replicas is quietly tripling your p99 latency during traffic spikes."
+      },
+      "exampleOptimizedLen": 93,
+      "template": "Why [Standard Industry Best Practice] Is Secretly [Accelerating the Unintended Negative Outcome]"
+    },
+    {
+      "id": "CPY-16",
+      "formulaId": "HL-04",
+      "phase": "Headlines & Hooks",
+      "name": "Specific Numbers Guarantee",
+      "surface": "Paid Search Landing Pages, Performance Tools",
+      "mechanism": "Ambiguity Aversion & Specificity Heuristic",
+      "scope": "Grade 5–7; Headline + Subhead (10–20 words)",
+      "blueprint": true,
+      "blueprintProse": "This formula combines precise performance integers, bounded time horizons, and complete risk reversals. The structural ratio divides into 40% for the exact performance metric, 25% for the timeframe, and 35% for the risk reversal. \nThis pattern activates ambiguity aversion and the specificity heuristic. Humans subconsciously interpret rounded figures as approximations or promotional exaggerations. In contrast, irregular integers signal precise telemetry and verifiable data, reassuring risk-averse evaluators.",
+      "example": {
+        "bland": "We make your website load faster or your money back.",
+        "optimized": "Cut your mobile checkout page render speed below 750ms in 14 days, or you pay nothing."
+      },
+      "exampleOptimizedLen": 86,
+      "template": "[Eradicate / Achieve Exact Metric Integer] Within [Precise Number of Days/Hours], or [Asymmetric Risk-Reversal Concession]"
+    },
+    {
+      "id": "CPY-17",
+      "formulaId": "HL-05",
+      "phase": "Headlines & Hooks",
+      "name": "Social Proof Anchor",
+      "surface": "Homepage Banners, Hero Headlines",
+      "mechanism": "Bandwagon Effect & Authority Bias",
+      "scope": "Grade 6–8; Headline (8–15 words)",
+      "blueprint": true,
+      "blueprintProse": "The Social Proof Anchor leads with verified cohort adoption figures. The formula allocates 30% to the verified peer quantity, 30% to precise persona identifiers, and 40% to the business transformation achieved. \nThe cognitive foundation is the bandwagon effect and authority bias. In high-stakes enterprise environments, decision-makers face professional risk when choosing unrecognized solutions. Displaying verified adoption metrics from industry peers provides psychological safety and social validation.",
+      "example": {
+        "bland": "Many companies use our database management software.",
+        "optimized": "How 4,120 DevOps architects maintain 99.999% uptime across Kubernetes without on-call pages."
+      },
+      "exampleOptimizedLen": 92,
+      "template": "How [Exact Count] [Precise Job Titles/Organizations] Use [Underlying Mechanism] to [Attain Verifiable Metric]"
+    },
+    {
+      "id": "CPY-18",
+      "formulaId": "HL-06",
+      "phase": "Headlines & Hooks",
+      "name": "Diagnostic Question Hook",
+      "surface": "Paid Search Ads, Retargeting Landers",
+      "mechanism": "Self-Referencing Effect & Cognitive Dissonance",
+      "scope": "Grade 5–7; Interrogative header (6–12 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-19",
+      "formulaId": "HL-07",
+      "phase": "Headlines & Hooks",
+      "name": "If-Then Conditional",
+      "surface": "Cold Prospecting, Contextual Ads",
+      "mechanism": "Asymmetric Upside Framing & Prospect Theory",
+      "scope": "Grade 6–8; Conditional sentence (10–18 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-20",
+      "formulaId": "HL-08",
+      "phase": "Headlines & Hooks",
+      "name": "Mistake / Warning Hook",
+      "surface": "Organic Content Hooks, Editorial Leads",
+      "mechanism": "Extreme Loss Aversion & Negativity Bias",
+      "scope": "Grade 5–7; Alert statement (7–13 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-21",
+      "formulaId": "HL-09",
+      "phase": "Headlines & Hooks",
+      "name": "Little-Known Secret Mechanism",
+      "surface": "Direct Mail, Information Products",
+      "mechanism": "Information Asymmetry & Privilege Heuristic",
+      "scope": "Grade 7–8; Narrative headline (9–17 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-22",
+      "formulaId": "HL-10",
+      "phase": "Headlines & Hooks",
+      "name": "Reason-Why Anchor",
+      "surface": "Technical Products, Developer Tools",
+      "mechanism": "Placebo Effect of Justification (\"Because\" Trigger)",
+      "scope": "Grade 7–9; Explanatory hook (10–18 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-23",
+      "formulaId": "HL-11",
+      "phase": "Headlines & Hooks",
+      "name": "Contrarian Category Rejection",
+      "surface": "Category Creation Startups, Manifestos",
+      "mechanism": "Cognitive Disruption & Reactance Theory",
+      "scope": "Grade 5–7; Antithetical claim (8–14 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-24",
+      "formulaId": "HL-12",
+      "phase": "Headlines & Hooks",
+      "name": "Outcome-Without-Sacrifice",
+      "surface": "B2B SaaS Heroes, App Value Propositions",
+      "mechanism": "Friction Elimination & Trade-off Resistance",
+      "scope": "Grade 5–7; Formulaic claim (8–15 words)",
+      "blueprint": true,
+      "blueprintProse": "This framework links an ambitious operational achievement to the absolute preservation of a resource typically sacrificed during execution. Structurally, 30% defines the category, 35% articulates the outcome, and 35% eliminates the expected compromise. \nThe cognitive driver is trade-off resistance. High-consideration buyers frequently stall when forced to balance conflicting priorities, such as development velocity versus security compliance. Promising the primary outcome while guaranteeing zero compromise on secondary priorities removes this decision friction.",
+      "example": {
+        "bland": "Fast and secure compliance platform for modern teams.",
+        "optimized": "Enterprise SOC 2 automation that passes security audits in 14 days without slowing engineering sprint velocity."
+      },
+      "exampleOptimizedLen": 111,
+      "template": "The [Category Definition] That [Unlocks Primary Metric]—Without [The Historic Compromise Associated with the Category]"
+    },
+    {
+      "id": "CPY-25",
+      "formulaId": "UX-01",
+      "phase": "Product Microcopy",
+      "name": "Value Proposition Matrix",
+      "surface": "Hero Fold, Positioning Headers",
+      "mechanism": "Cognitive Ease & Mental Model Alignment",
+      "scope": "Grade 6–8; Hero container (20–45 words)",
+      "blueprint": true,
+      "blueprintProse": "The Value Proposition Matrix serves as the cognitive anchor for landing page hero sections and product headers. It breaks down into three key elements: a target identifier defining the specific user segment (20%), a clear statement of the operational friction endured (35%), and an explanation of the differentiated mechanism providing relief (45%). \nThis matrix operates via cognitive ease and self-categorization theory. Online users scan digital interfaces within milliseconds; explicitly stating the target audience and operational mechanism allows evaluators to immediately recognize relevance and proceed through the conversion funnel.",
+      "example": {
+        "bland": "All-in-one Project Management We help engineering teams collaborate better and track tasks efficiently with our modern workflow dashboard.",
+        "optimized": "The Linear Git Integration for Autonomous Systems Engineers Stop reconciling GitHub issues against Jira tickets manually. Automatically transition sprint status, resolve bugs, and sync PR reviews straight from terminal commits."
+      },
+      "exampleOptimizedLen": 227,
+      "template": "The [Category] Built Exclusively for [Target Persona] [Stop enduring / Eliminate [Core Structural Pain]]. Automatically [Deliver Differentiated Outcome] through [Proprietary Execution Mechanism]."
+    },
+    {
+      "id": "CPY-26",
+      "formulaId": "UX-02",
+      "phase": "Product Microcopy",
+      "name": "Action + Benefit Button CTA",
+      "surface": "Interactive Conversion Components",
+      "mechanism": "Instrumental Conditioning & Agency Affirmation",
+      "scope": "Grade 4–6; Micro-unit (2–6 words)",
+      "blueprint": true,
+      "blueprintProse": "The Action + Benefit CTA restricts its footprint to a concise 2 to 6 words. Structurally, 40% of the token space contains a first-person active imperative verb, while 60% states the immediate asset or state acquired. \nIts psychological driver is instrumental conditioning and agency affirmation. Generic commands like \"Submit\" or \"Click Here\" focus user attention on cognitive effort and submission. In contrast, linking the action directly to an immediate benefit transforms the button click into an empowering act of acquisition.",
+      "example": {
+        "bland": "Submit.",
+        "optimized": "Build My Production Cluster."
+      },
+      "exampleOptimizedLen": 28,
+      "template": "[Imperative Action Verb] My [Descriptive Deliverable / Immediate Utility State]"
+    },
+    {
+      "id": "CPY-27",
+      "formulaId": "UX-03",
+      "phase": "Product Microcopy",
+      "name": "Blank-State Guidance",
+      "surface": "Dashboards, First-Time User Experience",
+      "mechanism": "Goal-Gradient Effect & Activation Energy Relief",
+      "scope": "Grade 5–7; Empty state container (25–60 words)",
+      "blueprint": true,
+      "blueprintProse": "Blank-state interfaces distribute their word budget across three primary tasks: confirming zero-state status (25%), introducing the operational leverage unlocked upon setup (35%), and providing a single call-to-action to begin onboarding (40%). \nThis pattern leverages the goal-gradient effect and minimizes activation energy. Encountering an unpopulated application screen often induces choice paralysis and user confusion. Structuring the blank state as a clear launching pad with a guided onboarding step accelerates time-to-value and drives early product adoption.",
+      "example": {
+        "bland": "No API Keys Created Yet You have not generated any secret keys. Click the button below if you want to make an API key for your account.",
+        "optimized": "Zero Live Production Keys Configured Generate your first read-only authentication token to begin querying telemetry endpoints over encrypted TLS. Integrates in 60 seconds via our curl quickstart. [Generate Production Key →]"
+      },
+      "exampleOptimizedLen": 223,
+      "template": "No [Domain Objects] Configured Yet Add your first [Domain Object] to unlock [Concrete Operational Automation]. Setup takes under [X] minutes. [ + Create My First [Domain Object] ]"
+    },
+    {
+      "id": "CPY-28",
+      "formulaId": "UX-04",
+      "phase": "Product Microcopy",
+      "name": "Friction-Reducing Reassurances",
+      "surface": "Form Terminus, Checkout Under-buttons",
+      "mechanism": "Ambiguity Aversion & Perceived Risk Defusal",
+      "scope": "Grade 4–6; Micro-string (4–12 words)",
+      "blueprint": true,
+      "blueprintProse": "Positioned directly adjacent to conversion inputs, this micro-unit uses a brief 4 to 12 words to neutralize last-minute hesitation. It covers three key reassurances: confirming trial freedom (33%), removing credit card requirements (33%), and stating setup brevity (34%). \nThis unit addresses ambiguity aversion and pre-conversion micro-anxiety. Users at the point of action often worry about hidden financial commitments or complex onboarding workflows. Placing clear reassurances adjacent to conversion triggers defuses perceived risk and preserves momentum.",
+      "example": {
+        "bland": "Terms and conditions apply. Free trial.",
+        "optimized": "14-day free sandbox • No credit card required • Deploy with 1 line of bash."
+      },
+      "exampleOptimizedLen": 75,
+      "template": "[No Credit Card Required] • [X-Day Zero-Risk Trial] • [Setup in Under X Minutes]"
+    },
+    {
+      "id": "CPY-29",
+      "formulaId": "UX-05",
+      "phase": "Product Microcopy",
+      "name": "Blameless Error Notification",
+      "surface": "System Exception Handlers, Alerts",
+      "mechanism": "Attribution Bias & Locus of Control Maintenance",
+      "scope": "Grade 6–7; Alert banner (15–35 words)",
+      "blueprint": true,
+      "blueprintProse": "Blameless error messages divide their content into three balanced components: an objective status description (30%), a technical cause statement (30%), and an immediate remediation pathway (40%). \nThis approach is grounded in attribution theory and locus-of-control preservation. Accusatory error messages trigger frustration and defense mechanisms, often causing users to abandon the application. Framing errors as neutral system conditions paired with direct remediation links maintains user composure and workflow efficiency.",
+      "example": {
+        "bland": "Error 403: Invalid Submission You entered an incompatible JSON payload format. Correct your mistakes and resubmit the form.",
+        "optimized": "JSON Schema Validation Halted The payload was missing the required \"environment_id\" string on line 42. Insert the project identifier to resume compilation. [View Documentation Reference] or [Auto-Fix Schema Formatting]"
+      },
+      "exampleOptimizedLen": 218,
+      "template": "[System Process Interrupted: Objective statement of the halted state] [System Cause: The precise syntactic, network, or data discrepancy detected]. [Actionable Resolution: Provide an immediate executable path or remediation button to resume]."
+    },
+    {
+      "id": "CPY-30",
+      "formulaId": "UX-06",
+      "phase": "Product Microcopy",
+      "name": "Contextual Tooltip Guider",
+      "surface": "Feature Discovery, Complex UX Workflows",
+      "mechanism": "Progressive Disclosure & Cognitive Load Reduction",
+      "scope": "Grade 5–7; Tooltip overlay (12–28 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-31",
+      "formulaId": "UX-07",
+      "phase": "Product Microcopy",
+      "name": "Feature Gate / Upgrade Modal",
+      "surface": "Freemium Upgrade Prompts, Soft Paywalls",
+      "mechanism": "Endowed Progress Effect & Sunk Cost Salience",
+      "scope": "Grade 6–8; Modal container (40–90 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-32",
+      "formulaId": "UX-08",
+      "phase": "Product Microcopy",
+      "name": "Input Field Inline Safeguard",
+      "surface": "Sensitive Form Fields (Billing, Security)",
+      "mechanism": "Privacy Preservation & Defensive Posturing Defusal",
+      "scope": "Grade 5–6; Helper label (5–15 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-33",
+      "formulaId": "UX-09",
+      "phase": "Product Microcopy",
+      "name": "Plan Recommendation Badge",
+      "surface": "SaaS Pricing Tables, Subscription Tiers",
+      "mechanism": "Default Bias & Compromise Effect",
+      "scope": "Grade 5–7; Badge + Callout (8–20 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-34",
+      "formulaId": "UX-10",
+      "phase": "Product Microcopy",
+      "name": "Optimistic Inline Status Snack",
+      "surface": "Async Process Completion, Save States",
+      "mechanism": "Feedback Loop Closure & Temporal Discounting",
+      "scope": "Grade 4–6; Transient banner (4–10 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-35",
+      "formulaId": "UX-11",
+      "phase": "Product Microcopy",
+      "name": "Exit-Intent Preservation Defusal",
+      "surface": "Abandoned Form Recovery, Session Retention",
+      "mechanism": "Endowment Effect & Work Sunk-Cost Capitalization",
+      "scope": "Grade 5–7; Interstitial dialog (20–50 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-36",
+      "formulaId": "UX-12",
+      "phase": "Product Microcopy",
+      "name": "Subscription Pause/Downgrade",
+      "surface": "Cancellation Checkout Flows",
+      "mechanism": "Friction Asymmetry & Reactance Mitigation",
+      "scope": "Grade 6–8; Offboarding step (35–80 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-37",
+      "formulaId": "CR-01",
+      "phase": "Clarity & Rhythm",
+      "name": "Active Transmutation",
+      "surface": "Document-Wide Stylistic Heuristic",
+      "mechanism": "Cognitive Processing Fluency & Agency Clarity",
+      "scope": "Grade 5–8; Syntactic standard",
+      "blueprint": true,
+      "blueprintProse": "Active Transmutation systematically converts passive constructions into active voice: [Agent/Subject] + [Transitive Verb] + [Direct Object]. It eliminates passive auxiliary verbs and trailing prepositions, ensuring that sentences clearly identify who is taking action. \nNeurolinguistic research reveals that the human brain processes subject-verb-object structures with lower metabolic cognitive load than inverted passive arrangements. Passive sentences obscure agency, causing minor interpretive delays that dilute persuasive impact. Active constructions establish clear agency, improving reading comprehension and driving user momentum.",
+      "example": {
+        "bland": "Scalable data infrastructure is built by our engineers, and cloud configurations are monitored continuously by the automation platform to prevent downtime.",
+        "optimized": "Our engineers build scalable data infrastructure. The automation platform monitors your cloud configurations 24/7 to prevent downtime."
+      },
+      "exampleOptimizedLen": 134,
+      "template": "Transform: [Object] is operated by [Agent] [Agent] [Direct Active Action Verb] [Object] [Measurable Consequence]"
+    },
+    {
+      "id": "CPY-38",
+      "formulaId": "CR-02",
+      "phase": "Clarity & Rhythm",
+      "name": "Polysyllabic Fog Pruning",
+      "surface": "Technical Marketing, Sales Enablement",
+      "mechanism": "Cognitive Strain Elimination & Fluency Heuristic",
+      "scope": "Gunning Fog < 8.0; Lexical constraint",
+      "blueprint": true,
+      "blueprintProse": "This heuristic regulates vocabulary complexity to maintain a Gunning Fog index below 8.0. It identifies words of three or more syllables and replaces them with direct Germanic alternatives. The standard mathematical formulation for Gunning Fog balances sentence length with complex word frequency: \nFog \\= 0.4 \\left[ \\left(\\frac{\\text{total words}}{\\text{total sentences}}\\right) + 100 \\left(\\frac{\\text{complex words}}{\\text{total words}}\\right) \\right] \nwhere complex words exclude proper nouns, hyphenated compounds, and standard jargon. \nThe behavioral driver is cognitive fluency. Readers subconsciously associate processing difficulty with low credibility and deceptive intent. Pruning polysyllabic bloat reduces cognitive strain, increasing both content recall and reader trust.",
+      "example": {
+        "bland": "Organizations must leverage comprehensive enterprise orchestration capabilities in order to facilitate synergistic cross-functional departmental communication.",
+        "optimized": "Teams must use clear automated tools to talk directly across departments and ship faster."
+      },
+      "exampleOptimizedLen": 89,
+      "template": "Scan text block for tokens >= 3 syllables. Substitute Latinate abstractions with monosyllabic or bisyllabic Germanic verbs and nouns Target: Sentence length <= 14 words. Complex words <= 6% of total token density."
+    },
+    {
+      "id": "CPY-39",
+      "formulaId": "CR-03",
+      "phase": "Clarity & Rhythm",
+      "name": "Conversational Bucket Brigades",
+      "surface": "Long-Form Technical and Marketing Copy",
+      "mechanism": "Narrative Inertia & Information Foraging Continuation",
+      "scope": "Grade 4–6; Punctuation/Transition connectors (2–6 words)",
+      "blueprint": true,
+      "blueprintProse": "Bucket Brigades are brief transition phrases—often terminating in a colon—that break up dense arguments. Standard expressions include \"Here is why:\", \"Look at it this way:\", \"The takeaway:\", and \"It gets worse:\". They typically occupy 1 to 4 words. \nThis device leverages information foraging theory and micro-commitments. Digital audiences read in quick, F-shaped scanning sweeps. Short, isolated bridge lines interrupt these rapid skimming patterns, pulling the reader's eye downward into the substantive explanation that follows.",
+      "example": {
+        "bland": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt because your developers end up spending more time patching dependencies than shipping user features. This costs organizations hundreds of thousands of dollars annually.",
+        "optimized": "Deploying legacy enterprise architectures inevitably leads to severe operational technical debt. Here is why: Your developers end up spending more time patching dependencies than shipping revenue-generating features. It gets worse. This misallocation quietly burns over $300,000 in unrecoverable payroll every single quarter."
+      },
+      "exampleOptimizedLen": 325,
+      "template": "[Dense Structural Argument / High-Level Observation]. [Bucket Brigade Connector:] [Direct, Surprising, or Visceral Downstream Implication]."
+    },
+    {
+      "id": "CPY-40",
+      "formulaId": "CR-04",
+      "phase": "Clarity & Rhythm",
+      "name": "Tricolon Harmonic Grouping",
+      "surface": "Structural Bullet Points, Value Pillars",
+      "mechanism": "Miller's Law (Chunking) & Aesthetic Fluency",
+      "scope": "Grade 6–8; Tripartite phrase syntax",
+      "blueprint": true,
+      "blueprintProse": "Tricolon Harmonic Grouping structures core arguments into three parallel grammatical units sharing equivalent meter and syntactic cadence. The standard pattern follows: [Imperative Verb + Target Object], [Imperative Verb + Target Object], and [Imperative Verb + Target Object]. \nThis pattern is rooted in Miller's Law and cognitive chunking heuristics. Human working memory processes small chunks of information with peak efficiency. Three items form the smallest sequence necessary to create a recognizable rhythmic pattern, balancing rhetorical completeness with minimal cognitive load.",
+      "example": {
+        "bland": "Our application helps with streamlining your everyday engineering tasks, provides security for code repositories, and increases team happiness.",
+        "optimized": "Automate your deployment pipelines. Secure your core repositories. Accelerate your engineering delivery."
+      },
+      "exampleOptimizedLen": 104,
+      "template": "[Imperative Verb A] [Target Object A] [Imperative Verb B] [Target Object B] [Imperative Verb C] [Target Object C]"
+    },
+    {
+      "id": "CPY-41",
+      "formulaId": "CR-05",
+      "phase": "Clarity & Rhythm",
+      "name": "Provost Rhythm Variation",
+      "surface": "Core Narrative Body Copy, Manifestos",
+      "mechanism": "Auditory Cortex Entrainment & Monotony Dissolution",
+      "scope": "Alternating metrics: 5 to 25 words/sentence",
+      "blueprint": true,
+      "blueprintProse": "Provost Rhythm Variation deliberately modulates sentence lengths to create internal musicality, avoiding uniform cadences. It alternates between punchy fragments, medium declarations, and flowing compound sentences, moving between 3-word and 25-word sentences. \nThis technique relies on auditory cortex entrainment and habituation disruption. Readers subconsciously vocalize text during silent reading. Uniform sentence lengths produce a monotonous cadence that dulls reader attention, while varied lengths re-engage cognitive processing and sustain focus.",
+      "example": {
+        "bland": "Modern continuous deployment pipelines require resilient cloud servers to ensure maximum stability. Our platform continuously checks your system configuration across clusters to prevent unexpected service outages. You can install our software using a simple script to protect your environment.",
+        "optimized": "This software is fast. Dead fast. When production traffic spikes unexpectedly on a Friday afternoon, your cluster automatically absorbs the load without dropping a single websocket connection. Nothing crashes. Your on-call engineers sleep peacefully through the night."
+      },
+      "exampleOptimizedLen": 268,
+      "template": "[Short declarative sentence. 3–5 words]. [Fragment or punchy declaration. 2–3 words]. [Medium-length sentence introducing operational context and specific mechanical details. 12–15 words]. [Long, sweeping, descriptive sentence depicting the full systemic transformation, painting a rich mental image of organizational equilibrium and effortless performance. 22–28 words]. [Short concluding hammer. 4–6 words]."
+    },
+    {
+      "id": "CPY-42",
+      "formulaId": "CR-06",
+      "phase": "Clarity & Rhythm",
+      "name": "Inverted Pyramid Front-Loading",
+      "surface": "Feature Descriptions, Technical Releases",
+      "mechanism": "Attentional Decay Compensation & Scanning Laws",
+      "scope": "Grade 6–8; Paragraph structure (30–60 words)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-43",
+      "formulaId": "CR-07",
+      "phase": "Clarity & Rhythm",
+      "name": "De-Nominalization",
+      "surface": "Enterprise B2B SaaS Descriptions",
+      "mechanism": "Conceptual Concreteness & Perceptual Grounding",
+      "scope": "Grade 6–7; Verb-driven syntax",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-44",
+      "formulaId": "CR-08",
+      "phase": "Clarity & Rhythm",
+      "name": "Falsifiable Swap Rule",
+      "surface": "Value Propositions, Positioning Copy",
+      "mechanism": "Signaling Theory & Costly Signaling Verification",
+      "scope": "Grade 6–8; Differentiator assertion",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-45",
+      "formulaId": "CR-09",
+      "phase": "Clarity & Rhythm",
+      "name": "Affirmative Negation Removal",
+      "surface": "UX Copy, Conversion Guidance",
+      "mechanism": "Negation Processing Penalty Elimination",
+      "scope": "Grade 5–6; Directive sentences",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-46",
+      "formulaId": "CR-10",
+      "phase": "Clarity & Rhythm",
+      "name": "Colloquial Contraction Injection",
+      "surface": "Marketing Emails, B2B SaaS Interfaces",
+      "mechanism": "Social Proximity Theory & In-Group Tone Matching",
+      "scope": "Grade 5–7; Grammatical contraction policy",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-47",
+      "formulaId": "CR-11",
+      "phase": "Clarity & Rhythm",
+      "name": "Punctuation Cadence Gating",
+      "surface": "Short-Form Paid Ads, Hero Headlines",
+      "mechanism": "Working Memory Buffer Optimization",
+      "scope": "Strict punctuation constraint (0 em dashes, max 1 colon)",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    },
+    {
+      "id": "CPY-48",
+      "formulaId": "CR-12",
+      "phase": "Clarity & Rhythm",
+      "name": "Pronoun Ratio Balancing",
+      "surface": "Customer-Facing Pages, Documentation",
+      "mechanism": "Empathic Perspective Taking & Self-Interest Bias",
+      "scope": "3:1 ratio of \"You/Your\" to \"We/Our/I\"",
+      "blueprint": false,
+      "blueprintProse": null,
+      "example": [],
+      "exampleOptimizedLen": null,
+      "template": null
+    }
+  ],
+  "sourceFiles": {
+    "Open-Source Copywriting Research.md": "the card source: the master taxonomy plus 22 blueprints",
+    "Conversion Copywriting Split Tests.md": "supporting evidence: 15 split tests, five mechanisms, six microcopy guidelines",
+    "Copywriting Agent System Prompt.md": "supporting: an audit/rewrite workflow with readability formulas",
+    "Automated Copy Linting Rules.md": "supporting: a JSON copy-formula schema and Vale rule implementations",
+    "Copy Formula Wireframe Schematics.md": "supporting: measure, line-height and container mechanics"
+  },
+  "note": [
+    "The card source is one document of five. The taxonomy table names 48 formulas in four surfaces; the document prints a full blueprint (proportion prose, fill-in template, before/after example) for 22 of them and only the table row for the other 26. Both tiers are recorded; the 26 are not filled in from anywhere.",
+    "Card fields per record: name, formulaId, phase (surface group), deployment surface, mechanism and readability scope come from the taxonomy row, verbatim. Blueprint records add the blueprint prose, the template and the example, verbatim.",
+    "Cleaning rules, declared rather than implied: markdown escapes are unescaped (\\[ \\] \\< \\> \\+ \\_ \\* \\# \\$ \\. \\- \\! \\\\); extraction markers of the form [span_N](start_span)[span_N](end_span) are removed after unescaping; a template written inside an HTML comment is unwrapped to its text; a template emitted with a leading # is stripped to its text. Every one of those is listed in sourceDefects.",
+    "The LaTeX Gunning Fog formula in CR-02's prose is kept as source text; the deck needs a declared rendering table before it prints (see the mission SPEC).",
+    "A card that says 'the source gives no template' is the honest record of a taxonomy-only formula, not a defect to hide.",
+    "The ratio line is measured, not assumed: 17 of the 22 blueprints state component percentages in their prose (the ids are recorded under ratios); the other five blueprints and all 26 taxonomy-only records print their scope line on the front.",
+    "Medians in lengths are the upper middle value for an even sample (the value at index n/2 of the sorted list), with no interpolation; deck nine recorded the lower middle, and each inventory states its own convention rather than inheriting one."
+  ],
+  "ratios": {
+    "cards": 17,
+    "ids": [
+      "ST-01",
+      "ST-02",
+      "ST-03",
+      "ST-04",
+      "ST-05",
+      "ST-06",
+      "HL-01",
+      "HL-02",
+      "HL-03",
+      "HL-04",
+      "HL-05",
+      "HL-12",
+      "UX-01",
+      "UX-02",
+      "UX-03",
+      "UX-04",
+      "UX-05"
+    ],
+    "measure": "blueprint prose states component percentages; the five blueprints that state none (CR-01 to CR-05) and the 26 taxonomy-only records print their scope line instead"
+  }
+}

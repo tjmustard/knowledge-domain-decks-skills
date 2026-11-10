@@ -1,0 +1,272 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/copywriting-schema.json",
+  "title": "Copy Architecture card",
+  "description": "One copy formula. The fill-in template is the card: it prints verbatim on the back and is never trimmed, and a formula the source gives only as a taxonomy row says so in the template's place rather than being filled in from anywhere else.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "formulaId",
+    "name",
+    "phase",
+    "surface",
+    "mechanism",
+    "scope",
+    "blueprint",
+    "frontLine",
+    "template",
+    "origin",
+    "figure"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CPY-(0[1-9]|[1-3][0-9]|4[0-8])$"
+    },
+    "formulaId": {
+      "description": "The source's own id, printed as the front kicker: the surface prefix and the formula's position in that surface's taxonomy.",
+      "type": "string",
+      "pattern": "^(ST|HL|UX|CR)-(0[1-9]|1[0-2])$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 40
+    },
+    "phase": {
+      "enum": [
+        "Structural Formulas",
+        "Headlines & Hooks",
+        "Product Microcopy",
+        "Clarity & Rhythm"
+      ]
+    },
+    "surface": {
+      "description": "The operational surface the formula belongs on, from the taxonomy row.",
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 90
+    },
+    "mechanism": {
+      "description": "The dominant behavioural driver, from the taxonomy row. The back prints it beside the template; a card whose template leaves no room carries it in the rules file and the layout map names it.",
+      "type": "string",
+      "minLength": 15,
+      "maxLength": 70
+    },
+    "scope": {
+      "description": "Target readability and structural scope, from the taxonomy row.",
+      "type": "string",
+      "minLength": 25,
+      "maxLength": 70
+    },
+    "blueprint": {
+      "description": "Whether the source prints a full blueprint for this formula (proportion prose, template, example) or only the taxonomy row. Both tiers ship.",
+      "type": "boolean"
+    },
+    "blueprintProse": {
+      "description": "The blueprint's proportion paragraph, verbatim after the declared LaTeX rendering. It prints in the rules and the surface resource, never on the card; null where the source prints no blueprint.",
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 400,
+      "maxLength": 1500
+    },
+    "ratio": {
+      "description": "The component parts and their percentages, authored from the blueprint prose and checked against it: every label and percent must appear in blueprintProse. Absent where the prose states no percentages; the front then prints the scope line.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "percent"
+        ],
+        "properties": {
+          "label": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 40
+          },
+          "percent": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100
+          }
+        }
+      }
+    },
+    "frontLine": {
+      "description": "The line the front prints under the rule: the ratio rendered as labels and percentages where the source states them, otherwise the scope line.",
+      "type": "string",
+      "minLength": 25,
+      "maxLength": 160
+    },
+    "template": {
+      "description": "The fill-in pattern, verbatim, where the source prints one; otherwise the deck's own line saying the source prints no template for this formula. Never trimmed.",
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 900
+    },
+    "example": {
+      "description": "The blueprint's bland and optimized rewrite. Illustrative, so it lives in the artifacts and never on the card; null where the source prints no blueprint.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "additionalProperties": false,
+      "required": [
+        "bland",
+        "optimized"
+      ],
+      "properties": {
+        "bland": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 800
+        },
+        "optimized": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 900
+        }
+      }
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "authors"
+          ]
+        },
+        {
+          "required": [
+            "title"
+          ]
+        },
+        {
+          "required": [
+            "note"
+          ]
+        },
+        {
+          "required": [
+            "works"
+          ]
+        }
+      ],
+      "properties": {
+        "works": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "anyOf": [
+              {
+                "required": [
+                  "authors"
+                ]
+              },
+              {
+                "required": [
+                  "title"
+                ]
+              },
+              {
+                "required": [
+                  "note"
+                ]
+              }
+            ],
+            "properties": {
+              "authors": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 1850,
+                "maximum": 2100
+              },
+              "title": {
+                "type": "string",
+                "minLength": 2
+              },
+              "publication": {
+                "type": "string",
+                "minLength": 2
+              },
+              "note": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 160
+              }
+            }
+          }
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1850,
+          "maximum": 2100
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "publication": {
+          "type": "string",
+          "minLength": 2
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 160
+        }
+      }
+    },
+    "figure": {
+      "description": "The drawing and the parameters it reads. The vocabulary is fixed by decks/copywriting/data/layout-map.json at the second checkpoint.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "number",
+              "string",
+              "boolean"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
