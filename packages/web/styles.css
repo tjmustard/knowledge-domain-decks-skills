@@ -202,7 +202,8 @@ h1 {
   color: var(--ink);
 }
 
-.back ul {
+.back ul,
+.back ol {
   margin: 0;
   padding-left: 18px;
   font-size: 0.8rem;

@@ -103,6 +103,54 @@ export function positionalArgs(argv = process.argv.slice(2)) {
   return out;
 }
 
+
+/*
+ * A deck's record shape, read from deck.json and defaulting to the shape the
+ * first deck established. A deck that declares nothing gets exactly the
+ * behaviour that shipped before this existed, which is what keeps its artifacts
+ * byte-identical rather than merely similar.
+ *
+ *   fields     which key holds the group, the ordered items, the attribution
+ *              and the figure
+ *   labels     what the renderers print above the ordered items. `items` heads
+ *              the list in the rules file; `resourceItems` names the bullet in
+ *              the skill's resource files. They are separate because the first
+ *              deck calls the same list "Checklist" in one place and "Check" in
+ *              the other, and both of those strings are shipped bytes.
+ *   itemStyle  "checklist" (ticked checks) or "steps" (numbered beats)
+ */
+export const DEFAULT_FIELDS = {
+  group: "category",
+  items: "checklist",
+  attribution: "academicOrigin",
+  figure: "graphicMetaphor",
+  // A fill-in-the-blank line some records carry and most do not. Naming it
+  // here means a record with no prompt renders nothing at all.
+  prompt: "prompt"
+};
+
+export function deckShape(deck = {}) {
+  const fields = { ...DEFAULT_FIELDS, ...(deck.fields || {}) };
+  const itemStyle = deck.itemStyle || "checklist";
+  // The card face calls the same list by a longer name than the rules file does,
+  // and a deck that names its own items names them on both. The default is
+  // resolved once here so print and web cannot drift apart.
+  const cardItems = deck.labels?.cardItems || (itemStyle === "steps" ? "Structure" : "Operational checklist");
+  return {
+    fields,
+    itemStyle,
+    labelItems: deck.labels?.items || "Checklist",
+    labelCardItems: cardItems,
+    labelResourceItems: deck.labels?.resourceItems || "Check",
+    labelPrompt: deck.labels?.prompt || "Prompt",
+    labelGroup: deck.labels?.group || null,
+    group: (card) => card[fields.group],
+    items: (card) => card[fields.items] || [],
+    attribution: (card) => card[fields.attribution] || {},
+    figure: (card) => card[fields.figure] || card.graphicMetaphor
+  };
+}
+
 export async function loadCards(deck) {
   const dir = join(deck.dir, "data", "laws");
   const files = (await readdir(dir))
@@ -142,15 +190,48 @@ export function titleStop(title) {
 
 // Add the two computed strings to a card's citation block. The print bundle
 // and the web bundle both carry them, so no renderer re-implements the rule.
-export function withCitation(card) {
+export function withCitation(card, deck) {
+  const shape = deckShape(deck);
+  const origin = shape.attribution(card);
   return {
     ...card,
-    academicOrigin: {
-      ...card.academicOrigin,
-      authorsLabel: authorsLabel(card.academicOrigin),
-      titleStop: titleStop(card.academicOrigin.title)
+    [shape.fields.attribution]: {
+      ...origin,
+      authorsLabel: authorsLabel(origin),
+      titleStop: titleStop(origin.title)
     }
   };
+}
+
+/*
+ * One printed citation line. The narrative deck's attributions are uneven by
+ * nature - a named author with a work and a year, sometimes a bare name,
+ * sometimes "folk tradition" with nothing else - so every part after the names
+ * is optional. With all four parts present this returns exactly the string the
+ * UX deck printed before the shape was parameterised.
+ */
+// The shorter form used in the skill's resource files: names, year, title, no
+// publication. Same tolerance for absent parts.
+export function sourceShort(origin = {}) {
+  const names = authorsLabel(origin);
+  const year = origin.year === undefined || origin.year === null ? "" : ` (${origin.year})`;
+  const head = `${names}${year}`;
+  const title = origin.title ? `*${origin.title}*${titleStop(origin.title)}` : "";
+  // The comma belongs to the join, not to the title: an attribution that is
+  // only a title must not open with one.
+  if (!title) return head;
+  return head ? `${head}, ${title}` : title;
+}
+
+export function sourceLine(origin = {}) {
+  const names = authorsLabel(origin);
+  const year = origin.year === undefined || origin.year === null ? "" : ` (${origin.year})`;
+  const head = `${names}${year}`;
+  const title = origin.title ? ` *${origin.title}*${titleStop(origin.title)}` : "";
+  const tail = origin.publication ? ` ${origin.publication}` : "";
+  let body = `${head}${head ? "." : ""}${title}${tail}`.trim();
+  if (body && !/[.?!]$/.test(body)) body += ".";
+  return body;
 }
 
 export function wordCount(text) {

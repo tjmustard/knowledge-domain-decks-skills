@@ -10,7 +10,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
+import { ROOT, deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../packages/core/svg.js");
@@ -28,8 +28,8 @@ const template = await readFile(join(ROOT, "packages", "web", "index.template.ht
 for (const deck of decks) {
   const cards = await loadCards(deck);
   const bundled = cards.map((card) => ({
-    ...withCitation(card),
-    svg: renderSvg(card.graphicMetaphor)
+    ...withCitation(card, deck),
+    svg: renderSvg(deckShape(deck).figure(card))
   }));
 
   const dir = webDir(deck);
@@ -58,7 +58,22 @@ for (const deck of decks) {
     .replaceAll("{{lede}}", escapeHtml(deck.web.lede))
     .replaceAll("{{source}}", deck.web.source)
     .replaceAll("{{global}}", deck.web.global)
-    .replaceAll("{{accentsGlobal}}", deck.web.accentsGlobal);
+    .replaceAll("{{accentsGlobal}}", deck.web.accentsGlobal)
+    .replaceAll(
+      "{{fields}}",
+      JSON.stringify({
+        group: deckShape(deck).fields.group,
+        items: deckShape(deck).fields.items,
+        attribution: deckShape(deck).fields.attribution,
+        prompt: deckShape(deck).fields.prompt,
+        labelPrompt: deckShape(deck).labelPrompt,
+        labelItems: deckShape(deck).labelCardItems,
+        itemStyle: deckShape(deck).itemStyle,
+        // The line on the card's face that invites a flip. A deck whose back
+        // is ordered beats rather than a checklist says so in its own words.
+        backHint: deck.web.backHint || "Tap or press Enter to see the checklist"
+      })
+    );
   await writeFile(join(dir, "index.html"), page);
 
   console.log(`wrote packages/web/decks/${deck.slug}/ (deck-data.js, accents.js, index.html; ${bundled.length} cards)`);

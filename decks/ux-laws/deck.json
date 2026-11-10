@@ -42,7 +42,7 @@
     "accentsGlobal": "UX_DECK_ACCENTS",
     "title": "UX & Behavioral Design — Knowledge Domain Decks",
     "heading": "UX & Behavioral Design",
-    "lede": "Public-domain principles for interface reviews. Tap a card to flip it and read the checklist and remediation.",
+    "lede": "{cards} public-domain principles for interface reviews. Tap a card to flip it and read the checklist and remediation.",
     "source": "Generated from <code>decks/ux-laws/data/laws/*.json</code>. Code MIT · data CC0-1.0."
   }
 }

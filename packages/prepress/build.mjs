@@ -14,8 +14,8 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
-import { join } from "node:path";
-import { ROOT, deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
+import { join, dirname } from "node:path";
+import { ROOT, deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../core/svg.js");
@@ -64,6 +64,22 @@ if (version.error || version.status !== 0) {
 // Typst source for one deck's category colours. Written where the template
 // looks for it, so a deck without accents simply gets an empty map and the
 // template's fallback colour applies to every card.
+// The record shape, as the template sees it. A deck with no fields block gets
+// the first deck's names, which is what keeps its printed pages identical.
+function fieldsTyp(deck) {
+  const shape = deckShape(deck);
+  return [
+    `#let field-group = ${JSON.stringify(shape.fields.group)}`,
+    `#let field-items = ${JSON.stringify(shape.fields.items)}`,
+    `#let field-attribution = ${JSON.stringify(shape.fields.attribution)}`,
+    `#let field-prompt = ${JSON.stringify(shape.fields.prompt)}`,
+    `#let label-items = ${JSON.stringify(shape.labelCardItems.toUpperCase())}`,
+    `#let label-prompt = ${JSON.stringify(shape.labelPrompt.toUpperCase())}`,
+    `#let item-style = ${JSON.stringify(shape.itemStyle)}`,
+    ""
+  ].join("\n");
+}
+
 function accentsTyp(deck) {
   const entries = Object.entries(deck.accents || {});
   if (entries.length === 0) return "#let accent-color = (:)\n";
@@ -79,17 +95,23 @@ for (const deck of decks) {
   const cards = await loadCards(deck);
   const manifest = [];
   for (const card of cards) {
-    await writeFile(join(svgDir, `${card.id}.svg`), renderSvg(card.graphicMetaphor));
+    await writeFile(join(svgDir, `${card.id}.svg`), renderSvg(deckShape(deck).figure(card)));
     manifest.push({
-      ...withCitation(card),
+      ...withCitation(card, deck),
       svgFile: `../build/svg/${card.id}.svg`
     });
   }
   await writeFile(join(buildDir, "cards.json"), JSON.stringify(manifest, null, 2) + "\n");
   await writeFile(join(buildDir, "accents.typ"), accentsTyp(deck));
 
+  await writeFile(join(buildDir, "fields.typ"), fieldsTyp(deck));
+
   const pdfName = deck.outputs?.pdf || `packages/prepress/dist/${deck.slug}.pdf`;
   const pdf = resolveFromRoot(pdfName);
+  // A deck may name any output path, including one outside dist/. Typst writes
+  // the file itself and will not create its directory, so the deck's own
+  // directory is made here rather than left to chance.
+  await mkdir(dirname(pdf), { recursive: true });
   const result = spawnSync(
     "typst",
     ["compile", "--root", ".", "src/card.typ", pdf],

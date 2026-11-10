@@ -24,13 +24,15 @@
 // Category colours come from the deck, not from this template: build.mjs writes
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
+// Field names, labels and item style come from the deck, written by build.mjs.
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, label-items, label-prompt, item-style
 
-#let accent(card) = accent-color.at(card.category, default: rgb("#334155"))
+#let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
 // The ampersand must not end a printed line, so bind it to the surname it
 // introduces. This is a typographic decision for this surface: the shared
 // authorsLabel stays plain text and carries no non-printing characters.
-#let printed-authors(card) = card.academicOrigin.authorsLabel.replace(
+#let printed-authors(card) = card.at(field-attribution).authorsLabel.replace(
   " & ", " &\u{00A0}"
 )
 
@@ -63,7 +65,7 @@
     #grid(
       columns: (1fr, auto),
       [#text(size: 7pt, weight: "bold", fill: rgb("#64748b"))[#card.id]],
-      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[#upper(card.category)]],
+      [#text(size: 6.5pt, weight: "bold", fill: accent(card))[#upper(card.at(field-group))]],
     )
     #v(5pt)
     #text(size: 14pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
@@ -93,12 +95,16 @@
     #v(2pt)
     #text(size: 11pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(10pt)
-    #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[OPERATIONAL CHECKLIST]
+    #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-items]
     #v(3pt)
-    #for item in card.checklist [
+    #for (i, item) in card.at(field-items).enumerate() [
       #grid(
         columns: (10pt, 1fr),
-        [#rect(width: 6pt, height: 6pt, stroke: 0.75pt + accent(card))],
+        if item-style == "steps" [
+          #text(size: 7pt, weight: "bold", fill: accent(card))[#(i + 1)]
+        ] else [
+          #rect(width: 6pt, height: 6pt, stroke: 0.75pt + accent(card))
+        ],
         [#text(size: 7pt)[#item.text]],
       )
       #v(3pt)
@@ -109,13 +115,30 @@
     #text(size: 6.5pt, fill: rgb("#b91c1c"))[Violation: #card.antiPattern.violation]
     #v(3pt)
     #text(size: 6.5pt, fill: rgb("#15803d"))[Fix: #card.antiPattern.remediation]
+    // An optional fill-in-the-blank line. A deck that has none on a card gets
+    // no heading, no gap and no mark: the whole block is absent, not empty.
+    #if field-prompt in card and card.at(field-prompt) != "" [
+      #v(6pt)
+      #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-prompt]
+      #v(2pt)
+      #text(size: 6.5pt)[#card.at(field-prompt)]
+    ]
     #v(8pt)
     #line(length: 100%, stroke: rule-stroke)
     #v(4pt)
-    #text(size: 6.5pt, fill: rgb("#64748b"))[
-      Source: #printed-authors(card) (#card.academicOrigin.year).
-      _#card.academicOrigin.title#(card.academicOrigin.titleStop)_ #card.academicOrigin.publication.
-    ]
+    // Every part of a citation is optional. A named work with no author or no
+    // year must not leave a dangling stop or an empty space; with all parts
+    // present this prints the same line it always did.
+    #let o = card.at(field-attribution)
+    #let names = printed-authors(card)
+    #let year-text = if "year" in o [ (#o.year)] else []
+    #let by = if names == "" [] else [#names#year-text.]
+    #let has-work = "title" in o
+    #let has-pub = "publication" in o
+    #let work = if has-work [ _#o.title#(o.titleStop)_] else []
+    #let pub = if has-pub [ #o.publication] else []
+    #let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
+    #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
   ])
 ]
 

@@ -15,10 +15,22 @@
   }
 
   var ACCENTS = window[window.DECK_ACCENTS || ""] || {};
+  // Which key carries the group a card belongs to, and what to call it. The
+  // deck declares this; the viewer has no idea which deck it is showing.
+  var FIELDS = window.DECK_FIELDS || {};
+  var GROUP = FIELDS.group || "category";
+  var ITEMS = FIELDS.items || "checklist";
+  var ATTRIBUTION = FIELDS.attribution || "academicOrigin";
+  var PROMPT = FIELDS.prompt || "prompt";
+  var PROMPT_LABEL = FIELDS.labelPrompt || "Prompt";
+  var ITEM_LABEL = FIELDS.labelItems || "Operational checklist";
+  var ITEM_STYLE = FIELDS.itemStyle || "checklist";
+  var BACK_HINT = FIELDS.backHint || "Tap or press Enter to see the checklist";
+  var groupOf = function (card) { return card[GROUP]; };
 
   var categories = [];
   DECK.cards.forEach(function (card) {
-    if (categories.indexOf(card.category) === -1) categories.push(card.category);
+    if (categories.indexOf(groupOf(card)) === -1) categories.push(groupOf(card));
   });
 
   function esc(value) {
@@ -29,51 +41,76 @@
       .replace(/"/g, "&quot;");
   }
 
+  // A card's provenance is uneven between decks: a named author with a work and
+  // a year, sometimes a bare work, sometimes a tradition with nothing else. Each
+  // part prints only when it is there, and the full case reads exactly as before.
   function citation(origin) {
-    return origin.authorsLabel + " (" + origin.year + "). " + origin.title +
-      origin.titleStop + " " + origin.publication + ".";
+    if (!origin) return "";
+    var by = origin.authorsLabel
+      ? origin.authorsLabel + (origin.year === undefined || origin.year === null ? "" : " (" + origin.year + ")")
+      : origin.year === undefined || origin.year === null ? "" : "(" + origin.year + ")";
+    var parts = [];
+    if (by) parts.push(by + ".");
+    // The title carries its own stop, so the full stop after the publication is
+    // added only when there is one; otherwise the work would end "Tale..".
+    if (origin.title) {
+      var work = origin.title + origin.titleStop;
+      parts.push(origin.publication ? work + " " + origin.publication + "." : work);
+    } else if (origin.publication) {
+      parts.push(origin.publication + ".");
+    }
+    return parts.join(" ");
   }
 
   function cardMarkup(card) {
-    var accent = ACCENTS[card.category] || "#334155";
-    var items = card.checklist.map(function (item) {
+    var accent = ACCENTS[groupOf(card)] || "#334155";
+    var items = (card[ITEMS] || []).map(function (item) {
       return "<li>" + esc(item.text) + "</li>";
     }).join("");
+    var listTag = ITEM_STYLE === "steps" ? "ol" : "ul";
+    // The prompt is a fill-in-the-blank line, and most records have none, so
+    // the heading goes with it rather than standing empty above nothing.
+    var prompt = card[PROMPT];
+    var promptBlock = prompt
+      ? "<h3>" + esc(PROMPT_LABEL) + '</h3><p class="prompt">' + esc(prompt) + "</p>"
+      : "";
     return (
       '<article class="card" tabindex="0" role="button" aria-pressed="false" ' +
       'aria-label="' + esc(card.name) + " — activate to flip" + '" ' +
-      'data-category="' + esc(card.category) + '" style="--accent:' + accent + '">' +
+      'data-category="' + esc(groupOf(card)) + '" style="--accent:' + accent + '">' +
         '<div class="card-inner">' +
           '<section class="face front">' +
             '<div class="card-head"><span class="card-id">' + esc(card.id) +
-              '</span><span class="card-cat">' + esc(card.category) + "</span></div>" +
+              '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
             '<p class="axiom">' + esc(card.axiom) + "</p>" +
             '<div class="figure" aria-hidden="true">' + card.svg + "</div>" +
             '<p class="trigger"><strong>When to apply.</strong> ' + esc(card.trigger) + "</p>" +
-            '<span class="hint">Tap or press Enter to see the checklist</span>' +
+            '<span class="hint">' + esc(BACK_HINT) + "</span>" +
           "</section>" +
           '<section class="face back" aria-hidden="true">' +
             '<div class="card-head"><span class="card-id">' + esc(card.id) +
-              '</span><span class="card-cat">' + esc(card.category) + "</span></div>" +
+              '</span><span class="card-cat">' + esc(groupOf(card)) + "</span></div>" +
             "<h2>" + esc(card.name) + "</h2>" +
-            "<h3>Operational checklist</h3>" +
-            "<ul>" + items + "</ul>" +
+            "<h3>" + esc(ITEM_LABEL) + "</h3>" +
+            "<" + listTag + ">" + items + "</" + listTag + ">" +
             "<h3>Anti-pattern</h3>" +
             '<p class="violation">' + esc(card.antiPattern.violation) + "</p>" +
             "<h3>Fix</h3>" +
             '<p class="fix">' + esc(card.antiPattern.remediation) + "</p>" +
-            '<p class="source">' + esc(citation(card.academicOrigin)) + "</p>" +
+            promptBlock +
+            '<p class="source">' + esc(citation(card[ATTRIBUTION])) + "</p>" +
           "</section>" +
         "</div>" +
       "</article>"
     );
   }
 
+  // The lede is the deck's own sentence; it may name the card count as
+  // {cards}, which the engine fills, the same placeholder the skill uses.
   var lede = document.getElementById("lede");
   if (lede) {
-    lede.textContent = DECK.cards.length + " public-domain principles for " +
-      "interface reviews. Tap a card to flip it and read the checklist and remediation.";
+    lede.textContent = lede.textContent.replace("{cards}", String(DECK.cards.length));
   }
 
   deckEl.innerHTML = DECK.cards.map(cardMarkup).join("");

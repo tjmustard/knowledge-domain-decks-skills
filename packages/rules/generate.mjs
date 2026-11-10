@@ -17,7 +17,7 @@
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import { deckArgs, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
+import { deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, sourceLine, sourceShort, withCitation } from "../core/deck.mjs";
 
 // The provenance line is deliberately deck-neutral in its wording but names
 // the old data/ path: changing it would change the bytes of a shipped
@@ -29,7 +29,7 @@ function lines(text) {
   return String(text).split("\n");
 }
 
-function rulesMarkdown(deck, grouped) {
+function rulesMarkdown(deck, shape, grouped) {
   const out = [`# ${deck.rules.title}`, "", GENERATED, "", ...lines(deck.rules.intro), ""];
   for (const [category, items] of grouped) {
     if (items.length === 0) continue;
@@ -38,15 +38,12 @@ function rulesMarkdown(deck, grouped) {
       out.push(`### ${card.id} — ${card.name}`, "");
       out.push(`**Axiom.** ${card.axiom}`, "");
       out.push(`**Apply when.** ${card.trigger}`, "");
-      out.push("**Checklist.**");
-      for (const item of card.checklist) out.push(`- [ ] ${checklistLine(item)}`);
+      out.push(`**${shape.labelItems}.**`);
+      for (const item of shape.items(card)) out.push(`- [ ] ${checklistLine(item)}`);
       out.push("");
       out.push(`**Anti-pattern.** ${card.antiPattern.violation}`, "");
       out.push(`**Fix.** ${card.antiPattern.remediation}`, "");
-      out.push(
-        `**Source.** ${card.academicOrigin.authorsLabel} (${card.academicOrigin.year}). *${card.academicOrigin.title}*${card.academicOrigin.titleStop} ${card.academicOrigin.publication}.`,
-        ""
-      );
+      out.push(`**Source.** ${sourceLine(shape.attribution(card))}`, "");
     }
   }
   return out.join("\n");
@@ -100,7 +97,7 @@ function skillMarkdown(deck, grouped, cardCount) {
   return out.join("\n");
 }
 
-function resourceMarkdown(category, items) {
+function resourceMarkdown(category, shape, items) {
   const out = [
     `# ${category}`,
     "",
@@ -113,13 +110,11 @@ function resourceMarkdown(category, items) {
     out.push(`## ${card.id} — ${card.name}`, "");
     out.push(`- **Axiom:** ${card.axiom}`);
     out.push(`- **Apply when:** ${card.trigger}`);
-    out.push(`- **Check:**`);
-    for (const item of card.checklist) out.push(`  - ${checklistLine(item)}`);
+    out.push(`- **${shape.labelResourceItems}:**`);
+    for (const item of shape.items(card)) out.push(`  - ${checklistLine(item)}`);
     out.push(`- **Instead of:** ${card.antiPattern.violation}`);
     out.push(`- **Do:** ${card.antiPattern.remediation}`);
-    out.push(
-      `- **Source:** ${card.academicOrigin.authorsLabel} (${card.academicOrigin.year}), *${card.academicOrigin.title}*${card.academicOrigin.titleStop}`
-    );
+    out.push(`- **Source:** ${sourceShort(shape.attribution(card))}`);
     out.push("");
   }
   return out.join("\n");
@@ -142,25 +137,27 @@ function oneLine(text) {
 }
 
 async function generateDeck(deck) {
-  const cards = (await loadCards(deck)).map(withCitation);
+  const shape = deckShape(deck);
+  const cards = (await loadCards(deck)).map((card) => withCitation(card, deck));
   const grouped = new Map(deck.categories.map((category) => [category, []]));
   for (const card of cards) {
-    if (!grouped.has(card.category)) grouped.set(card.category, []);
-    grouped.get(card.category).push(card);
+    const key = shape.group(card);
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key).push(card);
   }
 
   const rulesFile = resolveFromRoot(deck.outputs.rules);
   const skillDir = resolveFromRoot(deck.outputs.skill);
   await mkdir(dirname(rulesFile), { recursive: true });
   await mkdir(join(skillDir, "resources"), { recursive: true });
-  await writeFile(rulesFile, rulesMarkdown(deck, grouped));
+  await writeFile(rulesFile, rulesMarkdown(deck, shape, grouped));
   await writeFile(join(skillDir, "SKILL.md"), skillMarkdown(deck, grouped, cards.length));
 
   const written = [];
   for (const [category, items] of grouped) {
     if (items.length === 0) continue;
     const slug = categorySlug(category);
-    await writeFile(join(skillDir, "resources", `${slug}.md`), resourceMarkdown(category, items));
+    await writeFile(join(skillDir, "resources", `${slug}.md`), resourceMarkdown(category, shape, items));
     written.push(`${deck.outputs.skill}/resources/${slug}.md`);
   }
   console.log(
