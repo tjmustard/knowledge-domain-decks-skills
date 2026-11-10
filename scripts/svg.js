@@ -418,6 +418,163 @@
       });
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+
+    /* Power law of practice: time per trial drops steeply and then flattens.
+       The control points put the fall early, which is what separates a power
+       function from a straight decline. No rebound, so the trait below holds. */
+    "power-curve": function (p) {
+      var startY = p.startY == null ? 110 : p.startY;
+      var endY = p.endY == null ? 282 : p.endY;
+      var startLabel = p.startLabel || "TRIAL 1";
+      var endLabel = p.endLabel || "TRIAL 100";
+      var caption = p.caption || "";
+      var drop = endY - startY;
+      var c1y = startY + drop * 0.72;
+      var c2y = endY - drop * 0.06;
+      var out = [];
+      out.push(line(60, 300, 340, 300, 1, 0.3));
+      out.push(
+        '<path d="M 60 ' + startY + ' C 105 ' + c1y + ", 245 " + c2y +
+        ", 340 " + endY + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(60, startY, 9));
+      out.push(circle(340, endY, 9));
+      out.push(label(60, startY - 18, startLabel, { size: 9 }));
+      out.push(label(340, endY + 24 <= 290 ? endY + 24 : endY - 34,
+        endLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Weber's ratio: the same stimuli crowd on a raw-intensity axis and space
+       evenly on a ratio axis, because equal perceived steps are equal ratios. */
+    "ratio-scale": function (p) {
+      var steps = p.steps || 4;
+      var base = p.base || 2;
+      var linearLabel = p.linearLabel || "RAW INTENSITY";
+      var ratioLabel = p.ratioLabel || "PERCEIVED STEPS";
+      var caption = p.caption || "";
+      var x0 = 60;
+      var track = 280;
+      var values = [];
+      for (var i = 0; i < steps; i++) values.push(Math.pow(base, i));
+      var span = values[steps - 1] - values[0];
+      var out = [];
+      [
+        {
+          y: 130,
+          label: linearLabel,
+          pos: function (i) {
+            return x0 + track * (span === 0 ? 0 : (values[i] - values[0]) / span);
+          }
+        },
+        {
+          y: 265,
+          label: ratioLabel,
+          pos: function (i) {
+            return x0 + track * (steps === 1 ? 0 : i / (steps - 1));
+          }
+        }
+      ].forEach(function (row) {
+        out.push(label(200, row.y - 30, row.label, { size: 9 }));
+        out.push(line(x0, row.y, x0 + track, row.y, 1, 0.35));
+        for (var j = 0; j < steps; j++) {
+          var x = row.pos(j);
+          out.push(line(x, row.y - 7, x, row.y + 7, 1.5, 0.75));
+          out.push(label(x, row.y + 22, String(values[j]), { size: 8 }));
+        }
+      });
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Motion economy: a phone held in one hand, a target in the thumb zone and
+       one in the far corner, and the two travel paths between hand and target. */
+    "reach-map": function (p) {
+      var detour = p.detour == null ? 55 : p.detour;
+      var cornerLabel = p.cornerLabel || "TOP CORNER";
+      var zoneLabel = p.zoneLabel || "THUMB ZONE";
+      var longLabel = p.longLabel || "LONG REACH";
+      var shortLabel = p.shortLabel || "SHORT REACH";
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(130, 45, 140, 270, { rx: 14, opacity: 0.35, width: 1.5 }));
+      out.push(line(138, 250, 262, 250, 1.5, 0.5, "4 4"));
+      out.push(label(200, 240, zoneLabel, { size: 8, opacity: 0.55 }));
+      out.push(circle(200, 330, 7));
+      out.push(
+        '<path d="M 200 330 Q ' + (200 + detour) + " 190, 252 82" +
+        '" fill="none" stroke="currentColor" stroke-width="2.5" opacity="0.85" ' +
+        STROKE + "/>"
+      );
+      out.push(circle(252, 82, 6));
+      out.push(label(248, 70, cornerLabel, { size: 8, anchor: "end" }));
+      out.push(line(200, 330, 180, 288, 3, 0.9));
+      out.push(circle(180, 288, 6));
+      out.push(label(276, 198, longLabel, { size: 8, anchor: "start" }));
+      out.push(label(162, 318, shortLabel, { size: 8, anchor: "end" }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Index of difficulty: movement time rises linearly with log2(D/W + 0.5),
+       so the drawing is a straight line against the index, not a curve. */
+    "difficulty-line": function (p) {
+      var slope = p.slope == null ? 170 : p.slope;
+      var lowLabel = p.lowLabel || "WIDE TARGET";
+      var highLabel = p.highLabel || "NARROW TARGET";
+      var formula = p.formula || "T = a + b log2(D/W + 0.5)";
+      var caption = p.caption || "";
+      var yAt = function (t) { return 292 - slope * (0.08 + 0.84 * t); };
+      var out = [];
+      out.push(line(70, 300, 340, 300, 1, 0.3));
+      out.push(line(70, 300, 70, 60, 1, 0.3));
+      out.push(label(205, 320, "INDEX OF DIFFICULTY", { size: 8 }));
+      out.push(label(70, 48, "TIME", { size: 8 }));
+      out.push(
+        '<path d="M 90 ' + yAt(0) + " L 320 " + yAt(1) +
+        '" fill="none" stroke="currentColor" stroke-width="3.5" opacity="0.9" ' +
+        STROKE + "/>"
+      );
+      out.push(circle(120, yAt(0.13), 7));
+      out.push(label(120, yAt(0.13) + 30, lowLabel, { size: 8 }));
+      out.push(circle(290, yAt(0.87), 7));
+      out.push(label(290, yAt(0.87) - 24, highLabel, { size: 8 }));
+      out.push(label(205, 344, formula, { size: 9 }));
+      if (caption) out.push(label(200, 368, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Saccadic latency: clear vision is gathered at fixations, not while the
+       eye travels between them, so the dwell points carry the marks. */
+    "scan-path": function (p) {
+      var fixations = p.fixations || 4;
+      var fixationLabel = p.fixationLabel || "FIXATION";
+      var saccadeLabel = p.saccadeLabel || "SACCADE";
+      var caption = p.caption || "";
+      var x0 = 60;
+      var track = 280;
+      var y = 190;
+      var positions = [];
+      var out = [];
+      for (var i = 0; i < fixations; i++) {
+        positions.push(x0 + track * (fixations === 1 ? 0 : i / (fixations - 1)));
+      }
+      for (var j = 1; j < positions.length; j++) {
+        out.push(line(positions[j - 1], y, positions[j], y, 1.5, 0.5, "5 6"));
+      }
+      for (var k = 0; k < positions.length; k++) {
+        out.push(circle(positions[k], y, 7, { opacity: 0.9 }));
+      }
+      out.push(label(positions[0], y - 24, fixationLabel, { size: 9 }));
+      if (positions.length > 1) {
+        out.push(label((positions[0] + positions[1]) / 2, y + 28,
+          saccadeLabel, { size: 8, opacity: 0.6 }));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 
@@ -427,6 +584,7 @@
      monotoneDown means each later sample is lower on the card (a larger y). */
   shapes["decay-curve"].traits = { monotoneDown: false };
   shapes["decline-curve"].traits = { monotoneDown: true };
+  shapes["power-curve"].traits = { monotoneDown: true };
 
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {

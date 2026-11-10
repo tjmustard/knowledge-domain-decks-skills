@@ -827,6 +827,289 @@ window.UX_DECK = {
         "titleStop": "."
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">NO STEPS SHOWN</text><rect x=\"42\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"66\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"114\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"162\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"66\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"90\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"114\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"138\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"162\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">9 OF 12 STEPS SHOWN</text><rect x=\"222\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"246\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"294\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"318\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"342\" y=\"170\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"222\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"246\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"294\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"318\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"342\" y=\"194\" width=\"16\" height=\"16\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SAME WAIT, SHORTER FELT</text></svg>"
+    },
+    {
+      "id": "TME-05",
+      "name": "Power Law of Practice",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "Task time falls as a power of practice repetitions: steep early gains, then diminishing returns.",
+      "trigger": "A workflow someone uses every day takes as long in month six as it did in week one.",
+      "checklist": [
+        "Keep frequent actions in one fixed place so repetition trains aim instead of search.",
+        "Give daily paths keyboard shortcuts and let the interface remember recent choices.",
+        "Make the fastest route the default, not something found in settings.",
+        "Measure time-on-task for repeat workflows; a flat curve means the interface blocks practice."
+      ],
+      "antiPattern": {
+        "violation": "A ticketing tool moves its main action each release, so agents relearn the target every quarter.",
+        "remediation": "The primary action keeps one position and gains a shortcut once an agent repeats it."
+      },
+      "graphicMetaphor": {
+        "svgShape": "power-curve",
+        "parametricParams": {
+          "startY": 110,
+          "endY": 282,
+          "startLabel": "TRIAL 1",
+          "endLabel": "TRIAL 100",
+          "caption": "STEEP EARLY GAINS, THEN DIMINISHING RETURNS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Allen Newell",
+          "Paul S. Rosenbloom"
+        ],
+        "year": 1981,
+        "title": "Mechanisms of Skill Acquisition and the Law of Practice",
+        "publication": "In J. R. Anderson (Ed.), Cognitive Skills and Their Acquisition, Lawrence Erlbaum Associates, Hillsdale, NJ",
+        "authorsLabel": "Allen Newell & Paul S. Rosenbloom",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 110 C 105 233.83999999999997, 245 271.68, 340 282\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"110\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"282\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"92\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TRIAL 1</text><text x=\"340\" y=\"248\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TRIAL 100</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">STEEP EARLY GAINS, THEN DIMINISHING RETURNS</text></svg>"
+    },
+    {
+      "id": "TME-06",
+      "name": "Keystroke-Level Model",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "Expert task time sums discrete operator durations: keystroke, pointing, homing, mental, and response.",
+      "trigger": "A task feels slow although no single step is slow; the time goes into small transitions.",
+      "checklist": [
+        "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.",
+        "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.",
+        "Auto-advance focus in segmented fields such as one-time codes.",
+        "Name fields plainly so people do not pause to decode them before typing."
+      ],
+      "antiPattern": {
+        "violation": "A six-digit code sits in six boxes, so each digit needs a click and then a key.",
+        "remediation": "One field accepts the whole code, pasted or typed, and validates once."
+      },
+      "graphicMetaphor": {
+        "svgShape": "split-bar",
+        "parametricParams": {
+          "max": 3.2,
+          "rows": [
+            {
+              "label": "KEYBOARD PATH",
+              "segments": [
+                {
+                  "label": "M",
+                  "weight": 1.35,
+                  "filled": true
+                },
+                {
+                  "label": "K",
+                  "weight": 0.2,
+                  "filled": true
+                },
+                {
+                  "label": "K",
+                  "weight": 0.2,
+                  "filled": true
+                },
+                {
+                  "label": "K",
+                  "weight": 0.2,
+                  "filled": true
+                }
+              ]
+            },
+            {
+              "label": "MOUSE PATH",
+              "segments": [
+                {
+                  "label": "M",
+                  "weight": 1.35,
+                  "filled": true
+                },
+                {
+                  "label": "H",
+                  "weight": 0.4,
+                  "filled": true
+                },
+                {
+                  "label": "P",
+                  "weight": 1.1,
+                  "filled": true
+                },
+                {
+                  "label": "K",
+                  "weight": 0.2,
+                  "filled": true
+                }
+              ]
+            }
+          ],
+          "reference": {
+            "at": 0.625,
+            "label": "2 S"
+          },
+          "caption": "TOTAL TIME IS THE SUM OF OPERATORS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Stuart K. Card",
+          "Thomas P. Moran",
+          "Allen Newell"
+        ],
+        "year": 1980,
+        "title": "The Keystroke-Level Model for User Performance Time with Interactive Systems",
+        "publication": "Communications of the ACM, 23(7), 396-410",
+        "doi": "10.1145/358886.358895",
+        "authorsLabel": "Stuart K. Card, Thomas P. Moran & Allen Newell",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"40\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">KEYBOARD PATH</text><rect x=\"40\" y=\"120\" width=\"135\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"107.5\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">M</text><rect x=\"175\" y=\"120\" width=\"20\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"185\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">K</text><rect x=\"195\" y=\"120\" width=\"20\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"205\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">K</text><rect x=\"215\" y=\"120\" width=\"20\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"225\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">K</text><text x=\"40\" y=\"184\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">MOUSE PATH</text><rect x=\"40\" y=\"200\" width=\"135\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"107.5\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">M</text><rect x=\"175\" y=\"200\" width=\"40\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"195\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">H</text><rect x=\"215\" y=\"200\" width=\"110\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"270\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">P</text><rect x=\"325\" y=\"200\" width=\"20\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"335\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">K</text><line x1=\"240\" y1=\"86\" x2=\"240\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240\" y1=\"120\" x2=\"240\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240\" y1=\"200\" x2=\"240\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"240\" y=\"78\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2 S</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TOTAL TIME IS THE SUM OF OPERATORS</text></svg>"
+    },
+    {
+      "id": "TME-07",
+      "name": "Weber-Fechner Law",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "A just-noticeable difference is a ratio of the starting magnitude, not a fixed amount.",
+      "trigger": "Two controls differ by the same amount, but one change is obvious and the other is invisible.",
+      "checklist": [
+        "Set type hierarchy by ratio, not equal steps: 16, 20, 25, 31 px reads as clear levels.",
+        "Check dark-theme borders with the same relative contrast step, not the same hex delta.",
+        "Scale spacing and progress changes as a fraction of the current value."
+      ],
+      "antiPattern": {
+        "violation": "Heading sizes step 16, 18, 20 px, so three levels look like one.",
+        "remediation": "A 1.25 ratio gives 16, 20, 25 px, and each level reads as its own rank."
+      },
+      "graphicMetaphor": {
+        "svgShape": "ratio-scale",
+        "parametricParams": {
+          "steps": 4,
+          "base": 2,
+          "linearLabel": "RAW INTENSITY",
+          "ratioLabel": "PERCEIVED STEPS",
+          "caption": "EQUAL RATIOS MAKE EQUAL PERCEIVED STEPS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Ernst Heinrich Weber"
+        ],
+        "year": 1834,
+        "title": "De Pulsu, Resorptione, Auditu et Tactu: Annotationes Anatomicae et Physiologicae",
+        "publication": "C. F. Koehler, Leipzig",
+        "doi": "10.3931/e-rara-70261",
+        "authorsLabel": "Ernst Heinrich Weber",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"200\" y=\"100\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">RAW INTENSITY</text><line x1=\"60\" y1=\"130\" x2=\"340\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"123\" x2=\"60\" y2=\"137\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"152\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><line x1=\"100\" y1=\"123\" x2=\"100\" y2=\"137\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"100\" y=\"152\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><line x1=\"180\" y1=\"123\" x2=\"180\" y2=\"137\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"180\" y=\"152\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">4</text><line x1=\"340\" y1=\"123\" x2=\"340\" y2=\"137\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"340\" y=\"152\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">8</text><text x=\"200\" y=\"235\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">PERCEIVED STEPS</text><line x1=\"60\" y1=\"265\" x2=\"340\" y2=\"265\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"258\" x2=\"60\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"287\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><line x1=\"153.33333333333331\" y1=\"258\" x2=\"153.33333333333331\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"153.33333333333331\" y=\"287\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><line x1=\"246.66666666666666\" y1=\"258\" x2=\"246.66666666666666\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"246.66666666666666\" y=\"287\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">4</text><line x1=\"340\" y1=\"258\" x2=\"340\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"340\" y=\"287\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">8</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EQUAL RATIOS MAKE EQUAL PERCEIVED STEPS</text></svg>"
+    },
+    {
+      "id": "TME-08",
+      "name": "Gilbreth Motion Economy",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "Each wasted motion costs time and fatigue; remove it rather than speed it up.",
+      "trigger": "A control used every few seconds sits at the far edge of the screen.",
+      "checklist": [
+        "Place controls used together, and most-used controls, inside one-handed reach.",
+        "Keep primary actions in the lower third of a phone screen, near the thumb.",
+        "Let a gesture finish where it started; avoid crossing the screen mid-task."
+      ],
+      "antiPattern": {
+        "violation": "Checkout puts Apply Promo bottom-left and Pay top-right, a reach across the whole screen.",
+        "remediation": "Both actions sit in one bottom sheet within thumb reach."
+      },
+      "graphicMetaphor": {
+        "svgShape": "reach-map",
+        "parametricParams": {
+          "detour": 55,
+          "cornerLabel": "TOP CORNER",
+          "zoneLabel": "THUMB ZONE",
+          "longLabel": "LONG REACH",
+          "shortLabel": "SHORT REACH",
+          "caption": "SUPERFLUOUS MOVEMENT COSTS TIME AND FATIGUE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Frank B. Gilbreth"
+        ],
+        "year": 1911,
+        "title": "Motion Study: A Method for Increasing the Efficiency of the Workman",
+        "publication": "D. Van Nostrand Company, New York",
+        "authorsLabel": "Frank B. Gilbreth",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"130\" y=\"45\" width=\"140\" height=\"270\" rx=\"14\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"250\" x2=\"262\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"240\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.55\">THUMB ZONE</text><circle cx=\"200\" cy=\"330\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 330 Q 255 190, 252 82\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"252\" cy=\"82\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"248\" y=\"70\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">TOP CORNER</text><line x1=\"200\" y1=\"330\" x2=\"180\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"180\" cy=\"288\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"276\" y=\"198\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">LONG REACH</text><text x=\"162\" y=\"318\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">SHORT REACH</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SUPERFLUOUS MOVEMENT COSTS TIME AND FATIGUE</text></svg>"
+    },
+    {
+      "id": "TME-09",
+      "name": "Crossman's Velocity Law (Welford's Variant)",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "Target time rises linearly with log2(D/W + 0.5); the half sits inside the logarithm.",
+      "trigger": "Small icons with tight spacing are missed while larger, padded targets are hit first time.",
+      "checklist": [
+        "Pad small icon targets to widen the effective target without enlarging the glyph.",
+        "Expand drag targets as the pointer nears them, widening the effective target.",
+        "Separate destructive controls from their neighbours with a visible gutter."
+      ],
+      "antiPattern": {
+        "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",
+        "remediation": "Delete moves to an overflow menu and each row keeps one filled action."
+      },
+      "graphicMetaphor": {
+        "svgShape": "difficulty-line",
+        "parametricParams": {
+          "slope": 170,
+          "lowLabel": "WIDE TARGET",
+          "highLabel": "NARROW TARGET",
+          "formula": "T = a + b log2(D/W + 0.5)",
+          "caption": "TIME RISES WITH THE INDEX OF DIFFICULTY"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Alan T. Welford"
+        ],
+        "year": 1968,
+        "title": "Fundamentals of Skill",
+        "publication": "Methuen, London",
+        "authorsLabel": "Alan T. Welford",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"70\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70\" y1=\"300\" x2=\"70\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><text x=\"205\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INDEX OF DIFFICULTY</text><text x=\"70\" y=\"48\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TIME</text><path d=\"M 90 278.4 L 320 135.60000000000002\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"259.836\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"120\" y=\"289.836\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WIDE TARGET</text><circle cx=\"290\" cy=\"154.16400000000002\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"130.16400000000002\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">NARROW TARGET</text><text x=\"205\" y=\"344\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">T = a + b log2(D/W + 0.5)</text><text x=\"200\" y=\"368\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TIME RISES WITH THE INDEX OF DIFFICULTY</text></svg>"
+    },
+    {
+      "id": "TME-10",
+      "name": "Visual Saccadic Latency Law",
+      "category": "Time, Motion & Ergonomics",
+      "axiom": "Vision pauses during rapid eye jumps; a clear field is read only during fixations.",
+      "trigger": "A form's labels sit far from their fields, so the eye must travel for every answer.",
+      "checklist": [
+        "Align form labels directly above or beside their fields, on one vertical axis.",
+        "Keep badges and status text inline with the row they describe.",
+        "Do not split one reading task across the far edges of a wide screen."
+      ],
+      "antiPattern": {
+        "violation": "A form alternates inputs between two columns, forcing zig-zag eye travel and skipped fields.",
+        "remediation": "One vertical column, label above each field, reads top to bottom."
+      },
+      "graphicMetaphor": {
+        "svgShape": "scan-path",
+        "parametricParams": {
+          "fixations": 4,
+          "fixationLabel": "FIXATION",
+          "saccadeLabel": "SACCADE",
+          "caption": "CLEAR READING HAPPENS AT FIXATIONS, NOT BETWEEN"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Raymond Dodge"
+        ],
+        "year": 1900,
+        "title": "Visual Perception During Eye Movement",
+        "publication": "Psychological Review, 7(5), 454-465",
+        "doi": "10.1037/h0067215",
+        "authorsLabel": "Raymond Dodge",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"190\" x2=\"153.33333333333331\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.33333333333331\" y1=\"190\" x2=\"246.66666666666666\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.66666666666666\" y1=\"190\" x2=\"340\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"190\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"153.33333333333331\" cy=\"190\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"246.66666666666666\" cy=\"190\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"190\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FIXATION</text><text x=\"106.66666666666666\" y=\"218\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">SACCADE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CLEAR READING HAPPENS AT FIXATIONS, NOT BETWEEN</text></svg>"
     }
   ]
 };

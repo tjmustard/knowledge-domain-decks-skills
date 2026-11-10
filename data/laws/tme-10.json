@@ -1,0 +1,32 @@
+{
+  "id": "TME-10",
+  "name": "Visual Saccadic Latency Law",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Vision pauses during rapid eye jumps; a clear field is read only during fixations.",
+  "trigger": "A form's labels sit far from their fields, so the eye must travel for every answer.",
+  "checklist": [
+    "Align form labels directly above or beside their fields, on one vertical axis.",
+    "Keep badges and status text inline with the row they describe.",
+    "Do not split one reading task across the far edges of a wide screen."
+  ],
+  "antiPattern": {
+    "violation": "A form alternates inputs between two columns, forcing zig-zag eye travel and skipped fields.",
+    "remediation": "One vertical column, label above each field, reads top to bottom."
+  },
+  "graphicMetaphor": {
+    "svgShape": "scan-path",
+    "parametricParams": {
+      "fixations": 4,
+      "fixationLabel": "FIXATION",
+      "saccadeLabel": "SACCADE",
+      "caption": "CLEAR READING HAPPENS AT FIXATIONS, NOT BETWEEN"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Raymond Dodge"],
+    "year": 1900,
+    "title": "Visual Perception During Eye Movement",
+    "publication": "Psychological Review, 7(5), 454-465",
+    "doi": "10.1037/h0067215"
+  }
+}

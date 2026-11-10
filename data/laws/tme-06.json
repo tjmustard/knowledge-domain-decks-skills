@@ -1,0 +1,52 @@
+{
+  "id": "TME-06",
+  "name": "Keystroke-Level Model",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Expert task time sums discrete operator durations: keystroke, pointing, homing, mental, and response.",
+  "trigger": "A task feels slow although no single step is slow; the time goes into small transitions.",
+  "checklist": [
+    "Count keystrokes, pointer moves, and mental pauses along the fastest path to the goal.",
+    "Keep hands on one device: tab order and shortcuts beat mouse-to-keyboard hops.",
+    "Auto-advance focus in segmented fields such as one-time codes.",
+    "Name fields plainly so people do not pause to decode them before typing."
+  ],
+  "antiPattern": {
+    "violation": "A six-digit code sits in six boxes, so each digit needs a click and then a key.",
+    "remediation": "One field accepts the whole code, pasted or typed, and validates once."
+  },
+  "graphicMetaphor": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 3.2,
+      "rows": [
+        {
+          "label": "KEYBOARD PATH",
+          "segments": [
+            { "label": "M", "weight": 1.35, "filled": true },
+            { "label": "K", "weight": 0.2, "filled": true },
+            { "label": "K", "weight": 0.2, "filled": true },
+            { "label": "K", "weight": 0.2, "filled": true }
+          ]
+        },
+        {
+          "label": "MOUSE PATH",
+          "segments": [
+            { "label": "M", "weight": 1.35, "filled": true },
+            { "label": "H", "weight": 0.4, "filled": true },
+            { "label": "P", "weight": 1.1, "filled": true },
+            { "label": "K", "weight": 0.2, "filled": true }
+          ]
+        }
+      ],
+      "reference": { "at": 0.625, "label": "2 S" },
+      "caption": "TOTAL TIME IS THE SUM OF OPERATORS"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Stuart K. Card", "Thomas P. Moran", "Allen Newell"],
+    "year": 1980,
+    "title": "The Keystroke-Level Model for User Performance Time with Interactive Systems",
+    "publication": "Communications of the ACM, 23(7), 396-410",
+    "doi": "10.1145/358886.358895"
+  }
+}

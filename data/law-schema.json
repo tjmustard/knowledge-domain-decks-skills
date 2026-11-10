@@ -86,7 +86,12 @@
             "split-bar",
             "paired-panels",
             "steering-tunnel",
-            "decline-curve"
+            "decline-curve",
+            "power-curve",
+            "ratio-scale",
+            "reach-map",
+            "difficulty-line",
+            "scan-path"
           ]
         },
         "parametricParams": {

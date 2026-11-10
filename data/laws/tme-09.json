@@ -1,0 +1,32 @@
+{
+  "id": "TME-09",
+  "name": "Crossman's Velocity Law (Welford's Variant)",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Target time rises linearly with log2(D/W + 0.5); the half sits inside the logarithm.",
+  "trigger": "Small icons with tight spacing are missed while larger, padded targets are hit first time.",
+  "checklist": [
+    "Pad small icon targets to widen the effective target without enlarging the glyph.",
+    "Expand drag targets as the pointer nears them, widening the effective target.",
+    "Separate destructive controls from their neighbours with a visible gutter."
+  ],
+  "antiPattern": {
+    "violation": "Edit and Delete icons sit two pixels apart, so the wrong row is deleted.",
+    "remediation": "Delete moves to an overflow menu and each row keeps one filled action."
+  },
+  "graphicMetaphor": {
+    "svgShape": "difficulty-line",
+    "parametricParams": {
+      "slope": 170,
+      "lowLabel": "WIDE TARGET",
+      "highLabel": "NARROW TARGET",
+      "formula": "T = a + b log2(D/W + 0.5)",
+      "caption": "TIME RISES WITH THE INDEX OF DIFFICULTY"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Alan T. Welford"],
+    "year": 1968,
+    "title": "Fundamentals of Skill",
+    "publication": "Methuen, London"
+  }
+}
