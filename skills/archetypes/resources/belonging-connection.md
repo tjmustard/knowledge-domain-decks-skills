@@ -14,7 +14,7 @@
   - "Synergistic paradigms"
   - "Exclusive access"
   - "Deconstructed value"
-- **Shadow:** The Cynical Victim: resentment of anyone who stands out becomes a rule. It levels every distinction, teaches helplessness, and calls the result fairness.
+- **Shadow:** The Cynical Victim: resentment of whoever stands out becomes a rule that levels all distinction and calls it fair.
 - **Anchors:**
   - Sancho Panza, Cervantes' Don Quixote
   - Dr. Watson, Doyle's Sherlock Holmes

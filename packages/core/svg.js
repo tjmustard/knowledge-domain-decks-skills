@@ -91,12 +91,29 @@
     );
   }
 
+  /* A geometry number is printed to at most six decimals. Beyond that the
+     digits are the platform's trig, not the drawing: Apple's libm and glibc
+     differ in the last bit of Math.sin/cos, and a raw double prints that
+     difference into the committed bundle - where the gate reads it as a stale
+     artifact on Linux and the committed bytes stop matching a rebuild on
+     macOS. Six decimals is 0.000001 of a unit on a 400-unit page, far below
+     anything ink can show, and it is applied to the whole body rather than to
+     each emitter because two shapes write their circles out by hand. */
+  var GEOMETRY = /\b(x|y|x1|y1|x2|y2|cx|cy|r|rx|ry|d)="([^"]*)"/g;
+  function canonical(body) {
+    return body.replace(GEOMETRY, function (whole, name, value) {
+      return name + '="' + value.replace(/-?\d+\.\d+/g, function (n) {
+        return String(Math.round(Number(n) * 1e6) / 1e6);
+      }) + '"';
+    });
+  }
+
   function wrap(body) {
     return (
       '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" ' +
       'width="100%" height="100%" preserveAspectRatio="xMidYMid meet" ' +
       'role="img" aria-label="Parametric diagram of the card principle">' +
-      body + "</svg>"
+      canonical(body) + "</svg>"
     );
   }
 
