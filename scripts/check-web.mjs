@@ -32,36 +32,79 @@ if (!browser) {
   process.exit(2);
 }
 
-const port = 9000 + Math.floor(Math.random() * 900);
 const url = `file://${join(ROOT, "packages", "web", "index.html")}`;
-const profile = join(tmpdir(), `kdd-web-check-${Date.now()}`);
-const proc = spawn(browser, [
-  "--headless=new",
-  "--disable-gpu",
-  "--hide-scrollbars",
-  `--remote-debugging-port=${port}`,
-  `--user-data-dir=${profile}`,
-  "about:blank"
-], { stdio: "ignore" });
-
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
+// A cold start under load can take longer than a fixed 9 s budget, and a check
+// that flakes into FAIL is as untrustworthy as one that flakes into PASS. The
+// first attempt gets a generous budget, a second attempt runs on a fresh port,
+// and a timeout reports what the browser itself said.
+const ATTEMPTS = 2;
+const POLLS = 100;
+const POLL_INTERVAL_MS = 200;
+
+let proc = null;
+let port = 0;
+
+function startBrowser() {
+  port = 9000 + Math.floor(Math.random() * 900);
+  const profile = join(tmpdir(), `kdd-web-check-${Date.now()}-${port}`);
+  const child = spawn(browser, [
+    "--headless=new",
+    "--disable-gpu",
+    "--hide-scrollbars",
+    `--remote-debugging-port=${port}`,
+    `--user-data-dir=${profile}`,
+    "about:blank"
+  ], { stdio: ["ignore", "ignore", "pipe"] });
+
+  // Keep the browser's own complaints: when a start times out, its last words
+  // are the difference between "slow machine" and "cannot start here at all".
+  let stderr = "";
+  child.stderr.on("data", (chunk) => {
+    stderr = (stderr + chunk.toString()).slice(-2000);
+  });
+  child.stderrTail = () => stderr.split("\n").filter((line) => line.trim()).slice(-3).join(" / ");
+  return child;
+}
+
 async function waitForVersion() {
-  for (let i = 0; i < 60; i++) {
+  for (let i = 0; i < POLLS; i++) {
     try {
       const response = await fetch(`http://127.0.0.1:${port}/json/version`);
       if (response.ok) return response.json();
     } catch {
       /* not up yet */
     }
-    await sleep(150);
+    await sleep(POLL_INTERVAL_MS);
   }
-  throw new Error("browser did not expose a DevTools endpoint");
+  const said = proc && proc.stderrTail ? proc.stderrTail() : "";
+  throw new Error(
+    `browser did not expose a DevTools endpoint on port ${port}` +
+      (said ? ` - browser said: ${said}` : " - browser wrote nothing to stderr")
+  );
 }
 
 let ws;
 try {
-  await waitForVersion();
+  let started = false;
+  for (let attempt = 1; attempt <= ATTEMPTS && !started; attempt += 1) {
+    proc = startBrowser();
+    try {
+      await waitForVersion();
+      started = true;
+    } catch (error) {
+      proc.kill("SIGKILL");
+      if (attempt === ATTEMPTS) {
+        // The browser is already killed and no socket is open, so this exits
+        // without leaving anything behind. A stack here would bury the reason.
+        console.error(`FAIL web smoke: could not start a browser - ${error.message}`);
+        process.exit(1);
+      }
+      console.error(`retrying the web smoke test after a slow start: ${error.message}`);
+      await sleep(500);
+    }
+  }
   const created = await fetch(
     `http://127.0.0.1:${port}/json/new?${encodeURIComponent("about:blank")}`,
     { method: "PUT" }
@@ -168,5 +211,5 @@ try {
   }
 } finally {
   if (ws) ws.close();
-  proc.kill("SIGKILL");
+  if (proc) proc.kill("SIGKILL");
 }
