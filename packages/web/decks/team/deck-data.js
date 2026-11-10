@@ -139,6 +139,362 @@ window.TEAM_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"144.6\" x2=\"126\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262\" y1=\"144.6\" x2=\"274\" y2=\"123.8\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"200\" y2=\"134\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T04",
+      "sourceCardNo": "Card 04",
+      "name": "RACI vs. DACI Decision & Responsibility Allocation Matrices",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Architectural paralysis where pull requests languish indefinitely awaiting sign-off; multi-party ownership where \"everyone owns, hence nobody owns\" critical service components; executive overrides late in deployment phases.",
+      "schematic": "Decision-rights quadrant",
+      "script": {
+        "label": "DACI Escalation",
+        "text": "\"This architectural initiative has halted due to diffuse decision rights. We are adopting a DACI framework for this deliverable. Contributor A is designated the Driver; Principal Engineer B is the sole Approver; domain specialists C and D are Contributors; the remaining squad members are Informed. The Driver coordinates input, and the Approver will deliver a binding technical decision by Thursday at 15:00 UTC.\""
+      },
+      "audit": [
+        "Did one named Approver sign off, without a second committee review?",
+        "Did uninformed stakeholders stay out of the release-blocking path?"
+      ],
+      "auditFull": [
+        "Were pull requests and architectural RFCs reviewed and signed off by the singular designated Approver without secondary committee reviews?",
+        "Did uninformed stakeholders refrain from blocking deployment pipelines during release testing?"
+      ],
+      "foundation": "Traced to organizational design matrices from Project Management Institute standards and Intuit’s adaptation of DACI (Driver, Approver, Contributor, Informed), these models mitigate bystander apathy (Darley & Latané, 1968) and structural ambiguity in decision-making.",
+      "origin": {
+        "authors": [
+          "Project Management Institute"
+        ],
+        "year": 2017,
+        "title": "A Guide to the Project Management Body of Knowledge (PMBOK Guide)",
+        "publication": "Project Management Institute",
+        "authorsLabel": "Project Management Institute",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "quadrant",
+          "divisions": 4,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"200\" y=\"56\" width=\"144\" height=\"144\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"352\" x2=\"200\" y2=\"48\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"200\" x2=\"92\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"92\" x2=\"207\" y2=\"92\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164\" y1=\"200\" x2=\"164\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"164\" x2=\"207\" y2=\"164\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236\" y1=\"200\" x2=\"236\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"236\" x2=\"207\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308\" y1=\"200\" x2=\"308\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"308\" x2=\"207\" y2=\"308\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T05",
+      "sourceCardNo": "Card 05",
+      "name": "Belbin Team Inventory (Team Roles Theory)",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Engineering initiatives stall during final verification because the team lacks execution-oriented focus, or innovative architecture proposals are immediately dismissed due to an excess of risk-averse Monitor-Evaluators.",
+      "schematic": "Nine-role radar",
+      "script": {
+        "label": "Role Composition Calibration",
+        "text": "\"An evaluation of our recent delivery cycles reveals a gap between architectural ideation and deliverable hardening. The team possesses exceptional 'Plant' and 'Monitor-Evaluator' capabilities, yet lacks consistent 'Completer-Finisher' behaviors. For the upcoming cycle, Contributor X will drive the edge-case validation and deployment checklist.\""
+      },
+      "audit": [
+        "Have missed regression bugs at deploy verification fallen?",
+        "Do post-mortems show work spread across planning, design and execution?"
+      ],
+      "auditFull": [
+        "Has the rate of missed regression bugs dropped during production deploy verification?",
+        "Are project post-mortems identifying balanced task distributions across planning, design, and execution phases?"
+      ],
+      "foundation": "Meredith Belbin’s (1981) research at the Henley Management College identified nine team roles categorized into action-oriented, people-oriented, and thought-oriented behaviors. Belbin established that high-performing teams do not require identical high-intellect individuals (the \"Apollo syndrome\"), but rather cognitive and behavioral balance across roles (e.g., Shaper, Completer-Finisher, Monitor-Evaluator).",
+      "origin": {
+        "authors": [
+          "R. Meredith Belbin"
+        ],
+        "year": 1981,
+        "title": "Management Teams: Why They Succeed or Fail",
+        "publication": "Heinemann",
+        "authorsLabel": "R. Meredith Belbin",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 9,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 231.7 160.2 L 248.6 189.4 L 242.7 222.7 L 216.9 244.4 L 183.1 244.4 L 157.3 222.7 L 151.4 189.4 L 168.3 160.2 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 263.4 122.4 L 297.2 180.9 L 285.4 247.3 L 233.7 290.7 L 166.3 290.7 L 114.6 247.3 L 102.8 180.9 L 136.6 122.4 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 295.1 84.6 L 345.8 172.3 L 328.2 272 L 250.6 337.1 L 149.4 337.1 L 71.8 272 L 54.2 172.3 L 104.9 84.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"295.1\" y2=\"84.6\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"295.1\" cy=\"84.6\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"345.8\" y2=\"172.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"345.8\" cy=\"172.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"250.6\" y2=\"337.1\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"250.6\" cy=\"337.1\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"149.4\" y2=\"337.1\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"149.4\" cy=\"337.1\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"54.2\" y2=\"172.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"54.2\" cy=\"172.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"104.9\" y2=\"84.6\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"104.9\" cy=\"84.6\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 259 127.7 L 290.4 182.1 L 279.5 243.9 L 231.4 284.2 L 168.6 284.2 L 120.5 243.9 L 109.6 182.1 L 141 127.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 115.8 L 252.9 135 L 281 183.7 L 271.2 239.1 L 228.1 275.3 L 171.9 275.3 L 128.8 239.1 L 119 183.7 L 147.1 135 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T06",
+      "sourceCardNo": "Card 06",
+      "name": "Katzenbach & Smith’s Team Performance Curve",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "The squad calls itself a team but functions as individual silos with isolated backlogs; collective output is lower than individual contributions; cynicism emerges concerning shared meetings.",
+      "schematic": "Team-performance arc",
+      "script": {
+        "label": "Pseudo-Team Intervention",
+        "text": "\"We currently operate as a pseudo-team: individual developers deliver isolated tickets, yet we absorb the meeting overhead of a collective unit without reaping collaborative output. We must choose: either decouple our tasks into discrete individual streams or define a single shared operational deliverable for which we are mutually accountable.\""
+      },
+      "audit": [
+        "Is the sprint goal one shared deliverable, not unrelated tickets?",
+        "Do pairing sessions form on their own to clear pipeline blocks?"
+      ],
+      "auditFull": [
+        "Does the sprint goal reflect a single shared deliverable rather than a collection of unrelated tickets?",
+        "Do cross-functional pairing sessions occur organically to resolve delivery pipeline blocks?"
+      ],
+      "foundation": "Jon R. Katzenbach and Douglas K. Smith (1993) demonstrated in The Wisdom of Teams that groups navigate a performance curve moving from a \"Working Group\" to a \"Pseudo-Team\" (where performance drops below that of individual baselines), through a \"Potential Team,\" to a \"Real Team\" and ultimately a \"High-Performing Team.\"",
+      "origin": {
+        "authors": [
+          "Jon R. Katzenbach",
+          "Douglas K. Smith"
+        ],
+        "year": 1993,
+        "title": "The Wisdom of Teams: Creating the High-Performance Organization",
+        "publication": "Harvard Business School Press",
+        "authorsLabel": "Jon R. Katzenbach & Douglas K. Smith",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 5,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"322\" x2=\"111.2\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"322\" x2=\"170.4\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"322\" x2=\"229.6\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"322\" x2=\"288.8\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"61.9\" y2=\"216.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"61.9\" y1=\"216.2\" x2=\"71.7\" y2=\"221.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"71.7\" y1=\"221.9\" x2=\"81.6\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"81.6\" y1=\"230\" x2=\"91.5\" y2=\"240.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.5\" y1=\"240.7\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"111.2\" y2=\"266.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"266.5\" x2=\"121.1\" y2=\"278.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.1\" y1=\"278.2\" x2=\"130.9\" y2=\"286.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130.9\" y1=\"286.1\" x2=\"140.8\" y2=\"288.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.8\" y1=\"288.2\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"160.5\" y2=\"272.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160.5\" y1=\"272.6\" x2=\"170.4\" y2=\"256.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"256.4\" x2=\"180.3\" y2=\"236.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.3\" y1=\"236.9\" x2=\"190.1\" y2=\"215.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.1\" y1=\"215.6\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"209.9\" y2=\"173.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.9\" y1=\"173.1\" x2=\"219.7\" y2=\"153.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.7\" y1=\"153.5\" x2=\"229.6\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"136\" x2=\"239.5\" y2=\"121.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"239.5\" y1=\"121.5\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"259.2\" y2=\"105.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"259.2\" y1=\"105.4\" x2=\"269.1\" y2=\"105.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"269.1\" y1=\"105.3\" x2=\"278.9\" y2=\"110.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"278.9\" y1=\"110.6\" x2=\"288.8\" y2=\"120.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"120.5\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"308.5\" y2=\"149.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.5\" y1=\"149.3\" x2=\"318.4\" y2=\"165.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"318.4\" y1=\"165.1\" x2=\"328.3\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"328.3\" y1=\"180\" x2=\"338.1\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"338.1\" y1=\"193\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"259.2\" y1=\"322\" x2=\"259.2\" y2=\"105.40606\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"259.2\" cy=\"105.40606\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T07",
+      "sourceCardNo": "Card 07",
+      "name": "Dunbar’s Number & Team Topologies (Two-Pizza Teams)",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Standup meetings exceed twenty minutes; Slack channels become unmanageably noisy; engineers report feeling detached from end-to-end user impact; pull request review requests are routinely ignored due to notification overload.",
+      "schematic": "Team-size continuum",
+      "script": {
+        "label": "Decoupling & Boundary Definition",
+        "text": "\"The current team has surpassed nine contributors, resulting in communication overhead and slowed delivery. In accordance with Team Topologies, we will split this unit into two Stream-Aligned Teams with an internal Platform API boundary. Each unit will maintain autonomous ownership of their deployable service boundary.\""
+      },
+      "audit": [
+        "Did standups fall below ten minutes on average?",
+        "Did cross-team talk move to API contracts and async requests?"
+      ],
+      "auditFull": [
+        "Did the average duration of standup meetings decrease below ten minutes?",
+        "Has cross-team communication migrated to defined API schemas and asynchronous interface contracts rather than real-time escalations?"
+      ],
+      "foundation": "Combining Robin Dunbar’s anthropological research on cognitive group size limits (150-50-15-5) with Matthew Skelton and Manuel Pais’s Team Topologies (2019), this model establishes structural boundaries that protect cognitive load and preserve communication bandwidth.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Robin I. M. Dunbar"
+            ],
+            "year": 1992,
+            "title": "Neocortex Size as a Constraint on Group Size in Primates",
+            "publication": "Journal of Human Evolution",
+            "authorsLabel": "Robin I. M. Dunbar",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Matthew Skelton",
+              "Manuel Pais"
+            ],
+            "year": 2019,
+            "title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+            "publication": "IT Revolution Press",
+            "authorsLabel": "Matthew Skelton & Manuel Pais",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "continuum",
+          "divisions": 4,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 52 252 A 148 148 0 0 1 348 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 76 252 A 124 124 0 0 1 324 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76\" y1=\"252\" x2=\"52\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112.3\" y1=\"164.3\" x2=\"95.3\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"128\" x2=\"200\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"287.7\" y1=\"164.3\" x2=\"304.7\" y2=\"147.3\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"324\" y1=\"252\" x2=\"348\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"252\" x2=\"245.2\" y2=\"143\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"252\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"252\" x2=\"354\" y2=\"252\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T08",
+      "sourceCardNo": "Card 08",
+      "name": "Social Interdependence Theory & Cohesion",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Engineers refuse to pick up unassigned bugs or documentation tickets; individual metrics (such as committed lines of code or ticket closure counts) are prioritized over system delivery; sprint goals fail despite high individual velocity.",
+      "schematic": "Cohesion-profile radar",
+      "script": {
+        "label": "Interdependence Restructuring",
+        "text": "\"Our current operational dynamic incentivizes individual velocity over squad delivery, which compromises sprint completion. Effective immediately, our evaluation criteria hinge exclusively on shared service health: ticket throughput is irrelevant if the collective staging build remains red. Contributor velocity metrics are deprecated in favor of squad cycle time.\""
+      },
+      "audit": [
+        "Did people pair on blocked high-priority tickets outside their domain?",
+        "Was unowned triage and documentation picked up without a manager?"
+      ],
+      "auditFull": [
+        "Did team members step in to pair on blocked high-priority tickets outside their immediate domain?",
+        "Has unassigned technical documentation and triage work been picked up collaboratively without managerial intervention?"
+      ],
+      "foundation": "Developed by Morton Deutsch (1949) and expanded by David and Roger Johnson (1989), this model distinguishes between positive interdependence (cooperation where individual success is tied to collective success), negative interdependence (competition), and independence. Empirical studies confirm that positive goal and reward interdependence drive peer assistance, psychological health, and joint problem-solving.",
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Morton Deutsch"
+            ],
+            "year": 1949,
+            "title": "A Theory of Co-operation and Competition",
+            "publication": "Human Relations",
+            "authorsLabel": "Morton Deutsch",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "David W. Johnson",
+              "Roger T. Johnson"
+            ],
+            "year": 1989,
+            "title": "Cooperation and Competition: Theory and Research",
+            "publication": "Interaction Book Company",
+            "authorsLabel": "David W. Johnson & Roger T. Johnson",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 5,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 246.9 182.8 L 229 237.9 L 171 237.9 L 153.1 182.8 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 293.8 167.5 L 258 277.8 L 142 277.8 L 106.2 167.5 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 340.8 152.3 L 287 317.7 L 113 317.7 L 59.2 152.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"340.8\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340.8\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"287\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"287\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"113\" y2=\"317.7\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"113\" cy=\"317.7\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"59.2\" y2=\"152.3\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"59.2\" cy=\"152.3\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 287.3 169.6 L 253.9 272.2 L 146.1 272.2 L 112.7 169.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 109.2 L 284.5 170.6 L 252.2 269.8 L 147.8 269.8 L 115.5 170.6 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T09",
+      "sourceCardNo": "Card 09",
+      "name": "Gersick’s Punctuated Equilibrium Model",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Prolonged lack of urgency during the initial 40% of a project timeline, followed by an abrupt panic approaching the midpoint; initial assumptions about system complexity prove false.",
+      "schematic": "Punctuated-equilibrium arc",
+      "script": {
+        "label": "Midpoint Reset",
+        "text": "\"We have reached the calendar midpoint of this quarterly release. Gersick's punctuated equilibrium research demonstrates that now is the empirical inflection point: our early architectural assumptions must be adapted based on what we have observed so far. We will review our scope today, prune non-essential secondary features, and solidify our final delivery baseline.\""
+      },
+      "audit": [
+        "Did the team prune non-viable requirements after the midpoint?",
+        "Did execution velocity rise after the midpoint alignment session?"
+      ],
+      "auditFull": [
+        "Has the team pruned non-viable requirements from the current sprint backlog?",
+        "Is execution velocity elevated following the midpoint alignment session?"
+      ],
+      "foundation": "Connie Gersick’s (1988) empirical research revealed that teams do not progress linearly, but through extended periods of inertia interrupted by revolutionary transitions occurring at the calendar midpoint (\"Phase 2 Transition\") between project initiation and external deadline, regardless of total project duration.",
+      "origin": {
+        "authors": [
+          "Connie J. G. Gersick"
+        ],
+        "year": 1988,
+        "title": "Time and Transition in Work Teams: Toward a New Model of Group Development",
+        "publication": "Administrative Science Quarterly",
+        "authorsLabel": "Connie J. G. Gersick",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.666667\" y1=\"322\" x2=\"150.666667\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.333333\" y1=\"322\" x2=\"249.333333\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"64.3\" y2=\"217.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"64.3\" y1=\"217.4\" x2=\"76.7\" y2=\"225.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"76.7\" y1=\"225.6\" x2=\"89\" y2=\"237.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"89\" y1=\"237.8\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"113.7\" y2=\"269.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"113.7\" y1=\"269.7\" x2=\"126\" y2=\"282.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126\" y1=\"282.8\" x2=\"138.3\" y2=\"288.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138.3\" y1=\"288.3\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"163\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163\" y1=\"269\" x2=\"175.3\" y2=\"247\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175.3\" y1=\"247\" x2=\"187.7\" y2=\"221\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.7\" y1=\"221\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"212.3\" y2=\"168.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.3\" y1=\"168.1\" x2=\"224.7\" y2=\"144.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224.7\" y1=\"144.4\" x2=\"237\" y2=\"124.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"124.8\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"261.7\" y2=\"104.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"261.7\" y1=\"104.9\" x2=\"274\" y2=\"107.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274\" y1=\"107.3\" x2=\"286.3\" y2=\"117.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"286.3\" y1=\"117.6\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"311\" y2=\"153.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"311\" y1=\"153.3\" x2=\"323.3\" y2=\"172.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"323.3\" y1=\"172.7\" x2=\"335.7\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"335.7\" y1=\"190\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"322\" x2=\"200\" y2=\"194.059334\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"194.059334\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T10",
+      "sourceCardNo": "Card 10",
+      "name": "Ancona & Caldwell’s Boundary Spanning Framework",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "The engineering team delivers a technically sophisticated system that product managers or operations teams reject; the squad reports feeling blindsided by corporate strategic shifts or downstream system migrations.",
+      "schematic": "Boundary-spanning radar",
+      "script": {
+        "label": "External Engagement Mandate",
+        "text": "\"Our internal execution is robust, but we are isolated from dependent domain changes. We are establishing formal boundary-spanning roles: Contributor A will operate as the Ambassador to the Infrastructure group; Contributor B will handle Task Coordination with the Product Strategy team. We will review external dependencies weekly in our architecture forum.\""
+      },
+      "audit": [
+        "Were downstream API breaking changes flagged five days before freeze?",
+        "Did upstream alignment prevent mid-sprint requirement changes?"
+      ],
+      "auditFull": [
+        "Have downstream API breaking changes been flagged at least five days before code freezes?",
+        "Has alignment with upstream product stakeholders prevented mid-sprint requirement disruptions?"
+      ],
+      "foundation": "Deborah Ancona and David Caldwell’s (1992) field studies on product teams demonstrated that external boundary-spanning activities—specifically \"Ambassador\" activities (protecting resources, lobbying leadership) and \"Task Coordinator\" activities (cross-functional technical sync)—are stronger predictors of team success than internal cohesion alone.",
+      "origin": {
+        "authors": [
+          "Deborah G. Ancona",
+          "David F. Caldwell"
+        ],
+        "year": 1992,
+        "title": "Bridging the Boundary: External Activity and Performance in Organizational Teams",
+        "publication": "Administrative Science Quarterly",
+        "authorsLabel": "Deborah G. Ancona & David F. Caldwell",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "radar",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 200 148.7 L 242.7 222.7 L 157.3 222.7 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 50 L 328.2 272 L 71.8 272 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linejoin=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"200\" y2=\"50\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"50\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"328.2\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"328.2\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"198\" x2=\"71.8\" y2=\"272\" stroke=\"currentColor\" stroke-width=\"1.3\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"71.8\" cy=\"272\" r=\"2.6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 106.2 L 279.5 243.9 L 120.5 243.9 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linejoin=\"round\" stroke-dasharray=\"6 5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 99.3 L 285.4 247.3 L 114.6 247.3 Z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "T11",
+      "sourceCardNo": "Card 11",
+      "name": "Cog’s Ladder of Group Development",
+      "category": "Team Formation & Structural Architecture",
+      "diagnostic": "Team members engage in excessive politeness while privately dissenting; passive non-compliance occurs during feature planning; informal power struggles derail retrospective agendas.",
+      "schematic": "Ladder-of-group-development arc",
+      "script": {
+        "label": "Power Distribution Facilitation",
+        "text": "\"Our retrospective observations show that the team remains constrained by polite deference, which masks genuine operational disagreements. We need to formalize technical ownership. We will explicitly clarify the distribution of technical authority across frontend, backend, and data storage systems to resolve latent conflicts.\""
+      },
+      "audit": [
+        "Do engineers debate design trade-offs in RFCs without a manager?",
+        "Has polite disengagement become direct public technical debate?"
+      ],
+      "auditFull": [
+        "Do engineers openly debate design trade-offs during RFC reviews without manager intervention?",
+        "Has polite disengagement been replaced by direct, constructive technical debate in public channels?"
+      ],
+      "foundation": "Formulated by George Charrier at Procter & Gamble (1972), this five-step model tracks small group dynamics through the Polite Stage, Why We’re Here Stage, Bid for Power Stage, Constructive Stage, and Esprit Stage. It emphasizes that skipping the \"Bid for Power\" phase leads to permanent underperformance.",
+      "origin": {
+        "authors": [
+          "George O. Charrier"
+        ],
+        "year": 1972,
+        "title": "Cog's Ladder: A Model of Group Growth",
+        "publication": "SAM Advanced Management Journal",
+        "authorsLabel": "George O. Charrier",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "team-figure",
+        "parametricParams": {
+          "family": "arc",
+          "divisions": 5,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"52\" y1=\"322\" x2=\"52\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"322\" x2=\"111.2\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"322\" x2=\"170.4\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"322\" x2=\"229.6\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"322\" x2=\"288.8\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"322\" x2=\"348\" y2=\"314\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"322\" x2=\"348\" y2=\"322\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"52\" y1=\"212.4\" x2=\"61.9\" y2=\"216.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"61.9\" y1=\"216.2\" x2=\"71.7\" y2=\"221.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"71.7\" y1=\"221.9\" x2=\"81.6\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"81.6\" y1=\"230\" x2=\"91.5\" y2=\"240.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"91.5\" y1=\"240.7\" x2=\"101.3\" y2=\"253.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"101.3\" y1=\"253.3\" x2=\"111.2\" y2=\"266.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"266.5\" x2=\"121.1\" y2=\"278.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.1\" y1=\"278.2\" x2=\"130.9\" y2=\"286.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130.9\" y1=\"286.1\" x2=\"140.8\" y2=\"288.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.8\" y1=\"288.2\" x2=\"150.7\" y2=\"283.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.7\" y1=\"283.6\" x2=\"160.5\" y2=\"272.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160.5\" y1=\"272.6\" x2=\"170.4\" y2=\"256.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"170.4\" y1=\"256.4\" x2=\"180.3\" y2=\"236.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180.3\" y1=\"236.9\" x2=\"190.1\" y2=\"215.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"190.1\" y1=\"215.6\" x2=\"200\" y2=\"194.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"194.1\" x2=\"209.9\" y2=\"173.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.9\" y1=\"173.1\" x2=\"219.7\" y2=\"153.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219.7\" y1=\"153.5\" x2=\"229.6\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"229.6\" y1=\"136\" x2=\"239.5\" y2=\"121.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"239.5\" y1=\"121.5\" x2=\"249.3\" y2=\"111\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.3\" y1=\"111\" x2=\"259.2\" y2=\"105.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"259.2\" y1=\"105.4\" x2=\"269.1\" y2=\"105.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"269.1\" y1=\"105.3\" x2=\"278.9\" y2=\"110.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"278.9\" y1=\"110.6\" x2=\"288.8\" y2=\"120.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"288.8\" y1=\"120.5\" x2=\"298.7\" y2=\"133.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.7\" y1=\"133.9\" x2=\"308.5\" y2=\"149.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"308.5\" y1=\"149.3\" x2=\"318.4\" y2=\"165.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"318.4\" y1=\"165.1\" x2=\"328.3\" y2=\"180\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"328.3\" y1=\"180\" x2=\"338.1\" y2=\"193\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"338.1\" y1=\"193\" x2=\"348\" y2=\"203.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"140.8\" y1=\"322\" x2=\"140.8\" y2=\"288.19307\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"140.8\" cy=\"288.19307\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

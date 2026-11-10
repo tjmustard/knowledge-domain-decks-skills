@@ -1,0 +1,50 @@
+{
+  "id": "T08",
+  "sourceCardNo": "Card 08",
+  "name": "Social Interdependence Theory & Cohesion",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Engineers refuse to pick up unassigned bugs or documentation tickets; individual metrics (such as committed lines of code or ticket closure counts) are prioritized over system delivery; sprint goals fail despite high individual velocity.",
+  "schematic": "Cohesion-profile radar",
+  "script": {
+    "label": "Interdependence Restructuring",
+    "text": "\"Our current operational dynamic incentivizes individual velocity over squad delivery, which compromises sprint completion. Effective immediately, our evaluation criteria hinge exclusively on shared service health: ticket throughput is irrelevant if the collective staging build remains red. Contributor velocity metrics are deprecated in favor of squad cycle time.\""
+  },
+  "audit": [
+    "Did people pair on blocked high-priority tickets outside their domain?",
+    "Was unowned triage and documentation picked up without a manager?"
+  ],
+  "auditFull": [
+    "Did team members step in to pair on blocked high-priority tickets outside their immediate domain?",
+    "Has unassigned technical documentation and triage work been picked up collaboratively without managerial intervention?"
+  ],
+  "foundation": "Developed by Morton Deutsch (1949) and expanded by David and Roger Johnson (1989), this model distinguishes between positive interdependence (cooperation where individual success is tied to collective success), negative interdependence (competition), and independence. Empirical studies confirm that positive goal and reward interdependence drive peer assistance, psychological health, and joint problem-solving.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Morton Deutsch"
+        ],
+        "year": 1949,
+        "title": "A Theory of Co-operation and Competition",
+        "publication": "Human Relations"
+      },
+      {
+        "authors": [
+          "David W. Johnson",
+          "Roger T. Johnson"
+        ],
+        "year": 1989,
+        "title": "Cooperation and Competition: Theory and Research",
+        "publication": "Interaction Book Company"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 5,
+      "mark": 3
+    }
+  }
+}

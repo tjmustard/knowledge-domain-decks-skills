@@ -1,0 +1,50 @@
+{
+  "id": "T07",
+  "sourceCardNo": "Card 07",
+  "name": "Dunbar’s Number & Team Topologies (Two-Pizza Teams)",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Standup meetings exceed twenty minutes; Slack channels become unmanageably noisy; engineers report feeling detached from end-to-end user impact; pull request review requests are routinely ignored due to notification overload.",
+  "schematic": "Team-size continuum",
+  "script": {
+    "label": "Decoupling & Boundary Definition",
+    "text": "\"The current team has surpassed nine contributors, resulting in communication overhead and slowed delivery. In accordance with Team Topologies, we will split this unit into two Stream-Aligned Teams with an internal Platform API boundary. Each unit will maintain autonomous ownership of their deployable service boundary.\""
+  },
+  "audit": [
+    "Did standups fall below ten minutes on average?",
+    "Did cross-team talk move to API contracts and async requests?"
+  ],
+  "auditFull": [
+    "Did the average duration of standup meetings decrease below ten minutes?",
+    "Has cross-team communication migrated to defined API schemas and asynchronous interface contracts rather than real-time escalations?"
+  ],
+  "foundation": "Combining Robin Dunbar’s anthropological research on cognitive group size limits (150-50-15-5) with Matthew Skelton and Manuel Pais’s Team Topologies (2019), this model establishes structural boundaries that protect cognitive load and preserve communication bandwidth.",
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Robin I. M. Dunbar"
+        ],
+        "year": 1992,
+        "title": "Neocortex Size as a Constraint on Group Size in Primates",
+        "publication": "Journal of Human Evolution"
+      },
+      {
+        "authors": [
+          "Matthew Skelton",
+          "Manuel Pais"
+        ],
+        "year": 2019,
+        "title": "Team Topologies: Organizing Business and Technology Teams for Fast Flow",
+        "publication": "IT Revolution Press"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "continuum",
+      "divisions": 4,
+      "mark": 3
+    }
+  }
+}

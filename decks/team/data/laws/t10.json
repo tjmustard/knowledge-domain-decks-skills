@@ -1,0 +1,38 @@
+{
+  "id": "T10",
+  "sourceCardNo": "Card 10",
+  "name": "Ancona & Caldwell’s Boundary Spanning Framework",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "The engineering team delivers a technically sophisticated system that product managers or operations teams reject; the squad reports feeling blindsided by corporate strategic shifts or downstream system migrations.",
+  "schematic": "Boundary-spanning radar",
+  "script": {
+    "label": "External Engagement Mandate",
+    "text": "\"Our internal execution is robust, but we are isolated from dependent domain changes. We are establishing formal boundary-spanning roles: Contributor A will operate as the Ambassador to the Infrastructure group; Contributor B will handle Task Coordination with the Product Strategy team. We will review external dependencies weekly in our architecture forum.\""
+  },
+  "audit": [
+    "Were downstream API breaking changes flagged five days before freeze?",
+    "Did upstream alignment prevent mid-sprint requirement changes?"
+  ],
+  "auditFull": [
+    "Have downstream API breaking changes been flagged at least five days before code freezes?",
+    "Has alignment with upstream product stakeholders prevented mid-sprint requirement disruptions?"
+  ],
+  "foundation": "Deborah Ancona and David Caldwell’s (1992) field studies on product teams demonstrated that external boundary-spanning activities—specifically \"Ambassador\" activities (protecting resources, lobbying leadership) and \"Task Coordinator\" activities (cross-functional technical sync)—are stronger predictors of team success than internal cohesion alone.",
+  "origin": {
+    "authors": [
+      "Deborah G. Ancona",
+      "David F. Caldwell"
+    ],
+    "year": 1992,
+    "title": "Bridging the Boundary: External Activity and Performance in Organizational Teams",
+    "publication": "Administrative Science Quarterly"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

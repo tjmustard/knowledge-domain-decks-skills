@@ -31,7 +31,7 @@
       "max": 528
     }
   },
-  "note": "Every one of the 44 sections carries exactly four fields, all parsed mechanically: Organizational Psychology Foundation (239-481 chars), Team Friction Diagnostic (125-241), Step-by-Step Manager Script (219-443, one labelled script per card), Follow-up Audit Protocol Day 14 (135-528, two questions per card). The document's own telemetry table refers to 'Card NN'; every reference checked (4, 7, 12, 13, 18, 25, 27, 36, 39, 44) matches the card's position in document order, so T01-T44 is both the deck order and the source's own numbering. The document claims forty-four models in four taxonomies and the extraction confirms 11/11/11/11. Foundation text is recorded verbatim, including its empirical claims; the deck cites the work, it does not endorse the statistic. Committed here as the deck's authority (DECISIONS 46): no test or generator reads the source folder. Every record is compared to this file field by field; where a record is compressed for the card, the source text stays here and the rules file and skill carry it unabridged.",
+  "note": "Every one of the 44 sections carries exactly four fields, all parsed mechanically: Organizational Psychology Foundation (239-481 chars), Team Friction Diagnostic (125-241), Step-by-Step Manager Script (219-443, one labelled script per card), Follow-up Audit Protocol Day 14 (135-528, two questions per card). The document's own telemetry table refers to 'Card NN'; every reference checked (4, 7, 12, 13, 18, 25, 27, 36, 39, 44) matches the card's position in document order, so T01-T44 is both the deck order and the source's own numbering. The document claims forty-four models in four taxonomies and the extraction confirms 11/11/11/11. Foundation text is recorded verbatim, including its empirical claims; the deck cites the work, it does not endorse the statistic. Committed here as the deck's authority (DECISIONS 46): no test or generator reads the source folder. Every record is compared to this file field by field; where a record is compressed for the card, the source text stays here and the rules file and skill carry it unabridged. Extraction correction: two audit checks (T11, T22) had trailing prose from the following section appended by the extractor; each is recorded as its question only. The records' quoted scripts and foundations are untouched.",
   "cardReferences": {
     "4": [
       "RACI/DACI"
@@ -260,7 +260,7 @@
       ],
       "audit": [
         "Do engineers openly debate design trade-offs during RFC reviews without manager intervention?",
-        "Has polite disengagement been replaced by direct, constructive technical debate in public channels? Engineering organizations operating with low psychological safety systematically suppress error reporting, creating blind spots that manifest as critical production failures. Psychological safety and generative trust provide the behavioral foundation required for blameless inquiry, continuous system learning, and fast feedback loops."
+        "Has polite disengagement been replaced by direct, constructive technical debate in public channels?"
       ]
     },
     {
@@ -458,7 +458,7 @@
       ],
       "audit": [
         "Has the individual engineer re-engaged in collaborative discussions and forward-looking roadmap planning?",
-        "Was a concrete, written professional development plan formalized to restore parity in the psychological contract? Unresolved technical and interpersonal conflict degrades engineering velocity and introduces architectural flaws into systems. Engineering teams require structured feedback protocols that remove subjective blame and replace defensive posturing with empirical, blameless inquiry."
+        "Was a concrete, written professional development plan formalized to restore parity in the psychological contract?"
       ]
     },
     {

@@ -72,3 +72,179 @@ Every card is a script a manager can run: the friction symptom that says this is
 - Did retrospective meetings reference charter commitments when evaluating delivery bottlenecks?
 
 **Source.** John E. Mathieu & Tammy L. Rapp (2009). *Laying the Foundation for Successful Team Performance Trajectories: The Roles of Team Charters and Performance Strategies*. Journal of Applied Psychology.
+
+### T04 — RACI vs. DACI Decision & Responsibility Allocation Matrices
+
+**Friction diagnostic.** Architectural paralysis where pull requests languish indefinitely awaiting sign-off; multi-party ownership where "everyone owns, hence nobody owns" critical service components; executive overrides late in deployment phases.
+
+**Schematic.** Decision-rights quadrant
+
+**Manager script.** DACI Escalation
+
+"This architectural initiative has halted due to diffuse decision rights. We are adopting a DACI framework for this deliverable. Contributor A is designated the Driver; Principal Engineer B is the sole Approver; domain specialists C and D are Contributors; the remaining squad members are Informed. The Driver coordinates input, and the Approver will deliver a binding technical decision by Thursday at 15:00 UTC."
+
+**Day-14 checks.**
+- Did one named Approver sign off, without a second committee review?
+- Did uninformed stakeholders stay out of the release-blocking path?
+
+**Foundation.** Traced to organizational design matrices from Project Management Institute standards and Intuit’s adaptation of DACI (Driver, Approver, Contributor, Informed), these models mitigate bystander apathy (Darley & Latané, 1968) and structural ambiguity in decision-making.
+
+**Checks as written.**
+- Were pull requests and architectural RFCs reviewed and signed off by the singular designated Approver without secondary committee reviews?
+- Did uninformed stakeholders refrain from blocking deployment pipelines during release testing?
+
+**Source.** Project Management Institute (2017). *A Guide to the Project Management Body of Knowledge (PMBOK Guide)*. Project Management Institute.
+
+### T05 — Belbin Team Inventory (Team Roles Theory)
+
+**Friction diagnostic.** Engineering initiatives stall during final verification because the team lacks execution-oriented focus, or innovative architecture proposals are immediately dismissed due to an excess of risk-averse Monitor-Evaluators.
+
+**Schematic.** Nine-role radar
+
+**Manager script.** Role Composition Calibration
+
+"An evaluation of our recent delivery cycles reveals a gap between architectural ideation and deliverable hardening. The team possesses exceptional 'Plant' and 'Monitor-Evaluator' capabilities, yet lacks consistent 'Completer-Finisher' behaviors. For the upcoming cycle, Contributor X will drive the edge-case validation and deployment checklist."
+
+**Day-14 checks.**
+- Have missed regression bugs at deploy verification fallen?
+- Do post-mortems show work spread across planning, design and execution?
+
+**Foundation.** Meredith Belbin’s (1981) research at the Henley Management College identified nine team roles categorized into action-oriented, people-oriented, and thought-oriented behaviors. Belbin established that high-performing teams do not require identical high-intellect individuals (the "Apollo syndrome"), but rather cognitive and behavioral balance across roles (e.g., Shaper, Completer-Finisher, Monitor-Evaluator).
+
+**Checks as written.**
+- Has the rate of missed regression bugs dropped during production deploy verification?
+- Are project post-mortems identifying balanced task distributions across planning, design, and execution phases?
+
+**Source.** R. Meredith Belbin (1981). *Management Teams: Why They Succeed or Fail*. Heinemann.
+
+### T06 — Katzenbach & Smith’s Team Performance Curve
+
+**Friction diagnostic.** The squad calls itself a team but functions as individual silos with isolated backlogs; collective output is lower than individual contributions; cynicism emerges concerning shared meetings.
+
+**Schematic.** Team-performance arc
+
+**Manager script.** Pseudo-Team Intervention
+
+"We currently operate as a pseudo-team: individual developers deliver isolated tickets, yet we absorb the meeting overhead of a collective unit without reaping collaborative output. We must choose: either decouple our tasks into discrete individual streams or define a single shared operational deliverable for which we are mutually accountable."
+
+**Day-14 checks.**
+- Is the sprint goal one shared deliverable, not unrelated tickets?
+- Do pairing sessions form on their own to clear pipeline blocks?
+
+**Foundation.** Jon R. Katzenbach and Douglas K. Smith (1993) demonstrated in The Wisdom of Teams that groups navigate a performance curve moving from a "Working Group" to a "Pseudo-Team" (where performance drops below that of individual baselines), through a "Potential Team," to a "Real Team" and ultimately a "High-Performing Team."
+
+**Checks as written.**
+- Does the sprint goal reflect a single shared deliverable rather than a collection of unrelated tickets?
+- Do cross-functional pairing sessions occur organically to resolve delivery pipeline blocks?
+
+**Source.** Jon R. Katzenbach & Douglas K. Smith (1993). *The Wisdom of Teams: Creating the High-Performance Organization*. Harvard Business School Press.
+
+### T07 — Dunbar’s Number & Team Topologies (Two-Pizza Teams)
+
+**Friction diagnostic.** Standup meetings exceed twenty minutes; Slack channels become unmanageably noisy; engineers report feeling detached from end-to-end user impact; pull request review requests are routinely ignored due to notification overload.
+
+**Schematic.** Team-size continuum
+
+**Manager script.** Decoupling & Boundary Definition
+
+"The current team has surpassed nine contributors, resulting in communication overhead and slowed delivery. In accordance with Team Topologies, we will split this unit into two Stream-Aligned Teams with an internal Platform API boundary. Each unit will maintain autonomous ownership of their deployable service boundary."
+
+**Day-14 checks.**
+- Did standups fall below ten minutes on average?
+- Did cross-team talk move to API contracts and async requests?
+
+**Foundation.** Combining Robin Dunbar’s anthropological research on cognitive group size limits (150-50-15-5) with Matthew Skelton and Manuel Pais’s Team Topologies (2019), this model establishes structural boundaries that protect cognitive load and preserve communication bandwidth.
+
+**Checks as written.**
+- Did the average duration of standup meetings decrease below ten minutes?
+- Has cross-team communication migrated to defined API schemas and asynchronous interface contracts rather than real-time escalations?
+
+**Source.** Robin I. M. Dunbar (1992). *Neocortex Size as a Constraint on Group Size in Primates*. Journal of Human Evolution. Matthew Skelton & Manuel Pais (2019). *Team Topologies: Organizing Business and Technology Teams for Fast Flow*. IT Revolution Press.
+
+### T08 — Social Interdependence Theory & Cohesion
+
+**Friction diagnostic.** Engineers refuse to pick up unassigned bugs or documentation tickets; individual metrics (such as committed lines of code or ticket closure counts) are prioritized over system delivery; sprint goals fail despite high individual velocity.
+
+**Schematic.** Cohesion-profile radar
+
+**Manager script.** Interdependence Restructuring
+
+"Our current operational dynamic incentivizes individual velocity over squad delivery, which compromises sprint completion. Effective immediately, our evaluation criteria hinge exclusively on shared service health: ticket throughput is irrelevant if the collective staging build remains red. Contributor velocity metrics are deprecated in favor of squad cycle time."
+
+**Day-14 checks.**
+- Did people pair on blocked high-priority tickets outside their domain?
+- Was unowned triage and documentation picked up without a manager?
+
+**Foundation.** Developed by Morton Deutsch (1949) and expanded by David and Roger Johnson (1989), this model distinguishes between positive interdependence (cooperation where individual success is tied to collective success), negative interdependence (competition), and independence. Empirical studies confirm that positive goal and reward interdependence drive peer assistance, psychological health, and joint problem-solving.
+
+**Checks as written.**
+- Did team members step in to pair on blocked high-priority tickets outside their immediate domain?
+- Has unassigned technical documentation and triage work been picked up collaboratively without managerial intervention?
+
+**Source.** Morton Deutsch (1949). *A Theory of Co-operation and Competition*. Human Relations. David W. Johnson & Roger T. Johnson (1989). *Cooperation and Competition: Theory and Research*. Interaction Book Company.
+
+### T09 — Gersick’s Punctuated Equilibrium Model
+
+**Friction diagnostic.** Prolonged lack of urgency during the initial 40% of a project timeline, followed by an abrupt panic approaching the midpoint; initial assumptions about system complexity prove false.
+
+**Schematic.** Punctuated-equilibrium arc
+
+**Manager script.** Midpoint Reset
+
+"We have reached the calendar midpoint of this quarterly release. Gersick's punctuated equilibrium research demonstrates that now is the empirical inflection point: our early architectural assumptions must be adapted based on what we have observed so far. We will review our scope today, prune non-essential secondary features, and solidify our final delivery baseline."
+
+**Day-14 checks.**
+- Did the team prune non-viable requirements after the midpoint?
+- Did execution velocity rise after the midpoint alignment session?
+
+**Foundation.** Connie Gersick’s (1988) empirical research revealed that teams do not progress linearly, but through extended periods of inertia interrupted by revolutionary transitions occurring at the calendar midpoint ("Phase 2 Transition") between project initiation and external deadline, regardless of total project duration.
+
+**Checks as written.**
+- Has the team pruned non-viable requirements from the current sprint backlog?
+- Is execution velocity elevated following the midpoint alignment session?
+
+**Source.** Connie J. G. Gersick (1988). *Time and Transition in Work Teams: Toward a New Model of Group Development*. Administrative Science Quarterly.
+
+### T10 — Ancona & Caldwell’s Boundary Spanning Framework
+
+**Friction diagnostic.** The engineering team delivers a technically sophisticated system that product managers or operations teams reject; the squad reports feeling blindsided by corporate strategic shifts or downstream system migrations.
+
+**Schematic.** Boundary-spanning radar
+
+**Manager script.** External Engagement Mandate
+
+"Our internal execution is robust, but we are isolated from dependent domain changes. We are establishing formal boundary-spanning roles: Contributor A will operate as the Ambassador to the Infrastructure group; Contributor B will handle Task Coordination with the Product Strategy team. We will review external dependencies weekly in our architecture forum."
+
+**Day-14 checks.**
+- Were downstream API breaking changes flagged five days before freeze?
+- Did upstream alignment prevent mid-sprint requirement changes?
+
+**Foundation.** Deborah Ancona and David Caldwell’s (1992) field studies on product teams demonstrated that external boundary-spanning activities—specifically "Ambassador" activities (protecting resources, lobbying leadership) and "Task Coordinator" activities (cross-functional technical sync)—are stronger predictors of team success than internal cohesion alone.
+
+**Checks as written.**
+- Have downstream API breaking changes been flagged at least five days before code freezes?
+- Has alignment with upstream product stakeholders prevented mid-sprint requirement disruptions?
+
+**Source.** Deborah G. Ancona & David F. Caldwell (1992). *Bridging the Boundary: External Activity and Performance in Organizational Teams*. Administrative Science Quarterly.
+
+### T11 — Cog’s Ladder of Group Development
+
+**Friction diagnostic.** Team members engage in excessive politeness while privately dissenting; passive non-compliance occurs during feature planning; informal power struggles derail retrospective agendas.
+
+**Schematic.** Ladder-of-group-development arc
+
+**Manager script.** Power Distribution Facilitation
+
+"Our retrospective observations show that the team remains constrained by polite deference, which masks genuine operational disagreements. We need to formalize technical ownership. We will explicitly clarify the distribution of technical authority across frontend, backend, and data storage systems to resolve latent conflicts."
+
+**Day-14 checks.**
+- Do engineers debate design trade-offs in RFCs without a manager?
+- Has polite disengagement become direct public technical debate?
+
+**Foundation.** Formulated by George Charrier at Procter & Gamble (1972), this five-step model tracks small group dynamics through the Polite Stage, Why We’re Here Stage, Bid for Power Stage, Constructive Stage, and Esprit Stage. It emphasizes that skipping the "Bid for Power" phase leads to permanent underperformance.
+
+**Checks as written.**
+- Do engineers openly debate design trade-offs during RFC reviews without manager intervention?
+- Has polite disengagement been replaced by direct, constructive technical debate in public channels?
+
+**Source.** George O. Charrier (1972). *Cog's Ladder: A Model of Group Growth*. SAM Advanced Management Journal.

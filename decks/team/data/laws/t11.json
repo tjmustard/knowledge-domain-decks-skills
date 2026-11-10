@@ -1,0 +1,37 @@
+{
+  "id": "T11",
+  "sourceCardNo": "Card 11",
+  "name": "Cog’s Ladder of Group Development",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Team members engage in excessive politeness while privately dissenting; passive non-compliance occurs during feature planning; informal power struggles derail retrospective agendas.",
+  "schematic": "Ladder-of-group-development arc",
+  "script": {
+    "label": "Power Distribution Facilitation",
+    "text": "\"Our retrospective observations show that the team remains constrained by polite deference, which masks genuine operational disagreements. We need to formalize technical ownership. We will explicitly clarify the distribution of technical authority across frontend, backend, and data storage systems to resolve latent conflicts.\""
+  },
+  "audit": [
+    "Do engineers debate design trade-offs in RFCs without a manager?",
+    "Has polite disengagement become direct public technical debate?"
+  ],
+  "auditFull": [
+    "Do engineers openly debate design trade-offs during RFC reviews without manager intervention?",
+    "Has polite disengagement been replaced by direct, constructive technical debate in public channels?"
+  ],
+  "foundation": "Formulated by George Charrier at Procter & Gamble (1972), this five-step model tracks small group dynamics through the Polite Stage, Why We’re Here Stage, Bid for Power Stage, Constructive Stage, and Esprit Stage. It emphasizes that skipping the \"Bid for Power\" phase leads to permanent underperformance.",
+  "origin": {
+    "authors": [
+      "George O. Charrier"
+    ],
+    "year": 1972,
+    "title": "Cog's Ladder: A Model of Group Growth",
+    "publication": "SAM Advanced Management Journal"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 5,
+      "mark": 2
+    }
+  }
+}

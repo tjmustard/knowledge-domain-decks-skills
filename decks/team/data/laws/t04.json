@@ -1,0 +1,37 @@
+{
+  "id": "T04",
+  "sourceCardNo": "Card 04",
+  "name": "RACI vs. DACI Decision & Responsibility Allocation Matrices",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Architectural paralysis where pull requests languish indefinitely awaiting sign-off; multi-party ownership where \"everyone owns, hence nobody owns\" critical service components; executive overrides late in deployment phases.",
+  "schematic": "Decision-rights quadrant",
+  "script": {
+    "label": "DACI Escalation",
+    "text": "\"This architectural initiative has halted due to diffuse decision rights. We are adopting a DACI framework for this deliverable. Contributor A is designated the Driver; Principal Engineer B is the sole Approver; domain specialists C and D are Contributors; the remaining squad members are Informed. The Driver coordinates input, and the Approver will deliver a binding technical decision by Thursday at 15:00 UTC.\""
+  },
+  "audit": [
+    "Did one named Approver sign off, without a second committee review?",
+    "Did uninformed stakeholders stay out of the release-blocking path?"
+  ],
+  "auditFull": [
+    "Were pull requests and architectural RFCs reviewed and signed off by the singular designated Approver without secondary committee reviews?",
+    "Did uninformed stakeholders refrain from blocking deployment pipelines during release testing?"
+  ],
+  "foundation": "Traced to organizational design matrices from Project Management Institute standards and Intuit’s adaptation of DACI (Driver, Approver, Contributor, Informed), these models mitigate bystander apathy (Darley & Latané, 1968) and structural ambiguity in decision-making.",
+  "origin": {
+    "authors": [
+      "Project Management Institute"
+    ],
+    "year": 2017,
+    "title": "A Guide to the Project Management Body of Knowledge (PMBOK Guide)",
+    "publication": "Project Management Institute"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "quadrant",
+      "divisions": 4,
+      "mark": 2
+    }
+  }
+}

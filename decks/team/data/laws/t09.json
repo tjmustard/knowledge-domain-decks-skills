@@ -1,0 +1,37 @@
+{
+  "id": "T09",
+  "sourceCardNo": "Card 09",
+  "name": "Gersick’s Punctuated Equilibrium Model",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Prolonged lack of urgency during the initial 40% of a project timeline, followed by an abrupt panic approaching the midpoint; initial assumptions about system complexity prove false.",
+  "schematic": "Punctuated-equilibrium arc",
+  "script": {
+    "label": "Midpoint Reset",
+    "text": "\"We have reached the calendar midpoint of this quarterly release. Gersick's punctuated equilibrium research demonstrates that now is the empirical inflection point: our early architectural assumptions must be adapted based on what we have observed so far. We will review our scope today, prune non-essential secondary features, and solidify our final delivery baseline.\""
+  },
+  "audit": [
+    "Did the team prune non-viable requirements after the midpoint?",
+    "Did execution velocity rise after the midpoint alignment session?"
+  ],
+  "auditFull": [
+    "Has the team pruned non-viable requirements from the current sprint backlog?",
+    "Is execution velocity elevated following the midpoint alignment session?"
+  ],
+  "foundation": "Connie Gersick’s (1988) empirical research revealed that teams do not progress linearly, but through extended periods of inertia interrupted by revolutionary transitions occurring at the calendar midpoint (\"Phase 2 Transition\") between project initiation and external deadline, regardless of total project duration.",
+  "origin": {
+    "authors": [
+      "Connie J. G. Gersick"
+    ],
+    "year": 1988,
+    "title": "Time and Transition in Work Teams: Toward a New Model of Group Development",
+    "publication": "Administrative Science Quarterly"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

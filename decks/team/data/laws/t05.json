@@ -1,0 +1,37 @@
+{
+  "id": "T05",
+  "sourceCardNo": "Card 05",
+  "name": "Belbin Team Inventory (Team Roles Theory)",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "Engineering initiatives stall during final verification because the team lacks execution-oriented focus, or innovative architecture proposals are immediately dismissed due to an excess of risk-averse Monitor-Evaluators.",
+  "schematic": "Nine-role radar",
+  "script": {
+    "label": "Role Composition Calibration",
+    "text": "\"An evaluation of our recent delivery cycles reveals a gap between architectural ideation and deliverable hardening. The team possesses exceptional 'Plant' and 'Monitor-Evaluator' capabilities, yet lacks consistent 'Completer-Finisher' behaviors. For the upcoming cycle, Contributor X will drive the edge-case validation and deployment checklist.\""
+  },
+  "audit": [
+    "Have missed regression bugs at deploy verification fallen?",
+    "Do post-mortems show work spread across planning, design and execution?"
+  ],
+  "auditFull": [
+    "Has the rate of missed regression bugs dropped during production deploy verification?",
+    "Are project post-mortems identifying balanced task distributions across planning, design, and execution phases?"
+  ],
+  "foundation": "Meredith Belbin’s (1981) research at the Henley Management College identified nine team roles categorized into action-oriented, people-oriented, and thought-oriented behaviors. Belbin established that high-performing teams do not require identical high-intellect individuals (the \"Apollo syndrome\"), but rather cognitive and behavioral balance across roles (e.g., Shaper, Completer-Finisher, Monitor-Evaluator).",
+  "origin": {
+    "authors": [
+      "R. Meredith Belbin"
+    ],
+    "year": 1981,
+    "title": "Management Teams: Why They Succeed or Fail",
+    "publication": "Heinemann"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "radar",
+      "divisions": 9,
+      "mark": 5
+    }
+  }
+}

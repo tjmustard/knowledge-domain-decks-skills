@@ -1,0 +1,38 @@
+{
+  "id": "T06",
+  "sourceCardNo": "Card 06",
+  "name": "Katzenbach & Smith’s Team Performance Curve",
+  "category": "Team Formation & Structural Architecture",
+  "diagnostic": "The squad calls itself a team but functions as individual silos with isolated backlogs; collective output is lower than individual contributions; cynicism emerges concerning shared meetings.",
+  "schematic": "Team-performance arc",
+  "script": {
+    "label": "Pseudo-Team Intervention",
+    "text": "\"We currently operate as a pseudo-team: individual developers deliver isolated tickets, yet we absorb the meeting overhead of a collective unit without reaping collaborative output. We must choose: either decouple our tasks into discrete individual streams or define a single shared operational deliverable for which we are mutually accountable.\""
+  },
+  "audit": [
+    "Is the sprint goal one shared deliverable, not unrelated tickets?",
+    "Do pairing sessions form on their own to clear pipeline blocks?"
+  ],
+  "auditFull": [
+    "Does the sprint goal reflect a single shared deliverable rather than a collection of unrelated tickets?",
+    "Do cross-functional pairing sessions occur organically to resolve delivery pipeline blocks?"
+  ],
+  "foundation": "Jon R. Katzenbach and Douglas K. Smith (1993) demonstrated in The Wisdom of Teams that groups navigate a performance curve moving from a \"Working Group\" to a \"Pseudo-Team\" (where performance drops below that of individual baselines), through a \"Potential Team,\" to a \"Real Team\" and ultimately a \"High-Performing Team.\"",
+  "origin": {
+    "authors": [
+      "Jon R. Katzenbach",
+      "Douglas K. Smith"
+    ],
+    "year": 1993,
+    "title": "The Wisdom of Teams: Creating the High-Performance Organization",
+    "publication": "Harvard Business School Press"
+  },
+  "figure": {
+    "svgShape": "team-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 5,
+      "mark": 4
+    }
+  }
+}
