@@ -167,7 +167,7 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 68-page file of 744,071 bytes (726 KiB), and two consecutive
+build:pdf` emits a 68-page file of 743,518 bytes (726 KiB), and two consecutive
 builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of

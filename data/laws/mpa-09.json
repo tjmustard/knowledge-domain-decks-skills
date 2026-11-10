@@ -18,7 +18,7 @@
     "parametricParams": {
       "gainHeight": 70,
       "lossHeight": 70,
-      "gainStyle": "hollow",
+      "gainStyle": "faint",
       "baseline": 190,
       "gainLabel": "GAIN",
       "lossLabel": "LOSS",

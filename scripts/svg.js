@@ -67,14 +67,27 @@
     );
   }
 
+  /* A mark can carry one blanket opacity or two independent channel opacities,
+     never both: a fill-opacity multiplied by a stroke-opacity and then by an
+     overall opacity is three numbers where the drawing meant two, and a reader
+     cannot tell which one the ink answers to. Setting either channel opts out
+     of the blanket attribute. */
   function rect(x, y, w, h, opts) {
     opts = opts || {};
+    var fill = opts.fill || "none";
+    var channels = "";
+    if (fill !== "none" && opts.fillOpacity != null) {
+      channels += ' fill-opacity="' + opts.fillOpacity + '"';
+    }
+    if (opts.strokeOpacity != null) {
+      channels += ' stroke-opacity="' + opts.strokeOpacity + '"';
+    }
     return (
       '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h +
-      '" rx="' + (opts.rx || 0) + '" fill="' + (opts.fill || "none") +
-      '" stroke="currentColor" stroke-width="' + (opts.width || 2) +
-      '" opacity="' + (opts.opacity == null ? 0.85 : opts.opacity) + '" ' +
-      STROKE + "/>"
+      '" rx="' + (opts.rx || 0) + '" fill="' + fill +
+      '" stroke="currentColor" stroke-width="' + (opts.width || 2) + '"' +
+      (channels ? channels : ' opacity="' + (opts.opacity == null ? 0.85 : opts.opacity) + '"') +
+      " " + STROKE + "/>"
     );
   }
 
@@ -723,12 +736,15 @@
          whether or not a number is printed, so unequal bars would claim a ratio
          that the 1979 paper does not state - and would contradict the caption,
          which says the gain is the same size. The asymmetry rides in the fill
-         instead: the loss is solid, the gain is an outline, the same word the
-         filter-gate uses for present-but-weakened. */
+         instead: the loss is solid, the gain is a faint surface with a clear
+         edge. Not an empty outline: an empty shape reads as nothing there,
+         while a faint one reads as lighter, and only one of those is the claim.
+         Hollow therefore means exactly one thing in this deck, and it lives in
+         filter-gate. */
       var gainHeight = p.gainHeight == null ? 70 : p.gainHeight;
       var lossHeight = p.lossHeight == null ? 70 : p.lossHeight;
       var baseline = p.baseline == null ? 190 : p.baseline;
-      var gainStyle = p.gainStyle || "hollow";
+      var gainStyle = p.gainStyle || "faint";
       var lossStyle = p.lossStyle || "solid";
       var gainLabel = p.gainLabel || "GAIN";
       var lossLabel = p.lossLabel || "LOSS";
@@ -736,8 +752,8 @@
       var caption = p.caption || "";
       var out = [];
       function bar(x, y, height, style) {
-        return style === "hollow"
-          ? rect(x, y, 50, height, { rx: 3, fill: "none", opacity: 0.55, width: 2 })
+        return style === "faint"
+          ? rect(x, y, 50, height, { rx: 3, fill: "currentColor", fillOpacity: 0.12, width: 2, strokeOpacity: 0.8 })
           : rect(x, y, 50, height, { rx: 3, fill: "currentColor", opacity: 0.8, width: 1.5 });
       }
       out.push(line(100, 60, 100, 320, 1.5, 0.5));
@@ -782,8 +798,11 @@
       out.push(line(forkX, 200, 330, 200, 3, 0.95));
       out.push(circle(330, 200, 7));
       out.push(label(335, 180, defaultLabel, { size: 9, anchor: "end" }));
+      /* The alternative is solid. Fewer people take it, but it is not weaker:
+         the thin line carries lower uptake, and a hollow mark would say the
+         option itself is absent or disabled. */
       out.push(line(forkX, 200, 300, 280, 1.5, 0.45));
-      out.push(circle(300, 280, 6, { hollow: true, opacity: 0.85, width: 1.5 }));
+      out.push(circle(300, 280, 6, { opacity: 0.8 }));
       out.push(label(300, 306, altLabel, { size: 9 }));
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");

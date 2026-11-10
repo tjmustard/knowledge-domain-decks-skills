@@ -868,10 +868,17 @@ of Risk and Uncertainty 1(1), 7-59.
   belong to the 1979 statement. Both bars are the same height: a bar chart
   asserts magnitude whether or not a number is printed, so unequal bars would
   claim about one and a half times and would also contradict a caption that says
-  the gain is the same size. The asymmetry is carried by the fill instead - the
-  loss solid, the gain an outline - which reads as same size, different weight
-  and encodes no ratio at all. That is the filter-gate's word for
-  present-but-weakened, used here for felt-but-equal.
+  the gain is the same size. The asymmetry is carried by the fill instead: the
+  loss is solid, the gain a faint surface with a clear edge, which reads as same
+  size, different weight and encodes no ratio at all. The gain bar is faint
+  rather than empty on purpose - an empty shape reads as nothing there, a faint
+  one reads as lighter, and only the second is the claim. Hollow is a
+  figure-local mark elsewhere in the deck: hierarchy (branches not taken),
+  proximity-grid (items outside the group), decay-curve (the annotated trough),
+  odd-one-out (the undistinguished field), anchor-line (the estimates against
+  the filled value) and filter-gate (the attenuated channels) all draw an
+  unfilled circle, and each caption says what it means there. What this slice
+  protects is that the two new cards add no seventh meaning.
 - **Goal gradient cites Kivetz, Urminsky & Zheng, not Hull.** Hull (1932) named
   the effect from maze running; the product claim the card makes, effort rising as
   a reward nears, is theirs. This differs on purpose from TME-09, where the name
@@ -901,10 +908,11 @@ sunk-cost result should have.
 Four shapes are new, taking the deck to twenty-three, because none of the nineteen
 drew these claims: `sunk-gate` puts a spent block behind a "now" line with the
 decision arrow running on past it; `gain-loss-bars` draws two equal bars from one
-baseline, the loss solid and the gain an outline, so no scale asserts a ratio;
-`goal-gradient` draws
+baseline, the loss solid and the gain a faint surface, so no scale asserts a
+ratio; `goal-gradient` draws
 effort accelerating toward a marked goal; `default-fork` draws the default at full
-weight and the alternative thinner, ending hollow. Every label was measured in the
-same headless-Chrome harness as §30: all inside the 400-unit box, the tightest
-clearances GOAL at 2.20 pt from its dot, ZERO at 2.59 pt from the axis, and SPENT
-at 3.17 pt from the block. The font pin will re-derive them.
+weight and the alternative thinner, both ending in solid dots. Every label was
+measured in the same headless-Chrome harness as §30: all inside the 400-unit box,
+the tightest clearances among these four are GOAL at 2.20 pt from its dot, ZERO
+at 2.59 pt from the axis, and SPENT at 3.17 pt from the block. The font pin will
+re-derive them.
