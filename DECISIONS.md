@@ -766,13 +766,22 @@ nodes and edges). Two are reused: `paired-panels` compares recall across two
 conditions for Zeigarnik, and `split-bar` partitions one budget of attention for
 Confirmation Bias.
 
-Every label on the new arrangements was measured at card size against the
-generated SVG, in the Menlo face the print build embeds, and every bounding box
-lies inside the 400 x 400 box. The tightest clearances are EVEN SPLIT at 1.92 pt
-from the reference line, END at 2.49 pt from its dot, and DISTINCT at 3.78 pt from
-the odd mark. The longest is 41 characters at 221.9 units, inside the
-45-character, 248-unit bound measured on `decline-curve`. The pending font pin
-will re-derive all of these, so none is a permanent bound.
+Every label on the new arrangements was measured at card size by laying the
+generated SVG in a headless Chrome page and reading each `<text>` element's
+`getBBox` in the 400-unit viewBox, in the Menlo face the print build embeds.
+Every bounding box lies inside that box. Distances are reported in points at the
+card's own scale, 0.324 pt per unit. The tightest are EVEN SPLIT at 2.05 pt (6.3
+units) from the reference line and CONFIRMING and DISCONFIRMING at 2.86 pt (8.8
+units) from their bars; DISTINCT sits 3.80 pt from the odd mark and END 2.49 pt
+below its dot. The longest label is not in a shape's field but the MPA-06
+caption, 46 characters and 249 units wide, which clears the 400-unit box by 75
+units either side but is longer than the 45-character, 248-unit figure measured
+on `decline-curve`. That figure is the widest a field label can be before it
+collides with its marks; a centred caption is bounded by the box instead, and a
+taller caption would be a line-height question rather than a width one. Re-running
+this harness moves EVEN SPLIT by about 0.13 pt, so the second decimal is
+resolution here for the same reason it is on page 25's overrun. The pending font
+pin will re-derive all of these, so none is a permanent bound.
 
 **The six cards land in one block, and every card after them moves by twelve
 pages.** Cards print in ID order, so MPA-02 to MPA-07 fall between MPA-01 and
@@ -816,11 +825,16 @@ five is the step, and it is a person's.
 
 ## 33. The schema limit is not a page-fit guarantee
 
-The axiom's `maxLength` is 110 characters, and this page takes fewer. Measured on
-Selective Attention at the real 9 pt italic in the 171 pt column: 91 characters
-set to three lines and 86 to two, and the third line costs 11.66 pt against 7.36
-pt of slack, which puts the trigger's bottom ink 4.29 pt past the 22.5 pt floor,
-outside the safe box. Those are two points on one page, not a bound. Wrapping
+The axiom's `maxLength` is 110 characters, and this page takes fewer. Both
+figures below were measured by compiling the string in the real template at the
+real 9 pt italic in the 171 pt column, but only one of them is in the history.
+The 86-character axiom is the committed one and sets to two lines. The 4.29 pt
+overrun describes a rejected draft: a 91-character axiom built in the working
+tree, never committed, which the operator replaced before it could be. No commit
+in this history overruns its safe box. The arithmetic is what carries the point -
+that draft's third line costs 11.66 pt against 7.36 pt of slack, which is how it
+would have put the trigger's bottom ink past the 22.5 pt floor. Those are two
+points on one page, not a bound. Wrapping
 depends on where the spaces fall, not on how many characters there are, so the
 only way to know whether a new axiom fits is to compile it in the real column;
 the character count is a warning that it might not. Width also depends on the
