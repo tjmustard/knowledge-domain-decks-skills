@@ -1279,10 +1279,18 @@ baseline with estimates above it; neither draws what a label promises against
 what the control does. The bow of the solid curve is a drawing decision, not a
 measured deviation, and the caption does not turn it into one.
 
-`intake-funnel` (HMM-06): many input shapes converging into one repeated output
-block. `filter-gate` removes inputs and `network` connects nodes; neither shows
-varied forms normalised into one canonical form. It encodes no ratio: three in,
-three out, counts chosen for legibility.
+`intake-funnel` (HMM-06): many input shapes converging into one output block.
+`filter-gate` removes inputs and `network` connects nodes; neither shows varied
+forms normalised into one canonical form. It encodes no ratio: three input
+forms, chosen for legibility; a single output box, because the card's claim is
+that the output is one form. The first drawing had three output boxes, so it
+showed many forms in and many forms out under a caption saying "EMIT ONE" - the
+opposite of the card. The output count was fixed after that was found, and the
+output stack was centred on the funnel's throat. The record also declared
+`variants`, which the shape clamps to its three glyph templates: it could not
+change the drawing at its own declared value, the gate failed it, and it is
+removed rather than propped up with a fourth template that would exist only to
+satisfy the check.
 
 `parsimony-path` (HMM-07): two routes between the same two points, one of them
 with every detour the other lacks. `difficulty-line` plots time against an

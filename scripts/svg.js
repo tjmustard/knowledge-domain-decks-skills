@@ -932,8 +932,9 @@
       out.push(line(92, 268, 196, 212, 2, 0.55));
       out.push(line(196, 168, 236, 184, 2, 0.55));
       out.push(line(196, 212, 236, 196, 2, 0.55));
+      var top = 190 - (outputs * 36) / 2 + 6;
       for (var j = 0; j < outputs; j++) {
-        out.push(rect(258, 156 + j * 36, 92, 24, {
+        out.push(rect(258, top + j * 36, 92, 24, {
           rx: 3, opacity: 0.7, width: 2
         }));
       }
