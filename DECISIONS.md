@@ -625,3 +625,22 @@ cards at card size; the tightest are SHORT REACH at 0.25 pt, NARROW TARGET at
 0.50 pt and THUMB ZONE at 0.79 pt. The 45-character safe-box bound was measured
 on `decline-curve` and has not been re-measured on these geometries, so
 lengthening any label on the five new shapes needs a fresh measurement first.
+
+## 28. A rename moves two pages, and a byte delta cannot see it
+
+Three things learned while checking this slice's last commits, all of them about
+the instrument rather than the card:
+
+- A card's name is printed twice: in the recto's title band and in the verso's
+  header. Renaming TME-07 changed pages 41 and 42, not page 41 alone. A check
+  that watched only rectos would have reported half the change and called it the
+  whole one.
+- The PDF's length moved by 16 bytes between two builds, which is inside the
+  run-to-run noise and therefore says nothing about whether a page changed.
+  Rendering all 48 pages and hashing the images is what showed exactly two
+  differences.
+- That noise has a cause: Typst writes `/ModDate` on every compile, so two builds
+  of one commit differ by 100 bytes - the timestamp and the trailer `/ID` derived
+  from it. That is why the byte delta was unreadable, and why page hashes are the
+  right instrument today. If `SOURCE_DATE_EPOCH` is set later, byte comparison
+  becomes valid again, and that change is what would make this note outdated.
