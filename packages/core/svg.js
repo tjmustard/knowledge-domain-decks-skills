@@ -2084,6 +2084,194 @@
     return out.join("");
   };
 
+  /* A retrospective canvas, drawn as the topology the card names. `kind`
+     chooses the arrangement; `columns` and `rows` divide it, and every kind
+     reads both counts - a shape that ignored one would offer a knob it never
+     turns, which is the failure the gate exists to catch. A kind the shape does
+     not know falls back to a plainly marked frame, deliberately unlike every
+     real kind, so the gate's string probe ("columnsX") still moves the drawing. */
+  shapes["retro-canvas"] = function (p) {
+    var kind = p.kind || "columns";
+    var cols = Math.max(1, Math.round(p.columns || 3));
+    var rows = Math.max(1, Math.round(p.rows || 1));
+    var left = 40;
+    var top = 40;
+    var w = 320;
+    var h = 320;
+    var right = left + w;
+    var bottom = top + h;
+    var out = [];
+
+    function frame() {
+      out.push(rect(left, top, w, h, { rx: 6, width: 1.6, opacity: 0.5 }));
+    }
+
+    function grid(colsN, rowsN, dash) {
+      for (var c = 1; c < colsN; c++) {
+        var x = left + (w * c) / colsN;
+        out.push(line(x, top, x, bottom, 1, 0.3, dash || null));
+      }
+      for (var r = 1; r < rowsN; r++) {
+        var y = top + (h * r) / rowsN;
+        out.push(line(left, y, right, y, 1, 0.3, dash || null));
+      }
+    }
+
+    if (kind === "columns") {
+      frame();
+      for (var c = 0; c < cols; c++) {
+        var x0 = left + (w * c) / cols;
+        var colW = w / cols;
+        for (var r = 0; r < rows; r++) {
+          var cellH = h / rows;
+          var noteH = Math.min(18, cellH - 14);
+          out.push(rect(x0 + 8, top + r * cellH + (cellH - noteH) / 2, colW - 16, noteH, {
+            rx: 3, width: 1.2, opacity: 0.55
+          }));
+        }
+      }
+      for (var d = 1; d < cols; d++) {
+        out.push(line(left + (w * d) / cols, top, left + (w * d) / cols, bottom, 1.2, 0.45));
+      }
+      out.push(line(left, bottom + 10, right, bottom + 10, 1.5, 0.35));
+    } else if (kind === "quadrants") {
+      // A four-quadrant board is always four quadrants. The two counts say how
+      // densely each quadrant fills with notes, not how many quadrants there
+      // are, so a 4Ls board and a KALM board differ without redrawing the frame.
+      frame();
+      grid(2, 2, "5 5");
+      for (var qr = 0; qr < 2; qr++) {
+        for (var qc = 0; qc < 2; qc++) {
+          var qx = left + (w * qc) / 2;
+          var qy = top + (h * qr) / 2;
+          for (var nr = 0; nr < rows; nr++) {
+            for (var nc = 0; nc < cols; nc++) {
+              out.push(circle(
+                qx + ((w / 2) * (nc + 1)) / (cols + 1),
+                qy + ((h / 2) * (nr + 1)) / (rows + 1),
+                3.2, { width: 1.1, opacity: 0.55 }
+              ));
+            }
+          }
+        }
+      }
+    } else if (kind === "zones") {
+      frame();
+      for (var zr = 0; zr < rows; zr++) {
+        var zy = top + (h * (zr + 1)) / rows;
+        if (zr < rows - 1) {
+          out.push(line(left, zy, right, zy, 1.6, 0.4, "7 5"));
+        }
+        // Each band is cut into its slots at a different offset, the way a
+        // metaphorical canvas staggers its zones instead of ruling a table.
+        for (var zc = 1; zc < cols; zc++) {
+          var zx = left + (w * zc) / cols + (zr % 2 === 0 ? 8 : -8);
+          out.push(line(zx, zy - 34, zx, zy - 8, 1.2, 0.3, "3 4"));
+        }
+      }
+    } else if (kind === "rings") {
+      var cx = 200;
+      var cy = 200;
+      for (var rr = 1; rr <= rows; rr++) {
+        out.push(circle(cx, cy, 28 + (108 * rr) / rows, { hollow: true, width: 1.6, opacity: 0.28 + rr * 0.08 }));
+      }
+      for (var rc = 0; rc < cols; rc++) {
+        var ra = -Math.PI / 2 + (Math.PI * 2 * rc) / cols;
+        out.push(line(cx, cy, cx + Math.cos(ra) * 136, cy + Math.sin(ra) * 136, 1.2, 0.35));
+      }
+      out.push(circle(cx, cy, 5, { width: 1.5, fill: "currentColor", opacity: 0.9 }));
+    } else if (kind === "timeline") {
+      var laneH = h / (rows + 1);
+      for (var tr = 0; tr < rows; tr++) {
+        var ty = top + laneH * (tr + 1);
+        out.push(line(left, ty, right - 12, ty, 1.6, 0.5));
+        for (var tc = 0; tc < cols; tc++) {
+          var tx = left + 18 + ((w - 36) * tc) / Math.max(1, cols - 1);
+          out.push(circle(tx, ty, 4.5, { width: 1.3, opacity: 0.85 }));
+        }
+      }
+      out.push(
+        '<path d="M ' + coord(right - 22) + " " + coord(top + laneH) + " L " + coord(right) + " " + coord(top + laneH) +
+        '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ' + STROKE + "/>"
+      );
+    } else if (kind === "matrix") {
+      frame();
+      var headX = left + 26;
+      var headY = top + 26;
+      out.push(line(headX, top, headX, bottom, 2, 0.6));
+      out.push(line(left, headY, right, headY, 2, 0.6));
+      for (var mr = 0; mr < rows; mr++) {
+        for (var mc = 0; mc < cols; mc++) {
+          var mx = headX + ((w - 26) * (mc + 0.5)) / cols;
+          var my = headY + ((h - 26) * (mr + 0.5)) / rows;
+          out.push(circle(mx, my, 3.5, { width: 1.2, opacity: 0.55 }));
+        }
+      }
+      grid(cols, rows, "4 4");
+    } else if (kind === "fishbone") {
+      var spineY = 200;
+      out.push(line(left, spineY, right - 26, spineY, 2.2, 0.85));
+      out.push(
+        '<path d="M ' + coord(right - 26) + " " + coord(spineY - 9) + " L " + coord(right) + " " + coord(spineY) +
+        " L " + coord(right - 26) + " " + coord(spineY + 9) + '" fill="currentColor" stroke="none"/>'
+      );
+      for (var fc = 0; fc < cols; fc++) {
+        var fx = left + 30 + ((w - 90) * fc) / Math.max(1, cols - 1);
+        var dir = fc % 2 === 0 ? -1 : 1;
+        out.push(line(fx, spineY, fx - 34, spineY + dir * 78, 1.8, 0.6));
+        for (var fr = 0; fr < rows; fr++) {
+          var ft = (fr + 1) / (rows + 1);
+          var bx = fx - 34 * ft;
+          var by = spineY + dir * 78 * ft;
+          out.push(line(bx, by, bx - 22, by + dir * 10, 1.1, 0.35));
+        }
+      }
+    } else if (kind === "tree") {
+      var rootX = 200;
+      var rootY = bottom - 6;
+      var crownY = top + 44;
+      out.push(line(rootX, rootY, rootX, rootY - 92, 2.2, 0.8));
+      for (var lc = 0; lc < cols; lc++) {
+        var lx = left + 30 + ((w - 60) * lc) / Math.max(1, cols - 1);
+        out.push(line(rootX, rootY - 92, lx, crownY, 1.4, 0.45));
+        for (var lr = 0; lr < rows; lr++) {
+          var ly = crownY + ((rootY - 92 - crownY) * lr) / Math.max(1, rows - 1);
+          out.push(circle(lx, Math.min(ly, rootY - 100), 4, { width: 1.2, opacity: 0.7 }));
+        }
+      }
+      out.push(circle(rootX, rootY - 6, 5, { width: 1.5, fill: "currentColor", opacity: 0.85 }));
+    } else if (kind === "bands") {
+      var bandH = h / (rows + 1);
+      for (var br = 0; br < rows; br++) {
+        var by2 = top + bandH * (br + 0.5);
+        out.push(line(left, by2, right, by2, 7, 0.32));
+        for (var bc = 0; bc < cols; bc++) {
+          var bx2 = left + 20 + ((w - 40) * (bc + 0.5)) / cols + (br % 2 === 0 ? 10 : -10);
+          out.push(circle(bx2, by2, 9, { hollow: true, width: 2.2, opacity: 0.95 }));
+        }
+      }
+      frame();
+    } else {
+      // An unknown topology still reads both counts, so no record can declare a
+      // knob this shape ignores even if its kind is misspelled. The marked
+      // frame is unlike every real kind, which is what keeps the kind probe
+      // honest.
+      frame();
+      out.push(line(left + 26, top + 26, right - 26, bottom - 26, 1.6, 0.4, "7 6"));
+      out.push(line(left + 26, bottom - 26, right - 26, top + 26, 1.6, 0.4, "7 6"));
+      out.push(circle(200, 200, 18, { hollow: true, width: 1.6, opacity: 0.45 }));
+      for (var uc = 0; uc < cols; uc++) {
+        var ux = left + (w * (uc + 0.5)) / cols;
+        out.push(line(ux, top, ux, top + 10, 1.4, 0.4));
+      }
+      for (var ur = 0; ur < rows; ur++) {
+        var uy = top + (h * (ur + 0.5)) / rows;
+        out.push(line(left, uy, left + 10, uy, 1.4, 0.4));
+      }
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

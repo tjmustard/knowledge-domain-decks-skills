@@ -1,0 +1,40 @@
+{
+  "id": "R08",
+  "name": "Rose, Thorn, Bud",
+  "category": "Foundation & Rhythm",
+  "trigger": "Cross-functional design and engineering collaboration.",
+  "canvas": "3 Columns: Rose, Thorn, Bud",
+  "timebox": "45–60 min",
+  "canvasLine": "3 Columns: Rose, Thorn, Bud · 45–60 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive before any note is written."
+    },
+    {
+      "text": "Gather data (15m): silent notes into Rose, Thorn, Bud."
+    },
+    {
+      "text": "Generate insights (15m): turn the strongest Buds into spike candidates."
+    },
+    {
+      "text": "Decide (10m): timebox one Bud as a discovery ticket with an owner."
+    },
+    {
+      "text": "Close (5m): name one Thorn the next sprint will remove."
+    }
+  ],
+  "action": "The chosen Bud becomes a timeboxed discovery ticket; the Thorn it would remove is written on the ticket so the two stay linked.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A common discovery format; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "columns",
+      "columns": 3,
+      "rows": 3
+    }
+  }
+}

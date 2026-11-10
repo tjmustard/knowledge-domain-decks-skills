@@ -1,0 +1,77 @@
+{
+  "id": "retrospectives",
+  "slug": "retrospectives",
+  "name": "Retrospective Architecture",
+  "description": "Forty-five retrospective rituals in five categories, each with the situation that calls for it, the canvas to draw, the time it takes, the five phases in order, and the move that turns a finding into a bounded experiment.",
+  "categories": [
+    "Foundation & Rhythm",
+    "Metaphor & Systems",
+    "Incident Diagnostics",
+    "Forward-Looking",
+    "Psychological Safety"
+  ],
+  "accents": {
+    "Foundation & Rhythm": "#0F766E",
+    "Metaphor & Systems": "#4338CA",
+    "Incident Diagnostics": "#991B1B",
+    "Forward-Looking": "#0369A1",
+    "Psychological Safety": "#7E22CE"
+  },
+  "itemStyle": "steps",
+  "fields": {
+    "group": "category",
+    "items": "steps",
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "canvasLine",
+    "context": "trigger",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Canvas and timebox",
+    "context": "When to run it",
+    "items": "The five phases",
+    "cardItems": "The five phases",
+    "resourceItems": "Phases"
+  },
+  "blocks": [
+    { "field": "action", "label": "The move", "style": "prose" },
+    { "field": "provenance", "label": "Provenance", "style": "example" }
+  ],
+  "printOrder": "family",
+  "outputs": {
+    "rules": "rules/retrospectives-rules.md",
+    "skill": "skills/retrospectives",
+    "pdf": "packages/prepress/dist/retrospectives.pdf"
+  },
+  "rules": {
+    "title": "Retrospective Architecture Rules",
+    "intro": "The rituals come from public retrospective practice: Norm Kerth's Prime Directive, the five-phase sequence of Esther Derby and Diana Larsen, Gary Klein's pre-mortem, John Allspaw's blameless post-incident review, James Reason's layered-defence model, Genrich Altshuller's TRIZ, and Liberating Structures by Henri Lipmanowicz and Keith McCandless. Each card names an origin where one is documented and says plainly where none is.\nEvery card answers what a facilitator actually needs - when the situation calls for this ritual, what canvas to draw, how long it takes - then the five phases, then the move that turns the strongest finding into a bounded experiment."
+  },
+  "skill": {
+    "name": "retrospectives",
+    "description": "Choose and run a retrospective ritual that fits the situation: {cards} retros in five categories, each with its trigger, canvas, timebox, five-phase sequence, and the move from finding to experiment. Use when a sprint, incident, launch, or team-health review needs a structure; when a retro has gone stale, silent, or blameful; or when a team keeps agreeing to actions it never runs.",
+    "title": "Retrospective Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per category.\n\nChoosing starts from the debt the room carries. A routine cadence needs rhythm; a stalled or silent room needs safety before anything else; an incident needs chronology before cause; a launch needs a future before a plan. Read the category that matches the debt, then the one card whose trigger names this room and whose timebox fits the clock.\n\nKeep it blameless. Recite the Prime Directive before the canvas fills, ban counterfactual phrasing in incident work, and treat a broken rule as a signal about the rule rather than a failure of a person. A retro that produces blame produces silence at the next one.\n\nWhen a room's problem is a workshop exercise rather than a retrospective, the Facilitation Architecture deck is the other shelf. The overlap is deliberate and narrow: TRIZ here (R42) is a retro that names what the team should stop doing; TRIZ there (WS-33) is a workshop that generates deliberately bad ideas about a process. Use this one when the room must commit to stopping; use that one when the room cannot yet name the process.",
+    "commonRules": [
+      "Recite the Prime Directive before the canvas fills. It arrests hindsight bias; it is not an excuse for the system's faults.",
+      "One canvas, one debt. Do not stack a second ritual onto a room that has not finished the first.",
+      "Anonymous input is a setting, not a courtesy. Use it whenever the trigger names fear, disengagement, restructuring, or an incident.",
+      "A retrospective commits to at most two process experiments. More than that is a wish list that next sprint will not run.",
+      "A finding outside the team's control becomes an adaptation protocol, not a backlog ticket it cannot own.",
+      "Protect the last five minutes. A close that names what the room owes each other is what makes the next retrospective possible.",
+      "An inventory-only card's phases are written for this deck from the method's public definition; the card says so. Do not present them as a source script."
+    ],
+    "footer": "Rituals are credited to their public originators where one is documented. The card text, phases and minutes are written for this deck."
+  },
+  "web": {
+    "global": "RETROSPECTIVES_DECK",
+    "accentsGlobal": "RETROSPECTIVES_DECK_ACCENTS",
+    "title": "Retrospective Architecture — Knowledge Domain Decks",
+    "heading": "Retrospective Architecture",
+    "lede": "{cards} retrospective rituals: when to run each one, the canvas to draw, the five phases, and the move from finding to experiment.",
+    "source": "Generated from <code>decks/retrospectives/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the five phases"
+  }
+}

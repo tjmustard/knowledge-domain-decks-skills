@@ -1,0 +1,40 @@
+{
+  "id": "R06",
+  "name": "DAKI (Drop, Add, Keep, Improve)",
+  "category": "Foundation & Rhythm",
+  "trigger": "Process bloat, administrative drag, redundant ceremonies.",
+  "canvas": "4 Quadrants: Drop, Add, Keep, Improve",
+  "timebox": "60 min",
+  "canvasLine": "4 Quadrants: Drop, Add, Keep, Improve · 60 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; dropping a process is not criticising its author."
+    },
+    {
+      "text": "Gather data (15m): silent notes into Drop, Add, Keep, Improve."
+    },
+    {
+      "text": "Generate insights (20m): clear Drop first, naming the capacity it returns."
+    },
+    {
+      "text": "Decide (15m): deprecate one practice and spend its capacity on one addition."
+    },
+    {
+      "text": "Close (5m): record what was dropped, so it is not quietly reintroduced."
+    }
+  ],
+  "action": "The Dropped practice gets a deprecation date and a replacement; its freed capacity funds the chosen Add.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A common agile format; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "quadrants",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}

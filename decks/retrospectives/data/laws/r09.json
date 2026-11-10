@@ -1,0 +1,40 @@
+{
+  "id": "R09",
+  "name": "Plus / Delta (+ / Δ)",
+  "category": "Foundation & Rhythm",
+  "trigger": "High-tempo, lightweight operational check-ins.",
+  "canvas": "2 Columns: Plus (+), Delta (Δ)",
+  "timebox": "30–45 min",
+  "canvasLine": "2 Columns: Plus (+), Delta (Δ) · 30–45 min",
+  "steps": [
+    {
+      "text": "Set the stage (3m): show the Prime Directive; one sentence on the sprint's aim."
+    },
+    {
+      "text": "Gather data (7m): silent notes into Plus and Delta."
+    },
+    {
+      "text": "Generate insights (10m): merge duplicates; keep every Delta precise."
+    },
+    {
+      "text": "Decide (8m): select exactly one Delta for the next iteration."
+    },
+    {
+      "text": "Close (2m): read the chosen Delta back; name its owner."
+    }
+  ],
+  "action": "Exactly one Delta enters the next sprint as a backlog item with an owner and a review date; the Plus notes are read aloud, not ticketed.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "A common check-in format; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "columns",
+      "columns": 2,
+      "rows": 1
+    }
+  }
+}

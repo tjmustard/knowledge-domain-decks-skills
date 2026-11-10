@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retrospective Architecture — Knowledge Domain Decks</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Knowledge Domain Decks</p>
+    <h1>Retrospective Architecture</h1>
+    <p class="lede" id="lede">{cards} retrospective rituals: when to run each one, the canvas to draw, the five phases, and the move from finding to experiment.</p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+
+  <main>
+    <div class="deck" id="deck"></div>
+    <p class="empty" id="empty" hidden>No cards in this category.</p>
+
+    <section class="card-index" aria-labelledby="card-index-title">
+      <h2 id="card-index-title">All 9 cards</h2>
+      <div class="card-index-scroll">
+      <table>
+        <thead>
+        <tr><th scope="col">ID</th><th scope="col">Card</th><th scope="col">Category</th><th scope="col">Source</th></tr>
+        </thead>
+        <tbody>
+        <tr><td class="index-id"><a href="#card-R01">R01</a></td><td class="index-name">Start, Stop, Continue</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common retro format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R02">R02</a></td><td class="index-name">Mad, Sad, Glad</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common retro format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R03">R03</a></td><td class="index-name">4Ls (Loved, Learned, Loathed, Longed For)</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common agile format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R04">R04</a></td><td class="index-name">KALM (Keep, Add, Less, More)</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common agile format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R05">R05</a></td><td class="index-name">Glad, Sad, Mad + Afraid</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common retro format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R06">R06</a></td><td class="index-name">DAKI (Drop, Add, Keep, Improve)</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common agile format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R07">R07</a></td><td class="index-name">The Three Little Pigs</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common retro metaphor; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R08">R08</a></td><td class="index-name">Rose, Thorn, Bud</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common discovery format; no documented originator.</td></tr>
+        <tr><td class="index-id"><a href="#card-R09">R09</a></td><td class="index-name">Plus / Delta (+ / Δ)</td><td class="index-group">Foundation &amp; Rhythm</td><td class="index-source">A common check-in format; no documented originator.</td></tr>
+        </tbody>
+      </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated from <code>decks/retrospectives/data/laws/*.json</code>. Code MIT · data CC0-1.0.</p>
+  </footer>
+
+  <script>window.DECK_GLOBAL = "RETROSPECTIVES_DECK"; window.DECK_ACCENTS = "RETROSPECTIVES_DECK_ACCENTS"; window.DECK_FIELDS = {"group":"category","items":"steps","attribution":"origin","prompt":null,"labelPrompt":"Prompt","labelItems":"The five phases","itemStyle":"steps","backHint":"Tap or press Enter for the five phases","blocks":[{"field":"action","label":"The move","style":"prose","card":true},{"field":"provenance","label":"Provenance","style":"example","card":true}],"headline":"canvasLine","context":"trigger","labelContext":"When to run it"};</script>
+  <script src="deck-data.js"></script>
+  <script src="accents.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>

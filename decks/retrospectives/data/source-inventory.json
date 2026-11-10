@@ -1,0 +1,419 @@
+{
+  "source": "05 - Retros/Open Source Retrospective Card Deck.md",
+  "extractedBy": "operator-agent@kernel, 2026-11-10, from the table headed ID | Ritual Name | Category | Primary Scenario Trigger | Visual Topology / Canvas Layout | Standard Timebox",
+  "note": "Every one of the 45 cards has its own ### section in the same document, so there is no inventory-only half as there was in deck four.",
+  "categories": [
+    "Foundation & Rhythm",
+    "Metaphor & Systems",
+    "Incident Diagnostics",
+    "Forward-Looking",
+    "Psychological Safety"
+  ],
+  "rituals": [
+    {
+      "id": "R01",
+      "name": "Start, Stop, Continue",
+      "category": "Foundation & Rhythm",
+      "trigger": "Baseline operational calibration; routine sprint cadence.",
+      "canvas": "3 Columns: Start, Stop, Continue",
+      "timebox": "45–60 min",
+      "section": true
+    },
+    {
+      "id": "R02",
+      "name": "Mad, Sad, Glad",
+      "category": "Foundation & Rhythm",
+      "trigger": "Emotional friction, unvoiced developer frustration.",
+      "canvas": "3 Columns: Mad, Sad, Glad",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R03",
+      "name": "4Ls (Loved, Learned, Loathed, Longed For)",
+      "category": "Foundation & Rhythm",
+      "trigger": "Intellectual reflection combined with process critique.",
+      "canvas": "4 Quadrants: Loved, Learned, Loathed, Longed For",
+      "timebox": "60–75 min",
+      "section": true
+    },
+    {
+      "id": "R04",
+      "name": "KALM (Keep, Add, Less, More)",
+      "category": "Foundation & Rhythm",
+      "trigger": "Value optimization; fine-tuning existing process volume.",
+      "canvas": "4 Quadrants: Keep, Add, Less, More",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R05",
+      "name": "Glad, Sad, Mad + Afraid",
+      "category": "Foundation & Rhythm",
+      "trigger": "Organizational restructurings, impending pivots, systemic anxiety.",
+      "canvas": "4 Quadrants: Glad, Sad, Mad, Afraid",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R06",
+      "name": "DAKI (Drop, Add, Keep, Improve)",
+      "category": "Foundation & Rhythm",
+      "trigger": "Process bloat, administrative drag, redundant ceremonies.",
+      "canvas": "4 Quadrants: Drop, Add, Keep, Improve",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R07",
+      "name": "The Three Little Pigs",
+      "category": "Foundation & Rhythm",
+      "trigger": "Architectural review; testing structural resilience under load.",
+      "canvas": "3 Zones: House of Straw, Sticks, Bricks",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R08",
+      "name": "Rose, Thorn, Bud",
+      "category": "Foundation & Rhythm",
+      "trigger": "Cross-functional design and engineering collaboration.",
+      "canvas": "3 Columns: Rose, Thorn, Bud",
+      "timebox": "45–60 min",
+      "section": true
+    },
+    {
+      "id": "R09",
+      "name": "Plus / Delta (+ / Δ)",
+      "category": "Foundation & Rhythm",
+      "trigger": "High-tempo, lightweight operational check-ins.",
+      "canvas": "2 Columns: Plus (+), Delta (Δ)",
+      "timebox": "30–45 min",
+      "section": true
+    },
+    {
+      "id": "R10",
+      "name": "The Sailboat",
+      "category": "Metaphor & Systems",
+      "trigger": "Systemic drag vs. external drivers; hidden impediments.",
+      "canvas": "4 Zones: Island, Wind, Anchors, Rocks",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R11",
+      "name": "Speed Car / Race Car",
+      "category": "Metaphor & Systems",
+      "trigger": "Velocity bottlenecks and technical performance drags.",
+      "canvas": "4 Zones: Engine, Parachute, Pit Stop, Hazards",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R12",
+      "name": "Hot Air Balloon",
+      "category": "Metaphor & Systems",
+      "trigger": "Uplifting team morale while shedding operational deadweight.",
+      "canvas": "4 Zones: Hot Air, Sandbags, Storm Clouds, Skies",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R13",
+      "name": "Mountain Trek",
+      "category": "Metaphor & Systems",
+      "trigger": "Milestone completions, epic delivery, long-horizon campaigns.",
+      "canvas": "4 Zones: Summit, Basecamp, Crevasses, Gear",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R14",
+      "name": "The Hero’s Journey",
+      "category": "Metaphor & Systems",
+      "trigger": "Post-crunch release reviews; transformational team arcs.",
+      "canvas": "5 Stages: Ordinary World, Call, Abyss, Transformation, Elixir",
+      "timebox": "90–120 min",
+      "section": true
+    },
+    {
+      "id": "R15",
+      "name": "Space Mission / Rocket",
+      "category": "Metaphor & Systems",
+      "trigger": "Major product launches, high-risk technical exploration.",
+      "canvas": "4 Zones: Thrusters, Gravity, Asteroids, Target Orbit",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R16",
+      "name": "Island Castaway",
+      "category": "Metaphor & Systems",
+      "trigger": "Crisis management, extreme resource starvation, survival mode.",
+      "canvas": "4 Zones: Shelter, Fresh Spring, Predators, SOS Flare",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R17",
+      "name": "The Submarine",
+      "category": "Metaphor & Systems",
+      "trigger": "Accumulated technical debt, submerged bugs, pressure spikes.",
+      "canvas": "4 Zones: Propulsion, Ballast Tanks, Hull Breaches, Periscope",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R18",
+      "name": "The Living Tree",
+      "category": "Metaphor & Systems",
+      "trigger": "Long-term team health, cultural values, knowledge sharing.",
+      "canvas": "5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R19",
+      "name": "Blameless Post-Mortem Arc",
+      "category": "Incident Diagnostics",
+      "trigger": "Major production incidents (SEV-1/SEV-2 outages).",
+      "canvas": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R20",
+      "name": "5 Whys Fishbone",
+      "category": "Incident Diagnostics",
+      "trigger": "Chronic, recurring defects; deep causal chain analysis.",
+      "canvas": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R21",
+      "name": "Swiss Cheese Safety Model",
+      "category": "Incident Diagnostics",
+      "trigger": "Cascading failures across defense-in-depth barriers.",
+      "canvas": "4 Slices: Organization, Supervision, Preconditions, Defenses",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R22",
+      "name": "Timeline & Drift Analysis",
+      "category": "Incident Diagnostics",
+      "trigger": "Divergence between standard procedures and actual practices.",
+      "canvas": "Dual-Axis Chronology: Work as Imagined vs. Work as Done",
+      "timebox": "75–90 min",
+      "section": true
+    },
+    {
+      "id": "R23",
+      "name": "FMEA Diagnostic",
+      "category": "Incident Diagnostics",
+      "trigger": "Architectural risk evaluation; proactive vulnerability reviews.",
+      "canvas": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN",
+      "timebox": "90–120 min",
+      "section": true
+    },
+    {
+      "id": "R24",
+      "name": "Fault Tree Analysis",
+      "category": "Incident Diagnostics",
+      "trigger": "Microservice cascade failures; logic-gate dependency breakdowns.",
+      "canvas": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R25",
+      "name": "HFACS Retrospective",
+      "category": "Incident Diagnostics",
+      "trigger": "Cognitive fatigue, on-call alert overload, human factor failures.",
+      "canvas": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R26",
+      "name": "Contributory Factor Matrix",
+      "category": "Incident Diagnostics",
+      "trigger": "Cross-functional incidents involving third-party vendors and ops.",
+      "canvas": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R27",
+      "name": "Incident Matrix (4-Box)",
+      "category": "Incident Diagnostics",
+      "trigger": "Fast-turnaround SEV-3 operational debriefs.",
+      "canvas": "2x2 Matrix: Internal/External vs. Expected/Unexpected",
+      "timebox": "45 min",
+      "section": true
+    },
+    {
+      "id": "R28",
+      "name": "Gary Klein’s Pre-Mortem",
+      "category": "Forward-Looking",
+      "trigger": "Project kick-offs, high-risk migrations, architectural overhauls.",
+      "canvas": "3 Zones: Disaster Hall of Fame, Failure Generators, Immune System",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R29",
+      "name": "The Futurespective",
+      "category": "Forward-Looking",
+      "trigger": "Team formation, quarterly roadmapping, strategic visioning.",
+      "canvas": "3 Chronological Zones: Today, The Odyssey, The Promised Land",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R30",
+      "name": "Hopes & Fears",
+      "category": "Forward-Looking",
+      "trigger": "High ambiguity, organizational mergers, major architectural pivots.",
+      "canvas": "2 Polar Zones: Hopes (Opportunities) vs. Fears (Risks)",
+      "timebox": "45–60 min",
+      "section": true
+    },
+    {
+      "id": "R31",
+      "name": "Letter from the Future",
+      "category": "Forward-Looking",
+      "trigger": "Aligning expectations around success vs. systemic stagnation.",
+      "canvas": "2 Narrative Channels: Triumph Letter vs. Regret Letter",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R32",
+      "name": "Backcasting from Utopia",
+      "category": "Forward-Looking",
+      "trigger": "Multi-year platform initiatives, legacy system deprecation.",
+      "canvas": "Reverse Timeline: Utopia (Year 3), Intermediates, Immediate Next Sprint",
+      "timebox": "90 min",
+      "section": true
+    },
+    {
+      "id": "R33",
+      "name": "Black Swan Stress-Test",
+      "category": "Forward-Looking",
+      "trigger": "Resilience testing against low-probability, catastrophic shocks.",
+      "canvas": "3 Shock Scenarios: Cloud Outage, Core Maintainer Loss, Dependency Breach",
+      "timebox": "60–75 min",
+      "section": true
+    },
+    {
+      "id": "R34",
+      "name": "Front-Page Headline",
+      "category": "Forward-Looking",
+      "trigger": "Inception phases, customer impact alignment, mission synthesis.",
+      "canvas": "Newspaper Grid: Headline, Sub-bullet, Metric Callout, Quote",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R35",
+      "name": "Dynamic Risk Radar",
+      "category": "Forward-Looking",
+      "trigger": "Managing complex dependencies and shifting technical environments.",
+      "canvas": "3 Concentric Rings: High Priority, Emerging Risks, Weak Signals",
+      "timebox": "45–60 min",
+      "section": true
+    },
+    {
+      "id": "R36",
+      "name": "Retro on Retros",
+      "category": "Psychological Safety",
+      "trigger": "Ceremony fatigue, disengagement, stalled action item velocity.",
+      "canvas": "4 Quadrants: Format, Psychological Safety, Action Velocity, Value",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R37",
+      "name": "Team Health Radar",
+      "category": "Psychological Safety",
+      "trigger": "Squad health benchmarking; multi-dimensional culture calibration.",
+      "canvas": "6 Dimensions: Code Health, Delivery, Fun, Safety, Autonomy, Speed",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R38",
+      "name": "Working Agreement Audit",
+      "category": "Psychological Safety",
+      "trigger": "Broken team norms, PR bottlenecks, after-hours communication drift.",
+      "canvas": "3 Columns: Existing Agreement, Reality Check, Ratified Rules",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R39",
+      "name": "Toxic Waste Dump",
+      "category": "Psychological Safety",
+      "trigger": "Post-crunch exhaustion, organizational trauma, acute interpersonal friction.",
+      "canvas": "3 Sequestered Zones: Containment Trench, Decontamination, Clean Ground",
+      "timebox": "60–90 min",
+      "section": true
+    },
+    {
+      "id": "R40",
+      "name": "ESVP Safety Baseline",
+      "category": "Psychological Safety",
+      "trigger": "Covert disengagement, low trust, uncommunicative check-ins.",
+      "canvas": "4 Anonymous Buckets: Explorer, Shopper, Vacationer, Prisoner",
+      "timebox": "15–20 min",
+      "section": true
+    },
+    {
+      "id": "R41",
+      "name": "Circles and Soup (CIA)",
+      "category": "Psychological Safety",
+      "trigger": "Learned helplessness, externalized blame, loss of agency.",
+      "canvas": "3 Concentric Circles: Control, Influence, The Soup",
+      "timebox": "60 min",
+      "section": true
+    },
+    {
+      "id": "R42",
+      "name": "TRIZ (Destructive Innovation)",
+      "category": "Psychological Safety",
+      "trigger": "Complacency, repetitive mistakes, uncritical groupthink.",
+      "canvas": "3 Phases: Maximum Sabotage, Brutal Reality, Firebreak Actions",
+      "timebox": "75 min",
+      "section": true
+    },
+    {
+      "id": "R43",
+      "name": "1-2-4-All Systemic Sync",
+      "category": "Psychological Safety",
+      "trigger": "Unequal conversational dynamics; dominance by senior leads.",
+      "canvas": "4 Sequential Workspaces: 1-min Solo, 2-min Pair, 4-min Quad, Plenary",
+      "timebox": "30–45 min",
+      "section": true
+    },
+    {
+      "id": "R44",
+      "name": "Appreciation Matrix & Kudos",
+      "category": "Psychological Safety",
+      "trigger": "Demoralized teams, lack of recognition, transactional dynamics.",
+      "canvas": "Grid Layout: Core Peer Categories (Heroics, Glue-Work, Empathy, Mentorship)",
+      "timebox": "30–45 min",
+      "section": true
+    },
+    {
+      "id": "R45",
+      "name": "Role & Decision Matrix (D3)",
+      "category": "Psychological Safety",
+      "trigger": "Architectural gridlock, overlapping mandates, review bottlenecks.",
+      "canvas": "3 Operational Tiers: Do, Discuss, Decide",
+      "timebox": "60 min",
+      "section": true
+    }
+  ]
+}

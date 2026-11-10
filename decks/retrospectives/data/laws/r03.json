@@ -1,0 +1,40 @@
+{
+  "id": "R03",
+  "name": "4Ls (Loved, Learned, Loathed, Longed For)",
+  "category": "Foundation & Rhythm",
+  "trigger": "Intellectual reflection combined with process critique.",
+  "canvas": "4 Quadrants: Loved, Learned, Loathed, Longed For",
+  "timebox": "60–75 min",
+  "canvasLine": "4 Quadrants: Loved, Learned, Loathed, Longed For · 60–75 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; Loathed targets tooling, never a colleague."
+    },
+    {
+      "text": "Gather data (20m): two notes each into Loved, Learned, Loathed, Longed For."
+    },
+    {
+      "text": "Generate insights (20m): pair each Loathed with the Longed For that removes it."
+    },
+    {
+      "text": "Decide (20m): the strongest pairs become backlog experiments with owners."
+    },
+    {
+      "text": "Close (5m): name what the Learned notes give back."
+    }
+  ],
+  "action": "Loathed manual tagging plus Longed For automated releases becomes one release action.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "A common agile format; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "quadrants",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

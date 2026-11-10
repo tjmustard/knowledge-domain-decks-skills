@@ -1,0 +1,40 @@
+{
+  "id": "R07",
+  "name": "The Three Little Pigs",
+  "category": "Foundation & Rhythm",
+  "trigger": "Architectural review; testing structural resilience under load.",
+  "canvas": "3 Zones: House of Straw, Sticks, Bricks",
+  "timebox": "60–90 min",
+  "canvasLine": "3 Zones: House of Straw, Sticks, Bricks · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; Straw was a compromise, not bad craft."
+    },
+    {
+      "text": "Gather data (20m): list systems under Straw, Sticks, Bricks with evidence."
+    },
+    {
+      "text": "Generate insights (25m): map the path from Straw to Sticks to Bricks."
+    },
+    {
+      "text": "Decide (20m): pick one Straw component; give its promotion a coverage gate."
+    },
+    {
+      "text": "Close (5m): name the Brick the next incident would rely on."
+    }
+  ],
+  "action": "A Straw component becomes a P0 refactoring spike with a test-coverage gate before it carries production traffic.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 3,
+      "rows": 1
+    }
+  }
+}
