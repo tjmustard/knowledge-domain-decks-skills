@@ -142,7 +142,7 @@ export const DEFAULT_FIELDS = {
 // "labelled" prints a record's own `{ label, text }` pair - the form the team
 // deck's manager scripts take, where the label names the move and the text is
 // the sentence said.
-export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled"];
+export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled", "labelledList"];
 
 /*
  * A deck's back-face blocks, in the order the deck prints them. A block is
@@ -194,6 +194,10 @@ export function deckShape(deck = {}) {
     // than the kicker can hold gives each one a short printed form here; the
     // records, the rules headings and the web keep the full name.
     groupLabels: deck.labels?.group || {},
+    // The field that carries a per-card point size for the headline, for a
+    // deck whose front line is long enough to need a different size on
+    // different cards. A deck that names none prints the template's 9 pt.
+    headlineSize: fields.headlineSize || null,
     // A square figure's width, which is also its height. The default is the
     // size every earlier deck was set at; a deck with a two-line name or a long
     // front line can ask for less rather than cut its own text.

@@ -35,6 +35,12 @@ function blockLines(block, value) {
   if (value === undefined || value === null || value === "") return [];
   if (Array.isArray(value)) {
     if (value.length === 0) return [];
+    if (block.style === "labelledList") {
+      return [
+        `**${block.label}.**`,
+        ...value.map((entry) => `- ${entry.label}: ${entry.text}`)
+      ];
+    }
     if (block.style === "list") {
       return [
         `**${block.label}.**`,
@@ -207,6 +213,11 @@ function resourceMarkdown(category, shape, items) {
         }
         if (Array.isArray(value)) {
           if (value.length === 0) continue;
+          if (block.style === "labelledList") {
+            out.push(`- **${block.label}:**`);
+            for (const entry of value) out.push(`  - **${entry.label}:** ${entry.text}`);
+            continue;
+          }
           if (block.style === "list") {
             out.push(`- **${block.label}:**`);
             for (const entry of value) out.push(`  - ${entry}`);

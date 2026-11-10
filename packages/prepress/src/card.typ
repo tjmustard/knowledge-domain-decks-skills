@@ -25,9 +25,19 @@
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
 // Field names, labels and item style come from the deck, written by build.mjs.
-#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, field-headline-size, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
+
+// The front's long line. A deck may carry a per-card point size for it, so a
+// card whose line is half as long again as its neighbours can step the type
+// down instead of cutting the line. A deck that names no size field prints the
+// 9 pt every earlier deck printed.
+#let headline-size(card) = if field-headline-size != none and field-headline-size in card {
+  card.at(field-headline-size) * 1pt
+} else {
+  9pt
+}
 
 // A declared field counts as absent when it prints nothing: an empty string, or
 // an empty list. Without the list case, a record whose block is [] would print
@@ -93,7 +103,7 @@
     #v(4pt)
     #line(length: 100%, stroke: 1.5pt + accent(card))
     #v(6pt)
-    #text(size: 9pt, style: "italic", fill: rgb("#334155"))[#card.at(field-headline)]
+    #text(size: headline-size(card), style: "italic", fill: rgb("#334155"))[#card.at(field-headline)]
     #v(10pt)
     #align(center)[#image(card.svgFile, width: figure-width)]
     #v(10pt)
@@ -173,6 +183,13 @@
             ]
           ] else if b.style == "example" [
             #text(size: 6.5pt, style: "italic")[#card.at(b.field)]
+          ] else if b.style == "labelledList" [
+            // An array of named things, one per line: a plan's stages, where
+            // the label names the stage and the text says what happens.
+            #for pair in card.at(b.field) [
+              #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label] #text(size: 7pt)[#pair.text]
+              #linebreak()
+            ]
           ] else if b.style == "labelled" [
             // A record that carries its own label beside its text: the label
             // names the move, the text is what is said.

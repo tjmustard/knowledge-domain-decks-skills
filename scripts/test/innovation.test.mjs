@@ -167,3 +167,32 @@ test("every figure follows the committed layout map and names what it draws", as
     );
   }
 });
+
+test("a long hypothesis is never left at the front's default size", async () => {
+  // The probe exists because I37's hypothesis is three times a deck-seven
+  // diagnostic. A card over 400 characters that still prints at 9 pt has not
+  // been measured, it has been hoped at.
+  const inventory = await loadInventory();
+  const map = JSON.parse(await readFile(LAYOUT, "utf8")).map;
+  for (const record of inventory.records) {
+    const cardId = "I" + String(record.number).padStart(2, "0");
+    if (record.hypothesis.length > 400) {
+      assert.ok(
+        map[cardId].hypothesisSize < 9,
+        `${cardId} hypothesis is ${record.hypothesis.length} characters and still set at 9 pt`
+      );
+    }
+  }
+});
+
+test("a printed card's size is the map's size", async () => {
+  // The map is the authority for the layout; a record that disagrees with it
+  // would print a size the map does not describe.
+  const { loadCards, loadDeck } = await import("../../packages/core/deck.mjs");
+  const deck = await loadDeck("innovation");
+  const map = JSON.parse(await readFile(LAYOUT, "utf8")).map;
+  for (const card of await loadCards(deck)) {
+    assert.equal(card.hypothesisSize, map[card.id].hypothesisSize, `${card.id} size differs from the map`);
+    assert.equal(card.schematic, map[card.id].label, `${card.id} printed schematic differs from the map`);
+  }
+});

@@ -1,0 +1,104 @@
+{
+  "id": "innovation",
+  "slug": "innovation",
+  "name": "Innovation Architecture",
+  "description": "Forty-two product-discovery and innovation tactics in four phases, each stating the belief it tests, the threshold that would prove it, the method that runs it, and the named false positive that makes it lie.",
+  "categories": [
+    "Customer Discovery and Problem Validation Tactics",
+    "Hypothesis Framing and Assumption Mapping Tactics",
+    "Low-Fidelity Prototyping and Smoke Testing Tactics",
+    "Metrics, Telemetry, and Innovation Accounting Tactics"
+  ],
+  "accents": {
+    "Customer Discovery and Problem Validation Tactics": "#0E7490",
+    "Hypothesis Framing and Assumption Mapping Tactics": "#7C3AED",
+    "Low-Fidelity Prototyping and Smoke Testing Tactics": "#C2410C",
+    "Metrics, Telemetry, and Innovation Accounting Tactics": "#15803D"
+  },
+  "itemStyle": "checklist",
+  "fields": {
+    "group": "phase",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "hypothesis",
+    "headlineSize": "hypothesisSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Hypothesis and threshold",
+    "context": "Schematic",
+    "group": {
+      "Customer Discovery and Problem Validation Tactics": "Customer Discovery",
+      "Hypothesis Framing and Assumption Mapping Tactics": "Hypothesis Framing",
+      "Low-Fidelity Prototyping and Smoke Testing Tactics": "Prototyping & Smoke",
+      "Metrics, Telemetry, and Innovation Accounting Tactics": "Metrics & Accounting"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "method",
+      "label": "Method",
+      "style": "traits"
+    },
+    {
+      "field": "plan",
+      "label": "Plan",
+      "style": "labelledList"
+    },
+    {
+      "field": "warning",
+      "label": "False positive",
+      "style": "labelled"
+    },
+    {
+      "field": "planFull",
+      "label": "Plan as written",
+      "style": "labelledList",
+      "card": false
+    },
+    {
+      "field": "warningFull",
+      "label": "Warning as written",
+      "style": "prose",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/innovation-rules.md",
+    "skill": "skills/innovation",
+    "pdf": "packages/prepress/dist/innovation.pdf"
+  },
+  "rules": {
+    "title": "Innovation Architecture Rules",
+    "intro": "The tactics come from public product-discovery and experimentation practice: customer interviews, assumption mapping, smoke tests, service prototypes, pre-commitments, and the innovation-accounting metrics that decide whether any of them was worth running. Each card states a hypothesis with the threshold it pre-commits to, the method (time, cost, confidence), the three stages that run it, and the named false positive that makes that particular test lie.\nThe hypothesis prints on the card exactly as the source states it, threshold included, because an experiment without its validation criterion is an opinion. The three stages print compressed to one line each; the full stages, the full warning and the method values follow here, because this file is the reference."
+  },
+  "skill": {
+    "name": "innovation",
+    "description": "Run a product-discovery experiment from a card: {cards} tactics in four phases, each with the hypothesis and its pre-committed threshold, the method, three stages and the named false positive. Use when a team needs to de-risk a product decision this week.",
+    "title": "Innovation Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per phase.\n\nChoosing starts from what you are trying to learn. If you do not yet know the customer's problem, read Customer Discovery. If you have a candidate direction and need to know which assumption would sink it, read Hypothesis Framing. If the bet is on a solution, read Prototyping and Smoke Testing. If the bet is live and the numbers must decide, read Metrics and Accounting. Then take the one card whose hypothesis states a threshold you can actually measure this week.\n\nWhen two cards fit, prefer the one whose threshold you can reach before the phase ends. A test without a reachable threshold is a meeting.\n\nRoutes out of this deck. The pivot decision (I42) also appears as story and as after-action in the Narrative and Retrospective decks: those own the telling and the review, this card owns the accounting and its kill criteria. PMF and NPS (I34, I35) sit near the Strategy deck's North Star metric trees: strategy owns the metric tree, this card owns the survey and its threshold. The smoke-test archetypes (I21-I24) use names the Archetypal deck also uses; that deck names voices, this one names experiments, and they do not overlap.",
+    "commonRules": [
+      "State the threshold before you run the test. A hypothesis whose validation criterion is written afterwards is a story about the result.",
+      "Read the named false positive before you read the result. Every test in this deck has a way of lying to you, and it is on the card.",
+      "One threshold at a time. Two success criteria in one experiment means neither can fail cleanly.",
+      "The method strip is the cost of knowing. If the time or the money is more than the decision is worth, the card is the wrong card.",
+      "Compression is the card's limit, not the source's. Read the full stages and the full warning here before arguing from the card.",
+      "A named origin is the source's, not the card's. The card text, thresholds and warnings are the source's words or this deck's compression of them."
+    ],
+    "footer": "Tactics are credited to the works that originated them where the source or a checked public record names one. The card text states the source's own hypothesis and warning."
+  },
+  "web": {
+    "global": "INNOVATION_DECK",
+    "accentsGlobal": "INNOVATION_DECK_ACCENTS",
+    "title": "Innovation Architecture — Knowledge Domain Decks",
+    "heading": "Innovation Architecture",
+    "lede": "{cards} innovation tactics: the hypothesis and its threshold, the method, three stages, and the false positive that makes it lie.",
+    "source": "Generated from <code>decks/innovation/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the plan"
+  }
+}

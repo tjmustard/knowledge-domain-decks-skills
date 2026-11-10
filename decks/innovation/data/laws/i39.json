@@ -1,0 +1,58 @@
+{
+  "id": "I39",
+  "sourceTacticNo": 39,
+  "name": "Micro-Conversion Step Drop-Off Audit",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that [Step 3 in our onboarding flow] causes unnecessary user drop-off. We will verify this by instrumenting telemetry across every form field and screen transition, and consider it validated if simplifying that single step reduces drop-off by ≥ 30% without lowering downstream activation quality.",
+  "hypothesisSize": 8,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $0",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Map every field, click and screen transition in the target path into a sequential funnel."
+    },
+    {
+      "label": "Execution",
+      "text": "Log drop-off, validation errors and interaction times across 500 sessions."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot the drop-off gradient across each micro-step to find friction."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Map every user input field, click, and screen transition in the target path into a sequential funnel model."
+    },
+    {
+      "label": "Execution",
+      "text": "Log drop-off percentages, validation errors, and interaction times for every field across 500 user sessions."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot the drop-off gradient across each micro-step to identify points of user friction."
+    }
+  ],
+  "warning": {
+    "label": "Removing Essential Friction",
+    "text": "Cutting identity checks or qualification questions raises completion and floods the product with junk accounts."
+  },
+  "warningFull": "Streamlining onboarding forms by cutting out identity checks or qualification questions can boost completion rates while flooding the product with unqualified or spam accounts.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

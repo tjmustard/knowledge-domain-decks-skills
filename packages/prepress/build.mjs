@@ -134,6 +134,7 @@ function fieldsTyp(deck) {
     `#let field-anti = ${typ(shape.fields.antiPattern)}`,
     `#let label-items = ${JSON.stringify(shape.labelCardItems.toUpperCase())}`,
     `#let label-prompt = ${JSON.stringify(shape.labelPrompt.toUpperCase())}`,
+    `#let field-headline-size = ${typ(shape.headlineSize)}`,
     `#let label-context = ${JSON.stringify(shape.labelContext.toUpperCase())}`,
     `#let item-style = ${JSON.stringify(shape.itemStyle)}`,
     // A deck with no short forms gets Typst's empty dictionary - `(:)`, not

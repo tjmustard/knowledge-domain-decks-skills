@@ -1,0 +1,58 @@
+{
+  "id": "I30",
+  "sourceTacticNo": 30,
+  "name": "Refundable Deposit Pre-Order",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe users will pay [Price Y] for our forthcoming product. We will verify this by running a pre-order campaign with a required, refundable $50 reservation deposit, and consider it validated if ≥ 3.0% of unique page visitors complete the checkout transaction.",
+  "hypothesisSize": 9,
+  "schematic": "Payment at step 2 of the 3-step strip",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $100–$500",
+    "Confidence: Extreme (Financial commitment)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "State the product is in development and offer priority queue placement for a refundable deposit."
+    },
+    {
+      "label": "Execution",
+      "text": "Drive qualified traffic to the reservation page and process real payments via a gateway."
+    },
+    {
+      "label": "Data collection",
+      "text": "Measure payment completion, refunds requested, and checkout questions."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a checkout flow that clearly states the product is in active development, offering priority queue placement in exchange for a refundable deposit."
+    },
+    {
+      "label": "Execution",
+      "text": "Drive qualified traffic to the reservation page and process real financial transactions via a payment gateway."
+    },
+    {
+      "label": "Data collection",
+      "text": "Measure payment completion rates, refund requests, and customer questions submitted during checkout."
+    }
+  ],
+  "warning": {
+    "label": "Frictionless Refund Psychology",
+    "text": "When deposits are low and refundable, buyers treat checkout as a bookmark rather than a commitment."
+  },
+  "warningFull": "When deposits are low, fully refundable, and clearly framed as risk-free, conversion rates often artificially inflate, as buyers treat the checkout as an easy way to bookmark the product rather than an actual purchase commitment.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

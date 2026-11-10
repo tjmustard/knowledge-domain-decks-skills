@@ -99,6 +99,10 @@
         body = "<ul>" + value.map(function (entry) {
           return "<li>" + esc(entry) + "</li>";
         }).join("") + "</ul>";
+      } else if (block.style === "labelledList") {
+        body = "<ul>" + value.map(function (entry) {
+          return "<li><strong>" + esc(entry.label) + "</strong> " + esc(entry.text) + "</li>";
+        }).join("") + "</ul>";
       } else if (block.style === "labelled") {
         // A record that carries its own label beside its text.
         body = '<p class="script-label"><strong>' + esc(value.label) + "</strong></p>" +

@@ -1,0 +1,58 @@
+{
+  "id": "I37",
+  "sourceTacticNo": 37,
+  "name": "Unit Economics Stress Test (CAC:LTV Ratio)",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: frac{text{LTV}}{text{CAC}} ≥ 3.0 quad text{where} quad text{LTV} = frac{text{ARPU} × text{Gross Margin}}{text{Churn Rate}}",
+  "hypothesisSize": 6.5,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 30–60 days",
+    "Cost: $500–$$$$",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Aggregate fully loaded acquisition costs across a 60-day window: spend, commissions, overhead, tools."
+    },
+    {
+      "label": "Execution",
+      "text": "Track paid customer accounts generated specifically from those spend allocations."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate CAC payback months and the projected LTV to CAC ratio."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Aggregate all fully loaded acquisition costs (ad spend, sales commissions, operational overhead, marketing software) across a 60-day testing window."
+    },
+    {
+      "label": "Execution",
+      "text": "Track the total number of paid customer accounts generated specifically from those spend allocations."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate the months required to recover customer acquisition costs: text{Payback Period (Months)} = frac{text{CAC}}{text{ARPU} × text{Gross Margin %}}"
+    }
+  ],
+  "warning": {
+    "label": "Blended CAC Smuggling",
+    "text": "Blending organic traffic with paid spend hides high paid acquisition costs and an unviable channel."
+  },
+  "warningFull": "Blending cheap organic, direct, or personal network traffic with paid marketing spend obscures high paid customer acquisition costs, hiding an unviable acquisition channel.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

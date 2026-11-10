@@ -460,7 +460,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 6.5,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -484,7 +484,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
