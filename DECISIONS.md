@@ -489,3 +489,18 @@ it to the surname with U+00A0 at render time. The no-break is a typographic
 decision local to print; the viewer needs it only if its own text wraps there.
 This keeps one citation string across the deck while letting each surface
 apply its own line-breaking rule.
+
+Two limits travel with the check. Its artifact list is hard-coded to the same
+three files the generator layer targets — `packages/web/deck-data.js`,
+`rules/ux-rules.md` and `skills/ux-laws/SKILL.md` — so a fourth generated
+artifact would have to be added in both places, and the gate cannot tell you
+that only one list grew; whoever touches either list should be looking at the
+other. And the failure message names a byte offset: that locates the character
+for whoever maintains the check, but means little in a CI line, so a line
+number or the nearest citation would read better if it is ever revised.
+
+The check does not assert that the no-break works, only that the shared field
+stays plain. The evidence that the printed ampersand is no longer line-final
+is a rendered page, which is what `print: contents` would cover if it had a
+text layer; a string comparison cannot see a line break, so that assertion
+belongs with the print layer, not here.
