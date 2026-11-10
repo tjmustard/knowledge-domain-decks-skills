@@ -159,3 +159,160 @@ Every card answers what a facilitator actually needs - when the situation calls 
 **The move.** Exactly one Delta enters the next sprint as a backlog item with an owner and a review date; the Plus notes are read aloud, not ticketed.
 
 **Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+## Metaphor & Systems
+
+### R10 — The Sailboat
+
+**Canvas and timebox.** 4 Zones: Island, Wind, Anchors, Rocks · 60–90 min
+
+**When to run it.** Teams struggling to decouple their aspirational product goals from current technical drag, organizational dependencies, and impending environmental risks.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive; name the target Island.
+2. Gather data (20m): five minutes per zone: Wind, Anchors, Rocks, then the Island.
+3. Generate insights (20m): cluster notes; dot-vote the heaviest Anchors and Rocks.
+4. Decide (15m): sever one Anchor before adding Wind; name its owner.
+5. Close (5m): affirm navigation capability and capture the ROTI.
+
+**The move.** An Anchor becomes a systemic initiative: parallel CI under 15 minutes instead of 90; owner, date.
+
+**Provenance.** Source protocol: the phases and minutes follow the written sequence in the source.
+
+### R11 — Speed Car / Race Car
+
+**Canvas and timebox.** 4 Zones: Engine, Parachute, Pit Stop, Hazards · 60 min
+
+**When to run it.** Teams experiencing velocity bottlenecks, deployment throttling, or code review stalls.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive before inspecting the Parachute.
+2. Gather data (15m): notes into Engine, Parachute, Pit Stop, Hazards.
+3. Generate insights (20m): focus on Pit Stop; name the maintenance that prevents burnout.
+4. Decide (15m): one Pit Stop item becomes an infrastructure ticket with a date.
+5. Close (5m): name the Engine gain the next sprint should protect.
+
+**The move.** A Pit Stop card becomes infrastructure maintenance: a ticket, an owner, and a date before the next release.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R12 — Hot Air Balloon
+
+**Canvas and timebox.** 4 Zones: Hot Air, Sandbags, Storm Clouds, Skies · 60 min
+
+**When to run it.** Low-morale sprints where the team needs to acknowledge positive contributions while systematically identifying operational baggage.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive; lift and ballast are both data.
+2. Gather data (15m): notes into Hot Air, Sandbags, Storm Clouds, Skies.
+3. Generate insights (20m): compare the lift of Hot Air against the drag of Sandbags.
+4. Decide (15m): unclip one Sandbag; name the task or tool it retires.
+5. Close (5m): state the altitude the team expects next sprint.
+
+**The move.** A Sandbag becomes a formal deprecation: the task or tool is retired with a date and a replacement.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R13 — Mountain Trek
+
+**Canvas and timebox.** 4 Zones: Summit, Basecamp, Crevasses, Gear · 90 min
+
+**When to run it.** Multi-sprint delivery campaigns, quarterly releases, or major infrastructural initiatives.
+
+**The five phases.**
+1. Set the stage (10m): recite the Prime Directive; agree the Summit's completion criteria.
+2. Gather data (25m): list delivered architecture, unmonitored risks, and gear in use.
+3. Generate insights (25m): trace Basecamp to Summit; name the Crevasses on that path.
+4. Decide (20m): one Crevasse gets a risk-mitigation spike with an owner.
+5. Close (10m): name the Gear the next leg depends on.
+
+**The move.** A Crevasse becomes a risk-mitigation spike on the active backlog; crossing it without the named Gear is not allowed.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R14 — The Hero’s Journey
+
+**Canvas and timebox.** 5 Stages: Ordinary World, Call, Abyss, Transformation, Elixir · 90–120 min
+
+**When to run it.** Post-release reviews following demanding delivery crunches or major technical recoveries.
+
+**The five phases.**
+1. Set the stage (10m): recite the Prime Directive.
+2. Gather data (20m): walk the five stations in order; one note per station.
+3. Generate insights (30m): harvest the Elixir; name the permanent capability.
+4. Decide (25m): turn the Elixir into a runbook or decision record, with an owner.
+5. Close (15m): name who supported whom at the worst point.
+
+**The move.** The Elixir becomes an artifact — runbook, decision record, or test — committed with an owner.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+**Source.** Joseph Campbell (1949). *The Hero with a Thousand Faces*.
+
+### R15 — Space Mission / Rocket
+
+**Canvas and timebox.** 4 Zones: Thrusters, Gravity, Asteroids, Target Orbit · 60–90 min
+
+**When to run it.** High-risk exploratory initiatives, zero-to-one product development, or deep R&D milestones.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive; name the Target Orbit.
+2. Gather data (20m): notes into Thrusters, Gravity, Asteroids, Target Orbit.
+3. Generate insights (25m): test whether Thrusters outpace organizational Gravity.
+4. Decide (20m): one Gravity item becomes a waiver request with an owner.
+5. Close (10m): name the first asteroid the next sprint routes around.
+
+**The move.** A Gravity item becomes a waiver request to leadership: the rule, its cost, and the experiment.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R16 — Island Castaway
+
+**Canvas and timebox.** 4 Zones: Shelter, Fresh Spring, Predators, SOS Flare · 60 min
+
+**When to run it.** Sudden loss of team capacity, extreme resource starvation, or emergency operational survival mode.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive; name what must survive.
+2. Gather data (15m): notes into Shelter, Fresh Spring, Predators, SOS Flare.
+3. Generate insights (20m): rank non-essential work against the Shelter's needs.
+4. Decide (15m): cut one non-essential commitment; name what the cut protects.
+5. Close (5m): confirm the SOS Flare and who fires it.
+
+**The move.** An SOS Flare becomes an executive escalation ticket, sent within two hours of the session, with a named owner.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R17 — The Submarine
+
+**Canvas and timebox.** 4 Zones: Propulsion, Ballast Tanks, Hull Breaches, Periscope · 60–90 min
+
+**When to run it.** Accumulated technical debt, creeping memory leaks, latent architectural fragility, or mounting compliance risks.
+
+**The five phases.**
+1. Set the stage (5m): recite the Prime Directive; pressure is a system property.
+2. Gather data (20m): notes into Propulsion, Ballast Tanks, Hull Breaches, Periscope.
+3. Generate insights (25m): quantify the pressure each Hull Breach can take.
+4. Decide (20m): one Hull Breach becomes a P0 remediation ticket with a date.
+5. Close (10m): name what the Periscope shows the next sprint will demand.
+
+**The move.** A Hull Breach enters the next sprint as P0 technical-debt remediation, with a fix and a test that would have caught it.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.
+
+### R18 — The Living Tree
+
+**Canvas and timebox.** 5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit · 90 min
+
+**When to run it.** Annual retrospectives, long-term engineering health reviews, or major team structural reorganizations.
+
+**The five phases.**
+1. Set the stage (10m): recite the Prime Directive; roots first, canopy second.
+2. Gather data (20m): notes into Roots, Trunk, Leaves, Fruit, Rotten Branches.
+3. Generate insights (25m): test whether the Roots can sustain the canopy.
+4. Decide (20m): one Rotten Branch gets decommissioning, not a redesign.
+5. Close (15m): name the Fruit the team would protect through the next cut.
+
+**The move.** A Rotten Branch becomes a decommissioning ticket: the dead route, flag, or process is removed.
+
+**Provenance.** Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.

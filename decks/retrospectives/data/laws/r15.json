@@ -1,0 +1,40 @@
+{
+  "id": "R15",
+  "name": "Space Mission / Rocket",
+  "category": "Metaphor & Systems",
+  "trigger": "High-risk exploratory initiatives, zero-to-one product development, or deep R&D milestones.",
+  "canvas": "4 Zones: Thrusters, Gravity, Asteroids, Target Orbit",
+  "timebox": "60–90 min",
+  "canvasLine": "4 Zones: Thrusters, Gravity, Asteroids, Target Orbit · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; name the Target Orbit."
+    },
+    {
+      "text": "Gather data (20m): notes into Thrusters, Gravity, Asteroids, Target Orbit."
+    },
+    {
+      "text": "Generate insights (25m): test whether Thrusters outpace organizational Gravity."
+    },
+    {
+      "text": "Decide (20m): one Gravity item becomes a waiver request with an owner."
+    },
+    {
+      "text": "Close (10m): name the first asteroid the next sprint routes around."
+    }
+  ],
+  "action": "A Gravity item becomes a waiver request to leadership: the rule, its cost, and the experiment.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "rings",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}

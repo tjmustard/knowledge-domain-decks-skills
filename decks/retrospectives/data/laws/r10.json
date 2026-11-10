@@ -1,0 +1,40 @@
+{
+  "id": "R10",
+  "name": "The Sailboat",
+  "category": "Metaphor & Systems",
+  "trigger": "Teams struggling to decouple their aspirational product goals from current technical drag, organizational dependencies, and impending environmental risks.",
+  "canvas": "4 Zones: Island, Wind, Anchors, Rocks",
+  "timebox": "60–90 min",
+  "canvasLine": "4 Zones: Island, Wind, Anchors, Rocks · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; name the target Island."
+    },
+    {
+      "text": "Gather data (20m): five minutes per zone: Wind, Anchors, Rocks, then the Island."
+    },
+    {
+      "text": "Generate insights (20m): cluster notes; dot-vote the heaviest Anchors and Rocks."
+    },
+    {
+      "text": "Decide (15m): sever one Anchor before adding Wind; name its owner."
+    },
+    {
+      "text": "Close (5m): affirm navigation capability and capture the ROTI."
+    }
+  ],
+  "action": "An Anchor becomes a systemic initiative: parallel CI under 15 minutes instead of 90; owner, date.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 4,
+      "rows": 2
+    }
+  }
+}

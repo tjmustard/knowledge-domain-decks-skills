@@ -1,0 +1,40 @@
+{
+  "id": "R18",
+  "name": "The Living Tree",
+  "category": "Metaphor & Systems",
+  "trigger": "Annual retrospectives, long-term engineering health reviews, or major team structural reorganizations.",
+  "canvas": "5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit",
+  "timebox": "90 min",
+  "canvasLine": "5 Zones: Roots/Soil, Trunk, Leaves, Rotten Branches, Fruit · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; roots first, canopy second."
+    },
+    {
+      "text": "Gather data (20m): notes into Roots, Trunk, Leaves, Fruit, Rotten Branches."
+    },
+    {
+      "text": "Generate insights (25m): test whether the Roots can sustain the canopy."
+    },
+    {
+      "text": "Decide (20m): one Rotten Branch gets decommissioning, not a redesign."
+    },
+    {
+      "text": "Close (15m): name the Fruit the team would protect through the next cut."
+    }
+  ],
+  "action": "A Rotten Branch becomes a decommissioning ticket: the dead route, flag, or process is removed.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "tree",
+      "columns": 5,
+      "rows": 2
+    }
+  }
+}

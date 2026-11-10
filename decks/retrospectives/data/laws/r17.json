@@ -1,0 +1,40 @@
+{
+  "id": "R17",
+  "name": "The Submarine",
+  "category": "Metaphor & Systems",
+  "trigger": "Accumulated technical debt, creeping memory leaks, latent architectural fragility, or mounting compliance risks.",
+  "canvas": "4 Zones: Propulsion, Ballast Tanks, Hull Breaches, Periscope",
+  "timebox": "60–90 min",
+  "canvasLine": "4 Zones: Propulsion, Ballast Tanks, Hull Breaches, Periscope · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; pressure is a system property."
+    },
+    {
+      "text": "Gather data (20m): notes into Propulsion, Ballast Tanks, Hull Breaches, Periscope."
+    },
+    {
+      "text": "Generate insights (25m): quantify the pressure each Hull Breach can take."
+    },
+    {
+      "text": "Decide (20m): one Hull Breach becomes a P0 remediation ticket with a date."
+    },
+    {
+      "text": "Close (10m): name what the Periscope shows the next sprint will demand."
+    }
+  ],
+  "action": "A Hull Breach enters the next sprint as P0 technical-debt remediation, with a fix and a test that would have caught it.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 4,
+      "rows": 6
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "R13",
+  "name": "Mountain Trek",
+  "category": "Metaphor & Systems",
+  "trigger": "Multi-sprint delivery campaigns, quarterly releases, or major infrastructural initiatives.",
+  "canvas": "4 Zones: Summit, Basecamp, Crevasses, Gear",
+  "timebox": "90 min",
+  "canvasLine": "4 Zones: Summit, Basecamp, Crevasses, Gear · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; agree the Summit's completion criteria."
+    },
+    {
+      "text": "Gather data (25m): list delivered architecture, unmonitored risks, and gear in use."
+    },
+    {
+      "text": "Generate insights (25m): trace Basecamp to Summit; name the Crevasses on that path."
+    },
+    {
+      "text": "Decide (20m): one Crevasse gets a risk-mitigation spike with an owner."
+    },
+    {
+      "text": "Close (10m): name the Gear the next leg depends on."
+    }
+  ],
+  "action": "A Crevasse becomes a risk-mitigation spike on the active backlog; crossing it without the named Gear is not allowed.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 4,
+      "rows": 4
+    }
+  }
+}

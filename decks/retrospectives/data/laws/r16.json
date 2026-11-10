@@ -1,0 +1,40 @@
+{
+  "id": "R16",
+  "name": "Island Castaway",
+  "category": "Metaphor & Systems",
+  "trigger": "Sudden loss of team capacity, extreme resource starvation, or emergency operational survival mode.",
+  "canvas": "4 Zones: Shelter, Fresh Spring, Predators, SOS Flare",
+  "timebox": "60 min",
+  "canvasLine": "4 Zones: Shelter, Fresh Spring, Predators, SOS Flare · 60 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; name what must survive."
+    },
+    {
+      "text": "Gather data (15m): notes into Shelter, Fresh Spring, Predators, SOS Flare."
+    },
+    {
+      "text": "Generate insights (20m): rank non-essential work against the Shelter's needs."
+    },
+    {
+      "text": "Decide (15m): cut one non-essential commitment; name what the cut protects."
+    },
+    {
+      "text": "Close (5m): confirm the SOS Flare and who fires it."
+    }
+  ],
+  "action": "An SOS Flare becomes an executive escalation ticket, sent within two hours of the session, with a named owner.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Common retro metaphor; no documented originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "zones",
+      "columns": 4,
+      "rows": 5
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "R14",
+  "name": "The Hero’s Journey",
+  "category": "Metaphor & Systems",
+  "trigger": "Post-release reviews following demanding delivery crunches or major technical recoveries.",
+  "canvas": "5 Stages: Ordinary World, Call, Abyss, Transformation, Elixir",
+  "timebox": "90–120 min",
+  "canvasLine": "5 Stages: Ordinary World, Call, Abyss, Transformation, Elixir · 90–120 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive."
+    },
+    {
+      "text": "Gather data (20m): walk the five stations in order; one note per station."
+    },
+    {
+      "text": "Generate insights (30m): harvest the Elixir; name the permanent capability."
+    },
+    {
+      "text": "Decide (25m): turn the Elixir into a runbook or decision record, with an owner."
+    },
+    {
+      "text": "Close (15m): name who supported whom at the worst point."
+    }
+  ],
+  "action": "The Elixir becomes an artifact — runbook, decision record, or test — committed with an owner.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Joseph Campbell"
+    ],
+    "year": 1949,
+    "title": "The Hero with a Thousand Faces"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "timeline",
+      "columns": 5,
+      "rows": 2
+    }
+  }
+}
