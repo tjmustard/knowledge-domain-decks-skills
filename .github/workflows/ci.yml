@@ -99,6 +99,20 @@ jobs:
             fi
             echo '```'
           } >> "$GITHUB_STEP_SUMMARY"
+          # The step summary needs a signed-in session; annotations do not, so
+          # the tail of the failure is also emitted as error annotations, which
+          # the checks API serves to anyone who can see the repository.
+          node -e '
+            const fs = require("fs");
+            const path = process.env.RUNNER_TEMP + "/tests.log";
+            let text = "";
+            try { text = fs.readFileSync(path, "utf8"); } catch {}
+            text = text.slice(-36000);
+            const escape = (v) => v.replace(/%/g, "%25").replace(/\r/g, "").replace(/\n/g, "%0A");
+            for (let i = 0, at = 0; at < text.length && i < 6; i += 1, at += 6000) {
+              console.log(`::error title=${escape(`Tests and gate ${i + 1}`)}::${escape(text.slice(at, at + 6000))}`);
+            }
+          '
 
   # One job per deck, named after its slug. The job above proves the repository
   # as a whole; this one proves that each deck stands alone: its own records
