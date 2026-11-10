@@ -86,7 +86,7 @@ smallest change that removes the failure state; do not restyle unrelated code.
   - Move advanced filters and rare configurations behind progressive disclosure.
 - **Instead of:** A pricing table shows nine overlapping plans with no recommended option, and visitors leave without choosing.
 - **Do:** Offer three clear tiers, mark one recommended, and route custom plans to a separate inquiry.
-- **Source:** Sheena S. Iyengar & Mark R. Lepper (2000), *When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?*.
+- **Source:** Sheena S. Iyengar & Mark R. Lepper (2000), *When Choice Is Demotivating: Can One Desire Too Much of a Good Thing?*
 
 ### DEC-05 — Cognitive Load Theory
 
@@ -171,7 +171,7 @@ smallest change that removes the failure state; do not restyle unrelated code.
   - Pre-populate safe defaults so most questions need no answer.
 - **Instead of:** An onboarding flow asks twenty separate configuration questions before the first task, each with no default.
 - **Do:** One review screen batches the questions, defers the optional half, and pre-fills safe defaults.
-- **Source:** Roy F. Baumeister & Ellen Bratslavsky & Mark Muraven & Dianne M. Tice (1998), *Ego Depletion: Is the Active Self a Limited Resource?*.
+- **Source:** Roy F. Baumeister & Ellen Bratslavsky & Mark Muraven & Dianne M. Tice (1998), *Ego Depletion: Is the Active Self a Limited Resource?*
 
 ## Time, Motion & Ergonomics
 

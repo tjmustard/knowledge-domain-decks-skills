@@ -33,10 +33,15 @@
       .replace(/"/g, "&quot;");
   }
 
+  // A title that already ends a sentence takes no second stop.
+  function titleStop(title) {
+    return /[.?!]$/.test(title) ? "" : ".";
+  }
+
   function citation(origin) {
     var authors = origin.authors.join(", ");
-    return authors + " (" + origin.year + "). " + origin.title + ". " +
-      origin.publication + ".";
+    return authors + " (" + origin.year + "). " + origin.title +
+      titleStop(origin.title) + " " + origin.publication + ".";
   }
 
   function cardMarkup(card) {

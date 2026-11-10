@@ -26,12 +26,6 @@ export async function loadCards(root = ROOT) {
   return cards;
 }
 
-export function formatCitation(origin) {
-  const authors = origin.authors.join(", ");
-  const doi = origin.doi ? ` doi:${origin.doi}.` : "";
-  return `*${origin.title}*. ${origin.publication}, ${origin.year}.${doi}`;
-}
-
 export function formatAuthors(origin) {
   return origin.authors.join(" & ");
 }
