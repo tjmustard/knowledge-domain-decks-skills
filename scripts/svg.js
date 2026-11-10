@@ -18,6 +18,10 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   "use strict";
 
+  // Monospace stack, and load-bearing beyond appearance: diagram labels are
+  // bounded by character count (about 45 fits the safe box on the decline-curve
+  // labels, measured at 1.79 pt per character). If this becomes proportional,
+  // character count stops being width and that bound must be deleted, not retuned.
   var FONT = "ui-monospace, SFMono-Regular, Menlo, monospace";
   var STROKE = 'vector-effect="non-scaling-stroke"';
 
