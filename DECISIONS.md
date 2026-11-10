@@ -556,7 +556,11 @@ overshoot framing belongs to the iterative-corrections account in Crossman &
 Goodeve (1963, published 1983), not to the 1956 thesis, and is not printed. Two
 consequences follow: the originating name is not the printed source because the
 card prints the formula and the formula is Welford's; and the lineage the card
-name carries stops at Crossman, where the index begins.
+name carries stops at Crossman, where the index begins. The name also drops the
+Repository's "Movement": "Crossman's Movement Velocity Law (Welford's Variant)"
+is 52 characters and the schema caps names at 50, so this departure is forced
+by the cap rather than chosen. "Velocity" still names the claim, and the Welford
+parenthetical lineage is intact.
 
 **Law 43, Dodge.** The Repository names Dodge (1900) and Rayner (1998). The card
 cites Dodge alone. Read in the Zenodo scan of the article (DOI
