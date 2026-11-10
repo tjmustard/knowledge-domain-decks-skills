@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/deck-6%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
+        <img src="https://img.shields.io/badge/deck-12%20cards%20%2F%205%20categories-indigo.svg" alt="Deck"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,7 +29,7 @@
 
 **Knowledge Domain Decks** turns a body of professional knowledge into reference
 cards that a person can hold, a phone can show, and a coding agent can apply.
-The first deck covers UX and behavioral design: six principles, each distilled
+The first deck covers UX and behavioral design: twelve principles, each distilled
 into the smallest usable form — an axiom, a trigger, a checklist, an
 anti-pattern, a generated diagram, and one exact academic source.
 
@@ -62,9 +62,9 @@ and no other deck's copy, names, or trade dress is used.
 
 ## 🃏 The First Deck
 
-**UX & Behavioral Design** is a six-card vertical slice that proves the whole
-pipeline end to end. It is not the finished deck; it is a small deck that is
-genuinely usable while the rest is written.
+**UX & Behavioral Design** is a twelve-card deck in progress: every category has
+at least one card, and eight of the twelve are decision-making. It proves the
+whole pipeline end to end and is genuinely usable while the rest is written.
 
 The deck is being built one card per principle, across all **54 principles** in
 the project's research list. That list is longer than the 52-item taxonomy in
@@ -80,6 +80,12 @@ and venue:
 | GES-01 | **Law of Proximity** | Gestalt & Visual Perception | Wertheimer (1923), *Untersuchungen zur Lehre von der Gestalt II* |
 | DEC-01 | **Hick's Law** | Decision-Making & Cognitive Load | Hick (1952), *On the Rate of Gain of Information* |
 | DEC-02 | **Miller's Law** | Decision-Making & Cognitive Load | Miller (1956), *The Magical Number Seven, Plus or Minus Two* |
+| DEC-03 | **Tesler's Law** | Decision-Making & Cognitive Load | Saffer (2007), *Designing for Interaction*, first edition |
+| DEC-04 | **Choice Overload** | Decision-Making & Cognitive Load | Iyengar & Lepper (2000), *When Choice Is Demotivating* |
+| DEC-05 | **Cognitive Load Theory** | Decision-Making & Cognitive Load | Sweller (1988), *Cognitive Load During Problem Solving* |
+| DEC-06 | **Working Memory Capacity Model** | Decision-Making & Cognitive Load | Cowan (2001), *The Magical Number 4 in Short-Term Memory* |
+| DEC-07 | **Cognitive Friction** | Decision-Making & Cognitive Load | Cooper (1999), *The Inmates Are Running the Asylum* |
+| DEC-08 | **Framing Effect** | Decision-Making & Cognitive Load | Tversky & Kahneman (1981), *The Framing of Decisions and the Psychology of Choice* |
 | TME-01 | **Fitts's Law** | Time, Motion & Ergonomics | Fitts (1954), *The Information Capacity of the Human Motor System* |
 | MPA-01 | **Serial Position Effect** | Memory, Perception & Attention | Murdock (1962), *The Serial Position Effect of Free Recall* |
 
@@ -90,7 +96,7 @@ them and the filters, accents, and rules sections follow automatically:
 |---|---|---|
 | Heuristic & Mental Models | HMM-01 | Whether the interface matches what people already know |
 | Gestalt & Visual Perception | GES-01 | Grouping, spacing, and perceived structure |
-| Decision-Making & Cognitive Load | DEC-01, DEC-02 | Option count, comparison effort, working memory |
+| Decision-Making & Cognitive Load | DEC-01 to DEC-08 | Option count, comparison effort, working memory |
 | Time, Motion & Ergonomics | TME-01 | Target size, distance, and motor effort |
 | Memory, Perception & Attention | MPA-01 | Position, sequence, and what survives recall |
 
@@ -128,13 +134,16 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 12-page file of about 169 KiB. `npm run check:pdf` measured a
+build:pdf` emits a 24-page file of about 282 KiB. `npm run check:pdf` measured a
 216 x 360 pt MediaBox on every page. On the rendered pages, trim ticks sit in
-the bleed band at the trim corners; every font is 6.5 pt or larger, with the
-Source line read back at 6.5 pt on all six versos and absent from the rectos;
-the worst text overrun past the safe box is 0.97 pt on page 7, with 8.03 pt of
-paper still before the trim; and every image is a form XObject, so the diagram
-is real vector geometry.
+the bleed band at all four trim corners of every page; every font is 6.5 pt or
+larger, with the Source line read back at 6.5 pt on all twelve versos and absent
+from the rectos. The worst text overrun past the safe box — the internal margin,
+0.1875 in inside the trim line, so 0.3125 in from the paper edge — is about 1 pt,
+caused by glyph side-bearings rather than by text running long, and about 8 pt of
+paper remains before the trim. Every diagram is a form XObject with ink measured
+on its own card, so it is real vector geometry rather than a raster image or an
+empty placeholder.
 
 ### Agents: load the ruleset
 
@@ -254,7 +263,7 @@ npm run accept -- <ref> # any commit-ish
 | `npm run validate` | Every record satisfies the schema, axiom length and word limits hold, IDs are unique |
 | `npm run build:web` | The viewer bundle regenerates from `data/laws/` |
 | `npm run build:rules` | The ruleset and skill regenerate from the same records |
-| `npm run check:web` | At 390 px: no horizontal overflow, six cards render, flip exposes the verso, a filter narrows to one |
+| `npm run check:web` | At 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from `data/laws/`, not hardcoded |
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
 | `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
 
