@@ -190,7 +190,19 @@ test("every figure follows the committed layout map and names what it draws", as
     // noun. The ladder's label leads with what the rungs measure instead,
     // because twenty fronts should be legible without the method strip.
     if (row.family === "ladder") {
+      // The rung is derived from the record's confidence word, not agreed with
+      // the label: the ladder declares its order once and the mark is that
+      // word's index. A label can be internally consistent and still lie.
       const word = record.method.confidence.split(" (")[0].trim();
+      const rungs = families.ladder.rungs;
+      assert.ok(Array.isArray(rungs), "the ladder declares its rung order");
+      const rank = rungs.indexOf(word);
+      assert.ok(rank >= 0, `${cardId} confidence word "${word}" is not one of the ladder's rungs`);
+      assert.equal(
+        row.mark,
+        rank + 1,
+        `${cardId} prints "${word} confidence" at rung ${row.mark}, but "${word}" is rung ${rank + 1} of ${rungs.length}`
+      );
       assert.ok(row.label.startsWith(`${word} confidence`), `${cardId} label omits its datum`);
       assert.ok(row.label.includes(`rung ${row.mark} of ${row.divisions}`), `${cardId} label omits its rung`);
     } else if (row.family === "curve") {
