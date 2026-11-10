@@ -1156,7 +1156,7 @@ page. The column is read from Typst's SVG export, which emits every glyph as
 an outline path: exact geometry that needs neither dpi nor a luminance
 threshold. Every recto is within the 22.5 pt safe edge; the topmost outline on
 every recto stands at 337.58 to 337.59, 0.08 to 0.09 pt above the 337.5 safe
-top, a constant of the template present on the 4e4109a baseline.
+top, a constant of the template present on the 81e39b7 baseline.
 
     T  A  B  cards  last baseline  lowest vector outline, pt from the paper edge
     2  2  2   15    31.5           29.822 ×8, 29.850 ×3, 29.864 ×2, 31.405, 31.404

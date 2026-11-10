@@ -11,6 +11,12 @@
  * Two assertions, both about that shared directory:
  *   1. Whatever it holds belongs to a committed deck.
  *   2. A build with an explicit --build-dir writes there and leaves it alone.
+ *
+ * Both read and compare the shared directory, so they assume nothing else is
+ * building a PDF in this checkout at the same time. Running `npm test` beside a
+ * manual `npm run build:pdf` in the same tree makes the second check fail by
+ * design: the directory changed under it, and a snapshot that tolerated that
+ * would also be blind to a fixture leak.
  */
 import test from "node:test";
 import assert from "node:assert/strict";
