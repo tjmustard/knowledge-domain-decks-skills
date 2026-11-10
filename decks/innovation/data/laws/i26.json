@@ -1,0 +1,58 @@
+{
+  "id": "I26",
+  "sourceTacticNo": 26,
+  "name": "Interactive Paper Prototyping",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe that users can navigate our core onboarding flow without training. We will verify this by running 8 paper-prototype usability sessions, and consider it validated if ≥ 7 participants complete the primary conversion path without asking the facilitator for assistance.",
+  "hypothesisSize": 9,
+  "schematic": "Session at step 2 of the 3-step strip",
+  "method": [
+    "Time: 2–3 days",
+    "Cost: $10–$50",
+    "Confidence: Moderate (Task ergonomics)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Sketch screens, dropdowns and modals on index cards the facilitator can swap quickly."
+    },
+    {
+      "label": "Execution",
+      "text": "Give one task; as the user taps paper, the facilitator plays the computer and lays the next state."
+    },
+    {
+      "label": "Data collection",
+      "text": "Note hesitation, mis-taps, spoken confusion and time to finish."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Sketch interface screens, dropdowns, and modals on separate paper index cards. Organize them systematically so a facilitator can swap them in and out quickly."
+    },
+    {
+      "label": "Execution",
+      "text": "Give the user a clear task. As they touch the paper buttons with their finger, the facilitator acts as the computer, laying down the corresponding paper modal or screen state."
+    },
+    {
+      "label": "Data collection",
+      "text": "Note hesitation points, misplaced taps, verbalized confusion, and overall task completion times."
+    }
+  ],
+  "warning": {
+    "label": "Facilitator Coaxing",
+    "text": "Facilitators nod and coax through hesitations, hiding the flaw they were testing for."
+  },
+  "warningFull": "Facilitators often inadvertently guide participants through hesitation points with subtle body language, subconscious nods, or leading prompts, masking interface usability flaws.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

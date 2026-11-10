@@ -1,0 +1,58 @@
+{
+  "id": "I29",
+  "sourceTacticNo": 29,
+  "name": "B2B Letter of Intent (LOI) Protocol",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe mid-market enterprises need our proposed integration. We will verify this by presenting a non-binding Letter of Intent (LOI) to 6 prospective enterprise accounts, and consider it validated if at least 2 authorized executives sign the document committing to a paid commercial pilot upon delivery of agreed functional specifications.",
+  "hypothesisSize": 8,
+  "schematic": "Signature at step 2 of the 3-step strip",
+  "method": [
+    "Time: 2–4 weeks",
+    "Cost: $0",
+    "Confidence: Extreme (Enterprise legal intent)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Draft a one-page non-binding letter: the problem, the deliverables, the go-live date and pilot pricing."
+    },
+    {
+      "label": "Execution",
+      "text": "Present it to the economic buyer once the requirements are defined in the sales conversation."
+    },
+    {
+      "label": "Data collection",
+      "text": "Note hesitation, legal and procurement redlines, and how many sign."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Draft a one-page non-binding Letter of Intent that clearly outlines the business problem, proposed deliverables, expected go-live timeline, and pilot purchase pricing terms."
+    },
+    {
+      "label": "Execution",
+      "text": "Present the LOI to the economic buyer once functional requirements have been defined during enterprise sales discussions."
+    },
+    {
+      "label": "Data collection",
+      "text": "Note points of hesitation, redlines from legal and procurement, and final signature rates."
+    }
+  ],
+  "warning": {
+    "label": "Non-Binding Courtesy Signatures",
+    "text": "Sympathetic executives sign a non-binding letter to be kind, then vanish at procurement."
+  },
+  "warningFull": "Because standard LOIs are legally non-binding, sympathetic executives will sometimes sign them to encourage early-stage founders or wrap up exploratory calls, only to walk away when asked for formal procurement contracts and budget approvals.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

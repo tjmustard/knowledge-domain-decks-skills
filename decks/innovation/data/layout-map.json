@@ -287,7 +287,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at stage 3 of the 3-stage funnel",
-      "hypothesisSize": 9,
+      "hypothesisSize": 7.5,
       "basis": {
         "datum": "evidence structure",
         "field": "plan.dataCollection",
@@ -323,7 +323,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8.5,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -335,7 +335,7 @@
       "divisions": 3,
       "mark": 2,
       "label": "Delivery at step 2 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.execution",
@@ -359,7 +359,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -383,7 +383,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8.5,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -395,7 +395,7 @@
       "divisions": 3,
       "mark": 2,
       "label": "Pledge at step 2 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8.5,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -407,7 +407,7 @@
       "divisions": 3,
       "mark": 2,
       "label": "Signature at step 2 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",

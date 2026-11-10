@@ -1,0 +1,58 @@
+{
+  "id": "I25",
+  "sourceTacticNo": 25,
+  "name": "Explainer Video Smoke Test (The Dropbox Prototype)",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe our proposed workflow interface is intuitive enough to drive mass consumer adoption. We will verify this by posting a 2-minute demonstration video showing simulated software interactions to target developer channels, and consider it validated if the waitlist grows by ≥ 10,000 qualified signups within 48 hours.",
+  "hypothesisSize": 8,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 5–10 days",
+    "Cost: $50–$300",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Cut a two-minute video of the core workflows, showing the frustration it removes."
+    },
+    {
+      "label": "Execution",
+      "text": "Seed it in niche developer communities and link to an early-access waitlist."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track retention drop-off, views, landing conversion and the tone of discussion."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Create a short video walking through core product workflows, deliberately highlighting how the product solves acute, relatable user frustrations."
+    },
+    {
+      "label": "Execution",
+      "text": "Seed the video across relevant niche communities, developer boards, and technical networks. Link directly to an early access waitlist landing page."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track video retention drop-off rates, aggregate view counts, landing page conversion percentages, and community discussion tone."
+    }
+  ],
+  "warning": {
+    "label": "Entertainment and Novelty Virality",
+    "text": "A clever video earns shares, not paying users, once the novelty wears off."
+  },
+  "warningFull": "A slick, entertaining, or clever demonstration video can generate significant viral buzz and social shares that fail to translate into active, paying users once the novelty wears off.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

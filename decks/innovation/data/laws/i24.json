@@ -1,0 +1,58 @@
+{
+  "id": "I24",
+  "sourceTacticNo": 24,
+  "name": "Wizard of Oz Prototype",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe customers will trust an automated interface to handle [complex task]. We will verify this by building a functioning frontend facade operated entirely by humans on the back end, and consider it validated if users process ≥ 50 transactions with an average Net Promoter Score (NPS) ≥ 50 and an error rate below 5%.",
+  "hypothesisSize": 9,
+  "schematic": "Delivery at step 2 of the 3-step strip",
+  "method": [
+    "Time: 2–4 weeks",
+    "Cost: $100–$1,000",
+    "Confidence: Very High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Build a polished front end wired to internal dashboards or spreadsheets instead of an automated backend."
+    },
+    {
+      "label": "Execution",
+      "text": "Have people process each request in real time and answer through the interface."
+    },
+    {
+      "label": "Data collection",
+      "text": "Log turnaround time, interaction patterns, failures and completion."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a polished web frontend that mirrors a finished, automated product. Connect form inputs and workflows to internal operational dashboards, alerts, or spreadsheets rather than automated backends."
+    },
+    {
+      "label": "Execution",
+      "text": "Deliver the experience in real time using human operators who process incoming requests, pull data manually, and send responses back through the system interface."
+    },
+    {
+      "label": "Data collection",
+      "text": "Log end-to-end turnaround times, user interaction patterns, system failures, and post-task completion metrics."
+    }
+  ],
+  "warning": {
+    "label": "Unsustainable Fulfillment Expectations",
+    "text": "Operators smooth over bad data, faking product-market fit that breaks under automation."
+  },
+  "warningFull": "Human operators can often resolve confusing edge cases, fix typos, and smooth over bad data in ways that automated code cannot, creating a false impression of product-market fit that breaks down during actual software automation.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

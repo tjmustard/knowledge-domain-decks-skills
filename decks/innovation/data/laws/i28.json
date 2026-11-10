@@ -1,0 +1,58 @@
+{
+  "id": "I28",
+  "sourceTacticNo": 28,
+  "name": "Crowdfunding Pre-Sales Campaign",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe there is sustained market demand for our hardware/software innovation. We will verify this by launching a 30-day public crowdfunding campaign, and consider it validated if the campaign hits its minimum funding goal of $100,000 from at least 500 individual backers.",
+  "hypothesisSize": 8.5,
+  "schematic": "Pledge at step 2 of the 3-step strip",
+  "method": [
+    "Time: 30–60 days",
+    "Cost: unreadable in the source ($$–$$ * $$)",
+    "Confidence: Extreme (Irrevocable capital)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Make the campaign video, fix production dates, cost the bill of materials and set the reward tiers."
+    },
+    {
+      "label": "Execution",
+      "text": "Launch publicly and run coordinated promotion through the target consumer and industry channels."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track day-one funding velocity, page conversion, tier mix and average pledge."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Produce a campaign video, establish production timelines, map out detailed bill-of-materials cost structures, and configure the campaign page and reward tiers."
+    },
+    {
+      "label": "Execution",
+      "text": "Launch the campaign publicly and run coordinated promotional campaigns across targeted consumer and industry channels."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track day-one funding velocity, campaign page conversion rates, backer tier distribution, and average pledge amounts."
+    }
+  ],
+  "warning": {
+    "label": "Early-Adopter Crowdfunding Bubble",
+    "text": "Crowdfunding draws hobbyists who tolerate delay and bugs, not mainstream buyers."
+  },
+  "warningFull": "Crowdfunding platforms attract early adopters and hobbyists who tolerate delays and product bugs; these users rarely reflect the expectations of mainstream mass-market consumers.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

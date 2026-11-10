@@ -1,0 +1,58 @@
+{
+  "id": "I27",
+  "sourceTacticNo": 27,
+  "name": "Clickable Wireframe Click-Stream Prototype",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe that users can configure their account settings in under 90 seconds. We will verify this by testing an interactive, clickable mock prototype with 15 unassisted target users, and consider it validated if the median Time-to-Complete is under 90 seconds with a task success rate ≥ 80%.",
+  "hypothesisSize": 8.5,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 4–7 days",
+    "Cost: $0–$100",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Build a mid-fidelity clickable prototype with real click states and input fields; leave side branches dead."
+    },
+    {
+      "label": "Execution",
+      "text": "Send the link through an unmoderated tool and ask participants to think aloud at one goal."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track success paths, misclick heat, task duration and where people drop."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a mid-fidelity clickable prototype in a design tool. Map out realistic click states, input fields, and feedback loops while leaving non-essential branches unclickable."
+    },
+    {
+      "label": "Execution",
+      "text": "Distribute the prototype link through an unmoderated testing tool. Ask participants to think out loud as they attempt a specific, structured goal."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track success paths, misclick heatmaps, total task completion durations, and systemic drop-off steps."
+    }
+  ],
+  "warning": {
+    "label": "Missing Operational Context",
+    "text": "A mockup in a test window has none of the interruptions, dirty data or friction of the real job."
+  },
+  "warningFull": "Users navigating an isolated mockup inside an artificial testing window do not experience the real-world interruptions, messy background data, and technical friction of their actual working environment.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

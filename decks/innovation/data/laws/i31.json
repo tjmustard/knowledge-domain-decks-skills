@@ -1,0 +1,58 @@
+{
+  "id": "I31",
+  "sourceTacticNo": 31,
+  "name": "Micro-Ad Engagement Funnel Siphon",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe that [Value Proposition Messaging A] resonates more strongly with consumers than [Messaging B]. We will verify this by running split ad campaigns with equal budget allocations across both messages, and consider it validated if Variant A yields a ≥ 40% higher Click-Through Rate (CTR) and ≥ 25% lower Cost Per Click (CPC) at statistical significance (p < 0.05).",
+  "hypothesisSize": 7.5,
+  "schematic": "Read at stage 3 of the 3-stage funnel",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $150–$300",
+    "Confidence: Moderate-High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Make identical assets that differ only in the headline: cost savings against time savings."
+    },
+    {
+      "label": "Execution",
+      "text": "Run both ad sets at once on one platform, to one audience, with daily caps to avoid skew."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track impressions, clicks, click-through and downstream page engagement per variant."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Create identical graphic assets that differ only in their core headline and copy hooks (e.g., Cost Savings vs. Time Savings)."
+    },
+    {
+      "label": "Execution",
+      "text": "Launch simultaneous ad sets on a single acquisition platform targeting an identical audience segment. Set daily spending caps to avoid skewing data."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track impressions, clicks, CTR, and downstream page engagement metrics across each creative variant."
+    }
+  ],
+  "warning": {
+    "label": "Clickbait Disconnection",
+    "text": "Curiosity copy wins clicks and cheap traffic that bounces on the real product page."
+  },
+  "warningFull": "Sensationalist or curiosity-driven ad copy can achieve high click-through rates and low acquisition costs while attracting visitors who bounce immediately once they land on the actual product page.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "funnel",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

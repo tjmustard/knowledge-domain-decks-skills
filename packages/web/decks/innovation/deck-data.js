@@ -1268,6 +1268,555 @@ window.INNOVATION_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"112\" y=\"277.6\" width=\"176\" height=\"50.4\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"227.2\" width=\"176\" height=\"50.4\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"176.8\" width=\"176\" height=\"50.4\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"126.4\" width=\"176\" height=\"50.4\" rx=\"0\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"76\" width=\"176\" height=\"50.4\" rx=\"0\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
+      "id": "I21",
+      "sourceTacticNo": 21,
+      "name": "Fake Door / Ghost Feature Test",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe that existing active users need [Feature X]. We will verify this by adding an entry point for the unbuilt feature within our live interface, and consider it validated if ≥ 12% of active users click the link within 7 days, with ≥ 50% opting into an early access notification list.",
+      "hypothesisSize": 9,
+      "schematic": "Read at stage 3 of the 3-stage funnel",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $0–$50",
+        "Confidence: High (Behavioral commitment)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Design a native entry point for the unbuilt feature with a modal offering an early-access waitlist."
+        },
+        {
+          "label": "Execution",
+          "text": "Ship it to a randomised slice of active users behind an open-source feature flag."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track exposures, click-through and opt-in conversions on the modal."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Design a native UI element (button, menu entry, or card) for the proposed capability. Build an exit modal explaining: \"We are currently finalizing this feature. Join the early access waitlist to get notified when it launches.\""
+        },
+        {
+          "label": "Execution",
+          "text": "Deploy the element to a randomized slice of active users using an open-source feature flag manager."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track exposures, click-through rates, and opt-in conversions on the explanation modal."
+        }
+      ],
+      "warning": {
+        "label": "Curio-Clicking",
+        "text": "Users click novel buttons out of curiosity, not because they want the feature."
+      },
+      "warningFull": "Users frequently click unexpected buttons simply out of curiosity or novelty, rather than a genuine intent to use the underlying feature.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "funnel",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 50 64 L 350 64 L 314.7 150.7 L 85.3 150.7 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 85.3 150.7 L 314.7 150.7 L 279.3 237.3 L 120.7 237.3 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 120.7 237.3 L 279.3 237.3 L 244 324 L 156 324 Z\" fill=\"currentColor\" fill-opacity=\"0.14\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280.666667\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I22",
+      "sourceTacticNo": 22,
+      "name": "Landing Page Smoke Test",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe cold traffic from [Channel A] will convert on [Core Value Proposition]. We will verify this by driving 1,000 qualified visitors to a standalone landing page, and consider it validated if the conversion rate (email capture or pricing tier selection) meets or exceeds 5.0% with a target Cost Per Acquisition (CPA) below $15.00.",
+      "hypothesisSize": 8.5,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 7–14 days",
+        "Cost: $100–$500",
+        "Confidence: High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Build one page with headline, value pillars, proof and a single call to action; instrument every button."
+        },
+        {
+          "label": "Execution",
+          "text": "Buy targeted search or social traffic from the ideal customer profile and send it to the page."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track unique visitors, bounce, dwell time and conversion on the primary call to action."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a high-converting, single-page website featuring a clear headline, value pillars, social proof, and a prominent primary Call-to-Action (CTA). Configure analytics and tracking events on every button."
+        },
+        {
+          "label": "Execution",
+          "text": "Launch targeted paid search or social ad campaigns driving traffic from the target ICP to the landing page."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track total unique visitors, bounce rate, dwell time, and conversion percentage on the primary CTA."
+        }
+      ],
+      "warning": {
+        "label": "Vanity Email Opt-Ins",
+        "text": "Visitors hand over burner emails for a free download with no intention of paying."
+      },
+      "warningFull": "Visitors will casually provide secondary or burner email addresses to download free materials or peek at a website, with no real intention of purchasing paid software.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I23",
+      "sourceTacticNo": 23,
+      "name": "Concierge Minimum Viable Product",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe that [client segment] will pay for [automated service outcome]. We will verify this by manually delivering the service end-to-end for 5 businesses for three consecutive weeks, and consider it validated if ≥ 4 clients complete the trial and agree to retain the service on a paid monthly basis.",
+      "hypothesisSize": 8,
+      "schematic": "Delivery at step 2 of the 3-step strip",
+      "method": [
+        "Time: 2–4 weeks",
+        "Cost: $0–$200",
+        "Confidence: Very High (Operational truth)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Define the manual workflow, tools and client channel, and say the onboarding is white-glove."
+        },
+        {
+          "label": "Execution",
+          "text": "Deliver every unit by hand and count the human hours each one costs."
+        },
+        {
+          "label": "Data collection",
+          "text": "Log satisfaction, hours per delivery, edge cases and retention."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Define the manual operating workflow, tools, and direct customer communication channels (e.g., Slack, email, shared spreadsheets). Be explicit with the customer that this initial phase involves hands-on white-glove onboarding."
+        },
+        {
+          "label": "Execution",
+          "text": "Fulfill the service entirely by hand behind the scenes. Track all human labor hours required to deliver the promised value proposition."
+        },
+        {
+          "label": "Data collection",
+          "text": "Document customer satisfaction, time spent per unit of delivery, operational edge cases, and client retention rates."
+        }
+      ],
+      "warning": {
+        "label": "White-Glove Bias",
+        "text": "Clients stay for the attentive human, then churn when the software replaces it."
+      },
+      "warningFull": "Customers often stick with the service primarily because they enjoy the direct, highly attentive human consulting, then churn the moment the experience is replaced with self-serve software.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I24",
+      "sourceTacticNo": 24,
+      "name": "Wizard of Oz Prototype",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe customers will trust an automated interface to handle [complex task]. We will verify this by building a functioning frontend facade operated entirely by humans on the back end, and consider it validated if users process ≥ 50 transactions with an average Net Promoter Score (NPS) ≥ 50 and an error rate below 5%.",
+      "hypothesisSize": 9,
+      "schematic": "Delivery at step 2 of the 3-step strip",
+      "method": [
+        "Time: 2–4 weeks",
+        "Cost: $100–$1,000",
+        "Confidence: Very High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Build a polished front end wired to internal dashboards or spreadsheets instead of an automated backend."
+        },
+        {
+          "label": "Execution",
+          "text": "Have people process each request in real time and answer through the interface."
+        },
+        {
+          "label": "Data collection",
+          "text": "Log turnaround time, interaction patterns, failures and completion."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a polished web frontend that mirrors a finished, automated product. Connect form inputs and workflows to internal operational dashboards, alerts, or spreadsheets rather than automated backends."
+        },
+        {
+          "label": "Execution",
+          "text": "Deliver the experience in real time using human operators who process incoming requests, pull data manually, and send responses back through the system interface."
+        },
+        {
+          "label": "Data collection",
+          "text": "Log end-to-end turnaround times, user interaction patterns, system failures, and post-task completion metrics."
+        }
+      ],
+      "warning": {
+        "label": "Unsustainable Fulfillment Expectations",
+        "text": "Operators smooth over bad data, faking product-market fit that breaks under automation."
+      },
+      "warningFull": "Human operators can often resolve confusing edge cases, fix typos, and smooth over bad data in ways that automated code cannot, creating a false impression of product-market fit that breaks down during actual software automation.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I25",
+      "sourceTacticNo": 25,
+      "name": "Explainer Video Smoke Test (The Dropbox Prototype)",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe our proposed workflow interface is intuitive enough to drive mass consumer adoption. We will verify this by posting a 2-minute demonstration video showing simulated software interactions to target developer channels, and consider it validated if the waitlist grows by ≥ 10,000 qualified signups within 48 hours.",
+      "hypothesisSize": 8,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 5–10 days",
+        "Cost: $50–$300",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Cut a two-minute video of the core workflows, showing the frustration it removes."
+        },
+        {
+          "label": "Execution",
+          "text": "Seed it in niche developer communities and link to an early-access waitlist."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track retention drop-off, views, landing conversion and the tone of discussion."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Create a short video walking through core product workflows, deliberately highlighting how the product solves acute, relatable user frustrations."
+        },
+        {
+          "label": "Execution",
+          "text": "Seed the video across relevant niche communities, developer boards, and technical networks. Link directly to an early access waitlist landing page."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track video retention drop-off rates, aggregate view counts, landing page conversion percentages, and community discussion tone."
+        }
+      ],
+      "warning": {
+        "label": "Entertainment and Novelty Virality",
+        "text": "A clever video earns shares, not paying users, once the novelty wears off."
+      },
+      "warningFull": "A slick, entertaining, or clever demonstration video can generate significant viral buzz and social shares that fail to translate into active, paying users once the novelty wears off.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I26",
+      "sourceTacticNo": 26,
+      "name": "Interactive Paper Prototyping",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe that users can navigate our core onboarding flow without training. We will verify this by running 8 paper-prototype usability sessions, and consider it validated if ≥ 7 participants complete the primary conversion path without asking the facilitator for assistance.",
+      "hypothesisSize": 9,
+      "schematic": "Session at step 2 of the 3-step strip",
+      "method": [
+        "Time: 2–3 days",
+        "Cost: $10–$50",
+        "Confidence: Moderate (Task ergonomics)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Sketch screens, dropdowns and modals on index cards the facilitator can swap quickly."
+        },
+        {
+          "label": "Execution",
+          "text": "Give one task; as the user taps paper, the facilitator plays the computer and lays the next state."
+        },
+        {
+          "label": "Data collection",
+          "text": "Note hesitation, mis-taps, spoken confusion and time to finish."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Sketch interface screens, dropdowns, and modals on separate paper index cards. Organize them systematically so a facilitator can swap them in and out quickly."
+        },
+        {
+          "label": "Execution",
+          "text": "Give the user a clear task. As they touch the paper buttons with their finger, the facilitator acts as the computer, laying down the corresponding paper modal or screen state."
+        },
+        {
+          "label": "Data collection",
+          "text": "Note hesitation points, misplaced taps, verbalized confusion, and overall task completion times."
+        }
+      ],
+      "warning": {
+        "label": "Facilitator Coaxing",
+        "text": "Facilitators nod and coax through hesitations, hiding the flaw they were testing for."
+      },
+      "warningFull": "Facilitators often inadvertently guide participants through hesitation points with subtle body language, subconscious nods, or leading prompts, masking interface usability flaws.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I27",
+      "sourceTacticNo": 27,
+      "name": "Clickable Wireframe Click-Stream Prototype",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe that users can configure their account settings in under 90 seconds. We will verify this by testing an interactive, clickable mock prototype with 15 unassisted target users, and consider it validated if the median Time-to-Complete is under 90 seconds with a task success rate ≥ 80%.",
+      "hypothesisSize": 8.5,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 4–7 days",
+        "Cost: $0–$100",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Build a mid-fidelity clickable prototype with real click states and input fields; leave side branches dead."
+        },
+        {
+          "label": "Execution",
+          "text": "Send the link through an unmoderated tool and ask participants to think aloud at one goal."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track success paths, misclick heat, task duration and where people drop."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a mid-fidelity clickable prototype in a design tool. Map out realistic click states, input fields, and feedback loops while leaving non-essential branches unclickable."
+        },
+        {
+          "label": "Execution",
+          "text": "Distribute the prototype link through an unmoderated testing tool. Ask participants to think out loud as they attempt a specific, structured goal."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track success paths, misclick heatmaps, total task completion durations, and systemic drop-off steps."
+        }
+      ],
+      "warning": {
+        "label": "Missing Operational Context",
+        "text": "A mockup in a test window has none of the interruptions, dirty data or friction of the real job."
+      },
+      "warningFull": "Users navigating an isolated mockup inside an artificial testing window do not experience the real-world interruptions, messy background data, and technical friction of their actual working environment.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I28",
+      "sourceTacticNo": 28,
+      "name": "Crowdfunding Pre-Sales Campaign",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe there is sustained market demand for our hardware/software innovation. We will verify this by launching a 30-day public crowdfunding campaign, and consider it validated if the campaign hits its minimum funding goal of $100,000 from at least 500 individual backers.",
+      "hypothesisSize": 8.5,
+      "schematic": "Pledge at step 2 of the 3-step strip",
+      "method": [
+        "Time: 30–60 days",
+        "Cost: unreadable in the source ($$–$$ * $$)",
+        "Confidence: Extreme (Irrevocable capital)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Make the campaign video, fix production dates, cost the bill of materials and set the reward tiers."
+        },
+        {
+          "label": "Execution",
+          "text": "Launch publicly and run coordinated promotion through the target consumer and industry channels."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track day-one funding velocity, page conversion, tier mix and average pledge."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Produce a campaign video, establish production timelines, map out detailed bill-of-materials cost structures, and configure the campaign page and reward tiers."
+        },
+        {
+          "label": "Execution",
+          "text": "Launch the campaign publicly and run coordinated promotional campaigns across targeted consumer and industry channels."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track day-one funding velocity, campaign page conversion rates, backer tier distribution, and average pledge amounts."
+        }
+      ],
+      "warning": {
+        "label": "Early-Adopter Crowdfunding Bubble",
+        "text": "Crowdfunding draws hobbyists who tolerate delay and bugs, not mainstream buyers."
+      },
+      "warningFull": "Crowdfunding platforms attract early adopters and hobbyists who tolerate delays and product bugs; these users rarely reflect the expectations of mainstream mass-market consumers.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I29",
+      "sourceTacticNo": 29,
+      "name": "B2B Letter of Intent (LOI) Protocol",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe mid-market enterprises need our proposed integration. We will verify this by presenting a non-binding Letter of Intent (LOI) to 6 prospective enterprise accounts, and consider it validated if at least 2 authorized executives sign the document committing to a paid commercial pilot upon delivery of agreed functional specifications.",
+      "hypothesisSize": 8,
+      "schematic": "Signature at step 2 of the 3-step strip",
+      "method": [
+        "Time: 2–4 weeks",
+        "Cost: $0",
+        "Confidence: Extreme (Enterprise legal intent)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Draft a one-page non-binding letter: the problem, the deliverables, the go-live date and pilot pricing."
+        },
+        {
+          "label": "Execution",
+          "text": "Present it to the economic buyer once the requirements are defined in the sales conversation."
+        },
+        {
+          "label": "Data collection",
+          "text": "Note hesitation, legal and procurement redlines, and how many sign."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Draft a one-page non-binding Letter of Intent that clearly outlines the business problem, proposed deliverables, expected go-live timeline, and pilot purchase pricing terms."
+        },
+        {
+          "label": "Execution",
+          "text": "Present the LOI to the economic buyer once functional requirements have been defined during enterprise sales discussions."
+        },
+        {
+          "label": "Data collection",
+          "text": "Note points of hesitation, redlines from legal and procurement, and final signature rates."
+        }
+      ],
+      "warning": {
+        "label": "Non-Binding Courtesy Signatures",
+        "text": "Sympathetic executives sign a non-binding letter to be kind, then vanish at procurement."
+      },
+      "warningFull": "Because standard LOIs are legally non-binding, sympathetic executives will sometimes sign them to encourage early-stage founders or wrap up exploratory calls, only to walk away when asked for formal procurement contracts and budget approvals.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "I30",
       "sourceTacticNo": 30,
       "name": "Refundable Deposit Pre-Order",
@@ -1327,6 +1876,67 @@ window.INNOVATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I31",
+      "sourceTacticNo": 31,
+      "name": "Micro-Ad Engagement Funnel Siphon",
+      "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+      "hypothesis": "We believe that [Value Proposition Messaging A] resonates more strongly with consumers than [Messaging B]. We will verify this by running split ad campaigns with equal budget allocations across both messages, and consider it validated if Variant A yields a ≥ 40% higher Click-Through Rate (CTR) and ≥ 25% lower Cost Per Click (CPC) at statistical significance (p < 0.05).",
+      "hypothesisSize": 7.5,
+      "schematic": "Read at stage 3 of the 3-stage funnel",
+      "method": [
+        "Time: 3–5 days",
+        "Cost: $150–$300",
+        "Confidence: Moderate-High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Make identical assets that differ only in the headline: cost savings against time savings."
+        },
+        {
+          "label": "Execution",
+          "text": "Run both ad sets at once on one platform, to one audience, with daily caps to avoid skew."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track impressions, clicks, click-through and downstream page engagement per variant."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Create identical graphic assets that differ only in their core headline and copy hooks (e.g., Cost Savings vs. Time Savings)."
+        },
+        {
+          "label": "Execution",
+          "text": "Launch simultaneous ad sets on a single acquisition platform targeting an identical audience segment. Set daily spending caps to avoid skewing data."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track impressions, clicks, CTR, and downstream page engagement metrics across each creative variant."
+        }
+      ],
+      "warning": {
+        "label": "Clickbait Disconnection",
+        "text": "Curiosity copy wins clicks and cheap traffic that bounces on the real product page."
+      },
+      "warningFull": "Sensationalist or curiosity-driven ad copy can achieve high click-through rates and low acquisition costs while attracting visitors who bounce immediately once they land on the actual product page.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "funnel",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 50 64 L 350 64 L 314.7 150.7 L 85.3 150.7 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 85.3 150.7 L 314.7 150.7 L 279.3 237.3 L 120.7 237.3 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 120.7 237.3 L 279.3 237.3 L 244 324 L 156 324 Z\" fill=\"currentColor\" fill-opacity=\"0.14\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280.666667\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
       "id": "I37",

@@ -1,0 +1,58 @@
+{
+  "id": "I22",
+  "sourceTacticNo": 22,
+  "name": "Landing Page Smoke Test",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe cold traffic from [Channel A] will convert on [Core Value Proposition]. We will verify this by driving 1,000 qualified visitors to a standalone landing page, and consider it validated if the conversion rate (email capture or pricing tier selection) meets or exceeds 5.0% with a target Cost Per Acquisition (CPA) below $15.00.",
+  "hypothesisSize": 8.5,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $100–$500",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Build one page with headline, value pillars, proof and a single call to action; instrument every button."
+    },
+    {
+      "label": "Execution",
+      "text": "Buy targeted search or social traffic from the ideal customer profile and send it to the page."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track unique visitors, bounce, dwell time and conversion on the primary call to action."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a high-converting, single-page website featuring a clear headline, value pillars, social proof, and a prominent primary Call-to-Action (CTA). Configure analytics and tracking events on every button."
+    },
+    {
+      "label": "Execution",
+      "text": "Launch targeted paid search or social ad campaigns driving traffic from the target ICP to the landing page."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track total unique visitors, bounce rate, dwell time, and conversion percentage on the primary CTA."
+    }
+  ],
+  "warning": {
+    "label": "Vanity Email Opt-Ins",
+    "text": "Visitors hand over burner emails for a free download with no intention of paying."
+  },
+  "warningFull": "Visitors will casually provide secondary or burner email addresses to download free materials or peek at a website, with no real intention of purchasing paid software.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

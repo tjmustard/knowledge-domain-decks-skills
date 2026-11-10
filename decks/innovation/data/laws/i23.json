@@ -1,0 +1,58 @@
+{
+  "id": "I23",
+  "sourceTacticNo": 23,
+  "name": "Concierge Minimum Viable Product",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe that [client segment] will pay for [automated service outcome]. We will verify this by manually delivering the service end-to-end for 5 businesses for three consecutive weeks, and consider it validated if ≥ 4 clients complete the trial and agree to retain the service on a paid monthly basis.",
+  "hypothesisSize": 8,
+  "schematic": "Delivery at step 2 of the 3-step strip",
+  "method": [
+    "Time: 2–4 weeks",
+    "Cost: $0–$200",
+    "Confidence: Very High (Operational truth)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Define the manual workflow, tools and client channel, and say the onboarding is white-glove."
+    },
+    {
+      "label": "Execution",
+      "text": "Deliver every unit by hand and count the human hours each one costs."
+    },
+    {
+      "label": "Data collection",
+      "text": "Log satisfaction, hours per delivery, edge cases and retention."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Define the manual operating workflow, tools, and direct customer communication channels (e.g., Slack, email, shared spreadsheets). Be explicit with the customer that this initial phase involves hands-on white-glove onboarding."
+    },
+    {
+      "label": "Execution",
+      "text": "Fulfill the service entirely by hand behind the scenes. Track all human labor hours required to deliver the promised value proposition."
+    },
+    {
+      "label": "Data collection",
+      "text": "Document customer satisfaction, time spent per unit of delivery, operational edge cases, and client retention rates."
+    }
+  ],
+  "warning": {
+    "label": "White-Glove Bias",
+    "text": "Clients stay for the attentive human, then churn when the software replaces it."
+  },
+  "warningFull": "Customers often stick with the service primarily because they enjoy the direct, highly attentive human consulting, then churn the moment the experience is replaced with self-serve software.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

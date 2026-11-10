@@ -1,0 +1,58 @@
+{
+  "id": "I21",
+  "sourceTacticNo": 21,
+  "name": "Fake Door / Ghost Feature Test",
+  "phase": "Low-Fidelity Prototyping and Smoke Testing Tactics",
+  "hypothesis": "We believe that existing active users need [Feature X]. We will verify this by adding an entry point for the unbuilt feature within our live interface, and consider it validated if ≥ 12% of active users click the link within 7 days, with ≥ 50% opting into an early access notification list.",
+  "hypothesisSize": 9,
+  "schematic": "Read at stage 3 of the 3-stage funnel",
+  "method": [
+    "Time: 3–5 days",
+    "Cost: $0–$50",
+    "Confidence: High (Behavioral commitment)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Design a native entry point for the unbuilt feature with a modal offering an early-access waitlist."
+    },
+    {
+      "label": "Execution",
+      "text": "Ship it to a randomised slice of active users behind an open-source feature flag."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track exposures, click-through and opt-in conversions on the modal."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Design a native UI element (button, menu entry, or card) for the proposed capability. Build an exit modal explaining: \"We are currently finalizing this feature. Join the early access waitlist to get notified when it launches.\""
+    },
+    {
+      "label": "Execution",
+      "text": "Deploy the element to a randomized slice of active users using an open-source feature flag manager."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track exposures, click-through rates, and opt-in conversions on the explanation modal."
+    }
+  ],
+  "warning": {
+    "label": "Curio-Clicking",
+    "text": "Users click novel buttons out of curiosity, not because they want the feature."
+  },
+  "warningFull": "Users frequently click unexpected buttons simply out of curiosity or novelty, rather than a genuine intent to use the underlying feature.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "funnel",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}
