@@ -109,7 +109,7 @@
     #v(8pt)
     #line(length: 100%, stroke: rule-stroke)
     #v(4pt)
-    #text(size: 5.5pt, fill: rgb("#64748b"))[
+    #text(size: 6.5pt, fill: rgb("#64748b"))[
       Source: #card.academicOrigin.authors.join(", ") (#card.academicOrigin.year).
       _#card.academicOrigin.title._ #card.academicOrigin.publication.
     ]
