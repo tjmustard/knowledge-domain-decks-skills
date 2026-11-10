@@ -49,10 +49,15 @@ Every output is generated. Nothing is hand-edited downstream: fix a typo in a
 card record, rerun the generators, and the PDF, the viewer bundle, and the rules
 all move together.
 
-The ruleset, the skill, and the viewer bundle regenerate byte-identically, so
-the same records always produce the same bytes. The PDF does not: Typst stamps
-the build time into the file, so two builds of one commit differ by a few bytes
-in the document information dictionary while printing the same pages.
+The ruleset, the skill, the viewer bundle, and the PDF all regenerate
+byte-identically, so the same records always produce the same bytes. The print
+build pins `SOURCE_DATE_EPOCH`, the reproducible-builds convention, to
+2026-11-09T00:00:00Z: Typst reads it for `/ModDate` and derives the trailer `/ID`
+from it, so two builds of one commit are identical rather than differing by the
+stamp. An inherited `SOURCE_DATE_EPOCH` overrides the pin, so a distributor can
+stamp their own. The date is fixed rather than taken from the commit because an
+exported tree has no git history, and a tarball build has to produce the same
+bytes as a checkout build.
 
 The deck is deliberately clean-room. The wording is written for this project,
 the diagrams are drawn parametrically from each card's `graphicMetaphor` data,
@@ -146,7 +151,8 @@ The output is `packages/prepress/dist/ux-deck.pdf`. This step requires
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDF.** With Typst 0.15.1, `npm run
-build:pdf` emits a 48-page file of 579,859 bytes (566 KiB). `npm run check:pdf`
+build:pdf` emits a 48-page file of 579,849 bytes (566 KiB), and two consecutive
+builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every text
 font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
@@ -279,7 +285,7 @@ npm run accept -- <ref> # any commit-ish
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
 | `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
 
-Last full run: **2026-11-09**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
+Last full run: **2026-11-10**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
 `npm run check:all` exits 0 and the PDF builds.
 
 Two honest limits. `npm run check:pdf` proves page geometry only. Whether the

@@ -22,6 +22,33 @@ const buildDir = join(here, "build");
 const svgDir = join(buildDir, "svg");
 const distDir = join(here, "dist");
 
+/*
+ * Typst stamps the compile time into /ModDate and the XMP dates, and derives the
+ * trailer /ID from them, so two builds of one commit differ in those fields even
+ * when the file length is the same. Pinning SOURCE_DATE_EPOCH, the
+ * reproducible-builds convention, removes that variable.
+ *
+ * The epoch is a fixed date rather than the commit time on purpose: an exported
+ * tree or tarball has no git history, and a build there must produce the same
+ * bytes as a build inside a checkout. An inherited SOURCE_DATE_EPOCH still wins,
+ * so a distributor that repackages the deck can stamp their own.
+ */
+const DECK_EPOCH = 1794182400; // 2026-11-09T00:00:00Z, the deck's first release
+let epoch = DECK_EPOCH;
+let epochSource = "the deck's fixed release epoch";
+
+const inherited = process.env.SOURCE_DATE_EPOCH;
+if (inherited !== undefined && inherited !== "") {
+  if (!/^\d+$/.test(inherited)) {
+    console.error(
+      `SOURCE_DATE_EPOCH must be whole seconds since 1970, got "${inherited}".`
+    );
+    process.exit(2);
+  }
+  epoch = Number(inherited);
+  epochSource = "the environment";
+}
+
 const version = spawnSync("typst", ["--version"], { encoding: "utf8" });
 if (version.error || version.status !== 0) {
   console.error(
@@ -54,7 +81,11 @@ await writeFile(
 const result = spawnSync(
   "typst",
   ["compile", "--root", ".", "src/card.typ", "dist/ux-deck.pdf"],
-  { cwd: here, encoding: "utf8" }
+  {
+    cwd: here,
+    encoding: "utf8",
+    env: { ...process.env, SOURCE_DATE_EPOCH: String(epoch) }
+  }
 );
 if (result.status !== 0) {
   console.error(result.stdout || "");
@@ -66,4 +97,8 @@ if (result.status !== 0) {
 console.log(
   `Typst ${version.stdout.trim()} built packages/prepress/dist/ux-deck.pdf ` +
   `(${cards.length * 2} pages: ${cards.length} cards, recto + verso).`
+);
+console.log(
+  `SOURCE_DATE_EPOCH ${epoch} from ${epochSource}; ` +
+  `rebuilds of this commit are byte-identical.`
 );

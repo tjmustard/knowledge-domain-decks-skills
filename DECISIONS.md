@@ -644,3 +644,40 @@ the instrument rather than the card:
   from it. That is why the byte delta was unreadable, and why page hashes are the
   right instrument today. If `SOURCE_DATE_EPOCH` is set later, byte comparison
   becomes valid again, and that change is what would make this note outdated.
+  It is set now, by `packages/prepress/build.mjs`; §29 records the choice, and
+  byte comparison is valid again.
+
+## 29. A fixed epoch, not the commit time
+
+Typst writes `/ModDate` and the XMP dates on every compile and derives the
+trailer `/ID` from them, so an unpinned build is only reproducible up to those
+four fields. `packages/prepress/build.mjs` now passes `SOURCE_DATE_EPOCH`, the
+reproducible-builds convention, and the PDF joins the ruleset, skill and web
+bundle in regenerating byte-identically.
+
+Three decisions in that change:
+
+- **A fixed date, not the commit timestamp.** `git log -1 --format=%ct` would
+  make the stamp meaningful - the time the source was committed - but it needs a
+  git checkout. An exported tree or tarball has no history, and a build there
+  must still work and must produce the same bytes as a build in a checkout. The
+  cost is that `/ModDate` reads 2026-11-09T00:00:00Z for every build, whenever it
+  is made; the README says so rather than implying the file records its build
+  time.
+- **An inherited `SOURCE_DATE_EPOCH` wins.** A distributor who repackages the
+  deck can stamp their own date, as the convention intends. A value that is not
+  whole seconds exits 2 instead of falling back, so a typo cannot produce a file
+  that quietly claims the deck's epoch.
+- **Proven by effect, not by assumption.** Two builds with the pin are
+  byte-identical at 579,849 bytes. Two direct `typst compile` runs without it
+  differ in `/ModDate`, the XMP dates and `/ID` while both being 579,859 bytes,
+  which is why the byte count never exposed the difference. A third build with
+  `SOURCE_DATE_EPOCH=0` is distinct from both, so the epoch is the variable at
+  work and not a coincidence of timing. A build from `git archive` in a
+  directory with no `.git` produced the same 579,849 bytes, so the reason for
+  choosing a fixed date over the commit time is measured rather than argued.
+
+What this does not prove: identical bytes across Typst versions, or across
+machines while the diagram labels resolve a monospace stack against the host's
+fonts. The claim is per version and per font environment until that font is
+pinned, which is queued as its own change.
