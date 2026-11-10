@@ -230,30 +230,45 @@
           "type": "object",
           "additionalProperties": false,
           "required": [
-            "kind",
+            "treatment",
             "columns",
             "rows"
           ],
           "properties": {
-            "kind": {
+            "treatment": {
               "enum": [
                 "2x2",
                 "stage_progression",
                 "value_chain",
                 "feedback_loop",
                 "tree",
-                "matrix_3x3"
+                "matrix_3x3",
+                "curve_trajectory",
+                "curve_multis",
+                "curve_bell",
+                "curve_sigmoid",
+                "curve_wave",
+                "curve_decay",
+                "scatter",
+                "topology",
+                "wedge",
+                "column_board",
+                "network",
+                "forces",
+                "bipartite",
+                "enclosure",
+                "tracks"
               ]
             },
             "columns": {
               "type": "integer",
               "minimum": 1,
-              "maximum": 6
+              "maximum": 8
             },
             "rows": {
               "type": "integer",
               "minimum": 1,
-              "maximum": 3
+              "maximum": 4
             }
           }
         }

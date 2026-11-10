@@ -55,9 +55,9 @@
   "figure": {
     "svgShape": "strategy-canvas",
     "parametricParams": {
-      "kind": "matrix_3x3",
-      "columns": 2,
-      "rows": 1
+      "treatment": "column_board",
+      "columns": 6,
+      "rows": 2
     }
   }
 }

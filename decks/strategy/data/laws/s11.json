@@ -42,7 +42,7 @@
   "figure": {
     "svgShape": "strategy-canvas",
     "parametricParams": {
-      "kind": "feedback_loop",
+      "treatment": "feedback_loop",
       "columns": 4,
       "rows": 1
     }

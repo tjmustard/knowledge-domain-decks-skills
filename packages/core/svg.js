@@ -2272,14 +2272,17 @@
     return out.join("");
   };
 
-  /* A strategy canvas, drawn as the layout family the card names. `kind` is one
-     of the source's six layout types; `columns` and `rows` count the stages,
-     links, nodes, branches or note marks inside it. Every kind reads both
-     counts - a shape that ignored one would offer a knob it never turns - and
-     an unknown kind falls back to a marked frame unlike every real kind, so
-     the gate's string probe still moves the drawing. */
+  /* A strategy canvas. `treatment` is the drawing: the six layout types the
+     source's schema defines, plus refinements its schematic tags name - curve
+     families, a node-link network, a two-column bipartite diagram, a wedge, a
+     five-domain topology, a column board, a scatter, an enclosure and lanes.
+     `columns` and `rows` count stages, tracks, nodes, marks or ticks inside the
+     drawing. Every treatment reads both counts - a shape that ignored one would
+     offer a knob it never turns - and an unknown treatment falls back to a
+     marked frame unlike every real treatment, so the gate's string probe still
+     moves the drawing. */
   shapes["strategy-canvas"] = function (p) {
-    var kind = p.kind || "2x2";
+    var treatment = p.treatment || "2x2";
     var cols = Math.max(1, Math.round(p.columns || 2));
     var rows = Math.max(1, Math.round(p.rows || 2));
     var left = 40;
@@ -2302,24 +2305,253 @@
       out.push(line(x2, y2, x2 - head * Math.cos(a + 0.5), y2 - head * Math.sin(a + 0.5), 1.4, 0.7));
     }
 
-    if (kind === "2x2") {
+    // A plot area for the curve and scatter treatments: an L of axes whose
+    // tick counts are the two declared parameters, so neither stops moving.
+    var plotLeft = left + 24;
+    var plotRight = right - 24;
+    var plotTop = top + 24;
+    var plotBottom = bottom - 28;
+    function X(t) {
+      return plotLeft + t * (plotRight - plotLeft);
+    }
+    function Y(v) {
+      return plotBottom - v * (plotBottom - plotTop);
+    }
+    function polyline(fn, steps) {
+      var prev = null;
+      for (var i = 0; i <= steps; i++) {
+        var q = fn(i / steps);
+        if (prev) out.push(line(prev[0], prev[1], q[0], q[1], 2, 0.65));
+        prev = q;
+      }
+    }
+    function axes() {
+      out.push(line(plotLeft, plotTop, plotLeft, plotBottom, 1.6, 0.7));
+      out.push(line(plotLeft, plotBottom, plotRight, plotBottom, 1.6, 0.7));
+      for (var ixc = 0; ixc < cols; ixc++) {
+        var tx = X((ixc + 0.5) / cols);
+        out.push(line(tx, plotBottom, tx, plotBottom - 6, 1.2, 0.5));
+      }
+      for (var iyr = 0; iyr < rows; iyr++) {
+        var ty = Y((iyr + 0.5) / rows);
+        out.push(line(plotLeft, ty, plotLeft + 6, ty, 1.2, 0.5));
+      }
+    }
+
+    if (treatment === "curve_trajectory") {
+      // Performance against time: one trajectory per row, the last the
+      // disruptive one that steepens and crosses the rest.
+      frame();
+      axes();
+      var traj = Math.max(2, rows);
+      for (var tr = 0; tr < traj; tr++) {
+        (function (idx) {
+          var steepest = idx === traj - 1;
+          polyline(function (t) {
+            var v = steepest ? 0.12 + 0.88 * t * t : 0.2 + 0.5 * t * (0.6 + 0.2 * idx);
+            return [X(t), Y(v)];
+          }, 24);
+        })(tr);
+      }
+    } else if (treatment === "curve_multis") {
+      // Overlapping S-curves: one per row, offset along the time axis.
+      frame();
+      axes();
+      for (var ms = 0; ms < rows; ms++) {
+        (function (idx) {
+          var off = 0.15 + idx * (0.55 / Math.max(1, rows));
+          polyline(function (t) {
+            return [X(t), Y(1 / (1 + Math.exp(-(t - off) * 14)))];
+          }, 28);
+        })(ms);
+      }
+    } else if (treatment === "curve_bell") {
+      // A bell curve with a chasm: two halves, the gap between them widening
+      // with the row count and moving with the column count.
+      frame();
+      axes();
+      var chasm = 0.3 + 0.05 * cols;
+      var gap = 0.02 + 0.015 * rows;
+      polyline(function (t) {
+        var x = t * (chasm - gap);
+        return [X(x), Y(Math.exp(-Math.pow((x - 0.3) / 0.15, 2)))];
+      }, 20);
+      polyline(function (t) {
+        var x = chasm + gap + t * (1 - chasm - gap);
+        return [X(x), Y(Math.exp(-Math.pow((x - 0.68) / 0.16, 2)))];
+      }, 20);
+      out.push(line(X(chasm - gap), Y(-0.02), X(chasm - gap), Y(0.55), 1.3, 0.4, "5 5"));
+      out.push(line(X(chasm + gap), Y(-0.02), X(chasm + gap), Y(0.55), 1.3, 0.4, "5 5"));
+      out.push(line(X(chasm - gap), Y(0.02), X(chasm + gap), Y(0.02), 1.8, 0.7));
+    } else if (treatment === "curve_sigmoid") {
+      frame();
+      axes();
+      var steep = 6 + rows * 3;
+      polyline(function (t) {
+        return [X(t), Y(1 / (1 + Math.exp(-(t - 0.5) * steep)))];
+      }, 36);
+    } else if (treatment === "curve_wave") {
+      // Expectation wave: peak, trough, plateau. Its amplitude reads rows.
+      frame();
+      axes();
+      var amp = 0.8 + 0.15 * rows;
+      polyline(function (t) {
+        var hump = amp * Math.exp(-Math.pow((t - 0.25) / 0.13, 2));
+        var trough = -0.3 * Math.exp(-Math.pow((t - 0.53) / 0.12, 2));
+        var plateau = t > 0.7 ? 0.25 + 0.12 * Math.min(1, (t - 0.7) / 0.25) : 0;
+        return [X(t), Y(Math.max(-0.05, hump + trough + plateau))];
+      }, 40);
+    } else if (treatment === "curve_decay") {
+      frame();
+      axes();
+      var decay = 2.5 + rows;
+      polyline(function (t) {
+        return [X(t), Y(0.9 * Math.exp(-decay * t) + 0.04)];
+      }, 32);
+    } else if (treatment === "scatter") {
+      frame();
+      axes();
+      for (var sxc = 0; sxc < cols; sxc++) {
+        for (var syr = 0; syr < rows; syr++) {
+          var px = ((sxc * 7 + syr * 3 + 1) % 11) / 11;
+          var py = ((sxc * 5 + syr * 7 + 2) % 13) / 13;
+          var rr = 3 + ((sxc + syr) % 3) * 2;
+          out.push(circle(X(0.08 + 0.84 * px), Y(0.08 + 0.84 * py), rr, { width: 1.2, opacity: 0.6 }));
+        }
+      }
+    } else if (treatment === "topology") {
+      // A centre domain and its neighbours on a ring, with inner marks per ring.
+      frame();
+      out.push(circle(200, 200, 26, { width: 1.6, opacity: 0.6 }));
+      out.push(circle(200, 200, 7, { width: 1.2, opacity: 0.8 }));
+      for (var dc = 0; dc < cols; dc++) {
+        var da = (Math.PI * 2 * dc) / cols - Math.PI / 2;
+        var dx = 200 + Math.cos(da) * 105;
+        var dy = 200 + Math.sin(da) * 105;
+        out.push(line(200 + Math.cos(da) * 33, 200 + Math.sin(da) * 33, 200 + Math.cos(da) * 85, 200 + Math.sin(da) * 85, 1.3, 0.4));
+        out.push(circle(dx, dy, 20, { hollow: true, width: 1.4, opacity: 0.5 }));
+        for (var dr = 0; dr < rows; dr++) {
+          out.push(circle(dx + Math.cos(da) * (5 + dr * 6), dy + Math.sin(da) * (5 + dr * 6), 2.5, { width: 1, opacity: 0.7 }));
+        }
+      }
+    } else if (treatment === "wedge") {
+      // Value above price: the gap between two lines is the surplus wedge,
+      // with one dashed band per row and one divider per column.
+      frame();
+      axes();
+      polyline(function (t) {
+        return [X(t), Y(0.28 + 0.6 * t)];
+      }, 20);
+      polyline(function (t) {
+        return [X(t), Y(0.15 + 0.35 * t)];
+      }, 20);
+      for (var wc = 0; wc < cols; wc++) {
+        var wt = (wc + 0.5) / cols;
+        out.push(line(X(wt), Y(0.28 + 0.6 * wt), X(wt), Y(0.15 + 0.35 * wt), 1, 0.35));
+      }
+      for (var wr = 0; wr < rows; wr++) {
+        var wb = (wr + 1) / (rows + 1);
+        out.push(line(X(wb), Y(0.28 + 0.6 * wb), X(wb) + 10, Y(0.15 + 0.35 * wb), 1, 0.4, "3 3"));
+      }
+    } else if (treatment === "column_board") {
+      // A board of columns, each divided into rows: the six-column macro board.
+      frame();
+      var cw = w / cols;
+      var ch = h / rows;
+      for (var cc = 0; cc < cols; cc++) {
+        out.push(rect(left + cc * cw + 4, top + 6, cw - 8, h - 12, { rx: 3, width: 1.3, opacity: 0.35 }));
+        for (var cr = 0; cr < rows; cr++) {
+          out.push(rect(left + cc * cw + 10, top + 14 + cr * (ch - 12), cw - 20, ch - 24, { rx: 2, width: 1.4, opacity: 0.45 }));
+        }
+      }
+      for (var cl = 1; cl < cols; cl++) out.push(line(left + cl * cw, top, left + cl * cw, bottom, 1.1, 0.3));
+    } else if (treatment === "network") {
+      // A centre and its connected neighbours: the diamond relational network.
+      frame();
+      out.push(circle(200, 200, 14, { width: 1.6, opacity: 0.8 }));
+      for (var nc = 0; nc < cols; nc++) {
+        var na = (Math.PI * 2 * nc) / cols - Math.PI / 2;
+        var nx = 200 + Math.cos(na) * 112;
+        var ny = 200 + Math.sin(na) * 112;
+        out.push(line(200 + Math.cos(na) * 16, 200 + Math.sin(na) * 16, nx - Math.cos(na) * 10, ny - Math.sin(na) * 10, 1.4, 0.45));
+        out.push(circle(nx, ny, 9, { width: 1.4, opacity: 0.7 }));
+        for (var nr = 0; nr < rows; nr++) {
+          out.push(circle(nx + Math.cos(na + 0.5) * (16 + nr * 7), ny + Math.sin(na + 0.5) * (16 + nr * 7), 3, { width: 1, opacity: 0.55 }));
+        }
+      }
+    } else if (treatment === "forces") {
+      // Driving arrows point in, resisting arrows point out: the four forces.
+      frame();
+      out.push(circle(200, 200, 30, { hollow: true, width: 1.6, opacity: 0.6 }));
+      for (var fc = 0; fc < cols; fc++) {
+        var fa = (Math.PI * 2 * fc) / cols - Math.PI / 2;
+        arrow(200 + Math.cos(fa) * 118, 200 + Math.sin(fa) * 118, 200 + Math.cos(fa) * 40, 200 + Math.sin(fa) * 40);
+      }
+      for (var fr = 0; fr < rows; fr++) {
+        var fb = (Math.PI * 2 * fr) / rows - Math.PI / 2 + Math.PI / Math.max(2, cols);
+        arrow(200 + Math.cos(fb) * 44, 200 + Math.sin(fb) * 44, 200 + Math.cos(fb) * 124, 200 + Math.sin(fb) * 124);
+      }
+    } else if (treatment === "bipartite") {
+      // Two columns of nodes with edges across: org topology mirrored in code.
+      frame();
+      var lx = left + 70;
+      var rx = right - 70;
+      for (var bc = 0; bc < cols; bc++) {
+        var by1 = top + (h * (bc + 0.5)) / cols;
+        out.push(circle(lx, by1, 7, { width: 1.4, opacity: 0.75 }));
+        for (var br = 0; br < rows; br++) {
+          var by2 = top + (h * (br + 0.5)) / rows;
+          if (bc === 0) out.push(circle(rx, by2, 7, { width: 1.4, opacity: 0.75 }));
+          out.push(line(lx + 8, by1, rx - 8, by2, 1, 0.3));
+        }
+      }
+    } else if (treatment === "enclosure") {
+      // An asset held inside a boundary: the cornered resource.
+      frame();
+      out.push(rect(left + 34, top + 34, w - 68, h - 68, { rx: 10, width: 1.8, opacity: 0.6 }));
+      out.push(rect(left + 46, top + 46, w - 92, h - 92, { rx: 8, width: 1, opacity: 0.3 }));
+      out.push(circle(200, 200, 24, { width: 1.6, opacity: 0.8 }));
+      for (var ec = 0; ec < cols; ec++) {
+        var ea = (Math.PI * 2 * ec) / cols - Math.PI / 2;
+        out.push(line(200 + Math.cos(ea) * 27, 200 + Math.sin(ea) * 27, 200 + Math.cos(ea) * 66, 200 + Math.sin(ea) * 66, 1.2, 0.35));
+        out.push(circle(200 + Math.cos(ea) * 72, 200 + Math.sin(ea) * 72, 4, { width: 1.1, opacity: 0.6 }));
+      }
+      for (var er = 0; er < rows; er++) {
+        out.push(circle(200, 200, 36 + er * 10, { hollow: true, width: 1, opacity: 0.28 }));
+      }
+    } else if (treatment === "tracks") {
+      // Parallel transformation tracks, each cut into stages.
+      frame();
+      var lane = h / rows;
+      for (var tk = 0; tk < rows; tk++) {
+        var ly = top + lane * (tk + 0.5);
+        out.push(rect(left + 16, ly - 14, w - 32, 28, { rx: 4, width: 1.5, opacity: 0.35 }));
+        for (var tc = 1; tc < cols; tc++) {
+          var tx2 = left + 16 + ((w - 32) * tc) / cols;
+          out.push(line(tx2, ly - 14, tx2, ly + 14, 1.1, 0.3, "4 4"));
+        }
+        for (var tn = 0; tn < cols; tn++) {
+          out.push(circle(left + 16 + ((w - 32) * (tn + 0.5)) / cols, ly, 3, { width: 1, opacity: 0.7 }));
+        }
+      }
+    } else if (treatment === "2x2") {
       frame();
       out.push(line(200, top, 200, bottom, 1.4, 0.4, "5 5"));
       out.push(line(left, 200, right, 200, 1.4, 0.4, "5 5"));
       for (var c2 = 0; c2 < cols; c2++) {
-        var tx = left + (w * (c2 + 0.5)) / cols;
-        out.push(line(tx, top, tx, top + 8, 1.4, 0.5));
-        out.push(line(tx, bottom - 8, tx, bottom, 1.4, 0.5));
+        var tx3 = left + (w * (c2 + 0.5)) / cols;
+        out.push(line(tx3, top, tx3, top + 8, 1.4, 0.5));
+        out.push(line(tx3, bottom - 8, tx3, bottom, 1.4, 0.5));
       }
       for (var r2 = 0; r2 < rows; r2++) {
-        var ty = top + (h * (r2 + 0.5)) / rows;
-        out.push(line(left, ty, left + 8, ty, 1.4, 0.5));
-        out.push(line(right - 8, ty, right, ty, 1.4, 0.5));
+        var ty2 = top + (h * (r2 + 0.5)) / rows;
+        out.push(line(left, ty2, left + 8, ty2, 1.4, 0.5));
+        out.push(line(right - 8, ty2, right, ty2, 1.4, 0.5));
       }
       [[120, 120], [280, 120], [120, 280], [280, 280]].forEach(function (q) {
         out.push(circle(q[0], q[1], 5, { hollow: true, width: 1.4, opacity: 0.6 }));
       });
-    } else if (kind === "stage_progression") {
+    } else if (treatment === "stage_progression") {
       var laneH = h / rows;
       for (var sr = 0; sr < rows; sr++) {
         var baseY = top + laneH * (sr + 1) - 10;
@@ -2335,7 +2567,7 @@
         out.push(line(left + 10, baseY, right - 10, baseY, 1.2, 0.35));
       }
       frame();
-    } else if (kind === "value_chain") {
+    } else if (treatment === "value_chain") {
       var chainH = h / rows;
       for (var vr = 0; vr < rows; vr++) {
         var cy = top + chainH * (vr + 0.5);
@@ -2349,14 +2581,14 @@
         }
       }
       frame();
-    } else if (kind === "feedback_loop") {
+    } else if (treatment === "feedback_loop") {
       var maxR = 128;
-      for (var fr = 0; fr < rows; fr++) {
-        var rad = maxR - fr * 14;
-        out.push(circle(200, 200, rad, { hollow: true, width: fr === 0 ? 2 : 1.2, opacity: fr === 0 ? 0.6 : 0.35 }));
-        for (var fc = 0; fc < cols; fc++) {
-          var angle = (Math.PI * 2 * fc) / cols - Math.PI / 2;
-          out.push(circle(200 + Math.cos(angle) * rad, 200 + Math.sin(angle) * rad, fr === 0 ? 5 : 3, { width: 1.3, opacity: 0.75 }));
+      for (var fr2 = 0; fr2 < rows; fr2++) {
+        var rad = maxR - fr2 * 14;
+        out.push(circle(200, 200, rad, { hollow: true, width: fr2 === 0 ? 2 : 1.2, opacity: fr2 === 0 ? 0.6 : 0.35 }));
+        for (var fc2 = 0; fc2 < cols; fc2++) {
+          var angle = (Math.PI * 2 * fc2) / cols - Math.PI / 2;
+          out.push(circle(200 + Math.cos(angle) * rad, 200 + Math.sin(angle) * rad, fr2 === 0 ? 5 : 3, { width: 1.3, opacity: 0.75 }));
         }
       }
       var a1 = -Math.PI / 2;
@@ -2366,21 +2598,21 @@
         " A " + maxR + " " + maxR + " 0 1 1 " + coord(200 + Math.cos(a2) * maxR) + " " + coord(200 + Math.sin(a2) * maxR) +
         '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ' + STROKE + "/>"
       );
-    } else if (kind === "tree") {
+    } else if (treatment === "tree") {
       var rootX = 200;
       var rootY = bottom - 10;
       var crownY = top + 40;
       out.push(line(rootX, rootY, rootX, crownY + 30, 2.2, 0.8));
-      for (var tc = 0; tc < cols; tc++) {
-        var bx = cols === 1 ? rootX : left + 30 + ((w - 60) * tc) / (cols - 1);
+      for (var tc2 = 0; tc2 < cols; tc2++) {
+        var bx = cols === 1 ? rootX : left + 30 + ((w - 60) * tc2) / (cols - 1);
         out.push(line(rootX, crownY + 30, bx, crownY, 1.5, 0.5));
-        for (var tr = 0; tr < rows; tr++) {
-          var ly = crownY + ((rootY - 60 - crownY) * tr) / Math.max(1, rows);
-          out.push(circle(bx, Math.min(ly, rootY - 30), 4, { width: 1.2, opacity: 0.7 }));
+        for (var tr2 = 0; tr2 < rows; tr2++) {
+          var ly2 = crownY + ((rootY - 60 - crownY) * tr2) / Math.max(1, rows);
+          out.push(circle(bx, Math.min(ly2, rootY - 30), 4, { width: 1.2, opacity: 0.7 }));
         }
       }
       out.push(circle(rootX, rootY, 6, { width: 1.5, fill: "currentColor", opacity: 0.85 }));
-    } else if (kind === "matrix_3x3") {
+    } else if (treatment === "matrix_3x3") {
       frame();
       var cw3 = w / 3;
       var ch3 = h / 3;
@@ -2390,11 +2622,11 @@
       }
       for (var mr = 0; mr < 3; mr++) {
         for (var mc = 0; mc < 3; mc++) {
-          for (var dr = 0; dr < rows; dr++) {
-            for (var dc = 0; dc < cols; dc++) {
+          for (var dr2 = 0; dr2 < rows; dr2++) {
+            for (var dc2 = 0; dc2 < cols; dc2++) {
               out.push(circle(
-                left + cw3 * (mc + 0.5) + (dc - (cols - 1) / 2) * 9,
-                top + ch3 * (mr + 0.5) + (dr - (rows - 1) / 2) * 9,
+                left + cw3 * (mc + 0.5) + (dc2 - (cols - 1) / 2) * 9,
+                top + ch3 * (mr + 0.5) + (dr2 - (rows - 1) / 2) * 9,
                 2.4,
                 { width: 1, opacity: 0.6 }
               ));
@@ -2403,7 +2635,7 @@
         }
       }
     } else {
-      // An unknown layout still reads both counts, so a misspelled kind cannot
+      // An unknown treatment still reads both counts, so a misspelling cannot
       // declare a knob this shape ignores.
       frame();
       out.push(line(left + 26, top + 26, right - 26, bottom - 26, 1.6, 0.4, "7 6"));

@@ -42,9 +42,9 @@
   "figure": {
     "svgShape": "strategy-canvas",
     "parametricParams": {
-      "kind": "2x2",
-      "columns": 2,
-      "rows": 2
+      "treatment": "scatter",
+      "columns": 4,
+      "rows": 3
     }
   }
 }

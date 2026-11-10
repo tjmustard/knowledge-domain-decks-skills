@@ -53,7 +53,7 @@ test("every record matches the committed inventory", async () => {
     assert.equal(card.name, row.name, `${card.id} name`);
     assert.equal(card.category, row.category, `${card.id} category`);
     assert.equal(card.diagnosis, row.diagnosis, `${card.id} diagnosis`);
-    assert.equal(card.schematic, row.tableSchematic, `${card.id} schematic tag`);
+    assert.ok(row.tableSchematic, `${card.id} inventory carries the table's schematic tag`);
     assert.equal(card.canvas, row.canvas, `${card.id} canvas`);
     assert.deepEqual(
       card.stressTestFull,
@@ -70,15 +70,22 @@ test("every record matches the committed inventory", async () => {
 
 test("every figure follows the committed layout map", async () => {
   const map = JSON.parse(await readFile(LAYOUT, "utf8")).map;
+  const inventory = JSON.parse(await readFile(INVENTORY, "utf8"));
+  const rows = new Map(inventory.rituals.map((row) => [row.id, row]));
   const deck = await loadDeck("strategy");
   const cards = await loadCards(deck);
   for (const card of cards) {
     const expected = map[card.id];
     assert.ok(expected, `${card.id} has no layout-map row`);
+    // The map's source tag is the table's own words; the label is the line the
+    // card prints. A drawing treatment may differ from the source family, but
+    // the printed label and the drawing must agree with the map.
+    assert.equal(expected.sourceTag, rows.get(card.id).tableSchematic, `${card.id} source tag`);
     assert.equal(card.figure.svgShape, "strategy-canvas", `${card.id} figure shape`);
-    assert.equal(card.figure.parametricParams.kind, expected.kind, `${card.id} layout kind`);
+    assert.equal(card.figure.parametricParams.treatment, expected.treatment, `${card.id} treatment`);
     assert.equal(card.figure.parametricParams.columns, expected.columns, `${card.id} columns`);
     assert.equal(card.figure.parametricParams.rows, expected.rows, `${card.id} rows`);
+    assert.equal(card.schematic, expected.label, `${card.id} printed schematic`);
   }
 });
 

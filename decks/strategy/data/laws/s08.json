@@ -41,7 +41,7 @@
   "figure": {
     "svgShape": "strategy-canvas",
     "parametricParams": {
-      "kind": "matrix_3x3",
+      "treatment": "matrix_3x3",
       "columns": 1,
       "rows": 1
     }

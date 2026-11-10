@@ -2025,3 +2025,44 @@ have printed `[object Object]`. The schema now types `checklist` as an array of
 strings - the ordered `items` field keeps `{text}` because that is where the
 template reads `item.text` - and the test for the deck will assert that no
 artifact contains an object literal.
+
+## 59. Every card draws the schematic the card prints
+
+The first checkpoint mapped each framework to one of the source's six layout
+types and drew that family. The operator's review found the flaw in it: about
+ten table tags name a shape none of the six draws - a bell curve (S15), a
+sigmoid (S16), an amortization curve (S23), three overlapping S-curves (S14), a
+five-phase expectation wave (S19), a five-domain topology (S21), a value-price
+wedge (S27), a bipartite org-to-code diagram (S20), a two-track canvas (S42) -
+and further rows named a six-column board (S03), a scatter (S07) and a four-force
+model (S10). On those cards the printed schematic line and the picture disagreed,
+and the schematic is the most informative line on the front.
+
+The fix replaces `kind` with `treatment` as the shape's single drawing
+parameter. The six layout types remain treatment values, joined by the
+refinements the tags name: five curve treatments, scatter, topology, wedge,
+column_board, network, forces, bipartite, enclosure and tracks. Every treatment
+reads both counts, and an unknown treatment falls back to a distinct marked
+frame, so the gate's probes still move every declared value.
+
+`layout-map.json` now carries, per record, the source family (`kind`), the
+drawing (`treatment`), its two counts, the table's own tag (`sourceTag`) and the
+line the card prints (`label`). The deck test asserts the record's figure
+matches the treatment and counts, the printed schematic matches the label, and
+the map's source tag matches the committed inventory. A card can therefore not
+print a shape its figure does not show, and the taxonomy assignment stays
+reviewable in one file.
+
+The S42 attribution is corrected under the operator's ruling. The source's
+citation merges two works: the 2012 HBR article is "Two Routes to Resilience"
+by Clark Gilbert, Matthew Eyring and Richard N. Foster (HBR, December 2012), and
+"Dual Transformation" is the 2017 book by Scott D. Anthony, Clark G. Gilbert and
+Mark W. Johnson. The record cites the article - The Open Group 2020 and
+Gilbert, Eyring & Foster 2012 - because the article carries the transformation
+pair and the capabilities exchange the card describes. The correction is
+recorded beside the Business Model Canvas row defect in the committed
+inventory's note: the extraction stays faithful to the source, the citation is
+corrected, and the correction is visible rather than silent.
+
+The web index now lists six decks while this deck is incomplete; that is correct
+on this branch and not shippable until the deck is whole. No merge is requested.
