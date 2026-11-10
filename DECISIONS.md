@@ -2244,3 +2244,79 @@ appears nowhere - and the cross-machine check hashes the deck's SVG bundle in
 `cards.json` order, because `packages/prepress/build/svg/` is never cleared and
 a glob over it depends on which deck was built last. Same machine, two builds,
 identical bytes stays the hard check.
+
+## 63. The ideation card prints the sprint, and the map files each card by the verb in its own record
+
+The ideation deck's executable field is the source's five-minute sprint. An
+ideation label without an instruction is a poster, so the sprint prints verbatim
+on the front and is never trimmed; the measured source range is 145 to 227
+characters. The back carries the cognitive mechanism, all three divergent seed
+questions and the attribution, about 490 characters against a 468-to-584
+cushion at 7 pt. The worked example illustrates rather than instructs, so it is
+not printed on the card at all; it lives in full, with its domain, in the rules
+file and the skill resource, and a test asserts every record's sprint, mechanism,
+three questions, example and attribution reach both. The card carries a per-card
+`sprintSize`, 43 cards at 9 pt and seven at 8.5 pt - IDE-32 and the six longest
+fronts - the same step-down remedy the innovation deck used rather than a
+trimmed line.
+
+Fifty cards, not forty-eight. The source's overview claims 48 heuristics and its
+headings count 50; the headings are the authority, nothing is dropped to make
+the claim true, and the discrepancy is recorded in the inventory. Four source
+defects are carried, not repaired: escaped field labels in IDE-07 and IDE-35 and
+glued bullet lists in IDE-15 and IDE-26, all with their text intact. The source
+carries `\to` nine times and `\epsilon` once; both are rendered to `→` and `ε`
+before any backslash stripping, and a guard test fails on a surviving macro
+token.
+
+Attribution takes one of three forms and no other: the source names the work;
+the work is checkable and cited with the check recorded on the card; or the card
+says "The source names no originator." Seven works were checked: de Bono's
+*Six Thinking Hats* (1985) for the six hats, de Bono's *Lateral Thinking* (1970)
+for both Po cards, Eberle's *SCAMPER* (1971), Zwicky's *Discovery, Invention,
+Research* (1969), Altshuller's *Creativity as an Exact Science* (1984) for the
+fifteen TRIZ-derived cards, Eno and Schmidt's *Oblique Strategies* (1975) and
+Gordon's *Synectics* (1961). The two Po cards, Escape and Stepping Stone, both
+land on the same work: the 1970 book frames the intermediate impossible as a
+stepping stone, and IDE-09's note records that the named Stepping Stone Method
+is the later *Thinking Course* (BBC, 1982) framing rather than a second book.
+The fifteen Altshuller cards share one origin object, asserted identical across
+the set.
+
+The layout map files each card by an operative verb, not by topic. The first map
+was rejected at checkpoint two because its test only proved a quote was present
+somewhere in the record, which supports nothing: "Engages pre-attentive pattern
+matching" is in IDE-03 and supports no separation at all. The rule now is that
+the quoted datum must contain the family's own stem, and the test fails when it
+does not; filing IDE-03 under separation fails with that message. The vocabulary
+has eleven families, each with its own drawing - reflection 7, separation 6,
+removal 8, scale 5, recombination 4, constraint 3, substitution 3, perspective 5,
+mapping 3, provocation 3, timing 3 - and a family of one card is
+evidence the vocabulary is wrong. Two carries came out of that round:
+`coupl` left separation's stems because it matches the antonym, and `uncoupl`
+stayed because IDE-14's own mechanism says "uncoupling" (no record says
+"couples"). The recombination family reads "two things joined that were apart,
+including a return path"; IDE-48 is the feedback-loop case, filed on the
+record's own words, "self-correcting negative feedback loops", and the family's
+reading names the return path explicitly so the drawing's crossing diagonal is
+the loop and not an error.
+
+No per-card name size was added. The operator ruled on the evidence: IDE-26 and
+IDE-32 wrap to three lines and measure rows 444 and 455 inside the safe edge
+468.75, a label that wraps is legible, and a new field through the schema, the
+layout map and the template for two cards of fifty is blast radius without
+product gain. If a name ever clips or collides, that is a separate evidence
+question. The deck adds one shape, `ideation-figure`, with eleven treatments,
+and reuses the existing per-card `headlineSize` and block engine, so the eight
+shipped decks rebuild byte-identical: `a6f177de` archetypes, `035429f5`
+facilitation, `435f2a9f` narrative, `5ca91630` retrospectives, `2bfc9fb5`
+strategy, `482e7fc2` team, `40164666` ux-laws, `c1b37678` innovation.
+
+The deck test compares the printed deck to the committed inventory record for
+record, asserts the 16/16/10/8 split, the exactly-three-questions rule, each
+card's family, divisions, mark and printed label against the map, each card's
+sprint size against the map, the operative-word rule, the recorded 48 and the
+four carried defects, the macro guard, and that the rules, each phase resource
+and the web bundle carry every record's full text and attribution. The printed
+PDF is 100 pages and 746,190 bytes at sha256 `aced7d61...`; the fifty-card SVG
+bundle hashes to `74d0bd5d...` in `cards.json` order.

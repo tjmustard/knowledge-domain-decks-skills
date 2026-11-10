@@ -12,15 +12,19 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const INVENTORY = join(ROOT, "decks", "ideation", "data", "source-inventory.json");
 const LAYOUT = join(ROOT, "decks", "ideation", "data", "layout-map.json");
+const DECK = join(ROOT, "decks", "ideation", "deck.json");
+const LAWS = join(ROOT, "decks", "ideation", "data", "laws");
 const TOTAL = 50;
 
 const loadInventory = async () => JSON.parse(await readFile(INVENTORY, "utf8"));
+
+const loadDeck = async () => JSON.parse(await readFile(DECK, "utf8"));
 
 // The lower median: the 25th of 50 sorted values, no interpolation. The
 // inventory's note states this convention, and the test holds it.
@@ -240,5 +244,148 @@ test("every figure follows the committed layout map and names what it draws", as
   for (const row of Object.values(map)) counts[row.family] = (counts[row.family] || 0) + 1;
   for (const [family, count] of Object.entries(counts)) {
     assert.ok(count > 1, `family "${family}" holds a single card`);
+  }
+});
+
+const loadCards = async () => {
+  const names = (await readdir(LAWS)).filter((name) => name.endsWith(".json")).sort();
+  return Promise.all(names.map(async (name) => JSON.parse(await readFile(join(LAWS, name), "utf8"))));
+};
+
+const slug = (category) =>
+  category
+    .toLowerCase()
+    .replace(/&/g, " ")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
+// One card's own section of an artifact, so a shared sentence elsewhere in the
+// file cannot stand in for a missing one.
+const section = (text, heading, marker) => {
+  const start = text.indexOf(heading);
+  assert.ok(start >= 0, `missing heading ${heading}`);
+  const next = text.indexOf(`\n${marker} `, start + heading.length);
+  return text.slice(start, next < 0 ? text.length : next);
+};
+
+// The attribution as each artifact prints it: a named origin by author and
+// title, a silent one by its note, which is the whole attribution there is.
+const attribution = (origin) =>
+  origin.authors ? `${origin.authors.join(" & ")} (${origin.year})` : origin.note;
+
+test("the printed deck is the inventory, record for record", async () => {
+  const inventory = await loadInventory();
+  const deck = await loadDeck();
+  const map = JSON.parse(await readFile(LAYOUT, "utf8")).map;
+  const cards = await loadCards();
+  assert.equal(cards.length, TOTAL, "the deck holds 50 cards");
+
+  const byId = new Map(cards.map((card) => [card.id, card]));
+  assert.equal(byId.size, TOTAL, "every card id is unique");
+  for (const record of inventory.records) {
+    const card = byId.get(record.id);
+    assert.ok(card, `${record.id} has no card`);
+    assert.equal(card.sourceTacticNo, record.n, `${record.id} lost its source position`);
+    assert.equal(card.name, record.name, `${record.id} name is not the source's`);
+    assert.equal(card.phase, record.phase, `${record.id} changed phase`);
+    // The four fields the card exists for are the record's, not a retyping:
+    // the sprint verbatim, the mechanism, the three questions and the example
+    // with the domain that leads it.
+    assert.equal(card.sprint, record.sprint, `${record.id} sprint is not the source's`);
+    assert.equal(card.mechanism, record.mechanism, `${record.id} mechanism changed`);
+    assert.deepEqual(card.questions, record.questions, `${record.id} questions changed`);
+    assert.equal(card.example, `${record.example.domain}. ${record.example.text}`);
+
+    // The figure and its printed label are the layout map's, so the drawing,
+    // the label and the record cannot drift apart.
+    const row = map[record.id];
+    assert.equal(card.sprintSize, row.sprintSize, `${record.id} size disagrees with the map`);
+    assert.equal(card.schematic, row.label, `${record.id} label disagrees with the map`);
+    assert.deepEqual(
+      card.figure.parametricParams,
+      { family: row.family, divisions: row.divisions, mark: row.mark },
+      `${record.id} figure disagrees with the map`
+    );
+  }
+
+  const phases = {};
+  for (const card of cards) phases[card.phase] = (phases[card.phase] || 0) + 1;
+  assert.deepEqual(
+    Object.keys(phases),
+    deck.categories,
+    "the deck prints its phases in the declared order"
+  );
+  assert.deepEqual(Object.values(phases), [16, 16, 10, 8], "the phase split is 16/16/10/8");
+});
+
+test("the rules and each phase resource carry every card's full text", async () => {
+  // The card is a compression: the sprint prints on the front, the mechanism
+  // and questions on the back, and the example is illustrative so it lives in
+  // the artifacts. A reader has to be able to reach the whole record from
+  // these files, which is what the deck's contract promises.
+  const deck = await loadDeck();
+  const cards = await loadCards();
+  const rules = await readFile(join(ROOT, "rules", "ideation-rules.md"), "utf8");
+  const resources = {};
+  for (const category of deck.categories) {
+    resources[category] = await readFile(
+      join(ROOT, "skills", "ideation", "resources", `${slug(category)}.md`),
+      "utf8"
+    );
+  }
+
+  for (const card of cards) {
+    const ruleSection = section(rules, `### ${card.id} — ${card.name}`, "###");
+    const skillSection = section(
+      resources[card.phase],
+      `## ${card.id} — ${card.name}`,
+      "##"
+    );
+    for (const [artifact, text] of [
+      ["rules", ruleSection],
+      [card.phase, skillSection]
+    ]) {
+      assert.ok(text.includes(card.sprint), `${card.id} sprint is missing from the ${artifact}`);
+      assert.ok(text.includes(card.mechanism), `${card.id} mechanism is missing from the ${artifact}`);
+      for (const question of card.questions) {
+        assert.ok(text.includes(question), `${card.id} question is missing from the ${artifact}`);
+      }
+      assert.ok(text.includes(card.example), `${card.id} example is missing from the ${artifact}`);
+      assert.ok(
+        text.includes(attribution(card.origin)),
+        `${card.id} attribution is missing from the ${artifact}`
+      );
+    }
+  }
+});
+
+test("the web bundle carries every card's sprint, mechanism and questions", async () => {
+  const cards = await loadCards();
+  const bundle = await readFile(
+    join(ROOT, "packages", "web", "decks", "ideation", "deck-data.js"),
+    "utf8"
+  );
+  assert.equal(
+    [...bundle.matchAll(/"id":\s*"IDE-\d\d"/g)].length,
+    TOTAL,
+    "the bundle holds every card"
+  );
+  for (const card of cards) {
+    // JSON.stringify is how the generator writes each string, so the exact
+    // escaped form is the artifact's, not the record's.
+    assert.ok(
+      bundle.includes(JSON.stringify(card.sprint)),
+      `${card.id} sprint is missing from the web bundle`
+    );
+    assert.ok(
+      bundle.includes(JSON.stringify(card.mechanism)),
+      `${card.id} mechanism is missing from the web bundle`
+    );
+    for (const question of card.questions) {
+      assert.ok(
+        bundle.includes(JSON.stringify(question)),
+        `${card.id} question is missing from the web bundle`
+      );
+    }
   }
 });

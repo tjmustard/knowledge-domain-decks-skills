@@ -1,0 +1,27 @@
+{
+  "id": "IDE-50",
+  "sourceTacticNo": 50,
+  "name": "Negative Space Mapping (The Un-Product / Void Exploitation)",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Chart the typical user or data lifecycle. Highlight every period where the system is completely idle or where data remains untouched. Design a high-value utility that executes exclusively during these voids.",
+  "sprintSize": 8.5,
+  "schematic": "Reflection at position 8 of 8",
+  "mechanism": "Figure-ground perceptual reversal. Shifts focus away from existing objects and active features (figure) to analyze the unbuilt whitespace, empty time-slots, and missing interactions (ground).",
+  "questions": [
+    "What is our product *not* doing during the 98% of the day when the user is not actively interacting with it?",
+    "What data are we deliberately choosing not to track, and how does omitting it serve as a competitive security feature?",
+    "Where does the white space exist between the specialized feature sets of industry-leading competitors?"
+  ],
+  "example": "Proactive Database Index Compaction & Predictive State Assembly. Rather than executing computationally heavy index restructuring and analytical rollups during active user transaction windows, modern database engines detect idle CPU intervals. During these quiet windows, the system executes background compaction, verifies cryptographic Merkle root trees, and pre-warms predictive memory caches for expected workloads.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "reflection",
+      "divisions": 8,
+      "mark": 8
+    }
+  }
+}

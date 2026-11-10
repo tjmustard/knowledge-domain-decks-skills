@@ -1454,6 +1454,252 @@ window.IDEATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"50\" y1=\"64\" x2=\"160\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"350\" y1=\"64\" x2=\"240\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"55.5\" y1=\"77.6\" x2=\"344.5\" y2=\"77.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66.5\" y1=\"104.8\" x2=\"333.5\" y2=\"104.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"77.5\" y1=\"132\" x2=\"322.5\" y2=\"132\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.5\" y1=\"159.2\" x2=\"311.5\" y2=\"159.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99.5\" y1=\"186.4\" x2=\"300.5\" y2=\"186.4\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110.5\" y1=\"213.6\" x2=\"289.5\" y2=\"213.6\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"121.5\" y1=\"240.8\" x2=\"278.5\" y2=\"240.8\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132.5\" y1=\"268\" x2=\"267.5\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"143.5\" y1=\"295.2\" x2=\"256.5\" y2=\"295.2\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"154.5\" y1=\"322.4\" x2=\"176\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224\" y1=\"322.4\" x2=\"245.5\" y2=\"322.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"322.4\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-43",
+      "sourceTacticNo": 43,
+      "name": "Forced Connections (Bisociative Synthesis)",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Pick a random physical object from the room (e.g., a coffee thermos, a wristwatch, an office chair). Synthesize three distinct features of that object with your technical system.",
+      "sprintSize": 9,
+      "schematic": "Recombination at position 1 of 8",
+      "mechanism": "Forced conceptual integration. Obligates the mind to construct relational bridges between two unrelated semantic domains, generating non-obvious structural hybridizations.",
+      "questions": [
+        "How can the functional mechanics of a mechanical wristwatch regulate our distributed consensus engine?",
+        "What does the thermal insulating principle of a thermos teach us about memory cache retention policies?",
+        "How would our software architecture change if it had to function like the suspension system of a mountain bicycle?"
+      ],
+      "example": "Distributed Transaction Clock Synchronization. Forced connection with a mechanical quartz watch: rather than relying on brittle, non-synchronized software NTP servers that introduce drift and causal anomalies across datacenters, Google’s TrueTime API integrates atomic cesium clocks and GPS receivers directly into datacenter server racks, bounding clock uncertainty (ε) to deterministic single-digit millisecond windows for global ACID transactions.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "recombination",
+          "divisions": 8,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"74\" y1=\"112\" x2=\"74\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"112\" x2=\"110\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146\" y1=\"112\" x2=\"146\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182\" y1=\"112\" x2=\"182\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"112\" x2=\"218\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"112\" x2=\"254\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"112\" x2=\"290\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326\" y1=\"112\" x2=\"326\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"112\" x2=\"74\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"112\" x2=\"110\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"112\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"288\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-44",
+      "sourceTacticNo": 44,
+      "name": "Random Stimulus / Semantic Priming Injection",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Generate a random word from an open dictionary (e.g., \"Mushroom\"). Write down four innate properties of this word. Map each property directly to a solution for your technical challenge.",
+      "sprintSize": 9,
+      "schematic": "Provocation at position 2 of 8",
+      "mechanism": "Exogenous spreading activation. Injects an arbitrary, entropy-rich stimulus into working memory to activate distant associative nodes within semantic memory networks.",
+      "questions": [
+        "How does the randomly selected concept approach resource allocation or replication?",
+        "What unexpected operational metaphor does this random stimulus introduce?",
+        "How can we re-name our system components using the conceptual vocabulary of the random stimulus?"
+      ],
+      "example": "Edge Compute Resilience. Random Word: \"Mycelium\" (underground fungal network). Properties: decentralized nutrient sharing, lack of centralized root structure, subterranean propagation, opportunistic growth along moisture gradients. Application: P2P edge worker clusters that dynamically offload cold cache blocks to neighboring peer nodes across local LAN subnets, eliminating centralized parent cloud egress bandwidth during edge network partitioning.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "provocation",
+          "divisions": 8,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"56\" y=\"56\" width=\"288\" height=\"288\" rx=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"344\" x2=\"74\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"344\" x2=\"110\" y2=\"356\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 356 32 L 322 96 L 344 112 L 110 336\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"336\" r=\"5.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.7\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146\" y1=\"344\" x2=\"146\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182\" y1=\"344\" x2=\"182\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"344\" x2=\"218\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"344\" x2=\"254\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"344\" x2=\"290\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326\" y1=\"344\" x2=\"326\" y2=\"351\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-45",
+      "sourceTacticNo": 45,
+      "name": "Attribute Listing & Morphological Variation",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Deconstruct your primary data entity or component into six granular attributes. For each attribute, list three non-standard variations. Recombine them into an alternative operational profile.",
+      "sprintSize": 9,
+      "schematic": "Separation at position 3 of 8",
+      "mechanism": "Deconstructive attribute decomposition. Decouples an object into its component properties (color, weight, protocol, statefulness), systematically varying each one to break gestalt continuity.",
+      "questions": [
+        "Which attribute of this system have we always treated as immutable simply out of habit?",
+        "What happens if we transform a stateful synchronous attribute into a stateless asynchronous property?",
+        "How can we vary the granularity of this attribute dynamically based on available network throughput?"
+      ],
+      "example": "Web Session Token Architecture. Attribute decomposition: (1) Format: ASCII string → Cryptographic CBOR token; (2) Location: Browser Cookie → Isolated Web Worker Memory; (3) Expiration: Static 30 days → Sliding dynamic multi-tiered lease; (4) Authority: Server DB lookup → Cryptographically verifiable self-contained Ed25519 signature. Result: Session verification overhead drops to zero server database lookups.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "separation",
+          "divisions": 8,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"64\" x2=\"56\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"97.142857\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"138.285714\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"138.285714\" cy=\"336\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"179.428571\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"220.571429\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"261.714286\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"302.857143\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"64\" x2=\"344\" y2=\"336\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.28\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-46",
+      "sourceTacticNo": 46,
+      "name": "Biomimetic Adaptation: Structural Hierarchy & Porosity",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Identify where your system is heavy, slow, or resource-dense. Redesign its structural architecture to integrate nested, hierarchical voids that preserve functional integrity while saving resources.",
+      "sprintSize": 8.5,
+      "schematic": "Mapping at position 4 of 8",
+      "mechanism": "Morphological evolutionary scaling. Imports evolutionary mechanical solutions—such as lightweight structural strength through hierarchical porosity—into human engineering systems.",
+      "questions": [
+        "Where can we introduce intentional voids or empty space into our data structures to accelerate lookups?",
+        "How does natural bone or wood architecture balance light weight with high structural integrity?",
+        "Can we arrange our compute tasks hierarchically so that 90% of requests are handled by low-energy layers?"
+      ],
+      "example": "Sparse Indexing & Bloom Filter Nesting in Database Engines. Rather than maintaining a dense, resource-heavy index that maps every primary key to an exact disk offset (which strains RAM capacity), database architects deploy porous, hierarchical sparse indexes paired with hardware-optimized Bloom filters. These verify key non-existence in memory using near-zero space before traversing hierarchical SSTables on persistent storage.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "mapping",
+          "divisions": 8,
+          "mark": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"74\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"128\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"272\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 182 136 L 182 258\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 175 255 L 182 264 L 189 255\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-47",
+      "sourceTacticNo": 47,
+      "name": "Biomimetic Adaptation: Swarm & Decentralized Coordination",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Eliminate the master controller or orchestrator node in your architecture. Formulate three simple behavioral rules for individual worker agents to achieve global coordination.",
+      "sprintSize": 9,
+      "schematic": "Substitution at position 5 of 8",
+      "mechanism": "Decentralized emergent self-organization. Replaces brittle, hierarchical, centralized command-and-control logic with simple local interaction rules that generate coherent macroscopic behavior.",
+      "questions": [
+        "How would an ant colony or flock of starlings allocate this compute workload across 10,000 independent nodes?",
+        "What local sensory data can individual worker agents use to coordinate without talking to a central coordinator?",
+        "How can simple emergent feedback loops self-balance network routing and avoid localized congestion?"
+      ],
+      "example": "Gossip-Based Cluster Membership Protocols (SWIM). In distributed database clusters containing thousands of nodes, maintaining a centralized heartbeat coordinator creates an operational bottleneck and single point of failure. Deploying biomimetic swarm mechanics: nodes periodically transmit lightweight ping/ack messages to a few randomly selected peers. Failure detection and membership changes propagate through the cluster via epidemiological gossip protocols in logarithmic time.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "substitution",
+          "divisions": 8,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"159\" y=\"72\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"106\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"140\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"174\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"208\" width=\"18\" height=\"18\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.9\" stroke-dasharray=\"7 6\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230\" cy=\"217\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"217\" x2=\"218\" y2=\"217\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"242\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"276\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><rect x=\"159\" y=\"310\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-48",
+      "sourceTacticNo": 48,
+      "name": "Biomimetic Adaptation: Homeostasis & Dynamic Negative Feedback",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Identify the primary metric that fluctuates under operational load (e.g., latency, queue size, memory). Design a closed-loop negative feedback mechanism that exerts opposing force as the metric drifts from equilibrium.",
+      "sprintSize": 8.5,
+      "schematic": "Recombination at position 6 of 8",
+      "mechanism": "Physiological homeostatic regulation. Implements self-correcting negative feedback loops to maintain systemic internal stability despite volatile environmental fluctuations.",
+      "questions": [
+        "How does the human endocrine system balance insulin and glucagon to stabilize blood glucose under varying dietary conditions?",
+        "What automated internal feedback loop can prevent this system from cascading into catastrophic collapse?",
+        "How can the system naturally reject external work when internal equilibrium is threatened?"
+      ],
+      "example": "Adaptive Concurrency Limits via TCP Vegas / CoDel Mechanics. Traditional software services set static concurrency limits (e.g., max 200 concurrent threads), leading to queuing delays when downstream dependencies slow down. Applying homeostatic negative feedback: the service dynamically measures round-trip latency; as latency climbs above normal baselines, concurrency limits contract automatically. This sheds incoming load and protects the system from collapse, stabilizing internal latency.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "recombination",
+          "divisions": 8,
+          "mark": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"74\" y1=\"112\" x2=\"74\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"112\" x2=\"110\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146\" y1=\"112\" x2=\"146\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182\" y1=\"112\" x2=\"182\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"112\" x2=\"218\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"112\" x2=\"254\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"112\" x2=\"290\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326\" y1=\"112\" x2=\"326\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.2\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"112\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"288\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"112\" x2=\"254\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"112\" x2=\"290\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"112\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"288\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-49",
+      "sourceTacticNo": 49,
+      "name": "Synectics: Personal Analogy (Empathic Projection)",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Imagine you are a single data packet or byte traversing your system architecture. Describe what you feel, see, and experience as you encounter bottlenecks, lock contentions, and serialization hurdles.",
+      "sprintSize": 9,
+      "schematic": "Mapping at position 7 of 8",
+      "mechanism": "Egocentric embodied simulation. The engineer projects their own consciousness into a non-human or abstract system component, identifying structural stresses through introspective embodiment.",
+      "questions": [
+        "As a single database query, why do you feel terrified when entering this complex table join?",
+        "If you were an electron attempting to escape this battery anode, what physical obstacles block your path?",
+        "If you were an unhandled runtime error exception, how would you escape logging traps to reveal your true cause?"
+      ],
+      "example": "Thread Pool Starvation Diagnostics. An architect mentally adopts the persona of a synchronous HTTP request worker thread: \"I arrive at the application layer, but I am blocked at a synchronized database connection pool. I cannot sleep or exit; I am forced to hold memory resources while waiting for a remote API response, accumulating behind hundreds of other worker threads.\" This mental simulation reveals the need for non-blocking, asynchronous reactive I/O patterns (e.g., Netty or Tokio event loops).",
+      "origin": {
+        "authors": [
+          "William J. J. Gordon"
+        ],
+        "year": 1961,
+        "title": "Synectics: The Development of Creative Capacity",
+        "publication": "Harper & Brothers",
+        "note": "Checked 2026-11-10 against the HathiTrust record 000355751 and Google Books: Harper, New York, 1961.",
+        "authorsLabel": "William J. J. Gordon",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "mapping",
+          "divisions": 8,
+          "mark": 7
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"74\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"74\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"128\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"272\" r=\"3.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"128\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"272\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 290 136 L 290 258\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 283 255 L 290 264 L 297 255\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "IDE-50",
+      "sourceTacticNo": 50,
+      "name": "Negative Space Mapping (The Un-Product / Void Exploitation)",
+      "phase": "Combinatorial & Associative Prompts",
+      "sprint": "Chart the typical user or data lifecycle. Highlight every period where the system is completely idle or where data remains untouched. Design a high-value utility that executes exclusively during these voids.",
+      "sprintSize": 8.5,
+      "schematic": "Reflection at position 8 of 8",
+      "mechanism": "Figure-ground perceptual reversal. Shifts focus away from existing objects and active features (figure) to analyze the unbuilt whitespace, empty time-slots, and missing interactions (ground).",
+      "questions": [
+        "What is our product *not* doing during the 98% of the day when the user is not actively interacting with it?",
+        "What data are we deliberately choosing not to track, and how does omitting it serve as a competitive security feature?",
+        "Where does the white space exist between the specialized feature sets of industry-leading competitors?"
+      ],
+      "example": "Proactive Database Index Compaction & Predictive State Assembly. Rather than executing computationally heavy index restructuring and analytical rollups during active user transaction windows, modern database engines detect idle CPU intervals. During these quiet windows, the system executes background compaction, verifies cryptographic Merkle root trees, and pre-warms predictive memory caches for expected workloads.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "ideation-figure",
+        "parametricParams": {
+          "family": "reflection",
+          "divisions": 8,
+          "mark": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"48\" y1=\"200\" x2=\"352\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"74\" y1=\"195\" x2=\"74\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"195\" x2=\"110\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146\" y1=\"195\" x2=\"146\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182\" y1=\"195\" x2=\"182\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"195\" x2=\"218\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"195\" x2=\"254\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"195\" x2=\"290\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326\" y1=\"195\" x2=\"326\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 308 148 L 326 200 L 344 148\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 308 252 L 326 200 L 344 252\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"326\" cy=\"200\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

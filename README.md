@@ -25,6 +25,7 @@
 - [🎯 Strategy Architecture](#-strategy-architecture)
 - [👥 Team Architecture](#-team-architecture)
 - [🧪 Innovation Architecture](#-innovation-architecture)
+- [💡 Ideation Architecture](#-ideation-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -41,7 +42,7 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Seven decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Nine decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
@@ -50,7 +51,11 @@ follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
 its own work. **Strategy Architecture** covers forty-two frameworks for a
 leadership team deciding where to compete and why a lead survives. **Team
 Architecture** covers forty-four team and leadership frameworks, each carried as
-the script a manager says when the team is stuck. Each card is distilled into the smallest usable form: a claim, a
+the script a manager says when the team is stuck. **Innovation Architecture**
+covers forty-two product-discovery and experimentation tactics, each carried as
+an hypothesis and the threshold that would prove it. **Ideation Architecture**
+covers fifty idea-generation tactics, each carried as a five-minute sprint you
+can run. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -104,6 +109,7 @@ deck's copy, names, or trade dress is used.
 | **Strategy Architecture** | 42 | 4 dimensions | `packages/prepress/dist/strategy.pdf` | `packages/web/decks/strategy/` | `rules/strategy-rules.md` | `skills/strategy/` |
 | **Team Architecture** | 44 | 4 dimensions | `packages/prepress/dist/team.pdf` | `packages/web/decks/team/` | `rules/team-rules.md` | `skills/team/` |
 | **Innovation Architecture** | 42 | 4 phases | `packages/prepress/dist/innovation.pdf` | `packages/web/decks/innovation/` | `rules/innovation-rules.md` | `skills/innovation/` |
+| **Ideation Architecture** | 50 | 4 phases | `packages/prepress/dist/ideation.pdf` | `packages/web/decks/ideation/` | `rules/ideation-rules.md` | `skills/ideation/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -460,6 +466,79 @@ and [`skills/innovation/`](./skills/innovation/), and the skill's index carries
 five routes to cards that also live in other decks. The deck's records are in
 `decks/innovation/data/laws/` and its schema in
 `decks/innovation/data/law-schema.json`.
+
+---
+
+## 💡 Ideation Architecture
+
+**Ideation Architecture** is a fifty-card deck of deliberate idea-generation
+tactics: lateral-thinking provocations, TRIZ and morphological analysis,
+constraints and oblique sparks, and combinatorial prompts. Each card prints the
+five-minute sprint the tactic asks you to run, exactly as the source writes it,
+over the drawing that names its move; the back carries the cognitive mechanism,
+the failure it breaks, all three seed questions and the attribution.
+
+The fifty divide into four phases, in the source's own order:
+
+| Phase | Cards | What it gives you |
+|---|---|---|
+| Systematic Lateral Thinking & Perceptual Restructuring | IDE-01 to IDE-16 | A way of seeing the problem differently |
+| Algorithmic & Systematic Innovation (TRIZ & Morphology) | IDE-17 to IDE-32 | A contradiction to resolve or a parameter space to search |
+| Constraints & Oblique Sparks | IDE-33 to IDE-42 | A limit that forces a different answer |
+| Combinatorial & Associative Prompts | IDE-43 to IDE-50 | Two distant things forced together |
+
+The sprint is the only field a reader can execute, so it prints verbatim on the
+front and is never trimmed; a deck of ideation labels without instructions is a
+poster, not a deck. The card carries a per-card `sprintSize`: forty-three print
+at 9 pt and seven at 8.5 pt, the long fronts stepped down one size rather than
+cut. The three seed questions convert the tactic into an action on the reader's
+own problem and print in full; the worked example, which illustrates rather than
+instructs, follows in the rules file and the skill resource with its domain,
+because those files are the reference. The name is a label and prints at one
+deck size: a name that wraps to three lines is legible and costs nothing, so the
+deck adds no second sizing mechanism for two of fifty cards.
+
+The drawing follows the mechanism rather than decorating it.
+`decks/ideation/data/layout-map.json` files each card under one of eleven
+families, records the datum it reads as a sentence quoted from the record, and
+names the exact line the card prints ("Reflection at position 6 of 16"). The
+families read: reflection 7, separation 6, removal 8, scale 5, recombination 4,
+constraint 3, substitution 3, perspective 5, mapping 3, provocation 3, timing 3.
+Each family's basis quote must contain that family's operative verb - reversal
+or reframing for reflection, splitting for separation, removal or pruning, and
+so on - so a card cannot sit under a family its own mechanism does not support.
+A test fails when the quote exists in the record but carries no such verb, which
+is how the first map was rejected: "Engages pre-attentive pattern matching" is
+in IDE-03 and supports no separation at all. The one recombination card whose
+move is a feedback loop (IDE-48) is filed on "feedback", and the family's
+reading names the return path explicitly.
+
+Attribution names the originating work where a checked public record names one:
+de Bono's *Six Thinking Hats* (1985) for the six hats, de Bono's *Lateral
+Thinking* (1970) for both Po cards, Escape and Stepping Stone, Eberle's
+*SCAMPER* (1971) for its seven operators, Zwicky's *Discovery, Invention,
+Research* (1969), Altshuller's *Creativity as an Exact Science* (1984) for the
+fifteen TRIZ-derived cards, one identical citation across all of them, Eno and
+Schmidt's *Oblique Strategies* (1975) and Gordon's *Synectics* (1961). Every
+citation is verified by search and the check is recorded on the card. The other
+seventeen cards print "The source names no originator." rather than guess.
+
+The source's overview claims forty-eight tactics and its headings count fifty.
+The headings are the authority: no card is dropped to make the claim true, and
+the discrepancy is recorded in the inventory. Four source defects are carried
+rather than repaired - two escaped field labels (IDE-07, IDE-35) and two glued
+bullet lists (IDE-15, IDE-26) - because the record is an extraction. The source's
+LaTeX arrow and epsilon are rendered to `→` and `ε` before any backslash
+stripping, and a guard test fails on a surviving macro token.
+
+Its 100-page print PDF is 746,190 bytes (sha256 `aced7d61…`), byte-identical on
+rebuild, and its fifty SVGs hash to `74d0bd5d…` in `cards.json` order. Its
+ruleset and skill are [`rules/ideation-rules.md`](./rules/ideation-rules.md) and
+[`skills/ideation/`](./skills/ideation/), and the skill's index carries four
+routes to cards that also live in other decks as sessions: Pre-Mortem, SCAMPER,
+TRIZ and Worst Possible Idea. The deck's records are in
+`decks/ideation/data/laws/` and its schema in
+`decks/ideation/data/law-schema.json`.
 
 ---
 

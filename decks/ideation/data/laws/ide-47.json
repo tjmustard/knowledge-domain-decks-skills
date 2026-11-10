@@ -1,0 +1,27 @@
+{
+  "id": "IDE-47",
+  "sourceTacticNo": 47,
+  "name": "Biomimetic Adaptation: Swarm & Decentralized Coordination",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Eliminate the master controller or orchestrator node in your architecture. Formulate three simple behavioral rules for individual worker agents to achieve global coordination.",
+  "sprintSize": 9,
+  "schematic": "Substitution at position 5 of 8",
+  "mechanism": "Decentralized emergent self-organization. Replaces brittle, hierarchical, centralized command-and-control logic with simple local interaction rules that generate coherent macroscopic behavior.",
+  "questions": [
+    "How would an ant colony or flock of starlings allocate this compute workload across 10,000 independent nodes?",
+    "What local sensory data can individual worker agents use to coordinate without talking to a central coordinator?",
+    "How can simple emergent feedback loops self-balance network routing and avoid localized congestion?"
+  ],
+  "example": "Gossip-Based Cluster Membership Protocols (SWIM). In distributed database clusters containing thousands of nodes, maintaining a centralized heartbeat coordinator creates an operational bottleneck and single point of failure. Deploying biomimetic swarm mechanics: nodes periodically transmit lightweight ping/ack messages to a few randomly selected peers. Failure detection and membership changes propagate through the cluster via epidemiological gossip protocols in logarithmic time.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "substitution",
+      "divisions": 8,
+      "mark": 5
+    }
+  }
+}

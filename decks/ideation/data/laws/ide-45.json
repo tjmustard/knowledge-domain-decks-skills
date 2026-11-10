@@ -1,0 +1,27 @@
+{
+  "id": "IDE-45",
+  "sourceTacticNo": 45,
+  "name": "Attribute Listing & Morphological Variation",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Deconstruct your primary data entity or component into six granular attributes. For each attribute, list three non-standard variations. Recombine them into an alternative operational profile.",
+  "sprintSize": 9,
+  "schematic": "Separation at position 3 of 8",
+  "mechanism": "Deconstructive attribute decomposition. Decouples an object into its component properties (color, weight, protocol, statefulness), systematically varying each one to break gestalt continuity.",
+  "questions": [
+    "Which attribute of this system have we always treated as immutable simply out of habit?",
+    "What happens if we transform a stateful synchronous attribute into a stateless asynchronous property?",
+    "How can we vary the granularity of this attribute dynamically based on available network throughput?"
+  ],
+  "example": "Web Session Token Architecture. Attribute decomposition: (1) Format: ASCII string → Cryptographic CBOR token; (2) Location: Browser Cookie → Isolated Web Worker Memory; (3) Expiration: Static 30 days → Sliding dynamic multi-tiered lease; (4) Authority: Server DB lookup → Cryptographically verifiable self-contained Ed25519 signature. Result: Session verification overhead drops to zero server database lookups.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "separation",
+      "divisions": 8,
+      "mark": 3
+    }
+  }
+}

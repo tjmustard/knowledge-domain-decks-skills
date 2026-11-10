@@ -1,0 +1,27 @@
+{
+  "id": "IDE-46",
+  "sourceTacticNo": 46,
+  "name": "Biomimetic Adaptation: Structural Hierarchy & Porosity",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Identify where your system is heavy, slow, or resource-dense. Redesign its structural architecture to integrate nested, hierarchical voids that preserve functional integrity while saving resources.",
+  "sprintSize": 8.5,
+  "schematic": "Mapping at position 4 of 8",
+  "mechanism": "Morphological evolutionary scaling. Imports evolutionary mechanical solutions—such as lightweight structural strength through hierarchical porosity—into human engineering systems.",
+  "questions": [
+    "Where can we introduce intentional voids or empty space into our data structures to accelerate lookups?",
+    "How does natural bone or wood architecture balance light weight with high structural integrity?",
+    "Can we arrange our compute tasks hierarchically so that 90% of requests are handled by low-energy layers?"
+  ],
+  "example": "Sparse Indexing & Bloom Filter Nesting in Database Engines. Rather than maintaining a dense, resource-heavy index that maps every primary key to an exact disk offset (which strains RAM capacity), database architects deploy porous, hierarchical sparse indexes paired with hardware-optimized Bloom filters. These verify key non-existence in memory using near-zero space before traversing hierarchical SSTables on persistent storage.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "mapping",
+      "divisions": 8,
+      "mark": 4
+    }
+  }
+}

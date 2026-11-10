@@ -1,0 +1,27 @@
+{
+  "id": "IDE-48",
+  "sourceTacticNo": 48,
+  "name": "Biomimetic Adaptation: Homeostasis & Dynamic Negative Feedback",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Identify the primary metric that fluctuates under operational load (e.g., latency, queue size, memory). Design a closed-loop negative feedback mechanism that exerts opposing force as the metric drifts from equilibrium.",
+  "sprintSize": 8.5,
+  "schematic": "Recombination at position 6 of 8",
+  "mechanism": "Physiological homeostatic regulation. Implements self-correcting negative feedback loops to maintain systemic internal stability despite volatile environmental fluctuations.",
+  "questions": [
+    "How does the human endocrine system balance insulin and glucagon to stabilize blood glucose under varying dietary conditions?",
+    "What automated internal feedback loop can prevent this system from cascading into catastrophic collapse?",
+    "How can the system naturally reject external work when internal equilibrium is threatened?"
+  ],
+  "example": "Adaptive Concurrency Limits via TCP Vegas / CoDel Mechanics. Traditional software services set static concurrency limits (e.g., max 200 concurrent threads), leading to queuing delays when downstream dependencies slow down. Applying homeostatic negative feedback: the service dynamically measures round-trip latency; as latency climbs above normal baselines, concurrency limits contract automatically. This sheds incoming load and protects the system from collapse, stabilizing internal latency.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 6
+    }
+  }
+}

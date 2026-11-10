@@ -740,7 +740,7 @@
       "divisions": 8,
       "mark": 4,
       "label": "Mapping at position 4 of 8",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",
@@ -766,7 +766,7 @@
       "divisions": 8,
       "mark": 6,
       "label": "Recombination at position 6 of 8",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",
@@ -792,7 +792,7 @@
       "divisions": 8,
       "mark": 8,
       "label": "Reflection at position 8 of 8",
-      "sprintSize": 9,
+      "sprintSize": 8.5,
       "basis": {
         "datum": "move structure",
         "field": "mechanism",

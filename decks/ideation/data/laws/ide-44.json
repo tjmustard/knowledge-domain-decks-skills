@@ -1,0 +1,27 @@
+{
+  "id": "IDE-44",
+  "sourceTacticNo": 44,
+  "name": "Random Stimulus / Semantic Priming Injection",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Generate a random word from an open dictionary (e.g., \"Mushroom\"). Write down four innate properties of this word. Map each property directly to a solution for your technical challenge.",
+  "sprintSize": 9,
+  "schematic": "Provocation at position 2 of 8",
+  "mechanism": "Exogenous spreading activation. Injects an arbitrary, entropy-rich stimulus into working memory to activate distant associative nodes within semantic memory networks.",
+  "questions": [
+    "How does the randomly selected concept approach resource allocation or replication?",
+    "What unexpected operational metaphor does this random stimulus introduce?",
+    "How can we re-name our system components using the conceptual vocabulary of the random stimulus?"
+  ],
+  "example": "Edge Compute Resilience. Random Word: \"Mycelium\" (underground fungal network). Properties: decentralized nutrient sharing, lack of centralized root structure, subterranean propagation, opportunistic growth along moisture gradients. Application: P2P edge worker clusters that dynamically offload cold cache blocks to neighboring peer nodes across local LAN subnets, eliminating centralized parent cloud egress bandwidth during edge network partitioning.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "provocation",
+      "divisions": 8,
+      "mark": 2
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "IDE-49",
+  "sourceTacticNo": 49,
+  "name": "Synectics: Personal Analogy (Empathic Projection)",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Imagine you are a single data packet or byte traversing your system architecture. Describe what you feel, see, and experience as you encounter bottlenecks, lock contentions, and serialization hurdles.",
+  "sprintSize": 9,
+  "schematic": "Mapping at position 7 of 8",
+  "mechanism": "Egocentric embodied simulation. The engineer projects their own consciousness into a non-human or abstract system component, identifying structural stresses through introspective embodiment.",
+  "questions": [
+    "As a single database query, why do you feel terrified when entering this complex table join?",
+    "If you were an electron attempting to escape this battery anode, what physical obstacles block your path?",
+    "If you were an unhandled runtime error exception, how would you escape logging traps to reveal your true cause?"
+  ],
+  "example": "Thread Pool Starvation Diagnostics. An architect mentally adopts the persona of a synchronous HTTP request worker thread: \"I arrive at the application layer, but I am blocked at a synchronized database connection pool. I cannot sleep or exit; I am forced to hold memory resources while waiting for a remote API response, accumulating behind hundreds of other worker threads.\" This mental simulation reveals the need for non-blocking, asynchronous reactive I/O patterns (e.g., Netty or Tokio event loops).",
+  "origin": {
+    "authors": [
+      "William J. J. Gordon"
+    ],
+    "year": 1961,
+    "title": "Synectics: The Development of Creative Capacity",
+    "publication": "Harper & Brothers",
+    "note": "Checked 2026-11-10 against the HathiTrust record 000355751 and Google Books: Harper, New York, 1961."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "mapping",
+      "divisions": 8,
+      "mark": 7
+    }
+  }
+}

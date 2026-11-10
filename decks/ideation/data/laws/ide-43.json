@@ -1,0 +1,27 @@
+{
+  "id": "IDE-43",
+  "sourceTacticNo": 43,
+  "name": "Forced Connections (Bisociative Synthesis)",
+  "phase": "Combinatorial & Associative Prompts",
+  "sprint": "Pick a random physical object from the room (e.g., a coffee thermos, a wristwatch, an office chair). Synthesize three distinct features of that object with your technical system.",
+  "sprintSize": 9,
+  "schematic": "Recombination at position 1 of 8",
+  "mechanism": "Forced conceptual integration. Obligates the mind to construct relational bridges between two unrelated semantic domains, generating non-obvious structural hybridizations.",
+  "questions": [
+    "How can the functional mechanics of a mechanical wristwatch regulate our distributed consensus engine?",
+    "What does the thermal insulating principle of a thermos teach us about memory cache retention policies?",
+    "How would our software architecture change if it had to function like the suspension system of a mountain bicycle?"
+  ],
+  "example": "Distributed Transaction Clock Synchronization. Forced connection with a mechanical quartz watch: rather than relying on brittle, non-synchronized software NTP servers that introduce drift and causal anomalies across datacenters, Google’s TrueTime API integrates atomic cesium clocks and GPS receivers directly into datacenter server racks, bounding clock uncertainty (ε) to deterministic single-digit millisecond windows for global ACID transactions.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "ideation-figure",
+    "parametricParams": {
+      "family": "recombination",
+      "divisions": 8,
+      "mark": 1
+    }
+  }
+}

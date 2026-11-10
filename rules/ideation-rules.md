@@ -724,3 +724,141 @@ The sprint prints on the card exactly as the source writes it, because it is the
 **Worked example.** High-Frequency Financial Trading Gateways. Conventional socket I/O traversing the Linux OS network stack introduces 15–30 microseconds of kernel interrupt latency. Benchmarking against physical limits: the speed of light in optical fiber traverses 200 km per millisecond. To approach physics-level latency, developers bypass the kernel entirely, using Kernel Bypass Networking (DPDK / Solarflare OpenOnload) and FPGA hardware logic to process and route UDP packets in 120 nanoseconds.
 
 **Source.** The source names no originator.
+
+## Combinatorial & Associative Prompts
+
+### IDE-43 — Forced Connections (Bisociative Synthesis)
+
+**Five-minute sprint.** Pick a random physical object from the room (e.g., a coffee thermos, a wristwatch, an office chair). Synthesize three distinct features of that object with your technical system.
+
+**Schematic.** Recombination at position 1 of 8
+
+**Cognitive mechanism.** Forced conceptual integration. Obligates the mind to construct relational bridges between two unrelated semantic domains, generating non-obvious structural hybridizations.
+
+**Seed questions.**
+- How can the functional mechanics of a mechanical wristwatch regulate our distributed consensus engine?
+- What does the thermal insulating principle of a thermos teach us about memory cache retention policies?
+- How would our software architecture change if it had to function like the suspension system of a mountain bicycle?
+
+**Worked example.** Distributed Transaction Clock Synchronization. Forced connection with a mechanical quartz watch: rather than relying on brittle, non-synchronized software NTP servers that introduce drift and causal anomalies across datacenters, Google’s TrueTime API integrates atomic cesium clocks and GPS receivers directly into datacenter server racks, bounding clock uncertainty (ε) to deterministic single-digit millisecond windows for global ACID transactions.
+
+**Source.** The source names no originator.
+
+### IDE-44 — Random Stimulus / Semantic Priming Injection
+
+**Five-minute sprint.** Generate a random word from an open dictionary (e.g., "Mushroom"). Write down four innate properties of this word. Map each property directly to a solution for your technical challenge.
+
+**Schematic.** Provocation at position 2 of 8
+
+**Cognitive mechanism.** Exogenous spreading activation. Injects an arbitrary, entropy-rich stimulus into working memory to activate distant associative nodes within semantic memory networks.
+
+**Seed questions.**
+- How does the randomly selected concept approach resource allocation or replication?
+- What unexpected operational metaphor does this random stimulus introduce?
+- How can we re-name our system components using the conceptual vocabulary of the random stimulus?
+
+**Worked example.** Edge Compute Resilience. Random Word: "Mycelium" (underground fungal network). Properties: decentralized nutrient sharing, lack of centralized root structure, subterranean propagation, opportunistic growth along moisture gradients. Application: P2P edge worker clusters that dynamically offload cold cache blocks to neighboring peer nodes across local LAN subnets, eliminating centralized parent cloud egress bandwidth during edge network partitioning.
+
+**Source.** The source names no originator.
+
+### IDE-45 — Attribute Listing & Morphological Variation
+
+**Five-minute sprint.** Deconstruct your primary data entity or component into six granular attributes. For each attribute, list three non-standard variations. Recombine them into an alternative operational profile.
+
+**Schematic.** Separation at position 3 of 8
+
+**Cognitive mechanism.** Deconstructive attribute decomposition. Decouples an object into its component properties (color, weight, protocol, statefulness), systematically varying each one to break gestalt continuity.
+
+**Seed questions.**
+- Which attribute of this system have we always treated as immutable simply out of habit?
+- What happens if we transform a stateful synchronous attribute into a stateless asynchronous property?
+- How can we vary the granularity of this attribute dynamically based on available network throughput?
+
+**Worked example.** Web Session Token Architecture. Attribute decomposition: (1) Format: ASCII string → Cryptographic CBOR token; (2) Location: Browser Cookie → Isolated Web Worker Memory; (3) Expiration: Static 30 days → Sliding dynamic multi-tiered lease; (4) Authority: Server DB lookup → Cryptographically verifiable self-contained Ed25519 signature. Result: Session verification overhead drops to zero server database lookups.
+
+**Source.** The source names no originator.
+
+### IDE-46 — Biomimetic Adaptation: Structural Hierarchy & Porosity
+
+**Five-minute sprint.** Identify where your system is heavy, slow, or resource-dense. Redesign its structural architecture to integrate nested, hierarchical voids that preserve functional integrity while saving resources.
+
+**Schematic.** Mapping at position 4 of 8
+
+**Cognitive mechanism.** Morphological evolutionary scaling. Imports evolutionary mechanical solutions—such as lightweight structural strength through hierarchical porosity—into human engineering systems.
+
+**Seed questions.**
+- Where can we introduce intentional voids or empty space into our data structures to accelerate lookups?
+- How does natural bone or wood architecture balance light weight with high structural integrity?
+- Can we arrange our compute tasks hierarchically so that 90% of requests are handled by low-energy layers?
+
+**Worked example.** Sparse Indexing & Bloom Filter Nesting in Database Engines. Rather than maintaining a dense, resource-heavy index that maps every primary key to an exact disk offset (which strains RAM capacity), database architects deploy porous, hierarchical sparse indexes paired with hardware-optimized Bloom filters. These verify key non-existence in memory using near-zero space before traversing hierarchical SSTables on persistent storage.
+
+**Source.** The source names no originator.
+
+### IDE-47 — Biomimetic Adaptation: Swarm & Decentralized Coordination
+
+**Five-minute sprint.** Eliminate the master controller or orchestrator node in your architecture. Formulate three simple behavioral rules for individual worker agents to achieve global coordination.
+
+**Schematic.** Substitution at position 5 of 8
+
+**Cognitive mechanism.** Decentralized emergent self-organization. Replaces brittle, hierarchical, centralized command-and-control logic with simple local interaction rules that generate coherent macroscopic behavior.
+
+**Seed questions.**
+- How would an ant colony or flock of starlings allocate this compute workload across 10,000 independent nodes?
+- What local sensory data can individual worker agents use to coordinate without talking to a central coordinator?
+- How can simple emergent feedback loops self-balance network routing and avoid localized congestion?
+
+**Worked example.** Gossip-Based Cluster Membership Protocols (SWIM). In distributed database clusters containing thousands of nodes, maintaining a centralized heartbeat coordinator creates an operational bottleneck and single point of failure. Deploying biomimetic swarm mechanics: nodes periodically transmit lightweight ping/ack messages to a few randomly selected peers. Failure detection and membership changes propagate through the cluster via epidemiological gossip protocols in logarithmic time.
+
+**Source.** The source names no originator.
+
+### IDE-48 — Biomimetic Adaptation: Homeostasis & Dynamic Negative Feedback
+
+**Five-minute sprint.** Identify the primary metric that fluctuates under operational load (e.g., latency, queue size, memory). Design a closed-loop negative feedback mechanism that exerts opposing force as the metric drifts from equilibrium.
+
+**Schematic.** Recombination at position 6 of 8
+
+**Cognitive mechanism.** Physiological homeostatic regulation. Implements self-correcting negative feedback loops to maintain systemic internal stability despite volatile environmental fluctuations.
+
+**Seed questions.**
+- How does the human endocrine system balance insulin and glucagon to stabilize blood glucose under varying dietary conditions?
+- What automated internal feedback loop can prevent this system from cascading into catastrophic collapse?
+- How can the system naturally reject external work when internal equilibrium is threatened?
+
+**Worked example.** Adaptive Concurrency Limits via TCP Vegas / CoDel Mechanics. Traditional software services set static concurrency limits (e.g., max 200 concurrent threads), leading to queuing delays when downstream dependencies slow down. Applying homeostatic negative feedback: the service dynamically measures round-trip latency; as latency climbs above normal baselines, concurrency limits contract automatically. This sheds incoming load and protects the system from collapse, stabilizing internal latency.
+
+**Source.** The source names no originator.
+
+### IDE-49 — Synectics: Personal Analogy (Empathic Projection)
+
+**Five-minute sprint.** Imagine you are a single data packet or byte traversing your system architecture. Describe what you feel, see, and experience as you encounter bottlenecks, lock contentions, and serialization hurdles.
+
+**Schematic.** Mapping at position 7 of 8
+
+**Cognitive mechanism.** Egocentric embodied simulation. The engineer projects their own consciousness into a non-human or abstract system component, identifying structural stresses through introspective embodiment.
+
+**Seed questions.**
+- As a single database query, why do you feel terrified when entering this complex table join?
+- If you were an electron attempting to escape this battery anode, what physical obstacles block your path?
+- If you were an unhandled runtime error exception, how would you escape logging traps to reveal your true cause?
+
+**Worked example.** Thread Pool Starvation Diagnostics. An architect mentally adopts the persona of a synchronous HTTP request worker thread: "I arrive at the application layer, but I am blocked at a synchronized database connection pool. I cannot sleep or exit; I am forced to hold memory resources while waiting for a remote API response, accumulating behind hundreds of other worker threads." This mental simulation reveals the need for non-blocking, asynchronous reactive I/O patterns (e.g., Netty or Tokio event loops).
+
+**Source.** William J. J. Gordon (1961). *Synectics: The Development of Creative Capacity*. Harper & Brothers.
+
+### IDE-50 — Negative Space Mapping (The Un-Product / Void Exploitation)
+
+**Five-minute sprint.** Chart the typical user or data lifecycle. Highlight every period where the system is completely idle or where data remains untouched. Design a high-value utility that executes exclusively during these voids.
+
+**Schematic.** Reflection at position 8 of 8
+
+**Cognitive mechanism.** Figure-ground perceptual reversal. Shifts focus away from existing objects and active features (figure) to analyze the unbuilt whitespace, empty time-slots, and missing interactions (ground).
+
+**Seed questions.**
+- What is our product *not* doing during the 98% of the day when the user is not actively interacting with it?
+- What data are we deliberately choosing not to track, and how does omitting it serve as a competitive security feature?
+- Where does the white space exist between the specialized feature sets of industry-leading competitors?
+
+**Worked example.** Proactive Database Index Compaction & Predictive State Assembly. Rather than executing computationally heavy index restructuring and analytical rollups during active user transaction windows, modern database engines detect idle CPU intervals. During these quiet windows, the system executes background compaction, verifies cryptographic Merkle root trees, and pre-warms predictive memory caches for expected workloads.
+
+**Source.** The source names no originator.
