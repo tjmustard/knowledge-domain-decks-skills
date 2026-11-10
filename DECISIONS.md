@@ -585,10 +585,13 @@ cap — Keystroke-Level Model drops "(KLM-GOMS)", Gilbreth Motion Economy drops
 "Principles", and Weber-Fechner JND Law compresses "of Just Noticeable
 Difference (JND)" — as distinct from TME-09's forced trim.
 
-Newell & Rosenbloom's chapter is pp. 1-55 in the 1981 Erlbaum edition, chapter 1
-in Anderson (Ed.). The 2013 Psychology Press reissue repaginates and renumbers
-it (chapter 6, DOI 10.4324/9780203728178-6), and its extent is unverified here,
-so the card prints no page range.
+Newell & Rosenbloom's chapter is chapter 1 of the 1981 Erlbaum edition,
+conventionally pp. 1-55; one bibliography gives 1-56, a one-page disagreement in
+the literature. The 2013 Psychology Press reissue carries it as chapter 6 with
+different pagination - Crossref records pp. 12-66 under DOI
+10.4324/9780203728178-6 - so a range taken from that volume does not locate the
+chapter in the book the card cites. The card therefore prints no page range, the
+same rule §19 applied to the Doherty report's extent.
 
 ## 27. Five shapes for the motion cards, and one reused
 
