@@ -68,8 +68,8 @@ window.INNOVATION_DECK = {
       "sourceTacticNo": 37,
       "name": "Unit Economics Stress Test (CAC:LTV Ratio)",
       "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
-      "hypothesis": "We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: frac{text{LTV}}{text{CAC}} ≥ 3.0 quad text{where} quad text{LTV} = frac{text{ARPU} × text{Gross Margin}}{text{Churn Rate}}",
-      "hypothesisSize": 6.5,
+      "hypothesis": "We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: LTV / CAC ≥ 3.0, where LTV = (ARPU × Gross Margin) / Churn Rate",
+      "hypothesisSize": 7,
       "schematic": "Read at step 3 of the 3-step strip",
       "method": [
         "Time: 30–60 days",
@@ -101,7 +101,7 @@ window.INNOVATION_DECK = {
         },
         {
           "label": "Data collection",
-          "text": "Calculate the months required to recover customer acquisition costs: text{Payback Period (Months)} = frac{text{CAC}}{text{ARPU} × text{Gross Margin %}}"
+          "text": "Calculate the months required to recover customer acquisition costs: Payback Period (Months) = CAC / (ARPU × Gross Margin %)"
         }
       ],
       "warning": {

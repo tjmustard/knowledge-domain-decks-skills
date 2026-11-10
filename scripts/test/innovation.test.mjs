@@ -119,6 +119,54 @@ test("the two recorded source defects are carried, not repaired away", async () 
   assert.ok(crowdfunding.method.confidence.length > 0, "I28's confidence is recoverable");
 });
 
+test("no card text carries LaTeX residue from the extractor", async () => {
+  // The extractor strips backslashes, so \frac{\text{LTV}}{\text{CAC}} arrived
+  // as frac{text{LTV}}{text{CAC}}: a formula reduced to its skeleton. Six rows
+  // carried it at the probe commit. The guard is on the card-visible fields,
+  // because those are the ones a reader would be asked to trust.
+  const inventory = await loadInventory();
+  const commands = ["frac{", "text{", "sqrt{", "bar{", "lim_{"];
+  // "quadrant" is a word; \quad is markup. Only the standalone token is residue.
+  const words = /\b(quad|infty|implies|approx)\b/;
+  const scan = (label, fields) => {
+    const offenders = [];
+    for (const [field, value] of Object.entries(fields)) {
+      const command = commands.find((token) => value.includes(token));
+      const word = words.exec(value)?.[0];
+      if (command) offenders.push(`${label} ${field}: ${command}`);
+      else if (word) offenders.push(`${label} ${field}: ${word}`);
+      else if (value.includes("\\")) offenders.push(`${label} ${field}: backslash`);
+    }
+    return offenders;
+  };
+  const offenders = inventory.records.flatMap((record) =>
+    scan(`I${String(record.number).padStart(2, "0")} inventory`, {
+      hypothesis: record.hypothesis,
+      "plan.preparation": record.plan.preparation,
+      "plan.execution": record.plan.execution,
+      "plan.dataCollection": record.plan.dataCollection,
+      "warning.text": record.warning.text
+    })
+  );
+
+  // The printed card is built from the record, not the inventory. A record that
+  // kept the residue would print the damaged formula even after the inventory
+  // was repaired, so the committed card text is scanned too.
+  const { loadCards, loadDeck } = await import("../../packages/core/deck.mjs");
+  for (const card of await loadCards(await loadDeck("innovation"))) {
+    offenders.push(
+      ...scan(`${card.id} card`, {
+        hypothesis: card.hypothesis,
+        "plan.preparation": card.plan[0].text,
+        "plan.execution": card.plan[1].text,
+        "plan.dataCollection": card.plan[2].text,
+        "warning.text": card.warning.text
+      })
+    );
+  }
+  assert.deepEqual(offenders, [], "LaTeX residue in card text:\n  " + offenders.join("\n  "));
+});
+
 test("every figure follows the committed layout map and names what it draws", async () => {
   const inventory = await loadInventory();
   const layout = JSON.parse(await readFile(LAYOUT, "utf8"));

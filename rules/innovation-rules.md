@@ -37,7 +37,7 @@ When deposits are low and refundable, buyers treat checkout as a bookmark rather
 
 ### I37 — Unit Economics Stress Test (CAC:LTV Ratio)
 
-**Hypothesis and threshold.** We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: frac{text{LTV}}{text{CAC}} ≥ 3.0 quad text{where} quad text{LTV} = frac{text{ARPU} × text{Gross Margin}}{text{Churn Rate}}
+**Hypothesis and threshold.** We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: LTV / CAC ≥ 3.0, where LTV = (ARPU × Gross Margin) / Churn Rate
 
 **Schematic.** Read at step 3 of the 3-step strip
 
@@ -55,7 +55,7 @@ Blending organic traffic with paid spend hides high paid acquisition costs and a
 **Plan as written.**
 - Preparation: Aggregate all fully loaded acquisition costs (ad spend, sales commissions, operational overhead, marketing software) across a 60-day testing window.
 - Execution: Track the total number of paid customer accounts generated specifically from those spend allocations.
-- Data collection: Calculate the months required to recover customer acquisition costs: text{Payback Period (Months)} = frac{text{CAC}}{text{ARPU} × text{Gross Margin %}}
+- Data collection: Calculate the months required to recover customer acquisition costs: Payback Period (Months) = CAC / (ARPU × Gross Margin %)
 
 **Warning as written.** Blending cheap organic, direct, or personal network traffic with paid marketing spend obscures high paid customer acquisition costs, hiding an unviable acquisition channel.
 

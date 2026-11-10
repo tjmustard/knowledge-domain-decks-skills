@@ -13,7 +13,7 @@
     "hypothesis": {
       "min": 264,
       "median": 317,
-      "max": 465
+      "max": 406
     },
     "preparation": {
       "min": 60,
@@ -26,9 +26,9 @@
       "max": 357
     },
     "dataCollection": {
-      "min": 79,
+      "min": 61,
       "median": 118,
-      "max": 285
+      "max": 273
     },
     "warning": {
       "min": 130,
@@ -53,9 +53,22 @@
       "field": "method.financialCost",
       "defect": "the Method Mechanics line is broken markup: the bullet marker is missing, the price renders as '$$-$$', and the Confidence label continues a stray bullet",
       "handling": "time-to-result and confidence recovered; financialCost recorded null with the literal in financialCostRaw - the source states no usable cost"
+    },
+    {
+      "tactic": [
+        16,
+        20,
+        33,
+        34,
+        35,
+        37
+      ],
+      "field": "hypothesis and plan.dataCollection",
+      "defect": "extractor backslash-stripping reduced LaTeX formulas to residue: frac{...}{...}, text{...}, quad, lim_{t to infty}, and the word pm for the ± sign",
+      "handling": "restored to plain text with the formula structure kept: multi-term denominators parenthesised, ± and → written as symbols; no formula meaning changed"
     }
   ],
-  "note": "Four fields per tactic, exactly as the source states them: Method Mechanics (time-to-result, financial cost, confidence level), Hypothesis Template, Step-by-Step Execution Plan (preparation, execution, data collection) and False Positive Warning. Escapes stripped: \\$, \\%, \\[, \\], \\ge, \\le, \\times, \\&, \\. and markdown bold/italic. Cost values like '$0-$$$' are the source's own cost-tier scale, not a currency amount; they are preserved literally. The Phase 3 introduction's 11-row summary table is NOT a tactic and is not extracted; where its labels differ from the section headings (#31 'Paid Ad Intent Siphon' vs 'Micro-Ad Engagement Funnel Siphon') the section heading is the authority. The document declares 42 tactics and 42 sections parse; the section count must stay 42 or the parse is wrong. Two source defects are recorded in sourceDefects and must not be repaired silently: I24's Execution stage is printed as an escaped inline bullet inside Preparation, and I28's Method Mechanics block is broken markup whose price range is unreadable. fieldLengths is measured from the committed records: min and max are the extremes, median is the lower median (the 21st of 42 sorted values, no interpolation). The summary block is derived from these records and under test: recordCount and phaseCounts are counted, min and max are the extremes, and median is the lower median (the 21st of 42 sorted values, no interpolation).",
+  "note": "Four fields per tactic, exactly as the source states them: Method Mechanics (time-to-result, financial cost, confidence level), Hypothesis Template, Step-by-Step Execution Plan (preparation, execution, data collection) and False Positive Warning. Escapes stripped: \\$, \\%, \\[, \\], \\ge, \\le, \\times, \\&, \\. and markdown bold/italic. Cost values like '$0-$$$' are the source's own cost-tier scale, not a currency amount; they are preserved literally. The Phase 3 introduction's 11-row summary table is NOT a tactic and is not extracted; where its labels differ from the section headings (#31 'Paid Ad Intent Siphon' vs 'Micro-Ad Engagement Funnel Siphon') the section heading is the authority. The document declares 42 tactics and 42 sections parse; the section count must stay 42 or the parse is wrong. Three source defects are recorded in sourceDefects and must not be repaired silently. I24's Execution stage is printed as an escaped inline bullet inside Preparation, and I28's Method Mechanics block is broken markup whose price range is unreadable. The third is the extractor, which strips backslashes, so LaTeX formulas arrived as residue (frac{...}{...}, text{...}, quad, lim_{t to infty}, and \"pm\" for ±) on I16, I20, I33, I34, I35 and I37. Those formulas are restored to plain text with their structure kept - a multi-term denominator is parenthesised - because the never-trim rule protects the meaning of the formula, not its damaged markup. fieldLengths is measured from the committed records: min and max are the extremes, median is the lower median (the 21st of 42 sorted values, no interpolation). The summary block is derived from these records and under test: recordCount and phaseCounts are counted, min and max are the extremes, and median is the lower median (the 21st of 42 sorted values, no interpolation).",
   "records": [
     {
       "number": 1,
@@ -402,7 +415,7 @@
       "plan": {
         "preparation": "Fix an ambitious financial milestone (e.g., 10,000,000 ARR).",
         "execution": "Work backward to calculate the necessary funnel metrics: divide target revenue by expected ARPU to determine the required customer volume, then calculate the necessary conversion rates and acquisition costs across the funnel.",
-        "dataCollection": "Compare required operational metrics against real-world industry benchmarks: text{Required Leads} = frac{text{Target ARR}}{text{ARPU} × text{Funnel Conversion Rate}}"
+        "dataCollection": "Compare required operational metrics against real-world industry benchmarks: Required Leads = Target ARR / (ARPU × Funnel Conversion Rate)"
       },
       "warning": {
         "name": "Spreadsheet Viability Syndrome",
@@ -486,11 +499,11 @@
         "confidence": "Moderate-High",
         "financialCostRaw": "$50–$300"
       },
-      "hypothesis": "We believe that the acceptable price band for our offering falls between [Price A] and [Price B]. We will verify this by surveying 50 qualified target customers using the four standard Van Westendorp questions, and consider it validated if the Indifference Price Point aligns with our planned market pricing within a pm 10% margin.",
+      "hypothesis": "We believe that the acceptable price band for our offering falls between [Price A] and [Price B]. We will verify this by surveying 50 qualified target customers using the four standard Van Westendorp questions, and consider it validated if the Indifference Price Point aligns with our planned market pricing within a ±10% margin.",
       "plan": {
         "preparation": "Construct a survey detailing the core value proposition. Include the four standard pricing questions: (1) At what price is it too cheap to trust the quality? (2) A bargain? (3) Getting expensive, but still worth considering? (4) Too expensive to consider?",
         "execution": "Distribute the instrument strictly to qualified target buyers who match the defined ICP.",
-        "dataCollection": "Plot cumulative distribution curves to identify the Indifference Price Point (intersection of \"Cheap\" and \"Expensive\") and the Optimal Price Point (intersection of \"Too Cheap\" and \"Too Expensive\"): text{Optimal Price Point (OPP)} = text{Intersection of \"Too Cheap\" and \"Too Expensive\"}"
+        "dataCollection": "Plot cumulative distribution curves to identify the Indifference Price Point (intersection of \"Cheap\" and \"Expensive\") and the Optimal Price Point (intersection of \"Too Cheap\" and \"Too Expensive\"): Optimal Price Point (OPP) = Intersection of \"Too Cheap\" and \"Too Expensive\""
       },
       "warning": {
         "name": "Stated Willingness Bias",
@@ -772,7 +785,7 @@
         "confidence": "Extreme (Product-Market Fit ground truth)",
         "financialCostRaw": "$0"
       },
-      "hypothesis": "We believe that our product delivers sustained, long-term utility to users. We will verify this by tracking weekly active usage across monthly cohorts, and consider it validated if the retention curve flattens into a stable horizontal asymptote at ≥ 20% weekly active retention by Week 8: lim_{t to infty} R(t) ≥ 0.20",
+      "hypothesis": "We believe that our product delivers sustained, long-term utility to users. We will verify this by tracking weekly active usage across monthly cohorts, and consider it validated if the retention curve flattens into a stable horizontal asymptote at ≥ 20% weekly active retention by Week 8: lim R(t) as t → ∞  ≥ 0.20",
       "plan": {
         "preparation": "Define the core engagement action that reflects genuine product value (e.g., exporting a project or collaborating with a teammate), rather than simply logging in.",
         "execution": "Group users into discrete cohorts based on the calendar week or month they completed onboarding. Track their activity over time.",
@@ -798,7 +811,7 @@
       "plan": {
         "preparation": "Build a short survey centered on the question: \"How would you feel if you could no longer use [Product]?\" with four fixed responses: (a) Very disappointed, (b) Somewhat disappointed, (c) Not disappointed, or (d) I no longer use it.",
         "execution": "Send the survey exclusively to users who have completed the onboarding flow and engaged with the product multiple times.",
-        "dataCollection": "Calculate the proportion of respondents who choose \"Very disappointed.\" Segment these responses by user demographic and persona to isolate where satisfaction is strongest: text{PMF Score} = frac{text{Count}(text{\"Very Disappointed\"})}{text{Total Qualified Respondents}} × 100 ≥ 40%"
+        "dataCollection": "Calculate the proportion of respondents who choose \"Very disappointed.\" Segment these responses by user demographic and persona to isolate where satisfaction is strongest: PMF Score = Count(\"Very Disappointed\") / Total Qualified Respondents × 100 ≥ 40%"
       },
       "warning": {
         "name": "Surveying Casual, Non-Core Users",
@@ -820,7 +833,7 @@
       "plan": {
         "preparation": "Add a standard 0–10 NPS rating prompt to the product interface, triggered only after a user successfully completes a core milestone.",
         "execution": "Group responses into Promoters (9–10), Passives (7–8), and Detractors (0–6). For all scores, trigger an immediate open-ended follow-up asking for the specific reason behind the rating.",
-        "dataCollection": "Calculate the overall score: text{NPS} = % text{Promoters} - % text{Detractors}"
+        "dataCollection": "Calculate the overall score: NPS = % Promoters − % Detractors"
       },
       "warning": {
         "name": "Passive Satisfaction Inflation",
@@ -860,11 +873,11 @@
         "confidence": "High",
         "financialCostRaw": "$500–$$$$"
       },
-      "hypothesis": "We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: frac{text{LTV}}{text{CAC}} ≥ 3.0 quad text{where} quad text{LTV} = frac{text{ARPU} × text{Gross Margin}}{text{Churn Rate}}",
+      "hypothesis": "We believe our customer acquisition model is economically sustainable. We will verify this by measuring blended and paid Customer Acquisition Costs alongside early cohort churn and revenue, and consider it validated if the projected Lifetime Value to Customer Acquisition Cost ratio exceeds 3:1, with full CAC payback achieved in ≤ 12 months: LTV / CAC ≥ 3.0, where LTV = (ARPU × Gross Margin) / Churn Rate",
       "plan": {
         "preparation": "Aggregate all fully loaded acquisition costs (ad spend, sales commissions, operational overhead, marketing software) across a 60-day testing window.",
         "execution": "Track the total number of paid customer accounts generated specifically from those spend allocations.",
-        "dataCollection": "Calculate the months required to recover customer acquisition costs: text{Payback Period (Months)} = frac{text{CAC}}{text{ARPU} × text{Gross Margin %}}"
+        "dataCollection": "Calculate the months required to recover customer acquisition costs: Payback Period (Months) = CAC / (ARPU × Gross Margin %)"
       },
       "warning": {
         "name": "Blended CAC Smuggling",
