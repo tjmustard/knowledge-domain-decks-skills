@@ -480,3 +480,12 @@ while possessives and mid-title apostrophes are unaffected. The acceptance gate
 runs twelve named cases against this commit's `deck.mjs`, including all the
 forms §24 recorded as the edge it could not yet handle. No schema changes: the
 two fields are computed into the bundles, not written into `data/laws/*.json`.
+
+`authorsLabel` stays plain text with ordinary spaces, so the generated markdown
+and both bundles can be grepped and diffed for " & " without hidden characters.
+The printed card is the one surface where the ampersand could end a line
+(`DEC-11`'s acceptance line did), so the template, not the shared field, binds
+it to the surname with U+00A0 at render time. The no-break is a typographic
+decision local to print; the viewer needs it only if its own text wraps there.
+This keeps one citation string across the deck while letting each surface
+apply its own line-breaking rule.

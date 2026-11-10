@@ -27,7 +27,9 @@ export async function loadCards(root = ROOT) {
 }
 
 // House style: one ampersand before the last author, commas between the rest,
-// no serial comma. Full given names, as the records carry them.
+// no serial comma. Full given names, as the records carry them. This field is
+// plain text on purpose: the print template adds the no-break around its
+// ampersand, so the bundles stay grep-able and contain no hidden characters.
 export function authorsLabel(origin) {
   const names = origin.authors || [];
   if (names.length <= 1) return names[0] || "";
