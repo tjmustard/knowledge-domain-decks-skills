@@ -1,0 +1,287 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/innovation-schema.json",
+  "title": "Innovation Architecture card",
+  "description": "One experimentation tactic. The hypothesis is the card: it carries the validation threshold the source wrote, and it is never trimmed. Bounds are the measured source range with headroom, not a style guide.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceTacticNo",
+    "name",
+    "phase",
+    "hypothesis",
+    "schematic",
+    "method",
+    "plan",
+    "planFull",
+    "warning",
+    "warningFull",
+    "origin",
+    "figure"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^I(0[1-9]|[1-3][0-9]|4[0-2])$"
+    },
+    "sourceTacticNo": {
+      "description": "The document's own \"Tactic NN\" number, which matches deck order on every section it states.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 42
+    },
+    "name": {
+      "type": "string",
+      "minLength": 2,
+      "maxLength": 90
+    },
+    "phase": {
+      "enum": [
+        "Customer Discovery and Problem Validation Tactics",
+        "Hypothesis Framing and Assumption Mapping Tactics",
+        "Low-Fidelity Prototyping and Smoke Testing Tactics",
+        "Metrics, Telemetry, and Innovation Accounting Tactics"
+      ]
+    },
+    "hypothesis": {
+      "description": "The source's Hypothesis Template, verbatim, including the validation threshold. Measured 264-465 characters; the bound admits no paraphrase and no dropped threshold.",
+      "type": "string",
+      "minLength": 240,
+      "maxLength": 520
+    },
+    "schematic": {
+      "description": "The line the card prints under the figure. It names the drawing, so a reader can see that the label and the picture are the same claim.",
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 45
+    },
+    "method": {
+      "description": "The method strip as the card prints it: time to result, financial cost and confidence, in that order. A cost the source does not state is said, never invented.",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 90
+      }
+    },
+    "plan": {
+      "description": "The three stages as the card prints them, one line each. The card budget is measured by npm run check:fit; this bound is the back's line capacity, not a summary of the source.",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "text"
+        ],
+        "properties": {
+          "label": {
+            "enum": [
+              "Preparation",
+              "Execution",
+              "Data collection"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 110
+          }
+        }
+      }
+    },
+    "planFull": {
+      "description": "The three stages as the source writes them, carried by the rules and the skill resources.",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "label",
+          "text"
+        ],
+        "properties": {
+          "label": {
+            "enum": [
+              "Preparation",
+              "Execution",
+              "Data collection"
+            ]
+          },
+          "text": {
+            "type": "string",
+            "minLength": 40,
+            "maxLength": 400
+          }
+        }
+      }
+    },
+    "warning": {
+      "description": "The named false positive and one clause of why it happens. The name is the deck's second reason to exist and all 42 are distinct.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "clause"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 60
+        },
+        "clause": {
+          "type": "string",
+          "minLength": 20,
+          "maxLength": 150
+        }
+      }
+    },
+    "warningFull": {
+      "description": "The source's False Positive Warning, unabridged, carried by the rules and the skill resources.",
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 320
+    },
+    "origin": {
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "authors"
+          ]
+        },
+        {
+          "required": [
+            "title"
+          ]
+        },
+        {
+          "required": [
+            "note"
+          ]
+        },
+        {
+          "required": [
+            "works"
+          ]
+        }
+      ],
+      "properties": {
+        "works": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "anyOf": [
+              {
+                "required": [
+                  "authors"
+                ]
+              },
+              {
+                "required": [
+                  "title"
+                ]
+              },
+              {
+                "required": [
+                  "note"
+                ]
+              }
+            ],
+            "properties": {
+              "authors": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 1900,
+                "maximum": 2100
+              },
+              "title": {
+                "type": "string",
+                "minLength": 2
+              },
+              "publication": {
+                "type": "string",
+                "minLength": 2
+              },
+              "note": {
+                "type": "string",
+                "minLength": 10,
+                "maxLength": 160
+              }
+            }
+          }
+        },
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 1900,
+          "maximum": 2100
+        },
+        "title": {
+          "type": "string",
+          "minLength": 2
+        },
+        "publication": {
+          "type": "string",
+          "minLength": 2
+        },
+        "note": {
+          "type": "string",
+          "minLength": 10,
+          "maxLength": 160
+        }
+      }
+    },
+    "figure": {
+      "description": "The drawing and the parameters it reads. The vocabulary is fixed by decks/innovation/data/layout-map.json at the second checkpoint; until then the shape name is checked, not enumerated.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": {
+            "type": [
+              "number",
+              "string",
+              "boolean"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
