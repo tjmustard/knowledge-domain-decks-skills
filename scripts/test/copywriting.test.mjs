@@ -39,6 +39,18 @@ const stats = (values) => ({
   max: Math.max(...values)
 });
 
+// A ratio pair is a claim about one component: its label and its percent must
+// stand in the same sentence of the prose. Presence somewhere in the paragraph
+// is not pairing - two percentages swapped between clauses would pass it, and
+// AIDA would print the wrong proportions while the suite called it correct.
+const sentences = (text) => text.split(/(?<=[.!?])\s+/);
+const pairSentence = (prose, pair) =>
+  sentences(prose).find(
+    (sentence) =>
+      sentence.toLowerCase().includes(pair.label.toLowerCase()) &&
+      new RegExp(`${pair.percent}\\s*%`).test(sentence)
+  ) || null;
+
 test("the inventory holds forty-eight formulas in four surfaces of twelve", async () => {
   const inventory = await loadInventory();
   assert.equal(inventory.records.length, TOTAL, "the inventory holds 48 formulas");
@@ -206,6 +218,39 @@ test("the declared table renders the formula and the guard fails on residue", ()
   }
 });
 
+test("the ratio pairing rule fails a ratio whose percentages are swapped", async () => {
+  // The falsification the dispatcher asked for: swap AIDA's Attention and
+  // Desire shares, update the front line to match, and the pairing rule must
+  // still fail. A rule that only checks presence would pass this.
+  const inventory = await loadInventory();
+  const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
+  const record = inventory.records.find((entry) => entry.formulaId === "ST-01");
+  const ratio = layout.ratios[record.id];
+  assert.ok(ratio, "AIDA has an extracted ratio");
+
+  for (const pair of ratio.pairs) {
+    assert.ok(pairSentence(record.blueprintProse, pair), `AIDA pairs "${pair.label} ${pair.percent}"`);
+  }
+
+  const swapped = ratio.pairs.map((pair) =>
+    pair.label === "Attention"
+      ? { ...pair, percent: 40 }
+      : pair.label === "Desire"
+        ? { ...pair, percent: 15 }
+        : pair
+  );
+  assert.equal(
+    swapped.map((pair) => `${pair.label} ${pair.percent}`).join(" · "),
+    "Attention 40 · Interest 30 · Desire 15 · Action 15",
+    "the swapped front line is updated to match the swapped pairs"
+  );
+  assert.deepEqual(
+    swapped.filter((pair) => !pairSentence(record.blueprintProse, pair)).map((pair) => pair.label),
+    ["Attention", "Desire"],
+    "the swapped pair must fail the same-sentence rule"
+  );
+});
+
 test("every figure follows the committed layout map and names what it draws", async () => {
   // Deck nine's last figure defect was a map that filed rows by topic; the rule
   // is that a row's quoted datum must carry the family's own stem. The count of
@@ -256,10 +301,11 @@ test("every figure follows the committed layout map and names what it draws", as
     const ratio = layout.ratios[record.id];
     if (inventory.ratios.ids.includes(record.formulaId)) {
       assert.ok(ratio, `${record.id} has no extracted ratio`);
-      const prose = record.blueprintProse.toLowerCase();
       for (const pair of ratio.pairs) {
-        assert.ok(prose.includes(pair.label.toLowerCase()), `${record.id} label "${pair.label}" is not in the prose`);
-        assert.ok(new RegExp(`${pair.percent}\\s*%`).test(record.blueprintProse), `${record.id} percent ${pair.percent} is not in the prose`);
+        assert.ok(
+          pairSentence(record.blueprintProse, pair),
+          `${record.id} prints "${pair.label} ${pair.percent}" but no sentence of its prose pairs ${pair.percent}% with "${pair.label}"`
+        );
       }
       assert.equal(
         ratio.frontLine,
