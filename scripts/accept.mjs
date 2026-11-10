@@ -41,6 +41,34 @@ function run(command, args, options = {}) {
   };
 }
 
+
+// Walk a parameters object and yield the path to every leaf value. Object
+// parameters are common (TME-01 stores {hard: {...}, easy: {...}}), so a sweep
+// that only looks at the top level can miss a dead knob entirely.
+function leafPaths(value, prefix = []) {
+  if (value === null || typeof value !== "object") return [prefix];
+  if (Array.isArray(value)) return value.flatMap((item, i) => leafPaths(item, [...prefix, i]));
+  return Object.entries(value).flatMap(([key, child]) => leafPaths(child, [...prefix, key]));
+}
+
+function getPath(root, path) {
+  return path.reduce((node, key) => node[key], root);
+}
+
+function setPath(root, path, next) {
+  const last = path[path.length - 1];
+  const parent = path.slice(0, -1).reduce((node, key) => node[key], root);
+  parent[last] = next;
+}
+
+// Move a leaf far enough that a drawing that reads it must change, and keep
+// the type stable so the generator is not fed a value it would reject.
+function perturb(value) {
+  if (typeof value === "number") return value === 0 ? 7 : value * 2 + 3;
+  if (typeof value === "string") return `${value}X`;
+  return value;
+}
+
 const git = (args, cwd = ROOT) => run("git", args, { cwd });
 
 // --- resolve the commit -----------------------------------------------------
@@ -61,6 +89,7 @@ console.log("");
 // --- prepare the isolated tree ---------------------------------------------
 await mkdir(join(ROOT, ".worktrees"), { recursive: true });
 await rm(worktree, { recursive: true, force: true });
+git(["worktree", "prune"]);
 const added = git(["worktree", "add", "--detach", worktree, sha]);
 if (added.status !== 0) {
   console.error(`could not create a worktree at ${worktree}: ${added.stderr.trim()}`);
@@ -70,14 +99,41 @@ if (added.status !== 0) {
 const at = (args) => git(args, worktree);
 const npm = (args) => run("npm", args, { cwd: worktree });
 
-const cleanup = () => git(["worktree", "remove", "--force", worktree]);
+let cleanedUp = false;
+const cleanup = () => {
+  if (cleanedUp) return;
+  cleanedUp = true;
+  git(["worktree", "remove", "--force", worktree]);
+};
+
+// Print the verdict and leave with a code. cleanup() cannot be left to the
+// finally block here: process.exit would skip it and leak a registered worktree.
+const finish = (code) => {
+  cleanup();
+  const failed = report(results, sha);
+  process.exit(code === undefined ? (failed > 0 ? 1 : 0) : code);
+};
 
 try {
-  const installed = npm(["ci", "--silent", "--no-audit", "--no-fund"]);
+  // npm resolves the nearest package.json above its cwd, so without this guard a
+  // commit that has no package.json would install into (and, with npm ci, wipe)
+  // the calling project's node_modules instead of the isolated tree.
+  if (!existsSync(join(worktree, "package.json"))) {
+    record("dependencies", "not run", "this commit has no package.json, so there is nothing to install");
+    finish(0);
+  }
+
+  const installed = npm(["ci", "--prefix", worktree, "--silent", "--no-audit", "--no-fund"]);
   if (installed.status !== 0) {
-    console.error(`npm ci failed in the worktree:\n${installed.stderr.slice(-800)}`);
-    cleanup();
-    process.exit(1);
+    const message = installed.stderr.trim().split("\n").filter(Boolean).slice(-2).join(" / ");
+    // A lockfile that cannot satisfy package.json is a defect in the commit; a
+    // machine that cannot reach the registry is not. Do not conflate them.
+    const lockfileFault = /package-lock\.json|lock file|EUSAGE|Invalid:/i.test(installed.stderr);
+    record("dependencies", lockfileFault ? "fail" : "not run",
+      lockfileFault
+        ? `npm ci could not satisfy the lockfile: ${message}`
+        : `could not install dependencies here (setup, not a defect): ${message}`);
+    finish(lockfileFault ? 1 : 0);
   }
 
   // --- 1. nothing that should stay out of the repository is committed ------
@@ -141,6 +197,7 @@ try {
   // --- 3. generators are deterministic and match what is committed ---------
   {
     const targets = ["rules/ux-rules.md", "skills/ux-laws/SKILL.md", "packages/web/deck-data.js"];
+    const missing = targets.filter((target) => !existsSync(join(worktree, target)));
     const hashOf = async () => {
       const out = [];
       for (const target of targets) {
@@ -149,26 +206,31 @@ try {
       }
       return out.join(" ");
     };
-    const before = await hashOf();
-    npm(["run", "--silent", "build:rules"]);
-    npm(["run", "--silent", "build:web"]);
-    const after = await hashOf();
-    const dirty = at(["status", "--porcelain"]).stdout.trim();
-
-    if (before !== after) {
-      record("generators", "fail", "regenerating changed committed output, so committed artifacts are stale");
-    } else if (dirty) {
-      record("generators", "fail", `regeneration left the checkout dirty: ${dirty.split("\n").slice(0, 3).join(", ")}`);
+    const before = missing.length === 0 ? await hashOf() : null;
+    if (missing.length > 0) {
+      record("generators", "fail",
+        `${missing.join(", ")} not in this commit; run the generators and commit their output`);
     } else {
-      record("generators", "pass", `byte-identical on re-run (${before})`);
+      npm(["run", "--silent", "build:rules"]);
+      npm(["run", "--silent", "build:web"]);
+      const after = await hashOf();
+      const dirty = at(["status", "--porcelain"]).stdout.trim();
+
+      if (before !== after) {
+        record("generators", "fail", "regenerating changed committed output, so committed artifacts are stale");
+      } else if (dirty) {
+        record("generators", "fail", `regeneration left the checkout dirty: ${dirty.split("\n").slice(0, 3).join(", ")}`);
+      } else {
+        record("generators", "pass", `byte-identical on re-run (${before})`);
+      }
+      record("working tree", dirty ? "fail" : "pass",
+        dirty ? `unexpected changes: ${dirty.split("\n").slice(0, 3).join(", ")}` : "clean after every generator ran");
     }
-    record("working tree", dirty ? "fail" : "pass",
-      dirty ? `unexpected changes: ${dirty.split("\n").slice(0, 3).join(", ")}` : "clean after every generator ran");
   }
 
   // --- 4. parametric SVG contract ------------------------------------------
   {
-    const require = createRequire(join(worktree, "scripts", "render-shim.cjs"));
+    const require = createRequire(join(worktree, "scripts", "svg.js"));
     const { renderSvg } = require("./svg.js");
     const dir = join(worktree, "data", "laws");
     const files = (await readdir(dir)).filter((name) => name.endsWith(".json")).sort();
@@ -185,13 +247,16 @@ try {
       if (/<filter|<image/.test(svg)) problems.push(`${card.id}: contains a filter or bitmap`);
       if (/#[0-9a-fA-F]{3,6}\b/.test(svg)) problems.push(`${card.id}: hardcoded colour instead of currentColor`);
 
-      // Every declared parameter must actually change the drawing. A parameter
-      // nothing reads is data promising a knob that does nothing.
-      for (const [key, value] of Object.entries(metaphor.parametricParams || {})) {
-        if (typeof value !== "number" && typeof value !== "string") continue;
+      // Every declared parameter must actually change the drawing, at any
+      // depth: a parameter nothing reads is data promising a knob that does
+      // nothing. Nested parameters count - an object parameter that is skipped
+      // would let a dead knob hide one level down and still report clean.
+      for (const path of leafPaths(metaphor.parametricParams || {})) {
         const probe = JSON.parse(JSON.stringify(metaphor));
-        probe.parametricParams[key] = typeof value === "number" ? (value === 0 ? 1 : value * 2) : `${value}X`;
-        if (renderSvg(probe) === svg) problems.push(`${card.id}: parameter "${key}" does not affect the drawing`);
+        setPath(probe.parametricParams, path, perturb(getPath(probe.parametricParams, path)));
+        if (renderSvg(probe) === svg) {
+          problems.push(`${card.id}: parameter "${path.join(".")}" does not affect the drawing`);
+        }
       }
     }
 
@@ -239,19 +304,23 @@ try {
 }
 
 // --- report -----------------------------------------------------------------
-console.log("");
-for (const { layer, state, detail } of results) {
-  const label = { pass: "PASS   ", fail: "FAIL   ", "not run": "NOT RUN" }[state];
-  console.log(`${label}  ${layer}`);
-  if (detail) console.log(`         ${detail}`);
+function report(rows, commit) {
+  console.log("");
+  for (const { layer, state, detail } of rows) {
+    const label = { pass: "PASS   ", fail: "FAIL   ", "not run": "NOT RUN" }[state];
+    console.log(`${label}  ${layer}`);
+    if (detail) console.log(`         ${detail}`);
+  }
+
+  const failed = rows.filter((r) => r.state === "fail").length;
+  const notRun = rows.filter((r) => r.state === "not run").length;
+  const passed = rows.filter((r) => r.state === "pass").length;
+  console.log("");
+  console.log(
+    `${passed} passed, ${failed} failed, ${notRun} not run — commit ${commit}` +
+      (notRun > 0 ? "\nNOT RUN means unproven, not accepted." : "")
+  );
+  return failed;
 }
 
-const failed = results.filter((r) => r.state === "fail").length;
-const notRun = results.filter((r) => r.state === "not run").length;
-const passed = results.filter((r) => r.state === "pass").length;
-console.log("");
-console.log(
-  `${passed} passed, ${failed} failed, ${notRun} not run — commit ${sha}` +
-    (notRun > 0 ? "\nNOT RUN means unproven, not accepted." : "")
-);
-process.exit(failed > 0 ? 1 : 0);
+finish();
