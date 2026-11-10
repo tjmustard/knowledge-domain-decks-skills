@@ -2478,3 +2478,52 @@ What this does not cover: a browser rendering the SVGs without the face still
 falls back to its own monospace, so the web viewer's labels can differ in
 metrics from the printed ones. The PDF is the artifact with the font inside it.
 The reproducibility claim is also still per Typst version (§29).
+
+## 66. Where two cards disagree, the ruling ships with the cards
+
+A cross-model audit of `skills/ux-laws/SKILL.md` found that the deck had no way
+to say two cards prescribe incompatible fixes. DEC-01 caps flat navigation at
+five to seven items while MPA-01's remedy reordered a 12-item bar and called it
+done; HMM-01 taught Cmd/Ctrl+K while its own check said never hijack a browser
+binding. An agent reading either card alone could follow it into the other's
+violation, and a reviewer had no rule for which finding wins. A register of
+"these two disagree" would have moved the decision back to the agent, so the
+register records a ruling.
+
+- **The register.** `decks/ux-laws/data/law-conflicts.json` holds one row per
+  tension: the cards (one id when the tension is inside a single card), the
+  subject, and a one-sentence ruling that begins with the winning card id and
+  says why. It is data beside the records, not prose in a review thread.
+- **The records follow the ruling.** MPA-01's remedy now groups the 12 items
+  into five to seven top-level destinations before placing Dashboard first and
+  Settings last, so the fix starts from a navigation DEC-01 permits. HMM-01's
+  remedy now calls `history.pushState`/`replaceState` (the History API is
+  imperative, not "declarative HTML5 History entries") and focuses search with
+  `/`, an app-level shortcut, rather than Cmd/Ctrl+K, which the browser already
+  owns. The card no longer teaches a binding its own check forbids.
+- **The precedence rules are in the skill.** `deck.json`'s `commonRules` gain
+  three: the narrower card outranks the broader one; removing the failure state
+  outranks rearranging around it; and a review that had to weigh a pair names
+  the pair and the card followed. The last one is what makes a judgement
+  checkable after the fact.
+- **The generator prints it.** When a deck has a register, `SKILL.md` carries a
+  "Known tensions" section after the common rules, one bullet per row. A deck
+  without the file writes the same bytes as before; only ux-laws moved.
+- **The validator holds the register to its own cards.** `checkConflicts`
+  rejects a row naming an id the deck does not have, a repeated card set, an
+  empty subject or ruling, and a ruling that does not begin with one of its own
+  cards and say "wins". Whether the reasoning is good remains a review
+  question.
+- **Content the audit found beside the register.** MPA-02 no longer asserts
+  that a second highlight "halves" the first - the source supports dilution,
+  not a quantity. MPA-04's third check no longer tells an agent to leave a real
+  mid-flow defect alone; it says to fix the defect on its own terms, because a
+  strong ending recolors memory rather than repairing experience.
+
+What this does not do: it asserts no severity or priority number. The audit
+asked for one, and nothing in the cited sources supports a card carrying a
+severity score; the operator's ruling was that the deck's own precedence is the
+part an agent can act on. Precedence is stated, severity is not. Because the UX
+card backs changed, `packages/prepress/dist/ux-laws.pdf` moves to 108 pages,
+1,060,341 bytes, sha256 `a556034d...`; the other nine decks' artifacts are
+unchanged.

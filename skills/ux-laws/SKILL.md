@@ -18,6 +18,21 @@ Rules that hold across every card:
 - Check the code in front of you; do not restyle unrelated code.
 - A checklist item that asks for a human-subject experiment cannot be
   satisfied by reading code. Say so rather than claiming it was done.
+- When two cards disagree, the narrower one wins: follow the card whose
+  scope is the screen in front of you, and do not average the two.
+- Where a fix can either remove a failure state or rearrange around it,
+  removing it outranks rearranging: a layout that avoids the violation
+  beats one that mitigates it.
+- Name the pairs you had to weigh in the review, and which card you
+  followed. A silent choice reads as an oversight; a stated one can be
+  checked. The settled pairs are listed under Known tensions.
+
+## Known tensions
+
+Two cards can prescribe incompatible fixes. Each row below is settled: the ruling names the card that wins, and the records have been rewritten to follow it. Read the ruling before choosing between the cards.
+
+- **DEC-01 vs MPA-01 — fixing a 12-item flat navigation.** DEC-01 wins: cap top-level navigation at five to seven items first, then place the critical destination first and the setting last within that shorter set.
+- **HMM-01 (within the card) — the Cmd/Ctrl+K search shortcut.** HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a binding the browser already owns cannot be taught as a convention, so the remedy uses / instead.
 
 ## Heuristic & Mental Models (11 cards)
 

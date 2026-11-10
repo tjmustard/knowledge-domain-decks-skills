@@ -1170,7 +1170,7 @@ window.UX_DECK = {
       ],
       "antiPattern": {
         "violation": "A web app rebinds the browser back button to internal tab switching and buries global search in the footer.",
-        "remediation": "Use declarative HTML5 History entries; keep search in a persistent header input with Cmd/Ctrl+K."
+        "remediation": "Call history.pushState or replaceState for back-button entries; keep search in a persistent header input focused with /, an app-level shortcut rather than a browser-reserved one like Cmd/Ctrl+K."
       },
       "graphicMetaphor": {
         "svgShape": "convention-grid",
@@ -1676,7 +1676,7 @@ window.UX_DECK = {
       ],
       "antiPattern": {
         "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
-        "remediation": "Place Dashboard first and Settings last, matching where scanning memory is strongest."
+        "remediation": "Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last."
       },
       "graphicMetaphor": {
         "svgShape": "decay-curve",
@@ -1707,7 +1707,7 @@ window.UX_DECK = {
       "trigger": "One row, button, or price is remembered while identical neighbors blur together.",
       "checklist": [
         {
-          "text": "Emphasize one item per view; a second highlight halves the first one's effect.",
+          "text": "Emphasize one item per view; every extra highlight competes with the one meant to stand out.",
           "kind": "code"
         },
         {
@@ -1818,7 +1818,7 @@ window.UX_DECK = {
           "kind": "code"
         },
         {
-          "text": "Do not spend effort smoothing a middle the ending will overwrite.",
+          "text": "Fix mid-flow defects on their own terms: a strong ending recolors the memory, it does not repair the experience.",
           "kind": "code"
         }
       ],

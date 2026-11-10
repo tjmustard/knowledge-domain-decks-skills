@@ -33,7 +33,10 @@
     "commonRules": [
       "Prefer the smallest change that removes the failure state.",
       "Check the code in front of you; do not restyle unrelated code.",
-      "A checklist item that asks for a human-subject experiment cannot be\n  satisfied by reading code. Say so rather than claiming it was done."
+      "A checklist item that asks for a human-subject experiment cannot be\n  satisfied by reading code. Say so rather than claiming it was done.",
+      "When two cards disagree, the narrower one wins: follow the card whose\n  scope is the screen in front of you, and do not average the two.",
+      "Where a fix can either remove a failure state or rearrange around it,\n  removing it outranks rearranging: a layout that avoids the violation\n  beats one that mitigates it.",
+      "Name the pairs you had to weigh in the review, and which card you\n  followed. A silent choice reads as an oversight; a stated one can be\n  checked. The settled pairs are listed under Known tensions."
     ],
     "footer": "Every card cites one primary paper; the citation travels with the card."
   },

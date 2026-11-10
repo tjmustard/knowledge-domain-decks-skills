@@ -17,7 +17,8 @@
  */
 import { mkdir, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import { deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, sourceLine, sourceShort, withCitation } from "../core/deck.mjs";
+import { conflictHeading } from "../core/law-conflicts.mjs";
+import { deckArgs, deckShape, loadCards, loadConflicts, loadDecks, resolveFromRoot, sourceLine, sourceShort, withCitation } from "../core/deck.mjs";
 
 // The provenance line is deliberately deck-neutral in its wording but names
 // the old data/ path: changing it would change the bytes of a shipped
@@ -133,7 +134,25 @@ function categorySlug(category) {
     .replace(/^-|-$/g, "");
 }
 
-function skillMarkdown(deck, shape, grouped, cardCount) {
+// The rulings travel with the cards. A register row that only said the two
+// cards disagree would move the decision back to the reader; each row here
+// names the winner, which is the thing an agent needs before it edits code.
+function tensionsMarkdown(conflicts) {
+  if (conflicts.length === 0) return [];
+  const out = [
+    "## Known tensions",
+    "",
+    "Two cards can prescribe incompatible fixes. Each row below is settled: the ruling names the card that wins, and the records have been rewritten to follow it. Read the ruling before choosing between the cards.",
+    ""
+  ];
+  for (const row of conflicts) {
+    out.push(`- **${conflictHeading(row)} — ${row.subject}.** ${row.ruling}`);
+  }
+  out.push("");
+  return out;
+}
+
+function skillMarkdown(deck, shape, grouped, cardCount, conflicts) {
   const description = deck.skill.description.replace(/\{cards\}/g, String(cardCount));
   // A block deck's card is indexed by the line its front prints under the
   // deck's own heading; the shipped decks keep the words they always had.
@@ -159,6 +178,7 @@ function skillMarkdown(deck, shape, grouped, cardCount) {
     out.push(...lines(rule).map((line, i) => (i === 0 ? `- ${line}` : line)));
   }
   out.push("");
+  out.push(...tensionsMarkdown(conflicts));
   for (const [category, items] of grouped) {
     if (items.length === 0) continue;
     const slug = categorySlug(category);
@@ -280,6 +300,7 @@ function oneLine(text) {
 async function generateDeck(deck) {
   const shape = deckShape(deck);
   const cards = (await loadCards(deck)).map((card) => withCitation(card, deck));
+  const conflicts = await loadConflicts(deck);
   const grouped = new Map(deck.categories.map((category) => [category, []]));
   for (const card of cards) {
     const key = shape.group(card);
@@ -292,7 +313,7 @@ async function generateDeck(deck) {
   await mkdir(dirname(rulesFile), { recursive: true });
   await mkdir(join(skillDir, "resources"), { recursive: true });
   await writeFile(rulesFile, rulesMarkdown(deck, shape, grouped));
-  await writeFile(join(skillDir, "SKILL.md"), skillMarkdown(deck, shape, grouped, cards.length));
+  await writeFile(join(skillDir, "SKILL.md"), skillMarkdown(deck, shape, grouped, cards.length, conflicts));
 
   const written = [];
   for (const [category, items] of grouped) {

@@ -11,7 +11,7 @@
   ],
   "antiPattern": {
     "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
-    "remediation": "Place Dashboard first and Settings last, matching where scanning memory is strongest."
+    "remediation": "Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last."
   },
   "graphicMetaphor": {
     "svgShape": "decay-curve",

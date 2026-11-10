@@ -13,7 +13,7 @@
   - Place core value propositions in the first rows and conversion actions in the last.
   - Pin frequent dropdown options to the top and summary categories to the bottom.
 - **Instead of:** A 12-item flat navigation menu buries the primary analytics dashboard in the middle.
-- **Do:** Place Dashboard first and Settings last, matching where scanning memory is strongest.
+- **Do:** Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last.
 - **Source:** Bennet B. Murdock Jr. (1962), *The Serial Position Effect of Free Recall*.
 
 ## MPA-02 — Von Restorff Effect (Isolation Effect)
@@ -21,7 +21,7 @@
 - **Axiom:** An item that differs from its neighbors is remembered better than the items around it.
 - **Apply when:** One row, button, or price is remembered while identical neighbors blur together.
 - **Check:**
-  - Emphasize one item per view; a second highlight halves the first one's effect.
+  - Emphasize one item per view; every extra highlight competes with the one meant to stand out.
   - Match the emphasis to the decision: the row people must recall gets the weight.
   - Test recall a day later, when the standout item is what remains. _(research: an experiment or a recorded run; not checkable from code)_
 - **Instead of:** Every plan card is bright blue, so none of the three is remembered.
@@ -47,7 +47,7 @@
 - **Check:**
   - End every flow on a clear confirmation that names what happens next.
   - Soften the most intense step: the peak sets the rating more than the middle.
-  - Do not spend effort smoothing a middle the ending will overwrite.
+  - Fix mid-flow defects on their own terms: a strong ending recolors the memory, it does not repair the experience.
 - **Instead of:** A fast checkout ends on a paywall error, so the whole flow is remembered as bad.
 - **Do:** The last screen thanks the person and confirms the order.
 - **Source:** Daniel Kahneman, Barbara L. Fredrickson, Charles A. Schreiber & Donald A. Redelmeier (1993), *When More Pain Is Preferred to Less: Adding a Better End*.

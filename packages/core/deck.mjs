@@ -252,6 +252,19 @@ export function orderCards(deck, cards) {
   });
 }
 
+// The known-tensions register, where a deck keeps one. It lives beside the
+// records rather than inside data/laws/ so that loading cards cannot mistake a
+// ruling for a card. A deck with no register simply has no tensions to print.
+export async function loadConflicts(deck) {
+  const file = join(deck.dir, "data", "law-conflicts.json");
+  try {
+    return JSON.parse(await readFile(file, "utf8"));
+  } catch (error) {
+    if (error.code === "ENOENT") return [];
+    throw new Error(`could not read ${file}: ${error.message}`);
+  }
+}
+
 export async function loadCards(deck) {
   const dir = join(deck.dir, "data", "laws");
   const files = (await readdir(dir))

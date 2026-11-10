@@ -1,0 +1,12 @@
+[
+  {
+    "cards": ["DEC-01", "MPA-01"],
+    "subject": "fixing a 12-item flat navigation",
+    "ruling": "DEC-01 wins: cap top-level navigation at five to seven items first, then place the critical destination first and the setting last within that shorter set."
+  },
+  {
+    "cards": ["HMM-01"],
+    "subject": "the Cmd/Ctrl+K search shortcut",
+    "ruling": "HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a binding the browser already owns cannot be taught as a convention, so the remedy uses / instead."
+  }
+]

@@ -20,7 +20,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Anti-pattern.** A web app rebinds the browser back button to internal tab switching and buries global search in the footer.
 
-**Fix.** Use declarative HTML5 History entries; keep search in a persistent header input with Cmd/Ctrl+K.
+**Fix.** Call history.pushState or replaceState for back-button entries; keep search in a persistent header input focused with /, an app-level shortcut rather than a browser-reserved one like Cmd/Ctrl+K.
 
 **Source.** Jakob Nielsen (2000). *Designing Web Usability: The Practice of Simplicity*. New Riders Publishing.
 
@@ -780,7 +780,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Anti-pattern.** A 12-item flat navigation menu buries the primary analytics dashboard in the middle.
 
-**Fix.** Place Dashboard first and Settings last, matching where scanning memory is strongest.
+**Fix.** Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last.
 
 **Source.** Bennet B. Murdock Jr. (1962). *The Serial Position Effect of Free Recall*. Journal of Experimental Psychology, 64(5), 482-488.
 
@@ -791,7 +791,7 @@ public-domain principle, when to check for it, and the concrete fix.
 **Apply when.** One row, button, or price is remembered while identical neighbors blur together.
 
 **Checklist.**
-- [ ] Emphasize one item per view; a second highlight halves the first one's effect.
+- [ ] Emphasize one item per view; every extra highlight competes with the one meant to stand out.
 - [ ] Match the emphasis to the decision: the row people must recall gets the weight.
 - [ ] Test recall a day later, when the standout item is what remains. _(research: an experiment or a recorded run; not checkable from code)_
 
@@ -827,7 +827,7 @@ public-domain principle, when to check for it, and the concrete fix.
 **Checklist.**
 - [ ] End every flow on a clear confirmation that names what happens next.
 - [ ] Soften the most intense step: the peak sets the rating more than the middle.
-- [ ] Do not spend effort smoothing a middle the ending will overwrite.
+- [ ] Fix mid-flow defects on their own terms: a strong ending recolors the memory, it does not repair the experience.
 
 **Anti-pattern.** A fast checkout ends on a paywall error, so the whole flow is remembered as bad.
 

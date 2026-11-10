@@ -18,10 +18,12 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
 import { checkSectionMap } from "../packages/core/law-sections.mjs";
+import { checkConflicts } from "../packages/core/law-conflicts.mjs";
 import {
   deckArgs,
   positionalArgs,
   loadCards,
+  loadConflicts,
   loadDeck,
   loadDecks,
   listDeckSlugs,
@@ -116,6 +118,7 @@ const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
 let total = 0;
 let sections = null;
+let tensions = null;
 for (const deck of decks) {
   const { schema, schemaPath, check } = await schemaFor(deck);
   const cards = await loadCards(deck);
@@ -131,22 +134,39 @@ for (const deck of decks) {
   // exactly one record. The map is committed, so this runs on a bare checkout;
   // the source document it was derived from is not needed here.
   const mapPath = join(deck.dir, "data", "law-sections.json");
-  if (!existsSync(mapPath)) continue;
-  const map = JSON.parse(await readFile(mapPath, "utf8"));
-  const result = checkSectionMap(cards, map);
-  if (result.problems.length > 0) {
-    ok = false;
-    for (const problem of result.problems) console.error(`FAIL section map — ${problem}`);
-    continue;
+  if (existsSync(mapPath)) {
+    const map = JSON.parse(await readFile(mapPath, "utf8"));
+    const result = checkSectionMap(cards, map);
+    if (result.problems.length > 0) {
+      ok = false;
+      for (const problem of result.problems) console.error(`FAIL section map — ${problem}`);
+      continue;
+    }
+    sections = `${deck.slug}: ${result.rows} row(s), ${result.deckNamed} with deckName, each matched by exactly one record`;
+    console.log(`OK: section map, ${sections}.`);
   }
-  sections = `${deck.slug}: ${result.rows} row(s), ${result.deckNamed} with deckName, each matched by exactly one record`;
-  console.log(`OK: section map, ${sections}.`);
+
+  // The known-tensions register, where a deck keeps one. Every ruling has to
+  // name a card that exists and the card it favours, so the generated section
+  // cannot decay into "these two disagree" without anyone noticing.
+  const conflictPath = join(deck.dir, "data", "law-conflicts.json");
+  if (existsSync(conflictPath)) {
+    const conflicts = await loadConflicts(deck);
+    const result = checkConflicts(conflicts, cards.map((card) => card.id));
+    if (result.problems.length > 0) {
+      ok = false;
+      for (const problem of result.problems) console.error(`FAIL known tensions — ${problem}`);
+      continue;
+    }
+    tensions = `${deck.slug}: ${result.rows} row(s), each naming the card that wins`;
+    console.log(`OK: known tensions, ${tensions}.`);
+  }
 }
 // The last deck's line would otherwise be read as the whole run.
 if (ok && decks.length > 1) {
   console.log(
     `OK: ${total} record(s) valid across ${decks.length} decks, each against its own schema` +
-      `${sections ? `; law-sections ${sections}` : ""}.`
+      `${sections ? `; law-sections ${sections}` : ""}${tensions ? `; known tensions ${tensions}` : ""}.`
   );
 }
 process.exit(ok ? 0 : 1);
