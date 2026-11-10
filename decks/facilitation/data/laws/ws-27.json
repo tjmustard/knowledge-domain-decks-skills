@@ -1,0 +1,43 @@
+{
+  "id": "WS-27",
+  "name": "Now-How-Wow Matrix",
+  "stage": "Convergent Decision",
+  "groupSize": "3–15",
+  "minutes": "25–40",
+  "difficulty": "intermediate",
+  "deliverable": "Idea classification across feasibility (Now), breakthrough (How), and original (Wow)",
+  "atAGlance": "3–15 people · 25–40 min · intermediate",
+  "steps": [
+    {
+      "text": "Post three columns, Now, How, and Wow, and define each in one sentence before anything is sorted."
+    },
+    {
+      "text": "Read every idea aloud once without debate so the group hears the whole set before judging any of it."
+    },
+    {
+      "text": "Sort each idea: Now if today's means can deliver it, How if it needs a route, Wow if it changes the offer."
+    },
+    {
+      "text": "For each How item, write the missing capability or experiment that would move it toward Now."
+    },
+    {
+      "text": "Choose one Now to schedule, one How to investigate, and one Wow to prototype, each with an owner."
+    }
+  ],
+  "failure": "Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.",
+  "intervention": "Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Widely used in innovation workshops; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 5,
+      "width": 170,
+      "depth": 160,
+      "chosen": 2
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "id": "WS-32",
+  "name": "Impromptu Networking",
+  "stage": "Liberating Structures",
+  "groupSize": "6–15+",
+  "minutes": "15–20",
+  "difficulty": "beginner",
+  "deliverable": "Three rapid rounds of paired micro-interviews establishing shared context",
+  "atAGlance": "6–15+ people · 15–20 min · beginner",
+  "steps": [
+    {
+      "text": "Open with two questions everyone will answer: the challenge you bring and the asset you offer this group."
+    },
+    {
+      "text": "Send people to stand and find a partner they do not work with day to day, then start a four-minute round."
+    },
+    {
+      "text": "Chime at two minutes and have the listener take the floor; close the round after both people have answered."
+    },
+    {
+      "text": "Run two more rounds with new partners, asking each person to sharpen the same two answers each time."
+    },
+    {
+      "text": "Close by asking a few people what changed in how they described their challenge or their offer."
+    }
+  ],
+  "failure": "One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.",
+  "intervention": "Stop the round on the chime and model the handoff: \"If you are mid-sentence, stop; your partner's two minutes start now.\"",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 3,
+      "gap": 32,
+      "dots": 4,
+      "tilt": 12
+    }
+  }
+}

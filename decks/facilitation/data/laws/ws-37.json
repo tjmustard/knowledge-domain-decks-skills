@@ -1,0 +1,48 @@
+{
+  "id": "WS-37",
+  "name": "Nine Whys",
+  "stage": "Liberating Structures",
+  "groupSize": "2–15",
+  "minutes": "20–35",
+  "difficulty": "intermediate",
+  "deliverable": "Progressive conversational excavation of intrinsic organizational purpose",
+  "atAGlance": "2–15 people · 20–35 min · intermediate",
+  "steps": [
+    {
+      "text": "Pair people and have one describe an activity or project they care about in a sentence or two."
+    },
+    {
+      "text": "Instruct the partner to ask \"Why is that important to you?\" and nothing else for the first rounds."
+    },
+    {
+      "text": "Keep asking why of each answer, following the chain rather than accepting the first reason."
+    },
+    {
+      "text": "Notice when the answer stops being about the task and starts naming a person or value worth serving."
+    },
+    {
+      "text": "Switch roles and run the same chain, then have each person state the purpose they reached in one line."
+    }
+  ],
+  "failure": "The partner accepts a general answer like \"because it matters\" and the chain stalls at a slogan instead of reaching a real purpose.",
+  "intervention": "Ask the follow-up once more: \"Why does that matter to you, specifically?\" Keep the silence until the answer gets concrete.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 4,
+      "gap": 64,
+      "dots": 3,
+      "tilt": -24
+    }
+  }
+}

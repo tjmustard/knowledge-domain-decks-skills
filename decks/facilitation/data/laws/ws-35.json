@@ -1,0 +1,48 @@
+{
+  "id": "WS-35",
+  "name": "25/10 Crowd Sourcing",
+  "stage": "Liberating Structures",
+  "groupSize": "15+",
+  "minutes": "20–30",
+  "difficulty": "intermediate",
+  "deliverable": "High-velocity anonymous card exchange scoring boldest breakthrough ideas",
+  "atAGlance": "15+ people · 20–30 min · intermediate",
+  "steps": [
+    {
+      "text": "Give everyone a card: write a bold action for the bottleneck on top and its first step below, with no name."
+    },
+    {
+      "text": "Have them draw five scoring rows on the back, ready to mark each card they see from one to five."
+    },
+    {
+      "text": "Run five shuffle rounds: pass cards continuously, stop, read the card in hand, discuss briefly, score privately."
+    },
+    {
+      "text": "Keep each round's score hidden from the author and leave earlier scores untouched."
+    },
+    {
+      "text": "Total the five scores and call the countdown from twenty-five down, reading out the highest cards."
+    }
+  ],
+  "failure": "Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.",
+  "intervention": "Say: \"A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale.\"",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 2,
+      "gap": 40,
+      "dots": 7,
+      "tilt": -14
+    }
+  }
+}

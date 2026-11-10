@@ -1,0 +1,40 @@
+{
+  "id": "WS-42",
+  "name": "Next Steps Commitment Canvas",
+  "stage": "Action Planning",
+  "groupSize": "3–10",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "Explicit contractual agreement covering resources, cadence, and sign-offs",
+  "atAGlance": "3–10 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Frame the canvas as a delivery charter: what the room signs today is what the team will be held to once the workshop ends."
+    },
+    {
+      "text": "Fill the sections together: scope, resources, review cadence, and the risks that could break the commitment."
+    },
+    {
+      "text": "Write the definition of done as a check that can pass or fail, not as an activity someone will keep working on."
+    },
+    {
+      "text": "Read the charter back, have each core member sign, and publish it where the team already looks for decisions."
+    }
+  ],
+  "failure": "Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.",
+  "intervention": "Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "A workshop charter format in wide use; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "action-steps",
+    "parametricParams": {
+      "steps": 4,
+      "rise": 24,
+      "run": 56,
+      "marker": 2
+    }
+  }
+}

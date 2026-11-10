@@ -1,0 +1,43 @@
+{
+  "id": "WS-12",
+  "name": "Reverse Brainstorming",
+  "stage": "Divergent Ideation",
+  "groupSize": "5–15",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "High-volume generation of ways to intentionally cause failure",
+  "atAGlance": "5–15 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Reframe the goal as sabotage: ask how to guarantee the failure you fear, and write that question where everyone can see it."
+    },
+    {
+      "text": "Send the room to write anti-solutions on red notes, one failure tactic per note, for a timed eight minutes."
+    },
+    {
+      "text": "Cluster the notes by failure vector, such as friction, opacity, latency, or overload, and name each cluster aloud."
+    },
+    {
+      "text": "Invert each cluster into a countermeasure on a green note, and insist on a mechanism rather than a negation."
+    },
+    {
+      "text": "Post each green note beside the red cluster it answers and read the strongest pair aloud."
+    }
+  ],
+  "failure": "Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.",
+  "intervention": "Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "A reversal technique long used in creativity training; no origin given in the source."
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 6,
+      "spread": 68,
+      "length": 118,
+      "offset": 14
+    }
+  }
+}

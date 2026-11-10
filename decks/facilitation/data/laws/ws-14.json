@@ -1,0 +1,43 @@
+{
+  "id": "WS-14",
+  "name": "Mash-up / Cross-Pollination",
+  "stage": "Divergent Ideation",
+  "groupSize": "3–15",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "Unconventional combinations of disparate technologies or business models",
+  "atAGlance": "3–15 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "State the premise: new concepts come from recombining mechanisms that already work in other domains."
+    },
+    {
+      "text": "List several external products and have the room write the mechanism behind each, never its brand or style."
+    },
+    {
+      "text": "Pair one extracted mechanism with your own customer problem and force a concept out of the collision."
+    },
+    {
+      "text": "Draft at least three mash-ups, naming the borrowed mechanism and what it changes in your context."
+    },
+    {
+      "text": "Present each mash-up as a mechanism transfer, and ask what behavior it changes, not what it looks like."
+    }
+  ],
+  "failure": "Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.",
+  "intervention": "Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Cross-pollination is a common creativity heuristic; no origin given in the source."
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 8,
+      "spread": 100,
+      "length": 146,
+      "offset": 22
+    }
+  }
+}

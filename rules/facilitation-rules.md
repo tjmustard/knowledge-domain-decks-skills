@@ -9,7 +9,7 @@ Every card answers the four questions a facilitator has in the room - how many, 
 
 ### WS-01 — Problem Framing Canvas
 
-**Deliverable.** A bounded problem statement with the user impact and the business cost written down.
+**Deliverable.** Bounded problem definition with user impact and business context
 
 **At a glance.** 5–15 people · 45–60 min · intermediate
 
@@ -18,3 +18,609 @@ Every card answers the four questions a facilitator has in the room - how many, 
 **The fix.** Strip the tool out of the sentence. Ask what happens in the workflow that costs measurable time or money; rewrite it without naming a product.
 
 **Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-02 — How Might We (HMW)
+
+**Deliverable.** Standardized opportunity statements ready for divergence
+
+**At a glance.** 1–15+ people · 15–30 min · beginner
+
+**When it goes wrong.** Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.
+
+**The fix.** Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-03 — 5 Whys Root Cause Analysis
+
+**Deliverable.** Uncovered underlying structural failures rather than symptoms
+
+**At a glance.** 1–10 people · 20–30 min · intermediate
+
+**When it goes wrong.** The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.
+
+**The fix.** Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-04 — Sailboat Retrospective
+
+**Deliverable.** Categorized operational anchors, wind, goals, and hidden rocks
+
+**At a glance.** 3–15 people · 30–45 min · beginner
+
+**When it goes wrong.** Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.
+
+**The fix.** Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-05 — Pre-Mortem Analysis
+
+**Deliverable.** Comprehensive catalog of catastrophic risks and preventative controls
+
+**At a glance.** 5–15 people · 45–60 min · advanced
+
+**When it goes wrong.** Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.
+
+**The fix.** Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Gary Klein (2007). *Performing a Project Premortem*. Harvard Business Review.
+
+### WS-06 — Hopes and Fears
+
+**Deliverable.** Calibrated baseline expectations and surfaced emotional hazards
+
+**At a glance.** 5–15+ people · 20–30 min · beginner
+
+**When it goes wrong.** Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.
+
+**The fix.** Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-07 — User Journey Mapping
+
+**Deliverable.** End-to-end temporal visualization of user touchpoints and pain points
+
+**At a glance.** 3–10 people · 60–90 min · intermediate
+
+**When it goes wrong.** The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.
+
+**The fix.** Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-08 — Empathy Mapping
+
+**Deliverable.** Synthesized user observations across Says, Thinks, Does, and Feels
+
+**At a glance.** 3–10 people · 30–45 min · beginner
+
+**When it goes wrong.** The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.
+
+**The fix.** Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-09 — Problem Tree Analysis
+
+**Deliverable.** Hierarchical root-cause, core challenge, and downstream effect tree
+
+**At a glance.** 5–15 people · 45–60 min · intermediate
+
+**When it goes wrong.** The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.
+
+**The fix.** Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-10 — Lightning Decision Jam (Framing)
+
+**Deliverable.** Rapid identification and re-framing of key operational blockers
+
+**At a glance.** 3–10 people · 30–40 min · beginner
+
+**When it goes wrong.** The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.
+
+**The fix.** Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+## Divergent Ideation
+
+### WS-11 — Crazy Eights
+
+**Deliverable.** Rapid individual generation of eight distinct interface or concept riffs
+
+**At a glance.** 1–15+ people · 10–15 min · beginner
+
+**When it goes wrong.** Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.
+
+**The fix.** Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Jake Knapp (2016). *Sprint*.
+
+### WS-12 — Reverse Brainstorming
+
+**Deliverable.** High-volume generation of ways to intentionally cause failure
+
+**At a glance.** 5–15 people · 30–45 min · intermediate
+
+**When it goes wrong.** Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.
+
+**The fix.** Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-13 — Round Robin Brainstorming
+
+**Deliverable.** Sequentially built, peer-iterated solution concepts
+
+**At a glance.** 5–12 people · 25–40 min · intermediate
+
+**When it goes wrong.** Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.
+
+**The fix.** Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-14 — Mash-up / Cross-Pollination
+
+**Deliverable.** Unconventional combinations of disparate technologies or business models
+
+**At a glance.** 3–15 people · 30–45 min · intermediate
+
+**When it goes wrong.** Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.
+
+**The fix.** Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-15 — Solution Sketching (4-Step)
+
+**Deliverable.** High-density, self-explanatory three-panel conceptual wireframes
+
+**At a glance.** 3–15 people · 60–90 min · advanced
+
+**When it goes wrong.** Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.
+
+**The fix.** Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Jake Knapp (2016). *Sprint*.
+
+### WS-16 — Brainwriting 6-3-5
+
+**Deliverable.** 108 structured ideas generated silently across six team members
+
+**At a glance.** 6 people · 30–45 min · intermediate
+
+**When it goes wrong.** Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.
+
+**The fix.** Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-17 — SCAMPER Ideation
+
+**Deliverable.** Systematic transformation of existing concepts using seven vectors
+
+**At a glance.** 3–10 people · 45–60 min · advanced
+
+**When it goes wrong.** Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.
+
+**The fix.** Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-18 — Worst Possible Idea
+
+**Deliverable.** De-inhibited concept space built by surfacing terrible alternatives
+
+**At a glance.** 3–15 people · 20–30 min · beginner
+
+**When it goes wrong.** Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.
+
+**The fix.** For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-19 — Analogous Inspiration
+
+**Deliverable.** Structural transfer of mechanisms from unrelated industrial domains
+
+**At a glance.** 5–15 people · 30–45 min · intermediate
+
+**When it goes wrong.** Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.
+
+**The fix.** Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-20 — Speed Boat Ideation
+
+**Deliverable.** Visual discovery of operational drag factors and mechanical engines
+
+**At a glance.** 3–12 people · 25–40 min · beginner
+
+**When it goes wrong.** Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.
+
+**The fix.** Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+## Convergent Decision
+
+### WS-21 — Impact vs. Effort Matrix
+
+**Deliverable.** 2x2 prioritization of quick wins, major projects, and time sinks
+
+**At a glance.** 3–15 people · 30–45 min · beginner
+
+**When it goes wrong.** Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.
+
+**The fix.** Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-22 — MoSCoW Prioritization
+
+**Deliverable.** Categorization into Must-have, Should-have, Could-have, Won't-have
+
+**At a glance.** 3–15 people · 30–45 min · beginner
+
+**When it goes wrong.** Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.
+
+**The fix.** Ask for the workaround on the spot. If one exists, demote the card and show how the sixty percent cap protects the date.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Dai Clegg (1994).
+
+### WS-23 — Dot Voting / Heatmapping
+
+**Deliverable.** Visual distribution of group attention across ideas without groupthink
+
+**At a glance.** 3–15+ people · 10–20 min · beginner
+
+**When it goes wrong.** Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.
+
+**The fix.** Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-24 — $100 Allocation Test
+
+**Deliverable.** Capital-constrained prioritization surfacing true value trade-offs
+
+**At a glance.** 3–12 people · 20–35 min · intermediate
+
+**When it goes wrong.** Peanut-buttering: the budget is split evenly across every item, so no trade-off is made and nothing is ranked.
+
+**The fix.** Reject a flat allocation and require one zero plus at least forty dollars on a single item; ask what that choice reveals.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-25 — 2x2 Trade-off Grids
+
+**Deliverable.** Flexible comparative evaluation across two arbitrary orthogonal axes
+
+**At a glance.** 3–12 people · 30–45 min · intermediate
+
+**When it goes wrong.** Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.
+
+**The fix.** Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-26 — Fist to Five Consensus
+
+**Deliverable.** Rapid non-binary consensus calibration and identification of dissent
+
+**At a glance.** 3–15+ people · 10–15 min · beginner
+
+**When it goes wrong.** The room chases unanimity, spending the session lifting threes to fives while a real blocker in the corner goes unheard.
+
+**The fix.** Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it to three, then re-vote.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-27 — Now-How-Wow Matrix
+
+**Deliverable.** Idea classification across feasibility (Now), breakthrough (How), and original (Wow)
+
+**At a glance.** 3–15 people · 25–40 min · intermediate
+
+**When it goes wrong.** Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.
+
+**The fix.** Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-28 — Decider Super-Vote
+
+**Deliverable.** Executive decision lock-in combining democratic heatmaps with authority
+
+**At a glance.** 5–12 people · 15–25 min · intermediate
+
+**When it goes wrong.** The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.
+
+**The fix.** Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides, the record names both.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Jake Knapp (2016). *Sprint*. Simon & Schuster.
+
+### WS-29 — Trade-off Sliders
+
+**Deliverable.** Hard ranking of competing technical attributes to eliminate ambiguity
+
+**At a glance.** 3–10 people · 20–30 min · advanced
+
+**When it goes wrong.** Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.
+
+**The fix.** Ask which end each candidate must give up. If the group cannot name a sacrifice, that candidate has not been compared.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-30 — Nu/Steer/Zweck Framework
+
+**Deliverable.** Strategic validation against organizational mandate and execution utility
+
+**At a glance.** 5–15 people · 30–45 min · advanced
+
+**When it goes wrong.** Purpose is recited as a slogan while the now-facts and steering levers stay vague, so every candidate passes.
+
+**The fix.** Ask what would change if the purpose were different. If nothing would, the purpose is decoration and the candidate is unvalidated.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+## Liberating Structures
+
+### WS-31 — 1-2-4-All
+
+**Deliverable.** Progressive silent reflection, paired synthesis, quartet convergence
+
+**At a glance.** 4–15+ people · 12–15 min · beginner
+
+**When it goes wrong.** The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.
+
+**The fix.** Restart the timer and say the first minute is solo: "When we talk early, the quickest voice sets the frame and the room stops thinking."
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-32 — Impromptu Networking
+
+**Deliverable.** Three rapid rounds of paired micro-interviews establishing shared context
+
+**At a glance.** 6–15+ people · 15–20 min · beginner
+
+**When it goes wrong.** One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.
+
+**The fix.** Stop the round on the chime and model the handoff: "If you are mid-sentence, stop; your partner's two minutes start now."
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-33 — TRIZ (Creative Destruction)
+
+**Deliverable.** Systematic cessation of self-sabotaging behaviors and counter-productive habits
+
+**At a glance.** 5–15+ people · 35–50 min · intermediate
+
+**When it goes wrong.** The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.
+
+**The fix.** Circle an obvious item yourself and say: "We cannot remove what we will not name. What else here are we pretending we do not do?"
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-34 — Troika Consulting
+
+**Deliverable.** Rapid triad peer consulting using back-turned active listening protocols
+
+**At a glance.** 3–15+ people · 30–45 min · intermediate
+
+**When it goes wrong.** The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.
+
+**The fix.** Say to the client: "Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming."
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-35 — 25/10 Crowd Sourcing
+
+**Deliverable.** High-velocity anonymous card exchange scoring boldest breakthrough ideas
+
+**At a glance.** 15+ people · 20–30 min · intermediate
+
+**When it goes wrong.** Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.
+
+**The fix.** Say: "A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale."
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-36 — Min Specs
+
+**Deliverable.** Ruthless reduction of operating protocols down to non-negotiable rules
+
+**At a glance.** 4–15 people · 40–50 min · advanced
+
+**When it goes wrong.** The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.
+
+**The fix.** Hold up one must and ask: "If we broke this tomorrow, what exactly would fail?" If no one can name the failure, cut it.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-37 — Nine Whys
+
+**Deliverable.** Progressive conversational excavation of intrinsic organizational purpose
+
+**At a glance.** 2–15 people · 20–35 min · intermediate
+
+**When it goes wrong.** The partner accepts a general answer like "because it matters" and the chain stalls at a slogan instead of reaching a real purpose.
+
+**The fix.** Ask the follow-up once more: "Why does that matter to you, specifically?" Keep the silence until the answer gets concrete.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-38 — Conversation Café
+
+**Deliverable.** Structured four-round dialogue suppressing cross-talk on contentious issues
+
+**At a glance.** 5–12 people · 45–60 min · beginner
+
+**When it goes wrong.** Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.
+
+**The fix.** Hold up the talking object and say: "No replies yet. We are here to understand, not to win; the debate round comes later."
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-39 — Wise Crowds
+
+**Deliverable.** Scaled peer advisory council consulting for individual challenge clients
+
+**At a glance.** 6–15+ people · 45–60 min · advanced
+
+**When it goes wrong.** Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.
+
+**The fix.** Turn the conversation back to the circle: "Advisors, talk to each other. Client, write only; your turn to answer comes at the end."
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-40 — What, So What, Now What?
+
+**Deliverable.** Ladder of inference progression: observations, interpretations, actions
+
+**At a glance.** 3–15+ people · 30–45 min · beginner
+
+**When it goes wrong.** The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.
+
+**The fix.** Point at the observation column and say: "Before we explain it, what did we actually see? Facts first; meaning next."
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+## Action Planning
+
+### WS-41 — Who-What-When Matrix
+
+**Deliverable.** Linear operational assignment of accountable owners and hard deadlines
+
+**At a glance.** 3–15 people · 20–30 min · beginner
+
+**When it goes wrong.** Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.
+
+**The fix.** Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-42 — Next Steps Commitment Canvas
+
+**Deliverable.** Explicit contractual agreement covering resources, cadence, and sign-offs
+
+**At a glance.** 3–10 people · 30–45 min · intermediate
+
+**When it goes wrong.** Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.
+
+**The fix.** Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+### WS-43 — Lean Canvas Experiment Matrix
+
+**Deliverable.** Translation of assumptions into falsifiable hypotheses and metrics
+
+**At a glance.** 3–10 people · 45–60 min · advanced
+
+**When it goes wrong.** Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.
+
+**The fix.** Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.
+
+**Provenance.** Source protocol: the steps follow the written script in the source.
+
+**Source.** Ash Maurya. *Running Lean*.
+
+### WS-44 — 15% Solutions
+
+**Deliverable.** Immediate identification of autonomous individual actions requiring no budget
+
+**At a glance.** 1–15+ people · 15–25 min · beginner
+
+**When it goes wrong.** The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.
+
+**The fix.** Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** Henri Lipmanowicz & Keith McCandless (2014). *The Surprising Power of Liberating Structures*.
+
+### WS-45 — SMART Action Roadmap
+
+**Deliverable.** Time-phased mapping of milestones adhering to SMART validation criteria
+
+**At a glance.** 3–12 people · 30–45 min · beginner
+
+**When it goes wrong.** Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.
+
+**The fix.** Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+**Source.** George T. Doran (1981). *There's a S.M.A.R.T. way to write management's goals and objectives*. Management Review.
+
+### WS-46 — RACI Alignment Mapping
+
+**Deliverable.** Structural assignment of Responsible, Accountable, Consulted, and Informed
+
+**At a glance.** 4–12 people · 45–60 min · intermediate
+
+**When it goes wrong.** Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.
+
+**The fix.** Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-47 — Assumption Test Card
+
+**Deliverable.** Scientific decomposition of hypotheses into verification tests and success thresholds
+
+**At a glance.** 2–10 people · 30–40 min · intermediate
+
+**When it goes wrong.** A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.
+
+**The fix.** Ask what result would prove the assumption wrong, then design the test so that result could actually appear.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.
+
+### WS-48 — Definition of Done Workshop
+
+**Deliverable.** Technical consensus alignment on quality gates for release readiness
+
+**At a glance.** 3–15 people · 40–60 min · advanced
+
+**When it goes wrong.** Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.
+
+**The fix.** Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.
+
+**Provenance.** Steps written for this deck from the method's public definition; the source has no protocol.

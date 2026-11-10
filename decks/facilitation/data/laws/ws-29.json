@@ -1,0 +1,43 @@
+{
+  "id": "WS-29",
+  "name": "Trade-off Sliders",
+  "stage": "Convergent Decision",
+  "groupSize": "3–10",
+  "minutes": "20–30",
+  "difficulty": "advanced",
+  "deliverable": "Hard ranking of competing technical attributes to eliminate ambiguity",
+  "atAGlance": "3–10 people · 20–30 min · advanced",
+  "steps": [
+    {
+      "text": "List the attributes that genuinely trade against each other, and drop any pair that moves together."
+    },
+    {
+      "text": "Draw a slider for each attribute with named ends, then mark the current position as the baseline."
+    },
+    {
+      "text": "For each candidate, move the sliders to show what choosing it requires and which attribute it sacrifices."
+    },
+    {
+      "text": "Rank candidates by the sacrifices the group can accept, not by a summed score."
+    },
+    {
+      "text": "Record the final slider settings and the sacrifice accepted for each choice, so the trade-off stays visible."
+    }
+  ],
+  "failure": "Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.",
+  "intervention": "Ask which end each candidate must give up. If the group cannot name a sacrifice, that candidate has not been compared.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Widely used in product trade-off workshops; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 7,
+      "width": 220,
+      "depth": 140,
+      "chosen": 7
+    }
+  }
+}

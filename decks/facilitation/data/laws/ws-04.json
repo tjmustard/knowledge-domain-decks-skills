@@ -1,0 +1,43 @@
+{
+  "id": "WS-04",
+  "name": "Sailboat Retrospective",
+  "stage": "Alignment & Framing",
+  "groupSize": "3–15",
+  "minutes": "30–45",
+  "difficulty": "beginner",
+  "deliverable": "Categorized operational anchors, wind, goals, and hidden rocks",
+  "atAGlance": "3–15 people · 30–45 min · beginner",
+  "steps": [
+    {
+      "text": "Draw the boat, island, wind, anchors, and reefs, and say what each one stands for here."
+    },
+    {
+      "text": "Give eight silent minutes: at least two winds, two anchors, and one reef per person."
+    },
+    {
+      "text": "Insist on complete sentences that name an artifact, handoff, or event, not a mood."
+    },
+    {
+      "text": "Post notes beside similar ones; stack yours under an existing card to show its weight."
+    },
+    {
+      "text": "Walk the wall together and name the two anchors this team can cut this cycle."
+    }
+  ],
+  "failure": "Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.",
+  "intervention": "Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "A common agile retrospective metaphor; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 76,
+      "angle": 64,
+      "reach": 88,
+      "grid": 2
+    }
+  }
+}

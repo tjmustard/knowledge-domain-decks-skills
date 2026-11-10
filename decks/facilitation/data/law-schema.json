@@ -42,13 +42,13 @@
     },
     "groupSize": {
       "type": "string",
-      "minLength": 2,
-      "maxLength": 12
+      "minLength": 1,
+      "maxLength": 5
     },
     "minutes": {
       "type": "string",
-      "minLength": 2,
-      "maxLength": 12
+      "minLength": 1,
+      "maxLength": 5
     },
     "difficulty": {
       "enum": [

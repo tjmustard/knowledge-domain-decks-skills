@@ -1,0 +1,43 @@
+{
+  "id": "WS-08",
+  "name": "Empathy Mapping",
+  "stage": "Alignment & Framing",
+  "groupSize": "3–10",
+  "minutes": "30–45",
+  "difficulty": "beginner",
+  "deliverable": "Synthesized user observations across Says, Thinks, Does, and Feels",
+  "atAGlance": "3–10 people · 30–45 min · beginner",
+  "steps": [
+    {
+      "text": "Draw four quadrants, Says, Thinks, Does, and Feels, and pin one real user in the center."
+    },
+    {
+      "text": "Fill Says and Does first from observed quotes and actions, not from assumptions."
+    },
+    {
+      "text": "Infer Thinks and Feels from the same observations and mark each inference as a guess."
+    },
+    {
+      "text": "Look for contradictions between what the user says and what they actually do."
+    },
+    {
+      "text": "Summarize the map in two sentences: the user's goal and the tension in the way."
+    }
+  ],
+  "failure": "The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.",
+  "intervention": "Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Widely used in design practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 70,
+      "angle": 58,
+      "reach": 96,
+      "grid": 2
+    }
+  }
+}

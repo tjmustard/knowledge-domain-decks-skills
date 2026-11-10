@@ -1,0 +1,48 @@
+{
+  "id": "WS-05",
+  "name": "Pre-Mortem Analysis",
+  "stage": "Alignment & Framing",
+  "groupSize": "5–15",
+  "minutes": "45–60",
+  "difficulty": "advanced",
+  "deliverable": "Comprehensive catalog of catastrophic risks and preventative controls",
+  "atAGlance": "5–15 people · 45–60 min · advanced",
+  "steps": [
+    {
+      "text": "Fast-forward: the initiative shipped and failed badly. State that as settled history, not a hypothetical."
+    },
+    {
+      "text": "Give six silent minutes to write the specific chain of events that produced the disaster."
+    },
+    {
+      "text": "Read every failure aloud, allowing no defense, explanation, or reassurance while the list grows."
+    },
+    {
+      "text": "Give each person three votes for failures that are both likely and fatal; keep the top three."
+    },
+    {
+      "text": "For each top failure, name the gate, check, or design change to build this month."
+    }
+  ],
+  "failure": "Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.",
+  "intervention": "Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Gary Klein"
+    ],
+    "year": 2007,
+    "title": "Performing a Project Premortem",
+    "publication": "Harvard Business Review"
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 108,
+      "angle": 30,
+      "reach": 120,
+      "grid": 6
+    }
+  }
+}

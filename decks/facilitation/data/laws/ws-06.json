@@ -1,0 +1,43 @@
+{
+  "id": "WS-06",
+  "name": "Hopes and Fears",
+  "stage": "Alignment & Framing",
+  "groupSize": "5–15+",
+  "minutes": "20–30",
+  "difficulty": "beginner",
+  "deliverable": "Calibrated baseline expectations and surfaced emotional hazards",
+  "atAGlance": "5–15+ people · 20–30 min · beginner",
+  "steps": [
+    {
+      "text": "Draw two columns, Hopes and Fears, and hand everyone notes in two colors."
+    },
+    {
+      "text": "Ask each person to write one hope and one fear about this work, silently and specifically."
+    },
+    {
+      "text": "Post the notes and read both columns aloud without rebutting anything yet."
+    },
+    {
+      "text": "Group the themes and name which fears point to a real risk the plan has not addressed."
+    },
+    {
+      "text": "Agree one action for the biggest fear and one signal that the hope is being met."
+    }
+  ],
+  "failure": "Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.",
+  "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A common workshop and agile team warm-up; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 96,
+      "angle": 44,
+      "reach": 70,
+      "grid": 3
+    }
+  }
+}

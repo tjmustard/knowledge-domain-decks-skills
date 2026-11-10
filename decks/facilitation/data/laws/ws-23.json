@@ -1,0 +1,43 @@
+{
+  "id": "WS-23",
+  "name": "Dot Voting / Heatmapping",
+  "stage": "Convergent Decision",
+  "groupSize": "3–15+",
+  "minutes": "10–20",
+  "difficulty": "beginner",
+  "deliverable": "Visual distribution of group attention across ideas without groupthink",
+  "atAGlance": "3–15+ people · 10–20 min · beginner",
+  "steps": [
+    {
+      "text": "Give each person five dots. Explain that all five may go on one idea or be spread across many."
+    },
+    {
+      "text": "Have everyone write their choices privately before approaching the wall, so no one follows a cursor."
+    },
+    {
+      "text": "Walk the wall in silence, place dots on the ideas themselves, and keep comments and gestures to yourself."
+    },
+    {
+      "text": "Step back and circle the three densest clusters, not the cards with the loudest advocates."
+    },
+    {
+      "text": "Invite those authors to explain the mechanism in one minute each, then open the discussion."
+    }
+  ],
+  "failure": "Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.",
+  "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in facilitation practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 7,
+      "width": 210,
+      "depth": 150,
+      "chosen": 5
+    }
+  }
+}

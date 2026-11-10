@@ -1,0 +1,43 @@
+{
+  "id": "WS-25",
+  "name": "2x2 Trade-off Grids",
+  "stage": "Convergent Decision",
+  "groupSize": "3–12",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "Flexible comparative evaluation across two arbitrary orthogonal axes",
+  "atAGlance": "3–12 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Name the two axes driving the deadlock, then check that one does not simply imply the other."
+    },
+    {
+      "text": "Label both ends of each axis in plain language and post the labels where the whole room can see them."
+    },
+    {
+      "text": "Place each candidate by arguing its position on one axis, then the other, against cards already placed."
+    },
+    {
+      "text": "Rename the quadrants for this decision and say what action each quadrant authorizes."
+    },
+    {
+      "text": "Choose at least one high-risk, high-value candidate and name the experiment that would de-risk it."
+    }
+  ],
+  "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.",
+  "intervention": "Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in strategy and design practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 4,
+      "width": 130,
+      "depth": 170,
+      "chosen": 4
+    }
+  }
+}

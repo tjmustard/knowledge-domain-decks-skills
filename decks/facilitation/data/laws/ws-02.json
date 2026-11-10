@@ -1,0 +1,46 @@
+{
+  "id": "WS-02",
+  "name": "How Might We (HMW)",
+  "stage": "Alignment & Framing",
+  "groupSize": "1–15+",
+  "minutes": "15–30",
+  "difficulty": "beginner",
+  "deliverable": "Standardized opportunity statements ready for divergence",
+  "atAGlance": "1–15+ people · 15–30 min · beginner",
+  "steps": [
+    {
+      "text": "Explain the three words: How assumes a path exists, Might permits failure, We shares ownership."
+    },
+    {
+      "text": "Post the validated pain points where everyone can read them before writing begins."
+    },
+    {
+      "text": "Each person silently drafts two to four questions per pain point, ten words or fewer."
+    },
+    {
+      "text": "Forbid solutions: rewrite any question that names a feature, screen, or tool."
+    },
+    {
+      "text": "Post the cards and cluster identical intents without speaking, merging duplicates."
+    },
+    {
+      "text": "Read one question from each cluster aloud and confirm it carries a usable constraint."
+    }
+  ],
+  "failure": "Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.",
+  "intervention": "Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in design thinking practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 84,
+      "angle": 22,
+      "reach": 78,
+      "grid": 3
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "WS-03",
+  "name": "5 Whys Root Cause Analysis",
+  "stage": "Alignment & Framing",
+  "groupSize": "1–10",
+  "minutes": "20–30",
+  "difficulty": "intermediate",
+  "deliverable": "Uncovered underlying structural failures rather than symptoms",
+  "atAGlance": "1–10 people · 20–30 min · intermediate",
+  "steps": [
+    {
+      "text": "Write the symptom as a fact: what happened, when, how many, and for how long. Agree it first."
+    },
+    {
+      "text": "Ask why that state was possible, and record the direct enabling condition at each level."
+    },
+    {
+      "text": "Reject 'a person forgot' as a stopping point; ask what let one action run unchecked."
+    },
+    {
+      "text": "Keep one primary chain, noting plausible side branches in the margin instead of chasing them."
+    },
+    {
+      "text": "Stop when you reach a policy, gate, or architecture choice this team can actually change."
+    }
+  ],
+  "failure": "The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.",
+  "intervention": "Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Developed by Sakichi Toyoda and used at Toyota; no single canonical publication."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 100,
+      "angle": 50,
+      "reach": 110,
+      "grid": 5
+    }
+  }
+}

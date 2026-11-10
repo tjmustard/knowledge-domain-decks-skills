@@ -1,0 +1,43 @@
+{
+  "id": "WS-16",
+  "name": "Brainwriting 6-3-5",
+  "stage": "Divergent Ideation",
+  "groupSize": "6",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "108 structured ideas generated silently across six team members",
+  "atAGlance": "6 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Seat six people, give each a sheet with three columns and five rows, and restate the question on the board."
+    },
+    {
+      "text": "For five minutes, each person writes three ideas, one per row, in the first column, in complete silence."
+    },
+    {
+      "text": "Pass every sheet one seat to the right, then each person reads it and adds three new ideas in the next column."
+    },
+    {
+      "text": "Repeat for five rounds so every sheet passes through every person and returns to its owner."
+    },
+    {
+      "text": "Collect the sheets, count the ideas, then cluster duplicates and themes before any discussion starts."
+    }
+  ],
+  "failure": "Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.",
+  "intervention": "Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A structured brainwriting format; no origin given in the source."
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 4,
+      "spread": 60,
+      "length": 92,
+      "offset": -26
+    }
+  }
+}

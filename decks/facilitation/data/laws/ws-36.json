@@ -1,0 +1,48 @@
+{
+  "id": "WS-36",
+  "name": "Min Specs",
+  "stage": "Liberating Structures",
+  "groupSize": "4–15",
+  "minutes": "40–50",
+  "difficulty": "advanced",
+  "deliverable": "Ruthless reduction of operating protocols down to non-negotiable rules",
+  "atAGlance": "4–15 people · 40–50 min · advanced",
+  "steps": [
+    {
+      "text": "State the purpose the group must achieve and write it where everyone can see it."
+    },
+    {
+      "text": "List every rule, policy, and habit the group currently treats as required, one per note."
+    },
+    {
+      "text": "Separate each item into must or should; move everything that is merely customary to the should pile."
+    },
+    {
+      "text": "Test each must by asking whether breaking it would still let the group achieve the stated purpose."
+    },
+    {
+      "text": "Discard anything that survives the test only by habit, then publish the small set that remains."
+    }
+  ],
+  "failure": "The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.",
+  "intervention": "Hold up one must and ask: \"If we broke this tomorrow, what exactly would fail?\" If no one can name the failure, cut it.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 3,
+      "gap": 52,
+      "dots": 8,
+      "tilt": 8
+    }
+  }
+}

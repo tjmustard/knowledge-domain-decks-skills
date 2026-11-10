@@ -1,0 +1,44 @@
+{
+  "id": "WS-11",
+  "name": "Crazy Eights",
+  "stage": "Divergent Ideation",
+  "groupSize": "1–15+",
+  "minutes": "10–15",
+  "difficulty": "beginner",
+  "deliverable": "Rapid individual generation of eight distinct interface or concept riffs",
+  "atAGlance": "1–15+ people · 10–15 min · beginner",
+  "steps": [
+    {
+      "text": "Give each person one sheet folded into eight boxes and state the rule: sixty seconds per box, no exceptions."
+    },
+    {
+      "text": "State the challenge once, then start the clock and call each box aloud so the room keeps pace."
+    },
+    {
+      "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, or inverted."
+    },
+    {
+      "text": "Call the final box, stop everyone exactly on time, and collect the sheets without discussing them."
+    }
+  ],
+  "failure": "Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.",
+  "intervention": "Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Jake Knapp"
+    ],
+    "year": 2016,
+    "title": "Sprint"
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 5,
+      "spread": 52,
+      "length": 100,
+      "offset": -20
+    }
+  }
+}

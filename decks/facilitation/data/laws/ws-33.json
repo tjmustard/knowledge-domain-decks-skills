@@ -1,0 +1,43 @@
+{
+  "id": "WS-33",
+  "name": "TRIZ (Creative Destruction)",
+  "stage": "Liberating Structures",
+  "groupSize": "5–15+",
+  "minutes": "35–50",
+  "difficulty": "intermediate",
+  "deliverable": "Systematic cessation of self-sabotaging behaviors and counter-productive habits",
+  "atAGlance": "5–15+ people · 35–50 min · intermediate",
+  "steps": [
+    {
+      "text": "Invert the goal: ask the room to design the worst possible version of the system, one that guarantees the failure they fear."
+    },
+    {
+      "text": "Have people draft in silence for two minutes, then build one ruinous list per table for eight minutes."
+    },
+    {
+      "text": "Audit each item honestly: ask whether the team already does this, even slightly, and mark every yes."
+    },
+    {
+      "text": "Pick the marked habit doing the most damage and name the first concrete thing to stop."
+    },
+    {
+      "text": "Assign an owner and a date to each cessation; do not replace it with a new improvement project."
+    }
+  ],
+  "failure": "The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.",
+  "intervention": "Circle an obvious item yourself and say: \"We cannot remove what we will not name. What else here are we pretending we do not do?\"",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "TRIZ originates with Genrich Altshuller; this creative-destruction version is the Liberating Structures adaptation."
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 4,
+      "gap": 44,
+      "dots": 5,
+      "tilt": -6
+    }
+  }
+}

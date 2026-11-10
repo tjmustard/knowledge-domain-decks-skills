@@ -1,0 +1,48 @@
+{
+  "id": "WS-40",
+  "name": "What, So What, Now What?",
+  "stage": "Liberating Structures",
+  "groupSize": "3–15+",
+  "minutes": "30–45",
+  "difficulty": "beginner",
+  "deliverable": "Ladder of inference progression: observations, interpretations, actions",
+  "atAGlance": "3–15+ people · 30–45 min · beginner",
+  "steps": [
+    {
+      "text": "Ask the group to list only what happened, one observation per note, with no interpretation or judgment."
+    },
+    {
+      "text": "Read the observations together and remove anything that already contains a cause or an opinion."
+    },
+    {
+      "text": "Ask what patterns or meaning the observations carry, and record the different readings side by side."
+    },
+    {
+      "text": "Turn to implications: what does this mean for the work or the people involved?"
+    },
+    {
+      "text": "Finish by naming concrete next actions, owners, and when the group will check them."
+    }
+  ],
+  "failure": "The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.",
+  "intervention": "Point at the observation column and say: \"Before we explain it, what did we actually see? Facts first; meaning next.\"",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 3,
+      "gap": 24,
+      "dots": 6,
+      "tilt": 24
+    }
+  }
+}

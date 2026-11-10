@@ -1,0 +1,47 @@
+{
+  "id": "WS-15",
+  "name": "Solution Sketching (4-Step)",
+  "stage": "Divergent Ideation",
+  "groupSize": "3–15",
+  "minutes": "60–90",
+  "difficulty": "advanced",
+  "deliverable": "High-density, self-explanatory three-panel conceptual wireframes",
+  "atAGlance": "3–15 people · 60–90 min · advanced",
+  "steps": [
+    {
+      "text": "Run four timed beats: silent gathering, rough ideation, eight quick variations, then a three-panel sketch."
+    },
+    {
+      "text": "First, have everyone review the framing and research silently and take notes without discussion."
+    },
+    {
+      "text": "Next, each person diagrams possible flows privately, then pushes the strongest one through eight one-minute riffs."
+    },
+    {
+      "text": "Finish with a three-panel storyboard that a stranger can follow without a spoken explanation."
+    },
+    {
+      "text": "Collect the sketches anonymously and hang them side by side for a silent read before any discussion."
+    }
+  ],
+  "failure": "Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.",
+  "intervention": "Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Jake Knapp"
+    ],
+    "year": 2016,
+    "title": "Sprint"
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 9,
+      "spread": 116,
+      "length": 158,
+      "offset": 0
+    }
+  }
+}

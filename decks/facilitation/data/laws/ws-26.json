@@ -1,0 +1,43 @@
+{
+  "id": "WS-26",
+  "name": "Fist to Five Consensus",
+  "stage": "Convergent Decision",
+  "groupSize": "3–15+",
+  "minutes": "10–15",
+  "difficulty": "beginner",
+  "deliverable": "Rapid non-binary consensus calibration and identification of dissent",
+  "atAGlance": "3–15+ people · 10–15 min · beginner",
+  "steps": [
+    {
+      "text": "Explain the scale: a fist blocks, one or two means reservations, three agrees, and four or five actively supports."
+    },
+    {
+      "text": "State the proposal in one sentence and give everyone a silent moment to choose a number."
+    },
+    {
+      "text": "Count down and reveal together, with eyes closed or screens hidden, so no one reads the room first."
+    },
+    {
+      "text": "Go to the lowest hand, ask what single change would raise it to three, then revise the proposal."
+    },
+    {
+      "text": "Re-vote once. When no fist or one remains, record the decision as made and stop chasing fives."
+    }
+  ],
+  "failure": "The room chases unanimity, spending the session lifting threes to fives while a real blocker in the corner goes unheard.",
+  "intervention": "Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it to three, then re-vote.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in consent-based decision practice; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 9,
+      "width": 200,
+      "depth": 120,
+      "chosen": 6
+    }
+  }
+}

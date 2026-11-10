@@ -1,0 +1,48 @@
+{
+  "id": "WS-34",
+  "name": "Troika Consulting",
+  "stage": "Liberating Structures",
+  "groupSize": "3–15+",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "Rapid triad peer consulting using back-turned active listening protocols",
+  "atAGlance": "3–15+ people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Form triads and assign one client and two consultants; run three ten-minute rounds so each person takes every role."
+    },
+    {
+      "text": "Give the client two minutes to state the challenge, what has been tried, and where they are stuck; consultants listen only."
+    },
+    {
+      "text": "Allow two minutes of clarifying questions about facts and constraints, then stop all advice until the next beat."
+    },
+    {
+      "text": "Have the client turn away or mute while the consultants talk to each other for five minutes about the real problem."
+    },
+    {
+      "text": "Turn the client back for one minute to name what was useful and the single next step they will try."
+    }
+  ],
+  "failure": "The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.",
+  "intervention": "Say to the client: \"Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming.\"",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 5,
+      "gap": 56,
+      "dots": 6,
+      "tilt": 20
+    }
+  }
+}

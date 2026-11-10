@@ -2020,7 +2020,7 @@
       out.push(
         '<path d="M ' + coord(x1) + " " + coord(y1) + " A " + coord(radius) + " " + coord(radius) +
         " 0 1 0 " + coord(x2) + " " + coord(y2) + '" fill="none" stroke="currentColor" ' +
-        'stroke-width="' + (2 - r * 0.3) + '" stroke-linecap="round"' + STROKE + "/>"
+        'stroke-width="' + (2 - r * 0.3) + '" stroke-linecap="round" ' + STROKE + "/>"
       );
     }
     var offset = (tilt * Math.PI) / 180;
@@ -2051,7 +2051,7 @@
     }
     out.push(
       '<path d="M ' + tops.map(function (t) { return coord(t[0]) + " " + coord(t[1]); }).join(" L ") +
-      '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"' + STROKE + "/>"
+      '" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" ' + STROKE + "/>"
     );
     var chosen = tops[(marker - 1) % steps];
     out.push(line(chosen[0], chosen[1], chosen[0], chosen[1] - 28, 2, 0.9));

@@ -1,0 +1,46 @@
+{
+  "id": "WS-43",
+  "name": "Lean Canvas Experiment Matrix",
+  "stage": "Action Planning",
+  "groupSize": "3–10",
+  "minutes": "45–60",
+  "difficulty": "advanced",
+  "deliverable": "Translation of assumptions into falsifiable hypotheses and metrics",
+  "atAGlance": "3–10 people · 45–60 min · advanced",
+  "steps": [
+    {
+      "text": "Reframe the feature list as assumptions: each item is a guess about customer behavior that no one has tested yet."
+    },
+    {
+      "text": "Take the riskiest assumption and write it as a falsifiable hypothesis naming the persona, the action, and the reason."
+    },
+    {
+      "text": "Choose the cheapest test that could prove it wrong: a landing page, a manual service, or a prototype walkthrough."
+    },
+    {
+      "text": "Set the pass threshold before running anything: the exact metric and the number that counts as a result."
+    },
+    {
+      "text": "Name the decision the result will trigger, so the room knows in advance what a failing test means for the plan."
+    }
+  ],
+  "failure": "Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.",
+  "intervention": "Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "Ash Maurya"
+    ],
+    "title": "Running Lean"
+  },
+  "figure": {
+    "svgShape": "action-steps",
+    "parametricParams": {
+      "steps": 5,
+      "rise": 28,
+      "run": 60,
+      "marker": 3
+    }
+  }
+}

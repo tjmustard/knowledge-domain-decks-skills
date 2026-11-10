@@ -2,11 +2,11 @@
   "id": "WS-01",
   "name": "Problem Framing Canvas",
   "stage": "Alignment & Framing",
-  "groupSize": "5\u201315",
-  "minutes": "45\u201360",
+  "groupSize": "5–15",
+  "minutes": "45–60",
   "difficulty": "intermediate",
-  "deliverable": "A bounded problem statement with the user impact and the business cost written down.",
-  "atAGlance": "5\u201315 people \u00b7 45\u201360 min \u00b7 intermediate",
+  "deliverable": "Bounded problem definition with user impact and business context",
+  "atAGlance": "5–15 people · 45–60 min · intermediate",
   "steps": [
     {
       "text": "State the boundary: this session defines the problem, not features or specifications."

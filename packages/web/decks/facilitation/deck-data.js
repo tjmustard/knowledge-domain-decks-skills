@@ -9,7 +9,7 @@ window.FACILITATION_DECK = {
       "groupSize": "5–15",
       "minutes": "45–60",
       "difficulty": "intermediate",
-      "deliverable": "A bounded problem statement with the user impact and the business cost written down.",
+      "deliverable": "Bounded problem definition with user impact and business context",
       "atAGlance": "5–15 people · 45–60 min · intermediate",
       "steps": [
         {
@@ -47,6 +47,2232 @@ window.FACILITATION_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"108\" y=\"98\" width=\"184\" height=\"184\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"108\" y1=\"134.8\" x2=\"292\" y2=\"134.8\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"144.8\" y1=\"98\" x2=\"144.8\" y2=\"282\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"108\" y1=\"171.6\" x2=\"292\" y2=\"171.6\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"181.6\" y1=\"98\" x2=\"181.6\" y2=\"282\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"108\" y1=\"208.4\" x2=\"292\" y2=\"208.4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218.4\" y1=\"98\" x2=\"218.4\" y2=\"282\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"108\" y1=\"245.2\" x2=\"292\" y2=\"245.2\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"255.2\" y1=\"98\" x2=\"255.2\" y2=\"282\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"278.8010753606722\" y2=\"128.43385246743418\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"278.8010753606722\" y1=\"128.43385246743418\" x2=\"269.9207003874933\" y2=\"129.8963641206314\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"278.8010753606722\" y1=\"128.43385246743418\" x2=\"275.2336494067988\" y2=\"136.6966287601599\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-02",
+      "name": "How Might We (HMW)",
+      "stage": "Alignment & Framing",
+      "groupSize": "1–15+",
+      "minutes": "15–30",
+      "difficulty": "beginner",
+      "deliverable": "Standardized opportunity statements ready for divergence",
+      "atAGlance": "1–15+ people · 15–30 min · beginner",
+      "steps": [
+        {
+          "text": "Explain the three words: How assumes a path exists, Might permits failure, We shares ownership."
+        },
+        {
+          "text": "Post the validated pain points where everyone can read them before writing begins."
+        },
+        {
+          "text": "Each person silently drafts two to four questions per pain point, ten words or fewer."
+        },
+        {
+          "text": "Forbid solutions: rewrite any question that names a feature, screen, or tool."
+        },
+        {
+          "text": "Post the cards and cluster identical intents without speaking, merging duplicates."
+        },
+        {
+          "text": "Read one question from each cluster aloud and confirm it carries a usable constraint."
+        }
+      ],
+      "failure": "Questions come out so broad they give no grip, or so narrow they hide a chosen feature inside the question.",
+      "intervention": "Ask what the user is trying to decide at that moment, then rewrite around that decision with one concrete constraint: steps, time, or cost.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in design thinking practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 84,
+          "angle": 22,
+          "reach": 78,
+          "grid": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"116\" y=\"106\" width=\"168\" height=\"168\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"116\" y1=\"148\" x2=\"284\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"158\" y1=\"106\" x2=\"158\" y2=\"274\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"116\" y1=\"190\" x2=\"284\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"106\" x2=\"200\" y2=\"274\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"116\" y1=\"232\" x2=\"284\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242\" y1=\"106\" x2=\"242\" y2=\"274\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"272.3203406562094\" y2=\"160.78068571355885\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"272.3203406562094\" y1=\"160.78068571355885\" x2=\"263.3808535039844\" y2=\"159.73877906937028\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"272.3203406562094\" y1=\"160.78068571355885\" x2=\"266.61358092462035\" y2=\"167.74006020886472\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-03",
+      "name": "5 Whys Root Cause Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "1–10",
+      "minutes": "20–30",
+      "difficulty": "intermediate",
+      "deliverable": "Uncovered underlying structural failures rather than symptoms",
+      "atAGlance": "1–10 people · 20–30 min · intermediate",
+      "steps": [
+        {
+          "text": "Write the symptom as a fact: what happened, when, how many, and for how long. Agree it first."
+        },
+        {
+          "text": "Ask why that state was possible, and record the direct enabling condition at each level."
+        },
+        {
+          "text": "Reject 'a person forgot' as a stopping point; ask what let one action run unchecked."
+        },
+        {
+          "text": "Keep one primary chain, noting plausible side branches in the margin instead of chasing them."
+        },
+        {
+          "text": "Stop when you reach a policy, gate, or architecture choice this team can actually change."
+        }
+      ],
+      "failure": "The chain ends at a name or splits into competing trees, so the room leaves with blame or a diagram instead of a fix.",
+      "intervention": "Say the person was the trigger, not the cause. Ask what safeguard was missing, and follow the one path that was necessary and sufficient.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Developed by Sakichi Toyoda and used at Toyota; no single canonical publication.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 100,
+          "angle": 50,
+          "reach": 110,
+          "grid": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"100\" y=\"90\" width=\"200\" height=\"200\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"123.33333333333334\" x2=\"300\" y2=\"123.33333333333334\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"133.33333333333334\" y1=\"90\" x2=\"133.33333333333334\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"156.66666666666669\" x2=\"300\" y2=\"156.66666666666669\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"166.66666666666669\" y1=\"90\" x2=\"166.66666666666669\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"190\" x2=\"300\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"223.33333333333334\" x2=\"300\" y2=\"223.33333333333334\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"233.33333333333334\" y1=\"90\" x2=\"233.33333333333334\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"256.66666666666663\" x2=\"300\" y2=\"256.66666666666663\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"266.66666666666663\" y1=\"90\" x2=\"266.66666666666663\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"270.7066370655193\" y2=\"105.73511125691242\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270.7066370655193\" y1=\"105.73511125691242\" x2=\"262.32439286254476\" y2=\"109.01199729730185\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270.7066370655193\" y1=\"105.73511125691242\" x2=\"268.93509571781203\" y2=\"114.55903562497924\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-04",
+      "name": "Sailboat Retrospective",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "Categorized operational anchors, wind, goals, and hidden rocks",
+      "atAGlance": "3–15 people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Draw the boat, island, wind, anchors, and reefs, and say what each one stands for here."
+        },
+        {
+          "text": "Give eight silent minutes: at least two winds, two anchors, and one reef per person."
+        },
+        {
+          "text": "Insist on complete sentences that name an artifact, handoff, or event, not a mood."
+        },
+        {
+          "text": "Post notes beside similar ones; stack yours under an existing card to show its weight."
+        },
+        {
+          "text": "Walk the wall together and name the two anchors this team can cut this cycle."
+        }
+      ],
+      "failure": "Anchors arrive as vague complaints and the room spends the hour on org-wide forces it cannot move.",
+      "intervention": "Ask which specific handoff broke and what was missing from it, then park company-level items on the perimeter and return to the boat.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "A common agile retrospective metaphor; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 76,
+          "angle": 64,
+          "reach": 88,
+          "grid": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"124\" y=\"114\" width=\"152\" height=\"152\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"124\" y1=\"164.66666666666666\" x2=\"276\" y2=\"164.66666666666666\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174.66666666666666\" y1=\"114\" x2=\"174.66666666666666\" y2=\"266\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"124\" y1=\"215.33333333333331\" x2=\"276\" y2=\"215.33333333333331\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"225.33333333333331\" y1=\"114\" x2=\"225.33333333333331\" y2=\"266\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"238.5766609174388\" y2=\"110.9061239256733\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"238.5766609174388\" y1=\"110.9061239256733\" x2=\"231.23615567324592\" y2=\"116.11352085311957\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"238.5766609174388\" y1=\"110.9061239256733\" x2=\"238.99244242858805\" y2=\"119.89651466996169\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-05",
+      "name": "Pre-Mortem Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15",
+      "minutes": "45–60",
+      "difficulty": "advanced",
+      "deliverable": "Comprehensive catalog of catastrophic risks and preventative controls",
+      "atAGlance": "5–15 people · 45–60 min · advanced",
+      "steps": [
+        {
+          "text": "Fast-forward: the initiative shipped and failed badly. State that as settled history, not a hypothetical."
+        },
+        {
+          "text": "Give six silent minutes to write the specific chain of events that produced the disaster."
+        },
+        {
+          "text": "Read every failure aloud, allowing no defense, explanation, or reassurance while the list grows."
+        },
+        {
+          "text": "Give each person three votes for failures that are both likely and fatal; keep the top three."
+        },
+        {
+          "text": "For each top failure, name the gate, check, or design change to build this month."
+        }
+      ],
+      "failure": "Owners defend the current plan as each risk is read, or the list fills with trivia, so the room rehearses reassurance instead of failure.",
+      "intervention": "Say the failure already happened and defense breaks the exercise. Ask what collapsed even with the controls in place, then push for the risk people only discuss privately.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Gary Klein"
+        ],
+        "year": 2007,
+        "title": "Performing a Project Premortem",
+        "publication": "Harvard Business Review",
+        "authorsLabel": "Gary Klein",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 108,
+          "angle": 30,
+          "reach": 120,
+          "grid": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"92\" y=\"82\" width=\"216\" height=\"216\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"112.85714285714286\" x2=\"308\" y2=\"112.85714285714286\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"122.85714285714286\" y1=\"82\" x2=\"122.85714285714286\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"143.71428571428572\" x2=\"308\" y2=\"143.71428571428572\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.71428571428572\" y1=\"82\" x2=\"153.71428571428572\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"174.57142857142856\" x2=\"308\" y2=\"174.57142857142856\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"184.57142857142856\" y1=\"82\" x2=\"184.57142857142856\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"205.42857142857144\" x2=\"308\" y2=\"205.42857142857144\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"215.42857142857144\" y1=\"82\" x2=\"215.42857142857144\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"236.28571428571428\" x2=\"308\" y2=\"236.28571428571428\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"246.28571428571428\" y1=\"82\" x2=\"246.28571428571428\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"267.1428571428571\" x2=\"308\" y2=\"267.1428571428571\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"277.1428571428571\" y1=\"82\" x2=\"277.1428571428571\" y2=\"298\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"303.92304845413264\" y2=\"130\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"303.92304845413264\" y1=\"130\" x2=\"294.92555439777607\" y2=\"130.2123692676182\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"303.92304845413264\" y1=\"130\" x2=\"299.24038424521393\" y2=\"137.68587378939517\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-06",
+      "name": "Hopes and Fears",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15+",
+      "minutes": "20–30",
+      "difficulty": "beginner",
+      "deliverable": "Calibrated baseline expectations and surfaced emotional hazards",
+      "atAGlance": "5–15+ people · 20–30 min · beginner",
+      "steps": [
+        {
+          "text": "Draw two columns, Hopes and Fears, and hand everyone notes in two colors."
+        },
+        {
+          "text": "Ask each person to write one hope and one fear about this work, silently and specifically."
+        },
+        {
+          "text": "Post the notes and read both columns aloud without rebutting anything yet."
+        },
+        {
+          "text": "Group the themes and name which fears point to a real risk the plan has not addressed."
+        },
+        {
+          "text": "Agree one action for the biggest fear and one signal that the hope is being met."
+        }
+      ],
+      "failure": "Fears soften into vague worries and hopes into cheerleading, so the board looks balanced but names no real hazard or expectation.",
+      "intervention": "Ask what would have to happen for that fear to come true this quarter, and write the answer on the card in place of the feeling.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A common workshop and agile team warm-up; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 96,
+          "angle": 44,
+          "reach": 70,
+          "grid": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"104\" y=\"94\" width=\"192\" height=\"192\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104\" y1=\"142\" x2=\"296\" y2=\"142\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"152\" y1=\"94\" x2=\"152\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104\" y1=\"190\" x2=\"296\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"94\" x2=\"200\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104\" y1=\"238\" x2=\"296\" y2=\"238\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248\" y1=\"94\" x2=\"248\" y2=\"286\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"250.3537860237056\" y2=\"141.3739140678702\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250.3537860237056\" y1=\"141.3739140678702\" x2=\"241.67493276941846\" y2=\"143.75666587839302\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250.3537860237056\" y1=\"141.3739140678702\" x2=\"247.66959811067647\" y2=\"149.96432356029536\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-07",
+      "name": "User Journey Mapping",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "60–90",
+      "difficulty": "intermediate",
+      "deliverable": "End-to-end temporal visualization of user touchpoints and pain points",
+      "atAGlance": "3–10 people · 60–90 min · intermediate",
+      "steps": [
+        {
+          "text": "Agree the persona, the goal, and where the journey starts and ends before drawing anything."
+        },
+        {
+          "text": "Lay out the stages in time order as columns and name each one from the user's point of view."
+        },
+        {
+          "text": "Under each stage, record what the user does, sees, and has to use to move forward."
+        },
+        {
+          "text": "Mark the pain points and the moments where users drop out or need help."
+        },
+        {
+          "text": "Walk the whole path once and circle the two transitions worth fixing first."
+        }
+      ],
+      "failure": "The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.",
+      "intervention": "Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A standard service design and UX method; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 120,
+          "angle": 15,
+          "reach": 132,
+          "grid": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"80\" y=\"70\" width=\"240\" height=\"240\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"80\" y1=\"110\" x2=\"320\" y2=\"110\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"70\" x2=\"120\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"80\" y1=\"150\" x2=\"320\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160\" y1=\"70\" x2=\"160\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"80\" y1=\"190\" x2=\"320\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"70\" x2=\"200\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"80\" y1=\"230\" x2=\"320\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240\" y1=\"70\" x2=\"240\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"80\" y1=\"270\" x2=\"320\" y2=\"270\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"70\" x2=\"280\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"327.50220907015705\" y2=\"155.83588604646727\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"327.50220907015705\" y1=\"155.83588604646727\" x2=\"318.7563319781858\" y2=\"153.71229618678797\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"327.50220907015705\" y1=\"155.83588604646727\" x2=\"320.98985225997325\" y2=\"162.0479073581542\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-08",
+      "name": "Empathy Mapping",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "Synthesized user observations across Says, Thinks, Does, and Feels",
+      "atAGlance": "3–10 people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Draw four quadrants, Says, Thinks, Does, and Feels, and pin one real user in the center."
+        },
+        {
+          "text": "Fill Says and Does first from observed quotes and actions, not from assumptions."
+        },
+        {
+          "text": "Infer Thinks and Feels from the same observations and mark each inference as a guess."
+        },
+        {
+          "text": "Look for contradictions between what the user says and what they actually do."
+        },
+        {
+          "text": "Summarize the map in two sentences: the user's goal and the tension in the way."
+        }
+      ],
+      "failure": "The team fills all four quadrants from memory in one pass, so Thinks and Feels become invented inner monologue and the map flatters the product.",
+      "intervention": "Ask for the quote or observed action behind each note; if there is none, move it to a to-verify corner and keep it out of the synthesis.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Widely used in design practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 70,
+          "angle": 58,
+          "reach": 96,
+          "grid": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"130\" y=\"120\" width=\"140\" height=\"140\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"166.66666666666666\" x2=\"270\" y2=\"166.66666666666666\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"176.66666666666666\" y1=\"120\" x2=\"176.66666666666666\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"213.33333333333331\" x2=\"270\" y2=\"213.33333333333331\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"223.33333333333331\" y1=\"120\" x2=\"223.33333333333331\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"250.87224936638768\" y2=\"108.5873827689831\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250.87224936638768\" y1=\"108.5873827689831\" x2=\"243.02763497952157\" y2=\"112.99896129841827\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250.87224936638768\" y1=\"108.5873827689831\" x2=\"250.34600145423872\" y2=\"117.57198421450971\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-09",
+      "name": "Problem Tree Analysis",
+      "stage": "Alignment & Framing",
+      "groupSize": "5–15",
+      "minutes": "45–60",
+      "difficulty": "intermediate",
+      "deliverable": "Hierarchical root-cause, core challenge, and downstream effect tree",
+      "atAGlance": "5–15 people · 45–60 min · intermediate",
+      "steps": [
+        {
+          "text": "Write the core problem on the trunk in one sentence with no cause or solution in it."
+        },
+        {
+          "text": "Ask why it exists and place each root cause below as a root; go two levels deep."
+        },
+        {
+          "text": "Ask what it causes and place each consequence above as a branch."
+        },
+        {
+          "text": "Check that every root and branch connects to the trunk, not to a neighbor."
+        },
+        {
+          "text": "Circle the roots this team can influence and agree which one to work on."
+        }
+      ],
+      "failure": "The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.",
+      "intervention": "Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Used in development and policy analysis; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 104,
+          "angle": 26,
+          "reach": 84,
+          "grid": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"96\" y=\"86\" width=\"208\" height=\"208\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"96\" y1=\"127.6\" x2=\"304\" y2=\"127.6\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137.6\" y1=\"86\" x2=\"137.6\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"96\" y1=\"169.2\" x2=\"304\" y2=\"169.2\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"179.2\" y1=\"86\" x2=\"179.2\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"96\" y1=\"210.8\" x2=\"304\" y2=\"210.8\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"220.8\" y1=\"86\" x2=\"220.8\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"96\" y1=\"252.4\" x2=\"304\" y2=\"252.4\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262.4\" y1=\"86\" x2=\"262.4\" y2=\"294\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"275.49869988913\" y2=\"153.1768236697175\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275.49869988913\" y1=\"153.1768236697175\" x2=\"266.50830914484163\" y2=\"152.76104215856824\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275.49869988913\" y1=\"153.1768236697175\" x2=\"270.29130296168375\" y2=\"160.51732891391038\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-10",
+      "name": "Lightning Decision Jam (Framing)",
+      "stage": "Alignment & Framing",
+      "groupSize": "3–10",
+      "minutes": "30–40",
+      "difficulty": "beginner",
+      "deliverable": "Rapid identification and re-framing of key operational blockers",
+      "atAGlance": "3–10 people · 30–40 min · beginner",
+      "steps": [
+        {
+          "text": "Set the timer and have everyone silently write the blockers they hit in this work, one per note."
+        },
+        {
+          "text": "Post, read, and dot-vote the blockers; keep the three the room feels most."
+        },
+        {
+          "text": "Rewrite each kept blocker as a How Might We question that points at the user's need."
+        },
+        {
+          "text": "Silently add solutions to the reframed questions, then vote again for the strongest."
+        },
+        {
+          "text": "Close by naming the one reframe the group will carry into the next working session."
+        }
+      ],
+      "failure": "The room votes on blockers but never reframes them, so the session ends with the same complaints it started with and no new opening.",
+      "intervention": "Take the top blocker and ask what opportunity hides in it; write the How Might We question on the board and make the room solve that instead.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Developed by AJ&Smart as a rapid workshop format; no single canonical publication.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "framing-square",
+        "parametricParams": {
+          "bounds": 88,
+          "angle": 70,
+          "reach": 118,
+          "grid": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"112\" y=\"102\" width=\"176\" height=\"176\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"127.14285714285714\" x2=\"288\" y2=\"127.14285714285714\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"137.14285714285714\" y1=\"102\" x2=\"137.14285714285714\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"152.28571428571428\" x2=\"288\" y2=\"152.28571428571428\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162.28571428571428\" y1=\"102\" x2=\"162.28571428571428\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"177.42857142857144\" x2=\"288\" y2=\"177.42857142857144\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.42857142857144\" y1=\"102\" x2=\"187.42857142857144\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"202.57142857142856\" x2=\"288\" y2=\"202.57142857142856\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"212.57142857142856\" y1=\"102\" x2=\"212.57142857142856\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"227.71428571428572\" x2=\"288\" y2=\"227.71428571428572\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237.71428571428572\" y1=\"102\" x2=\"237.71428571428572\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"112\" y1=\"252.85714285714286\" x2=\"288\" y2=\"252.85714285714286\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"262.8571428571429\" y1=\"102\" x2=\"262.8571428571429\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.22\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"190\" x2=\"240.35837691242892\" y2=\"79.11627074726282\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"190\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.35837691242892\" y1=\"79.11627074726282\" x2=\"233.60240492246413\" y2=\"85.06243274226524\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.35837691242892\" y1=\"79.11627074726282\" x2=\"241.71163245763236\" y2=\"88.01395018795836\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-11",
+      "name": "Crazy Eights",
+      "stage": "Divergent Ideation",
+      "groupSize": "1–15+",
+      "minutes": "10–15",
+      "difficulty": "beginner",
+      "deliverable": "Rapid individual generation of eight distinct interface or concept riffs",
+      "atAGlance": "1–15+ people · 10–15 min · beginner",
+      "steps": [
+        {
+          "text": "Give each person one sheet folded into eight boxes and state the rule: sixty seconds per box, no exceptions."
+        },
+        {
+          "text": "State the challenge once, then start the clock and call each box aloud so the room keeps pace."
+        },
+        {
+          "text": "At box five, name the fatigue and demand a different mechanism: zero-UI, automated, or inverted."
+        },
+        {
+          "text": "Call the final box, stop everyone exactly on time, and collect the sheets without discussing them."
+        }
+      ],
+      "failure": "Half-working looks like one polished box and seven empty ones: a participant treats the first sketch as a deliverable and the clock stops driving the work.",
+      "intervention": "Say: drop the detail, crude boxes and stick figures are the point. Move to the next box now, even if the last one is unfinished.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Jake Knapp"
+        ],
+        "year": 2016,
+        "title": "Sprint",
+        "authorsLabel": "Jake Knapp",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 5,
+          "spread": 52,
+          "length": 100,
+          "offset": -20
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"180\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"310\" x2=\"136.16288532109223\" y2=\"220.12059537008332\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"136.16288532109223\" cy=\"220.12059537008332\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"310\" x2=\"157.50489456561348\" y2=\"212.56299352147647\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6375000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"157.50489456561348\" cy=\"212.56299352147647\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"310\" x2=\"179.99999999999997\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7250000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"179.99999999999997\" cy=\"210\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"310\" x2=\"202.4951054343865\" y2=\"212.56299352147647\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8125\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"202.4951054343865\" cy=\"212.56299352147647\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"180\" y1=\"310\" x2=\"223.8371146789077\" y2=\"220.1205953700833\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"223.8371146789077\" cy=\"220.1205953700833\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-12",
+      "name": "Reverse Brainstorming",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "High-volume generation of ways to intentionally cause failure",
+      "atAGlance": "5–15 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Reframe the goal as sabotage: ask how to guarantee the failure you fear, and write that question where everyone can see it."
+        },
+        {
+          "text": "Send the room to write anti-solutions on red notes, one failure tactic per note, for a timed eight minutes."
+        },
+        {
+          "text": "Cluster the notes by failure vector, such as friction, opacity, latency, or overload, and name each cluster aloud."
+        },
+        {
+          "text": "Invert each cluster into a countermeasure on a green note, and insist on a mechanism rather than a negation."
+        },
+        {
+          "text": "Post each green note beside the red cluster it answers and read the strongest pair aloud."
+        }
+      ],
+      "failure": "Half-working looks like a wall of funny red notes and a thin green column: the room enjoyed describing failure and ran out of energy before the inversion.",
+      "intervention": "Close the sabotage round out loud, then require one green mechanism per red cluster before anyone may speak again.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "A reversal technique long used in creativity training; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 6,
+          "spread": 68,
+          "length": 118,
+          "offset": 14
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"214\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"148.0152373904519\" y2=\"212.17356643850508\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"148.0152373904519\" cy=\"212.17356643850508\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"172.86849841602583\" y2=\"199.40072523995678\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.62\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"172.86849841602583\" cy=\"199.40072523995678\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"200.0283317398329\" y2=\"192.83007004342863\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6900000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200.0283317398329\" cy=\"192.83007004342863\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"227.97166826016715\" y2=\"192.83007004342863\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.76\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"227.97166826016715\" cy=\"192.83007004342863\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"255.1315015839742\" y2=\"199.4007252399568\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8300000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"255.1315015839742\" cy=\"199.4007252399568\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214\" y1=\"310\" x2=\"279.98476260954817\" y2=\"212.17356643850508\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"279.98476260954817\" cy=\"212.17356643850508\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-13",
+      "name": "Round Robin Brainstorming",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–12",
+      "minutes": "25–40",
+      "difficulty": "intermediate",
+      "deliverable": "Sequentially built, peer-iterated solution concepts",
+      "atAGlance": "5–12 people · 25–40 min · intermediate",
+      "steps": [
+        {
+          "text": "Arrange seats in a circle and state the rule plainly: sketch, pass left, build, pass left, harden."
+        },
+        {
+          "text": "Round one: each person seeds a concept in zone one of their sheet, with a headline and a rough sketch."
+        },
+        {
+          "text": "Round two: pass left, read the seed, add one enhancement in zone two, and neither erase nor evaluate."
+        },
+        {
+          "text": "Round three: pass left again, name the concept's biggest failure point in zone three, and design a patch."
+        },
+        {
+          "text": "Return each sheet to its originator and have them read the chain of additions aloud to the group."
+        }
+      ],
+      "failure": "Half-working looks like zone two filled with objections to the seed instead of additions: the chain stops evolving and each sheet becomes three separate opinions.",
+      "intervention": "Say: accept the seed as a given and answer it with yes-and. Replace any critique in zone two with one concrete enhancement.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "A long-standing group technique for chained iteration; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 7,
+          "spread": 84,
+          "length": 132,
+          "offset": -8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"192\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"103.67475996063071\" y2=\"211.90488303698396\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"103.67475996063071\" cy=\"211.90488303698396\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"130.0297537122624\" y2=\"193.45091774262164\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6083333333333334\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"130.0297537122624\" cy=\"193.45091774262164\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"160.06630978084385\" y2=\"181.92096413156847\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6666666666666667\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160.06630978084385\" cy=\"181.92096413156847\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"192\" y2=\"178\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7250000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"192\" cy=\"178\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"223.93369021915612\" y2=\"181.92096413156847\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7833333333333333\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"223.93369021915612\" cy=\"181.92096413156847\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"253.9702462877376\" y2=\"193.45091774262164\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8416666666666668\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"253.9702462877376\" cy=\"193.45091774262164\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"192\" y1=\"310\" x2=\"280.3252400393693\" y2=\"211.90488303698396\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280.3252400393693\" cy=\"211.90488303698396\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-14",
+      "name": "Mash-up / Cross-Pollination",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "Unconventional combinations of disparate technologies or business models",
+      "atAGlance": "3–15 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "State the premise: new concepts come from recombining mechanisms that already work in other domains."
+        },
+        {
+          "text": "List several external products and have the room write the mechanism behind each, never its brand or style."
+        },
+        {
+          "text": "Pair one extracted mechanism with your own customer problem and force a concept out of the collision."
+        },
+        {
+          "text": "Draft at least three mash-ups, naming the borrowed mechanism and what it changes in your context."
+        },
+        {
+          "text": "Present each mash-up as a mechanism transfer, and ask what behavior it changes, not what it looks like."
+        }
+      ],
+      "failure": "Half-working looks like concepts that borrow the logo and nothing else: the mash-up stays cosmetic, producing a theme instead of a working mechanism.",
+      "intervention": "Ask what the borrowed product actually changes in user behavior, then require that behavior mechanism in the concept before it counts.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Cross-pollination is a common creativity heuristic; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 8,
+          "spread": 100,
+          "length": 146,
+          "offset": 22
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"222\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"110.15751130462922\" y2=\"216.15300898576524\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110.15751130462922\" cy=\"216.15300898576524\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"136.77342385372071\" y2=\"191.45705116548493\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6000000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"136.77342385372071\" cy=\"191.45705116548493\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"168.66021044250635\" y2=\"174.09243269794615\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"168.66021044250635\" cy=\"174.09243269794615\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"203.84581912146717\" y2=\"165.13307583637487\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7000000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"203.84581912146717\" cy=\"165.13307583637487\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"240.15418087853286\" y2=\"165.13307583637487\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240.15418087853286\" cy=\"165.13307583637487\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"275.3397895574937\" y2=\"174.0924326979462\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"275.3397895574937\" cy=\"174.0924326979462\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"307.22657614627934\" y2=\"191.45705116548496\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8500000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"307.22657614627934\" cy=\"191.45705116548496\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222\" y1=\"310\" x2=\"333.8424886953708\" y2=\"216.15300898576527\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"333.8424886953708\" cy=\"216.15300898576527\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-15",
+      "name": "Solution Sketching (4-Step)",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "60–90",
+      "difficulty": "advanced",
+      "deliverable": "High-density, self-explanatory three-panel conceptual wireframes",
+      "atAGlance": "3–15 people · 60–90 min · advanced",
+      "steps": [
+        {
+          "text": "Run four timed beats: silent gathering, rough ideation, eight quick variations, then a three-panel sketch."
+        },
+        {
+          "text": "First, have everyone review the framing and research silently and take notes without discussion."
+        },
+        {
+          "text": "Next, each person diagrams possible flows privately, then pushes the strongest one through eight one-minute riffs."
+        },
+        {
+          "text": "Finish with a three-panel storyboard that a stranger can follow without a spoken explanation."
+        },
+        {
+          "text": "Collect the sketches anonymously and hang them side by side for a silent read before any discussion."
+        }
+      ],
+      "failure": "Half-working looks like a sketch of arrows and empty boxes that only its author can narrate: the idea dies the moment the author steps away.",
+      "intervention": "Ask whether a stranger could follow the sketch without you, then add real headlines, button labels, and callouts until the answer is yes.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Jake Knapp"
+        ],
+        "year": 2016,
+        "title": "Sprint",
+        "authorsLabel": "Jake Knapp",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 9,
+          "spread": 116,
+          "length": 158,
+          "offset": 0
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"66.00840080728469\" y2=\"226.27275625115362\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"66.00840080728469\" cy=\"226.27275625115362\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"91.2399770403869\" y2=\"195.39084938005854\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.59375\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"91.2399770403869\" cy=\"195.39084938005854\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"123.40008000107875\" y2=\"171.81008627197545\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6375000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"123.40008000107875\" cy=\"171.81008627197545\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"160.43995935939824\" y2=\"157.03267282025897\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.68125\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160.43995935939824\" cy=\"157.03267282025897\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"200\" y2=\"152\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7250000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"152\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"239.56004064060176\" y2=\"157.03267282025897\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.76875\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"239.56004064060176\" cy=\"157.03267282025897\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"276.5999199989213\" y2=\"171.81008627197548\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8125\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"276.5999199989213\" cy=\"171.81008627197548\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"308.76002295961314\" y2=\"195.39084938005857\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.85625\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"308.76002295961314\" cy=\"195.39084938005857\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"310\" x2=\"333.9915991927153\" y2=\"226.27275625115362\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"333.9915991927153\" cy=\"226.27275625115362\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-16",
+      "name": "Brainwriting 6-3-5",
+      "stage": "Divergent Ideation",
+      "groupSize": "6",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "108 structured ideas generated silently across six team members",
+      "atAGlance": "6 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Seat six people, give each a sheet with three columns and five rows, and restate the question on the board."
+        },
+        {
+          "text": "For five minutes, each person writes three ideas, one per row, in the first column, in complete silence."
+        },
+        {
+          "text": "Pass every sheet one seat to the right, then each person reads it and adds three new ideas in the next column."
+        },
+        {
+          "text": "Repeat for five rounds so every sheet passes through every person and returns to its owner."
+        },
+        {
+          "text": "Collect the sheets, count the ideas, then cluster duplicates and themes before any discussion starts."
+        }
+      ],
+      "failure": "Half-working looks like columns of restatements: people copy the idea above and change a word, so five rounds produce one idea written fifteen ways.",
+      "intervention": "Before each pass, require that new ideas answer a different part of the question or change the mechanism, not just the wording.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A structured brainwriting format; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 4,
+          "spread": 60,
+          "length": 92,
+          "offset": -26
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"174\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174\" y1=\"310\" x2=\"128.00000000000003\" y2=\"230.32566285183162\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"128.00000000000003\" cy=\"230.32566285183162\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174\" y1=\"310\" x2=\"158.02436765464245\" y2=\"219.39768672287687\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6666666666666667\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"158.02436765464245\" cy=\"219.39768672287687\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174\" y1=\"310\" x2=\"189.9756323453576\" y2=\"219.39768672287687\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7833333333333333\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"189.9756323453576\" cy=\"219.39768672287687\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"174\" y1=\"310\" x2=\"220\" y2=\"230.32566285183165\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"220\" cy=\"230.32566285183165\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-17",
+      "name": "SCAMPER Ideation",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–10",
+      "minutes": "45–60",
+      "difficulty": "advanced",
+      "deliverable": "Systematic transformation of existing concepts using seven vectors",
+      "atAGlance": "3–10 people · 45–60 min · advanced",
+      "steps": [
+        {
+          "text": "Put an existing concept in front of the room and list the seven prompts: substitute, combine, adapt, modify, repurpose, eliminate, reverse."
+        },
+        {
+          "text": "Work one prompt at a time, asking what would change in the concept if that verb were mandatory."
+        },
+        {
+          "text": "Write one concrete variant per prompt rather than a general suggestion, keeping the original visible."
+        },
+        {
+          "text": "Group the variants by the prompt that produced them so the room sees which vectors yielded most."
+        },
+        {
+          "text": "Choose the variants worth developing and record the prompt that produced each one."
+        }
+      ],
+      "failure": "Half-working looks like ordinary ideas with a verb written beside each: the prompts decorate the output instead of forcing a specific change.",
+      "intervention": "Take one prompt and make it a constraint: name exactly what is eliminated, reversed, or substituted, and say what breaks as a result.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A seven-prompt creativity checklist used in ideation workshops; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 6,
+          "spread": 132,
+          "length": 122,
+          "offset": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"208\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"96.54745416760268\" y2=\"260.37812954475237\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"96.54745416760268\" cy=\"260.37812954475237\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"130.23427325065984\" y2=\"215.9973843813537\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.62\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"130.23427325065984\" cy=\"215.9973843813537\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"180.14119384649996\" y2=\"191.22337384947446\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6900000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"180.14119384649996\" cy=\"191.22337384947446\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"235.85880615349996\" y2=\"191.22337384947446\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.76\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"235.85880615349996\" cy=\"191.22337384947446\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"285.76572674934016\" y2=\"215.9973843813537\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8300000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"285.76572674934016\" cy=\"215.9973843813537\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"310\" x2=\"319.4525458323973\" y2=\"260.37812954475237\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"319.4525458323973\" cy=\"260.37812954475237\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-18",
+      "name": "Worst Possible Idea",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–15",
+      "minutes": "20–30",
+      "difficulty": "beginner",
+      "deliverable": "De-inhibited concept space built by surfacing terrible alternatives",
+      "atAGlance": "3–15 people · 20–30 min · beginner",
+      "steps": [
+        {
+          "text": "Set the challenge, then invert it: ask for the worst possible way to handle it, the more useless the better."
+        },
+        {
+          "text": "Give a short timed round where people write or call out deliberately terrible ideas without defending them."
+        },
+        {
+          "text": "Read the worst ideas aloud and let the room laugh; the point is to lower the cost of saying something."
+        },
+        {
+          "text": "For each bad idea, ask what requirement it insults, then write the opposite or the fix it implies."
+        },
+        {
+          "text": "Keep the strongest flips and drop the jokes that carry no requirement."
+        }
+      ],
+      "failure": "Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.",
+      "intervention": "For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A warm-up used in ideation workshops; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 7,
+          "spread": 148,
+          "length": 104,
+          "offset": -14
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"186\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"86.02878362241484\" y2=\"281.3337149950321\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"86.02878362241484\" cy=\"281.3337149950321\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"107.11458733171763\" y2=\"242.22764820256864\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6083333333333334\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"107.11458733171763\" cy=\"242.22764820256864\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"142.59680073389094\" y2=\"215.48988258674933\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6666666666666667\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"142.59680073389094\" cy=\"215.48988258674933\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"186\" y2=\"206\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7250000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"186\" cy=\"206\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"229.40319926610908\" y2=\"215.48988258674933\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7833333333333333\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"229.40319926610908\" cy=\"215.48988258674933\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"264.88541266828236\" y2=\"242.22764820256867\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8416666666666668\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"264.88541266828236\" cy=\"242.22764820256867\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186\" y1=\"310\" x2=\"285.97121637758516\" y2=\"281.3337149950321\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"285.97121637758516\" cy=\"281.3337149950321\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-19",
+      "name": "Analogous Inspiration",
+      "stage": "Divergent Ideation",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "Structural transfer of mechanisms from unrelated industrial domains",
+      "atAGlance": "5–15 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Name the problem as a function, such as routing, matching, or recovery, and strip out your industry's vocabulary."
+        },
+        {
+          "text": "Send people to find how unrelated domains solve that same function, one example per person or pair."
+        },
+        {
+          "text": "For each example, extract the mechanism in a sentence: what it does and what makes it work."
+        },
+        {
+          "text": "Map each mechanism onto your problem and write the transfer, naming what changes in your context."
+        },
+        {
+          "text": "Present the transfers as mechanisms, then mark which ones need evidence before the room trusts them."
+        }
+      ],
+      "failure": "Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.",
+      "intervention": "Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A standard design-research technique; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 8,
+          "spread": 76,
+          "length": 136,
+          "offset": 18
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"218\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"134.27003935571048\" y2=\"202.8305375094858\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"134.27003935571048\" cy=\"202.8305375094858\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"155.95535059996985\" y2=\"188.9774340016403\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6000000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155.95535059996985\" cy=\"188.9774340016403\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"179.86187505438363\" y2=\"179.4569671501671\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.65\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"179.86187505438363\" cy=\"179.4569671501671\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"205.13375345565493\" y2=\"174.60997193345395\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7000000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"205.13375345565493\" cy=\"174.60997193345395\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"230.86624654434502\" y2=\"174.60997193345395\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"230.86624654434502\" cy=\"174.60997193345395\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"256.13812494561637\" y2=\"179.4569671501671\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"256.13812494561637\" cy=\"179.4569671501671\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"280.04464940003015\" y2=\"188.97743400164026\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8500000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280.04464940003015\" cy=\"188.97743400164026\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"310\" x2=\"301.7299606442895\" y2=\"202.8305375094858\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"301.7299606442895\" cy=\"202.8305375094858\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-20",
+      "name": "Speed Boat Ideation",
+      "stage": "Divergent Ideation",
+      "groupSize": "3–12",
+      "minutes": "25–40",
+      "difficulty": "beginner",
+      "deliverable": "Visual discovery of operational drag factors and mechanical engines",
+      "atAGlance": "3–12 people · 25–40 min · beginner",
+      "steps": [
+        {
+          "text": "Draw a boat labeled with the product or team, a destination, and an empty sea around it."
+        },
+        {
+          "text": "Ask people to add anchors for everything slowing progress and engines for everything speeding it up."
+        },
+        {
+          "text": "Have each person explain one anchor and one engine, placing the notes on the drawing."
+        },
+        {
+          "text": "Cluster the anchors and engines by theme, then rank which anchors should be cut first."
+        },
+        {
+          "text": "Turn the top anchors into commitments and name the engines the team must protect."
+        }
+      ],
+      "failure": "Half-working looks like a decorated boat with dozens of anchors and no ranking: the drawing captures complaints but produces no decision about what to cut.",
+      "intervention": "Ask the room to pick the two anchors that cost the most progress this month, and assign each one an owner before moving on.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A visual retrospective format; no origin given in the source.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "divergent-fan",
+        "parametricParams": {
+          "rays": 9,
+          "spread": 96,
+          "length": 88,
+          "offset": -4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"196\" cy=\"310\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"130.60325535798933\" y2=\"251.11650664042045\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"130.60325535798933\" cy=\"251.11650664042045\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"144.27489779826237\" y2=\"238.80650449500462\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.59375\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"144.27489779826237\" cy=\"238.80650449500462\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"160.20717540932958\" y2=\"229.6079997274511\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.6375000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160.20717540932958\" cy=\"229.6079997274511\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"177.7037712080372\" y2=\"223.9230111354251\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.68125\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"177.7037712080372\" cy=\"223.9230111354251\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"196\" y2=\"222\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.7250000000000001\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"196\" cy=\"222\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"214.29622879196285\" y2=\"223.9230111354251\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.76875\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"214.29622879196285\" cy=\"223.9230111354251\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"231.79282459067042\" y2=\"229.60799972745113\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.8125\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"231.79282459067042\" cy=\"229.60799972745113\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"247.72510220173763\" y2=\"238.80650449500462\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.85625\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"247.72510220173763\" cy=\"238.80650449500462\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"310\" x2=\"261.3967446420107\" y2=\"251.11650664042048\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"261.3967446420107\" cy=\"251.11650664042048\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-21",
+      "name": "Impact vs. Effort Matrix",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "2x2 prioritization of quick wins, major projects, and time sinks",
+      "atAGlance": "3–15 people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Draw two axes: impact on the north-star metric upward, delivery effort rightward. Define what each end means."
+        },
+        {
+          "text": "Choose one agreed baseline item, then place each card by comparing it with the baseline on impact first."
+        },
+        {
+          "text": "Shift each card horizontally by real effort: build, coordination, review, and risk, not coding hours alone."
+        },
+        {
+          "text": "Push every card off the center line so no item hides in an ambiguous middle position."
+        },
+        {
+          "text": "Read the quadrants aloud and name the action each one authorizes: sprint, spike, backlog, or drop."
+        }
+      ],
+      "failure": "Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.",
+      "intervention": "Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in product prioritization; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 5,
+          "width": 150,
+          "depth": 110,
+          "chosen": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"200\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"125\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"125\" y1=\"90\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"162.5\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162.5\" y1=\"90\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"237.5\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237.5\" y1=\"90\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"275\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275\" y1=\"90\" x2=\"200\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-22",
+      "name": "MoSCoW Prioritization",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "Categorization into Must-have, Should-have, Could-have, Won't-have",
+      "atAGlance": "3–15 people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Mark four lanes: Must, Should, Could, and Won't. Say that Won't is a protected boundary, not a rejected idea."
+        },
+        {
+          "text": "Define Must aloud: without it the release is canceled or noncompliant, and no workaround exists."
+        },
+        {
+          "text": "Review each card in turn. Ask whether a workaround exists; if it does, move the card down one lane."
+        },
+        {
+          "text": "Cap Must at about sixty percent of capacity and leave the rest for risk, defects, and Should items."
+        },
+        {
+          "text": "Read the Won't lane back to the room and note what would have to change before anyone reopens it."
+        }
+      ],
+      "failure": "Must-have inflation: most cards land in Must, the capacity buffer vanishes, and the release date becomes fiction.",
+      "intervention": "Ask for the workaround on the spot. If one exists, demote the card and show how the sixty percent cap protects the date.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Dai Clegg"
+        ],
+        "year": 1994,
+        "authorsLabel": "Dai Clegg",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 6,
+          "width": 180,
+          "depth": 130,
+          "chosen": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"220\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"110\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"110\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"146\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"182\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"254\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"290\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"290\" y1=\"90\" x2=\"200\" y2=\"220\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-23",
+      "name": "Dot Voting / Heatmapping",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15+",
+      "minutes": "10–20",
+      "difficulty": "beginner",
+      "deliverable": "Visual distribution of group attention across ideas without groupthink",
+      "atAGlance": "3–15+ people · 10–20 min · beginner",
+      "steps": [
+        {
+          "text": "Give each person five dots. Explain that all five may go on one idea or be spread across many."
+        },
+        {
+          "text": "Have everyone write their choices privately before approaching the wall, so no one follows a cursor."
+        },
+        {
+          "text": "Walk the wall in silence, place dots on the ideas themselves, and keep comments and gestures to yourself."
+        },
+        {
+          "text": "Step back and circle the three densest clusters, not the cards with the loudest advocates."
+        },
+        {
+          "text": "Invite those authors to explain the mechanism in one minute each, then open the discussion."
+        }
+      ],
+      "failure": "Bandwagon voting: people wait for leadership to place dots, then pile onto the same cards, so heat measures hierarchy.",
+      "intervention": "Stop the wall, have everyone write choices on paper first, and hide cursors or dot counts until the timer ends.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in facilitation practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 7,
+          "width": 210,
+          "depth": 150,
+          "chosen": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"240\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"95\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"130\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"130\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"165\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"165\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"235\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"235\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"270\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"270\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"305\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"305\" y1=\"90\" x2=\"200\" y2=\"240\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-24",
+      "name": "$100 Allocation Test",
+      "stage": "Convergent Decision",
+      "groupSize": "3–12",
+      "minutes": "20–35",
+      "difficulty": "intermediate",
+      "deliverable": "Capital-constrained prioritization surfacing true value trade-offs",
+      "atAGlance": "3–12 people · 20–35 min · intermediate",
+      "steps": [
+        {
+          "text": "Give every person one hundred dollars of play budget and require the whole amount to be spent."
+        },
+        {
+          "text": "State that allocations are whole dollars across the slate, so every choice costs another option."
+        },
+        {
+          "text": "Have people invest silently and independently, then hand in their sheets before any discussion."
+        },
+        {
+          "text": "Total the sheets and mark broad consensus assets above a quarter of the money, plus single-bidder bets."
+        },
+        {
+          "text": "Discuss the outliers and the zeros; a shared zero shows what the group will not fund."
+        }
+      ],
+      "failure": "Peanut-buttering: the budget is split evenly across every item, so no trade-off is made and nothing is ranked.",
+      "intervention": "Reject a flat allocation and require one zero plus at least forty dollars on a single item; ask what that choice reveals.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in participatory budgeting; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 8,
+          "width": 230,
+          "depth": 100,
+          "chosen": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"190\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"85\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"85\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"117.85714285714286\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"117.85714285714286\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"150.71428571428572\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150.71428571428572\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"183.57142857142856\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"183.57142857142856\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"216.42857142857142\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"216.42857142857142\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"249.28571428571428\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.28571428571428\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"282.1428571428571\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"282.1428571428571\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"315\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"315\" y1=\"90\" x2=\"200\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-25",
+      "name": "2x2 Trade-off Grids",
+      "stage": "Convergent Decision",
+      "groupSize": "3–12",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "Flexible comparative evaluation across two arbitrary orthogonal axes",
+      "atAGlance": "3–12 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Name the two axes driving the deadlock, then check that one does not simply imply the other."
+        },
+        {
+          "text": "Label both ends of each axis in plain language and post the labels where the whole room can see them."
+        },
+        {
+          "text": "Place each candidate by arguing its position on one axis, then the other, against cards already placed."
+        },
+        {
+          "text": "Rename the quadrants for this decision and say what action each quadrant authorizes."
+        },
+        {
+          "text": "Choose at least one high-risk, high-value candidate and name the experiment that would de-risk it."
+        }
+      ],
+      "failure": "Correlated axes flatten the grid into a diagonal, every candidate looks alike, and the session produces no decision.",
+      "intervention": "Test whether high on one axis forces high on the other. If it does, replace one axis with a pressure that truly conflicts.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in strategy and design practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 4,
+          "width": 130,
+          "depth": 170,
+          "chosen": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"260\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"135\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"135\" y1=\"90\" x2=\"200\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"178.33333333333334\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"178.33333333333334\" y1=\"90\" x2=\"200\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"221.66666666666669\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"221.66666666666669\" y1=\"90\" x2=\"200\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"265\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"265\" y1=\"90\" x2=\"200\" y2=\"260\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-26",
+      "name": "Fist to Five Consensus",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15+",
+      "minutes": "10–15",
+      "difficulty": "beginner",
+      "deliverable": "Rapid non-binary consensus calibration and identification of dissent",
+      "atAGlance": "3–15+ people · 10–15 min · beginner",
+      "steps": [
+        {
+          "text": "Explain the scale: a fist blocks, one or two means reservations, three agrees, and four or five actively supports."
+        },
+        {
+          "text": "State the proposal in one sentence and give everyone a silent moment to choose a number."
+        },
+        {
+          "text": "Count down and reveal together, with eyes closed or screens hidden, so no one reads the room first."
+        },
+        {
+          "text": "Go to the lowest hand, ask what single change would raise it to three, then revise the proposal."
+        },
+        {
+          "text": "Re-vote once. When no fist or one remains, record the decision as made and stop chasing fives."
+        }
+      ],
+      "failure": "The room chases unanimity, spending the session lifting threes to fives while a real blocker in the corner goes unheard.",
+      "intervention": "Say consensus means no blocking dissent, not equal enthusiasm. Ask the lowest hand what would move it to three, then re-vote.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "Widely used in consent-based decision practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 9,
+          "width": 200,
+          "depth": 120,
+          "chosen": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"210\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"100\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"125\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"125\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"150\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"150\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"175\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"175\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"225\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"225\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"250\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"250\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"275\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"300\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300\" y1=\"90\" x2=\"200\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-27",
+      "name": "Now-How-Wow Matrix",
+      "stage": "Convergent Decision",
+      "groupSize": "3–15",
+      "minutes": "25–40",
+      "difficulty": "intermediate",
+      "deliverable": "Idea classification across feasibility (Now), breakthrough (How), and original (Wow)",
+      "atAGlance": "3–15 people · 25–40 min · intermediate",
+      "steps": [
+        {
+          "text": "Post three columns, Now, How, and Wow, and define each in one sentence before anything is sorted."
+        },
+        {
+          "text": "Read every idea aloud once without debate so the group hears the whole set before judging any of it."
+        },
+        {
+          "text": "Sort each idea: Now if today's means can deliver it, How if it needs a route, Wow if it changes the offer."
+        },
+        {
+          "text": "For each How item, write the missing capability or experiment that would move it toward Now."
+        },
+        {
+          "text": "Choose one Now to schedule, one How to investigate, and one Wow to prototype, each with an owner."
+        }
+      ],
+      "failure": "Everything drifts into Wow, the room celebrates novelty, and no idea gets a route, a test, or an owner.",
+      "intervention": "Ask what the idea would take to run next week. Without an answer it stays in How until a named experiment exists.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Widely used in innovation workshops; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 5,
+          "width": 170,
+          "depth": 160,
+          "chosen": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"250\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"115\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"115\" y1=\"90\" x2=\"200\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"157.5\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"157.5\" y1=\"90\" x2=\"200\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"242.5\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"242.5\" y1=\"90\" x2=\"200\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"285\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"285\" y1=\"90\" x2=\"200\" y2=\"250\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-28",
+      "name": "Decider Super-Vote",
+      "stage": "Convergent Decision",
+      "groupSize": "5–12",
+      "minutes": "15–25",
+      "difficulty": "intermediate",
+      "deliverable": "Executive decision lock-in combining democratic heatmaps with authority",
+      "atAGlance": "5–12 people · 15–25 min · intermediate",
+      "steps": [
+        {
+          "text": "Show the shortlist and give every participant the same small number of ordinary votes."
+        },
+        {
+          "text": "Let people vote silently, then cluster the dots and read the heat back to the room."
+        },
+        {
+          "text": "Give the decider a fixed set of supervotes worth more than ordinary dots and let them place them openly."
+        },
+        {
+          "text": "Ask the decider to state the decision and its reason in one sentence, naming what the heat changed."
+        },
+        {
+          "text": "Record the decision, the owner, and the next checkpoint so the vote cannot quietly reopen tomorrow."
+        }
+      ],
+      "failure": "The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.",
+      "intervention": "Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides, the record names both.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Jake Knapp"
+        ],
+        "year": 2016,
+        "title": "Sprint",
+        "publication": "Simon & Schuster",
+        "authorsLabel": "Jake Knapp",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 6,
+          "width": 160,
+          "depth": 95,
+          "chosen": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"185\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"152\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"152\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"184\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"184\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"216\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"216\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"248\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"248\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"90\" x2=\"200\" y2=\"185\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-29",
+      "name": "Trade-off Sliders",
+      "stage": "Convergent Decision",
+      "groupSize": "3–10",
+      "minutes": "20–30",
+      "difficulty": "advanced",
+      "deliverable": "Hard ranking of competing technical attributes to eliminate ambiguity",
+      "atAGlance": "3–10 people · 20–30 min · advanced",
+      "steps": [
+        {
+          "text": "List the attributes that genuinely trade against each other, and drop any pair that moves together."
+        },
+        {
+          "text": "Draw a slider for each attribute with named ends, then mark the current position as the baseline."
+        },
+        {
+          "text": "For each candidate, move the sliders to show what choosing it requires and which attribute it sacrifices."
+        },
+        {
+          "text": "Rank candidates by the sacrifices the group can accept, not by a summed score."
+        },
+        {
+          "text": "Record the final slider settings and the sacrifice accepted for each choice, so the trade-off stays visible."
+        }
+      ],
+      "failure": "Every slider drifts to the midpoint, producing a polite ranking that hides each sacrifice and decides nothing.",
+      "intervention": "Ask which end each candidate must give up. If the group cannot name a sacrifice, that candidate has not been compared.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Widely used in product trade-off workshops; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 7,
+          "width": 220,
+          "depth": 140,
+          "chosen": 7
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"230\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"90\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"126.66666666666666\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"126.66666666666666\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"163.33333333333331\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"163.33333333333331\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"236.66666666666666\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236.66666666666666\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"273.3333333333333\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"273.3333333333333\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"310\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"310\" y1=\"90\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-30",
+      "name": "Nu/Steer/Zweck Framework",
+      "stage": "Convergent Decision",
+      "groupSize": "5–15",
+      "minutes": "30–45",
+      "difficulty": "advanced",
+      "deliverable": "Strategic validation against organizational mandate and execution utility",
+      "atAGlance": "5–15 people · 30–45 min · advanced",
+      "steps": [
+        {
+          "text": "Write three questions on the wall: what is true now, what are we steering toward, and what purpose does this serve?"
+        },
+        {
+          "text": "For each candidate, record current facts under Nu without opinions or forecasts."
+        },
+        {
+          "text": "State the steering choice under Steer: the lever the team can actually pull and the metric it moves."
+        },
+        {
+          "text": "State the purpose under Zweck in one sentence, then ask whether the candidate survives a change of purpose."
+        },
+        {
+          "text": "Park any candidate whose three answers do not line up, and give the owner the specific mismatch."
+        }
+      ],
+      "failure": "Purpose is recited as a slogan while the now-facts and steering levers stay vague, so every candidate passes.",
+      "intervention": "Ask what would change if the purpose were different. If nothing would, the purpose is decoration and the candidate is unvalidated.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "Used in Dutch design-led strategy practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "convergent-funnel",
+        "parametricParams": {
+          "inlets": 8,
+          "width": 190,
+          "depth": 155,
+          "chosen": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"245\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"105\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"105\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"132.14285714285714\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"132.14285714285714\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"159.28571428571428\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"159.28571428571428\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"186.42857142857144\" cy=\"90\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"186.42857142857144\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213.57142857142856\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"213.57142857142856\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240.71428571428572\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.71428571428572\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"267.8571428571429\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"267.8571428571429\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"295\" cy=\"90\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"295\" y1=\"90\" x2=\"200\" y2=\"245\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-31",
+      "name": "1-2-4-All",
+      "stage": "Liberating Structures",
+      "groupSize": "4–15+",
+      "minutes": "12–15",
+      "difficulty": "beginner",
+      "deliverable": "Progressive silent reflection, paired synthesis, quartet convergence",
+      "atAGlance": "4–15+ people · 12–15 min · beginner",
+      "steps": [
+        {
+          "text": "Pose one question worth the room's attention, then give everyone sixty seconds of silent writing before any talking starts."
+        },
+        {
+          "text": "Pair people where they sit and give them two minutes to compare notes and agree on the most urgent shared point."
+        },
+        {
+          "text": "Merge pairs into fours for four minutes; ask them to name the patterns and reduce to one idea the whole room needs."
+        },
+        {
+          "text": "Harvest in plenary without a round robin: ask who can add a theme not yet heard, and keep taking only new material."
+        }
+      ],
+      "failure": "The silent minute turns into chatter, the loudest voice frames the pair, and the plenary becomes a sequence of similar reports.",
+      "intervention": "Restart the timer and say the first minute is solo: \"When we talk early, the quickest voice sets the frame and the room stops thinking.\"",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 2,
+          "gap": 20,
+          "dots": 3,
+          "tilt": -20
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 247.3 203.3 A 48 48 0 1 0 247.3 186.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 280.8 209.2 A 82 82 0 1 0 280.8 180.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"241.34647531457998\" cy=\"179.95111369367058\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"192.3594801826551\" cy=\"238.33154113253715\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"166.29404450276496\" cy=\"166.7173451737923\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-32",
+      "name": "Impromptu Networking",
+      "stage": "Liberating Structures",
+      "groupSize": "6–15+",
+      "minutes": "15–20",
+      "difficulty": "beginner",
+      "deliverable": "Three rapid rounds of paired micro-interviews establishing shared context",
+      "atAGlance": "6–15+ people · 15–20 min · beginner",
+      "steps": [
+        {
+          "text": "Open with two questions everyone will answer: the challenge you bring and the asset you offer this group."
+        },
+        {
+          "text": "Send people to stand and find a partner they do not work with day to day, then start a four-minute round."
+        },
+        {
+          "text": "Chime at two minutes and have the listener take the floor; close the round after both people have answered."
+        },
+        {
+          "text": "Run two more rounds with new partners, asking each person to sharpen the same two answers each time."
+        },
+        {
+          "text": "Close by asking a few people what changed in how they described their challenge or their offer."
+        }
+      ],
+      "failure": "One partner talks for most of the round, so the other gets a rushed answer and the room learns only half its assets.",
+      "intervention": "Stop the round on the chime and model the handoff: \"If you are mid-sentence, stop; your partner's two minutes start now.\"",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 3,
+          "gap": 32,
+          "dots": 4,
+          "tilt": 12
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 246.1 208.2 A 48 48 0 1 0 246.1 181.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 278.8 217.6 A 82 82 0 1 0 278.8 172.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 311.5 227 A 116 116 0 1 0 311.5 163\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.03849443228745\" cy=\"204.1481143959814\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"190.85188560401858\" cy=\"238.03849443228745\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.96150556771255\" cy=\"185.8518856040186\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209.14811439598142\" cy=\"151.96150556771255\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-33",
+      "name": "TRIZ (Creative Destruction)",
+      "stage": "Liberating Structures",
+      "groupSize": "5–15+",
+      "minutes": "35–50",
+      "difficulty": "intermediate",
+      "deliverable": "Systematic cessation of self-sabotaging behaviors and counter-productive habits",
+      "atAGlance": "5–15+ people · 35–50 min · intermediate",
+      "steps": [
+        {
+          "text": "Invert the goal: ask the room to design the worst possible version of the system, one that guarantees the failure they fear."
+        },
+        {
+          "text": "Have people draft in silence for two minutes, then build one ruinous list per table for eight minutes."
+        },
+        {
+          "text": "Audit each item honestly: ask whether the team already does this, even slightly, and mark every yes."
+        },
+        {
+          "text": "Pick the marked habit doing the most damage and name the first concrete thing to stop."
+        },
+        {
+          "text": "Assign an owner and a date to each cessation; do not replace it with a new improvement project."
+        }
+      ],
+      "failure": "The audit avoids circling familiar bad habits to protect people's feelings, so the room generates a list that describes someone else's organization.",
+      "intervention": "Circle an obvious item yourself and say: \"We cannot remove what we will not name. What else here are we pretending we do not do?\"",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "TRIZ originates with Genrich Altshuller; this creative-destruction version is the Liberating Structures adaptation.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 4,
+          "gap": 44,
+          "dots": 5,
+          "tilt": -6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 244.5 213 A 48 48 0 1 0 244.5 177\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 276 225.7 A 82 82 0 1 0 276 164.3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 307.6 238.5 A 116 116 0 1 0 307.6 151.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 339.1 251.2 A 150 150 0 1 0 339.1 138.8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.75896339620402\" cy=\"190.40074761622324\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"217.8964122953352\" cy=\"235.19600013627445\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"167.30162767899466\" cy=\"224.4417466797898\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"161.89488223348468\" cy=\"173\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"209.14811439598142\" cy=\"151.96150556771255\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-34",
+      "name": "Troika Consulting",
+      "stage": "Liberating Structures",
+      "groupSize": "3–15+",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "Rapid triad peer consulting using back-turned active listening protocols",
+      "atAGlance": "3–15+ people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Form triads and assign one client and two consultants; run three ten-minute rounds so each person takes every role."
+        },
+        {
+          "text": "Give the client two minutes to state the challenge, what has been tried, and where they are stuck; consultants listen only."
+        },
+        {
+          "text": "Allow two minutes of clarifying questions about facts and constraints, then stop all advice until the next beat."
+        },
+        {
+          "text": "Have the client turn away or mute while the consultants talk to each other for five minutes about the real problem."
+        },
+        {
+          "text": "Turn the client back for one minute to name what was useful and the single next step they will try."
+        }
+      ],
+      "failure": "The client keeps turning around to defend decisions, so the consultants start managing the client's reaction instead of exploring the problem.",
+      "intervention": "Say to the client: \"Turn back and stay silent. Every word you add narrows what they will say; your minute to respond is coming.\"",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 5,
+          "gap": 56,
+          "dots": 6,
+          "tilt": 20
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 242.4 217.5 A 48 48 0 1 0 242.4 172.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 272.4 233.5 A 82 82 0 1 0 272.4 156.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 302.4 249.5 A 116 116 0 1 0 302.4 140.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 332.4 265.4 A 150 150 0 1 0 332.4 124.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 362.5 281.4 A 184 184 0 1 0 362.5 108.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"241.34647531457998\" cy=\"210.04888630632942\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"207.64051981734494\" cy=\"238.33154113253715\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"166.29404450276496\" cy=\"223.28265482620773\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"158.65352468542002\" cy=\"179.95111369367058\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"192.35948018265503\" cy=\"151.66845886746285\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"233.70595549723504\" cy=\"166.71734517379227\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-35",
+      "name": "25/10 Crowd Sourcing",
+      "stage": "Liberating Structures",
+      "groupSize": "15+",
+      "minutes": "20–30",
+      "difficulty": "intermediate",
+      "deliverable": "High-velocity anonymous card exchange scoring boldest breakthrough ideas",
+      "atAGlance": "15+ people · 20–30 min · intermediate",
+      "steps": [
+        {
+          "text": "Give everyone a card: write a bold action for the bottleneck on top and its first step below, with no name."
+        },
+        {
+          "text": "Have them draw five scoring rows on the back, ready to mark each card they see from one to five."
+        },
+        {
+          "text": "Run five shuffle rounds: pass cards continuously, stop, read the card in hand, discuss briefly, score privately."
+        },
+        {
+          "text": "Keep each round's score hidden from the author and leave earlier scores untouched."
+        },
+        {
+          "text": "Total the five scores and call the countdown from twenty-five down, reading out the highest cards."
+        }
+      ],
+      "failure": "Scorers cluster on safe threes, so every card lands near fifteen and the room cannot tell a bold idea from a polite one.",
+      "intervention": "Say: \"A three is a refusal to judge. Score a platitude one and a courageous, actionable idea five. Use the whole scale.\"",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 2,
+          "gap": 40,
+          "dots": 7,
+          "tilt": -14
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 245.1 211.4 A 48 48 0 1 0 245.1 178.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 277.1 223 A 82 82 0 1 0 277.1 167\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"242.69301195614383\" cy=\"184.35543659361463\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"234.9409123535279\" cy=\"221.7419640995773\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200.87759308398512\" cy=\"238.99124720190304\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"166.15342832256505\" cy=\"223.11422390328886\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.9164223784922\" cy=\"186.06661657984424\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"180.12222912823643\" cy=\"155.74602917958913\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"218.29640277704945\" cy=\"154.98448244218278\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-36",
+      "name": "Min Specs",
+      "stage": "Liberating Structures",
+      "groupSize": "4–15",
+      "minutes": "40–50",
+      "difficulty": "advanced",
+      "deliverable": "Ruthless reduction of operating protocols down to non-negotiable rules",
+      "atAGlance": "4–15 people · 40–50 min · advanced",
+      "steps": [
+        {
+          "text": "State the purpose the group must achieve and write it where everyone can see it."
+        },
+        {
+          "text": "List every rule, policy, and habit the group currently treats as required, one per note."
+        },
+        {
+          "text": "Separate each item into must or should; move everything that is merely customary to the should pile."
+        },
+        {
+          "text": "Test each must by asking whether breaking it would still let the group achieve the stated purpose."
+        },
+        {
+          "text": "Discard anything that survives the test only by habit, then publish the small set that remains."
+        }
+      ],
+      "failure": "The list stays long because every rule has a defender, and the group leaves with a tidier version of the same bureaucracy.",
+      "intervention": "Hold up one must and ask: \"If we broke this tomorrow, what exactly would fail?\" If no one can name the failure, cut it.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 3,
+          "gap": 52,
+          "dots": 8,
+          "tilt": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 243.1 216 A 48 48 0 1 0 243.1 174\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 273.7 230.9 A 82 82 0 1 0 273.7 159.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 304.3 245.9 A 116 116 0 1 0 304.3 144.1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.5717950246291\" cy=\"201.12361644224288\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"226.47986101869014\" cy=\"230.1399624420809\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"193.87638355775712\" cy=\"238.5717950246291\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"164.8600375579191\" cy=\"221.47986101869012\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.4282049753709\" cy=\"188.87638355775712\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"173.52013898130988\" cy=\"159.8600375579191\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"206.12361644224288\" cy=\"151.4282049753709\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"235.1399624420809\" cy=\"168.52013898130988\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-37",
+      "name": "Nine Whys",
+      "stage": "Liberating Structures",
+      "groupSize": "2–15",
+      "minutes": "20–35",
+      "difficulty": "intermediate",
+      "deliverable": "Progressive conversational excavation of intrinsic organizational purpose",
+      "atAGlance": "2–15 people · 20–35 min · intermediate",
+      "steps": [
+        {
+          "text": "Pair people and have one describe an activity or project they care about in a sentence or two."
+        },
+        {
+          "text": "Instruct the partner to ask \"Why is that important to you?\" and nothing else for the first rounds."
+        },
+        {
+          "text": "Keep asking why of each answer, following the chain rather than accepting the first reason."
+        },
+        {
+          "text": "Notice when the answer stops being about the task and starts naming a person or value worth serving."
+        },
+        {
+          "text": "Switch roles and run the same chain, then have each person state the purpose they reached in one line."
+        }
+      ],
+      "failure": "The partner accepts a general answer like \"because it matters\" and the chain stalls at a slogan instead of reaching a real purpose.",
+      "intervention": "Ask the follow-up once more: \"Why does that matter to you, specifically?\" Keep the silence until the answer gets concrete.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 4,
+          "gap": 64,
+          "dots": 3,
+          "tilt": -24
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 240.7 220.4 A 48 48 0 1 0 240.7 169.6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 269.5 238.5 A 82 82 0 1 0 269.5 151.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 298.4 256.5 A 116 116 0 1 0 298.4 133.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 327.2 274.5 A 150 150 0 1 0 327.2 115.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240.19600013627445\" cy=\"177.1035877046648\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.40074761622324\" cy=\"238.75896339620402\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"164.40325224750228\" cy=\"169.1374488991312\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-38",
+      "name": "Conversation Café",
+      "stage": "Liberating Structures",
+      "groupSize": "5–12",
+      "minutes": "45–60",
+      "difficulty": "beginner",
+      "deliverable": "Structured four-round dialogue suppressing cross-talk on contentious issues",
+      "atAGlance": "5–12 people · 45–60 min · beginner",
+      "steps": [
+        {
+          "text": "State one contentious question and set four rounds: three where only the person holding the object speaks, one open."
+        },
+        {
+          "text": "Place an object in the center and pass it around; each person speaks once per round while others listen."
+        },
+        {
+          "text": "Forbid cross-talk in the first three rounds: no rebuttals, side conversations, or advice."
+        },
+        {
+          "text": "In round four, open the floor for genuine dialogue, but keep the listening rules visible."
+        },
+        {
+          "text": "Close by asking what each person heard that shifted or deepened their view."
+        }
+      ],
+      "failure": "Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.",
+      "intervention": "Hold up the talking object and say: \"No replies yet. We are here to understand, not to win; the debate round comes later.\"",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 5,
+          "gap": 28,
+          "dots": 4,
+          "tilt": 16
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 246.6 206.6 A 48 48 0 1 0 246.6 183.4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 279.6 214.8 A 82 82 0 1 0 279.6 175.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 312.6 223.1 A 116 116 0 1 0 312.6 166.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 345.5 231.3 A 150 150 0 1 0 345.5 158.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 378.5 239.5 A 184 184 0 1 0 378.5 150.5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"0.8\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"242.29551462128603\" cy=\"207.12804365594798\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"187.87195634405205\" cy=\"237.29551462128603\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"157.70448537871397\" cy=\"182.87195634405205\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"212.12804365594798\" cy=\"152.70448537871397\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-39",
+      "name": "Wise Crowds",
+      "stage": "Liberating Structures",
+      "groupSize": "6–15+",
+      "minutes": "45–60",
+      "difficulty": "advanced",
+      "deliverable": "Scaled peer advisory council consulting for individual challenge clients",
+      "atAGlance": "6–15+ people · 45–60 min · advanced",
+      "steps": [
+        {
+          "text": "Seat one client in front of a circle of advisors and name the challenge they want help with."
+        },
+        {
+          "text": "Give the client two minutes to describe the situation, what they have tried, and what help they need."
+        },
+        {
+          "text": "Let advisors ask clarifying questions for two minutes; the client answers but hears no advice yet."
+        },
+        {
+          "text": "Have advisors discuss and offer ideas to each other for ten minutes while the client listens and takes notes."
+        },
+        {
+          "text": "Return to the client for three minutes: name what landed, what to discard, and the next step."
+        }
+      ],
+      "failure": "Advisors slip into asking the client what to do, the client defends instead of listening, and the circle becomes a normal meeting.",
+      "intervention": "Turn the conversation back to the circle: \"Advisors, talk to each other. Client, write only; your turn to answer comes at the end.\"",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 2,
+          "gap": 60,
+          "dots": 5,
+          "tilt": -10
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 241.6 219 A 48 48 0 1 0 241.6 171\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 271 236 A 82 82 0 1 0 271 154\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.33154113253715\" cy=\"187.35948018265506\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"220.65674876257918\" cy=\"233.84969408579278\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"169.4350316998041\" cy=\"226.65095121490066\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"160.45306196283667\" cy=\"175.7116695412806\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"206.12361644224288\" cy=\"151.4282049753709\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-40",
+      "name": "What, So What, Now What?",
+      "stage": "Liberating Structures",
+      "groupSize": "3–15+",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "Ladder of inference progression: observations, interpretations, actions",
+      "atAGlance": "3–15+ people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Ask the group to list only what happened, one observation per note, with no interpretation or judgment."
+        },
+        {
+          "text": "Read the observations together and remove anything that already contains a cause or an opinion."
+        },
+        {
+          "text": "Ask what patterns or meaning the observations carry, and record the different readings side by side."
+        },
+        {
+          "text": "Turn to implications: what does this mean for the work or the people involved?"
+        },
+        {
+          "text": "Finish by naming concrete next actions, owners, and when the group will check them."
+        }
+      ],
+      "failure": "The room jumps straight to opinions and fixes, so the group argues about interpretations without agreeing on what actually happened.",
+      "intervention": "Point at the observation column and say: \"Before we explain it, what did we actually see? Facts first; meaning next.\"",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "liberating-rings",
+        "parametricParams": {
+          "rings": 3,
+          "gap": 24,
+          "dots": 6,
+          "tilt": 24
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 247 205 A 48 48 0 1 0 247 185\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 280.2 212 A 82 82 0 1 0 280.2 178\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 313.5 219.1 A 116 116 0 1 0 313.5 170.9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"240.19600013627445\" cy=\"212.8964122953352\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"204.59925238377676\" cy=\"238.75896339620402\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"164.4032522475023\" cy=\"220.8625511008688\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"159.80399986372555\" cy=\"177.1035877046648\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"195.4007476162232\" cy=\"151.24103660379598\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"235.5967477524977\" cy=\"169.1374488991312\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.4\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-41",
+      "name": "Who-What-When Matrix",
+      "stage": "Action Planning",
+      "groupSize": "3–15",
+      "minutes": "20–30",
+      "difficulty": "beginner",
+      "deliverable": "Linear operational assignment of accountable owners and hard deadlines",
+      "atAGlance": "3–15 people · 20–30 min · beginner",
+      "steps": [
+        {
+          "text": "Open with the three rules: each task is an observable artifact, each owner is one named person, each date is a calendar date."
+        },
+        {
+          "text": "Work through the priority decisions one row at a time, asking for the single owner first, then the exact due date and how it will be proved."
+        },
+        {
+          "text": "Read the finished matrix aloud and confirm each owner has the authority and time to meet the date before anyone leaves."
+        }
+      ],
+      "failure": "Shared ownership: a row is assigned to a team or two names, so no one feels the commitment when the date arrives.",
+      "intervention": "Stop at the row and ask which one person is the driver; list the other as a contributor, then replace any soft date with a calendar date.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "A matrix format widely used in project management; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 3,
+          "rise": 20,
+          "run": 48,
+          "marker": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"130\" y=\"276\" width=\"34\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"178\" y=\"256\" width=\"34\" height=\"54\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"226\" y=\"236\" width=\"34\" height=\"74\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 147 276 L 195 256 L 243 236\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"147\" y1=\"276\" x2=\"147\" y2=\"248\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 147 248 L 165 254 L 147 260\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-42",
+      "name": "Next Steps Commitment Canvas",
+      "stage": "Action Planning",
+      "groupSize": "3–10",
+      "minutes": "30–45",
+      "difficulty": "intermediate",
+      "deliverable": "Explicit contractual agreement covering resources, cadence, and sign-offs",
+      "atAGlance": "3–10 people · 30–45 min · intermediate",
+      "steps": [
+        {
+          "text": "Frame the canvas as a delivery charter: what the room signs today is what the team will be held to once the workshop ends."
+        },
+        {
+          "text": "Fill the sections together: scope, resources, review cadence, and the risks that could break the commitment."
+        },
+        {
+          "text": "Write the definition of done as a check that can pass or fail, not as an activity someone will keep working on."
+        },
+        {
+          "text": "Read the charter back, have each core member sign, and publish it where the team already looks for decisions."
+        }
+      ],
+      "failure": "Hidden resource starvation: the team signs an ambitious scope while every hour is already promised to support work, so the charter is a promise no one can keep.",
+      "intervention": "Before the signing, ask what each person will deprioritize to make room. If nothing is named, cut the scope until something is.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "note": "A workshop charter format in wide use; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 4,
+          "rise": 24,
+          "run": 56,
+          "marker": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"94\" y=\"276\" width=\"42\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"150\" y=\"252\" width=\"42\" height=\"58\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"228\" width=\"42\" height=\"82\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"262\" y=\"204\" width=\"42\" height=\"106\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 115 276 L 171 252 L 227 228 L 283 204\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"171\" y1=\"252\" x2=\"171\" y2=\"224\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 171 224 L 189 230 L 171 236\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-43",
+      "name": "Lean Canvas Experiment Matrix",
+      "stage": "Action Planning",
+      "groupSize": "3–10",
+      "minutes": "45–60",
+      "difficulty": "advanced",
+      "deliverable": "Translation of assumptions into falsifiable hypotheses and metrics",
+      "atAGlance": "3–10 people · 45–60 min · advanced",
+      "steps": [
+        {
+          "text": "Reframe the feature list as assumptions: each item is a guess about customer behavior that no one has tested yet."
+        },
+        {
+          "text": "Take the riskiest assumption and write it as a falsifiable hypothesis naming the persona, the action, and the reason."
+        },
+        {
+          "text": "Choose the cheapest test that could prove it wrong: a landing page, a manual service, or a prototype walkthrough."
+        },
+        {
+          "text": "Set the pass threshold before running anything: the exact metric and the number that counts as a result."
+        },
+        {
+          "text": "Name the decision the result will trigger, so the room knows in advance what a failing test means for the plan."
+        }
+      ],
+      "failure": "Post-hoc rationalization: no threshold is set, so whatever numbers arrive get read as support for the idea the team already preferred.",
+      "intervention": "Pause and ask for the number now: what rate proves the case, and what rate kills it? Write both down before the test starts.",
+      "provenance": "Source protocol: the steps follow the written script in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "Ash Maurya"
+        ],
+        "title": "Running Lean",
+        "authorsLabel": "Ash Maurya",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 5,
+          "rise": 28,
+          "run": 60,
+          "marker": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"58\" y=\"276\" width=\"46\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"118\" y=\"248\" width=\"46\" height=\"62\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"178\" y=\"220\" width=\"46\" height=\"90\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"238\" y=\"192\" width=\"46\" height=\"118\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><rect x=\"298\" y=\"164\" width=\"46\" height=\"146\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.59\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 81 276 L 141 248 L 201 220 L 261 192 L 321 164\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"201\" y1=\"220\" x2=\"201\" y2=\"192\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 201 192 L 219 198 L 201 204\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-44",
+      "name": "15% Solutions",
+      "stage": "Action Planning",
+      "groupSize": "1–15+",
+      "minutes": "15–25",
+      "difficulty": "beginner",
+      "deliverable": "Immediate identification of autonomous individual actions requiring no budget",
+      "atAGlance": "1–15+ people · 15–25 min · beginner",
+      "steps": [
+        {
+          "text": "Ask each person: what is the 15 percent you can do right now, with the authority and resources you already hold?"
+        },
+        {
+          "text": "Have everyone write one action in silence that needs no budget, no permission, and no one else's decision."
+        },
+        {
+          "text": "Pair people to read their action aloud and answer one question: what would make it easier to start this week?"
+        },
+        {
+          "text": "Collect the actions on a shared board without ranking or editing them; the point is what is already possible."
+        },
+        {
+          "text": "Ask each person to name the day they will take the first step and what they will notice when it is done."
+        },
+        {
+          "text": "Close by asking what help each person needs from the room, and who in the room can give it."
+        }
+      ],
+      "failure": "The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.",
+      "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Henri Lipmanowicz",
+          "Keith McCandless"
+        ],
+        "year": 2014,
+        "title": "The Surprising Power of Liberating Structures",
+        "authorsLabel": "Henri Lipmanowicz & Keith McCandless",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 6,
+          "rise": 32,
+          "run": 64,
+          "marker": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"18\" y=\"276\" width=\"50\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"82\" y=\"244\" width=\"50\" height=\"66\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"146\" y=\"212\" width=\"50\" height=\"98\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"210\" y=\"180\" width=\"50\" height=\"130\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><rect x=\"274\" y=\"148\" width=\"50\" height=\"162\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.59\" vector-effect=\"non-scaling-stroke\"/><rect x=\"338\" y=\"116\" width=\"50\" height=\"194\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.6499999999999999\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 43 276 L 107 244 L 171 212 L 235 180 L 299 148 L 363 116\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"235\" y1=\"180\" x2=\"235\" y2=\"152\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 235 152 L 253 158 L 235 164\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-45",
+      "name": "SMART Action Roadmap",
+      "stage": "Action Planning",
+      "groupSize": "3–12",
+      "minutes": "30–45",
+      "difficulty": "beginner",
+      "deliverable": "Time-phased mapping of milestones adhering to SMART validation criteria",
+      "atAGlance": "3–12 people · 30–45 min · beginner",
+      "steps": [
+        {
+          "text": "Lay the goal out as milestones in order, each one a result the team can see rather than a phase of work."
+        },
+        {
+          "text": "Test every milestone against specific, measurable, achievable, relevant, and time-bound, and rewrite the ones that fail."
+        },
+        {
+          "text": "Put the milestones on a calendar and name the first step each owner takes before the next meeting."
+        }
+      ],
+      "failure": "Milestones that pass the acronym but not the calendar: each sounds specific, yet none has an owner, a date, or a number that would show it was reached.",
+      "intervention": "Take the weakest milestone and ask for the date, the number, and the person; if any is missing, it is a wish, not a milestone.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "George T. Doran"
+        ],
+        "year": 1981,
+        "title": "There's a S.M.A.R.T. way to write management's goals and objectives",
+        "publication": "Management Review",
+        "authorsLabel": "George T. Doran",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 3,
+          "rise": 34,
+          "run": 58,
+          "marker": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"120\" y=\"276\" width=\"44\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"178\" y=\"242\" width=\"44\" height=\"68\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"236\" y=\"208\" width=\"44\" height=\"102\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 142 276 L 200 242 L 258 208\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"242\" x2=\"200\" y2=\"214\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 200 214 L 218 220 L 200 226\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-46",
+      "name": "RACI Alignment Mapping",
+      "stage": "Action Planning",
+      "groupSize": "4–12",
+      "minutes": "45–60",
+      "difficulty": "intermediate",
+      "deliverable": "Structural assignment of Responsible, Accountable, Consulted, and Informed",
+      "atAGlance": "4–12 people · 45–60 min · intermediate",
+      "steps": [
+        {
+          "text": "List the decisions or deliverables that need a clear owner before work starts, keeping one per row."
+        },
+        {
+          "text": "For each row, mark who is responsible for the work and exactly one person accountable for the outcome."
+        },
+        {
+          "text": "Add who must be consulted before the decision and who only needs to be informed after it."
+        },
+        {
+          "text": "Check the map for overload and gaps, then confirm each named person accepts the role they were given."
+        }
+      ],
+      "failure": "Two accountable names in a row, or a name in every column, so the map looks complete while decisions still stall.",
+      "intervention": "Put a single accountable name in every row, and remove anyone marked responsible and accountable unless they truly do the work.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A responsibility charting convention used across project management; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 4,
+          "rise": 18,
+          "run": 52,
+          "marker": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"100\" y=\"276\" width=\"38\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152\" y=\"258\" width=\"38\" height=\"52\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"204\" y=\"240\" width=\"38\" height=\"70\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"256\" y=\"222\" width=\"38\" height=\"88\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 119 276 L 171 258 L 223 240 L 275 222\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"275\" y1=\"222\" x2=\"275\" y2=\"194\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 275 194 L 293 200 L 275 206\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-47",
+      "name": "Assumption Test Card",
+      "stage": "Action Planning",
+      "groupSize": "2–10",
+      "minutes": "30–40",
+      "difficulty": "intermediate",
+      "deliverable": "Scientific decomposition of hypotheses into verification tests and success thresholds",
+      "atAGlance": "2–10 people · 30–40 min · intermediate",
+      "steps": [
+        {
+          "text": "Pick the assumption the plan depends on most and would hurt most if it turned out to be wrong."
+        },
+        {
+          "text": "Rewrite it as a hypothesis with a subject, a predicted behavior, and a measurable outcome."
+        },
+        {
+          "text": "Design the smallest test that could contradict the hypothesis, using people and tools the team already has."
+        },
+        {
+          "text": "Set the success threshold and the sample size before the test runs, so the result cannot be reinterpreted later."
+        },
+        {
+          "text": "Record the outcome and the decision it supports, then move to the next assumption or stop."
+        }
+      ],
+      "failure": "A test that can only confirm: the team asks leading questions and counts enthusiasm as evidence, so the assumption survives untouched.",
+      "intervention": "Ask what result would prove the assumption wrong, then design the test so that result could actually appear.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A common lean experimentation practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 5,
+          "rise": 30,
+          "run": 62,
+          "marker": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"54\" y=\"276\" width=\"48\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"116\" y=\"246\" width=\"48\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"178\" y=\"216\" width=\"48\" height=\"94\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"240\" y=\"186\" width=\"48\" height=\"124\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><rect x=\"302\" y=\"156\" width=\"48\" height=\"154\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.59\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 78 276 L 140 246 L 202 216 L 264 186 L 326 156\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"326\" y1=\"156\" x2=\"326\" y2=\"128\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 326 128 L 344 134 L 326 140\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "WS-48",
+      "name": "Definition of Done Workshop",
+      "stage": "Action Planning",
+      "groupSize": "3–15",
+      "minutes": "40–60",
+      "difficulty": "advanced",
+      "deliverable": "Technical consensus alignment on quality gates for release readiness",
+      "atAGlance": "3–15 people · 40–60 min · advanced",
+      "steps": [
+        {
+          "text": "Name the increment the criteria will cover, so the room is agreeing on the same scope."
+        },
+        {
+          "text": "Ask each person to list what must be true before they would call that increment finished."
+        },
+        {
+          "text": "Cluster the lists and turn vague items into checks someone could run and mark pass or fail."
+        },
+        {
+          "text": "Test the draft against a recent release: would these criteria have caught a defect the team shipped?"
+        },
+        {
+          "text": "Agree the final list, including the evidence each check needs, and publish it where work is tracked."
+        },
+        {
+          "text": "Set a review date and name who may change the definition, so it stays a living standard."
+        }
+      ],
+      "failure": "Activity criteria: the list says work was performed, such as code reviewed, but not what must be true, so done still means different things to different people.",
+      "intervention": "Take each item and ask how a reviewer would verify it in five minutes; if no one can say, rewrite it as a check with evidence.",
+      "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "A shared team standard from Scrum practice; no single documented originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "action-steps",
+        "parametricParams": {
+          "steps": 6,
+          "rise": 22,
+          "run": 50,
+          "marker": 6
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"53\" y=\"276\" width=\"36\" height=\"34\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"103\" y=\"254\" width=\"36\" height=\"56\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.41\" vector-effect=\"non-scaling-stroke\"/><rect x=\"153\" y=\"232\" width=\"36\" height=\"78\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.47\" vector-effect=\"non-scaling-stroke\"/><rect x=\"203\" y=\"210\" width=\"36\" height=\"100\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.53\" vector-effect=\"non-scaling-stroke\"/><rect x=\"253\" y=\"188\" width=\"36\" height=\"122\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.59\" vector-effect=\"non-scaling-stroke\"/><rect x=\"303\" y=\"166\" width=\"36\" height=\"144\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.6499999999999999\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 71 276 L 121 254 L 171 232 L 221 210 L 271 188 L 321 166\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/><line x1=\"321\" y1=\"166\" x2=\"321\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 321 138 L 339 144 L 321 150\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"40\" y1=\"316\" x2=\"360\" y2=\"316\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

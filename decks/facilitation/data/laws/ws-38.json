@@ -1,0 +1,48 @@
+{
+  "id": "WS-38",
+  "name": "Conversation Café",
+  "stage": "Liberating Structures",
+  "groupSize": "5–12",
+  "minutes": "45–60",
+  "difficulty": "beginner",
+  "deliverable": "Structured four-round dialogue suppressing cross-talk on contentious issues",
+  "atAGlance": "5–12 people · 45–60 min · beginner",
+  "steps": [
+    {
+      "text": "State one contentious question and set four rounds: three where only the person holding the object speaks, one open."
+    },
+    {
+      "text": "Place an object in the center and pass it around; each person speaks once per round while others listen."
+    },
+    {
+      "text": "Forbid cross-talk in the first three rounds: no rebuttals, side conversations, or advice."
+    },
+    {
+      "text": "In round four, open the floor for genuine dialogue, but keep the listening rules visible."
+    },
+    {
+      "text": "Close by asking what each person heard that shifted or deepened their view."
+    }
+  ],
+  "failure": "Cross-talk creeps in, two people debate each other, and the quiet members stop speaking before the later rounds.",
+  "intervention": "Hold up the talking object and say: \"No replies yet. We are here to understand, not to win; the debate round comes later.\"",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "liberating-rings",
+    "parametricParams": {
+      "rings": 5,
+      "gap": 28,
+      "dots": 4,
+      "tilt": 16
+    }
+  }
+}

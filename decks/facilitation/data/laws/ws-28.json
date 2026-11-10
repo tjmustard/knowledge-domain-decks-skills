@@ -1,0 +1,48 @@
+{
+  "id": "WS-28",
+  "name": "Decider Super-Vote",
+  "stage": "Convergent Decision",
+  "groupSize": "5–12",
+  "minutes": "15–25",
+  "difficulty": "intermediate",
+  "deliverable": "Executive decision lock-in combining democratic heatmaps with authority",
+  "atAGlance": "5–12 people · 15–25 min · intermediate",
+  "steps": [
+    {
+      "text": "Show the shortlist and give every participant the same small number of ordinary votes."
+    },
+    {
+      "text": "Let people vote silently, then cluster the dots and read the heat back to the room."
+    },
+    {
+      "text": "Give the decider a fixed set of supervotes worth more than ordinary dots and let them place them openly."
+    },
+    {
+      "text": "Ask the decider to state the decision and its reason in one sentence, naming what the heat changed."
+    },
+    {
+      "text": "Record the decision, the owner, and the next checkpoint so the vote cannot quietly reopen tomorrow."
+    }
+  ],
+  "failure": "The vote becomes a poll: the decider abstains, the loudest cluster wins, and the group leaves with no owner.",
+  "intervention": "Hand the decider the supervotes and ask for one sentence of rationale. The vote informs, the decider decides, the record names both.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Jake Knapp"
+    ],
+    "year": 2016,
+    "title": "Sprint",
+    "publication": "Simon & Schuster"
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 6,
+      "width": 160,
+      "depth": 95,
+      "chosen": 1
+    }
+  }
+}

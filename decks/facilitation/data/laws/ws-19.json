@@ -1,0 +1,43 @@
+{
+  "id": "WS-19",
+  "name": "Analogous Inspiration",
+  "stage": "Divergent Ideation",
+  "groupSize": "5–15",
+  "minutes": "30–45",
+  "difficulty": "intermediate",
+  "deliverable": "Structural transfer of mechanisms from unrelated industrial domains",
+  "atAGlance": "5–15 people · 30–45 min · intermediate",
+  "steps": [
+    {
+      "text": "Name the problem as a function, such as routing, matching, or recovery, and strip out your industry's vocabulary."
+    },
+    {
+      "text": "Send people to find how unrelated domains solve that same function, one example per person or pair."
+    },
+    {
+      "text": "For each example, extract the mechanism in a sentence: what it does and what makes it work."
+    },
+    {
+      "text": "Map each mechanism onto your problem and write the transfer, naming what changes in your context."
+    },
+    {
+      "text": "Present the transfers as mechanisms, then mark which ones need evidence before the room trusts them."
+    }
+  ],
+  "failure": "Half-working looks like a mood board of other industries: the examples are admired but no mechanism is extracted, so nothing actually transfers.",
+  "intervention": "Ask what the example does structurally, then finish the sentence: we would do the same by, and the difference here is.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A standard design-research technique; no origin given in the source."
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 8,
+      "spread": 76,
+      "length": 136,
+      "offset": 18
+    }
+  }
+}

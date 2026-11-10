@@ -1,0 +1,43 @@
+{
+  "id": "WS-18",
+  "name": "Worst Possible Idea",
+  "stage": "Divergent Ideation",
+  "groupSize": "3–15",
+  "minutes": "20–30",
+  "difficulty": "beginner",
+  "deliverable": "De-inhibited concept space built by surfacing terrible alternatives",
+  "atAGlance": "3–15 people · 20–30 min · beginner",
+  "steps": [
+    {
+      "text": "Set the challenge, then invert it: ask for the worst possible way to handle it, the more useless the better."
+    },
+    {
+      "text": "Give a short timed round where people write or call out deliberately terrible ideas without defending them."
+    },
+    {
+      "text": "Read the worst ideas aloud and let the room laugh; the point is to lower the cost of saying something."
+    },
+    {
+      "text": "For each bad idea, ask what requirement it insults, then write the opposite or the fix it implies."
+    },
+    {
+      "text": "Keep the strongest flips and drop the jokes that carry no requirement."
+    }
+  ],
+  "failure": "Half-working looks like a comedy set that ends in laughter: the bad ideas are never mined, so the room leaves with jokes instead of requirements.",
+  "intervention": "For each joke, ask what real need it insults, then write the requirement that need implies and keep only what survives the flip.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A warm-up used in ideation workshops; no origin given in the source."
+  },
+  "figure": {
+    "svgShape": "divergent-fan",
+    "parametricParams": {
+      "rays": 7,
+      "spread": 148,
+      "length": 104,
+      "offset": -14
+    }
+  }
+}

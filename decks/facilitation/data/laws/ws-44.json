@@ -1,0 +1,51 @@
+{
+  "id": "WS-44",
+  "name": "15% Solutions",
+  "stage": "Action Planning",
+  "groupSize": "1–15+",
+  "minutes": "15–25",
+  "difficulty": "beginner",
+  "deliverable": "Immediate identification of autonomous individual actions requiring no budget",
+  "atAGlance": "1–15+ people · 15–25 min · beginner",
+  "steps": [
+    {
+      "text": "Ask each person: what is the 15 percent you can do right now, with the authority and resources you already hold?"
+    },
+    {
+      "text": "Have everyone write one action in silence that needs no budget, no permission, and no one else's decision."
+    },
+    {
+      "text": "Pair people to read their action aloud and answer one question: what would make it easier to start this week?"
+    },
+    {
+      "text": "Collect the actions on a shared board without ranking or editing them; the point is what is already possible."
+    },
+    {
+      "text": "Ask each person to name the day they will take the first step and what they will notice when it is done."
+    },
+    {
+      "text": "Close by asking what help each person needs from the room, and who in the room can give it."
+    }
+  ],
+  "failure": "The group drifts into the 85 percent: a list of things leadership, budget, or another team must change, and no one names a move they can make.",
+  "intervention": "Park the blockers on a separate list, then ask again what each person can do this week without waiting for them.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Henri Lipmanowicz",
+      "Keith McCandless"
+    ],
+    "year": 2014,
+    "title": "The Surprising Power of Liberating Structures"
+  },
+  "figure": {
+    "svgShape": "action-steps",
+    "parametricParams": {
+      "steps": 6,
+      "rise": 32,
+      "run": 64,
+      "marker": 4
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "WS-09",
+  "name": "Problem Tree Analysis",
+  "stage": "Alignment & Framing",
+  "groupSize": "5–15",
+  "minutes": "45–60",
+  "difficulty": "intermediate",
+  "deliverable": "Hierarchical root-cause, core challenge, and downstream effect tree",
+  "atAGlance": "5–15 people · 45–60 min · intermediate",
+  "steps": [
+    {
+      "text": "Write the core problem on the trunk in one sentence with no cause or solution in it."
+    },
+    {
+      "text": "Ask why it exists and place each root cause below as a root; go two levels deep."
+    },
+    {
+      "text": "Ask what it causes and place each consequence above as a branch."
+    },
+    {
+      "text": "Check that every root and branch connects to the trunk, not to a neighbor."
+    },
+    {
+      "text": "Circle the roots this team can influence and agree which one to work on."
+    }
+  ],
+  "failure": "The tree becomes a wish list: causes and effects sit on the same level, and the trunk is a vague label that could mean anything.",
+  "intervention": "Say whether the note is below, a reason it happens, or above, a thing it causes, then rewrite the trunk as one observable condition with an actor and a cost.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "Used in development and policy analysis; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 104,
+      "angle": 26,
+      "reach": 84,
+      "grid": 4
+    }
+  }
+}

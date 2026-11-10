@@ -1,0 +1,43 @@
+{
+  "id": "WS-07",
+  "name": "User Journey Mapping",
+  "stage": "Alignment & Framing",
+  "groupSize": "3–10",
+  "minutes": "60–90",
+  "difficulty": "intermediate",
+  "deliverable": "End-to-end temporal visualization of user touchpoints and pain points",
+  "atAGlance": "3–10 people · 60–90 min · intermediate",
+  "steps": [
+    {
+      "text": "Agree the persona, the goal, and where the journey starts and ends before drawing anything."
+    },
+    {
+      "text": "Lay out the stages in time order as columns and name each one from the user's point of view."
+    },
+    {
+      "text": "Under each stage, record what the user does, sees, and has to use to move forward."
+    },
+    {
+      "text": "Mark the pain points and the moments where users drop out or need help."
+    },
+    {
+      "text": "Walk the whole path once and circle the two transitions worth fixing first."
+    }
+  ],
+  "failure": "The map lists internal process steps in company language, so it documents how the organization works rather than what the user experiences.",
+  "intervention": "Ask what the user would say they were doing at that step; if the answer is an internal handoff, move it behind the line and rewrite the visible moment.",
+  "provenance": "Steps written for this deck from the method's public definition; the source has no protocol.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "A standard service design and UX method; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "framing-square",
+    "parametricParams": {
+      "bounds": 120,
+      "angle": 15,
+      "reach": 132,
+      "grid": 5
+    }
+  }
+}

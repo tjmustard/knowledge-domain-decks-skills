@@ -1,0 +1,43 @@
+{
+  "id": "WS-21",
+  "name": "Impact vs. Effort Matrix",
+  "stage": "Convergent Decision",
+  "groupSize": "3–15",
+  "minutes": "30–45",
+  "difficulty": "beginner",
+  "deliverable": "2x2 prioritization of quick wins, major projects, and time sinks",
+  "atAGlance": "3–15 people · 30–45 min · beginner",
+  "steps": [
+    {
+      "text": "Draw two axes: impact on the north-star metric upward, delivery effort rightward. Define what each end means."
+    },
+    {
+      "text": "Choose one agreed baseline item, then place each card by comparing it with the baseline on impact first."
+    },
+    {
+      "text": "Shift each card horizontally by real effort: build, coordination, review, and risk, not coding hours alone."
+    },
+    {
+      "text": "Push every card off the center line so no item hides in an ambiguous middle position."
+    },
+    {
+      "text": "Read the quadrants aloud and name the action each one authorizes: sprint, spike, backlog, or drop."
+    }
+  ],
+  "failure": "Effort optimism and pet-feature impact inflate every card, so the grid crowds into one corner and ranks nothing.",
+  "intervention": "Ask what the item costs beyond coding, compare it with a known small change, and force the top three impact cards into a strict order.",
+  "provenance": "Source protocol: the steps follow the written script in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "note": "Widely used in product prioritization; no single documented originator."
+  },
+  "figure": {
+    "svgShape": "convergent-funnel",
+    "parametricParams": {
+      "inlets": 5,
+      "width": 150,
+      "depth": 110,
+      "chosen": 1
+    }
+  }
+}
