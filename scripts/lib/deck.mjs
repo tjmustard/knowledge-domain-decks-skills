@@ -26,8 +26,38 @@ export async function loadCards(root = ROOT) {
   return cards;
 }
 
-export function formatAuthors(origin) {
-  return origin.authors.join(" & ");
+// House style: one ampersand before the last author, commas between the rest,
+// no serial comma. Full given names, as the records carry them.
+export function authorsLabel(origin) {
+  const names = origin.authors || [];
+  if (names.length <= 1) return names[0] || "";
+  return names.slice(0, -1).join(", ") + " & " + names[names.length - 1];
+}
+
+// A title that already ends a sentence takes no added stop. Closing quotes,
+// apostrophes, and brackets are stripped first, so a title quoted or
+// parenthesised as a whole is judged by its own final stop.
+const TITLE_CLOSERS = new Set(['"', "“", "”", "‘", "’", "'", ")", "]"]);
+
+export function titleStop(title) {
+  let text = String(title);
+  while (text.length > 0 && TITLE_CLOSERS.has(text[text.length - 1])) {
+    text = text.slice(0, -1);
+  }
+  return /[.?!]$/.test(text) ? "" : ".";
+}
+
+// Add the two computed strings to a card's citation block. The print bundle
+// and the web bundle both carry them, so no renderer re-implements the rule.
+export function withCitation(card) {
+  return {
+    ...card,
+    academicOrigin: {
+      ...card.academicOrigin,
+      authorsLabel: authorsLabel(card.academicOrigin),
+      titleStop: titleStop(card.academicOrigin.title)
+    }
+  };
 }
 
 export function wordCount(text) {

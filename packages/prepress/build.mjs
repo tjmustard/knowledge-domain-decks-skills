@@ -12,7 +12,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { join } from "node:path";
-import { ROOT, loadCards } from "../../scripts/lib/deck.mjs";
+import { ROOT, loadCards, withCitation } from "../../scripts/lib/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../../scripts/svg.js");
@@ -42,7 +42,7 @@ for (const card of cards) {
   const svgFile = join(svgDir, `${card.id}.svg`);
   await writeFile(svgFile, svg);
   manifest.push({
-    ...card,
+    ...withCitation(card),
     svgFile: `../build/svg/${card.id}.svg`
   });
 }

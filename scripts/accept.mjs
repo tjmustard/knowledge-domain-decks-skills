@@ -23,7 +23,7 @@ import { createRequire } from "node:module";
 import { existsSync } from "node:fs";
 import { mkdir, readdir, readFile, rm } from "node:fs/promises";
 import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ref = process.argv[2] || "HEAD";
@@ -220,6 +220,37 @@ try {
             ? `rejected, but not for ${fixture.why} - the fixture no longer tests what it claims`
             : "accepted, so this rule is not being enforced");
     }
+  }
+
+  // The stop predicate has one implementation, in this commit's deck.mjs.
+  // Closing quotes, apostrophes and brackets are stripped before the test, so
+  // the table names both the titles that lose the stop and the possessives and
+  // mid-title apostrophes that must not be mistaken for closers.
+  {
+    const { titleStop } = await import(
+      pathToFileURL(join(worktree, "scripts", "lib", "deck.mjs")).href
+    );
+    const cases = [
+      ["Plain", "."],
+      ["Ends.", ""],
+      ["Why?", ""],
+      ["Really!", ""],
+      ['Quoted?"', ""],
+      ["Quoted.'", ""],
+      ["Quoted?”", ""],
+      ["Quoted.’", ""],
+      ["Really!)", ""],
+      ["Really!]", ""],
+      ["Users'", "."],
+      ["O'Brien's guide", "."]
+    ];
+    const wrong = cases.filter(([title, expected]) => titleStop(title) !== expected);
+    record("citation: title stop", wrong.length === 0 ? "pass" : "fail",
+      wrong.length === 0
+        ? `all ${cases.length} predicate cases hold`
+        : wrong.map(([title, expected]) =>
+            `${JSON.stringify(title)} expected ${JSON.stringify(expected)}, got ${JSON.stringify(titleStop(title))}`
+          ).join(" / "));
   }
 
   // --- 3. generators are deterministic and match what is committed ---------

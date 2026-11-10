@@ -453,3 +453,30 @@ same string, so both renderers give the same wrong answer. No card in the deck
 ends that way, so neither limit is a defect in today's output; this entry
 exists so the first card that does is recognised as a known edge rather than
 rediscovered.
+
+## 25. Citation strings are computed once and printed, not re-derived
+
+The stop fix left the same rule written three times (§24). This slice removes
+the duplication: `scripts/lib/deck.mjs` owns `authorsLabel` and `titleStop`,
+and both bundles — the one Typst reads and `packages/web/deck-data.js` — carry
+the computed strings inside `academicOrigin`. The card template, the viewer,
+and both rules artifacts print those fields; none of them joins authors or
+tests a character. A renderer that starts computing either again has broken
+the slice.
+
+House style joins authors with one ampersand before the last name and commas
+between the rest, with no serial comma, using full given names as the records
+carry them: two authors print "A & B", three or more print "A, B, C & D".
+Six cards change on output because their authors were previously joined with
+plain commas: `DEC-04` Iyengar & Lepper, `DEC-08` Tversky & Kahneman, `DEC-10`
+Agarwal & Karahanna, `DEC-11` Baumeister, Bratslavsky, Muraven & Tice, `TME-02`
+Accot & Zhai, and `TME-03` Doherty & Thadhani. `DEC-11` is the acceptance case:
+exactly one ampersand and no ", &".
+
+The stop predicate strips trailing closers (`"`, the curly double quotes,
+the apostrophe in both forms, `)`, `]`) before testing for `?`, `!` or `.`, so
+a title quoted or parenthesised as a whole is judged by its own final stop
+while possessives and mid-title apostrophes are unaffected. The acceptance gate
+runs twelve named cases against this commit's `deck.mjs`, including all the
+forms §24 recorded as the edge it could not yet handle. No schema changes: the
+two fields are computed into the bundles, not written into `data/laws/*.json`.

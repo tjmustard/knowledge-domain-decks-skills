@@ -8,14 +8,14 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ROOT, loadCards } from "./lib/deck.mjs";
+import { ROOT, loadCards, withCitation } from "./lib/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("./svg.js");
 
 const cards = await loadCards();
 const bundled = cards.map((card) => ({
-  ...card,
+  ...withCitation(card),
   svg: renderSvg(card.graphicMetaphor)
 }));
 

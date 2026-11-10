@@ -12,13 +12,10 @@ import {
   ROOT,
   CATEGORY_ORDER,
   loadCards,
-  formatAuthors
+  withCitation
 } from "../../scripts/lib/deck.mjs";
 
-// A title that already ends a sentence takes no second stop.
-const titleStop = (title) => (/[.?!]$/.test(title) ? "" : ".");
-
-const cards = await loadCards();
+const cards = (await loadCards()).map(withCitation);
 const grouped = new Map(CATEGORY_ORDER.map((category) => [category, []]));
 for (const card of cards) {
   if (!grouped.has(card.category)) grouped.set(card.category, []);
@@ -48,7 +45,7 @@ function rulesMarkdown() {
       lines.push(`**Anti-pattern.** ${card.antiPattern.violation}`, "");
       lines.push(`**Fix.** ${card.antiPattern.remediation}`, "");
       lines.push(
-        `**Source.** ${formatAuthors(card.academicOrigin)} (${card.academicOrigin.year}). *${card.academicOrigin.title}*${titleStop(card.academicOrigin.title)} ${card.academicOrigin.publication}.`,
+        `**Source.** ${card.academicOrigin.authorsLabel} (${card.academicOrigin.year}). *${card.academicOrigin.title}*${card.academicOrigin.titleStop} ${card.academicOrigin.publication}.`,
         ""
       );
     }
@@ -83,7 +80,7 @@ function skillMarkdown() {
       lines.push(`- **Instead of:** ${card.antiPattern.violation}`);
       lines.push(`- **Do:** ${card.antiPattern.remediation}`);
       lines.push(
-        `- **Source:** ${formatAuthors(card.academicOrigin)} (${card.academicOrigin.year}), *${card.academicOrigin.title}*${titleStop(card.academicOrigin.title)}`
+        `- **Source:** ${card.academicOrigin.authorsLabel} (${card.academicOrigin.year}), *${card.academicOrigin.title}*${card.academicOrigin.titleStop}`
       );
       lines.push("");
     }

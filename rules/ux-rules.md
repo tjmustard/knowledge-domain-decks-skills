@@ -231,7 +231,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Fix.** One review screen batches the questions, defers the optional half, and pre-fills safe defaults.
 
-**Source.** Roy F. Baumeister & Ellen Bratslavsky & Mark Muraven & Dianne M. Tice (1998). *Ego Depletion: Is the Active Self a Limited Resource?* Journal of Personality and Social Psychology, 74(5), 1252-1265.
+**Source.** Roy F. Baumeister, Ellen Bratslavsky, Mark Muraven & Dianne M. Tice (1998). *Ego Depletion: Is the Active Self a Limited Resource?* Journal of Personality and Social Psychology, 74(5), 1252-1265.
 
 ## Time, Motion & Ergonomics
 

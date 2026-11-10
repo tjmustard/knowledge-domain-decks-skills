@@ -31,11 +31,6 @@
 
 #let accent(card) = accent-color.at(card.category, default: rgb("#334155"))
 
-// A title that already ends a sentence takes no second stop.
-#let title-stop(title) = if (
-  title.ends-with("?") or title.ends-with("!") or title.ends-with(".")
-) { "" } else { "." }
-
 // Trim ticks and trim outline, all within the bleed band.
 #let marks() = [
   #place(top + left, line(start: (0pt, trim), end: (trim, trim), stroke: mark-stroke))
@@ -115,8 +110,8 @@
     #line(length: 100%, stroke: rule-stroke)
     #v(4pt)
     #text(size: 6.5pt, fill: rgb("#64748b"))[
-      Source: #card.academicOrigin.authors.join(", ") (#card.academicOrigin.year).
-      _#card.academicOrigin.title#title-stop(card.academicOrigin.title)_ #card.academicOrigin.publication.
+      Source: #card.academicOrigin.authorsLabel (#card.academicOrigin.year).
+      _#card.academicOrigin.title#(card.academicOrigin.titleStop)_ #card.academicOrigin.publication.
     ]
   ])
 ]
