@@ -1,0 +1,63 @@
+{
+  "id": "I32",
+  "sourceTacticNo": 32,
+  "name": "Pirate Metrics (AARRR) Baseline Funnel Audit",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that our product funnel converts prospects efficiently from initial discovery through to paid renewal. We will verify this by instrumenting end-to-end event telemetry across all five funnel stages, and consider it validated if we achieve baseline conversions of ≥ 20% Acquisition-to-Activation and ≥ 5% Activation-to-Revenue.",
+  "hypothesisSize": 8,
+  "schematic": "Read at stage 5 of the 5-stage funnel",
+  "method": [
+    "Time: 14–30 days",
+    "Cost: $0–$100",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Define one metric per stage: landing visitor, value moment, 7-day return, payment executed, invite dispatched."
+    },
+    {
+      "label": "Execution",
+      "text": "Instrument an analytics event for each step on an open-source analytics or warehouse platform."
+    },
+    {
+      "label": "Data collection",
+      "text": "Build the funnel view and track conversion percentage and velocity between successive steps."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Define operational metrics for each funnel step: Acquisition (unique landing visitor), Activation (core value moment reached), Retention (return usage within 7 days), Revenue (payment executed), and Referral (invite dispatched)."
+    },
+    {
+      "label": "Execution",
+      "text": "Instrument analytics events for each operational step using an open-source product analytics or data warehouse platform."
+    },
+    {
+      "label": "Data collection",
+      "text": "Build a conversion funnel visualization, tracking conversion percentages and user velocity between successive steps."
+    }
+  ],
+  "warning": {
+    "label": "Blended Funnel Distortions",
+    "text": "One blended average hides channel differences: weak paid traffic dilutes strong organic intent."
+  },
+  "warningFull": "Evaluating the funnel as a single, blended average hides performance differences across individual traffic channels, masking the fact that poor paid traffic is diluting strong organic engagement.",
+  "origin": {
+    "authors": [
+      "Dave McClure"
+    ],
+    "year": 2007,
+    "title": "Startup Metrics for Pirates: AARRR!",
+    "publication": "Ignite Seattle"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "funnel",
+      "divisions": 5,
+      "mark": 5
+    }
+  }
+}

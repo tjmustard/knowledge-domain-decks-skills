@@ -1,0 +1,58 @@
+{
+  "id": "I38",
+  "sourceTacticNo": 38,
+  "name": "Minimum Viable Experiment (MVE) Timeboxing",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe we can determine whether to pursue [Hypothesis X] in five business days. We will verify this by running a structured, strictly timeboxed five-day testing sprint, and consider it validated if the team gathers enough behavioral data to pass an agreed quantitative validation gate by Day 5.",
+  "hypothesisSize": 8,
+  "schematic": "Timebox at step 1 of the 3-step strip",
+  "method": [
+    "Time: 5 business days",
+    "Cost: $0–$100",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "On Monday, isolate one critical unknown and design a test that can finish inside one week."
+    },
+    {
+      "label": "Execution",
+      "text": "Build Monday and Tuesday, run live Wednesday and Thursday, close collection Friday at midday."
+    },
+    {
+      "label": "Data collection",
+      "text": "Present raw results Friday and force the decision: validate, invalidate or kill."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "On Monday morning, isolate a single critical unknown. Design an experiment whose asset preparation, user exposure, and data analysis can complete inside one business week."
+    },
+    {
+      "label": "Execution",
+      "text": "Run asset preparation on Monday and Tuesday, deploy the test to live traffic on Wednesday and Thursday, and close data collection on Friday at midday."
+    },
+    {
+      "label": "Data collection",
+      "text": "Present the raw results during a Friday retrospective, enforcing an immediate decision: Validate, Invalidate, or Kill."
+    }
+  ],
+  "warning": {
+    "label": "Sunk Cost Rationalization Extensions",
+    "text": "Teams extend a deadline when results look bad, hoping another few days salvages the hypothesis."
+  },
+  "warningFull": "Teams often extend testing deadlines when initial results are ambiguous or discouraging, hoping that running the test a few days longer will salvage their favored hypothesis.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 1
+    }
+  }
+}

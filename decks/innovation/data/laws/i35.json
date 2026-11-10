@@ -1,0 +1,63 @@
+{
+  "id": "I35",
+  "sourceTacticNo": 35,
+  "name": "Net Promoter Score and Root-Cause Decomposition",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that users advocate organically for our product. We will verify this by running an in-app Net Promoter survey with open-ended follow-up prompts, and consider it validated if the overall score meets or exceeds +40, with ≥ 50% of Promoters pointing to the same core capability as their primary reason for recommending it.",
+  "hypothesisSize": 8,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 7–10 days",
+    "Cost: $0",
+    "Confidence: Moderate"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Add the 0-10 rating prompt after a user completes a core milestone, not at random."
+    },
+    {
+      "label": "Execution",
+      "text": "Sort answers into promoters, passives and detractors, then ask each for the reason behind the score."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compute NPS = % Promoters − % Detractors."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Add a standard 0–10 NPS rating prompt to the product interface, triggered only after a user successfully completes a core milestone."
+    },
+    {
+      "label": "Execution",
+      "text": "Group responses into Promoters (9–10), Passives (7–8), and Detractors (0–6). For all scores, trigger an immediate open-ended follow-up asking for the specific reason behind the rating."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate the overall score: NPS = % Promoters − % Detractors"
+    }
+  ],
+  "warning": {
+    "label": "Passive Satisfaction Inflation",
+    "text": "High passives (7-8) look healthy but those users switch for price or features."
+  },
+  "warningFull": "Teams often treat high proportions of Passive respondents (ratings of 7 or 8) as evidence of product health, ignoring that these users regularly switch when a competitor offers lower pricing or better features.",
+  "origin": {
+    "authors": [
+      "Frederick F. Reichheld"
+    ],
+    "year": 2003,
+    "title": "The One Number You Need to Grow",
+    "publication": "Harvard Business Review"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

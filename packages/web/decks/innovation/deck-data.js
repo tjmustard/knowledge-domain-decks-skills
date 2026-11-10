@@ -1939,6 +1939,327 @@ window.INNOVATION_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 50 64 L 350 64 L 314.7 150.7 L 85.3 150.7 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 85.3 150.7 L 314.7 150.7 L 279.3 237.3 L 120.7 237.3 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 120.7 237.3 L 279.3 237.3 L 244 324 L 156 324 Z\" fill=\"currentColor\" fill-opacity=\"0.14\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280.666667\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
+      "id": "I32",
+      "sourceTacticNo": 32,
+      "name": "Pirate Metrics (AARRR) Baseline Funnel Audit",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe that our product funnel converts prospects efficiently from initial discovery through to paid renewal. We will verify this by instrumenting end-to-end event telemetry across all five funnel stages, and consider it validated if we achieve baseline conversions of ≥ 20% Acquisition-to-Activation and ≥ 5% Activation-to-Revenue.",
+      "hypothesisSize": 8,
+      "schematic": "Read at stage 5 of the 5-stage funnel",
+      "method": [
+        "Time: 14–30 days",
+        "Cost: $0–$100",
+        "Confidence: High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Define one metric per stage: landing visitor, value moment, 7-day return, payment executed, invite dispatched."
+        },
+        {
+          "label": "Execution",
+          "text": "Instrument an analytics event for each step on an open-source analytics or warehouse platform."
+        },
+        {
+          "label": "Data collection",
+          "text": "Build the funnel view and track conversion percentage and velocity between successive steps."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Define operational metrics for each funnel step: Acquisition (unique landing visitor), Activation (core value moment reached), Retention (return usage within 7 days), Revenue (payment executed), and Referral (invite dispatched)."
+        },
+        {
+          "label": "Execution",
+          "text": "Instrument analytics events for each operational step using an open-source product analytics or data warehouse platform."
+        },
+        {
+          "label": "Data collection",
+          "text": "Build a conversion funnel visualization, tracking conversion percentages and user velocity between successive steps."
+        }
+      ],
+      "warning": {
+        "label": "Blended Funnel Distortions",
+        "text": "One blended average hides channel differences: weak paid traffic dilutes strong organic intent."
+      },
+      "warningFull": "Evaluating the funnel as a single, blended average hides performance differences across individual traffic channels, masking the fact that poor paid traffic is diluting strong organic engagement.",
+      "origin": {
+        "authors": [
+          "Dave McClure"
+        ],
+        "year": 2007,
+        "title": "Startup Metrics for Pirates: AARRR!",
+        "publication": "Ignite Seattle",
+        "authorsLabel": "Dave McClure",
+        "titleStop": ""
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "funnel",
+          "divisions": 5,
+          "mark": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 50 64 L 350 64 L 328.8 116 L 71.2 116 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 71.2 116 L 328.8 116 L 307.6 168 L 92.4 168 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 92.4 168 L 307.6 168 L 286.4 220 L 113.6 220 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 113.6 220 L 286.4 220 L 265.2 272 L 134.8 272 Z\" fill=\"none\" fill-opacity=\"0\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linejoin=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 134.8 272 L 265.2 272 L 244 324 L 156 324 Z\" fill=\"currentColor\" fill-opacity=\"0.14\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linejoin=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"298\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I33",
+      "sourceTacticNo": 33,
+      "name": "Cohort Retention Decay Curve Analysis",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe that our product delivers sustained, long-term utility to users. We will verify this by tracking weekly active usage across monthly cohorts, and consider it validated if the retention curve flattens into a stable horizontal asymptote at ≥ 20% weekly active retention by Week 8: lim R(t) as t → ∞  ≥ 0.20",
+      "hypothesisSize": 8,
+      "schematic": "Week 8 retention on the decay curve",
+      "method": [
+        "Time: 30–60 days",
+        "Cost: $0",
+        "Confidence: Extreme (Product-Market Fit ground truth)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Define the core action that means real value - exporting a project, working with a teammate - not a login."
+        },
+        {
+          "label": "Execution",
+          "text": "Group users into weekly or monthly cohorts by the week they finished onboarding and follow them."
+        },
+        {
+          "label": "Data collection",
+          "text": "Plot retention per cohort and watch whether the curve flattens or keeps decaying toward zero."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Define the core engagement action that reflects genuine product value (e.g., exporting a project or collaborating with a teammate), rather than simply logging in."
+        },
+        {
+          "label": "Execution",
+          "text": "Group users into discrete cohorts based on the calendar week or month they completed onboarding. Track their activity over time."
+        },
+        {
+          "label": "Data collection",
+          "text": "Plot percentage retention curves for each cohort over time, tracking whether the retention trajectory flattens or continues decaying toward the origin."
+        }
+      ],
+      "warning": {
+        "label": "The Walking Dead Metric Trap",
+        "text": "Top-line registered users can grow while every cohort decays to zero; growth stalls when spend slows."
+      },
+      "warningFull": "A company can show impressive top-line growth in total registered users while its underlying cohort retention curves decay steadily to zero, meaning growth will stall the moment acquisition spend slows.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "curve",
+          "divisions": 8,
+          "mark": 8
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"62\" y1=\"320\" x2=\"62\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"97.75\" y1=\"320\" x2=\"97.75\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"133.5\" y1=\"320\" x2=\"133.5\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"169.25\" y1=\"320\" x2=\"169.25\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"205\" y1=\"320\" x2=\"205\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.75\" y1=\"320\" x2=\"240.75\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"276.5\" y1=\"320\" x2=\"276.5\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"312.25\" y1=\"320\" x2=\"312.25\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"348\" y1=\"320\" x2=\"348\" y2=\"312\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"62\" y1=\"320\" x2=\"348\" y2=\"320\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"62\" y1=\"100.4\" x2=\"66.5\" y2=\"106.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66.5\" y1=\"106.2\" x2=\"70.9\" y2=\"111.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70.9\" y1=\"111.9\" x2=\"75.4\" y2=\"117.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"75.4\" y1=\"117.3\" x2=\"79.9\" y2=\"122.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"79.9\" y1=\"122.6\" x2=\"84.3\" y2=\"127.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"84.3\" y1=\"127.7\" x2=\"88.8\" y2=\"132.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"88.8\" y1=\"132.7\" x2=\"93.3\" y2=\"137.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"93.3\" y1=\"137.5\" x2=\"97.8\" y2=\"142.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"97.8\" y1=\"142.1\" x2=\"102.2\" y2=\"146.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"102.2\" y1=\"146.6\" x2=\"106.7\" y2=\"150.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"106.7\" y1=\"150.9\" x2=\"111.2\" y2=\"155.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"111.2\" y1=\"155.1\" x2=\"115.6\" y2=\"159.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"115.6\" y1=\"159.2\" x2=\"120.1\" y2=\"163.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"120.1\" y1=\"163.1\" x2=\"124.6\" y2=\"166.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"124.6\" y1=\"166.9\" x2=\"129\" y2=\"170.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"129\" y1=\"170.6\" x2=\"133.5\" y2=\"174.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"133.5\" y1=\"174.1\" x2=\"138\" y2=\"177.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"138\" y1=\"177.6\" x2=\"142.4\" y2=\"180.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"142.4\" y1=\"180.9\" x2=\"146.9\" y2=\"184.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.9\" y1=\"184.2\" x2=\"151.4\" y2=\"187.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"151.4\" y1=\"187.3\" x2=\"155.8\" y2=\"190.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"155.8\" y1=\"190.3\" x2=\"160.3\" y2=\"193.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160.3\" y1=\"193.2\" x2=\"164.8\" y2=\"196.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"164.8\" y1=\"196.1\" x2=\"169.3\" y2=\"198.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"169.3\" y1=\"198.8\" x2=\"173.7\" y2=\"201.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"173.7\" y1=\"201.5\" x2=\"178.2\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"178.2\" y1=\"204\" x2=\"182.7\" y2=\"206.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182.7\" y1=\"206.5\" x2=\"187.1\" y2=\"208.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"187.1\" y1=\"208.9\" x2=\"191.6\" y2=\"211.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191.6\" y1=\"211.2\" x2=\"196.1\" y2=\"213.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196.1\" y1=\"213.5\" x2=\"200.5\" y2=\"215.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200.5\" y1=\"215.7\" x2=\"205\" y2=\"217.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"205\" y1=\"217.8\" x2=\"209.5\" y2=\"219.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"209.5\" y1=\"219.8\" x2=\"213.9\" y2=\"221.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"213.9\" y1=\"221.8\" x2=\"218.4\" y2=\"223.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"218.4\" y1=\"223.7\" x2=\"222.9\" y2=\"225.5\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"222.9\" y1=\"225.5\" x2=\"227.3\" y2=\"227.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"227.3\" y1=\"227.3\" x2=\"231.8\" y2=\"229.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"231.8\" y1=\"229.1\" x2=\"236.3\" y2=\"230.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"236.3\" y1=\"230.7\" x2=\"240.8\" y2=\"232.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"240.8\" y1=\"232.4\" x2=\"245.2\" y2=\"233.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.2\" y1=\"233.9\" x2=\"249.7\" y2=\"235.4\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"249.7\" y1=\"235.4\" x2=\"254.2\" y2=\"236.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254.2\" y1=\"236.9\" x2=\"258.6\" y2=\"238.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"258.6\" y1=\"238.3\" x2=\"263.1\" y2=\"239.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"263.1\" y1=\"239.7\" x2=\"267.6\" y2=\"241\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"267.6\" y1=\"241\" x2=\"272\" y2=\"242.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"272\" y1=\"242.3\" x2=\"276.5\" y2=\"243.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"276.5\" y1=\"243.6\" x2=\"281\" y2=\"244.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"281\" y1=\"244.8\" x2=\"285.4\" y2=\"246\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"285.4\" y1=\"246\" x2=\"289.9\" y2=\"247.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"289.9\" y1=\"247.1\" x2=\"294.4\" y2=\"248.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"294.4\" y1=\"248.2\" x2=\"298.8\" y2=\"249.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"298.8\" y1=\"249.2\" x2=\"303.3\" y2=\"250.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"303.3\" y1=\"250.3\" x2=\"307.8\" y2=\"251.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"307.8\" y1=\"251.3\" x2=\"312.3\" y2=\"252.2\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"312.3\" y1=\"252.2\" x2=\"316.7\" y2=\"253.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"316.7\" y1=\"253.1\" x2=\"321.2\" y2=\"254\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"321.2\" y1=\"254\" x2=\"325.7\" y2=\"254.9\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"325.7\" y1=\"254.9\" x2=\"330.1\" y2=\"255.7\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330.1\" y1=\"255.7\" x2=\"334.6\" y2=\"256.6\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"334.6\" y1=\"256.6\" x2=\"339.1\" y2=\"257.3\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"339.1\" y1=\"257.3\" x2=\"343.5\" y2=\"258.1\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"343.5\" y1=\"258.1\" x2=\"348\" y2=\"258.8\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330.125\" y1=\"320\" x2=\"330.125\" y2=\"255.748175\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.125\" cy=\"255.748175\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.8\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I34",
+      "sourceTacticNo": 34,
+      "name": "Sean Ellis PMF Survey Engine (The 40% Rule)",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe our product has achieved early product-market fit within its core user segment. We will verify this by surveying users who have experienced the core product at least twice in the past fortnight, and consider it validated if ≥ 40% state they would be \"very disappointed\" if the product disappeared tomorrow.",
+      "hypothesisSize": 8,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 7–14 days",
+        "Cost: $0",
+        "Confidence: High (Diagnostic survey)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Ask one question - how would you feel if you could no longer use it - with four fixed answers."
+        },
+        {
+          "label": "Execution",
+          "text": "Send it only to users who finished onboarding and used the product more than once."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compute the very-disappointed share and segment it to find where satisfaction is strongest."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a short survey centered on the question: \"How would you feel if you could no longer use [Product]?\" with four fixed responses: (a) Very disappointed, (b) Somewhat disappointed, (c) Not disappointed, or (d) I no longer use it."
+        },
+        {
+          "label": "Execution",
+          "text": "Send the survey exclusively to users who have completed the onboarding flow and engaged with the product multiple times."
+        },
+        {
+          "label": "Data collection",
+          "text": "Calculate the proportion of respondents who choose \"Very disappointed.\" Segment these responses by user demographic and persona to isolate where satisfaction is strongest: PMF Score = Count(\"Very Disappointed\") / Total Qualified Respondents × 100 ≥ 40%"
+        }
+      ],
+      "warning": {
+        "label": "Surveying Casual, Non-Core Users",
+        "text": "Surveying casual users who signed up and bounced pulls the score down and hides fit."
+      },
+      "warningFull": "Sending the survey to all registered users—including those who signed up and immediately bounced—dilutes the score and obscures product-market fit within the true target segment.",
+      "origin": {
+        "authors": [
+          "Sean Ellis",
+          "Morgan Brown"
+        ],
+        "year": 2017,
+        "title": "Hacking Growth: How Today’s Fastest-Growing Companies Drive Breakout Success",
+        "publication": "Currency",
+        "authorsLabel": "Sean Ellis & Morgan Brown",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I35",
+      "sourceTacticNo": 35,
+      "name": "Net Promoter Score and Root-Cause Decomposition",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe that users advocate organically for our product. We will verify this by running an in-app Net Promoter survey with open-ended follow-up prompts, and consider it validated if the overall score meets or exceeds +40, with ≥ 50% of Promoters pointing to the same core capability as their primary reason for recommending it.",
+      "hypothesisSize": 8,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 7–10 days",
+        "Cost: $0",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Add the 0-10 rating prompt after a user completes a core milestone, not at random."
+        },
+        {
+          "label": "Execution",
+          "text": "Sort answers into promoters, passives and detractors, then ask each for the reason behind the score."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compute NPS = % Promoters − % Detractors."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Add a standard 0–10 NPS rating prompt to the product interface, triggered only after a user successfully completes a core milestone."
+        },
+        {
+          "label": "Execution",
+          "text": "Group responses into Promoters (9–10), Passives (7–8), and Detractors (0–6). For all scores, trigger an immediate open-ended follow-up asking for the specific reason behind the rating."
+        },
+        {
+          "label": "Data collection",
+          "text": "Calculate the overall score: NPS = % Promoters − % Detractors"
+        }
+      ],
+      "warning": {
+        "label": "Passive Satisfaction Inflation",
+        "text": "High passives (7-8) look healthy but those users switch for price or features."
+      },
+      "warningFull": "Teams often treat high proportions of Passive respondents (ratings of 7 or 8) as evidence of product health, ignoring that these users regularly switch when a competitor offers lower pricing or better features.",
+      "origin": {
+        "authors": [
+          "Frederick F. Reichheld"
+        ],
+        "year": 2003,
+        "title": "The One Number You Need to Grow",
+        "publication": "Harvard Business Review",
+        "authorsLabel": "Frederick F. Reichheld",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I36",
+      "sourceTacticNo": 36,
+      "name": "Feature-Flagged Canary Experiment",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe that [Redesigned Workflow X] increases task completion rates compared to the current baseline. We will verify this by deploying the redesign to 10% of production traffic via an open-source feature flag, and consider it validated if the treatment group shows a statistically significant lift in task completions (≥ 15%, p < 0.05) without degrading error rates or latency.",
+      "hypothesisSize": 7.5,
+      "schematic": "Split at step 2 of the 3-step strip",
+      "method": [
+        "Time: 7–14 days",
+        "Cost: $0",
+        "Confidence: Extreme (Empirical statistical comparison)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Put the new workflow behind a feature flag with exposure keys and logging attributes."
+        },
+        {
+          "label": "Execution",
+          "text": "Split 10% of traffic at random, watch errors, then raise to 50% once it is stable."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compare conversion, errors, latency and completion time between control and treatment."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Instrument the alternative workflow behind a dynamic feature flag rule, defining exposure keys and logging attributes."
+        },
+        {
+          "label": "Execution",
+          "text": "Route a randomized 10% traffic split to the variant while monitoring error logs and system health. Gradually increase traffic to 50% as system stability is confirmed."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track conversion rates, system errors, operational latency, and task completion times across both control and treatment variations."
+        }
+      ],
+      "warning": {
+        "label": "Early Peeking and Underpowered Samples",
+        "text": "Stopping when p dips below 0.05 inflates false positives; lock sample size and duration first."
+      },
+      "warningFull": "Stopping an experiment early the moment a p-value dips below 0.05 dramatically increases the rate of false positives; sample sizes and experiment durations must be locked in advance.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "I37",
       "sourceTacticNo": 37,
       "name": "Unit Economics Stress Test (CAC:LTV Ratio)",
@@ -2000,6 +2321,67 @@ window.INNOVATION_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
     },
     {
+      "id": "I38",
+      "sourceTacticNo": 38,
+      "name": "Minimum Viable Experiment (MVE) Timeboxing",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe we can determine whether to pursue [Hypothesis X] in five business days. We will verify this by running a structured, strictly timeboxed five-day testing sprint, and consider it validated if the team gathers enough behavioral data to pass an agreed quantitative validation gate by Day 5.",
+      "hypothesisSize": 8,
+      "schematic": "Timebox at step 1 of the 3-step strip",
+      "method": [
+        "Time: 5 business days",
+        "Cost: $0–$100",
+        "Confidence: Moderate"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "On Monday, isolate one critical unknown and design a test that can finish inside one week."
+        },
+        {
+          "label": "Execution",
+          "text": "Build Monday and Tuesday, run live Wednesday and Thursday, close collection Friday at midday."
+        },
+        {
+          "label": "Data collection",
+          "text": "Present raw results Friday and force the decision: validate, invalidate or kill."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "On Monday morning, isolate a single critical unknown. Design an experiment whose asset preparation, user exposure, and data analysis can complete inside one business week."
+        },
+        {
+          "label": "Execution",
+          "text": "Run asset preparation on Monday and Tuesday, deploy the test to live traffic on Wednesday and Thursday, and close data collection on Friday at midday."
+        },
+        {
+          "label": "Data collection",
+          "text": "Present the raw results during a Friday retrospective, enforcing an immediate decision: Validate, Invalidate, or Kill."
+        }
+      ],
+      "warning": {
+        "label": "Sunk Cost Rationalization Extensions",
+        "text": "Teams extend a deadline when results look bad, hoping another few days salvages the hypothesis."
+      },
+      "warningFull": "Teams often extend testing deadlines when initial results are ambiguous or discouraging, hoping that running the test a few days longer will salvage their favored hypothesis.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 1
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"93.333333\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
       "id": "I39",
       "sourceTacticNo": 39,
       "name": "Micro-Conversion Step Drop-Off Audit",
@@ -2015,15 +2397,15 @@ window.INNOVATION_DECK = {
       "plan": [
         {
           "label": "Preparation",
-          "text": "Map every field, click and screen transition in the target path into a sequential funnel."
+          "text": "Map every input field, click and screen transition in the target path into one sequential funnel."
         },
         {
           "label": "Execution",
-          "text": "Log drop-off, validation errors and interaction times across 500 sessions."
+          "text": "Log drop-off, validation errors and interaction time for every field across 500 sessions."
         },
         {
           "label": "Data collection",
-          "text": "Plot the drop-off gradient across each micro-step to find friction."
+          "text": "Plot the drop-off gradient across each micro-step to find the friction points."
         }
       ],
       "planFull": [
@@ -2042,9 +2424,192 @@ window.INNOVATION_DECK = {
       ],
       "warning": {
         "label": "Removing Essential Friction",
-        "text": "Cutting identity checks or qualification questions raises completion and floods the product with junk accounts."
+        "text": "Cutting identity checks or qualification questions lifts completion and floods you with spam."
       },
       "warningFull": "Streamlining onboarding forms by cutting out identity checks or qualification questions can boost completion rates while flooding the product with unqualified or spam accounts.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I40",
+      "sourceTacticNo": 40,
+      "name": "Paid Pilot Milestone Contract Verification",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe enterprises will pay for our complete workflow solution. We will verify this by executing 3 paid commercial pilot agreements with explicit performance milestones, and consider it validated if at least 2 enterprise accounts meet their operational criteria and convert to multi-year contracts upon completion.",
+      "hypothesisSize": 8,
+      "schematic": "Pilot at step 2 of the 3-step strip",
+      "method": [
+        "Time: 30–60 days",
+        "Cost: $0",
+        "Confidence: Extreme"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Draft a pilot agreement with target milestones, integration dates and auto-converting production pricing."
+        },
+        {
+          "label": "Execution",
+          "text": "Deploy inside the enterprise and support the team until it hits the agreed milestones."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track the contractual metrics and how many pilots convert to multi-year production licences."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Draft a commercial pilot agreement specifying target operational milestones, integration timelines, and auto-converting production pricing terms."
+        },
+        {
+          "label": "Execution",
+          "text": "Deploy the system inside the enterprise environment, providing operational support to ensure the team hits the agreed performance milestones."
+        },
+        {
+          "label": "Data collection",
+          "text": "Track progress against the contractually agreed metrics and record conversion rates to multi-year production licenses."
+        }
+      ],
+      "warning": {
+        "label": "Perpetual Pilot Trap",
+        "text": "Buyers use cheap pilots to run exploratory tests or meet an innovation quota, never to roll out."
+      },
+      "warningFull": "Enterprise buyers sometimes use low-cost innovation pilots to run exploratory tests or satisfy internal innovation quotas without intending to secure broad organizational rollout.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I41",
+      "sourceTacticNo": 41,
+      "name": "Referral Engine and Viral Coefficient (K-factor) Test",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe that our product includes natural referral loops that drive organic growth. We will verify this by adding an in-product referral mechanism to active user workflows, and consider it validated if the measured Viral Coefficient (K) exceeds 0.40: K = i × c where i represents invitations sent per active user, and c represents the conversion rate per invitation.",
+      "hypothesisSize": 8,
+      "schematic": "Read at step 3 of the 3-step strip",
+      "method": [
+        "Time: 14–30 days",
+        "Cost: $0–$100",
+        "Confidence: High"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Put the referral inside the value loop - invite a collaborator to the document - not on a marketing button."
+        },
+        {
+          "label": "Execution",
+          "text": "Track invitations, link shares and signups across 300 active users."
+        },
+        {
+          "label": "Data collection",
+          "text": "Compute the loop variables over time and the cycle time from signup to invited user joining."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Build a frictionless referral touchpoint integrated directly into the core product value loop (e.g., inviting a collaborator to view or edit a document), rather than a generic marketing invite button."
+        },
+        {
+          "label": "Execution",
+          "text": "Track invitation generation rates, link shares, and new user signups across 300 active users."
+        },
+        {
+          "label": "Data collection",
+          "text": "Calculate the viral loop variables over time, tracking the cycle time elapsed between a user signing up and their invited referee joining the platform."
+        }
+      ],
+      "warning": {
+        "label": "Artificial Incentive Distortion",
+        "text": "Cash rewards buy spam invites that inflate the coefficient and bounce after the payout."
+      },
+      "warningFull": "Offering high cash or credit rewards can drive high volumes of spam invites, inflating short-term viral numbers with users who bounce immediately after collecting the reward.",
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "innovation-figure",
+        "parametricParams": {
+          "family": "strip",
+          "divisions": 3,
+          "mark": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"46\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"93.333333\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PREP</text><line x1=\"140.666667\" y1=\"205\" x2=\"152.666667\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152.666667\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">EXEC</text><line x1=\"247.333333\" y1=\"205\" x2=\"259.333333\" y2=\"205\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"259.333333\" y=\"150\" width=\"94.66666666666667\" height=\"110\" rx=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2.2\" fill-opacity=\"0.14\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"306.666667\" cy=\"195\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"306.666667\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"20\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COLLECT</text><line x1=\"46\" y1=\"136\" x2=\"354\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"1.2\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "I42",
+      "sourceTacticNo": 42,
+      "name": "Formal Pivot vs. Persevere Evaluation",
+      "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+      "hypothesis": "We believe our recent experimentation results provide sufficient empirical evidence to guide our next strategic product cycle. We will verify this by evaluating our cumulative testing metrics against predetermined milestone gates, and consider it validated if the cross-functional leadership team reaches unanimous consensus on an operational path forward (Persevere, Pivot, or Terminate).",
+      "hypothesisSize": 7,
+      "schematic": "Decision at step 3 of the 3-step strip",
+      "method": [
+        "Time: 1 day",
+        "Cost: $0",
+        "Confidence: High (Governance synthesis)"
+      ],
+      "plan": [
+        {
+          "label": "Preparation",
+          "text": "Consolidate every completed test across the four phases into a memo that names what failed."
+        },
+        {
+          "label": "Execution",
+          "text": "Convene the review board and judge against three options: persevere, pivot, or terminate."
+        },
+        {
+          "label": "Data collection",
+          "text": "Record the decision, the evidence and the resource reallocation in a permanent record."
+        }
+      ],
+      "planFull": [
+        {
+          "label": "Preparation",
+          "text": "Consolidate quantitative findings from all completed testing cards across Phases 1 through 4. Synthesize the findings into an objective, factual memo that highlights failures and disconfirmed assumptions without spin."
+        },
+        {
+          "label": "Execution",
+          "text": "Convene an innovation review board. Evaluate current progress against the three canonical options: Persevere (core hypotheses validated; scale execution), Pivot (fundamental premise disproven, but discovery surfaced an adjacent high-urgency friction point), or Terminate (core premises invalidated with no viable adjacent opportunities; reallocate capital)."
+        },
+        {
+          "label": "Data collection",
+          "text": "Document the strategic decision, supporting evidence, and resource reallocations in a permanent decision record."
+        }
+      ],
+      "warning": {
+        "label": "Sunk Cost Fallacy and Identity Entanglement",
+        "text": "Teams persevere with disproven ideas because a failed hypothesis feels like personal failure."
+      },
+      "warningFull": "Teams regularly choose to persevere with flawed, disproven ideas because they conflate admitting a hypothesis failed with personal or professional failure, burning remaining capital on unproductive work.",
       "origin": {
         "note": "The source names no originator.",
         "authorsLabel": "",

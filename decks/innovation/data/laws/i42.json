@@ -1,0 +1,58 @@
+{
+  "id": "I42",
+  "sourceTacticNo": 42,
+  "name": "Formal Pivot vs. Persevere Evaluation",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe our recent experimentation results provide sufficient empirical evidence to guide our next strategic product cycle. We will verify this by evaluating our cumulative testing metrics against predetermined milestone gates, and consider it validated if the cross-functional leadership team reaches unanimous consensus on an operational path forward (Persevere, Pivot, or Terminate).",
+  "hypothesisSize": 7,
+  "schematic": "Decision at step 3 of the 3-step strip",
+  "method": [
+    "Time: 1 day",
+    "Cost: $0",
+    "Confidence: High (Governance synthesis)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Consolidate every completed test across the four phases into a memo that names what failed."
+    },
+    {
+      "label": "Execution",
+      "text": "Convene the review board and judge against three options: persevere, pivot, or terminate."
+    },
+    {
+      "label": "Data collection",
+      "text": "Record the decision, the evidence and the resource reallocation in a permanent record."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Consolidate quantitative findings from all completed testing cards across Phases 1 through 4. Synthesize the findings into an objective, factual memo that highlights failures and disconfirmed assumptions without spin."
+    },
+    {
+      "label": "Execution",
+      "text": "Convene an innovation review board. Evaluate current progress against the three canonical options: Persevere (core hypotheses validated; scale execution), Pivot (fundamental premise disproven, but discovery surfaced an adjacent high-urgency friction point), or Terminate (core premises invalidated with no viable adjacent opportunities; reallocate capital)."
+    },
+    {
+      "label": "Data collection",
+      "text": "Document the strategic decision, supporting evidence, and resource reallocations in a permanent decision record."
+    }
+  ],
+  "warning": {
+    "label": "Sunk Cost Fallacy and Identity Entanglement",
+    "text": "Teams persevere with disproven ideas because a failed hypothesis feels like personal failure."
+  },
+  "warningFull": "Teams regularly choose to persevere with flawed, disproven ideas because they conflate admitting a hypothesis failed with personal or professional failure, burning remaining capital on unproductive work.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

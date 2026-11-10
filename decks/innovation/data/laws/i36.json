@@ -1,0 +1,58 @@
+{
+  "id": "I36",
+  "sourceTacticNo": 36,
+  "name": "Feature-Flagged Canary Experiment",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that [Redesigned Workflow X] increases task completion rates compared to the current baseline. We will verify this by deploying the redesign to 10% of production traffic via an open-source feature flag, and consider it validated if the treatment group shows a statistically significant lift in task completions (≥ 15%, p < 0.05) without degrading error rates or latency.",
+  "hypothesisSize": 7.5,
+  "schematic": "Split at step 2 of the 3-step strip",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $0",
+    "Confidence: Extreme (Empirical statistical comparison)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Put the new workflow behind a feature flag with exposure keys and logging attributes."
+    },
+    {
+      "label": "Execution",
+      "text": "Split 10% of traffic at random, watch errors, then raise to 50% once it is stable."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compare conversion, errors, latency and completion time between control and treatment."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Instrument the alternative workflow behind a dynamic feature flag rule, defining exposure keys and logging attributes."
+    },
+    {
+      "label": "Execution",
+      "text": "Route a randomized 10% traffic split to the variant while monitoring error logs and system health. Gradually increase traffic to 50% as system stability is confirmed."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track conversion rates, system errors, operational latency, and task completion times across both control and treatment variations."
+    }
+  ],
+  "warning": {
+    "label": "Early Peeking and Underpowered Samples",
+    "text": "Stopping when p dips below 0.05 inflates false positives; lock sample size and duration first."
+  },
+  "warningFull": "Stopping an experiment early the moment a p-value dips below 0.05 dramatically increases the rate of false positives; sample sizes and experiment durations must be locked in advance.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

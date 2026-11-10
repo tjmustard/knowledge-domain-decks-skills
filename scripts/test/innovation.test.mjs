@@ -12,7 +12,7 @@
  */
 import test from "node:test";
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
+import { readFile, readdir } from "node:fs/promises";
 import { join } from "node:path";
 
 const ROOT = join(import.meta.dirname, "..", "..");
@@ -89,7 +89,10 @@ test("the warning names are distinct, which is what makes the deck a taxonomy", 
   }
 });
 
-test("the two recorded source defects are carried, not repaired away", async () => {
+test("the recorded source defects are carried, not repaired away", async () => {
+  // The third defect - the extractor's backslash stripping - is guarded where
+  // it can be checked: the residue test below scans both the inventory and the
+  // committed card records.
   const inventory = await loadInventory();
   const byNumber = new Map(inventory.records.map((record) => [record.number, record]));
 
@@ -254,5 +257,93 @@ test("a printed card's size is the map's size", async () => {
   for (const card of await loadCards(deck)) {
     assert.equal(card.hypothesisSize, map[card.id].hypothesisSize, `${card.id} size differs from the map`);
     assert.equal(card.schematic, map[card.id].label, `${card.id} printed schematic differs from the map`);
+    assert.deepEqual(
+      card.figure?.parametricParams,
+      { family: map[card.id].family, divisions: map[card.id].divisions, mark: map[card.id].mark },
+      `${card.id} draws something other than its map row`
+    );
+  }
+});
+
+test("the printed deck is the inventory, record for record", async () => {
+  // A partial build passing its own tests is the trap: the deck must hold all
+  // forty-two, in the source's order, and every printed field must be the
+  // committed extraction rather than a retyping. Compression lives in `plan`
+  // and `warning.text`; everything a reader checks against the source is here.
+  const { loadCards, loadDeck } = await import("../../packages/core/deck.mjs");
+  const deck = await loadDeck("innovation");
+  const cards = await loadCards(deck);
+  const inventory = await loadInventory();
+  assert.equal(cards.length, TOTAL, "the deck prints 42 cards");
+  assert.deepEqual(
+    cards.map((card) => card.sourceTacticNo),
+    Array.from({ length: TOTAL }, (_, index) => index + 1),
+    "the cards are the source's tactics in order"
+  );
+
+  const byNumber = new Map(inventory.records.map((record) => [record.number, record]));
+  const phases = {};
+  for (const card of cards) {
+    const source = byNumber.get(card.sourceTacticNo);
+    assert.ok(source, `${card.id} has no source record`);
+    assert.equal(card.id, `I${String(source.number).padStart(2, "0")}`, `${card.id} id does not match its tactic number`);
+    assert.equal(card.name, source.name, `${card.id} name differs from the source`);
+    assert.equal(card.phase, deck.categories[source.phase - 1], `${card.id} phase differs from the source`);
+    assert.equal(card.hypothesis, source.hypothesis, `${card.id} hypothesis is not the source's`);
+    assert.deepEqual(
+      card.planFull.map((stage) => stage.text),
+      [source.plan.preparation, source.plan.execution, source.plan.dataCollection],
+      `${card.id} full plan is not the source's`
+    );
+    assert.deepEqual(
+      card.planFull.map((stage) => stage.label),
+      ["Preparation", "Execution", "Data collection"],
+      `${card.id} stages are out of order`
+    );
+    assert.equal(card.warningFull, source.warning.text, `${card.id} full warning is not the source's`);
+    assert.equal(card.warning.label, source.warning.name, `${card.id} false-positive name differs from the source`);
+
+    // The method strip: time, cost, confidence. A cost the source does not
+    // state prints the literal and says it is unreadable, never a number.
+    const cost =
+      source.method.financialCost === null
+        ? `Cost: unreadable in the source (${source.method.financialCostRaw})`
+        : `Cost: ${source.method.financialCost}`;
+    assert.deepEqual(
+      card.method,
+      [`Time: ${source.method.timeToResult}`, cost, `Confidence: ${source.method.confidence}`],
+      `${card.id} method strip differs from the source`
+    );
+    phases[card.phase] = (phases[card.phase] || 0) + 1;
+  }
+  assert.deepEqual(
+    deck.categories.map((category) => phases[category]),
+    [10, 10, 11, 11],
+    "the printed phases are 10/10/11/11"
+  );
+});
+
+test("the rules and the skill resources carry every card's full text", async () => {
+  // The card is a compression; the reference is the uncompressed record. If
+  // the artifacts dropped a stage or a warning, the only place the source's
+  // words survive would be the JSON.
+  const { loadCards, loadDeck } = await import("../../packages/core/deck.mjs");
+  const cards = await loadCards(await loadDeck("innovation"));
+  const rules = await readFile(join(ROOT, "rules", "innovation-rules.md"), "utf8");
+  const resourceDir = join(ROOT, "skills", "innovation", "resources");
+  const files = (await readdir(resourceDir)).filter((name) => name.endsWith(".md"));
+  const skill = (
+    await Promise.all(files.map((name) => readFile(join(resourceDir, name), "utf8")))
+  ).join("\n");
+
+  for (const card of cards) {
+    const texts = [card.hypothesis, card.warningFull, ...card.planFull.map((stage) => stage.text)];
+    for (const text of texts) {
+      assert.ok(rules.includes(text), `${card.id}: the rules file is missing a full field`);
+      assert.ok(skill.includes(text), `${card.id}: the skill resources are missing a full field`);
+    }
+    const strip = card.method.join(" · ");
+    assert.ok(rules.includes(strip), `${card.id}: the rules file is missing the method strip`);
+    assert.ok(skill.includes(strip), `${card.id}: the skill resources are missing the method strip`);
   }
 });

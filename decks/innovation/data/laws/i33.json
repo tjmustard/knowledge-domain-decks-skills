@@ -1,0 +1,58 @@
+{
+  "id": "I33",
+  "sourceTacticNo": 33,
+  "name": "Cohort Retention Decay Curve Analysis",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that our product delivers sustained, long-term utility to users. We will verify this by tracking weekly active usage across monthly cohorts, and consider it validated if the retention curve flattens into a stable horizontal asymptote at ≥ 20% weekly active retention by Week 8: lim R(t) as t → ∞  ≥ 0.20",
+  "hypothesisSize": 8,
+  "schematic": "Week 8 retention on the decay curve",
+  "method": [
+    "Time: 30–60 days",
+    "Cost: $0",
+    "Confidence: Extreme (Product-Market Fit ground truth)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Define the core action that means real value - exporting a project, working with a teammate - not a login."
+    },
+    {
+      "label": "Execution",
+      "text": "Group users into weekly or monthly cohorts by the week they finished onboarding and follow them."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot retention per cohort and watch whether the curve flattens or keeps decaying toward zero."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Define the core engagement action that reflects genuine product value (e.g., exporting a project or collaborating with a teammate), rather than simply logging in."
+    },
+    {
+      "label": "Execution",
+      "text": "Group users into discrete cohorts based on the calendar week or month they completed onboarding. Track their activity over time."
+    },
+    {
+      "label": "Data collection",
+      "text": "Plot percentage retention curves for each cohort over time, tracking whether the retention trajectory flattens or continues decaying toward the origin."
+    }
+  ],
+  "warning": {
+    "label": "The Walking Dead Metric Trap",
+    "text": "Top-line registered users can grow while every cohort decays to zero; growth stalls when spend slows."
+  },
+  "warningFull": "A company can show impressive top-line growth in total registered users while its underlying cohort retention curves decay steadily to zero, meaning growth will stall the moment acquisition spend slows.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "curve",
+      "divisions": 8,
+      "mark": 8
+    }
+  }
+}

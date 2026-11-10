@@ -14,15 +14,15 @@
   "plan": [
     {
       "label": "Preparation",
-      "text": "Map every field, click and screen transition in the target path into a sequential funnel."
+      "text": "Map every input field, click and screen transition in the target path into one sequential funnel."
     },
     {
       "label": "Execution",
-      "text": "Log drop-off, validation errors and interaction times across 500 sessions."
+      "text": "Log drop-off, validation errors and interaction time for every field across 500 sessions."
     },
     {
       "label": "Data collection",
-      "text": "Plot the drop-off gradient across each micro-step to find friction."
+      "text": "Plot the drop-off gradient across each micro-step to find the friction points."
     }
   ],
   "planFull": [
@@ -41,7 +41,7 @@
   ],
   "warning": {
     "label": "Removing Essential Friction",
-    "text": "Cutting identity checks or qualification questions raises completion and floods the product with junk accounts."
+    "text": "Cutting identity checks or qualification questions lifts completion and floods you with spam."
   },
   "warningFull": "Streamlining onboarding forms by cutting out identity checks or qualification questions can boost completion rates while flooding the product with unqualified or spam accounts.",
   "origin": {

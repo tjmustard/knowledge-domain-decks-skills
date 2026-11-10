@@ -1,0 +1,58 @@
+{
+  "id": "I40",
+  "sourceTacticNo": 40,
+  "name": "Paid Pilot Milestone Contract Verification",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe enterprises will pay for our complete workflow solution. We will verify this by executing 3 paid commercial pilot agreements with explicit performance milestones, and consider it validated if at least 2 enterprise accounts meet their operational criteria and convert to multi-year contracts upon completion.",
+  "hypothesisSize": 8,
+  "schematic": "Pilot at step 2 of the 3-step strip",
+  "method": [
+    "Time: 30–60 days",
+    "Cost: $0",
+    "Confidence: Extreme"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Draft a pilot agreement with target milestones, integration dates and auto-converting production pricing."
+    },
+    {
+      "label": "Execution",
+      "text": "Deploy inside the enterprise and support the team until it hits the agreed milestones."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track the contractual metrics and how many pilots convert to multi-year production licences."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Draft a commercial pilot agreement specifying target operational milestones, integration timelines, and auto-converting production pricing terms."
+    },
+    {
+      "label": "Execution",
+      "text": "Deploy the system inside the enterprise environment, providing operational support to ensure the team hits the agreed performance milestones."
+    },
+    {
+      "label": "Data collection",
+      "text": "Track progress against the contractually agreed metrics and record conversion rates to multi-year production licenses."
+    }
+  ],
+  "warning": {
+    "label": "Perpetual Pilot Trap",
+    "text": "Buyers use cheap pilots to run exploratory tests or meet an innovation quota, never to roll out."
+  },
+  "warningFull": "Enterprise buyers sometimes use low-cost innovation pilots to run exploratory tests or satisfy internal innovation quotas without intending to secure broad organizational rollout.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 2
+    }
+  }
+}

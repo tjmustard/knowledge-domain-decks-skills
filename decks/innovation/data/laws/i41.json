@@ -1,0 +1,58 @@
+{
+  "id": "I41",
+  "sourceTacticNo": 41,
+  "name": "Referral Engine and Viral Coefficient (K-factor) Test",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe that our product includes natural referral loops that drive organic growth. We will verify this by adding an in-product referral mechanism to active user workflows, and consider it validated if the measured Viral Coefficient (K) exceeds 0.40: K = i × c where i represents invitations sent per active user, and c represents the conversion rate per invitation.",
+  "hypothesisSize": 8,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 14–30 days",
+    "Cost: $0–$100",
+    "Confidence: High"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Put the referral inside the value loop - invite a collaborator to the document - not on a marketing button."
+    },
+    {
+      "label": "Execution",
+      "text": "Track invitations, link shares and signups across 300 active users."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compute the loop variables over time and the cycle time from signup to invited user joining."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a frictionless referral touchpoint integrated directly into the core product value loop (e.g., inviting a collaborator to view or edit a document), rather than a generic marketing invite button."
+    },
+    {
+      "label": "Execution",
+      "text": "Track invitation generation rates, link shares, and new user signups across 300 active users."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate the viral loop variables over time, tracking the cycle time elapsed between a user signing up and their invited referee joining the platform."
+    }
+  ],
+  "warning": {
+    "label": "Artificial Incentive Distortion",
+    "text": "Cash rewards buy spam invites that inflate the coefficient and bounce after the payout."
+  },
+  "warningFull": "Offering high cash or credit rewards can drive high volumes of spam invites, inflating short-term viral numbers with users who bounce immediately after collecting the reward.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "I34",
+  "sourceTacticNo": 34,
+  "name": "Sean Ellis PMF Survey Engine (The 40% Rule)",
+  "phase": "Metrics, Telemetry, and Innovation Accounting Tactics",
+  "hypothesis": "We believe our product has achieved early product-market fit within its core user segment. We will verify this by surveying users who have experienced the core product at least twice in the past fortnight, and consider it validated if ≥ 40% state they would be \"very disappointed\" if the product disappeared tomorrow.",
+  "hypothesisSize": 8,
+  "schematic": "Read at step 3 of the 3-step strip",
+  "method": [
+    "Time: 7–14 days",
+    "Cost: $0",
+    "Confidence: High (Diagnostic survey)"
+  ],
+  "plan": [
+    {
+      "label": "Preparation",
+      "text": "Ask one question - how would you feel if you could no longer use it - with four fixed answers."
+    },
+    {
+      "label": "Execution",
+      "text": "Send it only to users who finished onboarding and used the product more than once."
+    },
+    {
+      "label": "Data collection",
+      "text": "Compute the very-disappointed share and segment it to find where satisfaction is strongest."
+    }
+  ],
+  "planFull": [
+    {
+      "label": "Preparation",
+      "text": "Build a short survey centered on the question: \"How would you feel if you could no longer use [Product]?\" with four fixed responses: (a) Very disappointed, (b) Somewhat disappointed, (c) Not disappointed, or (d) I no longer use it."
+    },
+    {
+      "label": "Execution",
+      "text": "Send the survey exclusively to users who have completed the onboarding flow and engaged with the product multiple times."
+    },
+    {
+      "label": "Data collection",
+      "text": "Calculate the proportion of respondents who choose \"Very disappointed.\" Segment these responses by user demographic and persona to isolate where satisfaction is strongest: PMF Score = Count(\"Very Disappointed\") / Total Qualified Respondents × 100 ≥ 40%"
+    }
+  ],
+  "warning": {
+    "label": "Surveying Casual, Non-Core Users",
+    "text": "Surveying casual users who signed up and bounced pulls the score down and hides fit."
+  },
+  "warningFull": "Sending the survey to all registered users—including those who signed up and immediately bounced—dilutes the score and obscures product-market fit within the true target segment.",
+  "origin": {
+    "authors": [
+      "Sean Ellis",
+      "Morgan Brown"
+    ],
+    "year": 2017,
+    "title": "Hacking Growth: How Today’s Fastest-Growing Companies Drive Breakout Success",
+    "publication": "Currency"
+  },
+  "figure": {
+    "svgShape": "innovation-figure",
+    "parametricParams": {
+      "family": "strip",
+      "divisions": 3,
+      "mark": 3
+    }
+  }
+}

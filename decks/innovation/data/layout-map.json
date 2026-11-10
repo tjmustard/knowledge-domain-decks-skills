@@ -299,7 +299,7 @@
       "divisions": 5,
       "mark": 5,
       "label": "Read at stage 5 of the 5-stage funnel",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "evidence structure",
         "field": "plan.preparation",
@@ -311,7 +311,7 @@
       "divisions": 8,
       "mark": 8,
       "label": "Week 8 retention on the decay curve",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "hypothesis horizon",
         "field": "hypothesis",
@@ -431,7 +431,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -443,7 +443,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -455,7 +455,7 @@
       "divisions": 3,
       "mark": 2,
       "label": "Split at step 2 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 7.5,
       "basis": {
         "datum": "plan stages",
         "field": "plan.execution",
@@ -479,7 +479,7 @@
       "divisions": 3,
       "mark": 1,
       "label": "Timebox at step 1 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.preparation",
@@ -503,7 +503,7 @@
       "divisions": 3,
       "mark": 2,
       "label": "Pilot at step 2 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.execution",
@@ -515,7 +515,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Read at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 8,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
@@ -527,7 +527,7 @@
       "divisions": 3,
       "mark": 3,
       "label": "Decision at step 3 of the 3-step strip",
-      "hypothesisSize": 9,
+      "hypothesisSize": 7,
       "basis": {
         "datum": "plan stages",
         "field": "plan.dataCollection",
