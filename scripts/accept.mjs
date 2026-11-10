@@ -125,6 +125,19 @@ if (added.status !== 0) {
 const at = (args) => git(args, worktree);
 const npm = (args) => run("npm", args, { cwd: worktree });
 
+// The skill's per-category resource files are generated too, so the committed-
+// bytes checks have to see them. Listed from disk rather than hard-coded: a new
+// deck category adds a file, and a check that did not notice would pass a file
+// it never read.
+async function resourceFiles(root) {
+  const dir = join(root, "skills", "ux-laws", "resources");
+  if (!existsSync(dir)) return [];
+  return (await readdir(dir))
+    .filter((name) => name.endsWith(".md"))
+    .sort()
+    .map((name) => `skills/ux-laws/resources/${name}`);
+}
+
 let cleanedUp = false;
 const cleanup = () => {
   if (cleanedUp) return;
@@ -267,7 +280,7 @@ try {
   // how this mistake survives a human review, so this reads the bytes.
   {
     const noBreak = Buffer.from([0xc2, 0xa0]);
-    const artifacts = ["packages/web/deck-data.js", "rules/ux-rules.md", "skills/ux-laws/SKILL.md"];
+    const artifacts = ["packages/web/deck-data.js", "rules/ux-rules.md", "skills/ux-laws/SKILL.md", ...(await resourceFiles(worktree))];
     const hits = [];
     for (const file of artifacts) {
       const bytes = readFileSync(join(worktree, file));
@@ -284,7 +297,7 @@ try {
 
   // --- 3. generators are deterministic and match what is committed ---------
   {
-    const targets = ["rules/ux-rules.md", "skills/ux-laws/SKILL.md", "packages/web/deck-data.js"];
+    const targets = ["rules/ux-rules.md", "skills/ux-laws/SKILL.md", "packages/web/deck-data.js", ...(await resourceFiles(worktree))];
     const missing = targets.filter((target) => !existsSync(join(worktree, target)));
     const hashOf = async () => {
       const out = [];

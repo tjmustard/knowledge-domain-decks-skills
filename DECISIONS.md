@@ -916,3 +916,34 @@ measured in the same headless-Chrome harness as §30: all inside the 400-unit bo
 the tightest clearances among these four are GOAL at 2.20 pt from its dot, ZERO
 at 2.59 pt from the axis, and SPENT at 3.17 pt from the block. The font pin will
 re-derive them.
+
+## 35. The skill is an index, and the cards are resource files
+
+`skills/ux-laws/SKILL.md` was 28,023 bytes with thirty-four cards: the whole
+file loads before an agent has read a line of the code it is auditing, and it
+grows by about 800 bytes per card. A skill's cost is paid on every session that
+triggers it, so the deck's growth was a tax on the tool meant to help.
+
+The generator now writes an index and five resource files, one per category,
+under `skills/ux-laws/resources/`. The index carries the frontmatter, the rules
+that hold across every card, and a table per category of ID, name and the card's
+own `trigger` sentence - the field that exists to answer "does this card apply
+here?". The bodies (axiom, checklist, anti-pattern pair, source) live in the
+resource file for their category. Measured on the thirty-four-card deck: the
+index is 6,222 bytes and the largest resource file is 9,530 bytes, against
+28,023 for the single file before. An agent auditing forms reads `SKILL.md` and
+then `resources/decision-making-cognitive-load.md`. `rules/ux-rules.md` stays
+whole because it is pasted into a prompt rather than loaded as a skill.
+
+What this costs, stated rather than hidden: the agent must choose a file, and a
+wrong choice is a card it never sees. The tables make the choice from the card's
+own trigger rather than from its name, and the index says to load several
+resources when the change spans categories. A future card whose trigger is too
+vague to separate it from its neighbours is now a routing defect as well as a
+content one, which is a reason to keep triggers specific.
+
+The description drops "or long lists". No card covers long lists, and a
+description is a promise the body has to keep; the split is the change that made
+the promise visible. `scripts/accept.mjs` reads the resource files from disk for
+its committed-bytes and generator checks, so a category added later is checked
+without editing the gate.

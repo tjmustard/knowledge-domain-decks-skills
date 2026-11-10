@@ -186,15 +186,23 @@ empty placeholder.
 
 ### Agents: load the ruleset
 
-Two generated files carry the same deck into an agent's working context:
+The same deck reaches an agent's working context two ways:
 
-- [`skills/ux-laws/SKILL.md`](./skills/ux-laws/SKILL.md) — a skill with a
-  trigger-oriented description, ready to drop into an agent's skills directory.
-- [`rules/ux-rules.md`](./rules/ux-rules.md) — a plain ruleset for review
-  prompts or project instructions.
+- [`skills/ux-laws/SKILL.md`](./skills/ux-laws/SKILL.md) — the skill, and an
+  index. It carries the frontmatter, the rules that hold everywhere, and a
+  table per category of ID, name and the card's own trigger sentence. The card
+  bodies live in [`skills/ux-laws/resources/`](./skills/ux-laws/resources/),
+  one file per category, read on demand. Copy the whole `ux-laws/` directory
+  into an agent's skills directory; the index points at the resource files
+  beside it.
+- [`rules/ux-rules.md`](./rules/ux-rules.md) — every card in one plain ruleset,
+  for pasting into a review prompt or project instructions.
 
-Both are generated from `data/laws/*.json` by `npm run build:rules`. Edit the
-records, not the generated files.
+All are generated from `data/laws/*.json` by `npm run build:rules`. Edit the
+records, not the generated files. The split is deliberate: the index is about
+6 KB and the largest resource file about 10 KB, where the single skill file was
+28 KB loaded whole before the agent read any code. [`DECISIONS.md`](./DECISIONS.md)
+§35 records what the split costs.
 
 ---
 
@@ -243,7 +251,9 @@ and duplicate IDs fail the run.
 │   ├── judges/                  # Cross-model audit panel (needs a model endpoint)
 │   └── triage/                  # Adjudication: turns claims into checked verdicts
 ├── rules/ux-rules.md            # Generated agent ruleset
-├── skills/ux-laws/SKILL.md      # Generated agent skill
+├── skills/ux-laws/
+│   ├── SKILL.md                 # Generated skill index
+│   └── resources/*.md           # Generated card bodies, one file per category
 ├── scripts/
 │   ├── validate.mjs             # Schema + cross-record checks
 │   ├── svg.js                   # Parametric SVG generator
@@ -281,7 +291,7 @@ npm run validate
 
 # 3. Regenerate the derived artifacts
 npm run build:web       # packages/web/deck-data.js
-npm run build:rules     # rules/ux-rules.md and skills/ux-laws/SKILL.md
+npm run build:rules     # rules/ux-rules.md, skills/ux-laws/SKILL.md and resources/
 
 # 4. Print layer (requires Typst)
 npm run build:pdf       # packages/prepress/dist/ux-deck.pdf
