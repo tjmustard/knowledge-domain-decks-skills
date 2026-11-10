@@ -322,21 +322,42 @@ npm run check:web       # headless 390 px smoke test (Chrome/Chromium)
 npm run check:all       # validate + regenerate rules and web data + web smoke test
 npm run check           # validate + regenerate, without the browser step
 
-# 6. Verify a specific commit, in a worktree nobody else is using
+# 6. Tests — the same commands, plus the facts they cannot see
+npm test                # every suite below, in one run
+npm run test:unit       # deck facts, validator, generators, SVG geometry (no browser, no Typst)
+npm run test:integration  # the pipeline end to end, then the gate on HEAD
+
+# 7. Verify a specific commit, in a worktree nobody else is using
 npm run accept          # HEAD
 npm run accept -- <ref> # any commit-ish
 
-# 7. Audit an artifact with a panel of models (optional; needs a local endpoint)
+# 8. Audit an artifact with a panel of models (optional; needs a local endpoint)
 npm run judge -- --panel packages/judges/panels/deck-skill.json \
                   --artifact skills/ux-laws/SKILL.md
 npm run test:judges     # offline tests for the panel runner
 
-# 8. Record what you found when you checked the findings
+# 9. Record what you found when you checked the findings
 npm run triage -- --report .judges/<run>/report.json --template > audit/adjudication.json
 npm run triage -- --report .judges/<run>/report.json \
                   --adjudications audit/adjudication.json
 npm run test:triage     # offline tests for the adjudication join
 ```
+
+`npm test` is the whole of it: it is what CI runs, and there is no CI-only
+script or configuration. It covers the deck's own facts (54 records, deck
+order, the two citation strings), the validator as a program — including the
+duplicate-ID rule the gate does not reach — the generators' byte stability and
+which artifacts each year reaches, the geometry of the two shapes whose
+drawing has been wrong before, every pipeline step in one order, and finally
+`npm run accept` against HEAD in a worktree of its own.
+
+A stage that cannot run is reported as skipped with its reason, never dropped.
+`test:unit` needs no browser and no Typst; `test:integration` skips its PDF
+steps when Typst is absent and its browser step when Chrome is absent, so a
+machine without them gets fewer proofs and is told so. When `CI` is set, a skip
+becomes a failure instead: the workflow installs those tools on purpose, so
+there a skip can only mean the installation broke and the run is green on less
+than it claims.
 
 The judge panel and triage are development tools, not build steps. The panel
 writes to `.judges/`, which is not committed, and it never decides anything on
@@ -345,6 +366,26 @@ adjudication is the checked record, keyed to the artifact's hash; `triage`
 prints what has no verdict yet and refuses to apply an adjudication written
 against different bytes. See [`packages/judges/README.md`](./packages/judges/README.md)
 and [`packages/triage/README.md`](./packages/triage/README.md).
+
+### Continuous integration
+
+`.github/workflows/ci.yml` runs on every push to any branch, every pull request,
+and on demand — so a branch proves the workflow before `main` inherits it. It
+does three things before testing: checks out with full history
+(the gate reads the log to judge commit hygiene), installs Node 22, and installs
+**Typst 0.15.1** — pinned, then verified, because a different Typst may print
+the same deck with different page boxes and "some typst" is not the dependency
+this repository means. It then pins `CHROME_PATH` to the runner's Chrome, which
+turns `check:web`'s "no browser, skip" exit code into a failed install instead of
+a silent skip, and runs `npm ci` and `npm test`.
+
+What stays manual, on any machine:
+
+| Not in CI | Why |
+|---|---|
+| `print: contents` | Whether trim marks land on paper, type reads at 3×5 in, and the figures survive print is a judgement from looking at rendered pages. The gate reports it NOT RUN, and CI inherits that. |
+| `npm run judge`, `npm run triage` | These need a model endpoint and a human adjudicating each finding. They are development tools, not build steps. |
+| Publishing the PDF and the site | A green run is evidence about a commit, not permission to publish it. |
 
 ### What the checks prove
 
@@ -356,9 +397,11 @@ and [`packages/triage/README.md`](./packages/triage/README.md).
 | `npm run check:web` | At 390 px: no horizontal overflow, every record renders as a card, flip exposes the verso, and a category filter shows exactly that category's cards — the counts are read from `data/laws/`, not hardcoded |
 | `npm run check:pdf` | Every page's MediaBox is 216 x 360 pt and the page count is twice the card count |
 | `npm run accept` | That one commit, not the working tree: commit hygiene, schema and its rejection of known-bad fixtures, generator agreement, the SVG contract, and the web smoke test - run in a detached worktree of that commit |
+| `npm test` | All of the above, plus what they cannot see: the deck's record counts and order, the validator's duplicate-ID rule, generator byte stability outside a worktree, the geometry of the two shapes that have drawn wrong before, and the pipeline in one order before the gate runs on HEAD |
 
 Last full run: **2026-11-10**, macOS, Node 22.23.4, Chrome 157, Typst 0.15.1 —
-`npm run check:all` exits 0 and the PDF builds.
+`npm test` exits 0 with 62 tests and 0 skipped, and the gate it ends with reports
+13 passed, 0 failed, 1 not run. `npm run check:all` exits 0 and the PDF builds.
 
 Two honest limits. `npm run check:pdf` proves page geometry only. Whether the
 marks land on paper and whether the type reads comfortably at print size are

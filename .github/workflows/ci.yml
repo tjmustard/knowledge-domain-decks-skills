@@ -1,0 +1,80 @@
+name: CI
+
+# Everything here runs the same commands a person runs on their own machine.
+# There is no CI-only configuration and no CI-only script: if a step works here
+# and not locally, that is the bug worth fixing.
+#
+# `npm test` is the whole of it. It validates the records, runs every generator,
+# builds the PDF, drives a browser at 390 px, and then hands HEAD to the
+# acceptance gate, which repeats the load-bearing layers inside a detached
+# worktree. The gate's remaining layer, "print: contents", is a judgement about
+# the printed page that no command makes, and it is not attempted here.
+
+on:
+  # Every branch, not main only. A feature branch that is pushed and runs
+  # nothing has proved nothing about itself, and the first green run would then
+  # happen after it reached main - which is the order this workflow exists to
+  # avoid. pull_request stays for forks and for review by diff; a same-repo pull
+  # request runs both events, which is a duplicate run and cheaper than a
+  # branch that was never tested.
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: tests and the acceptance gate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out, with history
+        uses: actions/checkout@v4
+        with:
+          # The gate's commit-hygiene layer reads the log, and the print layer
+          # records the commit it built. A shallow clone breaks both.
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      # Pinned, and checked after installing. The prepress build is byte-stable
+      # on one Typst version and font environment; a different version may
+      # print the same deck with different page boxes, so "some typst" is not
+      # the dependency this repository means.
+      - name: Install Typst 0.15.1
+        run: |
+          set -euo pipefail
+          url=https://github.com/typst/typst/releases/download/v0.15.1/typst-x86_64-unknown-linux-musl.tar.xz
+          curl -fsSL "$url" -o /tmp/typst.tar.xz
+          tar -xf /tmp/typst.tar.xz -C /tmp
+          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+          typst --version | grep -q '^typst 0\.15\.1' || { echo "expected Typst 0.15.1, got: $(typst --version)"; exit 1; }
+
+      # The runner image ships Chrome, but check:web looks for it by name and
+      # skips with exit 2 when it cannot find it. Setting CHROME_PATH turns that
+      # skip into a failure to install, which is the honest outcome here: a CI
+      # run that silently skipped its only browser test would be reporting on
+      # nothing.
+      - name: Pin Chrome for check:web
+        run: |
+          set -euo pipefail
+          for candidate in google-chrome google-chrome-stable chromium; do
+            if path=$(command -v "$candidate"); then
+              echo "CHROME_PATH=$path" >> "$GITHUB_ENV"
+              echo "CHROME_PATH=$path"
+              exit 0
+            fi
+          done
+          echo "No Chrome or Chromium found on this runner" >&2
+          exit 1
+
+      - run: npm ci
+
+      - name: Tests and gate
+        run: npm test
