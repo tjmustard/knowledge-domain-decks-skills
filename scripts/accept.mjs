@@ -259,11 +259,12 @@ try {
   // --- 4. parametric SVG contract ------------------------------------------
   {
     const require = createRequire(join(worktree, "scripts", "svg.js"));
-    const { renderSvg } = require("./svg.js");
+    const { renderSvg, shapeTraits } = require("./svg.js");
     const dir = join(worktree, "data", "laws");
     const files = (await readdir(dir)).filter((name) => name.endsWith(".json")).sort();
     const problems = [];
     const unprobed = [];
+    const monotoneChecked = [];
     const shapes = new Set();
 
     for (const file of files) {
@@ -275,6 +276,38 @@ try {
       if (!/viewBox="0 0 400 400"/.test(svg)) problems.push(`${card.id}: viewBox is not 0 0 400 400`);
       if (/<filter|<image/.test(svg)) problems.push(`${card.id}: contains a filter or bitmap`);
       if (/#[0-9a-fA-F]{3,6}\b/.test(svg)) problems.push(`${card.id}: hardcoded colour instead of currentColor`);
+
+      // A shape may declare a direction claim beside its drawing code. Check
+      // only what this shape claimed: a global monotonicity rule would fail
+      // MPA-01, whose U-shaped curve is correct for serial position.
+      const claims = (shapeTraits && shapeTraits[metaphor.svgShape]) || {};
+      if (claims.monotoneDown) {
+        monotoneChecked.push(`${card.id}:${metaphor.svgShape}`);
+        const d = /<path d="([^"]+)"/.exec(svg);
+        const numbers = d ? d[1].match(/-?\d+(?:\.\d+)?/g) : null;
+        const path = numbers ? numbers.map(Number) : [];
+        const [, y0, , y1, , y2, , y3] = path;
+        if (path.length < 8) {
+          problems.push(`${card.id}: monotone-down path could not be read`);
+        } else if (!(y1 > y0 && y2 > y0 && y3 > y2)) {
+          problems.push(`${card.id}: monotone-down shape does not start downward`);
+        } else {
+          let previous = y0;
+          for (let step = 1; step <= 20; step += 1) {
+            const t = step / 20;
+            const mt = 1 - t;
+            const y = mt * mt * mt * y0 + 3 * mt * mt * t * y1 +
+              3 * mt * t * t * y2 + t * t * t * y3;
+            if (y < previous) {
+              problems.push(
+                `${card.id}: monotone-down path turns back up at t=${t.toFixed(2)}`
+              );
+              break;
+            }
+            previous = y;
+          }
+        }
+      }
 
       // Every declared parameter must actually change the drawing, at any
       // depth: a parameter nothing reads is data promising a knob that does
@@ -296,6 +329,7 @@ try {
     record("svg", problems.length === 0 ? "pass" : "fail",
       problems.length === 0
         ? `${files.length} cards, shapes: ${[...shapes].sort().join(", ")}; contract holds and every parameter is used` +
+          (monotoneChecked.length ? `; monotone claims checked: ${monotoneChecked.join(", ")}` : "") +
           (unprobed.length ? ` (not probeable, so unproven: ${unprobed.join(", ")})` : "")
         : problems.join(" | "));
   }

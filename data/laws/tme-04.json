@@ -1,0 +1,30 @@
+{
+  "id": "TME-04",
+  "name": "Perceived Performance Heuristics",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Progress cues make the same wait feel shorter than a blank screen does.",
+  "trigger": "An export runs for twelve seconds behind a blank screen, and people refresh because they think it froze.",
+  "checklist": [
+    "Pair long operations with a determinate bar and motion that accelerates toward the end.",
+    "Replace a static spinner with skeleton screens or a pulsing placeholder.",
+    "Name the current stage in plain words: connecting, encrypting, finishing."
+  ],
+  "antiPattern": {
+    "violation": "A large export shows a blank page and a static cursor for twelve seconds.",
+    "remediation": "A progress dialog shows a determinate bar, the current stage, and an estimated remainder."
+  },
+  "graphicMetaphor": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": { "caption": "NO STEPS SHOWN", "cells": 12, "columns": 6, "filled": 0 },
+      "right": { "caption": "9 OF 12 STEPS SHOWN", "cells": 12, "columns": 6, "filled": 9 },
+      "caption": "SAME WAIT, SHORTER FELT"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Steven C. Seow"],
+    "year": 2008,
+    "title": "Designing and Engineering Time: The Psychology of Time Perception in Software",
+    "publication": "Addison-Wesley"
+  }
+}

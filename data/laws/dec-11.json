@@ -1,0 +1,32 @@
+{
+  "id": "DEC-11",
+  "name": "Decision Fatigue",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Decision quality degrades over a long session of repetitive choices.",
+  "trigger": "A flow reaches its twelfth configuration question, and the last three answers were left at the default.",
+  "checklist": [
+    "Batch small choices into one review step instead of asking them one at a time.",
+    "Defer non-critical configuration until the main task is finished.",
+    "Pre-populate safe defaults so most questions need no answer."
+  ],
+  "antiPattern": {
+    "violation": "An onboarding flow asks twenty separate configuration questions before the first task, each with no default.",
+    "remediation": "One review screen batches the questions, defers the optional half, and pre-fills safe defaults."
+  },
+  "graphicMetaphor": {
+    "svgShape": "decline-curve",
+    "parametricParams": {
+      "startY": 110,
+      "endY": 260,
+      "startLabel": "FIRST 20: 18 GOOD",
+      "endLabel": "LAST 20: 11 GOOD",
+      "caption": "QUALITY FALLS ACROSS A LONG SESSION"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Roy F. Baumeister", "Ellen Bratslavsky", "Mark Muraven", "Dianne M. Tice"],
+    "year": 1998,
+    "title": "Ego Depletion: Is the Active Self a Limited Resource?",
+    "publication": "Journal of Personality and Social Psychology, 74(5), 1252-1265"
+  }
+}

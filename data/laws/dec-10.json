@@ -1,0 +1,30 @@
+{
+  "id": "DEC-10",
+  "name": "Cognitive Absorption",
+  "category": "Decision-Making & Cognitive Load",
+  "axiom": "Absorbed people lose track of time and stop noticing the interface around the task.",
+  "trigger": "A notification, promotional banner, or modal interrupts a writing or coding session that was running smoothly.",
+  "checklist": [
+    "Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.",
+    "Save in the background and report status without a dialog or a blocking spinner.",
+    "Offer a distraction-free mode and keyboard paths for sustained work."
+  ],
+  "antiPattern": {
+    "violation": "A code editor shows rating prompts and marketing toasts every ten minutes while someone is writing.",
+    "remediation": "A focus mode hides ambient chrome, holds notifications, autosaves silently, and shows status in a quiet corner."
+  },
+  "graphicMetaphor": {
+    "svgShape": "paired-panels",
+    "parametricParams": {
+      "left": { "caption": "4 BREAKS IN 12 MIN", "cells": 12, "columns": 6, "filled": 4 },
+      "right": { "caption": "NO BREAKS IN 12 MIN", "cells": 12, "columns": 6, "filled": 0 },
+      "caption": "INTERRUPTIONS BREAK ABSORPTION"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Ritu Agarwal", "Elena Karahanna"],
+    "year": 2000,
+    "title": "Time Flies When You're Having Fun: Cognitive Absorption and Beliefs about Information Technology Usage",
+    "publication": "MIS Quarterly, 24(4), 665-694"
+  }
+}

@@ -237,6 +237,35 @@
       return out.join("");
     },
 
+    /* Accot-Zhai: two corridors of one length, the narrow one harder to steer. */
+    "steering-tunnel": function (p) {
+      var narrow = p.narrowWidth || 14;
+      var wide = p.wideWidth || 120;
+      var length = p.length || 240;
+      var narrowLabel = p.narrowLabel || "NARROW CORRIDOR";
+      var wideLabel = p.wideLabel || "WIDE CORRIDOR";
+      var caption = p.caption || "";
+      var x0 = 60;
+      var x1 = x0 + length;
+      var out = [];
+      [
+        { y: 120, width: narrow, text: narrowLabel },
+        { y: 250, width: wide, text: wideLabel }
+      ].forEach(function (row) {
+        var half = row.width / 2;
+        out.push(label(x0 + length / 2, row.y - half - 16, row.text, { size: 9 }));
+        out.push(line(x0, row.y - half, x1, row.y - half, 1.5, 0.6));
+        out.push(line(x0, row.y + half, x1, row.y + half, 1.5, 0.6));
+        out.push(line(x1, row.y - half, x1, row.y + half, 2.5, 0.85));
+        out.push(circle(x0, row.y, 5));
+        out.push(line(x0 + 14, row.y, x1 - 8, row.y, 1.2, 0.4, "4 4"));
+        out.push(circle(x0 + length * 0.55, row.y, 6, { opacity: 0.9 }));
+      });
+      out.push(label(200, 340, "T = a + b A / W", { size: 9 }));
+      if (caption) out.push(label(200, 362, caption, { size: 9 }));
+      return out.join("");
+    },
+
     /* Serial Position: U-shaped recall curve, strong ends, weak middle. */
     "decay-curve": function (p) {
       var left = p.primacyX || 80;
@@ -261,6 +290,34 @@
       return out.join("");
     },
 
+    /* Decision quality over a session: a monotone decline, no rebound.
+       SVG y grows downward, so a decline means startY < endY. Both control
+       points interpolate between the endpoints, which makes every y(t) move
+       in one direction by construction; the trait declared below additionally
+       asserts that the card uses the shape downward. */
+    "decline-curve": function (p) {
+      var startY = p.startY == null ? 110 : p.startY;
+      var endY = p.endY == null ? 260 : p.endY;
+      var startLabel = p.startLabel || "START";
+      var endLabel = p.endLabel || "END";
+      var caption = p.caption || "";
+      var c1y = startY + (endY - startY) * 0.35;
+      var c2y = startY + (endY - startY) * 0.65;
+      var out = [];
+      out.push(line(60, 300, 340, 300, 1, 0.3));
+      out.push(
+        '<path d="M 60 ' + startY + ' C 150 ' + c1y + ", 250 " + c2y +
+        ", 340 " + endY + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3.5" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(60, startY, 9));
+      out.push(circle(340, endY, 9));
+      out.push(label(60, startY - 18, startLabel, { size: 9 }));
+      out.push(label(340, endY - 18, endLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
     /* Complexity budget: one fixed track partitioned into labelled demands,
        optionally measured against a capacity line. */
     "split-bar": function (p) {
@@ -276,7 +333,7 @@
       var out = [];
       rows.forEach(function (row, i) {
         var y = top + i * gap;
-        out.push(label(200, y - 16, row.label, { size: 9 }));
+        out.push(label(x0, y - 16, row.label, { size: 9, anchor: "start" }));
         var x = x0;
         (row.segments || []).forEach(function (seg) {
           var sw = (seg.weight / max) * track;
@@ -292,8 +349,13 @@
       });
       if (ref) {
         var rx = x0 + ref.at * track;
-        var bottom = top + (rows.length - 1) * gap + barH + 26;
-        out.push(line(rx, top - 34, rx, bottom, 1.5, 0.75, "4 4"));
+        /* Draw the threshold per bar, so it does not run through the row and
+           segment labels that sit above and below each track. */
+        out.push(line(rx, top - 34, rx, top - 6, 1.5, 0.75, "4 4"));
+        rows.forEach(function (row, i) {
+          var y = top + i * gap;
+          out.push(line(rx, y, rx, y + barH, 1.5, 0.75, "4 4"));
+        });
         out.push(label(rx, top - 42, ref.label, { size: 8 }));
       }
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
@@ -351,6 +413,13 @@
     }
   };
 
+  /* Direction claims live on the shape, beside the drawing that must honour
+     them. The acceptance gate holds a shape to the claim it makes here; a
+     shape with no entry claims nothing. SVG y grows downward, so
+     monotoneDown means each later sample is lower on the card (a larger y). */
+  shapes["decay-curve"].traits = { monotoneDown: false };
+  shapes["decline-curve"].traits = { monotoneDown: true };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");
@@ -363,5 +432,14 @@
     return wrap(body);
   }
 
-  return { renderSvg: renderSvg, shapes: Object.keys(shapes) };
+  var shapeTraits = {};
+  Object.keys(shapes).forEach(function (name) {
+    shapeTraits[name] = shapes[name].traits || null;
+  });
+
+  return {
+    renderSvg: renderSvg,
+    shapes: Object.keys(shapes),
+    shapeTraits: shapeTraits
+  };
 });

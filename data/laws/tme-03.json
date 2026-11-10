@@ -1,0 +1,46 @@
+{
+  "id": "TME-03",
+  "name": "Doherty Threshold",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "When system response drops under four hundred milliseconds, people stay engaged and work faster.",
+  "trigger": "A click blocks the interface for most of a second, and the person clicks again or looks away.",
+  "checklist": [
+    "Update the interface at once on input, then reconcile with the server in the background.",
+    "Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.",
+    "Prefetch likely next screens on hover or focus."
+  ],
+  "antiPattern": {
+    "violation": "A like button freezes for 750 ms while the request runs, with no visible change.",
+    "remediation": "The icon fills immediately, the counter increments locally, and the request reconciles later."
+  },
+  "graphicMetaphor": {
+    "svgShape": "split-bar",
+    "parametricParams": {
+      "max": 1000,
+      "rows": [
+        {
+          "label": "SLOW: 750 MS",
+          "segments": [
+            { "label": "FEEDBACK", "weight": 750, "filled": true },
+            { "label": "IDLE", "weight": 250, "filled": false }
+          ]
+        },
+        {
+          "label": "FAST: 300 MS",
+          "segments": [
+            { "label": "FEEDBACK", "weight": 300, "filled": true },
+            { "label": "IDLE", "weight": 700, "filled": false }
+          ]
+        }
+      ],
+      "reference": { "at": 0.4, "label": "400 MS" },
+      "caption": "RESPONSE UNDER 400 MS HOLDS ATTENTION"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Walter J. Doherty", "Ahrvind J. Thadhani"],
+    "year": 1982,
+    "title": "The Economic Value of Rapid Response Time",
+    "publication": "IBM Technical Report GE20-0752-0, White Plains, NY"
+  }
+}

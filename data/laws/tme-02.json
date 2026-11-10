@@ -1,0 +1,33 @@
+{
+  "id": "TME-02",
+  "name": "Accot-Zhai Steering Law",
+  "category": "Time, Motion & Ergonomics",
+  "axiom": "Steering time through a tunnel grows with its length and shrinks with its width.",
+  "trigger": "A cursor entering a nested fly-out drifts a few pixels sideways and the menu collapses.",
+  "checklist": [
+    "Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.",
+    "Add a triangular safe-hover zone between the pointer and the open submenu.",
+    "Keep generous padding on drag tracks, sliders, and scrollbar thumbs."
+  ],
+  "antiPattern": {
+    "violation": "A desktop menu makes the pointer cross a fourteen-pixel submenu path, and one pixel outside closes it.",
+    "remediation": "An invisible hit polygon joins the pointer to the open submenu, so a diagonal move keeps it open."
+  },
+  "graphicMetaphor": {
+    "svgShape": "steering-tunnel",
+    "parametricParams": {
+      "narrowWidth": 14,
+      "wideWidth": 120,
+      "length": 240,
+      "narrowLabel": "14 PX CORRIDOR",
+      "wideLabel": "WIDE CORRIDOR",
+      "caption": "STEERING TIME RISES AS THE TUNNEL NARROWS"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Johnny Accot", "Shumin Zhai"],
+    "year": 1997,
+    "title": "Beyond Fitts' Law: Models for Trajectory-Based HCI Tasks",
+    "publication": "ACM CHI '97 Proceedings, 295-302"
+  }
+}

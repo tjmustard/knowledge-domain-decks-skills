@@ -182,6 +182,57 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** Amos Tversky & Daniel Kahneman (1981). *The Framing of Decisions and the Psychology of Choice*. Science, 211(4481), 453-458.
 
+### DEC-09 — Simon's Bounded Rationality and Satisficing
+
+**Axiom.** People accept the first option that clears their threshold rather than searching for the best.
+
+**Apply when.** People page through all forty search results because nothing marks which listing is good enough to take.
+
+**Checklist.**
+- [ ] Surface a clearly marked top pick with its rating or badge above the result list.
+- [ ] Show the criteria that make an option acceptable beside it, not one detail page away.
+- [ ] Keep essential filters visible instead of requiring a boolean query to narrow the set.
+
+**Anti-pattern.** A hotel search makes people open all forty listings because none shows rating, cancellation terms, and price together.
+
+**Fix.** A Top Pick card above the grid shows rating, cancellation terms, and verified price for those dates.
+
+**Source.** Herbert A. Simon (1956). *Rational Choice and the Structure of the Environment*. Psychological Review, 63(2), 129-138.
+
+### DEC-10 — Cognitive Absorption
+
+**Axiom.** Absorbed people lose track of time and stop noticing the interface around the task.
+
+**Apply when.** A notification, promotional banner, or modal interrupts a writing or coding session that was running smoothly.
+
+**Checklist.**
+- [ ] Silence non-urgent notifications, promotional banners, and modal interruptions during focused work.
+- [ ] Save in the background and report status without a dialog or a blocking spinner.
+- [ ] Offer a distraction-free mode and keyboard paths for sustained work.
+
+**Anti-pattern.** A code editor shows rating prompts and marketing toasts every ten minutes while someone is writing.
+
+**Fix.** A focus mode hides ambient chrome, holds notifications, autosaves silently, and shows status in a quiet corner.
+
+**Source.** Ritu Agarwal & Elena Karahanna (2000). *Time Flies When You're Having Fun: Cognitive Absorption and Beliefs about Information Technology Usage*. MIS Quarterly, 24(4), 665-694.
+
+### DEC-11 — Decision Fatigue
+
+**Axiom.** Decision quality degrades over a long session of repetitive choices.
+
+**Apply when.** A flow reaches its twelfth configuration question, and the last three answers were left at the default.
+
+**Checklist.**
+- [ ] Batch small choices into one review step instead of asking them one at a time.
+- [ ] Defer non-critical configuration until the main task is finished.
+- [ ] Pre-populate safe defaults so most questions need no answer.
+
+**Anti-pattern.** An onboarding flow asks twenty separate configuration questions before the first task, each with no default.
+
+**Fix.** One review screen batches the questions, defers the optional half, and pre-fills safe defaults.
+
+**Source.** Roy F. Baumeister & Ellen Bratslavsky & Mark Muraven & Dianne M. Tice (1998). *Ego Depletion: Is the Active Self a Limited Resource?*. Journal of Personality and Social Psychology, 74(5), 1252-1265.
+
 ## Time, Motion & Ergonomics
 
 ### TME-01 — Fitts's Law
@@ -200,6 +251,57 @@ public-domain principle, when to check for it, and the concrete fix.
 **Fix.** Use a full-width sticky footer button at least 48 px tall within thumb reach.
 
 **Source.** Paul M. Fitts (1954). *The Information Capacity of the Human Motor System in Controlling the Amplitude of Movement*. Journal of Experimental Psychology, 47(6), 381-391.
+
+### TME-02 — Accot-Zhai Steering Law
+
+**Axiom.** Steering time through a tunnel grows with its length and shrinks with its width.
+
+**Apply when.** A cursor entering a nested fly-out drifts a few pixels sideways and the menu collapses.
+
+**Checklist.**
+- [ ] Replace narrow nested fly-outs with a flat mega-menu or a wide hover corridor.
+- [ ] Add a triangular safe-hover zone between the pointer and the open submenu.
+- [ ] Keep generous padding on drag tracks, sliders, and scrollbar thumbs.
+
+**Anti-pattern.** A desktop menu makes the pointer cross a fourteen-pixel submenu path, and one pixel outside closes it.
+
+**Fix.** An invisible hit polygon joins the pointer to the open submenu, so a diagonal move keeps it open.
+
+**Source.** Johnny Accot & Shumin Zhai (1997). *Beyond Fitts' Law: Models for Trajectory-Based HCI Tasks*. ACM CHI '97 Proceedings, 295-302.
+
+### TME-03 — Doherty Threshold
+
+**Axiom.** When system response drops under four hundred milliseconds, people stay engaged and work faster.
+
+**Apply when.** A click blocks the interface for most of a second, and the person clicks again or looks away.
+
+**Checklist.**
+- [ ] Update the interface at once on input, then reconcile with the server in the background.
+- [ ] Show skeletons that match the final layout when a wait exceeds four hundred milliseconds.
+- [ ] Prefetch likely next screens on hover or focus.
+
+**Anti-pattern.** A like button freezes for 750 ms while the request runs, with no visible change.
+
+**Fix.** The icon fills immediately, the counter increments locally, and the request reconciles later.
+
+**Source.** Walter J. Doherty & Ahrvind J. Thadhani (1982). *The Economic Value of Rapid Response Time*. IBM Technical Report GE20-0752-0, White Plains, NY.
+
+### TME-04 — Perceived Performance Heuristics
+
+**Axiom.** Progress cues make the same wait feel shorter than a blank screen does.
+
+**Apply when.** An export runs for twelve seconds behind a blank screen, and people refresh because they think it froze.
+
+**Checklist.**
+- [ ] Pair long operations with a determinate bar and motion that accelerates toward the end.
+- [ ] Replace a static spinner with skeleton screens or a pulsing placeholder.
+- [ ] Name the current stage in plain words: connecting, encrypting, finishing.
+
+**Anti-pattern.** A large export shows a blank page and a static cursor for twelve seconds.
+
+**Fix.** A progress dialog shows a determinate bar, the current stage, and an estimated remainder.
+
+**Source.** Steven C. Seow (2008). *Designing and Engineering Time: The Psychology of Time Perception in Software*. Addison-Wesley.
 
 ## Memory, Perception & Attention
 

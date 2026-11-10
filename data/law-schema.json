@@ -84,7 +84,9 @@
             "decay-curve",
             "convention-grid",
             "split-bar",
-            "paired-panels"
+            "paired-panels",
+            "steering-tunnel",
+            "decline-curve"
           ]
         },
         "parametricParams": {
