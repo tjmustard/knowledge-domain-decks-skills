@@ -117,7 +117,13 @@
             "sunk-gate",
             "gain-loss-bars",
             "goal-gradient",
-            "default-fork"
+            "default-fork",
+            "model-projection",
+            "shared-grammar",
+            "alignment-pair",
+            "promise-line",
+            "intake-funnel",
+            "parsimony-path"
           ]
         },
         "parametricParams": {

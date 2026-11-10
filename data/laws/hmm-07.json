@@ -1,0 +1,43 @@
+{
+  "id": "HMM-07",
+  "name": "Occam's Razor (Principle of Parsimony)",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Prefer the design that explains everything with the fewest added assumptions.",
+  "trigger": "Options and edge-case branches pile up until nobody can describe the main path.",
+  "checklist": [
+    {
+      "text": "Delete gradients, dividers, and wrapper elements that carry no content and no state.",
+      "kind": "code"
+    },
+    {
+      "text": "Render one primary action on a transactional screen and demote the rest below it.",
+      "kind": "code"
+    },
+    {
+      "text": "Merge Filter, Sort, and Search into one query bar when they act on the same collection.",
+      "kind": "code"
+    },
+    {
+      "text": "Time first-time users on the main task before and after a simplification, not just their opinion of it.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "An editor shows 45 toolbar buttons for rare typographic cases, so new writers cannot find bold or undo.",
+    "remediation": "A bare canvas appears first, with a contextual toolbar only while text is selected."
+  },
+  "graphicMetaphor": {
+    "svgShape": "parsimony-path",
+    "parametricParams": {
+      "caption": "FEWEST PARTS THAT STILL ARRIVE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "John Maeda"
+    ],
+    "year": 2006,
+    "title": "The Laws of Simplicity",
+    "publication": "MIT Press"
+  }
+}

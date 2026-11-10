@@ -718,6 +718,283 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"30\" y=\"50\" width=\"160\" height=\"250\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"210\" y=\"50\" width=\"160\" height=\"250\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"40\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONVENTION</text><text x=\"290\" y=\"40\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"10\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DIVERGENCE</text><rect x=\"42\" y=\"62\" width=\"24\" height=\"14\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"78\" y1=\"70\" x2=\"160\" y2=\"70\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"150\" y=\"62\" width=\"28\" height=\"14\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"42\" y1=\"88\" x2=\"178\" y2=\"88\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"44\" y=\"104\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"78\" y=\"104\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"104\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"146\" y=\"104\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"44\" y=\"144\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"78\" y=\"144\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"144\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"146\" y=\"144\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"44\" y=\"184\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"78\" y=\"184\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"112\" y=\"184\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"146\" y=\"184\" width=\"26\" height=\"28\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"233\" y=\"88.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"267\" y=\"88.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"301\" y=\"88.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"335\" y=\"88.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"233\" y=\"128.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"267\" y=\"128.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"301\" y=\"128.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"335\" y=\"128.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"233\" y=\"168.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"267\" y=\"168.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"301\" y=\"168.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"335\" y=\"168.8\" width=\"26\" height=\"28\" rx=\"1\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"224\" y1=\"288\" x2=\"356\" y2=\"288\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"340\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FAMILIAR GRAMMAR BECOMES EXPECTATION</text></svg>"
     },
     {
+      "id": "HMM-02",
+      "name": "Mental Model Theory",
+      "category": "Heuristic & Mental Models",
+      "axiom": "People act on a simplified internal model of a system, not the system itself.",
+      "trigger": "Users invent their own account of how a feature works, then blame the interface when that account predicts the wrong result.",
+      "checklist": [
+        {
+          "text": "Name folders, tags, and documents after the objects users already handle in their work.",
+          "kind": "code"
+        },
+        {
+          "text": "Update the status view from the same event that performed the action, not from a poll.",
+          "kind": "code"
+        },
+        {
+          "text": "Keep storage terms such as rows, records, and foreign keys out of user-facing labels.",
+          "kind": "code"
+        },
+        {
+          "text": "Ask users to predict what an action will do before they use it, and record each wrong prediction.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "An email client labels a delete action with a database operation, so saving a draft looks like destroying a record.",
+        "remediation": "Delete moves the message to a Trash folder and states that it stays recoverable for 30 days before purging."
+      },
+      "graphicMetaphor": {
+        "svgShape": "model-projection",
+        "parametricParams": {
+          "pairs": 4,
+          "mismatch": 1,
+          "caption": "WHERE THE MODEL AND THE SYSTEM PART"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Kenneth Craik"
+        ],
+        "year": 1943,
+        "title": "The Nature of Explanation",
+        "publication": "Cambridge University Press",
+        "authorsLabel": "Kenneth Craik",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"36\" y=\"80\" width=\"328\" height=\"84\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><rect x=\"36\" y=\"236\" width=\"328\" height=\"84\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"68\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHAT THE USER EXPECTS</text><text x=\"200\" y=\"314\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHAT THE SYSTEM DOES</text><circle cx=\"70\" cy=\"122\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"70\" y1=\"131\" x2=\"70\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"278\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.66666666666669\" cy=\"122\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"156.66666666666669\" y1=\"131\" x2=\"156.66666666666669\" y2=\"236\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.33333333333334\" cy=\"122\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"243.33333333333334\" y1=\"131\" x2=\"243.33333333333334\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.33333333333334\" cy=\"278\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"122\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"131\" x2=\"330\" y2=\"269\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"5 5\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"278\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"278\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHERE THE MODEL AND THE SYSTEM PART</text></svg>"
+    },
+    {
+      "id": "HMM-03",
+      "name": "Conceptual Integrity",
+      "category": "Heuristic & Mental Models",
+      "axiom": "Every module should express the same set of design ideas in the same way.",
+      "trigger": "Two screens in one product use different labels, layouts, or gestures for the same job, so each has to be learned from scratch.",
+      "checklist": [
+        {
+          "text": "Open the same kind of record the same way everywhere: one dialog, one drawer, or one page.",
+          "kind": "code"
+        },
+        {
+          "text": "Give one permission level one verb across the product; grep the interface strings for synonyms.",
+          "kind": "code"
+        },
+        {
+          "text": "Render page headers from one component so type, spacing, and breadcrumbs cannot drift apart.",
+          "kind": "code"
+        }
+      ],
+      "antiPattern": {
+        "violation": "A dashboard creates a project in a modal, a task on a new page, and a client in a drawer.",
+        "remediation": "All record creation opens the same slide-over sheet, with the same button order and unsaved-changes guard."
+      },
+      "graphicMetaphor": {
+        "svgShape": "shared-grammar",
+        "parametricParams": {
+          "caption": "ONE GRAMMAR, THREE CONTAINERS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Frederick P. Brooks Jr."
+        ],
+        "year": 1975,
+        "title": "The Mythical Man-Month: Essays on Software Engineering",
+        "publication": "Addison-Wesley",
+        "authorsLabel": "Frederick P. Brooks Jr.",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"34\" y=\"92\" width=\"96\" height=\"150\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"44\" y1=\"122\" x2=\"120\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"44\" y1=\"146\" x2=\"96\" y2=\"146\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"44\" y1=\"162\" x2=\"96\" y2=\"162\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"44\" y1=\"178\" x2=\"96\" y2=\"178\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"96\" y=\"216\" width=\"24\" height=\"14\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"152\" y=\"118\" width=\"96\" height=\"150\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162\" y1=\"148\" x2=\"238\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162\" y1=\"172\" x2=\"214\" y2=\"172\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162\" y1=\"188\" x2=\"214\" y2=\"188\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162\" y1=\"204\" x2=\"214\" y2=\"204\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"214\" y=\"242\" width=\"24\" height=\"14\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"270\" y=\"84\" width=\"96\" height=\"150\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"114\" x2=\"356\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"138\" x2=\"332\" y2=\"138\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"154\" x2=\"332\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><line x1=\"280\" y1=\"170\" x2=\"332\" y2=\"170\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><rect x=\"332\" y=\"208\" width=\"24\" height=\"14\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"60\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">HEADER, BODY, ACTION EVERY TIME</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONE GRAMMAR, THREE CONTAINERS</text></svg>"
+    },
+    {
+      "id": "HMM-04",
+      "name": "Aesthetic-Usability Effect",
+      "category": "Heuristic & Mental Models",
+      "axiom": "Polished interfaces are judged more usable than plain ones that do the same work.",
+      "trigger": "A restyle changes only color, type, and spacing; testers still rate the product easier to use and stop noticing its flaws.",
+      "checklist": [
+        {
+          "text": "Derive every margin, padding, and gap from one 4 or 8 pixel scale; no arbitrary values.",
+          "kind": "code"
+        },
+        {
+          "text": "Align text baselines and control edges to shared guides, and check the page at 100 percent zoom.",
+          "kind": "code"
+        },
+        {
+          "text": "Draw border radii, shadow levels, and neutral colors from one token file.",
+          "kind": "code"
+        },
+        {
+          "text": "Test perceived usability separately from task completion; a high aesthetic score is not task success.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "An analytics product ships default browser buttons, misaligned table columns, and unstyled alert text.",
+        "remediation": "It uses tabular figures, one radius scale, and a neutral ramp, with spacing tokens shared across the product."
+      },
+      "graphicMetaphor": {
+        "svgShape": "alignment-pair",
+        "parametricParams": {
+          "jitter": 1,
+          "caption": "POLISH IS READ AS COMPETENCE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Masaaki Kurosu",
+          "Kaori Kashimura"
+        ],
+        "year": 1995,
+        "title": "Apparent usability vs. inherent usability",
+        "publication": "CHI '95 Conference Companion, 292-293",
+        "doi": "10.1145/223355.223680",
+        "authorsLabel": "Masaaki Kurosu & Kaori Kashimura",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"30\" y=\"80\" width=\"160\" height=\"222\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><rect x=\"210\" y=\"80\" width=\"160\" height=\"222\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"68\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ON THE GRID</text><text x=\"290\" y=\"68\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">OFF THE GRID</text><line x1=\"46\" y1=\"108\" x2=\"130\" y2=\"108\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"118\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"232\" y1=\"104\" x2=\"316\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"232\" y=\"114\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"148\" x2=\"130\" y2=\"148\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"158\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"219\" y1=\"154\" x2=\"303\" y2=\"154\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"219\" y=\"164\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"188\" x2=\"130\" y2=\"188\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"198\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"230\" y1=\"183\" x2=\"314\" y2=\"183\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"230\" y=\"193\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"228\" x2=\"130\" y2=\"228\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"238\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"220\" y1=\"232\" x2=\"304\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"220\" y=\"242\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"46\" y1=\"268\" x2=\"130\" y2=\"268\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"46\" y=\"278\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><line x1=\"231\" y1=\"262\" x2=\"315\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><rect x=\"231\" y=\"272\" width=\"108\" height=\"16\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">POLISH IS READ AS COMPETENCE</text></svg>"
+    },
+    {
+      "id": "HMM-05",
+      "name": "Principle of Least Astonishment (POLA)",
+      "category": "Heuristic & Mental Models",
+      "axiom": "A control should do what its appearance and label lead people to expect.",
+      "trigger": "A familiar control does something unexpected: Save clears the form, a filter reloads the page.",
+      "checklist": [
+        {
+          "text": "Keep a control's label and function stable across hover, focus, and click; never swap its action.",
+          "kind": "code"
+        },
+        {
+          "text": "Preserve typed values when server validation fails and mark the failing fields beside them.",
+          "kind": "code"
+        },
+        {
+          "text": "Give destructive actions an undo window or a confirmation that names the object being removed.",
+          "kind": "code"
+        },
+        {
+          "text": "Record where users hesitate or backtrack after an action, and treat each as a violated expectation.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Pressing Save Draft clears every field and shows no confirmation, so the draft exists in local storage or nowhere.",
+        "remediation": "Save Draft shows a saved-at timestamp, keeps the fields filled, and syncs in the background."
+      },
+      "graphicMetaphor": {
+        "svgShape": "promise-line",
+        "parametricParams": {
+          "caption": "THE OUTCOME SHOULD MATCH THE PROMISE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "M. F. Cowlishaw"
+        ],
+        "year": 1984,
+        "title": "The design of the REXX language",
+        "publication": "IBM Systems Journal, 23(4), 326-335",
+        "doi": "10.1147/sj.234.0326",
+        "authorsLabel": "M. F. Cowlishaw",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"70\" cy=\"120\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"70\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">STATED</text><line x1=\"78\" y1=\"120\" x2=\"322\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-dasharray=\"6 6\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"120\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EXPECTED</text><path d=\"M 78 120 C 160 120, 240 152, 322 272\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"280\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"306\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DELIVERED</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE OUTCOME SHOULD MATCH THE PROMISE</text></svg>"
+    },
+    {
+      "id": "HMM-06",
+      "name": "Postel's Law (Robustness Principle)",
+      "category": "Heuristic & Mental Models",
+      "axiom": "Accept input in the forms people send; emit output in one strict form.",
+      "trigger": "Valid input is rejected over formatting, or downstream services each get a different shape.",
+      "checklist": [
+        {
+          "text": "Strip spaces, hyphens, and parentheses from phone and card fields before validating them.",
+          "kind": "code"
+        },
+        {
+          "text": "Parse dates against an explicit list of accepted formats and show those forms beside the field.",
+          "kind": "code"
+        },
+        {
+          "text": "Emit one canonical format from the API boundary and validate the payload against a schema.",
+          "kind": "code"
+        }
+      ],
+      "antiPattern": {
+        "violation": "Checkout rejects a card number because the user typed spaces between the digit groups, and the error says invalid characters.",
+        "remediation": "The field accepts any delimiter, removes non-digits, and displays the number in grouped blocks as it is typed."
+      },
+      "graphicMetaphor": {
+        "svgShape": "intake-funnel",
+        "parametricParams": {
+          "variants": 3,
+          "outputs": 3,
+          "caption": "ACCEPT MANY FORMS, EMIT ONE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Jon Postel"
+        ],
+        "year": 1980,
+        "title": "DoD standard Transmission Control Protocol",
+        "publication": "IETF RFC 761",
+        "doi": "10.17487/rfc761",
+        "authorsLabel": "Jon Postel",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"62\" cy=\"130\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><rect x=\"52\" y=\"181\" width=\"18\" height=\"18\" rx=\"2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 62 240 L 72 258 L 52 258 Z\" fill=\"currentColor\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"62\" y=\"96\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">INPUT</text><line x1=\"92\" y1=\"112\" x2=\"196\" y2=\"168\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"92\" y1=\"268\" x2=\"196\" y2=\"212\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"168\" x2=\"236\" y2=\"184\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"196\" y1=\"212\" x2=\"236\" y2=\"196\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"258\" y=\"156\" width=\"92\" height=\"24\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"258\" y=\"192\" width=\"92\" height=\"24\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><rect x=\"258\" y=\"228\" width=\"92\" height=\"24\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ACCEPT MANY FORMS, EMIT ONE</text></svg>"
+    },
+    {
+      "id": "HMM-07",
+      "name": "Occam's Razor (Principle of Parsimony)",
+      "category": "Heuristic & Mental Models",
+      "axiom": "Prefer the design that explains everything with the fewest added assumptions.",
+      "trigger": "Options and edge-case branches pile up until nobody can describe the main path.",
+      "checklist": [
+        {
+          "text": "Delete gradients, dividers, and wrapper elements that carry no content and no state.",
+          "kind": "code"
+        },
+        {
+          "text": "Render one primary action on a transactional screen and demote the rest below it.",
+          "kind": "code"
+        },
+        {
+          "text": "Merge Filter, Sort, and Search into one query bar when they act on the same collection.",
+          "kind": "code"
+        },
+        {
+          "text": "Time first-time users on the main task before and after a simplification, not just their opinion of it.",
+          "kind": "research"
+        }
+      ],
+      "antiPattern": {
+        "violation": "An editor shows 45 toolbar buttons for rare typographic cases, so new writers cannot find bold or undo.",
+        "remediation": "A bare canvas appears first, with a contextual toolbar only while text is selected."
+      },
+      "graphicMetaphor": {
+        "svgShape": "parsimony-path",
+        "parametricParams": {
+          "caption": "FEWEST PARTS THAT STILL ARRIVE"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "John Maeda"
+        ],
+        "year": 2006,
+        "title": "The Laws of Simplicity",
+        "publication": "MIT Press",
+        "authorsLabel": "John Maeda",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><path d=\"M 60 300 L 95 175 L 145 210 L 195 120 L 245 155 L 295 105 L 340 100\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" stroke-dasharray=\"6 5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"100\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"300\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"100\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"328\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">START</text><text x=\"340\" y=\"76\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ARRIVE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FEWEST PARTS THAT STILL ARRIVE</text></svg>"
+    },
+    {
       "id": "MPA-01",
       "name": "Serial Position Effect",
       "category": "Memory, Perception & Attention",

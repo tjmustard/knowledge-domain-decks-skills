@@ -1,0 +1,31 @@
+{
+  "id": "HMM-06",
+  "name": "Postel's Law (Robustness Principle)",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Accept input in the forms people send; emit output in one strict form.",
+  "trigger": "Valid input is rejected over formatting, or downstream services each get a different shape.",
+  "checklist": [
+    {"text": "Strip spaces, hyphens, and parentheses from phone and card fields before validating them.", "kind": "code"},
+    {"text": "Parse dates against an explicit list of accepted formats and show those forms beside the field.", "kind": "code"},
+    {"text": "Emit one canonical format from the API boundary and validate the payload against a schema.", "kind": "code"}
+  ],
+  "antiPattern": {
+    "violation": "Checkout rejects a card number because the user typed spaces between the digit groups, and the error says invalid characters.",
+    "remediation": "The field accepts any delimiter, removes non-digits, and displays the number in grouped blocks as it is typed."
+  },
+  "graphicMetaphor": {
+    "svgShape": "intake-funnel",
+    "parametricParams": {
+      "variants": 3,
+      "outputs": 3,
+      "caption": "ACCEPT MANY FORMS, EMIT ONE"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Jon Postel"],
+    "year": 1980,
+    "title": "DoD standard Transmission Control Protocol",
+    "publication": "IETF RFC 761",
+    "doi": "10.17487/rfc761"
+  }
+}

@@ -974,3 +974,168 @@ well run the experiment, and adding a mark to six bullets across six cards would
 change their fit for a distinction only the agent surface needs. What this leaves
 open is that a person reading the printed card still sees one checkbox style for
 both kinds; if that matters later, it is a print change with its own measurement.
+
+## 37. Six heuristics, and the six shapes that carry them
+
+The deck's Heuristic & Mental Models category shipped with one card, Jakob's Law.
+This slice writes laws 2-11 of the research list as HMM-02 to HMM-11, in three
+commits of six, six and eight cards, and completes Gestalt & Visual Perception
+at GES-02 to GES-11. The ID rule is the list's own: HMM-0n is law n, GES-0n is
+law n+11. This entry records the first commit: HMM-02 to HMM-07.
+
+### What each card cites, and where the Repository is wrong
+
+**HMM-02 Mental Model Theory** cites Craik (1943), *The Nature of Explanation*.
+The Repository pairs Craik with Johnson-Laird (1983) as the HCI adaptation; the
+record carries the primary source, and Johnson-Laird is not in the deck. No
+Crossref record was found for the 1943 monograph.
+
+**HMM-03 Conceptual Integrity** cites Brooks (1975), *The Mythical Man-Month*.
+No Crossref record was found for the book.
+
+**HMM-04 Aesthetic-Usability Effect** cites Kurosu & Kashimura (1995), DOI
+`10.1145/223355.223680`, CHI '95 Conference Companion, 292-293. The Repository
+titles the paper "Apparent Usability and Affective Quality". Crossref's title
+for that DOI is "Apparent usability vs. inherent usability", and the record
+carries Crossref's title: this is a changed title, not a casing fix.
+
+**HMM-05 Principle of Least Astonishment** cites Cowlishaw (1984), "The design
+of the REXX language", *IBM Systems Journal* 23(4), 326-335, DOI
+`10.1147/sj.234.0326`. The Repository attributes the principle to Cowlishaw
+(1979) and then to Saltzer, Reed & Clark (1984), "End-to-End Arguments in System
+Design". That paper is about where to place function in a layered system; it
+does not state least astonishment, and attaching it would have been a source
+that does not say the thing. Cowlishaw is the Repository's own first
+attribution, and the 1984 journal version is the one Crossref has. Postel has
+his own card, so RFC 761 is not eligible here either: one paper cannot be the
+academic origin of two laws in one deck.
+
+**HMM-06 Postel's Law** cites Postel (1980), RFC 761, DOI `10.17487/rfc761`. RFCs
+do carry Crossref DOIs under the `10.17487` prefix. The Repository prints "RFC
+761 / RFC 791"; RFC 791 is the Internet Protocol, not TCP, and the robustness
+sentence belongs to RFC 761.
+
+**HMM-07 Occam's Razor** cites Maeda (2006), *The Laws of Simplicity*. The
+origin of the heuristic is Ockham, c. 1320, and the card is named for him. The
+printed source is the work whose statement the axiom expresses: Ockham is the
+heuristic's origin, Maeda is the design statement the card makes. Ockham's year
+is not recorded because 1320 would assert a precise year for an approximate
+date, and the record has no convention for a circa. The same reasoning rules
+out Jefferys & Berger (1992), "Ockham's Razor and Bayesian Analysis": that paper
+argues the origin is rational, is not about interface design, and is not the
+card's subject. No Crossref record was found for Maeda's book; the 2007
+*Artifact* hit under the same search is a one-page review.
+
+### The vertical fit of a recto, measured
+
+The recto holds four text elements: the title, the axiom, the figure and the
+trigger. Three cards in this commit were first built with their last trigger
+line below the bottom safe edge, because a long name wraps and the trigger
+then has no room. The check is therefore a measurement of the built page, not
+a formula: every card is rendered and its lowest ink read before it is
+committed.
+
+Measured on the forty rectos of this slice. `T` is title lines at 14 pt, `A`
+axiom lines at 9 pt, `B` trigger lines at 7 pt *below* the "WHEN TO APPLY"
+label - the label itself, the card id and the running head are not counted.
+Bottom ink is the lowest non-white pixel in points from the paper edge, read
+at 864 ppi with a luminance threshold of 245, excluding the 0.2 in accent band
+and the trim outline. Every recto is within the 22.5 pt safe edge by that
+measure; the top ink of every recto stands at 337.58, 0.08 pt above the 337.5
+safe top, a constant of the template present on the 4e4109a baseline.
+
+    T  A  B  cards  last baseline  bottom ink (pt)  clearance from 22.5
+    2  2  2   10    31.5           29.75 ×6, 29.83 ×4  +7.25 to +7.33
+    1  3  2    9    38.0           36.25 ×7, 36.33, 37.83  +13.75 to +15.33
+    1  2  3    3    40.5           38.75, 38.83, 40.33  +16.25 to +17.83
+    1  2  2   18    49.6           47.92 ×9, 48.00, 49.50 ×8  +25.42 to +27.00
+
+The tightest cards are the ten at `T=2, A=2, B=2`, ranked by ink: DEC-06,
+DEC-09, HMM-05, HMM-06, MPA-02, TME-09 at 29.75 (+7.25); HMM-07, MPA-06,
+TME-04, TME-10 at 29.83 (+7.33). HMM-07 sat at 22.33 (-0.17) before its
+trigger was cut from three lines to two; that cut is the reason it now reads
+29.83.
+
+The four groups are separated by exactly the three line pitches, so the
+measurement yields the model the operator derived independently from PyMuPDF
+bounding boxes. It predicts ink, not a baseline:
+
+    bottom ink = 38.74 − 18.13(T − 1) − 11.66(A − 2) − 9.16(B − 3)
+
+Its reference is HMM-01, `T1 A2 B3`, which is in the deck and measures 38.83
+ink (40.5 baseline). The relation reproduces the lowest ink of every group to
+0.06 pt; every other card in a group measures 0.08 to 1.60 pt higher, because a
+descending glyph in the last trigger line puts ink below the baseline and a
+card without one does not. Predicting a baseline instead of ink shifts every
+value by about 1.73 pt, and the two models are both right about different
+quantities - which is why a condition has to name its unit and its edge.
+
+The relation is over-parameterised: a title line and two trigger lines enter
+through the same `18T + 9.16B`, so `18(T − 1) + 9.16(B − 3)` cannot separate
+them and two different rows of the table give one number. It also cannot
+describe the card it exists to catch: HMM-07's old counts give 20.61 where it
+measured 22.33, the 1.6 pt descender again. The values 18.13, 11.66 and 9.16
+are line spacing, not design constants. An earlier statement of this relation
+rounded them to 18, 11.66 and 9 and counted `B` as all 7 pt lines on the page,
+which put the reference two lines out and evaluated the overflowing HMM-07 to
+38.75. That rule passed a card two instruments placed past the edge. The
+correction is not a coefficient: it is that the page is measured.
+
+So the rule this deck keeps is the measurement: a card fits when its rendered
+bottom ink is at or above 22.5 pt, read per card before its commit. The four
+coefficient groups above are the observation that makes the table checkable,
+not a gate.
+
+Two triggers were shortened to two lines each rather than restyle the card.
+HMM-05 lost its third example, "a toggle changes a setting elsewhere". HMM-06
+lost the count "three services" and the word "field", keeping both halves of
+its trigger: the rejection of valid input and the divergence downstream.
+HMM-07 lost its third line, from "Options and edge-case branches pile up" to a
+statement that names the main path as the thing nobody can describe. Each card
+still says when to apply its law. If the type sizes change, the table must be
+measured again.
+
+### What each new shape draws that the other twenty-three do not
+
+`model-projection` (HMM-02): two domains and the correspondence between them,
+which is the card's claim. `network` draws one bounded set of nodes, `hierarchy`
+a branching tree, `proximity-grid` distance inside one field; none draws an
+expectation in one plane landing - or failing to land - on a state in another.
+The mismatched line stops at the plane and the system's unclaimed state is drawn
+faded beside it. The drawing encodes no magnitude: four pairs, one mismatch,
+chosen to be legible, not measured.
+
+`shared-grammar` (HMM-03): the same header, body and action composition repeated
+inside three differently shaped containers. `convention-grid` compares a
+familiar layout with a divergent one and `paired-panels` compares two sets of
+cells; neither shows one internal grammar surviving a change of container, which
+is what integrity means. No magnitude is encoded.
+
+`alignment-pair` (HMM-04): the same rows once snapped to a shared grid and once
+nudged off it. The two panels differ in alignment, not in where the parts are
+(as `convention-grid` does) and not in quantity (as `split-bar` does). The
+drawing shows polish and not the perception of usability; the caption carries
+the claim, because the effect is a judgment the drawing cannot make. The offsets
+are fixed values, not a measured jitter.
+
+`promise-line` (HMM-05): a stated path and a delivered path from the same
+control. `default-fork` draws two options from one point and `anchor-line` a
+baseline with estimates above it; neither draws what a label promises against
+what the control does. The bow of the solid curve is a drawing decision, not a
+measured deviation, and the caption does not turn it into one.
+
+`intake-funnel` (HMM-06): many input shapes converging into one repeated output
+block. `filter-gate` removes inputs and `network` connects nodes; neither shows
+varied forms normalised into one canonical form. It encodes no ratio: three in,
+three out, counts chosen for legibility.
+
+`parsimony-path` (HMM-07): two routes between the same two points, one of them
+with every detour the other lacks. `difficulty-line` plots time against an
+index, `steering-tunnel` draws corridors; neither draws route complexity between
+identical endpoints. The detours are not a count of anything; the caption says
+"parts", and the drawing does not claim that the shortest route is the best
+design.
+
+The two keys that were bare identifiers - `hierarchy` and `network` - are quoted
+like the other shapes, so a script that enumerates shapes from the source finds
+all twenty-nine. No behaviour changes.

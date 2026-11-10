@@ -1,0 +1,31 @@
+{
+  "id": "HMM-02",
+  "name": "Mental Model Theory",
+  "category": "Heuristic & Mental Models",
+  "axiom": "People act on a simplified internal model of a system, not the system itself.",
+  "trigger": "Users invent their own account of how a feature works, then blame the interface when that account predicts the wrong result.",
+  "checklist": [
+    {"text": "Name folders, tags, and documents after the objects users already handle in their work.", "kind": "code"},
+    {"text": "Update the status view from the same event that performed the action, not from a poll.", "kind": "code"},
+    {"text": "Keep storage terms such as rows, records, and foreign keys out of user-facing labels.", "kind": "code"},
+    {"text": "Ask users to predict what an action will do before they use it, and record each wrong prediction.", "kind": "research"}
+  ],
+  "antiPattern": {
+    "violation": "An email client labels a delete action with a database operation, so saving a draft looks like destroying a record.",
+    "remediation": "Delete moves the message to a Trash folder and states that it stays recoverable for 30 days before purging."
+  },
+  "graphicMetaphor": {
+    "svgShape": "model-projection",
+    "parametricParams": {
+      "pairs": 4,
+      "mismatch": 1,
+      "caption": "WHERE THE MODEL AND THE SYSTEM PART"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Kenneth Craik"],
+    "year": 1943,
+    "title": "The Nature of Explanation",
+    "publication": "Cambridge University Press"
+  }
+}

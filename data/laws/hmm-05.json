@@ -1,0 +1,44 @@
+{
+  "id": "HMM-05",
+  "name": "Principle of Least Astonishment (POLA)",
+  "category": "Heuristic & Mental Models",
+  "axiom": "A control should do what its appearance and label lead people to expect.",
+  "trigger": "A familiar control does something unexpected: Save clears the form, a filter reloads the page.",
+  "checklist": [
+    {
+      "text": "Keep a control's label and function stable across hover, focus, and click; never swap its action.",
+      "kind": "code"
+    },
+    {
+      "text": "Preserve typed values when server validation fails and mark the failing fields beside them.",
+      "kind": "code"
+    },
+    {
+      "text": "Give destructive actions an undo window or a confirmation that names the object being removed.",
+      "kind": "code"
+    },
+    {
+      "text": "Record where users hesitate or backtrack after an action, and treat each as a violated expectation.",
+      "kind": "research"
+    }
+  ],
+  "antiPattern": {
+    "violation": "Pressing Save Draft clears every field and shows no confirmation, so the draft exists in local storage or nowhere.",
+    "remediation": "Save Draft shows a saved-at timestamp, keeps the fields filled, and syncs in the background."
+  },
+  "graphicMetaphor": {
+    "svgShape": "promise-line",
+    "parametricParams": {
+      "caption": "THE OUTCOME SHOULD MATCH THE PROMISE"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "M. F. Cowlishaw"
+    ],
+    "year": 1984,
+    "title": "The design of the REXX language",
+    "publication": "IBM Systems Journal, 23(4), 326-335",
+    "doi": "10.1147/sj.234.0326"
+  }
+}

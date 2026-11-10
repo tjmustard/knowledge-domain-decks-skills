@@ -1,0 +1,31 @@
+{
+  "id": "HMM-04",
+  "name": "Aesthetic-Usability Effect",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Polished interfaces are judged more usable than plain ones that do the same work.",
+  "trigger": "A restyle changes only color, type, and spacing; testers still rate the product easier to use and stop noticing its flaws.",
+  "checklist": [
+    {"text": "Derive every margin, padding, and gap from one 4 or 8 pixel scale; no arbitrary values.", "kind": "code"},
+    {"text": "Align text baselines and control edges to shared guides, and check the page at 100 percent zoom.", "kind": "code"},
+    {"text": "Draw border radii, shadow levels, and neutral colors from one token file.", "kind": "code"},
+    {"text": "Test perceived usability separately from task completion; a high aesthetic score is not task success.", "kind": "research"}
+  ],
+  "antiPattern": {
+    "violation": "An analytics product ships default browser buttons, misaligned table columns, and unstyled alert text.",
+    "remediation": "It uses tabular figures, one radius scale, and a neutral ramp, with spacing tokens shared across the product."
+  },
+  "graphicMetaphor": {
+    "svgShape": "alignment-pair",
+    "parametricParams": {
+      "jitter": 1,
+      "caption": "POLISH IS READ AS COMPETENCE"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Masaaki Kurosu", "Kaori Kashimura"],
+    "year": 1995,
+    "title": "Apparent usability vs. inherent usability",
+    "publication": "CHI '95 Conference Companion, 292-293",
+    "doi": "10.1145/223355.223680"
+  }
+}

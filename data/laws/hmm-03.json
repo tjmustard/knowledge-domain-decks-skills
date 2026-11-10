@@ -1,0 +1,28 @@
+{
+  "id": "HMM-03",
+  "name": "Conceptual Integrity",
+  "category": "Heuristic & Mental Models",
+  "axiom": "Every module should express the same set of design ideas in the same way.",
+  "trigger": "Two screens in one product use different labels, layouts, or gestures for the same job, so each has to be learned from scratch.",
+  "checklist": [
+    {"text": "Open the same kind of record the same way everywhere: one dialog, one drawer, or one page.", "kind": "code"},
+    {"text": "Give one permission level one verb across the product; grep the interface strings for synonyms.", "kind": "code"},
+    {"text": "Render page headers from one component so type, spacing, and breadcrumbs cannot drift apart.", "kind": "code"}
+  ],
+  "antiPattern": {
+    "violation": "A dashboard creates a project in a modal, a task on a new page, and a client in a drawer.",
+    "remediation": "All record creation opens the same slide-over sheet, with the same button order and unsaved-changes guard."
+  },
+  "graphicMetaphor": {
+    "svgShape": "shared-grammar",
+    "parametricParams": {
+      "caption": "ONE GRAMMAR, THREE CONTAINERS"
+    }
+  },
+  "academicOrigin": {
+    "authors": ["Frederick P. Brooks Jr."],
+    "year": 1975,
+    "title": "The Mythical Man-Month: Essays on Software Engineering",
+    "publication": "Addison-Wesley"
+  }
+}

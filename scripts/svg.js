@@ -169,7 +169,7 @@
     },
 
     /* Hick's Law: dense fan beside a clean binary fork. */
-    hierarchy: function (p) {
+    "hierarchy": function (p) {
       var many = p.branches || 16;
       var few = p.optimalBranches || 2;
       var out = [];
@@ -195,7 +195,7 @@
     },
 
     /* Working memory: a bounded hull of active chunks with overflow satellites. */
-    network: function (p) {
+    "network": function (p) {
       var nodes = p.nodes || 7;
       var satellites = p.satellites || 2;
       var radius = p.hullRadius || 110;
@@ -804,6 +804,158 @@
       out.push(line(forkX, 200, 300, 280, 1.5, 0.45));
       out.push(circle(300, 280, 6, { opacity: 0.8 }));
       out.push(label(300, 306, altLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Mental model: the picture in the head and the system's actual states are
+       two planes, and each expectation projects onto the state it predicts.
+       The mismatched expectation runs down and lands on nothing. */
+    "model-projection": function (p) {
+      var pairs = p.pairs || 4;
+      var miss = p.mismatch == null ? 1 : p.mismatch;
+      var caption = p.caption || "";
+      var out = [];
+      var span = 260;
+      var xs = [];
+      for (var i = 0; i < pairs; i++) {
+        xs.push(70 + i * (pairs > 1 ? span / (pairs - 1) : 0));
+      }
+      out.push(rect(36, 80, 328, 84, { rx: 6, opacity: 0.35, width: 1.5 }));
+      out.push(rect(36, 236, 328, 84, { rx: 6, opacity: 0.35, width: 1.5 }));
+      out.push(label(200, 68, "WHAT THE USER EXPECTS", { size: 9 }));
+      out.push(label(200, 314, "WHAT THE SYSTEM DOES", { size: 9 }));
+      for (var j = 0; j < pairs; j++) {
+        out.push(circle(xs[j], 122, 9, { opacity: 0.85 }));
+        out.push(line(xs[j], 131, xs[j], j === miss ? 236 : 269, 1.5, 0.45, "5 5"));
+        if (j !== miss) out.push(circle(xs[j], 278, 9, { opacity: 0.85 }));
+      }
+      /* The state the system actually has where none was expected. */
+      var extra = xs[miss] + (miss + 1 < pairs ? (xs[miss + 1] - xs[miss]) / 2 : -40);
+      out.push(circle(extra, 278, 9, { opacity: 0.55 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Conceptual integrity: three containers of different shapes, each built
+       from the same header, body, and action grammar. */
+    "shared-grammar": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      [
+        { x: 34, y: 92, w: 96, h: 150 },
+        { x: 152, y: 118, w: 96, h: 150 },
+        { x: 270, y: 84, w: 96, h: 150 }
+      ].forEach(function (b) {
+        out.push(rect(b.x, b.y, b.w, b.h, { rx: 6, opacity: 0.4, width: 1.5 }));
+        out.push(line(b.x + 10, b.y + 30, b.x + b.w - 10, b.y + 30, 3, 0.8));
+        for (var r = 0; r < 3; r++) {
+          out.push(line(b.x + 10, b.y + 54 + r * 16, b.x + b.w - 34,
+            b.y + 54 + r * 16, 1.5, 0.45));
+        }
+        out.push(rect(b.x + b.w - 34, b.y + b.h - 26, 24, 14, {
+          rx: 3, opacity: 0.8, width: 1.5
+        }));
+      });
+      out.push(label(200, 60, "HEADER, BODY, ACTION EVERY TIME", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Aesthetic-usability: the same rows, one set snapped to a shared grid and
+       one set nudged off it. The drawing shows polish, not the perception. */
+    "alignment-pair": function (p) {
+      var jitter = p.jitter == null ? 1 : p.jitter;
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(30, 80, 160, 222, { rx: 6, opacity: 0.4, width: 1.5 }));
+      out.push(rect(210, 80, 160, 222, { rx: 6, opacity: 0.4, width: 1.5 }));
+      out.push(label(110, 68, "ON THE GRID", { size: 9 }));
+      out.push(label(290, 68, "OFF THE GRID", { size: 9 }));
+      var rows = [108, 148, 188, 228, 268];
+      var dxs = [6, -7, 4, -6, 5];
+      var dys = [-4, 6, -5, 4, -6];
+      rows.forEach(function (y, i) {
+        out.push(line(46, y, 130, y, 2, 0.6));
+        out.push(rect(46, y + 10, 108, 16, { rx: 2, opacity: 0.4, width: 1.5 }));
+        var dx = dxs[i] * jitter;
+        var dy = dys[i] * jitter;
+        out.push(line(226 + dx, y + dy, 310 + dx, y + dy, 2, 0.6));
+        out.push(rect(226 + dx, y + 10 + dy, 108, 16, {
+          rx: 2, opacity: 0.4, width: 1.5
+        }));
+      });
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Least astonishment: the path the label promises, and the path the
+       control actually delivers. */
+    "promise-line": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(circle(70, 120, 8, { opacity: 0.9 }));
+      out.push(label(70, 96, "STATED", { size: 9 }));
+      out.push(line(78, 120, 322, 120, 2, 0.35, "6 6"));
+      out.push(circle(330, 120, 8, { opacity: 0.4 }));
+      out.push(label(330, 96, "EXPECTED", { size: 9 }));
+      out.push(
+        '<path d="M 78 120 C 160 120, 240 152, 322 272" fill="none" ' +
+        'stroke="currentColor" stroke-width="3" opacity="0.9" ' + STROKE + "/>"
+      );
+      out.push(circle(330, 280, 8, { opacity: 0.9 }));
+      out.push(label(330, 306, "DELIVERED", { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Postel: varied input shapes enter a wide mouth; one repeated block
+       leaves. The funnel walls converge on the throat, they do not filter. */
+    "intake-funnel": function (p) {
+      var variants = p.variants || 3;
+      var outputs = p.outputs || 3;
+      var caption = p.caption || "";
+      var out = [];
+      var inY = [130, 190, 250];
+      var inGlyphs = [
+        circle(62, inY[0], 9, { opacity: 0.85 }),
+        rect(52, inY[1] - 9, 18, 18, { rx: 2, opacity: 0.85, width: 2 }),
+        '<path d="M 62 ' + (inY[2] - 10) + ' L 72 ' + (inY[2] + 8) +
+          ' L 52 ' + (inY[2] + 8) + ' Z" fill="currentColor" opacity="0.85" ' +
+          STROKE + "/>"
+      ];
+      for (var i = 0; i < Math.min(variants, inGlyphs.length); i++) {
+        out.push(inGlyphs[i]);
+      }
+      out.push(label(62, 96, "INPUT", { size: 9 }));
+      out.push(line(92, 112, 196, 168, 2, 0.55));
+      out.push(line(92, 268, 196, 212, 2, 0.55));
+      out.push(line(196, 168, 236, 184, 2, 0.55));
+      out.push(line(196, 212, 236, 196, 2, 0.55));
+      for (var j = 0; j < outputs; j++) {
+        out.push(rect(258, 156 + j * 36, 92, 24, {
+          rx: 3, opacity: 0.7, width: 2
+        }));
+      }
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    /* Parsimony: two routes between the same two points. The winding one
+       makes every stop; the straight one arrives without them. */
+    "parsimony-path": function (p) {
+      var caption = p.caption || "";
+      var out = [];
+      out.push(
+        '<path d="M 60 300 L 95 175 L 145 210 L 195 120 L 245 155 L 295 105 ' +
+        'L 340 100" fill="none" stroke="currentColor" stroke-width="2" ' +
+        'opacity="0.35" stroke-dasharray="6 5" ' + STROKE + "/>"
+      );
+      out.push(line(60, 300, 340, 100, 3, 0.9));
+      out.push(circle(60, 300, 9));
+      out.push(circle(340, 100, 9));
+      out.push(label(60, 328, "START", { size: 9 }));
+      out.push(label(340, 76, "ARRIVE", { size: 9 }));
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
     }

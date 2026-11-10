@@ -24,6 +24,112 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Source.** Jakob Nielsen (2000). *Designing Web Usability: The Practice of Simplicity*. New Riders Publishing.
 
+### HMM-02 — Mental Model Theory
+
+**Axiom.** People act on a simplified internal model of a system, not the system itself.
+
+**Apply when.** Users invent their own account of how a feature works, then blame the interface when that account predicts the wrong result.
+
+**Checklist.**
+- [ ] Name folders, tags, and documents after the objects users already handle in their work.
+- [ ] Update the status view from the same event that performed the action, not from a poll.
+- [ ] Keep storage terms such as rows, records, and foreign keys out of user-facing labels.
+- [ ] Ask users to predict what an action will do before they use it, and record each wrong prediction. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** An email client labels a delete action with a database operation, so saving a draft looks like destroying a record.
+
+**Fix.** Delete moves the message to a Trash folder and states that it stays recoverable for 30 days before purging.
+
+**Source.** Kenneth Craik (1943). *The Nature of Explanation*. Cambridge University Press.
+
+### HMM-03 — Conceptual Integrity
+
+**Axiom.** Every module should express the same set of design ideas in the same way.
+
+**Apply when.** Two screens in one product use different labels, layouts, or gestures for the same job, so each has to be learned from scratch.
+
+**Checklist.**
+- [ ] Open the same kind of record the same way everywhere: one dialog, one drawer, or one page.
+- [ ] Give one permission level one verb across the product; grep the interface strings for synonyms.
+- [ ] Render page headers from one component so type, spacing, and breadcrumbs cannot drift apart.
+
+**Anti-pattern.** A dashboard creates a project in a modal, a task on a new page, and a client in a drawer.
+
+**Fix.** All record creation opens the same slide-over sheet, with the same button order and unsaved-changes guard.
+
+**Source.** Frederick P. Brooks Jr. (1975). *The Mythical Man-Month: Essays on Software Engineering*. Addison-Wesley.
+
+### HMM-04 — Aesthetic-Usability Effect
+
+**Axiom.** Polished interfaces are judged more usable than plain ones that do the same work.
+
+**Apply when.** A restyle changes only color, type, and spacing; testers still rate the product easier to use and stop noticing its flaws.
+
+**Checklist.**
+- [ ] Derive every margin, padding, and gap from one 4 or 8 pixel scale; no arbitrary values.
+- [ ] Align text baselines and control edges to shared guides, and check the page at 100 percent zoom.
+- [ ] Draw border radii, shadow levels, and neutral colors from one token file.
+- [ ] Test perceived usability separately from task completion; a high aesthetic score is not task success. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** An analytics product ships default browser buttons, misaligned table columns, and unstyled alert text.
+
+**Fix.** It uses tabular figures, one radius scale, and a neutral ramp, with spacing tokens shared across the product.
+
+**Source.** Masaaki Kurosu & Kaori Kashimura (1995). *Apparent usability vs. inherent usability*. CHI '95 Conference Companion, 292-293.
+
+### HMM-05 — Principle of Least Astonishment (POLA)
+
+**Axiom.** A control should do what its appearance and label lead people to expect.
+
+**Apply when.** A familiar control does something unexpected: Save clears the form, a filter reloads the page.
+
+**Checklist.**
+- [ ] Keep a control's label and function stable across hover, focus, and click; never swap its action.
+- [ ] Preserve typed values when server validation fails and mark the failing fields beside them.
+- [ ] Give destructive actions an undo window or a confirmation that names the object being removed.
+- [ ] Record where users hesitate or backtrack after an action, and treat each as a violated expectation. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** Pressing Save Draft clears every field and shows no confirmation, so the draft exists in local storage or nowhere.
+
+**Fix.** Save Draft shows a saved-at timestamp, keeps the fields filled, and syncs in the background.
+
+**Source.** M. F. Cowlishaw (1984). *The design of the REXX language*. IBM Systems Journal, 23(4), 326-335.
+
+### HMM-06 — Postel's Law (Robustness Principle)
+
+**Axiom.** Accept input in the forms people send; emit output in one strict form.
+
+**Apply when.** Valid input is rejected over formatting, or downstream services each get a different shape.
+
+**Checklist.**
+- [ ] Strip spaces, hyphens, and parentheses from phone and card fields before validating them.
+- [ ] Parse dates against an explicit list of accepted formats and show those forms beside the field.
+- [ ] Emit one canonical format from the API boundary and validate the payload against a schema.
+
+**Anti-pattern.** Checkout rejects a card number because the user typed spaces between the digit groups, and the error says invalid characters.
+
+**Fix.** The field accepts any delimiter, removes non-digits, and displays the number in grouped blocks as it is typed.
+
+**Source.** Jon Postel (1980). *DoD standard Transmission Control Protocol*. IETF RFC 761.
+
+### HMM-07 — Occam's Razor (Principle of Parsimony)
+
+**Axiom.** Prefer the design that explains everything with the fewest added assumptions.
+
+**Apply when.** Options and edge-case branches pile up until nobody can describe the main path.
+
+**Checklist.**
+- [ ] Delete gradients, dividers, and wrapper elements that carry no content and no state.
+- [ ] Render one primary action on a transactional screen and demote the rest below it.
+- [ ] Merge Filter, Sort, and Search into one query bar when they act on the same collection.
+- [ ] Time first-time users on the main task before and after a simplification, not just their opinion of it. _(research: an experiment or a recorded run; not checkable from code)_
+
+**Anti-pattern.** An editor shows 45 toolbar buttons for rare typographic cases, so new writers cannot find bold or undo.
+
+**Fix.** A bare canvas appears first, with a contextual toolbar only while text is selected.
+
+**Source.** John Maeda (2006). *The Laws of Simplicity*. MIT Press.
+
 ## Gestalt & Visual Perception
 
 ### GES-01 — Law of Proximity
