@@ -170,9 +170,12 @@ with an install message rather than substituting another renderer.
 build:pdf` emits a 68-page file of 744,071 bytes (726 KiB), and two consecutive
 builds of one commit are byte-identical. `npm run check:pdf`
 measured a 216 x 360 pt MediaBox on every page. On the rendered pages, trim
-ticks sit in the bleed band at all four trim corners of every page; every text
-font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
-thirty-four versos and absent from the rectos. The worst text overrun past the
+ticks sit in the bleed band at all four trim corners of every page; every run of
+body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
+thirty-four versos and absent from the rectos. The labels drawn inside the
+diagrams are smaller by design: a 9-unit label on the 400-unit drawing prints at
+2.9 pt, so the figures are annotations rather than type, and each one was
+inspected on its own card at 400 ppi. The worst text overrun past the
 safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
 from the paper edge — is about 1 pt on page 25 (0.97 pt by glyph metrics, 1.00 pt
 by ink at 12x, the last digit being instrument resolution rather than
