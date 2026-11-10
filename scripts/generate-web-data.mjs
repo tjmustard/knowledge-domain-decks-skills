@@ -10,7 +10,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { DECKS_DIR, ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
+import { DECKS_DIR, ROOT, citationText, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../packages/core/svg.js");
@@ -22,28 +22,9 @@ export function webDir(deck) {
 const escapeHtml = (text) =>
   String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
-// The same citation line the card's own verso prints, built here because the
-// index is static HTML. packages/web/app.js holds the viewer's copy of this
-// rule; check-web compares every index cell to the rendered card, so the two
-// cannot drift silently.
-const citationText = (origin) => {
-  if (!origin) return "";
-  if (origin.note && !origin.authorsLabel && !origin.title && !origin.publication) return origin.note;
-  const year =
-    origin.year === undefined || origin.year === null
-      ? ""
-      : ` (${origin.year < 0 ? `${-origin.year} BCE` : origin.year})`;
-  const by = origin.authorsLabel ? origin.authorsLabel + year : year === "" ? "" : year.trim();
-  const parts = [];
-  if (by) parts.push(`${by}.`);
-  if (origin.title) {
-    const work = `${origin.title}${origin.titleStop}`;
-    parts.push(origin.publication ? `${work} ${origin.publication}.` : work);
-  } else if (origin.publication) {
-    parts.push(`${origin.publication}.`);
-  }
-  return parts.join(" ");
-};
+// The same citation line the card's own verso prints. packages/web/app.js
+// holds the viewer's copy of this rule; check-web compares every index cell
+// to the rendered card, so the two cannot drift silently.
 
 // The complete card list as a table, so a reader can scan every id, name,
 // family and source without opening fifty-four flip cards. It is generated

@@ -1,0 +1,40 @@
+{
+  "id": "R22",
+  "name": "Timeline & Drift Analysis",
+  "category": "Incident Diagnostics",
+  "trigger": "Operational failures where engineering practices deviated significantly from written operating procedures.",
+  "canvas": "Dual-Axis Chronology: Work as Imagined vs. Work as Done",
+  "timebox": "75–90 min",
+  "canvasLine": "Dual-Axis Chronology: Work as Imagined vs. Work as Done · 75–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; drift is a policy signal, not defiance."
+    },
+    {
+      "text": "Gather data (25m): build both tracks: work as imagined and work as done."
+    },
+    {
+      "text": "Generate insights (25m): find the first divergence; explain why it was rational."
+    },
+    {
+      "text": "Decide (20m): update the procedure or automate the step that forced the drift."
+    },
+    {
+      "text": "Close (10m): name the runbook on-call should not need to bypass."
+    }
+  ],
+  "action": "The chosen divergence becomes a corrected procedure or an automated step; the workaround is deleted.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "timeline",
+      "columns": 6,
+      "rows": 2
+    }
+  }
+}

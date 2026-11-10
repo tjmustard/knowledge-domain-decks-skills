@@ -34,12 +34,26 @@
 // its label with nothing under it, which reads as a rendering fault.
 #let absent(value) = if value == "" { true } else if type(value) == array { value.len() == 0 } else { false }
 
-// The ampersand must not end a printed line, so bind it to the surname it
-// introduces. This is a typographic decision for this surface: the shared
-// authorsLabel stays plain text and carries no non-printing characters.
-#let printed-authors(card) = card.at(field-attribution).authorsLabel.replace(
-  " & ", " &\u{00A0}"
-)
+// One citation line. The ampersand must not end a printed line, so bind it to
+// the surname it introduces. This is a typographic decision for this surface:
+// the shared authorsLabel stays plain text and carries no non-printing
+// characters. Every part of a citation is optional; an attribution that names
+// no author, work or publication may still carry a note, which prints instead
+// of an empty "Source: ." line.
+#let citation-line(o) = {
+  let names = (if "authorsLabel" in o { o.authorsLabel } else { "" }).replace(
+    " & ", " &\u{00A0}"
+  )
+  let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
+  let by = if names == "" [] else [#names#year-text.]
+  let has-work = "title" in o
+  let has-pub = "publication" in o
+  let work = if has-work [ _#o.title#(o.titleStop)_] else []
+  let pub = if has-pub [ #o.publication] else []
+  let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
+  let bare-cite = names == "" and not has-work and not has-pub
+  if bare-cite and "note" in o { o.note } else { [Source: #by#tail] }
+}
 
 // Trim ticks and trim outline, all within the bleed band.
 #let marks() = [
@@ -169,24 +183,19 @@
       #v(4pt)
       // Every part of a citation is optional. A named work with no author or no
       // year must not leave a dangling stop or an empty space; with all parts
-      // present this prints the same line it always did.
+      // present this prints the same line it always did. An origin may list
+      // several works: each prints its own citation, in declaration order.
       #let o = card.at(field-attribution)
-      #let names = printed-authors(card)
-      #let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
-      #let by = if names == "" [] else [#names#year-text.]
-      #let has-work = "title" in o
-      #let has-pub = "publication" in o
-      #let work = if has-work [ _#o.title#(o.titleStop)_] else []
-      #let pub = if has-pub [ #o.publication] else []
-      #let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
-      // An attribution that names no author, work or publication may still
-      // carry a note: a method in common use whose originator is not
-      // documented. The note prints instead of an empty "Source: ." line.
-      #let bare-cite = names == "" and not has-work and not has-pub
-      #if bare-cite and "note" in o [
-        #text(size: 6.5pt, fill: rgb("#64748b"))[#o.note]
-      ] else [
-        #text(size: 6.5pt, fill: rgb("#64748b"))[Source: #by#tail]
+      #let works = if "works" in o { o.works } else { () }
+      #text(size: 6.5pt, fill: rgb("#64748b"))[
+        #if works.len() > 0 [
+          #for (i, w) in works.enumerate() [
+            #if i > 0 { linebreak() }
+            #citation-line(w)
+          ]
+        ] else [
+          #citation-line(o)
+        ]
       ]
     ]
   ])

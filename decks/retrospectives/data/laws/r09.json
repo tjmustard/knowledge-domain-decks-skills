@@ -27,7 +27,7 @@
   "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
   "sourceProtocol": true,
   "origin": {
-    "note": "A common check-in format; no documented originator."
+    "note": "The source names no originator."
   },
   "figure": {
     "svgShape": "retro-canvas",

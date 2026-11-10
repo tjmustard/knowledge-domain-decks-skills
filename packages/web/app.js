@@ -54,6 +54,9 @@
   // part prints only when it is there, and the full case reads exactly as before.
   function citation(origin) {
     if (!origin) return "";
+    // An origin may list several works. Each prints its own citation, in the
+    // order the record declares them.
+    if (origin.works && origin.works.length) return origin.works.map(citation).join(" ");
     // A note-only attribution names no author, work or publication: a method in
     // common use with no documented originator. The note is the whole line.
     if (origin.note && !origin.authorsLabel && !origin.title && !origin.publication) return origin.note;

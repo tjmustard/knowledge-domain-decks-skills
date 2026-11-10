@@ -1,0 +1,57 @@
+{
+  "id": "R20",
+  "name": "5 Whys Fishbone",
+  "category": "Incident Diagnostics",
+  "trigger": "Chronic, recurring technical defects across sprint cycles that resist simple operational triage.",
+  "canvas": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature",
+  "timebox": "60–90 min",
+  "canvasLine": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature · 60–90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; Mortal covers fatigue and training, not blame."
+    },
+    {
+      "text": "Gather data (25m): six 6M ribs, failure at head."
+    },
+    {
+      "text": "Generate insights (25m): five whys down every rib."
+    },
+    {
+      "text": "Decide (15m): deepest verified node becomes a ticket."
+    },
+    {
+      "text": "Close (5m): name the rib with the least evidence."
+    }
+  ],
+  "action": "Deepest verified node per rib becomes a mitigation ticket; unverified chains stay open.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "works": [
+      {
+        "authors": [
+          "Kaoru Ishikawa"
+        ],
+        "year": 1968,
+        "title": "Guide to Quality Control",
+        "publication": "Asian Productivity Organization"
+      },
+      {
+        "authors": [
+          "Taiichi Ohno"
+        ],
+        "year": 1988,
+        "title": "Toyota Production System: Beyond Large-Scale Production",
+        "publication": "Productivity Press"
+      }
+    ]
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "fishbone",
+      "columns": 6,
+      "rows": 3
+    }
+  }
+}

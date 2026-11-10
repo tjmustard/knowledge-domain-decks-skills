@@ -1,0 +1,45 @@
+{
+  "id": "R21",
+  "name": "Swiss Cheese Safety Model",
+  "category": "Incident Diagnostics",
+  "trigger": "Cascading systemic outages where multiple independent defensive barriers failed simultaneously.",
+  "canvas": "4 Slices: Organization, Supervision, Preconditions, Defenses",
+  "timebox": "90 min",
+  "canvasLine": "4 Slices: Organization, Supervision, Preconditions, Defenses · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; safety is emergent, not individual."
+    },
+    {
+      "text": "Gather data (25m): trace the failure through the four slices; mark each hole."
+    },
+    {
+      "text": "Generate insights (25m): find where holes aligned; name the missing barrier."
+    },
+    {
+      "text": "Decide (20m): add a new slice or shrink holes in at least two layers."
+    },
+    {
+      "text": "Close (10m): name the barrier the next incident tests."
+    }
+  ],
+  "action": "An intervention adds a new defensive slice or reduces the holes in two layers; one layer alone is a patch, not a barrier.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "James Reason"
+    ],
+    "year": 1990,
+    "title": "Human Error",
+    "publication": "Cambridge University Press"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "bands",
+      "columns": 4,
+      "rows": 4
+    }
+  }
+}

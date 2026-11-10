@@ -1,0 +1,44 @@
+{
+  "id": "R19",
+  "name": "Blameless Post-Mortem Arc",
+  "category": "Incident Diagnostics",
+  "trigger": "Production service interruptions (SEV-1/SEV-2 outages, data corruption, security breaches).",
+  "canvas": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair",
+  "timebox": "90 min",
+  "canvasLine": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; ban should have and failed to."
+    },
+    {
+      "text": "Gather data (25m): build the UTC timeline from traces, git logs, and chat."
+    },
+    {
+      "text": "Generate insights (30m): ask why each action made sense to responders then."
+    },
+    {
+      "text": "Decide (20m): design defense-in-depth mitigations, not warnings."
+    },
+    {
+      "text": "Close (5m): thank responders; schedule publication of the report."
+    }
+  ],
+  "action": "Automate the barrier, not the warning: a canary checks cache hits above 95% before traffic.",
+  "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+  "sourceProtocol": true,
+  "origin": {
+    "authors": [
+      "John Allspaw"
+    ],
+    "year": 2012,
+    "title": "Blameless PostMortems and a Just Culture"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "bands",
+      "columns": 2,
+      "rows": 4
+    }
+  }
+}

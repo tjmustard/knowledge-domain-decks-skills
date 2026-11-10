@@ -271,14 +271,22 @@ export function withCitation(card, deck) {
   // prepare, and adding a key named "undefined" would be worse than nothing.
   if (!shape.fields.attribution) return { ...card };
   const origin = shape.attribution(card);
-  return {
-    ...card,
-    [shape.fields.attribution]: {
-      ...origin,
-      authorsLabel: authorsLabel(origin),
-      titleStop: titleStop(origin.title)
-    }
+  const prepared = {
+    ...origin,
+    authorsLabel: authorsLabel(origin),
+    titleStop: titleStop(origin.title)
   };
+  // An origin may carry an ordered list of works instead of one work at the
+  // top level. Each work gets the same two computed strings, so a renderer
+  // prints the second citation exactly the way it prints the first.
+  if (Array.isArray(origin.works)) {
+    prepared.works = origin.works.map((work) => ({
+      ...work,
+      authorsLabel: authorsLabel(work),
+      titleStop: titleStop(work.title)
+    }));
+  }
+  return { ...card, [shape.fields.attribution]: prepared };
 }
 
 /*
@@ -298,6 +306,12 @@ export function formatYear(year) {
 }
 
 export function sourceShort(origin = {}) {
+  // An origin with an ordered list of works cites each of them, in order.
+  // Each short form already ends with the work's own stop, so one space
+  // separates them.
+  if (Array.isArray(origin.works) && origin.works.length > 0) {
+    return origin.works.map((work) => sourceShort(work)).join(" ");
+  }
   const names = authorsLabel(origin);
   const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;
   const head = `${names}${year}`;
@@ -309,6 +323,11 @@ export function sourceShort(origin = {}) {
 }
 
 export function sourceLine(origin = {}) {
+  // One citation sentence per work, in declaration order. Each already ends
+  // with its own stop, so the join is a single space.
+  if (Array.isArray(origin.works) && origin.works.length > 0) {
+    return origin.works.map((work) => sourceLine(work)).join(" ");
+  }
   const names = authorsLabel(origin);
   const year = origin.year === undefined || origin.year === null ? "" : ` (${formatYear(origin.year)})`;
   const head = `${names}${year}`;
@@ -317,6 +336,36 @@ export function sourceLine(origin = {}) {
   let body = `${head}${head ? "." : ""}${title}${tail}`.trim();
   if (body && !/[.?!]$/.test(body)) body += ".";
   return body;
+}
+
+// The citation line the card's verso and the web index both print: one work
+// per origin, or one line per work when the origin lists several. A bare note
+// is the whole line when the origin names no author, work or publication.
+// Renderers that pass a withCitation-prepared origin get the computed
+// authorsLabel and titleStop; a raw record is accepted too, so the rule is
+// testable without a full deck build.
+export function citationText(origin = {}) {
+  if (!origin) return "";
+  if (Array.isArray(origin.works) && origin.works.length > 0) {
+    return origin.works.map((work) => citationText(work)).join(" ");
+  }
+  const names = origin.authorsLabel !== undefined ? origin.authorsLabel : authorsLabel(origin);
+  const stop = origin.titleStop !== undefined ? origin.titleStop : titleStop(origin.title);
+  if (origin.note && !names && !origin.title && !origin.publication) return origin.note;
+  const year =
+    origin.year === undefined || origin.year === null
+      ? ""
+      : ` (${origin.year < 0 ? `${-origin.year} BCE` : origin.year})`;
+  const by = names ? names + year : year === "" ? "" : year.trim();
+  const parts = [];
+  if (by) parts.push(`${by}.`);
+  if (origin.title) {
+    const work = `${origin.title}${stop}`;
+    parts.push(origin.publication ? `${work} ${origin.publication}.` : work);
+  } else if (origin.publication) {
+    parts.push(`${origin.publication}.`);
+  }
+  return parts.join(" ");
 }
 
 export function wordCount(text) {

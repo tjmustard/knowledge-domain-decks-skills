@@ -27,7 +27,12 @@
   "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
   "sourceProtocol": true,
   "origin": {
-    "note": "Common retro metaphor; no documented originator."
+    "authors": [
+      "Luke Hohmann"
+    ],
+    "year": 2006,
+    "title": "Innovation Games",
+    "publication": "Addison-Wesley"
   },
   "figure": {
     "svgShape": "retro-canvas",

@@ -1,0 +1,40 @@
+{
+  "id": "R24",
+  "name": "Fault Tree Analysis",
+  "category": "Incident Diagnostics",
+  "trigger": "Complex microservice outages involving race conditions, deadlocks, or distributed cascading dependencies.",
+  "canvas": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults",
+  "timebox": "90 min",
+  "canvasLine": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; the tree maps conditions, not culprits."
+    },
+    {
+      "text": "Gather data (25m): put the catastrophic event at the top; branch downward."
+    },
+    {
+      "text": "Generate insights (25m): mark each gate AND or OR; name the single points."
+    },
+    {
+      "text": "Decide (20m): redesign one OR gate into an AND with independent fallback."
+    },
+    {
+      "text": "Close (10m): name the leaf the tree could not rule out."
+    }
+  ],
+  "action": "A single-point OR gate becomes an AND architecture with an independent fallback, tested before the next release.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "tree",
+      "columns": 4,
+      "rows": 3
+    }
+  }
+}

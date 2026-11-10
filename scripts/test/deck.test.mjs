@@ -15,6 +15,7 @@ import {
   loadCards,
   orderCards,
   authorsLabel,
+  citationText,
   formatYear,
   sourceLine,
   sourceShort,
@@ -120,6 +121,62 @@ test("withCitation adds both strings and leaves the record alone", async () => {
   assert.equal(cited.academicOrigin.titleStop, titleStop(card.academicOrigin.title));
   assert.equal(cited.id, card.id);
   assert.equal(cited.axiom, card.axiom);
+});
+
+test("an origin with works cites each work once, in declaration order", () => {
+  const ishikawa = {
+    authors: ["Kaoru Ishikawa"],
+    year: 1968,
+    title: "Guide to Quality Control",
+    publication: "Asian Productivity Organization"
+  };
+  const ohno = {
+    authors: ["Taiichi Ohno"],
+    year: 1988,
+    title: "Toyota Production System: Beyond Large-Scale Production",
+    publication: "Productivity Press"
+  };
+  assert.equal(
+    citationText({ works: [ishikawa] }),
+    "Kaoru Ishikawa (1968). Guide to Quality Control. Asian Productivity Organization."
+  );
+  const both =
+    "Kaoru Ishikawa (1968). Guide to Quality Control. Asian Productivity Organization. " +
+    "Taiichi Ohno (1988). Toyota Production System: Beyond Large-Scale Production. Productivity Press.";
+  assert.equal(citationText({ works: [ishikawa, ohno] }), both);
+  // A citation is only complete if neither work is dropped or reordered.
+  assert.ok(both.indexOf("Ishikawa") < both.indexOf("Ohno"));
+  assert.equal(
+    sourceShort({ works: [ishikawa, ohno] }),
+    "Kaoru Ishikawa (1968), *Guide to Quality Control*. " +
+      "Taiichi Ohno (1988), *Toyota Production System: Beyond Large-Scale Production*."
+  );
+  assert.equal(
+    sourceLine({ works: [ishikawa, ohno] }),
+    "Kaoru Ishikawa (1968). *Guide to Quality Control*. Asian Productivity Organization. " +
+      "Taiichi Ohno (1988). *Toyota Production System: Beyond Large-Scale Production*. Productivity Press."
+  );
+});
+
+test("an origin with no work or author renders its note, not an empty citation", () => {
+  const noteOnly = { note: "The source names no originator." };
+  assert.equal(citationText(noteOnly), noteOnly.note);
+  // The rules surfaces omit the line rather than print an empty source.
+  assert.equal(sourceLine(noteOnly), "");
+});
+
+test("withCitation prepares every work, not only the first", () => {
+  const origin = {
+    works: [
+      { authors: ["Kaoru Ishikawa"], year: 1968, title: "Guide to Quality Control" },
+      { authors: ["Taiichi Ohno"], year: 1988, title: "Toyota Production System." }
+    ]
+  };
+  const cited = withCitation({ id: "X", origin }, { fields: { attribution: "origin" } });
+  assert.equal(cited.origin.works[0].authorsLabel, "Kaoru Ishikawa");
+  assert.equal(cited.origin.works[0].titleStop, ".");
+  assert.equal(cited.origin.works[1].authorsLabel, "Taiichi Ohno");
+  assert.equal(cited.origin.works[1].titleStop, "");
 });
 
 test("a year before the common era is printed as BCE, not as a negative number", () => {

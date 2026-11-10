@@ -31,7 +31,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common retro format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -74,7 +74,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common retro format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -117,7 +117,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common agile format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -160,7 +160,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common agile format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -203,7 +203,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common retro format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -246,7 +246,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "A common agile format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -289,7 +289,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "A common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -332,7 +332,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "A common discovery format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -375,7 +375,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "A common check-in format; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -418,8 +418,13 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
       "sourceProtocol": true,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
-        "authorsLabel": "",
+        "authors": [
+          "Luke Hohmann"
+        ],
+        "year": 2006,
+        "title": "Innovation Games",
+        "publication": "Addison-Wesley",
+        "authorsLabel": "Luke Hohmann",
         "titleStop": "."
       },
       "figure": {
@@ -461,7 +466,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -504,7 +509,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -547,7 +552,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -637,7 +642,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -680,7 +685,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -723,7 +728,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -766,7 +771,7 @@ window.RETROSPECTIVES_DECK = {
       "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
       "sourceProtocol": false,
       "origin": {
-        "note": "Common retro metaphor; no documented originator.",
+        "note": "The source names no originator.",
         "authorsLabel": "",
         "titleStop": "."
       },
@@ -779,6 +784,429 @@ window.RETROSPECTIVES_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"354\" x2=\"200\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"70\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"135\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"135\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"135\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"200\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"265\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"265\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"265\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"330\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"348\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R19",
+      "name": "Blameless Post-Mortem Arc",
+      "category": "Incident Diagnostics",
+      "trigger": "Production service interruptions (SEV-1/SEV-2 outages, data corruption, security breaches).",
+      "canvas": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair",
+      "timebox": "90 min",
+      "canvasLine": "4 Bands: Chronology, System Context, Latent Weaknesses, Repair · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; ban should have and failed to."
+        },
+        {
+          "text": "Gather data (25m): build the UTC timeline from traces, git logs, and chat."
+        },
+        {
+          "text": "Generate insights (30m): ask why each action made sense to responders then."
+        },
+        {
+          "text": "Decide (20m): design defense-in-depth mitigations, not warnings."
+        },
+        {
+          "text": "Close (5m): thank responders; schedule publication of the report."
+        }
+      ],
+      "action": "Automate the barrier, not the warning: a canary checks cache hits above 95% before traffic.",
+      "provenance": "Source protocol: the phases and minutes follow the written sequence in the source.",
+      "sourceProtocol": true,
+      "origin": {
+        "authors": [
+          "John Allspaw"
+        ],
+        "year": 2012,
+        "title": "Blameless PostMortems and a Just Culture",
+        "authorsLabel": "John Allspaw",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "bands",
+          "columns": 2,
+          "rows": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"72\" x2=\"360\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"140\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"136\" x2=\"360\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"260\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"140\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"280\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"264\" x2=\"360\" y2=\"264\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"120\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"260\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R20",
+      "name": "5 Whys Fishbone",
+      "category": "Incident Diagnostics",
+      "trigger": "Chronic, recurring technical defects across sprint cycles that resist simple operational triage.",
+      "canvas": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature",
+      "timebox": "60–90 min",
+      "canvasLine": "Ishikawa Spine & 6M Ribs: Machine, Method, Material, Mortal, Measurement, Nature · 60–90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; Mortal covers fatigue and training, not blame."
+        },
+        {
+          "text": "Gather data (25m): six 6M ribs, failure at head."
+        },
+        {
+          "text": "Generate insights (25m): five whys down every rib."
+        },
+        {
+          "text": "Decide (15m): deepest verified node becomes a ticket."
+        },
+        {
+          "text": "Close (5m): name the rib with the least evidence."
+        }
+      ],
+      "action": "Deepest verified node per rib becomes a mitigation ticket; unverified chains stay open.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "works": [
+          {
+            "authors": [
+              "Kaoru Ishikawa"
+            ],
+            "year": 1968,
+            "title": "Guide to Quality Control",
+            "publication": "Asian Productivity Organization",
+            "authorsLabel": "Kaoru Ishikawa",
+            "titleStop": "."
+          },
+          {
+            "authors": [
+              "Taiichi Ohno"
+            ],
+            "year": 1988,
+            "title": "Toyota Production System: Beyond Large-Scale Production",
+            "publication": "Productivity Press",
+            "authorsLabel": "Taiichi Ohno",
+            "titleStop": "."
+          }
+        ],
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "fishbone",
+          "columns": 6,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"200\" x2=\"334\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 334 191 L 360 200 L 334 209\" fill=\"currentColor\" stroke=\"none\"/><line x1=\"70\" y1=\"200\" x2=\"36\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"61.5\" y1=\"180.5\" x2=\"39.5\" y2=\"170.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"53\" y1=\"161\" x2=\"31\" y2=\"151\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"44.5\" y1=\"141.5\" x2=\"22.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"116\" y1=\"200\" x2=\"82\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"107.5\" y1=\"219.5\" x2=\"85.5\" y2=\"229.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"99\" y1=\"239\" x2=\"77\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"90.5\" y1=\"258.5\" x2=\"68.5\" y2=\"268.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"162\" y1=\"200\" x2=\"128\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"153.5\" y1=\"180.5\" x2=\"131.5\" y2=\"170.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"145\" y1=\"161\" x2=\"123\" y2=\"151\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"136.5\" y1=\"141.5\" x2=\"114.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"208\" y1=\"200\" x2=\"174\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"199.5\" y1=\"219.5\" x2=\"177.5\" y2=\"229.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"191\" y1=\"239\" x2=\"169\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"182.5\" y1=\"258.5\" x2=\"160.5\" y2=\"268.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"254\" y1=\"200\" x2=\"220\" y2=\"122\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"245.5\" y1=\"180.5\" x2=\"223.5\" y2=\"170.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"237\" y1=\"161\" x2=\"215\" y2=\"151\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"228.5\" y1=\"141.5\" x2=\"206.5\" y2=\"131.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"300\" y1=\"200\" x2=\"266\" y2=\"278\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"291.5\" y1=\"219.5\" x2=\"269.5\" y2=\"229.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"283\" y1=\"239\" x2=\"261\" y2=\"249\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><line x1=\"274.5\" y1=\"258.5\" x2=\"252.5\" y2=\"268.5\" stroke=\"currentColor\" stroke-width=\"1.1\" stroke-linecap=\"round\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R21",
+      "name": "Swiss Cheese Safety Model",
+      "category": "Incident Diagnostics",
+      "trigger": "Cascading systemic outages where multiple independent defensive barriers failed simultaneously.",
+      "canvas": "4 Slices: Organization, Supervision, Preconditions, Defenses",
+      "timebox": "90 min",
+      "canvasLine": "4 Slices: Organization, Supervision, Preconditions, Defenses · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; safety is emergent, not individual."
+        },
+        {
+          "text": "Gather data (25m): trace the failure through the four slices; mark each hole."
+        },
+        {
+          "text": "Generate insights (25m): find where holes aligned; name the missing barrier."
+        },
+        {
+          "text": "Decide (20m): add a new slice or shrink holes in at least two layers."
+        },
+        {
+          "text": "Close (10m): name the barrier the next incident tests."
+        }
+      ],
+      "action": "An intervention adds a new defensive slice or reduces the holes in two layers; one layer alone is a patch, not a barrier.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "James Reason"
+        ],
+        "year": 1990,
+        "title": "Human Error",
+        "publication": "Cambridge University Press",
+        "authorsLabel": "James Reason",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "bands",
+          "columns": 4,
+          "rows": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"72\" x2=\"360\" y2=\"72\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"105\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"175\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"315\" cy=\"72\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"136\" x2=\"360\" y2=\"136\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"85\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"225\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"295\" cy=\"136\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"105\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"175\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"245\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"315\" cy=\"200\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"264\" x2=\"360\" y2=\"264\" stroke=\"currentColor\" stroke-width=\"7\" stroke-linecap=\"round\" opacity=\"0.32\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"85\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"155\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"225\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"295\" cy=\"264\" r=\"9\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R22",
+      "name": "Timeline & Drift Analysis",
+      "category": "Incident Diagnostics",
+      "trigger": "Operational failures where engineering practices deviated significantly from written operating procedures.",
+      "canvas": "Dual-Axis Chronology: Work as Imagined vs. Work as Done",
+      "timebox": "75–90 min",
+      "canvasLine": "Dual-Axis Chronology: Work as Imagined vs. Work as Done · 75–90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; drift is a policy signal, not defiance."
+        },
+        {
+          "text": "Gather data (25m): build both tracks: work as imagined and work as done."
+        },
+        {
+          "text": "Generate insights (25m): find the first divergence; explain why it was rational."
+        },
+        {
+          "text": "Decide (20m): update the procedure or automate the step that forced the drift."
+        },
+        {
+          "text": "Close (10m): name the runbook on-call should not need to bypass."
+        }
+      ],
+      "action": "The chosen divergence becomes a corrected procedure or an automated step; the workaround is deleted.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "timeline",
+          "columns": 6,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"40\" y1=\"146.666667\" x2=\"348\" y2=\"146.666667\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"114.8\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"171.6\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"228.4\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"285.2\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"146.666667\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"253.333333\" x2=\"348\" y2=\"253.333333\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"58\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"114.8\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"171.6\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"228.4\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"285.2\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"342\" cy=\"253.333333\" r=\"4.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.3\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 338 146.7 L 360 146.7\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R23",
+      "name": "FMEA Diagnostic",
+      "category": "Incident Diagnostics",
+      "trigger": "Pre-launch architectural reviews, critical database schema migrations, or infrastructure cutovers.",
+      "canvas": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN",
+      "timebox": "90–120 min",
+      "canvasLine": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN · 90–120 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; scoring is about the system."
+        },
+        {
+          "text": "Gather data (30m): list component failure modes and their potential impact."
+        },
+        {
+          "text": "Generate insights (30m): score Severity, Occurrence and Detection from 1 to 10."
+        },
+        {
+          "text": "Decide (35m): compute RPN; any mode above 120 gets a pre-launch ticket."
+        },
+        {
+          "text": "Close (15m): name the highest-RPN mode and its owner."
+        }
+      ],
+      "action": "A mode with RPN above 120 generates a mandatory pre-launch ticket with an owner.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "matrix",
+          "columns": 6,
+          "rows": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66\" y1=\"40\" x2=\"66\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"66\" x2=\"360\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"188.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"237.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335.5\" cy=\"102.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"188.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"237.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335.5\" cy=\"176.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"188.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"237.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335.5\" cy=\"249.75\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"90.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"188.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"237.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"335.5\" cy=\"323.25\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"93.333333\" y1=\"40\" x2=\"93.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"146.666667\" y1=\"40\" x2=\"146.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"253.333333\" y1=\"40\" x2=\"253.333333\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"306.666667\" y1=\"40\" x2=\"306.666667\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"120\" x2=\"360\" y2=\"120\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"280\" x2=\"360\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R24",
+      "name": "Fault Tree Analysis",
+      "category": "Incident Diagnostics",
+      "trigger": "Complex microservice outages involving race conditions, deadlocks, or distributed cascading dependencies.",
+      "canvas": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults",
+      "timebox": "90 min",
+      "canvasLine": "Top-down Tree: Catastrophic Event, Logic Gates (AND/OR), Basic Faults · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; the tree maps conditions, not culprits."
+        },
+        {
+          "text": "Gather data (25m): put the catastrophic event at the top; branch downward."
+        },
+        {
+          "text": "Generate insights (25m): mark each gate AND or OR; name the single points."
+        },
+        {
+          "text": "Decide (20m): redesign one OR gate into an AND with independent fallback."
+        },
+        {
+          "text": "Close (10m): name the leaf the tree could not rule out."
+        }
+      ],
+      "action": "A single-point OR gate becomes an AND architecture with an independent fallback, tested before the next release.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "tree",
+          "columns": 4,
+          "rows": 3
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"354\" x2=\"200\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"70\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"173\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"156.666667\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"173\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"243.333333\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"173\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"330\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"173\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"348\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R25",
+      "name": "HFACS Retrospective",
+      "category": "Incident Diagnostics",
+      "trigger": "Incidents characterized by on-call cognitive fatigue, misread alerts, or communication breakdowns during emergency response.",
+      "canvas": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational",
+      "timebox": "90 min",
+      "canvasLine": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; start from the act, not the actor."
+        },
+        {
+          "text": "Gather data (25m): place the unsafe act, then its preconditions."
+        },
+        {
+          "text": "Generate insights (25m): trace upward into supervisory and organizational factors."
+        },
+        {
+          "text": "Decide (20m): one human-centred policy change with an owner and a date."
+        },
+        {
+          "text": "Close (10m): name the handoff the next on-call needs."
+        }
+      ],
+      "action": "A human factor becomes a policy: protected rest after a severe overnight incident.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "authors": [
+          "Scott Shappell",
+          "Douglas Wiegmann"
+        ],
+        "year": 2003,
+        "title": "A Human Error Approach to Aviation Accident Analysis",
+        "publication": "Ashgate",
+        "authorsLabel": "Scott Shappell & Douglas Wiegmann",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "tree",
+          "columns": 4,
+          "rows": 4
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"200\" y1=\"354\" x2=\"200\" y2=\"262\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"70\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"143.333333\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"202.666667\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"70\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"156.666667\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"143.333333\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"202.666667\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"156.666667\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"243.333333\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"143.333333\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"202.666667\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"243.333333\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"262\" x2=\"330\" y2=\"84\" stroke=\"currentColor\" stroke-width=\"1.4\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"84\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"143.333333\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"202.666667\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"254\" r=\"4\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"348\" r=\"5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R26",
+      "name": "Contributory Factor Matrix",
+      "category": "Incident Diagnostics",
+      "trigger": "Complex outages cutting across organizational boundaries (e.g., third-party APIs, external vendors, corporate security mandates).",
+      "canvas": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional",
+      "timebox": "90 min",
+      "canvasLine": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional · 90 min",
+      "steps": [
+        {
+          "text": "Set the stage (10m): recite the Prime Directive; every lane includes external pressure."
+        },
+        {
+          "text": "Gather data (25m): map incident data across all five swimlanes at once."
+        },
+        {
+          "text": "Generate insights (25m): show how vendor constraints amplified local errors."
+        },
+        {
+          "text": "Decide (20m): one upstream dependency gets an SLO and a contract test."
+        },
+        {
+          "text": "Close (10m): name the lane the team cannot change alone."
+        }
+      ],
+      "action": "An upstream dependency gets a service-level objective and a contract test; the workaround retires when both pass.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "matrix",
+          "columns": 5,
+          "rows": 5
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66\" y1=\"40\" x2=\"66\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"66\" x2=\"360\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95.4\" cy=\"95.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.2\" cy=\"95.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213\" cy=\"95.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"271.8\" cy=\"95.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.6\" cy=\"95.4\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95.4\" cy=\"154.2\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.2\" cy=\"154.2\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213\" cy=\"154.2\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"271.8\" cy=\"154.2\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.6\" cy=\"154.2\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95.4\" cy=\"213\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.2\" cy=\"213\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213\" cy=\"213\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"271.8\" cy=\"213\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.6\" cy=\"213\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95.4\" cy=\"271.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.2\" cy=\"271.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213\" cy=\"271.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"271.8\" cy=\"271.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.6\" cy=\"271.8\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"95.4\" cy=\"330.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"154.2\" cy=\"330.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"213\" cy=\"330.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"271.8\" cy=\"330.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330.6\" cy=\"330.6\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"104\" y1=\"40\" x2=\"104\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"168\" y1=\"40\" x2=\"168\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"232\" y1=\"40\" x2=\"232\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"296\" y1=\"40\" x2=\"296\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"104\" x2=\"360\" y2=\"104\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"168\" x2=\"360\" y2=\"168\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"232\" x2=\"360\" y2=\"232\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"296\" x2=\"360\" y2=\"296\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
+    },
+    {
+      "id": "R27",
+      "name": "Incident Matrix (4-Box)",
+      "category": "Incident Diagnostics",
+      "trigger": "Low-severity incidents (SEV-3/SEV-4); recurring bug triage sessions requiring rapid classification.",
+      "canvas": "2x2 Matrix: Internal/External vs. Expected/Unexpected",
+      "timebox": "45 min",
+      "canvasLine": "2x2 Matrix: Internal/External vs. Expected/Unexpected · 45 min",
+      "steps": [
+        {
+          "text": "Set the stage (5m): recite the Prime Directive; classification is not blame."
+        },
+        {
+          "text": "Gather data (10m): place each defect on the 2x2 matrix."
+        },
+        {
+          "text": "Generate insights (15m): focus on Internal/Unexpected; name the blind spot."
+        },
+        {
+          "text": "Decide (10m): one Internal/Unexpected defect gets a coverage ticket."
+        },
+        {
+          "text": "Close (5m): name the quadrant that keeps recurring."
+        }
+      ],
+      "action": "An Internal/Unexpected defect becomes a targeted test-coverage ticket that would have failed before the defect shipped.",
+      "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+      "sourceProtocol": false,
+      "origin": {
+        "note": "The source names no originator.",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "retro-canvas",
+        "parametricParams": {
+          "kind": "matrix",
+          "columns": 2,
+          "rows": 2
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"40\" y=\"40\" width=\"320\" height=\"320\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"66\" y1=\"40\" x2=\"66\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"66\" x2=\"360\" y2=\"66\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"139.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"139.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"139.5\" cy=\"286.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"286.5\" cy=\"286.5\" r=\"3.5\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"40\" x2=\"200\" y2=\"360\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"40\" y1=\"200\" x2=\"360\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/></svg>"
     }
   ]
 };

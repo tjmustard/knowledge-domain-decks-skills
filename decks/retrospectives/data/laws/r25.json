@@ -1,0 +1,46 @@
+{
+  "id": "R25",
+  "name": "HFACS Retrospective",
+  "category": "Incident Diagnostics",
+  "trigger": "Incidents characterized by on-call cognitive fatigue, misread alerts, or communication breakdowns during emergency response.",
+  "canvas": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational",
+  "timebox": "90 min",
+  "canvasLine": "4 Tiers: Unsafe Acts, Preconditions, Supervisory, Organizational · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; start from the act, not the actor."
+    },
+    {
+      "text": "Gather data (25m): place the unsafe act, then its preconditions."
+    },
+    {
+      "text": "Generate insights (25m): trace upward into supervisory and organizational factors."
+    },
+    {
+      "text": "Decide (20m): one human-centred policy change with an owner and a date."
+    },
+    {
+      "text": "Close (10m): name the handoff the next on-call needs."
+    }
+  ],
+  "action": "A human factor becomes a policy: protected rest after a severe overnight incident.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "authors": [
+      "Scott Shappell",
+      "Douglas Wiegmann"
+    ],
+    "year": 2003,
+    "title": "A Human Error Approach to Aviation Accident Analysis",
+    "publication": "Ashgate"
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "tree",
+      "columns": 4,
+      "rows": 4
+    }
+  }
+}

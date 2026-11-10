@@ -45,7 +45,25 @@ const stepMinutes = (text) => {
   return Number(matches[0][1]);
 };
 
-test("every committed record matches the committed inventory", async () => {
+test("a source-silent origin says the same sentence on every card", async () => {
+  const deck = await loadDeck("retrospectives");
+  const cards = await loadCards(deck);
+  const silent = [];
+  for (const card of cards) {
+    const { origin } = card;
+    const citesWork = Boolean(origin.authors || origin.title || origin.works);
+    if (citesWork) continue;
+    silent.push(card.id);
+    assert.equal(
+      origin.note,
+      "The source names no originator.",
+      `${card.id} must use the one source-silent sentence`
+    );
+  }
+  assert.ok(silent.length > 0, "at least one card names no originator");
+});
+
+test("every record matches the committed inventory", async () => {
   const inventory = JSON.parse(await readFile(INVENTORY, "utf8"));
   assert.equal(inventory.rituals.length, 45, "the inventory holds 45 rituals");
   assert.equal(inventory.categories.length, 5);

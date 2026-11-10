@@ -1,0 +1,40 @@
+{
+  "id": "R26",
+  "name": "Contributory Factor Matrix",
+  "category": "Incident Diagnostics",
+  "trigger": "Complex outages cutting across organizational boundaries (e.g., third-party APIs, external vendors, corporate security mandates).",
+  "canvas": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional",
+  "timebox": "90 min",
+  "canvasLine": "5 Swimlanes: Individual, Team, Task, Workplace, Institutional · 90 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; every lane includes external pressure."
+    },
+    {
+      "text": "Gather data (25m): map incident data across all five swimlanes at once."
+    },
+    {
+      "text": "Generate insights (25m): show how vendor constraints amplified local errors."
+    },
+    {
+      "text": "Decide (20m): one upstream dependency gets an SLO and a contract test."
+    },
+    {
+      "text": "Close (10m): name the lane the team cannot change alone."
+    }
+  ],
+  "action": "An upstream dependency gets a service-level objective and a contract test; the workaround retires when both pass.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "matrix",
+      "columns": 5,
+      "rows": 5
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "R27",
+  "name": "Incident Matrix (4-Box)",
+  "category": "Incident Diagnostics",
+  "trigger": "Low-severity incidents (SEV-3/SEV-4); recurring bug triage sessions requiring rapid classification.",
+  "canvas": "2x2 Matrix: Internal/External vs. Expected/Unexpected",
+  "timebox": "45 min",
+  "canvasLine": "2x2 Matrix: Internal/External vs. Expected/Unexpected · 45 min",
+  "steps": [
+    {
+      "text": "Set the stage (5m): recite the Prime Directive; classification is not blame."
+    },
+    {
+      "text": "Gather data (10m): place each defect on the 2x2 matrix."
+    },
+    {
+      "text": "Generate insights (15m): focus on Internal/Unexpected; name the blind spot."
+    },
+    {
+      "text": "Decide (10m): one Internal/Unexpected defect gets a coverage ticket."
+    },
+    {
+      "text": "Close (5m): name the quadrant that keeps recurring."
+    }
+  ],
+  "action": "An Internal/Unexpected defect becomes a targeted test-coverage ticket that would have failed before the defect shipped.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "matrix",
+      "columns": 2,
+      "rows": 2
+    }
+  }
+}

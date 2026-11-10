@@ -1,0 +1,40 @@
+{
+  "id": "R23",
+  "name": "FMEA Diagnostic",
+  "category": "Incident Diagnostics",
+  "trigger": "Pre-launch architectural reviews, critical database schema migrations, or infrastructure cutovers.",
+  "canvas": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN",
+  "timebox": "90–120 min",
+  "canvasLine": "Matrix: Failure Mode, Severity, Occurrence, Detection, RPN · 90–120 min",
+  "steps": [
+    {
+      "text": "Set the stage (10m): recite the Prime Directive; scoring is about the system."
+    },
+    {
+      "text": "Gather data (30m): list component failure modes and their potential impact."
+    },
+    {
+      "text": "Generate insights (30m): score Severity, Occurrence and Detection from 1 to 10."
+    },
+    {
+      "text": "Decide (35m): compute RPN; any mode above 120 gets a pre-launch ticket."
+    },
+    {
+      "text": "Close (15m): name the highest-RPN mode and its owner."
+    }
+  ],
+  "action": "A mode with RPN above 120 generates a mandatory pre-launch ticket with an owner.",
+  "provenance": "Source names the canvas and the intent and leaves the phases' wording and minutes to the facilitator.",
+  "sourceProtocol": false,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "retro-canvas",
+    "parametricParams": {
+      "kind": "matrix",
+      "columns": 6,
+      "rows": 4
+    }
+  }
+}

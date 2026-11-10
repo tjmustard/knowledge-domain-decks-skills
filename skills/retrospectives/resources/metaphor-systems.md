@@ -16,6 +16,7 @@
   - Close (5m): affirm navigation capability and capture the ROTI.
 - **The move:** An Anchor becomes a systemic initiative: parallel CI under 15 minutes instead of 90; owner, date.
 - **Provenance:** Source protocol: the phases and minutes follow the written sequence in the source.
+- **Source:** Luke Hohmann (2006), *Innovation Games*.
 
 ## R11 — Speed Car / Race Car
 
