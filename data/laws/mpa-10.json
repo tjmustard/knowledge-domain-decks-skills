@@ -1,0 +1,37 @@
+{
+  "id": "MPA-10",
+  "name": "Goal-Gradient Effect",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Effort rises as the goal nears; the last stretch gets the most.",
+  "trigger": "People start slowly on a long task and speed up near its end.",
+  "checklist": [
+    "Show how far the person has come, not only how much remains.",
+    "Split a long run into visible goals, so a near one is always in reach.",
+    "Put the last review beside the finish, where the end is in view."
+  ],
+  "antiPattern": {
+    "violation": "A ten-step setup shows one spinner for the whole run, so people leave at step three.",
+    "remediation": "Show each completed step and the count remaining, so the goal stays in view."
+  },
+  "graphicMetaphor": {
+    "svgShape": "goal-gradient",
+    "parametricParams": {
+      "goalX": 330,
+      "goalY": 90,
+      "goalLabel": "GOAL",
+      "startLabel": "START",
+      "caption": "EFFORT RISES AS THE GOAL NEARS"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Ran Kivetz",
+      "Oleg Urminsky",
+      "Yuhuang Zheng"
+    ],
+    "year": 2006,
+    "title": "The Goal-Gradient Hypothesis Resurrected: Purchase Acceleration, Illusionary Goal Progress, and Customer Retention",
+    "publication": "Journal of Marketing Research, 43(1), 39-58",
+    "doi": "10.1509/jmkr.43.1.39"
+  }
+}

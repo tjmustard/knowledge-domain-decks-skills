@@ -1,0 +1,39 @@
+{
+  "id": "MPA-09",
+  "name": "Loss Aversion",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Losses weigh on choices more than equivalent gains do.",
+  "trigger": "A change is refused for what it might lose, not weighed by what it gains.",
+  "checklist": [
+    "Show the loss and the gain of a change side by side, in the same units.",
+    "Describe what staying costs as plainly as what moving costs.",
+    "Test whether the framing moved the decision, not only the preference."
+  ],
+  "antiPattern": {
+    "violation": "A migration is presented only as what could break, so nobody approves it.",
+    "remediation": "State the risk and the gain together, with the same visibility and the same units."
+  },
+  "graphicMetaphor": {
+    "svgShape": "gain-loss-bars",
+    "parametricParams": {
+      "gainHeight": 70,
+      "lossHeight": 70,
+      "gainStyle": "hollow",
+      "baseline": 190,
+      "gainLabel": "GAIN",
+      "lossLabel": "LOSS",
+      "zeroLabel": "ZERO",
+      "caption": "A LOSS OUTWEIGHS THE SAME-SIZED GAIN"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Daniel Kahneman",
+      "Amos Tversky"
+    ],
+    "year": 1979,
+    "title": "Prospect Theory: An Analysis of Decision under Risk",
+    "publication": "Econometrica, 47(2), 263-291",
+    "doi": "10.2307/1914185"
+  }
+}

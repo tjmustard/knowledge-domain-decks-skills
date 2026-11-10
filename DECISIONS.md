@@ -842,3 +842,69 @@ face and the measure, which is the same reason the 45-character label bound on
 `decline-curve` is re-derived whenever the font changes (§30). A future
 axiom-length check should therefore warn to re-measure, not decide, and the
 decision stays with the rendered page.
+
+## 34. Four cards closing memory, and where each contested number lives
+
+Laws 51-54 are the last four in the research list's memory section, so it now
+carries all eleven (44-54) and the deck is thirty-four cards. Each source was
+confirmed against Crossref before its record was written: Arkes & Blumer (1985),
+Organizational Behavior and Human Decision Processes 35(1), 124-140; Kahneman &
+Tversky (1979), Econometrica 47(2), 263-291; Kivetz, Urminsky & Zheng (2006),
+Journal of Marketing Research 43(1), 39-58; Samuelson & Zeckhauser (1988), Journal
+of Risk and Uncertainty 1(1), 7-59.
+
+- **Sunk cost cites Arkes & Blumer, not Staw.** Staw (1976) is escalation of
+  commitment, a different demonstration in a different setting. The card prints
+  the theatre-ticket result - people who paid more for a ticket used it more - and
+  that result is Arkes & Blumer's. One citation, one result: blending the two
+  would attribute either paper's finding to both.
+- **Loss aversion states the asymmetry and prints no ratio.** The specification
+  puts "twice as potent" under Kahneman & Tversky (1979), and that paper contains
+  no such factor. The 2-to-2.5 figure is Tversky & Kahneman (1992), Journal of Risk
+  and Uncertainty 5(4), 297-323, DOI 10.1007/BF00122574, and this paragraph is
+  where it lives, off the card. Printing it under 1979 would be the
+  merged-attribution defect that §12-14 removed from the rest of the deck. The
+  diagram draws the asymmetry without a ratio, which is qualitative and does
+  belong to the 1979 statement. Both bars are the same height: a bar chart
+  asserts magnitude whether or not a number is printed, so unequal bars would
+  claim about one and a half times and would also contradict a caption that says
+  the gain is the same size. The asymmetry is carried by the fill instead - the
+  loss solid, the gain an outline - which reads as same size, different weight
+  and encodes no ratio at all. That is the filter-gate's word for
+  present-but-weakened, used here for felt-but-equal.
+- **Goal gradient cites Kivetz, Urminsky & Zheng, not Hull.** Hull (1932) named
+  the effect from maze running; the product claim the card makes, effort rising as
+  a reward nears, is theirs. This differs on purpose from TME-09, where the name
+  labels a formula nobody else claims and the card cites the formula's source.
+  Here the name has an origin and the claim has a different owner, so the card
+  cites the owner; keeping Hull in the name would oblige the card to print the
+  maze result instead.
+- **Status quo bias constrains its own checklist.** The bullets may tell an agent
+  to name a default, make a change from it reversible, or require an explicit
+  choice. They may not tell an agent to set a default *because* people will not
+  change it. Those are near-identical sentences with opposite ethics, and the
+  difference is the reason clause - which is why each bullet gives a reason a
+  reader can check rather than an instruction to exploit inertia.
+
+**Pairings, recorded and not rewritten.** Loss aversion pairs with DEC-08 Framing
+Effect: DEC-08 keeps Tversky & Kahneman (1981) and owns the framing result, 52
+owns the asymmetry, and neither restates the other. Goal gradient pairs with
+TME-04, whose checklist already says "Pair long operations with a determinate bar
+and motion that accelerates toward the end" - that sentence is this effect,
+written before this card existed, and it stays TME-04's. Status quo bias pairs with
+DEC-03 and DEC-11, both of which already recommend defaults; they keep Saffer
+(2007) and Baumeister et al. (1998), and 54 supplies the bias without becoming
+their citation. Sunk cost pairs with nothing published: Zeigarnik is unfinished
+tasks, not prior investment, and the absence is what a card claiming only the
+sunk-cost result should have.
+
+Four shapes are new, taking the deck to twenty-three, because none of the nineteen
+drew these claims: `sunk-gate` puts a spent block behind a "now" line with the
+decision arrow running on past it; `gain-loss-bars` draws two equal bars from one
+baseline, the loss solid and the gain an outline, so no scale asserts a ratio;
+`goal-gradient` draws
+effort accelerating toward a marked goal; `default-fork` draws the default at full
+weight and the alternative thinner, ending hollow. Every label was measured in the
+same headless-Chrome harness as §30: all inside the 400-unit box, the tightest
+clearances GOAL at 2.20 pt from its dot, ZERO at 2.59 pt from the axis, and SPENT
+at 3.17 pt from the block. The font pin will re-derive them.

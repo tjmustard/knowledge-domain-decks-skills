@@ -1,0 +1,36 @@
+{
+  "id": "MPA-11",
+  "name": "Status Quo Bias",
+  "category": "Memory, Perception & Attention",
+  "axiom": "People keep the option they already have unless something forces a change.",
+  "trigger": "A setting nobody changed is treated as the one people chose.",
+  "checklist": [
+    "Name the default in words and say what happens if nobody chooses.",
+    "Make any move away from the default reversible in one step.",
+    "Give the alternatives the same visibility as the default; do not bury them."
+  ],
+  "antiPattern": {
+    "violation": "Opt-out sits on a second screen, so the default is the only path anyone finds.",
+    "remediation": "Show the default and the alternative on one screen, equally visible, both one click away."
+  },
+  "graphicMetaphor": {
+    "svgShape": "default-fork",
+    "parametricParams": {
+      "forkX": 120,
+      "optionLabel": "OPTIONS",
+      "defaultLabel": "DEFAULT",
+      "altLabel": "ALTERNATIVE",
+      "caption": "THE DEFAULT IS WHAT PEOPLE KEEP"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "William Samuelson",
+      "Richard Zeckhauser"
+    ],
+    "year": 1988,
+    "title": "Status quo bias in decision making",
+    "publication": "Journal of Risk and Uncertainty, 1(1), 7-59",
+    "doi": "10.1007/BF00055564"
+  }
+}

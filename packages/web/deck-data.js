@@ -915,6 +915,166 @@ window.UX_DECK = {
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"40\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">EVIDENCE SOUGHT</text><rect x=\"40\" y=\"120\" width=\"249.60000000000002\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"164.8\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING</text><rect x=\"289.6\" y=\"120\" width=\"70.4\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"324.8\" y=\"166\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DISCONFIRMING</text><text x=\"40\" y=\"184\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">EVIDENCE WEIGHED</text><rect x=\"40\" y=\"200\" width=\"230.39999999999998\" height=\"30\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"155.2\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING</text><rect x=\"270.4\" y=\"200\" width=\"89.60000000000001\" height=\"30\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.4\" vector-effect=\"non-scaling-stroke\"/><text x=\"315.2\" y=\"246\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">DISCONFIRMING</text><line x1=\"200\" y1=\"86\" x2=\"200\" y2=\"114\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"120\" x2=\"200\" y2=\"150\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><line x1=\"200\" y1=\"200\" x2=\"200\" y2=\"230\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"78\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EVEN SPLIT</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CONFIRMING EVIDENCE GETS THE FIRST LOOK</text></svg>"
     },
     {
+      "id": "MPA-08",
+      "name": "Sunk Cost Fallacy",
+      "category": "Memory, Perception & Attention",
+      "axiom": "Money already spent pulls the next decision, though only future costs should.",
+      "trigger": "A team keeps funding a feature because of what it has already cost.",
+      "checklist": [
+        "Name the cost already spent and leave it out of the go/no-go calculation.",
+        "Judge the next step by what it costs from here and what it returns.",
+        "Rewrite a stuck decision as if nothing had been spent yet, then compare."
+      ],
+      "antiPattern": {
+        "violation": "A failing feature keeps its budget because half of it is already built.",
+        "remediation": "Decide on the remaining cost and return; note the spent money and exclude it."
+      },
+      "graphicMetaphor": {
+        "svgShape": "sunk-gate",
+        "parametricParams": {
+          "gateX": 200,
+          "spentLabel": "SPENT",
+          "nowLabel": "NOW",
+          "continueLabel": "CONTINUE",
+          "caption": "WHAT IS SPENT SHOULD NOT STEER WHAT COMES NEXT"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Hal R. Arkes",
+          "Catherine Blumer"
+        ],
+        "year": 1985,
+        "title": "The psychology of sunk cost",
+        "publication": "Organizational Behavior and Human Decision Processes, 35(1), 124-140",
+        "doi": "10.1016/0749-5978(85)90049-4",
+        "authorsLabel": "Hal R. Arkes & Catherine Blumer",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"60\" y=\"188\" width=\"116\" height=\"44\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"118\" y=\"176\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">SPENT</text><line x1=\"200\" y1=\"96\" x2=\"200\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"84\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">NOW</text><line x1=\"200\" y1=\"210\" x2=\"330\" y2=\"210\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"210\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"335\" y=\"190\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">CONTINUE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHAT IS SPENT SHOULD NOT STEER WHAT COMES NEXT</text></svg>"
+    },
+    {
+      "id": "MPA-09",
+      "name": "Loss Aversion",
+      "category": "Memory, Perception & Attention",
+      "axiom": "Losses weigh on choices more than equivalent gains do.",
+      "trigger": "A change is refused for what it might lose, not weighed by what it gains.",
+      "checklist": [
+        "Show the loss and the gain of a change side by side, in the same units.",
+        "Describe what staying costs as plainly as what moving costs.",
+        "Test whether the framing moved the decision, not only the preference."
+      ],
+      "antiPattern": {
+        "violation": "A migration is presented only as what could break, so nobody approves it.",
+        "remediation": "State the risk and the gain together, with the same visibility and the same units."
+      },
+      "graphicMetaphor": {
+        "svgShape": "gain-loss-bars",
+        "parametricParams": {
+          "gainHeight": 70,
+          "lossHeight": 70,
+          "gainStyle": "hollow",
+          "baseline": 190,
+          "gainLabel": "GAIN",
+          "lossLabel": "LOSS",
+          "zeroLabel": "ZERO",
+          "caption": "A LOSS OUTWEIGHS THE SAME-SIZED GAIN"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Daniel Kahneman",
+          "Amos Tversky"
+        ],
+        "year": 1979,
+        "title": "Prospect Theory: An Analysis of Decision under Risk",
+        "publication": "Econometrica, 47(2), 263-291",
+        "doi": "10.2307/1914185",
+        "authorsLabel": "Daniel Kahneman & Amos Tversky",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"100\" y1=\"60\" x2=\"100\" y2=\"320\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><line x1=\"100\" y1=\"190\" x2=\"340\" y2=\"190\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"140\" y=\"120\" width=\"50\" height=\"70\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"240\" y=\"190\" width=\"50\" height=\"70\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><text x=\"165\" y=\"106\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">GAIN</text><text x=\"265\" y=\"280\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">LOSS</text><text x=\"92\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">ZERO</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">A LOSS OUTWEIGHS THE SAME-SIZED GAIN</text></svg>"
+    },
+    {
+      "id": "MPA-10",
+      "name": "Goal-Gradient Effect",
+      "category": "Memory, Perception & Attention",
+      "axiom": "Effort rises as the goal nears; the last stretch gets the most.",
+      "trigger": "People start slowly on a long task and speed up near its end.",
+      "checklist": [
+        "Show how far the person has come, not only how much remains.",
+        "Split a long run into visible goals, so a near one is always in reach.",
+        "Put the last review beside the finish, where the end is in view."
+      ],
+      "antiPattern": {
+        "violation": "A ten-step setup shows one spinner for the whole run, so people leave at step three.",
+        "remediation": "Show each completed step and the count remaining, so the goal stays in view."
+      },
+      "graphicMetaphor": {
+        "svgShape": "goal-gradient",
+        "parametricParams": {
+          "goalX": 330,
+          "goalY": 90,
+          "goalLabel": "GOAL",
+          "startLabel": "START",
+          "caption": "EFFORT RISES AS THE GOAL NEARS"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "Ran Kivetz",
+          "Oleg Urminsky",
+          "Yuhuang Zheng"
+        ],
+        "year": 2006,
+        "title": "The Goal-Gradient Hypothesis Resurrected: Purchase Acceleration, Illusionary Goal Progress, and Customer Retention",
+        "publication": "Journal of Marketing Research, 43(1), 39-58",
+        "doi": "10.1509/jmkr.43.1.39",
+        "authorsLabel": "Ran Kivetz, Oleg Urminsky & Yuhuang Zheng",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 C 170 296, 280 240, 330 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"90\" x2=\"330\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"90\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"74\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">GOAL</text><text x=\"60\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">START</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EFFORT RISES AS THE GOAL NEARS</text></svg>"
+    },
+    {
+      "id": "MPA-11",
+      "name": "Status Quo Bias",
+      "category": "Memory, Perception & Attention",
+      "axiom": "People keep the option they already have unless something forces a change.",
+      "trigger": "A setting nobody changed is treated as the one people chose.",
+      "checklist": [
+        "Name the default in words and say what happens if nobody chooses.",
+        "Make any move away from the default reversible in one step.",
+        "Give the alternatives the same visibility as the default; do not bury them."
+      ],
+      "antiPattern": {
+        "violation": "Opt-out sits on a second screen, so the default is the only path anyone finds.",
+        "remediation": "Show the default and the alternative on one screen, equally visible, both one click away."
+      },
+      "graphicMetaphor": {
+        "svgShape": "default-fork",
+        "parametricParams": {
+          "forkX": 120,
+          "optionLabel": "OPTIONS",
+          "defaultLabel": "DEFAULT",
+          "altLabel": "ALTERNATIVE",
+          "caption": "THE DEFAULT IS WHAT PEOPLE KEEP"
+        }
+      },
+      "academicOrigin": {
+        "authors": [
+          "William Samuelson",
+          "Richard Zeckhauser"
+        ],
+        "year": 1988,
+        "title": "Status quo bias in decision making",
+        "publication": "Journal of Risk and Uncertainty, 1(1), 7-59",
+        "doi": "10.1007/BF00055564",
+        "authorsLabel": "William Samuelson & Richard Zeckhauser",
+        "titleStop": "."
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"100\" y1=\"200\" x2=\"120\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"100\" cy=\"200\" r=\"6\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"100\" y=\"176\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">OPTIONS</text><line x1=\"120\" y1=\"200\" x2=\"330\" y2=\"200\" stroke=\"currentColor\" stroke-width=\"3\" stroke-linecap=\"round\" opacity=\"0.95\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"200\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"335\" y=\"180\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">DEFAULT</text><line x1=\"120\" y1=\"200\" x2=\"300\" y2=\"280\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" opacity=\"0.45\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"300\" cy=\"280\" r=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"300\" y=\"306\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ALTERNATIVE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE DEFAULT IS WHAT PEOPLE KEEP</text></svg>"
+    },
+    {
       "id": "TME-01",
       "name": "Fitts's Law",
       "category": "Time, Motion & Ergonomics",

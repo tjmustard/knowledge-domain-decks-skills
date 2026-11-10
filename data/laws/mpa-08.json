@@ -1,0 +1,36 @@
+{
+  "id": "MPA-08",
+  "name": "Sunk Cost Fallacy",
+  "category": "Memory, Perception & Attention",
+  "axiom": "Money already spent pulls the next decision, though only future costs should.",
+  "trigger": "A team keeps funding a feature because of what it has already cost.",
+  "checklist": [
+    "Name the cost already spent and leave it out of the go/no-go calculation.",
+    "Judge the next step by what it costs from here and what it returns.",
+    "Rewrite a stuck decision as if nothing had been spent yet, then compare."
+  ],
+  "antiPattern": {
+    "violation": "A failing feature keeps its budget because half of it is already built.",
+    "remediation": "Decide on the remaining cost and return; note the spent money and exclude it."
+  },
+  "graphicMetaphor": {
+    "svgShape": "sunk-gate",
+    "parametricParams": {
+      "gateX": 200,
+      "spentLabel": "SPENT",
+      "nowLabel": "NOW",
+      "continueLabel": "CONTINUE",
+      "caption": "WHAT IS SPENT SHOULD NOT STEER WHAT COMES NEXT"
+    }
+  },
+  "academicOrigin": {
+    "authors": [
+      "Hal R. Arkes",
+      "Catherine Blumer"
+    ],
+    "year": 1985,
+    "title": "The psychology of sunk cost",
+    "publication": "Organizational Behavior and Human Decision Processes, 35(1), 124-140",
+    "doi": "10.1016/0749-5978(85)90049-4"
+  }
+}

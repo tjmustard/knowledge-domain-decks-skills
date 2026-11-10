@@ -527,3 +527,71 @@ public-domain principle, when to check for it, and the concrete fix.
 **Fix.** Report all runs, with refutations beside the successes.
 
 **Source.** Raymond S. Nickerson (1998). *Confirmation Bias: A Ubiquitous Phenomenon in Many Guises*. Review of General Psychology, 2(2), 175-220.
+
+### MPA-08 — Sunk Cost Fallacy
+
+**Axiom.** Money already spent pulls the next decision, though only future costs should.
+
+**Apply when.** A team keeps funding a feature because of what it has already cost.
+
+**Checklist.**
+- [ ] Name the cost already spent and leave it out of the go/no-go calculation.
+- [ ] Judge the next step by what it costs from here and what it returns.
+- [ ] Rewrite a stuck decision as if nothing had been spent yet, then compare.
+
+**Anti-pattern.** A failing feature keeps its budget because half of it is already built.
+
+**Fix.** Decide on the remaining cost and return; note the spent money and exclude it.
+
+**Source.** Hal R. Arkes & Catherine Blumer (1985). *The psychology of sunk cost*. Organizational Behavior and Human Decision Processes, 35(1), 124-140.
+
+### MPA-09 — Loss Aversion
+
+**Axiom.** Losses weigh on choices more than equivalent gains do.
+
+**Apply when.** A change is refused for what it might lose, not weighed by what it gains.
+
+**Checklist.**
+- [ ] Show the loss and the gain of a change side by side, in the same units.
+- [ ] Describe what staying costs as plainly as what moving costs.
+- [ ] Test whether the framing moved the decision, not only the preference.
+
+**Anti-pattern.** A migration is presented only as what could break, so nobody approves it.
+
+**Fix.** State the risk and the gain together, with the same visibility and the same units.
+
+**Source.** Daniel Kahneman & Amos Tversky (1979). *Prospect Theory: An Analysis of Decision under Risk*. Econometrica, 47(2), 263-291.
+
+### MPA-10 — Goal-Gradient Effect
+
+**Axiom.** Effort rises as the goal nears; the last stretch gets the most.
+
+**Apply when.** People start slowly on a long task and speed up near its end.
+
+**Checklist.**
+- [ ] Show how far the person has come, not only how much remains.
+- [ ] Split a long run into visible goals, so a near one is always in reach.
+- [ ] Put the last review beside the finish, where the end is in view.
+
+**Anti-pattern.** A ten-step setup shows one spinner for the whole run, so people leave at step three.
+
+**Fix.** Show each completed step and the count remaining, so the goal stays in view.
+
+**Source.** Ran Kivetz, Oleg Urminsky & Yuhuang Zheng (2006). *The Goal-Gradient Hypothesis Resurrected: Purchase Acceleration, Illusionary Goal Progress, and Customer Retention*. Journal of Marketing Research, 43(1), 39-58.
+
+### MPA-11 — Status Quo Bias
+
+**Axiom.** People keep the option they already have unless something forces a change.
+
+**Apply when.** A setting nobody changed is treated as the one people chose.
+
+**Checklist.**
+- [ ] Name the default in words and say what happens if nobody chooses.
+- [ ] Make any move away from the default reversible in one step.
+- [ ] Give the alternatives the same visibility as the default; do not bury them.
+
+**Anti-pattern.** Opt-out sits on a second screen, so the default is the only path anyone finds.
+
+**Fix.** Show the default and the alternative on one screen, equally visible, both one click away.
+
+**Source.** William Samuelson & Richard Zeckhauser (1988). *Status quo bias in decision making*. Journal of Risk and Uncertainty, 1(1), 7-59.

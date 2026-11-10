@@ -698,6 +698,95 @@
       }
       if (caption) out.push(label(200, 350, caption, { size: 9 }));
       return out.join("");
+    },
+
+    "sunk-gate": function (p) {
+      var gateX = p.gateX == null ? 200 : p.gateX;
+      var spentLabel = p.spentLabel || "SPENT";
+      var nowLabel = p.nowLabel || "NOW";
+      var continueLabel = p.continueLabel || "CONTINUE";
+      var caption = p.caption || "";
+      var out = [];
+      out.push(rect(60, 188, gateX - 24 - 60, 44, { rx: 3, fill: "currentColor", opacity: 0.8, width: 1.5 }));
+      out.push(label(60 + (gateX - 24 - 60) / 2, 176, spentLabel, { size: 9 }));
+      out.push(line(gateX, 96, gateX, 300, 2.5, 0.85));
+      out.push(label(gateX, 84, nowLabel, { size: 9 }));
+      out.push(line(gateX, 210, 330, 210, 3, 0.95));
+      out.push(circle(330, 210, 7));
+      out.push(label(335, 190, continueLabel, { size: 9, anchor: "end" }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    "gain-loss-bars": function (p) {
+      /* The bars are the same height on purpose. A bar chart asserts magnitude
+         whether or not a number is printed, so unequal bars would claim a ratio
+         that the 1979 paper does not state - and would contradict the caption,
+         which says the gain is the same size. The asymmetry rides in the fill
+         instead: the loss is solid, the gain is an outline, the same word the
+         filter-gate uses for present-but-weakened. */
+      var gainHeight = p.gainHeight == null ? 70 : p.gainHeight;
+      var lossHeight = p.lossHeight == null ? 70 : p.lossHeight;
+      var baseline = p.baseline == null ? 190 : p.baseline;
+      var gainStyle = p.gainStyle || "hollow";
+      var lossStyle = p.lossStyle || "solid";
+      var gainLabel = p.gainLabel || "GAIN";
+      var lossLabel = p.lossLabel || "LOSS";
+      var zeroLabel = p.zeroLabel || "ZERO";
+      var caption = p.caption || "";
+      var out = [];
+      function bar(x, y, height, style) {
+        return style === "hollow"
+          ? rect(x, y, 50, height, { rx: 3, fill: "none", opacity: 0.55, width: 2 })
+          : rect(x, y, 50, height, { rx: 3, fill: "currentColor", opacity: 0.8, width: 1.5 });
+      }
+      out.push(line(100, 60, 100, 320, 1.5, 0.5));
+      out.push(line(100, baseline, 340, baseline, 1.5, 0.5));
+      out.push(bar(140, baseline - gainHeight, gainHeight, gainStyle));
+      out.push(bar(240, baseline, lossHeight, lossStyle));
+      out.push(label(165, baseline - gainHeight - 14, gainLabel, { size: 9 }));
+      out.push(label(265, baseline + lossHeight + 20, lossLabel, { size: 9 }));
+      out.push(label(92, baseline + 4, zeroLabel, { size: 8, anchor: "end" }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    "goal-gradient": function (p) {
+      var goalX = p.goalX == null ? 330 : p.goalX;
+      var goalY = p.goalY == null ? 90 : p.goalY;
+      var goalLabel = p.goalLabel || "GOAL";
+      var startLabel = p.startLabel || "START";
+      var caption = p.caption || "";
+      var out = [];
+      out.push(line(60, 300, 340, 300, 1, 0.3));
+      out.push(line(60, 300, 60, 60, 1, 0.3));
+      out.push('<path d="M 60 300 C 170 296, 280 240, ' + goalX + " " + goalY + '" fill="none" stroke="currentColor" stroke-width="3.5" opacity="0.9" ' + STROKE + '/>');
+      out.push(line(goalX, goalY, goalX, 300, 1.5, 0.5, "4 4"));
+      out.push(circle(goalX, goalY, 7));
+      out.push(label(goalX, goalY - 16, goalLabel, { size: 9, anchor: "end" }));
+      out.push(label(60, 320, startLabel, { size: 8 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
+    },
+
+    "default-fork": function (p) {
+      var forkX = p.forkX == null ? 120 : p.forkX;
+      var optionLabel = p.optionLabel || "OPTIONS";
+      var defaultLabel = p.defaultLabel || "DEFAULT";
+      var altLabel = p.altLabel || "ALTERNATIVE";
+      var caption = p.caption || "";
+      var out = [];
+      out.push(line(100, 200, forkX, 200, 2, 0.6));
+      out.push(circle(100, 200, 6));
+      out.push(label(100, 176, optionLabel, { size: 9 }));
+      out.push(line(forkX, 200, 330, 200, 3, 0.95));
+      out.push(circle(330, 200, 7));
+      out.push(label(335, 180, defaultLabel, { size: 9, anchor: "end" }));
+      out.push(line(forkX, 200, 300, 280, 1.5, 0.45));
+      out.push(circle(300, 280, 6, { hollow: true, opacity: 0.85, width: 1.5 }));
+      out.push(label(300, 306, altLabel, { size: 9 }));
+      if (caption) out.push(label(200, 350, caption, { size: 9 }));
+      return out.join("");
     }
   };
 

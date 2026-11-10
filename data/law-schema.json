@@ -57,7 +57,10 @@
     "antiPattern": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["violation", "remediation"],
+      "required": [
+        "violation",
+        "remediation"
+      ],
       "properties": {
         "violation": {
           "type": "string",
@@ -72,7 +75,10 @@
     "graphicMetaphor": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["svgShape", "parametricParams"],
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
       "properties": {
         "svgShape": {
           "type": "string",
@@ -95,7 +101,11 @@
             "odd-one-out",
             "peak-end-curve",
             "anchor-line",
-            "filter-gate"
+            "filter-gate",
+            "sunk-gate",
+            "gain-loss-bars",
+            "goal-gradient",
+            "default-fork"
           ]
         },
         "parametricParams": {
@@ -106,12 +116,19 @@
     "academicOrigin": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["authors", "year", "title", "publication"],
+      "required": [
+        "authors",
+        "year",
+        "title",
+        "publication"
+      ],
       "properties": {
         "authors": {
           "type": "array",
           "minItems": 1,
-          "items": { "type": "string" }
+          "items": {
+            "type": "string"
+          }
         },
         "year": {
           "type": "integer",
