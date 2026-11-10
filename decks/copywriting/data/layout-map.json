@@ -1,0 +1,1006 @@
+{
+  "families": {
+    "sequence": {
+      "drawing": "numbered stones stepping up left to right, the marked stage filled",
+      "reads": "an order the reader is walked through, one stage at a time",
+      "noun": "sequence",
+      "operative": [
+        "transport",
+        "progress",
+        "chain",
+        "processing",
+        "priming",
+        "gradient"
+      ]
+    },
+    "aversion": {
+      "drawing": "a beam out of balance, the loss side carrying the marked weight",
+      "reads": "what the reader loses or risks by not acting",
+      "noun": "aversion",
+      "operative": [
+        "loss",
+        "avers",
+        "negativ",
+        "risk"
+      ]
+    },
+    "gap": {
+      "drawing": "a ring with one arc missing, the opening at the marked position",
+      "reads": "an unfinished whole the reader is pulled to close",
+      "noun": "gap",
+      "operative": [
+        "curios",
+        "zeigarnik",
+        "incongru",
+        "asymmetr",
+        "tension"
+      ]
+    },
+    "proof": {
+      "drawing": "stacked evidence bars, the marked bar solid and the rest outlined",
+      "reads": "claims backed by evidence the reader can check",
+      "noun": "proof",
+      "operative": [
+        "proof",
+        "credib",
+        "authority",
+        "justification",
+        "signal",
+        "verification"
+      ]
+    },
+    "identity": {
+      "drawing": "concentric rings with the marked ring filled",
+      "reads": "the copy names who the reader is or belongs with",
+      "noun": "identity",
+      "operative": [
+        "identity",
+        "self-referenc",
+        "proximity",
+        "empathic",
+        "perspective",
+        "in-group"
+      ]
+    },
+    "ease": {
+      "drawing": "a rough zigzag path resolving into a straight run, marked where it smooths",
+      "reads": "processing cost taken out of the reader's way",
+      "noun": "ease",
+      "operative": [
+        "ease",
+        "load",
+        "defusal",
+        "friction",
+        "fluency",
+        "strain",
+        "concreteness",
+        "penalty"
+      ]
+    },
+    "contrast": {
+      "drawing": "two panels split by a divider, the marked panel filled",
+      "reads": "two states set against each other",
+      "noun": "contrast",
+      "operative": [
+        "contrast",
+        "framing",
+        "disrupt",
+        "reactance"
+      ]
+    },
+    "anchor": {
+      "drawing": "a beam with a weight hung at the marked notch",
+      "reads": "a value or default set before the reader chooses",
+      "noun": "anchor",
+      "operative": [
+        "accounting",
+        "sunk",
+        "default",
+        "endow",
+        "compromise",
+        "anchor"
+      ]
+    },
+    "cadence": {
+      "drawing": "a run of bars of alternating height, the marked bar tall",
+      "reads": "sentence and paragraph rhythm the reader moves through",
+      "noun": "cadence",
+      "operative": [
+        "chunking",
+        "entrainment",
+        "scanning",
+        "buffer"
+      ]
+    },
+    "agency": {
+      "drawing": "an arrow from a small open circle to a marked target",
+      "reads": "control handed to the reader",
+      "noun": "agency",
+      "operative": [
+        "agency",
+        "locus"
+      ]
+    },
+    "loop": {
+      "drawing": "a circle with an arrowhead, the marked arc heavy",
+      "reads": "a return the reader is kept inside",
+      "noun": "loop",
+      "operative": [
+        "feedback",
+        "continuation",
+        "loop",
+        "closure"
+      ]
+    }
+  },
+  "map": {
+    "CPY-01": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 1,
+      "label": "sequence at position 1 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Narrative Transportation"
+      }
+    },
+    "CPY-02": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 2,
+      "label": "aversion at position 2 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Loss Aversion"
+      }
+    },
+    "CPY-03": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 3,
+      "label": "contrast at position 3 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Contrast Principle"
+      }
+    },
+    "CPY-04": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 4,
+      "label": "sequence at position 4 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Progressive Commitment"
+      }
+    },
+    "CPY-05": {
+      "family": "anchor",
+      "divisions": 12,
+      "mark": 5,
+      "label": "anchor at position 5 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Mental Accounting"
+      }
+    },
+    "CPY-06": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 6,
+      "label": "sequence at position 6 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Means-End Chain Theory"
+      }
+    },
+    "CPY-07": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 7,
+      "label": "sequence at position 7 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Diagnostic Cognitive Processing"
+      }
+    },
+    "CPY-08": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 8,
+      "label": "identity at position 8 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Social Identity"
+      }
+    },
+    "CPY-09": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 9,
+      "label": "sequence at position 9 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Narrative Transportation"
+      }
+    },
+    "CPY-10": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 10,
+      "label": "proof at position 10 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Proof Cascades"
+      }
+    },
+    "CPY-11": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 11,
+      "label": "sequence at position 11 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Action Priming"
+      }
+    },
+    "CPY-12": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 12,
+      "label": "proof at position 12 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Credibility Verification"
+      }
+    },
+    "CPY-13": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 1,
+      "label": "gap at position 1 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Curiosity Gap"
+      }
+    },
+    "CPY-14": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 2,
+      "label": "gap at position 2 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Zeigarnik Effect"
+      }
+    },
+    "CPY-15": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 3,
+      "label": "gap at position 3 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Schema Incongruity"
+      }
+    },
+    "CPY-16": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 4,
+      "label": "aversion at position 4 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Ambiguity Aversion"
+      }
+    },
+    "CPY-17": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 5,
+      "label": "proof at position 5 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Authority Bias"
+      }
+    },
+    "CPY-18": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 6,
+      "label": "identity at position 6 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Self-Referencing Effect"
+      }
+    },
+    "CPY-19": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 7,
+      "label": "contrast at position 7 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Framing"
+      }
+    },
+    "CPY-20": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 8,
+      "label": "aversion at position 8 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Loss Aversion"
+      }
+    },
+    "CPY-21": {
+      "family": "gap",
+      "divisions": 12,
+      "mark": 9,
+      "label": "gap at position 9 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Information Asymmetry"
+      }
+    },
+    "CPY-22": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 10,
+      "label": "proof at position 10 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Justification"
+      }
+    },
+    "CPY-23": {
+      "family": "contrast",
+      "divisions": 12,
+      "mark": 11,
+      "label": "contrast at position 11 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Cognitive Disruption"
+      }
+    },
+    "CPY-24": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 12,
+      "label": "ease at position 12 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Friction Elimination"
+      }
+    },
+    "CPY-25": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 1,
+      "label": "ease at position 1 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Cognitive Ease"
+      }
+    },
+    "CPY-26": {
+      "family": "agency",
+      "divisions": 12,
+      "mark": 2,
+      "label": "agency at position 2 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Agency Affirmation"
+      }
+    },
+    "CPY-27": {
+      "family": "sequence",
+      "divisions": 12,
+      "mark": 3,
+      "label": "sequence at position 3 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Goal-Gradient"
+      }
+    },
+    "CPY-28": {
+      "family": "aversion",
+      "divisions": 12,
+      "mark": 4,
+      "label": "aversion at position 4 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Ambiguity Aversion"
+      }
+    },
+    "CPY-29": {
+      "family": "agency",
+      "divisions": 12,
+      "mark": 5,
+      "label": "agency at position 5 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Locus of Control"
+      }
+    },
+    "CPY-30": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 6,
+      "label": "ease at position 6 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Cognitive Load"
+      }
+    },
+    "CPY-31": {
+      "family": "anchor",
+      "divisions": 12,
+      "mark": 7,
+      "label": "anchor at position 7 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Sunk Cost Salience"
+      }
+    },
+    "CPY-32": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 8,
+      "label": "ease at position 8 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Defensive Posturing Defusal"
+      }
+    },
+    "CPY-33": {
+      "family": "anchor",
+      "divisions": 12,
+      "mark": 9,
+      "label": "anchor at position 9 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Default Bias"
+      }
+    },
+    "CPY-34": {
+      "family": "loop",
+      "divisions": 12,
+      "mark": 10,
+      "label": "loop at position 10 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Feedback Loop Closure"
+      }
+    },
+    "CPY-35": {
+      "family": "anchor",
+      "divisions": 12,
+      "mark": 11,
+      "label": "anchor at position 11 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Endowment Effect"
+      }
+    },
+    "CPY-36": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 12,
+      "label": "ease at position 12 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Friction Asymmetry"
+      }
+    },
+    "CPY-37": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 1,
+      "label": "ease at position 1 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Processing Fluency"
+      }
+    },
+    "CPY-38": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 2,
+      "label": "ease at position 2 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Cognitive Strain"
+      }
+    },
+    "CPY-39": {
+      "family": "loop",
+      "divisions": 12,
+      "mark": 3,
+      "label": "loop at position 3 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Foraging Continuation"
+      }
+    },
+    "CPY-40": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 4,
+      "label": "cadence at position 4 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Chunking"
+      }
+    },
+    "CPY-41": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 5,
+      "label": "cadence at position 5 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Entrainment"
+      }
+    },
+    "CPY-42": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 6,
+      "label": "cadence at position 6 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Scanning Laws"
+      }
+    },
+    "CPY-43": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 7,
+      "label": "ease at position 7 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Concreteness"
+      }
+    },
+    "CPY-44": {
+      "family": "proof",
+      "divisions": 12,
+      "mark": 8,
+      "label": "proof at position 8 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Costly Signaling"
+      }
+    },
+    "CPY-45": {
+      "family": "ease",
+      "divisions": 12,
+      "mark": 9,
+      "label": "ease at position 9 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Processing Penalty"
+      }
+    },
+    "CPY-46": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 10,
+      "label": "identity at position 10 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Social Proximity"
+      }
+    },
+    "CPY-47": {
+      "family": "cadence",
+      "divisions": 12,
+      "mark": 11,
+      "label": "cadence at position 11 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Buffer Optimization"
+      }
+    },
+    "CPY-48": {
+      "family": "identity",
+      "divisions": 12,
+      "mark": 12,
+      "label": "identity at position 12 of 12",
+      "frontSize": 9,
+      "basis": {
+        "datum": "mechanism",
+        "field": "mechanism",
+        "quote": "Empathic Perspective"
+      }
+    }
+  },
+  "ratios": {
+    "CPY-01": {
+      "pairs": [
+        {
+          "label": "Attention",
+          "percent": 15
+        },
+        {
+          "label": "Interest",
+          "percent": 30
+        },
+        {
+          "label": "Desire",
+          "percent": 40
+        },
+        {
+          "label": "Action",
+          "percent": 15
+        }
+      ],
+      "frontLine": "Attention 15 · Interest 30 · Desire 40 · Action 15"
+    },
+    "CPY-02": {
+      "pairs": [
+        {
+          "label": "Problem",
+          "percent": 25
+        },
+        {
+          "label": "Agitate",
+          "percent": 45
+        },
+        {
+          "label": "Solve",
+          "percent": 30
+        }
+      ],
+      "frontLine": "Problem 25 · Agitate 45 · Solve 30"
+    },
+    "CPY-03": {
+      "pairs": [
+        {
+          "label": "Before",
+          "percent": 35
+        },
+        {
+          "label": "After",
+          "percent": 35
+        },
+        {
+          "label": "Bridge",
+          "percent": 30
+        }
+      ],
+      "frontLine": "Before 35 · After 35 · Bridge 30"
+    },
+    "CPY-04": {
+      "pairs": [
+        {
+          "label": "Qualify",
+          "percent": 15
+        },
+        {
+          "label": "Understand",
+          "percent": 20
+        },
+        {
+          "label": "Educate",
+          "percent": 30
+        },
+        {
+          "label": "Stimulate",
+          "percent": 20
+        },
+        {
+          "label": "Transition",
+          "percent": 15
+        }
+      ],
+      "frontLine": "Qualify 15 · Understand 20 · Educate 30 · Stimulate 20 · Transition 15"
+    },
+    "CPY-05": {
+      "pairs": [
+        {
+          "label": "Picture",
+          "percent": 30
+        },
+        {
+          "label": "Promise",
+          "percent": 20
+        },
+        {
+          "label": "Prove",
+          "percent": 35
+        },
+        {
+          "label": "Push",
+          "percent": 15
+        }
+      ],
+      "frontLine": "Picture 30 · Promise 20 · Prove 35 · Push 15"
+    },
+    "CPY-06": {
+      "pairs": [
+        {
+          "label": "Feature",
+          "percent": 25
+        },
+        {
+          "label": "Advantage",
+          "percent": 35
+        },
+        {
+          "label": "Benefit",
+          "percent": 40
+        }
+      ],
+      "frontLine": "Feature 25 · Advantage 35 · Benefit 40"
+    },
+    "CPY-13": {
+      "pairs": [
+        {
+          "label": "Outcome",
+          "percent": 50
+        },
+        {
+          "label": "Trade-off",
+          "percent": 50
+        }
+      ],
+      "frontLine": "Outcome 50 · Trade-off 50"
+    },
+    "CPY-14": {
+      "pairs": [
+        {
+          "label": "Momentum",
+          "percent": 50
+        },
+        {
+          "label": "Withheld conclusion",
+          "percent": 50
+        }
+      ],
+      "frontLine": "Momentum 50 · Withheld conclusion 50"
+    },
+    "CPY-15": {
+      "pairs": [
+        {
+          "label": "Best practice",
+          "percent": 40
+        },
+        {
+          "label": "Failure",
+          "percent": 60
+        }
+      ],
+      "frontLine": "Best practice 40 · Failure 60"
+    },
+    "CPY-16": {
+      "pairs": [
+        {
+          "label": "Metric",
+          "percent": 40
+        },
+        {
+          "label": "Timeframe",
+          "percent": 25
+        },
+        {
+          "label": "Risk reversal",
+          "percent": 35
+        }
+      ],
+      "frontLine": "Metric 40 · Timeframe 25 · Risk reversal 35"
+    },
+    "CPY-17": {
+      "pairs": [
+        {
+          "label": "Peer quantity",
+          "percent": 30
+        },
+        {
+          "label": "Persona",
+          "percent": 30
+        },
+        {
+          "label": "Transformation",
+          "percent": 40
+        }
+      ],
+      "frontLine": "Peer quantity 30 · Persona 30 · Transformation 40"
+    },
+    "CPY-24": {
+      "pairs": [
+        {
+          "label": "Category",
+          "percent": 30
+        },
+        {
+          "label": "Outcome",
+          "percent": 35
+        },
+        {
+          "label": "Compromise",
+          "percent": 35
+        }
+      ],
+      "frontLine": "Category 30 · Outcome 35 · Compromise 35"
+    },
+    "CPY-25": {
+      "pairs": [
+        {
+          "label": "Target identifier",
+          "percent": 20
+        },
+        {
+          "label": "Friction",
+          "percent": 35
+        },
+        {
+          "label": "Mechanism",
+          "percent": 45
+        }
+      ],
+      "frontLine": "Target identifier 20 · Friction 35 · Mechanism 45"
+    },
+    "CPY-26": {
+      "pairs": [
+        {
+          "label": "Imperative verb",
+          "percent": 40
+        },
+        {
+          "label": "Asset",
+          "percent": 60
+        }
+      ],
+      "frontLine": "Imperative verb 40 · Asset 60"
+    },
+    "CPY-27": {
+      "pairs": [
+        {
+          "label": "Zero-state",
+          "percent": 25
+        },
+        {
+          "label": "Leverage",
+          "percent": 35
+        },
+        {
+          "label": "Call-to-action",
+          "percent": 40
+        }
+      ],
+      "frontLine": "Zero-state 25 · Leverage 35 · Call-to-action 40"
+    },
+    "CPY-28": {
+      "pairs": [
+        {
+          "label": "Trial freedom",
+          "percent": 33
+        },
+        {
+          "label": "Card requirement",
+          "percent": 33
+        },
+        {
+          "label": "Setup brevity",
+          "percent": 34
+        }
+      ],
+      "frontLine": "Trial freedom 33 · Card requirement 33 · Setup brevity 34"
+    },
+    "CPY-29": {
+      "pairs": [
+        {
+          "label": "Status",
+          "percent": 30
+        },
+        {
+          "label": "Cause",
+          "percent": 30
+        },
+        {
+          "label": "Remediation",
+          "percent": 40
+        }
+      ],
+      "frontLine": "Status 30 · Cause 30 · Remediation 40"
+    }
+  },
+  "note": "Each row files a card by the structural move its own mechanism states, not by its surface: the quote is from that card's mechanism and carries one of the family's stems. Divisions are the surface (twelve cards) and the mark is the card's position in it, the label naming both. Ratios are authored only where the blueprint prose states component percentages; every label and percent is checked against that card's prose, and the front else prints the scope line."
+}

@@ -20,6 +20,7 @@ import { LATEX_TABLE, latexResidue, renderFormula } from "../../decks/copywritin
 
 const ROOT = join(import.meta.dirname, "..", "..");
 const INVENTORY = join(ROOT, "decks", "copywriting", "data", "source-inventory.json");
+const LAYOUT = join(ROOT, "decks", "copywriting", "data", "layout-map.json");
 const TOTAL = 48;
 
 const loadInventory = async () => JSON.parse(await readFile(INVENTORY, "utf8"));
@@ -202,5 +203,71 @@ test("the declared table renders the formula and the guard fails on residue", ()
   const declared = LATEX_TABLE.map((rule) => rule.from);
   for (const token of ["\\left[", "\\right]", "\\left(", "\\right)", "\\="]) {
     assert.ok(declared.includes(token), `${token} is not declared`);
+  }
+});
+
+test("every figure follows the committed layout map and names what it draws", async () => {
+  // Deck nine's last figure defect was a map that filed rows by topic; the rule
+  // is that a row's quoted datum must carry the family's own stem. The count of
+  // ratio cards is the prose's, and the front line is the ratio where the prose
+  // states one, the scope line otherwise.
+  const inventory = await loadInventory();
+  const layout = JSON.parse(await readFile(LAYOUT, "utf8"));
+  const map = layout.map;
+  const families = layout.families;
+  const byId = new Map(inventory.records.map((record) => [record.id, record]));
+
+  assert.equal(Object.keys(map).length, TOTAL, "the layout map covers every formula");
+  const counts = {};
+  for (const [cardId, row] of Object.entries(map)) {
+    const record = byId.get(cardId);
+    assert.ok(record, `${cardId} has no inventory record`);
+    assert.ok(families[row.family], `${cardId} names an unknown family: ${row.family}`);
+    counts[row.family] = (counts[row.family] || 0) + 1;
+
+    assert.equal(row.divisions, 12, `${cardId} divisions are the surface`);
+    const surfacePosition = inventory.records.filter((r) => r.phase === record.phase).findIndex((r) => r.id === record.id) + 1;
+    assert.equal(row.mark, surfacePosition, `${cardId} mark is not its position in the surface`);
+    assert.ok(row.frontSize >= 6.5 && row.frontSize <= 9, `${cardId} front size`);
+
+    const noun = families[row.family].noun;
+    assert.ok(row.label.toLowerCase().startsWith(noun), `${cardId} label does not name "${noun}": "${row.label}"`);
+    assert.ok(row.label.includes(`position ${row.mark} of ${row.divisions}`), `${cardId} label omits its mark`);
+
+    const basis = row.basis;
+    assert.ok(basis && basis.datum && basis.field && basis.quote, `${cardId} has no basis`);
+    const value = basis.field.split(".").reduce((v, key) => (v == null ? v : v[key]), record);
+    assert.ok(typeof value === "string" && value.includes(basis.quote), `${cardId} quote is not in ${basis.field}`);
+    const stems = families[row.family].operative;
+    const lowered = basis.quote.toLowerCase();
+    assert.ok(
+      stems.find((stem) => lowered.includes(stem)),
+      `${cardId} is filed as ${row.family}, but its quote carries no ${row.family} stem: "${basis.quote}"`
+    );
+  }
+  for (const [family, count] of Object.entries(counts)) {
+    assert.ok(count > 1, `family "${family}" holds a single card`);
+  }
+
+  // The ratio extraction: seventeen cards, every label and percent in the
+  // prose, and a front line that is the ratio or the scope, never both.
+  assert.equal(Object.keys(layout.ratios).length, 17, "seventeen ratio cards");
+  for (const record of inventory.records) {
+    const ratio = layout.ratios[record.id];
+    if (inventory.ratios.ids.includes(record.formulaId)) {
+      assert.ok(ratio, `${record.id} has no extracted ratio`);
+      const prose = record.blueprintProse.toLowerCase();
+      for (const pair of ratio.pairs) {
+        assert.ok(prose.includes(pair.label.toLowerCase()), `${record.id} label "${pair.label}" is not in the prose`);
+        assert.ok(new RegExp(`${pair.percent}\\s*%`).test(record.blueprintProse), `${record.id} percent ${pair.percent} is not in the prose`);
+      }
+      assert.equal(
+        ratio.frontLine,
+        ratio.pairs.map((pair) => `${pair.label} ${pair.percent}`).join(" · "),
+        `${record.id} front line is not its ratio`
+      );
+    } else {
+      assert.ok(!ratio, `${record.id} has a ratio the prose does not state`);
+    }
   }
 });

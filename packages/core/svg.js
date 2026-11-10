@@ -3223,6 +3223,259 @@
     return out.join("");
   };
 
+  /* --- Copywriting: the shape of the move ------------------------------ */
+
+  /* A copy card's figure reads its own record twice: the family is the
+     structural move its mechanism states (a sequence walked, a loss weighed,
+     a gap left open, evidence stacked, identity named, friction removed, two
+     states contrasted, a value anchored, a rhythm set, control handed over, a
+     loop closed), and the mark is the card's position in its surface. Every
+     drawing shows `div` positions and marks one, so the label under it -
+     "Gap at position 2 of 12" - is a claim a reader can check against the
+     picture. */
+  shapes["copywriting-figure"] = function (p) {
+    var family = p.family || "sequence";
+    var div = Math.max(1, Math.round(p.divisions || 12));
+    var mark = Math.max(1, Math.min(div, Math.round(p.mark || 1)));
+    var out = [];
+    var x0 = 56;
+    var span = 288;
+    var posX = function (i) {
+      return x0 + (span * (i - 0.5)) / div;
+    };
+
+    if (family === "sequence") {
+      // Stones stepping up across the surface; the marked stage is the filled
+      // one, and the connecting line is the order the reader is walked in.
+      var sy0 = 312;
+      var sy1 = 96;
+      for (var si = 1; si <= div; si++) {
+        var sx = posX(si);
+        var sy = div > 1 ? sy0 - ((sy0 - sy1) * (si - 1)) / (div - 1) : sy0;
+        var on = si === mark;
+        out.push(
+          rect(sx - 9, sy - 9, 18, 18, {
+            rx: 2,
+            width: on ? 2.4 : 1.2,
+            opacity: on ? 0.95 : 0.3,
+            fill: on ? "currentColor" : "none",
+            fillOpacity: on ? 0.16 : undefined
+          })
+        );
+        if (si < div) {
+          var nx = posX(si + 1);
+          var ny = div > 1 ? sy0 - ((sy0 - sy1) * si) / (div - 1) : sy0;
+          out.push(line(sx + 9, sy, nx - 9, ny, 1.4, on ? 0.75 : 0.3));
+        }
+      }
+    } else if (family === "aversion") {
+      // A beam held level on a fulcrum, with the marked weight hanging where
+      // the loss is counted.
+      out.push(line(64, 130, 336, 130, 1.8, 0.6));
+      out.push(
+        '<path d="M 200 130 L 186 166 L 214 166 Z" fill="none" stroke="currentColor" stroke-width="1.8" opacity="0.6" ' +
+          STROKE + "/>"
+      );
+      out.push(line(200, 166, 200, 210, 1.4, 0.45));
+      for (var ai = 1; ai <= div; ai++) {
+        var ax = posX(ai);
+        out.push(line(ax, 130, ax, 138, 1.1, 0.3));
+      }
+      var wx = posX(mark);
+      out.push(line(wx, 130, wx, 216, 1.6, 0.7));
+      out.push(
+        rect(wx - 13, 216, 26, 20, {
+          rx: 3,
+          width: 2.2,
+          opacity: 0.9,
+          fill: "currentColor",
+          fillOpacity: 0.14
+        })
+      );
+      out.push(line(64, 258, 336, 258, 1.2, 0.25));
+    } else if (family === "gap") {
+      // A ring with one arc missing; the opening sits at the mark, and the two
+      // ends of the arc lean toward each other.
+      var cx = 200;
+      var cy = 200;
+      var r = 116;
+      var gapHalf = Math.PI / Math.max(4, div);
+      var centerAngle = ((mark - 0.5) / div) * Math.PI * 2 - Math.PI / 2;
+      var start = centerAngle + gapHalf;
+      var end = centerAngle + Math.PI * 2 - gapHalf;
+      var pt = function (t) {
+        return [coord(cx + r * Math.cos(t)), coord(cy + r * Math.sin(t))];
+      };
+      var s0 = pt(start);
+      var e0 = pt(end);
+      var large = end - start > Math.PI ? 1 : 0;
+      out.push(
+        '<path d="M ' + s0[0] + " " + s0[1] + " A " + r + " " + r + " 0 " + large + " 1 " + e0[0] + " " + e0[1] +
+          '" fill="none" stroke="currentColor" stroke-width="2.4" opacity="0.85" ' + STROKE + "/>"
+      );
+      for (var gi = 1; gi <= div; gi++) {
+        var ang = ((gi - 0.5) / div) * Math.PI * 2 - Math.PI / 2;
+        var gx = cx + (r - 16) * Math.cos(ang);
+        var gy = cy + (r - 16) * Math.sin(ang);
+        out.push(circle(gx, gy, gi === mark ? 4.5 : 2.2, { width: 1.2, opacity: gi === mark ? 0.95 : 0.35 }));
+      }
+      out.push(circle(cx, cy, 5, { hollow: true, width: 1.4, opacity: 0.6 }));
+    } else if (family === "proof") {
+      // Evidence stacked in `div` bars; the marked bar is the solid one.
+      var top = 64;
+      var bottom = 336;
+      var barH = (bottom - top) / div;
+      for (var pi = 1; pi <= div; pi++) {
+        var py = bottom - barH * pi;
+        var pon = pi === mark;
+        out.push(
+          rect(96, py + 2, 208, Math.max(6, barH - 6), {
+            rx: 2,
+            width: pon ? 2.2 : 1.1,
+            opacity: pon ? 0.9 : 0.28,
+            fill: pon ? "currentColor" : "none",
+            fillOpacity: pon ? 0.14 : undefined
+          })
+        );
+      }
+      out.push(line(86, 64, 86, 336, 1.4, 0.4));
+    } else if (family === "identity") {
+      // Concentric rings around the reader; the marked ring is the one the
+      // copy names.
+      var icx = 200;
+      var icy = 200;
+      for (var ii = 1; ii <= div; ii++) {
+        var ir = 12 + (128 * ii) / div;
+        var ion = ii === mark;
+        out.push(circle(icx, icy, ir, { hollow: !ion, width: ion ? 2.4 : 1.1, opacity: ion ? 0.9 : 0.26 }));
+      }
+      out.push(circle(icx, icy, 4, { width: 1.4, opacity: 0.7 }));
+    } else if (family === "ease") {
+      // A rough path that resolves into a straight run; the mark is where the
+      // reader's way smooths.
+      var seg = Math.max(2, div);
+      var pts = [];
+      for (var ei = 0; ei <= seg; ei += 1) {
+        var ex = x0 + (span * ei) / seg;
+        var rough = ei / seg < 0.5 ? 34 : 6;
+        var ey = 200 + (ei % 2 === 0 ? -rough : rough);
+        pts.push([ex, ey]);
+      }
+      var path = "M " + pts.map((q) => coord(q[0]) + " " + coord(q[1])).join(" L ");
+      out.push('<path d="' + path + '" fill="none" stroke="currentColor" stroke-width="2.2" opacity="0.7" ' + STROKE + "/>");
+      var mx = posX(mark);
+      var my = 200 + (mark % 2 === 0 ? -6 : 6);
+      out.push(line(mx, 64, mx, 336, 1.1, 0.18, "6 8"));
+      out.push(circle(mx, my, 6, { width: 1.8, opacity: 0.95, fill: "currentColor" }));
+    } else if (family === "contrast") {
+      // Two panels split by a divider; the panel holding the mark is filled.
+      var split = 200;
+      var markedLeft = mark <= Math.ceil(div / 2);
+      out.push(
+        rect(72, 96, split - 72 - 6, 208, {
+          rx: 4,
+          width: 1.4,
+          opacity: markedLeft ? 0.85 : 0.3,
+          fill: markedLeft ? "currentColor" : "none",
+          fillOpacity: markedLeft ? 0.12 : undefined
+        })
+      );
+      out.push(
+        rect(split + 6, 96, 328 - split - 6, 208, {
+          rx: 4,
+          width: 1.4,
+          opacity: markedLeft ? 0.3 : 0.85,
+          fill: markedLeft ? "none" : "currentColor",
+          fillOpacity: markedLeft ? undefined : 0.12
+        })
+      );
+      out.push(line(split, 80, split, 320, 1.6, 0.55));
+      for (var ci2 = 1; ci2 <= div; ci2++) {
+        var cx2 = posX(ci2);
+        out.push(line(cx2, 320, cx2, 328, 1.1, ci2 === mark ? 0.9 : 0.3));
+      }
+    } else if (family === "anchor") {
+      // A weight hung at the marked notch: the value set before the reader
+      // chooses.
+      out.push(line(64, 120, 336, 120, 1.8, 0.6));
+      for (var ni2 = 1; ni2 <= div; ni2++) {
+        var nx2 = posX(ni2);
+        out.push(line(nx2, 120, nx2, 130, 1.1, 0.3));
+      }
+      var anx = posX(mark);
+      out.push(line(anx, 120, anx, 236, 1.6, 0.75));
+      out.push(rect(anx - 18, 236, 36, 24, { rx: 3, width: 2.2, opacity: 0.9, fill: "currentColor", fillOpacity: 0.14 }));
+      out.push(line(64, 292, 336, 292, 1.2, 0.25));
+    } else if (family === "cadence") {
+      // A run of bars, tall and short in turn; the marked bar is the beat the
+      // card sets.
+      var base = 300;
+      for (var bi2 = 1; bi2 <= div; bi2++) {
+        var bx2 = posX(bi2);
+        var tall = bi2 % 2 === 1;
+        var h = bi2 === mark ? 150 : tall ? 96 : 44;
+        out.push(
+          rect(bx2 - 6, base - h, 12, h, {
+            rx: 1,
+            width: bi2 === mark ? 2.2 : 1.1,
+            opacity: bi2 === mark ? 0.9 : 0.3,
+            fill: bi2 === mark ? "currentColor" : "none",
+            fillOpacity: bi2 === mark ? 0.16 : undefined
+          })
+        );
+      }
+      out.push(line(48, base, 352, base, 1.4, 0.45));
+    } else if (family === "agency") {
+      // An arrow from the reader to the marked target: the copy hands control
+      // over rather than asking for it.
+      var tx2 = posX(mark);
+      out.push(circle(84, 236, 12, { hollow: true, width: 1.8, opacity: 0.8 }));
+      out.push(line(96, 236, tx2 - 22, 200, 1.8, 0.7));
+      out.push(
+        '<path d="M ' + coord(tx2 - 34) + " " + coord(200) + " L " + coord(tx2 - 20) + " " + coord(190) +
+          " L " + coord(tx2 - 22) + " " + coord(204) + ' Z" fill="currentColor" opacity="0.75" ' + STROKE + "/>"
+      );
+      out.push(circle(tx2, 200, 11, { width: 2, opacity: 0.9 }));
+      out.push(circle(tx2, 200, 4, { width: 1.4, opacity: 0.8 }));
+    } else if (family === "loop") {
+      // A returning arc; the marked segment is drawn heavy, and the arrowhead
+      // closes the circle.
+      var lcx = 200;
+      var lcy = 200;
+      var lr = 112;
+      var lstart = -Math.PI / 2;
+      out.push(
+        '<path d="M ' + coord(lcx) + " " + coord(lcy - lr) +
+          " A " + lr + " " + lr + " 0 1 1 " + coord(lcx - 6) + " " + coord(lcy - lr + 2) +
+          '" fill="none" stroke="currentColor" stroke-width="2.2" opacity="0.7" ' + STROKE + "/>"
+      );
+      var la = lstart + ((mark - 0.5) / div) * Math.PI * 2;
+      var la2 = la + (Math.PI * 2) / div;
+      var lp1 = [lcx + lr * Math.cos(la), lcy + lr * Math.sin(la)];
+      var lp2 = [lcx + lr * Math.cos(la2), lcy + lr * Math.sin(la2)];
+      var llarge = la2 - la > Math.PI ? 1 : 0;
+      out.push(
+        '<path d="M ' + coord(lp1[0]) + " " + coord(lp1[1]) + " A " + lr + " " + lr + " 0 " + llarge + " 1 " +
+          coord(lp2[0]) + " " + coord(lp2[1]) +
+          '" fill="none" stroke="currentColor" stroke-width="3.4" opacity="0.95" ' + STROKE + "/>"
+      );
+      out.push(
+        '<path d="M ' + coord(lcx) + " " + coord(lcy - lr - 10) + " L " + coord(lcx + 10) + " " + coord(lcy - lr + 2) +
+          " L " + coord(lcx - 10) + " " + coord(lcy - lr + 2) + ' Z" fill="currentColor" opacity="0.8" ' + STROKE + "/>"
+      );
+    } else {
+      // An unknown family still reads both numbers, so a misspelling cannot
+      // declare knobs this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var fi3 = 0; fi3 < div; fi3++) {
+        var fx3 = x0 + (span * (fi3 + 0.5)) / div;
+        out.push(line(fx3, 56, fx3, 66, 1.4, 0.4));
+      }
+      out.push(circle(posX(mark), 200, 8, { width: 1.6, opacity: 0.7 }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");
