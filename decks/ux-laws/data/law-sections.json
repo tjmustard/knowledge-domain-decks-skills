@@ -1,0 +1,360 @@
+{
+  "header": {
+    "source": {
+      "path": "SupportingInformation/01 - UX/Open-Source UX Laws Repository.md",
+      "sha256": "4de87fe8a13b9843c66723d012d4c2edeb2fc7c242e9328db5382b024d341dda",
+      "taxonomyHeadingLine": 9,
+      "endsBeforeLine": 737
+    },
+    "sections": [
+      {
+        "heading": "Heuristics and Mental Models",
+        "line": 11,
+        "category": "Heuristic & Mental Models"
+      },
+      {
+        "heading": "Gestalt and Visual Perception",
+        "line": 158,
+        "category": "Gestalt & Visual Perception"
+      },
+      {
+        "heading": "Cognitive Load and Decision Making",
+        "line": 305,
+        "category": "Decision-Making & Cognitive Load"
+      },
+      {
+        "heading": "Motor Control, Time and Motion",
+        "line": 452,
+        "category": "Time, Motion & Ergonomics"
+      },
+      {
+        "heading": "Memory, Attention, and Behavioral Biases",
+        "line": 591,
+        "category": "Memory, Perception & Attention"
+      }
+    ],
+    "columns": {
+      "number": "The source's ordinal inside its taxonomy; never used to join.",
+      "sourceName": "The law heading as the source prints it, backslash escapes removed. Always derived.",
+      "category": "A human reading of the section heading, declared in scripts/derive-law-sections.mjs; not a source field.",
+      "deckName": "This deck's own word for the law, present only where it differs from sourceName; the source name stays the derived column."
+    },
+    "note": "Each rename is listed under renames, one by one. The gate matches a record by deckName or sourceName and reports how many rows carry deckName; that reported count is the claim.",
+    "renames": [
+      {
+        "number": 23,
+        "sourceName": "Hick-Hyman Law",
+        "deckName": "Hick's Law"
+      },
+      {
+        "number": 40,
+        "sourceName": "Weber-Fechner Law of Just Noticeable Difference (JND)",
+        "deckName": "Weber-Fechner JND Law"
+      },
+      {
+        "number": 41,
+        "sourceName": "Gilbreth Motion Economy Principles",
+        "deckName": "Gilbreth Motion Economy"
+      },
+      {
+        "number": 42,
+        "sourceName": "Crossman’s Movement Velocity Law (Welford’s Variant)",
+        "deckName": "Crossman's Velocity Law (Welford's Variant)"
+      }
+    ],
+    "normalisation": [
+      {
+        "rule": "Unicode NFKC, then curly single and double quotes become straight ones.",
+        "edgeCase": "Composed and decomposed spellings of Prägnanz key the same; 'Jakob’s' and \"Jakob's\" key the same, while 'Jakobs' stays different because the apostrophe is kept as a word break, not deleted."
+      },
+      {
+        "rule": "Lower-case with String.prototype.toLowerCase.",
+        "edgeCase": "Case folding is applied after the quote replacement, so a law whose name differs only in case across the two documents still keys the same."
+      },
+      {
+        "rule": "Drop one parenthetical group that ends the name, with the whitespace before it.",
+        "edgeCase": "A parenthetical in the middle is kept: 'Foo (bar) Baz' keeps (bar). Of two trailing groups, 'Foo (a) (b)' drops only (b); (a) remains text. This is what lets 'Tesler’s Law (Law of Conservation of Complexity)' key to the record 'Tesler’s Law'."
+      },
+      {
+        "rule": "Replace every run of characters outside [a-z0-9] with one space, then trim.",
+        "edgeCase": "Hyphen, slash, period and comma all become the same space, so 'Figure/Ground', 'Figure-Ground' and 'Figure Ground' are one key. That is why the map asserts key uniqueness rather than assuming it."
+      }
+    ]
+  },
+  "laws": [
+    {
+      "number": 1,
+      "sourceName": "Jakob’s Law",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 2,
+      "sourceName": "Mental Model Theory",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 3,
+      "sourceName": "Conceptual Integrity",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 4,
+      "sourceName": "Aesthetic-Usability Effect",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 5,
+      "sourceName": "Principle of Least Astonishment (POLA)",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 6,
+      "sourceName": "Postel’s Law (Robustness Principle)",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 7,
+      "sourceName": "Occam’s Razor (Principle of Parsimony)",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 8,
+      "sourceName": "Conway’s Law",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 9,
+      "sourceName": "Gulf of Execution and Gulf of Evaluation",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 10,
+      "sourceName": "Affordance Theory",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 11,
+      "sourceName": "Feedback Principle (Cybernetic Loop)",
+      "category": "Heuristic & Mental Models"
+    },
+    {
+      "number": 12,
+      "sourceName": "Law of Proximity",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 13,
+      "sourceName": "Law of Similarity",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 14,
+      "sourceName": "Law of Common Region",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 15,
+      "sourceName": "Law of Prägnanz (Law of Simplicity / Good Figure)",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 16,
+      "sourceName": "Law of Closure",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 17,
+      "sourceName": "Law of Figure/Ground",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 18,
+      "sourceName": "Law of Continuity (Good Continuation)",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 19,
+      "sourceName": "Law of Uniform Connectedness",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 20,
+      "sourceName": "Law of Common Fate",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 21,
+      "sourceName": "Law of Focal Point",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 22,
+      "sourceName": "Law of Past Experience",
+      "category": "Gestalt & Visual Perception"
+    },
+    {
+      "number": 23,
+      "sourceName": "Hick-Hyman Law",
+      "category": "Decision-Making & Cognitive Load",
+      "deckName": "Hick's Law"
+    },
+    {
+      "number": 24,
+      "sourceName": "Miller’s Law",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 25,
+      "sourceName": "Tesler’s Law (Law of Conservation of Complexity)",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 26,
+      "sourceName": "Choice Overload (Paradox of Choice)",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 27,
+      "sourceName": "Cognitive Load Theory",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 28,
+      "sourceName": "Working Memory Capacity Model",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 29,
+      "sourceName": "Cognitive Friction",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 30,
+      "sourceName": "Framing Effect",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 31,
+      "sourceName": "Decision Fatigue",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 32,
+      "sourceName": "Simon’s Bounded Rationality and Satisficing",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 33,
+      "sourceName": "Cognitive Absorption (Flow State)",
+      "category": "Decision-Making & Cognitive Load"
+    },
+    {
+      "number": 34,
+      "sourceName": "Fitts’s Law",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 35,
+      "sourceName": "Accot-Zhai Steering Law",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 36,
+      "sourceName": "Doherty Threshold",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 37,
+      "sourceName": "Perceived Performance Heuristics",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 38,
+      "sourceName": "Power Law of Practice",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 39,
+      "sourceName": "Keystroke-Level Model (KLM-GOMS)",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 40,
+      "sourceName": "Weber-Fechner Law of Just Noticeable Difference (JND)",
+      "category": "Time, Motion & Ergonomics",
+      "deckName": "Weber-Fechner JND Law"
+    },
+    {
+      "number": 41,
+      "sourceName": "Gilbreth Motion Economy Principles",
+      "category": "Time, Motion & Ergonomics",
+      "deckName": "Gilbreth Motion Economy"
+    },
+    {
+      "number": 42,
+      "sourceName": "Crossman’s Movement Velocity Law (Welford’s Variant)",
+      "category": "Time, Motion & Ergonomics",
+      "deckName": "Crossman's Velocity Law (Welford's Variant)"
+    },
+    {
+      "number": 43,
+      "sourceName": "Visual Saccadic Latency Law",
+      "category": "Time, Motion & Ergonomics"
+    },
+    {
+      "number": 44,
+      "sourceName": "Von Restorff Effect (Isolation Effect)",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 45,
+      "sourceName": "Serial Position Effect (Primacy and Recency)",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 46,
+      "sourceName": "Zeigarnik Effect",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 47,
+      "sourceName": "Peak-End Rule",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 48,
+      "sourceName": "Anchoring Bias",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 49,
+      "sourceName": "Selective Attention and Attentional Bottleneck",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 50,
+      "sourceName": "Confirmation Bias",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 51,
+      "sourceName": "Sunk Cost Fallacy",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 52,
+      "sourceName": "Loss Aversion",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 53,
+      "sourceName": "Goal-Gradient Effect",
+      "category": "Memory, Perception & Attention"
+    },
+    {
+      "number": 54,
+      "sourceName": "Status Quo Bias",
+      "category": "Memory, Perception & Attention"
+    }
+  ]
+}

@@ -13,9 +13,11 @@
  * of the only deck when there is just one. With several decks and no --deck
  * there is no honest answer to "which schema", so it asks instead of guessing.
  */
+import { existsSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import Ajv2020 from "ajv/dist/2020.js";
+import { checkSectionMap } from "../packages/core/law-sections.mjs";
 import {
   deckArgs,
   positionalArgs,
@@ -113,18 +115,38 @@ if (argFiles.length > 0) {
 const decks = await loadDecks({ only, dir: decksDir });
 let ok = true;
 let total = 0;
+let sections = null;
 for (const deck of decks) {
   const { schema, schemaPath, check } = await schemaFor(deck);
   const cards = await loadCards(deck);
   if (decks.length > 1) console.log(`== ${deck.slug}`);
   if (!checkRecords(cards, check, schema, schemaPath, `decks/${deck.slug}/data/laws/*.json`)) {
     ok = false;
-  } else {
-    total += cards.length;
+    continue;
   }
+  total += cards.length;
+
+  // Where a deck commits a law-section map, the records are held to it by
+  // name in both directions: each record to exactly one row, each row to
+  // exactly one record. The map is committed, so this runs on a bare checkout;
+  // the source document it was derived from is not needed here.
+  const mapPath = join(deck.dir, "data", "law-sections.json");
+  if (!existsSync(mapPath)) continue;
+  const map = JSON.parse(await readFile(mapPath, "utf8"));
+  const result = checkSectionMap(cards, map);
+  if (result.problems.length > 0) {
+    ok = false;
+    for (const problem of result.problems) console.error(`FAIL section map — ${problem}`);
+    continue;
+  }
+  sections = `${deck.slug}: ${result.rows} row(s), ${result.deckNamed} with deckName, each matched by exactly one record`;
+  console.log(`OK: section map, ${sections}.`);
 }
 // The last deck's line would otherwise be read as the whole run.
 if (ok && decks.length > 1) {
-  console.log(`OK: ${total} record(s) valid across ${decks.length} decks, each against its own schema.`);
+  console.log(
+    `OK: ${total} record(s) valid across ${decks.length} decks, each against its own schema` +
+      `${sections ? `; law-sections ${sections}` : ""}.`
+  );
 }
 process.exit(ok ? 0 : 1);
