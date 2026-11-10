@@ -28,6 +28,7 @@
     "prompt": "Prompt"
   },
   "itemStyle": "steps",
+  "printOrder": "family",
   "outputs": {
     "rules": "rules/narrative-rules.md",
     "skill": "skills/narrative"

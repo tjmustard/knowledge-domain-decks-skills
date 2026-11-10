@@ -13,6 +13,7 @@ import assert from "node:assert/strict";
 import {
   loadDeck,
   loadCards,
+  orderCards,
   authorsLabel,
   formatYear,
   sourceLine,
@@ -134,4 +135,25 @@ test("a year before the common era is printed as BCE, not as a negative number",
     sourceShort({ authors: ["Aristotle"], year: -335, title: "Poetics" }),
     "Aristotle (335 BCE), *Poetics*."
   );
+});
+
+test("printOrder decides the card order, and id order is the default", async () => {
+  const narrative = await loadDeck("narrative");
+  const cards = await loadCards(narrative);
+  const byFamily = orderCards(narrative, cards);
+  // Follows deck.categories: Arc, Persuasion, Corporate, Micro.
+  assert.deepEqual(
+    [...new Set(byFamily.map((card) => card.family))],
+    narrative.categories
+  );
+  // Within a family the ids still ascend, so the order is stable.
+  const arc = byFamily.filter((card) => card.family === "Arc & Plot").map((c) => c.id);
+  assert.deepEqual(arc, [...arc].sort());
+
+  const asDeclared = await loadDeck("ux-laws");
+  assert.equal(asDeclared.printOrder, undefined, "the first deck must not declare an order");
+  // A deck that declares nothing keeps the id order it always had.
+  assert.deepEqual(orderCards(asDeclared, cards.map((c) => c)), cards.map((c) => c));
+
+  assert.throws(() => orderCards({ ...narrative, printOrder: "random" }, cards), /printOrder/);
 });

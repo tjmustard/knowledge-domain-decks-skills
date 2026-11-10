@@ -313,7 +313,9 @@ in `packages/` names a deck, which is what lets `decks/` hold a second one.
    `fields` maps the group, ordered items, attribution, figure and optional
    prompt onto its own key names, `labels` names the list on the card face and
    in the generated markdown, and `itemStyle` chooses ticking boxes or numbered
-   beats. A deck that declares none gets the first deck's shape.
+   beats. `printOrder` chooses the order the deck is read in: `"id"` (the
+   default) or `"family"`, which follows the category list above. A deck that
+   declares none of these gets the first deck's shape and order.
 3. Build and check:
 
    ```bash

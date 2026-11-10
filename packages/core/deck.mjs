@@ -151,6 +151,25 @@ export function deckShape(deck = {}) {
   };
 }
 
+// The order a deck's cards are read in. `printOrder` is declared in deck.json:
+// "id" (the default, and what every deck did before this existed) or "family",
+// which follows the deck's own category list. The printed pages and the web
+// bundle both take their order from here, so one deck cannot show two orders.
+export function orderCards(deck, cards) {
+  const order = deck.printOrder || "id";
+  if (order === "id") return cards;
+  if (order !== "family") {
+    throw new Error(`deck.json printOrder must be "id" or "family", got ${JSON.stringify(order)}`);
+  }
+  const rank = new Map((deck.categories || []).map((category, index) => [category, index]));
+  const group = deckShape(deck).group;
+  return [...cards].sort((a, b) => {
+    const ra = rank.has(group(a)) ? rank.get(group(a)) : rank.size;
+    const rb = rank.has(group(b)) ? rank.get(group(b)) : rank.size;
+    return ra - rb || a.id.localeCompare(b.id);
+  });
+}
+
 export async function loadCards(deck) {
   const dir = join(deck.dir, "data", "laws");
   const files = (await readdir(dir))

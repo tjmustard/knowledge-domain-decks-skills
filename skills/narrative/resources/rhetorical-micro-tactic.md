@@ -43,7 +43,7 @@
 ## MIC-04 — Metaphorical Bridge
 
 - **Axiom:** Map the unfamiliar onto something the audience already operates.
-- **Apply when:** Explaining distributed consensus, machine learning or queueing to a mixed audience.
+- **Apply when:** Explaining a technical mechanism whose structure the audience already knows from somewhere else.
 - **Structure:**
   - Name the target concept and its hard part.
   - Choose a source domain with the same structure.

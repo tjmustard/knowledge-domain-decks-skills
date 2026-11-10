@@ -3,7 +3,7 @@
   "name": "Metaphorical Bridge",
   "family": "Rhetorical Micro-tactic",
   "axiom": "Map the unfamiliar onto something the audience already operates.",
-  "trigger": "Explaining distributed consensus, machine learning or queueing to a mixed audience.",
+  "trigger": "Explaining a technical mechanism whose structure the audience already knows from somewhere else.",
   "steps": [
     {
       "text": "Name the target concept and its hard part."

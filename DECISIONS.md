@@ -1460,5 +1460,24 @@ for 1999, and the deck test asserts both strings. -1 prints `1 BCE`; there is no
 year zero in the conventional calendar, and a record that needs that precision
 should carry the year as text rather than as a number.
 
+The blast radius is nine cards, not the three that first prompted this: ARC-04
+(-335), ARC-06 (-13), ARC-11 (-429), PRS-01 (-350), PRS-11 (-380), MIC-01
+(-750), MIC-05 (-335), MIC-08 (-55) and MIC-11 (-450). Every one of them
+printed a negative number before this entry; the helper is the only reason they
+do not now.
+
 UX cards are unaffected: none cites a negative year, so the printed artifact's
 bytes are unchanged.
+
+## 41. A deck declares the order its cards are read in
+
+`deck.json` may set `printOrder` to `"id"` (the default, and what every deck did
+before this existed) or `"family"`, which follows the deck's own category list.
+`orderCards` in the core applies it once, and both the printed pages and the web
+bundle take their order from there. The alternative - sorting in the print build
+alone - is what the second deck had for a day: its book ran Arc, Corporate,
+Micro, Persuasion while its bundle and rules ran Arc, Persuasion, Corporate,
+Micro, and a reader had no way to know which order the deck intended.
+
+The default keeps the first deck byte-identical, because "id" is the order
+`loadCards` already returned. A deck that wants the source's order says so.

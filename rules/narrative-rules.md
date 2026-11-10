@@ -55,8 +55,10 @@ Each card names one structure, the beats that make it work, and where it fails.
 - [ ] Want: they reach for something outside it.
 - [ ] Go: they cross into unfamiliar ground.
 - [ ] Search: effort, adaptation, and its cost.
-- [ ] Take: they get what they came for, at a price.
-- [ ] Return and change: back where they started, not who they started as.
+- [ ] Find: they get what they came for.
+- [ ] Take: it costs them something to keep.
+- [ ] Return: back to the world they left.
+- [ ] Change: the same world, a different person.
 
 **Anti-pattern.** Using the circle as a checklist of eight headings with no change between the first and last, which is a table of contents, not a story.
 
@@ -92,7 +94,7 @@ Each card names one structure, the beats that make it work, and where it fails.
 
 **Structure.**
 - [ ] Ki: introduce the subject plainly.
-- [ ] Sho: develop it without complication.
+- [ ] Shō: develop it without complication.
 - [ ] Ten: a turn that recontextualises everything so far.
 - [ ] Ketsu: hold the new reading together without a fight.
 
@@ -731,7 +733,7 @@ Each card names one structure, the beats that make it work, and where it fails.
 
 **Axiom.** Map the unfamiliar onto something the audience already operates.
 
-**Apply when.** Explaining distributed consensus, machine learning or queueing to a mixed audience.
+**Apply when.** Explaining a technical mechanism whose structure the audience already knows from somewhere else.
 
 **Structure.**
 - [ ] Name the target concept and its hard part.

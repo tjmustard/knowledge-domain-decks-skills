@@ -40,8 +40,10 @@
   - Want: they reach for something outside it.
   - Go: they cross into unfamiliar ground.
   - Search: effort, adaptation, and its cost.
-  - Take: they get what they came for, at a price.
-  - Return and change: back where they started, not who they started as.
+  - Find: they get what they came for.
+  - Take: it costs them something to keep.
+  - Return: back to the world they left.
+  - Change: the same world, a different person.
 - **Instead of:** Using the circle as a checklist of eight headings with no change between the first and last, which is a table of contents, not a story.
 - **Do:** Write the first and last beat side by side. If they describe the same person, the circle has not turned.
 - **Source:** Dan Harmon (2000), *Story Circle*.
@@ -67,7 +69,7 @@
 - **Apply when:** Product reveals, design retrospectives, and audiences who resist being told there is a problem to defeat.
 - **Structure:**
   - Ki: introduce the subject plainly.
-  - Sho: develop it without complication.
+  - Shō: develop it without complication.
   - Ten: a turn that recontextualises everything so far.
   - Ketsu: hold the new reading together without a fight.
 - **Instead of:** Importing a conflict the material does not have, so a straightforward improvement is dressed as a battle with an enemy.

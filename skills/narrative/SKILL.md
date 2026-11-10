@@ -87,7 +87,7 @@ Read `resources/rhetorical-micro-tactic.md` for the checks, fixes and sources.
 | MIC-01 | The In Medias Res Hook | Slide one and the executive summary, where the reader may stop after the first line. |
 | MIC-02 | Polarity Shift (Contrast & Tension) | Slides making urgency felt, where a flat list of risks has stopped registering. |
 | MIC-03 | Sensory Detail Anchoring | Explaining latency, scale or KPI movement to an audience that does not work with the number. |
-| MIC-04 | Metaphorical Bridge | Explaining distributed consensus, machine learning or queueing to a mixed audience. |
+| MIC-04 | Metaphorical Bridge | Explaining a technical mechanism whose structure the audience already knows from somewhere else. |
 | MIC-05 | Anagnorisis (The Aha-Moment) | Research reveals and strategic unveilings, where the conclusion must feel discovered rather than asserted. |
 | MIC-06 | The Call to Adventure | Closing slides and all-hands conclusions, where agreement exists but nothing has been asked for. |
 | MIC-07 | Identifiable Victim Effect | Funding cases for accessibility, safety or user experience, where the aggregate number has stopped persuading. |

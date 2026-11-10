@@ -126,10 +126,16 @@ window.NARRATIVE_DECK = {
           "text": "Search: effort, adaptation, and its cost."
         },
         {
-          "text": "Take: they get what they came for, at a price."
+          "text": "Find: they get what they came for."
         },
         {
-          "text": "Return and change: back where they started, not who they started as."
+          "text": "Take: it costs them something to keep."
+        },
+        {
+          "text": "Return: back to the world they left."
+        },
+        {
+          "text": "Change: the same world, a different person."
         }
       ],
       "antiPattern": {
@@ -236,7 +242,7 @@ window.NARRATIVE_DECK = {
           "text": "Ki: introduce the subject plainly."
         },
         {
-          "text": "Sho: develop it without complication."
+          "text": "Shō: develop it without complication."
         },
         {
           "text": "Ten: a turn that recontextualises everything so far."
@@ -601,6 +607,604 @@ window.NARRATIVE_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 L 278.4 90 L 340 300\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"105.6\" y1=\"257.5\" x2=\"114.6\" y2=\"241.5\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"114.6\" cy=\"247.5\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"160.2\" y1=\"205\" x2=\"169.2\" y2=\"189\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"169.2\" cy=\"195\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><line x1=\"214.79999999999998\" y1=\"152.50000000000003\" x2=\"223.79999999999998\" y2=\"136.50000000000003\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" opacity=\"0.75\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"223.79999999999998\" cy=\"142.50000000000003\" r=\"5\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"278.4\" cy=\"90\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"278.4\" y=\"72\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TURN</text><text x=\"82\" y=\"288\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">ESCALATION</text><text x=\"318\" y=\"288\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.6\">RESOLUTION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">CRISES, THEN THE CLIMAX</text></svg>"
+    },
+    {
+      "id": "PRS-01",
+      "name": "Aristotle’s Rhetorical Triangle",
+      "family": "Persuasion & Pitch",
+      "axiom": "An argument needs credible ground, an audience that feels it, and a reason it follows.",
+      "trigger": "Board briefings and stakeholder memos, where being right is not yet being persuasive.",
+      "steps": [
+        {
+          "text": "Ethos: say what gives you standing on this question."
+        },
+        {
+          "text": "Pathos: name what the audience loses or gains."
+        },
+        {
+          "text": "Logos: show the reasoning and the evidence behind the ask."
+        },
+        {
+          "text": "Rebalance: strengthen the weakest of the three."
+        }
+      ],
+      "antiPattern": {
+        "violation": "A deck of evidence with no speaker credibility and no stake for the audience, which is a report rather than an argument.",
+        "remediation": "Add the missing corner before adding more evidence. Each corner answers a different objection."
+      },
+      "origin": {
+        "authors": [
+          "Aristotle"
+        ],
+        "year": -350,
+        "title": "Rhetoric",
+        "publication": "Greek rhetorical theory",
+        "authorsLabel": "Aristotle",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "three-act-blocks",
+        "parametricParams": {
+          "weights": [
+            1,
+            1,
+            1
+          ],
+          "gap": 18,
+          "labels": [
+            "ETHOS",
+            "PATHOS",
+            "LOGOS"
+          ],
+          "caption": "THE WEAKEST CORNER CARRIES THE REST",
+          "turn": false
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"50\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"94\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><text x=\"94\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ETHOS</text><rect x=\"156\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><text x=\"200\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PATHOS</text><rect x=\"262\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"306\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">3</text><text x=\"306\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">LOGOS</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE WEAKEST CORNER CARRIES THE REST</text></svg>"
+    },
+    {
+      "id": "PRS-02",
+      "name": "Monroe’s Motivated Sequence",
+      "family": "Persuasion & Pitch",
+      "axiom": "Attention is earned, need is argued, and action is asked for by name.",
+      "trigger": "Sales pitches and budget approvals, where the audience must leave with a specific next step.",
+      "steps": [
+        {
+          "text": "Attention: a fact or moment the audience cannot ignore."
+        },
+        {
+          "text": "Need: the problem that fact exposes, in their terms."
+        },
+        {
+          "text": "Satisfaction: the mechanism that resolves it."
+        },
+        {
+          "text": "Visualisation: what life looks like once it does."
+        },
+        {
+          "text": "Action: the exact step, owner and date."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Ending on a summary instead of an ask, so a convinced audience leaves with nothing specific to do.",
+        "remediation": "Write the ask first. If it has no owner and no date, the pitch has not finished."
+      },
+      "origin": {
+        "authors": [
+          "Alan H. Monroe"
+        ],
+        "year": 1935,
+        "title": "The Motivated Sequence",
+        "publication": "Purdue University",
+        "authorsLabel": "Alan H. Monroe",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "goal-gradient",
+        "parametricParams": {
+          "goalX": 330,
+          "goalY": 90,
+          "goalLabel": "ACTION",
+          "startLabel": "ATTENTION",
+          "caption": "EVERY BEAT POINTS AT THE ASK"
+        }
+      },
+      "prompt": "The one action we want is ______, owned by ______.",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 C 170 296, 280 240, 330 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"90\" x2=\"330\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"90\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"74\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">ACTION</text><text x=\"60\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ATTENTION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EVERY BEAT POINTS AT THE ASK</text></svg>"
+    },
+    {
+      "id": "PRS-03",
+      "name": "Duarte’s Sparkline",
+      "family": "Persuasion & Pitch",
+      "axiom": "Alternate what is with what could be until the audience prefers the second.",
+      "trigger": "Visionary keynotes and strategic realignments, where the case is a change of direction rather than a fix.",
+      "steps": [
+        {
+          "text": "What is: the current state, plainly."
+        },
+        {
+          "text": "What could be: the alternative, vividly."
+        },
+        {
+          "text": "Repeat: alternate the two, raising the contrast each turn."
+        },
+        {
+          "text": "New bliss: land on the future and stop there."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Spending the talk on the present and flashing the future in one closing slide, so the contrast never builds.",
+        "remediation": "Count the turns. A change of direction needs the future stated at least as often as the present."
+      },
+      "origin": {
+        "authors": [
+          "Nancy Duarte"
+        ],
+        "year": 2010,
+        "title": "Resonate",
+        "publication": "Harvard Business Review Press",
+        "authorsLabel": "Nancy Duarte",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "sparkline",
+        "parametricParams": {
+          "points": [
+            2,
+            6,
+            3,
+            8,
+            4,
+            9
+          ],
+          "peakIndex": 5,
+          "caption": "WHAT IS, WHAT COULD BE, REPEATED"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"290\" x2=\"340\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 270 L 116 201.42857142857144 L 172 252.85714285714286 L 228 167.14285714285717 L 284 235.71428571428572 L 340 150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"150\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"340\" y=\"130\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">HERE</text><text x=\"200\" y=\"130\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.5\">NO AXES, ONE LINE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHAT IS, WHAT COULD BE, REPEATED</text></svg>"
+    },
+    {
+      "id": "PRS-04",
+      "name": "The Pitch Canvas",
+      "family": "Persuasion & Pitch",
+      "axiom": "An investor buys the problem, the engine and the edge, in that order.",
+      "trigger": "Seed and Series A presentations, where the audience is deciding whether the opportunity is real.",
+      "steps": [
+        {
+          "text": "Problem: who hurts, and what they do instead today."
+        },
+        {
+          "text": "Solution: the smallest thing that removes the hurt."
+        },
+        {
+          "text": "Engine: how demand arrives and how it compounds."
+        },
+        {
+          "text": "Advantage: why this is hard to copy."
+        },
+        {
+          "text": "Ask: the amount, the milestone it buys, and the risk it retires."
+        }
+      ],
+      "antiPattern": {
+        "violation": "A product tour where the problem is assumed and the engine is a slide of logos, leaving the investor to infer the business.",
+        "remediation": "Open on the problem and close on the ask. The middle exists to make the ask cheaper to believe."
+      },
+      "origin": {
+        "authors": [
+          "Ash Maurya"
+        ],
+        "year": 2010,
+        "title": "Lean Canvas",
+        "publication": "Lean Startup movement",
+        "authorsLabel": "Ash Maurya",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "three-act-blocks",
+        "parametricParams": {
+          "weights": [
+            2,
+            3,
+            1
+          ],
+          "gap": 12,
+          "labels": [
+            "PROBLEM",
+            "ENGINE",
+            "ASK"
+          ],
+          "caption": "THE ASK IS THE SMALLEST BLOCK",
+          "turn": false
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"50\" y=\"120\" width=\"92\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"96\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><text x=\"96\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PROBLEM</text><rect x=\"154\" y=\"120\" width=\"138\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"223\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><text x=\"223\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ENGINE</text><rect x=\"304\" y=\"120\" width=\"46\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"327\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">3</text><text x=\"327\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ASK</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE ASK IS THE SMALLEST BLOCK</text></svg>"
+    },
+    {
+      "id": "PRS-05",
+      "name": "Problem-Agitation-Solution (PAS)",
+      "family": "Persuasion & Pitch",
+      "axiom": "A solution is only as valuable as the problem the audience has just felt.",
+      "trigger": "Executive summaries and sales cadences where the reader is already busy and already sceptical.",
+      "steps": [
+        {
+          "text": "Problem: name it in the reader's own vocabulary."
+        },
+        {
+          "text": "Agitation: show the cost of the problem continuing."
+        },
+        {
+          "text": "Solution: the specific mechanism that stops the cost."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Agitating with fear the reader does not share, which reads as manipulation and closes the door.",
+        "remediation": "Agitate with their numbers, not yours. The cost must be one they already recognise."
+      },
+      "origin": {
+        "title": "Problem-Agitation-Solution",
+        "publication": "Direct-response copywriting tradition",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "fall-rise-curve",
+        "parametricParams": {
+          "startY": 130,
+          "bottomY": 285,
+          "endY": 95,
+          "startLabel": "PROBLEM",
+          "bottomLabel": "COST",
+          "endLabel": "SOLUTION",
+          "caption": "NAME IT, PRICE IT, THEN FIX IT"
+        }
+      },
+      "prompt": "The cost of leaving our problem in place is ______ per ______.",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 130 C 110 295, 150 285, 200 285 C 250 285, 300 115, 340 95\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"130\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"285\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"114\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">PROBLEM</text><text x=\"200\" y=\"309\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COST</text><text x=\"340\" y=\"79\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">SOLUTION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">NAME IT, PRICE IT, THEN FIX IT</text></svg>"
+    },
+    {
+      "id": "PRS-06",
+      "name": "Before-After-Bridge (BAB)",
+      "family": "Persuasion & Pitch",
+      "axiom": "Show today, show the day it is fixed, then show the bridge between them.",
+      "trigger": "Cold outreach, case studies and transformation proposals, where the reader must want the after before hearing the how.",
+      "steps": [
+        {
+          "text": "Before: the current state, including what it costs."
+        },
+        {
+          "text": "After: the same scene, with the cost gone."
+        },
+        {
+          "text": "Bridge: the mechanism that moves one to the other."
+        },
+        {
+          "text": "Proof: who has already crossed it."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Describing the after in abstractions the reader cannot picture, so the bridge leads somewhere they do not want to go.",
+        "remediation": "Write the after as a scene with a person in it. If the reader cannot see themselves there, the bridge is too long."
+      },
+      "origin": {
+        "title": "Before-After-Bridge",
+        "publication": "Direct-marketing copy framework",
+        "authorsLabel": "",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "fall-rise-curve",
+        "parametricParams": {
+          "startY": 210,
+          "bottomY": 200,
+          "endY": 80,
+          "startLabel": "BEFORE",
+          "bottomLabel": "BRIDGE",
+          "endLabel": "AFTER",
+          "caption": "TWO SCENES AND THE WAY ACROSS"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 210 C 110 210, 150 200, 200 200 C 250 200, 300 100, 340 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"210\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"80\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">BEFORE</text><text x=\"200\" y=\"224\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">BRIDGE</text><text x=\"340\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">AFTER</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TWO SCENES AND THE WAY ACROSS</text></svg>"
+    },
+    {
+      "id": "PRS-07",
+      "name": "The Story Spine",
+      "family": "Persuasion & Pitch",
+      "axiom": "Five clauses turn a status update into a story with a cause and a consequence.",
+      "trigger": "Sixty-second pitches and investor teasers, where the whole story must fit in one breath.",
+      "steps": [
+        {
+          "text": "Once upon a time: the world as it was."
+        },
+        {
+          "text": "Every day: the routine that held it there."
+        },
+        {
+          "text": "One day: the disruption that changed the routine."
+        },
+        {
+          "text": "Because of that: the consequences, chained."
+        },
+        {
+          "text": "Until finally: where the chain arrives."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Filling the clauses with product features, so 'because of that' has no causal force and the spine collapses into a list.",
+        "remediation": "Each clause must be caused by the one before. If you can reorder them, it is not a spine."
+      },
+      "origin": {
+        "authors": [
+          "Emma Coats"
+        ],
+        "year": 2011,
+        "title": "Story Rules",
+        "publication": "Pixar",
+        "authorsLabel": "Emma Coats",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "goal-gradient",
+        "parametricParams": {
+          "goalX": 330,
+          "goalY": 80,
+          "goalLabel": "UNTIL FINALLY",
+          "startLabel": "ONCE UPON A TIME",
+          "caption": "FIVE CLAUSES, ONE CHAIN"
+        }
+      },
+      "prompt": "Once upon a time, ______. Every day, ______. One day, ______. Because of that, ______. Until finally, ______.",
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 C 170 296, 280 240, 330 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"80\" x2=\"330\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">UNTIL FINALLY</text><text x=\"60\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONCE UPON A TIME</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FIVE CLAUSES, ONE CHAIN</text></svg>"
+    },
+    {
+      "id": "PRS-08",
+      "name": "The 10/20/30 Venture Pattern",
+      "family": "Persuasion & Pitch",
+      "axiom": "Ten slides, twenty minutes, thirty-point type: the constraint is the argument.",
+      "trigger": "Formal venture partner meetings, where attention is short and the room has read a hundred decks that month.",
+      "steps": [
+        {
+          "text": "Ten slides: one idea each, no appendix crutches."
+        },
+        {
+          "text": "Twenty minutes: leave the rest of the hour for questions."
+        },
+        {
+          "text": "Thirty-point type: if it will not fit, it is not the pitch."
+        }
+      ],
+      "antiPattern": {
+        "violation": "A forty-slide deck read aloud at speed, which proves the presenter can fill time and not that the idea survives compression.",
+        "remediation": "Cut to ten slides and move the detail to the appendix. The constraint is a test of the argument, not a style rule."
+      },
+      "origin": {
+        "authors": [
+          "Guy Kawasaki"
+        ],
+        "year": 2004,
+        "title": "The Art of the Start",
+        "publication": "Portfolio",
+        "authorsLabel": "Guy Kawasaki",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "limit-gauges",
+        "parametricParams": {
+          "labels": [
+            "SLIDES",
+            "MINUTES",
+            "TYPE"
+          ],
+          "used": [
+            10,
+            20,
+            30
+          ],
+          "caps": [
+            10,
+            20,
+            30
+          ],
+          "caption": "THE CONSTRAINT IS THE ARGUMENT"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"60\" y=\"116\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">SLIDES</text><rect x=\"60\" y=\"130\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"130\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"148\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">10/10</text><text x=\"60\" y=\"186\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">MINUTES</text><rect x=\"60\" y=\"200\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"200\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"218\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">20/20</text><text x=\"60\" y=\"256\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">TYPE</text><rect x=\"60\" y=\"270\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"270\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"288\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">30/30</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CONSTRAINT IS THE ARGUMENT</text></svg>"
+    },
+    {
+      "id": "PRS-09",
+      "name": "The Insight-Led Challenge",
+      "family": "Persuasion & Pitch",
+      "axiom": "Teach the buyer something they did not know, then let the implication do the selling.",
+      "trigger": "Complex B2B sales conversations, where the buyer believes their current approach is already reasonable.",
+      "steps": [
+        {
+          "text": "Warmer: acknowledge what the buyer already does well."
+        },
+        {
+          "text": "Reframe: a fact that changes how their situation reads."
+        },
+        {
+          "text": "Rational drowning: the cost of the old reading, quantified."
+        },
+        {
+          "text": "Emotional impact: what it means for a person they know."
+        },
+        {
+          "text": "Value: the new approach, stated as their conclusion."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Leading with the product, so the buyer hears a vendor before they hear an insight and defends the approach they already have.",
+        "remediation": "Earn the reframe first. If the insight could come from the buyer's own industry, it is not new enough to change a decision."
+      },
+      "origin": {
+        "authors": [
+          "Matthew Dixon",
+          "Brent Adamson"
+        ],
+        "year": 2011,
+        "title": "The Challenger Sale",
+        "publication": "Portfolio",
+        "authorsLabel": "Matthew Dixon & Brent Adamson",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "fall-rise-curve",
+        "parametricParams": {
+          "startY": 150,
+          "bottomY": 280,
+          "endY": 90,
+          "startLabel": "WARMER",
+          "bottomLabel": "DROWNING",
+          "endLabel": "VALUE",
+          "caption": "TEACH, THEN LET IT LAND"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 150 C 110 290, 150 280, 200 280 C 250 280, 300 110, 340 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"150\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"90\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"134\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">WARMER</text><text x=\"200\" y=\"304\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">DROWNING</text><text x=\"340\" y=\"74\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">VALUE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TEACH, THEN LET IT LAND</text></svg>"
+    },
+    {
+      "id": "PRS-10",
+      "name": "Strategic Narrative Architecture",
+      "family": "Persuasion & Pitch",
+      "axiom": "Name a shift the audience already feels, then make them choose a side.",
+      "trigger": "Category creation and enterprise positioning, where the question is not which vendor but which future.",
+      "steps": [
+        {
+          "text": "Shift: the change in the world that makes the old way obsolete."
+        },
+        {
+          "text": "Winners and losers: what the shift rewards and punishes."
+        },
+        {
+          "text": "Promised land: the state the audience wants to reach."
+        },
+        {
+          "text": "Magic gifts: how this product is the way through."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Declaring a shift the audience has not felt, which sounds like marketing and invites them to argue with the premise instead of the offer.",
+        "remediation": "Start from evidence they already accept. The shift must be something they could have said themselves."
+      },
+      "origin": {
+        "authors": [
+          "Andy Raskin"
+        ],
+        "year": 2016,
+        "title": "The Greatest Sales Deck I've Ever Seen",
+        "publication": "Medium",
+        "authorsLabel": "Andy Raskin",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "fall-rise-curve",
+        "parametricParams": {
+          "startY": 120,
+          "bottomY": 250,
+          "endY": 80,
+          "startLabel": "OLD WAY",
+          "bottomLabel": "THE SHIFT",
+          "endLabel": "PROMISED LAND",
+          "caption": "THE SHIFT DOES THE SELLING"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 120 C 110 260, 150 250, 200 250 C 250 250, 300 100, 340 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"120\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"250\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"80\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">OLD WAY</text><text x=\"200\" y=\"274\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">THE SHIFT</text><text x=\"340\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">PROMISED LAND</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE SHIFT DOES THE SELLING</text></svg>"
+    },
+    {
+      "id": "PRS-11",
+      "name": "Socratic Elenchus",
+      "family": "Persuasion & Pitch",
+      "axiom": "Ask for the definition, test it against a case, then let the gap argue.",
+      "trigger": "Architecture disputes among technical stakeholders who will accept a conclusion they reached and reject one they were handed.",
+      "steps": [
+        {
+          "text": "Hypothesis: state the other side's position at its strongest."
+        },
+        {
+          "text": "Counter-example: a case the position cannot absorb."
+        },
+        {
+          "text": "Aporia: sit with the gap rather than filling it."
+        },
+        {
+          "text": "Re-definition: a sharper claim that survives the case."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Using questions as a trap, which works once and costs the room's trust for every conversation after it.",
+        "remediation": "Argue in good faith and let the other person find the gap. If they do not, the case was not decisive."
+      },
+      "origin": {
+        "authors": [
+          "Plato"
+        ],
+        "year": -380,
+        "title": "Dialogues",
+        "publication": "Greek philosophy",
+        "authorsLabel": "Plato",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "story-circle",
+        "parametricParams": {
+          "sectors": 4,
+          "startAngle": -90,
+          "labels": [
+            "CLAIM",
+            "TEST",
+            "GAP",
+            "REDEFINE"
+          ],
+          "caption": "THE CASE DOES THE ARGUING"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"185\" r=\"105\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.75\" /><circle cx=\"200\" cy=\"80\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"83.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">1</text><text x=\"200\" y=\"49\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">CLAIM</text><circle cx=\"305\" cy=\"185\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"305\" y=\"188.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">2</text><text x=\"339\" y=\"188\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">TEST</text><circle cx=\"200\" cy=\"290\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"293.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">3</text><text x=\"200\" y=\"327\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">GAP</text><circle cx=\"95\" cy=\"185\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"95\" y=\"188.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">4</text><text x=\"61\" y=\"188.00000000000003\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.6\">REDEFINE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CASE DOES THE ARGUING</text></svg>"
+    },
+    {
+      "id": "PRS-12",
+      "name": "The Golden Circle",
+      "family": "Persuasion & Pitch",
+      "axiom": "Lead with why, then how, then what; the order is what makes it land.",
+      "trigger": "Employer branding and brand positioning, where comparable products compete and the difference is purpose.",
+      "steps": [
+        {
+          "text": "Why: the belief the work serves."
+        },
+        {
+          "text": "How: the distinctive way it is pursued."
+        },
+        {
+          "text": "What: the tangible thing that proves both."
+        }
+      ],
+      "antiPattern": {
+        "violation": "Starting with what, so the audience compares features before it knows what the features are for.",
+        "remediation": "Move the what last. It is the evidence for the claim, not the claim."
+      },
+      "origin": {
+        "authors": [
+          "Simon Sinek"
+        ],
+        "year": 2009,
+        "title": "Start with Why",
+        "publication": "Portfolio",
+        "authorsLabel": "Simon Sinek",
+        "titleStop": "."
+      },
+      "figure": {
+        "svgShape": "concentric-circles",
+        "parametricParams": {
+          "rings": 3,
+          "spread": 26,
+          "labels": [
+            "WHAT",
+            "HOW",
+            "WHY"
+          ],
+          "caption": "THE CENTRE IS THE CLAIM"
+        }
+      },
+      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"175\" cy=\"190\" r=\"86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"269\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">WHAT</text><circle cx=\"175\" cy=\"190\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.73\" vector-effect=\"non-scaling-stroke\"/><text x=\"243\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">HOW</text><circle cx=\"175\" cy=\"190\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.61\" vector-effect=\"non-scaling-stroke\"/><text x=\"217\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">WHY</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CENTRE IS THE CLAIM</text></svg>"
     },
     {
       "id": "COR-01",
@@ -1345,7 +1949,7 @@ window.NARRATIVE_DECK = {
       "name": "Metaphorical Bridge",
       "family": "Rhetorical Micro-tactic",
       "axiom": "Map the unfamiliar onto something the audience already operates.",
-      "trigger": "Explaining distributed consensus, machine learning or queueing to a mixed audience.",
+      "trigger": "Explaining a technical mechanism whose structure the audience already knows from somewhere else.",
       "steps": [
         {
           "text": "Name the target concept and its hard part."
@@ -1744,604 +2348,6 @@ window.NARRATIVE_DECK = {
         }
       },
       "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"26\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"110\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WITHOUT</text><rect x=\"42\" y=\"122\" width=\"64\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"114\" y=\"122\" width=\"64\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"42\" y=\"194\" width=\"64\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"114\" y=\"194\" width=\"64\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><rect x=\"206\" y=\"70\" width=\"168\" height=\"240\" rx=\"6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"290\" y=\"56\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WITH</text><rect x=\"222\" y=\"122\" width=\"64\" height=\"64\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"294\" y=\"122\" width=\"64\" height=\"64\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"222\" y=\"194\" width=\"64\" height=\"64\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.8\" vector-effect=\"non-scaling-stroke\"/><rect x=\"294\" y=\"194\" width=\"64\" height=\"64\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.55\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE GAP IS THE ARGUMENT</text></svg>"
-    },
-    {
-      "id": "PRS-01",
-      "name": "Aristotle’s Rhetorical Triangle",
-      "family": "Persuasion & Pitch",
-      "axiom": "An argument needs credible ground, an audience that feels it, and a reason it follows.",
-      "trigger": "Board briefings and stakeholder memos, where being right is not yet being persuasive.",
-      "steps": [
-        {
-          "text": "Ethos: say what gives you standing on this question."
-        },
-        {
-          "text": "Pathos: name what the audience loses or gains."
-        },
-        {
-          "text": "Logos: show the reasoning and the evidence behind the ask."
-        },
-        {
-          "text": "Rebalance: strengthen the weakest of the three."
-        }
-      ],
-      "antiPattern": {
-        "violation": "A deck of evidence with no speaker credibility and no stake for the audience, which is a report rather than an argument.",
-        "remediation": "Add the missing corner before adding more evidence. Each corner answers a different objection."
-      },
-      "origin": {
-        "authors": [
-          "Aristotle"
-        ],
-        "year": -350,
-        "title": "Rhetoric",
-        "publication": "Greek rhetorical theory",
-        "authorsLabel": "Aristotle",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "three-act-blocks",
-        "parametricParams": {
-          "weights": [
-            1,
-            1,
-            1
-          ],
-          "gap": 18,
-          "labels": [
-            "ETHOS",
-            "PATHOS",
-            "LOGOS"
-          ],
-          "caption": "THE WEAKEST CORNER CARRIES THE REST",
-          "turn": false
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"50\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"94\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><text x=\"94\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ETHOS</text><rect x=\"156\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><text x=\"200\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PATHOS</text><rect x=\"262\" y=\"120\" width=\"88\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"306\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">3</text><text x=\"306\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">LOGOS</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE WEAKEST CORNER CARRIES THE REST</text></svg>"
-    },
-    {
-      "id": "PRS-02",
-      "name": "Monroe’s Motivated Sequence",
-      "family": "Persuasion & Pitch",
-      "axiom": "Attention is earned, need is argued, and action is asked for by name.",
-      "trigger": "Sales pitches and budget approvals, where the audience must leave with a specific next step.",
-      "steps": [
-        {
-          "text": "Attention: a fact or moment the audience cannot ignore."
-        },
-        {
-          "text": "Need: the problem that fact exposes, in their terms."
-        },
-        {
-          "text": "Satisfaction: the mechanism that resolves it."
-        },
-        {
-          "text": "Visualisation: what life looks like once it does."
-        },
-        {
-          "text": "Action: the exact step, owner and date."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Ending on a summary instead of an ask, so a convinced audience leaves with nothing specific to do.",
-        "remediation": "Write the ask first. If it has no owner and no date, the pitch has not finished."
-      },
-      "origin": {
-        "authors": [
-          "Alan H. Monroe"
-        ],
-        "year": 1935,
-        "title": "The Motivated Sequence",
-        "publication": "Purdue University",
-        "authorsLabel": "Alan H. Monroe",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "goal-gradient",
-        "parametricParams": {
-          "goalX": 330,
-          "goalY": 90,
-          "goalLabel": "ACTION",
-          "startLabel": "ATTENTION",
-          "caption": "EVERY BEAT POINTS AT THE ASK"
-        }
-      },
-      "prompt": "The one action we want is ______, owned by ______.",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 C 170 296, 280 240, 330 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"90\" x2=\"330\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"90\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"74\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">ACTION</text><text x=\"60\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ATTENTION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">EVERY BEAT POINTS AT THE ASK</text></svg>"
-    },
-    {
-      "id": "PRS-03",
-      "name": "Duarte’s Sparkline",
-      "family": "Persuasion & Pitch",
-      "axiom": "Alternate what is with what could be until the audience prefers the second.",
-      "trigger": "Visionary keynotes and strategic realignments, where the case is a change of direction rather than a fix.",
-      "steps": [
-        {
-          "text": "What is: the current state, plainly."
-        },
-        {
-          "text": "What could be: the alternative, vividly."
-        },
-        {
-          "text": "Repeat: alternate the two, raising the contrast each turn."
-        },
-        {
-          "text": "New bliss: land on the future and stop there."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Spending the talk on the present and flashing the future in one closing slide, so the contrast never builds.",
-        "remediation": "Count the turns. A change of direction needs the future stated at least as often as the present."
-      },
-      "origin": {
-        "authors": [
-          "Nancy Duarte"
-        ],
-        "year": 2010,
-        "title": "Resonate",
-        "publication": "Harvard Business Review Press",
-        "authorsLabel": "Nancy Duarte",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "sparkline",
-        "parametricParams": {
-          "points": [
-            2,
-            6,
-            3,
-            8,
-            4,
-            9
-          ],
-          "peakIndex": 5,
-          "caption": "WHAT IS, WHAT COULD BE, REPEATED"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"290\" x2=\"340\" y2=\"290\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.25\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 270 L 116 201.42857142857144 L 172 252.85714285714286 L 228 167.14285714285717 L 284 235.71428571428572 L 340 150\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"150\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"340\" y=\"130\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">HERE</text><text x=\"200\" y=\"130\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.5\">NO AXES, ONE LINE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">WHAT IS, WHAT COULD BE, REPEATED</text></svg>"
-    },
-    {
-      "id": "PRS-04",
-      "name": "The Pitch Canvas",
-      "family": "Persuasion & Pitch",
-      "axiom": "An investor buys the problem, the engine and the edge, in that order.",
-      "trigger": "Seed and Series A presentations, where the audience is deciding whether the opportunity is real.",
-      "steps": [
-        {
-          "text": "Problem: who hurts, and what they do instead today."
-        },
-        {
-          "text": "Solution: the smallest thing that removes the hurt."
-        },
-        {
-          "text": "Engine: how demand arrives and how it compounds."
-        },
-        {
-          "text": "Advantage: why this is hard to copy."
-        },
-        {
-          "text": "Ask: the amount, the milestone it buys, and the risk it retires."
-        }
-      ],
-      "antiPattern": {
-        "violation": "A product tour where the problem is assumed and the engine is a slide of logos, leaving the investor to infer the business.",
-        "remediation": "Open on the problem and close on the ask. The middle exists to make the ask cheaper to believe."
-      },
-      "origin": {
-        "authors": [
-          "Ash Maurya"
-        ],
-        "year": 2010,
-        "title": "Lean Canvas",
-        "publication": "Lean Startup movement",
-        "authorsLabel": "Ash Maurya",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "three-act-blocks",
-        "parametricParams": {
-          "weights": [
-            2,
-            3,
-            1
-          ],
-          "gap": 12,
-          "labels": [
-            "PROBLEM",
-            "ENGINE",
-            "ASK"
-          ],
-          "caption": "THE ASK IS THE SMALLEST BLOCK",
-          "turn": false
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><rect x=\"50\" y=\"120\" width=\"92\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"96\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">1</text><text x=\"96\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">PROBLEM</text><rect x=\"154\" y=\"120\" width=\"138\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"223\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">2</text><text x=\"223\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ENGINE</text><rect x=\"304\" y=\"120\" width=\"46\" height=\"160\" rx=\"4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.35\" vector-effect=\"non-scaling-stroke\"/><text x=\"327\" y=\"200\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"13\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">3</text><text x=\"327\" y=\"300\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">ASK</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE ASK IS THE SMALLEST BLOCK</text></svg>"
-    },
-    {
-      "id": "PRS-05",
-      "name": "Problem-Agitation-Solution (PAS)",
-      "family": "Persuasion & Pitch",
-      "axiom": "A solution is only as valuable as the problem the audience has just felt.",
-      "trigger": "Executive summaries and sales cadences where the reader is already busy and already sceptical.",
-      "steps": [
-        {
-          "text": "Problem: name it in the reader's own vocabulary."
-        },
-        {
-          "text": "Agitation: show the cost of the problem continuing."
-        },
-        {
-          "text": "Solution: the specific mechanism that stops the cost."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Agitating with fear the reader does not share, which reads as manipulation and closes the door.",
-        "remediation": "Agitate with their numbers, not yours. The cost must be one they already recognise."
-      },
-      "origin": {
-        "title": "Problem-Agitation-Solution",
-        "publication": "Direct-response copywriting tradition",
-        "authorsLabel": "",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "fall-rise-curve",
-        "parametricParams": {
-          "startY": 130,
-          "bottomY": 285,
-          "endY": 95,
-          "startLabel": "PROBLEM",
-          "bottomLabel": "COST",
-          "endLabel": "SOLUTION",
-          "caption": "NAME IT, PRICE IT, THEN FIX IT"
-        }
-      },
-      "prompt": "The cost of leaving our problem in place is ______ per ______.",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 130 C 110 295, 150 285, 200 285 C 250 285, 300 115, 340 95\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"130\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"285\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"95\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"114\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">PROBLEM</text><text x=\"200\" y=\"309\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">COST</text><text x=\"340\" y=\"79\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">SOLUTION</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">NAME IT, PRICE IT, THEN FIX IT</text></svg>"
-    },
-    {
-      "id": "PRS-06",
-      "name": "Before-After-Bridge (BAB)",
-      "family": "Persuasion & Pitch",
-      "axiom": "Show today, show the day it is fixed, then show the bridge between them.",
-      "trigger": "Cold outreach, case studies and transformation proposals, where the reader must want the after before hearing the how.",
-      "steps": [
-        {
-          "text": "Before: the current state, including what it costs."
-        },
-        {
-          "text": "After: the same scene, with the cost gone."
-        },
-        {
-          "text": "Bridge: the mechanism that moves one to the other."
-        },
-        {
-          "text": "Proof: who has already crossed it."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Describing the after in abstractions the reader cannot picture, so the bridge leads somewhere they do not want to go.",
-        "remediation": "Write the after as a scene with a person in it. If the reader cannot see themselves there, the bridge is too long."
-      },
-      "origin": {
-        "title": "Before-After-Bridge",
-        "publication": "Direct-marketing copy framework",
-        "authorsLabel": "",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "fall-rise-curve",
-        "parametricParams": {
-          "startY": 210,
-          "bottomY": 200,
-          "endY": 80,
-          "startLabel": "BEFORE",
-          "bottomLabel": "BRIDGE",
-          "endLabel": "AFTER",
-          "caption": "TWO SCENES AND THE WAY ACROSS"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 210 C 110 210, 150 200, 200 200 C 250 200, 300 100, 340 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"210\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"200\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"80\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">BEFORE</text><text x=\"200\" y=\"224\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">BRIDGE</text><text x=\"340\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">AFTER</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TWO SCENES AND THE WAY ACROSS</text></svg>"
-    },
-    {
-      "id": "PRS-07",
-      "name": "The Story Spine",
-      "family": "Persuasion & Pitch",
-      "axiom": "Five clauses turn a status update into a story with a cause and a consequence.",
-      "trigger": "Sixty-second pitches and investor teasers, where the whole story must fit in one breath.",
-      "steps": [
-        {
-          "text": "Once upon a time: the world as it was."
-        },
-        {
-          "text": "Every day: the routine that held it there."
-        },
-        {
-          "text": "One day: the disruption that changed the routine."
-        },
-        {
-          "text": "Because of that: the consequences, chained."
-        },
-        {
-          "text": "Until finally: where the chain arrives."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Filling the clauses with product features, so 'because of that' has no causal force and the spine collapses into a list.",
-        "remediation": "Each clause must be caused by the one before. If you can reorder them, it is not a spine."
-      },
-      "origin": {
-        "authors": [
-          "Emma Coats"
-        ],
-        "year": 2011,
-        "title": "Story Rules",
-        "publication": "Pixar",
-        "authorsLabel": "Emma Coats",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "goal-gradient",
-        "parametricParams": {
-          "goalX": 330,
-          "goalY": 80,
-          "goalLabel": "UNTIL FINALLY",
-          "startLabel": "ONCE UPON A TIME",
-          "caption": "FIVE CLAUSES, ONE CHAIN"
-        }
-      },
-      "prompt": "Once upon a time, ______. Every day, ______. One day, ______.",
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"300\" x2=\"340\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><line x1=\"60\" y1=\"300\" x2=\"60\" y2=\"60\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 300 C 170 296, 280 240, 330 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><line x1=\"330\" y1=\"80\" x2=\"330\" y2=\"300\" stroke=\"currentColor\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-dasharray=\"4 4\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"330\" cy=\"80\" r=\"7\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">UNTIL FINALLY</text><text x=\"60\" y=\"320\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">ONCE UPON A TIME</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">FIVE CLAUSES, ONE CHAIN</text></svg>"
-    },
-    {
-      "id": "PRS-08",
-      "name": "The 10/20/30 Venture Pattern",
-      "family": "Persuasion & Pitch",
-      "axiom": "Ten slides, twenty minutes, thirty-point type: the constraint is the argument.",
-      "trigger": "Formal venture partner meetings, where attention is short and the room has read a hundred decks that month.",
-      "steps": [
-        {
-          "text": "Ten slides: one idea each, no appendix crutches."
-        },
-        {
-          "text": "Twenty minutes: leave the rest of the hour for questions."
-        },
-        {
-          "text": "Thirty-point type: if it will not fit, it is not the pitch."
-        }
-      ],
-      "antiPattern": {
-        "violation": "A forty-slide deck read aloud at speed, which proves the presenter can fill time and not that the idea survives compression.",
-        "remediation": "Cut to ten slides and move the detail to the appendix. The constraint is a test of the argument, not a style rule."
-      },
-      "origin": {
-        "authors": [
-          "Guy Kawasaki"
-        ],
-        "year": 2004,
-        "title": "The Art of the Start",
-        "publication": "Portfolio",
-        "authorsLabel": "Guy Kawasaki",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "limit-gauges",
-        "parametricParams": {
-          "labels": [
-            "SLIDES",
-            "MINUTES",
-            "TYPE"
-          ],
-          "used": [
-            10,
-            20,
-            30
-          ],
-          "caps": [
-            10,
-            20,
-            30
-          ],
-          "caption": "THE CONSTRAINT IS THE ARGUMENT"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><text x=\"60\" y=\"116\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">SLIDES</text><rect x=\"60\" y=\"130\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"130\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"148\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">10/10</text><text x=\"60\" y=\"186\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">MINUTES</text><rect x=\"60\" y=\"200\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"200\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"218\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">20/20</text><text x=\"60\" y=\"256\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">TYPE</text><rect x=\"60\" y=\"270\" width=\"260\" height=\"26\" rx=\"3\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.5\" vector-effect=\"non-scaling-stroke\"/><rect x=\"60\" y=\"270\" width=\"260\" height=\"26\" rx=\"3\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.7\" vector-effect=\"non-scaling-stroke\"/><text x=\"330\" y=\"288\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">30/30</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CONSTRAINT IS THE ARGUMENT</text></svg>"
-    },
-    {
-      "id": "PRS-09",
-      "name": "The Insight-Led Challenge",
-      "family": "Persuasion & Pitch",
-      "axiom": "Teach the buyer something they did not know, then let the implication do the selling.",
-      "trigger": "Complex B2B sales conversations, where the buyer believes their current approach is already reasonable.",
-      "steps": [
-        {
-          "text": "Warmer: acknowledge what the buyer already does well."
-        },
-        {
-          "text": "Reframe: a fact that changes how their situation reads."
-        },
-        {
-          "text": "Rational drowning: the cost of the old reading, quantified."
-        },
-        {
-          "text": "Emotional impact: what it means for a person they know."
-        },
-        {
-          "text": "Value: the new approach, stated as their conclusion."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Leading with the product, so the buyer hears a vendor before they hear an insight and defends the approach they already have.",
-        "remediation": "Earn the reframe first. If the insight could come from the buyer's own industry, it is not new enough to change a decision."
-      },
-      "origin": {
-        "authors": [
-          "Matthew Dixon",
-          "Brent Adamson"
-        ],
-        "year": 2011,
-        "title": "The Challenger Sale",
-        "publication": "Portfolio",
-        "authorsLabel": "Matthew Dixon & Brent Adamson",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "fall-rise-curve",
-        "parametricParams": {
-          "startY": 150,
-          "bottomY": 280,
-          "endY": 90,
-          "startLabel": "WARMER",
-          "bottomLabel": "DROWNING",
-          "endLabel": "VALUE",
-          "caption": "TEACH, THEN LET IT LAND"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 150 C 110 290, 150 280, 200 280 C 250 280, 300 110, 340 90\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"150\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"280\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"90\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"134\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">WARMER</text><text x=\"200\" y=\"304\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">DROWNING</text><text x=\"340\" y=\"74\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">VALUE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">TEACH, THEN LET IT LAND</text></svg>"
-    },
-    {
-      "id": "PRS-10",
-      "name": "Strategic Narrative Architecture",
-      "family": "Persuasion & Pitch",
-      "axiom": "Name a shift the audience already feels, then make them choose a side.",
-      "trigger": "Category creation and enterprise positioning, where the question is not which vendor but which future.",
-      "steps": [
-        {
-          "text": "Shift: the change in the world that makes the old way obsolete."
-        },
-        {
-          "text": "Winners and losers: what the shift rewards and punishes."
-        },
-        {
-          "text": "Promised land: the state the audience wants to reach."
-        },
-        {
-          "text": "Magic gifts: how this product is the way through."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Declaring a shift the audience has not felt, which sounds like marketing and invites them to argue with the premise instead of the offer.",
-        "remediation": "Start from evidence they already accept. The shift must be something they could have said themselves."
-      },
-      "origin": {
-        "authors": [
-          "Andy Raskin"
-        ],
-        "year": 2016,
-        "title": "The Greatest Sales Deck I've Ever Seen",
-        "publication": "Medium",
-        "authorsLabel": "Andy Raskin",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "fall-rise-curve",
-        "parametricParams": {
-          "startY": 120,
-          "bottomY": 250,
-          "endY": 80,
-          "startLabel": "OLD WAY",
-          "bottomLabel": "THE SHIFT",
-          "endLabel": "PROMISED LAND",
-          "caption": "THE SHIFT DOES THE SELLING"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><line x1=\"60\" y1=\"310\" x2=\"340\" y2=\"310\" stroke=\"currentColor\" stroke-width=\"1\" stroke-linecap=\"round\" opacity=\"0.3\" vector-effect=\"non-scaling-stroke\"/><path d=\"M 60 120 C 110 260, 150 250, 200 250 C 250 250, 300 100, 340 80\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"3.5\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"60\" cy=\"120\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"200\" cy=\"250\" r=\"8\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.5\" opacity=\"0.6\" vector-effect=\"non-scaling-stroke\"/><circle cx=\"340\" cy=\"80\" r=\"9\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"60\" y=\"104\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.72\">OLD WAY</text><text x=\"200\" y=\"274\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">THE SHIFT</text><text x=\"340\" y=\"64\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.72\">PROMISED LAND</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE SHIFT DOES THE SELLING</text></svg>"
-    },
-    {
-      "id": "PRS-11",
-      "name": "Socratic Elenchus",
-      "family": "Persuasion & Pitch",
-      "axiom": "Ask for the definition, test it against a case, then let the gap argue.",
-      "trigger": "Architecture disputes among technical stakeholders who will accept a conclusion they reached and reject one they were handed.",
-      "steps": [
-        {
-          "text": "Hypothesis: state the other side's position at its strongest."
-        },
-        {
-          "text": "Counter-example: a case the position cannot absorb."
-        },
-        {
-          "text": "Aporia: sit with the gap rather than filling it."
-        },
-        {
-          "text": "Re-definition: a sharper claim that survives the case."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Using questions as a trap, which works once and costs the room's trust for every conversation after it.",
-        "remediation": "Argue in good faith and let the other person find the gap. If they do not, the case was not decisive."
-      },
-      "origin": {
-        "authors": [
-          "Plato"
-        ],
-        "year": -380,
-        "title": "Dialogues",
-        "publication": "Greek philosophy",
-        "authorsLabel": "Plato",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "story-circle",
-        "parametricParams": {
-          "sectors": 4,
-          "startAngle": -90,
-          "labels": [
-            "CLAIM",
-            "TEST",
-            "GAP",
-            "REDEFINE"
-          ],
-          "caption": "THE CASE DOES THE ARGUING"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"200\" cy=\"185\" r=\"105\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.75\" /><circle cx=\"200\" cy=\"80\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"83.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">1</text><text x=\"200\" y=\"49\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">CLAIM</text><circle cx=\"305\" cy=\"185\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"305\" y=\"188.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">2</text><text x=\"339\" y=\"188\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">TEST</text><circle cx=\"200\" cy=\"290\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"200\" y=\"293.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">3</text><text x=\"200\" y=\"327\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.6\">GAP</text><circle cx=\"95\" cy=\"185\" r=\"8\" fill=\"currentColor\" stroke=\"currentColor\" stroke-width=\"2\" opacity=\"0.9\" vector-effect=\"non-scaling-stroke\"/><text x=\"95\" y=\"188.5\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"7\" font-weight=\"700\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"1\">4</text><text x=\"61\" y=\"188.00000000000003\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"end\" fill=\"currentColor\" opacity=\"0.6\">REDEFINE</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CASE DOES THE ARGUING</text></svg>"
-    },
-    {
-      "id": "PRS-12",
-      "name": "The Golden Circle",
-      "family": "Persuasion & Pitch",
-      "axiom": "Lead with why, then how, then what; the order is what makes it land.",
-      "trigger": "Employer branding and brand positioning, where comparable products compete and the difference is purpose.",
-      "steps": [
-        {
-          "text": "Why: the belief the work serves."
-        },
-        {
-          "text": "How: the distinctive way it is pursued."
-        },
-        {
-          "text": "What: the tangible thing that proves both."
-        }
-      ],
-      "antiPattern": {
-        "violation": "Starting with what, so the audience compares features before it knows what the features are for.",
-        "remediation": "Move the what last. It is the evidence for the claim, not the claim."
-      },
-      "origin": {
-        "authors": [
-          "Simon Sinek"
-        ],
-        "year": 2009,
-        "title": "Start with Why",
-        "publication": "Portfolio",
-        "authorsLabel": "Simon Sinek",
-        "titleStop": "."
-      },
-      "figure": {
-        "svgShape": "concentric-circles",
-        "parametricParams": {
-          "rings": 3,
-          "spread": 26,
-          "labels": [
-            "WHAT",
-            "HOW",
-            "WHY"
-          ],
-          "caption": "THE CENTRE IS THE CLAIM"
-        }
-      },
-      "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 400 400\" width=\"100%\" height=\"100%\" preserveAspectRatio=\"xMidYMid meet\" role=\"img\" aria-label=\"Parametric diagram of the card principle\"><circle cx=\"175\" cy=\"190\" r=\"86\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.85\" vector-effect=\"non-scaling-stroke\"/><text x=\"269\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">WHAT</text><circle cx=\"175\" cy=\"190\" r=\"60\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.73\" vector-effect=\"non-scaling-stroke\"/><text x=\"243\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">HOW</text><circle cx=\"175\" cy=\"190\" r=\"34\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" opacity=\"0.61\" vector-effect=\"non-scaling-stroke\"/><text x=\"217\" y=\"194\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"8\" font-weight=\"600\" text-anchor=\"start\" fill=\"currentColor\" opacity=\"0.6\">WHY</text><text x=\"200\" y=\"350\" font-family=\"ui-monospace, SFMono-Regular, Menlo, monospace\" font-size=\"9\" font-weight=\"600\" text-anchor=\"middle\" fill=\"currentColor\" opacity=\"0.72\">THE CENTRE IS THE CLAIM</text></svg>"
     }
   ]
 };

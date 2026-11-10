@@ -10,7 +10,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { join } from "node:path";
-import { ROOT, deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
+import { ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../packages/core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../packages/core/svg.js");
@@ -26,7 +26,8 @@ const decks = await loadDecks(deckArgs());
 const template = await readFile(join(ROOT, "packages", "web", "index.template.html"), "utf8");
 
 for (const deck of decks) {
-  const cards = await loadCards(deck);
+  // Same declared order as the printed pages, so the two cannot disagree.
+  const cards = orderCards(deck, await loadCards(deck));
   const bundled = cards.map((card) => ({
     ...withCitation(card, deck),
     svg: renderSvg(deckShape(deck).figure(card))

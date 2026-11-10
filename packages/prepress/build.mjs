@@ -15,7 +15,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { spawnSync } from "node:child_process";
 import { join, dirname } from "node:path";
-import { ROOT, deckArgs, deckShape, loadCards, loadDecks, resolveFromRoot, withCitation } from "../core/deck.mjs";
+import { ROOT, deckArgs, deckShape, loadCards, loadDecks, orderCards, resolveFromRoot, withCitation } from "../core/deck.mjs";
 
 const require = createRequire(import.meta.url);
 const { renderSvg } = require("../core/svg.js");
@@ -92,7 +92,8 @@ await mkdir(svgDir, { recursive: true });
 await mkdir(distDir, { recursive: true });
 
 for (const deck of decks) {
-  const cards = await loadCards(deck);
+  // The order the deck declares, not the order its ids happen to sort in.
+  const cards = orderCards(deck, await loadCards(deck));
   const manifest = [];
   for (const card of cards) {
     await writeFile(join(svgDir, `${card.id}.svg`), renderSvg(deckShape(deck).figure(card)));

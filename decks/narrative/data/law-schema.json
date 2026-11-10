@@ -47,7 +47,7 @@
     "steps": {
       "type": "array",
       "minItems": 2,
-      "maxItems": 6,
+      "maxItems": 8,
       "items": {
         "type": "object",
         "additionalProperties": false,
