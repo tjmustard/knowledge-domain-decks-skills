@@ -152,7 +152,7 @@ ticks sit in the bleed band at all four trim corners of every page; every text
 font is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 twenty-four versos and absent from the rectos. The worst text overrun past the
 safe box — the internal margin, 0.1875 in inside the trim line, so 0.3125 in
-from the paper edge — is 0.98 pt on page 25, caused by glyph side-bearings rather
+from the paper edge — is 0.97 pt on page 25, caused by glyph side-bearings rather
 than by text running long, and about 8 pt of paper remains before the trim. Every diagram is a form XObject with ink measured
 on its own card, so it is real vector geometry rather than a raster image or an
 empty placeholder.
