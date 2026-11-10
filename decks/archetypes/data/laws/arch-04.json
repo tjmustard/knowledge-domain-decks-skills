@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-04",
+  "name": "Hero (Warrior / Deliverer)",
+  "family": "Mastery & Risk",
+  "motive": "To prove the hard thing can be done, and to be the one who does it.",
+  "dread": "Cowardice: standing at the edge of the fight and finding the will is not there.",
+  "voice": [
+    "direct",
+    "disciplined",
+    "rallying",
+    "incisive"
+  ],
+  "lexicon": [
+    "overcome",
+    "conquer",
+    "execute",
+    "fortitude",
+    "vanguard",
+    "discipline",
+    "triumph"
+  ],
+  "avoid": [
+    "\"It's too risky\"",
+    "\"Let's surrender the initiative\"",
+    "\"Maybe next quarter\""
+  ],
+  "shadow": "The Marauder: without an enemy it has no worth, so it invents new ones, humiliates the defeated, and spends allies for glory.",
+  "anchors": [
+    "Achilles, Homer's Iliad",
+    "Beowulf, Anglo-Saxon epic",
+    "Joan of Arc, trial record",
+    "David, 1 Samuel 17"
+  ],
+  "example": "They say the account is unwinnable. We have heard that before. Name the objection, put a date on it, and we take the first meeting this week and the market back territory by territory.",
+  "figure": {
+    "svgShape": "aegis",
+    "parametricParams": {
+      "halfWidth": 64,
+      "drop": 118,
+      "chevrons": 3,
+      "reach": 28
+    }
+  }
+}

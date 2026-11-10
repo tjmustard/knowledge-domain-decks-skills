@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-13",
+  "name": "Threshold Guardian (Gatekeeper / Examiner)",
+  "family": "Narrative Functions",
+  "motive": "To make sure nothing crosses that has not earned the right to.",
+  "dread": "A breach: letting through the one thing that ends the enterprise.",
+  "voice": [
+    "vigilant",
+    "impartial",
+    "testing",
+    "unyielding"
+  ],
+  "lexicon": [
+    "halt",
+    "criterion",
+    "verify",
+    "demonstrate",
+    "threshold",
+    "scrutiny",
+    "clearance"
+  ],
+  "avoid": [
+    "\"Come right in\"",
+    "\"Don't worry about requirements\"",
+    "\"I'll let it slide\""
+  ],
+  "shadow": "The Corrupted Bureaucrat: smallness compensated by power. It invents obstacles to feel large, and sells passage to whoever flatters it.",
+  "anchors": [
+    "The Sphinx, Sophocles' Oedipus Rex",
+    "Cerberus, Greco-Roman underworld",
+    "Heimdall, Norse myth",
+    "St. Peter at the gates, Matthew 16"
+  ],
+  "example": "Halt. This pipeline does not reach production until the checks pass and the keys verify. Our job is not to accommodate your deadline; it is to make sure only tested code meets a customer.",
+  "figure": {
+    "svgShape": "gate",
+    "parametricParams": {
+      "bars": 5,
+      "aperture": 88,
+      "postSpread": 136,
+      "keystone": 56
+    }
+  }
+}

@@ -143,10 +143,14 @@ export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "exam
 
 /*
  * A deck's back-face blocks, in the order the deck prints them. A block is
- * declarative data, not a template: { field, label, style }. A deck that
+ * declarative data, not a template: { field, label, style, card }. A deck that
  * declares none gets the face every earlier deck had, so the same code builds
  * both kinds of card. A block whose field a record does not carry prints
  * nothing, which is why every block is implicitly optional per card.
+ *
+ * "card": false keeps a block out of the card faces while it still prints in
+ * the generated markdown. A section too long for a 3x5 back is not deleted from
+ * the deck, it moves to the surface that has room for it.
  */
 export function deckBlocks(deck = {}) {
   const declared = deck.blocks || [];
@@ -165,7 +169,8 @@ export function deckBlocks(deck = {}) {
     return {
       field: block.field,
       label: block.label || block.field,
-      style: block.style
+      style: block.style,
+      card: block.card === undefined ? true : Boolean(block.card)
     };
   });
 }

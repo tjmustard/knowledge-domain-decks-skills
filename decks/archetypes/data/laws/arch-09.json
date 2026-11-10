@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-09",
+  "name": "Jester (Fool / Trickster)",
+  "family": "Belonging & Connection",
+  "motive": "To say the true thing nobody solemn is allowed to say, and to keep the room alive.",
+  "dread": "Dead seriousness: a room so careful it can no longer hear anything.",
+  "voice": [
+    "irreverent",
+    "sharp-witted",
+    "playful",
+    "disarming"
+  ],
+  "lexicon": [
+    "absurd",
+    "parody",
+    "puncture",
+    "folly",
+    "mock",
+    "gambol",
+    "subversive"
+  ],
+  "avoid": [
+    "\"With all due solemnity\"",
+    "\"Maintain decorum\"",
+    "\"Strict protocol\""
+  ],
+  "shadow": "The Malicious Prankster: when the joke is the only defence left, it turns on people instead of pretence, and calls the wound honesty.",
+  "anchors": [
+    "The Fool, Shakespeare's King Lear",
+    "Puck, A Midsummer Night's Dream",
+    "Till Eulenspiegel, German folklore",
+    "Aesop, classical fable"
+  ],
+  "example": "Congratulations to the launch video: forty words of corporate weather and not one usable idea. Ours runs fast, does not claim to end hunger, and will not put your engineers to sleep. That is the offer.",
+  "figure": {
+    "svgShape": "bells",
+    "parametricParams": {
+      "bells": 3,
+      "curl": 170,
+      "swing": 32,
+      "length": 220
+    }
+  }
+}

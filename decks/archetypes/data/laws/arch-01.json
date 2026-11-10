@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-01",
+  "name": "Ruler (Sovereign)",
+  "family": "Order & Stability",
+  "motive": "To make one order hold: clear authority, fixed standards, and a structure that outlasts today's crisis.",
+  "dread": "Anarchy: a decision made twice, an authority nobody recognises, a system coming apart while everyone is still talking.",
+  "voice": [
+    "measured",
+    "sovereign",
+    "uncompromising",
+    "institutional"
+  ],
+  "lexicon": [
+    "mandate",
+    "protocol",
+    "standard",
+    "stewardship",
+    "jurisdiction",
+    "stability",
+    "custody"
+  ],
+  "avoid": [
+    "\"I think maybe\"",
+    "\"Whatever you feel like\"",
+    "\"Let's see what happens\""
+  ],
+  "shadow": "The Tyrant: fear of being replaced turns the same drive into surveillance, purges and micromanagement, and the structure is spent to keep one person in place.",
+  "anchors": [
+    "King Solomon, 1 Kings",
+    "Creon, Sophocles' Antigone",
+    "Prospero, Shakespeare's The Tempest",
+    "Marcus Aurelius, Meditations"
+  ],
+  "example": "The turbulence is real; drift is not permitted. We set the standard this quarter, publish it, and hold every team to it. What we build now is what the next decade stands on.",
+  "figure": {
+    "svgShape": "citadel",
+    "parametricParams": {
+      "tiers": 3,
+      "columns": 5,
+      "spread": 232,
+      "crenellations": 4
+    }
+  }
+}

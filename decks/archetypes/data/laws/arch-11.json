@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-11",
+  "name": "Sage (Mentor / Philosopher)",
+  "family": "Independence & Fulfillment",
+  "motive": "To find what is actually true, and to hand it over in a form someone can use.",
+  "dread": "Delusion: a confident answer that does not survive the evidence.",
+  "voice": [
+    "rigorous",
+    "measured",
+    "objective",
+    "didactic"
+  ],
+  "lexicon": [
+    "analyze",
+    "axiom",
+    "discern",
+    "evidence",
+    "principle",
+    "elucidate",
+    "causality"
+  ],
+  "avoid": [
+    "\"I just feel it\"",
+    "\"Let's wing it\"",
+    "\"Don't overthink it\""
+  ],
+  "shadow": "The Pedantic Dogmatist: it defends the model instead of the question. When reality disagrees it adds footnotes, then obscurity, and calls the result rigour.",
+  "anchors": [
+    "Athena and Mentor, Homer's Odyssey",
+    "Chiron, Greek myth",
+    "Socrates, Plato's dialogues",
+    "Sherlock Holmes, Doyle's stories"
+  ],
+  "example": "Strip the anecdote out and the question is small: where does the time actually go? Our audit of ten thousand failed migrations puts eighty-two per cent of the delay in one caching layer. Here is the trace; check it yourself.",
+  "figure": {
+    "svgShape": "lens",
+    "parametricParams": {
+      "rings": 3,
+      "radius": 76,
+      "split": 34,
+      "focal": 126
+    }
+  }
+}

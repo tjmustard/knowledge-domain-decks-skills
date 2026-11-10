@@ -1508,3 +1508,84 @@ committed bytes.
 A block whose field a record does not carry prints nothing, which is why the
 list is shared across records that carry different subsets of it; a block that
 is absent needs no per-card flag to say so.
+
+Two flags were added when the first deck to use blocks was built. A block may
+set `"card": false`, which keeps it out of the recto and verso, the web card
+and the card index while still printing it in the rules file and the skill
+resource. The archetype deck uses it for the on-voice example: with six blocks
+on the verso the example ran past the safe bottom, and it belongs with the
+rules anyway, where a writer reads it next to the voice notes. The type was not
+shrunk to make it fit.
+
+The second is strictness, and it lives in the deck rather than the engine. The
+engine still treats a missing block as absent, which is right for a list shared
+across records. A deck may instead make every block field required in its own
+schema; the archetype deck does, and `scripts/test/archetypes.test.mjs` deletes
+each declared field in turn and asserts validation fails and names the field.
+Empty arrays are treated as absent by the template as well, and the deck's
+schema also sets `minItems: 1` on each; either alone would print no heading,
+and both together mean a record cannot claim a block and leave it blank.
+
+## 43. The fifth family is named for what the source calls it
+
+The source presents sixteen cards: twelve in Mark and Pearson's four
+motivational quadrants of three, then four more under its own heading,
+"Campbellian Narrative Dynamic Cards". Its taxonomy matrix labels those four
+"Campbellian Dynamic", not a quadrant. This deck keeps that structure as five
+families - Order & Stability, Mastery & Risk, Belonging & Connection,
+Independence & Fulfillment, Narrative Functions - with three cards in each of
+the first four and four in the fifth. Calling the fifth "Narrative Functions"
+says in plain words what the source's "dynamic" means: these archetypes are
+turns inside a story (a gate, a call, an ambiguity, a companion), not stances a
+person or brand takes for a whole piece. The skill says so where it routes a
+writer to a family.
+
+The ids are `ARCH-01` to `ARCH-16`, not `ARC-`. The narrative deck already uses
+`ARC-01` to `ARC-12` for Arc & Plot, and two decks whose ids differ by one
+letter invite a wrong lookup. `scripts/test/archetypes.test.mjs` extracts the
+sixteen card headings from the source and checks each id, name and family
+against that extraction rather than against a retyped list.
+
+## 44. Every figure parameter changes the drawing
+
+The deck declares sixteen new shapes in `packages/core/svg.js`, one per card,
+taking the registry from 49 to 65. Each is a function of its declared
+parameters - citadel's tiers, columns, spread and crenellations; the compass's
+span, radius, rings and pivot; the aegis's half-width, drop, chevrons and
+reach, and so on for all sixteen - and every parameter is read by the drawing.
+The acceptance gate proves it by perturbing each parameter in turn (numbers to
+`2n+3`, strings gain a character, booleans flip) and comparing the rendered
+SVG; a parameter that changes nothing fails the gate for that card. No shape
+was declared without parameters, so no exception had to be recorded.
+
+Two tunings came out of looking at the printed pages rather than the gate. The
+hexagram's orbit moved from 150 to 132 because a dot crossed the caption, and
+the clarion's caption baseline is fixed at y 250 with the record's `steps` at
+34 because the caption crossed an arc. Neither needed a new knob: the shape's
+existing parameters carried the fix.
+
+## 45. An accent is measured against the paper, not chosen by eye
+
+The five family accents are printed as 6.5 pt and 7 pt text on white, so they
+must clear the WCAG normal-text threshold, and the shipped decks already sit
+well above it. The archetype deck's accents, with contrast against white
+computed by WCAG 2.x relative luminance:
+
+| Family | Accent | Ratio |
+|---|---|---|
+| Order & Stability | `#1E3A8A` | 10.36:1 |
+| Mastery & Risk | `#991B1B` | 8.31:1 |
+| Belonging & Connection | `#9F1239` | 8.02:1 |
+| Independence & Fulfillment | `#065F46` | 7.68:1 |
+| Narrative Functions | `#5B21B6` | 8.98:1 |
+
+The method: linearise each sRGB channel (`c/12.92` below 0.04045, otherwise
+`((c+0.055)/1.055)^2.4`), take `L = 0.2126R + 0.7152G + 0.0722B`, and compute
+`1.05 / (L + 0.05)`. All five pass AA (4.5:1) and AAA (7:1) for normal text.
+
+A first draft used the source's brighter shades (`#1D4ED8`, `#DC2626`,
+`#BE123C`, `#059669`, `#7C3AED`). I reported `#BE123C` as 7.6:1; that figure
+was never computed, it was an estimate written as a measurement. The computed
+value is 6.29:1, so it passed AA and failed AAA. Worse, `#059669` computes to
+3.77:1, below AA for the small text it colours. The whole set was darkened to
+the table above, and the correction stands here rather than being edited out.

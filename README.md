@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-2%20%C2%B7%20102%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-3%20%C2%B7%20118%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -19,6 +19,7 @@
 - [🃏 The Decks](#-the-decks)
 - [🧭 UX & Behavioral Design](#-ux--behavioral-design)
 - [📖 Narrative Architecture](#-narrative-architecture)
+- [🎭 Archetypal Architecture](#-archetypal-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -81,8 +82,9 @@ deck's copy, names, or trade dress is used.
 |---|---|---|---|---|---|---|
 | **UX & Behavioral Design** | 54 | 5 categories | `packages/prepress/dist/ux-laws.pdf` | `packages/web/decks/ux-laws/` | `rules/ux-rules.md` | `skills/ux-laws/` |
 | **Narrative Architecture** | 48 | 4 families | `packages/prepress/dist/narrative.pdf` | `packages/web/decks/narrative/` | `rules/narrative-rules.md` | `skills/narrative/` |
+| **Archetypal Architecture** | 16 | 5 families | `packages/prepress/dist/archetypes.pdf` | `packages/web/decks/archetypes/` | `rules/archetypes-rules.md` | `skills/archetypes/` |
 
-Both decks share one engine: `decks/<slug>/deck.json` declares the record shape,
+Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
 under `packages/` names a deck.
 
@@ -214,6 +216,42 @@ and [`skills/narrative/`](./skills/narrative/). The deck's records are in
 
 ---
 
+## 🎭 Archetypal Architecture
+
+**Archetypal Architecture** is a sixteen-card deck of voices. Where the other two
+decks describe a structure, this one describes a stance: what an archetype wants,
+what it dreads, how it speaks, what it must never say, and what it becomes when
+the dread wins. It is for writing in a consistent voice, and for noticing when a
+draft has drifted into a different one.
+
+The sixteen cards sit in five families:
+
+| Family | Cards | What it casts |
+|---|---|---|
+| Order & Stability | ARCH-01 to ARCH-03 | A standard already standing: rule, craft, and duty of care |
+| Mastery & Risk | ARCH-04 to ARCH-06 | Action on the world: the trial, the break, the transformation |
+| Belonging & Connection | ARCH-07 to ARCH-09 | Who is in the room: fitting in, being chosen, being forgiven |
+| Independence & Fulfillment | ARCH-10 to ARCH-12 | What the reader wants for themselves: hope, understanding, freedom |
+| Narrative Functions | ARCH-13 to ARCH-16 | Turns inside a story rather than a standing voice |
+
+The source files its last four cards inside its fourth quadrant; the deck splits
+them out as Narrative Functions so a gate, a call, an ambiguity and a companion
+read as story moves rather than as personas. [`DECISIONS.md`](./DECISIONS.md) §43
+records that split.
+
+Each card's verso prints its voice words, its lexicon, what it never says, its
+shadow, and its anchors; the on-voice example is `"card": false`, so it lives in
+the rules file and the skill rather than competing for the printed page. The deck
+declares `"printOrder": "family"`, so its PDF and viewer run family by family.
+
+Its ruleset and skill are
+[`rules/archetypes-rules.md`](./rules/archetypes-rules.md) and
+[`skills/archetypes/`](./skills/archetypes/). The deck's records are in
+`decks/archetypes/data/laws/` and its schema in
+`decks/archetypes/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -250,10 +288,11 @@ The output is one PDF per deck: `packages/prepress/dist/ux-laws.pdf` and
 with an install message rather than substituting another renderer.
 
 **What has been checked in the built PDFs.** With Typst 0.15.1, `npm run
-build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes, and the narrative
-deck as 96 pages and 758,238 bytes; two consecutive builds of one commit are
-byte-identical. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
-page of both decks. On the rendered UX pages, trim
+build:pdf` emits the UX deck as 108 pages and 1,069,546 bytes, the narrative
+deck as 96 pages and 758,238 bytes, and the archetype deck as 32 pages and
+293,925 bytes; two consecutive builds of one commit are byte-identical for all
+three. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+page of every deck. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of
 body text is 6.5 pt or larger, with the Source line read back at 6.5 pt on all
 fifty-four versos and absent from the rectos. The labels drawn inside the

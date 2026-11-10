@@ -101,10 +101,13 @@ function fieldsTyp(deck) {
   // `none`, and the template tests for that before looking a key up.
   const typ = (value) => (value ? JSON.stringify(value) : "none");
   const attribution = typ(shape.fields.attribution);
-  const blocks = shape.blocks.length
+  // Only the blocks the deck puts on the card face. A block declared with
+  // "card": false still prints in the rules and the skill; it has no room here.
+  const printed = shape.blocks.filter((block) => block.card !== false);
+  const blocks = printed.length
     ? [
         "#let blocks = (",
-        ...shape.blocks.map(
+        ...printed.map(
           (block) =>
             `  (field: ${JSON.stringify(block.field)}, ` +
             `label: ${JSON.stringify(block.label.toUpperCase())}, ` +

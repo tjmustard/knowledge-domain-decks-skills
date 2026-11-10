@@ -29,6 +29,11 @@
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
+// A declared field counts as absent when it prints nothing: an empty string, or
+// an empty list. Without the list case, a record whose block is [] would print
+// its label with nothing under it, which reads as a rendering fault.
+#let absent(value) = if value == "" { true } else if type(value) == array { value.len() == 0 } else { false }
+
 // The ampersand must not end a printed line, so bind it to the surname it
 // introduces. This is a typographic decision for this surface: the shared
 // authorsLabel stays plain text and carries no non-printing characters.
@@ -95,7 +100,7 @@
     #v(2pt)
     #text(size: 11pt, weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(10pt)
-    #if field-items != none and field-items in card [
+    #if field-items != none and field-items in card and not absent(card.at(field-items)) [
       #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#label-items]
       #v(3pt)
       #for (i, item) in card.at(field-items).enumerate() [
@@ -132,8 +137,8 @@
     // keeps every earlier card's page identical.
     #if blocks.len() > 0 [
       #for b in blocks [
-        #if b.field in card and card.at(b.field) != "" [
-          #v(6pt)
+        #if b.field in card and not absent(card.at(b.field)) [
+          #v(5pt)
           #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#b.label]
           #v(2pt)
           #if b.style == "traits" or b.style == "words" [

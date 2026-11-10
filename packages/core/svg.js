@@ -1480,6 +1480,447 @@
     }
   };
 
+  /* Coordinates inside a path are rounded to a tenth of a unit: the drawing is
+     the contract, not the floating-point noise a trig call leaves behind. */
+  function coord(value) {
+    return Math.round(value * 10) / 10;
+  }
+
+  /* --- Order: structures that hold ------------------------------------- */
+
+  /* A stepped citadel. Each tier is narrower than the one it stands on, so the
+     silhouette is a claim about inheritance as much as a building. */
+  shapes["citadel"] = function (p) {
+    var tiers = p.tiers || 3;
+    var columns = p.columns || 5;
+    var spread = p.spread || 150;
+    var merlons = p.crenellations || 4;
+    var out = [];
+    var baseY = 320;
+    var tierH = 46;
+    var topY = baseY;
+    for (var t = 0; t < tiers; t++) {
+      var shrink = 1 - Math.min(t * 0.18, 0.62);
+      var w = spread * shrink;
+      var y = baseY - (t + 1) * (tierH - 4);
+      out.push(rect(200 - w / 2, y, w, tierH - 8, { rx: 3, opacity: 0.3 + t * 0.07, width: 2 }));
+      topY = y;
+    }
+    var topW = spread * (1 - Math.min((tiers - 1) * 0.18, 0.62));
+    for (var c = 0; c < columns; c++) {
+      var cx = 200 - topW / 2 + (topW / (columns + 1)) * (c + 1);
+      out.push(line(cx, topY + 8, cx, topY + tierH - 16, 3, 0.85));
+    }
+    for (var m = 0; m < merlons; m++) {
+      var mx = 200 - topW / 2 + (topW / (merlons + 1)) * (m + 1);
+      out.push(rect(mx - 7, topY - 16, 14, 16, { opacity: 0.8, width: 1.5 }));
+    }
+    out.push(line(60, baseY + 12, 340, baseY + 12, 3, 0.85));
+    out.push(label(200, 360, "ONE ORDER HOLDS", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A drafting compass over its construction square: two legs, the arc they
+     swing, and the rings of an earlier attempt still faintly there. */
+  shapes["drafting-compass"] = function (p) {
+    var span = p.span || 34;
+    var radius = p.radius || 118;
+    var rings = p.rings || 3;
+    var pivot = p.pivot || 130;
+    var out = [];
+    var rad = (span * Math.PI) / 180;
+    var lx = 200 - Math.sin(rad) * radius;
+    var rx = 200 + Math.sin(rad) * radius;
+    var tipY = pivot + Math.cos(rad) * radius;
+    out.push(rect(200 - radius * 0.8, pivot, radius * 1.6, radius * 0.7, { rx: 2, opacity: 0.2, width: 1.5 }));
+    out.push(
+      '<path d="M ' + coord(lx) + " " + coord(tipY) + " A " + coord(radius) + " " + coord(radius) +
+      " 0 0 1 " + coord(rx) + " " + coord(tipY) + '" fill="none" stroke="currentColor" ' +
+      'stroke-width="2.5" opacity="0.55" ' + STROKE + "/>"
+    );
+    out.push(line(200, pivot, lx, tipY, 3.5, 0.9));
+    out.push(line(200, pivot, rx, tipY, 3.5, 0.9));
+    for (var i = 1; i <= rings; i++) {
+      out.push(circle(200, pivot, (radius / (rings + 1)) * i, { hollow: true, width: 1.5, opacity: 0.45 }));
+    }
+    out.push(circle(200, pivot, 7));
+    out.push(label(200, 360, "DRAWN BEFORE BUILT", { size: 9 }));
+    return out.join("");
+  };
+
+  /* Nested arms around a small protected mark. The aperture is the opening a
+     caregiver leaves on purpose: protection without a door is confinement. */
+  shapes["embrace"] = function (p) {
+    var arcs = p.arcs || 3;
+    var inset = p.inset || 24;
+    var aperture = p.aperture || 92;
+    var depth = p.depth || 190;
+    var out = [];
+    for (var i = 0; i < arcs; i++) {
+      var k = i * inset;
+      var left = 200 - aperture / 2 - k;
+      var right = 200 + aperture / 2 + k;
+      out.push(
+        '<path d="M ' + coord(left) + " 96 C " + coord(left - 40) + " 150 " + coord(160 - k) + " " +
+        coord(depth - 30) + " 200 " + coord(depth) + " C " + coord(240 + k) + " " + coord(depth - 30) + " " +
+        coord(right + 40) + " 150 " + coord(right) + ' 96" fill="none" stroke="currentColor" ' +
+        'stroke-width="' + Math.max(1, 3 - i * 0.4) + '" opacity="' + Math.max(0.25, 0.85 - i * 0.16) + '" ' +
+        STROKE + "/>"
+      );
+    }
+    out.push(circle(200, depth - 60, 12, { hollow: true, width: 2.5 }));
+    out.push(label(200, 360, "SHELTER WITH A DOOR", { size: 9 }));
+    return out.join("");
+  };
+
+  /* --- Mastery: the mark left on the world ----------------------------- */
+
+  /* A shield, a spear, and the chevrons of a charge. The point is that the
+     guard is behind the advance, not instead of it. */
+  shapes["aegis"] = function (p) {
+    var half = p.halfWidth || 62;
+    var drop = p.drop || 118;
+    var chevrons = p.chevrons || 3;
+    var reach = p.reach || 26;
+    var out = [];
+    var top = 104;
+    var shoulder = 188;
+    out.push(
+      '<path d="M ' + coord(200 - half) + " " + top + " Q 200 " + (top - 18) + " " + coord(200 + half) +
+      " " + top + " L " + coord(200 + half) + " " + shoulder + " Q 200 " + (shoulder + drop) + " " +
+      coord(200 - half) + " " + shoulder + ' Z" fill="none" stroke="currentColor" stroke-width="3" ' +
+      'opacity="0.85" ' + STROKE + "/>"
+    );
+    out.push(line(200, top - 34, 200, shoulder + drop - 6, 3, 0.85));
+    for (var i = 0; i < chevrons; i++) {
+      var y = shoulder - 18 - i * 24;
+      out.push(line(200 - reach, y, 200, y - 14, 3, 0.9));
+      out.push(line(200, y - 14, 200 + reach, y, 3, 0.9));
+    }
+    out.push(label(200, 360, "FIRST ACROSS, THEN BACK", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A ring cut into arcs, each gap a deliberate breach, each arc carrying its
+     own outward mark. What is broken is still a ring. */
+  shapes["severed-ring"] = function (p) {
+    var gaps = p.gaps || 3;
+    var gapAngle = p.gapAngle || 18;
+    var radius = p.radius || 108;
+    var offset = p.offset || 0;
+    var out = [];
+    var segment = 360 / gaps;
+    for (var i = 0; i < gaps; i++) {
+      var start = offset + i * segment + gapAngle / 2;
+      var end = offset + (i + 1) * segment - gapAngle / 2;
+      if (end - start < 2) continue;
+      var a1 = (start * Math.PI) / 180;
+      var a2 = (end * Math.PI) / 180;
+      out.push(
+        '<path d="M ' + coord(200 + Math.cos(a1) * radius) + " " + coord(200 + Math.sin(a1) * radius) +
+        " A " + coord(radius) + " " + coord(radius) + " 0 0 1 " +
+        coord(200 + Math.cos(a2) * radius) + " " + coord(200 + Math.sin(a2) * radius) +
+        '" fill="none" stroke="currentColor" stroke-width="3.5" opacity="0.85" ' + STROKE + "/>"
+      );
+      var mid = (((start + end) / 2) * Math.PI) / 180;
+      out.push(line(
+        200 + Math.cos(mid) * (radius - 16), 200 + Math.sin(mid) * (radius - 16),
+        200 + Math.cos(mid) * (radius + 14), 200 + Math.sin(mid) * (radius + 14), 3, 0.8
+      ));
+    }
+    out.push(circle(200, 200, 12, { hollow: true, width: 2 }));
+    out.push(label(200, 360, "THE RING IS THE ARGUMENT", { size: 9 }));
+    return out.join("");
+  };
+
+  /* Two triangles sharing a centre, one turned against the other, and the
+     orbit of marks that watch them. Turn one and the same points point
+     elsewhere. */
+  shapes["hexagram"] = function (p) {
+    var size = p.size || 110;
+    var spin = p.spin || 30;
+    var dots = p.dots || 6;
+    var orbit = p.orbit || 148;
+    var out = [];
+    function triangle(rotation, opacity) {
+      var pts = [];
+      for (var v = 0; v < 3; v++) {
+        var a = ((rotation + v * 120 - 90) * Math.PI) / 180;
+        pts.push(coord(200 + Math.cos(a) * size) + "," + coord(200 + Math.sin(a) * size));
+      }
+      return (
+        '<polygon points="' + pts.join(" ") + '" fill="none" stroke="currentColor" ' +
+        'stroke-width="3" opacity="' + opacity + '" ' + STROKE + "/>"
+      );
+    }
+    out.push(triangle(0, 0.85));
+    out.push(triangle(spin, 0.65));
+    for (var d = 0; d < dots; d++) {
+      var da = ((d * 360) / dots + spin) * (Math.PI / 180);
+      out.push(circle(200 + Math.cos(da) * orbit, 200 + Math.sin(da) * orbit, 6, { opacity: 0.8 }));
+    }
+    out.push(circle(200, 200, 9, { hollow: true, width: 2 }));
+    out.push(label(200, 360, "TURN IT AND THE MARK MOVES", { size: 9 }));
+    return out.join("");
+  };
+
+  /* --- Belonging: the links that make a group -------------------------- */
+
+  /* A row of rings that only holds because each overlaps the next. */
+  shapes["interlock"] = function (p) {
+    var rings = p.rings || 4;
+    var radius = p.radius || 58;
+    var overlap = p.overlap || 26;
+    var y = p.y || 195;
+    var out = [];
+    var step = radius * 2 - overlap;
+    var startX = 200 - (step * (rings - 1)) / 2;
+    for (var i = 0; i < rings; i++) {
+      out.push(circle(startX + i * step, y, radius, { hollow: true, width: 3, opacity: 0.85 }));
+    }
+    out.push(label(200, 360, "NO RING CLOSES ON ITS OWN", { size: 9 }));
+    return out.join("");
+  };
+
+  /* Two circles and the lens between them: the shared ground, drawn again and
+     again inside it, is the only part neither circle owns. */
+  shapes["vesica"] = function (p) {
+    var radius = p.radius || 96;
+    var separation = p.separation || 92;
+    var petals = p.petals || 3;
+    var cy = p.cy || 200;
+    var out = [];
+    var dx = separation / 2;
+    out.push(circle(200 - dx, cy, radius, { hollow: true, width: 3, opacity: 0.85 }));
+    out.push(circle(200 + dx, cy, radius, { hollow: true, width: 3, opacity: 0.85 }));
+    var half = Math.sqrt(Math.max(1, radius * radius - dx * dx));
+    for (var i = 1; i <= petals; i++) {
+      var k = (i / (petals + 1)) * half;
+      out.push(
+        '<path d="M 200 ' + coord(cy - k) + " Q " + coord(200 + dx * 0.8) + " " + coord(cy) + " 200 " +
+        coord(cy + k) + " Q " + coord(200 - dx * 0.8) + " " + coord(cy) + " 200 " + coord(cy - k) +
+        '" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6" ' + STROKE + "/>"
+      );
+    }
+    out.push(label(200, 360, "THE SHARED GROUND IS THE POINT", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A fool's staff that bends, with the bells hanging off the bend. */
+  shapes["bells"] = function (p) {
+    var bells = p.bells || 3;
+    var curl = p.curl || 90;
+    var swing = p.swing || 34;
+    var length = p.length || 240;
+    var out = [];
+    var x0 = 200 - length / 2;
+    var x1 = 200 + length / 2;
+    out.push(
+      '<path d="M ' + coord(x0) + " 300 Q 200 " + coord(300 - curl) + " " + coord(x1) +
+      ' 108" fill="none" stroke="currentColor" stroke-width="3" opacity="0.85" ' + STROKE + "/>"
+    );
+    for (var i = 0; i < bells; i++) {
+      var t = (i + 0.5) / bells;
+      var mt = 1 - t;
+      var bx = mt * mt * x0 + 2 * mt * t * 200 + t * t * x1;
+      var by = mt * mt * 300 + 2 * mt * t * (300 - curl) + t * t * 108;
+      out.push(line(bx, by, bx, by + swing, 1.5, 0.6));
+      out.push(circle(bx, by + swing + 6, 7, { hollow: true, width: 2 }));
+    }
+    out.push(label(200, 360, "THE STAFF BENDS; THE JOKE LANDS", { size: 9 }));
+    return out.join("");
+  };
+
+  /* --- Independence: the outward journey ------------------------------- */
+
+  /* A ring of petals around an open core. The light is offered, not argued. */
+  shapes["sun-petals"] = function (p) {
+    var petals = p.petals || 8;
+    var length = p.length || 128;
+    var core = p.core || 30;
+    var tilt = p.tilt || 0;
+    var out = [];
+    for (var i = 0; i < petals; i++) {
+      var a = ((i * 360) / petals + tilt) * (Math.PI / 180);
+      var ux = Math.cos(a);
+      var uy = Math.sin(a);
+      var tipX = 200 + ux * length;
+      var tipY = 200 + uy * length;
+      var baseX = 200 + ux * core;
+      var baseY = 200 + uy * core;
+      var nx = -uy * 16;
+      var ny = ux * 16;
+      out.push(
+        '<path d="M ' + coord(baseX) + " " + coord(baseY) + " Q " + coord(baseX + nx) + " " +
+        coord(baseY + ny) + " " + coord(tipX) + " " + coord(tipY) + " Q " + coord(baseX - nx) + " " +
+        coord(baseY - ny) + " " + coord(baseX) + " " + coord(baseY) +
+        ' Z" fill="currentColor" opacity="0.55" ' + STROKE + "/>"
+      );
+    }
+    out.push(circle(200, 200, core, { hollow: true, width: 3 }));
+    out.push(label(200, 360, "WARMTH WITHOUT ARGUMENT", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A lens between two rings and a ray that bends to a measured point: the
+     reading is only as good as the instrument that made it. */
+  shapes["lens"] = function (p) {
+    var rings = p.rings || 3;
+    var radius = p.radius || 74;
+    var split = p.split || 32;
+    var focal = p.focal || 128;
+    var out = [];
+    for (var i = 1; i <= rings; i++) {
+      out.push(circle(200, 196, (radius / rings) * i, { hollow: true, width: 1.5, opacity: 0.45 }));
+    }
+    out.push(
+      '<path d="M 200 112 Q 258 196 200 280 Q 142 196 200 112 Z" fill="none" ' +
+      'stroke="currentColor" stroke-width="3" opacity="0.85" ' + STROKE + "/>"
+    );
+    out.push(line(40, 196, 200, 196, 2.5, 0.8));
+    var a = (split * Math.PI) / 180;
+    var fx = 200 + Math.cos(a) * focal;
+    var fy = 196 + Math.sin(a) * focal;
+    out.push(line(200, 196, fx, fy, 2.5, 0.8));
+    out.push(circle(fx, fy, 7));
+    out.push(label(200, 360, "MEASURE, THEN SAY WHY", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A compass rose with the needle off the cardinal axes, over the line where
+     the known map ends. */
+  shapes["compass-needle"] = function (p) {
+    var bearing = p.bearing || 32;
+    var needle = p.needle || 104;
+    var horizon = p.horizon || 268;
+    var ticks = p.ticks || 8;
+    var out = [];
+    out.push(circle(200, 186, 118, { hollow: true, width: 2.5, opacity: 0.8 }));
+    for (var i = 0; i < ticks; i++) {
+      var a = ((i * 360) / ticks) * (Math.PI / 180);
+      out.push(line(
+        200 + Math.cos(a) * 104, 186 + Math.sin(a) * 104,
+        200 + Math.cos(a) * 118, 186 + Math.sin(a) * 118, 2, 0.6
+      ));
+    }
+    var b = ((bearing - 90) * Math.PI) / 180;
+    var tipX = 200 + Math.cos(b) * needle;
+    var tipY = 186 + Math.sin(b) * needle;
+    out.push(line(200, 186, tipX, tipY, 3.5, 0.95));
+    out.push(circle(tipX, tipY, 8));
+    out.push(line(40, horizon, 360, horizon, 2.5, 0.6, "6 5"));
+    out.push(label(200, 360, "THE EDGE OF THE KNOWN MAP", { size: 9 }));
+    return out.join("");
+  };
+
+  /* --- Narrative functions: the roles a scene runs on ------------------ */
+
+  /* A gate: two posts, bars that stop short of the middle, and the keystone
+     over the gap. The passage is the point of the blockage. */
+  shapes["gate"] = function (p) {
+    var bars = p.bars || 5;
+    var aperture = p.aperture || 84;
+    var spread = p.postSpread || 132;
+    var keystone = p.keystone || 54;
+    var out = [];
+    var left = 200 - spread / 2;
+    var right = 200 + spread / 2;
+    out.push(rect(left - 10, 96, 10, 212, { opacity: 0.85, width: 2 }));
+    out.push(rect(right, 96, 10, 212, { opacity: 0.85, width: 2 }));
+    for (var i = 0; i < bars; i++) {
+      var y = 120 + i * (168 / bars);
+      out.push(line(left, y, 200 - aperture / 2, y, 2.5, 0.75));
+      out.push(line(200 + aperture / 2, y, right, y, 2.5, 0.75));
+    }
+    out.push(
+      '<path d="M ' + coord(200 - keystone) + " 96 L " + coord(200 + keystone) + " 96 L " +
+      coord(200 + keystone * 0.6) + " 66 L " + coord(200 - keystone * 0.6) +
+      ' 66 Z" fill="none" stroke="currentColor" stroke-width="3" opacity="0.9" ' + STROKE + "/>"
+    );
+    out.push(label(200, 360, "NOT EVERYONE CROSSES", { size: 9 }));
+    return out.join("");
+  };
+
+  /* A call from one point outward: the arcs arrive before anything has been
+     explained. */
+  shapes["clarion"] = function (p) {
+    var waves = p.waves || 3;
+    var spread = p.spread || 54;
+    var steps = p.steps || 44;
+    var origin = p.origin || 120;
+    var out = [];
+    var ox = 200 - origin;
+    var oy = 250;
+    for (var i = 1; i <= waves; i++) {
+      var r = steps * i;
+      var a1 = (-spread * Math.PI) / 180;
+      var a2 = (spread * Math.PI) / 180;
+      out.push(
+        '<path d="M ' + coord(ox + Math.cos(a1) * r) + " " + coord(oy + Math.sin(a1) * r) + " A " +
+        coord(r) + " " + coord(r) + " 0 0 1 " + coord(ox + Math.cos(a2) * r) + " " +
+        coord(oy + Math.sin(a2) * r) + '" fill="none" stroke="currentColor" stroke-width="' +
+        Math.max(1.5, 3 - i * 0.3) + '" opacity="' + Math.max(0.3, 0.9 - i * 0.12) + '" ' + STROKE + "/>"
+      );
+    }
+    out.push(circle(ox, oy, 9));
+    out.push(label(200, 360, "THE CALL COMES BEFORE THE REASON", { size: 9 }));
+    return out.join("");
+  };
+
+  /* The same mask drawn more than once, each copy turned and displaced, with
+     the eyes held in one place: which face answered is the question. */
+  shapes["mask"] = function (p) {
+    var layers = p.layers || 3;
+    var drift = p.drift || 14;
+    var rotation = p.rotation || 8;
+    var eye = p.eye || 30;
+    var out = [];
+    for (var i = layers - 1; i >= 0; i--) {
+      var cx = 200 + i * drift;
+      var cy = 190 + i * drift * 0.6;
+      var turn = (rotation * i * Math.PI) / 180;
+      out.push(
+        '<rect x="' + coord(cx - 78) + '" y="' + coord(cy - 96) + '" width="156" height="192" rx="34" ' +
+        'fill="none" stroke="currentColor" stroke-width="' + Math.max(1, 3 - i * 0.4) + '" opacity="' +
+        Math.max(0.2, 0.85 - i * 0.16) + '" transform="rotate(' + coord((turn * 180) / Math.PI) + " " +
+        coord(cx) + " " + coord(cy) + ')" ' + STROKE + "/>"
+      );
+    }
+    out.push(rect(200 - eye - 26, 170, 24, 12, { rx: 6, opacity: 0.9, width: 2 }));
+    out.push(rect(200 + eye, 170, 24, 12, { rx: 6, opacity: 0.9, width: 2 }));
+    out.push(label(200, 360, "WHICH FACE ANSWERED", { size: 9 }));
+    return out.join("");
+  };
+
+  /* Two forms standing in the same direction with the load shared between
+     them: the braces are what makes it a pair rather than a crowd. */
+  shapes["flank"] = function (p) {
+    var braces = p.braces || 3;
+    var gap = p.gap || 96;
+    var height = p.height || 208;
+    var lean = p.lean || 0;
+    var out = [];
+    var left = 200 - gap / 2;
+    var right = 200 + gap / 2;
+    var top = 300 - height;
+    out.push(
+      '<path d="M ' + coord(left - 22 + lean) + " 300 L " + coord(left - 22 - lean) + " " + coord(top) +
+      " L " + coord(left + 6 - lean) + " " + coord(top) + " L " + coord(left + 6 + lean) +
+      ' 300 Z" fill="none" stroke="currentColor" stroke-width="3" opacity="0.85" ' + STROKE + "/>"
+    );
+    out.push(
+      '<path d="M ' + coord(right - 6 + lean) + " 300 L " + coord(right - 6 - lean) + " " + coord(top) +
+      " L " + coord(right + 22 - lean) + " " + coord(top) + " L " + coord(right + 22 + lean) +
+      ' 300 Z" fill="none" stroke="currentColor" stroke-width="3" opacity="0.85" ' + STROKE + "/>"
+    );
+    for (var i = 0; i < braces; i++) {
+      var y = braces === 1 ? top + height / 2 : top + 20 + (i * (height - 40)) / (braces - 1);
+      out.push(line(left + 6, y, right - 6, y, 2.5, 0.7));
+    }
+    out.push(label(200, 360, "SAME DIRECTION, SHARED LOAD", { size: 9 }));
+    return out.join("");
+  };
+
   /* Direction claims live on the shape, beside the drawing that must honour
      them. The acceptance gate holds a shape to the claim it makes here; a
      shape with no entry claims nothing. SVG y grows downward, so

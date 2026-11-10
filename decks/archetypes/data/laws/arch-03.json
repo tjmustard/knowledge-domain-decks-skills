@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-03",
+  "name": "Caregiver (Nurturer / Steward)",
+  "family": "Order & Stability",
+  "motive": "To protect what is vulnerable and leave people safer than it found them.",
+  "dread": "Neglect: harm that could have been prevented, and a person left to carry it alone.",
+  "voice": [
+    "empathetic",
+    "grounded",
+    "protective",
+    "resolute"
+  ],
+  "lexicon": [
+    "shield",
+    "sustain",
+    "nourish",
+    "sanctuary",
+    "restore",
+    "dignity",
+    "relief"
+  ],
+  "avoid": [
+    "\"Sink or swim\"",
+    "\"That's not my problem\"",
+    "\"Suck it up\""
+  ],
+  "shadow": "The Devouring Martyr: it needs to be needed. Care becomes control, guilt becomes the currency, and the person it protects is kept unable to leave.",
+  "anchors": [
+    "Demeter, Greek myth",
+    "Marmee March, Alcott's Little Women",
+    "The Good Samaritan, Luke 10",
+    "Florence Nightingale, historical record"
+  ],
+  "example": "Behind that failed integration is a team that has not slept properly in a week. Fix the pipeline, then ask what they need to trust it again. Speed matters less than whether they can rely on us tomorrow.",
+  "figure": {
+    "svgShape": "embrace",
+    "parametricParams": {
+      "arcs": 3,
+      "inset": 26,
+      "aperture": 96,
+      "depth": 150
+    }
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "decks/archetypes/data/law-schema.json",
+  "title": "ArchetypeCard",
+  "description": "One archetype card. Every field the deck's blocks print is required: a card missing its shadow must fail validation rather than print a blank section.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "family",
+    "motive",
+    "dread",
+    "voice",
+    "lexicon",
+    "avoid",
+    "shadow",
+    "anchors",
+    "example",
+    "figure"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^ARCH-(0[1-9]|1[0-6])$",
+      "description": "ARCH-nn, never ARC-, which means Arc & Plot in the narrative deck."
+    },
+    "name": {
+      "type": "string",
+      "maxLength": 52,
+      "description": "The archetype and its aliases, e.g. Ruler (Sovereign)."
+    },
+    "family": {
+      "type": "string",
+      "enum": [
+        "Order & Stability",
+        "Mastery & Risk",
+        "Belonging & Connection",
+        "Independence & Fulfillment",
+        "Narrative Functions"
+      ]
+    },
+    "motive": {
+      "type": "string",
+      "maxLength": 140,
+      "description": "What the archetype is driven to do. The italic line on the card face."
+    },
+    "dread": {
+      "type": "string",
+      "maxLength": 160,
+      "description": "What it fears. The reason the shadow exists; the second line on the face."
+    },
+    "voice": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 20
+      },
+      "description": "Adjectives describing how it speaks."
+    },
+    "lexicon": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 3,
+        "maxLength": 18
+      },
+      "description": "The words it reaches for."
+    },
+    "avoid": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 6,
+        "maxLength": 44
+      },
+      "description": "Phrasing that breaks the voice, quoted."
+    },
+    "shadow": {
+      "type": "string",
+      "maxLength": 240,
+      "description": "The failure state and what drives it."
+    },
+    "anchors": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 64
+      },
+      "description": "Myth, literature, scripture or history, with the work named."
+    },
+    "example": {
+      "type": "string",
+      "maxLength": 260,
+      "description": "One short paragraph in the archetype's voice."
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "type": "string",
+          "enum": [
+            "citadel",
+            "drafting-compass",
+            "embrace",
+            "aegis",
+            "severed-ring",
+            "hexagram",
+            "interlock",
+            "vesica",
+            "bells",
+            "sun-petals",
+            "lens",
+            "compass-needle",
+            "gate",
+            "clarion",
+            "mask",
+            "flank"
+          ]
+        },
+        "parametricParams": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "id": "archetypes",
+  "slug": "archetypes",
+  "name": "Archetypal Architecture",
+  "description": "Sixteen archetypes for casting a voice — what each wants, what it dreads, how it speaks, and what it becomes when it fails.",
+  "categories": [
+    "Order & Stability",
+    "Mastery & Risk",
+    "Belonging & Connection",
+    "Independence & Fulfillment",
+    "Narrative Functions"
+  ],
+  "accents": {
+    "Order & Stability": "#1E3A8A",
+    "Mastery & Risk": "#991B1B",
+    "Belonging & Connection": "#9F1239",
+    "Independence & Fulfillment": "#065F46",
+    "Narrative Functions": "#5B21B6"
+  },
+  "fields": {
+    "group": "family",
+    "items": null,
+    "attribution": null,
+    "figure": "figure",
+    "prompt": null,
+    "headline": "motive",
+    "context": "dread",
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Motive",
+    "context": "Dread"
+  },
+  "blocks": [
+    {
+      "field": "voice",
+      "label": "Voice",
+      "style": "traits"
+    },
+    {
+      "field": "lexicon",
+      "label": "Lexicon",
+      "style": "words"
+    },
+    {
+      "field": "avoid",
+      "label": "Never say",
+      "style": "list"
+    },
+    {
+      "field": "shadow",
+      "label": "Shadow",
+      "style": "prose"
+    },
+    {
+      "field": "anchors",
+      "label": "Anchors",
+      "style": "list"
+    },
+    {
+      "field": "example",
+      "label": "On voice",
+      "style": "example",
+      "card": false
+    }
+  ],
+  "printOrder": "family",
+  "outputs": {
+    "rules": "rules/archetypes-rules.md",
+    "skill": "skills/archetypes",
+    "pdf": "packages/prepress/dist/archetypes.pdf"
+  },
+  "rules": {
+    "title": "Archetypal Architecture Rules",
+    "intro": "The archetypes stand on three public traditions: Jung's analytical psychology, the monomyth Campbell described and Vogler put into dramatic practice, and the motivational quadrants of Mark and Pearson. The card text is written for this deck; the names and the myths behind them are far older.\nEach card states what the archetype wants, what it dreads, how it speaks, what it must never say, and the shape of its failure."
+  },
+  "skill": {
+    "name": "archetypes",
+    "description": "Cast and hold an archetype's voice in a piece of writing or a product persona — {cards} archetypes in five families. Use when choosing whose voice a text speaks in, when a persona drifts between drafts, or when a character, brand or agent needs one consistent way of talking. Start with the index, then read the single resource file for the family you are casting from.",
+    "title": "Archetypal Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per family.\nRead only the family you cast from, and load another only if the piece moves.\n\nCasting starts from the situation the piece is in, not from its subject.\nOrder & Stability (Ruler, Creator, Caregiver) fits a piece about a standard\nalready standing, a craft, or a duty of care. Mastery & Risk (Hero, Outlaw,\nMagician) fits action on the world: a trial, a break, a transformation.\nBelonging & Connection (Everyperson, Lover, Jester) fits who is in the room:\nfitting in, being chosen, being forgiven. Independence & Fulfillment\n(Innocent, Sage, Explorer) fits what the reader believes or wants for\nthemselves. Narrative Functions (Guardian, Herald, Shapeshifter, Ally) are\nturns inside a story rather than a standing voice: cast one for a gate, a\ncall, an ambiguity or a companion in the piece itself.\n\nWhen two cards fit, cast the one whose dread the piece is actually about.\nEvery motive is broad enough to fit a dozen of the sixteen; the dread is what\nseparates them.\n\nKeeping the voice: the voice list is the register, the lexicon is the\ndiction, and the never-say list is the tell. A draft that keeps the words but\nloses the register is a costume.",
+    "commonRules": [
+      "Cast by the dread. If you cannot name what the voice fears losing, you\nhave picked a mood, not an archetype.",
+      "One archetype carries a piece. A second voice in the same text reads as\ndrift, not range.",
+      "The voice list outranks the lexicon. The right words in the wrong\ntemperature are pastiche.",
+      "Use three of the lexicon's words before reaching outside it.",
+      "The shadow is the same motive under fear. When a draft turns cruel,\ndismissive or grandiose, name which dread is speaking.",
+      "The forbidden phrasing is load-bearing. One \"I think maybe\" undoes a\nsovereign paragraph."
+    ],
+    "footer": "Every card names the traditions it stands on; the prose in this deck is its own."
+  },
+  "web": {
+    "global": "ARCHETYPES_DECK",
+    "accentsGlobal": "ARCHETYPES_DECK_ACCENTS",
+    "title": "Archetypal Architecture — Knowledge Domain Decks",
+    "heading": "Archetypal Architecture",
+    "lede": "{cards} archetypes: what each wants, what it dreads, how it speaks, and what it becomes when it fails. Tap a card to read its voice.",
+    "source": "Generated from <code>decks/archetypes/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the voice"
+  }
+}

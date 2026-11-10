@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Archetypal Architecture — Knowledge Domain Decks</title>
+  <link rel="stylesheet" href="../../styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="eyebrow">Knowledge Domain Decks</p>
+    <h1>Archetypal Architecture</h1>
+    <p class="lede" id="lede">{cards} archetypes: what each wants, what it dreads, how it speaks, and what it becomes when it fails. Tap a card to read its voice.</p>
+  </header>
+
+  <nav class="filters" id="filters" aria-label="Filter by category"></nav>
+
+  <main>
+    <div class="deck" id="deck"></div>
+    <p class="empty" id="empty" hidden>No cards in this category.</p>
+  </main>
+
+  <footer class="site-footer">
+    <p>Generated from <code>decks/archetypes/data/laws/*.json</code>. Code MIT · data CC0-1.0.</p>
+  </footer>
+
+  <script>window.DECK_GLOBAL = "ARCHETYPES_DECK"; window.DECK_ACCENTS = "ARCHETYPES_DECK_ACCENTS"; window.DECK_FIELDS = {"group":"family","items":null,"attribution":null,"prompt":null,"labelPrompt":"Prompt","labelItems":"Operational checklist","itemStyle":"checklist","backHint":"Tap or press Enter for the voice","blocks":[{"field":"voice","label":"Voice","style":"traits","card":true},{"field":"lexicon","label":"Lexicon","style":"words","card":true},{"field":"avoid","label":"Never say","style":"list","card":true},{"field":"shadow","label":"Shadow","style":"prose","card":true},{"field":"anchors","label":"Anchors","style":"list","card":true}],"headline":"motive","context":"dread","labelContext":"Dread"};</script>
+  <script src="deck-data.js"></script>
+  <script src="accents.js"></script>
+  <script src="../../app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-07",
+  "name": "Everyperson (Orphan / Realist / Companion)",
+  "family": "Belonging & Connection",
+  "motive": "To belong to the ordinary crowd, and to keep it honest about what is real.",
+  "dread": "Exclusion: being shut out of the room where the decision is made, or pretending to be someone else to stay in it.",
+  "voice": [
+    "plainspoken",
+    "unpretentious",
+    "grounded",
+    "wry"
+  ],
+  "lexicon": [
+    "solidarity",
+    "decent",
+    "practical",
+    "commonsense",
+    "fair",
+    "grit",
+    "straightforward"
+  ],
+  "avoid": [
+    "\"Synergistic paradigms\"",
+    "\"Exclusive access\"",
+    "\"Deconstructed value\""
+  ],
+  "shadow": "The Cynical Victim: resentment of anyone who stands out becomes a rule. It levels every distinction, teaches helplessness, and calls the result fairness.",
+  "anchors": [
+    "Sancho Panza, Cervantes' Don Quixote",
+    "Dr. Watson, Doyle's Sherlock Holmes",
+    "Christian, Bunyan's The Pilgrim's Progress",
+    "The chorus, Greek tragedy"
+  ],
+  "example": "Skip the whitepaper. Tell us what the platform does, what it costs per seat, and how long a normal person needs before they can finish a day's work without a certificate. That is the whole pitch.",
+  "figure": {
+    "svgShape": "interlock",
+    "parametricParams": {
+      "rings": 4,
+      "radius": 56,
+      "overlap": 24,
+      "y": 196
+    }
+  }
+}

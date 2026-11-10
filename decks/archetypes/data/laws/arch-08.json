@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-08",
+  "name": "Lover (Partner / Esthete)",
+  "family": "Belonging & Connection",
+  "motive": "To make one thing beautiful, and to be met by the person it is for.",
+  "dread": "Rejection: giving real feeling to something that never turns toward you.",
+  "voice": [
+    "intimate",
+    "sensory",
+    "devoted",
+    "luminous"
+  ],
+  "lexicon": [
+    "intimacy",
+    "exquisite",
+    "devotion",
+    "resonance",
+    "elegance",
+    "cherish",
+    "grace"
+  ],
+  "avoid": [
+    "\"Dispassionate assessment\"",
+    "\"Transactional utility\"",
+    "\"Cold analysis\""
+  ],
+  "shadow": "The Siren: fear of inner emptiness turns devotion into a demand. It stages drama, tests loyalty, and punishes any attention that goes elsewhere.",
+  "anchors": [
+    "Aphrodite, Classical myth",
+    "Cyrano de Bergerac, Rostand",
+    "Dante, La Vita Nuova",
+    "Tristan and Iseult, medieval romance"
+  ],
+  "example": "Every curve here was chosen for how it feels at the moment you reach for it. This is not decoration; it is attention made visible. Use it for a while and you will notice what it refuses to rush.",
+  "figure": {
+    "svgShape": "vesica",
+    "parametricParams": {
+      "radius": 96,
+      "separation": 88,
+      "petals": 3,
+      "cy": 198
+    }
+  }
+}

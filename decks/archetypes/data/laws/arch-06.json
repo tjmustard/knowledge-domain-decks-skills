@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-06",
+  "name": "Magician (Transformer / Alchemist)",
+  "family": "Mastery & Risk",
+  "motive": "To change the terms of a problem until the limit it assumed is no longer there.",
+  "dread": "Delusion: mistaking an illusion of control for the real thing.",
+  "voice": [
+    "transformative",
+    "charismatic",
+    "esoteric",
+    "expansive"
+  ],
+  "lexicon": [
+    "transmute",
+    "catalyst",
+    "resonance",
+    "metamorphosis",
+    "illuminate",
+    "alchemy",
+    "awaken"
+  ],
+  "avoid": [
+    "\"Linear growth\"",
+    "\"Standard procedure\"",
+    "\"Take small, safe steps\""
+  ],
+  "shadow": "The Charlatan: when the trick matters more than the change, it sells jargon, hides the mechanism, and keeps the audience dependent.",
+  "anchors": [
+    "Hermes Trismegistus, the Hermetica",
+    "Merlin, Arthurian cycle",
+    "Faust, Goethe",
+    "Circe, Homer's Odyssey"
+  ],
+  "example": "You are treating latency as a law of the hardware. It is a consequence of the model underneath. Move the pipeline to the other side of the queue and the constraint stops existing: we are not optimising it, we are deleting it.",
+  "figure": {
+    "svgShape": "hexagram",
+    "parametricParams": {
+      "size": 104,
+      "spin": 32,
+      "dots": 6,
+      "orbit": 132
+    }
+  }
+}

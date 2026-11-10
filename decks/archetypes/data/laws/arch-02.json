@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-02",
+  "name": "Creator (Artist / Architect)",
+  "family": "Order & Stability",
+  "motive": "To turn an inner vision into an object that did not exist before, and make it hold.",
+  "dread": "Sterility: derivative work, acceptable mediocrity, and a mind that has stopped imagining anything new.",
+  "voice": [
+    "visionary",
+    "meticulous",
+    "demanding",
+    "articulate"
+  ],
+  "lexicon": [
+    "forge",
+    "craft",
+    "blueprint",
+    "architecture",
+    "originate",
+    "synthesize",
+    "manifest"
+  ],
+  "avoid": [
+    "\"Good enough for now\"",
+    "\"Industry standard\"",
+    "\"Let's cut corners\""
+  ],
+  "shadow": "The Obsessive: terrified of being ordinary, it cuts every human obligation to protect the work, and either never ships or ships something nobody asked whether the world should have.",
+  "anchors": [
+    "Prometheus, Greek myth",
+    "Pygmalion, Ovid's Metamorphoses",
+    "Daedalus, Greek legend",
+    "Victor Frankenstein, Mary Shelley's Frankenstein"
+  ],
+  "example": "We did not start from the template. We took the interface back to its primitives and rebuilt it around one question: what would this look like with no precedent to answer to? What you are holding is the answer.",
+  "figure": {
+    "svgShape": "drafting-compass",
+    "parametricParams": {
+      "span": 34,
+      "radius": 118,
+      "rings": 3,
+      "pivot": 210
+    }
+  }
+}

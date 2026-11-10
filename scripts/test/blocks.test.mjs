@@ -113,7 +113,9 @@ async function makeBlockDeck(dir) {
       { field: "neverSay", label: "Never say", style: "list" },
       { field: "shadow", label: "Shadow", style: "prose" },
       { field: "anchors", label: "Anchors", style: "words" },
-      { field: "example", label: "Example", style: "example" }
+      // The example is for the writer, not the card face: the rules and the
+      // skill carry it, the printed back and the viewer do not.
+      { field: "example", label: "Example", style: "example", card: false }
     ],
     printOrder: "family",
     outputs: {
@@ -167,7 +169,7 @@ test("blocks must be declared with a field and a known style", () => {
   // A block with no label falls back to its field name rather than printing
   // an empty heading.
   assert.deepEqual(deckShape({ blocks: [{ field: "voice", style: "traits" }] }).blocks, [
-    { field: "voice", label: "voice", style: "traits" }
+    { field: "voice", label: "voice", style: "traits", card: true }
   ]);
 });
 
@@ -193,6 +195,8 @@ test("a block deck builds through validate, rules, web and print", async (t) => 
     assert.match(rulesText, /\*\*Anchors\.\*\* a letter home · a shop counter/);
     assert.match(rulesText, /\*\*Lexicon\.\*\*\n- say it once\n- short sentence/);
     assert.match(rulesText, /\*\*Shadow\.\*\* A voice that performs warmth without listening\./);
+    // A block marked off the card face still reaches the writer's rules.
+    assert.match(rulesText, /\*\*Example\.\*\* Say the thing\. Then stop\./);
     // No checklist or anti-pattern heading appears for a deck that declares none.
     assert.doesNotMatch(rulesText, /Anti-pattern/);
     assert.doesNotMatch(rulesText, /Axiom/);
@@ -204,13 +208,16 @@ test("a block deck builds through validate, rules, web and print", async (t) => 
     const resource = await readFile(join(dir, "out", "skills", "blocks", "resources", "invented-family.md"), "utf8");
     assert.match(resource, /- \*\*Voice:\*\* plain · warm · unhurried/);
     assert.match(resource, /- \*\*Lexicon:\*\*\n  - say it once\n  - short sentence/);
+    assert.match(resource, /- \*\*Example:\*\* Say the thing\. Then stop\./);
 
     const web = runNode("scripts/generate-web-data.mjs", args);
     assert.equal(web.status, 0, web.output);
     const page = await readFile(join(dir, "out", "web", "index.html"), "utf8");
     // The page's field map carries the block declarations and the two front
     // lines by the names this deck gave them.
-    assert.match(page, /"blocks":\[\{"field":"voiceTraits","label":"Voice","style":"traits"\}/);
+    assert.match(page, /"blocks":\[\{"field":"voiceTraits","label":"Voice","style":"traits","card":true\}/);
+    // The card-face map omits the block the deck kept off the card.
+    assert.doesNotMatch(page, /"field":"example"/);
     assert.match(page, /"headline":"maxim"/);
     assert.match(page, /"context":"invitation"/);
     assert.match(page, /"labelContext":"Reach for it"/);

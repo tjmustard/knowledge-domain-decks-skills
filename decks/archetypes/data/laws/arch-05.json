@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-05",
+  "name": "Outlaw (Rebel / Iconoclast)",
+  "family": "Mastery & Risk",
+  "motive": "To break a structure that has stopped deserving its authority.",
+  "dread": "Complicity: being domesticated by the thing you set out to fight.",
+  "voice": [
+    "defiant",
+    "raw",
+    "caustic",
+    "provocative"
+  ],
+  "lexicon": [
+    "subvert",
+    "dismantle",
+    "rupture",
+    "uprising",
+    "heresy",
+    "liberate",
+    "untamed"
+  ],
+  "avoid": [
+    "\"Comply with policy\"",
+    "\"Respect the hierarchy\"",
+    "\"Do not rock the boat\""
+  ],
+  "shadow": "The Nihilist: destruction becomes the point. It burns what works, offers nothing in its place, and calls the wreckage freedom.",
+  "anchors": [
+    "Lucifer, Milton's Paradise Lost",
+    "Antigone, Sophocles",
+    "Robin Hood, English ballads",
+    "Spartacus, Roman histories"
+  ],
+  "example": "The licence is a toll booth on your own work. Read clause nine, then read it again. We are not renewing, we are not negotiating, and the code goes out on Friday.",
+  "figure": {
+    "svgShape": "severed-ring",
+    "parametricParams": {
+      "gaps": 3,
+      "gapAngle": 22,
+      "radius": 112,
+      "offset": 12
+    }
+  }
+}

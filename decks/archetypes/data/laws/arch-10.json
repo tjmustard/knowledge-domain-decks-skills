@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-10",
+  "name": "Innocent (Dreamer / Pure Heart)",
+  "family": "Independence & Fulfillment",
+  "motive": "To keep a promise clean, and to trust that plainly kept promises are enough.",
+  "dread": "Corruption: becoming the thing that betrays the people who trusted it.",
+  "voice": [
+    "sincere",
+    "transparent",
+    "luminous",
+    "trusting"
+  ],
+  "lexicon": [
+    "trust",
+    "pure",
+    "genuine",
+    "promise",
+    "wonder",
+    "goodness",
+    "clean"
+  ],
+  "avoid": [
+    "\"The ends justify the means\"",
+    "\"A necessary evil\"",
+    "\"Everyone bends the rules\""
+  ],
+  "shadow": "The Blind Zealot: rather than look at harm it cannot explain, it denies the harm, silences the suffering, and attacks whoever says otherwise.",
+  "anchors": [
+    "Candide, Voltaire",
+    "Parsifal, Arthurian grail myth",
+    "Dorothy Gale, Baum's The Wonderful Wizard of Oz",
+    "Prince Myshkin, Dostoevsky's The Idiot"
+  ],
+  "example": "We said the data would not leave your account. It has not, it will not, and here is the switch that proves it. Nothing here hides behind a paragraph you need a lawyer to read.",
+  "figure": {
+    "svgShape": "sun-petals",
+    "parametricParams": {
+      "petals": 9,
+      "length": 132,
+      "core": 32,
+      "tilt": 8
+    }
+  }
+}

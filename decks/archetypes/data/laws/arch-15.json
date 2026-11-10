@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-15",
+  "name": "Shapeshifter (Chameleon / Catalyst of Doubt)",
+  "family": "Narrative Functions",
+  "motive": "To stay free of any role that would fix it in place.",
+  "dread": "Capture: being known completely, and so being owned.",
+  "voice": [
+    "enigmatic",
+    "fluid",
+    "suggestive",
+    "mercurial"
+  ],
+  "lexicon": [
+    "perhaps",
+    "illusion",
+    "mirror",
+    "mask",
+    "paradox",
+    "reframe",
+    "elusive"
+  ],
+  "avoid": [
+    "\"I promise unconditionally\"",
+    "\"It is black and white\"",
+    "\"Here is the simple truth\""
+  ],
+  "shadow": "The Treacherous Betrayer: intimacy is a tactic. It builds trust in order to spend it at the moment of greatest exposure.",
+  "anchors": [
+    "Proteus, Greek myth",
+    "Morgan le Fay, Arthurian legend",
+    "The Cheshire Cat, Carroll's Alice",
+    "The Fox, world folklore"
+  ],
+  "example": "Their revenue fell, so you have written them off. But last month they bought the most serious lab in the field. Dying dinosaur, or predator changing shape? The honest answer is that you cannot tell yet.",
+  "figure": {
+    "svgShape": "mask",
+    "parametricParams": {
+      "layers": 3,
+      "drift": 16,
+      "rotation": 9,
+      "eye": 30
+    }
+  }
+}

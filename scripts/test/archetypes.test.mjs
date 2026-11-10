@@ -1,0 +1,98 @@
+/*
+ * The archetype deck's own contract, beyond the generic engine checks.
+ *
+ * The engine treats a block whose field a record lacks as absent, which is
+ * right for a general engine and wrong for this deck: a card missing its shadow
+ * must fail validation rather than print a blank section. The deck's schema
+ * enforces that, and this test proves the enforcement is live.
+ */
+import test from "node:test";
+import assert from "node:assert/strict";
+import { spawnSync } from "node:child_process";
+import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
+import { createRequire } from "node:module";
+import { loadCards, loadDeck } from "../../packages/core/deck.mjs";
+
+const require = createRequire(import.meta.url);
+const { renderSvg } = require("../../packages/core/svg.js");
+
+const ROOT = join(import.meta.dirname, "..", "..");
+const FIRST = join(ROOT, "decks", "archetypes", "data", "laws", "arch-01.json");
+const SOURCE = join(ROOT, "SupportingInformation", "03 - Archetypes", "Archetype Card Deck Framework.md");
+
+const validate = (file) => {
+  const result = spawnSync(process.execPath, ["scripts/validate.mjs", "--deck", "archetypes", file], {
+    cwd: ROOT,
+    encoding: "utf8"
+  });
+  return { status: result.status, output: `${result.stdout || ""}\n${result.stderr || ""}`.trim() };
+};
+
+test("a record missing a declared block fails validation", async () => {
+  const dir = await mkdtemp(join(tmpdir(), "kdd-archetype-missing-"));
+  try {
+    const record = JSON.parse(await readFile(FIRST, "utf8"));
+    const complete = join(dir, "complete.json");
+    await writeFile(complete, JSON.stringify(record, null, 2) + "\n");
+    const control = validate(complete);
+    assert.equal(control.status, 0, control.output);
+
+    // One declared block at a time: each must be required, not merely known.
+    for (const field of ["voice", "lexicon", "avoid", "shadow", "anchors", "example"]) {
+      const broken = { ...record };
+      delete broken[field];
+      const file = join(dir, `missing-${field}.json`);
+      await writeFile(file, JSON.stringify(broken, null, 2) + "\n");
+      const result = validate(file);
+      assert.equal(result.status, 1, `${field} is not required by the schema:\n${result.output}`);
+      assert.match(result.output, new RegExp(field), `the failure does not name ${field}:\n${result.output}`);
+    }
+  } finally {
+    await rm(dir, { recursive: true, force: true });
+  }
+});
+
+// The families the sixteen were placed in. Cards 13-16 are the source's
+// Campbellian dynamics, which it files inside its fourth quadrant; the deck
+// splits them out and DECISIONS 43 records why.
+const FAMILY_BY_CARD = (number) => {
+  if (number <= 3) return "Order & Stability";
+  if (number <= 6) return "Mastery & Risk";
+  if (number <= 9) return "Belonging & Connection";
+  if (number <= 12) return "Independence & Fulfillment";
+  return "Narrative Functions";
+};
+
+test("the sixteen records match the source's card headings, by extraction", async () => {
+  const text = await readFile(SOURCE, "utf8");
+  const headings = [...text.matchAll(/^### \*\*Card (\d{2}): The (.+?)\*\*$/gm)].map((match) => ({
+    number: Number(match[1]),
+    name: match[2]
+  }));
+  assert.equal(headings.length, 16, `the source yielded ${headings.length} card headings, not 16`);
+
+  const deck = await loadDeck("archetypes");
+  const cards = await loadCards(deck);
+  assert.equal(cards.length, 16);
+  // Ids in order, names against the extraction rather than against a retyped
+  // list: a card that drifts from its source heading fails here.
+  headings.forEach((heading, index) => {
+    const card = cards[index];
+    assert.equal(card.id, `ARCH-${String(heading.number).padStart(2, "0")}`);
+    assert.equal(card.name, heading.name);
+    assert.equal(card.family, FAMILY_BY_CARD(heading.number), `${card.id} is in the wrong family`);
+  });
+
+  // No two cards may share a drawing. Distinct shapes are the easy half; the
+  // rendered SVG is what the reader sees, so that is what is compared.
+  const drawings = new Map();
+  for (const card of cards) {
+    assert.ok(card.figure && card.figure.svgShape, `${card.id} has no figure`);
+    const svg = renderSvg(card.figure);
+    assert.match(svg, /viewBox="0 0 400 400"/);
+    assert.ok(!drawings.has(svg), `${card.id} draws the same picture as ${drawings.get(svg)}`);
+    drawings.set(svg, card.id);
+  }
+});

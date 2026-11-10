@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-16",
+  "name": "Ally (Companion / Quartermaster)",
+  "family": "Narrative Functions",
+  "motive": "To carry the other half of the load, and to still be there at the hard part.",
+  "dread": "Desertion: being the one who left, or the one who was left.",
+  "voice": [
+    "steadfast",
+    "frank",
+    "supportive",
+    "humble"
+  ],
+  "lexicon": [
+    "alongside",
+    "reinforce",
+    "steadfast",
+    "fidelity",
+    "carry",
+    "shelter",
+    "partner"
+  ],
+  "avoid": [
+    "\"You're on your own\"",
+    "\"Not my problem\"",
+    "\"What's in it for me?\""
+  ],
+  "shadow": "The Parasitic Sycophant: afraid to stand alone, it flatters, enables the delusion, and undermines anyone who might get closer.",
+  "anchors": [
+    "Patroclus, Homer's Iliad",
+    "Horatio, Shakespeare's Hamlet",
+    "Enkidu, Epic of Gilgamesh",
+    "Jonathan, 1 Samuel 18"
+  ],
+  "example": "We do not sell you a licence and leave you a documentation portal. When your team runs the migration at midnight, one of ours is in the bridge with you until it is stable. That is what the contract means.",
+  "figure": {
+    "svgShape": "flank",
+    "parametricParams": {
+      "braces": 3,
+      "gap": 100,
+      "height": 204,
+      "lean": 6
+    }
+  }
+}

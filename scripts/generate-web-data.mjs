@@ -51,7 +51,10 @@ for (const deck of decks) {
     backHint: deck.web.backHint || "Tap or press Enter to see the checklist"
   };
   if (shape.blocks.length > 0) {
-    fields.blocks = shape.blocks;
+    // The same face as the printed card: a block the deck keeps off the card
+    // ("card": false) is not on the viewer's card either. It stays in the
+    // rules and the skill, which have room for it.
+    fields.blocks = shape.blocks.filter((block) => block.card !== false);
     fields.headline = shape.fields.headline;
     fields.context = shape.fields.context;
     fields.labelContext = shape.labelContext;

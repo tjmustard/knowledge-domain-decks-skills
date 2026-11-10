@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-12",
+  "name": "Explorer (Seeker / Pioneer)",
+  "family": "Independence & Fulfillment",
+  "motive": "To find out what is past the edge of the map, and to go there first.",
+  "dread": "Confinement: a life spent inside someone else's lane.",
+  "voice": [
+    "restless",
+    "adventurous",
+    "unconstrained",
+    "pioneering"
+  ],
+  "lexicon": [
+    "frontier",
+    "uncharted",
+    "pioneer",
+    "horizon",
+    "traverse",
+    "discovery",
+    "untethered"
+  ],
+  "avoid": [
+    "\"Stay in your lane\"",
+    "\"Better safe than sorry\"",
+    "\"Follow the established path\""
+  ],
+  "shadow": "The Drifter: it mistakes leaving for growing. Every project, team and place is abandoned the moment it asks for real commitment.",
+  "anchors": [
+    "Odysseus, Homer's Odyssey",
+    "Gilgamesh, Mesopotamian epic",
+    "Gulliver, Swift's Gulliver's Travels",
+    "Alexander von Humboldt, travel journals"
+  ],
+  "example": "The walled garden is comfortable because it is small. We built this for the people who already left it: bring your own data, run it anywhere, and take it with you when you go.",
+  "figure": {
+    "svgShape": "compass-needle",
+    "parametricParams": {
+      "bearing": 38,
+      "needle": 102,
+      "horizon": 274,
+      "ticks": 8
+    }
+  }
+}

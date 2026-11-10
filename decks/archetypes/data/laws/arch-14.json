@@ -1,0 +1,44 @@
+{
+  "id": "ARCH-14",
+  "name": "Herald (Catalyst / Harbinger)",
+  "family": "Narrative Functions",
+  "motive": "To make the change impossible to ignore.",
+  "dread": "Apathy: the warning arrives and the room shrugs.",
+  "voice": [
+    "urgent",
+    "clarion",
+    "momentous",
+    "disruptive"
+  ],
+  "lexicon": [
+    "summons",
+    "catalyst",
+    "reckoning",
+    "arrival",
+    "awakening",
+    "pivot",
+    "irreversible"
+  ],
+  "avoid": [
+    "\"Business as usual\"",
+    "\"We can address this later\"",
+    "\"Nothing to worry about\""
+  ],
+  "shadow": "The Harbinger of Panic: addicted to the alarm, it amplifies rumour, spreads fear past the evidence, and leaves the room less able to act.",
+  "anchors": [
+    "Hermes and Iris, Greek myth",
+    "The Ghost, Shakespeare's Hamlet",
+    "The White Rabbit, Carroll's Alice",
+    "John the Baptist, Mark 1"
+  ],
+  "example": "The licensing era ended last quarter, not next year. Your buyers already behave as if it did. Deny the shift and lose the account, or rebuild the offer this month while you still have the choice.",
+  "figure": {
+    "svgShape": "clarion",
+    "parametricParams": {
+      "waves": 4,
+      "spread": 50,
+      "steps": 34,
+      "origin": 128
+    }
+  }
+}
