@@ -22,6 +22,65 @@ export function webDir(deck) {
 const escapeHtml = (text) =>
   String(text).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
+// The same citation line the card's own verso prints, built here because the
+// index is static HTML. packages/web/app.js holds the viewer's copy of this
+// rule; check-web compares every index cell to the rendered card, so the two
+// cannot drift silently.
+const citationText = (origin) => {
+  if (!origin) return "";
+  const year =
+    origin.year === undefined || origin.year === null
+      ? ""
+      : ` (${origin.year < 0 ? `${-origin.year} BCE` : origin.year})`;
+  const by = origin.authorsLabel ? origin.authorsLabel + year : year === "" ? "" : year.trim();
+  const parts = [];
+  if (by) parts.push(`${by}.`);
+  if (origin.title) {
+    const work = `${origin.title}${origin.titleStop}`;
+    parts.push(origin.publication ? `${work} ${origin.publication}.` : work);
+  } else if (origin.publication) {
+    parts.push(`${origin.publication}.`);
+  }
+  return parts.join(" ");
+};
+
+// The complete card list as a table, so a reader can scan every id, name,
+// family and source without opening fifty-four flip cards. It is generated
+// from the same records and the same order as the grid; a deck that carries no
+// attribution prints no Source column rather than a column of blanks.
+const cardIndexMarkup = (deck, shape, cards) => {
+  const groupKey = shape.fields.group;
+  const groupWord = groupKey === "family" ? "Family" : "Category";
+  const attribution = shape.fields.attribution;
+  const head =
+    `        <tr><th scope="col">ID</th><th scope="col">Card</th>` +
+    `<th scope="col">${groupWord}</th>` +
+    (attribution ? `<th scope="col">Source</th>` : "") +
+    `</tr>`;
+  const rows = cards.map((card) => {
+    const source = attribution ? citationText(card[attribution]) : "";
+    return (
+      `        <tr>` +
+      `<td class="index-id"><a href="#card-${escapeHtml(card.id)}">${escapeHtml(card.id)}</a></td>` +
+      `<td class="index-name">${escapeHtml(card.name)}</td>` +
+      `<td class="index-group">${escapeHtml(card[groupKey])}</td>` +
+      (attribution ? `<td class="index-source">${escapeHtml(source)}</td>` : "") +
+      `</tr>`
+    );
+  });
+  return (
+    `    <section class="card-index" aria-labelledby="card-index-title">\n` +
+    `      <h2 id="card-index-title">All ${cards.length} cards</h2>\n` +
+    `      <div class="card-index-scroll">\n` +
+    `      <table>\n` +
+    `        <thead>\n${head}\n        </thead>\n` +
+    `        <tbody>\n${rows.join("\n")}\n        </tbody>\n` +
+    `      </table>\n` +
+    `      </div>\n` +
+    `    </section>`
+  );
+};
+
 const args = deckArgs();
 const decks = await loadDecks(args);
 const template = await readFile(join(ROOT, "packages", "web", "index.template.html"), "utf8");
@@ -87,6 +146,7 @@ for (const deck of decks) {
     .replaceAll("{{source}}", deck.web.source)
     .replaceAll("{{global}}", deck.web.global)
     .replaceAll("{{accentsGlobal}}", deck.web.accentsGlobal)
+    .replaceAll("{{cardIndex}}", () => cardIndexMarkup(deck, shape, bundled))
     .replaceAll("{{fields}}", JSON.stringify(fields));
   await writeFile(join(dir, "index.html"), page);
 

@@ -135,6 +135,7 @@
     var sourceBlock = source ? '<p class="source">' + esc(source) + "</p>" : "";
     return (
       '<article class="card" tabindex="0" role="button" aria-pressed="false" ' +
+      'id="card-' + esc(card.id) + '" ' +
       'aria-label="' + esc(card.name) + " — activate to flip" + '" ' +
       'data-category="' + esc(groupOf(card)) + '" style="--accent:' + accent + '">' +
         '<div class="card-inner">' +

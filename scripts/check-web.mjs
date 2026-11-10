@@ -19,6 +19,7 @@ import {
   loadCards,
   loadDeck,
   loadDecks,
+  orderCards,
   deckShape,
   resolveFromRoot
 } from "../packages/core/deck.mjs";
@@ -334,6 +335,34 @@ try {
       };
     })()`);
 
+    const index = await evaluate(`(() => {
+      const table = document.querySelector('.card-index table');
+      if (!table) return { present: false };
+      const rows = [...table.querySelectorAll('tbody tr')].map((tr) => {
+        const cells = [...tr.children];
+        const id = cells[0].textContent.trim();
+        const article = document.getElementById('card-' + id);
+        const link = tr.querySelector('a');
+        return {
+          id,
+          name: cells[1].textContent.trim(),
+          group: cells[2].textContent.trim(),
+          cells: cells.length,
+          source: cells.length > 3 ? cells[3].textContent.trim() : null,
+          target: link ? link.getAttribute('href') : null,
+          article: Boolean(article),
+          renderedSource: article
+            ? ((article.querySelector('.source') || {}).textContent || '').trim()
+            : null
+        };
+      });
+      return {
+        present: true,
+        heading: ((document.getElementById('card-index-title') || {}).textContent || '').trim(),
+        rows
+      };
+    })()`);
+
     if (layout.clientWidth !== 390) failures.push(`viewport is ${layout.clientWidth}px, expected 390`);
     if (layout.scrollWidth > layout.clientWidth) failures.push(`horizontal overflow: scrollWidth ${layout.scrollWidth}`);
     if (layout.cards !== cards.length) failures.push(`${layout.cards} cards rendered, expected ${cards.length}`);
@@ -345,6 +374,36 @@ try {
       );
     }
 
+    // The full card index: one row per card, in the deck's declared order, with
+    // the record's own id, name and group, and a source cell that says exactly
+    // what the flipped card says. The last comparison is what keeps the
+    // generator's citation copy and the viewer's from drifting apart.
+    const ordered = orderCards(deck, cards);
+    if (!index.present) {
+      failures.push("no card index table on the page");
+    } else {
+      if (index.heading !== `All ${cards.length} cards`) {
+        failures.push(`card index heading is "${index.heading}", expected "All ${cards.length} cards"`);
+      }
+      if (index.rows.length !== ordered.length) {
+        failures.push(`card index has ${index.rows.length} rows, expected ${ordered.length}`);
+      }
+      const columns = shape.fields.attribution ? 4 : 3;
+      ordered.forEach((card, position) => {
+        const row = index.rows[position];
+        if (!row) return;
+        if (row.id !== card.id) failures.push(`index row ${position + 1} is ${row.id}, expected ${card.id}`);
+        if (row.name !== card.name) failures.push(`${card.id} index name is "${row.name}"`);
+        if (row.group !== shape.group(card)) failures.push(`${card.id} index group is "${row.group}"`);
+        if (row.cells !== columns) failures.push(`${card.id} index row has ${row.cells} cells, expected ${columns}`);
+        if (row.target !== `#card-${card.id}`) failures.push(`${card.id} index link goes to ${row.target}`);
+        if (!row.article) failures.push(`${card.id} index link points at no card`);
+        if (columns === 4 && row.renderedSource !== null && row.source !== row.renderedSource) {
+          failures.push(`${card.id} index source differs from the card's own: "${row.source}" vs "${row.renderedSource}"`);
+        }
+      });
+    }
+
     if (failures.length > 0) {
       console.error("FAIL web smoke at 390 px:");
       failures.forEach((failure) => console.error(`  - ${failure}`));
@@ -353,7 +412,7 @@ try {
       console.log(
         `OK: ${deckSlug}: 390 px viewport, no horizontal overflow, ${layout.cards} cards ` +
           `(${layout.cardWidth} px wide), flip exposes verso, ` +
-          `${filterCategory} filter shows ${expectedInCategory}.`
+          `${filterCategory} filter shows ${expectedInCategory}, index lists all ${index.rows ? index.rows.length : 0}.`
       );
     }
   }

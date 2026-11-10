@@ -233,6 +233,61 @@ h1 {
   color: var(--muted);
 }
 
+/* The complete card list, below the grid. It scrolls inside its own box so a
+   long Source column never widens the page at phone width. */
+.card-index {
+  max-width: 1080px;
+  margin: 32px auto 0;
+}
+
+.card-index h2 {
+  font-size: 1.1rem;
+  margin: 0 0 12px;
+}
+
+.card-index-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.card-index table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  text-align: left;
+}
+
+.card-index th,
+.card-index td {
+  padding: 8px 12px;
+  border-top: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.card-index thead th {
+  border-top: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card-index tbody tr:first-child td { border-top: 1px solid var(--line); }
+
+.card-index a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-index a:hover { text-decoration: underline; }
+
+.card-index .index-name { font-weight: 600; }
+
+.card-index .index-source { color: var(--body); }
+
+
 /* The repository index: one entry per deck, readable at 390 px. */
 .deck-list {
   list-style: none;
