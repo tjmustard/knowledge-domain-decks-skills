@@ -43,6 +43,11 @@ test("the header names the command that reproduces DECISIONS 30", async () => {
   const text = await readFile(join(ROOT, "scripts", "measure-labels.mjs"), "utf8");
   const header = text.slice(0, text.indexOf("*/"));
   assert.match(header, /node scripts\/measure-labels\.mjs/);
-  assert.match(header, /505 labels/);
+  // Every count the header prints, not only the one that was visible when the
+  // test was written: 437 cards scanned, 136 of them labelled, 505 labels in
+  // four decks. A test for "505 labels" alone is how the other counts drifted.
+  for (const count of [/\b437\b/, /\b136\b/, /505 labels/, /four decks/]) {
+    assert.match(header, count);
+  }
   assert.match(header, /14\.0938 units/);
 });

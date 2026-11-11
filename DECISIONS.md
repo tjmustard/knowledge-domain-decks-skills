@@ -773,12 +773,13 @@ Confirmation Bias.
 Every diagram label in all ten decks was measured at card size by
 `node scripts/measure-labels.mjs`, which lays the generated SVG in a headless
 Chrome page that loads `packages/prepress/fonts` through `@font-face` and reads
-each `<text>` element's `getBBox` in the 400-unit viewBox. The 437 cards carry
-505 labels, every bounding box lies inside its box, and the smallest clearance
-anywhere is DEC-11's "EARLY: CONSIDERED" at
-14.09 units (4.57 pt) from the left edge. Distances are reported in points at the card's own
-scale, 0.324 pt per unit, which is the figure's 1.8 in. The tightest gaps to the
-marks are EVEN SPLIT at 1.73 pt (5.33 units) below the reference line,
+each `<text>` element's `getBBox` in the 400-unit viewBox. 437 cards were
+scanned; 136 of them carry 505 labels, in four decks. Every bounding box lies
+inside its box, and the smallest clearance anywhere is DEC-11's "EARLY:
+CONSIDERED" at 14.09 units (4.57 pt) from the left edge. Distances are reported
+in points at the card's own scale, 0.324 pt per unit, which is the figure's
+1.8 in. The tightest gaps to the marks are EVEN SPLIT at 1.73 pt (5.33 units)
+below the reference line,
 CONFIRMING and DISCONFIRMING at 2.59 pt (8.0 units) from their bars, DISTINCT at
 3.46 pt (10.67 units) below the odd mark, and END at 2.16 pt (6.67 units) below
 its dot. Run on this tree, the script's own strictest contact is ARCH-14's

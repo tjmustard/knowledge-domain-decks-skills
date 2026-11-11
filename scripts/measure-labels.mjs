@@ -2,12 +2,13 @@
 /*
  * Measure every diagram label in every deck, in the face the print build uses.
  *
- * This exists because DECISIONS 30 quotes label bounds - 505 labels across 437
- * cards, the smallest clearance 14.09 units, captions at 46 and 47 characters -
- * and those numbers were, until now, a report of one run of a harness that was
- * never committed. They are load-bearing: after the font pin they are the only
- * guard on label width, because check-fit scans ink inside the safe columns and
- * cannot see a label overrunning a side edge.
+ * This exists because DECISIONS 30 quotes label bounds - 437 cards scanned, 136
+ * of them carrying 505 labels in four decks, the smallest clearance 14.09
+ * units, captions at 46 and 47 characters - and those numbers were, until now,
+ * a report of one run of a harness that was never committed. They are
+ * load-bearing: after the font pin they are the only guard on label width,
+ * because check-fit scans ink inside the safe columns and cannot see a label
+ * overrunning a side edge.
  *
  * To reproduce §30's figures on a machine with Chrome installed, run exactly:
  *
