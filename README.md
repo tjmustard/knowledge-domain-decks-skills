@@ -718,7 +718,7 @@ the source gives none, and a date this deck invented could not be checked later.
 The other thirty-three print "The source names no originator."
 
 Its 88-page print PDF is 515,008 bytes (sha256 `42d72907…`), byte-identical on
-rebuild, and its forty-four SVGs hash to `af6f0aa0…` in `cards.json` order. All
+rebuild, and its forty-four SVGs hash to `d9cf8b3d…` in `cards.json` order. All
 44 cards fit inside the safe inset with zero OVER and zero TIGHT, the worst
 recto at row 440 and the worst verso at 433. Its ruleset and skill are
 [`rules/productivity-rules.md`](./rules/productivity-rules.md) and

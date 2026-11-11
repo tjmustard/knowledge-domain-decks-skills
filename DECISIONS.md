@@ -2267,10 +2267,15 @@ recorded PDF digests are sha256; this seat reported md5 values and read the
 mismatch as an environment divergence, then built an epoch theory and a font
 theory on top of it. Both were wrong: one file, two algorithms. The guard now
 names its algorithm - the record is sha256, a comparison re-runs sha256, md5
-appears nowhere - and the cross-machine check hashes the deck's SVG bundle in
-`cards.json` order, because `packages/prepress/build/svg/` is never cleared and
-a glob over it depends on which deck was built last. Same machine, two builds,
-identical bytes stays the hard check.
+appears nowhere - and the cross-machine check hashes the deck's SVG bundle by a
+stated join, in `cards.json` order: hash each card's SVG on its own, concatenate
+the hex digests as text, and take one sha256 over that string. The join is
+declared because the obvious alternative - sha256 over the concatenated file
+bytes - is exact too and gives a different token for the same files; deck eleven
+was first reported under it. The order is `cards.json` rather than a glob because
+`packages/prepress/build/svg/` is never cleared and a glob over it depends on
+which deck was built last. Same machine, two builds, identical bytes stays the
+hard check.
 
 ## 63. The ideation card prints the sprint, and the map files each card by the verb in its own record
 
@@ -2654,9 +2659,20 @@ to 340 and the field descriptions carry the measured ranges (350-629 for the
 algorithm, 136-579 for the setup). No record text changed.
 
 Its 88-page print PDF is 515,008 bytes at sha256 `42d72907...`, byte-identical
-on rebuild; the forty-four-card SVG bundle hashes to `af6f0aa0...` in
+on rebuild; the forty-four-card SVG bundle hashes to `d9cf8b3d...` in
 `cards.json` order; all 44 cards fit inside the safe inset with zero OVER and
 zero TIGHT (worst recto row 440, worst verso 433); and the ten decks that
 shipped before it rebuild byte-identical to their README figures
 (`3bcd50e1`, `2f004169`, `af2ea16f`, `035429f5`, `5ca91630`, `2bfc9fb5`,
 `482e7fc2`, `be878abb`, `aced7d61`, `be66d059`).
+
+The bundle token first reported for this deck was `af6f0aa0`, which is a
+sha256 over the concatenated SVG file bytes. The two decks before it were
+recorded under a different join: each file hashed on its own, the hex digests
+concatenated in `cards.json` order, and one sha256 over that string, which for
+this deck is `d9cf8b3d`. Both values are exact for the same 44 files, which is
+why nothing looked stale; the defect was that no site stated which join it
+used, so the new token was produced by the other one. The recorded token is
+now the hex join, matching ideation (`74d0bd5d`) and copywriting (`b404676b`),
+whose figures are quoted as the build record and were left alone; §62 states
+the rule.
