@@ -410,7 +410,7 @@ public-domain principle, when to check for it, and the concrete fix.
 **Apply when.** Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.
 
 **Checklist.**
-- [ ] Cap flat options in top-level navigation at five to seven items.
+- [ ] Cap flat options in top-level navigation; each added option lengthens the decision.
 - [ ] Group large select menus into categories or a filterable combobox.
 - [ ] Pre-highlight a recommended default to skip part of the decision tree.
 
@@ -780,7 +780,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Anti-pattern.** A 12-item flat navigation menu buries the primary analytics dashboard in the middle.
 
-**Fix.** Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last.
+**Fix.** Group the 12 items into five to seven top-level destinations (DEC-02), then put Dashboard first and Settings last.
 
 **Source.** Bennet B. Murdock Jr. (1962). *The Serial Position Effect of Free Recall*. Journal of Experimental Psychology, 64(5), 482-488.
 

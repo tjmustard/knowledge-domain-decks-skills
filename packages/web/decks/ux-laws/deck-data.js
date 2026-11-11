@@ -10,7 +10,7 @@ window.UX_DECK = {
       "trigger": "Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.",
       "checklist": [
         {
-          "text": "Cap flat options in top-level navigation at five to seven items.",
+          "text": "Cap flat options in top-level navigation; each added option lengthens the decision.",
           "kind": "code"
         },
         {
@@ -1676,7 +1676,7 @@ window.UX_DECK = {
       ],
       "antiPattern": {
         "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
-        "remediation": "Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last."
+        "remediation": "Group the 12 items into five to seven top-level destinations (DEC-02), then put Dashboard first and Settings last."
       },
       "graphicMetaphor": {
         "svgShape": "decay-curve",

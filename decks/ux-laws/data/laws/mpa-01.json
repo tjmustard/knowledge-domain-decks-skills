@@ -11,7 +11,7 @@
   ],
   "antiPattern": {
     "violation": "A 12-item flat navigation menu buries the primary analytics dashboard in the middle.",
-    "remediation": "Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last."
+    "remediation": "Group the 12 items into five to seven top-level destinations (DEC-02), then put Dashboard first and Settings last."
   },
   "graphicMetaphor": {
     "svgShape": "decay-curve",

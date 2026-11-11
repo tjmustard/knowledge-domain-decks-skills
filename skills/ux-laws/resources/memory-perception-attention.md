@@ -13,7 +13,7 @@
   - Place core value propositions in the first rows and conversion actions in the last.
   - Pin frequent dropdown options to the top and summary categories to the bottom.
 - **Instead of:** A 12-item flat navigation menu buries the primary analytics dashboard in the middle.
-- **Do:** Group the 12 items into five to seven top-level destinations (DEC-01), then put Dashboard first and Settings last.
+- **Do:** Group the 12 items into five to seven top-level destinations (DEC-02), then put Dashboard first and Settings last.
 - **Source:** Bennet B. Murdock Jr. (1962), *The Serial Position Effect of Free Recall*.
 
 ## MPA-02 — Von Restorff Effect (Isolation Effect)

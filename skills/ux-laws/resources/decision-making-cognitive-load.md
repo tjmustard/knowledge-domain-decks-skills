@@ -9,7 +9,7 @@
 - **Axiom:** Decision time increases logarithmically with the number and informational complexity of available choices.
 - **Apply when:** Users stall or scan repeatedly when a menu or settings page presents many flat, unranked options.
 - **Check:**
-  - Cap flat options in top-level navigation at five to seven items.
+  - Cap flat options in top-level navigation; each added option lengthens the decision.
   - Group large select menus into categories or a filterable combobox.
   - Pre-highlight a recommended default to skip part of the decision tree.
 - **Instead of:** An enterprise settings page offers a flat, unordered dropdown of 85 country options.

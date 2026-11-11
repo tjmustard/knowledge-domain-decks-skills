@@ -2,7 +2,7 @@
   {
     "cards": ["DEC-01", "MPA-01"],
     "subject": "fixing a 12-item flat navigation",
-    "ruling": "DEC-01 wins as the constraint: the bar is five to seven destinations before MPA-01's ordering applies. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes."
+    "ruling": "DEC-01 wins as the constraint: the bar is capped before MPA-01's ordering applies, and the five-to-seven range is DEC-02's number, not DEC-01's. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes."
   },
   {
     "cards": ["HMM-01"],

@@ -2497,9 +2497,10 @@ The reproducibility claim is also still per Typst version (§29).
 ## 66. Where two cards disagree, the ruling ships with the cards
 
 A cross-model audit of `skills/ux-laws/SKILL.md` found that the deck had no way
-to say two cards prescribe incompatible fixes. DEC-01 caps flat navigation at
-five to seven items while MPA-01's remedy reordered a 12-item bar and called it
-done; HMM-01 taught Cmd/Ctrl+K while its own check said never hijack a browser
+to say two cards prescribe incompatible fixes. DEC-01 capped flat navigation
+while MPA-01's remedy reordered a 12-item bar and called it done, and the cap
+carried a five-to-seven figure that belongs to Miller's card (settled in §67);
+HMM-01 taught Cmd/Ctrl+K while its own check said never hijack a browser
 binding. An agent reading either card alone could follow it into the other's
 violation, and a reviewer had no rule for which finding wins. A register of
 "these two disagree" would have moved the decision back to the agent, so the
@@ -2510,8 +2511,9 @@ register records a ruling.
   subject, and a one-sentence ruling that begins with the card it favours and
   says why. It is data beside the records, not prose in a review thread.
 - **The records follow the ruling.** MPA-01's remedy now groups the 12 items
-  into five to seven top-level destinations before placing Dashboard first and
-  Settings last, so the fix starts from a navigation DEC-01 permits. HMM-01's
+  into five to seven top-level destinations, a count it cites to DEC-02 (§67),
+  before placing Dashboard first and Settings last, so the fix starts from a
+  navigation DEC-01 permits. HMM-01's
   remedy now calls `history.pushState`/`replaceState` (the History API is
   imperative, not "declarative HTML5 History entries") and focuses search with
   `/`, which the page receives before the browser's quick-find default, rather
@@ -2547,3 +2549,45 @@ part an agent can act on. Precedence is stated, severity is not. Because the UX
 card backs changed, `packages/prepress/dist/ux-laws.pdf` moves to 108 pages,
 1,060,341 bytes, sha256 `a556034d...`; the other nine decks' artifacts are
 unchanged.
+
+## 67. A number is cited to the card whose source named it
+
+DEC-01 is Hick's Law, and Hick (1952) reports decision time against the number
+and informational complexity of choices; he names no item count. DEC-01's first
+checklist item nevertheless read "Cap flat options in top-level navigation at
+five to seven items." The figure is Miller's (1956), and the deck already has it
+on DEC-02, whose axiom is "seven, plus or minus two."
+
+The misattribution was survivable while it sat on one card. It stopped being so
+when §66's MPA-01 remedy began citing DEC-01 for the same number: the deck would
+have said "DEC-01" twice for a figure DEC-01's source never printed, and a
+reader following the citation would reach Hick and find nothing to support it.
+
+The row allowed two resolutions: keep the heuristic and attribute it to DEC-02,
+or drop it from MPA-01's remedy. Keeping it is the better deck. The worked
+example is what makes MPA-01's ordering advice concrete, and DEC-02 already
+applies Miller's number to design limits - three to five checkout phases, seven
+overview indicators - so a five-to-seven destination bar is the same move on the
+card that owns the number. Dropping it would have fixed the citation by
+removing the guidance.
+
+The two halves land in one commit:
+
+- DEC-01's first checklist item is now "Cap flat options in top-level
+  navigation; each added option lengthens the decision." It keeps the cap and
+  states Hick's claim, with no count.
+- MPA-01's remedy cites DEC-02: "Group the 12 items into five to seven
+  top-level destinations (DEC-02), then put Dashboard first and Settings last."
+- The register row still begins with DEC-01 and says it wins as the constraint,
+  because the cap applies before MPA-01's ordering; its ruling now says the
+  five-to-seven range is DEC-02's number, not DEC-01's, so the register cannot
+  reintroduce the misattribution. It remains a DEC-01/MPA-01 row.
+- The generated artifacts follow the records: `rules/ux-rules.md`,
+  `skills/ux-laws/SKILL.md` and the two resource files that print these
+  records, and `packages/web/decks/ux-laws/deck-data.js`. The validator's
+  tension gate still passes, and `SKILL.md` prints the updated ruling.
+
+Because the UX cards changed, `packages/prepress/dist/ux-laws.pdf` is now 108
+pages, 1,060,358 bytes, sha256 `3bcd50e1...`; the other nine decks are
+byte-identical to their README figures, and the README line carries the new
+pair.

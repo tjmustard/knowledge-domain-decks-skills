@@ -34,7 +34,7 @@ Rules that hold across every card:
 
 Two cards can prescribe incompatible fixes. Each row below is settled: the ruling names the card that wins, and the records have been rewritten to follow it. Read the ruling before choosing between the cards.
 
-- **DEC-01 vs MPA-01 — fixing a 12-item flat navigation.** DEC-01 wins as the constraint: the bar is five to seven destinations before MPA-01's ordering applies. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes.
+- **DEC-01 vs MPA-01 — fixing a 12-item flat navigation.** DEC-01 wins as the constraint: the bar is capped before MPA-01's ordering applies, and the five-to-seven range is DEC-02's number, not DEC-01's. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes.
 - **HMM-01 (within the card) — the Cmd/Ctrl+K search shortcut.** HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a browser command cannot be reliably taken by the page, so the remedy uses /, which the page receives before the browser's quick-find default.
 
 ## Heuristic & Mental Models (11 cards)
