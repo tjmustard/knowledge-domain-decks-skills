@@ -1,0 +1,29 @@
+{
+  "id": "NEG-16",
+  "sourceCardNo": 16,
+  "name": "Seeking \"That's Right\" Alignment",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Resolving a severe strategic misalignment with an entrenched vice president who refuses to deprecate legacy technical infrastructure.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Label at part 2 of 2",
+  "script": [
+    "\"It sounds like your engineering division spent five years building this system from scratch under intense resource constraints, that its survival is tied to your team's reputation, and that replacing it feels like a total erasure of your historical contribution.\""
+  ],
+  "defense": "Agreement is not consent: acknowledging the history does not accept the migration proposal; examine downtime metrics.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Epistemic Validation and Perspective-Taking indicate that whereas \"You're right\" is a defensive appeasement phrase used to disengage without commitment, \"That's right\" marks genuine epistemic breakthrough and ideological alignment.",
+  "defenseFull": "When an interlocutor attempts to elicit a \"That's right\" to manufacture premature commercial consent: \"That accurately characterizes our historical architecture. However, acknowledging historical context does not imply consent to your current migration proposal. Let us look at the actual downtime metrics.\""
+}

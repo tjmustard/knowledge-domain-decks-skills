@@ -1,0 +1,29 @@
+{
+  "id": "NEG-26",
+  "sourceCardNo": 26,
+  "name": "Precise Numbers Effect",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Submitting a detailed professional services proposal for systems integration and compliance remediation.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Range at point 1 of 2",
+  "script": [
+    "\"The total implementation, testing, and SOC-2 certification delivery schedule is budgeted at $347,850 based on our audited resource allocation matrix.\""
+  ],
+  "defense": "Strip the illusion: $347,850 rests on subjective hour assumptions; round to a ceiling and examine the day rates.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Numerical Cognition and Attribution of Competence demonstrate that non-round numbers (e.g., $348,650 vs. $350,000) lead counterparties to assume that the proposer used an exacting, mathematically rigorous methodology, resulting in significantly smaller counter-adjustments.",
+  "defenseFull": "Strip the precision illusion: \"The granularity of $347,850 implies empirical exactness, but it rests on subjective assumptions regarding required developer hours. Let us round this to an even operational ceiling and examine the underlying day rates.\""
+}

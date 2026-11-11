@@ -1,0 +1,29 @@
+{
+  "id": "NEG-02",
+  "sourceCardNo": 2,
+  "name": "Interest-Based Bargaining (Interests vs. Positions)",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "An enterprise SaaS client insists on an unconditional right to terminate a multi-year master services agreement for convenience with seven days' notice, a position that violates the software vendor's revenue recognition guidelines.",
+  "scenarioSize": 7.5,
+  "nameSize": 11.5,
+  "schematic": "Layer at level 2 of 2",
+  "script": [
+    "\"Your demand for a seven-day termination clause indicates significant anxiety regarding either platform adoption rates or capital liquidity over the next two quarters. Which of those specific operational risks are you protecting against so that we can engineer explicit safeguards around it?\""
+  ],
+  "defense": "Re-anchor to governance: liquidity preservation is mandated; benchmarks are open, termination protection is not.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "layer",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Integrative Bargaining Theory posits that a position represents a superficial, rigid operational demand, whereas an interest constitutes the underlying financial, security, or autonomy need driving that demand. Revealing underlying interests converts zero-sum distributive conflicts into multidimensional value-creation exercises.",
+  "defenseFull": "If a counterparty probes for interests to exploit them distributively, re-anchor the position to governance: \"Our corporate governance mandate requires structural liquidity preservation. We can discuss various operational performance benchmarks, but the core termination protection must remain intact.\""
+}

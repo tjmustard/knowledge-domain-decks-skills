@@ -1,0 +1,29 @@
+{
+  "id": "NEG-12",
+  "sourceCardNo": 12,
+  "name": "Affect Labeling",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "An enterprise client experiences extensive deployment delays and threatens immediate contract cancellation and litigation during an executive review call.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Label at part 1 of 2",
+  "script": [
+    "\"It seems like you feel completely abandoned by our engineering team, and it sounds like you are deeply worried that this delayed rollout is directly jeopardizing your credibility with the executive steering committee.\""
+  ],
+  "defense": "Name the claim, not the feeling: it is a breach under Section 8.2; turn to the contractual remediation provisions.",
+  "defenseSize": 7,
+  "origin": {
+    "line": "Matthew D. Lieberman & Naomi I. Eisenberger (2007)"
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Prefrontal Cortex Down-Regulation of Amygdala Activation proves that converting negative affect into verbalized descriptions stimulates the RVLPFC and inhibits limbic arousal via MPFC mediation.",
+  "defenseFull": "When an opposing party deploys affect labeling to psychologize or dismiss legitimate contractual claims: \"This is not an issue of emotional frustration or personal worry; it is a clear operational assessment of contractual breach under Section 8.2. Let us turn our attention to the contractual remediation provisions.\""
+}

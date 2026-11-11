@@ -1,0 +1,29 @@
+{
+  "id": "NEG-33",
+  "sourceCardNo": 33,
+  "name": "Sunk Cost Saliency and Inoculation",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "A software overhaul is 50% over budget; the customer attempts to use past expenditures to demand free additional development sprint cycles.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Layer at level 2 of 2",
+  "script": [
+    "\"The capital expended over the previous two quarters funded the architectural discovery that validated our current systems. Sinking additional unbilled sprints into an unworkable scope will not recover those outlays. We must evaluate whether this next phase makes standalone commercial sense.\""
+  ],
+  "defense": "Tie past to performance: spend rested on milestones you missed; future commitments cannot be separated from them.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "layer",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "The Sunk Cost Fallacy demonstrates that individuals irrationally commit ongoing resources to failing initiatives simply to justify historical, unrecoverable outlays of capital, time, or prestige.",
+  "defenseFull": "Re-anchor historical expenditures to contractual accountability: \"Our previous investments were not speculative; they were predicated on explicit delivery milestones that your team failed to hit. We cannot divorce future commitments from past performance.\""
+}

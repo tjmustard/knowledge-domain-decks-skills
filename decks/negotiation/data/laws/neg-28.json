@@ -1,0 +1,32 @@
+{
+  "id": "NEG-28",
+  "sourceCardNo": 28,
+  "name": "The Ackerman Concession Model",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Commercial buyer purchasing specialized manufacturing tooling with a list price of $500,000, targeting an acquisition price of $400,000.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Step at step 4 of 4",
+  "script": [
+    "Round 1 (65%): \"Our opening capital allocation is $260,000.\"",
+    "Round 2 (85%): \"We reviewed our operational funds; we can push to $340,000.\"",
+    "Round 3 (95%): \"We secured an executive sign-off to reach $380,000.\"",
+    "Round 4 (100%): \"We have exhausted our reserve. The absolute maximum we can execute is $401,350, and we will sign the agreement today.\""
+  ],
+  "defense": "Name the curve: this is the Ackerman sequence; the final figure is still below our cost of delivery; restructure scope.",
+  "defenseSize": 6.5,
+  "origin": {
+    "line": "Ackerman"
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "step",
+      "divisions": 4,
+      "mark": 4
+    }
+  },
+  "originFull": "Algorithmic Concession Scheduling combines anchoring, diminishing concession rates, and psychological precision into a structured bidding sequence (65% → 85% → 95% → 100% of target).",
+  "defenseFull": "Neutralize the formulaic sequence: \"This sequence follows a classic Ackerman concession curve. While we recognize the structural discipline, your final figure remains below our cost of delivery. We need to restructure the project scope.\""
+}

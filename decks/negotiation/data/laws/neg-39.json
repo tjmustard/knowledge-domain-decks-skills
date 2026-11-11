@@ -1,0 +1,29 @@
+{
+  "id": "NEG-39",
+  "sourceCardNo": 39,
+  "name": "Good Cop / Bad Cop Decomposition",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "Counterpart CFO attacks every line item aggressively, while their VP of Product acts as a warm, collaborative partner.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Split at half 1 of 2",
+  "script": [
+    "\"It appears we are working through a classic good-cop/bad-cop dynamic here. Let us bypass the theatrical posture and examine the commercial numbers together.\""
+  ],
+  "defense": "Split the coalition: your CFO holds the cash line, you see the long-term value; equip you to show the ROI justifies it.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Cross-Coalition Contrast and Ingroup Formation show that an aggressive negotiator paired with an empathetic partner creates psychological relief that channels concessions toward the \"reasonable\" partner.",
+  "defenseFull": "Splitting the coalition: \"I recognize your CFO is holding a rigid line on cash flow, while you see the long-term operational value. How can we equip you to help your CFO see that the ROI justifies this investment?\""
+}

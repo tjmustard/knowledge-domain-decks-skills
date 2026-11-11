@@ -1,0 +1,29 @@
+{
+  "id": "NEG-20",
+  "sourceCardNo": 20,
+  "name": "Ego Preservation and Autonomous Choice Architecture",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Requiring a resistant commercial client to conform to rigid architectural security guidelines.",
+  "scenarioSize": 9,
+  "nameSize": 11.5,
+  "schematic": "Choice at branch 1 of 2",
+  "script": [
+    "\"We have two security compliance frameworks that satisfy our SOC-2 Type II audit obligations: Model Alpha provides automated daily log ingest, while Model Beta mandates weekly manual penetration validations. Which of those two configurations fits your team's operational culture?\""
+  ],
+  "defense": "Reject the binary: neither model fits; require a hybrid that automates API monitoring without weekly manual work.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "choice",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Self-Determination Theory and Psychological Reactance demonstrate that individuals aggressively reject proposals—even advantageous ones—if they feel their fundamental agency and autonomy are being constrained.",
+  "defenseFull": "When bounded within an artificial binary choice designed to manufacture an illusion of control: \"Neither Model Alpha nor Model Beta accommodates our automated development pipeline. We require a hybrid option that automates continuous API monitoring without manual weekly intervention.\""
+}

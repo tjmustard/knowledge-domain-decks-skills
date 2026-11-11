@@ -1,0 +1,29 @@
+{
+  "id": "NEG-27",
+  "sourceCardNo": 27,
+  "name": "Concession Tapering (Diminishing Return Signaling)",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Commercial contract dispute over licensing fee reductions.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Step at step 3 of 3",
+  "script": [
+    "\"In our initial review, we conceded $25,000 to reach $200,000. In our second revision, we stretched to concede $10,000 down to $190,000. Today, we can make an absolute final adjustment of $2,500 to $187,500, but our operational margins are completely exhausted.\""
+  ],
+  "defense": "Name the schedule: diminishing adjustments are internal pricing, not our ceiling; our limit is $170,000, not $187,500.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "step",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "originFull": "The Rescorla-Wagner Learning Model and Expectation Formation show that successively smaller concession steps signal that the bargainer is approaching their hard reservation boundary.",
+  "defenseFull": "Reject the psychological tapering signal: \"Your diminishing adjustments reflect an internal pricing schedule, not our economic ceiling. We cannot execute at $187,500; our commercial limit is $170,000 regardless of the pacing of your previous increments.\""
+}

@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-12%20%C2%B7%20523%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-13%20%C2%B7%20567%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -29,6 +29,7 @@
 - [✍️ Copy Architecture](#️-copy-architecture)
 - [⏳ Productivity Architecture](#-productivity-architecture)
 - [🏷️ Brand Architecture](#-brand-architecture)
+- [🤝 Negotiation Architecture](#-negotiation-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -64,7 +65,9 @@ Architecture** covers forty-four working tactics, each carried as the friction
 it resolves and the numbered procedure that follows it. **Brand Architecture**
 covers forty-two brand frameworks, each carried as the alignment question that
 says it applies, the artifact it produces, and the anti-pattern that turns it
-into decoration. Each card is distilled into the smallest usable form: a claim, a
+into decoration. **Negotiation Architecture** covers forty-four bargaining
+moves, each carried as the source's scenario, the script a negotiator says, and
+the counter-move that answers the other side's defense. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -122,6 +125,7 @@ deck's copy, names, or trade dress is used.
 | **Copy Architecture** | 48 | 4 surfaces | `packages/prepress/dist/copywriting.pdf` | `packages/web/decks/copywriting/` | `rules/copywriting-rules.md` | `skills/copywriting/` |
 | **Productivity Architecture** | 44 | 4 domains | `packages/prepress/dist/productivity.pdf` | `packages/web/decks/productivity/` | `rules/productivity-rules.md` | `skills/productivity/` |
 | **Brand Architecture** | 42 | 4 pillars | `packages/prepress/dist/brand.pdf` | `packages/web/decks/brand/` | `rules/brand-rules.md` | `skills/brand/` |
+| **Negotiation Architecture** | 44 | 4 stages | `packages/prepress/dist/negotiation.pdf` | `packages/web/decks/negotiation/` | `rules/negotiation-rules.md` | `skills/negotiation/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -838,6 +842,94 @@ jobs-to-be-done interview (i03), to Copywriting's Star-Story-Solution (CPY-09)
 and the tone dimensions BRA-14 and BRA-18 own, and to Team's Competing Values
 Framework (t20). The deck's records are in `decks/brand/data/laws/` and its
 schema in `decks/brand/data/law-schema.json`.
+
+---
+
+## 🤝 Negotiation Architecture
+
+**Negotiation Architecture** is a forty-four-card deck of bargaining moves for the person
+walking into the conversation this week. The front prints the source's Negotiation Scenario
+verbatim at a per-card size fixed from its measured length - 9 pt for 115 characters or
+fewer (sixteen cards), 8.5 to 136 (fourteen), 8 to 166 (nine), 7.5 longer (five) - and the
+name at a second per-card size: 12 pt at fifty characters or fewer (thirty-nine), 11.5 to
+fifty-eight (three), 11 above (two, NEG-09 and NEG-40, the deck's longest titles), so a long
+title steps down rather than wraps a line too far. Beneath them sit the figure and the
+layout map's schematic line. The back prints the source's Concrete Dialogue Script as its
+own lines, one to four per card, and a compressed Counter-Move Defense of 90 to 125
+characters: this deck's wording, allowed to drop explanation but not a claim, a number or a
+stated bound. The defense sets at 7 pt on forty-one cards and at 6.5 on NEG-03, NEG-10 and
+NEG-28, whose scripts fill the face at 7. The source's Behavioral Science Origin and
+Counter-Move Defense follow every card in the rules file and the stage resource, line for
+line.
+
+The four stages are the source's own section headings, eleven cards each:
+
+| Stage | Cards | What a card is for |
+|---|---|---|
+| Principled Negotiation & Structural Bargaining | NEG-01 to NEG-11 | Shaping the deal: interests, criteria, alternatives, trades |
+| Tactical Empathy & Behavioral Influence | NEG-12 to NEG-22 | Reading and moving the person across the table |
+| Anchoring, Framing & Concession Dynamics | NEG-23 to NEG-33 | Putting the first number down and moving it |
+| De-escalation, Resistance Defusal & Countering Bad Faith | NEG-34 to NEG-44 | Holding a conversation that is going wrong |
+
+The drawing follows the mechanism. `decks/negotiation/data/layout-map.json` files each card
+under one of eleven structural families - label 9, range 6, split 5, step 4, exchange 4,
+signal 4, alternative 3, stake 3, layer 2, choice 2, expand 2 - and records the phrase from
+the card's own record that fixes the position, with the mark and the divisions; the deck's
+test regenerates every schematic line from `{family, divisions, mark}` and checks the basis
+quote against the field it names. The numbering rule is text order, and the map says which
+text: every family numbers the positions the card's own words name, read through the whole
+record in block order - origin, scenario, script, defense - because some cards place the
+second position in the script or the defense rather than the origin. A range whose points
+are numbers orders them low to high (NEG-31, which names our $120,000 before their $80,000,
+is the case that fixed it), a card that opposes exactly two positions and names both keeps
+text order, and an exchange item is something the card offers or asks for, not something it
+holds: NEG-07 counts its fee drop because it is offered conditionally, and NEG-22 its three
+concessions but not the $200,000 it holds firm. No family prints numbers, so the drawing and
+the label cannot disagree about what a position is.
+
+The source's text arrives escaped, and every printed field goes through a declared table in
+`decks/negotiation/data/render.mjs` with three entries: `\\to` prints as `→` (seven
+occurrences, four in card 21's chain "Active Listening → Empathy → Rapport → Influence →
+Behavioral Change" and three in card 28's "(65% → 85% → 95% → 100% of target)"), `\$` prints
+as `$` (forty-eight occurrences on twenty-nine lines across fifteen cards), and `\.` prints
+as `.` (NEG-30's "Tier 3."). A guard test fails on any surviving backslash or brace in a
+printed field.
+
+Attribution has two tiers and no third. Three cards print a line: NEG-12 the source's own
+TAC-12 exemplar, "Matthew D. Lieberman & Naomi I. Eisenberger (2007)", and NEG-28 and NEG-32
+the surnames their titles carry, "Ackerman" and "Farren", with no year because the source
+gives none. The other forty-one print "The source names no originator." The schema declares
+only `line` and `note`, so no record can acquire an author, a year, a title or a publication
+and still validate, and the deck never vouches for a citation the source did not make.
+
+Ten source defects are recorded with their location and kind, and the deck carries each
+rather than repairing it. The ones a reader can see: the source folder's name occurs once,
+as generic lowercase English in the count sentence at line 426, and in no artifact; four span
+ids survive at two locations, in ecosystem prose and inside the GlobalScore formula, and no
+card is built from either section; LaTeX survives escaped in cards 21 and 28 and in the
+GlobalScore formula; currency is escaped in fifteen cards; the comparative matrix's row 37 is
+shifted one column, so the card headings are the authority and no record comes from the
+matrix; the four stages are named three ways, and the deck takes the section headings; the
+schema's `key_researchers`, `year`, `vocal_cadence` and `bargaining_phase` are populated only
+in the TAC-12 exemplar or by no card at all, so the deck prints none of them except card 12's
+own names and year; and the schema's `^TAC-[0-9]{2}$` id pattern belongs to the productivity
+deck, so `TAC-12` is provenance only. The works cited are one run-on paragraph and are
+carried into no artifact.
+
+Its 88-page print PDF is 368,324 bytes (sha256 `d1925851…`), byte-identical on rebuild, and
+its forty-four SVGs hash to `457a7c9f…` in `cards.json` order under the declared hex join. All
+44 cards fit inside the safe inset with zero OVER and zero TIGHT, the worst recto at row 424
+(NEG-20) and the worst verso at 344 (NEG-40). The twelve decks that shipped before it rebuild
+byte-identical, brand's `0224a67d…` among them. Its ruleset and skill are
+[`rules/negotiation-rules.md`](./rules/negotiation-rules.md) and
+[`skills/negotiation/`](./skills/negotiation/), with one resource per stage; the skill routes
+to Strategy's counter-positioning (S25) and branding power (S27), Brand's BRA-11,
+Copywriting's sentence-level formulas, Team's Competing Values Framework (t20) and
+Productivity's decision cadence. Two neighbours are adjacent rather than duplicate: Team's
+T31 states the principled frame as one card, so T31 teaches the frame and NEG-01 to NEG-11
+run a specific structural move, and Narrative's COR-08 covers a deal's integration narrative,
+which no card here carries. The deck's records are in `decks/negotiation/data/laws/` and its
+schema in `decks/negotiation/data/law-schema.json`.
 
 ---
 

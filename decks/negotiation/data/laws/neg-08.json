@@ -1,0 +1,29 @@
+{
+  "id": "NEG-08",
+  "sourceCardNo": 8,
+  "name": "Contingent Contracting",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Advisory services contract where the client questions whether the consultant's predictive pipeline optimization will produce a projected 30% revenue expansion.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Exchange at item 2 of 2",
+  "script": [
+    "\"Let us tie our compensation directly to realized performance. We will reduce our upfront advisory retainer to a baseline of $40,000; if your pipeline expansion hits or exceeds 30% by the end of Q3, our firm receives an incentive distribution equal to 25% of all incremental margin generated above that baseline.\""
+  ],
+  "defense": "Refuse the contingency: it rewards short-term velocity over brand; require a predictable fee-for-service model.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "exchange",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Risk Tolerance Asymmetries and Probabilistic Belief Variances enable negotiators to bridge speculative deadlocks by creating agreements tied to future, verifiable outcomes rather than debating uncertain forecasts.",
+  "defenseFull": "If an opposing party attempts to impose a high-risk contingent fee structure: \"A contingency model creates perverse incentives to optimize for short-term transactional velocity at the expense of our enterprise brand. We require a predictable, fee-for-service compensation model.\""
+}

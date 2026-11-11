@@ -1,0 +1,29 @@
+{
+  "id": "NEG-03",
+  "sourceCardNo": 3,
+  "name": "Insisting on Objective Criteria",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Commercial real estate lease renewal wherein the institutional landlord demands an arbitrary 25% rent escalation during a volatile inflationary cycle.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Range at point 2 of 2",
+  "script": [
+    "\"We want to ensure your commercial yield reflects true market dynamics rather than arbitrary projections. Let us align on an objective benchmark: we will pull closed transaction data from CoStar for Class-A commercial properties within a half-mile radius over the preceding ninety days and calculate the true weighted-average square-foot rate.\""
+  ],
+  "defense": "Dispute the index's method: it counts waterfront properties unlike ours; ask for a normalized comparable dataset.",
+  "defenseSize": 6.5,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Normative Social Influence and Social Comparison Theory demonstrate that negotiators resist subjective positional pressure to preserve autonomy, yet readily yield to external, verifiable, and legitimate benchmarks perceived as impartial.",
+  "defenseFull": "When an opponent cherry-picks self-serving indices, dispute the standard's methodology: \"That aggregate index includes prime waterfront developments that do not match our building's utility classification. Let us utilize a normalized dataset that filters strictly for comparable floor plates and tenant improvement allowances.\""
+}

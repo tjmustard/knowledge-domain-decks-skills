@@ -1,0 +1,29 @@
+{
+  "id": "NEG-38",
+  "sourceCardNo": 38,
+  "name": "The Visceral Flinch (Physicalized Anchoring)",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "An opposing party opens with an aggressive, one-sided licensing quote during an in-person meeting.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Signal at cue 1 of 4",
+  "script": [
+    "(Lean back physically, exhale audibly, widen eyes, and hold an extended pause) \"I... wow. That number is significantly outside the operational bounds we anticipated for this scope.\""
+  ],
+  "defense": "Neutralize the flinch: name the surprise, then walk the cost model, risk allocations and compliance guarantees.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "signal",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "originFull": "Nonverbal Behavioral Signaling and Social Proof prove that expressing shock or disbelief establishes that an offer is wildly outside acceptable social or commercial norms.",
+  "defenseFull": "Neutralize the flinch immediately: \"I recognize that figure was unexpected. Let us walk through the underlying cost models, risk allocations, and compliance guarantees that drive that valuation.\""
+}

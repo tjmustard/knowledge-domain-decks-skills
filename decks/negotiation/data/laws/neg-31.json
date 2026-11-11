@@ -1,0 +1,29 @@
+{
+  "id": "NEG-31",
+  "sourceCardNo": 31,
+  "name": "Split-the-Difference Rejection",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Client proposes: \"You are at $120,000 and we are at $80,000; let us split the difference and execute at $100,000 right now.\"",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Range at point 2 of 2",
+  "script": [
+    "\"Splitting the difference sounds fair, but $100,000 does not reflect our underlying delivery costs or unit economics. How did you arrive at that figure beyond it being the mathematical midpoint between our positions?\""
+  ],
+  "defense": "Hold the midpoint: if it cannot be met, revert to a granular cost audit and delay launch by two months.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "The Compromise Fallacy establishes that splitting the difference appears equitable but often conceals an arbitrary anchor, drawing a negotiator away from an economically rational reservation price.",
+  "defenseFull": "When an opponent rejects a midpoint compromise: \"The midpoint was proposed to eliminate negotiation friction and close this deal immediately. If you cannot meet there, we will revert to a granular cost audit, which will delay project launch by two months.\""
+}

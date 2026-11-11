@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/negotiation-schema.json",
+  "title": "Negotiation Architecture card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceCardNo",
+    "name",
+    "stage",
+    "kicker",
+    "scenario",
+    "scenarioSize",
+    "nameSize",
+    "schematic",
+    "script",
+    "defense",
+    "defenseSize",
+    "origin",
+    "figure",
+    "originFull",
+    "defenseFull"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^NEG-(0[1-9]|[1-3][0-9]|4[0-4])$"
+    },
+    "sourceCardNo": {
+      "description": "The source's own card number, which is the id's number on every record.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 44
+    },
+    "name": {
+      "description": "The move's title, verbatim from its card heading. Measured range 15-62 characters.",
+      "type": "string",
+      "minLength": 14,
+      "maxLength": 65
+    },
+    "stage": {
+      "description": "The stage heading the card is numbered under, verbatim.",
+      "enum": [
+        "Principled Negotiation & Structural Bargaining",
+        "Tactical Empathy & Behavioral Influence",
+        "Anchoring, Framing & Concession Dynamics",
+        "De-escalation, Resistance Defusal & Countering Bad Faith"
+      ]
+    },
+    "kicker": {
+      "description": "The short stage name the card's front prints, in stage order.",
+      "enum": ["Principled", "Empathy", "Anchoring", "De-escalation"]
+    },
+    "scenario": {
+      "description": "The source's Negotiation Scenario, verbatim. Measured range 58-231 characters.",
+      "type": "string",
+      "minLength": 56,
+      "maxLength": 235
+    },
+    "scenarioSize": {
+      "description": "The front's scenario point size, derived from its measured length at the layout map's bands. Every front is measured at its assigned size before the deck ships.",
+      "type": "number",
+      "minimum": 7.5,
+      "maximum": 9
+    },
+    "nameSize": {
+      "description": "The front's name point size, derived from its measured length: 12 pt at fifty characters or fewer, 11.5 to fifty-eight, 11 above. The five long names step down rather than wrap.",
+      "type": "number",
+      "enum": [11, 11.5, 12]
+    },
+    "schematic": {
+      "description": "The line the card prints under the figure, in the form '<Family> at <unit> <mark> of <divisions>'. The same three numbers are in figure.parametricParams, and the deck's test regenerates this line from them.",
+      "type": "string",
+      "minLength": 18,
+      "maxLength": 36,
+      "pattern": "^(Label|Range|Split|Step|Exchange|Signal|Alternative|Stake|Layer|Choice|Expand) at (part|point|half|step|item|cue|option|stake|level|branch|frame) [1-9][0-9]? of [1-9][0-9]?$"
+    },
+    "script": {
+      "description": "The source's Concrete Dialogue Script, verbatim after the declared rendering table, one entry per printed line. A script written as a list prints one line per item. Measured 1-4 lines and 60-344 characters per line.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "string",
+        "minLength": 55,
+        "maxLength": 370
+      }
+    },
+    "defense": {
+      "description": "The counter-move, this deck's compression of the source's Counter-Move Defense. Measured 102-120 characters. Compression may drop explanation but not a claim, a number or a stated bound.",
+      "type": "string",
+      "minLength": 90,
+      "maxLength": 125
+    },
+    "defenseSize": {
+      "description": "The back face's point size, fixed per card in the layout map from the measured fit. Three cards are declared at 6.5 pt; every other card prints at 7.",
+      "type": "number",
+      "enum": [6.5, 7]
+    },
+    "origin": {
+      "description": "Two tiers and no third. The line is the attribution the source's own text gives - a named researcher with the year the source gives, or a surname the title carries with no year because the source gives none. Where the source names nobody, the note is the honest line.",
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": ["line"]
+        },
+        {
+          "required": ["note"]
+        }
+      ],
+      "properties": {
+        "line": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        "note": {
+          "const": "The source names no originator."
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["svgShape", "parametricParams"],
+      "properties": {
+        "svgShape": {
+          "const": "negotiation-figure"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["family", "divisions", "mark"],
+          "properties": {
+            "family": {
+              "enum": [
+                "label",
+                "range",
+                "split",
+                "step",
+                "exchange",
+                "signal",
+                "alternative",
+                "stake",
+                "layer",
+                "choice",
+                "expand"
+              ]
+            },
+            "divisions": {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 12
+            },
+            "mark": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          }
+        }
+      }
+    },
+    "originFull": {
+      "description": "The source's Behavioral Science Origin, verbatim after the declared rendering table, printed in the rules file and the stage resource. Measured range 138-375 characters.",
+      "type": "string",
+      "minLength": 135,
+      "maxLength": 380
+    },
+    "defenseFull": {
+      "description": "The source's Counter-Move Defense, verbatim after the declared rendering table. Measured range 179-360 characters.",
+      "type": "string",
+      "minLength": 175,
+      "maxLength": 370
+    }
+  }
+}

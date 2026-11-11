@@ -1,0 +1,29 @@
+{
+  "id": "NEG-11",
+  "sourceCardNo": 11,
+  "name": "Reservation Value Inoculation",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Enterprise procurement officer pressing an implementation vendor to state their absolute bottom-line pricing during an RFP defense.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Range at point 2 of 2",
+  "script": [
+    "\"Our pricing schedule is directly indexed to the uptime requirements, liability coverage levels, and dedicated engineering allocations outlined in your RFP scope. We do not operate on arbitrary floor margins; we operate on rigorous cost-to-deliver parameters.\""
+  ],
+  "defense": "Before discussing margin, ask which service-level provisions they would eliminate in exchange for fee reductions.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Anchoring Bias and Information Leakage vulnerabilities demonstrate that revealing an internal walk-away point collapses a negotiator's aspirational ceiling down to their reservation floor.",
+  "defenseFull": "If a procurement team refuses to proceed without an immediate declaration of bottom-line pricing: \"Before we can evaluate margin flexibility, we require your explicit operational priorities. Which specific service-level provisions are you prepared to eliminate in exchange for fee reductions?\""
+}

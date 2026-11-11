@@ -1,0 +1,29 @@
+{
+  "id": "NEG-44",
+  "sourceCardNo": 44,
+  "name": "Strategic Walk-Away Execution",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "Final pricing deadlock in commercial acquisition where the seller refuses to accept a market-validated valuation.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Alternative at option 2 of 2",
+  "script": [
+    "\"We have reached the maximum valuation our capital partners can support for this asset. We respect that this falls short of your targets. We are stepping back from these discussions and initiating negotiations on our secondary acquisition target.\""
+  ],
+  "defense": "Respect the walk-away: the door remains open if parameters change; wish their secondary acquisition success.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Credible Signaling Theory shows that a walk-away is only effective if it represents an authentic, disciplined transition to an established BATNA, rather than a theatrical bluff.",
+  "defenseFull": "Neutralizing an opponent's walk-away move: \"We respect your decision to evaluate secondary assets. If your commercial parameters change in the future, our door remains open. We wish your team success with your secondary acquisition.\""
+}

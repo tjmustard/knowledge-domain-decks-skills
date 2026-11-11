@@ -25,7 +25,7 @@
 // them from deck.json before compiling, so a new deck needs no edit here.
 #import "../build/accents.typ": accent-color
 // Field names, labels and item style come from the deck, written by build.mjs.
-#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, field-headline-size, field-card-id, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
+#import "../build/fields.typ": field-group, field-items, field-attribution, field-prompt, field-headline, field-context, field-anti, field-headline-size, field-name-size, field-card-id, label-items, label-prompt, label-context, item-style, blocks, group-label, figure-width, name-size
 
 #let accent(card) = accent-color.at(card.at(field-group), default: rgb("#334155"))
 
@@ -46,6 +46,26 @@
   card.at(field-headline-size) * 1pt
 } else {
   9pt
+}
+
+// The name's point size. A deck may carry a per-card size for it, so the few
+// names long enough to wrap a line too far step down instead of cutting; a
+// deck that names no such field prints the deck-wide size every earlier deck
+// printed.
+#let name-size-of(card) = if field-name-size != none and field-name-size in card {
+  card.at(field-name-size) * 1pt
+} else {
+  name-size
+}
+
+// A back-face block's point size. A deck may carry a per-card size field on a
+// block, so one long record steps the whole back face down rather than cutting
+// its script; a block that names none prints the 7 pt every earlier block
+// printed.
+#let block-size(b, card) = if b.sizeField != none and b.sizeField in card {
+  card.at(b.sizeField) * 1pt
+} else {
+  7pt
 }
 
 // A declared field counts as absent when it prints nothing: an empty string, or
@@ -116,7 +136,7 @@
       ]],
     )
     #v(5pt)
-    #text(size: name-size, weight: "bold", fill: rgb("#0f172a"))[#card.name]
+    #text(size: name-size-of(card), weight: "bold", fill: rgb("#0f172a"))[#card.name]
     #v(4pt)
     #line(length: 100%, stroke: 1.5pt + accent(card))
     #v(6pt)
@@ -181,15 +201,16 @@
     #if blocks.len() > 0 [
       #for b in blocks [
         #if b.field in card and not absent(card.at(b.field)) [
+          #let bsize = block-size(b, card)
           #v(5pt)
           #text(size: 7.5pt, weight: "bold", fill: rgb("#0f172a"))[#b.label]
           #v(2pt)
           #if b.style == "traits" or b.style == "words" [
-            #text(size: 7pt)[#card.at(b.field).join(" · ")]
+            #text(size: bsize)[#card.at(b.field).join(" · ")]
           ] else if b.style == "quotes" [
-            #text(size: 7pt)[#card.at(b.field).join("  ")]
+            #text(size: bsize)[#card.at(b.field).join("  ")]
           ] else if b.style == "prose" [
-            #text(size: 7pt)[#card.at(b.field)]
+            #text(size: bsize)[#card.at(b.field)]
           ] else if b.style == "lines" [
             // A template keeps the source's line structure: one printed line
             // per entry. The metadata names the card and the line so a test
@@ -197,14 +218,14 @@
             #for (i, entry) in card.at(b.field).enumerate() [
               #if i > 0 { linebreak() }
               #metadata((card: card.id, line: entry)) <block-line>
-              #text(size: 7pt)[#entry]
+              #text(size: bsize)[#entry]
             ]
           ] else if b.style == "list" [
             #for entry in card.at(b.field) [
               #grid(
                 columns: (8pt, 1fr),
-                [#text(size: 7pt, fill: accent(card))[·]],
-                [#text(size: 7pt)[#entry]],
+                [#text(size: bsize, fill: accent(card))[·]],
+                [#text(size: bsize)[#entry]],
               )
             ]
           ] else if b.style == "example" [
@@ -213,7 +234,7 @@
             // An array of named things, one per line: a plan's stages, where
             // the label names the stage and the text says what happens.
             #for pair in card.at(b.field) [
-              #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label] #text(size: 7pt)[#pair.text]
+              #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label] #text(size: bsize)[#pair.text]
               #linebreak()
             ]
           ] else if b.style == "labelled" [
@@ -222,7 +243,7 @@
             #let pair = card.at(b.field)
             #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label]
             #v(1pt)
-            #text(size: 7pt)[#pair.text]
+            #text(size: bsize)[#pair.text]
           ] else if b.style == "verbatim" [
             // The source's own plain text, line for line. A card that prints
             // one sets it in the vendored monospace, because the setup is code

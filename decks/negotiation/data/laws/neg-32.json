@@ -1,0 +1,29 @@
+{
+  "id": "NEG-32",
+  "sourceCardNo": 32,
+  "name": "Exploding Offer Defusion (Farren’s Maneuver)",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Enterprise vendor offers a 20% discount that expires at 5:00 PM today, demanding immediate signature.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Stake at stake 1 of 2",
+  "script": [
+    "\"We are enthusiastic about this partnership, but our corporate governance mandates thorough risk and legal review. If this proposal must expire at 5:00 PM, we respect your schedule and will decline today; if you value our business, let us finalize terms on Tuesday.\""
+  ],
+  "defense": "Stand by the deadline: implementation capacity closes today; unpaid at 5:00 PM, those engineers go to another client.",
+  "defenseSize": 7,
+  "origin": {
+    "line": "Farren"
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Scarcity Bias and Artificial Urgency Heuristics show that temporal deadlines are often manufactured to induce cognitive panic and force irrational agreement.",
+  "defenseFull": "Enforcing a legitimate operational deadline: \"Our technical implementation capacity for the quarter closes today. This is an operational reality: if this slot is not booked by 5:00 PM, those engineering resources will be allocated to another enterprise client.\""
+}

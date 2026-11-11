@@ -1,0 +1,29 @@
+{
+  "id": "NEG-06",
+  "sourceCardNo": 6,
+  "name": "ZOPA Calibration via Range Probing",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Early-stage acquisition discussions where a private equity firm seeks to determine whether a software startup's valuation expectations fall within their fund's return profile.",
+  "scenarioSize": 7.5,
+  "nameSize": 12,
+  "schematic": "Range at point 1 of 2",
+  "script": [
+    "\"Precedent acquisitions in the enterprise SaaS analytics vertical over the last three quarters have completed at multiples between 5.5x and 8.2x trailing twelve-month ARR, depending on net revenue retention. Where along that spectrum does your operational performance sit?\""
+  ],
+  "defense": "Redirect from multiples to substance: 140% net revenue retention and zero churn before fixing a valuation bracket.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Information Asymmetry and Surplus Extraction dynamics suggest that parties conceal their reservation boundaries to maximize distributive gain. Probing the Zone of Possible Agreement through structured ranges tests compatibility without prematurely exposing internal reservation points.",
+  "defenseFull": "If forced into an exploratory valuation bracket, redirect toward substantive drivers: \"Broad industry multiples obscure our 140% net revenue retention and zero customer churn. Let us review our forward cohort expansion data before fixing an arbitrary valuation bracket.\""
+}

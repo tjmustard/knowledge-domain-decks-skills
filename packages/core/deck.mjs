@@ -204,6 +204,10 @@ export function deckShape(deck = {}) {
     // deck whose front line is long enough to need a different size on
     // different cards. A deck that names none prints the template's 9 pt.
     headlineSize: fields.headlineSize || null,
+    // The field that carries a per-card point size for the name, for a deck
+    // whose names are long enough that a few would wrap a line too far. A deck
+    // that names none prints the deck-wide name size, as every earlier deck did.
+    nameSizeField: fields.nameSize || null,
     // The field that carries the id a card prints, where the source's own id
     // differs from the record's deck id (the copy deck prints ST-01 on a card
     // whose record is CPY-01). A deck that names none prints card.id, as every

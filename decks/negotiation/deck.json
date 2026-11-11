@@ -1,0 +1,103 @@
+{
+  "id": "negotiation",
+  "slug": "negotiation",
+  "name": "Negotiation Architecture",
+  "description": "Forty-four negotiation moves in four stages, each the situation it answers, the exact words to say, and the counter-move that defuses the reply.",
+  "categories": [
+    "Principled Negotiation & Structural Bargaining",
+    "Tactical Empathy & Behavioral Influence",
+    "Anchoring, Framing & Concession Dynamics",
+    "De-escalation, Resistance Defusal & Countering Bad Faith"
+  ],
+  "accents": {
+    "Principled Negotiation & Structural Bargaining": "#1D4ED8",
+    "Tactical Empathy & Behavioral Influence": "#7C3AED",
+    "Anchoring, Framing & Concession Dynamics": "#B45309",
+    "De-escalation, Resistance Defusal & Countering Bad Faith": "#0F766E"
+  },
+  "fields": {
+    "group": "stage",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "scenario",
+    "headlineSize": "scenarioSize",
+    "nameSize": "nameSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Situation",
+    "context": "Schematic",
+    "items": "Script",
+    "cardItems": "Script",
+    "resourceItems": "Script",
+    "group": {
+      "Principled Negotiation & Structural Bargaining": "Principled",
+      "Tactical Empathy & Behavioral Influence": "Empathy",
+      "Anchoring, Framing & Concession Dynamics": "Anchoring",
+      "De-escalation, Resistance Defusal & Countering Bad Faith": "De-escalation"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "script",
+      "label": "Script",
+      "style": "lines",
+      "sizeField": "defenseSize"
+    },
+    {
+      "field": "defense",
+      "label": "Counter-move",
+      "style": "prose",
+      "sizeField": "defenseSize"
+    },
+    {
+      "field": "originFull",
+      "label": "Behavioral science origin, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "defenseFull",
+      "label": "Counter-move defense, as written",
+      "style": "verbatim",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/negotiation-rules.md",
+    "skill": "skills/negotiation",
+    "pdf": "packages/prepress/dist/negotiation.pdf"
+  },
+  "rules": {
+    "title": "Negotiation Architecture Rules",
+    "intro": "The moves come from public practice in negotiation: principled bargaining, tactical empathy, anchoring and concession dynamics, and de-escalation under bad faith. Each card names the situation that says the move applies, the script to say in it, and the counter-move that answers the other side's reply.\nThe situation and the script print on the card exactly as the source states them. The counter-move prints on the card compressed to the back's budget, and the source's full origin and full defense print here, line for line, under each card. Compression may drop explanation; it may not add a claim, change a number or omit a stated bound. Every number a short form states appears in the block it was compressed from, and the deck's test checks that."
+  },
+  "skill": {
+    "name": "negotiation",
+    "description": "Run one of {cards} negotiation moves this week: four stages of principled bargaining, tactical empathy, anchoring and de-escalation, each with the situation that says it applies, the exact words to say and the counter-move that answers the reply.",
+    "title": "Negotiation Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per stage.\n\nChoosing starts from the situation, not the move's name. If the problem is structural - the deal's shape, the alternatives, the criteria - read Principled. If the other side is emotional, hostile or posturing, read Empathy. If the number is on the table and moving, read Anchoring. If the process itself is bad faith or has broken down, read De-escalation. Then take the one card whose situation reads like the conversation in front of you and say its script once, in your own voice but with its words intact, before improvising.\n\nWhen two cards fit, prefer the one whose situation you are in now: a move that answers the last conversation is rehearsal, not a tactic.\n\nRoutes out of this deck. Strategy Tactics owns the competitive choice - S25 counter-positioning and S27 branding power are cards there; this deck owns the conversation that carries it. Brand Tactics owns the positioning a negotiation is anchored to; BRA-11 places a product inside the job it is hired for. Copywriting owns the sentence-level formulas and voice rules; this deck's scripts are already written and copywriting changes how you would write your own. Team Tactics' Competing Values Framework (t20) diagnoses a team's internal culture, which is where coalition moves such as NEG-39 and NEG-43 land. Productivity owns the decision cadence a negotiation schedules into. Two neighbours are adjacent, not duplicates: Team's T31 states the principled frame as a single card, so reach for T31 to teach the frame and for NEG-01 to NEG-11 to run a specific structural move; Narrative's COR-08 covers a deal's integration narrative, an argument no card here makes.",
+    "commonRules": [
+      "Pick the card from the situation, not the move's title. The front is the situation that says whether this is the conversation in front of you.",
+      "Say the script before improvising. It is the card's executable gift: the exact words, printed whole, at the length the source wrote them.",
+      "The counter-move on the card is compressed; the source's full origin and full defense print in the resource file under the same card. Argue from those, not from the card.",
+      "A stated number is the tactic. 65% to 85% to 95% to 100%, a 25% escalation, a five-step stairway: dropping the number leaves a mood, not a method.",
+      "The card never vouches for a citation the source did not make. A named originator is the one the source's own text names, with the year it gives and no title added; where the source names nobody, the card says so."
+    ],
+    "footer": "The situation and the script are the source's own wording. The counter-move on the card is this deck's compression; the source's full origin and full defense follow each card in its resource file and in the rules file. Attribution has two tiers and no third: the originator the source names, with the year the source gives, or the honest line."
+  },
+  "web": {
+    "global": "NEGOTIATION_DECK",
+    "accentsGlobal": "NEGOTIATION_DECK_ACCENTS",
+    "title": "Negotiation Architecture — Knowledge Domain Decks",
+    "heading": "Negotiation Architecture",
+    "lede": "{cards} negotiation moves: the situation that says one applies, the exact words to say, and the counter-move that defuses the reply.",
+    "source": "Generated from <code>decks/negotiation/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the script"
+  }
+}

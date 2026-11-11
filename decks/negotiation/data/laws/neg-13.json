@@ -1,0 +1,29 @@
+{
+  "id": "NEG-13",
+  "sourceCardNo": 13,
+  "name": "Isopraxism (Linguistic Mirroring)",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Counterpart procurement lead sharply asserts: \"We cannot sign this enterprise master agreement because your indemnification structure is utterly unprecedented.\"",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Signal at cue 1 of 2",
+  "script": [
+    "\"Utterly unprecedented?\" (Delivered with a neutral, inquisitive inflection, immediately followed by four seconds of absolute dynamic silence)."
+  ],
+  "defense": "Yes, unprecedented in our vendor tier: uncapped IP indemnity for third-party open source violates our risk charter.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "signal",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "The Chameleon Effect and Nonconscious Behavioral Mimicry establish that repeating the terminal or salient 1 to 3 words of an interlocutor induces unconscious bonding and prompts voluntary information expansion without triggering psychological resistance.",
+  "defenseFull": "When mirrored systematically, recognize the linguistic probe and provide precise definition: \"Yes, unprecedented within our vendor tier. Specifically, uncapped intellectual property indemnification for third-party open-source integrations violates our corporate risk charter.\""
+}

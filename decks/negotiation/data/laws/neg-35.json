@@ -1,0 +1,29 @@
+{
+  "id": "NEG-35",
+  "sourceCardNo": 35,
+  "name": "Defusing Ultimata (The Hypothetical Reframe)",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "An opposing party delivers an aggressive ultimatum: \"Agree to these pricing terms by noon or our firm walks away permanently.\"",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Label at part 2 of 2",
+  "script": [
+    "\"Hypothetically speaking, if we were able to address your cash-flow timing concerns through an adjusted payment schedule, what would that mean for our ongoing collaboration?\""
+  ],
+  "defense": "This is not hypothetical: the board has fixed this expenditure cap; institutional authority does not extend beyond it.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Cognitive Reframing and Face-Saving Protocols prove that directly challenging an ultimatum forces the counterparty into an ego trap where backing down is perceived as public defeat.",
+  "defenseFull": "When a counterparty attempts to reframe an authentic operational boundary: \"This is not a hypothetical posture or a tactical opening. Our executive board has formally established this expenditure cap; we do not have institutional authority to negotiate beyond it.\""
+}

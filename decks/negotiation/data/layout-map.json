@@ -1,0 +1,517 @@
+{
+  "note": "The map fixes every card's family, divisions, mark and printed label before negotiation-figure is drawn. Each row's basis is an exact substring of that card's own record, naming the phrase the marked position rides on. The per-card family came from the mission inventory's proposal; checkpoint two is where it was checked against the card's own text, and any change from the proposal is stated in DECISIONS.",
+  "families": {
+    "label": "One phrase named and held, among the phrases the card's own text names.",
+    "range": "A bounded span with points along it, one point marked.",
+    "split": "A division into halves, one half marked.",
+    "step": "An ordered sequence of steps, one step marked.",
+    "exchange": "The items in a multi-issue trade, one of them marked.",
+    "signal": "A cue or tell, one cue marked.",
+    "alternative": "Candidate moves, one of them marked.",
+    "stake": "A position with what it costs held against it, the position marked.",
+    "layer": "Stacked levels, one level marked.",
+    "choice": "A fork of branches, one branch marked.",
+    "expand": "Frames widening beyond the first, one frame marked."
+  },
+  "numbering": "Every family numbers the positions the card's own text names, in the order the text names them, and the mark is the named position. A card that lists co-equal parts without naming one marks the first. Two ordering clauses apply where text order would misdescribe the shape. A range whose points are numbers orders them low to high, because the span is one dimension: NEG-31 names our $120,000 first and their $80,000 second, and the mark rides on our high end, so the low-to-high order puts it at point 2. A card that opposes exactly two positions and names both keeps text order instead. No family numbers a geometry the text does not list, and no family in this deck needs its shape to print numbers. The order is read from the whole record in block order - origin, scenario, script, defense - not from the basis field alone: card 19s second position lives in its defense, and block order is what puts 03s landlord demand before its benchmark and 39s CFO before its warm partner. An exchange item is something the card offers or asks for, not what it holds: 07s fee drop counts because it is offered conditionally, and 22 counts its three concessions but not the $200,000 it holds firm.",
+  "units": {
+    "label": "part",
+    "range": "point",
+    "split": "half",
+    "step": "step",
+    "exchange": "item",
+    "signal": "cue",
+    "alternative": "option",
+    "stake": "stake",
+    "layer": "level",
+    "choice": "branch",
+    "expand": "frame"
+  },
+  "sizeRule": "Three sizes are fixed from measurement, not chosen per card. Scenario: 115 characters or fewer at 9 pt, 136 or fewer at 8.5, 166 or fewer at 8, longer at 7.5. Name: 50 characters or fewer at 12 pt, 58 or fewer at 11.5, longer at 11. Back face: 7 pt, except NEG-03, NEG-10 and NEG-28 at 6.5 pt, where the script and the short defense together exceed what 7 pt holds. Every card is measured at its assigned size before the deck ships; a front that fails is raised and reported, never re-cut.",
+  "map": {
+    "NEG-01": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Split at half 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "examine this logistics bottleneck as an objective operational problem"
+      },
+      "defenseSize": 7
+    },
+    "NEG-02": {
+      "family": "layer",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Layer at level 2 of 2",
+      "basis": {
+        "field": "origin",
+        "quote": "whereas an interest constitutes the underlying"
+      },
+      "defenseSize": 7
+    },
+    "NEG-03": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Range at point 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Let us align on an objective benchmark"
+      },
+      "defenseSize": 6.5
+    },
+    "NEG-04": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Alternative at option 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "I have secured a formal offer from a tier-one competitor"
+      },
+      "defenseSize": 7
+    },
+    "NEG-05": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Alternative at option 1 of 2",
+      "basis": {
+        "field": "scenario",
+        "quote": "threatens to build a proprietary internal platform"
+      },
+      "defenseSize": 7
+    },
+    "NEG-06": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Range at point 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "completed at multiples between 5.5x and 8.2x"
+      },
+      "defenseSize": 7
+    },
+    "NEG-07": {
+      "family": "exchange",
+      "divisions": 4,
+      "mark": 1,
+      "schematic": "Exchange at item 1 of 4",
+      "basis": {
+        "field": "script",
+        "quote": "We cannot drop our annual subscription licensing fee"
+      },
+      "defenseSize": 7
+    },
+    "NEG-08": {
+      "family": "exchange",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Exchange at item 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "our firm receives an incentive distribution equal to 25%"
+      },
+      "defenseSize": 7
+    },
+    "NEG-09": {
+      "family": "expand",
+      "divisions": 4,
+      "mark": 1,
+      "schematic": "Expand at frame 1 of 4",
+      "basis": {
+        "field": "script",
+        "quote": "We will generate four distinct operational partnership configurations"
+      },
+      "defenseSize": 7
+    },
+    "NEG-10": {
+      "family": "expand",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Expand at frame 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "are you open to an informal review"
+      },
+      "defenseSize": 6.5
+    },
+    "NEG-11": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Range at point 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "we operate on rigorous cost-to-deliver parameters"
+      },
+      "defenseSize": 7
+    },
+    "NEG-12": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Label at part 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "It seems like you feel completely abandoned"
+      },
+      "defenseSize": 7
+    },
+    "NEG-13": {
+      "family": "signal",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Signal at cue 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Utterly unprecedented?"
+      },
+      "defenseSize": 7
+    },
+    "NEG-14": {
+      "family": "label",
+      "divisions": 3,
+      "mark": 1,
+      "schematic": "Label at part 1 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "You are likely going to conclude that our leadership is predatory"
+      },
+      "defenseSize": 7
+    },
+    "NEG-15": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Label at part 2 of 2",
+      "basis": {
+        "field": "origin",
+        "quote": "remove accusatory \"Why\" prompts in favor of functional interrogatives"
+      },
+      "defenseSize": 7
+    },
+    "NEG-16": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Label at part 2 of 2",
+      "basis": {
+        "field": "origin",
+        "quote": "\"You're right\" is a defensive appeasement phrase"
+      },
+      "defenseSize": 7
+    },
+    "NEG-17": {
+      "family": "signal",
+      "divisions": 3,
+      "mark": 3,
+      "schematic": "Signal at cue 3 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "deliberately hold total silence"
+      },
+      "defenseSize": 7
+    },
+    "NEG-18": {
+      "family": "signal",
+      "divisions": 3,
+      "mark": 1,
+      "schematic": "Signal at cue 1 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "Lower vocal register by one full octave"
+      },
+      "defenseSize": 7
+    },
+    "NEG-19": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Label at part 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "It seems like your executive board has entirely zeroed out"
+      },
+      "defenseSize": 7
+    },
+    "NEG-20": {
+      "family": "choice",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Choice at branch 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Model Alpha provides automated daily log ingest"
+      },
+      "defenseSize": 7
+    },
+    "NEG-21": {
+      "family": "step",
+      "divisions": 5,
+      "mark": 1,
+      "schematic": "Step at step 1 of 5",
+      "basis": {
+        "field": "origin",
+        "quote": "persuasion follows a strict behavioral chain"
+      },
+      "defenseSize": 7
+    },
+    "NEG-22": {
+      "family": "exchange",
+      "divisions": 3,
+      "mark": 1,
+      "schematic": "Exchange at item 1 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "we can incorporate three seats on our Customer Advisory Board"
+      },
+      "defenseSize": 7
+    },
+    "NEG-23": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Stake at stake 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "priced at an initial investment of"
+      },
+      "defenseSize": 7
+    },
+    "NEG-24": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Split at half 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "our tailored advisory architecture, which embeds our staff"
+      },
+      "defenseSize": 7
+    },
+    "NEG-25": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Range at point 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "on the conservative baseline"
+      },
+      "defenseSize": 7
+    },
+    "NEG-26": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Range at point 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "based on our audited resource allocation matrix"
+      },
+      "defenseSize": 7
+    },
+    "NEG-27": {
+      "family": "step",
+      "divisions": 3,
+      "mark": 3,
+      "schematic": "Step at step 3 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "Today, we can make an absolute final adjustment"
+      },
+      "defenseSize": 7
+    },
+    "NEG-28": {
+      "family": "step",
+      "divisions": 4,
+      "mark": 4,
+      "schematic": "Step at step 4 of 4",
+      "basis": {
+        "field": "script",
+        "quote": "Round 4 (100%)"
+      },
+      "defenseSize": 6.5
+    },
+    "NEG-29": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Stake at stake 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Every month you delay deploying this automated observability infrastructure"
+      },
+      "defenseSize": 7
+    },
+    "NEG-30": {
+      "family": "choice",
+      "divisions": 3,
+      "mark": 3,
+      "schematic": "Choice at branch 3 of 3",
+      "basis": {
+        "field": "script",
+        "quote": "Tier 3 provides core API access"
+      },
+      "defenseSize": 7
+    },
+    "NEG-31": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Range at point 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "does not reflect our underlying delivery costs"
+      },
+      "defenseSize": 7
+    },
+    "NEG-32": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Stake at stake 1 of 2",
+      "basis": {
+        "field": "scenario",
+        "quote": "that expires at 5:00 PM today"
+      },
+      "defenseSize": 7
+    },
+    "NEG-33": {
+      "family": "layer",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Layer at level 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "evaluate whether this next phase makes standalone commercial sense"
+      },
+      "defenseSize": 7
+    },
+    "NEG-34": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Label at part 2 of 2",
+      "basis": {
+        "field": "origin",
+        "quote": "provides a psychological shield"
+      },
+      "defenseSize": 7
+    },
+    "NEG-35": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Label at part 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Hypothetically speaking, if we were able to address"
+      },
+      "defenseSize": 7
+    },
+    "NEG-36": {
+      "family": "exchange",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Exchange at item 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "which operational deliverable from the agreed scope would you like to eliminate"
+      },
+      "defenseSize": 7
+    },
+    "NEG-37": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Label at part 2 of 2",
+      "basis": {
+        "field": "origin",
+        "quote": "shifts the conversation from the substantive issues to the negotiation rules"
+      },
+      "defenseSize": 7
+    },
+    "NEG-38": {
+      "family": "signal",
+      "divisions": 4,
+      "mark": 1,
+      "schematic": "Signal at cue 1 of 4",
+      "basis": {
+        "field": "script",
+        "quote": "Lean back physically"
+      },
+      "defenseSize": 7
+    },
+    "NEG-39": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Split at half 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "classic good-cop/bad-cop dynamic"
+      },
+      "defenseSize": 7
+    },
+    "NEG-40": {
+      "family": "step",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Step at step 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "Imagine it is twenty-four months from today"
+      },
+      "defenseSize": 7
+    },
+    "NEG-41": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1,
+      "schematic": "Label at part 1 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "If it is truly an existential issue"
+      },
+      "defenseSize": 7
+    },
+    "NEG-42": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Split at half 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "let us examine the objective market data together"
+      },
+      "defenseSize": 7
+    },
+    "NEG-43": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Split at half 2 of 2",
+      "basis": {
+        "field": "scenario",
+        "quote": "our investment committee will never sign off"
+      },
+      "defenseSize": 7
+    },
+    "NEG-44": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 2,
+      "schematic": "Alternative at option 2 of 2",
+      "basis": {
+        "field": "script",
+        "quote": "initiating negotiations on our secondary acquisition target"
+      },
+      "defenseSize": 7
+    }
+  }
+}

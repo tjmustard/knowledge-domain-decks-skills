@@ -1,0 +1,29 @@
+{
+  "id": "NEG-09",
+  "sourceCardNo": 9,
+  "name": "Inventing Options for Mutual Gain (Divergent Brainstorming)",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Commercial joint venture between an industrial manufacturer and an autonomous robotics startup facing capital constraints.",
+  "scenarioSize": 8.5,
+  "nameSize": 11,
+  "schematic": "Expand at frame 1 of 4",
+  "script": [
+    "\"Let us reserve the next forty-five minutes strictly for divergent scenario modeling. We will generate four distinct operational partnership configurations without committing either organization to any of them. Nothing spoken during this window is binding until formalized in legal drafting.\""
+  ],
+  "defense": "Keep brainstorming exploratory: require a bilateral memorandum that concepts discussed stay uncommitted.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "expand",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "originFull": "Cognitive Decoupling Protocols establish that separating the exploratory generation of alternatives from the critical evaluation of options mitigates reactive positional entrenchment.",
+  "defenseFull": "If exploratory brainstorming is used as an informal discovery tactic to extract leverage, enforce procedural boundaries: \"We are pleased to brainstorm alternative operating models, provided we execute a bilateral memorandum confirming that all concepts discussed remain uncommitted exploratory data points.\""
+}

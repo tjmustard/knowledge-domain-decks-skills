@@ -1,0 +1,29 @@
+{
+  "id": "NEG-01",
+  "sourceCardNo": 1,
+  "name": "Separating People from the Problem",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "High-stakes vendor contract dispute where delivery deadlines were breached following supply chain disruptions, resulting in hostile exchanges between procurement and engineering directors.",
+  "scenarioSize": 7.5,
+  "nameSize": 12,
+  "schematic": "Split at half 2 of 2",
+  "script": [
+    "\"We are confronting an unprecedented supply disruption that threatens our product launch timeline and your firm's margin integrity. Let us step back from our personal frustrations and examine this logistics bottleneck as an objective operational problem that both our teams must solve together.\""
+  ],
+  "defense": "Name the attribution: if personal capability were the bottleneck, replacing me would clear the containers today.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "The Fundamental Attribution Error and the Core Concerns Framework characterize how negotiators routinely attribute structural impasses or tough commercial positions to an opponent's intrinsic character flaws rather than extrinsic environmental constraints. Decoupling identity from the substantive problem prevents social friction from obstructing Pareto-optimal deal design.",
+  "defenseFull": "When an aggressive counterpart attacks personal capability or institutional intent, neutralize the attribution: \"If my personal capability were the true bottleneck, replacing me would clear the containers from the port immediately. Given that customs is physically holding the shipment, let us focus our collective energy entirely on port clearance protocols.\""
+}

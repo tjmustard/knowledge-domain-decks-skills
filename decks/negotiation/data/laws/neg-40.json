@@ -1,0 +1,29 @@
+{
+  "id": "NEG-40",
+  "sourceCardNo": 40,
+  "name": "Red Teaming Deal Structures (Prospective Hindsight Pre-Mortem)",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "Structuring an enterprise joint venture involving complex technical systems and shared revenue distributions.",
+  "scenarioSize": 9,
+  "nameSize": 11,
+  "schematic": "Step at step 1 of 2",
+  "script": [
+    "\"Imagine it is twenty-four months from today: this integration has failed completely, both firms have sustained brand damage, and we are in litigation. Looking back from that failure point, what was the primary operational breakdown that caused it?\""
+  ],
+  "defense": "Bound the risk: a pre-mortem is prudent, but speculation cannot paralyze commitments; fix the bounds with explicit SLAs.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "step",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Prospective Hindsight Bias and Pre-Mortem Analysis demonstrate that imagining a future failure mitigates overconfidence and exposes hidden operational risks before signing.",
+  "defenseFull": "When a counterparty uses a pre-mortem to construct hypothetical risk barriers: \"A failure analysis is prudent, but we cannot allow speculative worst-case scenarios to paralyze standard commercial commitments. Let us bound the risk with explicit SLAs.\""
+}

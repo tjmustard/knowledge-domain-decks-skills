@@ -1,0 +1,29 @@
+{
+  "id": "NEG-18",
+  "sourceCardNo": 18,
+  "name": "The Late-Night FM DJ Cadence",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Managing an escalation meeting where the counterparty's leadership is shouting, banging the conference table, and issuing threats.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Signal at cue 1 of 3",
+  "script": [
+    "(Lower vocal register by one full octave, reduce delivery cadence by 30%, apply strict downward terminal inflection) \"We cannot solve this mission-critical deployment failure while voices are elevated. We will walk through the server incident timeline step by step, right now.\""
+  ],
+  "defense": "Name the cost of the cadence: downtime runs at $50,000 per hour; we need urgent action, not vocal pacing.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "signal",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "originFull": "Polyvagal Theory and Acoustic Neuro-Regulation establish that low-frequency, downward-inflecting, and deliberate vocal acoustics trigger parasympathetic regulation, reducing social threat appraisal and suppressing conversational arousal.",
+  "defenseFull": "When an opponent uses an artificially soothing cadence to control tempo: \"I appreciate your calm tone, but the operational downtime continues to cost our firm $50,000 per hour. We need urgent action, not vocal pacing.\""
+}

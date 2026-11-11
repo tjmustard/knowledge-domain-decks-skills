@@ -1,0 +1,29 @@
+{
+  "id": "NEG-42",
+  "sourceCardNo": 42,
+  "name": "\"Fairness\" Trap Inoculation",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "Procurement agent says: \"We have provided all the documentation you asked for; we just expect you to be fair with your pricing.\"",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Split at half 2 of 2",
+  "script": [
+    "\"Fairness is core to our business philosophy. Please hold me accountable: stop me immediately if you feel I have treated you unfairly, and let us examine the objective market data together.\""
+  ],
+  "defense": "Answer fairness with evidence: it is measured by comparable transactions and shared margin risk; review the rate cards.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Moral Saliency and Guilt Induction demonstrate that manipulators weaponize the word \"fair\" to induce guilt and force unearned concessions.",
+  "defenseFull": "Disarming fairness accusations: \"Fairness is not an abstract emotional sentiment; it is measured by comparable market transactions and shared margin risk. Let us review the audited rate cards for comparable implementations.\""
+}

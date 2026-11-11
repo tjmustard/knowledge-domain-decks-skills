@@ -1,0 +1,29 @@
+{
+  "id": "NEG-36",
+  "sourceCardNo": 36,
+  "name": "The Nibble Counter-Strategy",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "A buyer demands free premium 24/7 technical support right as the master services agreement is opened for signature.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Exchange at item 2 of 2",
+  "script": [
+    "\"We are pleased to include our premium 24/7 support package. That tier is priced at $12,000 annually; which operational deliverable from the agreed scope would you like to eliminate to balance that cost?\""
+  ],
+  "defense": "Reframe the nibble: support is part of core delivery; treating it as an add-on questions the partnership integrity.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "exchange",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Commitment and Consistency Bias establishes that negotiators are uniquely vulnerable right before deal completion, often conceding minor additions to avoid derailing a finalized agreement.",
+  "defenseFull": "Executing a nibble effectively: \"In enterprise agreements of this magnitude, standard operational support is universally understood to be part of the core delivery. Treating baseline support as an add-on calls into question the integrity of the partnership.\""
+}

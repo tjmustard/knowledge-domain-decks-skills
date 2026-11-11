@@ -3993,6 +3993,248 @@
     return out.join("");
   };
 
+  /* --- Negotiation: eleven families, one figure ------------------------- */
+
+  /* The negotiation deck's forty-four tactics are each drawn as one of eleven
+     families, parameterised by {family, divisions, mark}. Divisions are the
+     positions the card's own record names, in the order it names them; the
+     mark is the position the card's move rides on, never a claim that it is
+     the best of them. The deck prints no numbers in the drawing: the label
+     says "cue 3 of 3" and the picture holds three cues because the text
+     listed three, so the drawing and the line cannot disagree. Every family
+     reads all three knobs, so a misspelling cannot declare a parameter its
+     drawing ignores. */
+  shapes["negotiation-figure"] = function (p) {
+    var family = String(p.family || "label");
+    var div = Math.max(2, Math.min(12, Math.round(p.divisions || 3)));
+    var mark = Math.max(1, Math.min(div, Math.round(p.mark || 1)));
+    var cx = 200;
+    var cy = 200;
+    var out = [];
+
+    // One arrowhead at (x, y) pointing along (dx, dy).
+    function head(x, y, dx, dy) {
+      var len = Math.hypot(dx, dy) || 1;
+      var ux = dx / len;
+      var uy = dy / len;
+      var bx = x - ux * 13;
+      var by = y - uy * 13;
+      return (
+        '<path d="M ' + coord(x) + " " + coord(y) + " L " + coord(bx - uy * 5) + " " +
+        coord(by + ux * 5) + " L " + coord(bx + uy * 5) + " " + coord(by - ux * 5) +
+        ' Z" fill="currentColor" opacity="0.8" ' + STROKE + "/>"
+      );
+    }
+
+    if (family === "label") {
+      // Named phrases on one spine; the held phrase is the filled chip.
+      var ly0 = 104;
+      var ly1 = 296;
+      out.push(line(84, ly0 - 12, 84, ly1 + 12, 1.4, 0.3));
+      for (var lp = 1; lp <= div; lp += 1) {
+        var lpy = ly0 + ((ly1 - ly0) * (lp - 1)) / (div - 1);
+        out.push(line(84, coord(lpy), 108, coord(lpy), lp === mark ? 2.4 : 1.1, lp === mark ? 0.9 : 0.3));
+        out.push(
+          rect(108, coord(lpy - 13), 184, 26, lp === mark
+            ? { rx: 4, fill: "currentColor", width: 2, opacity: 0.86 }
+            : { rx: 4, width: 1.1, opacity: 0.3 })
+        );
+      }
+    } else if (family === "range") {
+      // A bounded span with its points along it, ordered low to high. The
+      // end stops are the bounds; the marked point is the filled node.
+      var rx0 = 72;
+      var rx1 = 328;
+      var ry = 208;
+      out.push(line(rx0, ry, rx1, ry, 2, 0.55));
+      out.push(line(rx0, ry - 26, rx0, ry + 26, 2.4, 0.75));
+      out.push(line(rx1, ry - 26, rx1, ry + 26, 2.4, 0.75));
+      for (var rp = 1; rp <= div; rp += 1) {
+        var rpx = div === 1 ? (rx0 + rx1) / 2 : rx0 + ((rx1 - rx0) * (rp - 1)) / (div - 1);
+        out.push(
+          rp === mark
+            ? circle(coord(rpx), ry, 9, { width: 2.8, opacity: 0.95 })
+            : circle(coord(rpx), ry, 5, { hollow: true, width: 1.2, opacity: 0.35 })
+        );
+      }
+    } else if (family === "split") {
+      // One bar divided into its halves; the marked half is filled.
+      var sx0 = 72;
+      var sw = 256;
+      var sy0 = 168;
+      var sh = 64;
+      out.push(rect(sx0, sy0, sw, sh, { rx: 4, width: 2.2, opacity: 0.75 }));
+      for (var sp = 1; sp <= div; sp += 1) {
+        var spw = sw / div;
+        if (sp > 1) out.push(line(coord(sx0 + spw * (sp - 1)), sy0, coord(sx0 + spw * (sp - 1)), sy0 + sh, 1.2, 0.35));
+        if (sp === mark) {
+          out.push(rect(coord(sx0 + spw * (sp - 1) + 3), sy0 + 3, coord(spw - 6), sh - 6, {
+            rx: 3, fill: "currentColor", width: 1.6, opacity: 0.85
+          }));
+        }
+      }
+    } else if (family === "step") {
+      // An ordered sequence climbing left to right; the marked step is heavy.
+      var st0 = 72;
+      var syb = 296;
+      var stw = 256 / div;
+      var stri = 168 / div;
+      for (var sp2 = 1; sp2 <= div; sp2 += 1) {
+        var sy = syb - stri * (sp2 - 1);
+        var sx = st0 + stw * (sp2 - 1);
+        out.push(line(coord(sx), coord(sy), coord(sx + stw), coord(sy), sp2 === mark ? 4 : 1.6, sp2 === mark ? 0.95 : 0.4));
+        out.push(line(coord(sx + stw), coord(sy), coord(sx + stw), coord(sy - stri), sp2 === mark ? 3.2 : 1.4, sp2 === mark ? 0.9 : 0.35));
+        out.push(
+          circle(coord(sx + stw / 2), coord(sy), sp2 === mark ? 7 : 3.6, sp2 === mark
+            ? { width: 2.4, opacity: 0.95 }
+            : { hollow: true, width: 1.1, opacity: 0.35 })
+        );
+      }
+      out.push(line(st0, syb, st0 + stw * div, syb, 1.1, 0.2));
+    } else if (family === "exchange") {
+      // The items in a multi-issue trade, one per row, each moving between the
+      // two sides. The marked item is the filled pair; the arrows show that
+      // each item is offered or asked for, not merely held.
+      var ey0 = 112;
+      var ey1 = 296;
+      for (var ep = 1; ep <= div; ep += 1) {
+        var eyp = ey0 + ((ey1 - ey0) * (ep - 1)) / (div - 1);
+        var eon = ep === mark;
+        var leftward = ep % 2 === 0;
+        out.push(
+          rect(88, coord(eyp - 11), 34, 22, eon
+            ? { rx: 3, fill: "currentColor", width: 1.8, opacity: 0.86 }
+            : { rx: 3, width: 1.1, opacity: 0.32 })
+        );
+        out.push(
+          rect(278, coord(eyp - 11), 34, 22, eon
+            ? { rx: 3, fill: "currentColor", width: 1.8, opacity: 0.86 }
+            : { rx: 3, width: 1.1, opacity: 0.32 })
+        );
+        var ex0 = leftward ? 130 : 274;
+        var ex1 = leftward ? 126 : 270;
+        out.push(line(ex0, coord(eyp), ex1, coord(eyp), eon ? 3 : 1.4, eon ? 0.95 : 0.38));
+        out.push(head(ex1, eyp, ex1 - ex0, 0));
+      }
+    } else if (family === "signal") {
+      // Cues radiating from their source; the marked cue is the heavy arc.
+      var sgy = 236;
+      var sgx = 88;
+      out.push(circle(sgx, sgy, 6, { width: 2.2, opacity: 0.9 }));
+      var sgmax = 232;
+      var sgmin = 58;
+      for (var gp = 1; gp <= div; gp += 1) {
+        var gr = div === 1 ? sgmax : sgmin + ((sgmax - sgmin) * (gp - 1)) / (div - 1);
+        var ga = 0.95;
+        var gx1 = coord(sgx + gr * Math.cos(-ga));
+        var gy1 = coord(sgy + gr * Math.sin(-ga));
+        var gx2 = coord(sgx + gr * Math.cos(ga));
+        var gy2 = coord(sgy + gr * Math.sin(ga));
+        out.push(
+          '<path d="M ' + gx1 + " " + gy1 + " A " + coord(gr) + " " + coord(gr) + " 0 0 1 " + gx2 + " " + gy2 +
+            '" fill="none" stroke="currentColor" stroke-width="' + (gp === mark ? 3.8 : 1.5) +
+            '" stroke-linecap="round" opacity="' + (gp === mark ? 0.95 : 0.28) + '" ' + STROKE + "/>"
+        );
+        out.push(line(coord(sgx + gr * Math.cos(ga)), coord(sgy + gr * Math.sin(ga)), coord(sgx + gr * Math.cos(-ga)), coord(sgy + gr * Math.sin(-ga)), 0.8, 0.12));
+      }
+    } else if (family === "alternative") {
+      // Candidate moves fanning from one point; the taken one is heavy and
+      // carries the arrowhead.
+      var agx = 100;
+      var agy = 200;
+      var arad = 148;
+      out.push(circle(agx, agy, 6, { width: 2.2, opacity: 0.9 }));
+      for (var ap = 1; ap <= div; ap += 1) {
+        var aa = -0.85 + (1.7 * (ap - 1)) / (div - 1);
+        var ax2 = agx + arad * Math.cos(aa);
+        var ay2 = agy + arad * Math.sin(aa);
+        out.push(line(agx, agy, coord(ax2), coord(ay2), ap === mark ? 3.4 : 1.4, ap === mark ? 0.95 : 0.3));
+        if (ap === mark) out.push(head(ax2, ay2, ax2 - agx, ay2 - agy));
+        out.push(
+          ap === mark
+            ? circle(coord(ax2), coord(ay2), 7, { width: 2.4, opacity: 0.95 })
+            : circle(coord(ax2), coord(ay2), 4, { hollow: true, width: 1.1, opacity: 0.35 })
+        );
+      }
+    } else if (family === "stake") {
+      // A position standing on its base, with what it costs held against it:
+      // the marked cost is the filled bar.
+      var kx = 176;
+      out.push(line(kx, 104, kx, 296, 2.4, 0.75));
+      out.push(
+        '<path d="M ' + kx + " 296 L " + (kx - 26) + " 320 L " + (kx + 26) + ' 320 Z" fill="none" stroke="currentColor" stroke-width="1.6" opacity="0.45" ' + STROKE + "/>"
+      );
+      out.push(circle(kx, 104, 7, { width: 2.4, opacity: 0.9 }));
+      var ky0 = 128;
+      var ky1 = 280;
+      for (var kp = 1; kp <= div; kp += 1) {
+        var kyp = ky0 + ((ky1 - ky0) * (kp - 1)) / (div - 1);
+        var kw = 132 - (88 * (kp - 1)) / Math.max(1, div - 1);
+        out.push(
+          rect(coord(kx + 18), coord(kyp - 8), coord(kw), 16, kp === mark
+            ? { rx: 3, fill: "currentColor", width: 1.6, opacity: 0.86 }
+            : { rx: 3, width: 1, opacity: 0.3 })
+        );
+      }
+    } else if (family === "layer") {
+      // Stacked levels; each sits a little wider than the one above it, and the
+      // marked level is the filled band.
+      var lay0 = 96;
+      var lay1 = 304;
+      var lgap = 4;
+      var lh = (lay1 - lay0 - lgap * (div - 1)) / div;
+      for (var lvp = 1; lvp <= div; lvp += 1) {
+        var ly2 = lay0 + (lvp - 1) * (lh + lgap);
+        var lw = 168 + 12 * (lvp - 1);
+        out.push(
+          rect(coord(cx - lw / 2), coord(ly2), coord(lw), coord(lh), lvp === mark
+            ? { rx: 3, fill: "currentColor", width: 2, opacity: 0.85 }
+            : { rx: 3, width: 1.1, opacity: 0.3 })
+        );
+      }
+    } else if (family === "choice") {
+      // One stem to a fork, then a branch per option; the taken branch is
+      // heavy and carries the arrowhead.
+      out.push(line(cx, 312, cx, 244, 2.4, 0.75));
+      out.push(circle(cx, 244, 5.5, { width: 1.8, opacity: 0.85 }));
+      for (var chp = 1; chp <= div; chp += 1) {
+        var cha = -1 + (2 * (chp - 1)) / (div - 1);
+        var chx = cx + 132 * Math.sin(cha);
+        var chy = 244 - 132 * Math.cos(cha);
+        out.push(line(cx, 244, coord(chx), coord(chy), chp === mark ? 3.4 : 1.4, chp === mark ? 0.95 : 0.3));
+        if (chp === mark) out.push(head(chx, chy, chx - cx, chy - 244));
+        out.push(
+          chp === mark
+            ? circle(coord(chx), coord(chy), 7, { width: 2.4, opacity: 0.95 })
+            : circle(coord(chx), coord(chy), 4, { hollow: true, width: 1.1, opacity: 0.35 })
+        );
+      }
+    } else if (family === "expand") {
+      // Frames widening beyond the first; the marked frame is the heavy one.
+      var ep0 = 46;
+      var ep1 = 128;
+      for (var xp = 1; xp <= div; xp += 1) {
+        var er = div === 1 ? ep1 : ep0 + ((ep1 - ep0) * (xp - 1)) / (div - 1);
+        out.push(
+          rect(coord(cx - er), coord(cy - er), coord(2 * er), coord(2 * er), xp === mark
+            ? { rx: 6, width: 3.4, opacity: 0.95 }
+            : { rx: 6, width: 1.2, opacity: 0.28 })
+        );
+      }
+      out.push(circle(cx, cy, 4.5, { width: 1.6, opacity: 0.7 }));
+    } else {
+      // An unknown family still reads all three knobs, so a misspelling cannot
+      // declare parameters this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var u = 0; u < div; u += 1) {
+        var ux = 56 + (288 * (u + 0.5)) / div;
+        out.push(line(coord(ux), 56, coord(ux), 66, 1.4, 0.4));
+      }
+      out.push(circle(coord(56 + (288 * mark) / div), 200, 8, { width: 1.6, opacity: 0.7 }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

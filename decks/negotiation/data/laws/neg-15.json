@@ -1,0 +1,29 @@
+{
+  "id": "NEG-15",
+  "sourceCardNo": 15,
+  "name": "Calibrated Open-Ended Inquiries (\"How / What\")",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Enterprise client insists on customized code escrow and exclusive IP ownership for standard multi-tenant software modules.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Label at part 2 of 2",
+  "script": [
+    "\"How am I supposed to grant your organization exclusive intellectual property ownership over core multi-tenant architectural components without breaking our regulatory security commitments to every other enterprise tenant on the system?\""
+  ],
+  "defense": "Return the burden: the codebase separates core platform modules from tenant logic; we will show the schematic.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Cognitive Burden Shifting and System 2 Activation remove accusatory \"Why\" prompts in favor of functional interrogatives, forcing the counterparty to use executive processing resources to solve the negotiator's structural impediments.",
+  "defenseFull": "When targeted with an inquiry designed to force an operational retreat, return the structural burden: \"By segregating your codebase into core platform modules and proprietary tenant-specific logic. Our engineering team can provide the architectural schematic to show you how to execute it.\""
+}

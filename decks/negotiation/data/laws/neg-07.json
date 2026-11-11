@@ -1,0 +1,29 @@
+{
+  "id": "NEG-07",
+  "sourceCardNo": 7,
+  "name": "Multi-Issue Packaging (Logrolling)",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Negotiating enterprise software licensing where the buyer demands a price point below the seller's strict software gross margin threshold.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Exchange at item 1 of 4",
+  "script": [
+    "\"We cannot drop our annual subscription licensing fee to $180,000 in isolation. However, if your team is willing to execute a three-year commitment, pay the entirety upfront within fifteen days, and agree to participate in two industry case studies, we can deliver the $180,000 annual pricing.\""
+  ],
+  "defense": "Enforce the package: $180,000 is contingent on prepayment and case studies; unbundled, the fee returns to $230,000.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "exchange",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "originFull": "Pareto-Optimal Trade-off Theory in Multi-Attribute Decision Making shows that value is created when negotiators trade issues that are low-cost to one party but high-value to the other.",
+  "defenseFull": "When an aggressive buyer attempts to accept the concession while rejecting the package, enforce structural linkage: \"The $180,000 pricing is fundamentally contingent on the cash acceleration and marketing rights. If we unbundle those provisions, the standalone annual software fee reverts to our baseline of $230,000.\""
+}

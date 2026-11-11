@@ -1,0 +1,29 @@
+{
+  "id": "NEG-10",
+  "sourceCardNo": 10,
+  "name": "Post-Settlement Settlements",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Following the execution of an exhaustive supply chain vendor agreement, both parties recognize that execution exhaustion caused them to leave potential joint efficiencies unaddressed.",
+  "scenarioSize": 7.5,
+  "nameSize": 12,
+  "schematic": "Expand at frame 2 of 2",
+  "script": [
+    "\"We now have a fully executed, binding contract that guarantees both organizations' baselines. With that security established, are you open to an informal review: if we can identify an operational adjustment that benefits both parties without harming either, we implement it; if not, the executed agreement stands unconditionally.\""
+  ],
+  "defense": "Defend the signed contract: do not reopen core terms under the rubric of post-settlement optimization.",
+  "defenseSize": 6.5,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "expand",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Joint Gain Discovery Protocols demonstrate that negotiators, having secured a binding deal, operate in a state of psychological safety that dramatically lowers defensiveness, allowing them to uncover residual Pareto efficiencies.",
+  "defenseFull": "When a counterparty attempts to exploit a post-settlement exploration to renegotiate concessions, defend the signed baseline: \"The executed contract represents our finalized institutional boundary. We will not reopen core commercial terms under the rubric of post-settlement optimization.\""
+}

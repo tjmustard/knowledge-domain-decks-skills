@@ -1,0 +1,29 @@
+{
+  "id": "NEG-21",
+  "sourceCardNo": 21,
+  "name": "Behavioral Change Stairway Sequencing (BCSM)",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Managing an internal shareholder rebellion regarding the strategic pivot of a venture-backed technology company.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Step at step 1 of 5",
+  "script": [
+    "\"Before we examine the financial models for this pivot, I want to spend the first twenty minutes listening to every objection you have regarding market risks. I want to make sure I completely grasp your analysis before we discuss implementation.\""
+  ],
+  "defense": "Respect alignment, name the runway: three months left; review capital reallocation terms now, relational dynamics after.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "step",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "originFull": "Crisis Negotiation Behavioral Change Stairway Model establishes that persuasion follows a strict behavioral chain: Active Listening → Empathy → Rapport → Influence → Behavioral Change. Attempting influence prior to establishing rapport invariably triggers defensive resistance.",
+  "defenseFull": "When a counterparty attempts to force you through a staged relational sequence: \"I respect the need for broad alignment, but our operating runway is down to three months. We must review the capital reallocation terms immediately and address relational dynamics afterward.\""
+}

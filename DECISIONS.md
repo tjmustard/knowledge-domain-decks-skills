@@ -2833,3 +2833,149 @@ What the guard proves is that no test file names the folder; it cannot catch a
 spelling assembled from fragments on purpose, and it does not claim to. The
 ordinary case - the one that existed - is what it catches. The generator is now
 the only file that writes the path, and it reads it only when a maintainer asks.
+
+## 71. The negotiation deck prints the situation, the script and the counter-move, and the map fixes the position before the drawing
+
+The negotiation deck ships forty-four moves in the four stages the source's
+section headings declare - eleven each - as 44 records validated against
+`decks/negotiation/data/law-schema.json`. The front prints the source's
+Negotiation Scenario verbatim at a per-card size, the figure and the map's
+schematic line; the back prints the source's Concrete Dialogue Script verbatim
+as its own lines and a compressed Counter-Move Defense. The source's Behavioral
+Science Origin and Counter-Move Defense are `"card": false` `verbatim` blocks
+printed in `rules/negotiation-rules.md` and the stage resource. The script never
+leaves the card: a move whose exact words are filed somewhere else is the one
+thing this deck exists to prevent.
+
+**Three sizes are fixed from measurement, not chosen per card.** The scenario
+runs 9 pt at 115 characters or fewer (sixteen cards), 8.5 to 136 (fourteen), 8
+to 166 (nine), 7.5 longer (five). The name runs 12 pt at fifty characters or
+fewer (thirty-nine), 11.5 to fifty-eight (three), 11 above (two: NEG-09 at 59
+characters and NEG-40 at 62). The back face runs 7 pt on forty-one cards and 6.5
+on NEG-03, NEG-10 and NEG-28, where script, defense and attribution together
+exceed what 7 holds. Every card was measured at its assigned size before the
+deck shipped; none was re-cut. The compression bound is stated rather than
+implied: the short defense may drop explanation but not a claim, a number or a
+stated bound, and it runs 102 to 120 characters against a schema floor of 90.
+
+**Checkpoint one confirmed all ten defects and challenged none.** The source
+defects are the folder's name occurring once as generic lowercase English in the
+count sentence at line 426; four span ids at two locations (ecosystem prose and
+inside the GlobalScore formula); escaped LaTeX in cards 21 and 28 and in that
+formula; currency escaped in fifteen cards, 48 occurrences on 29 lines across
+all four block types; the comparative matrix's row 37 shifted one column; the
+four stages named three ways; the schema's `key_researchers`, `year`,
+`vocal_cadence` and `bargaining_phase` populated only by the TAC-12 exemplar or
+by no card at all; the schema's id pattern belonging to the productivity deck;
+and the works cited left as one run-on paragraph. The deck carries each: the
+headings are the authority for stages and ids, the matrix contributes no record,
+the works paragraph reaches no artifact, and the exemplar supplies card 12's
+names and year and nothing else. No challenge was sent because none of the ten
+handlings needed one.
+
+**Checkpoint two was not accepted on first reading.** Five findings came back,
+and three were contradictions between the map's own numbering rule and its rows:
+
+1. *NEG-31 ordered a numeric range by text.* The map's rule said text order, the
+   row ordered a range whose points are numbers, and the card names our $120,000
+   first and their $80,000 second. The rule now says a range whose points are
+   numbers orders them low to high, and names NEG-31 as the case that fixed it;
+   the mark rides on our high end at point 2. The alternative - widening the
+   `range` family to license any order - would have licensed a false ordering on
+   every future card, and was rejected.
+2. *NEG-17's cue count read as three where the row could be read as two.* The
+   record names facial posture, eye contact and total silence, so the count is
+   three and the mark rides the third cue, "deliberately hold total silence".
+3. *NEG-43 marked the second of two halves without saying what occupies it.* It
+   is split half 2 of 2, the half the investment committee's refusal occupies.
+4. *Exchange had no definition.* It now says an item is something the card
+   offers or asks for, not what it holds: NEG-07 counts its conditional fee drop,
+   NEG-22 its three concessions and not the $200,000 it holds firm.
+5. *NEG-11's range was questioned.* The script names two positions - arbitrary
+   floor margins and rigorous cost-to-deliver parameters - so the opposition
+   keeps text order, and the mark lands on the second at point 2 of 2. Two
+   positions that are not a continuum are an opposition, and the map reads it
+   that way.
+
+The acceptance added two one-line clauses, neither moving a row. The first says
+which text the order is read from: the whole record in block order - origin,
+scenario, script, defense - not the basis field alone, because card 19's second
+position lives in its defense and block order is what puts 03's landlord demand
+before its benchmark and 39's CFO before its warm partner. The second is the
+exchange definition above. Both are in `numbering` in the layout map and in the
+deck test.
+
+**Eleven families, fixed before the drawing.** `layout-map.json` files the 44
+cards as label 9, range 6, split 5, step 4, exchange 4, signal 4, alternative 3,
+stake 3, layer 2, choice 2, expand 2, and each row carries family, divisions,
+mark, regenerated schematic and defense size. Every family numbers the positions
+the card's own text names, in the order the text names them; a co-equal list
+without a named member marks the first; a two-position opposition keeps text
+order; and no family needs its shape to print numbers, so the drawing and the
+label cannot disagree. The new `negotiation-figure` reads family, divisions and
+mark on every path, including the unknown-family fallback, and the accept gate's
+parametric contract perturbs each leaf and forbids hardcoded colour, filters and
+bitmaps. The deck test regenerates every schematic from `{family, divisions,
+mark}`, checks every basis quote against the field it names, and checks the
+family counts.
+
+**The rendering table is declared, not a repair of the source.** `render.mjs`
+carries three entries: `\\to` prints as `→` (seven occurrences - four in card
+21's "Active Listening → Empathy → Rapport → Influence → Behavioral Change" and
+three in card 28's "(65% → 85% → 95% → 100% of target)"), `\$` prints as `$`
+(48 occurrences on 29 lines across fifteen cards, every one of them counted over
+the source-derived fields rather than over the deck's authored defenses, which
+repeat amounts), and `\.` prints as `.` (NEG-30's "Tier 3."). An undeclared
+backslash is left in place rather than guessed at. The guard fails on any
+surviving backslash or brace in a printed field, and the test asserts the table
+is what the counts say: 48 dollar signs and seven arrows, not more.
+
+**Attribution has two tiers and no third.** NEG-12 prints the source's own
+TAC-12 exemplar, "Matthew D. Lieberman & Naomi I. Eisenberger (2007)", the one
+place the source gives names and a year. NEG-28 and NEG-32 print the surnames
+their titles carry, "Ackerman" and "Farren", with no year because the source
+gives none. The other forty-one print "The source names no originator." The
+schema's `origin` permits `line` or `note` and nothing else, so no record can
+acquire an author, year, title or publication and still validate, and the deck
+never vouches for a citation the source did not make.
+
+**The naming guard is scoped, and honest about what it proves.** No artifact
+carries the commercial product's name or the source folder's name; the folder's
+name occurs once in the source as generic lowercase English and reaches no card.
+The guard walks the deck directory, the rules, the skills, the web bundle and the
+index, matches case-insensitively, and counts occurrences rather than lines. Like
+§70's guard it catches the ordinary case and does not claim to catch a spelling
+assembled from fragments on purpose.
+
+**Two engine additions are inert.** `fields.nameSize` carries the front name's
+per-card size through `deckShape`, `build.mjs` and `card.typ`, and a block's
+`sizeField` carries the back face's. Both default to the shipped behaviour - the
+deck-wide name size and 7 pt - and every earlier deck declares neither, which the
+twelve shipped PDFs' byte-identical rebuild demonstrates rather than asserts.
+
+**One defect in the extraction, found by the deck's own test.** The records for
+NEG-11, NEG-22 and NEG-33 first carried the next stage heading at the end of
+`defenseFull` ("### **Stage 2: ...**" and so on), because the extractor ran past
+the defense into the following section. The deck test's rules-section assertion
+failed on those three cards, the inventory was repaired by stripping a trailing
+stage heading and trimming, the records were rebuilt, and the rules and resources
+regenerated. This is this seat's extraction defect, not a source defect; it is
+recorded here so the inventory's history is not read as ten defects plus three
+the source does not have. The PDF digest did not move, because `defenseFull` is
+off-card: 368,324 bytes at sha256 `d1925851…` before and after.
+
+**Overlaps are routed, not repeated.** Team's T31 states the principled frame as
+one card and Narrative's COR-08 covers a deal's integration narrative. The
+skill's intro and the README name both: reach for T31 to teach the frame and for
+NEG-01 to NEG-11 to run a specific structural move, and no card here carries the
+integration-narrative argument.
+
+**Acceptance figures.** The 88-page print PDF is 368,324 bytes at sha256
+`d1925851…`; the forty-four SVGs hash to `457a7c9f…` in `cards.json` order under
+the declared hex join; all 44 cards fit inside the safe inset with zero OVER and
+zero TIGHT, the worst recto row 424 (NEG-20) and the worst verso 344 (NEG-40);
+the twelve shipped decks rebuild byte-identical. The gate ran 14/0/1 with
+`print: contents` NOT RUN by hand, as every deck's gate has. The schema's field
+descriptions carry the measured ranges they are built on: names 15-62,
+scenarios 58-231, scripts one to four lines of 60-344 characters, short defenses
+102-120, origins 138-375, full defenses 179-360.

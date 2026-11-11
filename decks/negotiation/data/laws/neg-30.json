@@ -1,0 +1,29 @@
+{
+  "id": "NEG-30",
+  "sourceCardNo": 30,
+  "name": "Asymmetric Price Decoys",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Structuring commercial SaaS pricing tiers for an enterprise customer.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Choice at branch 3 of 3",
+  "script": [
+    "\"Tier 1 provides core API access for $100,000. Tier 2 provides core API access plus dedicated 24/7 technical support for $240,000. Tier 3 provides core API access, dedicated 24/7 support, unlimited custom connectors, and full disaster-recovery insurance for $250,000.\""
+  ],
+  "defense": "Expose the decoy: Tier 2 is unviable on purpose; strip insurance and extra connectors and price Tier 2 at $135,000.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "choice",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "originFull": "The Asymmetric Dominance Effect (Decoy Effect) proves that introducing a third, asymmetrically dominated option shifts consumer preferences toward the target option by making it look overwhelmingly superior in value.",
+  "defenseFull": "Expose the decoy architecture: \"Tier 2 is configured as an unviable decoy to funnel our team into Tier 3. Strip the insurance and extra connectors, and provide Tier 2 at an adjusted market price of $135,000.\""
+}

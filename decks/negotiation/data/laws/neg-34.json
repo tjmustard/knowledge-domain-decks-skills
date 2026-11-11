@@ -1,0 +1,29 @@
+{
+  "id": "NEG-34",
+  "sourceCardNo": 34,
+  "name": "\"No\"-Oriented Questioning",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "Re-engaging an enterprise prospective customer who has gone completely silent after receiving a proposal.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Label at part 2 of 2",
+  "script": [
+    "\"Have you completely given up on this integration project for this fiscal year?\""
+  ],
+  "defense": "Answer directly: no, the initiative is not abandoned; capital priority moved to data migration, re-engagement in Q3.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Autonomy Preservation and Psychological Reactance establish that saying \"Yes\" triggers defensiveness and fear of commitment, whereas saying \"No\" provides a psychological shield of control and safety.",
+  "defenseFull": "When targeted with a \"No\"-oriented inquiry: \"No, we have not abandoned the initiative, but our capital priority has shifted toward enterprise data migration. We will re-engage in Q3.\""
+}

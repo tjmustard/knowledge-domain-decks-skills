@@ -1,0 +1,29 @@
+{
+  "id": "NEG-23",
+  "sourceCardNo": 23,
+  "name": "First-Offer Heuristic Anchoring",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Submitting the initial commercial proposal for an enterprise digital transformation initiative.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Stake at stake 1 of 2",
+  "script": [
+    "\"Based on our architectural discovery and organizational change requirements, the strategic engagement is priced at an initial investment of $750,000 for the foundational implementation.\""
+  ],
+  "defense": "Reject the anchor: $750,000 is outside allocation; wipe it from the table and price baseline developer-day rates.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Anchoring-and-Adjustment Heuristic demonstrates that initial numerical values serve as powerful cognitive reference points, pulling subsequent counter-adjustments toward themselves.",
+  "defenseFull": "When hit with an extreme opening anchor, reject it immediately to prevent cognitive fixation: \"We cannot utilize $750,000 as a viable basis for commercial discussion; that figure is entirely outside our strategic allocation. Let us wipe that number from the table and look at baseline developer-day rates.\""
+}

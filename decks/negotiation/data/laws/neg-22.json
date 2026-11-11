@@ -1,0 +1,29 @@
+{
+  "id": "NEG-22",
+  "sourceCardNo": 22,
+  "name": "Non-Monetary Value Trades (Symbolic Concessions)",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Contract negotiations where a client demands a cash discount that would breach the seller's strict gross margin targets.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Exchange at item 1 of 3",
+  "script": [
+    "\"While our cash subscription price must hold at $200,000, we can incorporate three seats on our Customer Advisory Board, provide access to unreleased beta features, and feature your engineering lead in our keynote presentation.\""
+  ],
+  "defense": "Board seats and keynotes do not offset cash flow; require a direct, verifiable cut in capital expenditure.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "exchange",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "originFull": "Subjective Utility Theory and Asymmetric Preference Valuation prove that non-fungible assets carrying near-zero marginal cost for the grantor can deliver outsized operational or psychological utility to the recipient.",
+  "defenseFull": "When offered non-monetary concessions in lieu of financial adjustments: \"Advisory board seats and keynote appearances do not offset our cash-flow constraints. We must see a direct, verifiable reduction in the capital expenditure requirement.\""
+}

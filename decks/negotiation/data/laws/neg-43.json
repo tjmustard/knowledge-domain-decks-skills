@@ -1,0 +1,29 @@
+{
+  "id": "NEG-43",
+  "sourceCardNo": 43,
+  "name": "Higher Authority Escalation Deflection",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "A counterparty agrees to commercial terms and then states: \"I support this agreement personally, but our investment committee will never sign off without another 10% discount.\"",
+  "scenarioSize": 7.5,
+  "nameSize": 12,
+  "schematic": "Split at half 2 of 2",
+  "script": [
+    "\"If your investment committee cannot approve the terms we negotiated, then we do not have an operational consensus. Let us arrange a direct briefing with the committee chair before proceeding.\""
+  ],
+  "defense": "Stand by the price: brief the committee jointly, and hold the current pricing structure through that discussion.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Asymmetric Commitment and Authority Bias involve negotiators pretending they lack final sign-off authority to extract concessions without offering reciprocity.",
+  "defenseFull": "When confronted with an external authority roadblock: \"We understand you must consult your investment committee. To ensure they have the full context, we will present the proposal jointly, and our team will stand by the current pricing structure during that discussion.\""
+}

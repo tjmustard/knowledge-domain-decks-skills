@@ -1,0 +1,29 @@
+{
+  "id": "NEG-19",
+  "sourceCardNo": 19,
+  "name": "Calibrated Mislabeling",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Attempting to uncover an enterprise customer's true unallocated budget without asking a direct question that triggers guarded defensiveness.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Label at part 1 of 2",
+  "script": [
+    "\"It seems like your executive board has entirely zeroed out all digital transformation capital expenditures for this operational unit for the remainder of the calendar year.\""
+  ],
+  "defense": "Recognize the hook and ask for the basis: what specific budgetary data points led you to that hypothesis?",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "The Correction Instinct and Ego Preservation demonstrate that human beings harbor an instinct to correct misinformation, often volunteering proprietary details to establish cognitive dominance.",
+  "defenseFull": "When targeted with an intentional mislabel, recognize the informational hook: \"That is an interesting observation. What specific budgetary data points led you to that hypothesis?\""
+}

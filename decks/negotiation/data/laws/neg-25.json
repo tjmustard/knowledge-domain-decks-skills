@@ -1,0 +1,29 @@
+{
+  "id": "NEG-25",
+  "sourceCardNo": 25,
+  "name": "The Bracketing Technique (Bolstering Range Framing)",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Executive compensation negotiation for an incoming VP of Engineering targeting a $250,000 base salary.",
+  "scenarioSize": 9,
+  "nameSize": 11.5,
+  "schematic": "Range at point 1 of 2",
+  "script": [
+    "\"Industry benchmarks for technical executives overseeing infrastructure transformations of this scale range from $250,000 on the conservative baseline up to $325,000 for elite technical leaders. We should establish our baseline at the $250,000 entry point.\""
+  ],
+  "defense": "Attack the boundary: we do not peg pay to speculative ranges; the approved band for this tier caps at $215,000.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "range",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Extremeness Aversion and the Compromise Effect demonstrate that providing a range where the negotiator's ideal target sits at the conservative boundary leads counterparties to anchor on the target as a fair middle ground.",
+  "defenseFull": "When presented with an asymmetric range, attack the constructed boundary: \"We do not peg executive compensation to speculative industry ranges. Our approved equity and base band for this operational tier is capped at $215,000; that is the boundary we are working with.\""
+}

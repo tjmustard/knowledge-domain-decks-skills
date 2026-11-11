@@ -1,0 +1,29 @@
+{
+  "id": "NEG-29",
+  "sourceCardNo": 29,
+  "name": "Loss Aversion Framing (Prospect Theory)",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Enterprise software representative pitching an observability platform to an IT executive struggling with legacy system outages.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Stake at stake 1 of 2",
+  "script": [
+    "\"Every month you delay deploying this automated observability infrastructure, your firm burns $85,000 in unrecoverable server waste and exposes your enterprise to compliance fines of up to $300,000 per incident.\""
+  ],
+  "defense": "Deflect the loss frame: legacy maintenance is provisioned; do not accelerate procurement on hypothetical loss models.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "stake",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Prospect Theory shows that individuals exhibit asymmetric valuation between gains and losses: the subjective pain of an economic loss is psychologically valued at 2 to 2.5 times the pleasure of an equivalent gain.",
+  "defenseFull": "Deflect the loss frame back to operational fundamentals: \"We have fully provisioned for the maintenance overhead of our legacy infrastructure. We will not accelerate our procurement cycle based on hypothetical loss models; we evaluate this tool purely on verifiable ROI.\""
+}

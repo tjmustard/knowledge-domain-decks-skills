@@ -1,0 +1,29 @@
+{
+  "id": "NEG-05",
+  "sourceCardNo": 5,
+  "name": "BATNA Deconstruction",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "A prospective enterprise customer threatens to build a proprietary internal platform rather than procuring an off-the-shelf data integration solution.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Alternative at option 1 of 2",
+  "script": [
+    "\"When your internal platform team scopes this bespoke build, how are they provisioning for continuous SOC-2 compliance audits, ongoing maintenance for eighteen distinct third-party API mutations, and the direct engineering opportunity cost of diverting twelve senior engineers away from your core product road map?\""
+  ],
+  "defense": "Affirm the internal alternative: engineering has costed the architecture, two sprint teams and maintenance overhead.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Asymmetric Information and Optimism Bias lead counterparties to systematically underestimate the execution friction, capital drag, and switching costs associated with their outside alternatives.",
+  "defenseFull": "When an enterprise vendor attempts to deconstruct your internal alternative, affirm internal competencies: \"Our internal engineering review has already fully costed the architecture, dedicated two agile sprint teams, and factored maintenance overhead into our operational run rate; internal development remains our calibrated baseline.\""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "NEG-37",
+  "sourceCardNo": 37,
+  "name": "Process Naming (Calling Out the Game)",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "An enterprise counterparty repeatedly moves the goalposts, changing agreed-upon contract clauses after every review cycle.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Label at part 2 of 2",
+  "script": [
+    "\"Every time our teams reach alignment on an operational milestone, new terms are introduced that change the baseline. This creates process instability that prevents us from reaching closure. Let us pause and agree on a locked agenda before evaluating another clause.\""
+  ],
+  "defense": "Answer the naming: not strategic; our security review found new compliance hurdles we must address under the charter.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Metacommunication Theory demonstrates that explicitly naming an uncooperative or bad-faith tactic shifts the conversation from the substantive issues to the negotiation rules, neutralizing manipulative behavior without hostility.",
+  "defenseFull": "Neutralizing process calling: \"We are not altering parameters strategically; our internal security review uncovered new compliance hurdles that must be addressed under our charter. We are working to resolve them collaboratively.\""
+}

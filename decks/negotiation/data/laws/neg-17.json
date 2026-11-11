@@ -1,0 +1,29 @@
+{
+  "id": "NEG-17",
+  "sourceCardNo": 17,
+  "name": "Dynamic Silence (Strategic Pausing)",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Following a competitor's aggressive opening proposal in an acquisition negotiation.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Signal at cue 3 of 3",
+  "script": [
+    "(Maintain completely calm facial posture, sustained neutral eye contact, and deliberately hold total silence for four to eight full seconds following the counterpart's statement)."
+  ],
+  "defense": "Acknowledge the pause and hold: take whatever time you need; I am ready to explore the underlying economics.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "signal",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "originFull": "Conversational Turn-Taking and Social Void Discomfort suggest that human conversational dynamics treat silence as a relational rift, creating psychological pressure that compels individuals to speak and disclose latent concessions.",
+  "defenseFull": "When confronted with prolonged dynamic silence, acknowledge the pause and hold the boundary: \"I recognize that proposal requires careful processing. Take whatever time you need; I am ready to explore the underlying economics whenever you are.\""
+}

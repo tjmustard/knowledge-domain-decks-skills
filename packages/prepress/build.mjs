@@ -119,7 +119,8 @@ function fieldsTyp(deck) {
           (block) =>
             `  (field: ${JSON.stringify(block.field)}, ` +
             `label: ${JSON.stringify(block.label.toUpperCase())}, ` +
-            `style: ${JSON.stringify(block.style)}),`
+            `style: ${JSON.stringify(block.style)}, ` +
+            `sizeField: ${typ(block.sizeField)}),`
         ),
         ")"
       ]
@@ -135,6 +136,7 @@ function fieldsTyp(deck) {
     `#let label-items = ${JSON.stringify(shape.labelCardItems.toUpperCase())}`,
     `#let label-prompt = ${JSON.stringify(shape.labelPrompt.toUpperCase())}`,
     `#let field-headline-size = ${typ(shape.headlineSize)}`,
+    `#let field-name-size = ${typ(shape.nameSizeField)}`,
     `#let field-card-id = ${typ(shape.cardId)}`,
     `#let label-context = ${JSON.stringify(shape.labelContext.toUpperCase())}`,
     `#let item-style = ${JSON.stringify(shape.itemStyle)}`,

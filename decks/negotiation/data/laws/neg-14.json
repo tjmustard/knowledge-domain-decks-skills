@@ -1,0 +1,29 @@
+{
+  "id": "NEG-14",
+  "sourceCardNo": 14,
+  "name": "The Accusation Audit",
+  "stage": "Tactical Empathy & Behavioral Influence",
+  "kicker": "Empathy",
+  "scenario": "Approaching a major institutional customer to notify them of an immediate, non-negotiable 20% annual contract price increase.",
+  "scenarioSize": 8.5,
+  "nameSize": 12,
+  "schematic": "Label at part 1 of 3",
+  "script": [
+    "\"Before we review our product roadmap, I want to address the elephant in the room directly. You are likely going to conclude that our leadership is predatory, that we waited until your operations were entirely dependent on our system to exploit your business, and that we have discarded our five-year partnership.\""
+  ],
+  "defense": "Acknowledge the audit and press the facts: listing frustrations does not offset an unforecasted 20% cost increase.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "originFull": "Preemptive Cognitive Inoculation Theory demonstrates that proactively cataloging and verbalizing every negative assumption, insult, or critique the counterparty might formulate effectively drains those grievances of their emotional impact.",
+  "defenseFull": "When an opponent executes an accusation audit to soften a commercial hit, acknowledge the tactic and press the economic facts: \"Listing our valid frustrations in advance does not alleviate the budget crisis an unforecasted 20% cost increase creates. Let us review the objective inflation data justifying this adjustment.\""
+}

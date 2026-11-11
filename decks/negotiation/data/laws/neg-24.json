@@ -1,0 +1,29 @@
+{
+  "id": "NEG-24",
+  "sourceCardNo": 24,
+  "name": "The Perceptual Contrast Principle",
+  "stage": "Anchoring, Framing & Concession Dynamics",
+  "kicker": "Anchoring",
+  "scenario": "Pitching ongoing professional services retained tiers to a mid-market manufacturing enterprise.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Split at half 2 of 2",
+  "script": [
+    "\"Our fully dedicated, 24/7 on-site systems engineering transformation team requires an annual capital allocation of $1,400,000. However, our tailored advisory architecture, which embeds our staff for critical sprint reviews, sits at $340,000.\""
+  ],
+  "defense": "Isolate the target: the $1.4M configuration is irrelevant here; judge the $340,000 proposal on its own economics.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "split",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Perceptual Contrast and Adaptation-Level Theory show that human evaluation is comparative rather than absolute; evaluating an extreme proposition first makes a subsequent moderate proposition appear substantially more reasonable.",
+  "defenseFull": "Neutralize the contrast anchor by isolating the target option: \"The $1.4M configuration is wholly irrelevant to our operating scale. We will evaluate the $340,000 proposal strictly on its standalone unit economics and market comparables.\""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "NEG-04",
+  "sourceCardNo": 4,
+  "name": "BATNA Cultivation and Boundary Hardening",
+  "stage": "Principled Negotiation & Structural Bargaining",
+  "kicker": "Principled",
+  "scenario": "Senior engineering executive negotiating an executive equity package while holding a verified, fully funded offer from an enterprise competitor.",
+  "scenarioSize": 8,
+  "nameSize": 12,
+  "schematic": "Alternative at option 2 of 2",
+  "script": [
+    "\"I have secured a formal offer from a tier-one competitor providing $240,000 in base salary paired with an accelerated four-year vesting schedule. While my strong preference is to lead your infrastructure modernization, I cannot economically rationalize an agreement that provides inferior long-term terminal value.\""
+  ],
+  "defense": "Reframe their criteria: their offer buys base pay now; ours buys long-term equity in a market-dominant ecosystem.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "alternative",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "originFull": "Asymmetric Power Dynamics research indicates that a negotiator's structural power correlates directly with the quality and subjective valuation of their Best Alternative to a Negotiated Agreement. A robust alternative establishes a high reservation price and diminishes psychological susceptibility to coercive tactics.",
+  "defenseFull": "When a counterparty relies heavily on an external alternative, reframe their criteria: \"Their offer prioritizes immediate base compensation over enterprise scale. If near-term liquidity is your sole optimization variable, their structure fits; if you want long-term equity appreciation within a market-dominant ecosystem, our trajectory is unmatched.\""
+}

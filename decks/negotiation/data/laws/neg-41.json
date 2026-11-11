@@ -1,0 +1,29 @@
+{
+  "id": "NEG-41",
+  "sourceCardNo": 41,
+  "name": "Bogey Identification and Defusion",
+  "stage": "De-escalation, Resistance Defusal & Countering Bad Faith",
+  "kicker": "De-escalation",
+  "scenario": "A client fiercely resists standard bi-weekly status updates, claiming they impose severe management overhead.",
+  "scenarioSize": 9,
+  "nameSize": 12,
+  "schematic": "Label at part 1 of 2",
+  "script": [
+    "\"It seems like this bi-weekly reporting cadence is an unacceptable operational burden for your team. If it is truly an existential issue, we will drop the requirement entirely, provided you agree to our net-30 payment terms.\""
+  ],
+  "defense": "Name the bogey: removing a meeting does not offset accelerated net-30 terms; evaluate those terms on their own merits.",
+  "defenseSize": 7,
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "negotiation-figure",
+    "parametricParams": {
+      "family": "label",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "originFull": "Deceptive Bargaining and Asymmetric Preference Exploitation involve pretending an issue of minor importance is a critical deal-breaker, only to trade it away later for major concessions.",
+  "defenseFull": "Calling an unmasked bogey: \"We appreciate the adjustment, but removing an unnecessary meeting does not offset the economic impact of accelerated net-30 terms. Let us evaluate net-30 terms on their standalone merits.\""
+}
