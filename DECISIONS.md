@@ -2492,20 +2492,25 @@ register records a ruling.
 
 - **The register.** `decks/ux-laws/data/law-conflicts.json` holds one row per
   tension: the cards (one id when the tension is inside a single card), the
-  subject, and a one-sentence ruling that begins with the winning card id and
+  subject, and a one-sentence ruling that begins with the card it favours and
   says why. It is data beside the records, not prose in a review thread.
 - **The records follow the ruling.** MPA-01's remedy now groups the 12 items
   into five to seven top-level destinations before placing Dashboard first and
   Settings last, so the fix starts from a navigation DEC-01 permits. HMM-01's
   remedy now calls `history.pushState`/`replaceState` (the History API is
   imperative, not "declarative HTML5 History entries") and focuses search with
-  `/`, an app-level shortcut, rather than Cmd/Ctrl+K, which the browser already
-  owns. The card no longer teaches a binding its own check forbids.
+  `/`, which the page receives before the browser's quick-find default, rather
+  than Cmd/Ctrl+K, which the browser reserves as a command. The card no longer
+  teaches a binding its own check forbids.
 - **The precedence rules are in the skill.** `deck.json`'s `commonRules` gain
-  three: the narrower card outranks the broader one; removing the failure state
-  outranks rearranging around it; and a review that had to weigh a pair names
-  the pair and the card followed. The last one is what makes a judgement
-  checkable after the fact.
+  three: where one card describes the situation another assumes, that
+  constraint applies first and the other card's advice is scoped to what
+  survives it; removing the failure state outranks rearranging around it; and a
+  review that had to weigh a pair names the pair and the card followed. The
+  first rule is stated that way because the seeded pair is not a win: DEC-01
+  does not beat MPA-01, it removes the 12-item bar MPA-01's remedy assumed, so
+  MPA-01's ordering applies within the shorter bar that survives. The last rule
+  is what makes a judgement checkable after the fact.
 - **The generator prints it.** When a deck has a register, `SKILL.md` carries a
   "Known tensions" section after the common rules, one bullet per row. A deck
   without the file writes the same bytes as before; only ux-laws moved.

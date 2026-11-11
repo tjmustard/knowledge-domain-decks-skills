@@ -2,11 +2,11 @@
   {
     "cards": ["DEC-01", "MPA-01"],
     "subject": "fixing a 12-item flat navigation",
-    "ruling": "DEC-01 wins: cap top-level navigation at five to seven items first, then place the critical destination first and the setting last within that shorter set."
+    "ruling": "DEC-01 wins as the constraint: the bar is five to seven destinations before MPA-01's ordering applies. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes."
   },
   {
     "cards": ["HMM-01"],
     "subject": "the Cmd/Ctrl+K search shortcut",
-    "ruling": "HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a binding the browser already owns cannot be taught as a convention, so the remedy uses / instead."
+    "ruling": "HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a browser command cannot be reliably taken by the page, so the remedy uses /, which the page receives before the browser's quick-find default."
   }
 ]

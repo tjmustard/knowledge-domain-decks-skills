@@ -18,8 +18,11 @@ Rules that hold across every card:
 - Check the code in front of you; do not restyle unrelated code.
 - A checklist item that asks for a human-subject experiment cannot be
   satisfied by reading code. Say so rather than claiming it was done.
-- When two cards disagree, the narrower one wins: follow the card whose
-  scope is the screen in front of you, and do not average the two.
+- When two cards disagree, first check whether one describes a situation
+  the other assumes. If it does, that constraint applies first and the other
+  card's advice is scoped to what survives it - do not average the two into
+  a compromise neither card endorses. If neither constrains the other, follow
+  the more specific prescription.
 - Where a fix can either remove a failure state or rearrange around it,
   removing it outranks rearranging: a layout that avoids the violation
   beats one that mitigates it.
@@ -31,8 +34,8 @@ Rules that hold across every card:
 
 Two cards can prescribe incompatible fixes. Each row below is settled: the ruling names the card that wins, and the records have been rewritten to follow it. Read the ruling before choosing between the cards.
 
-- **DEC-01 vs MPA-01 — fixing a 12-item flat navigation.** DEC-01 wins: cap top-level navigation at five to seven items first, then place the critical destination first and the setting last within that shorter set.
-- **HMM-01 (within the card) — the Cmd/Ctrl+K search shortcut.** HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a binding the browser already owns cannot be taught as a convention, so the remedy uses / instead.
+- **DEC-01 vs MPA-01 — fixing a 12-item flat navigation.** DEC-01 wins as the constraint: the bar is five to seven destinations before MPA-01's ordering applies. MPA-01's original remedy assumed a 12-item bar, which is the situation DEC-01 removes.
+- **HMM-01 (within the card) — the Cmd/Ctrl+K search shortcut.** HMM-01's never-hijack check wins over its own Cmd/Ctrl+K example: a browser command cannot be reliably taken by the page, so the remedy uses /, which the page receives before the browser's quick-find default.
 
 ## Heuristic & Mental Models (11 cards)
 

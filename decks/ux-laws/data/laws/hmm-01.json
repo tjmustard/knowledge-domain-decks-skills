@@ -11,7 +11,7 @@
   ],
   "antiPattern": {
     "violation": "A web app rebinds the browser back button to internal tab switching and buries global search in the footer.",
-    "remediation": "Call history.pushState or replaceState for back-button entries; keep search in a persistent header input focused with /, an app-level shortcut rather than a browser-reserved one like Cmd/Ctrl+K."
+    "remediation": "Call history.pushState or replaceState for back entries; keep search in a persistent header input focused with /, a key the page receives before the browser's quick-find default, not Cmd/Ctrl+K, which the browser reserves as a command."
   },
   "graphicMetaphor": {
     "svgShape": "convention-grid",

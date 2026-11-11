@@ -13,7 +13,7 @@
   - Keep checkout steps in the expected billing, shipping, and payment order.
   - Preserve standard keyboard shortcuts and browser history behavior; never hijack them.
 - **Instead of:** A web app rebinds the browser back button to internal tab switching and buries global search in the footer.
-- **Do:** Call history.pushState or replaceState for back-button entries; keep search in a persistent header input focused with /, an app-level shortcut rather than a browser-reserved one like Cmd/Ctrl+K.
+- **Do:** Call history.pushState or replaceState for back entries; keep search in a persistent header input focused with /, a key the page receives before the browser's quick-find default, not Cmd/Ctrl+K, which the browser reserves as a command.
 - **Source:** Jakob Nielsen (2000), *Designing Web Usability: The Practice of Simplicity*.
 
 ## HMM-02 — Mental Model Theory

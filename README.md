@@ -673,8 +673,8 @@ built it.
 
 **What has been checked in the built PDFs.** With Typst 0.15.1 (9dfd3a08) and
 the vendored diagram face passed with `--font-path`, `npm run
-build:pdf` emits the UX deck as 108 pages and 1,060,341 bytes (sha256
-`a556034d…`), the narrative deck as 96 pages and 755,113 bytes (`2f004169…`),
+build:pdf` emits the UX deck as 108 pages and 1,060,390 bytes (sha256
+`9e718a60…`), the narrative deck as 96 pages and 755,113 bytes (`2f004169…`),
 the archetype deck as 32 pages and 293,004 bytes (`af2ea16f…`), the
 facilitation deck as 96 pages and 801,246 bytes (`035429f5…`), and the
 retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy

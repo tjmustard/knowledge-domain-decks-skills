@@ -20,7 +20,7 @@ public-domain principle, when to check for it, and the concrete fix.
 
 **Anti-pattern.** A web app rebinds the browser back button to internal tab switching and buries global search in the footer.
 
-**Fix.** Call history.pushState or replaceState for back-button entries; keep search in a persistent header input focused with /, an app-level shortcut rather than a browser-reserved one like Cmd/Ctrl+K.
+**Fix.** Call history.pushState or replaceState for back entries; keep search in a persistent header input focused with /, a key the page receives before the browser's quick-find default, not Cmd/Ctrl+K, which the browser reserves as a command.
 
 **Source.** Jakob Nielsen (2000). *Designing Web Usability: The Practice of Simplicity*. New Riders Publishing.
 
