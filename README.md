@@ -467,7 +467,7 @@ and Brown's *Hacking Growth* (2017) and McClure's *Startup Metrics for Pirates*
 (2007). Every other card says "The source names no originator." rather than
 guess. Card text is written for this deck.
 
-Its 84-page print PDF is 386,570 bytes (sha256 `c1b37678…`), byte-identical on
+Its 84-page print PDF is 387,156 bytes (sha256 `be878abb…`), byte-identical on
 rebuild. Its ruleset and skill are [`rules/innovation-rules.md`](./rules/innovation-rules.md)
 and [`skills/innovation/`](./skills/innovation/), and the skill's index carries
 five routes to cards that also live in other decks. The deck's records are in
