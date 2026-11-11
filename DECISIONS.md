@@ -1655,6 +1655,10 @@ another key: a test that reads an untracked file is testing the machine it runs
 on. Any input a test depends on belongs in git, or its absence belongs in the
 test as a stated condition.
 
+**Superseded in part by §70.** The guarded read described above is gone: no test
+reads the input at all, and the freshness comparison lives in the generator's
+`--check` mode, run by hand.
+
 ## 47. The inventory is the deck's data, and the test holds the records to it
 
 The facilitation deck's forty-eight exercises are an inventory before they are
@@ -2792,3 +2796,40 @@ research folder. This deck's tests do not, and the guard asserts it. The
 archetypes deck's test still reads its own source file when that folder is
 present; that predates this slice, is outside its one concern, and is recorded
 here so it is not mistaken for a property the whole suite holds.
+
+## 70. No test may read the read-only input, and freshness lives in the generator
+
+The person's rule is absolute: the research input under the read-only folder is
+gitignored and no test may read it. §46 kept a guarded read - "where the input
+is present it extracts again" - and the guard is why the rule could survive in
+the code while the defect stood: on a machine carrying the research, `npm test`
+read an untracked file, so the suite gave one answer here and another in a
+fresh clone, and a gitignored input was load-bearing for the tests. A guarded
+read is a defence of the code, not a reading of the rule. (This section is
+numbered 70, not 69: 69 is the brand deck's accepted record on its own branch,
+and a number already cited in an acceptance is not moved to fill a gap.)
+
+Two moves. `scripts/test/archetypes.test.mjs` drops the `SOURCE` constant, the
+`existsSync`/`readFile` block and the `extractHeadings` import; it still holds
+the sixteen records to the committed extraction - count, ids in order, names and
+families - so nothing it proved about the deck was lost. Freshness moves to
+`scripts/extract-source-headings.mjs --check`, which re-extracts the input and
+exits non-zero with a diff-shaped message ("-" the committed copy, "+" what the
+input now says) when the copy is stale. With no input present it prints
+`UNKNOWN: the research input is not present in this checkout, so nothing was
+compared - unknown, not a pass.` and exits 0, the same convention as a missing
+Typst in `check:fit`.
+
+`scripts/test/readonly-input.test.mjs` is the guard: every `.mjs`, `.js` and
+`.cjs` under `scripts/test/`, scanned recursively and itself included, for the
+folder's name, with the offending file and line in the failure. The needle is
+assembled at run time - `["Supporting", "Information"].join("")` - because a
+literal would make the guard contain the string it scans for and fail itself,
+and the tempting fix, an exclusion for the guard file, is a quiet hole. A probe
+line added to `archetypes.test.mjs` made the guard fail naming that file and
+that line; the probe was removed after the run.
+
+What the guard proves is that no test file names the folder; it cannot catch a
+spelling assembled from fragments on purpose, and it does not claim to. The
+ordinary case - the one that existed - is what it catches. The generator is now
+the only file that writes the path, and it reads it only when a maintainer asks.

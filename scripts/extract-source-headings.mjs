@@ -5,11 +5,14 @@
  * to a retyped list. The research input is read-only and not in git (see
  * .gitignore: provenance and licence are the person's call), so a checkout -
  * CI included - cannot read it. This script writes what it read to
- * decks/archetypes/data/source-headings.json, the deck's own data tree; the
- * test compares records against that file, and where the input is present it
- * re-extracts and holds the committed file to it.
+ * decks/archetypes/data/source-headings.json, the deck's own data tree, and the
+ * test compares records against that file. No test reads the input: freshness
+ * is checked by a maintainer running --check, which re-extracts the input and
+ * holds the committed copy to it. With no input in the checkout --check has
+ * nothing to compare and says so, exit 0, because unknown is not a pass.
  *
- * Usage: node scripts/extract-source-headings.mjs
+ * Usage: node scripts/extract-source-headings.mjs           (writes the file)
+ *        node scripts/extract-source-headings.mjs --check   (compares only)
  */
 import { readFile, writeFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
@@ -46,9 +49,60 @@ const main = async () => {
   console.log(`wrote ${headings.length} headings to ${OUT}`);
 };
 
+// The freshness check, run by hand and never by a test. It reads the input only
+// because a maintainer asked it to; the suite never depends on the folder.
+const check = async () => {
+  let text;
+  try {
+    text = await readFile(SOURCE, "utf8");
+  } catch (error) {
+    if (error.code !== "ENOENT") throw error;
+    console.log(
+      "UNKNOWN: the research input is not present in this checkout, so nothing was compared - unknown, not a pass."
+    );
+    return 0;
+  }
+  const committed = JSON.parse(await readFile(OUT, "utf8"));
+  const headings = extractHeadings(text);
+  const digest = createHash("sha256").update(text).digest("hex");
+
+  // Diff-shaped: "-" is the committed copy, "+" is what the input now says, so
+  // the reader sees both sides without opening either file.
+  const differences = [];
+  if (committed.sourceSha256 !== digest) {
+    differences.push(`  source sha256: committed ${committed.sourceSha256}, input ${digest}`);
+  }
+  if (committed.headings.length !== headings.length) {
+    differences.push(`  heading count: committed ${committed.headings.length}, input ${headings.length}`);
+  }
+  const longest = Math.max(committed.headings.length, headings.length);
+  for (let index = 0; index < longest; index += 1) {
+    const was = committed.headings[index];
+    const now = headings[index];
+    const same = was && now && was.number === now.number && was.name === now.name;
+    if (same) continue;
+    differences.push(
+      `- heading ${index + 1}: ${was ? `Card ${was.number}: ${was.name}` : "(none)"}\n` +
+        `+ heading ${index + 1}: ${now ? `Card ${now.number}: ${now.name}` : "(none)"}`
+    );
+  }
+
+  if (differences.length > 0) {
+    console.error(`MISMATCH: ${OUT} is not current with the research input.`);
+    for (const line of differences) console.error(line);
+    console.error("Rerun scripts/extract-source-headings.mjs to write the new extraction.");
+    return 1;
+  }
+  console.log(
+    `OK: the committed extraction is current: ${headings.length} headings, source sha256 ${digest}.`
+  );
+  return 0;
+};
+
 const invokedDirectly =
   process.argv[1] && join(process.argv[1]) === fileURLToPath(import.meta.url);
 
 if (invokedDirectly) {
-  await main();
+  const wantsCheck = process.argv.slice(2).includes("--check");
+  process.exit(wantsCheck ? await check() : await main().then(() => 0));
 }
