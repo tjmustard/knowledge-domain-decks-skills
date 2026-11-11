@@ -1,0 +1,40 @@
+{
+  "id": "TAC-38",
+  "sourceTacticNo": 38,
+  "name": "Clear’s 4th Law: Immediate Reinforcement & Seinfeld Strategy",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Delayed-reinforcement discount decay. Because the rewards of hard work often take months to materialize, the brain naturally favors instant gratification today over delayed success tomorrow.",
+  "diagnosticSize": 8,
+  "schematic": "Loop at step 4 of 4",
+  "procedure": [
+    {
+      "text": "Give yourself an immediate, tangible reward after the target habit."
+    },
+    {
+      "text": "Track it with a Don't Break the Chain mark: one X for each consecutive day."
+    },
+    {
+      "text": "Keep the chain visible in the daily workspace."
+    },
+    {
+      "text": "Protect the unbroken chain rather than watching distant outcomes."
+    }
+  ],
+  "trap": "Obsessing over scores, analytics and dashboards instead of keeping the simple visible chain.",
+  "origin": {
+    "authors": [
+      "Clear"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 4,
+      "mark": 4
+    }
+  },
+  "procedureFull": "1. Establish an immediate, tangible visual reward right after completing a core target habit.\n2. Use a \"Don't Break the Chain\" visual tracker (the Seinfeld strategy): mark an explicit \"X\" for each consecutive day the target habit is executed.\n3. Keep the chain highly visible within the daily workspace.\n4. Focus entirely on protecting the unbroken chain of daily marks rather than fixating on distant, unpredictable long-term outcomes.",
+  "setupFull": "Deep Work Habit Chain (Target: 90 min daily)\n  * 2026-11-01: [x] (Day 42)\n  * 2026-11-02: [x] (Day 43)\n  * 2026-11-03: [x] (Day 44)\n  * 2026-11-04: [ ] (Day 45) <!-- Protect the unbroken chain! -->",
+  "trapFull": "Obsessing over complex analytics, productivity scores, and metrics dashboards rather than maintaining a simple, consistent visual chain."
+}

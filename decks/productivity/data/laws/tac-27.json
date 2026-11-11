@@ -1,0 +1,41 @@
+{
+  "id": "TAC-27",
+  "sourceTacticNo": 27,
+  "name": "Cognitive Shutdown Ritual and Hard Cutoff",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Evening work rumination. Lacking a clear end to the workday lets open work loops linger in the mind, disrupting psychological recovery and degrading sleep quality.",
+  "diagnosticSize": 8.5,
+  "schematic": "Loop at step 3 of 3",
+  "procedure": [
+    {
+      "text": "Start an unvarying shutdown sequence at a fixed evening time."
+    },
+    {
+      "text": "Clear scratchpads, review what got done, close active terminal buffers."
+    },
+    {
+      "text": "Check tomorrow's calendar and confirm the top three priorities."
+    },
+    {
+      "text": "Lock the workspace or close the terminals and say a shutdown phrase out loud."
+    },
+    {
+      "text": "Do not check work messages or notes until the next morning."
+    }
+  ],
+  "trap": "Reopening chat or mail just to check later, which restarts the open loops the ritual closed.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "procedureFull": "1. Initiate an explicit, unvarying shutdown sequence at a set time each evening.\n2. Process ephemeral work scratchpads, review the day's accomplishments, and clear active terminal buffers.\n3. Review the upcoming calendar schedule and confirm the next day's top 3 MIT priorities.\n4. Lock the physical workspace or close development terminals; say an explicit verbal shutdown phrase (e.g., \"System shutdown complete\") to signal an unambiguous end to the workday.\n5. Strictly prohibit checking communications or work notes until the next morning.",
+  "setupFull": "Daily Shutdown Protocol (17:30)\n  * [ ] Commit or stash active Git work: git status\n  * [ ] Check inbox.md for loose ends; verify tomorrow's calendar\n  * [ ] Select tomorrow's 3 MITs in daily_plan.md\n  * [ ] Close IDE, terminal windows, Slack/email\n  * [ ] State: \"Shutdown Complete\" -> Step away from the desk",
+  "trapFull": "Re-opening communication apps or work chat \"just to check\" later in the evening, breaking the psychological separation and reactivating working memory loops."
+}

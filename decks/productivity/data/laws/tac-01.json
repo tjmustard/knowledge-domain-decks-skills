@@ -1,0 +1,38 @@
+{
+  "id": "TAC-01",
+  "sourceTacticNo": 1,
+  "name": "Getting Things Done (GTD) Ubiquitous Capture",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Open-loop cognitive overload and intrusive retrieval spikes. Unprocessed mental inputs disrupt sustained focus by cyclically demanding conscious awareness via the Zeigarnik effect.",
+  "diagnosticSize": 8.5,
+  "schematic": "Pipeline at stage 1 of 4",
+  "procedure": [
+    {
+      "text": "Keep one inbox reachable from every environment in under three seconds."
+    },
+    {
+      "text": "Record every commitment, request, idea or question as an atomic entry the moment it appears."
+    },
+    {
+      "text": "Do not categorize, edit or prioritize while capturing; keep recording separate from evaluating."
+    },
+    {
+      "text": "Flush the inbox to zero at least once a day in a dedicated triage window."
+    }
+  ],
+  "trap": "Capturing into deep folders or taxonomies. Categorizing at the capture point forces an evaluation, so logging is postponed and the brain keeps the task instead.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "pipeline",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Establish a single, universally accessible inbox medium available across all operative environments in under three seconds.\n2. The instant a commitment, request, idea, or unresolved question crosses conscious awareness, record it as an atomic text entry without categorization, editing, or prioritization.\n3. Prohibit real-time processing during capture; maintain complete separation between recording and evaluating.\n4. Flush this inbox buffer to zero at least once daily during dedicated triage windows.",
+  "setupFull": "inbox.md\n  * [ ] Investigate connection pool timeout in staging database\n  * [ ] Schedule Q3 performance review sync with engineering lead\n  * [ ] Research WebAssembly compilation pipeline for text parser",
+  "trapFull": "Capturing directly into deep folder hierarchies or taxonomies. Categorization friction at the capture point forces prefrontal evaluation, causing practitioners to postpone logging and revert to biological retention."
+}

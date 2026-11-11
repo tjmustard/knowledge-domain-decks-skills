@@ -1,0 +1,38 @@
+{
+  "id": "TAC-28",
+  "sourceTacticNo": 28,
+  "name": "Distraction Quarantine (Attention Parking Lot)",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Impulsive task departure. The urge to research a tangential idea or resolve an unrelated chore derails the current deep-focus session.",
+  "diagnosticSize": 9,
+  "schematic": "Gate at route 1 of 2",
+  "procedure": [
+    {
+      "text": "Keep a minimal Parking Lot file or card within reach of the keyboard."
+    },
+    {
+      "text": "When an unrelated impulse or chore appears, write it down on one line."
+    },
+    {
+      "text": "Do not open a tab or chase it; return focus to the primary task."
+    },
+    {
+      "text": "Process the parked items in a batch during a later administrative block."
+    }
+  ],
+  "trap": "Researching a parked question quickly mid-session, which shatters the focus it was parked to protect.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Keep an ultra-minimal text file or physical index card labeled \"Parking Lot\" directly beside the main keyboard.\n2. When an unrelated impulse, question, or administrative chore pops into mind, immediately write it down as a single-line note.\n3. Do not open a new browser tab or pursue the inquiry; immediately return focus to the primary task.\n4. Process the quarantined items in batch mode during a dedicated administrative block later in the day.",
+  "setupFull": "parking_lot.md\n  * 09:23: How does SQLite handle concurrent WAL readers during checkpoint?\n  * 10:14: Buy replacement ergonomic keyboard wrist rest.\n  * 11:05: Check if Postgres 16 supports native bidirectional logical replication.",
+  "trapFull": "Immediately researching quarantined questions under the excuse of \"quick context lookups,\" shattering active focus."
+}

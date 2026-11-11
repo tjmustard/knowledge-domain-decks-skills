@@ -1,0 +1,38 @@
+{
+  "id": "TAC-26",
+  "sourceTacticNo": 26,
+  "name": "Attention Residue Mitigation via Interstitial Journaling",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Context-switch spin-down and spin-up drag. Switching between distinct coding tasks causes mental residue to linger, slowing down focus on the next assignment.",
+  "diagnosticSize": 8.5,
+  "schematic": "Loop at step 1 of 3",
+  "procedure": [
+    {
+      "text": "At a breaking point or a finished task, pause before switching."
+    },
+    {
+      "text": "Write three bullets: the timestamp and task just done, your state and any open concern, the exact next action."
+    },
+    {
+      "text": "Take a 60-second breathing pause."
+    },
+    {
+      "text": "Start the next task by executing that exact next action."
+    }
+  ],
+  "trap": "Writing long prose instead of quick operational notes, so the mental clear becomes another distraction.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. When reaching a breaking point or completing a task, pause before switching to the next item.\n2. Open an interstitial journal note and quickly write down three plain-text bullet points:\n   * Exact timestamp and the precise task just completed.\n   * Immediate emotional/cognitive state and any unresolved concerns.\n   * The physical next action required for the upcoming task, broken down to be immediately actionable.\n3. Take a brief 60-second breathing pause.\n4. Start the next task by executing the exact step just written down.",
+  "setupFull": "* 11:42 - FINISHED: Replaced JSON serializer with simdjson parser.\n  * STATE: Slight mental fatigue; concerned about edge cases in escaped Unicode.\n  * NEXT ACTION: Open tests/parser_tests.rs, run cargo test test_unicode_escape.\n* 11:43 - STARTING: Unicode escape test suite debugging.",
+  "trapFull": "Writing long-form prose instead of quick operational notes, turning a fast mental clear into an administrative distraction."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "TAC-36",
+  "sourceTacticNo": 36,
+  "name": "Clear’s 2nd Law: Temptation Bundling (Make it Attractive)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Low-dopamine task initiation friction. Tasks that feel dry or boring generate strong resistance, driving the brain toward instantly rewarding distractions.",
+  "diagnosticSize": 8.5,
+  "schematic": "Loop at step 3 of 3",
+  "procedure": [
+    {
+      "text": "Pair a necessary low-reward task with a rewarding experience you enjoy."
+    },
+    {
+      "text": "Allow the reward only while the task is being done or was just finished."
+    },
+    {
+      "text": "Never consume the reward outside that pairing."
+    },
+    {
+      "text": "Use the reward's momentum to build the habit loop."
+    }
+  ],
+  "trap": "Taking the reward without finishing the paired task, which collapses the psychological contract.",
+  "origin": {
+    "authors": [
+      "Clear"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "procedureFull": "1. Pair an essential, low-dopamine responsibility (a need-to-do) directly with a high-dopamine, enjoyable reward (a want-to-do).\n2. Create a strict rule: access to the rewarding experience is permitted *if and only if* the low-dopamine task is actively being performed or was just completed.\n3. Never allow the reward to be consumed outside of this pairing.\n4. Use the momentum from the immediate reward to build a positive long-term habit loop.",
+  "setupFull": "Temptation Bundle Registry\n  * **Rule**: Listening to specialized high-fidelity audio album / podcast is ONLY permitted while performing weekly code dependency upgrades and documentation.\n  * **Rule**: Drinking single-origin pour-over coffee is ONLY permitted while conducting the morning deep architecture review.",
+  "trapFull": "Breaking the rule and indulging in the reward without finishing the paired task, collapsing the psychological contract."
+}

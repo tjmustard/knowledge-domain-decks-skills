@@ -1,0 +1,109 @@
+{
+  "id": "productivity",
+  "slug": "productivity",
+  "name": "Productivity Architecture",
+  "description": "Forty-four workflow tactics in four domains, each naming the cognitive friction it resolves, the numbered procedure, the plain-text setup the source prints, and the failure trap that turns it into theatre.",
+  "categories": [
+    "Task Architecture and Workflow Systems",
+    "Triage and Prioritization Frameworks",
+    "Cognitive Focus and Flow State Engineering",
+    "Habit Formation and Friction Engineering"
+  ],
+  "accents": {
+    "Task Architecture and Workflow Systems": "#0E7490",
+    "Triage and Prioritization Frameworks": "#7C3AED",
+    "Cognitive Focus and Flow State Engineering": "#C2410C",
+    "Habit Formation and Friction Engineering": "#15803D"
+  },
+  "itemStyle": "steps",
+  "fields": {
+    "group": "domain",
+    "items": "procedure",
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "diagnostic",
+    "headlineSize": "diagnosticSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Cognitive friction",
+    "context": "Schematic",
+    "items": "Procedure",
+    "cardItems": "Procedure",
+    "resourceItems": "Procedure",
+    "group": {
+      "Task Architecture and Workflow Systems": "Task Architecture",
+      "Triage and Prioritization Frameworks": "Triage",
+      "Cognitive Focus and Flow State Engineering": "Cognitive Focus",
+      "Habit Formation and Friction Engineering": "Habit & Friction"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "trap",
+      "label": "Failure trap",
+      "style": "prose"
+    },
+    {
+      "field": "procedureFull",
+      "label": "Implementation algorithm, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "setupFull",
+      "label": "Plain-text implementation, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "trapFull",
+      "label": "Failure trap, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "sourceNote",
+      "label": "Source note",
+      "style": "prose",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/productivity-rules.md",
+    "skill": "skills/productivity",
+    "pdf": "packages/prepress/dist/productivity.pdf"
+  },
+  "rules": {
+    "title": "Productivity Architecture Rules",
+    "intro": "The tactics come from public practice in personal workflow design: capture and clarification, work-in-progress limits, triage matrices, focus protocols, and the friction engineering that turns a decision into a habit. Each card names the cognitive friction it resolves, the procedure in numbered steps, the plain-text setup the source prints, and the failure trap that turns the tactic into theatre.\nThe diagnostic prints on the card exactly as the source states it. The procedure and the failure trap print on the card compressed to the back's budget, and the source's own algorithm, plain-text setup and failure trap print here, line for line, under each card. Compression may drop explanation; it may not add a claim or change a number. Every number a short step states appears in the block it was compressed from, and the deck's test checks that."
+  },
+  "skill": {
+    "name": "productivity",
+    "description": "Run one of {cards} working tactics this week: four domains of task architecture, triage, focus and habit design, each with the friction it resolves, a numbered procedure, the source's plain-text setup and the trap that over-applying it becomes. Use when a person's own working system is the thing that needs fixing.",
+    "title": "Productivity Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per domain.\n\nChoosing starts from the friction, not the name. If work is piling up and nothing finishes, read Task Architecture. If everything is urgent and nothing is chosen, read Triage. If the work is chosen and attention will not hold, read Cognitive Focus. If the behaviour keeps failing after the decision is made, read Habit and Friction. Then take the one card whose diagnostic reads like your week and run its procedure once before judging it.\n\nWhen two cards fit, prefer the one whose setup you can print on the back of an envelope. A tactic that needs a new tool before it can start is the wrong first move.\n\nRoutes out of this deck. The psychology these tactics lean on is the ux-laws deck's: Zeigarnik, Miller's law and Hick's law are cards there, and this deck uses them without restating them. The Eisenhower matrix appears here as a decision about one person's list (TAC-12) and in the team deck (T42) as a decision about a team's technical debt; the unit of work decides which to read. MoSCoW appears here as a solo scoping move (TAC-16) and in the facilitation deck (WS-22) as a group exercise. Copy Architecture owns formulas and Strategy owns organisational frameworks; no card here is a document, a meeting or a formula.",
+    "commonRules": [
+      "Pick the card from the friction, not the title. The diagnostic on the front is the sentence that says whether this is your week.",
+      "One procedure at a time. Two tactics introduced in the same week cannot be told apart when one of them works.",
+      "Every card has a trap, and the trap is what over-application looks like. Read it before you scale the tactic up.",
+      "The card's procedure is compressed; the source's own algorithm, setup and trap print in the resource file under the same card. Argue from those, not from the card.",
+      "A stated bound is the tactic. WIP at three, six items, five of twenty-five: dropping the number leaves a mood, not a method.",
+      "The card never vouches for a citation the source did not make. A named origin is the name the tactic title carries; where the source names nobody, the card says so."
+    ],
+    "footer": "The diagnostic is the source's own wording. The procedure and the failure trap on the card are this deck's compression; the source's full text follows each card in its resource file and in the rules file. Attribution has two tiers and no third: the name the tactic title carries, or the honest line."
+  },
+  "web": {
+    "global": "PRODUCTIVITY_DECK",
+    "accentsGlobal": "PRODUCTIVITY_DECK_ACCENTS",
+    "title": "Productivity Architecture — Knowledge Domain Decks",
+    "heading": "Productivity Architecture",
+    "lede": "{cards} working tactics: the friction each one resolves, a numbered procedure, the plain-text setup, and the trap that turns it into theatre.",
+    "source": "Generated from <code>decks/productivity/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the procedure"
+  }
+}

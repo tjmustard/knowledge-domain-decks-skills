@@ -1,0 +1,38 @@
+{
+  "id": "TAC-06",
+  "sourceTacticNo": 6,
+  "name": "Personal Kanban Visual Pull Buffer",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Push-system overload. Downstream execution bottlenecks become overwhelmed when tasks are scheduled directly into calendars rather than pulled into execution capacity.",
+  "diagnosticSize": 8.5,
+  "schematic": "Pipeline at stage 2 of 3",
+  "procedure": [
+    {
+      "text": "Put a Ready to Pull buffer immediately before the In-Flight column."
+    },
+    {
+      "text": "Fill it only during triage, with tasks that are refined, unblocked and self-contained."
+    },
+    {
+      "text": "Cap the buffer at five items, one day's realistic execution."
+    },
+    {
+      "text": "Pull from it only when an active WIP slot frees up."
+    }
+  ],
+  "trap": "Letting vague, unrefined tasks into the pull buffer. A task that needs outside input stalls execution and locks up a WIP slot.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "pipeline",
+      "divisions": 3,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Insert a discrete Ready to Pull staging buffer immediately before the In-Flight execution column.\n2. Populate this buffer exclusively during daily or weekly triage with fully refined, non-blocked, self-contained tasks.\n3. Limit the buffer size to 5 items to match single-day execution potential.\n4. The operator only pulls from Ready to Pull when their active WIP slot falls below the hard limit.",
+  "setupFull": "| Ready to Pull (Cap: 5) | Active Execution (Cap: 1) | Completed Today |\n| :---- | :---- | :---- |\n| [ ] Unit test AuthToken validation | [ ] Refactor SQL connection pool | [x] Deploy v1.4.2 patch |\n| [ ] Document internal REST routes |  | [x] Review PR #481 |\n| [ ] Fix Redis heartbeat failure |  |  |",
+  "trapFull": "Allowing unclarified, ambiguous items into the pull buffer. A task pulled into execution that requires unresolved external inputs stalls the system, locking up active WIP capacity."
+}

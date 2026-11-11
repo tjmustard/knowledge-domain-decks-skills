@@ -1,0 +1,38 @@
+{
+  "id": "TAC-18",
+  "sourceTacticNo": 18,
+  "name": "The Regret Minimization Framework",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Paralysis on high-stakes, asymmetric, non-reversible decisions. The mind over-indexes on immediate friction or failure embarrassment instead of long-term opportunity costs.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gate at route 2 of 2",
+  "procedure": [
+    {
+      "text": "Name the high-stakes, hard-to-reverse decision."
+    },
+    {
+      "text": "Imagine looking back from age 80."
+    },
+    {
+      "text": "Ask whether you would regret trying and failing, or never trying at all."
+    },
+    {
+      "text": "If failure costs only temporary discomfort and inaction locks in permanent regret, take the risk now."
+    }
+  ],
+  "trap": "Using regret minimization to justify reckless bets with catastrophic downside and no real upside.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Identify a critical, high-friction, ambiguous decision crossroads.\n2. Project consciousness to an age-80 retrospective vantage point.\n3. Pose the diagnostic question: \"Looking back from 80 years old, will I regret having attempted this and failed, or will I regret having never taken the action at all?\"\n4. If the decision carries asymmetric upside where failure generates only temporary discomfort but inaction cements permanent regret, authorize the risk and proceed immediately.",
+  "setupFull": "Decision Memo: Resigning to launch open-source infrastructure startup\n  * Path A (Safe): Retain high-paying senior engineer position.\n    * Age-80 Retrospective: Deep regret of never testing personal limits; lingering \"what if\" regarding distributed systems idea.\n  * Path B (Risk): Resign and pursue open-source venture.\n    * Worst Case: Fails in 18 months, burn through savings buffer, return to engineering role.\n    * Age-80 Retrospective: Zero regret for testing capacity; complete psychological peace.\n  * CONCLUSION: Authorize Path B immediately.",
+  "trapFull": "Using Regret Minimization to rationalize reckless, low-upside impulses that carry catastrophic downsides without real strategic upside."
+}

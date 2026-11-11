@@ -1,0 +1,38 @@
+{
+  "id": "TAC-31",
+  "sourceTacticNo": 31,
+  "name": "Flow State On-Ramping (Frictionless Bootstrapping)",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Cold-start initiation friction. Staring at an empty editor screen or a huge codebase creates an intimidating barrier to getting started.",
+  "diagnosticSize": 9,
+  "schematic": "Threshold at point 5 of 5",
+  "procedure": [
+    {
+      "text": "End a session with the last task slightly unfinished and an obvious low-effort next step."
+    },
+    {
+      "text": "Write that next action in a comment at the top of the working file."
+    },
+    {
+      "text": "Start the next day by executing the pre-planned step."
+    },
+    {
+      "text": "Use the quick completion as momentum into deeper work."
+    }
+  ],
+  "trap": "Tidying and checking everything in at day's end, which forces a cold start from blank the next morning.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "threshold",
+      "divisions": 5,
+      "mark": 5
+    }
+  },
+  "procedureFull": "1. At the close of a work session, intentionally leave the final task slightly unfinished with an obvious, low-effort next step (e.g., write a failing test with a simple syntax fix).\n2. Document the next action in a single comment right at the top of the working file.\n3. When sitting down the next day, begin by executing that simple, pre-planned step.\n4. Use the quick completion of this initial micro-task to generate the momentum needed for deeper work.",
+  "setupFull": "`# ON-RAMP FOR TOMORROW MORNING:`\n``# The test below fails because `response.status_code` returns 403 instead of 200.``\n``# Fix: Add `auth_token` header to test client fixture in line 42.``\n`def test_endpoint_returns_ok():`\n    `response = client.get(\"/api/v1/health\")`\n    `assert response.status_code == 200`",
+  "trapFull": "Cleaning up, polishing, and checking in all work at the end of the day, forcing a cold start from a completely blank state the following morning."
+}

@@ -1,0 +1,40 @@
+{
+  "id": "TAC-35",
+  "sourceTacticNo": 35,
+  "name": "Clear’s 1st Law: Cue Salience Engineering (Make it Obvious)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Perceptual inattention. Desired behaviors fail to launch simply because their triggers are hidden from daily sight lines.",
+  "diagnosticSize": 9,
+  "schematic": "Threshold at point 2 of 4",
+  "procedure": [
+    {
+      "text": "Audit where the cues for your priority habits are visible."
+    },
+    {
+      "text": "Put the tools, files and resources for those habits directly in the path you cannot miss."
+    },
+    {
+      "text": "Set the workspace the night before so the first thing you meet is the task."
+    },
+    {
+      "text": "In software, keep work directories and focus tools front and centre and bury distractions."
+    }
+  ],
+  "trap": "Leaving too many competing cues around, so visual noise dilutes every trigger.",
+  "origin": {
+    "authors": [
+      "Clear"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "threshold",
+      "divisions": 4,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Audit the physical and digital environment for cue visibility.\n2. Place all physical tools, files, and resources required for high-priority habits directly in unavoidable visual paths.\n3. Set up the working environment the night before so the very first thing encountered in the morning is the target task.\n4. In software, place primary work directories, focus tools, and terminal sessions front and center, while hiding distracting apps behind extra layers.",
+  "setupFull": "`echo \"=== TODAY'S MISSION-CRITICAL FOCUS ===\"`\n`head -n 5 ~/vault/daily/today_focus.md`\n`echo \"======================================\"`",
+  "trapFull": "Leaving too many competing cues scattered across the desktop, creating visual noise that dilutes the focus on any single trigger."
+}

@@ -1,0 +1,1153 @@
+{
+  "sourceBytes": 85007,
+  "sourceSha256": "5a3343f8b4ff8afa0adb418303ec823b0e9260cbcb35d0fab94a6052f47c7093",
+  "sourceFile": "Productivity Systems Framework Research.md",
+  "domains": [
+    "Task Architecture and Workflow Systems",
+    "Triage and Prioritization Frameworks",
+    "Cognitive Focus and Flow State Engineering",
+    "Habit Formation and Friction Engineering"
+  ],
+  "counts": {
+    "records": 44,
+    "byDomain": {
+      "Task Architecture and Workflow Systems": [
+        "TAC-01",
+        "TAC-02",
+        "TAC-03",
+        "TAC-04",
+        "TAC-05",
+        "TAC-06",
+        "TAC-07",
+        "TAC-08",
+        "TAC-09",
+        "TAC-10",
+        "TAC-11"
+      ],
+      "Triage and Prioritization Frameworks": [
+        "TAC-12",
+        "TAC-13",
+        "TAC-14",
+        "TAC-15",
+        "TAC-16",
+        "TAC-17",
+        "TAC-18",
+        "TAC-19",
+        "TAC-20",
+        "TAC-21",
+        "TAC-22"
+      ],
+      "Cognitive Focus and Flow State Engineering": [
+        "TAC-23",
+        "TAC-24",
+        "TAC-25",
+        "TAC-26",
+        "TAC-27",
+        "TAC-28",
+        "TAC-29",
+        "TAC-30",
+        "TAC-31",
+        "TAC-32",
+        "TAC-33"
+      ],
+      "Habit Formation and Friction Engineering": [
+        "TAC-34",
+        "TAC-35",
+        "TAC-36",
+        "TAC-37",
+        "TAC-38",
+        "TAC-39",
+        "TAC-40",
+        "TAC-41",
+        "TAC-42",
+        "TAC-43",
+        "TAC-44"
+      ]
+    },
+    "stepsDeclared": 183,
+    "stepsPrinted": 184,
+    "setupTables": [
+      "TAC-06",
+      "TAC-17",
+      "TAC-19"
+    ],
+    "corrections": [
+      "TAC-14"
+    ]
+  },
+  "cards": [
+    {
+      "n": 1,
+      "id": "TAC-01",
+      "name": "Getting Things Done (GTD) Ubiquitous Capture",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Open-loop cognitive overload and intrusive retrieval spikes. Unprocessed mental inputs disrupt sustained focus by cyclically demanding conscious awareness via the Zeigarnik effect.",
+      "procedureFull": "1. Establish a single, universally accessible inbox medium available across all operative environments in under three seconds.\n2. The instant a commitment, request, idea, or unresolved question crosses conscious awareness, record it as an atomic text entry without categorization, editing, or prioritization.\n3. Prohibit real-time processing during capture; maintain complete separation between recording and evaluating.\n4. Flush this inbox buffer to zero at least once daily during dedicated triage windows.",
+      "setupFull": "inbox.md\n  * \\[ \\] Investigate connection pool timeout in staging database\n  * \\[ \\] Schedule Q3 performance review sync with engineering lead\n  * \\[ \\] Research WebAssembly compilation pipeline for text parser",
+      "trapFull": "Capturing directly into deep folder hierarchies or taxonomies. Categorization friction at the capture point forces prefrontal evaluation, causing practitioners to postpone logging and revert to biological retention.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Keep one inbox reachable from every environment in under three seconds.",
+        "Record every commitment, request, idea or question as an atomic entry the moment it appears.",
+        "Do not categorize, edit or prioritize while capturing; keep recording separate from evaluating.",
+        "Flush the inbox to zero at least once a day in a dedicated triage window."
+      ],
+      "trap": "Capturing into deep folders or taxonomies. Categorizing at the capture point forces an evaluation, so logging is postponed and the brain keeps the task instead."
+    },
+    {
+      "n": 2,
+      "id": "TAC-02",
+      "name": "GTD Clarification and the Two-Minute Rule",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Ambiguity-induced task postponement. Ambiguously defined tasks require high activation energy to parse, while trivial items generate administrative backlog disproportionate to their actual execution cost.",
+      "procedureFull": "1. Isolate the topmost raw item in the capture inbox; evaluate it independently without scanning subsequent items.\n2. Determine if the item is actionable. If not: trash it, archive it as reference, or file it under a deferred incubation list.\n3. If actionable, specify the physical, unambiguous next action required for forward progress.\n4. Determine execution duration: if completion requires \\\\le 120 seconds, execute immediately and terminate the record.\n5. If the action requires \\> 120 seconds, delegate the item or append it to a project backlog or contextual execution list.",
+      "setupFull": "Raw Input: \"Docker container crashes on boot\" Clarified Next Action: \"Run docker logs \\--tail 50 app\\_server to extract panic trace\" Execution Estimate: 30 seconds \\-\\> \\[Executed immediately; record marked complete\\]",
+      "trapFull": "Utilizing the two-minute window to execute micro-tasks sequentially for hours. This causes deep-work derailment and transforms the user into a purely reactive state machine.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Take the top item in the inbox and judge it alone, without scanning the items beneath it.",
+        "Decide whether it is actionable. If not, trash it, file it as reference, or park it on an incubation list.",
+        "If it is actionable, name the one physical next action that moves it forward.",
+        "If that action takes 120 seconds or less, do it now and close the record.",
+        "If it takes longer, delegate it or put it on a project backlog or a context list."
+      ],
+      "trap": "Using the two-minute rule as a habit: running micro-tasks back to back for hours. Deep work derails and you become a purely reactive machine."
+    },
+    {
+      "n": 3,
+      "id": "TAC-03",
+      "name": "GTD Contextual Action Lists",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Context-mismatch friction. Reading actions that cannot be executed in the current physical, technical, or mental state induces decision fatigue and perceptual filtering drag.",
+      "procedureFull": "1. Define a strict, minimal set of discrete operating contexts based on required tooling, cognitive energy, or physical location (e.g., @terminal, @deep-focus, @calls, @errands).\n2. During task clarification, assign exactly one primary context tag to each actionable item.\n3. Filter the action register to display exclusively the tasks associated with the current context.\n4. Suppress all other tasks from visible range until the operational environment shifts.",
+      "setupFull": "(A) Rebase feature branch and resolve merge conflicts @terminal \\+core\\_engine (B) Draft architecture proposal for token revocation @deep-focus \\+auth\\_spec (C) Verify billing webhook signature validity @terminal \\+payment\\_gateway",
+      "trapFull": "Context hyper-fragmentation. Generating dozens of hyper-specific tags (e.g., @laptop\\_at\\_desk, @laptop\\_on\\_couch) introduces excessive taxonomy maintenance overhead that outstrips its retrieval utility.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Define a small fixed set of contexts by tool, energy or place (e.g. @terminal, @deep-focus, @calls, @errands).",
+        "Give each actionable item exactly one primary context tag when you clarify it.",
+        "Filter the register so only the current context is visible.",
+        "Hide every other task until the operational environment changes."
+      ],
+      "trap": "Context hyper-fragmentation. Dozens of over-specific tags (@laptop_at_desk) cost more upkeep than they save in retrieval."
+    },
+    {
+      "n": 4,
+      "id": "TAC-04",
+      "name": "GTD Weekly Review Cadence",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Progressive entropy of trust. When a task tracking infrastructure drifts out of parity with actual existential commitments, subconscious anxiety returns and biological retention restarts.",
+      "procedureFull": "1. Schedule a non-negotiable 60- to 90-minute weekly recurring block (typically Friday afternoon or Sunday evening).\n2. Collect all loose physical papers, scratchpads, and ephemeral capture files; process every inbox to absolute zero.\n3. Inspect every active project file; ensure at least one actionable NEXT task is populated in the contextual action registers.\n4. Audit calendar logs for the past seven days and upcoming fourteen days to capture unresolved open loops.\n5. Review \"Someday/Maybe\" lists to promote newly relevant items or permanently purge irrelevant backlogs.",
+      "setupFull": "Weekly Review Checklist (run every Friday 16:00)\n  * \\[ \\] Clear inbox.md, scratchpads, browser bookmarks to zero\n  * \\[ \\] Verify each projects/\\*.md contains an active \\- \\[ \\] NEXT step\n  * \\[ \\] Scan Google Calendar / Outlook: 7 days back, 14 days forward\n  * \\[ \\] Prune stale items from someday\\_maybe.md\n  * \\[ \\] Check Git repos for stale branches: git branch \\--merged",
+      "trapFull": "Expanding the weekly review into an open-ended strategic re-planning marathon. If the review routinely exceeds two hours, the operator begins avoiding it entirely.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Book a fixed 60- to 90-minute weekly review and treat it as non-negotiable.",
+        "Collect every loose paper, scratchpad and capture file; process every inbox to absolute zero.",
+        "Inspect every active project and make sure at least one next action sits in a context list.",
+        "Scan the calendar seven days back and fourteen days forward for open loops.",
+        "Review the Someday/Maybe list: promote what is now relevant, purge what is not."
+      ],
+      "trap": "Letting the review grow into an open-ended strategic re-planning session. Past two hours, it starts getting skipped entirely."
+    },
+    {
+      "n": 5,
+      "id": "TAC-05",
+      "name": "Personal Kanban Work-in-Progress (WIP) Limits",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Multitasking-induced lead time inflation. Unconstrained active work saturates attention, maximizes context-switching penalties, and slows end-to-end task throughput according to Little's Law.",
+      "procedureFull": "1. Construct a minimal three-stage visual board: Backlog, In-Flight, and Done.\n2. Establish a hard numerical cap on the In-Flight column: \\\\text{WIP Limit} \\\\le 3 items for a solo operator.\n3. Implement a strict pull dynamic: no new item may enter In-Flight from Backlog until an existing item moves to Done or is explicitly discarded.\n4. Treat any WIP violation as an operational fault requiring immediate desynchronization of lower-priority tasks.",
+      "setupFull": "* Backlog\n  * TODO Design database migration scripts \\#priority/medium\n  * TODO Refactor authentication interceptor \\#priority/low\n* In-Flight (WIP: 2 / MAX: 3\\)\n  * DOING Implement OAuth token revocation endpoint\n  * DOING Fix race condition in webhooks consumer\n* Done\n  * DONE Audit API endpoint latencies",
+      "trapFull": "Arbitrarily adjusting WIP limits upward whenever exciting new tasks emerge, neutralizing the systemic friction that forces focus and project completion.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Build a three-column board: Backlog, In-Flight, Done.",
+        "Cap In-Flight at three items for one person.",
+        "Pull a new item in only when an existing one is completed or discarded.",
+        "If the cap is breached, stop and fix the bottleneck before adding more work."
+      ],
+      "trap": "Raising the cap whenever an exciting new task arrives, which removes the friction that forces focus and finishing."
+    },
+    {
+      "n": 6,
+      "id": "TAC-06",
+      "name": "Personal Kanban Visual Pull Buffer",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Push-system overload. Downstream execution bottlenecks become overwhelmed when tasks are scheduled directly into calendars rather than pulled into execution capacity.",
+      "procedureFull": "1. Insert a discrete Ready to Pull staging buffer immediately before the In-Flight execution column.\n2. Populate this buffer exclusively during daily or weekly triage with fully refined, non-blocked, self-contained tasks.\n3. Limit the buffer size to 5 items to match single-day execution potential.\n4. The operator only pulls from Ready to Pull when their active WIP slot falls below the hard limit.",
+      "setupFull": "| Ready to Pull (Cap: 5\\) | Active Execution (Cap: 1\\) | Completed Today |\n| :---- | :---- | :---- |\n| \\[ \\] Unit test AuthToken validation | \\[ \\] Refactor SQL connection pool | \\[x\\] Deploy v1.4.2 patch |\n| \\[ \\] Document internal REST routes |  | \\[x\\] Review PR \\#481 |\n| \\[ \\] Fix Redis heartbeat failure |  |  |",
+      "trapFull": "Allowing unclarified, ambiguous items into the pull buffer. A task pulled into execution that requires unresolved external inputs stalls the system, locking up active WIP capacity.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Put a Ready to Pull buffer immediately before the In-Flight column.",
+        "Fill it only during triage, with tasks that are refined, unblocked and self-contained.",
+        "Cap the buffer at five items, one day's realistic execution.",
+        "Pull from it only when an active WIP slot frees up."
+      ],
+      "trap": "Letting vague, unrefined tasks into the pull buffer. A task that needs outside input stalls execution and locks up a WIP slot."
+    },
+    {
+      "n": 7,
+      "id": "TAC-07",
+      "name": "Personal Sprint Planning (Fixed-Horizon Batches)",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Long-horizon estimation degradation and perpetual backlog horizon despair. Open-ended task backlogs induce demotivation by obscuring boundaries between current responsibilities and the infinite future.",
+      "procedureFull": "1. Define a recurring, time-bound operational iteration (typically two calendar weeks).\n2. Pull a finite subset of objectives from the master backlog whose cumulative historical velocity matches previous sprint completion rates.\n3. Lock the iteration commitment: zero new feature or project initiatives may enter the active sprint unless an equal volume of work is evicted.\n4. Review throughput metrics at sprint completion, archive completed work, and reset the execution container.",
+      "setupFull": "Sprint 2026-W45 (Commitment: 24 Story Points)Committed Items\n  * \\[x\\] (8) Build zero-downtime database migration harness\n  * \\[ \\] (5) Rewrite authentication middleware for session tokens\n  * \\[ \\] (5) Implement user rate-limiting using token bucket algorithm\n  * \\[ \\] (3) Patch vulnerability CVE-2026-8812 in dependencies\n\n  Scope Floor (Protected Capacity: 3 SP)\n\n  * \\[ \\] (3) Unplanned urgent operational defect reserve",
+      "trapFull": "Overcommitting sprint capacity to 100% of theoretical operating bandwidth, leaving no margin for unplanned production outages, bugs, or operational emergencies.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Fix an iteration length, typically two weeks.",
+        "Pull only as much work as past velocity actually completed.",
+        "Lock the commitment: adding an item means evicting an equal amount of work.",
+        "At the end, review throughput, archive what finished and reset the container."
+      ],
+      "trap": "Committing 100% of theoretical capacity, so the first outage, bug or emergency has no reserve to land in."
+    },
+    {
+      "n": 8,
+      "id": "TAC-08",
+      "name": "Day Theming (Cognitive Mode Categorization)",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Macro context-switching fatigue. Alternating between diametrically opposed cognitive modes (e.g., deep analytical programming and interpersonal negotiations) on the same day degrades performance across both.",
+      "procedureFull": "1. Map all personal and professional commitments into 3–4 macro categories (e.g., Architecture/Building, Operations/Admin, Team/Mentorship, Strategy/Learning).\n2. Assign each day of the working week a single dominant theme.\n3. Batch all tasks belonging to a specific category exclusively into their assigned calendar day.\n4. Reject or reschedule requests that force dissonant cognitive tasks into dedicated focus days.",
+      "setupFull": "Weekly Cognitive Theming Matrix\n  * Monday: Internal Architecture & Deep Development (No internal meetings)\n  * Tuesday: Client / Cross-functional Meetings & Collaboration\n  * Wednesday: Systems Building & Heavy Refactoring (No meetings)\n  * Thursday: Operations, Administrative Triage, Code Reviews\n  * Friday: Strategy, Systems Retrospective, Weekly GTD Review",
+      "trapFull": "Permitting external interruptions or scheduling tools (e.g., automated booking links) to scatter fragmented 30-minute meetings across days dedicated to deep analytical output.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Sort commitments into three or four macro modes (e.g. Building, Operations, Team, Strategy).",
+        "Give each working day one dominant theme.",
+        "Batch each mode's tasks onto its assigned day.",
+        "Refuse or move requests that would pull a conflicting mode onto a themed day."
+      ],
+      "trap": "Letting automated booking links scatter 30-minute meetings across days reserved for deep analytical work."
+    },
+    {
+      "n": 9,
+      "id": "TAC-09",
+      "name": "Timeboxing and Calendar Blocking",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Parkinson’s Law dynamics. Work expands elastically to fill the temporal space allocated for its completion if that duration is fluid or indefinite.",
+      "procedureFull": "1. Identify the top 1–3 prioritized deliverables for the day.\n2. Estimate an aggressive yet realistic duration for each deliverable based on decomposed sub-tasks.\n3. Open the calendar and assign non-overlapping, explicit calendar events for each task block.\n4. Treat each block as a deterministic production sprint: when the timer expires, halt work, assess status, and deliberately decide whether to allocate another explicit box or transition.",
+      "setupFull": "Daily Schedule: 2026-11-04\n  * 08:30 \\- 10:00 \\[DEEP WORK\\] Core Engine Parser Optimization\n  * 10:00 \\- 10:15 \\[INTERSTITIAL\\] Rest & Physical Hydration\n  * 10:15 \\- 11:45 \\[DEEP WORK\\] AST Node Generation Implementation\n  * 11:45 \\- 12:45 \\[RECOVERY\\] Lunch & Aerobic Walking\n  * 12:45 \\- 13:30 \\[BATCH ADMIN\\] Email triage, PR reviews, Slack\n  * 13:30 \\- 15:00 \\[MEETINGS\\] Engineering sync & architecture review",
+      "trapFull": "Underestimating temporal friction and packing calendars edge-to-edge without buffers. This causes single-point delays to cascade throughout the entire schedule.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Pick the day's top one to three deliverables.",
+        "Estimate an aggressive but realistic duration for each, from its broken-down parts.",
+        "Put non-overlapping calendar blocks on the calendar for each one.",
+        "When the timer ends, stop, assess and decide deliberately whether to book another block."
+      ],
+      "trap": "Packing the calendar edge to edge with no buffers, so one delay cascades through the whole schedule."
+    },
+    {
+      "n": 10,
+      "id": "TAC-10",
+      "name": "Backlog Pruning and Deflationary Archiving",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Digital hoard decay. Low-probability, low-value backlog items continuously degrade search ergonomics and induce subconscious guilt through sheer visual volume.",
+      "procedureFull": "1. Query all tasks that have inhabited the backlog for more than 60 days without an active state change or modification.\n2. Apply an aggressive deletion bias: if a task has remained untouched for two months, it is demonstrably non-essential.\n3. Relocate salvageable items to a cold-storage graveyard.md file rather than retaining them in live databases.\n4. Delete the remainder permanently. If an issue is truly mission-critical, real-world reality will resurface it.",
+      "setupFull": "graveyard.md (Archived via automated purge 2026-11-01)\n  * \\[ \\] 2026-08-14 Rewrite CLI logging using custom ANSI formatter (abandoned: non-essential)\n  * \\[ \\] 2026-08-20 Evaluate alternative web frameworks for landing page (abandoned: settled on current)\n  * \\[ \\] 2026-08-28 Create script to auto-sort downloads folder (abandoned: low ROI)",
+      "trapFull": "Shuffling stale tasks back and forth between \"Someday\" and \"To Do\" with revised priorities instead of executing terminal deletions.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Query every task untouched for more than 60 days.",
+        "Apply a deletion bias: two months untouched is evidence it is not essential.",
+        "Move salvageable items to a cold-storage graveyard.md.",
+        "Delete the rest. If it is truly critical, reality will bring it back."
+      ],
+      "trap": "Shuffling stale tasks between Someday and To Do with new priorities instead of deleting them."
+    },
+    {
+      "n": 11,
+      "id": "TAC-11",
+      "name": "Project Outcome Clarification (Definition of Done)",
+      "domain": "Task Architecture and Workflow Systems",
+      "diagnostic": "Vague finish line paralysis. Ambiguous completion criteria lead to continuous over-engineering, scope creep, and an inability to finalize active projects.",
+      "procedureFull": "1. When establishing any project note, immediately construct a Definition of Done section before listing individual tasks.\n2. Frame the finish line as an unambiguous, observable state of the external world (e.g., \"The binary compiles on ARM64, passes all unit tests, and is uploaded to S3\").\n3. Explicitly state what is *out of scope* to preempt perfectionist creep.\n4. Mark the project complete the moment all conditions in the Definition of Done are satisfied, regardless of remaining hypothetical polish.",
+      "setupFull": "Project: Payment Gateway V2Definition of Done\n  * \\[ \\] Stripe Webhook listener handles charge.succeeded idempotently\n  * \\[ \\] Failed charges trigger retry backoff via SQS\n  * \\[ \\] Unit test coverage on payment module exceeds 90%\n  * \\[ \\] Documentation updated in /docs/payments.md\n\n  Explicitly Out of Scope\n\n  * Support for cryptocurrencies or alternative payment rails",
+      "trapFull": "Treating the Definition of Done as a malleable document that expands each time an engineer or stakeholder has an auxiliary feature idea during active implementation.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Write the Definition of Done before listing any task.",
+        "State the finish line as an observable condition of the world.",
+        "Name what is explicitly out of scope.",
+        "Call the project complete when those conditions hold, regardless of remaining polish."
+      ],
+      "trap": "Treating the Definition of Done as a malleable document that expands each time someone has an auxiliary feature idea mid-project."
+    },
+    {
+      "n": 12,
+      "id": "TAC-12",
+      "name": "The Eisenhower Decision Matrix",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Urgency-bias vulnerability. The human brain naturally favors tasks with near-term deadlines over tasks of foundational significance that lack immediate temporal pressure.",
+      "procedureFull": "1. Map candidate tasks across a two-dimensional grid: Urgency (time sensitivity) versus Importance (strategic leverage).\n2. Quadrant 1 (Urgent & Important): Execute immediately with focused executive attention.\n3. Quadrant 2 (Not Urgent & Important): Schedule into protected calendar focus blocks. This represents the high-leverage growth engine.\n4. Quadrant 3 (Urgent & Not Important): Delegate systematically, automate with software scripts, or compress into rapid batches.\n5. Quadrant 4 (Not Urgent & Not Important): Terminate ruthlessly; scrub immediately from registries.",
+      "setupFull": "Quadrant 2: Strategic Investment (Schedule Immediately)tasksnot done tag includes \\#important tag does not include \\#urgent sort by due ascending",
+      "trapFull": "Classifying all incoming items as Quadrant 1 emergencies, collapsing the matrix into a single chaotic list driven entirely by other people's deadlines.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "sourceNote": "The source's plain-text setup has lost its line breaks: the pseudo-query runs together as 'tasksnot done'. It is printed exactly as received, not reflowed.",
+      "procedure": [
+        "Plot each task on two axes: urgency (time pressure) against importance (strategic leverage).",
+        "Quadrant 1, urgent and important: do it now, with full attention.",
+        "Quadrant 2, not urgent but important: schedule protected focus time; this is the growth quadrant.",
+        "Quadrant 3, urgent but not important: delegate, automate or batch it.",
+        "Quadrant 4, neither: delete it from the register."
+      ],
+      "trap": "Classifying everything as a Quadrant 1 emergency, so the matrix collapses into one chaotic list driven by other people's deadlines."
+    },
+    {
+      "n": 13,
+      "id": "TAC-13",
+      "name": "Warren Buffett’s 5/25 Rule",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Secondary distraction traps. High-achieving operators are rarely derailed by obvious trivialities; they are derailed by mildly interesting, moderately useful tertiary opportunities that siphon focus away from primary strategic imperatives.",
+      "procedureFull": "1. Write down a comprehensive list of exactly 25 top professional goals, projects, or career milestones.\n2. Audit the list and circle the absolute top 5 most consequential, foundational objectives.\n3. Group the remaining 20 goals into a distinct register labeled: \"Avoid At All Costs List.\"\n4. Dedicate all active effort exclusively to the top 5; actively reject spending discretionary time or attention on items 6 through 25 until the primary set is complete.",
+      "setupFull": "Strategic Imperatives: 2026-2027The Primary 5 (Active Allocations Only)\n  1. Ship Core Distributed Database Engine v1.0\n  2. Achieve zero single-points-of-failure in production infrastructure\n  3. Author and publish technical manual on low-latency networking\n  4. Maintain sub-12% body fat through structural strength programming\n  5. Establish secondary automated recurring revenue stream\n\n  The 20 Traps (Forbidden Effort)\n\n  * \\[ \\] Learn Rust GUI development (POSTPONED)\n  * \\[ \\] Build homelab Kubernetes cluster (POSTPONED)\n  * \\[ \\] Redesign personal portfolio theme (POSTPONED)",
+      "trapFull": "Treating items 6 through 25 as secondary tasks to pursue during downtime, allowing them to dilute the intense focus required to deliver the primary 5\\.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Write exactly 25 professional goals, projects or milestones.",
+        "Circle the absolute top five.",
+        "Put the other 20 on an Avoid At All Costs list.",
+        "Spend effort only on the five; reject time on items 6 to 25 until they are done."
+      ],
+      "trap": "Treating items 6 to 25 as downtime tasks, which lets them dilute the focus the top five need."
+    },
+    {
+      "n": 14,
+      "id": "TAC-14",
+      "name": "The Ivy Lee Method",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Morning task-initiation inertia and choice fatigue. Waking up to an unbounded task universe causes prolonged decision deliberation before real work begins.",
+      "procedureFull": "1. At the conclusion of each workday, identify the six most important tasks to accomplish the following day.\n2. Order these six items strictly by decreasing order of real leverage and importance.\n3. On the following morning, begin work on Task 1 immediately upon sitting at the workspace; focus on it exclusively until completion.\n4. Progress through the remaining items sequentially (Task 2, Task 3, etc.) without multitasking. 5\\. At the day's end, move incomplete items onto a fresh list of six for the next day; never exceed six items total.",
+      "setupFull": "Daily Slate: 2026-11-04\n  1. \\[ \\] Fix race condition in replication leader election (CRITICAL)\n  2. \\[ \\] Review PR \\#492: Storage layer index partitioning\n  3. \\[ \\] Author design doc for Raft consensus snapshot compaction\n  4. \\[ \\] Prepare talking points for architecture review board\n  5. \\[ \\] Back up production etcd metadata snapshot\n  6. \\[ \\] Clear engineering support queue (max 45 min)",
+      "trapFull": "Abandoning sequential discipline to tackle simpler items down the list (e.g., running Task 5 first because Task 1 is cognitively intimidating).",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "sourceNote": "The source prints four step markers; its fifth step, 'At the day's end...', is glued onto step 4 after a period. This record numbers five steps, because the fifth carries the six-item bound.",
+      "procedure": [
+        "At the end of each day, pick the six most important tasks for tomorrow.",
+        "Rank them by real leverage and importance.",
+        "Start Task 1 at the desk the next morning and stay on it until it is done.",
+        "Work through the rest in order, without multitasking.",
+        "At day's end, carry incomplete items onto a fresh list of six; never exceed six."
+      ],
+      "trap": "Starting with the easy items instead of Task 1, which is usually the one that is intimidating."
+    },
+    {
+      "n": 15,
+      "id": "TAC-15",
+      "name": "Eat That Frog (The Morning Heuristic)",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Anticipatory dread and cognitive drag. Postponing a difficult, intimidating task causes low-grade anxiety that drains executive energy throughout the working day.",
+      "procedureFull": "1. Identify the single most intimidating, high-friction, high-consequence task on the agenda (the \"Frog\").\n2. Schedule this task as the first operational item of the morning, prior to opening email, communication tools, or administrative dashboards.\n3. Pre-condition all resources, files, and workspace state the evening before to lower morning activation energy.\n4. Complete the Frog without deviation, converting the psychological relief of finishing into momentum for the rest of the day.",
+      "setupFull": "Daily Execution Architecture🐸 THE FROG (First 90 Minutes: Isolated Terminal)\n  * \\[ \\] Refactor broken TLS handshake parsing logic in networking stack\n\n  Post-Frog Operations (Unlocked only after Frog completion)\n\n  * \\[ \\] Check inbox and incident tickets\n  * \\[ \\] Team standup sync",
+      "trapFull": "Permitting \"prep tasks\" (such as organizing the desktop, checking status dashboards, or organizing files) to delay initiation of the primary, intimidating task.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Pick the single most intimidating, high-consequence task: the frog.",
+        "Do it first, before email, chat or administrative dashboards.",
+        "Set up every resource the evening before to lower morning activation energy.",
+        "Finish it without deviation and use the relief as momentum for the day."
+      ],
+      "trap": "Letting prep tasks, such as tidying the desktop or checking dashboards, delay the frog."
+    },
+    {
+      "n": 16,
+      "id": "TAC-16",
+      "name": "MoSCoW Prioritization for Personal Deliverables",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Perfectionist scope expansion. Failure to establish baseline viability leads projects to stall in pursuit of marginal, non-essential enhancements.",
+      "procedureFull": "1. Break project deliverables into four discrete categories: Must Have, Should Have, Could Have, and Won't Have (this iteration).\n2. Limit the \"Must Have\" bucket to the absolute bare minimum required for functional viability (never exceed 60% of total effort).\n3. Allocate 20% effort capacity to \"Should Have\" (important additions with workarounds available).\n4. Treat \"Could Have\" as opportunistic stretch goals executed only if core velocity exceeds projections.\n5. Use \"Won't Have\" as an explicit quarantine zone to prevent scope creep during active sprints.",
+      "setupFull": "Project Release v2.0 ScopeMust Have (Release Blockers)\n  * \\[ \\] End-to-end payload encryption\n  * \\[ \\] Zero-downtime database table migration\n\n  Should Have (High Value / Non-Blocker)\n\n  * \\[ \\] Structured JSON logging pipeline\n\n  Could Have (Opportunistic Polish)\n\n  * \\[ \\] Terminal color output theme support\n\n  Won't Have (Explicit Scope Freeze)\n\n  * Multi-tenant sub-organization routing",
+      "trapFull": "Promoting \"Could Have\" features to \"Must Have\" status halfway through a sprint based on sudden emotional excitement or hyper-focus.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Split deliverables into Must Have, Should Have, Could Have and Won't Have this iteration.",
+        "Keep Must Have to the bare minimum for viability, never more than 60% of effort.",
+        "Give Should Have 20% of effort capacity.",
+        "Treat Could Have as opportunistic stretch only.",
+        "Use Won't Have as an explicit quarantine against scope creep."
+      ],
+      "trap": "Promoting a Could Have to Must Have mid-sprint on a burst of enthusiasm."
+    },
+    {
+      "n": 17,
+      "id": "TAC-17",
+      "name": "Weighted Shortest Job First (WSJF / Cost of Delay)",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Intuitive, inaccurate ROI estimation. Developers naturally gravitate toward either massive, slow projects or small, low-value tweaks without weighing business impact against implementation duration.",
+      "procedureFull": "1. Calculate the Cost of Delay (\\\\text{CoD}) for each candidate initiative: \\\\text{CoD} \\= \\\\text{User-Business Value} \\+ \\\\text{Time Criticality} \\+ \\\\text{Risk Reduction / Opportunity Enablement}.\n2. Score each parameter on a Fibonacci scale (1, 2, 3, 5, 8, 13, 21).\n3. Estimate the Job Duration / Size (J) using the same scale.\n4. Compute the priority metric: \\\\text{WSJF} \\= \\\\frac{\\\\text{CoD}}{J}.\n5. Sort the master execution queue in descending order of WSJF score; execute highest-scoring tasks first.",
+      "setupFull": "| Initiative | CoD Score | Job Size (J) | WSJF (CoD / J) | Execution Sequence |\n| :---- | :---- | :---- | :---- | :---- |\n| Fix memory leak in auth broker | 8 \\+ 13 \\+ 5 \\= 26 | 2 | 13.0 | 1 |\n| Implement tenant rate limiting | 5 \\+ 5 \\+ 8 \\= 18 | 3 | 6.0 | 2 |\n| Re-architect telemetry schema | 8 \\+ 3 \\+ 13 \\= 24 | 8 | 3.0 | 3 |\n| Rewrite docs site theme | 1 \\+ 1 \\+ 1 \\= 3 | 2 | 1.5 | 4 |",
+      "trapFull": "Spending more time debating subjective Fibonacci scores than actually building features, turning an empirical heuristic into administrative theater.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Score Cost of Delay for each initiative: user-business value plus time criticality plus risk reduction or opportunity enablement.",
+        "Score each parameter on a Fibonacci scale: 1, 2, 3, 5, 8, 13, 21.",
+        "Estimate Job Size on the same scale.",
+        "Compute WSJF as Cost of Delay divided by Job Size.",
+        "Sort the queue by descending WSJF and take the highest first."
+      ],
+      "trap": "Debating subjective Fibonacci scores longer than building the features, turning a heuristic into administrative theatre."
+    },
+    {
+      "n": 18,
+      "id": "TAC-18",
+      "name": "The Regret Minimization Framework",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Paralysis on high-stakes, asymmetric, non-reversible decisions. The mind over-indexes on immediate friction or failure embarrassment instead of long-term opportunity costs.",
+      "procedureFull": "1. Identify a critical, high-friction, ambiguous decision crossroads.\n2. Project consciousness to an age-80 retrospective vantage point.\n3. Pose the diagnostic question: \"Looking back from 80 years old, will I regret having attempted this and failed, or will I regret having never taken the action at all?\"\n4. If the decision carries asymmetric upside where failure generates only temporary discomfort but inaction cements permanent regret, authorize the risk and proceed immediately.",
+      "setupFull": "Decision Memo: Resigning to launch open-source infrastructure startup\n  * Path A (Safe): Retain high-paying senior engineer position.\n    * Age-80 Retrospective: Deep regret of never testing personal limits; lingering \"what if\" regarding distributed systems idea.\n  * Path B (Risk): Resign and pursue open-source venture.\n    * Worst Case: Fails in 18 months, burn through savings buffer, return to engineering role.\n    * Age-80 Retrospective: Zero regret for testing capacity; complete psychological peace.\n  * CONCLUSION: Authorize Path B immediately.",
+      "trapFull": "Using Regret Minimization to rationalize reckless, low-upside impulses that carry catastrophic downsides without real strategic upside.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Name the high-stakes, hard-to-reverse decision.",
+        "Imagine looking back from age 80.",
+        "Ask whether you would regret trying and failing, or never trying at all.",
+        "If failure costs only temporary discomfort and inaction locks in permanent regret, take the risk now."
+      ],
+      "trap": "Using regret minimization to justify reckless bets with catastrophic downside and no real upside."
+    },
+    {
+      "n": 19,
+      "id": "TAC-19",
+      "name": "RICE Scoring for Personal Roadmaps",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Subjective personal roadmapping bias. Selecting self-directed projects based on recency bias or momentary emotional engagement rather than objective reach and impact.",
+      "procedureFull": "1. Score Reach (R): How many people, systems, or workflows will this impact over a given quarter?\n2. Score Impact (I): Massive (3), High (2), Medium (1), Low (0.5), Minimal (0.25).\n3. Score Confidence (C): High (1.0), Medium (0.8), Low (0.5).\n4. Score Effort (E): Person-weeks or person-days required.\n5. Calculate metric: \\\\text{RICE Score} \\= \\\\frac{R \\\\times I \\\\times C}{E}.",
+      "setupFull": "| Feature Candidate | Reach (R) | Impact (I) | Conf (C) | Effort (E) | RICE Score |\n| :---- | :---- | :---- | :---- | :---- | :---- |\n| CLI Autocompletion plugin | 1200 devs | 2.0 | 0.8 | 1 week | 1920.0 |\n| Interactive Web UI Dashboard | 400 devs | 3.0 | 0.5 | 4 weeks | 150.0 |\n| Performance Profiler Hooks | 150 devs | 3.0 | 1.0 | 1 week | 450.0 |",
+      "trapFull": "Artificially inflating Confidence (C) scores on favorite pet projects to game the mathematical model and force pet initiatives to the top.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Score Reach: how many people, systems or workflows this affects this quarter.",
+        "Score Impact: massive 3, high 2, medium 1, low 0.5, minimal 0.25.",
+        "Score Confidence: high 1.0, medium 0.8, low 0.5.",
+        "Score Effort in person-weeks or person-days.",
+        "Compute RICE as Reach x Impact x Confidence divided by Effort."
+      ],
+      "trap": "Inflating Confidence on favourite projects to game the model and push them to the top."
+    },
+    {
+      "n": 20,
+      "id": "TAC-20",
+      "name": "The Most Important Task (MIT) Triad",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Diffuse focus and superficial busywork. Checking off fifteen easy items while failing to make tangible progress on the day's true core priorities.",
+      "procedureFull": "1. Prior to commencing any operational work, define exactly three—and only three—Most Important Tasks (MITs) for the day.\n2. At least two of the three items must connect directly to core strategic projects rather than maintenance or reactive operational support.\n3. Treat all other emergent tasks as secondary deliverables that cannot be started until the triad is complete.\n4. Consider the day successful if and only if these three items reach completion.",
+      "setupFull": "Core Triad (Non-Negotiable)\n  * \\[ \\] MIT 1: Fix thread deadlock in TCP ingest server\n  * \\[ \\] MIT 2: Write RFC for cross-region data replication\n  * \\[ \\] MIT 3: Implement Prometheus exporter metrics for cache hits\n\n  Secondary / Operational Buffer\n\n  * \\[ \\] Clear unread notifications\n  * \\[ \\] Submit weekly expense reconciliation",
+      "trapFull": "Overpopulating the triad with tasks that depend on external approvals, stalling progress when third parties fail to respond in time.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Before any work, name exactly three Most Important Tasks for the day.",
+        "At least two must connect to core strategic projects, not maintenance.",
+        "Treat everything else as secondary until the triad is done.",
+        "Call the day successful only if all three are complete."
+      ],
+      "trap": "Filling the triad with tasks that need someone else's approval, so it stalls when they do not reply."
+    },
+    {
+      "n": 21,
+      "id": "TAC-21",
+      "name": "Derek Sivers’ \"Hell Yeah or No\" Filter",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Over-commitment paralysis and middle-tier opportunity dilution. Agreeing to marginally interesting obligations that eat up the space needed for exceptional opportunities.",
+      "procedureFull": "1. When assessing any new inbound invite, collaboration opportunity, or non-critical initiative, evaluate personal intuitive enthusiasm on a 1-to-10 scale.\n2. If the internal response is anything lower than an unconditional \"9\" or \"10\" (\"Hell Yeah\\!\"), default immediately to a polite, decisive \"No.\"\n3. Strip away social guilt: realize that every middle-tier acceptance is an implicit rejection of future breakthroughs.\n4. Maintain an explicit template for neutral, rapid rejections to eliminate drafting hesitation.",
+      "setupFull": "\"Thank you for the thoughtful invitation. Given my active focus on completing our core distributed engine deliverable, I am unavailable to take on auxiliary projects or speaking commitments for the foreseeable future. Best of success with the initiative.\"",
+      "trapFull": "Applying the filter to foundational operational responsibilities (e.g., filing taxes, patching critical security bugs) that require disciplined execution rather than emotional enthusiasm.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "For any new invitation or optional initiative, rate your enthusiasm from 1 to 10.",
+        "Anything below an unconditional 9 or 10 gets a polite, decisive no.",
+        "Drop the social guilt: every middle-tier yes rejects a future breakthrough.",
+        "Keep a short rejection template so drafting does not slow you down."
+      ],
+      "trap": "Applying the filter to obligations that need discipline rather than enthusiasm, such as taxes or security patches."
+    },
+    {
+      "n": 22,
+      "id": "TAC-22",
+      "name": "Pairwise Comparison and Forced Ranking",
+      "domain": "Triage and Prioritization Frameworks",
+      "diagnostic": "Flat-priority list paralysis. Lists where every item is labeled \"High Priority\" create triage deadlock because relative values remain unexamined.",
+      "procedureFull": "1. Extract an unranked set of competing candidate priorities (limit to N \\\\le 8 items).\n2. Construct a tournament bracket or pairwise matrix: compare Item 1 against Item 2 in isolation, asking: \"If I could only deliver one of these two, which is non-negotiably more critical?\"\n3. Iterate through all combinations (\\\\frac{N(N-1)}{2} pairings), tallying head-to-head victories for each item.\n4. Sort the list strictly by total win count, yielding an absolute, forced-ranked sequence free of tied priorities.",
+      "setupFull": "Items: \\[A: Security Patch, B: New Feature, C: Refactor Auth, D: Documentation\\] A vs B \\-\\> A wins \\| A vs C \\-\\> A wins \\| A vs D \\-\\> A wins (A: 3 wins) B vs C \\-\\> C wins \\| B vs D \\-\\> B wins (B: 1 win) C vs D \\-\\> C wins (C: 2 wins) Forced Priority Order: 1\\. A, 2\\. C, 3\\. B, 4\\. D",
+      "trapFull": "Allowing circular trade-off debates to stall the process (e.g., choosing A over B, B over C, and C over A). The operator must impose strict, transitive decision criteria.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "List the competing priorities, no more than eight.",
+        "Compare two at a time: if only one could ship, which is more critical?",
+        "Run every pairing and tally head-to-head wins.",
+        "Sort by total wins for a forced order with no ties."
+      ],
+      "trap": "Letting circular preferences stall the process (A beats B, B beats C, C beats A); impose a strict criterion."
+    },
+    {
+      "n": 23,
+      "id": "TAC-23",
+      "name": "Newport’s Monastic / Bimodal Deep Work Protocols",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Chronic prefrontal fragmentation from hyper-connectivity. Shallow communications make it nearly impossible to sustain the deep, unbroken focus required to solve hard systemic problems.",
+      "procedureFull": "1. Monastic variant: Eliminate all non-essential communication channels permanently; operate in sustained offline isolation.\n2. Bimodal variant: Divide time into clearly divided cycles: dedicated multi-day deep work stretches (high focus, zero collaboration) and open shallow-work intervals (administrative, social, collaborative).\n3. Clearly communicate boundaries to collaborators to protect isolated periods from unscheduled contact.\n4. During deep stretches, eliminate all communication platforms, social media, and open-ended network access.",
+      "setupFull": "Operating Mode Manifest: Q4 Bimodal Cadence\n  * MON/TUE: Open Mode (Collaborative)\n    * Available on Slack, code reviews, architecture syncs, candidate interviews.\n  * WED/THU/FRI: Monastic Mode (Deep Implementation)\n    * Slack closed; terminal and IDE in full-screen focus.\n    * Out-of-office message active: \"In scheduled deep implementation. Inquiries reviewed Monday.\"",
+      "trapFull": "Attempting a monastic protocol without team buy-in, leading to organizational friction when rapid-response dependencies break down.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Monastic mode: cut all non-essential channels and work in sustained isolation.",
+        "Bimodal mode: divide time into multi-day deep stretches and open shallow intervals.",
+        "Tell collaborators the boundaries so the isolated periods are protected.",
+        "In deep stretches, close every communication platform and open-ended network access."
+      ],
+      "trap": "Running a monastic protocol without team buy-in, so rapid-response dependencies break and the team pushes back."
+    },
+    {
+      "n": 24,
+      "id": "TAC-24",
+      "name": "Pomodoro Interval and Ultradian Rhythm Synchronization",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Mental endurance burnout. Forcing continuous focus past natural biological limits causes attention to drift, leading to low-quality output and cognitive fatigue.",
+      "procedureFull": "1. Base work intervals on human ultradian rhythms: work in sustained sprints of 50–90 minutes of high focus, or 25-minute Pomodoros for high-friction tasks.\n2. Set an explicit physical or offline digital countdown timer visible in the workspace.\n3. Work on a single, clear objective with absolute focus until the timer sounds; immediately log and park any internal distractions that pop up.\n4. When the timer rings, stop working immediately. Step away for a true 5-to-15 minute rest: move around, hydrate, and avoid screens or reading material.\n5. Complete 3–4 cycles before taking an extended recovery break of 60 to 90 minutes.",
+      "setupFull": "Focus Session Log: 2026-11-04\n  * \\[x\\] Session 1 (09:00-09:50) Target: Write AST parser tests \\| Outcome: 14 tests passing\n  * \\[ \\] Session 2 (10:05-10:55) Target: Implement token lookahead \\| Outcome: \\[In-flight\\]\n  * \\[ \\] Session 3 (11:10-12:00) Target: Profile memory allocation \\| Outcome: Unstarted",
+      "trapFull": "Skipping scheduled breaks when feeling high momentum, triggering sudden cognitive fatigue later in the afternoon.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Work in 50- to 90-minute ultradian sprints, or 25-minute Pomodoros for high-friction tasks.",
+        "Put a visible countdown timer in the workspace.",
+        "Work one clear objective until it rings; park every internal distraction as it appears.",
+        "When it rings, stop and rest for a true 5 to 15 minutes away from screens.",
+        "Run 3 to 4 cycles before an extended 60- to 90-minute break."
+      ],
+      "trap": "Skipping the breaks when momentum feels high, then hitting sudden fatigue later in the afternoon."
+    },
+    {
+      "n": 25,
+      "id": "TAC-25",
+      "name": "Maker vs. Manager Partitioning (Paul Graham)",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Catastrophic maker-schedule disruption. A single 30-minute meeting placed in the middle of an engineer's afternoon breaks up a multi-hour focus window, derailing complex system modeling.",
+      "procedureFull": "1. Split weekly operational time into two distinct scheduling modes: Maker Blocks (minimum uninterrupted 4-hour windows) and Manager Blocks (modular 30-minute slots).\n2. Confine all meetings, triage check-ins, and one-on-ones to specific days or dedicate them strictly to late afternoons (e.g., after 14:30).\n3. Defend the morning hours exclusively for Maker Blocks.\n4. If a meeting threatens to split a core focus block, decline it, ask for an async update, or move it to a manager slot.",
+      "setupFull": "Weekly Boundary Profile\n  * Monday \\- Friday: 08:30 \\- 12:30 \\-\\> RESERVED MAKER BLOCK (Calendar auto-declines invites)\n  * Tuesday & Thursday: 14:00 \\- 17:00 \\-\\> COLLABORATIVE MANAGER SLOTS (Open Calendly links)",
+      "trapFull": "Allowing \"quick 10-minute syncs\" to creep into morning Maker Blocks, fracturing the day's primary deep work window.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Split the week into Maker Blocks of at least four uninterrupted hours and Manager Blocks of 30-minute slots.",
+        "Put every meeting and check-in on specific days or after 14:30.",
+        "Defend the morning hours for Maker Blocks.",
+        "If a meeting would split a focus block, decline it, ask for an async update or move it."
+      ],
+      "trap": "Letting quick 10-minute syncs creep into the morning and fracture the deep-work window."
+    },
+    {
+      "n": 26,
+      "id": "TAC-26",
+      "name": "Attention Residue Mitigation via Interstitial Journaling",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Context-switch spin-down and spin-up drag. Switching between distinct coding tasks causes mental residue to linger, slowing down focus on the next assignment.",
+      "procedureFull": "1. When reaching a breaking point or completing a task, pause before switching to the next item.\n2. Open an interstitial journal note and quickly write down three plain-text bullet points:\n   * Exact timestamp and the precise task just completed.\n   * Immediate emotional/cognitive state and any unresolved concerns.\n   * The physical next action required for the upcoming task, broken down to be immediately actionable.\n3. Take a brief 60-second breathing pause.\n4. Start the next task by executing the exact step just written down.",
+      "setupFull": "* 11:42 \\- FINISHED: Replaced JSON serializer with simdjson parser.\n  * STATE: Slight mental fatigue; concerned about edge cases in escaped Unicode.\n  * NEXT ACTION: Open tests/parser\\_tests.rs, run cargo test test\\_unicode\\_escape.\n* 11:43 \\- STARTING: Unicode escape test suite debugging.",
+      "trapFull": "Writing long-form prose instead of quick operational notes, turning a fast mental clear into an administrative distraction.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "At a breaking point or a finished task, pause before switching.",
+        "Write three bullets: the timestamp and task just done, your state and any open concern, the exact next action.",
+        "Take a 60-second breathing pause.",
+        "Start the next task by executing that exact next action."
+      ],
+      "trap": "Writing long prose instead of quick operational notes, so the mental clear becomes another distraction."
+    },
+    {
+      "n": 27,
+      "id": "TAC-27",
+      "name": "Cognitive Shutdown Ritual and Hard Cutoff",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Evening work rumination. Lacking a clear end to the workday lets open work loops linger in the mind, disrupting psychological recovery and degrading sleep quality.",
+      "procedureFull": "1. Initiate an explicit, unvarying shutdown sequence at a set time each evening.\n2. Process ephemeral work scratchpads, review the day's accomplishments, and clear active terminal buffers.\n3. Review the upcoming calendar schedule and confirm the next day's top 3 MIT priorities.\n4. Lock the physical workspace or close development terminals; say an explicit verbal shutdown phrase (e.g., \"System shutdown complete\") to signal an unambiguous end to the workday.\n5. Strictly prohibit checking communications or work notes until the next morning.",
+      "setupFull": "Daily Shutdown Protocol (17:30)\n  * \\[ \\] Commit or stash active Git work: git status\n  * \\[ \\] Check inbox.md for loose ends; verify tomorrow's calendar\n  * \\[ \\] Select tomorrow's 3 MITs in daily\\_plan.md\n  * \\[ \\] Close IDE, terminal windows, Slack/email\n  * \\[ \\] State: \"Shutdown Complete\" \\-\\> Step away from the desk",
+      "trapFull": "Re-opening communication apps or work chat \"just to check\" later in the evening, breaking the psychological separation and reactivating working memory loops.",
+      "stepsDeclared": 5,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "procedure": [
+        "Start an unvarying shutdown sequence at a fixed evening time.",
+        "Clear scratchpads, review what got done, close active terminal buffers.",
+        "Check tomorrow's calendar and confirm the top three priorities.",
+        "Lock the workspace or close the terminals and say a shutdown phrase out loud.",
+        "Do not check work messages or notes until the next morning."
+      ],
+      "trap": "Reopening chat or mail just to check later, which restarts the open loops the ritual closed."
+    },
+    {
+      "n": 28,
+      "id": "TAC-28",
+      "name": "Distraction Quarantine (Attention Parking Lot)",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Impulsive task departure. The urge to research a tangential idea or resolve an unrelated chore derails the current deep-focus session.",
+      "procedureFull": "1. Keep an ultra-minimal text file or physical index card labeled \"Parking Lot\" directly beside the main keyboard.\n2. When an unrelated impulse, question, or administrative chore pops into mind, immediately write it down as a single-line note.\n3. Do not open a new browser tab or pursue the inquiry; immediately return focus to the primary task.\n4. Process the quarantined items in batch mode during a dedicated administrative block later in the day.",
+      "setupFull": "parking\\_lot.md\n  * 09:23: How does SQLite handle concurrent WAL readers during checkpoint?\n  * 10:14: Buy replacement ergonomic keyboard wrist rest.\n  * 11:05: Check if Postgres 16 supports native bidirectional logical replication.",
+      "trapFull": "Immediately researching quarantined questions under the excuse of \"quick context lookups,\" shattering active focus.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Keep a minimal Parking Lot file or card within reach of the keyboard.",
+        "When an unrelated impulse or chore appears, write it down on one line.",
+        "Do not open a tab or chase it; return focus to the primary task.",
+        "Process the parked items in a batch during a later administrative block."
+      ],
+      "trap": "Researching a parked question quickly mid-session, which shatters the focus it was parked to protect."
+    },
+    {
+      "n": 29,
+      "id": "TAC-29",
+      "name": "Environmental Cue Decoupling and Context Pinning",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Multi-use space distraction. Working, gaming, and relaxing in the exact same environment invites habits from one context to bleed into another, pulling focus away from work.",
+      "procedureFull": "1. Map different functional tasks to distinct physical or digital setups.\n2. For deep work, use a clean user account or dedicated workspace free of games, social applications, and entertainment bookmarks.\n3. Pin unique physical cues to deep work periods (e.g., a specific desk lamp setting, focus music, or noise-canceling headphones).\n4. The moment a break begins, remove the physical cues and physically step away from the deep work station.",
+      "setupFull": "`alias mode-deep=\"defaults write com.apple.dock autohide -bool true && \\`\n                `pkill -f Slack && pkill -f Spotify && \\`\n                `tmux new-session -s DEEP_FOCUS\"`",
+      "trapFull": "Consuming leisure media (YouTube, social sites) while seated at the deep-work terminal, diluting the environmental focus cue.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Map each kind of task to a distinct physical or digital setup.",
+        "For deep work, use a clean account or workspace with no games, social apps or entertainment bookmarks.",
+        "Attach a unique cue to deep work: a lamp setting, focus music, noise-cancelling headphones.",
+        "When the break starts, remove the cue and leave the deep-work station."
+      ],
+      "trap": "Watching leisure media at the deep-work terminal, which dilutes the cue that makes the place mean focus."
+    },
+    {
+      "n": 30,
+      "id": "TAC-30",
+      "name": "Cognitive Pacing and Productive Procrastination",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Creative resistance wall. Staring at an intimidating, difficult problem often leads to procrastination on mindless, low-value distractions.",
+      "procedureFull": "1. When hitting a genuine wall of mental exhaustion or resistance on a primary complex task, do not default to social media or passive media consumption.\n2. Route avoidance energy into a curated list of secondary, valuable, low-friction tasks (e.g., refactoring code docs, organizing reference notes, fixing minor formatting bugs).\n3. Allow the default mode network to work on the primary problem in the background while making real progress on useful auxiliary tasks.\n4. Return to the primary challenge as soon as a solution crystallizes or initial frustration fades.",
+      "setupFull": "productive\\_procrastination\\_menu.md\n  * \\[ \\] Format markdown table headers in public docs\n  * \\[ \\] Clean up unused local Docker volumes: docker system prune\n  * \\[ \\] Add missing parameter docstrings to client library\n  * \\[ \\] Reorganize personal Zettelkasten reference notes",
+      "trapFull": "Using productive procrastination to indefinitely avoid the primary high-value deliverable, turning secondary tasks into an avoidance crutch.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "When you hit real resistance on the main task, do not default to social media or passive media.",
+        "Route the avoidance into a curated list of useful, low-friction tasks.",
+        "Let the background mind work on the primary problem while you make real progress on the list.",
+        "Return to the main challenge as soon as a solution surfaces or the frustration fades."
+      ],
+      "trap": "Using productive procrastination to avoid the high-value deliverable indefinitely, so the side tasks become the crutch."
+    },
+    {
+      "n": 31,
+      "id": "TAC-31",
+      "name": "Flow State On-Ramping (Frictionless Bootstrapping)",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Cold-start initiation friction. Staring at an empty editor screen or a huge codebase creates an intimidating barrier to getting started.",
+      "procedureFull": "1. At the close of a work session, intentionally leave the final task slightly unfinished with an obvious, low-effort next step (e.g., write a failing test with a simple syntax fix).\n2. Document the next action in a single comment right at the top of the working file.\n3. When sitting down the next day, begin by executing that simple, pre-planned step.\n4. Use the quick completion of this initial micro-task to generate the momentum needed for deeper work.",
+      "setupFull": "`# ON-RAMP FOR TOMORROW MORNING:`\n``# The test below fails because `response.status_code` returns 403 instead of 200.``\n``# Fix: Add `auth_token` header to test client fixture in line 42.``\n`def test_endpoint_returns_ok():`\n    `response = client.get(\"/api/v1/health\")`\n    `assert response.status_code == 200`",
+      "trapFull": "Cleaning up, polishing, and checking in all work at the end of the day, forcing a cold start from a completely blank state the following morning.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "End a session with the last task slightly unfinished and an obvious low-effort next step.",
+        "Write that next action in a comment at the top of the working file.",
+        "Start the next day by executing the pre-planned step.",
+        "Use the quick completion as momentum into deeper work."
+      ],
+      "trap": "Tidying and checking everything in at day's end, which forces a cold start from blank the next morning."
+    },
+    {
+      "n": 32,
+      "id": "TAC-32",
+      "name": "Batch Processing for Communication Chores",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Chronic communication reactivity. Responding to incoming emails and Slack pings as they arrive keeps the brain in a fragmented, reactive state throughout the day.",
+      "procedureFull": "1. Turn off all desktop, mobile, and browser push notifications for communication apps.\n2. Set up two dedicated communication batch windows per day (e.g., 11:30–12:15 and 16:30–17:00).\n3. During these windows, work through inboxes systematically, processing messages to zero using the Two-Minute Rule.\n4. Close all communication applications completely outside these scheduled batch windows.",
+      "setupFull": "Slack / Email Communication Protocol\n  * Notification Status: PERMANENTLY DISABLED\n  * Processing Window 1: 11:30 \\- 12:15 (Triage morning updates, unlock blockers)\n  * Processing Window 2: 16:30 \\- 17:00 (Final day sync, async project updates)\n  * Emergency Escalation: On-call PagerDuty route only",
+      "trapFull": "Leaving communication windows minimized or running on a second monitor, where visual badges quietly pull attention away from deep work.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Turn off push notifications for every communication app on desktop, phone and browser.",
+        "Set two fixed communication windows a day, for example 11:30-12:15 and 16:30-17:00.",
+        "Work the inboxes to zero inside each window, using the Two-Minute Rule.",
+        "Close the apps entirely outside those windows."
+      ],
+      "trap": "Leaving communication windows minimized or on a second monitor, where badges pull attention all day."
+    },
+    {
+      "n": 33,
+      "id": "TAC-33",
+      "name": "Digital Sabbatical and Sensory Reset",
+      "domain": "Cognitive Focus and Flow State Engineering",
+      "diagnostic": "Dopaminergic baseline elevation. Constant digital inputs reset the brain's baseline stimulation requirements, making quiet, difficult, focused work feel painful by comparison.",
+      "procedureFull": "1. Schedule a continuous 24- to 48-hour period each week (typically Saturday or Sunday) with zero screen or computer time.\n2. Turn off the primary workstation and place mobile devices in an out-of-reach storage box.\n3. Replace digital consumption with analog activities: reading physical books, endurance exercise, cooking, or being outdoors.\n4. Use this down-time to let the nervous system reset, restoring natural focus and motivation for the upcoming work week.",
+      "setupFull": "Weekend Sensory Reset Checklist\n  * Friday 18:00: Workstation powered down. Phone locked in desk drawer.\n  * Saturday: Zero screen interactions. Analog note-taking via physical notebook.\n  * Sunday 18:00: Device access restored; conduct GTD Weekly Review.",
+      "trapFull": "\"Cheating\" the reset with subtle screen time, such as browsing social apps or watching streaming video under the excuse of \"relaxing.\"",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Book a continuous 24- to 48-hour screen-free period each week, usually Saturday or Sunday.",
+        "Power down the workstation and put the phone out of reach.",
+        "Replace screens with analog activity: physical books, exercise, cooking, the outdoors.",
+        "Let the nervous system reset for the coming week."
+      ],
+      "trap": "Cheating the reset with subtle screen time, such as social apps or streaming under the excuse of relaxing."
+    },
+    {
+      "n": 34,
+      "id": "TAC-34",
+      "name": "Implementation Intentions (Gollwitzer If-Then Contingencies)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Volitional decay in the presence of friction. Abstract intentions fail when confronted with momentary fatigue, distractions, or shifting emotional states.",
+      "procedureFull": "1. Identify a critical, high-leverage target habit that currently suffers from inconsistent execution.\n2. Map out the exact situational cues (Time, Location, Preceding Event) that will trigger the behavior.\n3. Define any internal or external obstacles likely to derail the habit.\n4. Write out an explicit, deterministic operational contract using the syntax: \"IF condition \\[cue\\] occurs, THEN I will execute \\[action\\], and IF obstacle \\[friction\\] arises, THEN I will execute \\[countermeasure\\].\"",
+      "setupFull": "Implementation Intentions: Q4 Focus\n  * **Core Routine**: IF the morning coffee machine finishes brewing (Cue), THEN I will sit at my terminal and open daily\\_plan.md before launching a browser (Action).\n  * **Friction Contingency**: IF I feel the urge to open Twitter/Reddit during compile times (Obstacle), THEN I will stand up and do 10 kettlebell swings (Countermeasure).",
+      "trapFull": "Framing intentions with vague language (e.g., \"I will code more consistently when I have free time\") rather than setting concrete, deterministic conditions.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Pick one high-leverage habit that keeps failing.",
+        "Name the exact cues: time, place and the event just before.",
+        "Name the obstacles that derail it.",
+        "Write the contract: IF the cue occurs, THEN I will do the action; IF the obstacle arises, THEN I will do the countermeasure."
+      ],
+      "trap": "Framing the intention vaguely, such as 'I will code more when I have time', instead of as a deterministic condition."
+    },
+    {
+      "n": 35,
+      "id": "TAC-35",
+      "name": "Clear’s 1st Law: Cue Salience Engineering (Make it Obvious)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Perceptual inattention. Desired behaviors fail to launch simply because their triggers are hidden from daily sight lines.",
+      "procedureFull": "1. Audit the physical and digital environment for cue visibility.\n2. Place all physical tools, files, and resources required for high-priority habits directly in unavoidable visual paths.\n3. Set up the working environment the night before so the very first thing encountered in the morning is the target task.\n4. In software, place primary work directories, focus tools, and terminal sessions front and center, while hiding distracting apps behind extra layers.",
+      "setupFull": "`echo \"=== TODAY'S MISSION-CRITICAL FOCUS ===\"`\n`head -n 5 ~/vault/daily/today_focus.md`\n`echo \"======================================\"`",
+      "trapFull": "Leaving too many competing cues scattered across the desktop, creating visual noise that dilutes the focus on any single trigger.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Audit where the cues for your priority habits are visible.",
+        "Put the tools, files and resources for those habits directly in the path you cannot miss.",
+        "Set the workspace the night before so the first thing you meet is the task.",
+        "In software, keep work directories and focus tools front and centre and bury distractions."
+      ],
+      "trap": "Leaving too many competing cues around, so visual noise dilutes every trigger."
+    },
+    {
+      "n": 36,
+      "id": "TAC-36",
+      "name": "Clear’s 2nd Law: Temptation Bundling (Make it Attractive)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Low-dopamine task initiation friction. Tasks that feel dry or boring generate strong resistance, driving the brain toward instantly rewarding distractions.",
+      "procedureFull": "1. Pair an essential, low-dopamine responsibility (a need-to-do) directly with a high-dopamine, enjoyable reward (a want-to-do).\n2. Create a strict rule: access to the rewarding experience is permitted *if and only if* the low-dopamine task is actively being performed or was just completed.\n3. Never allow the reward to be consumed outside of this pairing.\n4. Use the momentum from the immediate reward to build a positive long-term habit loop.",
+      "setupFull": "Temptation Bundle Registry\n  * **Rule**: Listening to specialized high-fidelity audio album / podcast is ONLY permitted while performing weekly code dependency upgrades and documentation.\n  * **Rule**: Drinking single-origin pour-over coffee is ONLY permitted while conducting the morning deep architecture review.",
+      "trapFull": "Breaking the rule and indulging in the reward without finishing the paired task, collapsing the psychological contract.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Pair a necessary low-reward task with a rewarding experience you enjoy.",
+        "Allow the reward only while the task is being done or was just finished.",
+        "Never consume the reward outside that pairing.",
+        "Use the reward's momentum to build the habit loop."
+      ],
+      "trap": "Taking the reward without finishing the paired task, which collapses the psychological contract."
+    },
+    {
+      "n": 37,
+      "id": "TAC-37",
+      "name": "Clear’s 3rd Law: Activation Energy Tuning (The 20-Second Rule)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Initiation-threshold barriers. Subtle friction hurdles (e.g., locating files, remembering passwords, setting up environments) offer easy rationalizations to postpone work.",
+      "procedureFull": "1. For constructive habits: Lower the physical and digital activation energy to under 20 seconds. Automate environment setup, bookmark workspaces, and keep necessary tools ready.\n2. For destructive habits: Add at least 20 seconds of real physical friction. Log out of social sites, delete stored credentials, put distracting devices in another room, or use website blockers.\n3. Audit environments regularly to trim steps from positive actions and add steps to distractions.",
+      "setupFull": "`# scripts/bootstrap_project.sh: Shrinks activation energy from minutes to one keystroke`\n`cd ~/repos/core_engine`\n`source venv/bin/activate`\n`tmux new-session -d -s engine`\n`tmux split-window -h`\n`nvim src/main.rs`",
+      "trapFull": "Underestimating small digital friction points. Even a few missing shortcuts or an awkward login prompt can silently derail task initiation.",
+      "stepsDeclared": 3,
+      "stepNumbers": [
+        1,
+        2,
+        3
+      ],
+      "procedure": [
+        "For good habits, cut activation energy to under 20 seconds: automate setup, bookmark workspaces, keep tools ready.",
+        "For bad habits, add at least 20 seconds of real friction: log out, delete credentials, move the device, block the site.",
+        "Audit regularly: trim steps from good actions and add steps to distractions."
+      ],
+      "trap": "Underestimating small digital friction; a missing shortcut or an awkward login can quietly derail the start."
+    },
+    {
+      "n": 38,
+      "id": "TAC-38",
+      "name": "Clear’s 4th Law: Immediate Reinforcement & Seinfeld Strategy",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Delayed-reinforcement discount decay. Because the rewards of hard work often take months to materialize, the brain naturally favors instant gratification today over delayed success tomorrow.",
+      "procedureFull": "1. Establish an immediate, tangible visual reward right after completing a core target habit.\n2. Use a \"Don't Break the Chain\" visual tracker (the Seinfeld strategy): mark an explicit \"X\" for each consecutive day the target habit is executed.\n3. Keep the chain highly visible within the daily workspace.\n4. Focus entirely on protecting the unbroken chain of daily marks rather than fixating on distant, unpredictable long-term outcomes.",
+      "setupFull": "Deep Work Habit Chain (Target: 90 min daily)\n  * 2026-11-01: \\[x\\] (Day 42\\)\n  * 2026-11-02: \\[x\\] (Day 43\\)\n  * 2026-11-03: \\[x\\] (Day 44\\)\n  * 2026-11-04: \\[ \\] (Day 45\\) \\<\\!-- Protect the unbroken chain\\! \\--\\>",
+      "trapFull": "Obsessing over complex analytics, productivity scores, and metrics dashboards rather than maintaining a simple, consistent visual chain.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Give yourself an immediate, tangible reward after the target habit.",
+        "Track it with a Don't Break the Chain mark: one X for each consecutive day.",
+        "Keep the chain visible in the daily workspace.",
+        "Protect the unbroken chain rather than watching distant outcomes."
+      ],
+      "trap": "Obsessing over scores, analytics and dashboards instead of keeping the simple visible chain."
+    },
+    {
+      "n": 39,
+      "id": "TAC-39",
+      "name": "Habit Stacking (Anchor Behavioral Chaining)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Temporal ambiguity and cue drifting. Trying to build a habit at an approximate time (e.g., \"around 2 PM\") often gets crowded out by surrounding tasks.",
+      "procedureFull": "1. Identify an established, reliable, non-negotiable anchor habit that occurs every day without effort (e.g., shutting down the laptop, pouring morning coffee).\n2. Attach the new desired behavior directly to that reliable anchor using the pattern: \"Immediately AFTER \\[Anchor Habit\\], I WILL \\[New Habit\\].\"\n3. Keep the stacked habit small and frictionless initially, letting the anchor habit carry the momentum.\n4. Chain multiple habits sequentially into a smooth, single behavioral flow.",
+      "setupFull": "Daily Routine Stacks\n  * **Morning Launch Stack**:\n    1. AFTER I pour my first cup of water (Anchor),\n    2. I WILL write down today's 3 MITs in daily.md (Stack 1),\n    3. AFTER I write my 3 MITs,\n    4. I WILL trigger the full-screen IDE workspace and start MIT 1 (Stack 2).",
+      "trapFull": "Attaching a demanding 60-minute task to an unstable or shifting anchor habit, which breaks the consistency of the entire chain.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Pick an anchor habit that already happens every day without effort.",
+        "Attach the new behaviour: immediately after the anchor, I will do the new habit.",
+        "Keep the stacked habit small and frictionless at first.",
+        "Chain further habits onto the one before, in one continuous flow."
+      ],
+      "trap": "Attaching a demanding 60-minute task to an unstable anchor, which breaks the whole chain."
+    },
+    {
+      "n": 40,
+      "id": "TAC-40",
+      "name": "Environmental Choice Architecture (Friction Taxing)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Willpower depletion. Relying on active self-control to resist constant, easily accessible temptations guarantees eventual relapse when energy dips.",
+      "procedureFull": "1. Treat personal environments as deliberate choice architectures where constructive choices are the default path.\n2. Impose a heavy \"friction tax\" on distracting or time-wasting behaviors.\n3. Use DNS-level sinkholes, edit /etc/hosts to block time sinks, keep phones out of the room during focus work, and make distractions physically difficult to reach.\n4. Design environments so that slipping up requires deliberate, annoying, multi-step workarounds.",
+      "setupFull": "`# /etc/hosts: Local environmental friction tax`\n`127.0.0.1 twitter.com`\n`127.0.0.1 x.com`\n`127.0.0.1 news.ycombinator.com`\n`127.0.0.1 reddit.com`",
+      "trapFull": "Keeping passwords, tokens, or blocker override commands easily accessible, allowing impulsive overrides during moments of low willpower.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Treat the environment as a choice architecture where the good choice is the default.",
+        "Put a heavy friction tax on distracting behaviour.",
+        "Block sinks at DNS or /etc/hosts, keep the phone out of the room, make distractions hard to reach.",
+        "Design it so slipping up takes deliberate, annoying, multi-step work."
+      ],
+      "trap": "Leaving passwords, tokens or blocker overrides within reach, so a low-willpower moment gets through."
+    },
+    {
+      "n": 41,
+      "id": "TAC-41",
+      "name": "Micro-Commitments & The 2-Minute Habit Scale-Down",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Intimidating upfront effort. Facing an enormous project causes anticipatory dread, leading to chronic task initiation avoidance.",
+      "procedureFull": "1. Take an intimidating habit or task and scale it down to a version that takes two minutes or less to perform.\n2. Frame the initial goal purely as showing up: \"Write one line of code,\" \"Read one page of documentation,\" or \"Open the editor and write the test function signature.\"\n3. Give full permission to stop working the moment the two minutes are up.\n4. Rely on natural cognitive momentum: once the initiation barrier is broken, the brain usually prefers continuing over stopping.",
+      "setupFull": "Intimidating Target: \"Write entire 15-page systems architecture RFC.\" Two-Minute Scale-Down: \"Open rfc\\_draft.md and write out three bulleted sub-headings.\" \\[Rule: After writing the headings, work may stop guilt-free.\\]",
+      "trapFull": "Treating the two-minute scale-down as a mental trick while privately demanding a multi-hour session, which triggers the same initial resistance.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Scale the intimidating task down to a version that takes two minutes or less.",
+        "Frame the goal as showing up: one line of code, one page, one test signature.",
+        "Give full permission to stop when the two minutes are up.",
+        "Let the momentum carry you if it does."
+      ],
+      "trap": "Using the two-minute version as a trick while privately demanding hours, which brings the same resistance back."
+    },
+    {
+      "n": 42,
+      "id": "TAC-42",
+      "name": "Identity-Based Habit Reframing",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Cognitive dissonance from outcome-focused pressure. Pursuing goals purely for external outcomes often clashes with an individual's subconscious self-image.",
+      "procedureFull": "1. Shift daily framing away from external milestones (e.g., \"I need to ship 1,000 lines of code today\") toward intrinsic identity (e.g., \"I am the type of engineer who writes clean, reliable, tested code\").\n2. View every small, positive action as a single vote cast for that chosen identity.\n3. When facing hesitation, ask: \"What would the consummate professional software architect do in this exact situation?\"\n4. Let internal consistency with that identity drive the behavior rather than relying on external motivation.",
+      "setupFull": "Identity Principles: Engineering Discipline\n  * A principled engineer leaves the codebase cleaner than they found it.\n  * A principled engineer writes unit tests before declaring an issue resolved.\n  * A principled engineer does not ship unvetted hotfixes to production environments.",
+      "trapFull": "Adopting an identity without backing it up through small, tangible daily actions, turning the mindset into empty posturing.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Move the daily framing from outcomes to identity: not ship 1,000 lines, but I am the engineer who writes clean tested code.",
+        "Treat every small action as one vote for that identity.",
+        "When hesitating, ask what the consummate professional would do here.",
+        "Let internal consistency drive the behaviour, not outside motivation."
+      ],
+      "trap": "Claiming an identity without the small daily actions, which turns it into empty posturing."
+    },
+    {
+      "n": 43,
+      "id": "TAC-43",
+      "name": "Commitment Devices & Social Contracts",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "Hyperbolic discounting and private rationalizations. When commitments remain purely private, shifting priorities and justifying delays to oneself is all too easy.",
+      "procedureFull": "1. Create a binding commitment device that locks in a future cost for failing to follow through.\n2. Announce concrete deliverables, scopes, and deadlines publicly to colleagues, peers, or external stakeholders.\n3. Use external accountability tools or peer review cadences to tie real social or financial stakes to the outcome.\n4. Align short-term incentives so that following through is far less painful than facing the consequences of backing out.",
+      "setupFull": "Public Accountability Broadcast (Sent to Team Channel)\"I have committed to delivering the core consensus PR (\\#512) by Friday at 15:00. If the PR is not ready for review by that time, I will facilitate next week's cross-team retro and purchase coffee for the team.\"",
+      "trapFull": "Choosing an accountability partner who lets missed deadlines slide without real social or material consequences.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Create a binding device that locks in a real cost for not following through.",
+        "Announce concrete deliverables, scope and deadline to peers or stakeholders.",
+        "Tie social or financial stakes to the outcome through accountability tools or review cadences.",
+        "Make following through less painful than backing out."
+      ],
+      "trap": "Choosing an accountability partner who lets missed deadlines slide with no real consequence."
+    },
+    {
+      "n": 44,
+      "id": "TAC-44",
+      "name": "Routine Recovery Protocol (Never Miss Twice)",
+      "domain": "Habit Formation and Friction Engineering",
+      "diagnostic": "The \"what-the-hell\" cognitive bias. Missing a single habit or deadline often triggers a spiral of guilt, leading people to abandon the entire system.",
+      "procedureFull": "1. Accept that unexpected emergencies, illness, and urgent crises will occasionally disrupt routines.\n2. Establish a hard, non-negotiable operational rule: *Never miss twice in a row*.\n3. If an emergency disrupts a routine on Day 1, treat getting back on track on Day 2 as an absolute emergency.\n4. Scale down the scope of the habit on Day 2 if necessary to ensure execution, protecting the underlying behavioral identity.",
+      "setupFull": "Incident Recovery Log\n  * 2026-11-02: \\[MISSED\\] Deep Work block interrupted by production outage.\n  * 2026-11-03: \\[EMERGENCY RECOVERY RUN\\] 30-Minute minimal focus sprint executed.\n  * Outcome: Streak preserved; spiral avoided.",
+      "trapFull": "Adopting an all-or-nothing mindset, assuming that missing a single daily goal invalidates weeks of consistent past progress.",
+      "stepsDeclared": 4,
+      "stepNumbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "procedure": [
+        "Accept that emergencies, illness and crises will break routines sometimes.",
+        "Set one hard rule: never miss twice in a row.",
+        "If Day 1 is missed, treat getting back on track on Day 2 as an emergency.",
+        "Shrink the habit on Day 2 if needed, so the identity survives."
+      ],
+      "trap": "All-or-nothing thinking: treating one missed day as proof that weeks of consistency are void."
+    }
+  ]
+}

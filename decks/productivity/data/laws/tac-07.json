@@ -1,0 +1,38 @@
+{
+  "id": "TAC-07",
+  "sourceTacticNo": 7,
+  "name": "Personal Sprint Planning (Fixed-Horizon Batches)",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Long-horizon estimation degradation and perpetual backlog horizon despair. Open-ended task backlogs induce demotivation by obscuring boundaries between current responsibilities and the infinite future.",
+  "diagnosticSize": 8,
+  "schematic": "Rhythm at beat 1 of 14",
+  "procedure": [
+    {
+      "text": "Fix an iteration length, typically two weeks."
+    },
+    {
+      "text": "Pull only as much work as past velocity actually completed."
+    },
+    {
+      "text": "Lock the commitment: adding an item means evicting an equal amount of work."
+    },
+    {
+      "text": "At the end, review throughput, archive what finished and reset the container."
+    }
+  ],
+  "trap": "Committing 100% of theoretical capacity, so the first outage, bug or emergency has no reserve to land in.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 14,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Define a recurring, time-bound operational iteration (typically two calendar weeks).\n2. Pull a finite subset of objectives from the master backlog whose cumulative historical velocity matches previous sprint completion rates.\n3. Lock the iteration commitment: zero new feature or project initiatives may enter the active sprint unless an equal volume of work is evicted.\n4. Review throughput metrics at sprint completion, archive completed work, and reset the execution container.",
+  "setupFull": "Sprint 2026-W45 (Commitment: 24 Story Points)Committed Items\n  * [x] (8) Build zero-downtime database migration harness\n  * [ ] (5) Rewrite authentication middleware for session tokens\n  * [ ] (5) Implement user rate-limiting using token bucket algorithm\n  * [ ] (3) Patch vulnerability CVE-2026-8812 in dependencies\n\n  Scope Floor (Protected Capacity: 3 SP)\n\n  * [ ] (3) Unplanned urgent operational defect reserve",
+  "trapFull": "Overcommitting sprint capacity to 100% of theoretical operating bandwidth, leaving no margin for unplanned production outages, bugs, or operational emergencies."
+}

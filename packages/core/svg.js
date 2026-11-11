@@ -3514,6 +3514,231 @@
     return out.join("");
   };
 
+  /*
+   * Productivity Architecture: eight structural families over the same three
+   * knobs every family shape carries - which structure, how many parts, and
+   * which part is the move. The family is the shape of the move, not the
+   * deck's domain: the front's kicker already prints the domain, so a shape
+   * per domain would draw the same distinction twice. Every family reads all
+   * three numbers, so a record cannot declare a position the drawing ignores;
+   * the layout map fixes family, divisions, mark and the printed label
+   * together, and the label is the card's own schematic line.
+   */
+  shapes["productivity-figure"] = function (p) {
+    var family = String(p.family || "pipeline");
+    var div = Math.max(1, Math.round(p.divisions || 4));
+    var mark = Math.max(1, Math.min(div, Math.round(p.mark || 1)));
+    var out = [];
+
+    // A sampled arc: points are rounded by coord() and by the canonical pass,
+    // so the committed bundle matches across platforms. An SVG arc flag would
+    // carry platform trig in its endpoints instead.
+    function arc(cx0, cy0, r, a0, a1, width, opacity, steps) {
+      var n = steps || 28;
+      var d = [];
+      for (var i = 0; i <= n; i += 1) {
+        var a = a0 + ((a1 - a0) * i) / n;
+        d.push((i === 0 ? "M " : "L ") + coord(cx0 + r * Math.cos(a)) + " " + coord(cy0 + r * Math.sin(a)));
+      }
+      return (
+        '<path d="' + d.join(" ") + '" fill="none" stroke="currentColor" stroke-width="' + width +
+        '" opacity="' + opacity + '" ' + STROKE + "/>"
+      );
+    }
+
+    if (family === "pipeline") {
+      // Ordered stages on one rail; the marked stage is the filled stone.
+      var railY = 200;
+      var posX = function (i) { return 56 + (288 * (i - 0.5)) / div; };
+      out.push(line(posX(1), railY, posX(div), railY, 1.6, 0.28));
+      for (var i = 1; i <= div; i += 1) {
+        var sx = posX(i);
+        var on = i === mark;
+        out.push(
+          rect(sx - 12, railY - 12, 24, 24, {
+            rx: 3,
+            width: on ? 2.6 : 1.3,
+            opacity: on ? 0.95 : 0.32,
+            fill: on ? "currentColor" : "none",
+            fillOpacity: on ? 0.22 : undefined
+          })
+        );
+      }
+    } else if (family === "gate") {
+      // A decision diamond with `div` routes; the marked route is drawn solid
+      // and carries the arrowhead.
+      var dx = 118;
+      var dy = 200;
+      var dr = 30;
+      var px = 312;
+      var portY = function (i) { return div === 1 ? dy : 92 + (216 * (i - 1)) / (div - 1); };
+      out.push(
+        '<path d="M ' + dx + " " + (dy - dr) + " L " + (dx + dr) + " " + dy + " L " + dx + " " + (dy + dr) +
+          " L " + (dx - dr) + " " + dy + ' Z" fill="none" stroke="currentColor" stroke-width="2" opacity="0.8" ' + STROKE + "/>"
+      );
+      for (var g = 1; g <= div; g += 1) {
+        var py = portY(g);
+        var vx = px - dx;
+        var vy = py - dy;
+        var len = Math.sqrt(vx * vx + vy * vy) || 1;
+        var ux = vx / len;
+        var uy = vy / len;
+        var gOn = g === mark;
+        out.push(line(dx + ux * (dr + 4), dy + uy * (dr + 4), px, py, gOn ? 2.6 : 1.2, gOn ? 0.85 : 0.16));
+        if (gOn) {
+          var bx = px - ux * 14;
+          var by = py - uy * 14;
+          var nx = -uy;
+          var ny = ux;
+          out.push(
+            '<path d="M ' + coord(px) + " " + coord(py) + " L " + coord(bx + nx * 6) + " " + coord(by + ny * 6) +
+              " L " + coord(bx - nx * 6) + " " + coord(by - ny * 6) + ' Z" fill="currentColor" opacity="0.85" ' + STROKE + "/>"
+          );
+          out.push(circle(px, py, 6, { width: 2.4, opacity: 0.95 }));
+        } else {
+          out.push(circle(px, py, 3.6, { hollow: true, width: 1.2, opacity: 0.38 }));
+        }
+      }
+    } else if (family === "matrix") {
+      // Two axes, one occupied cell. The grid is square-ish; the cell index is
+      // read left to right, top to bottom.
+      var cols = Math.ceil(Math.sqrt(div));
+      var rows = Math.ceil(div / cols);
+      var side = 240;
+      var left = 80;
+      var top = 80;
+      var gap = 8;
+      for (var m = 1; m <= div; m += 1) {
+        var col = (m - 1) % cols;
+        var row = Math.floor((m - 1) / cols);
+        var mOn = m === mark;
+        out.push(
+          rect(left + col * (side / cols) + gap / 2, top + row * (side / rows) + gap / 2, side / cols - gap, side / rows - gap, {
+            rx: 4,
+            width: mOn ? 2.8 : 1.2,
+            opacity: mOn ? 0.95 : 0.28,
+            fill: mOn ? "currentColor" : "none",
+            fillOpacity: mOn ? 0.22 : undefined
+          })
+        );
+      }
+    } else if (family === "gauge") {
+      // A quantity against a cap: the arc fills to the marked level, and one
+      // tick marks each level boundary.
+      var gcy = 286;
+      var gr = 130;
+      out.push(arc(200, gcy, gr, Math.PI, Math.PI * 2, 1.2, 0.22, 36));
+      out.push(arc(200, gcy, gr, Math.PI, Math.PI + (mark / div) * Math.PI, 3.2, 0.92, Math.max(6, Math.round((36 * mark) / div))));
+      for (var t = 1; t <= div; t += 1) {
+        var ta = Math.PI + ((t - 0.5) / div) * Math.PI;
+        out.push(
+          line(
+            200 + (gr - 12) * Math.cos(ta), gcy + (gr - 12) * Math.sin(ta),
+            200 + (gr + 6) * Math.cos(ta), gcy + (gr + 6) * Math.sin(ta), 1.1, 0.3
+          )
+        );
+      }
+      out.push(line(200 - gr - 8, gcy, 200 + gr + 8, gcy, 1.2, 0.25));
+    } else if (family === "rhythm") {
+      // Repeated intervals on a dial; the marked beat is the heavy sector and
+      // the hand that reaches into it.
+      var rcy = 198;
+      var rr = 118;
+      out.push('<circle cx="200" cy="' + rcy + '" r="' + rr + '" fill="none" stroke="currentColor" stroke-width="1.4" opacity="0.35" ' + STROKE + "/>");
+      for (var b = 1; b <= div; b += 1) {
+        var ba = -Math.PI / 2 + ((b - 0.5) / div) * Math.PI * 2;
+        out.push(
+          line(
+            200 + (rr - 12) * Math.cos(ba), rcy + (rr - 12) * Math.sin(ba),
+            200 + (rr + 10) * Math.cos(ba), rcy + (rr + 10) * Math.sin(ba),
+            b === mark ? 2.4 : 1.2, b === mark ? 0.9 : 0.3
+          )
+        );
+      }
+      var ra0 = -Math.PI / 2 + ((mark - 1) / div) * Math.PI * 2;
+      var ra1 = ra0 + (Math.PI * 2) / div;
+      out.push(arc(200, rcy, rr, ra0, ra1, 3.4, 0.9, 12));
+      var rah = ra0 + (ra1 - ra0) / 2;
+      out.push(line(200, rcy, 200 + rr * 0.72 * Math.cos(rah), rcy + rr * 0.72 * Math.sin(rah), 2.2, 0.75));
+      out.push(circle(200, rcy, 4.5, { width: 1.6, opacity: 0.8 }));
+    } else if (family === "loop") {
+      // A cycle that returns to its start: one arrowhead per step, and the
+      // marked node carries the weight.
+      var lr = 112;
+      var pt = function (i) {
+        var a = -Math.PI / 2 + ((i - 1) / div) * Math.PI * 2;
+        return [200 + lr * Math.cos(a), 200 + lr * Math.sin(a), a];
+      };
+      out.push('<circle cx="200" cy="200" r="' + lr + '" fill="none" stroke="currentColor" stroke-width="1.3" opacity="0.3" ' + STROKE + "/>");
+      for (var q = 1; q <= div; q += 1) {
+        // The arrow sits between two nodes, not on one: an arrowhead whose tip
+        // lands on a node reads as a bowtie, not as direction.
+        var qa = -Math.PI / 2 + ((q - 0.5) / div) * Math.PI * 2;
+        var qx = 200 + lr * Math.cos(qa);
+        var qy = 200 + lr * Math.sin(qa);
+        var tx = -Math.sin(qa);
+        var ty = Math.cos(qa);
+        var qbx = qx - tx * 12;
+        var qby = qy - ty * 12;
+        out.push(
+          '<path d="M ' + coord(qx) + " " + coord(qy) + " L " + coord(qbx - ty * 5) + " " + coord(qby + tx * 5) +
+            " L " + coord(qbx + ty * 5) + " " + coord(qby - tx * 5) + ' Z" fill="currentColor" opacity="0.55" ' + STROKE + "/>"
+        );
+      }
+      for (var n2 = 1; n2 <= div; n2 += 1) {
+        var np = pt(n2);
+        out.push(
+          n2 === mark
+            ? circle(np[0], np[1], 10, { width: 2.8, opacity: 0.95 })
+            : circle(np[0], np[1], 6, { hollow: true, width: 1.3, opacity: 0.4 })
+        );
+      }
+    } else if (family === "ladder") {
+      // Ranked rungs with a cutoff: every rung up to and including the marked
+      // one is held, the rest are faded.
+      var lx1 = 148;
+      var lx2 = 252;
+      var ly0 = 64;
+      var ly1 = 336;
+      out.push(line(lx1, ly0, lx1, ly1, 1.6, 0.35));
+      out.push(line(lx2, ly0, lx2, ly1, 1.6, 0.35));
+      for (var r = 1; r <= div; r += 1) {
+        var ry = div === 1 ? 200 : ly0 + ((ly1 - ly0) * (r - 1)) / (div - 1);
+        var held = r <= mark;
+        out.push(line(lx1, ry, lx2, ry, r === mark ? 3 : held ? 1.8 : 1, r === mark ? 0.95 : held ? 0.55 : 0.14));
+      }
+    } else if (family === "threshold") {
+      // A curve that steps at the marked point: flat until the change, level
+      // again after it.
+      var tx0 = 72;
+      var tx1 = 328;
+      var tbase = 286;
+      var ttop = 152;
+      var txm = tx0 + ((tx1 - tx0) * mark) / div;
+      out.push(
+        '<path d="M ' + tx0 + " " + tbase + " L " + coord(txm) + " " + tbase + " L " + coord(txm) + " " + ttop +
+          " L " + tx1 + " " + ttop + '" fill="none" stroke="currentColor" stroke-width="2.6" opacity="0.9" ' + STROKE + "/>"
+      );
+      var ticks = div <= 16 ? div : 10;
+      for (var k = 0; k <= ticks; k += 1) {
+        var txx = tx0 + ((tx1 - tx0) * k) / ticks;
+        out.push(line(txx, tbase, txx, tbase + 8, 1, 0.25));
+      }
+      out.push(line(tx0, tbase, tx1, tbase, 1.1, 0.22));
+      out.push(circle(txm, tbase, 5.5, { width: 2.2, opacity: 0.95 }));
+    } else {
+      // An unknown family still reads all three knobs, so a misspelling cannot
+      // declare parameters this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var u = 0; u < div; u += 1) {
+        var ux2 = 56 + (288 * (u + 0.5)) / div;
+        out.push(line(ux2, 56, ux2, 66, 1.4, 0.4));
+      }
+      out.push(circle(56 + (288 * mark) / div, 200, 8, { width: 1.6, opacity: 0.7 }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

@@ -1,0 +1,38 @@
+{
+  "id": "TAC-30",
+  "sourceTacticNo": 30,
+  "name": "Cognitive Pacing and Productive Procrastination",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Creative resistance wall. Staring at an intimidating, difficult problem often leads to procrastination on mindless, low-value distractions.",
+  "diagnosticSize": 9,
+  "schematic": "Gate at route 2 of 2",
+  "procedure": [
+    {
+      "text": "When you hit real resistance on the main task, do not default to social media or passive media."
+    },
+    {
+      "text": "Route the avoidance into a curated list of useful, low-friction tasks."
+    },
+    {
+      "text": "Let the background mind work on the primary problem while you make real progress on the list."
+    },
+    {
+      "text": "Return to the main challenge as soon as a solution surfaces or the frustration fades."
+    }
+  ],
+  "trap": "Using productive procrastination to avoid the high-value deliverable indefinitely, so the side tasks become the crutch.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. When hitting a genuine wall of mental exhaustion or resistance on a primary complex task, do not default to social media or passive media consumption.\n2. Route avoidance energy into a curated list of secondary, valuable, low-friction tasks (e.g., refactoring code docs, organizing reference notes, fixing minor formatting bugs).\n3. Allow the default mode network to work on the primary problem in the background while making real progress on useful auxiliary tasks.\n4. Return to the primary challenge as soon as a solution crystallizes or initial frustration fades.",
+  "setupFull": "productive_procrastination_menu.md\n  * [ ] Format markdown table headers in public docs\n  * [ ] Clean up unused local Docker volumes: docker system prune\n  * [ ] Add missing parameter docstrings to client library\n  * [ ] Reorganize personal Zettelkasten reference notes",
+  "trapFull": "Using productive procrastination to indefinitely avoid the primary high-value deliverable, turning secondary tasks into an avoidance crutch."
+}

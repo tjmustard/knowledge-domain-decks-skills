@@ -1,0 +1,40 @@
+{
+  "id": "TAC-13",
+  "sourceTacticNo": 13,
+  "name": "Warren Buffett’s 5/25 Rule",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Secondary distraction traps. High-achieving operators are rarely derailed by obvious trivialities; they are derailed by mildly interesting, moderately useful tertiary opportunities that siphon focus away from primary strategic imperatives.",
+  "diagnosticSize": 7.5,
+  "schematic": "Ladder at rung 5 of 25",
+  "procedure": [
+    {
+      "text": "Write exactly 25 professional goals, projects or milestones."
+    },
+    {
+      "text": "Circle the absolute top five."
+    },
+    {
+      "text": "Put the other 20 on an Avoid At All Costs list."
+    },
+    {
+      "text": "Spend effort only on the five; reject time on items 6 to 25 until they are done."
+    }
+  ],
+  "trap": "Treating items 6 to 25 as downtime tasks, which lets them dilute the focus the top five need.",
+  "origin": {
+    "authors": [
+      "Warren Buffett"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 25,
+      "mark": 5
+    }
+  },
+  "procedureFull": "1. Write down a comprehensive list of exactly 25 top professional goals, projects, or career milestones.\n2. Audit the list and circle the absolute top 5 most consequential, foundational objectives.\n3. Group the remaining 20 goals into a distinct register labeled: \"Avoid At All Costs List.\"\n4. Dedicate all active effort exclusively to the top 5; actively reject spending discretionary time or attention on items 6 through 25 until the primary set is complete.",
+  "setupFull": "Strategic Imperatives: 2026-2027The Primary 5 (Active Allocations Only)\n  1. Ship Core Distributed Database Engine v1.0\n  2. Achieve zero single-points-of-failure in production infrastructure\n  3. Author and publish technical manual on low-latency networking\n  4. Maintain sub-12% body fat through structural strength programming\n  5. Establish secondary automated recurring revenue stream\n\n  The 20 Traps (Forbidden Effort)\n\n  * [ ] Learn Rust GUI development (POSTPONED)\n  * [ ] Build homelab Kubernetes cluster (POSTPONED)\n  * [ ] Redesign personal portfolio theme (POSTPONED)",
+  "trapFull": "Treating items 6 through 25 as secondary tasks to pursue during downtime, allowing them to dilute the intense focus required to deliver the primary 5."
+}

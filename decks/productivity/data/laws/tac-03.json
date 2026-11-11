@@ -1,0 +1,38 @@
+{
+  "id": "TAC-03",
+  "sourceTacticNo": 3,
+  "name": "GTD Contextual Action Lists",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Context-mismatch friction. Reading actions that cannot be executed in the current physical, technical, or mental state induces decision fatigue and perceptual filtering drag.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gate at route 2 of 4",
+  "procedure": [
+    {
+      "text": "Define a small fixed set of contexts by tool, energy or place (e.g. @terminal, @deep-focus, @calls, @errands)."
+    },
+    {
+      "text": "Give each actionable item exactly one primary context tag when you clarify it."
+    },
+    {
+      "text": "Filter the register so only the current context is visible."
+    },
+    {
+      "text": "Hide every other task until the operational environment changes."
+    }
+  ],
+  "trap": "Context hyper-fragmentation. Dozens of over-specific tags (@laptop_at_desk) cost more upkeep than they save in retrieval.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 4,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Define a strict, minimal set of discrete operating contexts based on required tooling, cognitive energy, or physical location (e.g., @terminal, @deep-focus, @calls, @errands).\n2. During task clarification, assign exactly one primary context tag to each actionable item.\n3. Filter the action register to display exclusively the tasks associated with the current context.\n4. Suppress all other tasks from visible range until the operational environment shifts.",
+  "setupFull": "(A) Rebase feature branch and resolve merge conflicts @terminal +core_engine (B) Draft architecture proposal for token revocation @deep-focus +auth_spec (C) Verify billing webhook signature validity @terminal +payment_gateway",
+  "trapFull": "Context hyper-fragmentation. Generating dozens of hyper-specific tags (e.g., @laptop_at_desk, @laptop_on_couch) introduces excessive taxonomy maintenance overhead that outstrips its retrieval utility."
+}

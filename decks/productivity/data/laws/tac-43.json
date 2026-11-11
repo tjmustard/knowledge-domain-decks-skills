@@ -1,0 +1,38 @@
+{
+  "id": "TAC-43",
+  "sourceTacticNo": 43,
+  "name": "Commitment Devices & Social Contracts",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Hyperbolic discounting and private rationalizations. When commitments remain purely private, shifting priorities and justifying delays to oneself is all too easy.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gate at route 2 of 2",
+  "procedure": [
+    {
+      "text": "Create a binding device that locks in a real cost for not following through."
+    },
+    {
+      "text": "Announce concrete deliverables, scope and deadline to peers or stakeholders."
+    },
+    {
+      "text": "Tie social or financial stakes to the outcome through accountability tools or review cadences."
+    },
+    {
+      "text": "Make following through less painful than backing out."
+    }
+  ],
+  "trap": "Choosing an accountability partner who lets missed deadlines slide with no real consequence.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Create a binding commitment device that locks in a future cost for failing to follow through.\n2. Announce concrete deliverables, scopes, and deadlines publicly to colleagues, peers, or external stakeholders.\n3. Use external accountability tools or peer review cadences to tie real social or financial stakes to the outcome.\n4. Align short-term incentives so that following through is far less painful than facing the consequences of backing out.",
+  "setupFull": "Public Accountability Broadcast (Sent to Team Channel)\"I have committed to delivering the core consensus PR (#512) by Friday at 15:00. If the PR is not ready for review by that time, I will facilitate next week's cross-team retro and purchase coffee for the team.\"",
+  "trapFull": "Choosing an accountability partner who lets missed deadlines slide without real social or material consequences."
+}

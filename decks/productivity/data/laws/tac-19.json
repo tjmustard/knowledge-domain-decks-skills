@@ -1,0 +1,41 @@
+{
+  "id": "TAC-19",
+  "sourceTacticNo": 19,
+  "name": "RICE Scoring for Personal Roadmaps",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Subjective personal roadmapping bias. Selecting self-directed projects based on recency bias or momentary emotional engagement rather than objective reach and impact.",
+  "diagnosticSize": 8.5,
+  "schematic": "Matrix at cell 1 of 4",
+  "procedure": [
+    {
+      "text": "Score Reach: how many people, systems or workflows this affects this quarter."
+    },
+    {
+      "text": "Score Impact: massive 3, high 2, medium 1, low 0.5, minimal 0.25."
+    },
+    {
+      "text": "Score Confidence: high 1.0, medium 0.8, low 0.5."
+    },
+    {
+      "text": "Score Effort in person-weeks or person-days."
+    },
+    {
+      "text": "Compute RICE as Reach x Impact x Confidence divided by Effort."
+    }
+  ],
+  "trap": "Inflating Confidence on favourite projects to game the model and push them to the top.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Score Reach (R): How many people, systems, or workflows will this impact over a given quarter?\n2. Score Impact (I): Massive (3), High (2), Medium (1), Low (0.5), Minimal (0.25).\n3. Score Confidence (C): High (1.0), Medium (0.8), Low (0.5).\n4. Score Effort (E): Person-weeks or person-days required.\n5. Calculate metric: RICE Score = R × I × C ÷ E.",
+  "setupFull": "| Feature Candidate | Reach (R) | Impact (I) | Conf (C) | Effort (E) | RICE Score |\n| :---- | :---- | :---- | :---- | :---- | :---- |\n| CLI Autocompletion plugin | 1200 devs | 2.0 | 0.8 | 1 week | 1920.0 |\n| Interactive Web UI Dashboard | 400 devs | 3.0 | 0.5 | 4 weeks | 150.0 |\n| Performance Profiler Hooks | 150 devs | 3.0 | 1.0 | 1 week | 450.0 |",
+  "trapFull": "Artificially inflating Confidence (C) scores on favorite pet projects to game the mathematical model and force pet initiatives to the top."
+}

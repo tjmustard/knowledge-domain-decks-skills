@@ -1,0 +1,38 @@
+{
+  "id": "TAC-11",
+  "sourceTacticNo": 11,
+  "name": "Project Outcome Clarification (Definition of Done)",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Vague finish line paralysis. Ambiguous completion criteria lead to continuous over-engineering, scope creep, and an inability to finalize active projects.",
+  "diagnosticSize": 8.5,
+  "schematic": "Threshold at point 4 of 4",
+  "procedure": [
+    {
+      "text": "Write the Definition of Done before listing any task."
+    },
+    {
+      "text": "State the finish line as an observable condition of the world."
+    },
+    {
+      "text": "Name what is explicitly out of scope."
+    },
+    {
+      "text": "Call the project complete when those conditions hold, regardless of remaining polish."
+    }
+  ],
+  "trap": "Treating the Definition of Done as a malleable document that expands each time someone has an auxiliary feature idea mid-project.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "threshold",
+      "divisions": 4,
+      "mark": 4
+    }
+  },
+  "procedureFull": "1. When establishing any project note, immediately construct a Definition of Done section before listing individual tasks.\n2. Frame the finish line as an unambiguous, observable state of the external world (e.g., \"The binary compiles on ARM64, passes all unit tests, and is uploaded to S3\").\n3. Explicitly state what is *out of scope* to preempt perfectionist creep.\n4. Mark the project complete the moment all conditions in the Definition of Done are satisfied, regardless of remaining hypothetical polish.",
+  "setupFull": "Project: Payment Gateway V2Definition of Done\n  * [ ] Stripe Webhook listener handles charge.succeeded idempotently\n  * [ ] Failed charges trigger retry backoff via SQS\n  * [ ] Unit test coverage on payment module exceeds 90%\n  * [ ] Documentation updated in /docs/payments.md\n\n  Explicitly Out of Scope\n\n  * Support for cryptocurrencies or alternative payment rails",
+  "trapFull": "Treating the Definition of Done as a malleable document that expands each time an engineer or stakeholder has an auxiliary feature idea during active implementation."
+}

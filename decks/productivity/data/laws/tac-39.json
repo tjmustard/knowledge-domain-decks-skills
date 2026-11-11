@@ -1,0 +1,38 @@
+{
+  "id": "TAC-39",
+  "sourceTacticNo": 39,
+  "name": "Habit Stacking (Anchor Behavioral Chaining)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Temporal ambiguity and cue drifting. Trying to build a habit at an approximate time (e.g., \"around 2 PM\") often gets crowded out by surrounding tasks.",
+  "diagnosticSize": 9,
+  "schematic": "Pipeline at stage 2 of 5",
+  "procedure": [
+    {
+      "text": "Pick an anchor habit that already happens every day without effort."
+    },
+    {
+      "text": "Attach the new behaviour: immediately after the anchor, I will do the new habit."
+    },
+    {
+      "text": "Keep the stacked habit small and frictionless at first."
+    },
+    {
+      "text": "Chain further habits onto the one before, in one continuous flow."
+    }
+  ],
+  "trap": "Attaching a demanding 60-minute task to an unstable anchor, which breaks the whole chain.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "pipeline",
+      "divisions": 5,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Identify an established, reliable, non-negotiable anchor habit that occurs every day without effort (e.g., shutting down the laptop, pouring morning coffee).\n2. Attach the new desired behavior directly to that reliable anchor using the pattern: \"Immediately AFTER [Anchor Habit], I WILL [New Habit].\"\n3. Keep the stacked habit small and frictionless initially, letting the anchor habit carry the momentum.\n4. Chain multiple habits sequentially into a smooth, single behavioral flow.",
+  "setupFull": "Daily Routine Stacks\n  * **Morning Launch Stack**:\n    1. AFTER I pour my first cup of water (Anchor),\n    2. I WILL write down today's 3 MITs in daily.md (Stack 1),\n    3. AFTER I write my 3 MITs,\n    4. I WILL trigger the full-screen IDE workspace and start MIT 1 (Stack 2).",
+  "trapFull": "Attaching a demanding 60-minute task to an unstable or shifting anchor habit, which breaks the consistency of the entire chain."
+}

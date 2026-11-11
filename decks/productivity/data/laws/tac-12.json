@@ -1,0 +1,44 @@
+{
+  "id": "TAC-12",
+  "sourceTacticNo": 12,
+  "name": "The Eisenhower Decision Matrix",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Urgency-bias vulnerability. The human brain naturally favors tasks with near-term deadlines over tasks of foundational significance that lack immediate temporal pressure.",
+  "diagnosticSize": 8.5,
+  "schematic": "Matrix at cell 2 of 4",
+  "procedure": [
+    {
+      "text": "Plot each task on two axes: urgency (time pressure) against importance (strategic leverage)."
+    },
+    {
+      "text": "Quadrant 1, urgent and important: do it now, with full attention."
+    },
+    {
+      "text": "Quadrant 2, not urgent but important: schedule protected focus time; this is the growth quadrant."
+    },
+    {
+      "text": "Quadrant 3, urgent but not important: delegate, automate or batch it."
+    },
+    {
+      "text": "Quadrant 4, neither: delete it from the register."
+    }
+  ],
+  "trap": "Classifying everything as a Quadrant 1 emergency, so the matrix collapses into one chaotic list driven by other people's deadlines.",
+  "origin": {
+    "authors": [
+      "Eisenhower"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Map candidate tasks across a two-dimensional grid: Urgency (time sensitivity) versus Importance (strategic leverage).\n2. Quadrant 1 (Urgent & Important): Execute immediately with focused executive attention.\n3. Quadrant 2 (Not Urgent & Important): Schedule into protected calendar focus blocks. This represents the high-leverage growth engine.\n4. Quadrant 3 (Urgent & Not Important): Delegate systematically, automate with software scripts, or compress into rapid batches.\n5. Quadrant 4 (Not Urgent & Not Important): Terminate ruthlessly; scrub immediately from registries.",
+  "setupFull": "Quadrant 2: Strategic Investment (Schedule Immediately)tasksnot done tag includes #important tag does not include #urgent sort by due ascending",
+  "trapFull": "Classifying all incoming items as Quadrant 1 emergencies, collapsing the matrix into a single chaotic list driven entirely by other people's deadlines.",
+  "sourceNote": "The source's plain-text setup has lost its line breaks: the pseudo-query runs together as 'tasksnot done'. It is printed exactly as received, not reflowed."
+}

@@ -1,0 +1,41 @@
+{
+  "id": "TAC-24",
+  "sourceTacticNo": 24,
+  "name": "Pomodoro Interval and Ultradian Rhythm Synchronization",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Mental endurance burnout. Forcing continuous focus past natural biological limits causes attention to drift, leading to low-quality output and cognitive fatigue.",
+  "diagnosticSize": 8.5,
+  "schematic": "Rhythm at beat 1 of 4",
+  "procedure": [
+    {
+      "text": "Work in 50- to 90-minute ultradian sprints, or 25-minute Pomodoros for high-friction tasks."
+    },
+    {
+      "text": "Put a visible countdown timer in the workspace."
+    },
+    {
+      "text": "Work one clear objective until it rings; park every internal distraction as it appears."
+    },
+    {
+      "text": "When it rings, stop and rest for a true 5 to 15 minutes away from screens."
+    },
+    {
+      "text": "Run 3 to 4 cycles before an extended 60- to 90-minute break."
+    }
+  ],
+  "trap": "Skipping the breaks when momentum feels high, then hitting sudden fatigue later in the afternoon.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Base work intervals on human ultradian rhythms: work in sustained sprints of 50–90 minutes of high focus, or 25-minute Pomodoros for high-friction tasks.\n2. Set an explicit physical or offline digital countdown timer visible in the workspace.\n3. Work on a single, clear objective with absolute focus until the timer sounds; immediately log and park any internal distractions that pop up.\n4. When the timer rings, stop working immediately. Step away for a true 5-to-15 minute rest: move around, hydrate, and avoid screens or reading material.\n5. Complete 3–4 cycles before taking an extended recovery break of 60 to 90 minutes.",
+  "setupFull": "Focus Session Log: 2026-11-04\n  * [x] Session 1 (09:00-09:50) Target: Write AST parser tests | Outcome: 14 tests passing\n  * [ ] Session 2 (10:05-10:55) Target: Implement token lookahead | Outcome: [In-flight]\n  * [ ] Session 3 (11:10-12:00) Target: Profile memory allocation | Outcome: Unstarted",
+  "trapFull": "Skipping scheduled breaks when feeling high momentum, triggering sudden cognitive fatigue later in the afternoon."
+}

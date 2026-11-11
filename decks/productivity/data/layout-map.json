@@ -1,0 +1,377 @@
+{
+  "note": "Checkpoint two: family, divisions, mark and the printed label are fixed together here, before the figure shape is drawn. The label is the card's schematic line: '<Family> at <unit> <mark> of <divisions>'. The basis is a verbatim substring of that card's own record, naming the phrase that fixes the position; it never comes from another card.",
+  "families": {
+    "pipeline": "ordered stages joined in sequence; the marked stage is the one filled",
+    "gate": "a decision with routes fanning out; the marked route is the one drawn solid",
+    "matrix": "a grid of candidate cells; the marked cell is the one occupied",
+    "gauge": "a dial of levels against a cap; the marked level is the arc filled",
+    "rhythm": "a clock of repeated intervals; the marked beat is the heavy sector",
+    "loop": "a cycle of nodes that returns to its start; the marked node is the heavy one",
+    "ladder": "ranked rungs with a cutoff; the marked rung is the last one held",
+    "threshold": "a curve that steps at a point; the marked point is where it changes"
+  },
+  "units": {
+    "pipeline": "stage",
+    "gate": "route",
+    "matrix": "cell",
+    "gauge": "level",
+    "rhythm": "beat",
+    "loop": "step",
+    "ladder": "rung",
+    "threshold": "point"
+  },
+  "map": {
+    "TAC-01": {
+      "family": "pipeline",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Pipeline at stage 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "universally accessible inbox medium" }
+    },
+    "TAC-02": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Gate at route 1 of 2",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "execute immediately" }
+    },
+    "TAC-03": {
+      "family": "gate",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Gate at route 2 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "@deep-focus" }
+    },
+    "TAC-04": {
+      "family": "loop",
+      "divisions": 4,
+      "mark": 4,
+      "label": "Loop at step 4 of 4",
+      "diagnosticSize": 8,
+      "basis": { "field": "setupFull", "quote": "Weekly Review Checklist" }
+    },
+    "TAC-05": {
+      "family": "gauge",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Gauge at level 2 of 3",
+      "diagnosticSize": 8,
+      "basis": { "field": "setupFull", "quote": "WIP: 2 / MAX: 3" }
+    },
+    "TAC-06": {
+      "family": "pipeline",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Pipeline at stage 2 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "Active Execution" }
+    },
+    "TAC-07": {
+      "family": "rhythm",
+      "divisions": 14,
+      "mark": 1,
+      "label": "Rhythm at beat 1 of 14",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "two calendar weeks" }
+    },
+    "TAC-08": {
+      "family": "rhythm",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Rhythm at beat 1 of 5",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "each day of the working week" }
+    },
+    "TAC-09": {
+      "family": "rhythm",
+      "divisions": 8,
+      "mark": 1,
+      "label": "Rhythm at beat 1 of 8",
+      "diagnosticSize": 9,
+      "basis": { "field": "procedureFull", "quote": "non-overlapping, explicit calendar events" }
+    },
+    "TAC-10": {
+      "family": "threshold",
+      "divisions": 90,
+      "mark": 60,
+      "label": "Threshold at point 60 of 90",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "more than 60 days" }
+    },
+    "TAC-11": {
+      "family": "threshold",
+      "divisions": 4,
+      "mark": 4,
+      "label": "Threshold at point 4 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "observable state of the external world" }
+    },
+    "TAC-12": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Matrix at cell 2 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "Quadrant 2: Strategic Investment" }
+    },
+    "TAC-13": {
+      "family": "ladder",
+      "divisions": 25,
+      "mark": 5,
+      "label": "Ladder at rung 5 of 25",
+      "diagnosticSize": 7.5,
+      "basis": { "field": "setupFull", "quote": "The Primary 5" }
+    },
+    "TAC-14": {
+      "family": "ladder",
+      "divisions": 6,
+      "mark": 1,
+      "label": "Ladder at rung 1 of 6",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "six most important tasks" }
+    },
+    "TAC-15": {
+      "family": "ladder",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Ladder at rung 1 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "THE FROG (First 90 Minutes" }
+    },
+    "TAC-16": {
+      "family": "ladder",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Ladder at rung 1 of 4",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "Must Have (Release Blockers)" }
+    },
+    "TAC-17": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "descending order of WSJF" }
+    },
+    "TAC-18": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2,
+      "label": "Gate at route 2 of 2",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "authorize the risk" }
+    },
+    "TAC-19": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "RICE Score" }
+    },
+    "TAC-20": {
+      "family": "ladder",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Ladder at rung 1 of 3",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "Core Triad (Non-Negotiable)" }
+    },
+    "TAC-21": {
+      "family": "gate",
+      "divisions": 10,
+      "mark": 9,
+      "label": "Gate at route 9 of 10",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "1-to-10 scale" }
+    },
+    "TAC-22": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "Forced Priority Order: 1. A" }
+    },
+    "TAC-23": {
+      "family": "rhythm",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Rhythm at beat 1 of 3",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "multi-day deep work stretches" }
+    },
+    "TAC-24": {
+      "family": "rhythm",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Rhythm at beat 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "Complete 3" }
+    },
+    "TAC-25": {
+      "family": "rhythm",
+      "divisions": 5,
+      "mark": 3,
+      "label": "Rhythm at beat 3 of 5",
+      "diagnosticSize": 8,
+      "basis": { "field": "procedureFull", "quote": "Maker Blocks (minimum uninterrupted 4-hour" }
+    },
+    "TAC-26": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Loop at step 1 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "FINISHED" }
+    },
+    "TAC-27": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Loop at step 3 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "17:30" }
+    },
+    "TAC-28": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Gate at route 1 of 2",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "parking_lot.md" }
+    },
+    "TAC-29": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Matrix at cell 2 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "dedicated workspace" }
+    },
+    "TAC-30": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2,
+      "label": "Gate at route 2 of 2",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "productive_procrastination_menu.md" }
+    },
+    "TAC-31": {
+      "family": "threshold",
+      "divisions": 5,
+      "mark": 5,
+      "label": "Threshold at point 5 of 5",
+      "diagnosticSize": 9,
+      "basis": { "field": "procedureFull", "quote": "final task slightly unfinished" }
+    },
+    "TAC-32": {
+      "family": "rhythm",
+      "divisions": 2,
+      "mark": 2,
+      "label": "Rhythm at beat 2 of 2",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "two dedicated communication batch windows" }
+    },
+    "TAC-33": {
+      "family": "rhythm",
+      "divisions": 7,
+      "mark": 6,
+      "label": "Rhythm at beat 6 of 7",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "diagnostic", "quote": "reset the brain's baseline" }
+    },
+    "TAC-34": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Gate at route 1 of 2",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "IF condition" }
+    },
+    "TAC-35": {
+      "family": "threshold",
+      "divisions": 4,
+      "mark": 2,
+      "label": "Threshold at point 2 of 4",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "TODAY'S MISSION-CRITICAL FOCUS" }
+    },
+    "TAC-36": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Loop at step 3 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "Temptation Bundle Registry" }
+    },
+    "TAC-37": {
+      "family": "gauge",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Gauge at level 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "under 20 seconds" }
+    },
+    "TAC-38": {
+      "family": "loop",
+      "divisions": 4,
+      "mark": 4,
+      "label": "Loop at step 4 of 4",
+      "diagnosticSize": 8,
+      "basis": { "field": "setupFull", "quote": "Deep Work Habit Chain (Target: 90 min daily)" }
+    },
+    "TAC-39": {
+      "family": "pipeline",
+      "divisions": 5,
+      "mark": 2,
+      "label": "Pipeline at stage 2 of 5",
+      "diagnosticSize": 9,
+      "basis": { "field": "procedureFull", "quote": "Immediately AFTER" }
+    },
+    "TAC-40": {
+      "family": "gauge",
+      "divisions": 5,
+      "mark": 4,
+      "label": "Gauge at level 4 of 5",
+      "diagnosticSize": 9,
+      "basis": { "field": "procedureFull", "quote": "multi-step workarounds" }
+    },
+    "TAC-41": {
+      "family": "ladder",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Ladder at rung 1 of 2",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "Two-Minute Scale-Down" }
+    },
+    "TAC-42": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Loop at step 1 of 3",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "setupFull", "quote": "Identity Principles: Engineering Discipline" }
+    },
+    "TAC-43": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 2,
+      "label": "Gate at route 2 of 2",
+      "diagnosticSize": 8.5,
+      "basis": { "field": "procedureFull", "quote": "less painful than" }
+    },
+    "TAC-44": {
+      "family": "loop",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Loop at step 1 of 2",
+      "diagnosticSize": 9,
+      "basis": { "field": "setupFull", "quote": "Incident Recovery Log" }
+    }
+  }
+}

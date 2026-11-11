@@ -1,0 +1,41 @@
+{
+  "id": "TAC-16",
+  "sourceTacticNo": 16,
+  "name": "MoSCoW Prioritization for Personal Deliverables",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Perfectionist scope expansion. Failure to establish baseline viability leads projects to stall in pursuit of marginal, non-essential enhancements.",
+  "diagnosticSize": 9,
+  "schematic": "Ladder at rung 1 of 4",
+  "procedure": [
+    {
+      "text": "Split deliverables into Must Have, Should Have, Could Have and Won't Have this iteration."
+    },
+    {
+      "text": "Keep Must Have to the bare minimum for viability, never more than 60% of effort."
+    },
+    {
+      "text": "Give Should Have 20% of effort capacity."
+    },
+    {
+      "text": "Treat Could Have as opportunistic stretch only."
+    },
+    {
+      "text": "Use Won't Have as an explicit quarantine against scope creep."
+    }
+  ],
+  "trap": "Promoting a Could Have to Must Have mid-sprint on a burst of enthusiasm.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Break project deliverables into four discrete categories: Must Have, Should Have, Could Have, and Won't Have (this iteration).\n2. Limit the \"Must Have\" bucket to the absolute bare minimum required for functional viability (never exceed 60% of total effort).\n3. Allocate 20% effort capacity to \"Should Have\" (important additions with workarounds available).\n4. Treat \"Could Have\" as opportunistic stretch goals executed only if core velocity exceeds projections.\n5. Use \"Won't Have\" as an explicit quarantine zone to prevent scope creep during active sprints.",
+  "setupFull": "Project Release v2.0 ScopeMust Have (Release Blockers)\n  * [ ] End-to-end payload encryption\n  * [ ] Zero-downtime database table migration\n\n  Should Have (High Value / Non-Blocker)\n\n  * [ ] Structured JSON logging pipeline\n\n  Could Have (Opportunistic Polish)\n\n  * [ ] Terminal color output theme support\n\n  Won't Have (Explicit Scope Freeze)\n\n  * Multi-tenant sub-organization routing",
+  "trapFull": "Promoting \"Could Have\" features to \"Must Have\" status halfway through a sprint based on sudden emotional excitement or hyper-focus."
+}

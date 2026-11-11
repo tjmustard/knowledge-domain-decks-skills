@@ -1,0 +1,41 @@
+{
+  "id": "TAC-04",
+  "sourceTacticNo": 4,
+  "name": "GTD Weekly Review Cadence",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Progressive entropy of trust. When a task tracking infrastructure drifts out of parity with actual existential commitments, subconscious anxiety returns and biological retention restarts.",
+  "diagnosticSize": 8,
+  "schematic": "Loop at step 4 of 4",
+  "procedure": [
+    {
+      "text": "Book a fixed 60- to 90-minute weekly review and treat it as non-negotiable."
+    },
+    {
+      "text": "Collect every loose paper, scratchpad and capture file; process every inbox to absolute zero."
+    },
+    {
+      "text": "Inspect every active project and make sure at least one next action sits in a context list."
+    },
+    {
+      "text": "Scan the calendar seven days back and fourteen days forward for open loops."
+    },
+    {
+      "text": "Review the Someday/Maybe list: promote what is now relevant, purge what is not."
+    }
+  ],
+  "trap": "Letting the review grow into an open-ended strategic re-planning session. Past two hours, it starts getting skipped entirely.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 4,
+      "mark": 4
+    }
+  },
+  "procedureFull": "1. Schedule a non-negotiable 60- to 90-minute weekly recurring block (typically Friday afternoon or Sunday evening).\n2. Collect all loose physical papers, scratchpads, and ephemeral capture files; process every inbox to absolute zero.\n3. Inspect every active project file; ensure at least one actionable NEXT task is populated in the contextual action registers.\n4. Audit calendar logs for the past seven days and upcoming fourteen days to capture unresolved open loops.\n5. Review \"Someday/Maybe\" lists to promote newly relevant items or permanently purge irrelevant backlogs.",
+  "setupFull": "Weekly Review Checklist (run every Friday 16:00)\n  * [ ] Clear inbox.md, scratchpads, browser bookmarks to zero\n  * [ ] Verify each projects/*.md contains an active - [ ] NEXT step\n  * [ ] Scan Google Calendar / Outlook: 7 days back, 14 days forward\n  * [ ] Prune stale items from someday_maybe.md\n  * [ ] Check Git repos for stale branches: git branch --merged",
+  "trapFull": "Expanding the weekly review into an open-ended strategic re-planning marathon. If the review routinely exceeds two hours, the operator begins avoiding it entirely."
+}

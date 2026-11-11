@@ -1,0 +1,38 @@
+{
+  "id": "TAC-15",
+  "sourceTacticNo": 15,
+  "name": "Eat That Frog (The Morning Heuristic)",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Anticipatory dread and cognitive drag. Postponing a difficult, intimidating task causes low-grade anxiety that drains executive energy throughout the working day.",
+  "diagnosticSize": 8.5,
+  "schematic": "Ladder at rung 1 of 3",
+  "procedure": [
+    {
+      "text": "Pick the single most intimidating, high-consequence task: the frog."
+    },
+    {
+      "text": "Do it first, before email, chat or administrative dashboards."
+    },
+    {
+      "text": "Set up every resource the evening before to lower morning activation energy."
+    },
+    {
+      "text": "Finish it without deviation and use the relief as momentum for the day."
+    }
+  ],
+  "trap": "Letting prep tasks, such as tidying the desktop or checking dashboards, delay the frog.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Identify the single most intimidating, high-friction, high-consequence task on the agenda (the \"Frog\").\n2. Schedule this task as the first operational item of the morning, prior to opening email, communication tools, or administrative dashboards.\n3. Pre-condition all resources, files, and workspace state the evening before to lower morning activation energy.\n4. Complete the Frog without deviation, converting the psychological relief of finishing into momentum for the rest of the day.",
+  "setupFull": "Daily Execution Architecture🐸 THE FROG (First 90 Minutes: Isolated Terminal)\n  * [ ] Refactor broken TLS handshake parsing logic in networking stack\n\n  Post-Frog Operations (Unlocked only after Frog completion)\n\n  * [ ] Check inbox and incident tickets\n  * [ ] Team standup sync",
+  "trapFull": "Permitting \"prep tasks\" (such as organizing the desktop, checking status dashboards, or organizing files) to delay initiation of the primary, intimidating task."
+}

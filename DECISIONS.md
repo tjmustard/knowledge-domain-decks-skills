@@ -2591,3 +2591,72 @@ Because the UX cards changed, `packages/prepress/dist/ux-laws.pdf` is now 108
 pages, 1,060,358 bytes, sha256 `3bcd50e1...`; the other nine decks are
 byte-identical to their README figures, and the README line carries the new
 pair.
+
+## 68. The productivity deck prints the friction, the procedure and the trap, and names only the originator its title carries
+
+The productivity deck ships a source's forty-four workflow tactics in the four
+domains the tactics are numbered under, eleven each, as 44 records validated
+against `decks/productivity/data/law-schema.json`. The card front prints the
+source's cognitive-friction diagnostic verbatim at a per-card size (7.5 to 9 pt,
+fixed in the layout map), the figure and the map's own schematic line; the back
+prints a numbered procedure of three to five steps, a compressed failure trap
+and one attribution line. The source's own Implementation Algorithm, Plain-Text
+Implementation and Failure Trap are `"card": false` blocks of a new `verbatim`
+style: one string, printed line for line in the rules file and the domain
+resource, unfenced when every non-empty line is a table row (TAC-06, 17 and 19
+are markdown tables and print as tables). The compression rule is stated on the
+rules file and enforced in the deck test: a digit run in a short step must occur
+in the algorithm it was compressed from, and a short trap's must occur in its own
+full trap, compared block by block rather than as a union so a number cannot
+migrate between them.
+
+Two checkpoints settled the shape before anything was drawn, because deck ten's
+seam was exactly this ordering. The first confirmed or challenged every recorded
+source defect at its location; two came back different from the packet. The
+packet's LaTeX defect names `\ge` among five tactics' macros, but `\ge` occurs
+in no tactic's text: the macros that survive are `\text`, `\frac`, `\le` and
+`\times`, and the source doubles their backslashes while its markdown escapes
+stay single. Separately, thirty-four of the forty-four cards carry backslashes
+in printed fields even where no formula appears, so a guard for "the five LaTeX
+tactics" would have left most residue in place. The declared rendering table in
+`decks/productivity/data/render.mjs` therefore covers both groups: `\text`,
+`\frac`, `\le` and `\times` render to their arguments, division, `≤` and `×`,
+one doubled backslash is read past, and each markdown escape becomes its
+character; undeclared sequences are left untouched rather than guessed at. The
+second challenge is arithmetic. The source prints four step markers for TAC-14
+but numbers the fifth step after a period inside the fourth, and that fifth step
+carries the six-item bound. The record numbers five, so the deck prints 184
+steps against the source's 183, and the card carries the note that says so. The
+second checkpoint fixed the layout map before the figure shape existed: all 44
+rows name a family, its divisions and mark, and the record field and sentence
+the numbers come from, so a card cannot carry a figure its own text does not
+support. `productivity-figure` draws eight families - pipeline 3, gate 8, matrix
+5, gauge 3, rhythm 8, loop 7, ladder 6, threshold 4 - and the gate's liveness
+probe found no leaf parameter that leaves a drawing unchanged.
+
+Attribution has two tiers and no third, on the operator's ruling. Eleven tactic
+titles name a person and the card prints that name with no invented year; the
+schema's `origin` permits `authors` or the fixed note and declares no year,
+work or publication property, so a record cannot acquire a citation and still
+validate. The other thirty-three print "The source names no originator." The
+packet's second tier - a checked public originator where the source names none -
+is deliberately off: a citation the deck vouches for and the source never made
+cannot be checked by the suite later. Each card prints only the bound its own
+tactic states (WIP at three, six items, five of twenty-five), never the
+introduction's working-memory figure, which the source states two ways (7 ± 2
+and about 4 ± 1) and which is recorded as a tension rather than resolved.
+
+The schema's `procedureFull` floor moved. It was written as 380 characters from
+a sample; TAC-19's four-step RICE ranking is 350 and is the source's whole
+algorithm. Padding a verbatim block to clear a bound this deck set is the
+failure the archetype deck's `minLength` already taught (§47), so the bound moved
+to 340 and the field descriptions carry the measured ranges (350-629 for the
+algorithm, 136-579 for the setup). No record text changed.
+
+Its 88-page print PDF is 515,008 bytes at sha256 `42d72907...`, byte-identical
+on rebuild; the forty-four-card SVG bundle hashes to `af6f0aa0...` in
+`cards.json` order; all 44 cards fit inside the safe inset with zero OVER and
+zero TIGHT (worst recto row 440, worst verso 433); and the ten decks that
+shipped before it rebuild byte-identical to their README figures
+(`3bcd50e1`, `2f004169`, `af2ea16f`, `035429f5`, `5ca91630`, `2bfc9fb5`,
+`482e7fc2`, `be878abb`, `aced7d61`, `be66d059`).

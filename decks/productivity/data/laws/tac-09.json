@@ -1,0 +1,38 @@
+{
+  "id": "TAC-09",
+  "sourceTacticNo": 9,
+  "name": "Timeboxing and Calendar Blocking",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Parkinson’s Law dynamics. Work expands elastically to fill the temporal space allocated for its completion if that duration is fluid or indefinite.",
+  "diagnosticSize": 9,
+  "schematic": "Rhythm at beat 1 of 8",
+  "procedure": [
+    {
+      "text": "Pick the day's top one to three deliverables."
+    },
+    {
+      "text": "Estimate an aggressive but realistic duration for each, from its broken-down parts."
+    },
+    {
+      "text": "Put non-overlapping calendar blocks on the calendar for each one."
+    },
+    {
+      "text": "When the timer ends, stop, assess and decide deliberately whether to book another block."
+    }
+  ],
+  "trap": "Packing the calendar edge to edge with no buffers, so one delay cascades through the whole schedule.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 8,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Identify the top 1–3 prioritized deliverables for the day.\n2. Estimate an aggressive yet realistic duration for each deliverable based on decomposed sub-tasks.\n3. Open the calendar and assign non-overlapping, explicit calendar events for each task block.\n4. Treat each block as a deterministic production sprint: when the timer expires, halt work, assess status, and deliberately decide whether to allocate another explicit box or transition.",
+  "setupFull": "Daily Schedule: 2026-11-04\n  * 08:30 - 10:00 [DEEP WORK] Core Engine Parser Optimization\n  * 10:00 - 10:15 [INTERSTITIAL] Rest & Physical Hydration\n  * 10:15 - 11:45 [DEEP WORK] AST Node Generation Implementation\n  * 11:45 - 12:45 [RECOVERY] Lunch & Aerobic Walking\n  * 12:45 - 13:30 [BATCH ADMIN] Email triage, PR reviews, Slack\n  * 13:30 - 15:00 [MEETINGS] Engineering sync & architecture review",
+  "trapFull": "Underestimating temporal friction and packing calendars edge-to-edge without buffers. This causes single-point delays to cascade throughout the entire schedule."
+}

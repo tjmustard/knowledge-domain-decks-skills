@@ -1,0 +1,38 @@
+{
+  "id": "TAC-40",
+  "sourceTacticNo": 40,
+  "name": "Environmental Choice Architecture (Friction Taxing)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Willpower depletion. Relying on active self-control to resist constant, easily accessible temptations guarantees eventual relapse when energy dips.",
+  "diagnosticSize": 9,
+  "schematic": "Gauge at level 4 of 5",
+  "procedure": [
+    {
+      "text": "Treat the environment as a choice architecture where the good choice is the default."
+    },
+    {
+      "text": "Put a heavy friction tax on distracting behaviour."
+    },
+    {
+      "text": "Block sinks at DNS or /etc/hosts, keep the phone out of the room, make distractions hard to reach."
+    },
+    {
+      "text": "Design it so slipping up takes deliberate, annoying, multi-step work."
+    }
+  ],
+  "trap": "Leaving passwords, tokens or blocker overrides within reach, so a low-willpower moment gets through.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gauge",
+      "divisions": 5,
+      "mark": 4
+    }
+  },
+  "procedureFull": "1. Treat personal environments as deliberate choice architectures where constructive choices are the default path.\n2. Impose a heavy \"friction tax\" on distracting or time-wasting behaviors.\n3. Use DNS-level sinkholes, edit /etc/hosts to block time sinks, keep phones out of the room during focus work, and make distractions physically difficult to reach.\n4. Design environments so that slipping up requires deliberate, annoying, multi-step workarounds.",
+  "setupFull": "`# /etc/hosts: Local environmental friction tax`\n`127.0.0.1 twitter.com`\n`127.0.0.1 x.com`\n`127.0.0.1 news.ycombinator.com`\n`127.0.0.1 reddit.com`",
+  "trapFull": "Keeping passwords, tokens, or blocker override commands easily accessible, allowing impulsive overrides during moments of low willpower."
+}

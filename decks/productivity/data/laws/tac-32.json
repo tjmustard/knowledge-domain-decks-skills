@@ -1,0 +1,38 @@
+{
+  "id": "TAC-32",
+  "sourceTacticNo": 32,
+  "name": "Batch Processing for Communication Chores",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Chronic communication reactivity. Responding to incoming emails and Slack pings as they arrive keeps the brain in a fragmented, reactive state throughout the day.",
+  "diagnosticSize": 8.5,
+  "schematic": "Rhythm at beat 2 of 2",
+  "procedure": [
+    {
+      "text": "Turn off push notifications for every communication app on desktop, phone and browser."
+    },
+    {
+      "text": "Set two fixed communication windows a day, for example 11:30-12:15 and 16:30-17:00."
+    },
+    {
+      "text": "Work the inboxes to zero inside each window, using the Two-Minute Rule."
+    },
+    {
+      "text": "Close the apps entirely outside those windows."
+    }
+  ],
+  "trap": "Leaving communication windows minimized or on a second monitor, where badges pull attention all day.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 2,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Turn off all desktop, mobile, and browser push notifications for communication apps.\n2. Set up two dedicated communication batch windows per day (e.g., 11:30–12:15 and 16:30–17:00).\n3. During these windows, work through inboxes systematically, processing messages to zero using the Two-Minute Rule.\n4. Close all communication applications completely outside these scheduled batch windows.",
+  "setupFull": "Slack / Email Communication Protocol\n  * Notification Status: PERMANENTLY DISABLED\n  * Processing Window 1: 11:30 - 12:15 (Triage morning updates, unlock blockers)\n  * Processing Window 2: 16:30 - 17:00 (Final day sync, async project updates)\n  * Emergency Escalation: On-call PagerDuty route only",
+  "trapFull": "Leaving communication windows minimized or running on a second monitor, where visual badges quietly pull attention away from deep work."
+}

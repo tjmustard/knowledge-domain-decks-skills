@@ -1,0 +1,37 @@
+{
+  "id": "TAC-37",
+  "sourceTacticNo": 37,
+  "name": "Clear’s 3rd Law: Activation Energy Tuning (The 20-Second Rule)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Initiation-threshold barriers. Subtle friction hurdles (e.g., locating files, remembering passwords, setting up environments) offer easy rationalizations to postpone work.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gauge at level 1 of 4",
+  "procedure": [
+    {
+      "text": "For good habits, cut activation energy to under 20 seconds: automate setup, bookmark workspaces, keep tools ready."
+    },
+    {
+      "text": "For bad habits, add at least 20 seconds of real friction: log out, delete credentials, move the device, block the site."
+    },
+    {
+      "text": "Audit regularly: trim steps from good actions and add steps to distractions."
+    }
+  ],
+  "trap": "Underestimating small digital friction; a missing shortcut or an awkward login can quietly derail the start.",
+  "origin": {
+    "authors": [
+      "Clear"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gauge",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. For constructive habits: Lower the physical and digital activation energy to under 20 seconds. Automate environment setup, bookmark workspaces, and keep necessary tools ready.\n2. For destructive habits: Add at least 20 seconds of real physical friction. Log out of social sites, delete stored credentials, put distracting devices in another room, or use website blockers.\n3. Audit environments regularly to trim steps from positive actions and add steps to distractions.",
+  "setupFull": "`# scripts/bootstrap_project.sh: Shrinks activation energy from minutes to one keystroke`\n`cd ~/repos/core_engine`\n`source venv/bin/activate`\n`tmux new-session -d -s engine`\n`tmux split-window -h`\n`nvim src/main.rs`",
+  "trapFull": "Underestimating small digital friction points. Even a few missing shortcuts or an awkward login prompt can silently derail task initiation."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "TAC-44",
+  "sourceTacticNo": 44,
+  "name": "Routine Recovery Protocol (Never Miss Twice)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "The \"what-the-hell\" cognitive bias. Missing a single habit or deadline often triggers a spiral of guilt, leading people to abandon the entire system.",
+  "diagnosticSize": 9,
+  "schematic": "Loop at step 1 of 2",
+  "procedure": [
+    {
+      "text": "Accept that emergencies, illness and crises will break routines sometimes."
+    },
+    {
+      "text": "Set one hard rule: never miss twice in a row."
+    },
+    {
+      "text": "If Day 1 is missed, treat getting back on track on Day 2 as an emergency."
+    },
+    {
+      "text": "Shrink the habit on Day 2 if needed, so the identity survives."
+    }
+  ],
+  "trap": "All-or-nothing thinking: treating one missed day as proof that weeks of consistency are void.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Accept that unexpected emergencies, illness, and urgent crises will occasionally disrupt routines.\n2. Establish a hard, non-negotiable operational rule: *Never miss twice in a row*.\n3. If an emergency disrupts a routine on Day 1, treat getting back on track on Day 2 as an absolute emergency.\n4. Scale down the scope of the habit on Day 2 if necessary to ensure execution, protecting the underlying behavioral identity.",
+  "setupFull": "Incident Recovery Log\n  * 2026-11-02: [MISSED] Deep Work block interrupted by production outage.\n  * 2026-11-03: [EMERGENCY RECOVERY RUN] 30-Minute minimal focus sprint executed.\n  * Outcome: Streak preserved; spiral avoided.",
+  "trapFull": "Adopting an all-or-nothing mindset, assuming that missing a single daily goal invalidates weeks of consistent past progress."
+}

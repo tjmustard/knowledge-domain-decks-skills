@@ -1,0 +1,38 @@
+{
+  "id": "TAC-29",
+  "sourceTacticNo": 29,
+  "name": "Environmental Cue Decoupling and Context Pinning",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Multi-use space distraction. Working, gaming, and relaxing in the exact same environment invites habits from one context to bleed into another, pulling focus away from work.",
+  "diagnosticSize": 8.5,
+  "schematic": "Matrix at cell 2 of 4",
+  "procedure": [
+    {
+      "text": "Map each kind of task to a distinct physical or digital setup."
+    },
+    {
+      "text": "For deep work, use a clean account or workspace with no games, social apps or entertainment bookmarks."
+    },
+    {
+      "text": "Attach a unique cue to deep work: a lamp setting, focus music, noise-cancelling headphones."
+    },
+    {
+      "text": "When the break starts, remove the cue and leave the deep-work station."
+    }
+  ],
+  "trap": "Watching leisure media at the deep-work terminal, which dilutes the cue that makes the place mean focus.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Map different functional tasks to distinct physical or digital setups.\n2. For deep work, use a clean user account or dedicated workspace free of games, social applications, and entertainment bookmarks.\n3. Pin unique physical cues to deep work periods (e.g., a specific desk lamp setting, focus music, or noise-canceling headphones).\n4. The moment a break begins, remove the physical cues and physically step away from the deep work station.",
+  "setupFull": "`alias mode-deep=\"defaults write com.apple.dock autohide -bool true && `\n                `pkill -f Slack && pkill -f Spotify && `\n                `tmux new-session -s DEEP_FOCUS\"`",
+  "trapFull": "Consuming leisure media (YouTube, social sites) while seated at the deep-work terminal, diluting the environmental focus cue."
+}

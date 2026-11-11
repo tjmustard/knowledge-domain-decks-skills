@@ -1,0 +1,41 @@
+{
+  "id": "TAC-02",
+  "sourceTacticNo": 2,
+  "name": "GTD Clarification and the Two-Minute Rule",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Ambiguity-induced task postponement. Ambiguously defined tasks require high activation energy to parse, while trivial items generate administrative backlog disproportionate to their actual execution cost.",
+  "diagnosticSize": 8,
+  "schematic": "Gate at route 1 of 2",
+  "procedure": [
+    {
+      "text": "Take the top item in the inbox and judge it alone, without scanning the items beneath it."
+    },
+    {
+      "text": "Decide whether it is actionable. If not, trash it, file it as reference, or park it on an incubation list."
+    },
+    {
+      "text": "If it is actionable, name the one physical next action that moves it forward."
+    },
+    {
+      "text": "If that action takes 120 seconds or less, do it now and close the record."
+    },
+    {
+      "text": "If it takes longer, delegate it or put it on a project backlog or a context list."
+    }
+  ],
+  "trap": "Using the two-minute rule as a habit: running micro-tasks back to back for hours. Deep work derails and you become a purely reactive machine.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Isolate the topmost raw item in the capture inbox; evaluate it independently without scanning subsequent items.\n2. Determine if the item is actionable. If not: trash it, archive it as reference, or file it under a deferred incubation list.\n3. If actionable, specify the physical, unambiguous next action required for forward progress.\n4. Determine execution duration: if completion requires ≤ 120 seconds, execute immediately and terminate the record.\n5. If the action requires > 120 seconds, delegate the item or append it to a project backlog or contextual execution list.",
+  "setupFull": "Raw Input: \"Docker container crashes on boot\" Clarified Next Action: \"Run docker logs --tail 50 app_server to extract panic trace\" Execution Estimate: 30 seconds -> [Executed immediately; record marked complete]",
+  "trapFull": "Utilizing the two-minute window to execute micro-tasks sequentially for hours. This causes deep-work derailment and transforms the user into a purely reactive state machine."
+}

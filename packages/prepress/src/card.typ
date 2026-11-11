@@ -215,6 +215,11 @@
             #text(size: 6.5pt, weight: "bold", fill: accent(card))[#pair.label]
             #v(1pt)
             #text(size: 7pt)[#pair.text]
+          ] else if b.style == "verbatim" [
+            // The source's own plain text, line for line. A card that prints
+            // one sets it in the vendored monospace, because the setup is code
+            // the reader runs.
+            #text(size: 6pt, font: "JetBrains Mono")[#card.at(b.field)]
           ]
         ]
       ]

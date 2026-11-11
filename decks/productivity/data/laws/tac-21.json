@@ -1,0 +1,40 @@
+{
+  "id": "TAC-21",
+  "sourceTacticNo": 21,
+  "name": "Derek Sivers’ \"Hell Yeah or No\" Filter",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Over-commitment paralysis and middle-tier opportunity dilution. Agreeing to marginally interesting obligations that eat up the space needed for exceptional opportunities.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gate at route 9 of 10",
+  "procedure": [
+    {
+      "text": "For any new invitation or optional initiative, rate your enthusiasm from 1 to 10."
+    },
+    {
+      "text": "Anything below an unconditional 9 or 10 gets a polite, decisive no."
+    },
+    {
+      "text": "Drop the social guilt: every middle-tier yes rejects a future breakthrough."
+    },
+    {
+      "text": "Keep a short rejection template so drafting does not slow you down."
+    }
+  ],
+  "trap": "Applying the filter to obligations that need discipline rather than enthusiasm, such as taxes or security patches.",
+  "origin": {
+    "authors": [
+      "Derek Sivers"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 10,
+      "mark": 9
+    }
+  },
+  "procedureFull": "1. When assessing any new inbound invite, collaboration opportunity, or non-critical initiative, evaluate personal intuitive enthusiasm on a 1-to-10 scale.\n2. If the internal response is anything lower than an unconditional \"9\" or \"10\" (\"Hell Yeah!\"), default immediately to a polite, decisive \"No.\"\n3. Strip away social guilt: realize that every middle-tier acceptance is an implicit rejection of future breakthroughs.\n4. Maintain an explicit template for neutral, rapid rejections to eliminate drafting hesitation.",
+  "setupFull": "\"Thank you for the thoughtful invitation. Given my active focus on completing our core distributed engine deliverable, I am unavailable to take on auxiliary projects or speaking commitments for the foreseeable future. Best of success with the initiative.\"",
+  "trapFull": "Applying the filter to foundational operational responsibilities (e.g., filing taxes, patching critical security bugs) that require disciplined execution rather than emotional enthusiasm."
+}

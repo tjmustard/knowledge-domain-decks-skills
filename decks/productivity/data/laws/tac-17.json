@@ -1,0 +1,41 @@
+{
+  "id": "TAC-17",
+  "sourceTacticNo": 17,
+  "name": "Weighted Shortest Job First (WSJF / Cost of Delay)",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Intuitive, inaccurate ROI estimation. Developers naturally gravitate toward either massive, slow projects or small, low-value tweaks without weighing business impact against implementation duration.",
+  "diagnosticSize": 8,
+  "schematic": "Matrix at cell 1 of 4",
+  "procedure": [
+    {
+      "text": "Score Cost of Delay for each initiative: user-business value plus time criticality plus risk reduction or opportunity enablement."
+    },
+    {
+      "text": "Score each parameter on a Fibonacci scale: 1, 2, 3, 5, 8, 13, 21."
+    },
+    {
+      "text": "Estimate Job Size on the same scale."
+    },
+    {
+      "text": "Compute WSJF as Cost of Delay divided by Job Size."
+    },
+    {
+      "text": "Sort the queue by descending WSJF and take the highest first."
+    }
+  ],
+  "trap": "Debating subjective Fibonacci scores longer than building the features, turning a heuristic into administrative theatre.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Calculate the Cost of Delay (CoD) for each candidate initiative: CoD = User-Business Value + Time Criticality + Risk Reduction / Opportunity Enablement.\n2. Score each parameter on a Fibonacci scale (1, 2, 3, 5, 8, 13, 21).\n3. Estimate the Job Duration / Size (J) using the same scale.\n4. Compute the priority metric: WSJF = CoD ÷ J.\n5. Sort the master execution queue in descending order of WSJF score; execute highest-scoring tasks first.",
+  "setupFull": "| Initiative | CoD Score | Job Size (J) | WSJF (CoD / J) | Execution Sequence |\n| :---- | :---- | :---- | :---- | :---- |\n| Fix memory leak in auth broker | 8 + 13 + 5 = 26 | 2 | 13.0 | 1 |\n| Implement tenant rate limiting | 5 + 5 + 8 = 18 | 3 | 6.0 | 2 |\n| Re-architect telemetry schema | 8 + 3 + 13 = 24 | 8 | 3.0 | 3 |\n| Rewrite docs site theme | 1 + 1 + 1 = 3 | 2 | 1.5 | 4 |",
+  "trapFull": "Spending more time debating subjective Fibonacci scores than actually building features, turning an empirical heuristic into administrative theater."
+}

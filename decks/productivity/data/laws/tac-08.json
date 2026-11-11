@@ -1,0 +1,38 @@
+{
+  "id": "TAC-08",
+  "sourceTacticNo": 8,
+  "name": "Day Theming (Cognitive Mode Categorization)",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Macro context-switching fatigue. Alternating between diametrically opposed cognitive modes (e.g., deep analytical programming and interpersonal negotiations) on the same day degrades performance across both.",
+  "diagnosticSize": 8,
+  "schematic": "Rhythm at beat 1 of 5",
+  "procedure": [
+    {
+      "text": "Sort commitments into three or four macro modes (e.g. Building, Operations, Team, Strategy)."
+    },
+    {
+      "text": "Give each working day one dominant theme."
+    },
+    {
+      "text": "Batch each mode's tasks onto its assigned day."
+    },
+    {
+      "text": "Refuse or move requests that would pull a conflicting mode onto a themed day."
+    }
+  ],
+  "trap": "Letting automated booking links scatter 30-minute meetings across days reserved for deep analytical work.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Map all personal and professional commitments into 3–4 macro categories (e.g., Architecture/Building, Operations/Admin, Team/Mentorship, Strategy/Learning).\n2. Assign each day of the working week a single dominant theme.\n3. Batch all tasks belonging to a specific category exclusively into their assigned calendar day.\n4. Reject or reschedule requests that force dissonant cognitive tasks into dedicated focus days.",
+  "setupFull": "Weekly Cognitive Theming Matrix\n  * Monday: Internal Architecture & Deep Development (No internal meetings)\n  * Tuesday: Client / Cross-functional Meetings & Collaboration\n  * Wednesday: Systems Building & Heavy Refactoring (No meetings)\n  * Thursday: Operations, Administrative Triage, Code Reviews\n  * Friday: Strategy, Systems Retrospective, Weekly GTD Review",
+  "trapFull": "Permitting external interruptions or scheduling tools (e.g., automated booking links) to scatter fragmented 30-minute meetings across days dedicated to deep analytical output."
+}

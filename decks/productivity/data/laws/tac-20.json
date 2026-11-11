@@ -1,0 +1,38 @@
+{
+  "id": "TAC-20",
+  "sourceTacticNo": 20,
+  "name": "The Most Important Task (MIT) Triad",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Diffuse focus and superficial busywork. Checking off fifteen easy items while failing to make tangible progress on the day's true core priorities.",
+  "diagnosticSize": 9,
+  "schematic": "Ladder at rung 1 of 3",
+  "procedure": [
+    {
+      "text": "Before any work, name exactly three Most Important Tasks for the day."
+    },
+    {
+      "text": "At least two must connect to core strategic projects, not maintenance."
+    },
+    {
+      "text": "Treat everything else as secondary until the triad is done."
+    },
+    {
+      "text": "Call the day successful only if all three are complete."
+    }
+  ],
+  "trap": "Filling the triad with tasks that need someone else's approval, so it stalls when they do not reply.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Prior to commencing any operational work, define exactly three—and only three—Most Important Tasks (MITs) for the day.\n2. At least two of the three items must connect directly to core strategic projects rather than maintenance or reactive operational support.\n3. Treat all other emergent tasks as secondary deliverables that cannot be started until the triad is complete.\n4. Consider the day successful if and only if these three items reach completion.",
+  "setupFull": "Core Triad (Non-Negotiable)\n  * [ ] MIT 1: Fix thread deadlock in TCP ingest server\n  * [ ] MIT 2: Write RFC for cross-region data replication\n  * [ ] MIT 3: Implement Prometheus exporter metrics for cache hits\n\n  Secondary / Operational Buffer\n\n  * [ ] Clear unread notifications\n  * [ ] Submit weekly expense reconciliation",
+  "trapFull": "Overpopulating the triad with tasks that depend on external approvals, stalling progress when third parties fail to respond in time."
+}

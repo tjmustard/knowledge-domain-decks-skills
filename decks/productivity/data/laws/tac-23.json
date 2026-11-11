@@ -1,0 +1,40 @@
+{
+  "id": "TAC-23",
+  "sourceTacticNo": 23,
+  "name": "Newport’s Monastic / Bimodal Deep Work Protocols",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Chronic prefrontal fragmentation from hyper-connectivity. Shallow communications make it nearly impossible to sustain the deep, unbroken focus required to solve hard systemic problems.",
+  "diagnosticSize": 8,
+  "schematic": "Rhythm at beat 1 of 3",
+  "procedure": [
+    {
+      "text": "Monastic mode: cut all non-essential channels and work in sustained isolation."
+    },
+    {
+      "text": "Bimodal mode: divide time into multi-day deep stretches and open shallow intervals."
+    },
+    {
+      "text": "Tell collaborators the boundaries so the isolated periods are protected."
+    },
+    {
+      "text": "In deep stretches, close every communication platform and open-ended network access."
+    }
+  ],
+  "trap": "Running a monastic protocol without team buy-in, so rapid-response dependencies break and the team pushes back.",
+  "origin": {
+    "authors": [
+      "Newport"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Monastic variant: Eliminate all non-essential communication channels permanently; operate in sustained offline isolation.\n2. Bimodal variant: Divide time into clearly divided cycles: dedicated multi-day deep work stretches (high focus, zero collaboration) and open shallow-work intervals (administrative, social, collaborative).\n3. Clearly communicate boundaries to collaborators to protect isolated periods from unscheduled contact.\n4. During deep stretches, eliminate all communication platforms, social media, and open-ended network access.",
+  "setupFull": "Operating Mode Manifest: Q4 Bimodal Cadence\n  * MON/TUE: Open Mode (Collaborative)\n    * Available on Slack, code reviews, architecture syncs, candidate interviews.\n  * WED/THU/FRI: Monastic Mode (Deep Implementation)\n    * Slack closed; terminal and IDE in full-screen focus.\n    * Out-of-office message active: \"In scheduled deep implementation. Inquiries reviewed Monday.\"",
+  "trapFull": "Attempting a monastic protocol without team buy-in, leading to organizational friction when rapid-response dependencies break down."
+}

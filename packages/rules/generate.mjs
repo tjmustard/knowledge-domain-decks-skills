@@ -30,10 +30,25 @@ function lines(text) {
   return String(text).split("\n");
 }
 
+// The source's own plain text, printed line for line. A block whose every
+// non-empty line opens with a pipe is a markdown table, and a table inside a
+// code fence is a picture of a table: it prints unfenced so the reader gets a
+// table and the artifact still carries the source's bytes.
+function verbatimLines(text) {
+  const raw = String(text).split("\n");
+  const isTable =
+    raw.some((line) => line.trim() !== "") &&
+    raw.every((line) => line.trim() === "" || line.trim().startsWith("|"));
+  return isTable ? raw : ["```text", ...raw, "```"];
+}
+
 // How one declared block reads as a sentence, for the artifacts that present a
 // card's fields as prose rather than as a face. Returns the lines to push.
 function blockLines(block, value) {
   if (value === undefined || value === null || value === "") return [];
+  if (block.style === "verbatim" && typeof value === "string") {
+    return [`**${block.label}.**`, "", ...verbatimLines(value)];
+  }
   if (Array.isArray(value)) {
     if (value.length === 0) return [];
     if (block.style === "labelledList") {
@@ -234,6 +249,13 @@ function resourceMarkdown(category, shape, items) {
       for (const block of shape.blocks) {
         const value = card[block.field];
         if (value === undefined || value === null || value === "") continue;
+        if (block.style === "verbatim" && typeof value === "string") {
+          // Separate the block from whatever precedes it, without stacking a
+          // second blank line after a preceding block that already ended one.
+          if (out[out.length - 1] !== "") out.push("");
+          out.push(`**${block.label}:**`, "", ...verbatimLines(value), "");
+          continue;
+        }
         // A labelled block is the record's own { label, text } pair: the name
         // of the move, then the words of it.
         if (!Array.isArray(value) && typeof value === "object" && value.label && value.text) {

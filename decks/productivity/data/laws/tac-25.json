@@ -1,0 +1,40 @@
+{
+  "id": "TAC-25",
+  "sourceTacticNo": 25,
+  "name": "Maker vs. Manager Partitioning (Paul Graham)",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Catastrophic maker-schedule disruption. A single 30-minute meeting placed in the middle of an engineer's afternoon breaks up a multi-hour focus window, derailing complex system modeling.",
+  "diagnosticSize": 8,
+  "schematic": "Rhythm at beat 3 of 5",
+  "procedure": [
+    {
+      "text": "Split the week into Maker Blocks of at least four uninterrupted hours and Manager Blocks of 30-minute slots."
+    },
+    {
+      "text": "Put every meeting and check-in on specific days or after 14:30."
+    },
+    {
+      "text": "Defend the morning hours for Maker Blocks."
+    },
+    {
+      "text": "If a meeting would split a focus block, decline it, ask for an async update or move it."
+    }
+  ],
+  "trap": "Letting quick 10-minute syncs creep into the morning and fracture the deep-work window.",
+  "origin": {
+    "authors": [
+      "Paul Graham"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 5,
+      "mark": 3
+    }
+  },
+  "procedureFull": "1. Split weekly operational time into two distinct scheduling modes: Maker Blocks (minimum uninterrupted 4-hour windows) and Manager Blocks (modular 30-minute slots).\n2. Confine all meetings, triage check-ins, and one-on-ones to specific days or dedicate them strictly to late afternoons (e.g., after 14:30).\n3. Defend the morning hours exclusively for Maker Blocks.\n4. If a meeting threatens to split a core focus block, decline it, ask for an async update, or move it to a manager slot.",
+  "setupFull": "Weekly Boundary Profile\n  * Monday - Friday: 08:30 - 12:30 -> RESERVED MAKER BLOCK (Calendar auto-declines invites)\n  * Tuesday & Thursday: 14:00 - 17:00 -> COLLABORATIVE MANAGER SLOTS (Open Calendly links)",
+  "trapFull": "Allowing \"quick 10-minute syncs\" to creep into morning Maker Blocks, fracturing the day's primary deep work window."
+}

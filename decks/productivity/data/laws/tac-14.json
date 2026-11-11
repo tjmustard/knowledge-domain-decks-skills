@@ -1,0 +1,44 @@
+{
+  "id": "TAC-14",
+  "sourceTacticNo": 14,
+  "name": "The Ivy Lee Method",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Morning task-initiation inertia and choice fatigue. Waking up to an unbounded task universe causes prolonged decision deliberation before real work begins.",
+  "diagnosticSize": 8.5,
+  "schematic": "Ladder at rung 1 of 6",
+  "procedure": [
+    {
+      "text": "At the end of each day, pick the six most important tasks for tomorrow."
+    },
+    {
+      "text": "Rank them by real leverage and importance."
+    },
+    {
+      "text": "Start Task 1 at the desk the next morning and stay on it until it is done."
+    },
+    {
+      "text": "Work through the rest in order, without multitasking."
+    },
+    {
+      "text": "At day's end, carry incomplete items onto a fresh list of six; never exceed six."
+    }
+  ],
+  "trap": "Starting with the easy items instead of Task 1, which is usually the one that is intimidating.",
+  "origin": {
+    "authors": [
+      "Ivy Lee"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 6,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. At the conclusion of each workday, identify the six most important tasks to accomplish the following day.\n2. Order these six items strictly by decreasing order of real leverage and importance.\n3. On the following morning, begin work on Task 1 immediately upon sitting at the workspace; focus on it exclusively until completion.\n4. Progress through the remaining items sequentially (Task 2, Task 3, etc.) without multitasking. 5. At the day's end, move incomplete items onto a fresh list of six for the next day; never exceed six items total.",
+  "setupFull": "Daily Slate: 2026-11-04\n  1. [ ] Fix race condition in replication leader election (CRITICAL)\n  2. [ ] Review PR #492: Storage layer index partitioning\n  3. [ ] Author design doc for Raft consensus snapshot compaction\n  4. [ ] Prepare talking points for architecture review board\n  5. [ ] Back up production etcd metadata snapshot\n  6. [ ] Clear engineering support queue (max 45 min)",
+  "trapFull": "Abandoning sequential discipline to tackle simpler items down the list (e.g., running Task 5 first because Task 1 is cognitively intimidating).",
+  "sourceNote": "The source prints four step markers; its fifth step, 'At the day's end...', is glued onto step 4 after a period. This record numbers five steps, because the fifth carries the six-item bound."
+}

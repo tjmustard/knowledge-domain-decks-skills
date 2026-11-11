@@ -1,0 +1,38 @@
+{
+  "id": "TAC-42",
+  "sourceTacticNo": 42,
+  "name": "Identity-Based Habit Reframing",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Cognitive dissonance from outcome-focused pressure. Pursuing goals purely for external outcomes often clashes with an individual's subconscious self-image.",
+  "diagnosticSize": 8.5,
+  "schematic": "Loop at step 1 of 3",
+  "procedure": [
+    {
+      "text": "Move the daily framing from outcomes to identity: not ship 1,000 lines, but I am the engineer who writes clean tested code."
+    },
+    {
+      "text": "Treat every small action as one vote for that identity."
+    },
+    {
+      "text": "When hesitating, ask what the consummate professional would do here."
+    },
+    {
+      "text": "Let internal consistency drive the behaviour, not outside motivation."
+    }
+  ],
+  "trap": "Claiming an identity without the small daily actions, which turns it into empty posturing.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "loop",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Shift daily framing away from external milestones (e.g., \"I need to ship 1,000 lines of code today\") toward intrinsic identity (e.g., \"I am the type of engineer who writes clean, reliable, tested code\").\n2. View every small, positive action as a single vote cast for that chosen identity.\n3. When facing hesitation, ask: \"What would the consummate professional software architect do in this exact situation?\"\n4. Let internal consistency with that identity drive the behavior rather than relying on external motivation.",
+  "setupFull": "Identity Principles: Engineering Discipline\n  * A principled engineer leaves the codebase cleaner than they found it.\n  * A principled engineer writes unit tests before declaring an issue resolved.\n  * A principled engineer does not ship unvetted hotfixes to production environments.",
+  "trapFull": "Adopting an identity without backing it up through small, tangible daily actions, turning the mindset into empty posturing."
+}

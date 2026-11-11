@@ -1,0 +1,38 @@
+{
+  "id": "TAC-22",
+  "sourceTacticNo": 22,
+  "name": "Pairwise Comparison and Forced Ranking",
+  "domain": "Triage and Prioritization Frameworks",
+  "diagnostic": "Flat-priority list paralysis. Lists where every item is labeled \"High Priority\" create triage deadlock because relative values remain unexamined.",
+  "diagnosticSize": 9,
+  "schematic": "Matrix at cell 1 of 4",
+  "procedure": [
+    {
+      "text": "List the competing priorities, no more than eight."
+    },
+    {
+      "text": "Compare two at a time: if only one could ship, which is more critical?"
+    },
+    {
+      "text": "Run every pairing and tally head-to-head wins."
+    },
+    {
+      "text": "Sort by total wins for a forced order with no ties."
+    }
+  ],
+  "trap": "Letting circular preferences stall the process (A beats B, B beats C, C beats A); impose a strict criterion.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Extract an unranked set of competing candidate priorities (limit to N ≤ 8 items).\n2. Construct a tournament bracket or pairwise matrix: compare Item 1 against Item 2 in isolation, asking: \"If I could only deliver one of these two, which is non-negotiably more critical?\"\n3. Iterate through all combinations (N(N-1) ÷ 2 pairings), tallying head-to-head victories for each item.\n4. Sort the list strictly by total win count, yielding an absolute, forced-ranked sequence free of tied priorities.",
+  "setupFull": "Items: [A: Security Patch, B: New Feature, C: Refactor Auth, D: Documentation] A vs B -> A wins | A vs C -> A wins | A vs D -> A wins (A: 3 wins) B vs C -> C wins | B vs D -> B wins (B: 1 win) C vs D -> C wins (C: 2 wins) Forced Priority Order: 1. A, 2. C, 3. B, 4. D",
+  "trapFull": "Allowing circular trade-off debates to stall the process (e.g., choosing A over B, B over C, and C over A). The operator must impose strict, transitive decision criteria."
+}

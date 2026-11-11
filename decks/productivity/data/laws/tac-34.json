@@ -1,0 +1,40 @@
+{
+  "id": "TAC-34",
+  "sourceTacticNo": 34,
+  "name": "Implementation Intentions (Gollwitzer If-Then Contingencies)",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Volitional decay in the presence of friction. Abstract intentions fail when confronted with momentary fatigue, distractions, or shifting emotional states.",
+  "diagnosticSize": 8.5,
+  "schematic": "Gate at route 1 of 2",
+  "procedure": [
+    {
+      "text": "Pick one high-leverage habit that keeps failing."
+    },
+    {
+      "text": "Name the exact cues: time, place and the event just before."
+    },
+    {
+      "text": "Name the obstacles that derail it."
+    },
+    {
+      "text": "Write the contract: IF the cue occurs, THEN I will do the action; IF the obstacle arises, THEN I will do the countermeasure."
+    }
+  ],
+  "trap": "Framing the intention vaguely, such as 'I will code more when I have time', instead of as a deterministic condition.",
+  "origin": {
+    "authors": [
+      "Gollwitzer"
+    ]
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gate",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Identify a critical, high-leverage target habit that currently suffers from inconsistent execution.\n2. Map out the exact situational cues (Time, Location, Preceding Event) that will trigger the behavior.\n3. Define any internal or external obstacles likely to derail the habit.\n4. Write out an explicit, deterministic operational contract using the syntax: \"IF condition [cue] occurs, THEN I will execute [action], and IF obstacle [friction] arises, THEN I will execute [countermeasure].\"",
+  "setupFull": "Implementation Intentions: Q4 Focus\n  * **Core Routine**: IF the morning coffee machine finishes brewing (Cue), THEN I will sit at my terminal and open daily_plan.md before launching a browser (Action).\n  * **Friction Contingency**: IF I feel the urge to open Twitter/Reddit during compile times (Obstacle), THEN I will stand up and do 10 kettlebell swings (Countermeasure).",
+  "trapFull": "Framing intentions with vague language (e.g., \"I will code more consistently when I have free time\") rather than setting concrete, deterministic conditions."
+}

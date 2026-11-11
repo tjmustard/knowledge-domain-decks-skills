@@ -144,7 +144,11 @@ export const DEFAULT_FIELDS = {
 // the sentence said. "beforeAfter" prints a record's `{ bland, optimized }`
 // pair as the two rewrites it is. "lines" prints one entry per printed line,
 // which is how a fill-in template keeps the source's own line structure.
-export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled", "labelledList", "beforeAfter", "lines"];
+// "verbatim" is one string printed line for line, with its blank lines and its
+// indentation intact: the source's own plain text, not a reflow of it. A
+// verbatim block whose every non-empty line opens with `|` prints unfenced as
+// a markdown table, because a fenced table is a picture of a table.
+export const BLOCK_STYLES = ["traits", "words", "quotes", "prose", "list", "example", "labelled", "labelledList", "beforeAfter", "lines", "verbatim"];
 
 /*
  * A deck's back-face blocks, in the order the deck prints them. A block is

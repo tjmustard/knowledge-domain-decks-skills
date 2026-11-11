@@ -1,0 +1,38 @@
+{
+  "id": "TAC-33",
+  "sourceTacticNo": 33,
+  "name": "Digital Sabbatical and Sensory Reset",
+  "domain": "Cognitive Focus and Flow State Engineering",
+  "diagnostic": "Dopaminergic baseline elevation. Constant digital inputs reset the brain's baseline stimulation requirements, making quiet, difficult, focused work feel painful by comparison.",
+  "diagnosticSize": 8.5,
+  "schematic": "Rhythm at beat 6 of 7",
+  "procedure": [
+    {
+      "text": "Book a continuous 24- to 48-hour screen-free period each week, usually Saturday or Sunday."
+    },
+    {
+      "text": "Power down the workstation and put the phone out of reach."
+    },
+    {
+      "text": "Replace screens with analog activity: physical books, exercise, cooking, the outdoors."
+    },
+    {
+      "text": "Let the nervous system reset for the coming week."
+    }
+  ],
+  "trap": "Cheating the reset with subtle screen time, such as social apps or streaming under the excuse of relaxing.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "rhythm",
+      "divisions": 7,
+      "mark": 6
+    }
+  },
+  "procedureFull": "1. Schedule a continuous 24- to 48-hour period each week (typically Saturday or Sunday) with zero screen or computer time.\n2. Turn off the primary workstation and place mobile devices in an out-of-reach storage box.\n3. Replace digital consumption with analog activities: reading physical books, endurance exercise, cooking, or being outdoors.\n4. Use this down-time to let the nervous system reset, restoring natural focus and motivation for the upcoming work week.",
+  "setupFull": "Weekend Sensory Reset Checklist\n  * Friday 18:00: Workstation powered down. Phone locked in desk drawer.\n  * Saturday: Zero screen interactions. Analog note-taking via physical notebook.\n  * Sunday 18:00: Device access restored; conduct GTD Weekly Review.",
+  "trapFull": "\"Cheating\" the reset with subtle screen time, such as browsing social apps or watching streaming video under the excuse of \"relaxing.\""
+}

@@ -1,0 +1,38 @@
+{
+  "id": "TAC-41",
+  "sourceTacticNo": 41,
+  "name": "Micro-Commitments & The 2-Minute Habit Scale-Down",
+  "domain": "Habit Formation and Friction Engineering",
+  "diagnostic": "Intimidating upfront effort. Facing an enormous project causes anticipatory dread, leading to chronic task initiation avoidance.",
+  "diagnosticSize": 9,
+  "schematic": "Ladder at rung 1 of 2",
+  "procedure": [
+    {
+      "text": "Scale the intimidating task down to a version that takes two minutes or less."
+    },
+    {
+      "text": "Frame the goal as showing up: one line of code, one page, one test signature."
+    },
+    {
+      "text": "Give full permission to stop when the two minutes are up."
+    },
+    {
+      "text": "Let the momentum carry you if it does."
+    }
+  ],
+  "trap": "Using the two-minute version as a trick while privately demanding hours, which brings the same resistance back.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "ladder",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "procedureFull": "1. Take an intimidating habit or task and scale it down to a version that takes two minutes or less to perform.\n2. Frame the initial goal purely as showing up: \"Write one line of code,\" \"Read one page of documentation,\" or \"Open the editor and write the test function signature.\"\n3. Give full permission to stop working the moment the two minutes are up.\n4. Rely on natural cognitive momentum: once the initiation barrier is broken, the brain usually prefers continuing over stopping.",
+  "setupFull": "Intimidating Target: \"Write entire 15-page systems architecture RFC.\" Two-Minute Scale-Down: \"Open rfc_draft.md and write out three bulleted sub-headings.\" [Rule: After writing the headings, work may stop guilt-free.]",
+  "trapFull": "Treating the two-minute scale-down as a mental trick while privately demanding a multi-hour session, which triggers the same initial resistance."
+}

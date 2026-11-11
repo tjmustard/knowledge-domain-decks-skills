@@ -1,0 +1,38 @@
+{
+  "id": "TAC-10",
+  "sourceTacticNo": 10,
+  "name": "Backlog Pruning and Deflationary Archiving",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Digital hoard decay. Low-probability, low-value backlog items continuously degrade search ergonomics and induce subconscious guilt through sheer visual volume.",
+  "diagnosticSize": 8.5,
+  "schematic": "Threshold at point 60 of 90",
+  "procedure": [
+    {
+      "text": "Query every task untouched for more than 60 days."
+    },
+    {
+      "text": "Apply a deletion bias: two months untouched is evidence it is not essential."
+    },
+    {
+      "text": "Move salvageable items to a cold-storage graveyard.md."
+    },
+    {
+      "text": "Delete the rest. If it is truly critical, reality will bring it back."
+    }
+  ],
+  "trap": "Shuffling stale tasks between Someday and To Do with new priorities instead of deleting them.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "threshold",
+      "divisions": 90,
+      "mark": 60
+    }
+  },
+  "procedureFull": "1. Query all tasks that have inhabited the backlog for more than 60 days without an active state change or modification.\n2. Apply an aggressive deletion bias: if a task has remained untouched for two months, it is demonstrably non-essential.\n3. Relocate salvageable items to a cold-storage graveyard.md file rather than retaining them in live databases.\n4. Delete the remainder permanently. If an issue is truly mission-critical, real-world reality will resurface it.",
+  "setupFull": "graveyard.md (Archived via automated purge 2026-11-01)\n  * [ ] 2026-08-14 Rewrite CLI logging using custom ANSI formatter (abandoned: non-essential)\n  * [ ] 2026-08-20 Evaluate alternative web frameworks for landing page (abandoned: settled on current)\n  * [ ] 2026-08-28 Create script to auto-sort downloads folder (abandoned: low ROI)",
+  "trapFull": "Shuffling stale tasks back and forth between \"Someday\" and \"To Do\" with revised priorities instead of executing terminal deletions."
+}

@@ -1,0 +1,38 @@
+{
+  "id": "TAC-05",
+  "sourceTacticNo": 5,
+  "name": "Personal Kanban Work-in-Progress (WIP) Limits",
+  "domain": "Task Architecture and Workflow Systems",
+  "diagnostic": "Multitasking-induced lead time inflation. Unconstrained active work saturates attention, maximizes context-switching penalties, and slows end-to-end task throughput according to Little's Law.",
+  "diagnosticSize": 8,
+  "schematic": "Gauge at level 2 of 3",
+  "procedure": [
+    {
+      "text": "Build a three-column board: Backlog, In-Flight, Done."
+    },
+    {
+      "text": "Cap In-Flight at three items for one person."
+    },
+    {
+      "text": "Pull a new item in only when an existing one is completed or discarded."
+    },
+    {
+      "text": "If the cap is breached, stop and fix the bottleneck before adding more work."
+    }
+  ],
+  "trap": "Raising the cap whenever an exciting new task arrives, which removes the friction that forces focus and finishing.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "productivity-figure",
+    "parametricParams": {
+      "family": "gauge",
+      "divisions": 3,
+      "mark": 2
+    }
+  },
+  "procedureFull": "1. Construct a minimal three-stage visual board: Backlog, In-Flight, and Done.\n2. Establish a hard numerical cap on the In-Flight column: WIP Limit ≤ 3 items for a solo operator.\n3. Implement a strict pull dynamic: no new item may enter In-Flight from Backlog until an existing item moves to Done or is explicitly discarded.\n4. Treat any WIP violation as an operational fault requiring immediate desynchronization of lower-priority tasks.",
+  "setupFull": "* Backlog\n  * TODO Design database migration scripts #priority/medium\n  * TODO Refactor authentication interceptor #priority/low\n* In-Flight (WIP: 2 / MAX: 3)\n  * DOING Implement OAuth token revocation endpoint\n  * DOING Fix race condition in webhooks consumer\n* Done\n  * DONE Audit API endpoint latencies",
+  "trapFull": "Arbitrarily adjusting WIP limits upward whenever exciting new tasks emerge, neutralizing the systemic friction that forces focus and project completion."
+}

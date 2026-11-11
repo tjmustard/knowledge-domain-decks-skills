@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-10%20%C2%B7%20437%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-11%20%C2%B7%20481%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -27,6 +27,7 @@
 - [🧪 Innovation Architecture](#-innovation-architecture)
 - [💡 Ideation Architecture](#-ideation-architecture)
 - [✍️ Copy Architecture](#️-copy-architecture)
+- [⏳ Productivity Architecture](#-productivity-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -43,7 +44,7 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Ten decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Eleven decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
@@ -57,7 +58,9 @@ covers forty-two product-discovery and experimentation tactics, each carried as
 an hypothesis and the threshold that would prove it. **Ideation Architecture**
 covers fifty idea-generation tactics, each carried as a five-minute sprint you
 can run. **Copy Architecture** covers forty-eight copy formulas, each carried
-as the proportions it allocates and the template it fills. Each card is distilled into the smallest usable form: a claim, a
+as the proportions it allocates and the template it fills. **Productivity
+Architecture** covers forty-four working tactics, each carried as the friction
+it resolves and the numbered procedure that follows it. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -113,6 +116,7 @@ deck's copy, names, or trade dress is used.
 | **Innovation Architecture** | 42 | 4 phases | `packages/prepress/dist/innovation.pdf` | `packages/web/decks/innovation/` | `rules/innovation-rules.md` | `skills/innovation/` |
 | **Ideation Architecture** | 50 | 4 phases | `packages/prepress/dist/ideation.pdf` | `packages/web/decks/ideation/` | `rules/ideation-rules.md` | `skills/ideation/` |
 | **Copy Architecture** | 48 | 4 surfaces | `packages/prepress/dist/copywriting.pdf` | `packages/web/decks/copywriting/` | `rules/copywriting-rules.md` | `skills/copywriting/` |
+| **Productivity Architecture** | 44 | 4 domains | `packages/prepress/dist/productivity.pdf` | `packages/web/decks/productivity/` | `rules/productivity-rules.md` | `skills/productivity/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -633,6 +637,100 @@ owns. The deck's records are in `decks/copywriting/data/laws/` and its schema in
 
 ---
 
+## ⏳ Productivity Architecture
+
+**Productivity Architecture** is a forty-four-card deck of working tactics for a
+person's own week. The card is built for a reader who recognises themselves in
+the friction and can act on the procedure: the front prints the cognitive
+friction the source gives the tactic, the figure, and the layout map's own
+schematic line; the back prints the numbered procedure, the trap that turns the
+tactic into theatre, and one attribution line. The procedure prints as steps
+rather than checkboxes, because the source gives an algorithm to run, not a list
+to tick.
+
+The source's plain-text setup is the deck's most concrete gift - the inbox
+query, the parking-lot file, the ninety-day review calendar - and it prints in
+the rules file and the domain resource rather than on the card, where a table
+has no room. The source's own algorithm, setup and failure trap follow every
+card in those artifacts, line for line, under headings that say they are the
+source's text; the card's procedure and trap are this deck's compression, and
+the compression rule on the rules file allows dropping explanation but not
+adding a claim or changing a number.
+
+The forty-four divide into four domains of eleven, in the source's own order:
+
+| Domain | Cards | What a card is for |
+|---|---|---|
+| Task Architecture and Workflow Systems | TAC-01 to TAC-11 | Capture, clarify and finish: the shape of the work itself |
+| Triage and Prioritization Frameworks | TAC-12 to TAC-22 | Choosing what to do first when everything is urgent |
+| Cognitive Focus and Flow State Engineering | TAC-23 to TAC-33 | Attention, interruption and the deep block |
+| Habit Formation and Friction Engineering | TAC-34 to TAC-44 | Making the behaviour survive the decision |
+
+The source's opening table names five domains where the tactics are numbered
+under four. The four are what the headings and the numbering say, and the
+discrepancy is recorded rather than repaired.
+
+The drawing follows the mechanism. `decks/productivity/data/layout-map.json`
+files each card under one of eight structural families - pipeline 3, gate 8,
+matrix 5, gauge 3, rhythm 8, loop 7, ladder 6, threshold 4 - and records the
+datum it reads as a sentence quoted from the record, the mark and the divisions.
+The eight families read as eight drawings: a rail with a node per stage, a
+diamond with one port per route, a grid with one cell held, an arc with its
+tick per level, a clock face with a hand, a ring with a step between arrowheads,
+two rails whose rungs are held up to the mark, and a stepped line that turns at
+the point. Each row's basis quote must appear in the field it names, so a card
+cannot carry a figure its own text does not support.
+
+The source's text arrives escaped. Thirty-four of the forty-four cards carry
+markdown backslashes in their printed fields, and five tactics carry LaTeX -
+`\text`, `\frac`, `\le` and `\times` - some of them doubled. Both go through a
+declared rendering table in `decks/productivity/data/render.mjs`: a fraction
+prints as a division, `\le` as `≤`, `\times` as `×`, a text group as its words,
+and each escape as its character. A guard test fails on any surviving backslash
+or brace in a printed field.
+
+The source numbers 183 steps and the deck prints 184. TAC-14's fifth step is
+glued onto its fourth after a period, and the fifth carries the six-item bound,
+so the record numbers it and the card says why. TAC-12's plain-text setup has
+lost its line breaks in the source - a pseudo-query runs together as
+`tasksnot done` - and the card names the defect rather than reflowing text the
+source did not write. Three setups are markdown tables and print unfenced as
+tables.
+
+Eleven source defects are carried rather than repaired. Beyond the two that
+print with their card, the deck records the opening table's fifth domain, TAC-15
+titles a book and never names its author, the document states working-memory
+capacity two ways - 7 ± 2 and, in the next sentence, about 4 ± 1 - and each card
+prints only the bound its own tactic states, never the introduction's. The
+card-schema exemplar's extraction markers, its drifting domain name and its
+unpopulated dependency graph are recorded where they occur: no record is built
+from the exemplar, the records take the taxonomy's own domain names, and the
+deck prints no prerequisite graph. The source's own skill front matter, emitted
+as a run-on heading, is not used either: this deck's skill is generated from its
+records like every other artifact.
+
+Attribution has two tiers and no third. Eleven titles name a person - the
+Eisenhower matrix, Buffett's two-list method, Ivy Lee's six, Sivers's hell-yeah,
+Newport's deep work, Graham's maker schedule, Gollwitzer's implementation
+intention, and four of Clear's habit moves - and those cards print the name and
+nothing else. The schema has no year, work or publication property, on purpose:
+the source gives none, and a date this deck invented could not be checked later.
+The other thirty-three print "The source names no originator."
+
+Its 88-page print PDF is 515,008 bytes (sha256 `42d72907…`), byte-identical on
+rebuild, and its forty-four SVGs hash to `af6f0aa0…` in `cards.json` order. All
+44 cards fit inside the safe inset with zero OVER and zero TIGHT, the worst
+recto at row 440 and the worst verso at 433. Its ruleset and skill are
+[`rules/productivity-rules.md`](./rules/productivity-rules.md) and
+[`skills/productivity/`](./skills/productivity/), and the skill's index carries
+four routes: to UX laws for the psychology these tactics lean on, to Team T42
+for the Eisenhower matrix applied to a team's debt, to Facilitation WS-22 for
+MoSCoW as a group exercise, and to Copy and Strategy for what those decks own
+instead. The deck's records are in `decks/productivity/data/laws/` and its
+schema in `decks/productivity/data/law-schema.json`.
+
+---
+
 ## 🎴 How to Use It
 
 ### Web: open the file
@@ -681,11 +779,12 @@ retrospective deck as 90 pages and 744,969 bytes (`5ca91630…`), the strategy
 deck as 84 pages and 888,138 bytes (`2bfc9fb5…`), the team deck as 88 pages
 and 479,152 bytes (`482e7fc2…`), the innovation deck as 84 pages and
 387,156 bytes (`be878abb…`), the ideation deck as 100 pages and 746,190 bytes
-(`aced7d61…`), and the copy deck as 96 pages and 430,955 bytes (`be66d059…`).
+(`aced7d61…`), the copy deck as 96 pages and 430,955 bytes (`be66d059…`), and
+the productivity deck as 88 pages and 515,008 bytes (`42d72907…`).
 The six decks whose figures print no labels are byte-identical to the build
 before the font was pinned, which is what shows the change reached the diagram
 face and nothing else; two consecutive builds of one commit are byte-identical
-for all ten. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
+for all eleven. `npm run check:pdf` measured a 216 x 360 pt MediaBox on every
 page of every deck and found the vendored face embedded wherever a diagram
 prints a label, with no Menlo or SF Mono in any of them. On the rendered UX pages, trim
 ticks sit in the bleed band at all four trim corners of every page; every run of

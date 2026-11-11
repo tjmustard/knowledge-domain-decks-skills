@@ -1,0 +1,199 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/productivity-schema.json",
+  "title": "Productivity Architecture card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceTacticNo",
+    "name",
+    "domain",
+    "diagnostic",
+    "diagnosticSize",
+    "schematic",
+    "procedure",
+    "trap",
+    "origin",
+    "figure",
+    "procedureFull",
+    "setupFull",
+    "trapFull"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^TAC-(0[1-9]|[1-3][0-9]|4[0-4])$"
+    },
+    "sourceTacticNo": {
+      "description": "The source's own tactic number, which is the id's number on every record.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 44
+    },
+    "name": {
+      "description": "The tactic's title, verbatim. The measured range is 18-62 characters.",
+      "type": "string",
+      "minLength": 18,
+      "maxLength": 62
+    },
+    "domain": {
+      "description": "The taxonomy's domain heading the tactic is numbered under, verbatim. The opening framing table lists five domains; the tactics are numbered under these four.",
+      "enum": [
+        "Task Architecture and Workflow Systems",
+        "Triage and Prioritization Frameworks",
+        "Cognitive Focus and Flow State Engineering",
+        "Habit Formation and Friction Engineering"
+      ]
+    },
+    "diagnostic": {
+      "description": "The source's Cognitive Friction Diagnostic, verbatim. Its measured range is 121-239 characters; this bound leaves room for the longest without admitting a paragraph.",
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 260
+    },
+    "diagnosticSize": {
+      "description": "The front's diagnostic point size, fixed per card in the layout map. The measured front budget holds 121-239 characters at 7.5-9 pt.",
+      "type": "number",
+      "minimum": 7.5,
+      "maximum": 9
+    },
+    "schematic": {
+      "description": "The line the card prints under the figure, in the form '<Family> at <unit> <mark> of <divisions>'. The same numbers are in figure.parametricParams, and the deck's test parses this line against them.",
+      "type": "string",
+      "minLength": 18,
+      "maxLength": 34,
+      "pattern": "^(Pipeline|Gate|Matrix|Gauge|Rhythm|Loop|Ladder|Threshold) at (stage|route|cell|level|beat|step|rung|point) [1-9][0-9]? of [1-9][0-9]?$"
+    },
+    "procedure": {
+      "description": "The numbered procedure, this deck's compression of the source's Implementation Algorithm. The compression rule is on the rules file: it may drop explanation but not add a claim, change a number or omit a bound.",
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text"
+        ],
+        "properties": {
+          "text": {
+            "type": "string",
+            "minLength": 20,
+            "maxLength": 200
+          }
+        }
+      }
+    },
+    "trap": {
+      "description": "The failure trap, this deck's compression of the source's The Failure Trap. The source's own text is trapFull.",
+      "type": "string",
+      "minLength": 60,
+      "maxLength": 220
+    },
+    "origin": {
+      "description": "Two tiers and no third. The source names a person in the tactic title on eleven cards; those carry the name and nothing else. Every other card carries the honest line. There is deliberately no year, work or publication property: the source gives none, and a field the source cannot back is a citation this deck would be vouching for.",
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": [
+            "authors"
+          ]
+        },
+        {
+          "required": [
+            "note"
+          ]
+        }
+      ],
+      "properties": {
+        "authors": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 40
+          }
+        },
+        "note": {
+          "const": "The source names no originator."
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "svgShape",
+        "parametricParams"
+      ],
+      "properties": {
+        "svgShape": {
+          "const": "productivity-figure"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "family",
+            "divisions",
+            "mark"
+          ],
+          "properties": {
+            "family": {
+              "enum": [
+                "pipeline",
+                "gate",
+                "matrix",
+                "gauge",
+                "rhythm",
+                "loop",
+                "ladder",
+                "threshold"
+              ]
+            },
+            "divisions": {
+              "description": "How many parts the structure has. The largest is the 90-day pruning window; the smallest is 2.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            },
+            "mark": {
+              "description": "Which part is the move. The layout map's label states it, and the test requires the label's numbers to match these two.",
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 100
+            }
+          }
+        }
+      }
+    },
+    "procedureFull": {
+      "description": "The source's Implementation Algorithm, verbatim after the declared rendering table. Printed in the rules file and the domain resource. Measured range 350-629 characters: the shortest is TAC-19's four-step RICE ranking, and the bound admits it rather than padding an algorithm to reach a round number.",
+      "type": "string",
+      "minLength": 340,
+      "maxLength": 700
+    },
+    "setupFull": {
+      "description": "The source's Plain-Text Implementation, verbatim after the declared rendering table. Printed in the rules file and the domain resource. Measured range 136-579 characters; three of them are markdown tables.",
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 650
+    },
+    "trapFull": {
+      "description": "The source's The Failure Trap, verbatim after the declared rendering table. Printed in the rules file and the domain resource. Measured range 112-215 characters.",
+      "type": "string",
+      "minLength": 90,
+      "maxLength": 230
+    },
+    "sourceNote": {
+      "description": "The named source defect that prints with this card, if any. Two cards carry one: the setup whose line breaks were lost, and the algorithm whose fifth step is glued onto the fourth.",
+      "type": "string",
+      "minLength": 40,
+      "maxLength": 280
+    }
+  }
+}
