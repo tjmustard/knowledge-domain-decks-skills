@@ -2970,8 +2970,28 @@ skill's intro and the README name both: reach for T31 to teach the frame and for
 NEG-01 to NEG-11 to run a specific structural move, and no card here carries the
 integration-narrative argument.
 
-**Acceptance figures.** The 88-page print PDF is 368,324 bytes at sha256
-`d1925851…`; the forty-four SVGs hash to `457a7c9f…` in `cards.json` order under
+**The signal family drew outside its frame, and the deck now checks for that.**
+The first delivery's four signal cards (NEG-13, 17, 18 and 38) put the arc
+origin at (88, 236) with a maximum radius of 232 and a sweep of ±0.95 rad, so
+the arc endpoints sat at y = 236 + 232 x sin(0.95) = 424.7 - 24.7 units below
+the 400-unit viewBox. The SVG clipped it, and on NEG-17 the marked cue lost its
+bottom end. The delivery checked the shape's parameters and the schematic line
+but nothing about containment, and a clipped drawing is still a valid drawing.
+The family now centres at (200, 200) with a maximum radius of 190, which keeps
+the rightmost arc at x = 390 and the lowest endpoint at y = 354.5; once the arcs
+bulge to the right, the right edge binds before the bottom, so the radius has to
+satisfy x and y together. `negotiation.test.mjs` now renders all 44 figures and
+fails on any rect corner, circle extent, line endpoint, path coordinate or
+sampled arc outside 0..400. The arc is sampled along its sweep because its
+furthest point is usually not an endpoint. Stashing only the shape change makes
+the new test fail on NEG-13 at y = 400.3, and restoring it passes, so the check
+is falsified against the defect rather than assumed. The four old SVGs, the
+bundle digest and the PDF digest moved: 368,324 bytes / `d1925851…` and
+`457a7c9f…` became 368,304 bytes / `af91d923…` and `c213182a…`, and the README
+and CHANGELOG carry the new figures.
+
+**Acceptance figures.** The 88-page print PDF is 368,304 bytes at sha256
+`af91d923…`; the forty-four SVGs hash to `c213182a…` in `cards.json` order under
 the declared hex join; all 44 cards fit inside the safe inset with zero OVER and
 zero TIGHT, the worst recto row 424 (NEG-20) and the worst verso 344 (NEG-40);
 the twelve shipped decks rebuild byte-identical. The gate ran 14/0/1 with

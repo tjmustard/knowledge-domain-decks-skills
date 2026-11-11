@@ -25,11 +25,14 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readdirSync, readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
+import { createRequire } from "node:module";
 import { join } from "node:path";
 import { loadCards, loadDeck } from "../../packages/core/deck.mjs";
 import { renderText } from "../../decks/negotiation/data/render.mjs";
 
 const ROOT = join(import.meta.dirname, "..", "..");
+const require = createRequire(join(ROOT, "packages", "core", "svg.js"));
+const { renderSvg } = require("./svg.js");
 const DATA = join(ROOT, "decks", "negotiation", "data");
 const INVENTORY = join(DATA, "source-inventory.json");
 const LAYOUT = join(DATA, "layout-map.json");
@@ -130,6 +133,149 @@ const FORBIDDEN = [["Pip", "Decks"].join(" "), ["Negotiation", "Tactics"].join("
 );
 
 const record = (id) => JSON.parse(readFileSync(join(DATA, "laws", `${id.toLowerCase()}.json`), "utf8"));
+
+// The SVG frame is 400 units square and clips whatever leaves it. The signal
+// family once put an arc's endpoint at y = 236 + 232 * sin(0.95) = 424.7, so
+// the marked cue on NEG-13, 17, 18 and 38 lost its bottom end at the page edge;
+// the gate saw nothing because a clipped drawing is still a valid drawing. The
+// scan below covers every element the shapes draw, and an arc is sampled along
+// its sweep because its furthest point is usually not an endpoint - an arc
+// bulging to the right reaches cx + r, which a chord's endpoints never name.
+const FRAME_MIN = 0;
+const FRAME_MAX = 400;
+
+function frameAttribute(attrs, name) {
+  const match = attrs.match(new RegExp(`(?:^|\\s)${name}="([-\\d.]+)"`));
+  return match ? Number(match[1]) : 0;
+}
+
+// Points along one SVG arc, from its endpoint parameterisation. Absolute and
+// relative commands are both read; rx/ry may be scaled up when the radii cannot
+// span the endpoints, exactly as the renderer does.
+function sampleArc(x1, y1, x2, y2, rx, ry, phiDeg, largeArc, sweep, out) {
+  const phi = (phiDeg * Math.PI) / 180;
+  const cos = Math.cos(phi);
+  const sin = Math.sin(phi);
+  const dx = (x1 - x2) / 2;
+  const dy = (y1 - y2) / 2;
+  const x1p = cos * dx + sin * dy;
+  const y1p = -sin * dx + cos * dy;
+  let rx2 = rx * rx;
+  let ry2 = ry * ry;
+  const lambda = (x1p * x1p) / rx2 + (y1p * y1p) / ry2;
+  if (lambda > 1) {
+    rx *= Math.sqrt(lambda);
+    ry *= Math.sqrt(lambda);
+    rx2 = rx * rx;
+    ry2 = ry * ry;
+  }
+  const coef =
+    (largeArc !== sweep ? 1 : -1) *
+    Math.sqrt(Math.max(0, (rx2 * ry2 - rx2 * y1p * y1p - ry2 * x1p * x1p) / (rx2 * y1p * y1p + ry2 * x1p * x1p)));
+  const cxp = (coef * rx * y1p) / ry;
+  const cyp = (-coef * ry * x1p) / rx;
+  const cx = cos * cxp - sin * cyp + (x1 + x2) / 2;
+  const cy = sin * cxp + cos * cyp + (y1 + y2) / 2;
+  const from = Math.atan2((y1p - cyp) / ry, (x1p - cxp) / rx);
+  const to = Math.atan2((-y1p - cyp) / ry, (-x1p - cxp) / rx);
+  let delta = to - from;
+  if (!sweep && delta > 0) delta -= 2 * Math.PI;
+  if (sweep && delta < 0) delta += 2 * Math.PI;
+  const STEPS = 128;
+  for (let i = 0; i <= STEPS; i += 1) {
+    const angle = from + delta * (i / STEPS);
+    out.push([
+      cx + cos * rx * Math.cos(angle) - sin * ry * Math.sin(angle),
+      cy + sin * rx * Math.cos(angle) + cos * ry * Math.sin(angle)
+    ]);
+  }
+}
+
+function pathPoints(d) {
+  const points = [];
+  const commands = d.match(/[MLHVCSQTAZmlhvcsqtaz][^MLHVCSQTAZmlhvcsqtaz]*/g) || [];
+  let x = 0;
+  let y = 0;
+  for (const command of commands) {
+    const op = command[0];
+    const relative = op !== op.toUpperCase();
+    const upper = op.toUpperCase();
+    const n = (command.slice(1).match(/-?\d*\.?\d+(?:e[-+]?\d+)?/gi) || []).map(Number);
+    const px = (value) => (relative ? x + value : value);
+    const py = (value) => (relative ? y + value : value);
+    if (upper === "M" || upper === "L" || upper === "T") {
+      for (let i = 0; i + 1 < n.length; i += 2) {
+        x = px(n[i]);
+        y = py(n[i + 1]);
+        points.push([x, y]);
+      }
+    } else if (upper === "C") {
+      for (let i = 0; i + 5 < n.length; i += 6) {
+        for (let k = 0; k < 3; k += 1) points.push([px(n[i + k * 2]), py(n[i + k * 2 + 1])]);
+        x = px(n[i + 4]);
+        y = py(n[i + 5]);
+      }
+    } else if (upper === "S" || upper === "Q") {
+      for (let i = 0; i + 3 < n.length; i += 4) {
+        for (let k = 0; k < 2; k += 1) points.push([px(n[i + k * 2]), py(n[i + k * 2 + 1])]);
+        x = px(n[i + 2]);
+        y = py(n[i + 3]);
+      }
+    } else if (upper === "A") {
+      for (let i = 0; i + 6 < n.length; i += 7) {
+        const ex = px(n[i + 5]);
+        const ey = py(n[i + 6]);
+        sampleArc(x, y, ex, ey, n[i], n[i + 1], n[i + 2], Boolean(n[i + 3]), Boolean(n[i + 4]), points);
+        points.push([ex, ey]);
+        x = ex;
+        y = ey;
+      }
+    } else if (upper === "H") {
+      for (const value of n) {
+        x = px(value);
+        points.push([x, y]);
+      }
+    } else if (upper === "V") {
+      for (const value of n) {
+        y = py(value);
+        points.push([x, y]);
+      }
+    }
+  }
+  return points;
+}
+
+// Every point a rendered SVG can draw at: rect corners, a circle's extreme
+// box, line endpoints, and every path coordinate and arc sample. Text is not
+// checked here; labels are placed by the families and bounded by their own
+// character rules.
+function framePoints(svg) {
+  const points = [];
+  for (const match of svg.matchAll(/<(rect|circle|line|path)\b([^>]*)>/g)) {
+    const [, tag, attrs] = match;
+    if (tag === "rect") {
+      const x = frameAttribute(attrs, "x");
+      const y = frameAttribute(attrs, "y");
+      const w = frameAttribute(attrs, "width");
+      const h = frameAttribute(attrs, "height");
+      points.push([x, y], [x + w, y], [x, y + h], [x + w, y + h]);
+    } else if (tag === "circle") {
+      const cx = frameAttribute(attrs, "cx");
+      const cy = frameAttribute(attrs, "cy");
+      const r = frameAttribute(attrs, "r");
+      points.push([cx - r, cy - r], [cx + r, cy + r]);
+    } else if (tag === "line") {
+      points.push(
+        [frameAttribute(attrs, "x1"), frameAttribute(attrs, "y1")],
+        [frameAttribute(attrs, "x2"), frameAttribute(attrs, "y2")]
+      );
+    } else {
+      const d = (attrs.match(/(?:^|\s)d="([^"]*)"/) || [])[1];
+      if (d) points.push(...pathPoints(d));
+    }
+  }
+  return points;
+}
 
 test("the deck is forty-four records in four stages of eleven", async () => {
   const inventory = JSON.parse(await readFile(INVENTORY, "utf8"));
@@ -285,6 +431,18 @@ test("every schematic line agrees with its figure and its layout row", async () 
   }
   assert.equal(Object.keys(layout.map).length, TOTAL, "the layout map has no row without a record");
   assert.deepEqual(counts, FAMILY_COUNTS, "the eleven figure families carry the counts the map declares");
+});
+
+test("no drawn point leaves the 400-unit frame", async () => {
+  const cards = await loadCards(await loadDeck("negotiation"));
+  for (const card of cards) {
+    for (const [x, y] of framePoints(renderSvg(card.figure))) {
+      assert.ok(
+        x >= FRAME_MIN && x <= FRAME_MAX && y >= FRAME_MIN && y <= FRAME_MAX,
+        `${card.id} draws at (${x.toFixed(1)}, ${y.toFixed(1)}), outside the ${FRAME_MIN}..${FRAME_MAX} frame`
+      );
+    }
+  }
 });
 
 test("every figure's numbers are anchored in the card's own text", async () => {

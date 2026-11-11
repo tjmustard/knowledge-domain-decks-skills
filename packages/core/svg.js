@@ -4118,10 +4118,16 @@
       }
     } else if (family === "signal") {
       // Cues radiating from their source; the marked cue is the heavy arc.
-      var sgy = 236;
-      var sgx = 88;
+      // The arcs sweep +/-0.95 rad and bulge to the right, so the drawable
+      // radius is bounded by the frame on two sides, not one: the centre plus
+      // the radius must stay inside the right edge, and the centre plus the
+      // radius times sin(0.95) inside the bottom. At the frame centre that is
+      // 200 for x; 190 leaves the stroke its margin at the right edge and has
+      // every endpoint inside 0..400.
+      var sgy = 200;
+      var sgx = 200;
       out.push(circle(sgx, sgy, 6, { width: 2.2, opacity: 0.9 }));
-      var sgmax = 232;
+      var sgmax = 190;
       var sgmin = 58;
       for (var gp = 1; gp <= div; gp += 1) {
         var gr = div === 1 ? sgmax : sgmin + ((sgmax - sgmin) * (gp - 1)) / (div - 1);

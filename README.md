@@ -916,8 +916,8 @@ own names and year; and the schema's `^TAC-[0-9]{2}$` id pattern belongs to the 
 deck, so `TAC-12` is provenance only. The works cited are one run-on paragraph and are
 carried into no artifact.
 
-Its 88-page print PDF is 368,324 bytes (sha256 `d1925851…`), byte-identical on rebuild, and
-its forty-four SVGs hash to `457a7c9f…` in `cards.json` order under the declared hex join. All
+Its 88-page print PDF is 368,304 bytes (sha256 `af91d923…`), byte-identical on rebuild, and
+its forty-four SVGs hash to `c213182a…` in `cards.json` order under the declared hex join. All
 44 cards fit inside the safe inset with zero OVER and zero TIGHT, the worst recto at row 424
 (NEG-20) and the worst verso at 344 (NEG-40). The twelve decks that shipped before it rebuild
 byte-identical, brand's `0224a67d…` among them. Its ruleset and skill are
