@@ -2589,8 +2589,8 @@ The two halves land in one commit:
   top-level destinations (DEC-02), then put Dashboard first and Settings last."
 - The register row still begins with DEC-01 and says it wins as the constraint,
   because the cap applies before MPA-01's ordering; its ruling now says the
-  five-to-seven range is DEC-02's number, not DEC-01's, so the register cannot
-  reintroduce the misattribution. It remains a DEC-01/MPA-01 row.
+  five-to-seven range is a narrowing of DEC-02's number, not DEC-01's, so the
+  register cannot reintroduce the misattribution. It remains a DEC-01/MPA-01 row.
 - The generated artifacts follow the records: `rules/ux-rules.md`,
   `skills/ux-laws/SKILL.md` and the two resource files that print these
   records, and `packages/web/decks/ux-laws/deck-data.js`. The validator's
