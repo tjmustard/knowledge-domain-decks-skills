@@ -1,0 +1,28 @@
+{
+  "id": "BRA-38",
+  "sourceCardNo": 38,
+  "name": "W3C DTCG Tokenized Design Engine",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Are our core visual brand assets stored in static mockups, or are they declared as platform-agnostic, version-controlled JSON tokens?",
+  "diagnosticSize": 8.5,
+  "schematic": "Manifest at key 2 of 3",
+  "artifact": [
+    "A validated, multi-tier `tokens.json` schema separating primitive values from semantic aliases using standardized `$value`, `$type`, and `$description` properties."
+  ],
+  "trap": "Treating design tokens merely as a color variable list rather than an integrated typographic, spatial, and semantic decision engine.",
+  "origin": {
+    "line": "W3C Design Tokens Community Group (2025.10)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 2
+    }
+  },
+  "pedigreeFull": "W3C Design Tokens Community Group (DTCG Format Module, stable specification 2025.10).",
+  "artifactFull": "A validated, multi-tier `tokens.json` schema separating primitive values from semantic aliases using standardized `$value`, `$type`, and `$description` properties.",
+  "trapFull": "Treating design tokens merely as a color variable list rather than an integrated typographic, spatial, and semantic decision engine."
+}

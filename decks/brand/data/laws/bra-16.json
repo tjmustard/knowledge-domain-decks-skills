@@ -1,0 +1,28 @@
+{
+  "id": "BRA-16",
+  "sourceCardNo": 16,
+  "name": "Jungian Shadow Archetypes in Enterprise Culture",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "What toxic behavioral shadow does our primary archetype risk becoming when our organization is placed under commercial pressure, and what structural safeguards prevent its manifestation?",
+  "diagnosticSize": 7.5,
+  "schematic": "Ledger at part 2 of 3",
+  "artifact": [
+    "A shadow register: the primary archetype, the state it becomes under pressure (*Hero* → *Arrogant Bully*; *Sage* → *Pedantic Academic*; *Ruler* → *Authoritarian Tyrant*), and the policies that prevent it."
+  ],
+  "trap": "Ignoring shadow states during high-growth cycles, allowing latent behaviors to turn public marketing campaigns into brand crises.",
+  "origin": {
+    "line": "Carl G. Jung, applied by Pearson & Mark (2001)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 2
+    }
+  },
+  "pedigreeFull": "Derived from Carl G. Jung’s analytical psychology (*The Shadow*, 1951) and applied to corporate culture by Pearson and Mark. The framework posits that every dominant archetype contains an unintegrated, destructive shadow state that surfaces under stress.",
+  "artifactFull": "An Archetypal Crisis & Shadow Register detailing the primary archetype, its potential shadow state (e.g., *Hero* becoming *Arrogant Bully*; *Sage* becoming *Pedantic Academic*; *Ruler* becoming *Authoritarian Tyrant*), and organizational preventative policies.",
+  "trapFull": "Ignoring shadow states during high-growth cycles, allowing latent behaviors to turn public marketing campaigns into brand crises."
+}

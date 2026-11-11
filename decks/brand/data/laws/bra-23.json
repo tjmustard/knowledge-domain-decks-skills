@@ -1,0 +1,28 @@
+{
+  "id": "BRA-23",
+  "sourceCardNo": 23,
+  "name": "The Brand Story Canvas",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "How does our brand narrative guide the customer through their struggle against an obstacle toward an altered state of success?",
+  "diagnosticSize": 8.5,
+  "schematic": "Arc at stage 1 of 7",
+  "artifact": [
+    "A Single-Page Strategic Storyboard: Protagonist → Inciting Incident → External/Internal Conflict → The Guide → The Action Plan → The Climax → The New Status Quo."
+  ],
+  "trap": "Making the company the hero of the story rather than positioning the customer as the protagonist and the brand as the guide.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 7,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Narrative systems practice, translating classical dramatic screenwriting structures into corporate strategy design.",
+  "artifactFull": "A Single-Page Strategic Storyboard tracking: Protagonist → Inciting Incident → External/Internal Conflict → The Guide → The Action Plan → The Climax → The New Status Quo.",
+  "trapFull": "Making the company the hero of the story rather than positioning the customer as the protagonist and the brand as the guide."
+}

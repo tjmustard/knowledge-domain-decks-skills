@@ -1,0 +1,28 @@
+{
+  "id": "BRA-11",
+  "sourceCardNo": 11,
+  "name": "Christensen’s Jobs-to-be-Done (JTBD) Brand Placement",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "What functional, emotional, and social 'job' is the customer hiring our brand to resolve, and what incumbent habits or solutions must be 'fired'?",
+  "diagnosticSize": 8,
+  "schematic": "Matrix at cell 1 of 4",
+  "artifact": [
+    "A JTBD Forces of Progress Blueprint mapping the push of the current situation, the pull of the new solution, the anxiety of change, and the inertia of existing habits."
+  ],
+  "trap": "Defining the brand's addressable market solely through demographic profiles rather than the situational triggers that drive buying decisions.",
+  "origin": {
+    "line": "Clayton M. Christensen, Scott Cook & Taddy Hall (2016)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Clayton M. Christensen, Scott Cook, & Taddy Hall (*Competing Against Luck*, 2016; Harvard Business School). A theory asserting that customers purchase solutions to make progress against specific, recurring life situations.",
+  "artifactFull": "A JTBD Forces of Progress Blueprint mapping the push of the current situation, the pull of the new solution, the anxiety of change, and the inertia of existing habits.",
+  "trapFull": "Defining the brand's addressable market solely through demographic profiles rather than the situational triggers that drive buying decisions."
+}

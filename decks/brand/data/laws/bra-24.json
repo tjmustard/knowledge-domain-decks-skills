@@ -1,0 +1,32 @@
+{
+  "id": "BRA-24",
+  "sourceCardNo": 24,
+  "name": "Purpose-Mission-Vision-Values (PMVV) Alignment Hierarchy",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "Are our Purpose, Mission, Vision, and Values structurally delineated, or do they collapse into a single corporate statement?",
+  "diagnosticSize": 8.5,
+  "schematic": "Tiers at level 1 of 4",
+  "artifact": [
+    "*Purpose*: the enduring reason for being (permanent).",
+    "*Mission*: the high-priority operational objective over a 3–5 year horizon (dynamic).",
+    "*Vision*: the future market state realized once the mission succeeds (long-term).",
+    "*Values*: the boundaries that will not be compromised, even at a financial loss (ethical)."
+  ],
+  "trap": "Adopting generic corporate hygiene factors — Integrity, Excellence, Teamwork — as values without defining the trade-offs they require.",
+  "origin": {
+    "line": "Peter Drucker; Jim Collins & Jerry Porras (1994)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Classical strategic management practice (Peter Drucker; Jim Collins & Jerry Porras, *Built to Last*, 1994).",
+  "artifactFull": "A Four-Tier Institutional Architecture:  \n  - *Purpose:* The organization's enduring reason for being (permanent).  \n  - *Mission:* The immediate, high-priority operational objective over a 3–5 year horizon (dynamic).  \n  - *Vision:* The future market state realized once the mission succeeds (long-term).  \n  - *Values:* The operational boundaries that will not be compromised, even at a financial loss (ethical).",
+  "trapFull": "Adopting generic corporate hygiene factors (e.g., \"Integrity,\" \"Excellence,\" \"Teamwork\") as core values without defining the trade-offs they require.",
+  "sourceNote": "The source names Drucker with no work or year and Collins & Porras with one; the card prints what the source gives and adds nothing."
+}

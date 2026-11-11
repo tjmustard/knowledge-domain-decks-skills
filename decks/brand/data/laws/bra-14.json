@@ -1,0 +1,28 @@
+{
+  "id": "BRA-14",
+  "sourceCardNo": 14,
+  "name": "Nielsen Norman Group (NN/g) 4 Dimensions of Tone of Voice",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "Where does our content fall along the four universal tonal axes across different user states and contexts?",
+  "diagnosticSize": 9,
+  "schematic": "Axes at axis 1 of 4",
+  "artifact": [
+    "Four bipolar axes — Funny↔Serious, Formal↔Casual, Respectful↔Irreverent, Matter-of-Fact↔Enthusiastic — each with copy treatments across onboarding, core tasks and system errors."
+  ],
+  "trap": "Staying playful through critical failures — a failed transaction, a locked account — alienates users already under stress.",
+  "origin": {
+    "line": "Nielsen Norman Group (Kate Moran, 2016)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "axes",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Nielsen Norman Group (Kate Moran, 2016). A digital user experience research framework that isolates verbal identity into four bipolar, actionable dimensions.",
+  "artifactFull": "A 4-Axis Bipolar Tone Matrix: Funny ↔ Serious; Formal ↔ Casual; Respectful ↔ Irreverent; Matter-of-Fact ↔ Enthusiastic, supported by practical copy treatments across onboarding, core tasks, and system errors.",
+  "trapFull": "Adopting an irreverent or playful tone during critical product failures (e.g., failed transactions, authentication locks), which alienates users under stress."
+}

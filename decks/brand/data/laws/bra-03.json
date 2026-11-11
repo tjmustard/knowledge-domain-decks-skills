@@ -1,0 +1,28 @@
+{
+  "id": "BRA-03",
+  "sourceCardNo": 3,
+  "name": "Keller’s Customer-Based Brand Equity (CBBE) Pyramid",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "Have we established sufficient brand salience and performance credibility to support an emotional brand response and active consumer resonance?",
+  "diagnosticSize": 8,
+  "schematic": "Tiers at level 1 of 4",
+  "artifact": [
+    "A four-tier equity ladder: Salience, Performance & Imagery, Judgments & Feelings, Resonance."
+  ],
+  "trap": "Buying resonance campaigns before functional performance and category salience are established: hollow recognition, no conversion.",
+  "origin": {
+    "line": "Kevin Lane Keller (1993, 2001)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Kevin Lane Keller (Journal of Marketing, 1993; *Strategic Brand Management*, 2001). A four-tier cognitive hierarchy modeling the sequential construction of brand equity in long-term human memory.",
+  "artifactFull": "A 4-Tier CBBE Stratification Ladder dividing brand equity into: Salience (deep category identity), Performance & Imagery (brand meaning), Judgments & Feelings (brand response), and Resonance (active, loyal psychological attachment).",
+  "trapFull": "Launching high-budget emotional resonance campaigns before achieving baseline functional performance and category salience, leading to hollow recognition without commercial conversion."
+}

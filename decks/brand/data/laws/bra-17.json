@@ -1,0 +1,28 @@
+{
+  "id": "BRA-17",
+  "sourceCardNo": 17,
+  "name": "Five-Factor (OCEAN) Brand Mapping",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "If evaluated through standardized psychometric testing, what exact trait distribution governs our corporate communications?",
+  "diagnosticSize": 8.5,
+  "schematic": "Score at dimension 1 of 5",
+  "artifact": [
+    "A radar chart scoring the five factors: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism."
+  ],
+  "trap": "Mirroring the founder's uncalibrated traits instead of engineering the profile the target market requires.",
+  "origin": {
+    "line": "Gian Vittorio Caprara, Claudio Barbaranelli & Gianluigi Guido (2001)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "score",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Gian Vittorio Caprara, Claudio Barbaranelli, & Gianluigi Guido (Journal of Economic Psychology, 2001). Adaptation of the gold-standard Costa & McCrae Big Five psychometric model (Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) to enterprise positioning.",
+  "artifactFull": "An OCEAN Polar Radar Chart scoring Openness to Experience (intellectual curiosity), Conscientiousness (operational reliability), Extraversion (conversational assertiveness), Agreeableness (empathy and support), and Neuroticism (environmental volatility and urgency).",
+  "trapFull": "Mirroring the executive founder's uncalibrated personal traits rather than engineering the deliberate behavioral profile required by the target market."
+}

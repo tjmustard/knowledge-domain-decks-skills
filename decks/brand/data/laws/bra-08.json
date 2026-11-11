@@ -1,0 +1,28 @@
+{
+  "id": "BRA-08",
+  "sourceCardNo": 8,
+  "name": "The Brand Essence Wheel",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "When outer technical facts and user benefits are distilled inward, what two-to-three word essence captures the central promise of the brand?",
+  "diagnosticSize": 8,
+  "schematic": "Rings at ring 5 of 5",
+  "artifact": [
+    "A 5-Ring Concentric Essence Wheel moving inward from Physical Attributes & Facts to Functional Benefits, Emotional Payoffs, Personality Archetypes, and the central Brand Essence."
+  ],
+  "trap": "Choosing an interchangeable abstraction for the essence — Trust, Innovation, Quality — which carries zero competitive tension.",
+  "origin": {
+    "line": "Bates Worldwide / Richard Macrae & Robin Wensley (1990s)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "rings",
+      "divisions": 5,
+      "mark": 5
+    }
+  },
+  "pedigreeFull": "Bates Worldwide / Richard Macrae & Robin Wensley (1990s). An advertising agency framework designed to distill multifaceted product offerings down into an unambiguous emotional and functional core.",
+  "artifactFull": "A 5-Ring Concentric Essence Wheel moving inward from Physical Attributes & Facts to Functional Benefits, Emotional Payoffs, Personality Archetypes, and the central Brand Essence.",
+  "trapFull": "Selecting an interchangeable corporate abstraction for the core essence (such as \"Trust,\" \"Innovation,\" or \"Quality\") that offers zero competitive tension."
+}

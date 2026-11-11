@@ -6,7 +6,7 @@
     <p>
         <a href="./LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"/></a>
         <a href="./LICENSE-DATA"><img src="https://img.shields.io/badge/data-CC0--1.0-lightgrey.svg" alt="Data License"/></a>
-        <img src="https://img.shields.io/badge/decks-11%20%C2%B7%20481%20cards-indigo.svg" alt="Decks"/>
+        <img src="https://img.shields.io/badge/decks-12%20%C2%B7%20523%20cards-indigo.svg" alt="Decks"/>
         <img src="https://img.shields.io/badge/pipeline-JSON%20%E2%86%92%20print%20%2B%20web%20%2B%20rules-amber.svg" alt="Pipeline"/>
     </p>
 </div>
@@ -28,6 +28,7 @@
 - [💡 Ideation Architecture](#-ideation-architecture)
 - [✍️ Copy Architecture](#️-copy-architecture)
 - [⏳ Productivity Architecture](#-productivity-architecture)
+- [🏷️ Brand Architecture](#-brand-architecture)
 - [🎴 How to Use It](#-how-to-use-it)
 - [🧩 Card Anatomy](#-card-anatomy)
 - [🗂️ Repository Layout](#️-repository-layout)
@@ -44,7 +45,7 @@ A deck is a set of validated card records; the pipeline turns those records into
 a printed PDF, a static web viewer, and an agent ruleset plus skill, with no
 hand-edited output anywhere.
 
-Eleven decks ship today. **UX & Behavioral Design** covers fifty-four principles of
+Twelve decks ship today. **UX & Behavioral Design** covers fifty-four principles of
 interface and cognitive design. **Narrative Architecture** covers forty-eight
 story-structure patterns for turning a change into something an audience can
 follow. **Archetypal Architecture** covers sixteen voices a team can speak in.
@@ -60,7 +61,10 @@ covers fifty idea-generation tactics, each carried as a five-minute sprint you
 can run. **Copy Architecture** covers forty-eight copy formulas, each carried
 as the proportions it allocates and the template it fills. **Productivity
 Architecture** covers forty-four working tactics, each carried as the friction
-it resolves and the numbered procedure that follows it. Each card is distilled into the smallest usable form: a claim, a
+it resolves and the numbered procedure that follows it. **Brand Architecture**
+covers forty-two brand frameworks, each carried as the alignment question that
+says it applies, the artifact it produces, and the anti-pattern that turns it
+into decoration. Each card is distilled into the smallest usable form: a claim, a
 trigger, a procedure, an anti-pattern, a generated diagram, and one exact source.
 
 The point is not the PDF, the web page, or the skill file. The point is that
@@ -117,6 +121,7 @@ deck's copy, names, or trade dress is used.
 | **Ideation Architecture** | 50 | 4 phases | `packages/prepress/dist/ideation.pdf` | `packages/web/decks/ideation/` | `rules/ideation-rules.md` | `skills/ideation/` |
 | **Copy Architecture** | 48 | 4 surfaces | `packages/prepress/dist/copywriting.pdf` | `packages/web/decks/copywriting/` | `rules/copywriting-rules.md` | `skills/copywriting/` |
 | **Productivity Architecture** | 44 | 4 domains | `packages/prepress/dist/productivity.pdf` | `packages/web/decks/productivity/` | `rules/productivity-rules.md` | `skills/productivity/` |
+| **Brand Architecture** | 42 | 4 pillars | `packages/prepress/dist/brand.pdf` | `packages/web/decks/brand/` | `rules/brand-rules.md` | `skills/brand/` |
 
 Every deck shares one engine: `decks/<slug>/deck.json` declares the record shape,
 the card families, the accents, the prose, and where each artifact goes. Nothing
@@ -728,6 +733,111 @@ for the Eisenhower matrix applied to a team's debt, to Facilitation WS-22 for
 MoSCoW as a group exercise, and to Copy and Strategy for what those decks own
 instead. The deck's records are in `decks/productivity/data/laws/` and its
 schema in `decks/productivity/data/law-schema.json`.
+
+---
+
+## 🏷️ Brand Architecture
+
+**Brand Architecture** is a forty-two-card deck of brand decisions for the person
+who has to make one this week. The front prints the source's Brand Alignment
+Diagnostic verbatim at a per-card size, the figure and the layout map's own
+schematic line; the back prints the artifact the framework produces, the
+anti-pattern that turns it into decoration, and one attribution line. The
+artifact prints as the source's own lines so a ledger stays a ledger: one entry
+per printed line, one to six lines per card. The source's Framework Pedigree,
+Concrete Artifact and Anti-Pattern follow every card in the rules file and the
+pillar resource, line for line; the card's artifact and trap are this deck's
+compression, and the compression rule allows dropping explanation but not
+adding a claim, changing a number or omitting a stated bound.
+
+The four pillars are the source's section headings. The taxonomy matrix's
+shorter names for pillars III and IV are recorded as a source defect and not
+used:
+
+| Pillar | Cards | What a card is for |
+|---|---|---|
+| Positioning & Market Differentiation | BRA-01 to BRA-11 | Choosing the frame a buyer evaluates you inside |
+| Archetypes & Brand Personality | BRA-12 to BRA-21 | Holding a voice and character still across teams |
+| Core Narrative & Purpose Systems | BRA-22 to BRA-32 | Moving a customer from where they are |
+| Distinctive Assets, Coherence & Economic Moats | BRA-33 to BRA-42 | Being recognised and recalled at the moment of choice |
+
+Three rules hold across the whole deck, and they are rules rather than drawing
+defaults:
+
+- **The figure claims position, not importance.** Divisions are numbered in the
+  order the card's artifact lists them, and the mark is the listed position.
+  BRA-24 lists Purpose first, so Purpose is level 1, and the drawing does not say
+  purpose is the foundation.
+- **Rings run from the outer edge inward**, because one concentric shape cannot
+  be numbered two ways. BRA-08 lists its centre fifth, so its centre is ring 5 of
+  5; BRA-22 lists Why first, so its centre is ring 3 of 3. The drawing prints the
+  numbers, so the label and the picture agree without the map.
+- **The front's size is fixed from the question's measured length**: 115
+  characters or fewer at 9 pt (three cards), 136 or fewer at 8.5 (nineteen), 166
+  or fewer at 8 (sixteen), longer at 7.5 (four). A front that failed at its size
+  would be raised and reported, never re-cut; none did.
+
+The drawing follows the mechanism. `decks/brand/data/layout-map.json` files each
+card under one of eleven structural families - ledger 9, matrix 6, axes 5, score
+5, arc 5, tiers 3, manifest 3, facets 2, rings 2, statement 1, network 1 - and
+records the phrase from the card's own record that fixes the position, with the
+mark and the divisions. Two rows changed from the proposal and both are
+recorded: BRA-18 is a ledger, because its artifact is four definition columns
+rather than a continuum, and BRA-22's centre is ring 3 under the rings rule. The
+map was fixed before the shape was drawn, and each row's basis quote must appear
+in the field it names, so no card carries a figure its own text does not
+support.
+
+The source's text arrives escaped. Twelve cards carry markdown backslashes in
+their printed fields - arrow escapes, escaped brackets in Moore's positioning
+template, an escaped asterisk in a book title, escaped parentheses and `\+` -
+and card 21 carries LaTeX in its semiotic square. Both go through a declared
+rendering table in `decks/brand/data/render.mjs`: an arrow prints as `→` or `↔`,
+`\sim` as `~`, and each escape as its character. Card 21 prints its four corners
+as "S1, S2, ~ S1, ~ S2". A guard test fails on any surviving backslash or brace
+in a printed field.
+
+Attribution has two tiers and no third. Thirty-nine cards print the line the
+source's own pedigree gives - a person, a pair, an agency, a standards group, a
+named project or a named practice, with the year the source gives and no work
+title added - and three print "The source names no originator." (BRA-18, 19 and
+23). The schema declares only `line` and `note`, so a record cannot acquire an
+author, a year, a title or a publication and still validate. `origin.line` is a
+new engine case that prints one whole attribution; it is inert for every earlier
+deck, and their PDFs prove it. Card 30's pedigree carries one appositive naming
+the commercial card deck this source is built around; the appositive is the only
+text the deck removes, and it is recorded in the inventory, on the card's source
+note and in `DECISIONS.md` §69. Neither that name nor the source folder's
+appears in any artifact, and the guard counts occurrences rather than lines,
+because the source's footnote 5 carries the commercial name twice on one line.
+
+Eleven source defects are recorded with their location and kind, and the deck
+carries each rather than repairing it. The ones a reader can see: the two names
+appear four times each at five locations in the source and nowhere in the deck;
+twelve cards' escapes and card 21's notation are restored by the table rather
+than by editing the source's text; the taxonomy matrix attributes three
+frameworks differently from their own cards (05, 41 and 08), and each card keeps
+its own pedigree because the card is the record; BRA-35 calls its map "7-W" and
+lists five Ws, so the card prints the five and invents two neither; BRA-42 calls
+its matrix "5-Sense" and lists four asset categories, so the card prints the
+four; BRA-25 cites a book without its authors and BRA-24 names Drucker with no
+work or year, and both print what the source gives. The source's opening calls
+the frameworks "public-domain" while most are published works; the deck makes no
+availability claim of its own.
+
+Its 84-page print PDF is 391,470 bytes (sha256 `0224a67d…`), byte-identical on
+rebuild, and its forty-two SVGs hash to `c3adfecd…` in `cards.json` order under
+the declared hex join. All 42 cards fit inside the safe inset with zero OVER and
+zero TIGHT, the worst recto at row 413 and the worst verso at 388. The eleven
+decks that shipped before it rebuild byte-identical, productivity's `42d72907…`
+among them. Its ruleset and skill are
+[`rules/brand-rules.md`](./rules/brand-rules.md) and
+[`skills/brand/`](./skills/brand/), and the skill's index carries the routes:
+to Strategy's branding power (S27) and counter-positioning (S25), to Innovation's
+jobs-to-be-done interview (i03), to Copywriting's Star-Story-Solution (CPY-09)
+and the tone dimensions BRA-14 and BRA-18 own, and to Team's Competing Values
+Framework (t20). The deck's records are in `decks/brand/data/laws/` and its
+schema in `decks/brand/data/law-schema.json`.
 
 ---
 

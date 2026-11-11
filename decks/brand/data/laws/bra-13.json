@@ -1,0 +1,28 @@
+{
+  "id": "BRA-13",
+  "sourceCardNo": 13,
+  "name": "Aaker’s Brand Personality Dimensions",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "How does the brand score across the five validated psychological dimensions, and which sub-facets serve as non-negotiable behavioral boundaries?",
+  "diagnosticSize": 8,
+  "schematic": "Score at dimension 1 of 5",
+  "artifact": [
+    "A 42-Facet Personality Trait Scorecard evaluating the brand on a 1–5 scale across five primary dimensions: Sincerity, Excitement, Competence, Sophistication, and Ruggedness."
+  ],
+  "trap": "Scoring high across all five dimensions simultaneously, resulting in a diffuse identity profile that dilutes recognition.",
+  "origin": {
+    "line": "Jennifer L. Aaker (1997)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "score",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Jennifer L. Aaker (Journal of Marketing Research, 1997). The foundational empirical psychometric model validating how human personality traits project onto commercial brands.",
+  "artifactFull": "A 42-Facet Personality Trait Scorecard evaluating the brand on a 1–5 scale across five primary dimensions: Sincerity, Excitement, Competence, Sophistication, and Ruggedness.",
+  "trapFull": "Scoring high across all five dimensions simultaneously, resulting in a diffuse identity profile that dilutes recognition."
+}

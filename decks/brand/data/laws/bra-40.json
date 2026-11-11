@@ -1,0 +1,28 @@
+{
+  "id": "BRA-40",
+  "sourceCardNo": 40,
+  "name": "Declarative Brand Identity Schema (`brand.yaml`)",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Can an automated agent or human contributor review our strategic positioning, voice rules, and visual assets from a single structured repository manifest?",
+  "diagnosticSize": 8,
+  "schematic": "Manifest at key 1 of 3",
+  "artifact": [
+    "A validated, schema-compliant `brand.yaml` manifest that serves as the root source of truth for the entire brand identity system."
+  ],
+  "trap": "Fragmenting brand strategy across disconnected Google Docs, Notion pages, and Slack threads, allowing context to drift over time.",
+  "origin": {
+    "line": "gramatr/brand-spec, brandspec, cofoundy/brand-skills"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Modern open-source Brand-as-Code architectures (`gramatr/brand-spec`, `brandspec`, `cofoundy/brand-skills`).",
+  "artifactFull": "A validated, schema-compliant `brand.yaml` manifest that serves as the root source of truth for the entire brand identity system.",
+  "trapFull": "Fragmenting brand strategy across disconnected Google Docs, Notion pages, and Slack threads, allowing context to drift over time."
+}

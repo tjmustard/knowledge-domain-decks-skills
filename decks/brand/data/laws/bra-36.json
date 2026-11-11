@@ -1,0 +1,28 @@
+{
+  "id": "BRA-36",
+  "sourceCardNo": 36,
+  "name": "Helmer’s 7 Powers Brand Moat Matrix",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Does our brand command a durable economic moat through Affective Valence (emotional affinity lowering price sensitivity) or Cognitive Shorthand (dramatically reducing customer search costs)?",
+  "diagnosticSize": 7.5,
+  "schematic": "Score at dimension 1 of 2",
+  "artifact": [
+    "An Affective Valence & Pricing Delta Audit evaluating brand pricing power against generic functional alternatives, distinct from network effects, switching costs, or counter-positioning."
+  ],
+  "trap": "Mistaking short-term brand engagement or viral attention for an enduring economic pricing power moat.",
+  "origin": {
+    "line": "Hamilton Helmer (2016)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "score",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Hamilton Helmer (*7 Powers: The Foundations of Business Strategy*, 2016).",
+  "artifactFull": "An Affective Valence & Pricing Delta Audit evaluating brand pricing power against generic functional alternatives, distinct from network effects, switching costs, or counter-positioning.",
+  "trapFull": "Mistaking short-term brand engagement or viral attention for an enduring economic pricing power moat."
+}

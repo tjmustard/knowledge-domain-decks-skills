@@ -1,0 +1,28 @@
+{
+  "id": "BRA-15",
+  "sourceCardNo": 15,
+  "name": "Brand Personality Appeal (BPA) Model",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "Is our brand personality distinct enough to be recognized, favorable enough to drive preference, and clear enough to prevent internal misinterpretation?",
+  "diagnosticSize": 8,
+  "schematic": "Score at dimension 1 of 3",
+  "artifact": [
+    "A three-factor audit: Personality Favorability, Personality Originality, Personality Clarity."
+  ],
+  "trap": "Chasing originality that fails favorability: eccentricities added for novelty raise friction at adoption.",
+  "origin": {
+    "line": "Traci H. Freling, Jody L. Crosno & David H. Henard (2011)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "score",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Traci H. Freling, Jody L. Crosno, & David H. Henard (Journal of the Academy of Marketing Science, 2011). An academic model assessing the structural efficacy of a brand personality on consumer behavior.",
+  "artifactFull": "A BPA Commercial Resonance Audit measuring three empirical factors: Personality Favorability (net positive sentiment impact), Personality Originality (differentiation from category baselines), and Personality Clarity (consistency of external perception).",
+  "trapFull": "Pursuing an original brand personality that fails the favorability test—introducing eccentricities purely for novelty that add friction to buyer adoption."
+}

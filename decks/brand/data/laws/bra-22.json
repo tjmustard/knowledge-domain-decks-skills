@@ -1,0 +1,28 @@
+{
+  "id": "BRA-22",
+  "sourceCardNo": 22,
+  "name": "Simon Sinek’s Golden Circle",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "Why does our enterprise exist beyond generating profit, and does that purpose consistently drive our operating principles and product output?",
+  "diagnosticSize": 8,
+  "schematic": "Rings at ring 3 of 3",
+  "artifact": [
+    "A Concentric Why-How-What Blueprint: Why (the foundational cause or conviction), How (the proprietary operating principles), and What (the tangible products and services)."
+  ],
+  "trap": "Inventing an ungrounded social crusade for a functional utility business, resulting in transparent purpose-washing.",
+  "origin": {
+    "line": "Simon Sinek (2009)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "rings",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "pedigreeFull": "Simon Sinek (*Start With Why*, 2009). A teleological model drawing on evolutionary neuroscience, proposing that human decision-making is led by limbic emotion before rational neocortical justification.",
+  "artifactFull": "A Concentric Why-How-What Blueprint: Why (the foundational cause or conviction), How (the proprietary operating principles), and What (the tangible products and services).",
+  "trapFull": "Inventing an ungrounded social crusade for a functional utility business, resulting in transparent purpose-washing."
+}

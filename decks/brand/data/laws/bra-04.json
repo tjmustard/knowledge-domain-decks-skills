@@ -1,0 +1,28 @@
+{
+  "id": "BRA-04",
+  "sourceCardNo": 4,
+  "name": "Blue Ocean Strategy Canvas & ERRC Grid",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "Which category conventions can we discard, which must we reduce below standard, and which neglected factors should we elevate to break industry trade-offs?",
+  "diagnosticSize": 8,
+  "schematic": "Matrix at cell 4 of 4",
+  "artifact": [
+    "A Strategic Value Curve Chart paired with an Eliminate-Reduce-Raise-Create (ERRC) Operational Matrix mapping asymmetric investment against industry benchmarks."
+  ],
+  "trap": "Benchmark convergence: competing on every established axis drives up marginal cost and ends in commoditization.",
+  "origin": {
+    "line": "W. Chan Kim & Renée Mauborgne (2005)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 4
+    }
+  },
+  "pedigreeFull": "W. Chan Kim & Renée Mauborgne (*Blue Ocean Strategy*, 2005; INSEAD). An analytical framework designed to break the structural trade-off between differentiation and low cost by reconstructing buyer value curves.",
+  "artifactFull": "A Strategic Value Curve Chart paired with an Eliminate-Reduce-Raise-Create (ERRC) Operational Matrix mapping asymmetric investment against industry benchmarks.",
+  "trapFull": "Engaging in benchmark convergence—competing simultaneously on every established feature axis, which drives up marginal costs and degrades into a race toward commoditization."
+}

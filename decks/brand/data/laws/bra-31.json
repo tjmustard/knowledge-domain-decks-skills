@@ -1,0 +1,28 @@
+{
+  "id": "BRA-31",
+  "sourceCardNo": 31,
+  "name": "Luxury & Industrial Origin Myth Archetype",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "What authentic founding struggle, breakthrough, or distinct physical setting provides our brand with durable legitimacy?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 2 of 5",
+  "artifact": [
+    "A Heritage Genesis Dossier capturing: The Moment of Inception, The Trial of the Founder, The Physical Workshop/Place of Origin, The Breakthrough Artifact, and The Ongoing Craft Ritual."
+  ],
+  "trap": "Fabricating romantic heritage narratives for modern, venture-funded digital utilities.",
+  "origin": {
+    "line": "Jean-Noël Kapferer & Vincent Bastien (2009)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 5,
+      "mark": 2
+    }
+  },
+  "pedigreeFull": "Jean-Noël Kapferer & Vincent Bastien (*The Luxury Strategy*, 2009). Anthropological and semiotic brand theory covering the generation of authentic commercial mystique.",
+  "artifactFull": "A Heritage Genesis Dossier capturing: The Moment of Inception, The Trial of the Founder, The Physical Workshop/Place of Origin, The Breakthrough Artifact, and The Ongoing Craft Ritual.",
+  "trapFull": "Fabricating romantic heritage narratives for modern, venture-funded digital utilities."
+}

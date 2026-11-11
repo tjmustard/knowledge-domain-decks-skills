@@ -1,0 +1,29 @@
+{
+  "id": "BRA-25",
+  "sourceCardNo": 25,
+  "name": "The Enemy/Rival Category Narrative",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "What systemic injustice, flawed industry consensus, or operational failure serves as our brand's philosophical antagonist?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 1 of 3",
+  "artifact": [
+    "An Antagonist Dossier & Contrarian Manifesto: the systemic adversary (e.g., *The Fragmentation of Data*, *Vendor Lock-in*), the impact on the customer, and the brand's path to overcoming it."
+  ],
+  "trap": "Targeting a specific corporate competitor by name, which can appear petty and reduces the brand's category leadership.",
+  "origin": {
+    "line": "Play Bigger (2016); Alex M. H. Smith (2020)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Category design theory and narrative strategy (*Play Bigger*, 2016; Alex M. H. Smith, 2020).",
+  "artifactFull": "An Antagonist Dossier & Contrarian Manifesto detailing the systemic adversary (e.g., *The Fragmentation of Data*, *Vendor Lock-in*), the impact on the customer, and the brand's path to overcoming it.",
+  "trapFull": "Targeting a specific corporate competitor by name, which can appear petty and reduces the brand's category leadership.",
+  "sourceNote": "The source cites Play Bigger (2016) without its authors and Alex M. H. Smith (2020) as the second origin; the card prints the source's line and does not add the authors."
+}

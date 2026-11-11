@@ -1,0 +1,28 @@
+{
+  "id": "BRA-27",
+  "sourceCardNo": 27,
+  "name": "Donald Miller’s StoryBrand Framework (SB7)",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "Can an uninformed user understand what we offer, what problem it resolves, and how to buy it within five seconds of landing on our touchpoint?",
+  "diagnosticSize": 8,
+  "schematic": "Arc at stage 1 of 7",
+  "artifact": [
+    "A 7-Part Grunt-Tested BrandScript: Character → Problem (External, Internal, Philosophical) → Guide (Empathy + Authority) → Plan → Call to Action → Avoided Failure → Resulting Success."
+  ],
+  "trap": "Cluttering above-the-fold messaging with internal corporate milestones, history, or technical jargon rather than clarifying user progress.",
+  "origin": {
+    "line": "Donald Miller (2017)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 7,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Donald Miller (*Building a StoryBrand*, 2017). A narrative structure derived from classic screenwriting designed to eliminate cognitive noise in marketing.",
+  "artifactFull": "A 7-Part Grunt-Tested BrandScript: Character → Problem (External, Internal, Philosophical) → Guide (Empathy + Authority) → Plan → Call to Action → Avoided Failure → Resulting Success.",
+  "trapFull": "Cluttering above-the-fold messaging with internal corporate milestones, history, or technical jargon rather than clarifying user progress."
+}

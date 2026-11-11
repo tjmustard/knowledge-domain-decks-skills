@@ -1,0 +1,28 @@
+{
+  "id": "BRA-12",
+  "sourceCardNo": 12,
+  "name": "Pearson-Jung 12 Brand Archetypes",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "Which universal subconscious archetype governs our brand's behavioral defaults, motivation, and cultural stance?",
+  "diagnosticSize": 9,
+  "schematic": "Matrix at cell 1 of 4",
+  "artifact": [
+    "Two axes (Stability vs. Disruption; Belonging vs. Autonomy) yield a primary and a secondary archetype, with core drivers, fears and taboos."
+  ],
+  "trap": "Picking an archetype as decoration while operations contradict its ethos — an *Outlaw* run under strict risk aversion.",
+  "origin": {
+    "line": "Carol S. Pearson & Margaret Mark (2001)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Carol S. Pearson & Margaret Mark (*The Hero and the Outlaw*, 2001), adapting Carl G. Jung’s psychoanalytic theory of collective archetypes.",
+  "artifactFull": "An Archetypal Persona Specification mapping the brand across two psychological axes (Stability vs. Disruption; Belonging vs. Autonomy) into a Primary Archetype (e.g., *Sage*) and Secondary Archetype (e.g., *Creator*), complete with core drivers, fears, and taboos.",
+  "trapFull": "Selecting an archetype as a surface-level marketing exercise while running operations in direct contradiction to that archetype's ethos (e.g., claiming to be an *Outlaw* while operating under strict corporate risk aversion)."
+}

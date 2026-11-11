@@ -1,0 +1,113 @@
+{
+  "id": "brand",
+  "slug": "brand",
+  "name": "Brand Architecture",
+  "description": "Forty-two brand frameworks in four pillars, each a diagnostic question, the artifact it produces, and the anti-pattern that turns it into decoration.",
+  "categories": [
+    "Positioning & Market Differentiation",
+    "Archetypes & Brand Personality",
+    "Core Narrative & Purpose Systems",
+    "Distinctive Assets, Coherence & Economic Moats"
+  ],
+  "accents": {
+    "Positioning & Market Differentiation": "#1D4ED8",
+    "Archetypes & Brand Personality": "#7C3AED",
+    "Core Narrative & Purpose Systems": "#B45309",
+    "Distinctive Assets, Coherence & Economic Moats": "#0F766E"
+  },
+  "fields": {
+    "group": "pillar",
+    "items": null,
+    "attribution": "origin",
+    "figure": "figure",
+    "headline": "diagnostic",
+    "headlineSize": "diagnosticSize",
+    "context": "schematic",
+    "prompt": null,
+    "antiPattern": null
+  },
+  "labels": {
+    "headline": "Alignment diagnostic",
+    "context": "Schematic",
+    "items": "Artifact",
+    "cardItems": "Artifact",
+    "resourceItems": "Artifact",
+    "group": {
+      "Positioning & Market Differentiation": "Positioning",
+      "Archetypes & Brand Personality": "Personality",
+      "Core Narrative & Purpose Systems": "Narrative",
+      "Distinctive Assets, Coherence & Economic Moats": "Assets"
+    }
+  },
+  "figureWidth": "1.4in",
+  "nameSize": "12pt",
+  "blocks": [
+    {
+      "field": "artifact",
+      "label": "Artifact",
+      "style": "lines"
+    },
+    {
+      "field": "trap",
+      "label": "Anti-pattern",
+      "style": "prose"
+    },
+    {
+      "field": "pedigreeFull",
+      "label": "Framework pedigree, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "artifactFull",
+      "label": "Concrete artifact, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "trapFull",
+      "label": "Anti-pattern, as written",
+      "style": "verbatim",
+      "card": false
+    },
+    {
+      "field": "sourceNote",
+      "label": "Source note",
+      "style": "prose",
+      "card": false
+    }
+  ],
+  "outputs": {
+    "rules": "rules/brand-rules.md",
+    "skill": "skills/brand",
+    "pdf": "packages/prepress/dist/brand.pdf"
+  },
+  "rules": {
+    "title": "Brand Architecture Rules",
+    "intro": "The frameworks come from public practice in brand strategy: positioning, archetypal personality, narrative structure, and the distinctive assets that carry recognition into memory. Each card names the alignment question that says the framework applies, the artifact it produces, and the anti-pattern that turns it into decoration.\nThe diagnostic prints on the card exactly as the source states it. The artifact and the anti-pattern print on the card compressed to the back's budget, and the source's own pedigree, artifact and anti-pattern print here, line for line, under each card. Compression may drop explanation; it may not add a claim, change a number or omit a stated bound. Every number a short form states appears in the block it was compressed from, and the deck's test checks that."
+  },
+  "skill": {
+    "name": "brand",
+    "description": "Run one of {cards} brand frameworks this week: four pillars of positioning, personality, narrative and distinctive assets, each with the question that says it applies, the artifact it produces and the anti-pattern that makes it decoration. Use when a brand's strategy needs a decision, not a mood board.",
+    "title": "Brand Architecture",
+    "intro": "This file is the index. The cards live in `resources/`, one file per pillar.\n\nChoosing starts from the question, not the framework's name. If the market frame or the price position is unclear, read Positioning. If the voice and character will not hold still across teams, read Personality. If the story does not move a customer from where they are, read Narrative. If buyers cannot recognise or recall the brand at the moment of choice, read Assets. Then take the one card whose diagnostic reads like this week's problem and produce its artifact once, on one page, before choosing a framework for the year.\n\nWhen two cards fit, prefer the one whose artifact you can complete today from facts you already have. A framework that needs research before it produces anything is not the first move; it is the second.\n\nRoutes out of this deck. Strategy Tactics owns organisational choices — branding power (S27) and counter-positioning (S25) are cards there; this deck owns the brand decision itself. Innovation's jobs-to-be-done interview (i03) discovers the job a customer is hiring a product for; BRA-11 places the brand inside that job. Copywriting owns the formulas and the sentence-level voice rules; BRA-14 and BRA-18 own the tone dimensions a copy formula is written inside, and CPY-09's Star-Story-Solution is a copy structure next to BRA-27's narrative one. Team Tactics' Competing Values Framework (t20) diagnoses a team's culture; BRA-24 is the purpose-mission-vision-values hierarchy an organisation declares. UX Laws owns the perceptual research; this deck uses it without restating it.",
+    "commonRules": [
+      "Pick the card from the question, not the framework's title. The diagnostic on the front is the sentence that says whether this is the problem in front of you.",
+      "Produce the artifact once before adopting the framework. A positioning ledger, a prism, a brandscript: one page, from facts you have, is the test.",
+      "Every card has an anti-pattern, and it is what over-application looks like. Read it before you scale the framework up.",
+      "The artifact and anti-pattern on the card are compressed; the source's pedigree, artifact and anti-pattern print in the resource file under the same card. Argue from those, not from the card.",
+      "A stated number is the framework. A 3–5 year mission horizon, five tone axes, four quadrants: dropping the number leaves a mood, not a method.",
+      "The card never vouches for a citation the source did not make. A named originator is the one the source's own pedigree names, with the year it gives and no title added; where the source names nobody, the card says so."
+    ],
+    "footer": "The diagnostic is the source's own wording. The artifact and the anti-pattern on the card are this deck's compression; the source's full text follows each card in its resource file and in the rules file. Attribution has two tiers and no third: the originator the source's pedigree names, with the year the source gives, or the honest line."
+  },
+  "web": {
+    "global": "BRAND_DECK",
+    "accentsGlobal": "BRAND_DECK_ACCENTS",
+    "title": "Brand Architecture — Knowledge Domain Decks",
+    "heading": "Brand Architecture",
+    "lede": "{cards} brand frameworks: the question that says one applies, the artifact it produces, and the anti-pattern that turns it into decoration.",
+    "source": "Generated from <code>decks/brand/data/laws/*.json</code>. Code MIT · data CC0-1.0.",
+    "backHint": "Tap or press Enter for the artifact"
+  }
+}

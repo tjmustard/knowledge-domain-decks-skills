@@ -1,0 +1,32 @@
+{
+  "id": "BRA-26",
+  "sourceCardNo": 26,
+  "name": "Andy Raskin’s 5-Element Strategic Narrative",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "Does our narrative open with an undeniable shift in the macro environment that creates urgency, or are we leading with self-centered product pitches?",
+  "diagnosticSize": 8,
+  "schematic": "Arc at stage 1 of 5",
+  "artifact": [
+    "Name an undeniable shift in the world.",
+    "Demonstrate there will be winners and losers (the stakes).",
+    "Tease the promised land — the future state, independent of features.",
+    "Introduce product capabilities as \"magic gifts\" to reach that state.",
+    "Present concrete evidence that the vision can be realized."
+  ],
+  "trap": "Opening with a slide that tells the prospect their current approach is broken, which triggers immediate resistance.",
+  "origin": {
+    "line": "Andy Raskin (2016)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Andy Raskin (*The Greatest Sales Deck I’ve Ever Seen*, 2016), adapted from Hollywood screenwriting principles for business-to-business enterprise narratives.",
+  "artifactFull": "A 5-Stage Narrative Sales Architecture:  \n  1. Name an Undeniable Shift in the World  \n  2. Demonstrate There Will Be Winners and Losers (The Stakes)  \n  3. Tease the Promised Land (The future state, independent of features)  \n  4. Introduce Product Capabilities as \"Magic Gifts\" to Reach That State  \n  5. Present Concrete Evidence Proving the Vision Can Be Realized.",
+  "trapFull": "Starting a sales pitch with a slide claiming the prospect's current approach is broken, which triggers immediate psychological resistance."
+}

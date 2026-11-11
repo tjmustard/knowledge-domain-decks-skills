@@ -60,18 +60,26 @@
 // no author, work or publication may still carry a note, which prints instead
 // of an empty "Source: ." line.
 #let citation-line(o) = {
-  let names = (if "authorsLabel" in o { o.authorsLabel } else { "" }).replace(
-    " & ", " &\u{00A0}"
-  )
-  let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
-  let by = if names == "" [] else [#names#year-text.]
-  let has-work = "title" in o
-  let has-pub = "publication" in o
-  let work = if has-work [ _#o.title#(o.titleStop)_] else []
-  let pub = if has-pub [ #o.publication] else []
-  let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
-  let bare-cite = names == "" and not has-work and not has-pub
-  if bare-cite and "note" in o { o.note } else { [Source: #by#tail] }
+  // A deck may carry one whole line instead of the parts: the attribution the
+  // source's own pedigree gives, printed as written. It is checked before the
+  // parts, so an origin that carries a line cannot also print an empty
+  // "Source: ." from the absent ones.
+  if "line" in o {
+    o.line
+  } else {
+    let names = (if "authorsLabel" in o { o.authorsLabel } else { "" }).replace(
+      " & ", " &\u{00A0}"
+    )
+    let year-text = if "year" in o [ (#if o.year < 0 { str(-o.year) + " BCE" } else { str(o.year) })] else []
+    let by = if names == "" [] else [#names#year-text.]
+    let has-work = "title" in o
+    let has-pub = "publication" in o
+    let work = if has-work [ _#o.title#(o.titleStop)_] else []
+    let pub = if has-pub [ #o.publication] else []
+    let tail = if not has-work and not has-pub [] else if has-pub [ #work #pub.] else [ #work]
+    let bare-cite = names == "" and not has-work and not has-pub
+    if bare-cite and "note" in o { o.note } else { [Source: #by#tail] }
+  }
 }
 
 // Trim ticks and trim outline, all within the bleed band.

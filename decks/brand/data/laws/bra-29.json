@@ -1,0 +1,28 @@
+{
+  "id": "BRA-29",
+  "sourceCardNo": 29,
+  "name": "McKee’s Storynomics Narrative Engine",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "What unexpected event breaks our customer's status quo, and what progressive gaps between expectation and reality must they navigate?",
+  "diagnosticSize": 8.5,
+  "schematic": "Arc at stage 2 of 8",
+  "artifact": [
+    "An Expectation-Gap Narrative Graph: Baseline Equilibrium → Inciting Incident → Object of Desire → Action → Gap (Expectation vs. Reality) → Escalating Conflict → Decisive Crisis → Re-established Equilibrium."
+  ],
+  "trap": "Presenting an idealized, friction-free customer journey that fails to acknowledge real implementation obstacles.",
+  "origin": {
+    "line": "Robert McKee & Thomas Gerace (2018)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 8,
+      "mark": 2
+    }
+  },
+  "pedigreeFull": "Robert McKee & Thomas Gerace (*Storynomics*, 2018). A framework applying classical dramatic conflict mechanics to business communications.",
+  "artifactFull": "An Expectation-Gap Narrative Graph tracing: Baseline Equilibrium → Inciting Incident → Object of Desire → Action → Gap (Expectation vs. Reality) → Escalating Conflict → Decisive Crisis → Re-established Equilibrium.",
+  "trapFull": "Presenting an idealized, friction-free customer journey that fails to acknowledge real implementation obstacles."
+}

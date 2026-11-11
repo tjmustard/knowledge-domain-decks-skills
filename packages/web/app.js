@@ -60,6 +60,10 @@
     // An origin may list several works. Each prints its own citation, in the
     // order the record declares them.
     if (origin.works && origin.works.length) return origin.works.map(citation).join(" ");
+    // An origin may carry the source's own pedigree line, already worded and
+    // stopped. The deck prints those bytes rather than joining parts, and so
+    // does the viewer: same line, same punctuation, nothing added.
+    if (typeof origin.line === "string") return origin.line;
     // A note-only attribution names no author, work or publication: a method in
     // common use with no documented originator. The note is the whole line.
     if (origin.note && !origin.authorsLabel && !origin.title && !origin.publication) return origin.note;

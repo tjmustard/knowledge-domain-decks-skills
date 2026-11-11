@@ -1,0 +1,28 @@
+{
+  "id": "BRA-39",
+  "sourceCardNo": 39,
+  "name": "Vale AST Automated Verbal Linting Engine",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "How is verbal brand governance enforced—through static PDF style manuals, or via automated AST linting within continuous integration pipelines?",
+  "diagnosticSize": 8,
+  "schematic": "Manifest at key 1 of 3",
+  "artifact": [
+    "A `.vale.ini` configuration paired with custom YAML style rules enforcing tone boundaries, banned terminology, and reading ease during build time."
+  ],
+  "trap": "Writing broad, complex regex patterns that throw frequent false positives, leading engineering and writing teams to disable the linter.",
+  "origin": {
+    "line": "Errata AI / Open Source Docs-as-Code"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Errata AI / Open Source Docs-as-Code ecosystem (Vale prose linter).",
+  "artifactFull": "A `.vale.ini` configuration paired with custom YAML style rules enforcing tone boundaries, banned terminology, and reading ease during build time.",
+  "trapFull": "Writing broad, complex regex patterns that throw frequent false positives, leading engineering and writing teams to disable the linter."
+}

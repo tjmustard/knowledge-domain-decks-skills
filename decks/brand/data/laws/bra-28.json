@@ -1,0 +1,28 @@
+{
+  "id": "BRA-28",
+  "sourceCardNo": 28,
+  "name": "Campbellian Monomyth Brand Adaptation",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "What threshold of change is our customer hesitant to cross, and how does our brand serve as the mentor providing the tools to succeed?",
+  "diagnosticSize": 8.5,
+  "schematic": "Arc at stage 5 of 12",
+  "artifact": [
+    "A 12-stage journey map: Ordinary World, Call to Adventure, Refusal of the Call, Meeting the Mentor, Crossing the Threshold, Tests/Allies/Enemies, Inmost Cave, Supreme Ordeal, Reward, The Road Back, Resurrection, Return with the Elixir."
+  ],
+  "trap": "Melodramatizing low-involvement or routine purchases, alienating practical buyers.",
+  "origin": {
+    "line": "Joseph Campbell (1949); Christopher Vogler (1992)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "arc",
+      "divisions": 12,
+      "mark": 5
+    }
+  },
+  "pedigreeFull": "Joseph Campbell (*The Hero with a Thousand Faces*, 1949), adapted for modern narrative analysis by Christopher Vogler (*The Writer’s Journey*, 1992).",
+  "artifactFull": "A 12-Stage Customer Journey Map tracking the Ordinary World, Call to Adventure, Refusal of the Call, Meeting the Mentor, Crossing the Threshold, Tests/Allies/Enemies, Inmost Cave, Supreme Ordeal, Reward, The Road Back, Resurrection, and Return with the Elixir.",
+  "trapFull": "Melodramatizing low-involvement or routine purchases, alienating practical buyers."
+}

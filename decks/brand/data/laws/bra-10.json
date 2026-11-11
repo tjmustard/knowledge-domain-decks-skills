@@ -1,0 +1,33 @@
+{
+  "id": "BRA-10",
+  "sourceCardNo": 10,
+  "name": "Geoffrey Moore’s Crossing the Chasm Positioning Template",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "Can our leadership team state our fundamental commercial position in a single sentence using a fixed, adjective-free syntax?",
+  "diagnosticSize": 8.5,
+  "schematic": "Statement at clause 1 of 6",
+  "artifact": [
+    "For [target customer segment]",
+    "Who [statement of specific need or pain]",
+    "The [product name] is a [product category]",
+    "That [statement of compelling key benefit]",
+    "Unlike [primary competitive alternative]",
+    "Our product [statement of primary differentiation]."
+  ],
+  "trap": "Overloading the clauses with buzzwords, which breaks the framework's forcing function.",
+  "origin": {
+    "line": "Geoffrey A. Moore (1991)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "statement",
+      "divisions": 6,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Geoffrey A. Moore (*Crossing the Chasm*, 1991). A structural framework designed for technology markets shifting from visionary early adopters to pragmatic mainstream buyers.",
+  "artifactFull": "A Structured Positioning Statement:  \n  - For [target customer segment]  \n  - Who [statement of specific need or pain]  \n  - The [product name] is a [product category]  \n  - That [statement of compelling key benefit]  \n  - Unlike [primary competitive alternative]  \n  - Our product [statement of primary differentiation].",
+  "trapFull": "Overloading clauses with corporate buzzwords (e.g., \"For *innovative teams* who *need efficiency*, our *AI-powered engine*...\"), which undermines the framework's forcing function."
+}

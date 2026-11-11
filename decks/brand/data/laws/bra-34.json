@@ -1,0 +1,28 @@
+{
+  "id": "BRA-34",
+  "sourceCardNo": 34,
+  "name": "Mental & Physical Availability Engine",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Is our brand both mentally available (easily recalled in a buying situation) and physically available (accessible to purchase with minimal friction)?",
+  "diagnosticSize": 8,
+  "schematic": "Score at dimension 1 of 2",
+  "artifact": [
+    "A Dual-Availability Performance Index tracking mental metrics (salience, cue ownership) and physical metrics (channel distribution, shelf prominence, checkout friction)."
+  ],
+  "trap": "Focusing exclusively on deep emotional loyalty among existing users while neglecting broad category mental reach and physical distribution.",
+  "origin": {
+    "line": "Byron Sharp (2010)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "score",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Byron Sharp (*How Brands Grow*, 2010; Ehrenberg-Bass Institute).",
+  "artifactFull": "A Dual-Availability Performance Index tracking mental metrics (salience, cue ownership) and physical metrics (channel distribution, shelf prominence, checkout friction).",
+  "trapFull": "Focusing exclusively on deep emotional loyalty among existing users while neglecting broad category mental reach and physical distribution."
+}

@@ -1,0 +1,28 @@
+{
+  "id": "BRA-20",
+  "sourceCardNo": 20,
+  "name": "Fournier’s Brand Relationship Quality (BRQ) Model",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "What specific relational contract does our brand form with the customer, and do our operational touchpoints reinforce or break that contract?",
+  "diagnosticSize": 8,
+  "schematic": "Facets at facet 1 of 6",
+  "artifact": [
+    "Six facets — Love/Passion, Self-Connection, Interdependence, Commitment, Intimacy, Brand Partner Quality — scored across relationship archetypes such as Committed Partnership or Secret Fling."
+  ],
+  "trap": "Using an intimate, conversational tone when the business reality is an opportunistic transaction reads as false.",
+  "origin": {
+    "line": "Susan Fournier (1998)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "facets",
+      "divisions": 6,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Susan Fournier (Journal of Consumer Research, 1998). An academic framework analyzing consumer-brand connections as active socio-emotive relationships.",
+  "artifactFull": "A 6-Facet Relational Typology Map evaluating Love/Passion, Self-Connection, Interdependence, Commitment, Intimacy, and Brand Partner Quality across relationship archetypes (e.g., Committed Partnership, Marriage of Convenience, Childhood Friendship, Secret Fling).",
+  "trapFull": "Adopting an intimate, conversational tone in marketing when the underlying business reality is an opportunistic transaction, triggering customer skepticism."
+}

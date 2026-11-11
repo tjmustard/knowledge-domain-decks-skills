@@ -1,0 +1,29 @@
+{
+  "id": "BRA-21",
+  "sourceCardNo": 21,
+  "name": "Greimasian Brand Semiotic Square",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "What structural oppositions and contradictions define the narrative space of our category, and what unexplored territory can we claim?",
+  "diagnosticSize": 8.5,
+  "schematic": "Matrix at cell 1 of 4",
+  "artifact": [
+    "A 4-Corner Structural Semiotic Matrix: Primary Assertion (S1) vs. Contrary (S2), and Contradictory (~ S1) vs. Sub-Contrary (~ S2), mapping category positions and white space."
+  ],
+  "trap": "Positioning a brand on an unresolved contradictory axis without addressing the underlying semantic trade-offs.",
+  "origin": {
+    "line": "Algirdas Julien Greimas (1966), adapted by Jean-Marie Floch (1988)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Algirdas Julien Greimas (*Structural Semantics*, 1966) adapted to corporate semiotics by Jean-Marie Floch (1988). A logical tool that maps out the semantic limits and relationships of meaning within a category.",
+  "artifactFull": "A 4-Corner Structural Semiotic Matrix: Primary Assertion (S1) vs. Contrary (S2), and Contradictory (~ S1) vs. Sub-Contrary (~ S2), mapping category positions and white space.",
+  "trapFull": "Positioning a brand on an unresolved contradictory axis without addressing the underlying semantic trade-offs.",
+  "sourceNote": "The source writes the four corners in escaped LaTeX (math-mode delimiters around S with subscript markers); the declared rendering table drops those delimiters, so the card prints S1, S2, ~S1, ~S2."
+}

@@ -1,0 +1,32 @@
+{
+  "id": "BRA-42",
+  "sourceCardNo": 42,
+  "name": "Multi-Sensory Cognitive Anchor Matrix",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Does the brand rely exclusively on visual marks, or does it activate sonic, haptic, and spatial cues across its touchpoints?",
+  "diagnosticSize": 8.5,
+  "schematic": "Matrix at cell 1 of 4",
+  "artifact": [
+    "Visual assets: marks, palettes, typography.",
+    "Sonic assets: chimes, UI interaction sounds.",
+    "Haptic assets: physical substrates, vibration feedback.",
+    "Spatial assets: interface hierarchy, environmental layouts."
+  ],
+  "trap": "Introducing shrill or intrusive notification sounds that annoy users, driving them to mute or disable interface audio.",
+  "origin": {
+    "line": "Charles Spence & Martin Lindstrom (2005)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Cross-modal sensory branding theory (Charles Spence & Martin Lindstrom, *Brand Sense*, 2005).",
+  "artifactFull": "A 5-Sense Cognitive Association Matrix defining:  \n  - Visual assets (marks, palettes, typography)  \n  - Sonic assets (chimes, UI interaction sounds)  \n  - Haptic assets (physical substrates, vibration feedback)  \n  - Spatial assets (interface hierarchy, environmental layouts).",
+  "trapFull": "Introducing shrill or intrusive notification sounds that annoy users, driving them to mute or disable interface audio.",
+  "sourceNote": "The source calls this a 5-Sense matrix and lists four asset categories; the card prints the four listed and invents no fifth sense."
+}

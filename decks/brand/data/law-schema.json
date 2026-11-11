@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.invalid/brand-schema.json",
+  "title": "Brand Architecture card",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "sourceCardNo",
+    "name",
+    "pillar",
+    "kicker",
+    "diagnostic",
+    "diagnosticSize",
+    "schematic",
+    "artifact",
+    "trap",
+    "origin",
+    "figure",
+    "pedigreeFull",
+    "artifactFull",
+    "trapFull"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^BRA-(0[1-9]|[1-3][0-9]|4[0-2])$"
+    },
+    "sourceCardNo": {
+      "description": "The source's own card number, which is the id's number on every record.",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 42
+    },
+    "name": {
+      "description": "The framework's title, verbatim from its card heading. Measured range 18-57 characters.",
+      "type": "string",
+      "minLength": 18,
+      "maxLength": 57
+    },
+    "pillar": {
+      "description": "The pillar heading the card is numbered under, verbatim. The taxonomy matrix uses shorter names for pillars III and IV; the card headings are the record.",
+      "enum": [
+        "Positioning & Market Differentiation",
+        "Archetypes & Brand Personality",
+        "Core Narrative & Purpose Systems",
+        "Distinctive Assets, Coherence & Economic Moats"
+      ]
+    },
+    "kicker": {
+      "description": "The short pillar name the card's front prints, in pillar order.",
+      "enum": ["Positioning", "Personality", "Narrative", "Assets"]
+    },
+    "diagnostic": {
+      "description": "The source's Brand Alignment Diagnostic, verbatim except the single pair of quotation marks the source wraps the question in. Measured range 106-207 characters after the quotes are removed.",
+      "type": "string",
+      "minLength": 100,
+      "maxLength": 230
+    },
+    "diagnosticSize": {
+      "description": "The front's diagnostic point size, fixed per card in the layout map from the question's measured length. Every front is measured at its assigned size before the deck ships.",
+      "type": "number",
+      "minimum": 7.5,
+      "maximum": 9
+    },
+    "schematic": {
+      "description": "The line the card prints under the figure, in the form '<Family> at <unit> <mark> of <divisions>'. The same three numbers are in figure.parametricParams, and the deck's test parses this line against them.",
+      "type": "string",
+      "minLength": 18,
+      "maxLength": 36,
+      "pattern": "^(Ledger|Matrix|Axes|Score|Arc|Tiers|Manifest|Facets|Rings|Statement|Network) at (part|cell|axis|dimension|stage|level|key|facet|ring|clause|node) [1-9][0-9]? of [1-9][0-9]?$"
+    },
+    "artifact": {
+      "description": "The concrete artifact, this deck's compression of the source's block. One entry per printed line: a prose artifact is one entry, a list artifact one entry per item. Measured 1-6 lines and 92-436 characters per card. Compression may drop explanation but not a claim, a number or a stated bound.",
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 6,
+      "items": {
+        "type": "string",
+        "minLength": 8,
+        "maxLength": 260
+      }
+    },
+    "trap": {
+      "description": "What over-application looks like, this deck's compression of the source's Anti-Pattern Warning. Measured 82-147 characters.",
+      "type": "string",
+      "minLength": 60,
+      "maxLength": 200
+    },
+    "origin": {
+      "description": "Two tiers and no third. The line is the attribution the source's own pedigree gives - a person, pair, agency, standards group, named project or named practice - with the year the source gives and no work title added. Where the source names nobody, the note is the honest line. There is deliberately no tier for an originator the source omits: the deck never vouches for a citation the source did not make.",
+      "type": "object",
+      "additionalProperties": false,
+      "anyOf": [
+        {
+          "required": ["line"]
+        },
+        {
+          "required": ["note"]
+        }
+      ],
+      "properties": {
+        "line": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 80
+        },
+        "note": {
+          "const": "The source names no originator."
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["svgShape", "parametricParams"],
+      "properties": {
+        "svgShape": {
+          "const": "brand-figure"
+        },
+        "parametricParams": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["family", "divisions", "mark"],
+          "properties": {
+            "family": {
+              "enum": [
+                "ledger",
+                "matrix",
+                "axes",
+                "score",
+                "arc",
+                "tiers",
+                "manifest",
+                "facets",
+                "rings",
+                "statement",
+                "network"
+              ]
+            },
+            "divisions": {
+              "type": "integer",
+              "minimum": 2,
+              "maximum": 12
+            },
+            "mark": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 12
+            }
+          }
+        }
+      }
+    },
+    "pedigreeFull": {
+      "description": "The source's Framework Pedigree, verbatim after the declared rendering table, printed in the rules file and the pillar resource. Measured range 48-276 characters; the shortest is card 30 after its recorded redaction, and the bound admits it rather than padding the text back.",
+      "type": "string",
+      "minLength": 45,
+      "maxLength": 320
+    },
+    "artifactFull": {
+      "description": "The source's Concrete Artifact Generated, verbatim, including its list markers and line breaks where the source wrote a list. Measured range 125-639 characters.",
+      "type": "string",
+      "minLength": 120,
+      "maxLength": 700
+    },
+    "trapFull": {
+      "description": "The source's Anti-Pattern Warning, verbatim. Measured range 82-224 characters.",
+      "type": "string",
+      "minLength": 70,
+      "maxLength": 260
+    },
+    "sourceNote": {
+      "description": "A recorded source defect carried on the card's record: the redaction, a notation the rendering table restores, or a count the source gets wrong. Never a repair.",
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 400
+    }
+  }
+}

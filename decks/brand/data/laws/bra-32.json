@@ -1,0 +1,28 @@
+{
+  "id": "BRA-32",
+  "sourceCardNo": 32,
+  "name": "Customer Identity Transformation Arc",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "Beyond immediate functional deliverables, who does the customer become after adopting our brand into their workflow and identity?",
+  "diagnosticSize": 8.5,
+  "schematic": "Axes at axis 3 of 3",
+  "artifact": [
+    "A From-Through-To State Matrix: Initial Frustrated State → Enabling Brand Engine → Transformed Aspirational Identity."
+  ],
+  "trap": "Promising unrealistic life transformations for minor functional enhancements, which strains credibility.",
+  "origin": {
+    "line": "B. Joseph Pine II & James H. Gilmore (1999)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "axes",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "pedigreeFull": "B. Joseph Pine II & James H. Gilmore (*The Experience Economy*, 1999). Experiential and transformational brand architecture.",
+  "artifactFull": "A From-Through-To State Matrix mapping: Initial Frustrated State → Enabling Brand Engine → Transformed Aspirational Identity.",
+  "trapFull": "Promising unrealistic life transformations for minor functional enhancements, which strains credibility."
+}

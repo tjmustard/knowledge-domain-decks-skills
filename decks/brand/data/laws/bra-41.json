@@ -1,0 +1,28 @@
+{
+  "id": "BRA-41",
+  "sourceCardNo": 41,
+  "name": "Distinctive Asset Decay & Dilution Audit",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Which distinctive brand cues have eroded over the past three years due to inconsistent execution, category mimicry, or neglected usage?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 3 of 3",
+  "artifact": [
+    "A Triennial Asset Erosion Audit Log tracking original vs. current association strength, competitor mimicry, and corrective actions (Re-anchor, Restrict, or Retire)."
+  ],
+  "trap": "Changing core visual marks to match short-term aesthetic trends, damaging established customer recognition pathways.",
+  "origin": {
+    "line": "Ehrenberg-Bass Institute"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 3
+    }
+  },
+  "pedigreeFull": "Long-term brand equity protection and asset management practice (Ehrenberg-Bass Institute).",
+  "artifactFull": "A Triennial Asset Erosion Audit Log tracking original vs. current association strength, competitor mimicry, and corrective actions (Re-anchor, Restrict, or Retire).",
+  "trapFull": "Changing core visual marks to match short-term aesthetic trends, damaging established customer recognition pathways."
+}

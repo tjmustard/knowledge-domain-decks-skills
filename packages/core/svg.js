@@ -3739,6 +3739,260 @@
     return out.join("");
   };
 
+  /* --- Brand: eleven families, one figure ------------------------------ */
+
+  /* The brand deck's forty-two frameworks are each drawn as one of eleven
+     families, parameterised by {family, divisions, mark}. The divisions are
+     drawn in the order the card's artifact lists them and the mark is the
+     listed position, never a claim that the marked one matters most: BRA-24
+     lists Purpose first, so Purpose is level 1, and the drawing does not say
+     purpose is the foundation. Rings are the one geometric exception, numbered
+     from the outer edge inward, because one concentric shape cannot be
+     numbered two ways. Every family reads all three knobs, so a misspelling
+     cannot declare a parameter its drawing ignores. */
+  shapes["brand-figure"] = function (p) {
+    var family = String(p.family || "ledger");
+    var div = Math.max(2, Math.min(12, Math.round(p.divisions || 4)));
+    var mark = Math.max(1, Math.min(div, Math.round(p.mark || 1)));
+    var cx = 200;
+    var cy = 200;
+    var out = [];
+
+    function at(cx0, cy0, r, a) {
+      return [coord(cx0 + r * Math.cos(a)), coord(cy0 + r * Math.sin(a))];
+    }
+
+    if (family === "ledger") {
+      // Ordered columns on one baseline; the marked column is the filled one.
+      var top = 104;
+      var base = 296;
+      var gap = 6;
+      var colW = (288 - gap * (div - 1)) / div;
+      for (var i = 1; i <= div; i += 1) {
+        var colX = 56 + (i - 1) * (colW + gap);
+        out.push(
+          rect(colX, top, coord(colW), base - top, i === mark
+            ? { fill: "currentColor", width: 2, opacity: 0.88 }
+            : { width: 1.1, opacity: 0.3 })
+        );
+      }
+      out.push(line(56, base + 10, 344, base + 10, 1.1, 0.28));
+    } else if (family === "matrix") {
+      // Cells read row by row from the top-left; the marked cell is filled.
+      // Two edges of the grid extend past it, which is what makes it a grid
+      // of two axes rather than a table of values.
+      var cols = Math.ceil(Math.sqrt(div));
+      var rows = Math.ceil(div / cols);
+      var gx = 80;
+      var gy = 80;
+      var cw = 240 / cols;
+      var ch = 240 / rows;
+      for (var m = 1; m <= div; m += 1) {
+        var mc = (m - 1) % cols;
+        var mr = Math.floor((m - 1) / cols);
+        out.push(
+          rect(coord(gx + mc * cw), coord(gy + mr * ch), coord(cw), coord(ch), m === mark
+            ? { fill: "currentColor", width: 2.4, opacity: 0.86 }
+            : { width: 1.2, opacity: 0.3 })
+        );
+      }
+      out.push(line(gx, gy - 14, gx, gy + 240 + 14, 1.4, 0.45));
+      out.push(line(gx - 14, gy + 240, gx + 240 + 14, gy + 240, 1.4, 0.45));
+    } else if (family === "axes") {
+      // One bipolar line per axis; the marked axis is the heavy one.
+      var ay0 = 104;
+      var ay1 = 296;
+      var half = div > 8 ? 5 : 7;
+      for (var a = 1; a <= div; a += 1) {
+        var ay = ay0 + ((ay1 - ay0) * (a - 1)) / (div - 1);
+        var aon = a === mark;
+        out.push(line(76, coord(ay), 324, coord(ay), aon ? 3 : 1.2, aon ? 0.95 : 0.34));
+        out.push(line(76, coord(ay - half), 76, coord(ay + half), aon ? 2.2 : 1.1, aon ? 0.9 : 0.3));
+        out.push(line(324, coord(ay - half), 324, coord(ay + half), aon ? 2.2 : 1.1, aon ? 0.9 : 0.3));
+        out.push(
+          aon
+            ? circle(200, coord(ay), 4.5, { width: 1.6, opacity: 0.9 })
+            : circle(200, coord(ay), 2.4, { hollow: true, width: 1, opacity: 0.3 })
+        );
+      }
+    } else if (family === "score") {
+      // A radar of equal scores: the marked dimension's spoke is heavy and its
+      // node filled. The scores are equal because the artifact states none.
+      var sr = 132;
+      var rim = [];
+      for (var s = 1; s <= div; s += 1) {
+        var sa = -Math.PI / 2 + ((s - 1) / div) * Math.PI * 2;
+        var sEnd = at(cx, cy, sr, sa);
+        out.push(line(cx, cy, sEnd[0], sEnd[1], s === mark ? 2.2 : 1, s === mark ? 0.8 : 0.2));
+        var sNode = at(cx, cy, sr * 0.62, sa);
+        rim.push(sNode);
+        out.push(
+          s === mark
+            ? circle(sNode[0], sNode[1], 6.5, { width: 2.4, opacity: 0.95 })
+            : circle(sNode[0], sNode[1], 3.2, { hollow: true, width: 1.1, opacity: 0.35 })
+        );
+      }
+      var rimD = "M " + rim[0][0] + " " + rim[0][1];
+      for (var sv = 1; sv < rim.length; sv += 1) rimD += " L " + rim[sv][0] + " " + rim[sv][1];
+      out.push('<path d="' + rimD + ' Z" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.4" ' + STROKE + "/>");
+      out.push(circle(cx, cy, 3, { width: 1.4, opacity: 0.55 }));
+    } else if (family === "arc") {
+      // A single lifted curve with the stages as nodes on it, in listed order.
+      var ax0 = 64;
+      var ax1 = 336;
+      var ayb = 300;
+      var ayt = 96;
+      var curve = function (t) {
+        return [
+          coord(ax0 + (ax1 - ax0) * t),
+          coord(ayb - (ayb - ayt) * (0.92 * Math.sin(Math.PI * t) + 0.08 * t))
+        ];
+      };
+      var arcD = [];
+      for (var tq = 0; tq <= 40; tq += 1) {
+        var cp = curve(tq / 40);
+        arcD.push((tq === 0 ? "M " : "L ") + cp[0] + " " + cp[1]);
+      }
+      out.push('<path d="' + arcD.join(" ") + '" fill="none" stroke="currentColor" stroke-width="2" opacity="0.5" ' + STROKE + "/>");
+      for (var g = 1; g <= div; g += 1) {
+        var gn = curve((g - 0.5) / div);
+        out.push(
+          g === mark
+            ? circle(gn[0], gn[1], 8, { width: 2.8, opacity: 0.95 })
+            : circle(gn[0], gn[1], 3.6, { hollow: true, width: 1.2, opacity: 0.35 })
+        );
+      }
+      out.push(line(ax0, ayb, ax1, ayb, 1.1, 0.22));
+    } else if (family === "tiers") {
+      // Stacked bands with level 1 at the top, so the stack reads downward in
+      // the order the artifact lists its levels.
+      var ty0 = 88;
+      var ty1 = 312;
+      var tgap = 4;
+      var bh = (ty1 - ty0 - tgap * (div - 1)) / div;
+      for (var lv = 1; lv <= div; lv += 1) {
+        var by = ty0 + (lv - 1) * (bh + tgap);
+        out.push(
+          rect(96, coord(by), 208, coord(bh), lv === mark
+            ? { fill: "currentColor", width: 2.2, opacity: 0.86 }
+            : { width: 1.1, opacity: 0.3 })
+        );
+      }
+    } else if (family === "manifest") {
+      // One row per key: a key mark and its line, in the order the schema
+      // declares them. The marked key is the filled row.
+      var my0 = 96;
+      var my1 = 304;
+      var fracs = [0.34, 0.26, 0.3, 0.22, 0.28, 0.32, 0.24, 0.3, 0.26, 0.34, 0.22, 0.28];
+      for (var k = 1; k <= div; k += 1) {
+        var ky = div === 1 ? cy : my0 + ((my1 - my0) * (k - 1)) / (div - 1);
+        var kon = k === mark;
+        out.push(
+          rect(72, coord(ky - 7), 14, 14, kon
+            ? { fill: "currentColor", width: 1.8, opacity: 0.9 }
+            : { width: 1, opacity: 0.28 })
+        );
+        var kw = 288 * fracs[(k - 1) % fracs.length];
+        out.push(line(96, coord(ky), coord(96 + kw), coord(ky), kon ? 3.4 : 1.6, kon ? 0.95 : 0.34));
+      }
+    } else if (family === "facets") {
+      // Identity facets as wedges of one shape; the marked facet is filled.
+      var fr = 132;
+      for (var f = 1; f <= div; f += 1) {
+        var fa0 = -Math.PI / 2 + ((f - 1) / div) * Math.PI * 2;
+        var fa1 = -Math.PI / 2 + (f / div) * Math.PI * 2;
+        var fs = at(cx, cy, fr, fa0);
+        var fe = at(cx, cy, fr, fa1);
+        var flarge = fa1 - fa0 > Math.PI ? 1 : 0;
+        out.push(
+          f === mark
+            ? '<path d="M ' + cx + " " + cy + " L " + fs[0] + " " + fs[1] + " A " + fr + " " + fr +
+              " 0 " + flarge + " 1 " + fe[0] + " " + fe[1] + ' Z" fill="currentColor" opacity="0.85" ' + STROKE + "/>"
+            : '<path d="M ' + cx + " " + cy + " L " + fs[0] + " " + fs[1] + '" fill="none" stroke="currentColor" stroke-width="1.2" opacity="0.32" ' + STROKE + "/>"
+        );
+      }
+      out.push(circle(cx, cy, fr, { hollow: true, width: 1.4, opacity: 0.45 }));
+    } else if (family === "rings") {
+      // Ring 1 is the outer edge and ring `div` the centre; the marked ring is
+      // the heavy one. The numbers are printed in the drawing because "ring 3
+      // of 3" otherwise reads as the outer ring to anyone who has not read the
+      // map: each numeral sits in its own band on the vertical axis, so the
+      // label and the drawing agree without the map.
+      var rmax = 148;
+      var rmin = 22;
+      var rspace = div === 1 ? 0 : (rmax - rmin) / (div - 1);
+      var rsize = div <= 6 ? 18 : Math.max(6.5, Math.min(13, rspace * 0.62));
+      for (var rg = 1; rg <= div; rg += 1) {
+        var rr = div === 1 ? rmax : rmax - rspace * (rg - 1);
+        out.push(
+          circle(cx, cy, coord(rr), rg === mark
+            ? { hollow: true, width: 3.2, opacity: 0.95 }
+            : { hollow: true, width: 1.2, opacity: 0.26 })
+        );
+        var bandMid = rg < div ? rr - rspace / 2 : rmin / 2;
+        out.push(label(cx, coord(cy - bandMid + rsize * 0.35), String(rg), {
+          size: rsize,
+          weight: rg === mark ? 800 : 600,
+          opacity: rg === mark ? 0.95 : 0.62
+        }));
+      }
+    } else if (family === "statement") {
+      // A constrained syntax on one line: one block per clause; the marked
+      // clause is filled and taller. Clause widths vary, so the line reads as
+      // a sentence with slots rather than a row of equal cells.
+      var frac = [1.4, 0.9, 1.2, 1, 1.1, 0.8, 1.3, 0.95, 1.15, 1, 1.05, 0.85];
+      var sgaps = 10;
+      var avail = 288 - sgaps * (div - 1);
+      var total = 0;
+      for (var tf = 0; tf < div; tf += 1) total += frac[tf % frac.length];
+      var unit = avail / total;
+      var sx2 = 56;
+      for (var cl = 1; cl <= div; cl += 1) {
+        var cw2 = frac[(cl - 1) % frac.length] * unit;
+        var con = cl === mark;
+        out.push(
+          rect(coord(sx2), con ? 184 : 190, coord(cw2), con ? 32 : 20, con
+            ? { fill: "currentColor", width: 2, opacity: 0.85 }
+            : { width: 1.1, opacity: 0.32 })
+        );
+        sx2 += cw2 + sgaps;
+      }
+      out.push(line(48, 224, 352, 224, 1.1, 0.2));
+    } else if (family === "network") {
+      // Nodes with a hub and ring links; the marked node is the heavy one.
+      var nr = 122;
+      var nodes = [];
+      for (var nd = 1; nd <= div; nd += 1) {
+        nodes.push(at(cx, cy, nr, -Math.PI / 2 + ((nd - 1) / div) * Math.PI * 2));
+      }
+      for (var h = 0; h < nodes.length; h += 1) {
+        out.push(line(cx, cy, nodes[h][0], nodes[h][1], 1, 0.18));
+      }
+      for (var e2 = 0; e2 < nodes.length; e2 += 1) {
+        var nx = nodes[(e2 + 1) % nodes.length];
+        out.push(line(nodes[e2][0], nodes[e2][1], nx[0], nx[1], 1, 0.22));
+      }
+      for (var v = 0; v < nodes.length; v += 1) {
+        out.push(
+          v === mark - 1
+            ? circle(nodes[v][0], nodes[v][1], 9, { width: 2.8, opacity: 0.95 })
+            : circle(nodes[v][0], nodes[v][1], 5, { hollow: true, width: 1.2, opacity: 0.35 })
+        );
+      }
+      out.push(circle(cx, cy, 3.5, { width: 1.4, opacity: 0.55 }));
+    } else {
+      // An unknown family still reads all three knobs, so a misspelling cannot
+      // declare parameters this shape ignores.
+      out.push(rect(56, 56, 288, 288, { rx: 6, width: 1.6, opacity: 0.5 }));
+      for (var u = 0; u < div; u += 1) {
+        var ux = 56 + (288 * (u + 0.5)) / div;
+        out.push(line(coord(ux), 56, coord(ux), 66, 1.4, 0.4));
+      }
+      out.push(circle(coord(56 + (288 * mark) / div), 200, 8, { width: 1.6, opacity: 0.7 }));
+    }
+    return out.join("");
+  };
+
   function renderSvg(metaphor) {
     if (!metaphor || !metaphor.svgShape) {
       throw new Error("graphicMetaphor.svgShape is required");

@@ -1,0 +1,495 @@
+{
+  "note": "Checkpoint two: family, divisions, mark and the printed label are fixed together here, before the figure shape is drawn. The label is the card's schematic line: '<Family> at <unit> <mark> of <divisions>'. The basis is a verbatim substring of that card's own record, naming the phrase that fixes the position; it never comes from another card.",
+  "families": {
+    "ledger": "ordered parts or columns; the marked part is the one at that position in the order the artifact lists them",
+    "matrix": "cells of a two-axis grid; the marked cell is the one at that position, read row by row from the top-left",
+    "axes": "a set of axes or a multi-position continuum; the marked axis is the one at that position in the artifact's order",
+    "score": "several dimensions scored; the marked dimension is the one at that position in the artifact's order",
+    "arc": "ordered stages; the marked stage is the one at that position in the artifact's order",
+    "tiers": "stacked levels; the marked level is the one at that position in the artifact's order",
+    "manifest": "a schema's layers or keys; the marked key is the one at that position in the artifact's order",
+    "facets": "a set of facets; the marked facet is the one at that position in the artifact's order",
+    "rings": "concentric rings numbered from the outer edge inward; the marked ring is the one at that position",
+    "statement": "a constrained syntax; the marked clause is the one at that position in the statement",
+    "network": "nodes with links; the marked node is the one at that position in the artifact's order"
+  },
+  "numbering": "Every family numbers what its artifact lists, in the artifact's own order. The single exception is rings, which are numbered geometrically from the outer edge inward, because one concentric shape cannot be numbered two ways: BRA-08's artifact lists its centre fifth and BRA-22's lists its centre first, and both centres are the ring the card marks.",
+  "units": {
+    "ledger": "part",
+    "matrix": "cell",
+    "axes": "axis",
+    "score": "dimension",
+    "arc": "stage",
+    "tiers": "level",
+    "manifest": "key",
+    "facets": "facet",
+    "rings": "ring",
+    "statement": "clause",
+    "network": "node"
+  },
+  "sizeRule": "Diagnostic size is set from the question's measured length: 115 characters or fewer at 9 pt, 136 or fewer at 8.5, 166 or fewer at 8, longer at 7.5. Every card's front is measured at its assigned size before the deck ships.",
+  "map": {
+    "BRA-01": {
+      "family": "ledger",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Ledger at part 1 of 5",
+      "diagnosticSize": 7.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Competitive Alternatives"
+      }
+    },
+    "BRA-02": {
+      "family": "facets",
+      "divisions": 6,
+      "mark": 1,
+      "label": "Facets at facet 1 of 6",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Physique"
+      }
+    },
+    "BRA-03": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Tiers at level 1 of 4",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Salience"
+      }
+    },
+    "BRA-04": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 4,
+      "label": "Matrix at cell 4 of 4",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Eliminate-Reduce-Raise-Create (ERRC)"
+      }
+    },
+    "BRA-05": {
+      "family": "ledger",
+      "divisions": 9,
+      "mark": 9,
+      "label": "Ledger at part 9 of 9",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Brand Essence"
+      }
+    },
+    "BRA-06": {
+      "family": "axes",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Axes at axis 1 of 3",
+      "diagnosticSize": 7.5,
+      "basis": {
+        "field": "diagnostic",
+        "quote": "Operational Excellence"
+      }
+    },
+    "BRA-07": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Ledger at part 1 of 3",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Top-of-Mind Category Leader"
+      }
+    },
+    "BRA-08": {
+      "family": "rings",
+      "divisions": 5,
+      "mark": 5,
+      "label": "Rings at ring 5 of 5",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "central Brand Essence"
+      }
+    },
+    "BRA-09": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Tiers at level 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Core Values"
+      }
+    },
+    "BRA-10": {
+      "family": "statement",
+      "divisions": 6,
+      "mark": 1,
+      "label": "Statement at clause 1 of 6",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "For [target customer segment]"
+      }
+    },
+    "BRA-11": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "push of the current situation"
+      }
+    },
+    "BRA-12": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 9,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Primary Archetype"
+      }
+    },
+    "BRA-13": {
+      "family": "score",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Score at dimension 1 of 5",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Sincerity"
+      }
+    },
+    "BRA-14": {
+      "family": "axes",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Axes at axis 1 of 4",
+      "diagnosticSize": 9,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Funny ↔ Serious"
+      }
+    },
+    "BRA-15": {
+      "family": "score",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Score at dimension 1 of 3",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Personality Favorability"
+      }
+    },
+    "BRA-16": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Ledger at part 2 of 3",
+      "diagnosticSize": 7.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "potential shadow state"
+      }
+    },
+    "BRA-17": {
+      "family": "score",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Score at dimension 1 of 5",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Openness to Experience"
+      }
+    },
+    "BRA-18": {
+      "family": "ledger",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Ledger at part 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Trait Name"
+      }
+    },
+    "BRA-19": {
+      "family": "axes",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Axes at axis 1 of 2",
+      "diagnosticSize": 9,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Deeply Technical"
+      }
+    },
+    "BRA-20": {
+      "family": "facets",
+      "divisions": 6,
+      "mark": 1,
+      "label": "Facets at facet 1 of 6",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Love/Passion"
+      }
+    },
+    "BRA-21": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Primary Assertion"
+      }
+    },
+    "BRA-22": {
+      "family": "rings",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Rings at ring 3 of 3",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Why (the foundational cause or conviction)"
+      }
+    },
+    "BRA-23": {
+      "family": "arc",
+      "divisions": 7,
+      "mark": 1,
+      "label": "Arc at stage 1 of 7",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Protagonist"
+      }
+    },
+    "BRA-24": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Tiers at level 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "enduring reason for being"
+      }
+    },
+    "BRA-25": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Ledger at part 1 of 3",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "systemic adversary"
+      }
+    },
+    "BRA-26": {
+      "family": "arc",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Arc at stage 1 of 5",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Name an Undeniable Shift in the World"
+      }
+    },
+    "BRA-27": {
+      "family": "arc",
+      "divisions": 7,
+      "mark": 1,
+      "label": "Arc at stage 1 of 7",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Character"
+      }
+    },
+    "BRA-28": {
+      "family": "arc",
+      "divisions": 12,
+      "mark": 5,
+      "label": "Arc at stage 5 of 12",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Crossing the Threshold"
+      }
+    },
+    "BRA-29": {
+      "family": "arc",
+      "divisions": 8,
+      "mark": 2,
+      "label": "Arc at stage 2 of 8",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Inciting Incident"
+      }
+    },
+    "BRA-30": {
+      "family": "ledger",
+      "divisions": 4,
+      "mark": 3,
+      "label": "Ledger at part 3 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Our Contrarian Stance"
+      }
+    },
+    "BRA-31": {
+      "family": "ledger",
+      "divisions": 5,
+      "mark": 2,
+      "label": "Ledger at part 2 of 5",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Trial of the Founder"
+      }
+    },
+    "BRA-32": {
+      "family": "axes",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Axes at axis 3 of 3",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Transformed Aspirational Identity"
+      }
+    },
+    "BRA-33": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Automatic (High Fame / High Uniqueness)"
+      }
+    },
+    "BRA-34": {
+      "family": "score",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Score at dimension 1 of 2",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "mental metrics (salience, cue ownership)"
+      }
+    },
+    "BRA-35": {
+      "family": "network",
+      "divisions": 5,
+      "mark": 1,
+      "label": "Network at node 1 of 5",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Why, When, Where"
+      }
+    },
+    "BRA-36": {
+      "family": "score",
+      "divisions": 2,
+      "mark": 1,
+      "label": "Score at dimension 1 of 2",
+      "diagnosticSize": 7.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Affective Valence"
+      }
+    },
+    "BRA-37": {
+      "family": "axes",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Axes at axis 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Master Brands"
+      }
+    },
+    "BRA-38": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 2,
+      "label": "Manifest at key 2 of 3",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "semantic aliases"
+      }
+    },
+    "BRA-39": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Manifest at key 1 of 3",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "tone boundaries"
+      }
+    },
+    "BRA-40": {
+      "family": "manifest",
+      "divisions": 3,
+      "mark": 1,
+      "label": "Manifest at key 1 of 3",
+      "diagnosticSize": 8,
+      "basis": {
+        "field": "diagnostic",
+        "quote": "strategic positioning"
+      }
+    },
+    "BRA-41": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 3,
+      "label": "Ledger at part 3 of 3",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "corrective actions"
+      }
+    },
+    "BRA-42": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1,
+      "label": "Matrix at cell 1 of 4",
+      "diagnosticSize": 8.5,
+      "basis": {
+        "field": "artifactFull",
+        "quote": "Visual assets"
+      }
+    }
+  }
+}

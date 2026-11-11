@@ -1,0 +1,31 @@
+{
+  "id": "BRA-18",
+  "sourceCardNo": 18,
+  "name": "The Brand Voice Compass & Sliders",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "What specific lexical, structural, and grammatical rules define each of our brand personality traits in practical writing?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 1 of 4",
+  "artifact": [
+    "Trait Name",
+    "Positive Definition: what the trait actively is",
+    "Negative Boundary: what it must never become",
+    "Side-by-side \"Use This / Avoid That\" copy examples"
+  ],
+  "trap": "Listing broad adjectives — Bold, Smart, Human — with no boundaries, leaving copywriters nothing to act on.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Modern verbal identity systems practice (derived from digital design system and docs-as-code methodologies).",
+  "artifactFull": "A Verbal Compass & Governance Guide defining:  \n  - Trait Name  \n  - Positive Definition (what the trait actively is)  \n  - Negative Boundary (what the trait must never become)  \n  - Side-by-side \"Use This / Avoid That\" copy examples.",
+  "trapFull": "Listing broad tonal adjectives (such as \"Bold,\" \"Smart,\" or \"Human\") without defining concrete boundaries, leaving copywriters without actionable constraints."
+}

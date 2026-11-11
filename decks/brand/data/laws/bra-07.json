@@ -1,0 +1,28 @@
+{
+  "id": "BRA-07",
+  "sourceCardNo": 7,
+  "name": "Trout & Ries Positioning & Category Law",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "What single word, category rung, or pre-existing cognitive bias does our brand own to the exclusion of all competitors?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 1 of 3",
+  "artifact": [
+    "A Category Ladder Ledger detailing: the Top-of-Mind Category Leader, the Antithetical Second-Rung Position (the \"un-leader\"), and a Singular Word Association Register."
+  ],
+  "trap": "Diluting a focused mental position by stretching the brand name across unrelated market segments and products.",
+  "origin": {
+    "line": "Al Ries & Jack Trout (1981)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Al Ries & Jack Trout (*Positioning: The Battle for Your Mind*, 1981). The foundational media-era advertising framework that defines positioning as the cognitive ownership of a singular idea in the mind of the prospect.",
+  "artifactFull": "A Category Ladder Ledger detailing: the Top-of-Mind Category Leader, the Antithetical Second-Rung Position (the \"un-leader\"), and a Singular Word Association Register.",
+  "trapFull": "Diluting a focused mental position by stretching the brand name across unrelated market segments and products."
+}

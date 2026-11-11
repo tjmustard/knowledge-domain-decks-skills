@@ -1,0 +1,29 @@
+{
+  "id": "BRA-30",
+  "sourceCardNo": 30,
+  "name": "Alex M. H. Smith’s Contrarian Worldview Framing",
+  "pillar": "Core Narrative & Purpose Systems",
+  "kicker": "Narrative",
+  "diagnostic": "What widely accepted industry best practice does our brand reject, and what distinct business model do we employ instead?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 3 of 4",
+  "artifact": [
+    "A Contrarian Doctrine Specification: The Industry Consensus → Why the Consensus Fails → Our Contrarian Stance → The Asymmetric Advantage Unlocked."
+  ],
+  "trap": "Choosing a pseudo-contrarian platitude everyone already accepts — customers first — which removes the strategic edge.",
+  "origin": {
+    "line": "Alex M. H. Smith (2020)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 4,
+      "mark": 3
+    }
+  },
+  "pedigreeFull": "Alex M. H. Smith (*No Bullsh*t Strategy*, 2020).",
+  "artifactFull": "A Contrarian Doctrine Specification detailing: The Industry Consensus → Why the Consensus Fails → Our Contrarian Stance → The Asymmetric Advantage Unlocked.",
+  "trapFull": "Selecting a pseudo-contrarian platitude that is actually universally accepted (e.g., \"We believe in putting customers first\"), removing any strategic edge.",
+  "sourceNote": "The source's pedigree carries one appositive naming the commercial card deck this source is built around. That appositive is removed and the rest prints verbatim; this is the only text the deck removes from the source, and the omission is recorded in the inventory and DECISIONS."
+}

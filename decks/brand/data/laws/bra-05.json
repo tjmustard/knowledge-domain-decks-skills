@@ -1,0 +1,28 @@
+{
+  "id": "BRA-05",
+  "sourceCardNo": 5,
+  "name": "Unilever Brand Key",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "What foundational root strengths and underlying human insights give the brand the commercial authority to claim its core discriminator?",
+  "diagnosticSize": 8.5,
+  "schematic": "Ledger at part 9 of 9",
+  "artifact": [
+    "The 9-Element Brand Key Blueprint: Root Strength → Competitive Environment → Target Audience → Human Insight → Benefits (Functional & Emotional) → Values & Personality → Reasons to Believe (RTB) → Discriminator → Brand Essence."
+  ],
+  "trap": "Writing the Human Insight as an obvious functional observation instead of the underlying psychological tension.",
+  "origin": {
+    "line": "Unilever Global Marketing Practice (c. 1995)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 9,
+      "mark": 9
+    }
+  },
+  "pedigreeFull": "Unilever Global Marketing Practice (developed c. 1995). A standardized model deployed across multinational consumer brands to maintain strategic discipline across global agency rosters.",
+  "artifactFull": "The 9-Element Brand Key Blueprint: Root Strength → Competitive Environment → Target Audience → Human Insight → Benefits (Functional & Emotional) → Values & Personality → Reasons to Believe (RTB) → Discriminator → Brand Essence.",
+  "trapFull": "Formulating the \"Human Insight\" as an obvious functional observation (e.g., \"developers want faster builds\") rather than uncovering the underlying psychological tension."
+}

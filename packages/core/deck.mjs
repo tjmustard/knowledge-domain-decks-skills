@@ -314,6 +314,13 @@ export function withCitation(card, deck) {
   // prepare, and adding a key named "undefined" would be worse than nothing.
   if (!shape.fields.attribution) return { ...card };
   const origin = shape.attribution(card);
+  // An origin may carry one whole attribution line instead of its parts: the
+  // wording the source's own pedigree gives, printed as written. It needs no
+  // computed joins, and adding authorsLabel/titleStop for the absent parts
+  // would hand a renderer two empty strings it could print by mistake.
+  if (typeof origin.line === "string") {
+    return { ...card, [shape.fields.attribution]: { ...origin } };
+  }
   const prepared = {
     ...origin,
     authorsLabel: authorsLabel(origin),
@@ -357,6 +364,9 @@ export function sourceShort(origin = {}) {
   if (Array.isArray(origin.works) && origin.works.length > 0) {
     return origin.works.map((work) => sourceShort(work)).join(" ");
   }
+  // A whole line is the attribution as the source's pedigree wrote it; there
+  // is nothing to join.
+  if (typeof origin.line === "string") return origin.line;
   if (!origin.authors && !origin.title && !origin.publication && origin.note) {
     return origin.note;
   }
@@ -378,6 +388,9 @@ export function sourceLine(origin = {}) {
   if (Array.isArray(origin.works) && origin.works.length > 0) {
     return origin.works.map((work) => sourceLine(work)).join(" ");
   }
+  // A whole line is already one attribution sentence; printing it verbatim is
+  // what keeps the source's own wording intact.
+  if (typeof origin.line === "string") return origin.line;
   if (!origin.authors && !origin.title && !origin.publication && origin.note) {
     return origin.note;
   }
@@ -402,6 +415,9 @@ export function citationText(origin = {}) {
   if (Array.isArray(origin.works) && origin.works.length > 0) {
     return origin.works.map((work) => citationText(work)).join(" ");
   }
+  // One line, printed as the source gives it: no parts, no joins, no stop
+  // added.
+  if (typeof origin.line === "string") return origin.line;
   const names = origin.authorsLabel !== undefined ? origin.authorsLabel : authorsLabel(origin);
   const stop = origin.titleStop !== undefined ? origin.titleStop : titleStop(origin.title);
   if (origin.note && !names && !origin.title && !origin.publication) return origin.note;

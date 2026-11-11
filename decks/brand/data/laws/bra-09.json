@@ -1,0 +1,28 @@
+{
+  "id": "BRA-09",
+  "sourceCardNo": 9,
+  "name": "The Brand Onion Model",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "How do our daily visual and verbal touchpoints connect directly back to our non-negotiable core values and foundational convictions?",
+  "diagnosticSize": 8.5,
+  "schematic": "Tiers at level 1 of 4",
+  "artifact": [
+    "A Multi-Tiered Behavioral Onion Map: Core Values → Brand Essence → Character & Positioning → External Expressions and Manifestations."
+  ],
+  "trap": "Treating the outer behavioral layer as a styling exercise while leaving the core values too broad to guide real business trade-offs.",
+  "origin": {
+    "line": "Consumer Goods Strategy Practice (1990s)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "tiers",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Consumer Goods Strategy Practice (1990s). A diagnostic system that peels back organizational layers to reveal the enduring core identity beneath external marketing expressions.",
+  "artifactFull": "A Multi-Tiered Behavioral Onion Map: Core Values → Brand Essence → Character & Positioning → External Expressions and Manifestations.",
+  "trapFull": "Treating the outer behavioral layer as a styling exercise while leaving the core values too broad to guide real business trade-offs."
+}

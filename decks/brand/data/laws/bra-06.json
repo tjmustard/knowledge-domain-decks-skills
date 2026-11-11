@@ -1,0 +1,28 @@
+{
+  "id": "BRA-06",
+  "sourceCardNo": 6,
+  "name": "Treacy & Wiersema’s Value Disciplines",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "Are we positioned primarily around Operational Excellence (cost, reliability, efficiency), Product Leadership (continuous innovation, status), or Customer Intimacy (tailored flexibility, relationship depth)?",
+  "diagnosticSize": 7.5,
+  "schematic": "Axes at axis 1 of 3",
+  "artifact": [
+    "A Value Trilemma Optimization Map establishing a primary operational focus alongside non-negotiable performance thresholds for the other two disciplines."
+  ],
+  "trap": "Promising market-leading craftsmanship, lowest category pricing, and bespoke personalization simultaneously, which confuses operational priorities.",
+  "origin": {
+    "line": "Michael Treacy & Fred Wiersema (1993)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "axes",
+      "divisions": 3,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Michael Treacy & Fred Wiersema (*The Discipline of Market Leaders*, 1993; Harvard Business Review). A corporate strategy framework asserting that market leaders optimize for exactly one operating dimension while maintaining baseline thresholds in the remaining two.",
+  "artifactFull": "A Value Trilemma Optimization Map establishing a primary operational focus alongside non-negotiable performance thresholds for the other two disciplines.",
+  "trapFull": "Promising market-leading craftsmanship, lowest category pricing, and bespoke personalization simultaneously, which confuses operational priorities."
+}

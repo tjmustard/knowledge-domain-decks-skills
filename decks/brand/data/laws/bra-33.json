@@ -1,0 +1,32 @@
+{
+  "id": "BRA-33",
+  "sourceCardNo": 33,
+  "name": "Romaniuk’s Distinctive Brand Asset (DBA) Grid",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "What proportion of market buyers correctly associate our non-logo assets with our brand, and what proportion mistakenly attribute them to a competitor?",
+  "diagnosticSize": 8,
+  "schematic": "Matrix at cell 1 of 4",
+  "artifact": [
+    "Two axes: Fame (share of buyers linking the asset to the brand) and Uniqueness (share associating it only with the brand).",
+    "*Automatic* (high fame / high uniqueness): strong enough to replace the logo.",
+    "*Investment Potential* (low fame / high uniqueness): needs broad media reinforcement.",
+    "*Avoid Solo Use* (high fame / low uniqueness): prompts competitor recall alone.",
+    "*Ignore or Test* (low fame / low uniqueness): drains marketing resources."
+  ],
+  "trap": "Redesigning established assets because the internal team is bored, which destroys earned market memory.",
+  "origin": {
+    "line": "Jenni Romaniuk & Byron Sharp (2018)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "matrix",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Jenni Romaniuk & Byron Sharp (Ehrenberg-Bass Institute; *Building Distinctive Brand Assets*, 2018).",
+  "artifactFull": "A 4-Quadrant DBA Resource Matrix categorizing non-logo brand assets across two empirical axes: Fame (% of buyers who link the asset to the brand) and Uniqueness (% of responses that associate the asset exclusively with the brand):  \n  - *Automatic (High Fame / High Uniqueness):* Assets strong enough to replace the logo entirely.  \n  - *Investment Potential (Low Fame / High Uniqueness):* Assets requiring broad media reinforcement.  \n  - *Avoid Solo Use (High Fame / Low Uniqueness):* Assets that prompt competitor recall if used alone.  \n  - *Ignore or Test (Low Fame / Low Uniqueness):* Low-value assets that drain marketing resources.",
+  "trapFull": "Redesigning well-established brand assets simply because internal creative teams have grown bored with them, destroying hard-earned market memory structures."
+}

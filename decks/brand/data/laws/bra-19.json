@@ -1,0 +1,29 @@
+{
+  "id": "BRA-19",
+  "sourceCardNo": 19,
+  "name": "Dialectical Tonal Polarity Matrix",
+  "pillar": "Archetypes & Brand Personality",
+  "kicker": "Personality",
+  "diagnostic": "What opposing behavioral tensions must our brand balance to avoid collapsing into a flat, predictable stereotype?",
+  "diagnosticSize": 9,
+  "schematic": "Axes at axis 1 of 2",
+  "artifact": [
+    "Trait tensions: *Deeply Technical* yet *Instantly Plainspoken*; *Pragmatic and Grounded* yet *Uncompromisingly Visionary*.",
+    "Calibration bounds marking the point where each extreme turns destructive."
+  ],
+  "trap": "Resolving the tension by softening both sides toward a bland middle ground, erasing distinctiveness.",
+  "origin": {
+    "note": "The source names no originator."
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "axes",
+      "divisions": 2,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Dialectical philosophy applied to communications architecture, establishing brand identity through the dynamic resolution of opposing traits.",
+  "artifactFull": "A Dialectical Tonal Guardrail Matrix:  \n  - Trait Tensions: e.g., *Deeply Technical* yet *Instantly Plainspoken*; *Pragmatic and Grounded* yet *Uncompromisingly Visionary*.  \n  - Operational calibration bounds marking the points where each extreme turns destructive.",
+  "trapFull": "Resolving the tension by softening both sides toward a bland middle ground, erasing distinctiveness."
+}

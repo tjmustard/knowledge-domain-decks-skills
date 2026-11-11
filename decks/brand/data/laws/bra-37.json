@@ -1,0 +1,28 @@
+{
+  "id": "BRA-37",
+  "sourceCardNo": 37,
+  "name": "Brand Relationship Spectrum",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Where does each product in our portfolio sit on the spectrum between a monolithic Branded House and an independent House of Brands?",
+  "diagnosticSize": 8.5,
+  "schematic": "Axes at axis 1 of 4",
+  "artifact": [
+    "A 4-Model Architectural Continuum Ledger defining Master Brands, Sub-Brands, Endorsed Brands, and House of Brands assets, detailing how equity transfers between products."
+  ],
+  "trap": "Creating an uncoordinated House of Brands architecture at startup scale, fragmenting engineering focus and marketing budgets.",
+  "origin": {
+    "line": "David A. Aaker & Erich Joachimsthaler (2000)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "axes",
+      "divisions": 4,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "David A. Aaker & Erich Joachimsthaler (*Brand Leadership*, 2000).",
+  "artifactFull": "A 4-Model Architectural Continuum Ledger defining Master Brands, Sub-Brands, Endorsed Brands, and House of Brands assets, detailing how equity transfers between products.",
+  "trapFull": "Creating an uncoordinated House of Brands architecture at startup scale, fragmenting engineering focus and marketing budgets."
+}

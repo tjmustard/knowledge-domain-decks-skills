@@ -1,0 +1,29 @@
+{
+  "id": "BRA-35",
+  "sourceCardNo": 35,
+  "name": "Category Entry Points (CEPs) Mapping",
+  "pillar": "Distinctive Assets, Coherence & Economic Moats",
+  "kicker": "Assets",
+  "diagnostic": "Across all the discrete situations, emotional states, and environments that trigger category purchases, how many mental pathways connect to our brand?",
+  "diagnosticSize": 8,
+  "schematic": "Network at node 1 of 5",
+  "artifact": [
+    "A Cognitive Retrieval Network Map of the contextual triggers — Why, When, Where, With Whom, and With What buyers enter the market — paired with competitive ownership scores for each node."
+  ],
+  "trap": "Concentrating brand messaging on a single niche entry point, which artificially caps market penetration.",
+  "origin": {
+    "line": "Jenni Romaniuk & Byron Sharp (2016)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "network",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Jenni Romaniuk & Byron Sharp (Ehrenberg-Bass Institute, 2016).",
+  "artifactFull": "A 7-W Cognitive Retrieval Network Map documenting the contextual triggers: Why, When, Where, With Whom, and With What buyers enter the market, paired with competitive ownership scores for each node.",
+  "trapFull": "Concentrating brand messaging on a single niche entry point, which artificially caps market penetration.",
+  "sourceNote": "The source calls this map 7-W and lists five Ws; the card prints the five the source lists and invents no more."
+}

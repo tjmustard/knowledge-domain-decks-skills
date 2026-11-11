@@ -1,0 +1,28 @@
+{
+  "id": "BRA-02",
+  "sourceCardNo": 2,
+  "name": "Kapferer’s Brand Identity Prism",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "How do our external physical codes and relational behaviors mirror the internal culture of our organization and the aspirational self-image of our buyer?",
+  "diagnosticSize": 8,
+  "schematic": "Facets at facet 1 of 6",
+  "artifact": [
+    "A six-facet identity prism: Physique, Personality, Culture, Relationship, Reflection, Self-Image."
+  ],
+  "trap": "An identity built entirely on Reflection: customer-pandering marketing with no operational or cultural grounding.",
+  "origin": {
+    "line": "Jean-Noël Kapferer (1992)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "facets",
+      "divisions": 6,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "Jean-Noël Kapferer (*Strategic Brand Management*, 1992). An academic formulation asserting that a brand exists as a hexagonal prism balanced along externalization-internalization and sender-receiver axes.",
+  "artifactFull": "A Hexagonal Identity Prism Matrix articulating six structural facets: Physique (visual and physical cues), Personality (character profile), Culture (ideological values), Relationship (mode of interaction), Reflection (perceived target customer), and Self-Image (the customer's internal identity affirmation).",
+  "trapFull": "Constructing an identity focused entirely on \"Reflection,\" creating customer-pandering marketing that lacks internal operational or cultural grounding."
+}

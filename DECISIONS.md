@@ -2676,3 +2676,119 @@ used, so the new token was produced by the other one. The recorded token is
 now the hex join, matching ideation (`74d0bd5d`) and copywriting (`b404676b`),
 whose figures are quoted as the build record and were left alone; §62 states
 the rule.
+
+## 69. The brand deck prints the question, the artifact and the anti-pattern, and three rules hold across every card
+
+The brand deck ships forty-two frameworks in the four pillars the source's
+section headings declare - eleven, ten, eleven and ten - as 42 records validated
+against `decks/brand/data/law-schema.json`. The front prints the source's Brand
+Alignment Diagnostic verbatim at a per-card size, the figure and the map's
+schematic line; the back prints the artifact as the source's own lines, the
+compressed anti-pattern and one attribution line. The source's Framework
+Pedigree, Concrete Artifact and Anti-Pattern are `"card": false` `verbatim`
+blocks printed in `rules/brand-rules.md` and the pillar resource. The artifact
+prints with block style `lines` because a ledger, a prism and a brandscript are
+lists or prose, and the source's own line structure is the artifact: a short form
+that joined them would print a paragraph where the reader needs columns.
+
+**Three rules are deck-wide, not drawing defaults.** They are stated in the
+layout map and here, so an acceptance reader does not have to open `data/`:
+
+1. *The figure claims position, not importance.* Divisions are numbered in the
+   order the card's artifact lists them, and the mark is the listed position.
+   BRA-03 marks salience at level 1 because the artifact names it first, and
+   BRA-24 marks purpose at level 1 for the same reason; neither drawing claims
+   the marked level is the foundation the others stand on.
+2. *Rings are numbered from the outer edge inward.* One concentric shape cannot
+   be numbered two ways, and the source's two rings cards list their centres in
+   opposite positions: BRA-08 moves inward from physical attributes to a fifth
+   central essence, BRA-22 names Why first. BRA-08's centre is ring 5 of 5 and
+   BRA-22's is ring 3 of 3. The drawing prints the numerals in their own bands,
+   so a reader who has not opened the map reads the label and the picture the
+   same way.
+3. *The front's size is fixed from the question's measured length*: 115
+   characters or fewer at 9 pt, 136 at 8.5, 166 at 8, longer at 7.5, which lands
+   3/19/16/4 cards. The rule was declared before any front was measured; every
+   front was then measured at its assigned size, and none had to move. If one
+   fails later, it is raised and reported, never re-cut.
+
+Two rows changed at checkpoint two and both are recorded. BRA-18 moved from
+`axes` to `ledger`: its artifact is four definition columns with Trait Name
+first, and a continuum would have been a drawing the text does not support.
+BRA-22's mark moved from 1 to 3 under the rings rule. The eleven families land
+ledger 9, matrix 6, axes 5, score 5, arc 5, tiers 3, manifest 3, facets 2, rings
+2, statement 1, network 1; no family was merged. The map was fixed before
+`brand-figure` was drawn, and every row's basis is a verbatim phrase from that
+card's own record.
+
+**Attribution has two tiers and no third.** Thirty-nine cards print the line the
+source's own pedigree gives - a person, a pair, an agency, a standards group, a
+named project or a named practice - with the year the source gives and no work
+title added. Three name nobody and print "The source names no originator."
+(BRA-18, 19, 23). The schema's `origin` permits `line` or `note` and nothing
+else, so a record cannot acquire an author, year, title or publication and still
+validate. `origin.line` is a new engine case: `withCitation`, `sourceShort`,
+`sourceLine`, `citationText` and the print template's `citation-line` print the
+line whole, and every function is inert when no line is present, which the
+eleven earlier decks' byte-identical PDFs demonstrate rather than assert. The
+source disagrees with itself on three originators - the taxonomy matrix names
+Unilever Strategy Group, Brand Governance Practice and Macrae & Uncles where cards
+05, 41 and 08 name otherwise - and each card keeps its own pedigree, because the
+card is the record; the pattern is recorded rather than resolved.
+
+**The checkpoint-two condition, applied.** The map was accepted with one
+condition on the rings family: print the ring numbers in the drawing, outer edge
+inward, 1..5, because "Rings at ring 3 of 3" reads as the outer ring to anyone
+who has not read the map. Every ring now prints its number in its own band, sized
+from the band spacing (18 point when a card has six rings or fewer, otherwise
+62% of the spacing, floored at 6.5 and capped at 13), and the generated label is
+unchanged. Drawing the numerals changed the two rings cards, so the shipped
+figures are the post-condition ones: the 84-page PDF measures 391,470 bytes at
+sha256 `0224a67d…`, and the forty-two SVGs hash to `c3adfecd…` (60,201 bytes) in
+`cards.json` order under the declared hex join. One defect the gate caught is
+recorded with the change: `packages/web/app.js` holds the viewer's own copy of
+the citation rule, and it did not know the `line` case, so the bundle printed an
+empty source line while the index printed the record's - `check:web` failed on
+BRA-01 ("April Dunford (2019)" against "''") and the viewer now returns
+`origin.line` whole, in the same place the print template does. Index and card
+agree per card only because both read the line; a second copy of a rule is a
+second place for it to be wrong, and this was the one place.
+
+**The leak map, corrected.** I first reported the two names as sharing one line
+list, and wrote the commercial deck's name as occurring on line 316; both were
+wrong. Measured per line at the source, the two names do not share a list: the
+commercial deck's name has four occurrences on three lines (the opening, footnote
+2, and footnote 5 twice), and the source folder's name has four on four lines
+(the opening, card 30's appositive, footnotes 1 and 2). The union is five
+locations; four per name was true and the "four locations" I inferred from it
+was false. The lowercase slugs in the footnotes occur twice for each name, so the
+guard matches case-insensitively, and it counts occurrences rather than lines
+because footnote 5 carries the commercial name twice on one line - a line count
+would read 3. Card 30's appositive is the only text the deck removes; it is
+recorded on the card's source note and in the inventory, and the rules and
+resource print the rest of the pedigree verbatim.
+
+**Card 21 and the rendering table.** Twelve cards carry markdown escapes in
+printed fields - arrows, the positioning template's brackets, an escaped
+asterisk, parentheses and `\+` - and card 21 carries escaped LaTeX in its
+semiotic square. `decks/brand/data/render.mjs` is the declared table: an arrow
+prints as `→` or `↔`, `\sim` as `~`, each escape as its character, and an
+undeclared backslash is left in place rather than guessed at. Card 21's four
+corners print as S1, S2, ~ S1 and ~ S2. The card's short artifact keeps the
+source's spacing around the tilde: an earlier draft dropped it, which changed
+the notation the source writes, and the inventory's artifact line was corrected
+to the source's spacing before the records were rebuilt - the digest moved from
+`97ea45c4…` to `a19876f6…` for that one line and nothing else. The schema's
+field descriptions carry the measured ranges they are built on: names 18-57,
+diagnostics 106-207, artifacts 1-6 lines and 92-436 characters, traps 82-147,
+pedigrees 48-276, full artifacts 125-639, full traps 82-224. The pedigree floor
+admits card 30's redacted 48 characters rather than padding text the deck
+removed; the artifact description's opening clause was rewritten because the
+first draft was ungrammatical, which is a documentation fix and not a bound that
+moved.
+
+**One deviation is open.** The mission forbids any test reading the read-only
+research folder. This deck's tests do not, and the guard asserts it. The
+archetypes deck's test still reads its own source file when that folder is
+present; that predates this slice, is outside its one concern, and is recorded
+here so it is not mistaken for a property the whole suite holds.

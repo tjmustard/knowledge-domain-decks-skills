@@ -1,0 +1,28 @@
+{
+  "id": "BRA-01",
+  "sourceCardNo": 1,
+  "name": "Dunford’s 5-Component Positioning Framework",
+  "pillar": "Positioning & Market Differentiation",
+  "kicker": "Positioning",
+  "diagnostic": "If our solution ceased to exist tomorrow, what specific alternatives would customers use, and what distinct value do our unique capabilities deliver over those alternatives?",
+  "diagnosticSize": 7.5,
+  "schematic": "Ledger at part 1 of 5",
+  "artifact": [
+    "A 5-column positioning ledger: Competitive Alternatives → Unique Capabilities → Quantified Value Drivers → Ideal Customer Profile (ICP) Segments → Category Framing."
+  ],
+  "trap": "Declaring that no direct competitors exist, or positioning into ill-defined space, deprives buyers of an evaluative frame.",
+  "origin": {
+    "line": "April Dunford (2019)"
+  },
+  "figure": {
+    "svgShape": "brand-figure",
+    "parametricParams": {
+      "family": "ledger",
+      "divisions": 5,
+      "mark": 1
+    }
+  },
+  "pedigreeFull": "April Dunford (*Obviously Awesome*, 2019). Developed within enterprise technology product marketing to break corporate over-reliance on aspirational vision statements by grounding positioning in actual customer behavior.",
+  "artifactFull": "A 5-Column Positioning Ledger mapping Competitive Alternatives → Unique Capabilities → Quantified Value Drivers → Ideal Customer Profile (ICP) Segments → Category Framing.",
+  "trapFull": "Declaring that \"no direct competitors exist\" or positioning into expansive, ill-defined spaces (e.g., \"the intelligent enterprise layer\"), depriving buyers of an evaluative frame of reference."
+}
