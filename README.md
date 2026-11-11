@@ -908,6 +908,16 @@ npm run triage -- --report .judges/<run>/report.json \
 npm run test:triage     # offline tests for the adjudication join
 ```
 
+### Measuring diagram labels (opt-in)
+
+`node scripts/measure-labels.mjs` re-derives the label figures in `DECISIONS.md`
+§30. It measures every `<text>` element in headless Chrome with the vendored
+face, prints each label's width and its clearance to the 400-unit box, and exits
+1 naming the label, its width and the edge it crosses if one overruns. It needs
+Chrome and is not a gate: nothing in `npm test`, `npm run accept` or CI calls
+it, and no measurement output is committed. Without Chrome it prints the reason
+and exits 2, rather than reporting an empty pass.
+
 `npm test` is the whole of it: it is what CI runs, and there is no CI-only
 script or configuration. It covers each deck's own facts (record counts and
 order for 54 UX records and 48 narrative records, the citation strings, BCE

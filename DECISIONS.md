@@ -770,28 +770,41 @@ nodes and edges). Two are reused: `paired-panels` compares recall across two
 conditions for Zeigarnik, and `split-bar` partitions one budget of attention for
 Confirmation Bias.
 
-Every diagram label in all ten decks was measured at card size by laying the
-generated SVG in a headless Chrome page that loads `packages/prepress/fonts`
-through `@font-face`, and reading each `<text>` element's `getBBox` in the
-400-unit viewBox. The 437 cards carry 505 labels, every bounding box lies inside
-its box, and the smallest clearance anywhere is DEC-11's "EARLY: CONSIDERED" at
+Every diagram label in all ten decks was measured at card size by
+`node scripts/measure-labels.mjs`, which lays the generated SVG in a headless
+Chrome page that loads `packages/prepress/fonts` through `@font-face` and reads
+each `<text>` element's `getBBox` in the 400-unit viewBox. The 437 cards carry
+505 labels, every bounding box lies inside its box, and the smallest clearance
+anywhere is DEC-11's "EARLY: CONSIDERED" at
 14.09 units (4.57 pt) from the left edge. Distances are reported in points at the card's own
 scale, 0.324 pt per unit, which is the figure's 1.8 in. The tightest gaps to the
 marks are EVEN SPLIT at 1.73 pt (5.33 units) below the reference line,
 CONFIRMING and DISCONFIRMING at 2.59 pt (8.0 units) from their bars, DISTINCT at
 3.46 pt (10.67 units) below the odd mark, and END at 2.16 pt (6.67 units) below
-its dot. The longest labels are captions rather than fields: TME-10's is 47
+its dot. Run on this tree, the script's own strictest contact is ARCH-14's
+caption at 0.0000 units, where the outermost arc ends inside the label's em box
+in the space between "CALL" and "COMES". The gaps above are the designed
+clearances; the script reports em-box distances, which is what it measures.
+The longest labels are captions rather than fields: TME-10's is 47
 characters and 253.8 units wide, clearing the box by 73.1 units either side, and
 MPA-06's and MPA-08's are each 46 characters and 248.4 units, clearing it by
 75.8. A character bound applies where a label
 is anchored near an edge, and the sharpest case is `decline-curve`'s end label,
 centred at x=340: 22 characters (118.8 units) leave 0.59 units to the edge and
 23 overrun it by 2.10, measured by lengthening that label and rebuilding rather
-than by arithmetic. The harness was an ad-hoc headless-Chrome page written for
-this change and is not committed, so these figures are a report of one run
-rather than a check a reader can re-run today. Re-running it, once a committed
-harness exists, moves EVEN SPLIT by about 0.13 pt, so the second decimal is
-resolution here for the same reason it is on page 25's overrun. These numbers describe the vendored face (§65), so they replace the
+than by arithmetic. Those figures are re-derivable: the harness is committed,
+and `node scripts/measure-labels.mjs` on a clean tree prints "505 labels on 136
+cards across 4 deck(s)", DEC-11 at 14.0938 units, EVEN SPLIT at 5.3333 units
+(1.728 pt), and TME-10 at 253.8125 units, then exits 0. It is opt-in, needs
+Chrome, and no gate, CI job or npm script calls it, so a machine without Chrome
+gets "NOT RUN: Chrome was not found ... unknown, not a pass" rather than a
+stale pass. It also compares every label against the box and exits 1 naming the
+label, its width and the edge it crosses: lengthening `decline-curve`'s end
+label to 23 characters is the probe, and the script reports 124.2083 units
+crossing the right edge by 2.1042. The 22/23 boundary above is therefore a
+measurement a reader can repeat, and no measurement output is committed,
+because a committed table would need a gate to keep it fresh and there is none.
+These numbers describe the vendored face (§65), so they replace the
 Menlo figures this section first printed; a Menlo run of the same harness
 differs by up to 1.33 units at size 9, because the two faces report different
 ascent and descent to Chrome.
@@ -2468,8 +2481,9 @@ thing its reproducibility claim could not cover. The face is now pinned.
   exactly as they did without it, ux-laws among them at `9162117d...`. That is
   what lets §29 close its font caveat.
 - **Metrics.** The advance is 600/1000 em, 5.4 units at size 9. Label bounds and
-  the character bound are re-derived in §30, from a harness that is not
-  committed; §27's three mark clearances are the one set not re-taken.
+  the character bound are re-derived in §30, from `node scripts/measure-labels.mjs`
+  (committed and opt-in; it needs Chrome and no gate calls it); §27's three mark
+  clearances are the one set not re-taken.
   `scripts/check-fit.mjs` cannot cover the side edges: its ink scan reads only
   inside the safe columns, so a label overrunning the left or right edge is
   invisible to it, and the measured character bound is the only side guard.
