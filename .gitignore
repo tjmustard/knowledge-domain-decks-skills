@@ -1,6 +1,5 @@
 node_modules/
 packages/prepress/build/
-packages/prepress/dist/
 .DS_Store
 .worktrees/
 # Read-only research input for this slice: provenance/licence is the person's call.

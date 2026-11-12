@@ -963,7 +963,11 @@ npm run build:pdf              # every deck
 npm run build:pdf -- --deck narrative
 ```
 
-The output is one PDF per deck under `packages/prepress/dist/`. This step requires
+The output is one PDF per deck under `packages/prepress/dist/`, and those PDFs are
+committed, so a fresh clone opens and prints them without building anything. Each deck
+carries a fixed release epoch (`SOURCE_DATE_EPOCH`), so rebuilding on the pinned Typst
+version reproduces the committed files byte for byte and a rebuilt tree shows no diff.
+This step requires
 [Typst](https://typst.app/) on `PATH`; the build script checks for it and exits
 with an install message rather than substituting another renderer. The diagram
 face is vendored in `packages/prepress/fonts/` - JetBrains Mono v2.304 with its
